@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Numerológico - Acesso Premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark-blue: #0a0e1a;
+            --card-bg: #161b22;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-blue);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 { color: var(--gold); margin-bottom: 30px; }
+        
+        .container-apps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card-app {
+            background: var(--card-bg);
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-app:hover { transform: translateY(-5px); border-color: var(--gold); }
+
+        .icon { font-size: 40px; color: var(--gold); margin-bottom: 15px; }
+
+        .btn-acesso {
+            display: block;
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Cores dos botões */
+        .btn-comprar { background-color: #238636; color: white; } /* Verde Mercado Pago */
+        .btn-gerar { background-color: var(--gold); color: black; } /* Ouro para quem já pagou */
+
+        .status-lock { font-size: 12px; opacity: 0.7; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1><i class="fas fa-star"></i> Meu Portal Numerológico</h1>
+    <p>Selecione o relatório que deseja gerar abaixo:</p>
+
+    <div class="container-apps">
+        
+        <div class="card-app">
+            <i class="fas fa-fingerprint icon"></i>
+            <h3>Estudo Numerológico</h3>
+            <p>Descubra o mistério por trás do seu dia de nascimento.</p>
+            <a href="https://link-mercado-pago-1" class="btn-acesso btn-comprar" id="btn-app1">Desbloquear Agora</a>
+            <span class="status-lock" id="status-app1"><i class="fas fa-lock"></i> Acesso Restrito</span>
+        </div>
+
+        <div class="card-app">
+            <i class="fas fa-atom icon"></i>
+            <h3>Matriz Quântica</h3>
+            <p>Análise profunda das energias que regem sua vida atual.</p>
+            <a href="https://link-mercado-pago-2" class="btn-acesso btn-comprar" id="btn-app2">Desbloquear Agora</a>
+            <span class="status-lock" id="status-app2"><i class="fas fa-lock"></i> Acesso Restrito</span>
+        </div>
+
+        <div class="card-app">
+            <i class="fas fa-bullseye icon"></i>
+            <h3>Plano de Expressão</h3>
+            <p>Como o mundo te enxerga e como você se manifesta.</p>
+            <a href="https://link-mercado-pago-3" class="btn-acesso btn-comprar" id="btn-app3">Desbloquear Agora</a>
+            <span class="status-lock" id="status-app3"><i class="fas fa-lock"></i> Acesso Restrito</span>
+        </div>
+
+        <div class="card-app">
+            <i class="fas fa-balance-scale icon"></i>
+            <h3>Harmonia e Destino</h3>
+            <p>O equilíbrio total e o mapa do seu futuro pessoal.</p>
+            <a href="https://link-mercado-pago-4" class="btn-acesso btn-comprar" id="btn-app4">Desbloquear Agora</a>
+            <span class="status-lock" id="status-app4"><i class="fas fa-lock"></i> Acesso Restrito</span>
+        </div>
+
+    </div>
+
+    <script>
+        // Lógica de verificação de compra
+        // Quando o Mercado Pago volta, ele manda um parâmetro na URL (ex: ?pago=app1)
+        const urlParams = new URLSearchParams(window.location.search);
+        const compraConfirmada = urlParams.get('pago');
+
+        if (compraConfirmada) {
+            const btn = document.getElementById(`btn-${compraConfirmada}`);
+            const status = document.getElementById(`status-${compraConfirmada}`);
+            
+            if (btn) {
+                btn.innerText = "Acessar Gerador";
+                btn.className = "btn-acesso btn-gerar";
+                btn.href = `./${compraConfirmada}/index.html`; // Vai para a pasta do app
+                status.innerHTML = '<i class="fas fa-unlock"></i> Acesso Liberado!';
+                status.style.color = "#d4af37";
+            }
+        }
+    </script>
+</body>
+</html>
