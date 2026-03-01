@@ -2,77 +2,129 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Painel Numerológico Premium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Numerológico Premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background: #0a0e1a; color: white; font-family: sans-serif; text-align: center; }
-        .grid { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 50px; }
+        :root { --gold: #d4af37; --dark: #0a0e1a; --card: #161b22; }
+        body { background: var(--dark); color: white; font-family: 'Segoe UI', sans-serif; text-align: center; margin: 0; padding: 20px; }
+        h1 { color: var(--gold); margin-top: 40px; text-transform: uppercase; letter-spacing: 2px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; max-width: 1100px; margin: 40px auto; }
+        
         .card { 
-            background: #161b22; border: 1px solid gold; padding: 20px; 
-            border-radius: 15px; width: 250px; transition: 0.3s;
+            background: var(--card); border: 1px solid #30363d; border-radius: 15px; 
+            padding: 30px; transition: 0.4s; display: flex; flex-direction: column; align-items: center;
         }
-        .card:hover { transform: scale(1.05); }
+        .card:hover { border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        
+        .icon { font-size: 45px; color: var(--gold); margin-bottom: 15px; }
+        h3 { margin: 10px 0; font-size: 1.2rem; }
+        p { font-size: 0.9rem; opacity: 0.8; min-height: 40px; }
+
         .btn { 
-            display: inline-block; padding: 10px 20px; margin-top: 15px;
-            text-decoration: none; font-weight: bold; border-radius: 5px;
-            cursor: pointer;
+            display: block; width: 100%; padding: 12px 0; margin-top: 20px;
+            text-decoration: none; font-weight: bold; border-radius: 8px;
+            transition: 0.3s; text-transform: uppercase; font-size: 0.85rem;
         }
+        /* Estilo Botão Comprar */
         .btn-comprar { background: #238636; color: white; }
-        .btn-acessar { background: gold; color: black; }
-        .lock-icon { font-size: 0.8em; opacity: 0.6; }
+        .btn-comprar:hover { background: #2ea043; }
+        
+        /* Estilo Botão Acessar */
+        .btn-acessar { background: var(--gold); color: black; animation: pulse 2s infinite; }
+        
+        .status { font-size: 11px; margin-top: 12px; letter-spacing: 1px; font-weight: bold; }
+        .locked { color: #8b949e; }
+        .unlocked { color: var(--gold); }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+        }
     </style>
 </head>
 <body>
 
-    <h1>💎 Seu Portal Numerológico Premium</h1>
+    <h1><i class="fas fa-gem"></i> Meus Relatórios Premium</h1>
     <p>Escolha o mapa que deseja gerar agora:</p>
 
     <div class="grid">
-        <div class="card" id="card-estudo">
+        <div class="card">
+            <i class="fas fa-fingerprint icon"></i>
             <h3>Estudo Numerológico</h3>
-            <div id="status-estudo" class="lock-icon">🔒 Conteúdo Bloqueado</div>
-            <a href="LINK_MERCADO_PAGO_1" id="btn-estudo" class="btn btn-comprar">COMPRAR AGORA</a>
+            <p>Análise completa do seu dia de nascimento e comportamento.</p>
+            <div id="st-estudo" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
+            <a href="LINK_MERCADO_PAGO_1" id="btn-estudo" class="btn btn-comprar">Comprar Acesso</a>
         </div>
 
-        <div class="card" id="card-matriz">
-            <h3>Matriz Quântica</h3>
-            <div id="status-matriz" class="lock-icon">🔒 Conteúdo Bloqueado</div>
-            <a href="LINK_MERCADO_PAGO_2" id="btn-matriz" class="btn btn-comprar">COMPRAR AGORA</a>
+        <div class="card">
+            <i class="fas fa-pyramid icon"></i>
+            <h3>Matriz Pirâmide</h3>
+            <p>Sua estrutura quântica e caminhos de evolução.</p>
+            <div id="st-matriz" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
+            <a href="LINK_MERCADO_PAGO_2" id="btn-matriz" class="btn btn-comprar">Comprar Acesso</a>
         </div>
 
+        <div class="card">
+            <i class="fas fa-bullseye icon"></i>
+            <h3>Plano de Expressão</h3>
+            <p>Como você manifesta seus talentos no mundo material.</p>
+            <div id="st-plano" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
+            <a href="LINK_MERCADO_PAGO_3" id="btn-plano" class="btn btn-comprar">Comprar Acesso</a>
         </div>
+
+        <div class="card">
+            <i class="fas fa-heart icon"></i>
+            <h3>Harmonia Conjugal</h3>
+            <p>Análise de compatibilidade e futuro do relacionamento.</p>
+            <div id="st-harmonia" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
+            <a href="LINK_MERCADO_PAGO_4" id="btn-harmonia" class="btn btn-comprar">Comprar Acesso</a>
+        </div>
+    </div>
 
     <script>
-        // --- LÓGICA DE LIBERAÇÃO ---
-        // Se o Mercado Pago retornar com ?pago=estudo
-        const urlParams = new URLSearchParams(window.location.search);
-        const produtoPago = urlParams.get('pago');
+        // CONFIGURAÇÃO DOS ARQUIVOS (Mapeamento)
+        const config = {
+            estudo: { btn: 'btn-estudo', st: 'st-estudo', link: 'estudonumerologico.html' },
+            matriz: { btn: 'btn-matriz', st: 'st-matriz', link: 'matrizpiramide.html' },
+            plano: { btn: 'btn-plano', st: 'st-plano', link: 'plano__de__expressao.html' },
+            harmonia: { btn: 'btn-harmonia', st: 'st-harmonia', link: 'harmoniaconjugal.html' }
+        };
 
-        if (produtoPago) {
-            localStorage.setItem(`liberado_${produtoPago}`, "true");
-            // Limpa a URL para segurança
+        // 1. CAPTURAR RETORNO DO MERCADO PAGO
+        // O Mercado Pago deve retornar para: seusite.com/index.html?pago=NOME_DO_APP
+        const params = new URLSearchParams(window.location.search);
+        const pago = params.get('pago');
+
+        if (pago && config[pago]) {
+            localStorage.setItem(`pago_${pago}`, "true");
+            // Limpa a URL para o usuário não ficar vendo o "?pago="
             window.history.replaceState({}, document.title, window.location.pathname);
         }
 
-        // Função que checa o que está liberado e muda os botões
+        // 2. VERIFICAR ACESSOS E ATUALIZAR INTERFACE
         function verificarAcessos() {
-            const apps = ['estudo', 'matriz', 'expressao', 'harmonia'];
-            const paginas = {
-                estudo: "estudonumerologico.html", // nome do seu arquivo real
-                matriz: "matrizquantica.html"
-            };
+            Object.keys(config).forEach(app => {
+                const liberado = localStorage.getItem(`pago_${app}`);
+                const finalizado = localStorage.getItem(`finalizado_${app}`);
 
-            apps.forEach(app => {
-                if (localStorage.getItem(`liberado_${app}`)) {
-                    const btn = document.getElementById(`btn-${app}`);
-                    const status = document.getElementById(`status-${app}`);
-                    
-                    if (btn) {
-                        btn.innerText = "GERAR MEU MAPA";
-                        btn.className = "btn btn-acessar";
-                        btn.href = paginas[app];
-                        status.innerText = "✅ Acesso Liberado";
-                        status.style.color = "gold";
-                    }
+                const btn = document.getElementById(config[app].btn);
+                const status = document.getElementById(config[app].st);
+
+                if (finalizado) {
+                    btn.innerText = "RELATÓRIO CONCLUÍDO";
+                    btn.className = "btn";
+                    btn.style.background = "#333";
+                    btn.href = "#";
+                    status.innerText = "❌ USO ÚNICO EXPIRADO";
+                    status.className = "status locked";
+                } else if (liberado) {
+                    btn.innerText = "GERAR MEU PDF";
+                    btn.className = "btn btn-acessar";
+                    btn.href = config[app].link;
+                    status.innerText = "✅ ACESSO LIBERADO";
+                    status.className = "status unlocked";
                 }
             });
         }
