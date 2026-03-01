@@ -83,53 +83,62 @@
         </div>
     </div>
 
-    <script>
-        // CONFIGURAÇÃO DOS ARQUIVOS (Mapeamento)
-        const config = {
-            estudo: { btn: 'btn-estudo', st: 'st-estudo', link: 'estudonumerologico.html' },
-            matriz: { btn: 'btn-matriz', st: 'st-matriz', link: 'matrizpiramide.html' },
-            plano: { btn: 'btn-plano', st: 'st-plano', link: 'plano__de__expressao.html' },
-            harmonia: { btn: 'btn-harmonia', st: 'st-harmonia', link: 'harmoniaconjugal.html' }
-        };
+<script>
+    // 1. CONFIGURAÇÃO DOS ARQUIVOS (Mapeamento)
+    const config = {
+        estudo: { btn: 'btn-estudo', st: 'st-estudo', link: 'estudonumerologico.html' },
+        matriz: { btn: 'btn-matriz', st: 'st-matriz', link: 'matrizpiramide.html' },
+        plano: { btn: 'btn-plano', st: 'st-plano', link: 'plano__d__expressao.html' }, // Verifique se é "de" ou "d"
+        harmonia: { btn: 'btn-harmonia', st: 'st-harmonia', link: 'harmoniaconjugal.html' }
+    };
 
-        // 1. CAPTURAR RETORNO DO MERCADO PAGO
-        // O Mercado Pago deve retornar para: seusite.com/index.html?pago=NOME_DO_APP
+    // 2. EXECUTAR AO CARREGAR A PÁGINA
+    window.onload = function() {
         const params = new URLSearchParams(window.location.search);
-        const pago = params.get('pago');
+        const pagoUrl = params.get('pago');
 
-        if (pago && config[pago]) {
-            localStorage.setItem(`pago_${pago}`, "true");
-            // Limpa a URL para o usuário não ficar vendo o "?pago="
+        // Se detectar o pagamento na URL, carimba o navegador na hora
+        if (pagoUrl && config[pagoUrl]) {
+            localStorage.setItem(`pago_${pagoUrl}`, "true");
+            // Limpa a URL para não ficar o "?pago=" aparecendo
             window.history.replaceState({}, document.title, window.location.pathname);
         }
 
-        // 2. VERIFICAR ACESSOS E ATUALIZAR INTERFACE
-        function verificarAcessos() {
-            Object.keys(config).forEach(app => {
-                const liberado = localStorage.getItem(`pago_${app}`);
-                const finalizado = localStorage.getItem(`finalizado_${app}`);
+        verificarAcessos();
+    };
 
-                const btn = document.getElementById(config[app].btn);
-                const status = document.getElementById(config[app].st);
+    // 3. ATUALIZAR INTERFACE
+    function verificarAcessos() {
+        Object.keys(config).forEach(app => {
+            const liberado = localStorage.getItem(`pago_${app}`);
+            const finalizado = localStorage.getItem(`finalizado_${app}`);
 
+            const btn = document.getElementById(config[app].btn);
+            const status = document.getElementById(config[app].st);
+
+            if (btn) {
                 if (finalizado) {
                     btn.innerText = "RELATÓRIO CONCLUÍDO";
                     btn.className = "btn";
                     btn.style.background = "#333";
-                    btn.href = "#";
-                    status.innerText = "❌ USO ÚNICO EXPIRADO";
-                    status.className = "status locked";
+                    btn.style.pointerEvents = "none";
+                    btn.href = "javascript:void(0)";
+                    if(status) {
+                        status.innerText = "❌ USO ÚNICO EXPIRADO";
+                        status.className = "status locked";
+                    }
                 } else if (liberado) {
                     btn.innerText = "GERAR MEU PDF";
                     btn.className = "btn btn-acessar";
                     btn.href = config[app].link;
-                    status.innerText = "✅ ACESSO LIBERADO";
-                    status.className = "status unlocked";
+                    if(status) {
+                        status.innerText = "✅ ACESSO LIBERADO";
+                        status.className = "status unlocked";
+                    }
                 }
-            });
-        }
-
-        verificarAcessos();
-    </script>
+            }
+        });
+    }
+</script>
 </body>
 </html>
