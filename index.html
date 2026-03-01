@@ -21,17 +21,22 @@
         h3 { margin: 10px 0; font-size: 1.2rem; }
         p { font-size: 0.9rem; opacity: 0.8; min-height: 40px; }
 
-        .btn { 
+        /* Estilização para o botão do Mercado Pago ficar igual aos outros */
+        .mercadopago-button {
+            width: 100% !important;
+            background-color: #238636 !important;
+            font-family: 'Segoe UI', sans-serif !important;
+            font-weight: bold !important;
+            border-radius: 8px !important;
+            margin-top: 20px !important;
+        }
+
+        .btn-acessar { 
             display: block; width: 100%; padding: 12px 0; margin-top: 20px;
             text-decoration: none; font-weight: bold; border-radius: 8px;
             transition: 0.3s; text-transform: uppercase; font-size: 0.85rem;
+            background: var(--gold); color: black; animation: pulse 2s infinite; 
         }
-        /* Estilo Botão Comprar */
-        .btn-comprar { background: #238636; color: white; }
-        .btn-comprar:hover { background: #2ea043; }
-        
-        /* Estilo Botão Acessar */
-        .btn-acessar { background: var(--gold); color: black; animation: pulse 2s infinite; }
         
         .status { font-size: 11px; margin-top: 12px; letter-spacing: 1px; font-weight: bold; }
         .locked { color: #8b949e; }
@@ -55,7 +60,11 @@
             <h3>Estudo Numerológico</h3>
             <p>Análise completa do seu dia de nascimento e comportamento.</p>
             <div id="st-estudo" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
-            <a href="https://mpago.li/2Pwy4Zk" id="btn-estudo" class="btn btn-comprar">Comprar Acesso</a>
+            <div id="container-estudo">
+                <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                data-preference-id="151061630-75687dba-edd8-4c7b-8b79-d9ffce5e3397" data-source="button">" data-button-label="Comprar Acesso">
+                </script>
+            </div>
         </div>
 
         <div class="card">
@@ -63,7 +72,11 @@
             <h3>Matriz Pirâmide</h3>
             <p>Sua estrutura quântica e caminhos de evolução.</p>
             <div id="st-matriz" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
-            <a href="LINK_MERCADO_PAGO_2" id="btn-matriz" class="btn btn-comprar">Comprar Acesso</a>
+            <div id="container-matriz">
+                <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                data-preference-id="COLE_AQUI_O_ID_DA_MATRIZ" data-button-label="Comprar Acesso">
+                </script>
+            </div>
         </div>
 
         <div class="card">
@@ -71,7 +84,11 @@
             <h3>Plano de Expressão</h3>
             <p>Como você manifesta seus talentos no mundo material.</p>
             <div id="st-plano" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
-            <a href="LINK_MERCADO_PAGO_3" id="btn-plano" class="btn btn-comprar">Comprar Acesso</a>
+            <div id="container-plano">
+                <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                data-preference-id="COLE_AQUI_O_ID_DO_PLANO" data-button-label="Comprar Acesso">
+                </script>
+            </div>
         </div>
 
         <div class="card">
@@ -79,66 +96,50 @@
             <h3>Harmonia Conjugal</h3>
             <p>Análise de compatibilidade e futuro do relacionamento.</p>
             <div id="st-harmonia" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
-            <a href="LINK_MERCADO_PAGO_4" id="btn-harmonia" class="btn btn-comprar">Comprar Acesso</a>
+            <div id="container-harmonia">
+                <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                data-preference-id="COLE_AQUI_O_ID_DA_HARMONIA" data-button-label="Comprar Acesso">
+                </script>
+            </div>
         </div>
     </div>
 
-<script>
-    // 1. CONFIGURAÇÃO DOS ARQUIVOS (Mapeamento)
-    const config = {
-        estudo: { btn: 'btn-estudo', st: 'st-estudo', link: 'estudonumerologico.html' },
-        matriz: { btn: 'btn-matriz', st: 'st-matriz', link: 'matrizpiramide.html' },
-        plano: { btn: 'btn-plano', st: 'st-plano', link: 'plano__d__expressao.html' }, // Verifique se é "de" ou "d"
-        harmonia: { btn: 'btn-harmonia', st: 'st-harmonia', link: 'harmoniaconjugal.html' }
-    };
+    <script>
+        const config = {
+            estudo: { container: 'container-estudo', st: 'st-estudo', link: 'estudonumerologico.html' },
+            matriz: { container: 'container-matriz', st: 'st-matriz', link: 'matrizpiramide.html' },
+            plano: { container: 'container-plano', st: 'st-plano', link: 'plano__d__expressao.html' },
+            harmonia: { container: 'container-harmonia', st: 'st-harmonia', link: 'harmoniaconjugal.html' }
+        };
 
-    // 2. EXECUTAR AO CARREGAR A PÁGINA
-    window.onload = function() {
-        const params = new URLSearchParams(window.location.search);
-        const pagoUrl = params.get('pago');
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const pago = params.get('pago');
 
-        // Se detectar o pagamento na URL, carimba o navegador na hora
-        if (pagoUrl && config[pagoUrl]) {
-            localStorage.setItem(`pago_${pagoUrl}`, "true");
-            // Limpa a URL para não ficar o "?pago=" aparecendo
-            window.history.replaceState({}, document.title, window.location.pathname);
-        }
-
-        verificarAcessos();
-    };
-
-    // 3. ATUALIZAR INTERFACE
-    function verificarAcessos() {
-        Object.keys(config).forEach(app => {
-            const liberado = localStorage.getItem(`pago_${app}`);
-            const finalizado = localStorage.getItem(`finalizado_${app}`);
-
-            const btn = document.getElementById(config[app].btn);
-            const status = document.getElementById(config[app].st);
-
-            if (btn) {
-                if (finalizado) {
-                    btn.innerText = "RELATÓRIO CONCLUÍDO";
-                    btn.className = "btn";
-                    btn.style.background = "#333";
-                    btn.style.pointerEvents = "none";
-                    btn.href = "javascript:void(0)";
-                    if(status) {
-                        status.innerText = "❌ USO ÚNICO EXPIRADO";
-                        status.className = "status locked";
-                    }
-                } else if (liberado) {
-                    btn.innerText = "GERAR MEU PDF";
-                    btn.className = "btn btn-acessar";
-                    btn.href = config[app].link;
-                    if(status) {
-                        status.innerText = "✅ ACESSO LIBERADO";
-                        status.className = "status unlocked";
-                    }
-                }
+            if (pago && config[pago]) {
+                localStorage.setItem(`pago_${pago}`, "true");
+                window.history.replaceState({}, document.title, window.location.pathname);
             }
-        });
-    }
-</script>
+            verificarAcessos();
+        };
+
+        function verificarAcessos() {
+            Object.keys(config).forEach(app => {
+                const liberado = localStorage.getItem(`pago_${app}`);
+                const finalizado = localStorage.getItem(`finalizado_${app}`);
+                const container = document.getElementById(config[app].container);
+                const status = document.getElementById(config[app].st);
+
+                if (finalizado) {
+                    container.innerHTML = `<a href="javascript:void(0)" class="btn-acessar" style="background:#333; color:white; animation:none;">Relatório Concluído</a>`;
+                    status.innerText = "❌ USO ÚNICO EXPIRADO";
+                } else if (liberado) {
+                    container.innerHTML = `<a href="${config[app].link}" class="btn-acessar">Gerar Meu PDF</a>`;
+                    status.innerText = "✅ ACESSO LIBERADO";
+                    status.className = "status unlocked";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
