@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instinto Superior - Numerologia Cabalística</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#111827">
+  <style>
+    /* Mantenho seus estilos originais, mas adicionei a classe .texto para suportar pre-line */
+    html, body { width:100%; overflow-x:hidden; }
+    *{ box-sizing:border-box; }
+    body{ font-family: Arial, sans-serif; margin:0; padding:20px; display:flex; flex-direction:column; align-items:center; background: #f9fafb; }
+    h1{ text-align:center; margin-bottom:30px; color: #111827; }
+    .container{ width:100%; max-width:500px; display:flex; flex-direction:column; gap:20px; }
+    .campo{ display:flex; flex-direction:column; font-size:14px; font-weight:bold; color:#333; }
+    .campo input{ margin-top:8px; padding:14px; font-size:16px; border-radius:8px; border:1px solid #ccc; background:#e5e7eb; width:100%; }
+    .botoes-topo{ display:flex; gap:15px; margin-top:30px; width:100%; }
+    .btn-gerar, .btn-premium{ flex:1; padding:16px; font-size:16px; border-radius:10px; font-weight:bold; text-align:center; cursor: pointer; border: none; }
+    .btn-gerar{ background:#22c55e; color:white; }
+    .btn-premium{ background:linear-gradient(45deg,#6a11cb,#2575fc); color:white; text-decoration:none; display: block; }
+    .card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); margin-bottom: 20px; width: 100%; max-width: 600px; }
+    .card h3 { color: #1f2937; margin-top: 0; border-bottom: 2px solid #f3f4f6; padding-bottom: 10px; }
+    .texto { white-space: pre-line; color: #4b5563; line-height: 1.6; font-size: 16px; margin-top: 15px; }
+    @media (max-width:600px){ .botoes-topo{ flex-direction:column; } }
+  </style>
+</head>
+<body>
+
+<h1>Estudo Numerológico Cabalístico</h1>
+<div class="container">
+  <div class="campo"> Nome completo (igual certidão) <input id="nome" type="text" placeholder="Ex: João Silva"> </div>
+  <div class="campo"> Data de nascimento <input id="data" type="date"> </div>
+  <div class="botoes-topo">
+    <button class="btn-gerar" onclick="gerarMapa()">Gerar Mapa Gratuito</button>
+    <a id="btnPremium" onclick="validarPremium()" class="btn-premium">🔓 Relatório Premium</a>
+  </div>
+</div>
+
+<div id="resultado" style="margin-top: 40px; width: 100%; display: flex; flex-direction: column; align-items: center;"></div>
+
+<script src="textosestudonumerologico.js"></script>
+
+<script>
+// ============================================
+// 1. FUNÇÕES DE PERSONALIZAÇÃO E FILTRO
+// ============================================
+
+// ============================================
+// 1. FUNÇÕES DE PERSONALIZAÇÃO E FILTRO
+// ============================================
+
+function formatarNomeDinamico() {
+    let nomeInput = document.getElementById("nome").value.trim();
+    if (!nomeInput) return "você"; // Retorno padrão minúsculo para manter fluidez se vazio
+    
+    // Pega apenas o primeiro nome
+    let primeiroNome = nomeInput.split(' ')[0];
+    
+    // Retorna Capitalizado (Ex: João)
+    return primeiroNome.charAt(0).toUpperCase() + primeiroNome.slice(1).toLowerCase();
+}
+
+function aplicarFiltroTexto(texto) {
+    if (!texto) return "";
+    let nome = formatarNomeDinamico();
+    
+    // Criamos uma expressão regular que busca a palavra "você" (com ou sem acento, case insensitive)
+    // O modificador 'g' garante que mude todas as vezes que aparecer no texto
+    const regex = /você/gi;
+    
+    // Substitui por <strong>Nome</strong>
+    return texto.replace(regex, `<strong>${nome}</strong>`);
+}
+// ============================================
+// 2. MOTOR DE CÁLCULO (TABELA CABALÍSTICA)
+// ============================================
+const tabela = { A:1, J:1, I:1, Q:1, Y:1, B:2, K:2, R:2, C:3, G:3, L:3, S:3, D:4, M:4, T:4, E:5, H:5, N:5, U:6, V:6, W:6, X:6, Ç:6, O:7, Z:7, F:8, P:8 };
+const vogais = ["A","E","I","O","U"];
+
+function calcularValorComAcentos(letra) {
+  const base = letra.normalize("NFD")[0];
+  const valorBase = tabela[base];
+  if (!valorBase) return 0;
+  let soma = 0, mult = 1;
+  for (let c of letra.normalize("NFD")) {
+    if (c === "\u0301") soma += 2; else if (c === "\u0302") soma += 7;
+    else if (c === "\u0303") soma += 3; else if (c === "\u0327") soma += 6;
+    else if (c === "\u0300" || c === "\u0308") mult *= 2;
+  }
+  return (valorBase + soma) * mult;
+}
+
+function reduzir(n) {
+  n = Math.abs(n);
+  while (n > 9) { n = n.toString().split("").reduce((a,b)=>a+Number(b),0); }
+  return n;
+}
+
+function card(titulo, subtitulo, numero, textoRaw) {
+  const textoProcessado = aplicarFiltroTexto(textoRaw);
+  return `
+  <div class="card">
+    <h3>${titulo}</h3>
+    <p><strong>${subtitulo}</strong> | Número: ${numero}</p>
+    <div class="texto">${textoProcessado || ""}</div>
+  </div>`;
+}
+
+let mapaGerado = false;
+const acessoPago = false; // Mudar via lógica de pagamento
+
+function gerarMapa() {
+  const nomeInput = document.getElementById("nome").value.trim();
+  const dataInput = document.getElementById("data").value;
+
+  if(nomeInput.length < 5) { alert("Digite seu nome completo."); return; }
+  if(!dataInput) { alert("Selecione sua data de nascimento."); return; }
+
+  mapaGerado = true;
+  const nome = nomeInput.toUpperCase();
+  const [ano, mes, dia] = dataInput.split("-").map(Number);
+
+  // --- Cálculos de Nome ---
+  let somaV = 0, somaC = 0, usados = new Set();
+  for (let l of nome) {
+    const valor = calcularValorComAcentos(l);
+    if (!valor) continue;
+    const base = l.normalize("NFD")[0];
+    usados.add(tabela[base] || 0);
+    vogais.includes(base) ? somaV += valor : somaC += valor;
+  }
+
+  const motivacao = reduzir(somaV);
+  const influencia = reduzir(somaC);
+  const personalidade = reduzir(somaV + somaC);
+
+  // --- Cálculos de Data ---
+  const diaN = dia;
+  const comportamento = reduzir(dia);
+  const caminhoVida = reduzir(dia + mes + ano);
+  const missao = reduzir(caminhoVida + personalidade);
+  const maturidade = reduzir(missao + personalidade);
+  const relacionamento = missao; // Ou lógica específica de relacionamento
+
+  // --- Ciclos, Momentos e Desafios ---
+  const fim1 = 37 - caminhoVida;
+  const fim2 = fim1 + 27;
+  
+  const ciclo1 = reduzir(mes), ciclo2 = reduzir(dia), ciclo3 = reduzir(ano);
+  const md1 = reduzir(dia + mes), md2 = reduzir(dia + ano), md3 = reduzir(md1 + md2), md4 = reduzir(mes + ano);
+  const d1 = reduzir(Math.abs(dia - mes)), d2 = reduzir(Math.abs(dia - reduzir(ano))), d3 = reduzir(Math.abs(d1 - d2));
+
+  const anoAtual = new Date().getFullYear();
+  const anoPessoalNum = reduzir(dia + mes + anoAtual);
+  
+  // Lições Cármicas (Deficiências)
+  let faltantes = [];
+  for (let i=1; i<=9; i++) if(!usados.has(i)) faltantes.push(i);
+  const textoDeficiencias = faltantes.map(num => textos.deficiencias[num]).join("");
+
+  // --- Salvar Objeto Completo para o Premium ---
+  const dadosPremium = {
+    nome: nomeInput,
+    data: dataInput.split("-").reverse().join("/"),
+    resultados: {
+        diaN, comportamento, motivacao, personalidade, caminhoVida, missao, maturidade, relacionamento, anoPessoal: anoPessoalNum
+    },
+    periodos: {
+        ciclo1: `0 aos ${fim1} anos`,
+        ciclo2: `${fim1 + 1} aos ${fim2} anos`,
+        ciclo3: `Acima de ${fim2} anos`,
+        md1: `0 aos ${fim1} anos`,
+        md2: `${fim1 + 1} aos ${fim1 + 9} anos`,
+        md3: `${fim1 + 10} aos ${fim1 + 18} anos`,
+        md4: `Acima de ${fim2} anos`
+    },
+textos: {
+        dia: textos.dia[diaN],
+        comportamento: textos.comportamento[comportamento],
+        motivacao: textos.motivacao[motivacao],
+        expressao: textos.Personalidade[personalidade],
+        destino: textos.CaminhodeVida[caminhoVida],
+        missao: textos.Propósito[missao],
+        
+        // Proteção: caso não tenha Maturidade ou Relacionamento, usa Propósito ou vazio
+        maturidade: (textos.Maturidade) ? textos.Maturidade[maturidade] : textos.Propósito[missao],
+        relacionamento: (textos.Relacionamento) ? textos.Relacionamento[relacionamento] : "",
+        
+        // Ajustado para o padrão da sua imagem: textos.ciclos[fase][numero]
+        ciclo1: (textos.ciclos && textos.ciclos[1]) ? textos.ciclos[1][ciclo1] : "",
+        ciclo2: (textos.ciclos && textos.ciclos[2]) ? textos.ciclos[2][ciclo2] : "",
+        ciclo3: (textos.ciclos && textos.ciclos[3]) ? textos.ciclos[3][ciclo3] : "",
+        
+        // Momentos Decisivos (ajuste conforme o nome que deu no textos.js)
+        md1: (textos.momentos) ? textos.momentos[1][md1] : "",
+        md2: (textos.momentos) ? textos.momentos[2][md2] : "",
+        md3: (textos.momentos) ? textos.momentos[3][md3] : "",
+        md4: (textos.momentos) ? textos.momentos[4][md4] : "",
+        
+        // Desafios (ajuste conforme o nome que deu no textos.js)
+        d1: (textos.desafios) ? textos.desafios[1][d1] : "",
+        d2: (textos.desafios) ? textos.desafios[2][d2] : "",
+        d3: (textos.desafios) ? textos.desafios[3][d3] : "",
+        
+        anoPessoal: (textos.anoPessoal) ? textos.anoPessoal[anoPessoalNum] : "",
+        deficiencias: (typeof textoDeficiencias !== 'undefined') ? textoDeficiencias : ""
+    }
+   };
+  localStorage.setItem("dadosMapaPremium", JSON.stringify(dadosPremium));
+
+  // --- Renderização Gratuita na Tela ---
+  document.getElementById("resultado").innerHTML = `
+    ${card("Dia de Nascimento", "Talentos Naturais", diaN, textos.dia[diaN])}
+    ${card("Comportamento", "Número Psíquico", comportamento, textos.comportamento[comportamento])}
+    ${card("Motivação", "Seu Desejo Íntimo", motivacao, textos.motivacao[motivacao])}
+    ${card("Personalidade", "Sua Expressão", personalidade, textos.Personalidade[personalidade])}
+    ${card("Caminho de Vida", "Seu Destino", caminhoVida, textos.CaminhodeVida[caminhoVida])}
+    ${card("Ano Pessoal", "Sua energia em " + anoAtual, anoPessoalNum, textos.anoPessoal[anoPessoalNum])}
+    
+    <div class="card" style="background: #fee2e2; border: 2px dashed #ef4444; text-align: center; max-width: 600px;">
+        <p><strong>Ciclos de Vida, Momentos Decisivos, Desafios e Lições Cármicas estão disponíveis apenas no Relatório Premium abaixo.</strong></p>
+    </div>
+  `;
+}
+
+function validarPremium() {
+   if(!mapaGerado){ alert("⚠️ Gere o mapa primeiro."); return; }
+   window.open("https://hemricciinstintosuperior-rcci.github.io/estudonumerologico.html/premiumestudonumerologico.html","_blank");
+}
+</script>
+</body>
+</html>
