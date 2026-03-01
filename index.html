@@ -104,42 +104,58 @@
         </div>
     </div>
 
-    <script>
-        const config = {
-            estudo: { container: 'container-estudo', st: 'st-estudo', link: 'estudonumerologico.html' },
-            matriz: { container: 'container-matriz', st: 'st-matriz', link: 'matrizpiramide.html' },
-            plano: { container: 'container-plano', st: 'st-plano', link: 'plano__d__expressao.html' },
-            harmonia: { container: 'container-harmonia', st: 'st-harmonia', link: 'harmoniaconjugal.html' }
-        };
+<script>
+    const config = {
+        estudo: { container: 'container-estudo', st: 'st-estudo', link: 'estudonumerologico.html' },
+        matriz: { container: 'container-matriz', st: 'st-matriz', link: 'matrizpiramide.html' },
+        plano: { container: 'container-plano', st: 'st-plano', link: 'plano__d__expressao.html' },
+        harmonia: { container: 'container-harmonia', st: 'st-harmonia', link: 'harmoniaconjugal.html' }
+    };
 
-        window.onload = function() {
-            const params = new URLSearchParams(window.location.search);
-            const pago = params.get('pago');
+    // FUNÇÃO QUE RODA ASSIM QUE A PÁGINA ABRE
+    window.addEventListener('load', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        let pago = urlParams.get('pago');
+// Se o Mercado Pago mandar o código bagunçado, isso aqui limpa e acha o 'estudo'
+if (!pago && window.location.href.includes('estudo')) pago = 'estudo';
 
-            if (pago && config[pago]) {
-                localStorage.setItem(`pago_${pago}`, "true");
-                window.history.replaceState({}, document.title, window.location.pathname);
-            }
-            verificarAcessos();
-        };
+        // DEBUG: Se você quiser testar se o código está lendo a URL,
+        // remova o "//" da linha abaixo:
+        // if(pago) alert("Detectado pagamento para: " + pago);
 
-        function verificarAcessos() {
-            Object.keys(config).forEach(app => {
-                const liberado = localStorage.getItem(`pago_${app}`);
-                const finalizado = localStorage.getItem(`finalizado_${app}`);
-                const container = document.getElementById(config[app].container);
-                const status = document.getElementById(config[app].st);
+        if (pago && config[pago]) {
+            // GRAVA NO NAVEGADOR
+            localStorage.setItem(`pago_${pago}`, "true");
+            
+            // LIMPA A URL PARA FICAR BONITO
+            const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+            window.history.replaceState({}, document.title, cleanUrl);
+        }
+        
+        verificarAcessos();
+    });
 
+    function verificarAcessos() {
+        Object.keys(config).forEach(app => {
+            const liberado = localStorage.getItem(`pago_${app}`);
+            const finalizado = localStorage.getItem(`finalizado_${app}`);
+            const container = document.getElementById(config[app].container);
+            const status = document.getElementById(config[app].st);
+
+            if (container) {
                 if (finalizado) {
                     container.innerHTML = `<a href="javascript:void(0)" class="btn-acessar" style="background:#333; color:white; animation:none;">Relatório Concluído</a>`;
-                    status.innerText = "❌ USO ÚNICO EXPIRADO";
-                } else if (liberado) {
+                    if(status) status.innerText = "❌ USO ÚNICO EXPIRADO";
+                } else if (liberado === "true") {
                     container.innerHTML = `<a href="${config[app].link}" class="btn-acessar">Gerar Meu PDF</a>`;
-                    status.innerText = "✅ ACESSO LIBERADO";
-                    status.className = "status unlocked";
+                    if(status) {
+                        status.innerText = "✅ ACESSO LIBERADO";
+                        status.className = "status unlocked";
+                    }
                 }
-            });
-        }
-    </script>
+            }
+        });
+    }
+</script>
 </body>
 </html>
