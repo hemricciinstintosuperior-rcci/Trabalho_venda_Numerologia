@@ -10,34 +10,16 @@
         body { background: var(--dark); color: white; font-family: 'Segoe UI', sans-serif; text-align: center; margin: 0; padding: 20px; }
         h1 { color: var(--gold); margin-top: 40px; text-transform: uppercase; letter-spacing: 2px; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; max-width: 1100px; margin: 40px auto; }
-        
-        .card { 
-            background: var(--card); border: 1px solid #30363d; border-radius: 15px; 
-            padding: 30px; transition: 0.4s; display: flex; flex-direction: column; align-items: center;
-        }
+        .card { background: var(--card); border: 1px solid #30363d; border-radius: 15px; padding: 30px; transition: 0.4s; display: flex; flex-direction: column; align-items: center; }
         .card:hover { border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
-        
         .icon { font-size: 45px; color: var(--gold); margin-bottom: 15px; }
         h3 { margin: 10px 0; font-size: 1.2rem; }
         p { font-size: 0.9rem; opacity: 0.8; min-height: 40px; }
-
-        .btn-acessar { 
-            display: block; width: 100%; padding: 12px 0; margin-top: 20px;
-            text-decoration: none; font-weight: bold; border-radius: 8px;
-            transition: 0.3s; text-transform: uppercase; font-size: 0.85rem;
-            background: var(--gold); color: black; border: none; cursor: pointer;
-            animation: pulse 2s infinite; 
-        }
-        
+        .btn-acessar { display: block; width: 100%; padding: 12px 0; margin-top: 20px; text-decoration: none; font-weight: bold; border-radius: 8px; transition: 0.3s; text-transform: uppercase; font-size: 0.85rem; background: var(--gold); color: black; border: none; cursor: pointer; animation: pulse 2s infinite; }
         .status { font-size: 11px; margin-top: 12px; letter-spacing: 1px; font-weight: bold; }
         .locked { color: #8b949e; }
         .unlocked { color: var(--gold); }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); }
-            70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
-        }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); } 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); } }
     </style>
 </head>
 <body>
@@ -52,7 +34,7 @@
             <p>Análise completa do seu dia de nascimento e comportamento.</p>
             <div id="st-estudo" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
             <div id="container-estudo">
-                <button onclick="comprar('estudo', 'Estudo Numerológico', 47.00)" class="btn-acessar">Comprar Acesso</button>
+                <button onclick="irParaMercadoPago('estudo', 'Estudo Numerológico', 47.00)" class="btn-acessar">Comprar Acesso</button>
             </div>
         </div>
 
@@ -62,7 +44,7 @@
             <p>Sua estrutura quântica e caminhos de evolução.</p>
             <div id="st-matriz" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
             <div id="container-matriz">
-                <button onclick="comprar('matriz', 'Matriz Pirâmide', 47.00)" class="btn-acessar">Comprar Acesso</button>
+                <button onclick="irParaMercadoPago('matriz', 'Matriz Pirâmide', 47.00)" class="btn-acessar">Comprar Acesso</button>
             </div>
         </div>
 
@@ -72,7 +54,7 @@
             <p>Como você manifesta seus talentos no mundo material.</p>
             <div id="st-plano" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
             <div id="container-plano">
-                <button onclick="comprar('plano', 'Plano de Expressão', 47.00)" class="btn-acessar">Comprar Acesso</button>
+                <button onclick="irParaMercadoPago('plano', 'Plano de Expressão', 47.00)" class="btn-acessar">Comprar Acesso</button>
             </div>
         </div>
 
@@ -82,21 +64,21 @@
             <p>Análise de compatibilidade e futuro do relacionamento.</p>
             <div id="st-harmonia" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
             <div id="container-harmonia">
-                <button onclick="comprar('harmonia', 'Harmonia Conjugal', 47.00)" class="btn-acessar">Comprar Acesso</button>
+                <button onclick="irParaMercadoPago('harmonia', 'Harmonia Conjugal', 47.00)" class="btn-acessar">Comprar Acesso</button>
             </div>
         </div>
     </div>
 
 <script>
+    // Configuração dos links finais dos seus Apps completos
     const config = {
-        estudo: { container: 'container-estudo', st: 'st-estudo', link: 'estudonumerologico.html' },
-        matriz: { container: 'container-matriz', st: 'st-matriz', link: 'matrizpiramide.html' },
-        plano: { container: 'container-plano', st: 'st-plano', link: 'plano__d__expressao.html' },
-        harmonia: { container: 'container-harmonia', st: 'st-harmonia', link: 'harmoniaconjugal.html' }
+        estudo: { container: 'container-estudo', st: 'st-estudo', link: 'https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudonumerologico.html' },
+        matriz: { container: 'container-matriz', st: 'st-matriz', link: 'https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matrizpiramide.html' },
+        plano: { container: 'container-plano', st: 'st-plano', link: 'https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/plano_de_expressao.html' },
+        harmonia: { container: 'container-harmonia', st: 'st-harmonia', link: 'https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/harmoniaconjugal.html' }
     };
 
-    // 1. FUNÇÃO DE COMPRA (CHAMA O RENDER)
-    async function comprar(id, nome, valor) {
+    async function irParaMercadoPago(id, nome, valor) {
         const btn = event.target;
         const textoOriginal = btn.innerText;
         btn.innerText = "PROCESSANDO...";
@@ -106,11 +88,7 @@
             const resposta = await fetch("https://backend-mercadopago-mivn.onrender.com/create_preference", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    id_produto: id,
-                    nome_produto: nome,
-                    preco: valor
-                })
+                body: JSON.stringify({ id_produto: id, nome_produto: nome, preco: valor })
             });
 
             const dados = await resposta.json();
@@ -118,29 +96,24 @@
             if (dados.id) {
                 window.location.href = `https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=${dados.id}`;
             } else {
-                alert("Erro ao gerar link de pagamento.");
-                btn.innerText = textoOriginal;
-                btn.disabled = false;
+                throw new Error("Erro no ID do Mercado Pago");
             }
-        } catch (err) {
-            alert("Erro de conexão com o servidor.");
+        } catch (erro) {
+            alert("O servidor está acordando. Aguarde 10 segundos e clique novamente.");
             btn.innerText = textoOriginal;
             btn.disabled = false;
         }
     }
 
-    // 2. VERIFICAÇÃO DE ACESSO
     window.addEventListener('load', function() {
         const urlParams = new URLSearchParams(window.location.search);
         let pago = urlParams.get('pago');
 
         if (pago && config[pago]) {
             localStorage.setItem(`pago_${pago}`, "true");
-            // Limpa a URL
             const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
             window.history.replaceState({}, document.title, cleanUrl);
         }
-        
         verificarAcessos();
     });
 
@@ -151,7 +124,7 @@
             const status = document.getElementById(config[app].st);
 
             if (liberado === "true" && container) {
-                container.innerHTML = `<a href="${config[app].link}" class="btn-acessar">Gerar Meu PDF</a>`;
+                container.innerHTML = `<a href="${config[app].link}" class="btn-acessar">Acessar Completo</a>`;
                 if(status) {
                     status.innerText = "✅ ACESSO LIBERADO";
                     status.className = "status unlocked";
@@ -159,34 +132,6 @@
             }
         });
     }
-
-async function irParaMercadoPago(id, nome, valor) {
-    // 1. O site avisa o seu servidor no Render
-    try {
-        const resposta = await fetch("https://backend-mercadopago-mivn.onrender.com/create_preference", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                id_produto: id,
-                nome_produto: nome,
-                preco: valor
-            })
-        });
-
-        const dados = await resposta.json();
-
-        // 2. Se o Render responder com um ID, o navegador pula para o Mercado Pago
-        if (dados.id) {
-            window.location.href = `https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=${dados.id}`;
-        } else {
-            alert("Erro ao gerar pagamento. Tente novamente.");
-        }
-    } catch (erro) {
-        console.error("Erro na conexão:", erro);
-        alert("Servidor fora do ar. Tente em instantes.");
-    }
-}
-    
 </script>
 </body>
 </html>
