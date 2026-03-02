@@ -1111,17 +1111,41 @@ function salvarRelatorioPiramide(){
 // ======================================
 // 🚀 ABRIR RELATÓRIO PREMIUM
 // ======================================
-function abrirPremium(){
+// --- CONFIGURAÇÃO DE SEGURANÇA E TRAVA (MATRIZ QUÂNTICA) ---
+const urlParams = new URLSearchParams(window.location.search);
+const userEmail = urlParams.get('user'); 
+const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
+// Bloqueio de entrada sem passar pelo portal
+if (!userEmail) {
+    alert("Acesso não autorizado. Por favor, valide seu código no portal.");
+    window.location.href = "index.html";
+}
+
+async function abrirPremium() {
   const nome = document.getElementById("nome").value;
   const data = document.getElementById("data").value;
 
   if(!nome || !data){
-    alert("Gere a pirâmide primeiro.");
+    alert("Gere a pirâmide primeiro preenchendo seus dados.");
     return;
   }
 
-  // captura conteúdo das 4 abas já geradas
+  // 1. Avisa o usuário sobre o acesso único
+  alert("Seu Relatório Premium da Matriz será aberto. Este acesso é único e será encerrado após a visualização.");
+
+  // 2. Trava o acesso no Firebase (Marca como usado)
+  try {
+      await fetch(`${DB_URL}vendas/${userEmail}.json`, {
+          method: 'PATCH',
+          body: JSON.stringify({ status: 'usado' }),
+          headers: { 'Content-Type': 'application/json' }
+      });
+  } catch (e) {
+      console.error("Erro ao comunicar com o banco de dados:", e);
+  }
+
+  // 3. Captura conteúdo das 4 abas (Mantendo sua lógica de salvar o relatório)
   const pacote = {
     nome: nome,
     data: data,
@@ -1131,75 +1155,20 @@ function abrirPremium(){
     piramideDestino:   document.getElementById("aba_destino").innerHTML
   };
 
-  // salva no navegador
   localStorage.setItem("relatorioPiramide", JSON.stringify(pacote));
 
-  // abre HTML Premium
-  window.open(
-    "https://hemricciinstintosuperior-rcci.github.io/matrizpiramide.html/matriz-premium.html?token=ABC123",
-    "_blank"
-  );
-}
-
-// =======================
-// 🔒 BLOQUEIO CÓPIA
-// =======================
-document.oncontextmenu=()=>false;
-document.onselectstart=()=>false;
-</script>
+  // 4. Abre o prêmio e volta para o início
+  window.open("matriz-premium.html", "_blank");
   
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
-}
-</script>
-<script>
-// 1. Pega o e-mail que o index passou pela URL
-const urlParams = new URLSearchParams(window.location.search);
-const userEmail = urlParams.get('user');
-const DB_URL = "https://SEU-PROJETO.firebaseio.com"; // A mesma URL que você usou no index
-
-// Se alguém tentar entrar direto sem passar pelo index, o sistema expulsa
-if (!userEmail) {
-    alert("Acesso não autorizado. Por favor, faça login no portal.");
-    window.location.href = "index.html";
+  setTimeout(() => {
+      window.location.href = "index.html";
+  }, 3000);
 }
 
-// 2. Função para "Queimar" o acesso (marcar como usado)
-async function bloquearAcessoAposUso() {
-    if (!userEmail) return;
-
-    try {
-        // Atualiza o status no Firebase para 'usado'
-        await fetch(`${DB_URL}/vendas/${userEmail}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ status: 'usado' }),
-            headers: { 'Content-Type': 'application/json' }
-        });
-        
-        console.log("Acesso marcado como utilizado.");
-    } catch (error) {
-        console.error("Erro ao travar acesso:", error);
-    }
-}
-
-// 3. Gatilho de Download
-// Você deve chamar a função 'bloquearAcessoAposUso()' 
-// dentro do seu botão de "Gerar PDF" ou "Baixar"
-function acaoBotaoBaixarPDF() {
-    // ... aqui vai o seu código atual que gera o PDF ...
-    
-    // Chama a trava
-    bloquearAcessoAposUso();
-    
-    alert("Seu relatório foi gerado! Este acesso único foi concluído.");
-    
-    // Opcional: Redirecionar para uma página de agradecimento após 5 segundos
-    setTimeout(() => { window.location.href = "index.html"; }, 5000);
-}
-</script>
+  </script>
 </body>
 </html>
+
 
 
 
