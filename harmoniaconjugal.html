@@ -812,181 +812,116 @@ function gerarBebe(){
 
 
 
-function abrirPremiumSinastria(){
+// --- CONFIGURAÇÃO DE SEGURANÇA E TRAVA (HARMÔNIA CONJUGAL) ---
+const urlParams = new URLSearchParams(window.location.search);
+const userEmail = urlParams.get('user'); 
+const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
+// Bloqueio de entrada forçada
+if (!userEmail) {
+    alert("Acesso não autorizado. Por favor, valide seu código no portal.");
+    window.location.href = "index.html";
+}
+
+async function abrirPremiumSinastria() {
   const nome1 = document.getElementById("nome1").value;
   const nome2 = document.getElementById("nome2").value;
-  const data1 = document.getElementById("data1").value;
-  const data2 = document.getElementById("data2").value;
 
   if(!dados1 || !dados2){
     alert("Calcule a sinastria primeiro.");
     return;
   }
-const pacote = {
 
-  pessoa1:{
-    nome: nome1,
-    data: data1,
+  // 1. Avisa o usuário
+  alert("O Relatório Premium de Sinastria será aberto. Este acesso é único.");
 
-    piramide: document.getElementById("piramide1").innerHTML,
-    regente: dados1.regente,
-   
-
-    motivacao: dados1.motivacao,
-    influencia: dados1.influencia,
-    personalidade: dados1.personalidade,
-    caminho: dados1.caminho,
-    proposito: dados1.proposito,
-    harmonia: dados1.harmonia,
-    ano: dados1.anoPessoal,
-
-    textos:{
-      motivacao: textos.motivacao[dados1.motivacao],
-      influencia: textos.influencia[dados1.influencia],
-      personalidade: textos.personalidade[dados1.personalidade],
-      caminho: textos.CaminhodeVida[dados1.caminho],
-      proposito: textos.proposito[dados1.proposito],
-      harmonia: textos.harmonia[dados1.harmonia],
-      ano: textos.anoPessoal[dados1.anoPessoal],
-      regente: textos.regente[dados1.regente],
- seqNegativa: dados1.sequenciaNegativa
-  ? dados1.sequenciaNegativa
-      .map(n => textos.sequenciaNegativa[n])
-      .join("<br><br>")
-  : "",
-    }
-  },
-
-  pessoa2:{
-    nome: nome2,
-    data: data2,
-
-    piramide: document.getElementById("piramide2").innerHTML,
-    regente: dados2.regente,
-    
-
-    motivacao: dados2.motivacao,
-    influencia: dados2.influencia,
-    personalidade: dados2.personalidade,
-    caminho: dados2.caminho,
-    proposito: dados2.proposito,
-    harmonia: dados2.harmonia,
-    ano: dados2.anoPessoal,
-
-    textos:{
-      motivacao: textos.motivacao[dados2.motivacao],
-      influencia: textos.influencia[dados2.influencia],
-      personalidade: textos.personalidade[dados2.personalidade],
-      caminho: textos.CaminhodeVida[dados2.caminho],
-      proposito: textos.proposito[dados2.proposito],
-      harmonia: textos.harmonia[dados2.harmonia],
-      ano: textos.anoPessoal[dados2.anoPessoal],
-      regente: textos.regente[dados2.regente],
-      seqNegativa: dados2.sequenciaNegativa
-  ? dados2.sequenciaNegativa
-      .map(n => textos.sequenciaNegativa[n])
-      .join("<br><br>")
-  : "",
-    }
-  },
-
-  sinastria:{
-    numero: chaveSinastria(dados1.proposito, dados2.proposito),
-    texto: textos.sinastria[
-      chaveSinastria(dados1.proposito, dados2.proposito)
-    ]
-  },
-
-  biologico: compatibilidadeRH(),
-
-bebe: dadosBebe ? {
-  nome: document.getElementById("nomeBebe").value,
-
-  motivacao: dadosBebe.motivacao,
-  influencia: dadosBebe.influencia,
-  personalidade: dadosBebe.personalidade,
-  regente: dadosBebe.regente,
-
-  piramide: document.getElementById("piramideBebe").innerHTML,
-
-  textos:{
-    motivacao: textos.motivacao[dadosBebe.motivacao],
-    influencia: textos.influencia[dadosBebe.influencia],
-    personalidade: textos.personalidade[dadosBebe.personalidade],
-    regente: textos.regente[dadosBebe.regente]
+  // 2. Trava o acesso no Firebase antes de abrir o PDF
+  try {
+      await fetch(`${DB_URL}vendas/${userEmail}.json`, {
+          method: 'PATCH',
+          body: JSON.stringify({ status: 'usado' }),
+          headers: { 'Content-Type': 'application/json' }
+      });
+  } catch (e) {
+      console.error("Erro na trava de segurança:", e);
   }
 
-} : null
+  // 3. Monta o pacote de dados (Mantive sua lógica original)
+  const pacote = {
+    pessoa1: {
+      nome: nome1,
+      data: document.getElementById("data1").value,
+      piramide: document.getElementById("piramide1").innerHTML,
+      regente: dados1.regente,
+      motivacao: dados1.motivacao,
+      influencia: dados1.influencia,
+      personalidade: dados1.personalidade,
+      caminho: dados1.caminho,
+      proposito: dados1.proposito,
+      harmonia: dados1.harmonia,
+      ano: dados1.anoPessoal,
+      textos: {
+        motivacao: textos.motivacao[dados1.motivacao],
+        influencia: textos.influencia[dados1.influencia],
+        personalidade: textos.personalidade[dados1.personalidade],
+        caminho: textos.CaminhodeVida[dados1.caminho],
+        proposito: textos.proposito[dados1.proposito],
+        harmonia: textos.harmonia[dados1.harmonia],
+        ano: textos.anoPessoal[dados1.anoPessoal],
+        regente: textos.regente[dados1.regente],
+        seqNegativa: dados1.sequenciaNegativa ? dados1.sequenciaNegativa.map(n => textos.sequenciaNegativa[n]).join("<br><br>") : "",
+      }
+    },
+    pessoa2: {
+      nome: nome2,
+      data: document.getElementById("data2").value,
+      piramide: document.getElementById("piramide2").innerHTML,
+      regente: dados2.regente,
+      motivacao: dados2.motivacao,
+      influencia: dados2.influencia,
+      personalidade: dados2.personalidade,
+      caminho: dados2.caminho,
+      proposito: dados2.proposito,
+      harmonia: dados2.harmonia,
+      ano: dados2.anoPessoal,
+      textos: {
+        motivacao: textos.motivacao[dados2.motivacao],
+        influencia: textos.influencia[dados2.influencia],
+        personalidade: textos.personalidade[dados2.personalidade],
+        caminho: textos.CaminhodeVida[dados2.caminho],
+        proposito: textos.proposito[dados2.proposito],
+        harmonia: textos.harmonia[dados2.harmonia],
+        ano: textos.anoPessoal[dados2.anoPessoal],
+        regente: textos.regente[dados2.regente],
+        seqNegativa: dados2.sequenciaNegativa ? dados2.sequenciaNegativa.map(n => textos.sequenciaNegativa[n]).join("<br><br>") : "",
+      }
+    },
+    sinastria: {
+      numero: chaveSinastria(dados1.proposito, dados2.proposito),
+      texto: textos.sinastria[chaveSinastria(dados1.proposito, dados2.proposito)]
+    },
+    biologico: compatibilidadeRH(),
+    bebe: dadosBebe ? {
+      nome: document.getElementById("nomeBebe").value,
+      motivacao: dadosBebe.motivacao,
+      influencia: dadosBebe.influencia,
+      personalidade: dadosBebe.personalidade,
+      regente: dadosBebe.regente,
+      piramide: document.getElementById("piramideBebe").innerHTML,
+      textos: {
+        motivacao: textos.motivacao[dadosBebe.motivacao],
+        influencia: textos.influencia[dadosBebe.influencia],
+        personalidade: textos.personalidade[dadosBebe.personalidade],
+        regente: textos.regente[dadosBebe.regente]
+      }
+    } : null
+  };
 
-};
+  localStorage.setItem("relatorioSinastria", JSON.stringify(pacote));
 
-localStorage.setItem(
-  "relatorioSinastria",
-  JSON.stringify(pacote)
-);
-
-
-
-  window.open(
-    "https://hemricciinstintosuperior-rcci.github.io/harmoniaconjugal.html/premiumharmonia.html",
-    "_blank"
-  );
-}
-</script>
-  <script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
-}
- // 🔒 BLOQUEIO CÓPIA
-// =======================
-document.oncontextmenu=()=>false;
-document.onselectstart=()=>false; 
-
-</script>
-<script>
-// 1. Pega o e-mail que o index passou pela URL
-const urlParams = new URLSearchParams(window.location.search);
-const userEmail = urlParams.get('user');
-const DB_URL = "https://SEU-PROJETO.firebaseio.com"; // A mesma URL que você usou no index
-
-// Se alguém tentar entrar direto sem passar pelo index, o sistema expulsa
-if (!userEmail) {
-    alert("Acesso não autorizado. Por favor, faça login no portal.");
-    window.location.href = "index.html";
-}
-
-// 2. Função para "Queimar" o acesso (marcar como usado)
-async function bloquearAcessoAposUso() {
-    if (!userEmail) return;
-
-    try {
-        // Atualiza o status no Firebase para 'usado'
-        await fetch(`${DB_URL}/vendas/${userEmail}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ status: 'usado' }),
-            headers: { 'Content-Type': 'application/json' }
-        });
-        
-        console.log("Acesso marcado como utilizado.");
-    } catch (error) {
-        console.error("Erro ao travar acesso:", error);
-    }
-}
-
-// 3. Gatilho de Download
-// Você deve chamar a função 'bloquearAcessoAposUso()' 
-// dentro do seu botão de "Gerar PDF" ou "Baixar"
-function acaoBotaoBaixarPDF() {
-    // ... aqui vai o seu código atual que gera o PDF ...
-    
-    // Chama a trava
-    bloquearAcessoAposUso();
-    
-    alert("Seu relatório foi gerado! Este acesso único foi concluído.");
-    
-    // Opcional: Redirecionar para uma página de agradecimento após 5 segundos
-    setTimeout(() => { window.location.href = "index.html"; }, 5000);
+  // 4. Abre o prêmio e volta para o index
+  window.open("premiumharmonia.html", "_blank");
+  setTimeout(() => { window.location.href = "index.html"; }, 3000);
 }
 </script>
 
