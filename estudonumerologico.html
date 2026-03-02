@@ -224,54 +224,46 @@ textos: {
   `;
 }
 
-function validarPremium() {
-   if(!mapaGerado){ alert("⚠️ Gere o mapa primeiro."); return; }
-   window.open("https://hemricciinstintosuperior-rcci.github.io/estudonumerologico.html/premiumestudonumerologico.html","_blank");
-}
-</script>
-<script>
-// 1. Pega o e-mail que o index passou pela URL
-const urlParams = new URLSearchParams(window.location.search);
-const userEmail = urlParams.get('user');
-const DB_URL = "https://SEU-PROJETO.firebaseio.com"; // A mesma URL que você usou no index
 
-// Se alguém tentar entrar direto sem passar pelo index, o sistema expulsa
+<script>
+// --- CONFIGURAÇÃO DE SEGURANÇA (NO FINAL DO ARQUIVO) ---
+const urlParams = new URLSearchParams(window.location.search);
+const userEmail = urlParams.get('user'); 
+const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
+
+// 1. Bloqueio: Se o cara não veio do portal (index), ele nem consegue usar a página
 if (!userEmail) {
-    alert("Acesso não autorizado. Por favor, faça login no portal.");
+    alert("Acesso não autorizado. Por favor, valide seu código no portal.");
     window.location.href = "index.html";
 }
 
-// 2. Função para "Queimar" o acesso (marcar como usado)
-async function bloquearAcessoAposUso() {
-    if (!userEmail) return;
+// 2. Nova função validarPremium (Substitui a antiga)
+async function validarPremium() {
+   if(!mapaGerado){ 
+       alert("⚠️ Gere o mapa primeiro preenchendo seus dados."); 
+       return; 
+   }
 
-    try {
-        // Atualiza o status no Firebase para 'usado'
-        await fetch(`${DB_URL}/vendas/${userEmail}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ status: 'usado' }),
-            headers: { 'Content-Type': 'application/json' }
-        });
-        
-        console.log("Acesso marcado como utilizado.");
-    } catch (error) {
-        console.error("Erro ao travar acesso:", error);
-    }
-}
+   alert("Seu Relatório Premium será aberto. Este acesso é único e será encerrado após a visualização.");
 
-// 3. Gatilho de Download
-// Você deve chamar a função 'bloquearAcessoAposUso()' 
-// dentro do seu botão de "Gerar PDF" ou "Baixar"
-function acaoBotaoBaixarPDF() {
-    // ... aqui vai o seu código atual que gera o PDF ...
-    
-    // Chama a trava
-    bloquearAcessoAposUso();
-    
-    alert("Seu relatório foi gerado! Este acesso único foi concluído.");
-    
-    // Opcional: Redirecionar para uma página de agradecimento após 5 segundos
-    setTimeout(() => { window.location.href = "index.html"; }, 5000);
+   // Trava o acesso no Firebase para 'usado'
+   try {
+       await fetch(`${DB_URL}vendas/${userEmail}.json`, {
+           method: 'PATCH',
+           body: JSON.stringify({ status: 'usado' }),
+           headers: { 'Content-Type': 'application/json' }
+       });
+   } catch (e) {
+       console.error("Erro ao comunicar com Firebase:", e);
+   }
+
+   // Abre o relatório premium
+   window.open("premiumestudonumerologico.html", "_blank");
+
+   // Redireciona a página principal de volta para o portal
+   setTimeout(() => {
+       window.location.href = "index.html";
+   }, 3000);
 }
 </script>
   
