@@ -79,12 +79,12 @@
     </div>
 
 <script>
-    // --- CONFIGURAÇÃO DO FIREBASE (SUBSTITUA PELOS SEUS DADOS) ---
-    const DB_URL = "https://SEU-PROJETO.firebaseio.com"; // Cole a URL do seu Realtime Database aqui
+    // URL do seu Firebase que acabamos de criar
+    const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
     const config = {
         estudo: { container: 'container-estudo', st: 'st-estudo', card: 'card-estudo', link: 'estudonumerologico.html' },
-        matriz: { container: 'container-matriz', st: 'st-matriz', card: 'card-matriz', link: 'matrizpiramide.html' },
+        matriz: { container: 'container-matriz', st: 'st-matriz', card: 'card-matriz', link: 'matriz-premium.html' },
         plano: { container: 'container-plano', st: 'st-plano', card: 'card-plano', link: 'plano_de_expressao.html' },
         harmonia: { container: 'container-harmonia', st: 'st-harmonia', card: 'card-harmonia', link: 'harmoniaconjugal.html' }
     };
@@ -94,31 +94,30 @@
         const codigo = document.getElementById('codigo-acesso').value.trim();
         const btn = document.getElementById('btn-entrar');
 
-        if(!emailOriginal || !codigo) return alert("Preencha todos os campos!");
+        if(!emailOriginal || !codigo) return alert("Por favor, preencha o e-mail e o código!");
 
-        // O Firebase não aceita "." no nome da chave, então trocamos por "_"
+        // O Firebase não aceita "." no nome da chave (id), por isso trocamos por "_"
         const emailChave = emailOriginal.replace(/\./g, '_');
         
-        btn.innerText = "VALIDANDO...";
+        btn.innerText = "VERIFICANDO...";
         btn.disabled = true;
 
         try {
-            const res = await fetch(`${DB_URL}/vendas/${emailChave}.json`);
+            const res = await fetch(`${DB_URL}vendas/${emailChave}.json`);
             const dados = await res.json();
 
             if (dados && dados.codigo === codigo) {
                 if (dados.status === "usado") {
-                    alert("Atenção: Este mapa já foi gerado e o acesso expirou.");
+                    alert("Atenção: Este acesso já foi utilizado e expirou.");
                 } else {
                     liberarProduto(dados.produto, emailChave);
                     document.getElementById('area-login').style.display = 'none';
-                    alert("Acesso Liberado com Sucesso!");
                 }
             } else {
-                alert("E-mail ou Código incorretos ou venda ainda não processada.");
+                alert("Dados incorretos ou venda ainda processando. Verifique o código no seu e-mail.");
             }
         } catch (e) {
-            alert("Erro ao conectar ao banco de dados. Verifique a URL do Firebase.");
+            alert("Erro de conexão. Verifique se o banco está em 'Modo de Teste'.");
         } finally {
             btn.innerText = "Verificar Credenciais";
             btn.disabled = false;
@@ -133,11 +132,11 @@
             const card = document.getElementById(app.card);
 
             card.classList.add('active');
-            status.innerText = "✅ LIBERADO PARA USO ÚNICO";
+            status.innerText = "✅ ACESSO LIBERADO";
             status.className = "status unlocked";
             
-            // Passamos o email na URL para o gerador saber quem "queimar" no banco depois
-            container.innerHTML = `<a href="${app.link}?user=${emailChave}" class="btn-acessar" style="animation: pulse 2s infinite;">GERAR MEU MAPA AGORA</a>`;
+            // Enviamos o e-mail na URL para que o gerador saiba quem bloquear depois
+            container.innerHTML = `<a href="${app.link}?user=${emailChave}" class="btn-acessar">ABRIR GERADOR AGORA</a>`;
         }
     }
 </script>
