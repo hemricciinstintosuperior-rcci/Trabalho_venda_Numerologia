@@ -9,128 +9,136 @@
         :root { --gold: #d4af37; --dark: #0a0e1a; --card: #161b22; }
         body { background: var(--dark); color: white; font-family: 'Segoe UI', sans-serif; text-align: center; margin: 0; padding: 20px; }
         h1 { color: var(--gold); margin-top: 40px; text-transform: uppercase; letter-spacing: 2px; }
+        
+        /* Área de Login */
+        .login-box { max-width: 450px; margin: 30px auto; padding: 25px; background: var(--card); border: 2px solid var(--gold); border-radius: 15px; box-shadow: 0 0 20px rgba(212, 175, 55, 0.2); }
+        .login-box input { width: 90%; padding: 12px; margin: 10px 0; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: white; outline: none; }
+        .login-box input:focus { border-color: var(--gold); }
+        
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; max-width: 1100px; margin: 40px auto; }
-        .card { background: var(--card); border: 1px solid #30363d; border-radius: 15px; padding: 30px; transition: 0.4s; display: flex; flex-direction: column; align-items: center; }
-        .card:hover { border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .card { background: var(--card); border: 1px solid #30363d; border-radius: 15px; padding: 30px; transition: 0.4s; display: flex; flex-direction: column; align-items: center; opacity: 0.6; }
+        .card.active { opacity: 1; border-color: var(--gold); }
         .icon { font-size: 45px; color: var(--gold); margin-bottom: 15px; }
         h3 { margin: 10px 0; font-size: 1.2rem; }
         p { font-size: 0.9rem; opacity: 0.8; min-height: 40px; }
-        .btn-acessar { display: block; width: 100%; padding: 12px 0; margin-top: 20px; text-decoration: none; font-weight: bold; border-radius: 8px; transition: 0.3s; text-transform: uppercase; font-size: 0.85rem; background: var(--gold); color: black; border: none; cursor: pointer; animation: pulse 2s infinite; }
+        .btn-acessar { display: block; width: 100%; padding: 12px 0; margin-top: 20px; text-decoration: none; font-weight: bold; border-radius: 8px; transition: 0.3s; text-transform: uppercase; font-size: 0.85rem; background: var(--gold); color: black; border: none; cursor: pointer; }
+        .btn-acessar:disabled { background: #555; cursor: not-allowed; animation: none; }
         .status { font-size: 11px; margin-top: 12px; letter-spacing: 1px; font-weight: bold; }
         .locked { color: #8b949e; }
         .unlocked { color: var(--gold); }
-        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); } 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); } }
     </style>
 </head>
 <body>
 
-    <h1><i class="fas fa-gem"></i> Meus Relatórios Premium</h1>
-    <p>Escolha o mapa que deseja gerar agora:</p>
+    <h1><i class="fas fa-gem"></i> Portal Numerológico</h1>
+    
+    <div class="login-box" id="area-login">
+        <h3 style="color: var(--gold); margin-bottom: 15px;">Liberar Meu Acesso</h3>
+        <p>Insira os dados recebidos após a compra:</p>
+        <input type="email" id="email-cliente" placeholder="E-mail da compra">
+        <input type="text" id="codigo-acesso" placeholder="Código de acesso">
+        <button onclick="validarAcesso()" id="btn-entrar" class="btn-acessar">Verificar Credenciais</button>
+    </div>
 
     <div class="grid">
-        <div class="card">
+        <div class="card" id="card-estudo">
             <i class="fas fa-fingerprint icon"></i>
             <h3>Estudo Numerológico</h3>
-            <p>Análise completa do seu dia de nascimento e comportamento.</p>
-            <div id="st-estudo" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
+            <div id="st-estudo" class="status locked">🔒 BLOQUEADO</div>
             <div id="container-estudo">
-                <button onclick="irParaMercadoPago('estudo', 'Estudo Numerológico', 47.00)" class="btn-acessar">Comprar Acesso</button>
+                <button class="btn-acessar" disabled>Aguardando Login</button>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="card-matriz">
             <i class="fas fa-pyramid icon"></i>
             <h3>Matriz Pirâmide</h3>
-            <p>Sua estrutura quântica e caminhos de evolução.</p>
-            <div id="st-matriz" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
+            <div id="st-matriz" class="status locked">🔒 BLOQUEADO</div>
             <div id="container-matriz">
-                <button onclick="irParaMercadoPago('matriz', 'Matriz Pirâmide', 47.00)" class="btn-acessar">Comprar Acesso</button>
+                <button class="btn-acessar" disabled>Aguardando Login</button>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="card-plano">
             <i class="fas fa-bullseye icon"></i>
             <h3>Plano de Expressão</h3>
-            <p>Como você manifesta seus talentos no mundo material.</p>
-            <div id="st-plano" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
+            <div id="st-plano" class="status locked">🔒 BLOQUEADO</div>
             <div id="container-plano">
-                <button onclick="irParaMercadoPago('plano', 'Plano de Expressão', 47.00)" class="btn-acessar">Comprar Acesso</button>
+                <button class="btn-acessar" disabled>Aguardando Login</button>
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="card-harmonia">
             <i class="fas fa-heart icon"></i>
             <h3>Harmonia Conjugal</h3>
-            <p>Análise de compatibilidade e futuro do relacionamento.</p>
-            <div id="st-harmonia" class="status locked">🔒 CONTEÚDO BLOQUEADO</div>
+            <div id="st-harmonia" class="status locked">🔒 BLOQUEADO</div>
             <div id="container-harmonia">
-                <button onclick="irParaMercadoPago('harmonia', 'Harmonia Conjugal', 47.00)" class="btn-acessar">Comprar Acesso</button>
+                <button class="btn-acessar" disabled>Aguardando Login</button>
             </div>
         </div>
     </div>
 
 <script>
-    // Configuração dos links finais dos seus Apps completos
-    const config = {
-    estudo: { container: 'container-estudo', st: 'st-estudo', link: 'estudonumerologico.html' },
-    matriz: { container: 'container-matriz', st: 'st-matriz', link: 'matrizpiramide.html' },
-    plano: { container: 'container-plano', st: 'st-plano', link: 'plano_de_expressao.html' },
-    harmonia: { container: 'container-harmonia', st: 'st-harmonia', link: 'harmoniaconjugal.html' }
-};;
+    // --- CONFIGURAÇÃO DO FIREBASE (SUBSTITUA PELOS SEUS DADOS) ---
+    const DB_URL = "https://SEU-PROJETO.firebaseio.com"; // Cole a URL do seu Realtime Database aqui
 
-    async function irParaMercadoPago(id, nome, valor) {
-        const btn = event.target;
-        const textoOriginal = btn.innerText;
-        btn.innerText = "PROCESSANDO...";
+    const config = {
+        estudo: { container: 'container-estudo', st: 'st-estudo', card: 'card-estudo', link: 'estudonumerologico.html' },
+        matriz: { container: 'container-matriz', st: 'st-matriz', card: 'card-matriz', link: 'matrizpiramide.html' },
+        plano: { container: 'container-plano', st: 'st-plano', card: 'card-plano', link: 'plano_de_expressao.html' },
+        harmonia: { container: 'container-harmonia', st: 'st-harmonia', card: 'card-harmonia', link: 'harmoniaconjugal.html' }
+    };
+
+    async function validarAcesso() {
+        const emailOriginal = document.getElementById('email-cliente').value.trim().toLowerCase();
+        const codigo = document.getElementById('codigo-acesso').value.trim();
+        const btn = document.getElementById('btn-entrar');
+
+        if(!emailOriginal || !codigo) return alert("Preencha todos os campos!");
+
+        // O Firebase não aceita "." no nome da chave, então trocamos por "_"
+        const emailChave = emailOriginal.replace(/\./g, '_');
+        
+        btn.innerText = "VALIDANDO...";
         btn.disabled = true;
 
         try {
-            const resposta = await fetch("https://backend-mercadopago-mivn.onrender.com/create_preference", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ id_produto: id, nome_produto: nome, preco: valor })
-            });
+            const res = await fetch(`${DB_URL}/vendas/${emailChave}.json`);
+            const dados = await res.json();
 
-            const dados = await resposta.json();
-
-            if (dados.id) {
-                window.location.href = `https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=${dados.id}`;
+            if (dados && dados.codigo === codigo) {
+                if (dados.status === "usado") {
+                    alert("Atenção: Este mapa já foi gerado e o acesso expirou.");
+                } else {
+                    liberarProduto(dados.produto, emailChave);
+                    document.getElementById('area-login').style.display = 'none';
+                    alert("Acesso Liberado com Sucesso!");
+                }
             } else {
-                throw new Error("Erro no ID do Mercado Pago");
+                alert("E-mail ou Código incorretos ou venda ainda não processada.");
             }
-        } catch (erro) {
-            alert("O servidor está acordando. Aguarde 10 segundos e clique novamente.");
-            btn.innerText = textoOriginal;
+        } catch (e) {
+            alert("Erro ao conectar ao banco de dados. Verifique a URL do Firebase.");
+        } finally {
+            btn.innerText = "Verificar Credenciais";
             btn.disabled = false;
         }
     }
 
-    window.addEventListener('load', function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        let pago = urlParams.get('pago');
+    function liberarProduto(produtoID, emailChave) {
+        const app = config[produtoID];
+        if (app) {
+            const container = document.getElementById(app.container);
+            const status = document.getElementById(app.st);
+            const card = document.getElementById(app.card);
 
-        if (pago && config[pago]) {
-            localStorage.setItem(`pago_${pago}`, "true");
-            const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-            window.history.replaceState({}, document.title, cleanUrl);
+            card.classList.add('active');
+            status.innerText = "✅ LIBERADO PARA USO ÚNICO";
+            status.className = "status unlocked";
+            
+            // Passamos o email na URL para o gerador saber quem "queimar" no banco depois
+            container.innerHTML = `<a href="${app.link}?user=${emailChave}" class="btn-acessar" style="animation: pulse 2s infinite;">GERAR MEU MAPA AGORA</a>`;
         }
-        verificarAcessos();
-    });
-
-    function verificarAcessos() {
-        Object.keys(config).forEach(app => {
-            const liberado = localStorage.getItem(`pago_${app}`);
-            const container = document.getElementById(config[app].container);
-            const status = document.getElementById(config[app].st);
-
-            if (liberado === "true" && container) {
-                container.innerHTML = `<a href="${config[app].link}" class="btn-acessar">Acessar Completo</a>`;
-                if(status) {
-                    status.innerText = "✅ ACESSO LIBERADO";
-                    status.className = "status unlocked";
-                }
-            }
-        });
     }
 </script>
 </body>
