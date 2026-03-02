@@ -944,3 +944,51 @@ document.oncontextmenu=()=>false;
 document.onselectstart=()=>false; 
 
 </script>
+<script>
+// 1. Pega o e-mail que o index passou pela URL
+const urlParams = new URLSearchParams(window.location.search);
+const userEmail = urlParams.get('user');
+const DB_URL = "https://SEU-PROJETO.firebaseio.com"; // A mesma URL que você usou no index
+
+// Se alguém tentar entrar direto sem passar pelo index, o sistema expulsa
+if (!userEmail) {
+    alert("Acesso não autorizado. Por favor, faça login no portal.");
+    window.location.href = "index.html";
+}
+
+// 2. Função para "Queimar" o acesso (marcar como usado)
+async function bloquearAcessoAposUso() {
+    if (!userEmail) return;
+
+    try {
+        // Atualiza o status no Firebase para 'usado'
+        await fetch(`${DB_URL}/vendas/${userEmail}.json`, {
+            method: 'PATCH',
+            body: JSON.stringify({ status: 'usado' }),
+            headers: { 'Content-Type': 'application/json' }
+        });
+        
+        console.log("Acesso marcado como utilizado.");
+    } catch (error) {
+        console.error("Erro ao travar acesso:", error);
+    }
+}
+
+// 3. Gatilho de Download
+// Você deve chamar a função 'bloquearAcessoAposUso()' 
+// dentro do seu botão de "Gerar PDF" ou "Baixar"
+function acaoBotaoBaixarPDF() {
+    // ... aqui vai o seu código atual que gera o PDF ...
+    
+    // Chama a trava
+    bloquearAcessoAposUso();
+    
+    alert("Seu relatório foi gerado! Este acesso único foi concluído.");
+    
+    // Opcional: Redirecionar para uma página de agradecimento após 5 segundos
+    setTimeout(() => { window.location.href = "index.html"; }, 5000);
+}
+</script>
+
+</body>
+</html>
