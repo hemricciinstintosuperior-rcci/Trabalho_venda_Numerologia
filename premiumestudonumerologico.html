@@ -690,24 +690,12 @@ if (!dadosPortal) {
     document.body.innerHTML = htmlFinal;
 
     // 5. FUNÇÃO PARA GERAR O PDF (O que vai salvar o arquivo)
-    function gerarPDFPremium() {
-        const elemento = document.getElementById("relatorio");
-        const opcoes = {
-            margin: [10, 10, 10, 10],
-            filename: Estudo_Premium_${dadosPortal.nome}.pdf,
-            image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2, useCORS: true },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
-        html2pdf().set(opcoes).from(elemento).save();
-    }
-
-    // DISPARA O PDF AUTOMATICAMENTE APÓS 3 SEGUNDOS
-    window.onload = () => { 
-        setTimeout(gerarPDFPremium, 3000); 
-    };
+/* PDF AUTOMÁTICO */
+function gerarPDF(){
+    window.scrollTo(0,0);
+    setTimeout(()=>{ window.print(); }, 800);
 }
-
+setTimeout(gerarPDF, 1500);
 // Proteção
 document.oncontextmenu = () => false;
 document.onselectstart = () => false;
