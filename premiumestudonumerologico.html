@@ -631,7 +631,7 @@ if (!dadosPortal) {
         let nomeFormatado = pNome.charAt(0).toUpperCase() + pNome.slice(1).toLowerCase();
 
         let t = texto;
-        t = t.replace(/você/gi, <strong>${nomeFormatado}</strong>);
+        t = t.replace(/você/gi, `<strong>${nomeFormatado}</strong>`);
         t = t.replace(/\(a\)/gi, "").replace(/\(o\)/gi, "").replace(/\(as\)/gi, "").replace(/\(os\)/gi, "");
         t = t.replace(/\/a/gi, "").replace(/\/o/gi, "").replace(/o\/a/gi, "o").replace(/a\/o/gi, "a");
         return t.replace(/\n\n/g, "<br><br>").replace(/\n/g, "<br>");
