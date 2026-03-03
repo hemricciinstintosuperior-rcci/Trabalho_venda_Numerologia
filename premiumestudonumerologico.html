@@ -691,12 +691,26 @@ if (!dadosPortal) {
 
     // 5. FUNÇÃO PARA GERAR O PDF (O que vai salvar o arquivo)
 /* PDF AUTOMÁTICO */
-function gerarPDF(){
-    window.scrollTo(0,0);
-    setTimeout(()=>{ window.print(); }, 800);
-}
-setTimeout(gerarPDF, 1500);
-// Proteção
-document.oncontextmenu = () => false;
-document.onselectstart = () => false;
+// 5. FUNÇÃO PARA GERAR O PDF PREMIUM (Substitui o window.print)
+    function gerarPDFPremium() {
+        const elemento = document.body; 
+        const config = {
+            margin: [10, 10, 10, 10],
+            filename: 'Mapa_Numerologico_Premium.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+        html2pdf().set(config).from(elemento).save();
+    }
+
+    // Dispara o PDF após 3 segundos
+    setTimeout(gerarPDFPremium, 3000);
+
+    // Proteção de conteúdo
+    document.oncontextmenu = () => false;
+    document.onselectstart = () => false;
+} // <--- ESTA CHAVE FECHA O "ELSE" LÁ DE CIMA
 </script>
+  
+
