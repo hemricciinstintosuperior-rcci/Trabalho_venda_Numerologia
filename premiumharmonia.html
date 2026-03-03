@@ -298,29 +298,27 @@ function formatarPrimeiroNome(nomeCompleto) {
 }
 
 function aplicarNomes(texto, nomeProprio) {
-    if (!texto) return "";
+    if (!texto || !dados) return texto || "";
 
     const nome1 = dados.pessoa1?.nome || "";
     const nome2 = dados.pessoa2?.nome || "";
-    const energia1 = dados.pessoa1?.proposito;
-    const energia2 = dados.pessoa2?.proposito;
-
+    
     let novoTexto = texto;
 
-    // 1. Tratamento para Sinastria (Trocar Energias pelos nomes do casal)
-    if (energia1 && energia2) {
-        const menor = Math.min(energia1, energia2);
-        const maior = Math.max(energia1, energia2);
-        const nomeMenor = (energia1 === menor) ? nome1 : nome2;
-        const nomeMaior = (energia1 === maior) ? nome1 : nome2;
+    // Tratamento para Sinastria
+    if (dados.pessoa1?.proposito && dados.pessoa2?.proposito) {
+        const p1 = dados.pessoa1.proposito;
+        const p2 = dados.pessoa2.proposito;
+        const menor = Math.min(p1, p2);
+        const maior = Math.max(p1, p2);
+        const nomeMenor = (p1 === menor) ? nome1 : nome2;
+        const nomeMaior = (p1 === maior) ? nome1 : nome2;
 
         novoTexto = novoTexto.replace(new RegExp(`Energia ${menor}`, 'gi'), nomeMenor);
         novoTexto = novoTexto.replace(new RegExp(`Energia ${maior}`, 'gi'), nomeMaior);
-        novoTexto = novoTexto.replace(new RegExp(`número ${menor}`, 'gi'), nomeMenor);
-        novoTexto = novoTexto.replace(new RegExp(`número ${maior}`, 'gi'), nomeMaior);
     }
 
-    // 2. Tratamento para "você" (Trocar pelo primeiro nome em negrito)
+    // Tratamento para "você"
     if (nomeProprio) {
         const pNome = formatarPrimeiroNome(nomeProprio);
         novoTexto = novoTexto.replace(/você/gi, `<strong>${pNome}</strong>`);
