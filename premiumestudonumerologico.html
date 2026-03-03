@@ -616,6 +616,7 @@ box-sizing:border-box;
 
 <script>
 // 1. PEGA OS DADOS (SEM ERRO)
+// 1. PEGA OS DADOS DO LOCALSTORAGE
 const dadosPortal = JSON.parse(localStorage.getItem("dadosMapaPremium"));
 
 if (!dadosPortal) {
@@ -636,7 +637,7 @@ if (!dadosPortal) {
         return t.replace(/\n\n/g, "<br><br>").replace(/\n/g, "<br>");
     }
 
-    // 3. LISTA DE TUDO QUE TEM QUE TROCAR (MD3, MD4 E D3 ESTÃO AQUI)
+    // 3. LISTA DE TUDO QUE TEM QUE TROCAR
     const trocas = {
         "{{NOME}}": dadosPortal.nome,
         "{{DATA}}": dadosPortal.data,
@@ -649,7 +650,6 @@ if (!dadosPortal) {
         "{{MATURIDADE}}": dadosPortal.resultados.maturidade,
         "{{RELACIONAMENTO}}": dadosPortal.resultados.relacionamento,
         "{{ANO_PESSOAL_NUMERO}}": dadosPortal.resultados.anoPessoal,
-        "{{QTD_DEFICIENCIAS}}": (dadosPortal.resultados.listaDeficiencias || []).length + " Lições Cármicas",
         
         // Textos Interpretativos
         "{{TEXTO_DIA}}": limparParaHomem(dadosPortal.textos.dia),
@@ -686,15 +686,28 @@ if (!dadosPortal) {
         "{{PERIODO_D3}}": dadosPortal.periodos.ciclo3
     };
 
-    // 4. APLICA AS MUDANÇAS NO HTML (UMA ÚNICA VEZ PARA NÃO SUMIR NADA)
+    // 4. APLICA AS MUDANÇAS NO HTML
     let htmlFinal = document.body.innerHTML;
     Object.keys(trocas).forEach(chave => {
         htmlFinal = htmlFinal.split(chave).join(trocas[chave] || "");
     });
     document.body.innerHTML = htmlFinal;
 
-    // 5. CHAMA A IMPRESSÃO
-    window.onload = () => { setTimeout(() => { window.print(); }, 1200); };
+    // 5. FUNÇÃO PARA GERAR O PDF PREMIUM
+    function gerarPDF() {
+        const elemento = document.getElementById("relatorio");
+        const opt = {
+            margin:       10,
+            filename:    'Mapa_Premium.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+        html2pdf().set(opt).from(elemento).save();
+    }
+
+    // DISPARA O PDF APÓS 2 SEGUNDOS
+    setTimeout(gerarPDF, 2000);
 }
 
 // Proteção
