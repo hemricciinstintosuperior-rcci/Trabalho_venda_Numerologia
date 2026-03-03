@@ -705,12 +705,13 @@ if (!dadosPortal) {
     }
 
     // Dispara o PDF após 3 segundos
-    setTimeout(gerarPDFPremium, 3000);
+    window.onload = () => { setTimeout(() => { window.print(); }, 1200); };
+}
 
     // Proteção de conteúdo
     document.oncontextmenu = () => false;
     document.onselectstart = () => false;
-} // <--- ESTA CHAVE FECHA O "ELSE" LÁ DE CIMA
+ // <--- ESTA CHAVE FECHA O "ELSE" LÁ DE CIMA
 </script>
   
 
