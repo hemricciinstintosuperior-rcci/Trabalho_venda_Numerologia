@@ -1126,15 +1126,14 @@ async function abrirPremium() {
   const nome = document.getElementById("nome").value;
   const data = document.getElementById("data").value;
 
-  if(!nome || !data){
-    alert("Gere a pirâmide primeiro preenchendo seus dados.");
+  if(!nome || !data || !pirPrincipal){
+    alert("Por favor, preencha os dados e clique em 'GERAR AS MATRIZES' primeiro.");
     return;
   }
 
-  // 1. Avisa o usuário sobre o acesso único
-  alert("Seu Relatório Premium da Matriz será aberto. Este acesso é único e será encerrado após a visualização.");
+  alert("Seu Relatório Premium da Matriz será aberto agora.");
 
-  // 2. Trava o acesso no Firebase (Marca como usado)
+  // Trava de segurança do Firebase
   try {
       await fetch(`${DB_URL}vendas/${userEmail}.json`, {
           method: 'PATCH',
@@ -1142,10 +1141,10 @@ async function abrirPremium() {
           headers: { 'Content-Type': 'application/json' }
       });
   } catch (e) {
-      console.error("Erro ao comunicar com o banco de dados:", e);
+      console.error("Erro no banco de dados:", e);
   }
 
-  // 3. Captura conteúdo das 4 abas (Mantendo sua lógica de salvar o relatório)
+  // Captura o conteúdo gerado
   const pacote = {
     nome: nome,
     data: data,
@@ -1157,7 +1156,7 @@ async function abrirPremium() {
 
   localStorage.setItem("relatorioPiramide", JSON.stringify(pacote));
 
-  // 4. Abre o prêmio e volta para o início
+  // Nome do arquivo deve ser exatamente este no GitHub
   window.open("matriz-premium.html", "_blank");
   
   setTimeout(() => {
@@ -1168,6 +1167,7 @@ async function abrirPremium() {
   </script>
 </body>
 </html>
+
 
 
 
