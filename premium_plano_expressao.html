@@ -313,9 +313,8 @@ Este texto aborda a complexa estrutura da experiência humana dividida em quatro
         </div>
     `;
 
-    // Pequeno delay para garantir que os gráficos carreguem antes do print
-    setTimeout(() => { window.print(); }, 1200);
-}
+ 
+    
 
 function gerarBarra(label, valor, maior, classe) {
     let pct = maior > 0 ? Math.max((valor / maior) * 100, 5) : 0;
@@ -327,6 +326,10 @@ function gerarBarra(label, valor, maior, classe) {
             </div>
         </div>`;
 }
+    // Pequeno delay para garantir que os gráficos carreguem antes do print
+    setTimeout(() => { window.print(); }, 1200);
+}
+    
 </script>
 </body>
 </html>
