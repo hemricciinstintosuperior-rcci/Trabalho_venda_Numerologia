@@ -115,11 +115,7 @@ body{font-family:"Times New Roman",serif;background:#f4f4f4;margin:0;}
 <div id="conteudo">Gerando relatório...</div>
 
 <script>
-// valida token
-const params=new URLSearchParams(window.location.search);
-if(params.get("token")!=="ABC123"){
- document.body.innerHTML="Acesso inválido"; throw new Error();
-}
+
 
 // recebe dados do gerador
 const dados=localStorage.getItem("relatorioPiramide");
@@ -301,6 +297,7 @@ document.onselectstart=()=>false;
 </body>
 
 </html>
+
 
 
 
