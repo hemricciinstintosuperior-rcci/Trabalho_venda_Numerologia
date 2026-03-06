@@ -52,7 +52,13 @@ input {
   display: block;            
   margin: 10px auto;         
 }
-  
+.bloco-momento img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.5)); /* Dá um destaque legal no ícone */
+}  
 /* MOBILE */
 @media (max-width:768px){
   body{padding:15px;}
@@ -108,6 +114,8 @@ Neutro: <span id="numNeutroNat"></span><div class="bar-bg"><div id="barNeutroNat
 <div id="resumoExpressaoNat" class="resumoMomento" style="margin-top:10px; border-left: 4px solid #a855f7;"></div>  
 </div>
 <div id="resumoNatural" class="resumoMomento"></div>
+
+  
 </section>
 
 <section class="bloco-momento">
@@ -133,9 +141,11 @@ Neutro: <span id="numNeutroMom"></span><div class="bar-bg"><div id="barNeutroMom
     <h3 style="color: #ffd633;">VIBRAÇÃO DE TRÂNSITO DO ANO</h3>
     <div id="resultadoTrânsito"></div>
 </div>
+
+  
 </section>
 
-<script src="textosplano_expressao.js"></script>
+<script src="textos.js"></script>
 <script>
 // ============================================
 // 1. FUNÇÕES DE PERSONALIZAÇÃO (O PULO DO GATO)
@@ -191,29 +201,25 @@ const neuroMapa = {
 9: "Integração neural ampla ligada à empatia coletiva e visão humanitária."
 };
 
+// Mapeamento dos perfis neurocognitivos
 const perfisNeuro = {
-
-fisico:{
-titulo:"Perfil Neural: Executor Motor",
-descricao:"Predominância do sistema motor cerebral. Indica uma mente orientada para ação, movimento e execução prática das ideias."
-},
-
-mental:{
-titulo:"Perfil Neural: Estrategista Cognitivo",
-descricao:"Predominância do córtex pré-frontal. Perfil associado a raciocínio analítico, planejamento e visão estratégica."
-},
-
-emocional:{
-titulo:"Perfil Neural: Integrador Emocional",
-descricao:"Predominância do sistema límbico. Indica forte sensibilidade emocional, empatia e percepção social."
-},
-
-intuitivo:{
-titulo:"Perfil Neural: Observador Introspectivo",
-descricao:"Predominância da rede de reflexão interna (Default Mode Network). Perfil ligado à introspecção, percepção simbólica e reflexão profunda."
-}
-
-};  
+    fisico: {
+        titulo: "Executor Motor",
+        descricao: "Você atua principalmente com ações físicas e respostas rápidas. Sua energia se concentra no corpo e na execução prática das tarefas."
+    },
+    mental: {
+        titulo: "Analítico Mental",
+        descricao: "Sua força está na análise lógica e na resolução de problemas complexos. O pensamento racional domina suas decisões."
+    },
+    emocional: {
+        titulo: "Sensível Emocional",
+        descricao: "Você processa o mundo através das emoções e da empatia. Conecta-se profundamente com sentimentos próprios e alheios."
+    },
+    intuitivo: {
+        titulo: "Intuitivo Estratégico",
+        descricao: "Sua percepção vai além do óbvio. Você capta padrões sutis e conecta ideias de forma criativa e estratégica."
+    }
+};
 
 // ============================================
 // MAPA NEUROCOGNITIVO DOS PLANOS
@@ -483,25 +489,35 @@ Essas atividades fortalecem a capacidade de percepção interna e criatividade.
 `
 };
 
+
+
+
+
+// Mapeamento das imagens correspondentes
+const imagensPerfil = {
+    fisico: "https://hemricciinstintosuperior-rcci.github.io/app-plano-de-expressao/icon-fisico.png",
+    mental: "https://hemricciinstintosuperior-rcci.github.io/app-plano-de-expressao/icon-mental.png",
+    emocional: "https://hemricciinstintosuperior-rcci.github.io/app-plano-de-expressao/icon-emocional.png",
+    intuitivo: "https://hemricciinstintosuperior-rcci.github.io/app-plano-de-expressao/icon-intuitivo.png"
+};
+
+// Função para gerar dominância neurocognitiva
+// Apenas retorna o HTML da dominância
 function gerarDominanciaNeuro(dados){
+    // Determina qual plano tem o maior valorReal
+    let dominante = Object.keys(dados).sort((a,b) => dados[b].valorReal - dados[a].valorReal)[0];
+    let perfil = perfisNeuro[dominante];
+    let urlImagem = imagensPerfil[dominante]; // Puxa o link do seu repositório
 
-let dominante = Object.keys(dados).sort((a,b)=>dados[b].valorReal-dados[a].valorReal)[0];
-
-let perfil = perfisNeuro[dominante];
-
-let html = `
-<h3>Dominância Neurocognitiva</h3>
-
-<p>
-<strong>${perfil.titulo}</strong><br><br>
-${perfil.descricao}
-</p>
-`;
-
-return html;
-
-}  
-  
+    // Retorna o HTML incluindo a imagem centralizada
+    return `
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="${urlImagem}" alt="${perfil.titulo}" style="width: 150px; height: auto; border-radius: 10px;">
+        </div>
+        <h3>Dominância Neurocognitiva</h3>
+        <p><strong>${perfil.titulo}</strong><br><br>${perfil.descricao}</p>
+    `;
+}
 function gerarInterpretacaoNeuro(dados){
 
 let html = "<h3>Análise Neurocognitiva</h3>";
@@ -663,16 +679,17 @@ function planoNatural(nome) {
 
 let textoPlano = gerarTextoPlano("natural", dados);
 
-let textoDominancia = gerarDominanciaNeuro(dados);
 
 let textoNeuro = gerarInterpretacaoNeuro(dados);
   
 let textoEducacao = gerarEducacaoNeuroRetorno();
-
+  
+let resultadoNeuro = gerarDominanciaNeuro(dados);
+  
 document.getElementById("resumoNatural").innerHTML =
 textoPlano +
 "<br><br>" +
-textoDominancia +
+resultadoNeuro +
 "<br><br>" +
 textoNeuro +
 "<br><br>" +
@@ -731,12 +748,15 @@ function gerarStatusMomento() {
         emocional: { nivel: classificarIntensidade(d.emocional, maior), numero: red.emocional, valorReal: d.emocional },
         intuitivo: { nivel: classificarIntensidade(d.intuitivo, maior), numero: red.intuitivo, valorReal: d.intuitivo }
     };
+  
 
 document.getElementById("resumoMomento").innerHTML =
 "No ano de " + ano + " (" + d.intervalo + "):\n\n" +
 gerarTextoPlano("momento", dadosTxt) +
 "<br><br>" +
+  
 gerarDominanciaNeuro(dadosTxt) + "<br><br>" +  
+  
 gerarInterpretacaoNeuro(dadosTxt) +
 "<br><br>" +
 gerarEducacaoNeuroRetorno(); // <-- aqui mesmo, já concatenado
