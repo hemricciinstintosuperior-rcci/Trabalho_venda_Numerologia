@@ -5,7 +5,7 @@ const textosVida={
 
 1:"Início e Liderança. A Potência Regente 1 representa o princípio da individualidade, da iniciativa e da força criadora. Ela rege toda a vida do indivíduo impulsionando-o a agir liderar e abrir caminhos próprios. É a energia do começo da autonomia e da afirmação do eu. No aspecto positivo manifesta liderança natural coragem criatividade inteligência estratégica capacidade de decisão e forte espírito de independência. Indica personalidade ativa inovadora e determinada com potencial para posições de destaque. No aspecto negativo pode gerar egoísmo autoritarismo impulsividade orgulho excessivo e dificuldade em aceitar limites. Quando desequilibrada pode levar ao isolamento e conflitos. A Potência Regente 1 ensina que o verdadeiro líder domina a si mesmo antes de dominar o mundo",
 
-2:"Sensibilidade e Intuição. A Potência Regente 2 representa percepção espiritual sensibilidade emocional e compreensão do invisível. Rege a vida através da intuição empatia e busca por equilíbrio interior. No aspecto positivo manifesta intuição aguçada espiritualidade diplomacia cooperação e profundidade emocional. No aspecto negativo pode gerar insegurança dependência indecisão passividade e fantasia excessiva levando à fuga da realidade. A Potência Regente 2 ensina que a verdadeira força nasce da sensibilidade consciente",
+2:"Sensibilidade e Intuição. A Potência Regente 2 representa percepção espiritual sensibilidade emocional e compreensão do invisível. Rege a vida de  através da intuição empatia e busca por equilíbrio interior. No aspecto positivo manifesta na vida de  intuição aguçada espiritualidade diplomacia cooperação e profundidade emocional. No aspecto negativo pode gerar insegurança dependência indecisão passividade e fantasia excessiva levando  à fuga da realidade. A Potência Regente 2 ensina para  que a verdadeira força nasce da sensibilidade consciente",
 
 3:"Expressão e Criação. A Potência Regente 3 representa criatividade comunicação e expansão da consciência. Rege a vida pela expressão intelectual artística e emocional. No aspecto positivo manifesta alegria sociabilidade criatividade e inspiração. No aspecto negativo pode gerar dispersão vaidade instabilidade emocional e dificuldade de concluir projetos. A Potência Regente 3 ensina que criatividade precisa de disciplina para virar realização",
 
@@ -602,35 +602,286 @@ const textosPessoal={
 68:"Valor Pessoal e Propósito de Prosperidade Consciente. Na Pirâmide do Destino, a Potência 68 indica acontecimentos ligados ao reconhecimento do próprio valor. A pessoa percebe fases de prosperidade. Esses eventos fazem parte do propósito de aprender a valorizar a si mesmo. A Potência 68 revela um destino guiado pela abundância.",
 69:"Plenitude e Propósito de Realização Completa. Na Pirâmide do Destino, a Potência 69 indica acontecimentos de colheita e satisfação pessoal. A pessoa percebe fases de realização plena. Esses eventos fazem parte do propósito de experimentar plenitude. A Potência 69 revela um destino guiado pela realização.",
 70:"Autossuficiência e Propósito de Consolidação. Na Pirâmide do Destino, a Potência 70 indica acontecimentos ligados à estabilidade material. A pessoa percebe fases de consolidação. Esses eventos fazem parte do propósito de construir segurança. A Potência 70 revela um destino guiado pela estabilidade.",
-71:"Experiência e Propósito de Sabedoria. Na Pirâmide do Destino, a Potência 71 indica acontecimentos que ensinam por meio da experiência. A pessoa percebe a importância de preservar conquistas. A Potência 71 revela um destino guiado pela maturidade.",
-72:"Direcionamento e Propósito de Clareza. Na Pirâmide do Destino, a Potência 72 indica acontecimentos que trazem clareza e decisões importantes. A Potência 72 revela um destino guiado pela lucidez.",
-73:"Trocas e Propósito de Expansão Social. Na Pirâmide do Destino, a Potência 73 indica acontecimentos ligados à cooperação. A Potência 73 revela um destino guiado pela troca.",
-74:"Crises e Propósito de Reestruturação. Na Pirâmide do Destino, a Potência 74 indica acontecimentos que exigem reconstrução. A Potência 74 revela um destino guiado pela reorganização.",
-75:"Prosperidade e Propósito de Segurança Material. Na Pirâmide do Destino, a Potência 75 indica acontecimentos ligados à estabilidade financeira. A Potência 75 revela um destino guiado pela segurança.",
-76:"Reconhecimento e Propósito de Consolidação Profissional. Na Pirâmide do Destino, a Potência 76 indica acontecimentos ligados ao reconhecimento. A Potência 76 revela um destino guiado pelo mérito.",
-77:"Despertar e Propósito de Evolução Espiritual. Na Pirâmide do Destino, a Potência 77 indica acontecimentos de transformação espiritual. A Potência 77 revela um destino guiado pela evolução.",
-78:"Alegria e Propósito de Expansão Positiva. Na Pirâmide do Destino, a Potência 78 indica acontecimentos de felicidade e celebração. A Potência 78 revela um destino guiado pela alegria.",
-79:"Libertação e Propósito de Renascimento. Na Pirâmide do Destino, a Potência 79 indica acontecimentos de ruptura com o passado. A Potência 79 revela um destino guiado pelo recomeço.",
-80:"Consolidação e Propósito de Responsabilidade. Na Pirâmide do Destino, a Potência 80 indica acontecimentos que exigem maturidade e estrutura. A Potência 80 revela um destino guiado pela responsabilidade.",
-81:"Carma e Propósito de Consciência. Na Pirâmide do Destino, a Potência 81 indica acontecimentos ligados ao retorno das ações. A Potência 81 revela um destino guiado pela responsabilidade espiritual.",
-82:"Ciclos e Propósito de Aprendizado. Na Pirâmide do Destino, a Potência 82 indica repetição de experiências até o aprendizado. A Potência 82 revela um destino guiado pelos ciclos.",
-83:"Autodomínio e Propósito de Harmonia Interior. Na Pirâmide do Destino, a Potência 83 indica acontecimentos que exigem equilíbrio emocional. A Potência 83 revela um destino guiado pelo autocontrole.",
-84:"Missão e Propósito Coletivo. Na Pirâmide do Destino, a Potência 84 indica acontecimentos ligados à contribuição social. A Potência 84 revela um destino guiado pela missão.",
-85:"Quedas e Propósito de Transformação. Na Pirâmide do Destino, a Potência 85 indica acontecimentos de crise profunda. A Potência 85 revela um destino guiado pela reconstrução.",
-86:"Luta e Propósito de Determinação. Na Pirâmide do Destino, a Potência 86 indica acontecimentos de enfrentamento de obstáculos. A Potência 86 revela um destino guiado pela perseverança.",
-87:"Tentações e Propósito de Autocontrole. Na Pirâmide do Destino, a Potência 87 indica acontecimentos ligados a excessos. A Potência 87 revela um destino guiado pela consciência.",
-88:"Colapsos e Propósito de Renascimento. Na Pirâmide do Destino, a Potência 88 indica acontecimentos radicais de mudança. A Potência 88 revela um destino guiado pela reconstrução.",
-89:"Frustrações e Propósito de Paciência. Na Pirâmide do Destino, a Potência 89 indica acontecimentos de espera. A Potência 89 revela um destino guiado pelo amadurecimento.",
-90:"Silêncio e Propósito de Sabedoria. Na Pirâmide do Destino, a Potência 90 indica acontecimentos de recolhimento espiritual. A Potência 90 revela um destino guiado pela introspecção.",
-91:"Retorno e Propósito de Reparação. Na Pirâmide do Destino, a Potência 91 indica acontecimentos ligados ao retorno das ações passadas. A Potência 91 revela um destino guiado pela reparação.",
-92:"Questionamentos e Propósito de Reavaliação. Na Pirâmide do Destino, a Potência 92 indica acontecimentos de revisão de caminhos. A Potência 92 revela um destino guiado pela reflexão.",
-93:"Consciência e Propósito de Evolução. Na Pirâmide do Destino, a Potência 93 indica acontecimentos ligados ao crescimento espiritual. A Potência 93 revela um destino guiado pela evolução.",
-94:"Transições e Propósito de Redirecionamento. Na Pirâmide do Destino, a Potência 94 indica acontecimentos de encerramento de fases. A Potência 94 revela um destino guiado pela mudança.",
-95:"Reconhecimento e Propósito de Harmonia Social. Na Pirâmide do Destino, a Potência 95 indica acontecimentos ligados à aceitação social. A Potência 95 revela um destino guiado pela integração.",
-96:"Dissolução e Propósito de Libertação do Ego. Na Pirâmide do Destino, a Potência 96 indica acontecimentos que dissolvem ilusões. A Potência 96 revela um destino guiado pela libertação.",
-97:"Rupturas e Propósito de Missão. Na Pirâmide do Destino, a Potência 97 indica acontecimentos que revelam o propósito de vida. A Potência 97 revela um destino guiado pela missão.",
-98:"Reconhecimento e Propósito de Ascensão. Na Pirâmide do Destino, a Potência 98 indica acontecimentos de conquista e poder. A Potência 98 revela um destino guiado pela ascensão.",
-99:"Realização Suprema e Propósito de Sabedoria. Na Pirâmide do Destino, a Potência 99 indica acontecimentos de culminação e sabedoria. A Potência 99 revela um destino guiado pela plenitude."};
+71: `Expansão da Consciência
+
+<p>Durante a vigência da potência 71, você pode perceber um movimento interior voltado à ampliação da consciência sobre a própria jornada. Surge uma sensação de que certos acontecimentos passam a fazer mais sentido, como se partes da experiência começassem a se conectar em uma compreensão mais ampla.</p>
+
+<p>Essa influência pode despertar em você reflexões profundas sobre escolhas, valores e direções futuras. Ao mesmo tempo, pode surgir a percepção de que algumas situações aparecem como estímulos para desenvolver maior clareza mental e espiritual.</p>
+
+<p>Nesse período, você pode sentir que existe um chamado silencioso para observar a vida com mais profundidade. A potência 71 costuma estimular crescimento interior e percepção ampliada sobre o significado das experiências vividas.</p>
+`,
+
+72: `Sensibilidade e Intuição
+
+<p>Durante a vigência da potência 72, você pode perceber um aumento na sensibilidade em relação aos acontecimentos ao redor. Surge a sensação de captar nuances, sinais ou sentimentos que normalmente passariam despercebidos no cotidiano.</p>
+
+<p>Essa influência pode despertar uma atenção maior à própria intuição, levando você a confiar mais nas percepções internas ao avaliar pessoas, situações ou decisões importantes.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino se manifesta de forma sutil, através de pequenas coincidências ou impressões internas. A potência 72 costuma favorecer percepção intuitiva e compreensão emocional mais refinada.</p>
+`,
+
+73: `Criatividade e Expressão
+
+<p>Durante a vigência da potência 73, você pode perceber um impulso voltado à expressão de ideias, sentimentos ou talentos que fazem parte da sua natureza. Surge uma sensação de que compartilhar pensamentos ou criar algo novo passa a ter significado especial.</p>
+
+<p>Essa influência pode estimular comunicação, criatividade e abertura para novas formas de expressão pessoal. Ao mesmo tempo, pode surgir a percepção de que certas inspirações aparecem como oportunidades de crescimento.</p>
+
+<p>Nesse período, você pode sentir que o destino favorece momentos de manifestação criativa. A potência 73 costuma indicar uma fase em que ideias encontram espaço para ganhar forma.</p>
+`,
+
+74: `Disciplina e Estrutura
+
+<p>Durante a vigência da potência 74, você pode perceber uma necessidade maior de organização, disciplina e construção de bases sólidas para o futuro. Surge a sensação de que determinados objetivos exigem planejamento e constância.</p>
+
+<p>Essa influência pode levar você a refletir sobre responsabilidades e sobre a importância de manter firmeza diante de desafios ou tarefas que exigem dedicação prolongada.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino convida à construção gradual de algo significativo. A potência 74 costuma estimular perseverança e fortalecimento das estruturas da vida.</p>
+`,
+
+75: `Movimento e Transformação
+
+<p>Durante a vigência da potência 75, você pode perceber um período de movimento e mudanças progressivas. Surge a sensação de que situações começam a se deslocar, abrindo espaço para novos caminhos ou novas experiências.</p>
+
+<p>Essa influência pode despertar coragem para experimentar direções diferentes ou reconsiderar decisões que antes pareciam definitivas. Ao mesmo tempo, pode surgir a percepção de que certas mudanças fazem parte de um processo natural de evolução.</p>
+
+<p>Nesse período, você pode sentir que o destino impulsiona transformações necessárias para o crescimento. A potência 75 costuma representar adaptação e dinamismo diante da vida.</p>
+`,
+
+76: `Avaliação e Ajuste
+
+<p>Durante a vigência da potência 76, você pode perceber um momento propício para avaliação das próprias escolhas e dos caminhos percorridos até aqui. Surge a sensação de que analisar experiências recentes pode revelar aprendizados importantes.</p>
+
+<p>Essa influência pode levar você a observar com atenção os resultados de decisões passadas, percebendo o que precisa ser ajustado para que a trajetória continue de forma mais equilibrada.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino oferece oportunidades de correção e refinamento do caminho. A potência 76 costuma favorecer revisão consciente e amadurecimento.</p>
+`,
+
+77: `Introspecção e Sabedoria
+
+<p>Durante a vigência da potência 77, você pode perceber um impulso voltado à introspecção e à busca de compreensão mais profunda da própria existência. Surge a sensação de que momentos de silêncio ou reflexão passam a ter valor especial.</p>
+
+<p>Essa influência pode despertar interesse por conhecimento interior, filosofia ou espiritualidade, levando você a questionar aspectos mais profundos da vida.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino convida à contemplação e ao desenvolvimento da sabedoria. A potência 77 costuma representar profundidade de pensamento e crescimento interior.</p>
+`,
+
+78: `Superação e Renovação
+
+<p>Durante a vigência da potência 78, você pode perceber um movimento de superação de desafios que anteriormente pareciam difíceis de resolver. Surge a sensação de que certas barreiras começam a perder força à medida que novas compreensões surgem.</p>
+
+<p>Essa influência pode estimular coragem para enfrentar situações que exigem determinação e clareza. Ao mesmo tempo, pode surgir a percepção de que cada dificuldade carrega também uma oportunidade de renovação.</p>
+
+<p>Nesse período, você pode sentir que o destino favorece processos de reconstrução e fortalecimento interior. A potência 78 costuma indicar superação e renovação de perspectivas.</p>
+`,
+
+79: `Síntese e Aprendizado
+
+<p>Durante a vigência da potência 79, você pode perceber um momento de síntese das experiências vividas recentemente. Surge a sensação de que aprendizados acumulados começam a revelar uma compreensão mais clara sobre o próprio caminho.</p>
+
+<p>Essa influência pode levar você a reconhecer padrões, perceber evoluções pessoais e compreender melhor o sentido de determinados acontecimentos.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino oferece a oportunidade de integrar experiências e transformar conhecimento em sabedoria prática. A potência 79 costuma favorecer entendimento profundo da própria jornada.</p>
+`,
+
+80: `Estabilidade e Consolidação
+
+<p>Durante a vigência da potência 80, você pode perceber um período voltado à consolidação de estruturas e resultados obtidos ao longo do tempo. Surge a sensação de que certos esforços começam a mostrar sinais de estabilidade.</p>
+
+<p>Essa influência pode despertar uma postura mais firme diante das responsabilidades, incentivando continuidade em projetos ou compromissos importantes.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino estimula a manutenção daquilo que já foi construído com dedicação. A potência 80 costuma representar estabilidade, maturidade e fortalecimento das bases da vida.</p>
+`,
+
+81: `Renovação Interior
+
+<p>Durante a vigência da potência 81, você pode perceber um movimento silencioso de renovação interior. Surge a sensação de que certas ideias, valores ou percepções começam a se reorganizar internamente, como se uma nova compreensão sobre a própria trajetória estivesse se formando pouco a pouco.</p>
+
+<p>Essa influência pode despertar reflexões profundas sobre escolhas passadas e caminhos futuros. Ao observar experiências recentes, você pode perceber que alguns acontecimentos funcionam como estímulos para transformar atitudes ou formas de interpretar a realidade.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino conduz processos de renovação que ocorrem primeiro no campo da consciência. A potência 81 costuma indicar um momento de reestruturação interna que prepara novas fases da jornada.</p>
+`,
+
+82: `Equilíbrio e Ajuste
+
+<p>Durante a vigência da potência 82, você pode perceber uma necessidade maior de equilíbrio entre diferentes áreas da vida. Surge a sensação de que determinadas situações pedem mais atenção para manter harmonia entre responsabilidades, emoções e decisões.</p>
+
+<p>Essa influência pode estimular observação cuidadosa das próprias atitudes, favorecendo ajustes que tragam maior estabilidade ao cotidiano. Ao mesmo tempo, você pode perceber que pequenas mudanças produzem efeitos importantes no conjunto da experiência.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino estimula correções sutis que ajudam a alinhar caminhos e intenções. A potência 82 costuma favorecer equilíbrio, moderação e consciência nas escolhas.</p>
+`,
+
+83: `Expressão e Realização
+
+<p>Durante a vigência da potência 83, você pode perceber um impulso voltado à expressão de ideias, talentos ou projetos que estavam aguardando oportunidade para se manifestar. Surge a sensação de que certas iniciativas encontram condições mais favoráveis para ganhar forma.</p>
+
+<p>Essa influência pode estimular criatividade, comunicação e iniciativa, incentivando você a compartilhar conhecimentos ou desenvolver atividades que refletem sua identidade.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino abre espaço para manifestação de potenciais que estavam em preparação. A potência 83 costuma indicar realização por meio da expressão pessoal e do uso consciente das próprias capacidades.</p>
+`,
+
+84: `Estrutura e Responsabilidade
+
+<p>Durante a vigência da potência 84, você pode perceber uma fase que exige maior senso de responsabilidade e construção de bases sólidas para o futuro. Surge a sensação de que certas decisões pedem maturidade e organização.</p>
+
+<p>Essa influência pode estimular planejamento, disciplina e foco em objetivos concretos. Ao mesmo tempo, você pode perceber que a estabilidade se constrói através de escolhas consistentes e compromisso com aquilo que se pretende realizar.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino direciona atenção para a consolidação de estruturas importantes na vida. A potência 84 costuma representar construção gradual, responsabilidade e fortalecimento das bases da jornada.</p>
+`,
+
+85: `Mudança e Adaptação
+
+<p>Durante a vigência da potência 85, você pode perceber um período de mudanças e movimentações que convidam à adaptação. Surge a sensação de que algumas situações começam a se transformar, exigindo flexibilidade para acompanhar novos cenários.</p>
+
+<p>Essa influência pode despertar curiosidade por experiências diferentes ou incentivar revisão de estratégias que já não produzem os mesmos resultados.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino promove transformações necessárias para ampliar horizontes. A potência 85 costuma indicar dinamismo, aprendizado através da mudança e abertura para novas possibilidades.</p>
+`,
+
+86: `Consciência e Responsabilidade Emocional
+
+<p>Durante a vigência da potência 86, você pode perceber uma sensibilidade maior em relação às próprias emoções e às relações ao redor. Surge a sensação de que compreender sentimentos e responsabilidades afetivas torna-se parte importante da experiência.</p>
+
+<p>Essa influência pode estimular empatia, cuidado com vínculos e reflexão sobre a forma como atitudes influenciam pessoas próximas.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino conduz aprendizados ligados à maturidade emocional. A potência 86 costuma favorecer consciência afetiva, equilíbrio nas relações e desenvolvimento da responsabilidade interior.</p>
+`,
+
+87: `Busca de Conhecimento
+
+<p>Durante a vigência da potência 87, você pode perceber um impulso voltado à busca de conhecimento e compreensão mais profunda sobre a vida. Surge a sensação de que investigar ideias, estudar ou refletir sobre experiências passa a ter significado especial.</p>
+
+<p>Essa influência pode estimular curiosidade intelectual e interesse por temas que ampliem a visão sobre a existência e sobre a própria jornada.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino estimula crescimento através da sabedoria e da investigação consciente. A potência 87 costuma representar aprendizado, reflexão e expansão do entendimento.</p>
+`,
+
+88: `Realização e Poder de Manifestação
+
+<p>Durante a vigência da potência 88, você pode perceber um período ligado à manifestação de resultados concretos. Surge a sensação de que esforços anteriores começam a revelar consequências mais visíveis.</p>
+
+<p>Essa influência pode estimular senso de direção, ambição equilibrada e foco na realização de objetivos que exigem liderança ou capacidade de organização.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino favorece materialização de ideias e fortalecimento da capacidade de realização. A potência 88 costuma representar poder de construção, prosperidade e responsabilidade diante dos resultados alcançados.</p>
+`,
+
+89: `Integração e Maturidade
+
+<p>Durante a vigência da potência 89, você pode perceber um momento de integração das experiências acumuladas ao longo do tempo. Surge a sensação de que aprendizados anteriores começam a formar uma compreensão mais madura da própria trajetória.</p>
+
+<p>Essa influência pode estimular reflexão sobre o sentido das escolhas e sobre o crescimento obtido através dos desafios enfrentados.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino conduz a uma fase de síntese e amadurecimento. A potência 89 costuma indicar integração de conhecimentos e fortalecimento da consciência sobre o próprio caminho.</p>
+`,
+
+90: `Encerramento de Ciclo
+
+<p>Durante a vigência da potência 90, você pode perceber sinais de conclusão ou encerramento de determinados processos na vida. Surge a sensação de que algumas experiências cumprem seu papel e começam a se encaminhar para um fechamento natural.</p>
+
+<p>Essa influência pode estimular desapego em relação a situações que já não possuem o mesmo significado, abrindo espaço para novas etapas.</p>
+
+<p>Nesse período, pode surgir a percepção de que o destino conduz ao término de um ciclo importante. A potência 90 costuma representar finalização, compreensão das lições vividas e preparação para novos começos.</p>
+`,
+
+91: `Transição e Nova Direção
+
+<p>Durante a vigência da potência 91, você pode perceber a sensação de que um ciclo interno começa a se reorganizar em direção a novos caminhos. Surge a percepção de que experiências anteriores deixam ensinamentos que agora servem como base para escolhas mais conscientes.</p>
+
+<p>Nesse período, acontecimentos ou reflexões podem despertar a ideia de mudança de direção. Não necessariamente uma ruptura imediata, mas um entendimento gradual de que determinados caminhos passam a perder força enquanto novas possibilidades começam a surgir.</p>
+
+<p>Essa influência costuma indicar um momento em que o destino parece sugerir ajustes de rota. Ao observar as situações com atenção, você pode perceber sinais que convidam à revisão de planos, atitudes ou expectativas.</p>
+
+<p>A potência 91 favorece consciência sobre transições importantes. A percepção principal deste período está ligada à capacidade de reconhecer quando um ciclo se transforma e quando uma nova direção começa a se formar.</p>
+`,
+
+92: `Sensibilidade e Percepção Ampliada
+
+<p>Durante a vigência da potência 92, você pode perceber maior sensibilidade em relação ao ambiente, às pessoas e às situações ao redor. Surge a sensação de captar nuances que antes passavam despercebidas.</p>
+
+<p>Nesse período, pequenos acontecimentos podem despertar reflexões profundas. Conversas, atitudes ou circunstâncias aparentemente simples podem revelar significados mais amplos quando observadas com atenção.</p>
+
+<p>Essa influência costuma indicar uma fase em que o destino estimula percepção mais refinada sobre relações e contextos. A leitura das situações pode se tornar mais intuitiva e cuidadosa.</p>
+
+<p>A potência 92 favorece sensibilidade e observação consciente. A principal percepção desse ciclo envolve compreender melhor o que acontece ao redor e interpretar sinais que ajudam a orientar decisões futuras.</p>
+`,
+
+93: `Expressão e Movimento Criativo
+
+<p>Durante a vigência da potência 93, você pode perceber um impulso voltado à expressão de ideias, pensamentos ou projetos. Surge a sensação de que existe algo interno buscando forma ou manifestação no mundo externo.</p>
+
+<p>Nesse período, atividades ligadas à comunicação, criatividade ou desenvolvimento de projetos podem ganhar maior relevância. A mente tende a buscar novas formas de transformar ideias em ações.</p>
+
+<p>Essa influência costuma indicar uma fase em que o destino estimula movimento criativo e abertura para novas possibilidades de expressão pessoal.</p>
+
+<p>A potência 93 favorece dinamismo intelectual e iniciativa criativa. A percepção central desse período envolve reconhecer oportunidades de manifestar talentos, ideias ou iniciativas que refletem crescimento interior.</p>
+`,
+
+94: `Estrutura e Consolidação
+
+<p>Durante a vigência da potência 94, você pode perceber um chamado interno para organizar melhor objetivos, responsabilidades e prioridades. Surge a sensação de que certos aspectos da vida pedem maior estrutura e planejamento.</p>
+
+<p>Nesse período, reflexões sobre estabilidade, segurança e construção de bases sólidas podem ganhar destaque. Decisões tomadas agora tendem a considerar consequências mais duradouras.</p>
+
+<p>Essa influência costuma indicar uma fase em que o destino direciona atenção para a construção consciente de caminhos mais estáveis e consistentes.</p>
+
+<p>A potência 94 favorece disciplina, responsabilidade e organização. A percepção principal desse ciclo envolve compreender que algumas conquistas dependem de estrutura, constância e planejamento cuidadoso.</p>
+`,
+
+95: `Mudança e Reavaliação
+
+<p>Durante a vigência da potência 95, você pode perceber um período marcado por revisões e transformações em ideias ou planos que antes pareciam definidos. Surge a sensação de que determinadas situações pedem adaptação.</p>
+
+<p>Nesse período, acontecimentos podem estimular reavaliação de escolhas, hábitos ou estratégias. Aquilo que parecia estável pode revelar necessidade de ajuste ou atualização.</p>
+
+<p>Essa influência costuma indicar uma fase em que o destino promove movimento e renovação de perspectivas. Mudanças podem funcionar como oportunidades de crescimento.</p>
+
+<p>A potência 95 favorece flexibilidade e abertura para novos caminhos. A percepção central desse período envolve compreender que transformação também faz parte do processo de evolução pessoal.</p>
+`,
+
+96: `Consciência Emocional
+
+<p>Durante a vigência da potência 96, você pode perceber maior atenção aos sentimentos, vínculos e responsabilidades afetivas. Surge a sensação de que compreender emoções próprias e alheias se torna parte importante da experiência.</p>
+
+<p>Nesse período, situações envolvendo relações ou convivência podem despertar reflexões sobre cuidado, empatia e maturidade emocional.</p>
+
+<p>Essa influência costuma indicar uma fase em que o destino estimula crescimento interior através da consciência emocional e do entendimento das relações humanas.</p>
+
+<p>A potência 96 favorece sensibilidade e responsabilidade afetiva. A percepção principal desse ciclo envolve reconhecer a importância do equilíbrio emocional na construção de relações mais conscientes.</p>
+`,
+
+97: `Busca de Sabedoria
+
+<p>Durante a vigência da potência 97, você pode perceber um impulso voltado à investigação, ao estudo ou à reflexão mais profunda sobre a vida. Surge a sensação de que compreender melhor certas questões torna-se uma necessidade interior.</p>
+
+<p>Nesse período, leituras, pesquisas ou momentos de introspecção podem despertar novas perspectivas sobre experiências já vividas.</p>
+
+<p>Essa influência costuma indicar uma fase em que o destino incentiva crescimento através do conhecimento e da ampliação da consciência.</p>
+
+<p>A potência 97 favorece investigação, reflexão e aprendizado contínuo. A percepção central desse período envolve buscar compreensão mais ampla sobre os acontecimentos e sobre a própria jornada.</p>
+`,
+
+98: `Realização e Manifestação
+
+<p>Durante a vigência da potência 98, você pode perceber uma tendência de concretização de esforços ou iniciativas desenvolvidas ao longo do tempo. Surge a sensação de que determinadas ações começam a revelar resultados mais claros.</p>
+
+<p>Nesse período, decisões práticas e organização de recursos podem ganhar destaque. A atenção se volta para a realização concreta de objetivos.</p>
+
+<p>Essa influência costuma indicar uma fase em que o destino favorece manifestação de resultados e consolidação de projetos.</p>
+
+<p>A potência 98 favorece materialização de ideias e responsabilidade diante das conquistas obtidas. A percepção principal desse ciclo envolve compreender como esforço e direção consciente produzem resultados na realidade.</p>
+`,
+
+99: `Conclusão e Integração
+
+<p>Durante a vigência da potência 99, você pode perceber a sensação de fechamento de um ciclo amplo de experiências e aprendizados. Surge a percepção de que muitas situações vividas ao longo do tempo começam a revelar um sentido mais claro.</p>
+
+<p>Nesse período, reflexões sobre a trajetória percorrida podem trazer entendimento sobre escolhas, desafios e conquistas.</p>
+
+<p>Essa influência costuma indicar uma fase em que o destino conduz à integração das experiências vividas, permitindo compreender o conjunto da jornada com maior maturidade.</p>
+
+<p>A potência 99 favorece conclusão, síntese e preparação para novos ciclos. A percepção central desse período envolve reconhecer os aprendizados acumulados e encerrar etapas com consciência e compreensão ampliada.</p>
+`,
+
+  };  
 
 // 🚨 TEXTOS SEQUÊNCIAS NEGATIVAS
 const textosSeqNeg = {
@@ -860,3 +1111,4 @@ destino: `
 `
 
 };  
+
