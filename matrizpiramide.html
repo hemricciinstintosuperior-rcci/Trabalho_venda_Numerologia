@@ -49,18 +49,7 @@ Data de nascimento<input type="date" id="data">
 <script src="textosmatriz.js"></script>
 
 <script>
-// --- TRAVA FIREBASE ---
-const urlParams = new URLSearchParams(window.location.search);
-const userEmail = urlParams.get('user'); 
-const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-async function verificarAcesso() {
-    if (!userEmail) { window.location.href = "index.html"; return; }
-    const res = await fetch(`${DB_URL}vendas/${userEmail}.json`);
-    const d = await res.json();
-    if (d && d.status === 'usado') { alert("Acesso expirado."); window.location.href = "index.html"; }
-}
-verificarAcesso();
 
 const mapa = { A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6,X:6, O:7,Z:7, F:8,P:8 };
 
@@ -305,7 +294,18 @@ function gerar() {
 
     mostrarAba('principal');
 }
+// --- TRAVA FIREBASE ---
+const urlParams = new URLSearchParams(window.location.search);
+const userEmail = urlParams.get('user'); 
+const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
+async function verificarAcesso() {
+    if (!userEmail) { window.location.href = "index.html"; return; }
+    const res = await fetch(`${DB_URL}vendas/${userEmail}.json`);
+    const d = await res.json();
+    if (d && d.status === 'usado') { alert("Acesso expirado."); window.location.href = "index.html"; }
+}
+verificarAcesso();
 async function abrirPremium() {
     if(!pirPrincipal) return alert("Gere primeiro!");
     await fetch(`${DB_URL}vendas/${userEmail}.json`, { method: 'PATCH', body: JSON.stringify({ status: 'usado' }) });
@@ -324,5 +324,6 @@ async function abrirPremium() {
 </script>
 </body>
 </html>
+
 
 
