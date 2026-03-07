@@ -3,39 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <title>Pirâmide da Vida Quântica</title>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#111827">
 <style>
-/* Mantive todo o seu CSS original para não mudar o visual */
-body{ font-family: Arial; background:#ffffff; color:#000; text-align:center; }
-input,button{ padding:10px; margin:5px; border-radius:6px; border:none; }
-input { width: 600px; font-size: 18px; padding: 14px; background-color: #e5e7eb; border: 1px solid #ccc; color: #333; display: block; margin: 10px auto; }
-button{ background:#facc15; font-weight:bold; cursor:pointer; }
-.piramide{ font-family: monospace; font-size:12px; line-height:0.7; text-align:center; }
-.piramide.compacta{ font-size:12px; line-height:1.2; }
-.linha{ display:flex; justify-content:center; gap:6px; margin:2px; }
-.num{ background:#28d3ee; color:#000; padding:4px 7px; border-radius:6px; font-weight:bold; font-size:16px; min-width:18px; }
-.negativo{ background:#FF0000!important; color:#fff !important; }
-.box{ background:#ffffff; border:2px solid #000; padding:15px; margin:15px auto; border-radius:10px; max-width:800px; }
-.gridRelatorios{ display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; margin-top:25px; }
-.aba{ margin-top:20px; display:none; }
-.num.negativo{ background:#ff6b6b; color:white; }
-.num.especial{ background:#f6c445; color:#000; box-shadow:0 0 10px rgba(246,196,69,0.8); }
-.num.financeiro{ background:#34c759; color:white; box-shadow:0 0 12px rgba(52,199,89,0.9); }
-@media (max-width: 768px) { input { width: 90% !important; } }
+    /* MANTIDO SEU CSS ORIGINAL COMPLETO */
+    body{ font-family: Arial; background:#ffffff; color:#000; text-align:center; }
+    input,button{ padding:10px; margin:5px; border-radius:6px; border:none; }
+    input { width: 600px; font-size: 18px; padding: 14px; background-color: #e5e7eb; border: 1px solid #ccc; color: #333; display: block; margin: 10px auto; }
+    button{ background:#facc15; font-weight:bold; cursor:pointer; }
+    .piramide{ font-family: monospace; font-size:12px; line-height:0.7; text-align:center; margin-bottom: 20px;}
+    .piramide.compacta{ font-size:12px; line-height:1.2; }
+    .linha{ display:flex; justify-content:center; gap:6px; margin:2px; }
+    .num{ background:#28d3ee; color:#000; padding:4px 7px; border-radius:6px; font-weight:bold; font-size:16px; min-width:18px; }
+    
+    /* CORES DAS SUAS REGRAS ESPECIAIS */
+    .num.negativo{ background:#ff6b6b !important; color:white !important; } /* Vermelho para repetições */
+    .num.especial{ background:#f6c445 !important; color:#000 !important; box-shadow:0 0 10px rgba(246,196,69,0.8); } /* Dourado para Arcanos 3 dígitos */
+    .num.financeiro{ background:#34c759 !important; color:white !important; box-shadow:0 0 12px rgba(52,199,89,0.9); } /* Verde para 99/9 */
+    
+    .box{ background:#ffffff; border:2px solid #000; padding:15px; margin:15px auto; border-radius:10px; max-width:800px; text-align: left; }
+    .gridRelatorios{ display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; margin-top:25px; }
+    .aba{ margin-top:20px; display:none; }
+    @media (max-width: 768px) { input { width: 90% !important; } .gridRelatorios{ grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 
 <h2>Matriz Quântica da Vida</h2>
-Nome completo igual a certidão<input id="nome" placeholder="">
-Data de nascimento<input type="date" id="data">
+<input id="nome" placeholder="Nome completo igual a certidão">
+<input type="date" id="data">
 
 <button onclick="gerar()">GERAR AS MATRIZES</button>
 <button onclick="abrirPremium()">LIBERAR O RELATÓRIO E BAIXAR O PDF</button>
 
 <div class="folhaRelatorio">
-    <div id="resultado"></div>
     <div class="abas">
         <button onclick="mostrarAba('principal')">Principal / Vida</button>
         <button onclick="mostrarAba('pessoal')">Pessoal</button>
@@ -52,115 +51,97 @@ Data de nascimento<input type="date" id="data">
 <script src="textosmatriz.js"></script>
 
 <script>
-// --- CONFIGURAÇÃO DE SEGURANÇA E TRAVA ATIVA ---
+// --- CONFIGURAÇÃO DE SEGURANÇA FIREBASE ---
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-// Variáveis Globais para controle
-let pirPrincipalGlobal = null;
-
-// 🛡️ TRAVA DE ENTRADA: Verifica se o e-mail já foi usado ANTES de qualquer coisa
-async function verificarStatusInicial() {
-    if (!userEmail) {
-        alert("Acesso não autorizado.");
-        window.location.href = "index.html";
-        return;
-    }
-    try {
-        const response = await fetch(`${DB_URL}vendas/${userEmail}.json`);
-        const dados = await response.json();
-        if (dados && dados.status === 'usado') {
-            alert("Este acesso já foi utilizado e o relatório gerado.");
-            window.location.href = "index.html";
-        }
-    } catch (e) { console.error("Erro na trava:", e); }
+// Trava de entrada (Se já usado, expulsa)
+async function verificarAcesso() {
+    if (!userEmail) { window.location.href = "index.html"; return; }
+    const res = await fetch(`${DB_URL}vendas/${userEmail}.json`);
+    const d = await res.json();
+    if (d && d.status === 'usado') { alert("Acesso expirado."); window.location.href = "index.html"; }
 }
-verificarStatusInicial();
+verificarAcesso();
 
-// --- LÓGICA DE CÁLCULO (MANTIDA) ---
+// --- MAPA CABALÍSTICO ---
 const mapa = { A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6,X:6, O:7,Z:7, F:8,P:8 };
 
-function valorLetra(letra){
-    if(!letra || letra===" ") return 0;
-    let normal = letra.normalize("NFD");
-    let base = normal[0], acentos = normal.slice(1);
-    let vB = mapa[base] ?? 0;
-    let sA = 0, mA = 1;
-    for(let a of acentos){
-        if(a==="\u0301") sA+=2; else if(a==="\u0302") sA+=7; else if(a==="\u0303") sA+=3;
-        else if(a==="\u0327") sA+=6; else if(a==="\u0300" || a==="\u0308") mA*=2;
+function valorLetra(l){
+    if(!l || l===" ") return 0;
+    let n = l.normalize("NFD"), b = n[0], ac = n.slice(1);
+    let v = mapa[b] ?? 0, s = 0, m = 1;
+    for(let a of ac){
+        if(a==="\u0301") s+=2; else if(a==="\u0302") s+=7; else if(a==="\u0303") s+=3;
+        else if(a==="\u0327") s+=6; else if(a==="\u0300" || a==="\u0308") m*=2;
     }
-    return (vB + sA) * mA;
+    return (v + s) * m;
 }
 
 function reduzir(n){ while(n>9){ n=n.toString().split('').reduce((a,b)=>+a+ +b,0); } return n; }
-function nomeNumeros(nome){ return nome.toUpperCase().split('').map(l=>valorLetra(l)).filter(v=>v>0); }
+
 function piramide(base){
     let linhas=[base];
     while(base.length>1){
         let nova=[];
-        for(let i=0;i<base.length-1;i++){ nova.push(reduzir(base[i]+base[i+1])); }
+        for(let i=0;i<base.length-1;i++) nova.push(reduzir(base[i]+base[i+1]));
         linhas.push(nova); base=nova;
     }
     return linhas;
 }
-function topo(base){
-    let arcanos = [];
-    for(let i=0; i<base.length-1; i++){ arcanos.push(parseInt("" + base[i] + base[i+1])); }
-    return arcanos;
-}
 
-// --- SINCRONIZADOR DE TEMPO MESTRE ---
-function gerarCronogramaMestre(arcanosVida, data) {
-    let crono = []; const [y, m, d] = data.split("-").map(Number);
-    let atual = new Date(y, m-1, d); let idade = 0, ciclo = 0;
-    while (idade < 100) {
-        let n = arcanosVida[ciclo % arcanosVida.length];
-        let anos = parseInt(n.toString()[0]) || 1;
-        let ini = new Date(atual); atual.setFullYear(atual.getFullYear() + anos);
-        crono.push({ idadeIni: idade, idadeFim: idade + anos, ini: ini.toLocaleDateString('pt-BR'), fim: atual.toLocaleDateString('pt-BR'), idx: ciclo });
-        idade += anos; ciclo++;
-    }
-    return crono;
-}
+// --- DETECTORES ORIGINAIS RESTAURADOS ---
 
-function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa) {
-    let h = "<div class='box'><h3>⏳ Vigências</h3>";
-    cronograma.forEach(p => {
-        let n = arcanosDaPiramide[p.idx % arcanosDaPiramide.length];
-        h += `<div class="box"><h3>🔹 Potência ${n}</h3><b>Idade:</b> ${p.idadeIni} → ${p.idadeFim} anos<br><b>Período:</b> ${p.ini} - ${p.fim}<br><br>${textosMapa[n] || "Interpretação em análise."}</div>`;
-    });
-    return h + "</div>";
-}
-
-// --- DETECTORES VISUAIS ---
-function detectarSequencias(linhas){
-    let pN=[]; let seq=[];
-    linhas.forEach((lin, i)=>{
+// 1. Sequências Negativas (repetidos 3x ou mais)
+function detNeg(linhas){
+    let pos=[];
+    linhas.forEach((lin,i)=>{
         let c=1;
         for(let j=1;j<lin.length;j++){
-            if(lin[j] === lin[j-1]) c++;
-            else { if(c>=3){ seq.push({n:lin[j-1], r:c}); for(let k=j-c;k<j;k++) pN.push({l:i,idx:k}); } c=1; }
+            if(lin[j]===lin[j-1]) c++;
+            else { if(c>=3) for(let k=j-c;k<j;k++) pos.push({l:i,idx:k}); c=1; }
         }
-        if(c>=3){ seq.push({n:lin[lin.length-1], r:c}); for(let k=lin.length-c;k<lin.length;k++) pN.push({l:i,idx:k}); }
+        if(c>=3) for(let k=lin.length-c;k<lin.length;k++) pos.push({l:i,idx:k});
     });
-    return {seq, pN};
+    return pos;
 }
 
-const sequenciasEspeciaisCodigos = ["116","123","252","575","757","922","923","924","925","926","927"];
+// 2. Sequências Especiais (Arcanos de 3 dígitos: 116, 575, etc)
+const seqEspLista = ["116","123","252","575","757","922","923","924","925","926","927"];
+function detEsp(linhas){
+    let pos=[];
+    linhas.forEach((lin,i)=>{
+        for(let j=0; j<lin.length-2; j++){
+            let s = ""+lin[j]+lin[j+1]+lin[j+2];
+            if(seqEspLista.includes(s)) pos.push({l:i,idx:j},{l:i,idx:j+1},{l:i,idx:j+2});
+        }
+    });
+    return pos;
+}
 
-function desenhar(linhas, compacta=false){
-    let cl = compacta ? "piramide compacta" : "piramide";
-    const neg = detectarSequencias(linhas).pN;
-    let h=`<div class="${cl}">`;
+// 3. Sequência Financeira (99 com 9 embaixo)
+function detFin(linhas){
+    let pos=[];
+    for(let i=0; i<linhas.length-1; i++){
+        for(let j=0; j<linhas[i].length-1; j++){
+            if(linhas[i][j]===9 && linhas[i][j+1]===9 && linhas[i+1][j]===9)
+                pos.push({l:i,idx:j},{l:i,idx:j+1},{l:i+1,idx:j});
+        }
+    }
+    return pos;
+}
+
+function desenhar(linhas){
+    const neg = detNeg(linhas), esp = detEsp(linhas), fin = detFin(linhas);
+    let h=`<div class="piramide compacta">`;
     linhas.forEach((lin,i)=>{
         h += `<div class="linha">`;
         lin.forEach((n,j)=>{
             let c = "num";
             if(neg.some(p=>p.l===i && p.idx===j)) c+=" negativo";
-            // Lógica simples para destaque financeiro e especial
-            if(i < linhas.length-1 && lin[j]===9 && lin[j+1]===9 && linhas[i+1][j]===9) c+=" financeiro";
+            if(esp.some(p=>p.l===i && p.idx===j)) c+=" especial";
+            if(fin.some(p=>p.l===i && p.idx===j)) c+=" financeiro";
             h += `<div class="${c}">${n}</div>`;
         });
         h += `</div>`;
@@ -168,56 +149,81 @@ function desenhar(linhas, compacta=false){
     return h + `</div>`;
 }
 
+// --- LÓGICA DE TEMPO SINCRONIZADA ---
+function gerarCrono(arcanosVida, data) {
+    let crono = []; const [y, m, d] = data.split("-").map(Number);
+    let atual = new Date(y, m-1, d), idade = 0, cic = 0;
+    while (idade < 100) {
+        let n = arcanosVida[cic % arcanosVida.length];
+        let dur = parseInt(n.toString()[0]) || 1;
+        let ini = new Date(atual); atual.setFullYear(atual.getFullYear() + dur);
+        crono.push({ idIni: idade, idFim: idade+dur, ini: ini.toLocaleDateString('pt-BR'), fim: atual.toLocaleDateString('pt-BR'), idx: cic });
+        idade += dur; cic++;
+    }
+    return crono;
+}
+
+function montarVigencias(crono, arcanosPiramide, textos) {
+    let h = "<div class='box'><h3>⏳ Vigências Sincronizadas</h3>";
+    crono.forEach(p => {
+        let n = arcanosPiramide[p.idx % arcanosPiramide.length];
+        h += `<div class="box"><b>${p.idIni} a ${p.idFim} anos</b> (${p.ini} - ${p.fim})<br>
+              <strong>Potência ${n}:</strong> ${textos[n] || "Interpretação disponível no relatório completo."}</div>`;
+    });
+    return h + "</div>";
+}
+
 // --- FUNÇÃO GERAR ---
+let cachePiramide = {};
+
 function gerar() {
-    const nome = document.getElementById("nome").value;
-    const data = document.getElementById("data").value;
+    const nome = document.getElementById("nome").value, data = document.getElementById("data").value;
     if(!nome || !data) return alert("Preencha os dados!");
 
-    const base = nomeNumeros(nome);
+    const base = nome.toUpperCase().split('').map(l=>valorLetra(l)).filter(v=>v>0);
     const [y, m, d] = data.split("-").map(Number);
 
-    const pVida = piramide(base);
-    pirPrincipalGlobal = pVida;
-    const aVida = topo(base);
-    const crono = gerarCronogramaMestre(aVida, data);
-    const reg = pVida.at(-1)[0];
+    // Vida (Mestra do Tempo)
+    const pV = piramide(base), aV = [];
+    for(let i=0; i<base.length-1; i++) aV.push(parseInt(""+base[i]+base[i+1]));
+    const crono = gerarCrono(aV, data);
 
-    // ABA PRINCIPAL
-    document.getElementById("aba_principal").innerHTML = desenhar(pVida, true) + 
-        `<div class="box"><h3>Regente ${reg}</h3>${textosVida[reg] || ''}</div>` +
-        montarVigenciasSincronizadas(crono, aVida, textosVida);
+    // Renderizar Principal
+    document.getElementById("aba_principal").innerHTML = desenhar(pV) + montarVigencias(crono, aV, textosVida);
 
-    // DEMAIS ABAS (Sincronizadas pelo crono da Vida)
-    const pPes = piramide(base.map(n => reduzir(n + reduzir(d))));
-    document.getElementById("aba_pessoal").innerHTML = desenhar(pPes, true) + montarVigenciasSincronizadas(crono, topo(pPes[0]), textosPessoal);
+    // Renderizar Pessoal (Dia)
+    const pP = piramide(base.map(n=>reduzir(n+reduzir(d))));
+    const aP = []; for(let i=0; i<pP[0].length-1; i++) aP.push(parseInt(""+pP[0][i]+pP[0][i+1]));
+    document.getElementById("aba_pessoal").innerHTML = desenhar(pP) + montarVigencias(crono, aP, textosPessoal);
 
-    const pSoc = piramide(base.map(n => reduzir(n + reduzir(m))));
-    document.getElementById("aba_social").innerHTML = desenhar(pSoc, true) + montarVigenciasSincronizadas(crono, topo(pSoc[0]), textosSocial);
+    // Renderizar Social (Mês)
+    const pS = piramide(base.map(n=>reduzir(n+reduzir(m))));
+    const aS = []; for(let i=0; i<pS[0].length-1; i++) aS.push(parseInt(""+pS[0][i]+pS[0][i+1]));
+    document.getElementById("aba_social").innerHTML = desenhar(pS) + montarVigencias(crono, aS, textosSocial);
 
-    const pDes = piramide(base.map(n => reduzir(n + reduzir(reduzir(d) + reduzir(m)))));
-    document.getElementById("aba_destino").innerHTML = desenhar(pDes, true) + montarVigenciasSincronizadas(crono, topo(pDes[0]), textosDestino);
+    // Renderizar Destino (Dia+Mês)
+    const pD = piramide(base.map(n=>reduzir(n+reduzir(reduzir(d)+reduzir(m)))));
+    const aD = []; for(let i=0; i<pD[0].length-1; i++) aD.push(parseInt(""+pD[0][i]+pD[0][i+1]));
+    document.getElementById("aba_destino").innerHTML = desenhar(pD) + montarVigencias(crono, aD, textosDestino);
 
-    mostrarAba('principal');
+    cachePiramide = { ativa: true };
+    alert("Matrizes geradas com sucesso!");
 }
 
-function mostrarAba(nome){
+function mostrarAba(n){
     document.querySelectorAll('.aba').forEach(a=>a.style.display='none');
-    document.getElementById("aba_"+nome).style.display="block";
+    document.getElementById("aba_"+n).style.display="block";
 }
 
-// --- TRAVA DE SAÍDA NO PREMIUM ---
 async function abrirPremium() {
-    if(!pirPrincipalGlobal) return alert("Gere as matrizes primeiro.");
-
-    // MARCA COMO USADO NO FIREBASE AGORA
-    try {
-        await fetch(`${DB_URL}vendas/${userEmail}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ status: 'usado' }),
-            headers: { 'Content-Type': 'application/json' }
-        });
-    } catch (e) { console.error(e); }
+    if(!cachePiramide.ativa) return alert("Gere primeiro!");
+    
+    // TRAVA FINAL
+    await fetch(`${DB_URL}vendas/${userEmail}.json`, {
+        method: 'PATCH',
+        body: JSON.stringify({ status: 'usado' }),
+        headers: { 'Content-Type': 'application/json' }
+    });
 
     const pacote = {
         nome: document.getElementById("nome").value,
@@ -227,12 +233,9 @@ async function abrirPremium() {
         piramideSocial: document.getElementById("aba_social").innerHTML,
         piramideDestino: document.getElementById("aba_destino").innerHTML
     };
-
     localStorage.setItem("relatorioPiramide", JSON.stringify(pacote));
     window.open("matriz-premium.html", "_blank");
-
-    // Redireciona para matar a sessão e impedir retorno
-    setTimeout(() => { window.location.href = "index.html"; }, 2000);
+    setTimeout(()=> window.location.href="index.html", 2000);
 }
 </script>
 </body>
