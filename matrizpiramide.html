@@ -299,31 +299,63 @@ const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-async function verificarAcesso() {
-    if (!userEmail) { window.location.href = "index.html"; return; }
-    const res = await fetch(`${DB_URL}vendas/${userEmail}.json`);
-    const d = await res.json();
-    if (d && d.status === 'usado') { alert("Acesso expirado."); window.location.href = "index.html"; }
-}
-verificarAcesso();
-async function abrirPremium() {
-    if(!pirPrincipal) return alert("Gere primeiro!");
-    await fetch(`${DB_URL}vendas/${userEmail}.json`, { method: 'PATCH', body: JSON.stringify({ status: 'usado' }) });
+// No final do seu script, apenas estas duas funções precisam desse ajuste:
 
+async function verificarAcesso() {
+    if (!userEmail) { 
+        window.location.href = "index.html"; 
+        return; 
+    }
+    try {
+        const res = await fetch(`${DB_URL}vendas/${userEmail}.json`);
+        const d = await res.json();
+        // Se o e-mail não existir no banco ou o status for 'usado', ele bloqueia
+        if (!d || d.status === 'usado') { 
+            alert("Acesso expirado ou inválido."); 
+            window.location.href = "index.html"; 
+        }
+    } catch (e) {
+        console.error("Erro ao verificar acesso");
+    }
+}
+
+async function abrirPremium() {
+    // 1. Verifica se os dados foram preenchidos
+    const nome = document.getElementById("nome").value;
+    const data = document.getElementById("data").value;
+    if(!nome || !data) return alert("Por favor, preencha os dados e gere as matrizes primeiro.");
+
+    // 2. Marca no Firebase que o link foi usado (A Trava)
+    try {
+        await fetch(`${DB_URL}vendas/${userEmail}.json`, { 
+            method: 'PATCH', 
+            body: JSON.stringify({ status: 'usado' }),
+            headers: { 'Content-Type': 'application/json' }
+        });
+    } catch (e) {
+        console.error("Erro ao registrar uso");
+    }
+
+    // 3. Prepara o pacote para o Premium (mantendo sua estrutura)
     const pacote = {
-        nome: document.getElementById("nome").value,
-        data: document.getElementById("data").value,
+        nome: nome,
+        data: data,
         piramidePrincipal: document.getElementById("aba_principal").innerHTML,
         piramidePessoal: document.getElementById("aba_pessoal").innerHTML,
         piramideSocial: document.getElementById("aba_social").innerHTML,
         piramideDestino: document.getElementById("aba_destino").innerHTML
     };
+    
     localStorage.setItem("relatorioPiramide", JSON.stringify(pacote));
+    
+    // 4. Abre o relatório e redireciona a página atual para impedir reuso imediato
     window.open("matriz-premium.html", "_blank");
+    setTimeout(() => { window.location.href = "index.html"; }, 1000);
 }
 </script>
 </body>
 </html>
+
 
 
 
