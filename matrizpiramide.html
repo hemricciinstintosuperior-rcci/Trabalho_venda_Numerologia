@@ -265,7 +265,7 @@ data de nascimento<input type="date" id="data"><br>
 <div id="aba_destino" class="aba" style="display:none"></div>
 
 
-<script src="textosmatriz.js"></script>
+<script src="textos.js"></script>
   
 <script>
 
@@ -831,282 +831,311 @@ if(tipo==="especial_destino"){
 // =====================================
 function detectarSequenciasNegativas(linhas){
 
-  let contagem = {}; // {numero: quantidade}
+  l<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Pirâmide da Vida Quântica</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#111827">
+<style>
+body{ font-family: Arial; background:#ffffff; color:#000; text-align:center; }
+input,button{ padding:10px; margin:5px; border-radius:6px; border:none; }
+input { width: 600px; font-size: 18px; padding: 14px; background-color: #e5e7eb; border: 1px solid #ccc; color: #333; display: block; margin: 10px auto; }
+button{ background:#facc15; font-weight:bold; cursor:pointer; }
+#resultado{ margin-top:20px; }
+.piramide{ font-family: monospace; font-size:12px; line-height:0.7; text-align:center; }
+.piramide.compacta{ font-size:12px; line-height:1.2; }
+.piramide.compacta .linha{ gap:4px; margin:2px; }
+.piramide.compacta .num{ padding:4px 6px; border-radius:6px; font-size:11px; }
+.linha{ display:flex; justify-content:center; gap:6px; margin:2px; }
+.num{ background:#28d3ee; color:#000; padding:4px 7px; border-radius:6px; font-weight:bold; font-size:16px; min-width:18px; }
+.negativo{ background:#FF0000!important; color:#fff !important; box-shadow:0 0 6px rgba(255,0,0,0.6); }
+.boxSeq{ background:#fff0f0; border:2px solid #ff4d4d; padding:20px; margin-top:20px; border-radius:10px; }
+.box{ background:#ffffff; border:2px solid #000; padding:15px; margin:15px auto; border-radius:10px; max-width:800px; }
+.gridRelatorios{ display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; margin-top:25px; }
+@media(max-width:900px){ .gridRelatorios{ grid-template-columns:1fr; } }  
+.abas button{ background:#22d3ee; border:none; padding:10px 15px; margin:5px; border-radius:8px; cursor:pointer; font-weight:bold; }
+.aba{ margin-top:20px; display:none; }
+.num.negativo{ background:#ff6b6b; color:white; }
+.num.especial{ background:#f6c445; color:#000; box-shadow:0 0 10px rgba(246,196,69,0.8); }
+.num.financeiro{ background:#34c759; color:white; box-shadow:0 0 12px rgba(52,199,89,0.9); }
+.folhaRelatorio{ background:white; max-width:800px; margin:30px auto; padding:50px; border-radius:10px; box-shadow:0 0 25px rgba(0,0,0,0.08); }
+@media (max-width: 768px) { input { width: 90% !important; margin: 0 auto 25px auto !important; } }
+</style>
+</head>
+<body>
 
-  linhas.forEach(linha=>{
-    linha.forEach(num=>{
-      contagem[num] = (contagem[num] || 0) + 1;
-    });
-  });
+<h2>Matriz Quântica da Vida</h2>
+Nome completo igual a certidão<input id="nome" placeholder="">
+Data de nascimento<input type="date" id="data">
 
-  let sequencias = [];
+<button onclick="gerar()">GERAR AS MATRIZES</button>
+<button onclick="abrirPremium()">LIBERAR O RELATÓRIO E BAIXAR O PDF</button>
 
-  for(let num in contagem){
-    if(contagem[num] >= 3){
-      sequencias.push(Number(num));
+<div class="folhaRelatorio">
+    <div id="resultado"></div>
+    <div class="abas">
+        <button onclick="mostrarAba('principal')">Principal / Vida</button>
+        <button onclick="mostrarAba('pessoal')">Pessoal</button>
+        <button onclick="mostrarAba('social')">Social</button>
+        <button onclick="mostrarAba('destino')">Influência e Propósito</button>
+    </div>
+
+    <div id="aba_principal" class="aba" style="display:block"></div>
+    <div id="aba_pessoal" class="aba"></div>
+    <div id="aba_social" class="aba"></div>
+    <div id="aba_destino" class="aba"></div>
+</div>
+
+<script src="textos.js"></script>
+
+<script>
+const mapa = { A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6,X:6, O:7,Z:7, F:8,P:8 };
+
+function valorLetra(letra){
+    if(!letra || letra===" ") return 0;
+    let normal = letra.normalize("NFD");
+    let base = normal[0];
+    let acentos = normal.slice(1);
+    let valorBase = mapa[base] ?? 0;
+    let somaAcentos = 0, multAcentos = 1;
+    for(let a of acentos){
+        if(a === "\u0301") somaAcentos += 2;
+        else if(a === "\u0302") somaAcentos += 7;
+        else if(a === "\u0303") somaAcentos += 3;
+        else if(a === "\u0327") somaAcentos += 6;
+        else if(a === "\u0300") multAcentos *= 2;
+        else if(a === "\u0308") multAcentos *= 2;
     }
-  }
-
-  return sequencias;
+    return (valorBase + somaAcentos) * multAcentos;
 }
 
-// ======================================
-// ⭐ DETECTOR DE SEQUÊNCIAS ESPECIAIS
-// ======================================
+function reduzir(n){
+    while(n>9){ n=n.toString().split('').reduce((a,b)=>+a+ +b,0); }
+    return n;
+}
+
+function nomeNumeros(nome){
+    nome=nome.toUpperCase();
+    let arr=[];
+    for(let l of nome){ if(l!==" "){ let v=valorLetra(l); if(v)arr.push(v); } }
+    return arr;
+}
+
+function piramide(base){
+    let linhas=[base];
+    while(base.length>1){
+        let nova=[];
+        for(let i=0;i<base.length-1;i++){ nova.push(reduzir(base[i]+base[i+1])); }
+        linhas.push(nova);
+        base=nova;
+    }
+    return linhas;
+}
+
+function topo(base){
+    let arcanos = [];
+    for(let i=0; i<base.length-1; i++){ arcanos.push(parseInt("" + base[i] + base[i+1])); }
+    return arcanos;
+}
+
+// === SINCRONIZADOR DE TEMPO (O SEGREDO DO CÁLCULO) ===
+function gerarCronogramaMestre(arcanosVida, data) {
+    let cronograma = [];
+    const [ano, mes, dia] = data.split("-").map(Number);
+    let atual = new Date(ano, mes - 1, dia);
+    let idade = 0, contadorCiclo = 0;
+    const IDADE_MAX = 100;
+
+    while (idade < IDADE_MAX) {
+        let indice = contadorCiclo % arcanosVida.length;
+        let arc_ref = arcanosVida[indice];
+        let anosDuracao = parseInt(arc_ref.toString()[0]);
+        if (anosDuracao === 0 || isNaN(anosDuracao)) anosDuracao = 1;
+
+        let inicio = new Date(atual);
+        atual.setFullYear(atual.getFullYear() + anosDuracao);
+        let fim = new Date(atual);
+
+        cronograma.push({
+            idadeIni: idade, idadeFim: idade + anosDuracao,
+            ini: inicio.toLocaleDateString('pt-BR'), fim: fim.toLocaleDateString('pt-BR'),
+            indiceArcano: indice 
+        });
+        idade += anosDuracao;
+        contadorCiclo++;
+    }
+    return cronograma;
+}
+
+function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa) {
+    let html = "<div class='box'><h3>⏳ Vigências</h3>";
+    cronograma.forEach((periodo) => {
+        let indice = periodo.indiceArcano % arcanosDaPiramide.length;
+        let numArcano = arcanosDaPiramide[indice];
+        html += `<div class="box"><h3>🔹 Potência ${numArcano}</h3>
+                 <b>Idade:</b> ${periodo.idadeIni} → ${periodo.idadeFim} anos<br>
+                 <b>Período:</b> ${periodo.ini} - ${periodo.fim}<br><br>
+                 ${textosMapa[numArcano] || "<i>Interpretação em análise.</i>"}</div>`;
+    });
+    return html + "</div>";
+}
+
+// === DETECTORES ===
+function detectarSequencias(linhas){
+    let posNeg=[]; let sequencias=[];
+    linhas.forEach((linha, i)=>{
+        let cont=1;
+        for(let j=1;j<linha.length;j++){
+            if(linha[j] === linha[j-1]) cont++;
+            else {
+                if(cont>=3){
+                    sequencias.push({numero: linha[j-1], repeticoes: cont});
+                    for(let k=j-cont;k<j;k++) posNeg.push({linha:i,indice:k});
+                }
+                cont=1;
+            }
+        }
+        if(cont>=3){
+            sequencias.push({numero: linha[linha.length-1], repeticoes: cont});
+            for(let k=linha.length-cont;k<linha.length;k++) posNeg.push({linha:i,indice:k});
+        }
+    });
+    return {sequencias, posNeg};
+}
 
 const sequenciasEspeciais = {
-  "116": `Este é um estágio onde sua imagem pública e reputação podem ser postas à prova por interferências de terceiros.
-Existe o risco de enfrentar críticas infundadas ou situações que visam abalar sua credibilidade profissional e pessoal.
-É essencial agir com máxima integridade e discrição para blindar seu nome contra fofocas ou tentativas de difamação.`,
-
-  "123": `Uma fase brilhante se aproxima, trazendo o justo reconhecimento por todo o seu esforço, talento e dedicação criativa.
-Você poderá receber prêmios, honrarias ou elogios públicos que validam oficialmente sua trajetória e seus projetos de vida.
-Essa energia de êxito também se estende ao campo familiar, trazendo motivos de grande orgulho e celebração através de seus filhos.`,
-
-  "252": `O cenário vibracional indica uma fase de encerramento ou transformação profunda em vínculos afetivos e parcerias de longa data.
-Mudanças drásticas na estrutura conjugal, como separações ou processos de divórcio, podem exigir uma enorme resiliência emocional.
-É um momento de transição que pede acolhimento interno e maturidade para lidar com a ausência ou o afastamento definitivo do cônjuge.`,
-
-  "575": `Prepare-se para um período de reviravoltas súbitas que podem desestabilizar temporariamente sua segurança material e carreira.
-Modificações imprevistas no ambiente de trabalho podem trazer dificuldades financeiras que exigirão cautela extrema e economia.
-Esteja pronto para adaptar-se rapidamente a perdas momentâneas, focando em reconstruir suas bases com paciência e estratégia.`,
-
-  "757": `Você está entrando em um ciclo de transformações intensas que atuarão como molas propulsoras para sua evolução individual.
-Embora as mudanças impostas pelo destino possam parecer desafiadoras no início, elas são necessárias para expandir sua consciência.
-O universo está forçando sua saída da zona de conforto para que o seu verdadeiro potencial pessoal finalmente floresça e apareça.`,
-
-  "922": `A sorte e o mérito caminham juntos nesta fase, favorecendo vitórias expressivas em concursos, vestibulares ou cargos de relevância.
-Seus esforços em disputas políticas ou processos seletivos complexos encontrarão um terreno extremamente fértil para o sucesso absoluto.
-Aproveite este magnetismo de conquista para se posicionar com destaque em qualquer teste de capacidade ou avaliação de competência.`,
-
-  "923": `Um período de profunda paz e entendimento reina em seu ambiente doméstico, fortalecendo os laços com aqueles que você mais ama.
-Você se sentirá plenamente amparado por amizades verdadeiras, cujas palavras e gestos servirão de porto seguro para sua jornada atual.
-É o momento ideal para cultivar a gratidão e desfrutar da serenidade que as relações sinceras e leais proporcionam ao seu coração.`,
-
-  "924": `Suas conexões sociais ganham um novo nível de prestígio, abrindo portas valiosas para círculos de grande influência, autoridade e poder.
-A ascensão em sua posição social será facilitada pelo contato direto com pessoas que admiram profundamente sua conduta e sua visão.
-Novos horizontes se abrem através de convites e parcerias estratégicas com indivíduos que podem acelerar drasticamente o seu crescimento.`,
-
-  "925": `O momento exige olhos atentos e um discernimento redobrado em relação a quem você confia suas ideias, segredos e tarefas diárias.
-Existe uma predisposição para desapontamentos vindos de funcionários ou de amizades que você considerava sólidas e inabaláveis.
-Proteja seus planos mantendo a discrição total e evitando delegar responsabilidades críticas sem a devida e constante supervisão.`,
-
-  "926": `Seus laços familiares serão convocados para uma ação de cuidado, paciência e suporte mútuo diante de adversidades inesperadas na rotina.
-Pode haver a necessidade de dedicar mais tempo e energia pessoal para auxiliar parentes próximos em questões de saúde ou crises graves.
-A união e a presença física da família serão os seus maiores pilares para atravessar instabilidades que exijam sacrifício e dedicação.`,
-
-  "927": `Fique alerta para movimentações de bastidores, pois segredos antigos, informações ocultas ou escândalos do passado podem vir a público agora.
-O risco de envolvimento direto ou indireto em intrigas alheias é elevado, pedindo que você mantenha uma postura neutra e muito ética.
-Evite comentários desnecessários ou julgamentos para não alimentar fofocas que possam expor situações que deveriam permanecer privadas.`
-
+    "116": `Este é um estágio onde sua imagem pública e reputação podem ser postas à prova...`,
+    "123": `Uma fase brilhante se aproxima, trazendo o justo reconhecimento...`,
+    "252": `O cenário vibracional indica uma fase de encerramento em vínculos afetivos...`,
+    "575": `Prepare-se para um período de reviravoltas súbitas na segurança material...`,
+    "757": `Você está entrando em um ciclo de transformações intensas...`,
+    "922": `A sorte e o mérito caminham juntos nesta fase para vitórias em concursos...`,
+    "923": `Um período de profunda paz e entendimento reina em seu ambiente doméstico...`,
+    "924": `Suas conexões sociais ganham um novo nível de prestígio e autoridade...`,
+    "925": `O momento exige olhos atentos e discernimento redobrado com quem confia...`,
+    "926": `Seus laços familiares serão convocados para uma ação de cuidado e paciência...`,
+    "927": `Fique alerta para movimentações de bastidores e segredos do passado...`
 };
 
-function detectarSequenciasEspeciais(linhas){
-
-  let encontradas = new Set();
-
-  linhas.forEach(linha => {
-
-    for(let i=0; i < linha.length-2; i++){
-
-      let codigo = "" + linha[i] + linha[i+1] + linha[i+2];
-
-      if(sequenciasEspeciais[codigo]){
-        encontradas.add(codigo);
-      }
-
-    }
-  });
-
-  return Array.from(encontradas);
-}
-
-// 💰 DETECTOR SEQUÊNCIA FINANCEIRA (99 com 9 abaixo)
-function detectarSequenciaFinanceira(linhas){
-
-  let posicoes = [];
-
-  for(let i=0;i<linhas.length-1;i++){
-
-    let linhaAtual = linhas[i];
-    let linhaBaixo = linhas[i+1];
-
-    for(let j=0;j<linhaAtual.length-1;j++){
-
-      // encontrou 99
-      if(linhaAtual[j]===9 && linhaAtual[j+1]===9){
-
-        // posição do número abaixo (centro)
-        if(linhaBaixo[j]===9){
-
-          // marca os 3 números
-          posicoes.push({linha:i, indice:j});
-          posicoes.push({linha:i, indice:j+1});
-          posicoes.push({linha:i+1, indice:j});
+function detectarPosicoesEspeciais(linhas){
+    let pos=[];
+    linhas.forEach((linha,i)=>{
+        for(let j=0;j<linha.length-2;j++){
+            let seq = "" + linha[j] + linha[j+1] + linha[j+2];
+            if(sequenciasEspeciais[seq]){ pos.push({linha:i, indice:j},{linha:i, indice:j+1},{linha:i, indice:j+2}); }
         }
-      }
+    });
+    return pos;
+}
+
+function detectarSequenciaFinanceira(linhas){
+    let pos=[];
+    for(let i=0; i<linhas.length-1; i++){
+        for(let j=0; j<linhas[i].length-1; j++){
+            if(linhas[i][j]===9 && linhas[i][j+1]===9 && linhas[i+1][j]===9){
+                pos.push({linha:i, indice:j},{linha:i, indice:j+1},{linha:i+1, indice:j});
+            }
+        }
     }
-  }
-
-  return posicoes;
+    return pos;
 }
 
-function gerarRelatorioEspeciais(piramide){
+function desenhar(linhas, compacta=false){
+    let classe = compacta ? "piramide compacta" : "piramide";
+    const neg = detectarSequencias(linhas).posNeg;
+    const esp = detectarPosicoesEspeciais(linhas);
+    const fin = detectarSequenciaFinanceira(linhas);
 
-  // usa a MESMA detecção da pirâmide
-  const encontrados = detectarSequenciasEspeciais(piramide);
-
-  if(encontrados.length === 0){
-    return `
-      <div class="box">
-        <h3>⭐ Sequências Especiais</h3>
-        Nenhuma sequência especial encontrada.
-      </div>
-    `;
-  }
-
-  let html = `<div class="box"><h3>⭐ Sequências Especiais</h3>`;
-
-  encontrados.forEach(seq=>{
-    html += `
-      <div class="cardSeq">
-        <h4>Sequência ${seq}</h4>
-        <p>${sequenciasEspeciais[seq]}</p>
-      </div>`;
-  });
-
-  html += "</div>";
-
-  return html;
-}// =====================================
-// 📄 RELATÓRIO DAS SEQUÊNCIAS
-// =====================================
-function gerarRelatorioSequencias(linhas, textosSeq){
-
-  const analise = detectarSequencias(linhas);
-  const sequencias = analise.sequencias;
-
-  // remover duplicadas (se aparecer em várias linhas)
-  const numerosUnicos = [...new Set(sequencias.map(s => s.numero))];
-
-  // se não existir nenhuma sequência
-  if(numerosUnicos.length === 0){
-    return `
-      <div class="box">
-        <h3>✨ Nenhuma sequência negativa encontrada</h3>
-        <p>Não foram identificadas repetições numéricas negativas nesta pirâmide.</p>
-      </div>
-    `;
-  }
-
-  let html = `<h2>⚠️ Sequências Numéricas Negativas</h2>`;
-
-  numerosUnicos.forEach(num => {
-    html += `
-      <div class="box">
-        <h3>Sequência de ${num}</h3>
-        <p>${textosSeq[num] ?? "Texto não cadastrado."}</p>
-      </div>
-    `;
-  });
-
-  return html;
+    let html=`<div class="${classe}">`;
+    linhas.forEach((linha,i)=>{
+        html += `<div class="linha">`;
+        linha.forEach((n,j)=>{
+            let c = "num";
+            if(neg.some(p=>p.linha===i && p.indice===j)) c+=" negativo";
+            if(esp.some(p=>p.linha===i && p.indice===j)) c+=" especial";
+            if(fin.some(p=>p.linha===i && p.indice===j)) c+=" financeiro";
+            html += `<div class="${c}">${n}</div>`;
+        });
+        html += `</div>`;
+    });
+    return html + `</div>`;
 }
-
-// =====================================
-// 🔻 RELATÓRIOS COMPACTOS (NOVOS)
-// usados dentro da aba automaticamente
-// =====================================
 
 function gerarRelatorioNegativasCompacto(linhas){
-
-  const analise = detectarSequencias(linhas);
-  const numerosUnicos = [...new Set(analise.sequencias.map(s => s.numero))];
-
-  let html = `<div class="box"><h3>⚠️ Negativas</h3>`;
-
-  if(numerosUnicos.length === 0){
-    html += `<p>Nenhuma sequência negativa.</p>`;
-  }else{
-    numerosUnicos.forEach(num=>{
-      html += `<p><b>${num}</b> — ${textosSeqNeg[num]}</p>`;
-    });
-  }
-
-  html += "</div>";
-  return html;
+    const s = [...new Set(detectarSequencias(linhas).sequencias.map(x=>x.numero))];
+    let h = `<div class="box"><h3>⚠️ Negativas</h3>`;
+    if(s.length===0) h+=`<p>Nenhuma.</p>`;
+    else s.forEach(n=> h+=`<p><b>${n}</b> — ${textosSeqNeg[n] || 'Ver textos.js'}</p>`);
+    return h+"</div>";
 }
 
-function gerarRelatorioEspeciaisCompacto(piramide){
-
-  const encontrados = detectarSequenciasEspeciais(piramide);
-
-  let html = `<div class="box"><h3>⭐ Especiais</h3>`;
-
-  if(encontrados.length === 0){
-    html += `<p>Nenhuma sequência especial.</p>`;
-  }else{
-    encontrados.forEach(seq=>{
-      html += `<p><b>${seq}</b> — ${sequenciasEspeciais[seq]}</p>`;
-    });
-  }
-
-  html += "</div>";
-  return html;
+function gerarRelatorioEspeciaisCompacto(linhas){
+    let encontradas = new Set();
+    linhas.forEach(l => { for(let i=0;i<l.length-2;i++){ let c=""+l[i]+l[i+1]+l[i+2]; if(sequenciasEspeciais[c]) encontradas.add(c); }});
+    let h = `<div class="box"><h3>⭐ Especiais</h3>`;
+    if(encontradas.size===0) h+=`<p>Nenhuma.</p>`;
+    else encontradas.forEach(s=> h+=`<p><b>${s}</b> — ${sequenciasEspeciais[s]}</p>`);
+    return h+"</div>";
 }
 
-function gerarRelatorioFinanceiroCompacto(piramide){
-
-  const posicoes = detectarSequenciaFinanceira(piramide);
-
-  let html = `<div class="box"><h3>💰 Financeiro</h3>`;
-
-  if(posicoes.length === 0){
-    html += `<p>Não encontrado.</p>`;
-  }else{
-    html += `<p>Sequência 99/9 presente. Potencial de recebimento financeiro.</p>`;
-  }
-
-  html += "</div>";
-  return html;
+function gerarRelatorioFinanceiroCompacto(linhas){
+    const f = detectarSequenciaFinanceira(linhas);
+    return `<div class="box"><h3>💰 Financeiro</h3><p>${f.length>0 ? 'Sequência 99/9 detectada.' : 'Não detectado.'}</p></div>`;
 }
-  
 
-// ======================================
-// 🚀 GERAR RELATÓRIO PREMIUM COMPLETO
-// ======================================
-// 💾 SALVAR RELATÓRIO PREMIUM PIRÂMIDE
-// ======================================
-function salvarRelatorioPiramide(){
-
-  const nome = document.getElementById("nome").value;
-  const data = document.getElementById("data").value;
-
-  if(!nome || !data){
-    alert("Gere a pirâmide antes de exportar.");
-    return;
-  }
-
-  // 🔺 CAPTURA HTML PRONTO DE CADA PIRÂMIDE
-  const htmlPrincipal = document.getElementById("aba_principal").innerHTML;
-  const htmlPessoal   = document.getElementById("aba_pessoal").innerHTML;
-  const htmlSocial    = document.getElementById("aba_social").innerHTML;
-  const htmlDestino   = document.getElementById("aba_destino").innerHTML;
-
-  // 📦 PACOTE COMPLETO ENVIADO AO PREMIUM
-  const pacotePiramide = {
-    nome: nome,
-    data: data,
-
-    piramidePrincipal: htmlPrincipal,
-    piramidePessoal: htmlPessoal,
-    piramideSocial: htmlSocial,
-    piramideDestino: htmlDestino
-  };
-
-  // salva no navegador
-  localStorage.setItem("relatorioPiramide", JSON.stringify(pacotePiramide));
+function piramidePessoal(baseNome, dia) { 
+    return piramide(baseNome.map(n => reduzir(n + reduzir(dia)))); 
 }
+function piramideSocial(baseNome, mes) { 
+    return piramide(baseNome.map(n => reduzir(n + reduzir(mes)))); 
+}
+function piramideDestino(baseNome, dia, mes) { 
+    return piramide(baseNome.map(n => reduzir(n + reduzir(reduzir(dia) + reduzir(mes))))); 
+}
+
+function mostrarAba(nome){
+    document.querySelectorAll('.aba').forEach(a=>a.style.display='none');
+    document.getElementById("aba_"+nome).style.display="block";
+}
+
+// === FUNÇÃO GERAR FINAL ===
+function gerar() {
+    const nome = document.getElementById("nome").value;
+    const data = document.getElementById("data").value;
+    if(!nome || !data) return alert("Preencha os dados!");
+
+    const base = nomeNumeros(nome);
+    const [y, m, d] = data.split("-").map(Number);
+
+    // Pirâmide da Vida (Manda no tempo)
+    const pVida = piramide(base);
+    const aVida = topo(base);
+    const crono = gerarCronogramaMestre(aVida, data);
+    const reg = pVida.at(-1)[0];
+
+    document.getElementById("aba_principal").innerHTML = desenhar(pVida, true) + 
+        `<div class="box"><h3>Regente ${reg}</h3>${textosVida[reg] || ''}</div>` +
+        `<div class="gridRelatorios">${gerarRelatorioNegativasCompacto(pVida)}${gerarRelatorioEspeciaisCompacto(pVida)}${gerarRelatorioFinanceiroCompacto(pVida)}</div>` +
+        montarVigenciasSincronizadas(crono, aVida, textosVida);
+
+    // Pessoal
+    const pPes = piramidePessoal(base, d);
+    document.getElementById("aba_pessoal").innerHTML = desenhar(pPes, true) + montarVigenciasSincronizadas(crono, topo(pPes[0]), textosPessoal);
+
+    // Social
+    const pSoc = piramideSocial(base, m);
+    document.getElementById("aba_social").innerHTML = desenhar(pSoc, true) + montarVigenciasSincronizadas(crono, topo(pSoc[0]), textosSocial);
+
+    // Destino
+    const pDes = piramideDestino(base, d, m);
+    document.getElementById("aba_destino").innerHTML = desenhar(pDes, true) + montarVigenciasSincronizadas(crono, topo(pDes[0]), textosDestino);
+
+    mostrarAba('principal');
+}
+
+
   
 // ======================================
 // 🚀 ABRIR RELATÓRIO PREMIUM
@@ -1167,6 +1196,7 @@ async function abrirPremium() {
   </script>
 </body>
 </html>
+
 
 
 
