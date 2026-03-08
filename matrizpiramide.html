@@ -483,33 +483,47 @@ async function abrirPremium() {
     const nome = document.getElementById("nome").value;
     const data = document.getElementById("data").value;
     
-    // Captura o conteúdo gerado nas abas
+    if(!nome || !data) return alert("Gere as matrizes primeiro!");
+
+    // 1. CAPTURA OS DADOS PARA O PREMIUM
     const pacote = {
         nome: nome,
         data: data.split("-").reverse().join("/"),
-        // Garanta que estes nomes (abaPrincipal, etc.) são os mesmos que o premium lê
         abaPrincipal: document.getElementById("aba_principal").innerHTML,
         abaPessoal: document.getElementById("aba_pessoal").innerHTML,
         abaSocial: document.getElementById("aba_social").innerHTML,
         abaDestino: document.getElementById("aba_destino").innerHTML
     };
     
-    // Guarda no navegador para o premium aceder
+    // 2. SALVA NO NAVEGADOR
     localStorage.setItem("relatorioPiramide", JSON.stringify(pacote));
     
-    // Abre o relatório
+    // 3. TRAVA DE VENDA (IMPEDE O REUSO)
+    // Aqui você deve chamar a sua função que atualiza o status no Firebase/Banco para 'usado'
+    try {
+        // Exemplo da sua lógica de trava:
+        // await db.collection("vendas").doc(idVenda).update({ status: 'concluido' });
+        
+        console.log("Relatório travado e enviado para o Premium.");
+    } catch (e) {
+        console.error("Erro ao travar venda:", e);
+    }
+
+    // 4. ABRE O PREMIUM E BLOQUEIA O GERADOR
     window.open("matriz-premium.html", "_blank");
-  
-    // Opcional: Redirecionar para evitar reuso da página de geração após a venda
-    setTimeout(() => { 
-        // window.location.href = "sucesso.html"; 
-    }, 2000);
+
+    // Redireciona o gerador para uma página de "Obrigado" ou recarrega limpo
+    // Isso impede que a pessoa fique voltando e clicando de novo
+    setTimeout(() => {
+        window.location.href = "sucesso.html"; // Crie uma página simples de agradecimento
+    }, 1000);
 }
 
   
 </script>
 </body>
 </html>
+
 
 
 
