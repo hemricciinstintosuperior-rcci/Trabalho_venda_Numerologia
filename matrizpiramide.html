@@ -480,49 +480,56 @@ function gerar() {
 }
 
 async function abrirPremium() {
+    // 1. Verifica se os dados foram preenchidos
     const nome = document.getElementById("nome").value;
     const data = document.getElementById("data").value;
     
-    if(!nome || !data) return alert("Gere as matrizes primeiro!");
+    // Verificação extra: se o conteúdo das abas está vazio, o usuário não clicou em GERAR
+    const principal = document.getElementById("aba_principal").innerHTML;
+    if(!nome || !data || principal === "") {
+        return alert("Por favor, preencha os dados e clique em 'GERAR AS MATRIZES' primeiro.");
+    }
 
-    // 1. CAPTURA OS DADOS PARA O PREMIUM
+    // 2. Marca no Firebase (Sua lógica de trava de venda)
+    try {
+        // Certifique-se que userEmail e DB_URL estão definidos no seu código global
+        if(typeof DB_URL !== 'undefined' && typeof userEmail !== 'undefined'){
+            await fetch(`${DB_URL}vendas/${userEmail}.json`, { 
+                method: 'PATCH', 
+                body: JSON.stringify({ status: 'usado' }),
+                headers: { 'Content-Type': 'application/json' }
+            });
+        }
+    } catch (e) {
+        console.error("Erro ao registrar uso da trava");
+    }
+
+    // 3. Prepara o pacote com os nomes de chaves CORRETOS para o Premium ler
     const pacote = {
         nome: nome,
-        data: data.split("-").reverse().join("/"),
+        data: data.split("-").reverse().join("/"), // Formata data para DD/MM/AAAA
         abaPrincipal: document.getElementById("aba_principal").innerHTML,
         abaPessoal: document.getElementById("aba_pessoal").innerHTML,
         abaSocial: document.getElementById("aba_social").innerHTML,
         abaDestino: document.getElementById("aba_destino").innerHTML
     };
     
-    // 2. SALVA NO NAVEGADOR
     localStorage.setItem("relatorioPiramide", JSON.stringify(pacote));
     
-    // 3. TRAVA DE VENDA (IMPEDE O REUSO)
-    // Aqui você deve chamar a sua função que atualiza o status no Firebase/Banco para 'usado'
-    try {
-        // Exemplo da sua lógica de trava:
-        // await db.collection("vendas").doc(idVenda).update({ status: 'concluido' });
-        
-        console.log("Relatório travado e enviado para o Premium.");
-    } catch (e) {
-        console.error("Erro ao travar venda:", e);
-    }
-
-    // 4. ABRE O PREMIUM E BLOQUEIA O GERADOR
+    // 4. Abre o relatório e limpa o acesso
     window.open("matriz-premium.html", "_blank");
-
-    // Redireciona o gerador para uma página de "Obrigado" ou recarrega limpo
-    // Isso impede que a pessoa fique voltando e clicando de novo
-    setTimeout(() => {
-        window.location.href = "sucesso.html"; // Crie uma página simples de agradecimento
-    }, 1000);
+    
+    // Opcional: Redirecionar para evitar reuso da página de geração após a venda
+    setTimeout(() => { 
+        // window.location.href = "sucesso.html"; 
+    }, 2000);
 }
 
   
 </script>
 </body>
 </html>
+
 
 
 
