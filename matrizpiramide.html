@@ -107,7 +107,9 @@ Data de nascimento<input type="date" id="data">
 
 <button onclick="gerar()">GERAR AS MATRIZES</button>
 <button onclick="abrirPremium()">LIBERAR O RELATÓRIO E BAIXAR O PDF</button>
-
+<div class="btn-container no-print">
+    <button onclick="window.print()">📄 Baixar Relatório em PDF</button>
+</div>
 <div class="folhaRelatorio">
     <div class="abas">
         <button onclick="mostrarAba('principal')">Principal / Vida</button>
@@ -515,6 +517,7 @@ async function abrirPremium() {
 </script>
 </body>
 </html>
+
 
 
 
