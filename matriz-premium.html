@@ -55,10 +55,7 @@ const dados = localStorage.getItem("relatorioPiramide");
 if(!dados){ document.body.innerHTML="<div class='secao'>ERRO: Nenhum dado encontrado.</div>"; throw new Error(); }
 const relatorio = JSON.parse(dados);
 
-document.getElementById("conteudo").innerHTML = `<div class="btn-container no-print">
-    <button onclick="window.print()">📄 Baixar Relatório em PDF</button>
-</div>
-<div class="capa">
+document.getElementById("conteudo").innerHTML = `<div class="capa">
     <img class="logo" src="https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/matriz.png">
     <div class="nomeCliente">Relatório Personalizado para:<br><strong>${relatorio.nome}</strong><br>Nascimento: ${relatorio.data}</div>
 </div>
@@ -115,6 +112,7 @@ ${relatorio.abaDestino ? `<div class="secao">${relatorio.abaDestino}</div>` : ''
 </script>
 </body>
 </html>
+
 
 
 
