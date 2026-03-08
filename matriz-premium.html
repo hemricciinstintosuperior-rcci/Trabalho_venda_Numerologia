@@ -4,177 +4,118 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Relatório Premium • Pirâmide Quântica</title>
-
 <style>
-/* CONFIGURAÇÕES DE BASE */
 body{font-family:"Times New Roman",serif;background:#f4f4f4;margin:0; color:#1a1a1a;}
 *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
-
 .capa{background:white;text-align:center;padding:120px 40px; page-break-after: always;}
 .logo{width:550px;margin-bottom:40px;}
 .nomeCliente{margin-top:70px;font-size:28px; border-top: 1px solid #ccc; padding-top: 20px; display: inline-block;}
-
-.secao{
- max-width:900px;margin:30px auto;background:white;
- padding:50px;border-radius:10px;box-shadow:0 0 20px rgba(0,0,0,.05);
- page-break-inside: avoid; /* Evita cortar seções no meio da página */
-}
-
+.secao{ max-width:900px;margin:30px auto;background:white; padding:50px;border-radius:10px;box-shadow:0 0 20px rgba(0,0,0,.05); page-break-inside: avoid; }
 .texto{white-space:pre-line;font-size:18px;line-height:1.6; text-align: justify;}
-.tituloPiramide{text-align:center;font-size:28px;margin-bottom:30px; font-weight: bold; color: #111;}
-
-/* ESTILIZAÇÃO DAS PIRÂMIDES NO PREMIUM */
+.tituloPiramide{text-align:center;font-size:28px;margin-bottom:30px; font-weight: bold; color: #111; text-transform: uppercase;}
 .piramide{display:flex;flex-direction:column;align-items:center;margin:30px 0; font-family: monospace;}
 .linha{display:flex;justify-content:center;margin:1px 0; gap: 4px;}
-.num{
- width:24px;height:24px;border-radius:4px;
- display:flex;align-items:center;justify-content:center;
- font-weight:bold;font-size:14px; color:#000;
- background:#28d3ee; /* Cor padrão azul clara */
-}
-
-/* CORES DAS SEQUÊNCIAS NA PIRÂMIDE */
+.num{ width:24px;height:24px;border-radius:4px; display:flex;align-items:center;justify-content:center; font-weight:bold;font-size:14px; color:#000; background:#28d3ee; }
 .num.negativo{background:#FF0000 !important; color:#fff !important;}
 .num.especial{background:#f6c445 !important; color:#000 !important;}
 .num.financeiro{background:#34c759 !important; color:#fff !important;}
-
-/* ESTILO DOS NOVOS ALERTAS DE VIGÊNCIA (O QUE ADICIONAMOS) */
-.box { 
-    border: 1px solid #ddd; 
-    padding: 20px; 
-    margin: 15px 0; 
-    border-radius: 8px;
-    background: #fafafa;
-}
-
-/* Estilos específicos para os alertas dentro das vigências */
-div[style*="border-left:4px solid #ff6b6b"] { 
-    background: #fff5f5 !important; 
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-div[style*="border-left:4px solid #f6c445"] { 
-    background: #fffdf5 !important; 
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-div[style*="border-left:4px solid #34c759"] { 
-    background: #f5fff5 !important; 
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
-.gridRelatorios { display: block; } /* No PDF, as negativas ficam em lista */
-
+.box { border: 1px solid #ddd; padding: 20px; margin: 15px 0; border-radius: 8px; background: #fafafa; }
+div[style*="border-left:4px solid #ff6b6b"] { background: #fff5f5 !important; padding: 10px; margin-bottom: 5px; }
+div[style*="border-left:4px solid #f6c445"] { background: #fffdf5 !important; padding: 10px; margin-bottom: 5px; }
+div[style*="border-left:4px solid #34c759"] { background: #f5fff5 !important; padding: 10px; margin-bottom: 5px; }
 .rodape{text-align:center;margin-top:50px;font-size:12px;color:#999; border-top: 1px solid #eee; padding-top: 20px;}
-
-/* BOTÃO DE IMPRESSÃO */
 .btn-container { text-align:center; margin: 40px 0; }
-button{ 
-    background: #facc15; border: none; padding: 15px 30px; 
-    font-weight: bold; font-size: 18px; border-radius: 8px; cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold; font-size: 18px; border-radius: 8px; cursor: pointer; }
+@media print{ .no-print{display:none!important;} body { background: white; } .secao { box-shadow: none; margin: 0 auto; width: 100%; padding: 30px; } }
+
+/* AJUSTE MOBILE PARA O PREMIUM */
+@media screen and (max-width: 600px) {
+    .secao { padding: 20px 15px; margin: 10px; }
+    .capa { padding: 60px 20px; }
+    .logo { width: 100%; height: auto; }
+    .tituloPiramide { font-size: 22px; }
+    .nomeCliente { font-size: 20px; width: 100%; }
+    
+    /* Faz a pirâmide caber na tela do celular sem cortar */
+    .num { 
+        width: 18px; 
+        height: 18px; 
+        font-size: 10px; 
+        border-radius: 2px;
+    }
+    .linha { gap: 2px; }
 }
 
-@media print{
-    .no-print{display:none!important;}
-    body { background: white; }
-    .secao { box-shadow: none; margin: 0 auto; width: 100%; padding: 30px; }
-}
-
-/* RESPONSIVO MOBILE */
-@media screen and (max-width: 768px){
-  .logo{ width:100%; }
-  .secao{ margin:10px; padding:20px; }
-  .num { width: 18px; height: 18px; font-size: 11px; }
-}
 </style>
 </head>
-
 <body>
 <div id="conteudo">Gerando seu relatório quântico premium...</div>
-
 <script>
-// Captura os dados enviados pela página anterior
 const dados = localStorage.getItem("relatorioPiramide");
-if(!dados){
-    document.body.innerHTML="<div class='secao'>ERRO: Nenhum dado encontrado. Por favor, gere a matriz novamente.</div>";
-    throw new Error();
-}
+if(!dados){ document.body.innerHTML="<div class='secao'>ERRO: Nenhum dado encontrado.</div>"; throw new Error(); }
 const relatorio = JSON.parse(dados);
 
-const textos = {
-    introducaoMetodo: `A Pirâmide Quântica representa um dos métodos mais sofisticados de autoconhecimento da atualidade... (seu texto completo aqui)`,
-    introRegente: `O Regente é o coração da sua pirâmide...`,
-    introNegativas: `As Sequências Negativas dentro da Pirâmide Quântica não devem ser vistas como "má sorte"...`,
-    introEspeciais: `As Sequências Especiais representam ocorrências pontuais...`,
-    introFinanceiro: `A análise da Sequência Financeira foca em uma vibração específica...`,
-    introVigencias: `As Vigências representam os ciclos de atuação das potências numerológicas ao longo da sua vida...`,
-    agradecimento: `Este relatório foi desenvolvido exclusivamente para apoiar o seu processo...`
-};
-
-function montarSecao(titulo, conteudoHtml){
-    if(!conteudoHtml) return "";
-    return `
-    <div class="secao">
-        <div class="tituloPiramide">${titulo}</div>
-        <div class="conteudo-dinamico">${conteudoHtml}</div>
-    </div>`;
-}
-
-// MONTAGEM DO HTML FINAL
 document.getElementById("conteudo").innerHTML = `
-<div class="capa">
-    <img class="logo" src="https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/matriz.png">
-    <div class="nomeCliente">
-        Relatório Personalizado para:<br>
-        <strong>${relatorio.nome}</strong><br>
-        Nascimento: ${relatorio.data.split('-').reverse().join('/')}
-    </div>
-</div>
-
-<div class="secao">
-    <h2>Introdução ao Método</h2>
-    <div class="texto">${relatorio.introducaoMetodo || "A Pirâmide Quântica une a sabedoria ancestral da numerologia à compreensão moderna das frequências vibracionais..."}</div>
-</div>
-
-<div class="secao">
-    <h2>Guia de Interpretação</h2>
-    <div class="texto">
-        <strong>Regente:</strong> ${textos.introRegente}<br><br>
-        <strong>Sequências Negativas:</strong> ${textos.introNegativas}<br><br>
-        <strong>Sequências Especiais:</strong> ${textos.introEspeciais}<br><br>
-        <strong>Fluxo Financeiro:</strong> ${textos.introFinanceiro}<br><br>
-        <strong>Ciclos de Vigência:</strong> ${textos.introVigencias}
-    </div>
-</div>
-
-${montarSecao("Matriz da Vida (Realidade)", relatorio.piramidePrincipal)}
-${montarSecao("Matriz Pessoal (Sentimento)", relatorio.piramidePessoal)}
-${montarSecao("Matriz Social (Ambiente)", relatorio.piramideSocial)}
-${montarSecao("Matriz de Destino (Propósito)", relatorio.piramideDestino)}
-
-<div class="secao">
-    <h2>Considerações Finais</h2>
-    <div class="texto">${textos.agradecimento}</div>
-    <div class="rodape">Relatório Confidencial • Instinto Superior • 2026</div>
-</div>
 
 <div class="btn-container no-print">
     <button onclick="window.print()">📄 Baixar Relatório em PDF</button>
 </div>
+
+<div class="capa">
+    <img class="logo" src="https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/matriz.png">
+    <div class="nomeCliente">Relatório Personalizado para:<br><strong>${relatorio.nome}</strong><br>Nascimento: ${relatorio.data}</div>
+</div>
+
+<div class="secao">
+    <h2>Introdução ao Método</h2>
+    <div class="texto">A Pirâmide Quântica representa um dos métodos mais sofisticados de autoconhecimento da atualidade, unindo a sabedoria ancestral da numerologia à compreensão moderna das frequências vibracionais. Neste sistema, os números não são tratados apenas como ferramentas matemáticas, mas como códigos vivos que expressam estruturas energéticas ativas, responsáveis por organizar percepções, experiências e direcionamentos existenciais.
+
+No centro do método está a Pirâmide da Vida, a base principal. Ela rege a experiência concreta do indivíduo e revela o que efetivamente está acontecendo em sua trajetória. É a estrutura objetiva da existência — o campo dos acontecimentos reais. Todas as demais pirâmides dialogam com ela.
+
+A Pirâmide Pessoal representa a percepção interna: sentimentos, interpretações subjetivas e filtros emocionais e intelectuais. A Pirâmide Social revela a leitura que o indivíduo faz do seu meio de convivência e as influências oriundas das relações e do ambiente coletivo. Já a Pirâmide do Destino, também chamada de Influência e Propósito, expressa as forças direcionais que atuam como impulso evolutivo e conduzem a experiência.
+
+Quando a potência numérica da Pirâmide da Vida coincide com a potência da Pirâmide Pessoal, existe alinhamento entre realidade e percepção interna. O indivíduo enxerga com clareza o que está acontecendo em sua vida, pois sentimento e fato vibram na mesma frequência. Há coerência entre o que se vive e o que se compreende internamente.
+
+Se a potência da Pirâmide da Vida coincide com a Pirâmide Social, isso indica que o meio exerce influência direta sobre os acontecimentos concretos da vida. O que ocorre na sociedade ao redor reflete-se objetivamente na trajetória pessoal. A experiência externa e o contexto coletivo caminham sincronizados.
+
+Quando a Pirâmide da Vida possui a mesma potência da Pirâmide do Destino, significa que a influência universal ou o propósito está diretamente alinhado aos acontecimentos reais. O indivíduo percebe que existe uma condução maior atuando em sua jornada, e os fatos confirmam essa direção.
+
+Entretanto, quando as potências são diferentes, surgem desalinhamentos perceptivos. Se a Pirâmide Pessoal diverge da Pirâmide da Vida, pode haver discrepância entre o que se sente e o que de fato ocorre. O indivíduo pode interpretar a realidade a partir de filtros internos que não correspondem integralmente aos acontecimentos objetivos. Existe a probabilidade de enxergar apenas pelo campo emocional ou intelectual.
+
+Quando a Pirâmide Pessoal coincide com a Pirâmide Social, há identificação direta com o meio. O indivíduo e seu ambiente atravessam vibrações semelhantes, e as situações vividas coletivamente ressoam internamente com intensidade ampliada.
+
+Se a Pirâmide Pessoal coincide com a Pirâmide do Destino, o sentimento interno pode estar sendo diretamente influenciado por forças de propósito ou por movimentos maiores que conduzem sua jornada. A pessoa sente essa influência, ainda que nem sempre perceba que os fatos concretos acompanham essa vibração.
+
+Quando a Pirâmide Social e a Pirâmide do Destino possuem a mesma potência numérica, o ambiente coletivo torna-se palco de manifestações do propósito. O indivíduo percebe influências maiores atuando em seu meio de convivência. Mesmo que a Pirâmide da Vida tenha outra vibração, ainda assim sentirá a interferência do destino.
+
+Quando as quatro pirâmides apresentam potências distintas, há múltiplas camadas de percepção. A pessoa pode sentir algo internamente, perceber outra coisa no meio social e viver fatos que não correspondem exatamente às suas interpretações. Nesse cenário, o método não aponta erro, mas complexidade vibracional — um campo onde consciência e alinhamento tornam-se fundamentais.
+
+A Pirâmide Quântica não apenas identifica números, mas revela relações entre realidades, percepções e influências. Ela mostra onde há alinhamento, onde há interferência e onde existe potencial de integração.
+
+Este relatório não é uma análise superficial. É a leitura estrutural da arquitetura energética que sustenta sua jornada. Ao compreender como essas quatro pirâmides interagem, você passa a distinguir fato de percepção, influência de interpretação e destino de condicionamento.
+
+A proposta final do método é ampliar consciência. Quando há clareza sobre essas interações, a vida deixa de ser apenas vivida e passa a ser compreendida em sua dinâmica vibracional profunda.</div>
+</div>
+
+
+</div>
+
+${relatorio.abaPrincipal ? `<div class="secao">${relatorio.abaPrincipal}</div>` : ''}
+${relatorio.abaPessoal ? `<div class="secao">${relatorio.abaPessoal}</div>` : ''}
+${relatorio.abaSocial ? `<div class="secao">${relatorio.abaSocial}</div>` : ''}
+${relatorio.abaDestino ? `<div class="secao">${relatorio.abaDestino}</div>` : ''}
+
+<div class="secao">
+    <h2>Considerações Finais</h2>
+    <div class="texto">Este relatório foi desenvolvido para apoiar o seu processo de autoconhecimento.</div>
+    <div class="rodape">Relatório Confidencial • Instinto Superior • 2026</div>
+</div>
+
+
 `;
-
-// Função para disparo automático da impressão após carregamento
-window.onload = () => {
-    setTimeout(() => {
-        // Opcional: window.print(); 
-    }, 1500);
-};
-
-// Proteção básica de conteúdo
-document.oncontextmenu = () => false;
-document.onselectstart = () => false;
 </script>
 </body>
 </html>
+
+
+
