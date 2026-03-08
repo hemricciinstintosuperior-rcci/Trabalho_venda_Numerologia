@@ -63,7 +63,7 @@ document.getElementById("conteudo").innerHTML = `
 
 <div class="secao">
     <h2>Introdução ao Método</h2>
-    <div class="texto">A Pirâmide Quântica representa um dos métodos mais sofisticados de autoconhecimento da atualidade, unindo a sabedoria ancestral da numerologia à compreensão moderna das frequências vibracionais. Neste sistema, os números não são tratados apenas como ferramentas matemáticas, mas como códigos vivos que expressam estruturas energéticas ativas, responsáveis por organizar percepções, experiências e direcionamentos existenciais.
+    <div class="texto">${/*A Pirâmide Quântica representa um dos métodos mais sofisticados de autoconhecimento da atualidade, unindo a sabedoria ancestral da numerologia à compreensão moderna das frequências vibracionais. Neste sistema, os números não são tratados apenas como ferramentas matemáticas, mas como códigos vivos que expressam estruturas energéticas ativas, responsáveis por organizar percepções, experiências e direcionamentos existenciais.
 
 No centro do método está a Pirâmide da Vida, a base principal. Ela rege a experiência concreta do indivíduo e revela o que efetivamente está acontecendo em sua trajetória. É a estrutura objetiva da existência — o campo dos acontecimentos reais. Todas as demais pirâmides dialogam com ela.
 
@@ -89,16 +89,16 @@ A Pirâmide Quântica não apenas identifica números, mas revela relações ent
 
 Este relatório não é uma análise superficial. É a leitura estrutural da arquitetura energética que sustenta sua jornada. Ao compreender como essas quatro pirâmides interagem, você passa a distinguir fato de percepção, influência de interpretação e destino de condicionamento.
 
-A proposta final do método é ampliar consciência. Quando há clareza sobre essas interações, a vida deixa de ser apenas vivida e passa a ser compreendida em sua dinâmica vibracional profunda.</div>
+A proposta final do método é ampliar consciência. Quando há clareza sobre essas interações, a vida deixa de ser apenas vivida e passa a ser compreendida em sua dinâmica vibracional profunda. */}</div>
 </div>
 
 
 
 
-${relatorio.abaPrincipal ? `<div class="secao">${relatorio.abaPrincipal}</div>` : ''}
-${relatorio.abaPessoal ? `<div class="secao">${relatorio.abaPessoal}</div>` : ''}
-${relatorio.abaSocial ? `<div class="secao">${relatorio.abaSocial}</div>` : ''}
-${relatorio.abaDestino ? `<div class="secao">${relatorio.abaDestino}</div>` : ''}
+${relatorio.abaPrincipal ? <div class="secao">${relatorio.abaPrincipal}</div> : ''}
+${relatorio.abaPessoal ? <div class="secao">${relatorio.abaPessoal}</div> : ''}
+${relatorio.abaSocial ? <div class="secao">${relatorio.abaSocial}</div> : ''}
+${relatorio.abaDestino ? <div class="secao">${relatorio.abaDestino}</div> : ''}
 
 <div class="secao">
     <h2>Considerações Finais</h2>
@@ -113,6 +113,7 @@ ${relatorio.abaDestino ? `<div class="secao">${relatorio.abaDestino}</div>` : ''
 </script>
 </body>
 </html>
+
 
 
 
