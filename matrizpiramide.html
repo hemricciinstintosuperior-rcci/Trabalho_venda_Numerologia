@@ -193,16 +193,63 @@ function gerarCronogramaMestre(arcanosVida, data) {
     }
     return cronograma;
 }
+function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa, linhasDaPiramide) {
+    let html = "<div class='box'><h3>⏳ Vigências e Alertas de Fluxo</h3>";
+    
+    const { posNeg } = detectarSequencias(linhasDaPiramide);
+    const posEsp = detectarPosicoesEspeciais(linhasDaPiramide);
+    const posFin = detectarSequenciaFinanceira(linhasDaPiramide);
 
-function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa) {
-    let html = "<div class='box'><h3>⏳ Vigências</h3>";
     cronograma.forEach((periodo) => {
-        let indice = periodo.indiceArcano % arcanosDaPiramide.length;
-        let numArcano = arcanosDaPiramide[indice];
-        html += `<div class="box"><h3>🔹 Potência ${numArcano}</h3>
+        let indiceTopo = periodo.indiceArcano % arcanosDaPiramide.length;
+        let numArcano = arcanosDaPiramide[indiceTopo];
+        
+        // Filtramos TODAS as ocorrências nas colunas desta potência (índice e índice + 1)
+        const todasNeg = posNeg.filter(p => p.indice === indiceTopo || p.indice === indiceTopo + 1);
+        const todasEsp = posEsp.filter(p => p.indice === indiceTopo || p.indice === indiceTopo + 1);
+        const todasFin = posFin.filter(p => p.indice === indiceTopo || p.indice === indiceTopo + 1);
+
+        html += `<div class="box">
+                 <h3 style="margin-top:0; color:#111827;">🔹 Potência ${numArcano}</h3>
                  <b>Idade:</b> ${periodo.idadeIni} → ${periodo.idadeFim} anos<br>
                  <b>Período:</b> ${periodo.ini} - ${periodo.fim}<br><br>
-                 ${textosMapa[numArcano] || "<i>Interpretação em análise.</i>"}</div>`;
+                 <p>${textosMapa[numArcano] || "<i>Interpretação em análise.</i>"}</p>`;
+
+        // --- VARREDURA DE TODAS AS NEGATIVAS (VERMELHAS) ---
+        // Usamos um Set para não repetir o mesmo número se ele aparecer em várias linhas da mesma coluna
+        let negEncontradas = new Set();
+        todasNeg.forEach(p => negEncontradas.add(linhasDaPiramide[p.linha][p.indice]));
+        
+        negEncontradas.forEach(n => {
+            html += `<div style="color:#d32f2f; font-weight:bold; border-left:4px solid #ff6b6b; padding:8px; background:#fff5f5; margin-top:5px; font-size:14px;">
+                        ⚠️ ALERTA NEGATIVO (${n}): ${textosSeqNeg[n] || "Desafio vibracional detectado."}
+                     </div>`;
+        });
+
+        // --- VARREDURA DE TODAS AS ESPECIAIS (DOURADAS) ---
+        let espEncontradas = new Set();
+        todasEsp.forEach(p => {
+            let l = p.linha; let i = p.indice;
+            let possivel = "" + linhasDaPiramide[l][i] + (linhasDaPiramide[l][i+1]??'') + (linhasDaPiramide[l][i+2]??'');
+            for(let chave in sequenciasEspeciais) {
+                if(possivel.includes(chave)) { espEncontradas.add(chave); break; }
+            }
+        });
+
+        espEncontradas.forEach(s => {
+            html += `<div style="color:#b8860b; font-weight:bold; border-left:4px solid #f6c445; padding:8px; background:#fffdf5; margin-top:5px; font-size:14px;">
+                        ⭐ IMPACTO ESPECIAL (${s}): ${sequenciasEspeciais[s]}
+                     </div>`;
+        });
+
+        // --- VARREDURA FINANCEIRA (VERDE) ---
+        if(todasFin.length > 0) {
+            html += `<div style="color:#2e7d32; font-weight:bold; border-left:4px solid #34c759; padding:8px; background:#f5fff5; margin-top:5px; font-size:14px;">
+                        💰 FINANCEIRO (99/9): Fluxo de prosperidade ativo nesta fase.
+                     </div>`;
+        }
+
+        html += `</div>`;
     });
     return html + "</div>";
 }
@@ -334,28 +381,45 @@ function gerar() {
     const base = nomeNumeros(nome);
     const [y, m, d] = data.split("-").map(Number);
 
-    // Pirâmide da Vida (Manda no tempo)
+    // 1. Pirâmide da Vida
     const pVida = piramide(base);
     const aVida = topo(base);
     const crono = gerarCronogramaMestre(aVida, data);
     const reg = pVida.at(-1)[0];
 
-    document.getElementById("aba_principal").innerHTML = desenhar(pVida, true) + 
+    // Montamos o HTML da Aba Principal (AQUI ESTÁ O SEGREDO: passar pVida no final)
+    const htmlPrincipal = desenhar(pVida, true) + 
         `<div class="box"><h3>Regente ${reg}</h3>${textosVida[reg] || ''}</div>` +
         `<div class="gridRelatorios">${gerarRelatorioNegativasCompacto(pVida)}${gerarRelatorioEspeciaisCompacto(pVida)}${gerarRelatorioFinanceiroCompacto(pVida)}</div>` +
-        montarVigenciasSincronizadas(crono, aVida, textosVida);
+        montarVigenciasSincronizadas(crono, aVida, textosVida, pVida);
+    
+    document.getElementById("aba_principal").innerHTML = htmlPrincipal;
 
-    // Pessoal
+    // 2. Pirâmide Pessoal
     const pPes = piramidePessoal(base, d);
-    document.getElementById("aba_pessoal").innerHTML = desenhar(pPes, true) + montarVigenciasSincronizadas(crono, topo(pPes[0]), textosPessoal);
+    const htmlPessoal = desenhar(pPes, true) + montarVigenciasSincronizadas(crono, topo(pPes[0]), textosPessoal, pPes);
+    document.getElementById("aba_pessoal").innerHTML = htmlPessoal;
 
-    // Social
+    // 3. Pirâmide Social
     const pSoc = piramideSocial(base, m);
-    document.getElementById("aba_social").innerHTML = desenhar(pSoc, true) + montarVigenciasSincronizadas(crono, topo(pSoc[0]), textosSocial);
+    const htmlSocial = desenhar(pSoc, true) + montarVigenciasSincronizadas(crono, topo(pSoc[0]), textosSocial, pSoc);
+    document.getElementById("aba_social").innerHTML = htmlSocial;
 
-    // Destino
+    // 4. Pirâmide de Destino
     const pDes = piramideDestino(base, d, m);
-    document.getElementById("aba_destino").innerHTML = desenhar(pDes, true) + montarVigenciasSincronizadas(crono, topo(pDes[0]), textosDestino);
+    const htmlDestino = desenhar(pDes, true) + montarVigenciasSincronizadas(crono, topo(pDes[0]), textosDestino, pDes);
+    document.getElementById("aba_destino").innerHTML = htmlDestino;
+
+    // --- AGORA SALVAMOS NO LOCALSTORAGE COM OS ALERTAS JÁ INCLUÍDOS ---
+    const pacote = {
+        nome: nome,
+        data: data,
+        piramidePrincipal: htmlPrincipal,
+        piramidePessoal: htmlPessoal,
+        piramideSocial: htmlSocial,
+        piramideDestino: htmlDestino
+    };
+    localStorage.setItem("relatorioPiramide", JSON.stringify(pacote));
 
     mostrarAba('principal');
 }
@@ -420,6 +484,7 @@ async function abrirPremium() {
 </script>
 </body>
 </html>
+
 
 
 
