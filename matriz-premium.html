@@ -6,305 +6,175 @@
 <title>Relatório Premium • Pirâmide Quântica</title>
 
 <style>
-body{font-family:"Times New Roman",serif;background:#f4f4f4;margin:0;}
+/* CONFIGURAÇÕES DE BASE */
+body{font-family:"Times New Roman",serif;background:#f4f4f4;margin:0; color:#1a1a1a;}
 *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
 
-.capa{background:white;text-align:center;padding:120px 40px;}
-.logo{width:650px;margin-bottom:40px;}
-.titulo{font-size:42px;letter-spacing:3px;}
-.subtitulo{font-size:22px;margin-top:10px;}
-.nomeCliente{margin-top:70px;font-size:24px;}
+.capa{background:white;text-align:center;padding:120px 40px; page-break-after: always;}
+.logo{width:550px;margin-bottom:40px;}
+.nomeCliente{margin-top:70px;font-size:28px; border-top: 1px solid #ccc; padding-top: 20px; display: inline-block;}
 
 .secao{
- max-width:1000px;margin:40px auto;background:white;
- padding:40px;border-radius:10px;box-shadow:0 0 20px rgba(0,0,0,.05);
+ max-width:900px;margin:30px auto;background:white;
+ padding:50px;border-radius:10px;box-shadow:0 0 20px rgba(0,0,0,.05);
+ page-break-inside: avoid; /* Evita cortar seções no meio da página */
 }
 
-.texto{white-space:pre-line;font-size:19px;line-height:1.6;}
-.tituloPiramide{text-align:center;font-size:28px;margin-bottom:30px;}
+.texto{white-space:pre-line;font-size:18px;line-height:1.6; text-align: justify;}
+.tituloPiramide{text-align:center;font-size:28px;margin-bottom:30px; font-weight: bold; color: #111;}
 
-.piramide{display:flex;flex-direction:column;align-items:center;margin:40px 0;}
-.linha{display:flex;justify-content:center;margin:2px 0;}
+/* ESTILIZAÇÃO DAS PIRÂMIDES NO PREMIUM */
+.piramide{display:flex;flex-direction:column;align-items:center;margin:30px 0; font-family: monospace;}
+.linha{display:flex;justify-content:center;margin:1px 0; gap: 4px;}
 .num{
- width:28px;height:28px;border-radius:6px;
+ width:24px;height:24px;border-radius:4px;
  display:flex;align-items:center;justify-content:center;
- font-weight:bold;font-size:16px;margin:2px;color:#fff;
- background:#63c7d6;
+ font-weight:bold;font-size:14px; color:#000;
+ background:#28d3ee; /* Cor padrão azul clara */
 }
-.num.negativo{background:#e74c3c;}
-.num.especial{background:#f1c40f;color:#000;}
-.num.financeiro{background:#2ecc71;}
 
-.rodape{text-align:right;margin-top:80px;font-size:12px;color:#777;}
-@media print{.no-print{display:none!important;}}
+/* CORES DAS SEQUÊNCIAS NA PIRÂMIDE */
+.num.negativo{background:#FF0000 !important; color:#fff !important;}
+.num.especial{background:#f6c445 !important; color:#000 !important;}
+.num.financeiro{background:#34c759 !important; color:#fff !important;}
 
+/* ESTILO DOS NOVOS ALERTAS DE VIGÊNCIA (O QUE ADICIONAMOS) */
+.box { 
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    margin: 15px 0; 
+    border-radius: 8px;
+    background: #fafafa;
+}
 
-/* =========================
-📱 RESPONSIVO MOBILE
-========================= */
+/* Estilos específicos para os alertas dentro das vigências */
+div[style*="border-left:4px solid #ff6b6b"] { 
+    background: #fff5f5 !important; 
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+div[style*="border-left:4px solid #f6c445"] { 
+    background: #fffdf5 !important; 
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+div[style*="border-left:4px solid #34c759"] { 
+    background: #f5fff5 !important; 
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.gridRelatorios { display: block; } /* No PDF, as negativas ficam em lista */
+
+.rodape{text-align:center;margin-top:50px;font-size:12px;color:#999; border-top: 1px solid #eee; padding-top: 20px;}
+
+/* BOTÃO DE IMPRESSÃO */
+.btn-container { text-align:center; margin: 40px 0; }
+button{ 
+    background: #facc15; border: none; padding: 15px 30px; 
+    font-weight: bold; font-size: 18px; border-radius: 8px; cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+@media print{
+    .no-print{display:none!important;}
+    body { background: white; }
+    .secao { box-shadow: none; margin: 0 auto; width: 100%; padding: 30px; }
+}
+
+/* RESPONSIVO MOBILE */
 @media screen and (max-width: 768px){
-
-  body{
-    background:#fff;
-  }
-
-  .capa{
-    padding:60px 20px;
-  }
-
-  .logo{
-    width:90%;
-    max-width:320px;
-  }
-
-  .titulo{
-    font-size:28px;
-    letter-spacing:1px;
-  }
-
-  .subtitulo{
-    font-size:18px;
-  }
-
-  .nomeCliente{
-    font-size:18px;
-    margin-top:40px;
-  }
-
-  .secao{
-    margin:20px 12px;
-    padding:25px 18px;
-    border-radius:14px;
-  }
-
-  .texto{
-    font-size:16px;
-    line-height:1.7;
-  }
-
- 
-
-  /* PIRÂMIDE MOBILE */
-  .num{
-    width:22px;
-    height:22px;
-    font-size:16px;
-    margin:1px;
-    border-radius:5px;
-  }
-
-  .linha{
-    margin:1px 0;
-  }
-
-  /* botão */
-  button{
-    width:90%;
-    padding:14px;
-    font-size:18px;
-    border-radius:10px;
-  }
-
+  .logo{ width:100%; }
+  .secao{ margin:10px; padding:20px; }
+  .num { width: 18px; height: 18px; font-size: 11px; }
 }
-
- 
 </style>
 </head>
 
 <body>
-<div id="conteudo">Gerando relatório...</div>
+<div id="conteudo">Gerando seu relatório quântico premium...</div>
 
 <script>
-
-
-// recebe dados do gerador
-const dados=localStorage.getItem("relatorioPiramide");
-if(!dados){document.body.innerHTML="Nenhum relatório encontrado.";throw new Error();}
-const relatorio=JSON.parse(dados);
-
-// TEXTOS FIXOS
-// ==========================================
-// TEXTOS EXPANDIDOS PARA O RELATÓRIO PREMIUM
-// ==========================================
+// Captura os dados enviados pela página anterior
+const dados = localStorage.getItem("relatorioPiramide");
+if(!dados){
+    document.body.innerHTML="<div class='secao'>ERRO: Nenhum dado encontrado. Por favor, gere a matriz novamente.</div>";
+    throw new Error();
+}
+const relatorio = JSON.parse(dados);
 
 const textos = {
-  
-introducaoMetodo: `
-A Pirâmide Quântica representa um dos métodos mais sofisticados de autoconhecimento da atualidade, unindo a sabedoria ancestral da numerologia à compreensão moderna das frequências vibracionais. Neste sistema, os números não são tratados apenas como ferramentas matemáticas, mas como códigos vivos que expressam estruturas energéticas ativas, responsáveis por organizar percepções, experiências e direcionamentos existenciais.
-
-No centro do método está a Pirâmide da Vida, a base principal. Ela rege a experiência concreta do indivíduo e revela o que efetivamente está acontecendo em sua trajetória. É a estrutura objetiva da existência — o campo dos acontecimentos reais. Todas as demais pirâmides dialogam com ela.
-
-A Pirâmide Pessoal representa a percepção interna: sentimentos, interpretações subjetivas e filtros emocionais e intelectuais. A Pirâmide Social revela a leitura que o indivíduo faz do seu meio de convivência e as influências oriundas das relações e do ambiente coletivo. Já a Pirâmide do Destino, também chamada de Influência e Propósito, expressa as forças direcionais que atuam como impulso evolutivo e conduzem a experiência.
-
-Quando a potência numérica da Pirâmide da Vida coincide com a potência da Pirâmide Pessoal, existe alinhamento entre realidade e percepção interna. O indivíduo enxerga com clareza o que está acontecendo em sua vida, pois sentimento e fato vibram na mesma frequência. Há coerência entre o que se vive e o que se compreende internamente.
-
-Se a potência da Pirâmide da Vida coincide com a Pirâmide Social, isso indica que o meio exerce influência direta sobre os acontecimentos concretos da vida. O que ocorre na sociedade ao redor reflete-se objetivamente na trajetória pessoal. A experiência externa e o contexto coletivo caminham sincronizados.
-
-Quando a Pirâmide da Vida possui a mesma potência da Pirâmide do Destino, significa que a influência universal ou o propósito está diretamente alinhado aos acontecimentos reais. O indivíduo percebe que existe uma condução maior atuando em sua jornada, e os fatos confirmam essa direção.
-
-Entretanto, quando as potências são diferentes, surgem desalinhamentos perceptivos. Se a Pirâmide Pessoal diverge da Pirâmide da Vida, pode haver discrepância entre o que se sente e o que de fato ocorre. O indivíduo pode interpretar a realidade a partir de filtros internos que não correspondem integralmente aos acontecimentos objetivos. Existe a probabilidade de enxergar apenas pelo campo emocional ou intelectual.
-
-Quando a Pirâmide Pessoal coincide com a Pirâmide Social, há identificação direta com o meio. O indivíduo e seu ambiente atravessam vibrações semelhantes, e as situações vividas coletivamente ressoam internamente com intensidade ampliada.
-
-Se a Pirâmide Pessoal coincide com a Pirâmide do Destino, o sentimento interno pode estar sendo diretamente influenciado por forças de propósito ou por movimentos maiores que conduzem sua jornada. A pessoa sente essa influência, ainda que nem sempre perceba que os fatos concretos acompanham essa vibração.
-
-Quando a Pirâmide Social e a Pirâmide do Destino possuem a mesma potência numérica, o ambiente coletivo torna-se palco de manifestações do propósito. O indivíduo percebe influências maiores atuando em seu meio de convivência. Mesmo que a Pirâmide da Vida tenha outra vibração, ainda assim sentirá a interferência do destino.
-
-Quando as quatro pirâmides apresentam potências distintas, há múltiplas camadas de percepção. A pessoa pode sentir algo internamente, perceber outra coisa no meio social e viver fatos que não correspondem exatamente às suas interpretações. Nesse cenário, o método não aponta erro, mas complexidade vibracional — um campo onde consciência e alinhamento tornam-se fundamentais.
-
-A Pirâmide Quântica não apenas identifica números, mas revela relações entre realidades, percepções e influências. Ela mostra onde há alinhamento, onde há interferência e onde existe potencial de integração.
-
-Este relatório não é uma análise superficial. É a leitura estrutural da arquitetura energética que sustenta sua jornada. Ao compreender como essas quatro pirâmides interagem, você passa a distinguir fato de percepção, influência de interpretação e destino de condicionamento.
-
-A proposta final do método é ampliar consciência. Quando há clareza sobre essas interações, a vida deixa de ser apenas vivida e passa a ser compreendida em sua dinâmica vibracional profunda.
-`,
-
-  introRegente: `
-O Regente é o coração da sua pirâmide; ele representa a força central que governa toda a sua estrutura energética durante toda a existência. Imagine o Regente como o "Sol" do seu mapa numerológico: tudo gira em torno dele. Ele define a sua identidade básica, o seu temperamento e a maneira como você se posiciona diante do mundo.
-
-Esta é a frequência que permanece constante, independentemente das mudanças externas ou dos ciclos temporários que você atravessa. Conhecer o seu Regente é fundamental para entender por que você reage de certas formas a determinados estímulos, funcionando como o filtro principal da sua percepção da vida.
-
-Quando você está em harmonia com essa energia, a vida flui com uma naturalidade impressionante e os obstáculos parecem menores. Por outro lado, agir contra a natureza do seu Regente gera um desgaste energético imenso, resultando em cansaço e frustração.
-
-Esta seção detalha como essa força central se manifesta na sua personalidade, revelando talentos natos e a energia que você emana de forma inconsciente para as pessoas ao seu redor, sendo a base fundamental de todo o seu magnetismo pessoal.`,
-
-  introNegativas: `
-As Sequências Negativas dentro da Pirâmide Quântica não devem ser vistas como "má sorte", mas sim como padrões que indicam áreas de fricção e desafios recorrentes. Elas funcionam como alertas no seu mapa, apontando onde você tende a repetir erros, onde gasta energia de forma desnecessária ou onde possui bloqueios que impedem o seu crescimento.
-
-Identificar essas sequências é o primeiro passo para quebrá-las e transmutar essa energia em aprendizado consciente. Muitas vezes, essas sequências representam lições que não foram totalmente integradas no passado e se manifestam como medos irracionais ou situações difíceis que parecem se repetir ciclicamente.
-
-Ao compreender a natureza dessas vibrações desafiadoras, você ganha o poder da escolha. Em vez de ser uma vítima inconsciente desses padrões, você passa a ser o observador consciente que pode decidir agir de forma diferente diante dos gatilhos emocionais.
-
-Esta análise é essencial para quem busca uma evolução real, pois revela exatamente o que precisa ser curado e fortalecido para que os seus caminhos se abram sem resistências, permitindo que a luz da sua essência brilhe sem as interferências desses ruídos energéticos.`,
-
-  introEspeciais: `
-As Sequências Especiais representam ocorrências pontuais e situações específicas que se manifestam em momentos determinados da sua trajetória. Diferente do seu Regente, que é constante, essas sequências surgem como "eventos" no seu campo vibracional, sinalizando uma fase onde certas energias estarão temporariamente mais intensas e disponíveis.
-
-É fundamental entender que uma sequência especial não define quem você é, mas sim o que está acontecendo com você ou ao seu redor neste exato período. Elas funcionam como gatilhos de oportunidade ou de teste, exigindo uma postura diferenciada para que você possa colher os frutos dessa configuração momentânea sem se perder no excesso de intensidade que elas costumam carregar.
-
-Muitas vezes, essas situações surgem para acelerar processos que estavam estagnados ou para trazer à tona verdades que precisam ser encaradas. Por serem passageiras, exigem atenção plena: se você não perceber o momento em que esse portal se abre, a energia se dissipa e a situação se altera, voltando ao fluxo normal do seu mapa.
-
-Nesta parte do relatório, detalhamos a natureza dessa situação específica que o seu mapa apresenta agora, orientando sobre como agir enquanto essa influência estiver ativa para que você tire o melhor proveito desse evento cósmico singular.`,
-
-  introFinanceiro: `
-A análise da Sequência Financeira foca em uma vibração específica de manifestação material que se apresenta como uma circunstância favorável ou um desafio de fluxo em sua vida atual. Não tratamos aqui de uma condição permanente de riqueza ou escassez, mas sim de uma "janela financeira" — um momento onde a sua relação com a energia do dinheiro assume um padrão determinado.
-
-Esta situação financeira descrita no seu mapa indica como as energias de prosperidade estão circulando no momento. Pode representar uma fase de colheita rápida, onde os esforços passados se materializam de forma súbita, ou um período que exige uma gestão mais estratégica e cautelosa para preparar o terreno para um salto futuro. É uma fotografia do seu momento material.
-
-Entender essa vibração momentânea permite que você ajuste suas velas conforme o vento da prosperidade sopra. Se o momento é de expansão, você deve agir com audácia; se o momento é de consolidação, a prudência se torna sua melhor ferramenta. O segredo não está em mudar quem você é, mas em adaptar suas ações à situação financeira que os números indicam para este agora.
-
-Lembre-se que as situações financeiras são dinâmicas. Ao compreender a vibração que rege o seu aspecto material neste período, você ganha a clareza necessária para tomar decisões mais assertivas, evitando desperdícios e potencializando cada oportunidade de ganho que essa frequência específica está tentando manifestar.`,
- 
- introVigencias: `
-As Vigências representam os ciclos de atuação das potências numerológicas ao longo da sua vida. Nada na natureza é estático, e com a nossa energia pessoal não seria diferente. As vigências dividem a sua trajetória em períodos específicos, cada um regido por uma vibração diferente que dita o "clima" das suas experiências.
-
-Existem épocas para plantar silenciosamente e épocas para colher publicamente; momentos de introspecção profunda e fases de intensa atividade social e expansão. Compreender as suas vigências atuais permite que você pare de lutar contra a correnteza do tempo universal.
-
-Se você está em uma vigência que pede introspecção e tenta forçar um crescimento externo agressivo, encontrará resistência e frustração. Por outro lado, se está em um ciclo de expansão e se mantém estagnado por medo, perderá oportunidades valiosas que podem não se repetir tão cedo.
-
-Conhecer esses períodos ajuda você a planejar o seu futuro com inteligência estratégica e paciência, sabendo exatamente quando deve acelerar seus projetos e quando deve recuar para recarregar as energias. É a arte milenar de viver em harmonia com os ritmos naturais do seu próprio destino.`,
-
-  agradecimento: `
-Este relatório foi desenvolvido exclusivamente para apoiar o seu processo de autoconhecimento e despertar o seu potencial máximo. Lembre-se sempre de que os números indicam tendências, potências e caminhos, mas o livre-arbítrio é, e sempre será, o fator decisivo e soberano na sua jornada.
-
-Você é o arquiteto da sua própria realidade e as informações aqui contidas servem como uma bússola de alta precisão, não como uma sentença imutável. Use este conhecimento para se fortalecer, para curar suas sombras e para brilhar sua luz única no mundo com muito mais intenção e propósito.
-
-Gratidão por confiar no trabalho do Instinto Superior para guiar este mergulho profundo em sua essência. Esperamos que esta leitura seja o ponto de partida para uma vida muito mais consciente, plena e conectada com a sua verdade mais elevada.
-
-Que a sabedoria dos números ilumine cada um de seus passos e que você tenha a coragem necessária para viver o destino grandioso que está codificado em seu nome e em sua data de nascimento desde o momento em que você chegou ao mundo.`
+    introducaoMetodo: `A Pirâmide Quântica representa um dos métodos mais sofisticados de autoconhecimento da atualidade... (seu texto completo aqui)`,
+    introRegente: `O Regente é o coração da sua pirâmide...`,
+    introNegativas: `As Sequências Negativas dentro da Pirâmide Quântica não devem ser vistas como "má sorte"...`,
+    introEspeciais: `As Sequências Especiais representam ocorrências pontuais...`,
+    introFinanceiro: `A análise da Sequência Financeira foca em uma vibração específica...`,
+    introVigencias: `As Vigências representam os ciclos de atuação das potências numerológicas ao longo da sua vida...`,
+    agradecimento: `Este relatório foi desenvolvido exclusivamente para apoiar o seu processo...`
 };
-function montarSecao(nome,html){
- return `<div class="secao"><div class="tituloPiramide">${nome}</div>${html}</div>`;
+
+function montarSecao(titulo, conteudoHtml){
+    if(!conteudoHtml) return "";
+    return `
+    <div class="secao">
+        <div class="tituloPiramide">${titulo}</div>
+        <div class="conteudo-dinamico">${conteudoHtml}</div>
+    </div>`;
 }
 
-// =========================
-// RELATÓRIO COMPLETO
-// =========================
-document.getElementById("conteudo").innerHTML=`
-
+// MONTAGEM DO HTML FINAL
+document.getElementById("conteudo").innerHTML = `
 <div class="capa">
-<img class="logo" src="https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/matriz.png">
-<div class="titulo"> </div>
-<div class="subtitulo"> </div>
-<div class="nomeCliente"><b>${relatorio.nome}</b><br>${relatorio.data}</div>
+    <img class="logo" src="https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/matriz.png">
+    <div class="nomeCliente">
+        Relatório Personalizado para:<br>
+        <strong>${relatorio.nome}</strong><br>
+        Nascimento: ${relatorio.data.split('-').reverse().join('/')}
+    </div>
 </div>
 
 <div class="secao">
-<h2>Introdução ao Método</h2>
-<div class="texto">${textos.introducaoMetodo}</div>
+    <h2>Introdução ao Método</h2>
+    <div class="texto">${relatorio.introducaoMetodo || "A Pirâmide Quântica une a sabedoria ancestral da numerologia à compreensão moderna das frequências vibracionais..."}</div>
 </div>
-
-<!-- 🔴 NOVO BLOCO ADICIONADO -->
-<div class="secao">
-<h2>Como interpretar o relatório</h2>
-<div class="texto">
-
-<b>Regente</b><br>
-${textos.introRegente}<br><br>
-
-<b>Sequências Numéricas Negativas</b><br>
-${textos.introNegativas}<br><br>
-
-<b>Sequências Especiais</b><br>
-${textos.introEspeciais}<br><br>
-
-<b>Sequência Financeira</b><br>
-${textos.introFinanceiro}<br><br>
-
-<b>Vigências</b><br>
-${textos.introVigencias}
-
-</div>
-</div>
-
-${montarSecao("",relatorio.piramidePrincipal)}
-${montarSecao("",relatorio.piramidePessoal)}
-${montarSecao("",relatorio.piramideSocial)}
-${montarSecao("",relatorio.piramideDestino)}
 
 <div class="secao">
-<h2>Considerações Finais</h2>
-<div class="texto">${textos.agradecimento}</div>
+    <h2>Guia de Interpretação</h2>
+    <div class="texto">
+        <strong>Regente:</strong> ${textos.introRegente}<br><br>
+        <strong>Sequências Negativas:</strong> ${textos.introNegativas}<br><br>
+        <strong>Sequências Especiais:</strong> ${textos.introEspeciais}<br><br>
+        <strong>Fluxo Financeiro:</strong> ${textos.introFinanceiro}<br><br>
+        <strong>Ciclos de Vigência:</strong> ${textos.introVigencias}
+    </div>
 </div>
 
-<div class="rodape">Relatório Confidencial • Instinto Superior</div>
+${montarSecao("Matriz da Vida (Realidade)", relatorio.piramidePrincipal)}
+${montarSecao("Matriz Pessoal (Sentimento)", relatorio.piramidePessoal)}
+${montarSecao("Matriz Social (Ambiente)", relatorio.piramideSocial)}
+${montarSecao("Matriz de Destino (Propósito)", relatorio.piramideDestino)}
 
-<div style="text-align:center;margin:40px;">
-<button class="no-print" onclick="window.print()">📄 Baixar PDF</button>
+<div class="secao">
+    <h2>Considerações Finais</h2>
+    <div class="texto">${textos.agradecimento}</div>
+    <div class="rodape">Relatório Confidencial • Instinto Superior • 2026</div>
+</div>
+
+<div class="btn-container no-print">
+    <button onclick="window.print()">📄 Baixar Relatório em PDF</button>
 </div>
 `;
-// ===============================
-// GERAR PDF AUTOMÁTICO (MOBILE + PC)
-// ===============================
-function gerarPDF(){
-  window.scrollTo(0,0); // garante topo
-  setTimeout(()=>{
-    window.print();
-  },800);
-}
 
-// gera automaticamente após montar o relatório
-setTimeout(gerarPDF, 1200);
-// impressão automática
+// Função para disparo automático da impressão após carregamento
+window.onload = () => {
+    setTimeout(() => {
+        // Opcional: window.print(); 
+    }, 1500);
+};
 
-// =======================
-// 🔒 BLOQUEIO CÓPIA
-// =======================
-document.oncontextmenu=()=>false;
-document.onselectstart=()=>false;
-
+// Proteção básica de conteúdo
+document.oncontextmenu = () => false;
+document.onselectstart = () => false;
 </script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
