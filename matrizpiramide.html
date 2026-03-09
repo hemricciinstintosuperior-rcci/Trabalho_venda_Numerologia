@@ -478,45 +478,47 @@ function gerar() {
     }));
     mostrarAba('principal');
 }
-// --- TRAVA FIREBASE ---
+// --- TRAVA FIREBASE (CORRIGIDA) ---
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-// No final do seu script, apenas estas duas funções precisam desse ajuste:
+// Chamar a verificação assim que a página carrega
+verificarAcesso();
 
 async function verificarAcesso() {
     if (!userEmail) { 
-        window.location.href = "index.html"; 
+        // Se não tem usuário na URL, volta pro início ou nega
+        console.log("Sem e-mail de usuário");
         return; 
     }
     try {
-        const res = await fetch(${DB_URL}vendas/${userEmail}.json);
+        // CORREÇÃO: Adicionado crases para a URL funcionar
+        const res = await fetch(`${DB_URL}vendas/${userEmail}.json`);
         const d = await res.json();
-        // Se o e-mail não existir no banco ou o status for 'usado', ele bloqueia
-        if (!d || d.status === 'usado') { 
-            alert("Acesso expirado ou inválido."); 
-            window.location.href = "index.html"; 
+        
+        // Se o status for 'usado', ele bloqueia e redireciona
+        if (d && d.status === 'usado') { 
+            alert("Este acesso já foi utilizado para gerar um relatório."); 
+            window.location.href = "https://seusite.com/expirado"; // Mude para sua página de erro
         }
     } catch (e) {
-        console.error("Erro ao verificar acesso");
+        console.error("Erro ao verificar acesso no Firebase");
     }
 }
+
 async function abrirPremium() {
-    // 1. Verifica se os dados foram preenchidos
     const nome = document.getElementById("nome").value;
     const data = document.getElementById("data").value;
-    
-    // Verificação extra: se o conteúdo das abas está vazio, o usuário não clicou em GERAR
     const principal = document.getElementById("aba_principal").innerHTML;
+
     if(!nome || !data || principal === "") {
         return alert("Por favor, preencha os dados e clique em 'GERAR AS MATRIZES' primeiro.");
     }
 
-    // 2. Marca no Firebase (Sua lógica de trava de venda)
+    // 1. MARCA COMO USADO NO FIREBASE (TRAVA DE VENDA)
     try {
-        // Certifique-se que userEmail e DB_URL estão definidos no seu código global
-        if(typeof DB_URL !== 'undefined' && typeof userEmail !== 'undefined'){
+        if(userEmail){
             await fetch(`${DB_URL}vendas/${userEmail}.json`, { 
                 method: 'PATCH', 
                 body: JSON.stringify({ status: 'usado' }),
@@ -527,10 +529,10 @@ async function abrirPremium() {
         console.error("Erro ao registrar uso da trava");
     }
 
-    // 3. Prepara o pacote com os nomes de chaves CORRETOS para o Premium ler
+    // 2. PREPARA O PACOTE PARA O PREMIUM
     const pacote = {
         nome: nome,
-        data: data.split("-").reverse().join("/"), // Formata data para DD/MM/AAAA
+        data: data.split("-").reverse().join("/"),
         abaPrincipal: document.getElementById("aba_principal").innerHTML,
         abaPessoal: document.getElementById("aba_pessoal").innerHTML,
         abaSocial: document.getElementById("aba_social").innerHTML,
@@ -539,19 +541,20 @@ async function abrirPremium() {
     
     localStorage.setItem("relatorioPiramide", JSON.stringify(pacote));
     
-    // 4. Abre o relatório e limpa o acesso
+    // 3. ABRE O RELATÓRIO
     window.open("matriz-premium.html", "_blank");
-    
-    // Opcional: Redirecionar para evitar reuso da página de geração após a venda
-    setTimeout(() => { 
-        // window.location.href = "sucesso.html"; 
-    }, 2000);
+
+    // 4. REDIRECIONA O GERADOR PARA IMPEDIR REUSO
+    setTimeout(() => {
+        window.location.href = "https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/sucesso.html";
+    }, 1500);
 }
 
   
 </script>
 </body>
 </html>
+
 
 
 
