@@ -367,15 +367,14 @@ function desenhar(linhas, compacta=false){
     const esp = detectarPosicoesEspeciais(linhas);
     const fin = detectarSequenciaFinanceira(linhas);
     let html=`<div class="${classe}">`;
-    linhas.forEach((linha,i)=>{
-        html += `<div class="linha">`;
-        linha.forEach((n,j)=>{
-            let c = "num";
-            if(neg.some(p=>p.linha===i && p.indice===j)) c+=" negativo";
-            if(esp.some(p=>p.linha===i && p.indice===j)) c+=" especial";
-            if(fin.some(p=>p.linha===i && p.indice===j)) c+=" financeiro";
-            html += `<div class="${c}">${n}</div>`;
-        });
+linha.forEach((n, j) => {
+    let classes = ["num"];
+    if (neg.some(p => p.linha === i && p.indice === j)) classes.push("negativo");
+    if (esp.some(p => p.linha === i && p.indice === j)) classes.push("especial"); // Esta linha ativa o amarelo
+    if (fin.some(p => p.linha === i && p.indice === j)) classes.push("financeiro");
+    
+    html += `<div class="${classes.join(' ')}">${n}</div>`;
+});
         html += `</div>`;
     });
     return html + `</div>`;
@@ -439,6 +438,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
