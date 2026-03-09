@@ -138,422 +138,218 @@ const textos = window.textos || {
     
 const mapa = { A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6,X:6, O:7,Z:7, F:8,P:8 };
 
-function valorLetra(letra){
-    if(!letra || letra===" ") return 0;
-    let normal = letra.normalize("NFD");
-    let base = normal[0];
-    let acentos = normal.slice(1);
-    let valorBase = mapa[base] ?? 0;
-    let somaAcentos = 0, multAcentos = 1;
-    for(let a of acentos){
-        if(a === "\u0301") somaAcentos += 2;
-        else if(a === "\u0302") somaAcentos += 7;
-        else if(a === "\u0303") somaAcentos += 3;
-        else if(a === "\u0327") somaAcentos += 6;
-        else if(a === "\u0300") multAcentos *= 2;
-        else if(a === "\u0308") multAcentos *= 2;
+function valorLetra(l){
+    if(!l || l===" ") return 0;
+    let n = l.normalize("NFD");
+    let vB = mapa[n[0].toUpperCase()] ?? 0;
+    let sA = 0, mA = 1;
+    for(let a of n.slice(1)){
+        if(a==="\u0301") sA+=2; else if(a==="\u0302") sA+=7; else if(a==="\u0303") sA+=3;
+        else if(a==="\u0327") sA+=6; else if(a==="\u0300" || a==="\u0308") mA*=2;
     }
-    return (valorBase + somaAcentos) * multAcentos;
+    return (vB + sA) * mA;
 }
 
-function reduzir(n){
-    while(n>9){ n=n.toString().split('').reduce((a,b)=>+a+ +b,0); }
-    return n;
-}
+function reduzir(n){ while(n>9){ n=n.toString().split('').reduce((a,b)=>+a+ +b,0); } return n; }
 
 function nomeNumeros(nome){
-    nome=nome.toUpperCase();
-    let arr=[];
-    for(let l of nome){ if(l!==" "){ let v=valorLetra(l); if(v)arr.push(v); } }
-    return arr;
+    return nome.toUpperCase().split('').filter(l=>l!==" ").map(l=>valorLetra(l)).filter(v=>v>0);
 }
 
 function piramide(base){
-    let linhas=[base];
-    while(base.length>1){
+    let b = [...base], linhas=[b];
+    while(b.length>1){
         let nova=[];
-        for(let i=0;i<base.length-1;i++){ nova.push(reduzir(base[i]+base[i+1])); }
-        linhas.push(nova);
-        base=nova;
+        for(let i=0;i<b.length-1;i++){ nova.push(reduzir(b[i]+b[i+1])); }
+        linhas.push(nova); b=nova;
     }
     return linhas;
 }
 
 function topo(base){
-    let arcanos = [];
-    for(let i=0; i<base.length-1; i++){ arcanos.push(parseInt("" + base[i] + base[i+1])); }
-    return arcanos;
+    let arc = [];
+    for(let i=0; i<base.length-1; i++){ arc.push(parseInt("" + base[i] + base[i+1])); }
+    return arc;
 }
 
-// === CÁLCULO DE VIGÊNCIA POR AMPLITUDE (DIAGONAL CORRIGIDO) ===
-function calcularVigenciaPorPosicao(linha, coluna, cronograma) {
-    let indiceInicio = coluna;
-    let indiceFim = coluna + linha; 
-
-    let periodosAfetados = cronograma.filter(p => p.indiceArcano >= indiceInicio && p.indiceArcano <= indiceFim);
-
-    if (periodosAfetados.length === 0) return "Fase de transição";
-
-    let idadeIni = periodosAfetados[0].idadeIni;
-    let idadeFim = periodosAfetados[periodosAfetados.length - 1].idadeFim;
-
-    return `${idadeIni} a ${idadeFim} anos`;
+function calcularVigenciaPorPosicao(linha, coluna, crono) {
+    let indI = coluna, indF = coluna + linha; 
+    let pA = crono.filter(p => p.indiceArcano >= indI && p.indiceArcano <= indF);
+    if (pA.length === 0) return "Fase de transição";
+    return ${pA[0].idadeIni} a ${pA[pA.length - 1].idadeFim} anos;
 }
 
-// === RELATÓRIOS GRUPADOS (EVITA REPETIÇÃO E ERRO DE CONTAGEM) ===
-function gerarRelatorioNegativasComVigencia(linhas, crono) {
+// === RELATÓRIOS ADAPTADOS (LÊEM BANCOS ESPECÍFICOS) ===
+
+function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt) {
     const { posNeg } = detectarSequencias(linhas);
-    let h = `<div class="box"><h3 style="color:#d32f2f;">⚠️ Sequências Negativas</h3>`;
-    
-    let gruposContados = new Set();
-    let encontrou = false;
-
+    if (!posNeg || posNeg.length === 0) return "";
+    let h = <div class="box"><h3 style="color:#d32f2f;">⚠️ Sequências Negativas</h3>;
+    let grupos = new Set();
     posNeg.forEach(p => {
-        let num = linhas[p.linha][p.indice];
-        // Criamos uma chave que identifica o número e a linha para não repetir o mesmo bloco
-        let idGrupo = `neg-${num}-L${p.linha}`;
-
-        if (!gruposContados.has(idGrupo)) {
-            encontrou = true;
-            gruposContados.add(idGrupo);
-
-            let vigencia = calcularVigenciaPorPosicao(p.linha, p.indice, crono);
-            h += `<div style="margin-bottom:12px; border-left:4px solid #ff6b6b; padding-left:10px; text-align:left;">
-                    <b style="font-size:16px;">🚫 Sequência ${num}</b><br>
-                    <small><b>Período Crítico:</b> ${vigencia}</small><br>
-                    <span style="font-size:14px; color:#444;">${textosSeqNeg[num] || 'Desafio vibracional detectado.'}</span>
+        let n = linhas[p.linha][p.indice], id = neg-${n}-L${p.linha};
+        if (!grupos.has(id)) {
+            grupos.add(id);
+            h += `<div style="margin-bottom:10px; border-left:4px solid #ff6b6b; padding-left:10px; text-align:left;">
+                    <b>🚫 Sequência ${n}</b> (${calcularVigenciaPorPosicao(p.linha, p.indice, crono)})<br>
+                    <span style="font-size:14px; color:#444;">${bancoTxt[n] || 'Desafio detectado.'}</span>
                   </div>`;
         }
     });
-    return encontrou ? h + "</div>" : "";
+    return h + "</div>";
 }
 
-function gerarRelatorioEspeciaisComVigencia(linhas, crono) {
-    let h = `<div class="box"><h3 style="color:#b8860b;">⭐ Impactos Especiais</h3>`;
-    let gruposContados = new Set();
-    let encontrou = false;
-
-    linhas.forEach((linha, i) => {
-        for (let j = 0; j < linha.length - 2; j++) {
-            let seq = "" + linha[j] + linha[j + 1] + linha[j + 2];
-            if (sequenciasEspeciais[seq]) {
-                // Identificamos o impacto pela posição inicial dele
-                let idImpacto = `esp-${seq}-L${i}-C${j}`;
-
-                if (!gruposContados.has(idImpacto)) {
-                    encontrou = true;
-                    gruposContados.add(idImpacto);
-
-                    let vigencia = calcularVigenciaPorPosicao(i, j, crono);
-                    h += `<div style="margin-bottom:12px; border-left:4px solid #f6c445; padding-left:10px; text-align:left;">
-                            <b style="font-size:16px;">✨ Impacto ${seq}</b><br>
-                            <small><b>Período Ativo:</b> ${vigencia}</small><br>
-                            <span style="font-size:14px; color:#444;">${sequenciasEspeciais[seq]}</span>
-                          </div>`;
-                }
-            }
-        }
-    });
-    return encontrou ? h + "</div>" : "";
-}
-
-function gerarRelatorioFinanceiroComVigencia(linhas, crono) {
+function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt) {
     const posFin = detectarSequenciaFinanceira(linhas);
-    let h = `<div class="box"><h3 style="color:#2e7d32;">💰 Fluxos de Prosperidade</h3>`;
-    
-    // ESTA É A CHAVE: Usamos um Set para guardar apenas o "início" de cada grupo 99/9
-    let gruposIdentificados = new Set();
-    let contadorReal = 0;
-
+    if (!posFin || posFin.length === 0) return "";
+    let h = <div class="box"><h3 style="color:#2e7d32;">💰 Fluxos de Prosperidade</h3>, grupos = new Set();
     posFin.forEach(p => {
-        // Criamos uma identificação única para o grupo baseada na posição do primeiro '9'
-        // Isso impede que o sistema conte os outros '9' do mesmo conjunto
-        let idGrupo = `linha-${p.linha}-col-${p.indice}`;
-        
-        // A mágica acontece aqui: só processa se for o primeiro '9' do grupo de três
-        if (!gruposIdentificados.has(idGrupo)) {
-            // Marcamos este grupo e os seus vizinhos para não serem repetidos
-            gruposIdentificados.add(`linha-${p.linha}-col-${p.indice}`);
-            gruposIdentificados.add(`linha-${p.linha}-col-${p.indice + 1}`);
-            gruposIdentificados.add(`linha-${p.linha + 1}-col-${p.indice}`);
-
-            let vigencia = calcularVigenciaPorPosicao(p.linha, p.indice, crono);
-            h += `<div style="margin-bottom:12px; border-left:4px solid #34c759; padding-left:10px; text-align:left;">
-                    <b style="font-size:16px;">✅ Sequência Financeira 99/9</b><br>
-                    <small><b>Janela de Oportunidade:</b> ${vigencia}</small><br>
-                    <span style="font-size:14px; color:#444;">Momento de colheita material e expansão financeira conforme a matriz.</span>
+        let id = fin-${p.linha}-${p.indice};
+        if (!grupos.has(id)) {
+            grupos.add(id); grupos.add(fin-${p.linha}-${p.indice+1}); grupos.add(fin-${p.linha+1}-${p.indice});
+            h += `<div style="margin-bottom:10px; border-left:4px solid #34c759; padding-left:10px; text-align:left;">
+                    <b>✅ Sequência Financeira 99/9</b> (${calcularVigenciaPorPosicao(p.linha, p.indice, crono)})<br>
+                    <span style="font-size:14px; color:#444;">${bancoTxt[999] || 'Momento de colheita material.'}</span>
                   </div>`;
-            contadorReal++;
         }
     });
-
-    return contadorReal > 0 ? h + "</div>" : "";
+    return h + "</div>";
 }
 
-// === CRONOGRAMA E DETECÇÃO ===
-function gerarCronogramaMestre(arcanosVida, data) {
-    let cronograma = [];
-    const [ano, mes, dia] = data.split("-").map(Number);
-    let atual = new Date(ano, mes - 1, dia);
-    let idade = 0, contadorCiclo = 0;
+function montarConteudoComIntros(pir, reg, txtReg, cron, tMapa, titulo, bNeg, bFin) {
+    let r = <h2 class="tituloPiramide">${titulo}</h2>;
+    r += desenhar(pir, true);
+    r += <div class="box"><h2>⭐ Regente: ${reg}</h2>${txtReg[reg] || ''}</div>;
+    r += gerarRelatorioNegativasComVigencia(pir, cron, bNeg);
+    r += gerarRelatorioFinanceiroComVigencia(pir, cron, bFin);
+    r += montarVigenciasSincronizadas(cron, topo(pir[0]), tMapa);
+    return r;
+}
+
+// === AUXILIARES DE GERAÇÃO ===
+
+function gerarCronogramaMestre(arcanos, data) {
+    let crono = [], [y, m, d] = data.split("-").map(Number), atual = new Date(y, m - 1, d), idade = 0, cont = 0;
     while (idade < 100) {
-        let indice = contadorCiclo % arcanosVida.length;
-        let arc_ref = arcanosVida[indice];
-        let anosDuracao = parseInt(arc_ref.toString()[0]);
-        if (anosDuracao === 0 || isNaN(anosDuracao)) anosDuracao = 1;
-        let inicio = new Date(atual);
-        atual.setFullYear(atual.getFullYear() + anosDuracao);
-        cronograma.push({
-            idadeIni: idade, idadeFim: idade + anosDuracao,
-            ini: inicio.toLocaleDateString('pt-BR'), fim: atual.toLocaleDateString('pt-BR'),
-            indiceArcano: indice 
-        });
-        idade += anosDuracao;
-        contadorCiclo++;
+        let ind = cont % arcanos.length, dur = parseInt(arcanos[ind].toString()[0]) || 1;
+        let ini = new Date(atual); atual.setFullYear(atual.getFullYear() + dur);
+        crono.push({ idadeIni: idade, idadeFim: idade + dur, indiceArcano: ind });
+        idade += dur; cont++;
     }
-    return cronograma;
+    return crono;
 }
 
-function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa) {
-    let html = "<div class='box'><h3>⏳ Fluxo das Potências Quânticas</h3>";
-    cronograma.forEach((periodo) => {
-        let indiceTopo = periodo.indiceArcano % arcanosDaPiramide.length;
-        let numArcano = arcanosDaPiramide[indiceTopo];
-        html += `<div class="box" style="text-align:left;">
-                 <h4 style="margin:0; color:#111827;">🔹 Potência ${numArcano} (${periodo.idadeIni} a ${periodo.idadeFim} anos)</h4>
-                 <p style="font-size:14px; margin-top:5px;">${textosMapa[numArcano] || "<i>Interpretação em análise.</i>"}</p>
-                 </div>`;
+function montarVigenciasSincronizadas(crono, arcanos, tMapa) {
+    let h = "<div class='box'><h3>⏳ Fluxo das Potências Quânticas</h3>";
+    crono.forEach(p => {
+        let n = arcanos[p.indiceArcano % arcanos.length];
+        h += <div style="text-align:left; margin-bottom:10px;"><b>🔹 Potência ${n}</b> (${p.idadeIni}-${p.idadeFim} anos)<br>${tMapa[n] || ''}</div>;
     });
-    return html + "</div>";
+    return h + "</div>";
 }
 
 function detectarSequencias(linhas){
-    let posNeg=[]; let sequencias=[];
+    let posNeg=[];
     linhas.forEach((linha, i)=>{
         let cont=1;
         for(let j=1;j<linha.length;j++){
             if(linha[j] === linha[j-1]) cont++;
-            else {
-                if(cont>=3){
-                    sequencias.push({numero: linha[j-1], repeticoes: cont});
-                    for(let k=j-cont;k<j;k++) posNeg.push({linha:i,indice:k});
-                }
-                cont=1;
-            }
+            else { if(cont>=3) for(let k=j-cont;k<j;k++) posNeg.push({linha:i,indice:k}); cont=1; }
         }
-        if(cont>=3){
-            sequencias.push({numero: linha[linha.length-1], repeticoes: cont});
-            for(let k=linha.length-cont;k<linha.length;k++) posNeg.push({linha:i,indice:k});
-        }
+        if(cont>=3) for(let k=linha.length-cont;k<linha.length;k++) posNeg.push({linha:i,indice:k});
     });
-    return {sequencias, posNeg};
-}
-
-const sequenciasEspeciais = {
-    "116": `Sua imagem pública e reputação podem ser postas à prova...`,
-    "123": `Fase brilhante de justo reconhecimento...`,
-    "252": `Encerramento em vínculos afetivos...`,
-    "575": `Reviravoltas súbitas na segurança material...`,
-    "757": `Ciclo de transformações intensas...`,
-    "922": `Vitórias em concursos e mérito acadêmico...`,
-    "923": `Paz e entendimento no ambiente doméstico...`,
-    "924": `Conexões sociais com prestígio e autoridade...`,
-    "925": `Discernimento redobrado com quem confia...`,
-    "926": `Cuidado e paciência com laços familiares...`,
-    "927": `Atenção a bastidores e segredos do passado...`
-};
-
-function detectarPosicoesEspeciais(linhas){
-    let pos=[];
-    linhas.forEach((linha,i)=>{
-        for(let j=0;j<linha.length-2;j++){
-            let seq = "" + linha[j] + linha[j+1] + linha[j+2];
-            if(sequenciasEspeciais[seq]){ pos.push({linha:i, indice:j},{linha:i, indice:j+1},{linha:i, indice:j+2}); }
-        }
-    });
-    return pos;
+    return {posNeg};
 }
 
 function detectarSequenciaFinanceira(linhas){
     let pos=[];
-    for(let i=0; i<linhas.length-1; i++){
-        for(let j=0; j<linhas[i].length-1; j++){
-            if(linhas[i][j]===9 && linhas[i][j+1]===9 && linhas[i+1][j]===9){
-                pos.push({linha:i, indice:j},{linha:i, indice:j+1},{linha:i+1, indice:j});
-            }
-        }
-    }
+    for(let i=0; i<linhas.length-1; i++)
+        for(let j=0; j<linhas[i].length-1; j++)
+            if(linhas[i][j]===9 && linhas[i][j+1]===9 && linhas[i+1][j]===9) pos.push({linha:i, indice:j});
     return pos;
 }
 
 function desenhar(linhas, compacta=false){
-    let classe = compacta ? "piramide compacta" : "piramide";
-    const neg = detectarSequencias(linhas).posNeg;
-    const esp = detectarPosicoesEspeciais(linhas);
-    const fin = detectarSequenciaFinanceira(linhas);
-    let html=`<div class="${classe}">`;
+    const neg = detectarSequencias(linhas).posNeg, fin = detectarSequenciaFinanceira(linhas);
+    let html=<div class="${compacta?'piramide compacta':'piramide'}">;
     linhas.forEach((linha,i)=>{
-        html += `<div class="linha">`;
+        html += <div class="linha">;
         linha.forEach((n,j)=>{
             let c = "num";
             if(neg.some(p=>p.linha===i && p.indice===j)) c+=" negativo";
-            if(esp.some(p=>p.linha===i && p.indice===j)) c+=" especial";
-            if(fin.some(p=>p.linha===i && p.indice===j)) c+=" financeiro";
-            html += `<div class="${c}">${n}</div>`;
+            if(fin.some(p=>p.linha===i && (p.indice===j || p.indice+1===j)) || fin.some(p=>p.linha+1===i && p.indice===j)) c+=" financeiro";
+            html += <div class="${c}">${n}</div>;
         });
-        html += `</div>`;
+        html += </div>;
     });
-    return html + `</div>`;
+    return html + </div>;
 }
 
-function piramidePessoal(baseNome, dia) { return piramide(baseNome.map(n => reduzir(n + reduzir(dia)))); }
-function piramideSocial(baseNome, mes) { return piramide(baseNome.map(n => reduzir(n + reduzir(mes)))); }
-function piramideDestino(baseNome, dia, mes) { return piramide(baseNome.map(n => reduzir(n + reduzir(reduzir(dia) + reduzir(mes))))); }
+function mostrarAba(n){ document.querySelectorAll('.aba').forEach(a=>a.style.display='none'); document.getElementById("aba_"+n).style.display="block"; }
 
-function mostrarAba(nome){
-    document.querySelectorAll('.aba').forEach(a=>a.style.display='none');
-    document.getElementById("aba_"+nome).style.display="block";
-}
-
-// === FUNÇÃO GERAR (ALERTAS ABAIXO DA PIRÂMIDE) ===
-function montarConteudoComIntros(pir, reg, txtReg, cron, tMapa, titulo) {
-    let r = `<h2 class="tituloPiramide">${titulo}</h2>`;
-    r += desenhar(pir, true);
-    
-    // REGENTE COM INTRO
-    r += `<div class="box">
-            <p style="font-size:14px; color:#666; font-style:italic; margin-bottom:5px;">${textos.introRegente}</p>
-            <h2>⭐ Regente: ${reg}</h2>${txtReg[reg] || ''}
-          </div>`;
-    
-    // NEGATIVAS COM INTRO
-    const neg = gerarRelatorioNegativasComVigencia(pir, cron);
-    if(neg) r += `<div class="box"><p style="font-size:14px; color:#666; font-style:italic;">${textos.introNegativas}</p>${neg}</div>`;
-
-    // ESPECIAIS COM INTRO
-    const esp = gerarRelatorioEspeciaisComVigencia(pir, cron);
-    if(esp) r += `<div class="box"><p style="font-size:14px; color:#666; font-style:italic;">${textos.introEspeciais}</p>${esp}</div>`;
-
-    // FINANCEIRO COM INTRO
-    const fin = gerarRelatorioFinanceiroComVigencia(pir, cron);
-    if(fin) r += `<div class="box"><p style="font-size:14px; color:#666; font-style:italic;">${textos.introFinanceiro}</p>${fin}</div>`;
-
-    // VIGÊNCIAS COM INTRO
-    r += `<div class="box"><p style="font-size:14px; color:#666; font-style:italic;">${textos.introVigencias}</p>${montarVigenciasSincronizadas(cron, topo(pir[0]), tMapa)}</div>`;
-    
-    return r;
-}
-
+// === FUNÇÃO GERAR PRINCIPAL ===
 function gerar() {
-    const nome = document.getElementById("nome").value;
-    const data = document.getElementById("data").value;
+    const nome = document.getElementById("nome").value, data = document.getElementById("data").value;
     if(!nome || !data) return alert("Preencha os dados!");
 
-    const base = nomeNumeros(nome);
-    const [y, m, d] = data.split("-").map(Number);
-    const pVida = piramide(base);
-    const aVida = topo(base);
-    const crono = gerarCronogramaMestre(aVida, data);
+    const base = nomeNumeros(nome), [y, m, d] = data.split("-").map(Number), pVida = piramide(base), crono = gerarCronogramaMestre(topo(base), data);
     
-    // Gerando cada aba
-    const htmlVida = montarConteudoComIntros(pVida, pVida.at(-1)[0], textosVida, crono, textosVida, "Matriz da Vida");
-    const htmlPessoal = montarConteudoComIntros(piramidePessoal(base, d), piramidePessoal(base, d).at(-1)[0], textosPessoal, crono, textosPessoal, "Matriz Pessoal");
-    const htmlSocial = montarConteudoComIntros(piramideSocial(base, m), piramideSocial(base, m).at(-1)[0], textosSocial, crono, textosSocial, "Matriz Social");
-    const htmlDestino = montarConteudoComIntros(piramideDestino(base, d, m), piramideDestino(base, d, m).at(-1)[0], textosDestino, crono, textosDestino, "Matriz de Destino");
+    // ABA VIDA
+    document.getElementById("aba_principal").innerHTML = montarConteudoComIntros(pVida, pVida.at(-1)[0], textosVida, crono, textosVida, "Matriz da Vida", textosSeqNegVida, textosFinVida);
+    // ABA PESSOAL
+    document.getElementById("aba_pessoal").innerHTML = montarConteudoComIntros(piramide(base.map(n=>reduzir(n+reduzir(d)))), reduzir(reduzir(base.reduce((a,b)=>a+b,0))+reduzir(d)), textosPessoal, crono, textosPessoal, "Matriz Pessoal", textosSeqNegPessoal, textosFinPessoal);
+    // ABA SOCIAL
+    document.getElementById("aba_social").innerHTML = montarConteudoComIntros(piramide(base.map(n=>reduzir(n+reduzir(m)))), reduzir(reduzir(base.reduce((a,b)=>a+b,0))+reduzir(m)), textosSocial, crono, textosSocial, "Matriz Social", textosSeqNegSocial, textosFinSocial);
+    // ABA DESTINO
+    document.getElementById("aba_destino").innerHTML = montarConteudoComIntros(piramide(base.map(n=>reduzir(n+reduzir(reduzir(d)+reduzir(m))))), reduzir(reduzir(base.reduce((a,b)=>a+b,0))+reduzir(reduzir(d)+reduzir(m))), textosDestino, crono, textosDestino, "Matriz de Destino", textosSeqNegDestino, textosFinDestino);
 
-    // Exibindo na tela
-    document.getElementById("aba_principal").innerHTML = htmlVida;
-    document.getElementById("aba_pessoal").innerHTML = htmlPessoal;
-    document.getElementById("aba_social").innerHTML = htmlSocial;
-    document.getElementById("aba_destino").innerHTML = htmlDestino;
-
-    // SALVANDO TUDO PARA O PREMIUM
-    localStorage.setItem("relatorioPiramide", JSON.stringify({
-        nome, 
-        data: data.split("-").reverse().join("/"),
-        abaPrincipal: htmlVida,
-        abaPessoal: htmlPessoal,
-        abaSocial: htmlSocial,
-        abaDestino: htmlDestino
-    }));
     mostrarAba('principal');
 }
-// --- TRAVA FIREBASE (CORRIGIDA) ---
-const urlParams = new URLSearchParams(window.location.search);
-const userEmail = urlParams.get('user'); 
-const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-// Chamar a verificação assim que a página carrega
-verificarAcesso();
+// === TRAVA FIREBASE E BLOQUEIO ===
+const urlParams = new URLSearchParams(window.location.search), userEmail = urlParams.get('user'), DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
 async function verificarAcesso() {
-    if (!userEmail) { 
-        // Se não tem usuário na URL, volta pro início ou nega
-        console.log("Sem e-mail de usuário");
-        return; 
-    }
+    if (!userEmail) return;
     try {
-        // CORREÇÃO: Adicionado crases para a URL funcionar
-        const res = await fetch(`${DB_URL}vendas/${userEmail}.json`);
+        const res = await fetch(${DB_URL}vendas/${userEmail}.json);
         const d = await res.json();
-        
-        // Se o status for 'usado', ele bloqueia e redireciona
         if (d && d.status === 'usado') { 
-            alert("Este acesso já foi utilizado para gerar um relatório."); 
-            window.location.href = "https://seusite.com/expirado"; // Mude para sua página de erro
+            alert("Este acesso já foi utilizado."); 
+            window.location.href = "https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/expirado.html"; 
         }
-    } catch (e) {
-        console.error("Erro ao verificar acesso no Firebase");
-    }
+    } catch (e) { console.error("Erro Firebase"); }
 }
+verificarAcesso();
 
 async function abrirPremium() {
-    const nome = document.getElementById("nome").value;
-    const data = document.getElementById("data").value;
-    const principal = document.getElementById("aba_principal").innerHTML;
+    const nome = document.getElementById("nome").value, principal = document.getElementById("aba_principal").innerHTML;
+    if(!nome || principal === "") return alert("Gere as matrizes primeiro!");
 
-    if(!nome || !data || principal === "") {
-        return alert("Por favor, preencha os dados e clique em 'GERAR AS MATRIZES' primeiro.");
-    }
-
-    // 1. MARCA COMO USADO NO FIREBASE (TRAVA DE VENDA)
     try {
         if(userEmail){
-            await fetch(`${DB_URL}vendas/${userEmail}.json`, { 
-                method: 'PATCH', 
-                body: JSON.stringify({ status: 'usado' }),
-                headers: { 'Content-Type': 'application/json' }
+            await fetch(${DB_URL}vendas/${userEmail}.json, { 
+                method: 'PATCH', body: JSON.stringify({ status: 'usado' }), headers: { 'Content-Type': 'application/json' }
             });
         }
-    } catch (e) {
-        console.error("Erro ao registrar uso da trava");
-    }
+    } catch (e) { console.error("Erro trava"); }
 
-    // 2. PREPARA O PACOTE PARA O PREMIUM
-    const pacote = {
-        nome: nome,
-        data: data.split("-").reverse().join("/"),
-        abaPrincipal: document.getElementById("aba_principal").innerHTML,
+    localStorage.setItem("relatorioPiramide", JSON.stringify({
+        nome, data: document.getElementById("data").value.split("-").reverse().join("/"),
+        abaPrincipal: principal, 
         abaPessoal: document.getElementById("aba_pessoal").innerHTML,
         abaSocial: document.getElementById("aba_social").innerHTML,
         abaDestino: document.getElementById("aba_destino").innerHTML
-    };
+    }));
     
-    localStorage.setItem("relatorioPiramide", JSON.stringify(pacote));
-    
-    // 3. ABRE O RELATÓRIO
     window.open("matriz-premium.html", "_blank");
-
-    // 4. REDIRECIONA O GERADOR PARA IMPEDIR REUSO
-    setTimeout(() => {
-        window.location.href = "https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/sucesso.html";
-    }, 1500);
+    setTimeout(() => { window.location.href = "https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/sucesso.html"; }, 1500);
 }
-
   
 </script>
 </body>
 </html>
+
 
 
 
