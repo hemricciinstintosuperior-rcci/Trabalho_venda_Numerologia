@@ -48,6 +48,15 @@ Data de nascimento<input type="date" id="data">
 <script src="textosmatriz.js"></script>
 
 <script>
+// Adicione isso no topo do seu script principal
+const textos = window.textos || {
+    introRegente: "O Regente é o coração da sua pirâmide...",
+    introNegativas: "As Sequências Negativas revelam desafios vibracionais...",
+    introEspeciais: "As Sequências Especiais representam ocorrências pontuais...",
+    introFinanceiro: "A análise financeira foca na prosperidade...",
+    introVigencias: "As Vigências representam os ciclos de atuação das potências..."
+};
+    
 // === LÓGICA DE CÁLCULO E SEGURANÇA ===
 const mapaNumerologico = { A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6,X:6, O:7,Z:7, F:8,P:8 };
 
@@ -247,3 +256,4 @@ async function abrirPremium() {
 </script>
 </body>
 </html>
+
