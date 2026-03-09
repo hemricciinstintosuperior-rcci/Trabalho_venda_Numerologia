@@ -256,13 +256,32 @@ function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt) {
 function montarConteudoComIntros(pir, reg, txtReg, cron, tMapa, titulo, bNeg, bEsp, bFin) {
     let r = `<h2 class="tituloPiramide">${titulo}</h2>`;
     r += desenhar(pir, true);
-    r += `<div class="box"><h2>⭐ Regente: ${reg}</h2>${txtReg[reg] || ''}</div>`;
-    r += gerarRelatorioNegativasComVigencia(pir, cron, bNeg);
+    
+    // Texto do Regente em cima do resultado do Regente
+    r += `<div class="box"><h3>⭐ Regente</h3><p>${textos.introRegente}</p><h2>Sua Potência: ${reg}</h2>${txtReg[reg] || ''}</div>`;
+    
+    // Texto de Negativas em cima do bloco de Negativas
+    if (detectarSequencias(pir).posNeg.length > 0) {
+        r += `<div class="box"><p>${textos.introNegativas}</p></div>`;
+        r += gerarRelatorioNegativasComVigencia(pir, cron, bNeg);
+    }
+
+    // Texto de Especiais em cima do bloco de Especiais
+    r += `<div class="box"><p>${textos.introEspeciais}</p></div>`;
     r += gerarRelatorioEspeciaisComVigencia(pir, cron, bEsp);
-    r += gerarRelatorioFinanceiroComVigencia(pir, cron, bFin);
+
+    // Texto Financeiro em cima do bloco Financeiro
+    if (detectarSequenciaFinanceira(pir).length > 0) {
+        r += `<div class="box"><p>${textos.introFinanceiro}</p></div>`;
+        r += gerarRelatorioFinanceiroComVigencia(pir, cron, bFin);
+    }
+
+    // Texto de Vigências em cima do Fluxo
+    r += `<div class="box"><p>${textos.introVigencias}</p></div>`;
     r += montarVigenciasSincronizadas(cron, topo(pir[0]), tMapa);
+    
     return r;
-}    
+} 
 
 function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa) {
     let html = "<div class='box'><h3>⏳ Fluxo das Potências Quânticas</h3>";
@@ -364,42 +383,21 @@ function gerar() {
     const aVida = topo(base);
     const crono = gerarCronogramaMestre(aVida, data);
     
-    // Puxando as introduções do objeto 'textos' que está no seu index
-    const introGeral = `
-        <div class="box">
-            <p>${textos.introRegente}</p>
-            <p>${textos.introNegativas}</p>
-            <p>${textos.introEspeciais}</p>
-            <p>${textos.introFinanceiro}</p>
-            <p>${textos.introVigencias}</p>
-        </div>
-    `;
+    // Agora o montarConteudo já coloca as intros nos lugares certos individualmente
+    const htmlVida = montarConteudoComIntros(pVida, pVida.at(-1)[0], textosVida, crono, textosVida, "Matriz da Vida", textosSeqNegVida, textosSeqEspVida, textosFinVida);
+    const htmlPessoal = montarConteudoComIntros(piramidePessoal(base, d), piramidePessoal(base, d).at(-1)[0], textosPessoal, crono, textosPessoal, "Matriz Pessoal", textosSeqNegPessoal, textosSeqEspPessoal, textosFinPessoal);
+    const htmlSocial = montarConteudoComIntros(piramideSocial(base, m), piramideSocial(base, m).at(-1)[0], textosSocial, crono, textosSocial, "Matriz Social", textosSeqNegSocial, textosSeqEspSocial, textosFinSocial);
+    const htmlDestino = montarConteudoComIntros(piramideDestino(base, d, m), piramideDestino(base, d, m).at(-1)[0], textosDestino, crono, textosDestino, "Matriz de Destino", textosSeqNegDestino, textosSeqEspDestino, textosFinDestino);
 
-    // Montando as Matrizes com a introdução incluída
-    const htmlVida = introGeral + montarConteudoComIntros(pVida, pVida.at(-1)[0], textosVida, crono, textosVida, "Matriz da Vida", textosSeqNegVida, textosSeqEspVida, textosFinVida);
-    
-    const htmlPessoal = introGeral + montarConteudoComIntros(piramidePessoal(base, d), piramidePessoal(base, d).at(-1)[0], textosPessoal, crono, textosPessoal, "Matriz Pessoal", textosSeqNegPessoal, textosSeqEspPessoal, textosFinPessoal);
-    
-    const htmlSocial = introGeral + montarConteudoComIntros(piramideSocial(base, m), piramideSocial(base, m).at(-1)[0], textosSocial, crono, textosSocial, "Matriz Social", textosSeqNegSocial, textosSeqEspSocial, textosFinSocial);
-    
-    const htmlDestino = introGeral + montarConteudoComIntros(piramideDestino(base, d, m), piramideDestino(base, d, m).at(-1)[0], textosDestino, crono, textosDestino, "Matriz de Destino", textosSeqNegDestino, textosSeqEspDestino, textosFinDestino);
-
-    // Inserindo no HTML
     document.getElementById("aba_principal").innerHTML = htmlVida;
     document.getElementById("aba_pessoal").innerHTML = htmlPessoal;
     document.getElementById("aba_social").innerHTML = htmlSocial;
     document.getElementById("aba_destino").innerHTML = htmlDestino;
 
-    // Salvando para o PDF (Premium)
     localStorage.setItem("relatorioPiramide", JSON.stringify({
-        nome, 
-        data: data.split("-").reverse().join("/"),
-        abaPrincipal: htmlVida, 
-        abaPessoal: htmlPessoal, 
-        abaSocial: htmlSocial, 
-        abaDestino: htmlDestino
+        nome, data: data.split("-").reverse().join("/"),
+        abaPrincipal: htmlVida, abaPessoal: htmlPessoal, abaSocial: htmlSocial, abaDestino: htmlDestino
     }));
-    
     mostrarAba('principal');
 }
 
@@ -423,4 +421,5 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
