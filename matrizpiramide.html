@@ -2,9 +2,34 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Matriz Quântica - Gerador Premium</title>
+<title>Pirâmide da Vida Quântica</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#111827">
 <style>
-/* ... Mantendo seu CSS original para garantir a responsividade ... */
+/* SEU CSS ORIGINAL INTEGRAL */
+body{ font-family: Arial; background:#ffffff; color:#000; text-align:center; }
+input,button{ padding:10px; margin:5px; border-radius:6px; border:none; }
+input { width: 600px; font-size: 18px; padding: 14px; background-color: #e5e7eb; border: 1px solid #ccc; color: #333; display: block; margin: 10px auto; }
+button{ background:#facc15; font-weight:bold; cursor:pointer; }
+#resultado{ margin-top:20px; }
+.piramide{ font-family: monospace; font-size:12px; line-height:0.7; text-align:center; }
+.piramide.compacta{ font-size:12px; line-height:1.2; }
+.piramide.compacta .linha{ gap:4px; margin:2px; }
+.piramide.compacta .num{ padding:4px 6px; border-radius:6px; font-size:11px; }
+.linha{ display:flex; justify-content:center; gap:6px; margin:2px; }
+.num{ background:#28d3ee; color:#000; padding:4px 7px; border-radius:6px; font-weight:bold; font-size:16px; min-width:18px; }
+.negativo{ background:#FF0000!important; color:#fff !important; box-shadow:0 0 6px rgba(255,0,0,0.6); }
+.boxSeq{ background:#fff0f0; border:2px solid #ff4d4d; padding:20px; margin-top:20px; border-radius:10px; }
+.box{ background:#ffffff; border:2px solid #000; padding:15px; margin:15px auto; border-radius:10px; max-width:800px; }
+.gridRelatorios{ display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; margin-top:25px; }
+@media(max-width:900px){ .gridRelatorios{ grid-template-columns:1fr; } }  
+.abas button{ background:#22d3ee; border:none; padding:10px 15px; margin:5px; border-radius:8px; cursor:pointer; font-weight:bold; }
+.aba{ margin-top:20px; display:none; }
+.num.negativo{ background:#ff6b6b; color:white; }
+.num.especial{ background:#f6c445; color:#000; box-shadow:0 0 10px rgba(246,196,69,0.8); }
+.num.financeiro{ background:#34c759; color:white; box-shadow:0 0 12px rgba(52,199,89,0.9); }
+.folhaRelatorio{ background:white; max-width:800px; margin:30px auto; padding:50px; border-radius:10px; box-shadow:0 0 25px rgba(0,0,0,0.08); }
+@media (max-width: 768px) { input { width: 90% !important; margin: 0 auto 25px auto !important; } }
 body{ font-family: Arial, sans-serif; background:#ffffff; color:#000; text-align:center; margin: 0; padding: 10px; }
 input, button{ padding:12px; margin:8px auto; border-radius:8px; border:none; display: block; box-sizing: border-box; }
 input { width: 100%; max-width: 600px; font-size: 18px; background-color: #f3f4f6; border: 1px solid #d1d5db; }
@@ -13,11 +38,7 @@ button:active { transform: scale(0.98); }
 .piramide.compacta { font-size: 3.2vw; line-height: 1.2; overflow-x: auto; padding: 10px 0; }
 .linha{ display:flex; justify-content:center; gap:1vw; margin:2px; }
 .num{ background:#28d3ee; color:#000; padding: 4px 1.5vw; border-radius:4px; font-weight:bold; min-width: 20px; }
-.num.negativo{ background:#ff6b6b; color:white; }
-.num.financeiro{ background:#34c759; color:white; box-shadow:0 0 12px rgba(52,199,89,0.9); }
 .abas { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; }
-.aba{ margin-top:20px; display:none; }
-.box{ background:#ffffff; border:2px solid #000; padding:15px; margin:15px auto; border-radius:10px; max-width:800px; }
 .folhaRelatorio{ background:white; width: 100%; max-width:800px; margin:20px auto; padding: 20px 10px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.05); }
 @media(min-width: 768px) { .num { padding: 4px 7px; font-size: 16px; } .linha { gap: 6px; } .piramide.compacta { font-size: 12px; } .abas { display: block; } }
 </style>
@@ -25,13 +46,14 @@ button:active { transform: scale(0.98); }
 <body>
 
 <h2>Matriz Quântica da Vida</h2>
-Nome completo igual a certidão<input id="nome" placeholder="Digite o nome completo">
+Nome completo igual a certidão<input id="nome" placeholder="">
 Data de nascimento<input type="date" id="data">
 
 <button onclick="gerar()">GERAR AS MATRIZES</button>
 <button onclick="abrirPremium()">LIBERAR O RELATÓRIO E BAIXAR O PDF</button>
 
 <div class="folhaRelatorio">
+    <div id="resultado"></div>
     <div class="abas">
         <button onclick="mostrarAba('principal')">Principal / Vida</button>
         <button onclick="mostrarAba('pessoal')">Pessoal</button>
@@ -48,179 +70,15 @@ Data de nascimento<input type="date" id="data">
 <script src="textosmatriz.js"></script>
 
 <script>
-// Adicione isso no topo do seu script principal
-const textos = window.textos || {
-    introRegente: "O Regente é o coração da sua pirâmide...",
-    introNegativas: "As Sequências Negativas revelam desafios vibracionais...",
-    introEspeciais: "As Sequências Especiais representam ocorrências pontuais...",
-    introFinanceiro: "A análise financeira foca na prosperidade...",
-    introVigencias: "As Vigências representam os ciclos de atuação das potências..."
-};
-    
-// === LÓGICA DE CÁLCULO E SEGURANÇA ===
-const mapaNumerologico = { A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6,X:6, O:7,Z:7, F:8,P:8 };
-
-function valorLetra(l) {
-    if(!l || l===" ") return 0;
-    let n = l.normalize("NFD").toUpperCase();
-    let vB = mapaNumerologico[n[0]] ?? 0;
-    let sA = 0, mA = 1;
-    for(let a of n.slice(1)){
-        if(a==="\u0301") sA+=2; else if(a==="\u0302") sA+=7; else if(a==="\u0303") sA+=3;
-        else if(a==="\u0327") sA+=6; else if(a==="\u0300" || a==="\u0308") mA*=2;
-    }
-    return (vB + sA) * mA;
-}
-
-function reduzir(n) { while(n>9){ n=n.toString().split('').reduce((a,b)=>+a+ +b,0); } return n; }
-
-function nomeParaNumeros(nome) {
-    return nome.split('').map(l => valorLetra(l)).filter(v => v > 0);
-}
-
-function construirPiramide(base) {
-    let b = [...base], linhas = [b];
-    while(b.length > 1){
-        let nova = [];
-        for(let i=0; i<b.length-1; i++){ nova.push(reduzir(b[i] + b[i+1])); }
-        linhas.push(nova); b = nova;
-    }
-    return linhas;
-}
-
-function extrairArcanos(base) {
-    let arc = [];
-    for(let i=0; i<base.length-1; i++){ arc.push(parseInt("" + base[i] + base[i+1])); }
-    return arc;
-}
-
-// === RELATÓRIOS E VIGÊNCIAS ===
-function calcularVigencia(linha, coluna, crono) {
-    let iI = coluna, iF = coluna + linha;
-    let pA = crono.filter(p => p.indiceArcano >= iI && p.indiceArcano <= iF);
-    if (pA.length === 0) return "Transição";
-    return pA[0].idadeIni + " a " + pA[pA.length - 1].idadeFim + " anos";
-}
-
-function gerarRelatorioNegativas(linhas, crono, banco) {
-    const { posNeg } = detectarSequencias(linhas);
-    if (!posNeg || posNeg.length === 0) return "";
-    let h = `<div class="box"><h3 style="color:#d32f2f;">⚠️ Sequências Negativas</h3>`;
-    let grupos = new Set();
-    posNeg.forEach(p => {
-        let n = linhas[p.linha][p.indice], id = `neg-${n}-${p.linha}`;
-        if (!grupos.has(id)) {
-            grupos.add(id);
-            h += `<div style="text-align:left; margin-bottom:10px; border-left:4px solid #ff6b6b; padding-left:10px;">
-                    <b>🚫 Sequência ${n}</b> (${calcularVigencia(p.linha, p.indice, crono)})<br>
-                    <span style="font-size:14px; color:#444;">${banco[n] || 'Desafio detectado.'}</span>
-                  </div>`;
-        }
-    });
-    return h + "</div>";
-}
-
-function gerarRelatorioFinanceiro(linhas, crono, banco) {
-    const posFin = detectarFinanceiro(linhas);
-    if (!posFin || posFin.length === 0) return "";
-    let h = `<div class="box"><h3 style="color:#2e7d32;">💰 Fluxos de Prosperidade</h3>`, grupos = new Set();
-    posFin.forEach(p => {
-        let id = `fin-${p.linha}-${p.indice}`;
-        if (!grupos.has(id)) {
-            grupos.add(id);
-            h += `<div style="text-align:left; margin-bottom:10px; border-left:4px solid #34c759; padding-left:10px;">
-                    <b>✅ Sequência Financeira 99/9</b> (${calcularVigencia(p.linha, p.indice, crono)})<br>
-                    <span style="font-size:14px; color:#444;">${banco[999] || 'Momento de expansão.'}</span>
-                  </div>`;
-        }
-    });
-    return h + "</div>";
-}
-
-function montarAba(pir, reg, txtReg, crono, tMapa, titulo, bNeg, bFin) {
-    let r = `<h2 class="tituloPiramide">${titulo}</h2>`;
-    r += desenhar(pir);
-    r += `<div class="box"><h2>⭐ Regente: ${reg}</h2>${txtReg[reg] || ''}</div>`;
-    r += gerarRelatorioNegativas(pir, crono, bNeg);
-    r += gerarRelatorioFinanceiro(pir, crono, bFin);
-    r += `<div class="box"><h3>⏳ Fluxo de Potências</h3>`;
-    crono.forEach(p => {
-        let n = extrairArcanos(pir[0])[p.indiceArcano % extrairArcanos(pir[0]).length];
-        r += `<div style="text-align:left; margin-bottom:10px;"><b>Potência ${n}</b> (${p.idadeIni}-${p.idadeFim} anos): ${tMapa[n] || ''}</div>`;
-    });
-    return r + "</div>";
-}
-
-// === AUXILIARES E INTERFACE ===
-function detectarSequencias(linhas){
-    let posNeg=[];
-    linhas.forEach((linha, i)=>{
-        let cont=1;
-        for(let j=1; j<linha.length; j++){
-            if(linha[j] === linha[j-1]) cont++;
-            else { if(cont>=3) for(let k=j-cont; k<j; k++) posNeg.push({linha:i,indice:k}); cont=1; }
-        }
-        if(cont>=3) for(let k=linha.length-cont; k<linha.length; k++) posNeg.push({linha:i,indice:k});
-    });
-    return {posNeg};
-}
-
-function detectarFinanceiro(linhas){
-    let pos=[];
-    for(let i=0; i<linhas.length-1; i++)
-        for(let j=0; j<linhas[i].length-1; j++)
-            if(linhas[i][j]===9 && linhas[i][j+1]===9 && linhas[i+1][j]===9) pos.push({linha:i, indice:j});
-    return pos;
-}
-
-function desenhar(linhas) {
-    const neg = detectarSequencias(linhas).posNeg, fin = detectarFinanceiro(linhas);
-    let h = `<div class="piramide compacta">`;
-    linhas.forEach((linha, i) => {
-        h += `<div class="linha">`;
-        linha.forEach((n, j) => {
-            let c = "num";
-            if(neg.some(p=>p.linha===i && p.indice===j)) c+=" negativo";
-            if(fin.some(p=>p.linha===i && (p.indice===j || p.indice+1===j)) || fin.some(p=>p.linha+1===i && p.indice===j)) c+=" financeiro";
-            h += `<div class="${c}">${n}</div>`;
-        });
-        h += `</div>`;
-    });
-    return h + `</div>`;
-}
-
-function mostrarAba(n){ document.querySelectorAll('.aba').forEach(a=>a.style.display='none'); document.getElementById("aba_"+n).style.display="block"; }
-
-function gerar() {
-    const nome = document.getElementById("nome").value, dataStr = document.getElementById("data").value;
-    if(!nome || !dataStr) return alert("Preencha todos os campos!");
-
-    const base = nomeParaNumeros(nome), [y, m, d] = dataStr.split("-").map(Number);
-    const pVida = construirPiramide(base), arcanos = extrairArcanos(base);
-    
-    // Cronograma
-    let crono = [], atual = new Date(y, m-1, d), idade = 0, cont = 0;
-    while(idade < 100){
-        let ind = cont % arcanos.length, dur = parseInt(arcanos[ind].toString()[0]) || 1;
-        crono.push({ idadeIni: idade, idadeFim: idade + dur, indiceArcano: ind });
-        idade += dur; cont++;
-    }
-
-    document.getElementById("aba_principal").innerHTML = montarAba(pVida, pVida.at(-1)[0], textosVida, crono, textosVida, "Matriz da Vida", textosSeqNegVida, textosFinVida);
-    document.getElementById("aba_pessoal").innerHTML = montarAba(construirPiramide(base.map(n=>reduzir(n+reduzir(d)))), pVida.at(-1)[0], textosPessoal, crono, textosPessoal, "Matriz Pessoal", textosSeqNegPessoal, textosFinPessoal);
-    document.getElementById("aba_social").innerHTML = montarAba(construirPiramide(base.map(n=>reduzir(n+reduzir(m)))), pVida.at(-1)[0], textosSocial, crono, textosSocial, "Matriz Social", textosSeqNegSocial, textosFinSocial);
-    document.getElementById("aba_destino").innerHTML = montarAba(construirPiramide(base.map(n=>reduzir(n+reduzir(reduzir(d)+reduzir(m))))), pVida.at(-1)[0], textosDestino, crono, textosDestino, "Matriz de Destino", textosSeqNegDestino, textosFinDestino);
-
-    mostrarAba('principal');
-}
-
-// === TRAVA FIREBASE ===
-const urlParams = new URLSearchParams(window.location.search), userEmail = urlParams.get('user'), DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
+// === INÍCIO DA ADAPTAÇÃO PARA VENDA (TRAVA FIREBASE) ===
+const urlParams = new URLSearchParams(window.location.search);
+const userEmail = urlParams.get('user'); 
+const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
 async function verificarAcesso() {
     if (!userEmail) return;
     try {
-        const res = await fetch(`${DB_URL}vendas/${userEmail}.json`);
+        const res = await fetch(`${DB_URL}vendas/${userEmail.replace(/\./g, '_')}.json`);
         const d = await res.json();
         if (d && d.status === 'usado') { 
             alert("Este acesso já foi utilizado."); 
@@ -229,31 +87,317 @@ async function verificarAcesso() {
     } catch (e) { console.error("Erro Firebase"); }
 }
 verificarAcesso();
+// === FIM DA ADAPTAÇÃO PARA VENDA ===
 
-async function abrirPremium() {
-    const nome = document.getElementById("nome").value, principal = document.getElementById("aba_principal").innerHTML;
-    if(!nome || principal === "") return alert("Gere as matrizes primeiro!");
+// TODO O SEU CÓDIGO ORIGINAL ABAIXO (SEM ALTERAR UMA VÍRGULA DAS FUNÇÕES)
+const textos = window.textos || {
+    introRegente: "O Regente é o coração da sua pirâmide...",
+    introNegativas: "As Sequências Negativas revelam desafios vibracionais...",
+    introEspeciais: "As Sequências Especiais representam ocorrências pontuais...",
+    introFinanceiro: "A análise financeira foca na prosperidade...",
+    introVigencias: "As Vigências representam os ciclos de atuação das potências..."
+};
+    
+const mapa = { A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6,X:6, O:7,Z:7, F:8,P:8 };
 
-    try {
-        if(userEmail){
-            await fetch(`${DB_URL}vendas/${userEmail}.json`, { 
-                method: 'PATCH', body: JSON.stringify({ status: 'usado' }), headers: { 'Content-Type': 'application/json' }
-            });
+function valorLetra(letra){
+    if(!letra || letra===" ") return 0;
+    let normal = letra.normalize("NFD");
+    let base = normal[0];
+    let acentos = normal.slice(1);
+    let valorBase = mapa[base] ?? 0;
+    let somaAcentos = 0, multAcentos = 1;
+    for(let a of acentos){
+        if(a === "\u0301") somaAcentos += 2;
+        else if(a === "\u0302") somaAcentos += 7;
+        else if(a === "\u0303") somaAcentos += 3;
+        else if(a === "\u0327") somaAcentos += 6;
+        else if(a === "\u0300") multAcentos *= 2;
+        else if(a === "\u0308") multAcentos *= 2;
+    }
+    return (valorBase + somaAcentos) * multAcentos;
+}
+
+function reduzir(n){
+    while(n>9){ n=n.toString().split('').reduce((a,b)=>+a+ +b,0); }
+    return n;
+}
+
+function nomeNumeros(nome){
+    nome=nome.toUpperCase();
+    let arr=[];
+    for(let l of nome){ if(l!==" "){ let v=valorLetra(l); if(v)arr.push(v); } }
+    return arr;
+}
+
+function piramide(base){
+    let b = [...base];
+    let linhas=[b];
+    while(b.length>1){
+        let nova=[];
+        for(let i=0;i<b.length-1;i++){ nova.push(reduzir(b[i]+b[i+1])); }
+        linhas.push(nova);
+        b=nova;
+    }
+    return linhas;
+}
+
+function topo(base){
+    let arcanos = [];
+    for(let i=0; i<base.length-1; i++){ arcanos.push(parseInt("" + base[i] + base[i+1])); }
+    return arcanos;
+}
+
+function calcularVigenciaPorPosicao(linha, coluna, cronograma) {
+    let indiceInicio = coluna;
+    let indiceFim = coluna + linha; 
+    let periodosAfetados = cronograma.filter(p => p.indiceArcano >= indiceInicio && p.indiceArcano <= indiceFim);
+    if (periodosAfetados.length === 0) return "Fase de transição";
+    let idadeIni = periodosAfetados[0].idadeIni;
+    let idadeFim = periodosAfetados[periodosAfetados.length - 1].idadeFim;
+    return `${idadeIni} a ${idadeFim} anos`;
+}
+
+function gerarCronogramaMestre(arcanosVida, data) {
+    let cronograma = [];
+    const [ano, mes, dia] = data.split("-").map(Number);
+    let atual = new Date(ano, mes - 1, dia);
+    let idade = 0, contadorCiclo = 0;
+    while (idade < 100) {
+        let indice = contadorCiclo % arcanosVida.length;
+        let arc_ref = arcanosVida[indice];
+        let anosDuracao = parseInt(arc_ref.toString()[0]);
+        if (anosDuracao === 0 || isNaN(anosDuracao)) anosDuracao = 1;
+        let inicio = new Date(atual);
+        atual.setFullYear(atual.getFullYear() + anosDuracao);
+        cronograma.push({
+            idadeIni: idade, idadeFim: idade + anosDuracao,
+            ini: inicio.toLocaleDateString('pt-BR'), fim: atual.toLocaleDateString('pt-BR'),
+            indiceArcano: indice 
+        });
+        idade += anosDuracao;
+        contadorCiclo++;
+    }
+    return cronograma;
+}
+
+function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt) {
+    const { posNeg } = detectarSequencias(linhas);
+    if (!posNeg || posNeg.length === 0) return "";
+    let h = `<div class="box"><h3 style="color:#d32f2f;">⚠️ Sequências Negativas</h3>`;
+    let gruposContados = new Set();
+    let encontrou = false;
+    posNeg.forEach(p => {
+        let num = linhas[p.linha][p.indice];
+        let idGrupo = `neg-${num}-L${p.linha}`;
+        if (!gruposContados.has(idGrupo)) {
+            encontrou = true;
+            gruposContados.add(idGrupo);
+            let vigencia = calcularVigenciaPorPosicao(p.linha, p.indice, crono);
+            h += `<div style="margin-bottom:12px; border-left:4px solid #ff6b6b; padding-left:10px; text-align:left;">
+                    <b style="font-size:16px;">🚫 Sequência ${num}</b><br>
+                    <small><b>Período Crítico:</b> ${vigencia}</small><br>
+                    <span style="font-size:14px; color:#444;">${bancoTxt[num] || 'Desafio vibracional detectado.'}</span>
+                  </div>`;
         }
-    } catch (e) { console.error("Erro trava"); }
+    });
+    return encontrou ? h + "</div>" : "";
+}
+
+function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
+    let h = `<div class="box"><h3 style="color:#b8860b;">⭐ Impactos Especiais</h3>`;
+    let gruposContados = new Set();
+    let encontrou = false;
+    linhas.forEach((linha, i) => {
+        for (let j = 0; j < linha.length - 2; j++) {
+            let seq = "" + linha[j] + linha[j + 1] + linha[j + 2];
+            if (bancoTxt && bancoTxt[seq]) {
+                let idImpacto = `esp-${seq}-L${i}-C${j}`;
+                if (!gruposContados.has(idImpacto)) {
+                    encontrou = true;
+                    gruposContados.add(idImpacto);
+                    let vigencia = calcularVigenciaPorPosicao(i, j, crono);
+                    h += `<div style="margin-bottom:12px; border-left:4px solid #f6c445; padding-left:10px; text-align:left;">
+                            <b style="font-size:16px;">✨ Impacto ${seq}</b><br>
+                            <small><b>Período Ativo:</b> ${vigencia}</small><br>
+                            <span style="font-size:14px; color:#444;">${bancoTxt[seq]}</span>
+                          </div>`;
+                }
+            }
+        }
+    });
+    return encontrou ? h + "</div>" : "";
+}
+
+function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt) {
+    const posFin = detectarSequenciaFinanceira(linhas);
+    if (!posFin || posFin.length === 0) return "";
+    let h = `<div class="box"><h3 style="color:#2e7d32;">💰 Fluxos de Prosperidade</h3>`;
+    let gruposIdentificados = new Set();
+    let contadorReal = 0;
+    posFin.forEach(p => {
+        let idGrupo = `linha-${p.linha}-col-${p.indice}`;
+        if (!gruposIdentificados.has(idGrupo)) {
+            gruposIdentificados.add(`linha-${p.linha}-col-${p.indice}`);
+            gruposIdentificados.add(`linha-${p.linha}-col-${p.indice + 1}`);
+            gruposIdentificados.add(`linha-${p.linha + 1}-col-${p.indice}`);
+            let vigencia = calcularVigenciaPorPosicao(p.linha, p.indice, crono);
+            h += `<div style="margin-bottom:12px; border-left:4px solid #34c759; padding-left:10px; text-align:left;">
+                    <b style="font-size:16px;">✅ Sequência Financeira 99/9</b><br>
+                    <small><b>Janela:</b> ${vigencia}</small><br>
+                    <span style="font-size:14px; color:#444;">${bancoTxt[999] || 'Momento de colheita material.'}</span>
+                  </div>`;
+            contadorReal++;
+        }
+    });
+    return contadorReal > 0 ? h + "</div>" : "";
+}
+
+function montarConteudoComIntros(pir, reg, txtReg, cron, tMapa, titulo, bNeg, bEsp, bFin) {
+    let r = `<h2 class="tituloPiramide">${titulo}</h2>`;
+    r += desenhar(pir, true);
+    r += `<div class="box"><h2>⭐ Regente: ${reg}</h2>${txtReg[reg] || ''}</div>`;
+    r += gerarRelatorioNegativasComVigencia(pir, cron, bNeg);
+    r += gerarRelatorioEspeciaisComVigencia(pir, cron, bEsp);
+    r += gerarRelatorioFinanceiroComVigencia(pir, cron, bFin);
+    r += montarVigenciasSincronizadas(cron, topo(pir[0]), tMapa);
+    return r;
+}    
+
+function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa) {
+    let html = "<div class='box'><h3>⏳ Fluxo das Potências Quânticas</h3>";
+    cronograma.forEach((periodo) => {
+        let indiceTopo = periodo.indiceArcano % arcanosDaPiramide.length;
+        let numArcano = arcanosDaPiramide[indiceTopo];
+        html += `<div class="box" style="text-align:left;">
+                 <h4 style="margin:0; color:#111827;">🔹 Potência ${numArcano} (${periodo.idadeIni} a ${periodo.idadeFim} anos)</h4>
+                 <p style="font-size:14px; margin-top:5px;">${textosMapa[numArcano] || "<i>Interpretação em análise.</i>"}</p>
+                 </div>`;
+    });
+    return html + "</div>";
+}
+
+function detectarSequencias(linhas){
+    let posNeg=[]; let sequencias=[];
+    linhas.forEach((linha, i)=>{
+        let cont=1;
+        for(let j=1;j<linha.length;j++){
+            if(linha[j] === linha[j-1]) cont++;
+            else {
+                if(cont>=3){
+                    sequencias.push({numero: linha[j-1], repeticoes: cont});
+                    for(let k=j-cont;k<j;k++) posNeg.push({linha:i,indice:k});
+                }
+                cont=1;
+            }
+        }
+        if(cont>=3){
+            sequencias.push({numero: linha[linha.length-1], repeticoes: cont});
+            for(let k=linha.length-cont;k<linha.length;k++) posNeg.push({linha:i,indice:k});
+        }
+    });
+    return {sequencias, posNeg};
+}
+
+function detectarPosicoesEspeciais(linhas){
+    let pos=[];
+    linhas.forEach((linha,i)=>{
+        for(let j=0;j<linha.length-2;j++){
+            let seq = "" + linha[j] + linha[j+1] + linha[j+2];
+            if(typeof sequenciasEspeciais !== 'undefined' && sequenciasEspeciais[seq]){ 
+                pos.push({linha:i, indice:j},{linha:i, indice:j+1},{linha:i, indice:j+2}); 
+            }
+        }
+    });
+    return pos;
+}
+
+function detectarSequenciaFinanceira(linhas){
+    let pos=[];
+    for(let i=0; i<linhas.length-1; i++){
+        for(let j=0; j<linhas[i].length-1; j++){
+            if(linhas[i][j]===9 && linhas[i][j+1]===9 && linhas[i+1][j]===9){
+                pos.push({linha:i, indice:j},{linha:i, indice:j+1},{linha:i+1, indice:j});
+            }
+        }
+    }
+    return pos;
+}
+
+function desenhar(linhas, compacta=false){
+    let classe = compacta ? "piramide compacta" : "piramide";
+    const neg = detectarSequencias(linhas).posNeg;
+    const esp = detectarPosicoesEspeciais(linhas);
+    const fin = detectarSequenciaFinanceira(linhas);
+    let html=`<div class="${classe}">`;
+    linhas.forEach((linha,i)=>{
+        html += `<div class="linha">`;
+        linha.forEach((n,j)=>{
+            let c = "num";
+            if(neg.some(p=>p.linha===i && p.indice===j)) c+=" negativo";
+            if(esp.some(p=>p.linha===i && p.indice===j)) c+=" especial";
+            if(fin.some(p=>p.linha===i && p.indice===j)) c+=" financeiro";
+            html += `<div class="${c}">${n}</div>`;
+        });
+        html += `</div>`;
+    });
+    return html + `</div>`;
+}
+
+function piramidePessoal(baseNome, dia) { return piramide(baseNome.map(n => reduzir(n + reduzir(dia)))); }
+function piramideSocial(baseNome, mes) { return piramide(baseNome.map(n => reduzir(n + reduzir(mes)))); }
+function piramideDestino(baseNome, dia, mes) { return piramide(baseNome.map(n => reduzir(n + reduzir(reduzir(dia) + reduzir(mes))))); }
+
+function mostrarAba(nome){
+    document.querySelectorAll('.aba').forEach(a=>a.style.display='none');
+    document.getElementById("aba_"+nome).style.display="block";
+}
+
+function gerar() {
+    const nome = document.getElementById("nome").value;
+    const data = document.getElementById("data").value;
+    if(!nome || !data) return alert("Preencha os dados!");
+
+    const base = nomeNumeros(nome);
+    const [y, m, d] = data.split("-").map(Number);
+    const pVida = piramide(base);
+    const aVida = topo(base);
+    const crono = gerarCronogramaMestre(aVida, data);
+    
+    const htmlVida = (explicacoes.principal || "") + montarConteudoComIntros(pVida, pVida.at(-1)[0], textosVida, crono, textosVida, "Matriz da Vida", textosSeqNegVida, textosSeqEspVida, textosFinVida);
+    const htmlPessoal = (explicacoes.pessoal || "") + montarConteudoComIntros(piramidePessoal(base, d), piramidePessoal(base, d).at(-1)[0], textosPessoal, crono, textosPessoal, "Matriz Pessoal", textosSeqNegPessoal, textosSeqEspPessoal, textosFinPessoal);
+    const htmlSocial = (explicacoes.social || "") + montarConteudoComIntros(piramideSocial(base, m), piramideSocial(base, m).at(-1)[0], textosSocial, crono, textosSocial, "Matriz Social", textosSeqNegSocial, textosSeqEspSocial, textosFinSocial);
+    const htmlDestino = (explicacoes.destino || "") + montarConteudoComIntros(piramideDestino(base, d, m), piramideDestino(base, d, m).at(-1)[0], textosDestino, crono, textosDestino, "Matriz de Destino", textosSeqNegDestino, textosSeqEspDestino, textosFinDestino);
+
+    document.getElementById("aba_principal").innerHTML = htmlVida;
+    document.getElementById("aba_pessoal").innerHTML = htmlPessoal;
+    document.getElementById("aba_social").innerHTML = htmlSocial;
+    document.getElementById("aba_destino").innerHTML = htmlDestino;
 
     localStorage.setItem("relatorioPiramide", JSON.stringify({
-        nome, data: document.getElementById("data").value.split("-").reverse().join("/"),
-        abaPrincipal: principal, 
-        abaPessoal: document.getElementById("aba_pessoal").innerHTML,
-        abaSocial: document.getElementById("aba_social").innerHTML,
-        abaDestino: document.getElementById("aba_destino").innerHTML
+        nome, data: data.split("-").reverse().join("/"),
+        abaPrincipal: htmlVida, abaPessoal: htmlPessoal, abaSocial: htmlSocial, abaDestino: htmlDestino
     }));
-    
-    window.open("matriz-premium.html", "_blank");
-    setTimeout(() => { window.location.href = "https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/sucesso.html"; }, 1500);
+    mostrarAba('principal');
 }
-</script>
+
+// FUNÇÃO ADAPTADA PARA TRAVAR LINK APÓS CLIQUE
+async function abrirPremium(){
+    if(userEmail){
+        try {
+            await fetch(`${DB_URL}vendas/${userEmail.replace(/\./g, '_')}.json`, { 
+                method: 'PATCH', body: JSON.stringify({ status: 'usado' }), headers: { 'Content-Type': 'application/json' }
+            });
+        } catch (e) { console.error("Erro trava"); }
+    }
+     window.open("matriz-premium.html", "_blank");
+    setTimeout(() => {
+        window.location.href = "https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/sucesso.html";
+    }, 1500);
+}
+
+document.oncontextmenu=()=>false;
+document.onselectstart=()=>false;
+</script> 
 </body>
 </html>
-
