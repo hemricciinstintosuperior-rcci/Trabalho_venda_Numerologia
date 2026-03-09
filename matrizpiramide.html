@@ -478,7 +478,30 @@ function gerar() {
     }));
     mostrarAba('principal');
 }
+// --- TRAVA FIREBASE ---
+const urlParams = new URLSearchParams(window.location.search);
+const userEmail = urlParams.get('user'); 
+const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
+// No final do seu script, apenas estas duas funções precisam desse ajuste:
+
+async function verificarAcesso() {
+    if (!userEmail) { 
+        window.location.href = "index.html"; 
+        return; 
+    }
+    try {
+        const res = await fetch(${DB_URL}vendas/${userEmail}.json);
+        const d = await res.json();
+        // Se o e-mail não existir no banco ou o status for 'usado', ele bloqueia
+        if (!d || d.status === 'usado') { 
+            alert("Acesso expirado ou inválido."); 
+            window.location.href = "index.html"; 
+        }
+    } catch (e) {
+        console.error("Erro ao verificar acesso");
+    }
+}
 async function abrirPremium() {
     // 1. Verifica se os dados foram preenchidos
     const nome = document.getElementById("nome").value;
@@ -529,6 +552,7 @@ async function abrirPremium() {
 </script>
 </body>
 </html>
+
 
 
 
