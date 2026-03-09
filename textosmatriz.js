@@ -197,6 +197,24 @@ const textosVida={
 };
   
 const textosPessoal={
+1:"Início e Liderança. A Potência Regente 1 representa o princípio da individualidade, da iniciativa e da força criadora. Ela rege toda a vida do indivíduo impulsionando-o a agir liderar e abrir caminhos próprios. É a energia do começo da autonomia e da afirmação do eu. No aspecto positivo manifesta liderança natural coragem criatividade inteligência estratégica capacidade de decisão e forte espírito de independência. Indica personalidade ativa inovadora e determinada com potencial para posições de destaque. No aspecto negativo pode gerar egoísmo autoritarismo impulsividade orgulho excessivo e dificuldade em aceitar limites. Quando desequilibrada pode levar ao isolamento e conflitos. A Potência Regente 1 ensina que o verdadeiro líder domina a si mesmo antes de dominar o mundo",
+
+2:"Sensibilidade e Intuição. A Potência Regente 2 representa percepção espiritual sensibilidade emocional e compreensão do invisível. Rege a vida de  através da intuição empatia e busca por equilíbrio interior. No aspecto positivo manifesta na vida de  intuição aguçada espiritualidade diplomacia cooperação e profundidade emocional. No aspecto negativo pode gerar insegurança dependência indecisão passividade e fantasia excessiva levando  à fuga da realidade. A Potência Regente 2 ensina para  que a verdadeira força nasce da sensibilidade consciente",
+
+3:"Expressão e Criação. A Potência Regente 3 representa criatividade comunicação e expansão da consciência. Rege a vida pela expressão intelectual artística e emocional. No aspecto positivo manifesta alegria sociabilidade criatividade e inspiração. No aspecto negativo pode gerar dispersão vaidade instabilidade emocional e dificuldade de concluir projetos. A Potência Regente 3 ensina que criatividade precisa de disciplina para virar realização",
+
+4:"Ordem e Estrutura. A Potência Regente 4 representa estabilidade disciplina e construção de bases sólidas. Rege a vida pelo trabalho organização e perseverança. No aspecto positivo manifesta responsabilidade pragmatismo senso de justiça e confiabilidade. No aspecto negativo pode gerar rigidez medo de mudanças e conservadorismo excessivo. A Potência Regente 4 ensina que segurança nasce da constância",
+
+5:"Sabedoria e Orientação. A Potência Regente 5 representa conhecimento ética e busca da verdade. Rege a vida pelo aprendizado experiência e orientação moral. No aspecto positivo manifesta inteligência espiritualidade e capacidade de ensinar. No aspecto negativo pode gerar dogmatismo intolerância e orgulho intelectual. A Potência Regente 5 ensina que o saber verdadeiro liberta",
+
+6:"Escolha e Equilíbrio Emocional. A Potência Regente 6 representa conflito entre razão e emoção necessidade de escolha e aprendizado do amor consciente. Rege a vida pelas relações afetivas. No aspecto positivo manifesta amor harmonia responsabilidade afetiva e conciliação. No aspecto negativo pode gerar indecisão ciúme dependência emocional e conflitos internos. A Potência Regente 6 ensina que amar é escolher com consciência",
+
+7:"Vitória e Autodomínio. A Potência Regente 7 representa triunfo do espírito sobre a matéria e domínio mental. Rege a vida pela busca de equilíbrio entre razão e instinto. No aspecto positivo manifesta disciplina autoconfiança e superação. No aspecto negativo pode gerar arrogância frieza emocional e obsessão por controle. A Potência Regente 7 ensina que a verdadeira vitória é conquistar a si mesmo",
+
+8:"Justiça e Equilíbrio Universal. A Potência Regente 8 representa lei do equilíbrio causa e efeito e justiça universal. Rege a vida pela harmonização de forças opostas. No aspecto positivo manifesta ética responsabilidade e liderança equilibrada. No aspecto negativo pode gerar fanatismo rigidez moral e autoritarismo. A Potência Regente 8 ensina que toda ação gera consequências",
+
+9:"Sabedoria e Sacrifício. A Potência Regente 9 representa prudência sabedoria e renúncia. Rege a vida pelo autoconhecimento e busca de significado. No aspecto positivo manifesta maturidade espiritualidade e altruísmo. No aspecto negativo pode gerar isolamento pessimismo e apego ao passado. A Potência Regente 9 ensina que a sabedoria nasce da experiência",
+  
 11:"Força Interior e Autodomínio Emocional. Na Pirâmide Pessoal, a Potência 11 indica que a pessoa percebe a realidade como um campo de desafios emocionais que exigem coragem, firmeza e domínio interno. Existe a sensação de que a vida testa constantemente a sua força psicológica, como se fosse necessário manter controle sobre impulsos, reações e sentimentos intensos. No aspecto positivo manifesta autoconfiança emocional, coragem para enfrentar conflitos internos e capacidade de transformar tensão em crescimento psicológico. A pessoa sente que precisa ser forte por dentro e superar a si mesma repetidamente. No aspecto negativo pode gerar irritabilidade, impulsividade emocional e sensação de estar sempre em estado de alerta ou defesa. A Potência 11 ensina que a realidade é percebida como um processo de fortalecimento interior contínuo.",
   
 12:"Renúncia Psicológica e Transformação Interior Profunda. Na Pirâmide Pessoal, a Potência 12 faz com que a pessoa perceba a realidade como um processo de aprendizado emocional que exige pausas, sacrifícios e mudanças internas. Surge a sensação de que a vida pede paciência, reflexão e abandono de padrões antigos para amadurecer emocionalmente. No aspecto positivo favorece humildade emocional, empatia e crescimento interior profundo. No aspecto negativo pode gerar sensação de estagnação, vitimização e dúvida sobre o próprio caminho. A Potência 12 ensina que a realidade é percebida como um processo de amadurecimento emocional lento e transformador.",
@@ -368,6 +386,25 @@ const textosPessoal={
 99:"Consciência Suprema e Integração Interior. Na Pirâmide Pessoal, a Potência 99 faz com que a pessoa perceba a realidade como integração total da experiência emocional. No aspecto positivo manifesta sabedoria profunda. No aspecto negativo pode gerar isolamento emocional. A Potência 99 ensina que a realidade é percebida como integração da consciência."};
 
   const textosSocial={ 
+1:"Início e Liderança. A Potência Regente 1 representa o princípio da individualidade, da iniciativa e da força criadora. Ela rege toda a vida do indivíduo impulsionando-o a agir liderar e abrir caminhos próprios. É a energia do começo da autonomia e da afirmação do eu. No aspecto positivo manifesta liderança natural coragem criatividade inteligência estratégica capacidade de decisão e forte espírito de independência. Indica personalidade ativa inovadora e determinada com potencial para posições de destaque. No aspecto negativo pode gerar egoísmo autoritarismo impulsividade orgulho excessivo e dificuldade em aceitar limites. Quando desequilibrada pode levar ao isolamento e conflitos. A Potência Regente 1 ensina que o verdadeiro líder domina a si mesmo antes de dominar o mundo",
+
+2:"Sensibilidade e Intuição. A Potência Regente 2 representa percepção espiritual sensibilidade emocional e compreensão do invisível. Rege a vida de  através da intuição empatia e busca por equilíbrio interior. No aspecto positivo manifesta na vida de  intuição aguçada espiritualidade diplomacia cooperação e profundidade emocional. No aspecto negativo pode gerar insegurança dependência indecisão passividade e fantasia excessiva levando  à fuga da realidade. A Potência Regente 2 ensina para  que a verdadeira força nasce da sensibilidade consciente",
+
+3:"Expressão e Criação. A Potência Regente 3 representa criatividade comunicação e expansão da consciência. Rege a vida pela expressão intelectual artística e emocional. No aspecto positivo manifesta alegria sociabilidade criatividade e inspiração. No aspecto negativo pode gerar dispersão vaidade instabilidade emocional e dificuldade de concluir projetos. A Potência Regente 3 ensina que criatividade precisa de disciplina para virar realização",
+
+4:"Ordem e Estrutura. A Potência Regente 4 representa estabilidade disciplina e construção de bases sólidas. Rege a vida pelo trabalho organização e perseverança. No aspecto positivo manifesta responsabilidade pragmatismo senso de justiça e confiabilidade. No aspecto negativo pode gerar rigidez medo de mudanças e conservadorismo excessivo. A Potência Regente 4 ensina que segurança nasce da constância",
+
+5:"Sabedoria e Orientação. A Potência Regente 5 representa conhecimento ética e busca da verdade. Rege a vida pelo aprendizado experiência e orientação moral. No aspecto positivo manifesta inteligência espiritualidade e capacidade de ensinar. No aspecto negativo pode gerar dogmatismo intolerância e orgulho intelectual. A Potência Regente 5 ensina que o saber verdadeiro liberta",
+
+6:"Escolha e Equilíbrio Emocional. A Potência Regente 6 representa conflito entre razão e emoção necessidade de escolha e aprendizado do amor consciente. Rege a vida pelas relações afetivas. No aspecto positivo manifesta amor harmonia responsabilidade afetiva e conciliação. No aspecto negativo pode gerar indecisão ciúme dependência emocional e conflitos internos. A Potência Regente 6 ensina que amar é escolher com consciência",
+
+7:"Vitória e Autodomínio. A Potência Regente 7 representa triunfo do espírito sobre a matéria e domínio mental. Rege a vida pela busca de equilíbrio entre razão e instinto. No aspecto positivo manifesta disciplina autoconfiança e superação. No aspecto negativo pode gerar arrogância frieza emocional e obsessão por controle. A Potência Regente 7 ensina que a verdadeira vitória é conquistar a si mesmo",
+
+8:"Justiça e Equilíbrio Universal. A Potência Regente 8 representa lei do equilíbrio causa e efeito e justiça universal. Rege a vida pela harmonização de forças opostas. No aspecto positivo manifesta ética responsabilidade e liderança equilibrada. No aspecto negativo pode gerar fanatismo rigidez moral e autoritarismo. A Potência Regente 8 ensina que toda ação gera consequências",
+
+9:"Sabedoria e Sacrifício. A Potência Regente 9 representa prudência sabedoria e renúncia. Rege a vida pelo autoconhecimento e busca de significado. No aspecto positivo manifesta maturidade espiritualidade e altruísmo. No aspecto negativo pode gerar isolamento pessimismo e apego ao passado. A Potência Regente 9 ensina que a sabedoria nasce da experiência",
+
+    
 11:"Força Social e Percepção de Liderança. Na Pirâmide Social, a Potência 11 indica que a pessoa percebe o ambiente externo como um campo de força, iniciativa e tomada de decisões. Enxerga as relações sociais como espaços onde liderança, posicionamento e atitude definem os rumos coletivos. Costuma notar quem assume o controle, quem conduz situações e quem evita responsabilidades. No aspecto positivo manifesta postura firme, visão estratégica e capacidade de compreender dinâmicas de poder. No aspecto negativo pode perceber o ambiente como excessivamente competitivo ou exigente. A Potência 11 mostra que a pessoa vive e interpreta o mundo social como um cenário de liderança e afirmação.",
 
 12:"Cooperação Social e Percepção de Sacrifício. Na Pirâmide Social, a Potência 12 indica que a pessoa percebe o ambiente social como um espaço onde colaboração, paciência e concessões são necessárias para manter o equilíbrio coletivo. Enxerga as relações como processos que exigem apoio mútuo e sustentação constante. Costuma notar quem ajuda, quem se sacrifica e quem evita compromissos. No aspecto positivo manifesta empatia e compreensão das necessidades do grupo. No aspecto negativo pode perceber o meio como pesado ou marcado por cobranças excessivas. A Potência 12 revela uma vivência social interpretada sob a ótica da cooperação.",
@@ -542,6 +579,25 @@ const textosPessoal={
   };
   
   const textosDestino={ 
+1:"Início e Liderança. A Potência Regente 1 representa o princípio da individualidade, da iniciativa e da força criadora. Ela rege toda a vida do indivíduo impulsionando-o a agir liderar e abrir caminhos próprios. É a energia do começo da autonomia e da afirmação do eu. No aspecto positivo manifesta liderança natural coragem criatividade inteligência estratégica capacidade de decisão e forte espírito de independência. Indica personalidade ativa inovadora e determinada com potencial para posições de destaque. No aspecto negativo pode gerar egoísmo autoritarismo impulsividade orgulho excessivo e dificuldade em aceitar limites. Quando desequilibrada pode levar ao isolamento e conflitos. A Potência Regente 1 ensina que o verdadeiro líder domina a si mesmo antes de dominar o mundo",
+
+2:"Sensibilidade e Intuição. A Potência Regente 2 representa percepção espiritual sensibilidade emocional e compreensão do invisível. Rege a vida de  através da intuição empatia e busca por equilíbrio interior. No aspecto positivo manifesta na vida de  intuição aguçada espiritualidade diplomacia cooperação e profundidade emocional. No aspecto negativo pode gerar insegurança dependência indecisão passividade e fantasia excessiva levando  à fuga da realidade. A Potência Regente 2 ensina para  que a verdadeira força nasce da sensibilidade consciente",
+
+3:"Expressão e Criação. A Potência Regente 3 representa criatividade comunicação e expansão da consciência. Rege a vida pela expressão intelectual artística e emocional. No aspecto positivo manifesta alegria sociabilidade criatividade e inspiração. No aspecto negativo pode gerar dispersão vaidade instabilidade emocional e dificuldade de concluir projetos. A Potência Regente 3 ensina que criatividade precisa de disciplina para virar realização",
+
+4:"Ordem e Estrutura. A Potência Regente 4 representa estabilidade disciplina e construção de bases sólidas. Rege a vida pelo trabalho organização e perseverança. No aspecto positivo manifesta responsabilidade pragmatismo senso de justiça e confiabilidade. No aspecto negativo pode gerar rigidez medo de mudanças e conservadorismo excessivo. A Potência Regente 4 ensina que segurança nasce da constância",
+
+5:"Sabedoria e Orientação. A Potência Regente 5 representa conhecimento ética e busca da verdade. Rege a vida pelo aprendizado experiência e orientação moral. No aspecto positivo manifesta inteligência espiritualidade e capacidade de ensinar. No aspecto negativo pode gerar dogmatismo intolerância e orgulho intelectual. A Potência Regente 5 ensina que o saber verdadeiro liberta",
+
+6:"Escolha e Equilíbrio Emocional. A Potência Regente 6 representa conflito entre razão e emoção necessidade de escolha e aprendizado do amor consciente. Rege a vida pelas relações afetivas. No aspecto positivo manifesta amor harmonia responsabilidade afetiva e conciliação. No aspecto negativo pode gerar indecisão ciúme dependência emocional e conflitos internos. A Potência Regente 6 ensina que amar é escolher com consciência",
+
+7:"Vitória e Autodomínio. A Potência Regente 7 representa triunfo do espírito sobre a matéria e domínio mental. Rege a vida pela busca de equilíbrio entre razão e instinto. No aspecto positivo manifesta disciplina autoconfiança e superação. No aspecto negativo pode gerar arrogância frieza emocional e obsessão por controle. A Potência Regente 7 ensina que a verdadeira vitória é conquistar a si mesmo",
+
+8:"Justiça e Equilíbrio Universal. A Potência Regente 8 representa lei do equilíbrio causa e efeito e justiça universal. Rege a vida pela harmonização de forças opostas. No aspecto positivo manifesta ética responsabilidade e liderança equilibrada. No aspecto negativo pode gerar fanatismo rigidez moral e autoritarismo. A Potência Regente 8 ensina que toda ação gera consequências",
+
+9:"Sabedoria e Sacrifício. A Potência Regente 9 representa prudência sabedoria e renúncia. Rege a vida pelo autoconhecimento e busca de significado. No aspecto positivo manifesta maturidade espiritualidade e altruísmo. No aspecto negativo pode gerar isolamento pessimismo e apego ao passado. A Potência Regente 9 ensina que a sabedoria nasce da experiência",
+
+    
 11: `Força e Autodomínio
 
 Você, durante a vigência da Potência 11, pode perceber uma fase em que surge a necessidade de desenvolver domínio interior diante das circunstâncias da vida. A sensação de enfrentar desafios ou situações que exigem firmeza emocional pode aparecer com mais intensidade, como se a própria experiência estivesse convidando ao fortalecimento da vontade e da consciência.
@@ -1213,7 +1269,7 @@ Essa influência pode estimular maturidade nas decisões e capacidade de reconhe
   };  
 
 // 🚨 TEXTOS SEQUÊNCIAS NEGATIVAS
-const textosSeqNeg = {
+const textosSeqNegVida = {
 
   1: `➢ SEQUENCIA 111 Nesta fase, você poderá sentir que sua chama interna de motivação está sendo abafada por obstáculos inesperados.
 A influência desta sequência tende a minar sua capacidade de iniciativa, tornando o ato de começar algo novo um verdadeiro desafio.
@@ -1333,8 +1389,359 @@ Doenças somáticas e hipocondria podem aparecer como reflexo de uma mente que n
 A lição fundamental deste período é o desapego e a busca por uma nova forma de enxergar o valor da vida.`
 };
 
+const textosSeqNegPessoal = { 1: `➢ SEQUENCIA 111 Nesta fase, você poderá sentir que sua chama interna de motivação está sendo abafada por obstáculos inesperados.
+A influência desta sequência tende a minar sua capacidade de iniciativa, tornando o ato de começar algo novo um verdadeiro desafio.
+É comum surgir um sentimento de impotência, onde a coragem para arriscar parece desaparecer, dando lugar à inatividade.
+
+Você pode enfrentar períodos de estagnação profissional ou desânimo profundo, sentindo-se limitado em suas realizações.
+Esse estado de baixa energia pode perdurar enquanto o Arcano regente estiver dominando o seu ciclo atual.
+Psicologicamente, isso gera uma sensação de paralisia diante das oportunidades da vida.
+
+No aspecto físico, o mapa acende um alerta para o cuidado redobrado com o centro do seu peito.
+Existe uma tendência vibracional que pode afetar o sistema cardíaco se o estresse não for gerenciado.
+É um momento que exige esforço consciente para não se deixar abater pelo desemprego ou pela falta de propósito.
+A chave aqui é buscar reacender sua determinação interna, mesmo quando o cenário externo parecer desfavorável.`,
+
+  2: `➢ SEQUENCIA 222 Esta configuração vibracional atua diretamente sobre a sua mente fazendo papapapapa.
+
+Há um risco real de desenvolver comportamentos submissos, onde você anula sua identidade em prol do convívio com os outros.
+Essa insegurança constante acaba limitando o desenvolvimento de projetos pessoais que exigem autonomia.
+Sentir-se incapaz de caminhar com as próprias pernas é uma marca comum desta influência negativa.
+
+É necessário vigilância para não se tornar dependente emocionalmente de quem está ao seu redor.
+No campo da saúde, essa fragilidade emocional pode abrir portas para inclinações que gerem dependências químicas ou psicológicas.
+O desafio é fortalecer o seu "eu" interno para que você não se perca nas expectativas da sociedade ou da família.
+Recuperar o comando da sua vida é a grande lição que esta sequência tenta lhe ensinar através desses testes.`,
+
+  3: `➢ SEQUENCIA 333 A comunicação, que deveria ser sua ponte com o mundo, pode se transformar em uma barreira sob esta influência.
+Você poderá sentir uma dificuldade crescente em expressar o que sente, resultando em frequentes mal-entendidos.
+
+Seus pensamentos e ideias, por mais brilhantes que sejam, parecem não ser compreendidos pelas pessoas próximas.
+Isso gera uma frustração constante no ambiente de trabalho e, principalmente, dentro dos seus relacionamentos afetivos.
+A sensação de estar isolado em sua própria mente pode levar a um retraimento social indesejado.
+
+Convencer os outros sobre suas opiniões exigirá um esforço muito maior do que o habitual durante este período.
+Essa limitação na expressão pessoal pode causar um sentimento de invisibilidade social.
+No aspecto biológico, o estresse de não ser ouvido tende a se manifestar em áreas de troca e movimento.
+Fique atento a possíveis sensibilidades no sistema respiratório ou desconfortos nas articulações do corpo.
+Trabalhar a clareza e a paciência no diálogo será fundamental para atravessar essa fase sem maiores conflitos.`,
+
+  4: `➢ SEQUENCIA 444 Esta sequência aponta para um período de provações severas no campo da carreira e da estabilidade profissional.
+Você poderá encontrar obstáculos que parecem bloquear qualquer tentativa de ascensão ou reconhecimento no trabalho.
+
+Existe uma tendência a enfrentar remunerações abaixo do esperado ou dificuldades em se manter estável em um emprego.
+Muitas vezes, a necessidade de sobrevivência pode obrigá-lo a aceitar funções que não condizem com seu talento.
+A falta de perspectivas claras de futuro pode gerar uma ansiedade constante sobre a sua segurança material.
+
+É um ciclo que exige resiliência, pois o sucesso parece sempre estar um passo à frente do seu alcance atual.
+A frustração profissional pode se transformar em um peso emocional difícil de carregar no dia a dia.
+Na esfera física, essa pressão por estabilidade pode sobrecarregar o sistema circulatório e as funções arteriais.
+Também há um alerta vibracional para o desenvolvimento de condições reumáticas causadas pela tensão acumulada.
+Manter a fé em suas habilidades será o seu maior desafio enquanto você busca suprir suas necessidades básicas.`,
+
+  5: `➢ SEQUENCIA 555 A marca desta influência é a instabilidade constante, forçando mudanças que você muitas vezes não deseja realizar.
+Pode haver uma alternância drástica em seus valores, status social e até mesmo em sua residência ou profissão.
+Viver em constantes altos e baixos gera um desgaste mental profundo, dificultando qualquer plano de longo prazo.
+A sensação é de que nada é sólido ou seguro, pois o que está firme hoje pode mudar completamente amanhã.
+
+Você poderá se sentir constantemente em busca de algo que o satisfaça, sem nunca encontrar um porto seguro.
+Essa insatisfação crônica pode levá-lo ao desejo de romper todos os laços e buscar um isolamento radical.
+O desapego excessivo pode acabar afastando pessoas importantes que poderiam ajudá-lo nesse processo.
+O corpo físico pode reagir a essa montanha-russa emocional através de manifestações na pele.
+
+Além disso, a falta de foco característica deste período aumenta a predisposição a sofrer pequenos acidentes domésticos.
+A lição aqui é aprender a encontrar o equilíbrio interno mesmo quando o mundo externo parece estar em colapso.`,
+
+  6: `➢ SEQUENCIA 666 O campo dos afetos e dos sentimentos é o mais atingido por esta sequência, trazendo o peso da decepção.
+Você poderá passar por situações onde amigos íntimos, sócios ou familiares falham com a sua confiança.
+Existe um risco elevado de sentir-se incompreendido pelo parceiro ou pela pessoa amada em seus planos de vida.
+
+A dor de não ver seus sentimentos correspondidos ou respeitados pode gerar um amargor difícil de digerir.
+Expectativas muito altas em relação aos outros tendem a resultar em frustrações dolorosas neste ciclo.
+Muitas vezes, você se sentirá sozinho mesmo estando cercado por pessoas que deveriam apoiá-lo.
+A desilusão amorosa pode afetar sua visão sobre a lealdade e a bondade das pessoas ao seu redor.
+
+Fisicamente, essa carga emocional de tristeza costuma se concentrar na região cardíaca e no sistema vascular.
+É essencial aprender a não colocar a sua felicidade exclusivamente nas mãos de terceiros para evitar o sofrimento.
+A cura virá através do amor-próprio e da compreensão de que nem todos possuem o mesmo nível de entrega que você.`,
+
+  7: `➢ SEQUENCIA 777 Sob esta vibração, o medo e a intolerância podem se tornar companheiros constantes, alterando seu comportamento.
+Você poderá se tornar uma pessoa mais arredia, teimosa e com uma tendência perigosa ao isolamento voluntário.
+O afastamento social pode parecer uma proteção, mas acaba gerando frustrações profundas e um sentimento de vazio.
+
+Há um risco de desenvolver comportamentos arrogantes ou vaidosos como forma de mascarar suas próprias inseguranças.
+A intolerância com as falhas alheias pode afastar aliados valiosos, tornando sua jornada muito mais solitária.
+Os excessos e exageros podem ser usados como válvula de escape para o medo que você sente do futuro.
+Essa busca por refúgio na própria mente pode levá-lo a se tornar refém de pensamentos negativos e obsessivos.
+
+No campo da saúde, esse padrão de solidão e estresse nervoso é extremamente desgastante para o organismo.
+Existe um alerta para o sistema nervoso e até para o surgimento de patologias mais graves se a mente não for cuidada.
+Buscar ajuda e manter a mente aberta para o mundo é o caminho para não se perder em sua própria escuridão.`,
+
+  8: `➢ SEQUENCIA 888 Esta é uma das sequências mais desafiadoras, pois afeta simultaneamente o equilíbrio emocional e o financeiro.
+Você poderá manifestar uma postura agressiva ou inacessível, perdendo o controle diante de pequenas adversidades.
+Isso acaba afastando o convívio social, pois as pessoas sentem dificuldade em lidar com sua instabilidade.
+
+O período pode ser marcado por perdas financeiras significativas, injustiças e privações materiais severas.
+Sua capacidade de julgamento estará nublada, tornando-o um alvo fácil para golpes ou decisões precipitadas.
+O dinheiro pode entrar e sair com a mesma rapidez, criando uma oscilação angustiante entre a fartura e a escassez.
+A sensação de injustiça pode corroer sua paz, levando a explosões de temperamento que prejudicam sua imagem.
+Esse estresse crônico é um veneno para o seu sistema nervoso, podendo gerar doenças psicossomáticas graves.
+
+É um momento que exige um controle férreo sobre as emoções para que elas não destruam o seu patrimônio.
+O desafio é manter a ética e a calma mesmo quando tudo parece estar sendo tirado de suas mãos.`,
+
+  9: `➢ SEQUENCIA 999 Aqui, a capacidade de discernimento e a compreensão das situações da vida ficam seriamente comprometidas.
+Você poderá enfrentar um ciclo de estagnação onde nada parece avançar, independentemente do seu esforço.
+Dificuldades financeiras agudas e até a perda de patrimônio construído ao longo de anos são riscos reais.
+Fracassos em negócios e relacionamentos podem surgir devido a uma visão distorcida da realidade.
+
+A sensação de estar "travado" no tempo gera uma frustração que pode evoluir para quadros de depressão.
+É difícil entender o porquê de tantas dificuldades estarem acontecendo ao mesmo tempo, gerando um peso mental.
+O estresse causado pela falta de resultados pode afetar drasticamente o seu ânimo para continuar lutando.
+
+No plano físico, essa carga de estresse constante é um fator de risco para o seu sistema nervoso e coração.
+Doenças somáticas e hipocondria podem aparecer como reflexo de uma mente que não encontra saída para os problemas.
+A lição fundamental deste período é o desapego e a busca por uma nova forma de enxergar o valor da vida.`
+};
+
+const textosSeqNegSocial = { 1: `➢ SEQUENCIA 111 Nesta fase, você poderá sentir que sua chama interna de motivação está sendo abafada por obstáculos inesperados.
+A influência desta sequência tende a minar sua capacidade de iniciativa, tornando o ato de começar algo novo um verdadeiro desafio.
+É comum surgir um sentimento de impotência, onde a coragem para arriscar parece desaparecer, dando lugar à inatividade.
+
+Você pode enfrentar períodos de estagnação profissional ou desânimo profundo, sentindo-se limitado em suas realizações.
+Esse estado de baixa energia pode perdurar enquanto o Arcano regente estiver dominando o seu ciclo atual.
+Psicologicamente, isso gera uma sensação de paralisia diante das oportunidades da vida.
+
+No aspecto físico, o mapa acende um alerta para o cuidado redobrado com o centro do seu peito.
+Existe uma tendência vibracional que pode afetar o sistema cardíaco se o estresse não for gerenciado.
+É um momento que exige esforço consciente para não se deixar abater pelo desemprego ou pela falta de propósito.
+A chave aqui é buscar reacender sua determinação interna, mesmo quando o cenário externo parecer desfavorável.`,
+
+  2: `➢ SEQUENCIA 222 Esta configuração vibracional atua diretamente sobre o seu senso de valor próprio e autoconfiança.
+Você poderá se perceber mais vulnerável à opinião alheia, permitindo que amigos ou parceiros influencem demais suas decisões.
+A indecisão e a timidez podem se tornar obstáculos frequentes, dificultando a imposição de suas vontades e desejos.
+
+Há um risco real de desenvolver comportamentos submissos, onde você anula sua identidade em prol do convívio com os outros.
+Essa insegurança constante acaba limitando o desenvolvimento de projetos pessoais que exigem autonomia.
+Sentir-se incapaz de caminhar com as próprias pernas é uma marca comum desta influência negativa.
+
+É necessário vigilância para não se tornar dependente emocionalmente de quem está ao seu redor.
+No campo da saúde, essa fragilidade emocional pode abrir portas para inclinações que gerem dependências químicas ou psicológicas.
+O desafio é fortalecer o seu "eu" interno para que você não se perca nas expectativas da sociedade ou da família.
+Recuperar o comando da sua vida é a grande lição que esta sequência tenta lhe ensinar através desses testes.`,
+
+  3: `➢ SEQUENCIA 333 A comunicação, que deveria ser sua ponte com o mundo, pode se transformar em uma barreira sob esta influência.
+Você poderá sentir uma dificuldade crescente em expressar o que sente, resultando em frequentes mal-entendidos.
+
+Seus pensamentos e ideias, por mais brilhantes que sejam, parecem não ser compreendidos pelas pessoas próximas.
+Isso gera uma frustração constante no ambiente de trabalho e, principalmente, dentro dos seus relacionamentos afetivos.
+A sensação de estar isolado em sua própria mente pode levar a um retraimento social indesejado.
+
+Convencer os outros sobre suas opiniões exigirá um esforço muito maior do que o habitual durante este período.
+Essa limitação na expressão pessoal pode causar um sentimento de invisibilidade social.
+No aspecto biológico, o estresse de não ser ouvido tende a se manifestar em áreas de troca e movimento.
+Fique atento a possíveis sensibilidades no sistema respiratório ou desconfortos nas articulações do corpo.
+Trabalhar a clareza e a paciência no diálogo será fundamental para atravessar essa fase sem maiores conflitos.`,
+
+  4: `➢ SEQUENCIA 444 Esta sequência aponta para um período de provações severas no campo da carreira e da estabilidade profissional.
+Você poderá encontrar obstáculos que parecem bloquear qualquer tentativa de ascensão ou reconhecimento no trabalho.
+
+Existe uma tendência a enfrentar remunerações abaixo do esperado ou dificuldades em se manter estável em um emprego.
+Muitas vezes, a necessidade de sobrevivência pode obrigá-lo a aceitar funções que não condizem com seu talento.
+A falta de perspectivas claras de futuro pode gerar uma ansiedade constante sobre a sua segurança material.
+
+É um ciclo que exige resiliência, pois o sucesso parece sempre estar um passo à frente do seu alcance atual.
+A frustração profissional pode se transformar em um peso emocional difícil de carregar no dia a dia.
+Na esfera física, essa pressão por estabilidade pode sobrecarregar o sistema circulatório e as funções arteriais.
+Também há um alerta vibracional para o desenvolvimento de condições reumáticas causadas pela tensão acumulada.
+Manter a fé em suas habilidades será o seu maior desafio enquanto você busca suprir suas necessidades básicas.`,
+
+  5: `➢ SEQUENCIA 555 A marca desta influência é a instabilidade constante, forçando mudanças que você muitas vezes não deseja realizar.
+Pode haver uma alternância drástica em seus valores, status social e até mesmo em sua residência ou profissão.
+Viver em constantes altos e baixos gera um desgaste mental profundo, dificultando qualquer plano de longo prazo.
+A sensação é de que nada é sólido ou seguro, pois o que está firme hoje pode mudar completamente amanhã.
+
+Você poderá se sentir constantemente em busca de algo que o satisfaça, sem nunca encontrar um porto seguro.
+Essa insatisfação crônica pode levá-lo ao desejo de romper todos os laços e buscar um isolamento radical.
+O desapego excessivo pode acabar afastando pessoas importantes que poderiam ajudá-lo nesse processo.
+O corpo físico pode reagir a essa montanha-russa emocional através de manifestações na pele.
+
+Além disso, a falta de foco característica deste período aumenta a predisposição a sofrer pequenos acidentes domésticos.
+A lição aqui é aprender a encontrar o equilíbrio interno mesmo quando o mundo externo parece estar em colapso.`,
+
+  6: `➢ SEQUENCIA 666 O campo dos afetos e dos sentimentos é o mais atingido por esta sequência, trazendo o peso da decepção.
+Você poderá passar por situações onde amigos íntimos, sócios ou familiares falham com a sua confiança.
+Existe um risco elevado de sentir-se incompreendido pelo parceiro ou pela pessoa amada em seus planos de vida.
+
+A dor de não ver seus sentimentos correspondidos ou respeitados pode gerar um amargor difícil de digerir.
+Expectativas muito altas em relação aos outros tendem a resultar em frustrações dolorosas neste ciclo.
+Muitas vezes, você se sentirá sozinho mesmo estando cercado por pessoas que deveriam apoiá-lo.
+A desilusão amorosa pode afetar sua visão sobre a lealdade e a bondade das pessoas ao seu redor.
+
+Fisicamente, essa carga emocional de tristeza costuma se concentrar na região cardíaca e no sistema vascular.
+É essencial aprender a não colocar a sua felicidade exclusivamente nas mãos de terceiros para evitar o sofrimento.
+A cura virá através do amor-próprio e da compreensão de que nem todos possuem o mesmo nível de entrega que você.`,
+
+  7: `➢ SEQUENCIA 777 Sob esta vibração, o medo e a intolerância podem se tornar companheiros constantes, alterando seu comportamento.
+Você poderá se tornar uma pessoa mais arredia, teimosa e com uma tendência perigosa ao isolamento voluntário.
+O afastamento social pode parecer uma proteção, mas acaba gerando frustrações profundas e um sentimento de vazio.
+
+Há um risco de desenvolver comportamentos arrogantes ou vaidosos como forma de mascarar suas próprias inseguranças.
+A intolerância com as falhas alheias pode afastar aliados valiosos, tornando sua jornada muito mais solitária.
+Os excessos e exageros podem ser usados como válvula de escape para o medo que você sente do futuro.
+Essa busca por refúgio na própria mente pode levá-lo a se tornar refém de pensamentos negativos e obsessivos.
+
+No campo da saúde, esse padrão de solidão e estresse nervoso é extremamente desgastante para o organismo.
+Existe um alerta para o sistema nervoso e até para o surgimento de patologias mais graves se a mente não for cuidada.
+Buscar ajuda e manter a mente aberta para o mundo é o caminho para não se perder em sua própria escuridão.`,
+
+  8: `➢ SEQUENCIA 888 Esta é uma das sequências mais desafiadoras, pois afeta simultaneamente o equilíbrio emocional e o financeiro.
+Você poderá manifestar uma postura agressiva ou inacessível, perdendo o controle diante de pequenas adversidades.
+Isso acaba afastando o convívio social, pois as pessoas sentem dificuldade em lidar com sua instabilidade.
+
+O período pode ser marcado por perdas financeiras significativas, injustiças e privações materiais severas.
+Sua capacidade de julgamento estará nublada, tornando-o um alvo fácil para golpes ou decisões precipitadas.
+O dinheiro pode entrar e sair com a mesma rapidez, criando uma oscilação angustiante entre a fartura e a escassez.
+A sensação de injustiça pode corroer sua paz, levando a explosões de temperamento que prejudicam sua imagem.
+Esse estresse crônico é um veneno para o seu sistema nervoso, podendo gerar doenças psicossomáticas graves.
+
+É um momento que exige um controle férreo sobre as emoções para que elas não destruam o seu patrimônio.
+O desafio é manter a ética e a calma mesmo quando tudo parece estar sendo tirado de suas mãos.`,
+
+  9: `➢ SEQUENCIA 999 Aqui, a capacidade de discernimento e a compreensão das situações da vida ficam seriamente comprometidas.
+Você poderá enfrentar um ciclo de estagnação onde nada parece avançar, independentemente do seu esforço.
+Dificuldades financeiras agudas e até a perda de patrimônio construído ao longo de anos são riscos reais.
+Fracassos em negócios e relacionamentos podem surgir devido a uma visão distorcida da realidade.
+
+A sensação de estar "travado" no tempo gera uma frustração que pode evoluir para quadros de depressão.
+É difícil entender o porquê de tantas dificuldades estarem acontecendo ao mesmo tempo, gerando um peso mental.
+O estresse causado pela falta de resultados pode afetar drasticamente o seu ânimo para continuar lutando.
+
+No plano físico, essa carga de estresse constante é um fator de risco para o seu sistema nervoso e coração.
+Doenças somáticas e hipocondria podem aparecer como reflexo de uma mente que não encontra saída para os problemas.
+A lição fundamental deste período é o desapego e a busca por uma nova forma de enxergar o valor da vida.`
+};
+
+const textosSeqNegDestino = { 1: `➢ SEQUENCIA 111 Nesta fase, você poderá sentir que sua chama interna de motivação está sendo abafada por obstáculos inesperados.
+A influência desta sequência tende a minar sua capacidade de iniciativa, tornando o ato de começar algo novo um verdadeiro desafio.
+É comum surgir um sentimento de impotência, onde a coragem para arriscar parece desaparecer, dando lugar à inatividade.
+
+Você pode enfrentar períodos de estagnação profissional ou desânimo profundo, sentindo-se limitado em suas realizações.
+Esse estado de baixa energia pode perdurar enquanto o Arcano regente estiver dominando o seu ciclo atual.
+Psicologicamente, isso gera uma sensação de paralisia diante das oportunidades da vida.
+
+No aspecto físico, o mapa acende um alerta para o cuidado redobrado com o centro do seu peito.
+Existe uma tendência vibracional que pode afetar o sistema cardíaco se o estresse não for gerenciado.
+É um momento que exige esforço consciente para não se deixar abater pelo desemprego ou pela falta de propósito.
+A chave aqui é buscar reacender sua determinação interna, mesmo quando o cenário externo parecer desfavorável.`,
+
+  2: `➢ SEQUENCIA 222 Esta configuração vibracional atua diretamente sobre o seu senso de valor próprio e autoconfiança.
+Você poderá se perceber mais vulnerável à opinião alheia, permitindo que amigos ou parceiros influencem demais suas decisões.
+A indecisão e a timidez podem se tornar obstáculos frequentes, dificultando a imposição de suas vontades e desejos.
+
+Há um risco real de desenvolver comportamentos submissos, onde você anula sua identidade em prol do convívio com os outros.
+Essa insegurança constante acaba limitando o desenvolvimento de projetos pessoais que exigem autonomia.
+Sentir-se incapaz de caminhar com as próprias pernas é uma marca comum desta influência negativa.
+
+É necessário vigilância para não se tornar dependente emocionalmente de quem está ao seu redor.
+No campo da saúde, essa fragilidade emocional pode abrir portas para inclinações que gerem dependências químicas ou psicológicas.
+O desafio é fortalecer o seu "eu" interno para que você não se perca nas expectativas da sociedade ou da família.
+Recuperar o comando da sua vida é a grande lição que esta sequência tenta lhe ensinar através desses testes.`,
+
+  3: `➢ SEQUENCIA 333 A comunicação, que deveria ser sua ponte com o mundo, pode se transformar em uma barreira sob esta influência.
+Você poderá sentir uma dificuldade crescente em expressar o que sente, resultando em frequentes mal-entendidos.
+
+Seus pensamentos e ideias, por mais brilhantes que sejam, parecem não ser compreendidos pelas pessoas próximas.
+Isso gera uma frustração constante no ambiente de trabalho e, principalmente, dentro dos seus relacionamentos afetivos.
+A sensação de estar isolado em sua própria mente pode levar a um retraimento social indesejado.
+
+Convencer os outros sobre suas opiniões exigirá um esforço muito maior do que o habitual durante este período.
+Essa limitação na expressão pessoal pode causar um sentimento de invisibilidade social.
+No aspecto biológico, o estresse de não ser ouvido tende a se manifestar em áreas de troca e movimento.
+Fique atento a possíveis sensibilidades no sistema respiratório ou desconfortos nas articulações do corpo.
+Trabalhar a clareza e a paciência no diálogo será fundamental para atravessar essa fase sem maiores conflitos.`,
+
+  4: `➢ SEQUENCIA 444 Esta sequência aponta para um período de provações severas no campo da carreira e da estabilidade profissional.
+Você poderá encontrar obstáculos que parecem bloquear qualquer tentativa de ascensão ou reconhecimento no trabalho.
+
+Existe uma tendência a enfrentar remunerações abaixo do esperado ou dificuldades em se manter estável em um emprego.
+Muitas vezes, a necessidade de sobrevivência pode obrigá-lo a aceitar funções que não condizem com seu talento.
+A falta de perspectivas claras de futuro pode gerar uma ansiedade constante sobre a sua segurança material.
+
+É um ciclo que exige resiliência, pois o sucesso parece sempre estar um passo à frente do seu alcance atual.
+A frustração profissional pode se transformar em um peso emocional difícil de carregar no dia a dia.
+Na esfera física, essa pressão por estabilidade pode sobrecarregar o sistema circulatório e as funções arteriais.
+Também há um alerta vibracional para o desenvolvimento de condições reumáticas causadas pela tensão acumulada.
+Manter a fé em suas habilidades será o seu maior desafio enquanto você busca suprir suas necessidades básicas.`,
+
+  5: `➢ SEQUENCIA 555 A marca desta influência é a instabilidade constante, forçando mudanças que você muitas vezes não deseja realizar.
+Pode haver uma alternância drástica em seus valores, status social e até mesmo em sua residência ou profissão.
+Viver em constantes altos e baixos gera um desgaste mental profundo, dificultando qualquer plano de longo prazo.
+A sensação é de que nada é sólido ou seguro, pois o que está firme hoje pode mudar completamente amanhã.
+
+Você poderá se sentir constantemente em busca de algo que o satisfaça, sem nunca encontrar um porto seguro.
+Essa insatisfação crônica pode levá-lo ao desejo de romper todos os laços e buscar um isolamento radical.
+O desapego excessivo pode acabar afastando pessoas importantes que poderiam ajudá-lo nesse processo.
+O corpo físico pode reagir a essa montanha-russa emocional através de manifestações na pele.
+
+Além disso, a falta de foco característica deste período aumenta a predisposição a sofrer pequenos acidentes domésticos.
+A lição aqui é aprender a encontrar o equilíbrio interno mesmo quando o mundo externo parece estar em colapso.`,
+
+  6: `➢ SEQUENCIA 666 O campo dos afetos e dos sentimentos é o mais atingido por esta sequência, trazendo o peso da decepção.
+Você poderá passar por situações onde amigos íntimos, sócios ou familiares falham com a sua confiança.
+Existe um risco elevado de sentir-se incompreendido pelo parceiro ou pela pessoa amada em seus planos de vida.
+
+A dor de não ver seus sentimentos correspondidos ou respeitados pode gerar um amargor difícil de digerir.
+Expectativas muito altas em relação aos outros tendem a resultar em frustrações dolorosas neste ciclo.
+Muitas vezes, você se sentirá sozinho mesmo estando cercado por pessoas que deveriam apoiá-lo.
+A desilusão amorosa pode afetar sua visão sobre a lealdade e a bondade das pessoas ao seu redor.
+
+Fisicamente, essa carga emocional de tristeza costuma se concentrar na região cardíaca e no sistema vascular.
+É essencial aprender a não colocar a sua felicidade exclusivamente nas mãos de terceiros para evitar o sofrimento.
+A cura virá através do amor-próprio e da compreensão de que nem todos possuem o mesmo nível de entrega que você.`,
+
+  7: `➢ SEQUENCIA 777 Sob esta vibração, o medo e a intolerância podem se tornar companheiros constantes, alterando seu comportamento.
+Você poderá se tornar uma pessoa mais arredia, teimosa e com uma tendência perigosa ao isolamento voluntário.
+O afastamento social pode parecer uma proteção, mas acaba gerando frustrações profundas e um sentimento de vazio.
+
+Há um risco de desenvolver comportamentos arrogantes ou vaidosos como forma de mascarar suas próprias inseguranças.
+A intolerância com as falhas alheias pode afastar aliados valiosos, tornando sua jornada muito mais solitária.
+Os excessos e exageros podem ser usados como válvula de escape para o medo que você sente do futuro.
+Essa busca por refúgio na própria mente pode levá-lo a se tornar refém de pensamentos negativos e obsessivos.
+
+No campo da saúde, esse padrão de solidão e estresse nervoso é extremamente desgastante para o organismo.
+Existe um alerta para o sistema nervoso e até para o surgimento de patologias mais graves se a mente não for cuidada.
+Buscar ajuda e manter a mente aberta para o mundo é o caminho para não se perder em sua própria escuridão.`,
+
+  8: `➢ SEQUENCIA 888 Esta é uma das sequências mais desafiadoras, pois afeta simultaneamente o equilíbrio emocional e o financeiro.
+Você poderá manifestar uma postura agressiva ou inacessível, perdendo o controle diante de pequenas adversidades.
+Isso acaba afastando o convívio social, pois as pessoas sentem dificuldade em lidar com sua instabilidade.
+
+O período pode ser marcado por perdas financeiras significativas, injustiças e privações materiais severas.
+Sua capacidade de julgamento estará nublada, tornando-o um alvo fácil para golpes ou decisões precipitadas.
+O dinheiro pode entrar e sair com a mesma rapidez, criando uma oscilação angustiante entre a fartura e a escassez.
+A sensação de injustiça pode corroer sua paz, levando a explosões de temperamento que prejudicam sua imagem.
+Esse estresse crônico é um veneno para o seu sistema nervoso, podendo gerar doenças psicossomáticas graves.
+
+É um momento que exige um controle férreo sobre as emoções para que elas não destruam o seu patrimônio.
+O desafio é manter a ética e a calma mesmo quando tudo parece estar sendo tirado de suas mãos.`,
+
+  9: `➢ SEQUENCIA 999 Aqui, a capacidade de discernimento e a compreensão das situações da vida ficam seriamente comprometidas.
+Você poderá enfrentar um ciclo de estagnação onde nada parece avançar, independentemente do seu esforço.
+Dificuldades financeiras agudas e até a perda de patrimônio construído ao longo de anos são riscos reais.
+Fracassos em negócios e relacionamentos podem surgir devido a uma visão distorcida da realidade.
+
+A sensação de estar "travado" no tempo gera uma frustração que pode evoluir para quadros de depressão.
+É difícil entender o porquê de tantas dificuldades estarem acontecendo ao mesmo tempo, gerando um peso mental.
+O estresse causado pela falta de resultados pode afetar drasticamente o seu ânimo para continuar lutando.
+
+No plano físico, essa carga de estresse constante é um fator de risco para o seu sistema nervoso e coração.
+Doenças somáticas e hipocondria podem aparecer como reflexo de uma mente que não encontra saída para os problemas.
+A lição fundamental deste período é o desapego e a busca por uma nova forma de enxergar o valor da vida.`
+};
 // ⭐ TEXTOS SEQUÊNCIAS ESPECIAIS
-const textosSeqEsp = {
+const textosSeqEspVida = {
 
   "116": `Este é um estágio onde sua imagem pública e reputação podem ser postas à prova por interferências de terceiros.
 Existe o risco de enfrentar críticas infundadas ou situações que visam abalar sua credibilidade profissional e pessoal.
@@ -1382,7 +1789,150 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
 
 };
 
-  
+const textosSeqEspPessoal = {  "116": `Este é um estágio onde sua imagem pública e reputação podem ser postas à prova por interferências de terceiros.
+Existe o risco de enfrentar críticas infundadas ou situações que visam abalar sua credibilidade profissional e pessoal.
+É essencial agir com máxima integridade e discrição para blindar seu nome contra fofocas ou tentativas de difamação.`,
+
+  "123": `Uma fase brilhante se aproxima, trazendo o justo reconhecimento por todo o seu esforço, talento e dedicação criativa.
+Você poderá receber prêmios, honrarias ou elogios públicos que validam oficialmente sua trajetória e seus projetos de vida.
+Essa energia de êxito também se estende ao campo familiar, trazendo motivos de grande orgulho e celebração através de seus filhos.`,
+
+  "252": `O cenário vibracional indica uma fase de encerramento ou transformação profunda em vínculos afetivos e parcerias de longa data.
+Mudanças drásticas na estrutura conjugal, como separações ou processos de divórcio, podem exigir uma enorme resiliência emocional.
+É um momento de transição que pede acolhimento interno e maturidade para lidar com a ausência ou o afastamento definitivo do cônjuge.`,
+
+  "575": `Prepare-se para um período de reviravoltas súbitas que podem desestabilizar temporariamente sua segurança material e carreira.
+Modificações imprevistas no ambiente de trabalho podem trazer dificuldades financeiras que exigirão cautela extrema e economia.
+Esteja pronto para adaptar-se rapidamente a perdas momentâneas, focando em reconstruir suas bases com paciência e estratégia.`,
+
+  "757": `Você está entrando em um ciclo de transformações intensas que atuarão como molas propulsoras para sua evolução individual.
+Embora as mudanças impostas pelo destino possam parecer desafiadoras no início, elas são necessárias para expandir sua consciência.
+O universo está forçando sua saída da zona de conforto para que o seu verdadeiro potencial pessoal finalmente floresça e apareça.`,
+
+  "922": `A sorte e o mérito caminham juntos nesta fase, favorecendo vitórias expressivas em concursos, vestibulares ou cargos de relevância.
+Seus esforços em disputas políticas ou processos seletivos complexos encontrarão um terreno extremamente fértil para o sucesso absoluto.
+Aproveite este magnetismo de conquista para se posicionar com destaque em qualquer teste de capacidade ou avaliação de competência.`,
+
+  "923": `Um período de profunda paz e entendimento reina em seu ambiente doméstico, fortalecendo os laços com aqueles que você mais ama.
+Você se sentirá plenamente amparado por amizades verdadeiras, cujas palavras e gestos servirão de porto seguro para sua jornada atual.
+É o momento ideal para cultivar a gratidão e desfrutar da serenidade que as relações sinceras e leais proporcionam ao seu coração.`,
+
+  "924": `Suas conexões sociais ganham um novo nível de prestígio, abrindo portas valiosas para círculos de grande influência, autoridade e poder.
+A ascensão em sua posição social será facilitada pelo contato direto com pessoas que admiram profundamente sua conduta e sua visão.
+Novos horizontes se abrem através de convites e parcerias estratégicas com indivíduos que podem acelerar drasticamente o seu crescimento.`,
+
+  "925": `O momento exige olhos atentos e um discernimento redobrado em relação a quem você confia suas ideias, segredos e tarefas diárias.
+Existe uma predisposição para desapontamentos vindos de funcionários ou de amizades que você considerava sólidas e inabaláveis.
+Proteja seus planos mantendo a discrição total e evitando delegar responsabilidades críticas sem a devida e constante supervisão.`,
+
+  "926": `Seus laços familiares serão convocados para uma ação de cuidado, paciência e suporte mútuo diante de adversidades inesperadas na rotina.
+Pode haver a necessidade de dedicar mais tempo e energia pessoal para auxiliar parentes próximos em questões de saúde ou crises graves.
+A união e a presença física da família serão os seus maiores pilares para atravessar instabilidades que exijam sacrifício e dedicação.`,
+
+  "927": `Fique alerta para movimentações de bastidores, pois segredos antigos, informações ocultas ou escândalos do passado podem vir a público agora.
+O risco de envolvimento direto ou indireto em intrigas alheias é elevado, pedindo que você mantenha uma postura neutra e muito ética.
+Evite comentários desnecessários ou julgamentos para não alimentar fofocas que possam expor situações que deveriam permanecer privadas.`
+
+};
+
+const textosSeqEspSocial = {   "116": `Este é um estágio onde sua imagem pública e reputação podem ser postas à prova por interferências de terceiros.
+Existe o risco de enfrentar críticas infundadas ou situações que visam abalar sua credibilidade profissional e pessoal.
+É essencial agir com máxima integridade e discrição para blindar seu nome contra fofocas ou tentativas de difamação.`,
+
+  "123": `Uma fase brilhante se aproxima, trazendo o justo reconhecimento por todo o seu esforço, talento e dedicação criativa.
+Você poderá receber prêmios, honrarias ou elogios públicos que validam oficialmente sua trajetória e seus projetos de vida.
+Essa energia de êxito também se estende ao campo familiar, trazendo motivos de grande orgulho e celebração através de seus filhos.`,
+
+  "252": `O cenário vibracional indica uma fase de encerramento ou transformação profunda em vínculos afetivos e parcerias de longa data.
+Mudanças drásticas na estrutura conjugal, como separações ou processos de divórcio, podem exigir uma enorme resiliência emocional.
+É um momento de transição que pede acolhimento interno e maturidade para lidar com a ausência ou o afastamento definitivo do cônjuge.`,
+
+  "575": `Prepare-se para um período de reviravoltas súbitas que podem desestabilizar temporariamente sua segurança material e carreira.
+Modificações imprevistas no ambiente de trabalho podem trazer dificuldades financeiras que exigirão cautela extrema e economia.
+Esteja pronto para adaptar-se rapidamente a perdas momentâneas, focando em reconstruir suas bases com paciência e estratégia.`,
+
+  "757": `Você está entrando em um ciclo de transformações intensas que atuarão como molas propulsoras para sua evolução individual.
+Embora as mudanças impostas pelo destino possam parecer desafiadoras no início, elas são necessárias para expandir sua consciência.
+O universo está forçando sua saída da zona de conforto para que o seu verdadeiro potencial pessoal finalmente floresça e apareça.`,
+
+  "922": `A sorte e o mérito caminham juntos nesta fase, favorecendo vitórias expressivas em concursos, vestibulares ou cargos de relevância.
+Seus esforços em disputas políticas ou processos seletivos complexos encontrarão um terreno extremamente fértil para o sucesso absoluto.
+Aproveite este magnetismo de conquista para se posicionar com destaque em qualquer teste de capacidade ou avaliação de competência.`,
+
+  "923": `Um período de profunda paz e entendimento reina em seu ambiente doméstico, fortalecendo os laços com aqueles que você mais ama.
+Você se sentirá plenamente amparado por amizades verdadeiras, cujas palavras e gestos servirão de porto seguro para sua jornada atual.
+É o momento ideal para cultivar a gratidão e desfrutar da serenidade que as relações sinceras e leais proporcionam ao seu coração.`,
+
+  "924": `Suas conexões sociais ganham um novo nível de prestígio, abrindo portas valiosas para círculos de grande influência, autoridade e poder.
+A ascensão em sua posição social será facilitada pelo contato direto com pessoas que admiram profundamente sua conduta e sua visão.
+Novos horizontes se abrem através de convites e parcerias estratégicas com indivíduos que podem acelerar drasticamente o seu crescimento.`,
+
+  "925": `O momento exige olhos atentos e um discernimento redobrado em relação a quem você confia suas ideias, segredos e tarefas diárias.
+Existe uma predisposição para desapontamentos vindos de funcionários ou de amizades que você considerava sólidas e inabaláveis.
+Proteja seus planos mantendo a discrição total e evitando delegar responsabilidades críticas sem a devida e constante supervisão.`,
+
+  "926": `Seus laços familiares serão convocados para uma ação de cuidado, paciência e suporte mútuo diante de adversidades inesperadas na rotina.
+Pode haver a necessidade de dedicar mais tempo e energia pessoal para auxiliar parentes próximos em questões de saúde ou crises graves.
+A união e a presença física da família serão os seus maiores pilares para atravessar instabilidades que exijam sacrifício e dedicação.`,
+
+  "927": `Fique alerta para movimentações de bastidores, pois segredos antigos, informações ocultas ou escândalos do passado podem vir a público agora.
+O risco de envolvimento direto ou indireto em intrigas alheias é elevado, pedindo que você mantenha uma postura neutra e muito ética.
+Evite comentários desnecessários ou julgamentos para não alimentar fofocas que possam expor situações que deveriam permanecer privadas.`
+
+};
+
+const textosSeqEspDestino = {   "116": `Este é um estágio onde sua imagem pública e reputação podem ser postas à prova por interferências de terceiros.
+Existe o risco de enfrentar críticas infundadas ou situações que visam abalar sua credibilidade profissional e pessoal.
+É essencial agir com máxima integridade e discrição para blindar seu nome contra fofocas ou tentativas de difamação.`,
+
+  "123": `Uma fase brilhante se aproxima, trazendo o justo reconhecimento por todo o seu esforço, talento e dedicação criativa.
+Você poderá receber prêmios, honrarias ou elogios públicos que validam oficialmente sua trajetória e seus projetos de vida.
+Essa energia de êxito também se estende ao campo familiar, trazendo motivos de grande orgulho e celebração através de seus filhos.`,
+
+  "252": `O cenário vibracional indica uma fase de encerramento ou transformação profunda em vínculos afetivos e parcerias de longa data.
+Mudanças drásticas na estrutura conjugal, como separações ou processos de divórcio, podem exigir uma enorme resiliência emocional.
+É um momento de transição que pede acolhimento interno e maturidade para lidar com a ausência ou o afastamento definitivo do cônjuge.`,
+
+  "575": `Prepare-se para um período de reviravoltas súbitas que podem desestabilizar temporariamente sua segurança material e carreira.
+Modificações imprevistas no ambiente de trabalho podem trazer dificuldades financeiras que exigirão cautela extrema e economia.
+Esteja pronto para adaptar-se rapidamente a perdas momentâneas, focando em reconstruir suas bases com paciência e estratégia.`,
+
+  "757": `Você está entrando em um ciclo de transformações intensas que atuarão como molas propulsoras para sua evolução individual.
+Embora as mudanças impostas pelo destino possam parecer desafiadoras no início, elas são necessárias para expandir sua consciência.
+O universo está forçando sua saída da zona de conforto para que o seu verdadeiro potencial pessoal finalmente floresça e apareça.`,
+
+  "922": `A sorte e o mérito caminham juntos nesta fase, favorecendo vitórias expressivas em concursos, vestibulares ou cargos de relevância.
+Seus esforços em disputas políticas ou processos seletivos complexos encontrarão um terreno extremamente fértil para o sucesso absoluto.
+Aproveite este magnetismo de conquista para se posicionar com destaque em qualquer teste de capacidade ou avaliação de competência.`,
+
+  "923": `Um período de profunda paz e entendimento reina em seu ambiente doméstico, fortalecendo os laços com aqueles que você mais ama.
+Você se sentirá plenamente amparado por amizades verdadeiras, cujas palavras e gestos servirão de porto seguro para sua jornada atual.
+É o momento ideal para cultivar a gratidão e desfrutar da serenidade que as relações sinceras e leais proporcionam ao seu coração.`,
+
+  "924": `Suas conexões sociais ganham um novo nível de prestígio, abrindo portas valiosas para círculos de grande influência, autoridade e poder.
+A ascensão em sua posição social será facilitada pelo contato direto com pessoas que admiram profundamente sua conduta e sua visão.
+Novos horizontes se abrem através de convites e parcerias estratégicas com indivíduos que podem acelerar drasticamente o seu crescimento.`,
+
+  "925": `O momento exige olhos atentos e um discernimento redobrado em relação a quem você confia suas ideias, segredos e tarefas diárias.
+Existe uma predisposição para desapontamentos vindos de funcionários ou de amizades que você considerava sólidas e inabaláveis.
+Proteja seus planos mantendo a discrição total e evitando delegar responsabilidades críticas sem a devida e constante supervisão.`,
+
+  "926": `Seus laços familiares serão convocados para uma ação de cuidado, paciência e suporte mútuo diante de adversidades inesperadas na rotina.
+Pode haver a necessidade de dedicar mais tempo e energia pessoal para auxiliar parentes próximos em questões de saúde ou crises graves.
+A união e a presença física da família serão os seus maiores pilares para atravessar instabilidades que exijam sacrifício e dedicação.`,
+
+  "927": `Fique alerta para movimentações de bastidores, pois segredos antigos, informações ocultas ou escândalos do passado podem vir a público agora.
+O risco de envolvimento direto ou indireto em intrigas alheias é elevado, pedindo que você mantenha uma postura neutra e muito ética.
+Evite comentários desnecessários ou julgamentos para não alimentar fofocas que possam expor situações que deveriam permanecer privadas.`
+
+};
+// --- BANCOS FINANCEIROS SEPARADOS ---
+const textosFinVida = { 999: "Fluxo de prosperidade na jornada principal..." };
+const textosFinPessoal = { 999: "Realização financeira através do intelecto..." };
+const textosFinSocial = { 999: "Oportunidades financeiras no meio de convivência..." };
+const textosFinDestino = { 999: "Propósito de abundância e legado financeiro..." };
+
+// --- Certifica-te que tens o mesmo para Negativas e Especiais (Vida, Pessoal, Social, Destino) ---  
 // =======================
 // 📖 TEXTOS EXPLICATIVOS DAS PIRÂMIDES
 // =======================
@@ -1440,5 +1990,7 @@ destino: `
 `
 
 };  
+
+
 
 
