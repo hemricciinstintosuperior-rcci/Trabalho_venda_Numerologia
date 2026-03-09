@@ -361,23 +361,36 @@ function detectarSequenciaFinanceira(linhas){
     return pos;
 }
 
-function desenhar(linhas, compacta=false){
+function desenhar(linhas, compacta = false) {
     let classe = compacta ? "piramide compacta" : "piramide";
-    const neg = detectarSequencias(linhas).posNeg;
-    const esp = detectarPosicoesEspeciais(linhas);
-    const fin = detectarSequenciaFinanceira(linhas);
-    let html=`<div class="${classe}">`;
-linha.forEach((n, j) => {
-    let classes = ["num"];
-    if (neg.some(p => p.linha === i && p.indice === j)) classes.push("negativo");
-    if (esp.some(p => p.linha === i && p.indice === j)) classes.push("especial"); // Esta linha ativa o amarelo
-    if (fin.some(p => p.linha === i && p.indice === j)) classes.push("financeiro");
     
-    html += `<div class="${classes.join(' ')}">${n}</div>`;
-});
+    // Busca as posições de cada tipo de destaque
+    const neg = detectarSequencias(linhas).posNeg || [];
+    const esp = (typeof detectarPosicoesEspeciais === 'function') ? detectarPosicoesEspeciais(linhas) : [];
+    const fin = (typeof detectarSequenciaFinanceira === 'function') ? detectarSequenciaFinanceira(linhas) : [];
+
+    let html = `<div class="${classe}">`;
+
+    linhas.forEach((linha, i) => {
+        html += `<div class="linha">`;
+        linha.forEach((n, j) => {
+            let classes = ["num"];
+
+            // Lógica de cores: Verifica se a posição (linha i, coluna j) está na lista
+            if (neg.some(p => p.linha === i && p.indice === j)) classes.push("negativo");
+            if (fin.some(p => p.linha === i && p.indice === j)) classes.push("financeiro");
+            
+            // O especial (amarelo) entra aqui. Se for especial, a classe será adicionada
+            if (esp.some(p => p.linha === i && p.indice === j)) classes.push("especial");
+
+            // Monta o quadradinho com todas as classes acumuladas
+            html += `<div class="${classes.join(' ')}">${n}</div>`;
+        });
         html += `</div>`;
     });
-    return html + `</div>`;
+
+    html += `</div>`;
+    return html;
 }
 
 function piramidePessoal(baseNome, dia) { return piramide(baseNome.map(n => reduzir(n + reduzir(dia)))); }
@@ -438,6 +451,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
