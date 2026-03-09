@@ -419,10 +419,10 @@ function gerar() {
     const crono = gerarCronogramaMestre(aVida, data);
     
     // Agora o montarConteudo já coloca as intros nos lugares certos individualmente
-    const htmlVida = montarConteudoComIntros(pVida, pVida.at(-1)[0], textosVida, crono, textosVida, "Matriz da Vida", textosSeqNegVida, textosSeqEspVida, textosFinVida);
-    const htmlPessoal = montarConteudoComIntros(piramidePessoal(base, d), piramidePessoal(base, d).at(-1)[0], textosPessoal, crono, textosPessoal, "Matriz Pessoal", textosSeqNegPessoal, textosSeqEspPessoal, textosFinPessoal);
-    const htmlSocial = montarConteudoComIntros(piramideSocial(base, m), piramideSocial(base, m).at(-1)[0], textosSocial, crono, textosSocial, "Matriz Social", textosSeqNegSocial, textosSeqEspSocial, textosFinSocial);
-    const htmlDestino = montarConteudoComIntros(piramideDestino(base, d, m), piramideDestino(base, d, m).at(-1)[0], textosDestino, crono, textosDestino, "Matriz de Destino", textosSeqNegDestino, textosSeqEspDestino, textosFinDestino);
+    const htmlVida = explicacoes.principal + montarConteudoComIntros(pVida, pVida.at(-1)[0], textosVida, crono, textosVida, "Matriz da Vida", textosSeqNegVida, textosSeqEspVida, textosFinVida);
+    const htmlPessoal = explicacoes.pessoal + montarConteudoComIntros(piramidePessoal(base, d), piramidePessoal(base, d).at(-1)[0], textosPessoal, crono, textosPessoal, "Matriz Pessoal", textosSeqNegPessoal, textosSeqEspPessoal, textosFinPessoal);
+    const htmlSocial = explicacoes.social + montarConteudoComIntros(piramideSocial(base, m), piramideSocial(base, m).at(-1)[0], textosSocial, crono, textosSocial, "Matriz Social", textosSeqNegSocial, textosSeqEspSocial, textosFinSocial);
+    const htmlDestino = explicacoes.destino +  montarConteudoComIntros(piramideDestino(base, d, m), piramideDestino(base, d, m).at(-1)[0], textosDestino, crono, textosDestino, "Matriz de Destino", textosSeqNegDestino, textosSeqEspDestino, textosFinDestino);
 
     document.getElementById("aba_principal").innerHTML = htmlVida;
     document.getElementById("aba_pessoal").innerHTML = htmlPessoal;
@@ -456,6 +456,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
