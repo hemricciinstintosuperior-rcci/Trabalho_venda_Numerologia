@@ -6,58 +6,50 @@
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#111827">
 <style>
-body { font-family: Arial, sans-serif; background:#ffffff; color:#000; text-align:center; margin: 0; padding: 10px; }
-input, button { padding:12px; margin:8px auto; border-radius:8px; border:none; display: block; box-sizing: border-box; width: 100%; max-width: 600px; }
-input { font-size: 18px; background-color: #f3f4f6; border: 1px solid #d1d5db; }
-button { background:#facc15; font-weight:bold; cursor:pointer; transition: transform 0.1s; }
+/* SEU CSS ORIGINAL INTEGRAL */
+body{ font-family: Arial; background:#ffffff; color:#000; text-align:center; }
+input,button{ padding:10px; margin:5px; border-radius:6px; border:none; }
+input { width: 600px; font-size: 18px; padding: 14px; background-color: #e5e7eb; border: 1px solid #ccc; color: #333; display: block; margin: 10px auto; }
+button{ background:#facc15; font-weight:bold; cursor:pointer; }
+#resultado{ margin-top:20px; }
+.piramide{ font-family: monospace; font-size:12px; line-height:0.7; text-align:center; }
+.piramide.compacta{ font-size:12px; line-height:1.2; }
+.piramide.compacta .linha{ gap:4px; margin:2px; }
+.piramide.compacta .num{ padding:4px 6px; border-radius:6px; font-size:11px; }
+.linha{ display:flex; justify-content:center; gap:6px; margin:2px; }
+.num{ background:#28d3ee; color:#000; padding:4px 7px; border-radius:6px; font-weight:bold; font-size:16px; min-width:18px; }
+.negativo{ background:#FF0000!important; color:#fff !important; box-shadow:0 0 6px rgba(255,0,0,0.6); }
+.boxSeq{ background:#fff0f0; border:2px solid #ff4d4d; padding:20px; margin-top:20px; border-radius:10px; }
+.box{ background:#ffffff; border:2px solid #000; padding:15px; margin:15px auto; border-radius:10px; max-width:800px; }
+.gridRelatorios{ display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; margin-top:25px; }
+/* Cor das Sequências Especiais (Amarelo) */
+
+ /* Esta regra faz o HTML respeitar as quebras de linha do seu textos.js */
+.box p, .box span {
+    white-space: pre-wrap; /* Mantém as quebras de linha e o espaçamento original */
+    display: block;
+    margin-bottom: 15px;    /* Cria um espaço extra entre cada parágrafo */
+    line-height: 1.6;       /* Deixa a leitura mais confortável, menos "espremida" */
+}   
+@media(max-width:900px){ .gridRelatorios{ grid-template-columns:1fr; } }  
+.abas button{ background:#22d3ee; border:none; padding:10px 15px; margin:5px; border-radius:8px; cursor:pointer; font-weight:bold; }
+.aba{ margin-top:20px; display:none; }
+.num.negativo{ background:#ff6b6b; color:white; }
+.num.especial{ background:#f6c445; color:#000; box-shadow:0 0 10px rgba(246,196,69,0.8); }
+.num.financeiro{ background:#34c759; color:white; box-shadow:0 0 12px rgba(52,199,89,0.9); }
+.folhaRelatorio{ background:white; max-width:800px; margin:30px auto; padding:50px; border-radius:10px; box-shadow:0 0 25px rgba(0,0,0,0.08); }
+@media (max-width: 768px) { input { width: 90% !important; margin: 0 auto 25px auto !important; } }
+body{ font-family: Arial, sans-serif; background:#ffffff; color:#000; text-align:center; margin: 0; padding: 10px; }
+input, button{ padding:12px; margin:8px auto; border-radius:8px; border:none; display: block; box-sizing: border-box; }
+input { width: 100%; max-width: 600px; font-size: 18px; background-color: #f3f4f6; border: 1px solid #d1d5db; }
+button{ background:#facc15; font-weight:bold; cursor:pointer; width: 100%; max-width: 600px; transition: transform 0.1s; }
 button:active { transform: scale(0.98); }
-
-/* --- ESTILO DA PIRÂMIDE --- */
-.piramide.compacta { font-size: 12px; line-height: 1.2; padding: 10px 0; display: inline-block; }
-.linha { display:flex; justify-content:center; gap: 6px; margin: 2px; }
-
-/* Cor Padrão (Ciano) */
-.num { 
-    background:#28d3ee !important; 
-    color:#000 !important; 
-    padding: 4px 7px; 
-    border-radius:4px; 
-    font-weight:bold; 
-    min-width: 20px; 
-    border: 1px solid rgba(0,0,0,0.1);
-}
-
-/* 🟥 SEQUÊNCIA NEGATIVA (Vermelho Vivo) */
-.num.negativo { 
-    background-color: #FF0000 !important; 
-    color: #ffffff !important; 
-    box-shadow: 0 0 8px rgba(255, 0, 0, 0.6) !important; 
-}
-
-/* 🟨 SEQUÊNCIA ESPECIAL (Amarelo Brilhante) */
-.num.especial { 
-    background-color: #ffff00 !important; 
-    color: #000000 !important; 
-    box-shadow: 0 0 10px rgba(255, 255, 0, 0.9) !important;
-    border: 1px solid #b8860b !important;
-}
-
-/* 🟩 FLUXO FINANCEIRO (Verde) */
-.num.financeiro { 
-    background-color: #34c759 !important; 
-    color: #ffffff !important; 
-    box-shadow: 0 0 10px rgba(52, 199, 89, 0.9) !important; 
-}
-
-/* --- LAYOUT E RELATÓRIO --- */
-.box { background:#ffffff; border:2px solid #000; padding:15px; margin:15px auto; border-radius:10px; max-width:800px; }
-.box p { white-space: pre-wrap; display: block; margin-bottom: 15px; line-height: 1.6; }   
-.abas { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
-.aba { margin-top:20px; display:none; }
-.folhaRelatorio { background:white; width: 100%; max-width:800px; margin:20px auto; padding: 20px 10px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.05); }
-
-@media(min-width: 768px) { .abas { display: block; } .abas button { width: auto; display: inline-block; } }
-@media(max-width: 768px) { .piramide.compacta { font-size: 3.2vw; } .num { padding: 4px 1.5vw; } }
+.piramide.compacta { font-size: 3.2vw; line-height: 1.2; overflow-x: auto; padding: 10px 0; }
+.linha{ display:flex; justify-content:center; gap:1vw; margin:2px; }
+.num{ background:#28d3ee; color:#000; padding: 4px 1.5vw; border-radius:4px; font-weight:bold; min-width: 20px; }
+.abas { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; }
+.folhaRelatorio{ background:white; width: 100%; max-width:800px; margin:20px auto; padding: 20px 10px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.05); }
+@media(min-width: 768px) { .num { padding: 4px 7px; font-size: 16px; } .linha { gap: 6px; } .piramide.compacta { font-size: 12px; } .abas { display: block; } }
 </style>
 </head>
 <body>
@@ -438,6 +430,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
