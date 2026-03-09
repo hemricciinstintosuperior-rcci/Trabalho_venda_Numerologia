@@ -50,6 +50,15 @@ button:active { transform: scale(0.98); }
 .abas { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; }
 .folhaRelatorio{ background:white; width: 100%; max-width:800px; margin:20px auto; padding: 20px 10px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.05); }
 @media(min-width: 768px) { .num { padding: 4px 7px; font-size: 16px; } .linha { gap: 6px; } .piramide.compacta { font-size: 12px; } .abas { display: block; } }
+/* Coloque isso no final do seu <style> no HTML */
+.num.especial {
+    background-color: #ffff00 !important; /* Amarelo Puro */
+    color: #000000 !important;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8) !important;
+    border: 1px solid #b8860b !important;
+    display: inline-block !important;
+}
+ 
 </style>
 </head>
 <body>
@@ -430,6 +439,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
