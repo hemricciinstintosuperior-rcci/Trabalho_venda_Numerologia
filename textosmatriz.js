@@ -1932,6 +1932,13 @@ const textosFinPessoal = { 999: "Realização financeira através do intelecto..
 const textosFinSocial = { 999: "Oportunidades financeiras no meio de convivência..." };
 const textosFinDestino = { 999: "Propósito de abundância e legado financeiro..." };
 
+const textos = window.textos || {
+    introRegente: "O Regente é o coração da sua pirâmide...",
+    introNegativas: "As Sequências Negativas revelam desafios vibracionais...",
+    introEspeciais: "As Sequências Especiais representam ocorrências pontuais...",
+    introFinanceiro: "A análise financeira foca na prosperidade...",
+    introVigencias: "As Vigências representam os ciclos de atuação das potências..."
+};
 // --- Certifica-te que tens o mesmo para Negativas e Especiais (Vida, Pessoal, Social, Destino) ---  
 // =======================
 // 📖 TEXTOS EXPLICATIVOS DAS PIRÂMIDES
@@ -1990,6 +1997,7 @@ destino: `
 `
 
 };  
+
 
 
 
