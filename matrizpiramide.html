@@ -227,7 +227,30 @@ function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt) {
     return encontrou ? h + "</div>" : "";
 }
 
-
+function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
+    let h = `<div class="box"><h3 style="color:#b8860b;">⭐ Impactos Especiais</h3>`;
+    let gruposContados = new Set();
+    let encontrou = false;
+    linhas.forEach((linha, i) => {
+        for (let j = 0; j < linha.length - 2; j++) {
+            let seq = "" + linha[j] + linha[j + 1] + linha[j + 2];
+            if (bancoTxt && bancoTxt[seq]) {
+                let idImpacto = `esp-${seq}-L${i}-C${j}`;
+                if (!gruposContados.has(idImpacto)) {
+                    encontrou = true;
+                    gruposContados.add(idImpacto);
+                    let vigencia = calcularVigenciaPorPosicao(i, j, crono);
+                    h += `<div style="margin-bottom:12px; border-left:4px solid #f6c445; padding-left:10px; text-align:left;">
+                            <b style="font-size:16px;">✨ Impacto ${seq}</b><br>
+                            <small><b>Período Ativo:</b> ${vigencia}</small><br>
+                            <span style="font-size:14px; color:#444;">${bancoTxt[seq]}</span>
+                          </div>`;
+                }
+            }
+        }
+    });
+    return encontrou ? h + "</div>" : "";
+}
 
 function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt) {
     const posFin = detectarSequenciaFinanceira(linhas);
@@ -328,11 +351,14 @@ function detectarSequencias(linhas){
 
 function detectarPosicoesEspeciais(linhas){
     let pos=[];
-    linhas.forEach((linha,i)=>{
-        for(let j=0;j<linha.length-2;j++){
+    // Garante que o objeto de sequências existe para não dar erro
+    const esp = window.sequenciasEspeciais || {};
+    
+    linhas.forEach((linha, i) => {
+        for(let j=0; j < linha.length - 2; j++){
             let seq = "" + linha[j] + linha[j+1] + linha[j+2];
-            if(typeof sequenciasEspeciais !== 'undefined' && sequenciasEspeciais[seq]){ 
-                pos.push({linha:i, indice:j},{linha:i, indice:j+1},{linha:i, indice:j+2}); 
+            if(esp[seq]){ 
+                pos.push({linha:i, indice:j}, {linha:i, indice:j+1}, {linha:i, indice:j+2}); 
             }
         }
     });
@@ -441,6 +467,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
