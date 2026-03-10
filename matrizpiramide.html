@@ -277,7 +277,7 @@ function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt) {
 }
 
 function montarConteudoComIntros(pir, reg, txtReg, cron, tMapa, titulo, bNeg, bEsp, bFin) {
-    let r = <h2 class="tituloPiramide">${titulo}</h2>;
+    let r = <h2> class="tituloPiramide">${titulo}</h2>;
     // Passamos o bEsp (que contém as sequências especiais daquela aba) aqui:
     r += desenhar(pir, true, bEsp); 
     
@@ -466,6 +466,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
