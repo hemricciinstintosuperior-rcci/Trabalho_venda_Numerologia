@@ -42,7 +42,7 @@ button:active { transform: scale(0.98); }
 
 /* 🟨 SEQUÊNCIA ESPECIAL (Amarelo Brilhante) */
 .num.especial { 
-    background-color: #D1D117 !important; /* Adicionado !important aqui */
+    background-color: #b8860b !important; /* Adicionado !important aqui */
     color: #000000 !important; 
     box-shadow: 0 0 10px rgba(255, 255, 0, 0.9) !important;
     border: 1px solid #b8860b !important;
@@ -240,7 +240,7 @@ function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
                     encontrou = true;
                     gruposContados.add(idImpacto);
                     let vigencia = calcularVigenciaPorPosicao(i, j, crono);
-                    h += `<div style="margin-bottom:12px; border-left:4px solid #f6c445; padding-left:10px; text-align:left;">
+                    h += `<div style="margin-bottom:12px; border-left:4px solid #b8860b; padding-left:10px; text-align:left;">
                             <b style="font-size:20px;">✨ Impacto ${seq}</b><br>
                             <small><b>Período Ativo:</b> ${vigencia}</small><br>
                             <span style="font-size:16px; color:#000;">${bancoTxt[seq]}</span>
@@ -466,6 +466,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
