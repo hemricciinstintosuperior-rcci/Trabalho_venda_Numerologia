@@ -242,7 +242,7 @@ function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt) {
 }
 
 function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
-    let h = `<div class="box"><h3 style="color:#b8860b;">⭐ Impactos Especiais</h3>`;
+    let h = `<div class="box"><h4 style="color:#b8860b;">⭐ Impactos Especiais</h4>`;
     let gruposContados = new Set();
     let encontrou = false;
     linhas.forEach((linha, i) => {
@@ -255,7 +255,7 @@ function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
                     gruposContados.add(idImpacto);
                     let vigencia = calcularVigenciaPorPosicao(i, j, crono);
                     h += `<div style="margin-bottom:12px; border-left:4px solid #b8860b; padding-left:10px; text-align:left;">
-                            <b style="font-size:20px;"></h3>✨ Impacto ${seq}</b></h3>
+                            <b style="font-size:20px;"><h3>✨ Impacto ${seq}</b></h3>
                             <small><h2>Período Ativo:</h2> <h2> ${vigencia}</small></h2>
                             <span style="font-size:16px; color:#000;">${bancoTxt[seq]}</span>
                           </div>`;
@@ -480,6 +480,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
