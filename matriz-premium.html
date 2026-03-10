@@ -59,8 +59,8 @@ button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold
     /* Centraliza e ajusta os boxes de texto */
     .box {
         max-width: 100% !important; /* Evita que encoste nas bordas da folha */
-        margin: 8px auto !important; /* Centraliza horizontalmente */
-        padding: 15px !important;
+        margin: 10px auto !important; /* Centraliza horizontalmente */
+        padding: 11px !important;
         box-sizing: border-box !important;
         page-break-inside: avoid; /* Evita que um box seja cortado entre duas páginas */
     }
@@ -71,13 +71,13 @@ button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold
         margin: 0 auto !important; /* Centralização mágica */
         text-align: center !important;
         width: fit-content !important;
-        max-width: 80% !important;
+        max-width: 100% !important;
     }
 
     /* Ajuste fino dos números para não quebrarem a linha no PDF */
     .num {
         padding: 1px 2px !important;
-        font-size: 10pt !important; /* Tamanho fixo ideal para impressão */
+        font-size: 9pt !important; /* Tamanho fixo ideal para impressão */
     }
 
     /* Esconde botões e abas que não devem sair no PDF */
@@ -95,14 +95,16 @@ const dados = localStorage.getItem("relatorioPiramide");
 if(!dados){ document.body.innerHTML="<div class='secao'>ERRO: Dados não encontrados. Gere as matrizes primeiro.</div>"; }
 else {
     const rel = JSON.parse(dados);
-    document.getElementById("conteudo").innerHTML = `
+    document.getElementById("conteudo").innerHTML = `     <div class="btn-container no-print">
+        <button onclick="window.print()">📄 Baixar Relatório em PDF</button>
+    </div>
     <div class="capa">
         <img class="logo" src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matriz.png">
         <div class="nomeCliente">Relatório Personalizado para:<br><strong>${rel.nome}</strong><br>Nascimento: ${rel.data}</div>
     </div>
     
     <div class="secao">
-        <h2>Introdução ao Método</h2>
+        <h3>Introdução ao Método</h3>
         <div class="texto">A Pirâmide Quântica representa um dos métodos mais sofisticados de autoconhecimento da atualidade, unindo a sabedoria ancestral da numerologia à compreensão moderna das frequências vibracionais. Neste sistema, os números não são tratados apenas como ferramentas matemáticas, mas como códigos vivos que expressam estruturas energéticas ativas, responsáveis por organizar percepções, experiências e direcionamentos existenciais.
 
 No centro do método está a Pirâmide da Vida, a base principal. Ela rege a experiência concreta do indivíduo e revela o que efetivamente está acontecendo em sua trajetória. É a estrutura objetiva da existência — o campo dos acontecimentos reais. Todas as demais pirâmides dialogam com ela.
@@ -141,11 +143,9 @@ A proposta final do método é ampliar consciência. Quando há clareza sobre es
         <h2>Considerações Finais</h2>
         <div class="texto">Este relatório apoia seu processo de autoconhecimento.</div>
         <div class="rodape">Relatório Confidencial • Instinto Superior • 2026</div>
-    </div>
-
-    <div class="btn-container no-print">
-        <button onclick="window.print()">📄 Baixar Relatório em PDF</button>
     </div>`;
+
+
 }
 document.oncontextmenu=()=>false;
 document.onselectstart=()=>false;
@@ -153,6 +153,7 @@ document.onselectstart=()=>false;
 </script>
 </body>
 </html>
+
 
 
 
