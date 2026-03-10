@@ -58,8 +58,8 @@ button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold
 
     /* Centraliza e ajusta os boxes de texto */
     .box {
-        max-width: 90% !important; /* Evita que encoste nas bordas da folha */
-        margin: 10px auto !important; /* Centraliza horizontalmente */
+        max-width: 100% !important; /* Evita que encoste nas bordas da folha */
+        margin: 5px auto !important; /* Centraliza horizontalmente */
         padding: 11px !important;
         box-sizing: border-box !important;
         page-break-inside: avoid; /* Evita que um box seja cortado entre duas páginas */
@@ -70,7 +70,7 @@ button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold
     /* Ajuste fino dos números para não quebrarem a linha no PDF */
     .num {
         padding: 1px 2px !important;
-        font-size: 9pt !important; /* Tamanho fixo ideal para impressão */
+        font-size: 12pt !important; /* Tamanho fixo ideal para impressão */
     }
 
     /* Esconde botões e abas que não devem sair no PDF */
@@ -146,6 +146,7 @@ document.onselectstart=()=>false;
 </script>
 </body>
 </html>
+
 
 
 
