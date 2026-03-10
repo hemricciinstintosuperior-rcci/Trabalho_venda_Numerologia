@@ -220,7 +220,7 @@ function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt) {
             h += `<div style="margin-bottom:12px; border-left:4px solid #ff6b6b; padding-left:10px; text-align:left;">
                     <b style="font-size:16px;">🚫 Sequência ${num}</b><br>
                     <small><b>Período Crítico:</b> ${vigencia}</small><br>
-                    <span style="font-size:16px; color:#444;">${bancoTxt[num] || 'Desafio vibracional detectado.'}</span>
+                    <span style="font-size:16px; color:#000;">${bancoTxt[num] || 'Desafio vibracional detectado.'}</span>
                   </div>`;
         }
     });
@@ -228,7 +228,7 @@ function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt) {
 }
 
 function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
-    let h = `<div class="box"><h3 style="color:#b8860b;">⭐ Impactos Especiais</h3>`;
+    let h = `<div class="box"><h3 style="color:#FAB91B;">⭐ Impactos Especiais</h3>`;
     let gruposContados = new Set();
     let encontrou = false;
     linhas.forEach((linha, i) => {
@@ -243,7 +243,7 @@ function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
                     h += `<div style="margin-bottom:12px; border-left:4px solid #f6c445; padding-left:10px; text-align:left;">
                             <b style="font-size:16px;">✨ Impacto ${seq}</b><br>
                             <small><b>Período Ativo:</b> ${vigencia}</small><br>
-                            <span style="font-size:14px; color:#444;">${bancoTxt[seq]}</span>
+                            <span style="font-size:16px; color:#000;">${bancoTxt[seq]}</span>
                           </div>`;
                 }
             }
@@ -268,7 +268,7 @@ function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt) {
             h += `<div style="margin-bottom:12px; border-left:4px solid #34c759; padding-left:10px; text-align:left;">
                     <b style="font-size:16px;">✅ Sequência Financeira 99/9</b><br>
                     <small><b>Janela:</b> ${vigencia}</small><br>
-                    <span style="font-size:16px; color:#444;">${bancoTxt[999] || 'Momento de colheita material.'}</span>
+                    <span style="font-size:16px; color:#000;">${bancoTxt[999] || 'Momento de colheita material.'}</span>
                   </div>`;
             contadorReal++;
         }
@@ -317,11 +317,11 @@ function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa)
         // Aqui acrescentamos o período de data (ini e fim) ao lado da idade
         html += `<div class="box" style="text-align:left; border-left: 5px solid #111827;">
                  <h4 style="margin:0; color:#111827;">🔹 Potência ${numArcano}</h4>
-                 <p style="margin: 5px 0; font-weight: bold; color: #374151; font-size: 16px;">
+                 <p style="margin: 5px 0; font-weight: bold; color: #374151; font-size: 20px;">
                     📅 Período: ${periodo.ini} até ${periodo.fim} 
-                    <span style="color: #6b7280; font-weight: normal;">(${periodo.idadeIni} a ${periodo.idadeFim} anos)</span>
+                    <span style="color: #6b7280; font-weight: normal;">(de ${periodo.idadeIni} até seus ${periodo.idadeFim} anos de idade)</span>
                  </p>
-                 <p style="font-size:16px; margin-top:5px;">${textosMapa[numArcano] || "<i>Interpretação em análise.</i>"}</p>
+                 <p style="font-size:20px; margin-top:5px;">${textosMapa[numArcano] || "<i>Interpretação em análise.</i>"}</p>
                  </div>`;
     });
     
@@ -468,6 +468,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
