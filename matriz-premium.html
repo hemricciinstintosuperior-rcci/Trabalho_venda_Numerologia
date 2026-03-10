@@ -15,22 +15,7 @@ body{font-family:"Times New Roman",serif;background:#f4f4f4;margin:0; color:#1a1
 .tituloPiramide{text-align:center;font-size:28px;margin-bottom:30px; font-weight: bold; color: #111; text-transform: uppercase;}
 .piramide{display:flex;flex-direction:column;align-items:center;margin:20px 0; font-family: monospace;}
 .linha{display:flex;justify-content:center;margin:1px 0; gap: 4px;}
-.num { 
-    background: #28d3ee !important; 
-    color: #000 !important; 
-    /* CONTROLE DE LARGURA AQUI: */
-    min-width: 15px; /* Aumente para alargar a pirâmide, diminua para estreitar */
-    height: 15px;    /* Mantenha igual ao min-width para quadradinhos perfeitos */
-    
-    font-size: 11px; 
-    font-weight: bold; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px; 
-    border: 1px solid rgba(0,0,0,0.1);
-    box-sizing: border-box;
-}
+num{ width:15px;height:15px;border-radius:4px; display:flex;align-items:center;justify-content:center; font-weight:bold;font-size:14px; color:#000; background:#28d3ee; }
 .num.negativo{background:#FF0000 !important; color:#fff !important;}
 .num.especial{background:#f6c445 !important; color:#fff !important;}
 .num.financeiro{background:#34c759 !important; color:#fff !important;}
@@ -164,6 +149,7 @@ document.onselectstart=()=>false;
 </script>
 </body>
 </html>
+
 
 
 
