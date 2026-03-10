@@ -350,14 +350,14 @@ function detectarSequencias(linhas){
     return {sequencias, posNeg};
 }
 
-function detectarPosicoesEspeciais(linhas){
+function detectarPosicoesEspeciais(linhas, bancoEsp){
     let pos=[];
-    // Garante que o objeto de sequências existe para não dar erro
-    const esp = window.sequenciasEspeciais || {};
+    // Se não vier um banco específico, tenta pegar o global
+    const esp = bancoEsp || window.sequenciasEspeciais || {};
     
     linhas.forEach((linha, i) => {
         for(let j=0; j < linha.length - 2; j++){
-            let seq = "" + linha[j] + linha[j+1] + linha[j+2];
+            let seq = "" + linha[j] + linha[j + 1] + linha[j + 2];
             if(esp[seq]){ 
                 pos.push({linha:i, indice:j}, {linha:i, indice:j+1}, {linha:i, indice:j+2}); 
             }
@@ -378,35 +378,30 @@ function detectarSequenciaFinanceira(linhas){
     return pos;
 }
 
-function desenhar(linhas, compacta = false) {
+function desenhar(linhas, compacta = false, bancoEsp = null) {
     let classe = compacta ? "piramide compacta" : "piramide";
     
-    // Busca as posições de cada tipo de destaque
     const neg = detectarSequencias(linhas).posNeg || [];
-    const esp = (typeof detectarPosicoesEspeciais === 'function') ? detectarPosicoesEspeciais(linhas) : [];
-    const fin = (typeof detectarSequenciaFinanceira === 'function') ? detectarSequenciaFinanceira(linhas) : [];
+    // Agora passamos o bancoEsp para a detecção
+    const esp = detectarPosicoesEspeciais(linhas, bancoEsp);
+    const fin = detectarSequenciaFinanceira(linhas) || [];
 
-    let html = `<div class="${classe}">`;
+    let html = <div class="${classe}">;
 
     linhas.forEach((linha, i) => {
-        html += `<div class="linha">`;
+        html += <div class="linha">;
         linha.forEach((n, j) => {
             let classes = ["num"];
-
-            // Lógica de cores: Verifica se a posição (linha i, coluna j) está na lista
             if (neg.some(p => p.linha === i && p.indice === j)) classes.push("negativo");
             if (fin.some(p => p.linha === i && p.indice === j)) classes.push("financeiro");
-            
-            // O especial (amarelo) entra aqui. Se for especial, a classe será adicionada
             if (esp.some(p => p.linha === i && p.indice === j)) classes.push("especial");
 
-            // Monta o quadradinho com todas as classes acumuladas
-            html += `<div class="${classes.join(' ')}">${n}</div>`;
+            html += <div class="${classes.join(' ')}">${n}</div>;
         });
-        html += `</div>`;
+        html += </div>;
     });
 
-    html += `</div>`;
+    html += </div>;
     return html;
 }
 
@@ -468,6 +463,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
