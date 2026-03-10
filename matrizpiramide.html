@@ -290,6 +290,7 @@ function montarConteudoComIntros(pir, reg, txtReg, cron, tMapa, titulo, bNeg, bE
     }
 
     // Texto de Especiais em cima do bloco de Especiais
+    if (detectarSequenciasEspeciais(pir).posEsp.length > 0) {
     r += `<div class="box"><p>${textos.introEspeciais}</p></div>`;
     r += gerarRelatorioEspeciaisComVigencia(pir, cron, bEsp);
 
@@ -320,7 +321,7 @@ function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa)
                     📅 Período: ${periodo.ini} até ${periodo.fim} 
                     <span style="color: #6b7280; font-weight: normal;">(${periodo.idadeIni} a ${periodo.idadeFim} anos)</span>
                  </p>
-                 <p style="font-size:14px; margin-top:5px;">${textosMapa[numArcano] || "<i>Interpretação em análise.</i>"}</p>
+                 <p style="font-size:16px; margin-top:5px;">${textosMapa[numArcano] || "<i>Interpretação em análise.</i>"}</p>
                  </div>`;
     });
     
@@ -467,6 +468,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
