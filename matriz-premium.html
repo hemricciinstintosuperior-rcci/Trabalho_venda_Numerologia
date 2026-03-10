@@ -40,7 +40,7 @@ button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold
     .num { width: 15px; height: 15px; font-size: 16px; }
     .linha { gap: 1px; }
 }
-@media print{ .no-print{display:none!important;} body { background: white; } .secao { box-shadow: none; margin: 0 auto; width: 100%; padding: 20px; } }
+
 @media print {
     /* Garante que o corpo da página não tenha margens extras que empurrem o conteúdo */
     body { 
@@ -52,7 +52,7 @@ button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold
     /* Centraliza a folha do relatório e limita a largura para caber no A4 */
     .folhaRelatorio {
         width: 100% !important;
-        max-width: 90% !important;
+        max-width: 760px!important;
         margin: 0 auto !important;
         padding: 0 !important;
         box-shadow: none !important;
@@ -62,7 +62,7 @@ button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold
     /* Centraliza e ajusta os boxes de texto */
     .box {
         max-width: 100% !important; /* Evita que encoste nas bordas da folha */
-        margin: 5px auto !important; /* Centraliza horizontalmente */
+        margin: 0px auto !important; /* Centraliza horizontalmente */
         padding: 10px !important;
         box-sizing: border-box !important;
         page-break-inside: avoid; /* Evita que um box seja cortado entre duas páginas */
@@ -100,7 +100,7 @@ else {
     </div>
     
     <div class="secao">
-                                                        <h4>Introdução ao Método</h4>
+                                                        <h2>Introdução ao Método</h2>
  <div class="texto">
 <p>A Pirâmide Quântica representa um dos métodos mais sofisticados de autoconhecimento da atualidade, unindo a sabedoria ancestral da numerologia à compreensão moderna das frequências vibracionais. 
  Neste sistema, os números não são tratados apenas como ferramentas matemáticas, mas como códigos vivos que expressam estruturas energéticas ativas, responsáveis por organizar percepções, experiências e direcionamentos existenciais.</p>
@@ -161,6 +161,7 @@ document.onselectstart=()=>false;
 </script>
 </body>
 </html>
+
 
 
 
