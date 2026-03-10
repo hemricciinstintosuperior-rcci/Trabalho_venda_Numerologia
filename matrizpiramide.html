@@ -256,7 +256,7 @@ function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
                     let vigencia = calcularVigenciaPorPosicao(i, j, crono);
                     h += `<div style="margin-bottom:12px; border-left:4px solid #b8860b; padding-left:10px; text-align:left;">
                             <b style="font-size:20px;">✨ Impacto ${seq}</b><br>
-                            <small><h2>Período Ativo:</h2> ${vigencia}</small></h2>
+                            <small><h2>Período Ativo:</h2> <h2> ${vigencia}</small></h2>
                             <span style="font-size:16px; color:#000;">${bancoTxt[seq]}</span>
                           </div>`;
                 }
@@ -480,6 +480,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
