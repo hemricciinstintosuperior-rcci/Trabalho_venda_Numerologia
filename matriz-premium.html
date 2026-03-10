@@ -8,7 +8,7 @@
 body{font-family:"Times New Roman",serif;background:#f4f4f4;margin:0; color:#1a1a1a;}
 *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
 .capa{background:white;text-align:center;padding:120px 40px; page-break-after: always;}
-.logo{width:100%; max-width:900px; margin-bottom:40px;}
+.logo{width:100%; max-width:700px; margin-bottom:40px;}
 .nomeCliente{margin-top:70px;font-size:28px; border-top: 1px solid #ccc; padding-top: 20px; display: inline-block;}
 .secao{ max-width:800px;margin:20px auto;background:white; padding:20px;border-radius:10px;box-shadow:0 0 20px rgba(0,0,0,.05); page-break-inside: avoid; }
 .texto{white-space:pre-line;font-size:18px;line-height:1.3; text-align: justify;}
@@ -34,7 +34,7 @@ button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold
     line-height: 1.6;       /* Deixa a leitura mais confortável, menos "espremida" */
 }
 
-
+@media print{ .no-print{display:none!important;} body { background: white; } .secao { box-shadow: none; margin: 0 auto; width: 100%; padding: 20px; } }
 @media print {
     /* Garante que o corpo da página não tenha margens extras que empurrem o conteúdo */
     body { 
@@ -64,11 +64,7 @@ button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold
 
 
 
-    /* Esconde botões e abas que não devem sair no PDF */
-    button, .abas, h2:not(.tituloPiramide) {
-        display: none !important;
-    }
-}
+ 
 /* AJUSTE MOBILE PARA O PREMIUM */
 @media screen and (max-width: 600px) {
     .secao { padding: 20px 15px; margin: 10px; }
@@ -88,6 +84,12 @@ button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold
     } 
     
     .linha { gap: 1px; }
+}   
+
+   /* Esconde botões e abas que não devem sair no PDF */
+    button, .abas, h2:not(.tituloPiramide) {
+        display: none !important;
+    }
 }    
 </style>
 </head>
@@ -158,6 +160,7 @@ document.onselectstart=()=>false;
 </script>
 </body>
 </html>
+
 
 
 
