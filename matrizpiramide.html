@@ -277,8 +277,9 @@ function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt) {
 }
 
 function montarConteudoComIntros(pir, reg, txtReg, cron, tMapa, titulo, bNeg, bEsp, bFin) {
-    let r = `<h2 class="tituloPiramide">${titulo}</h2>`;
-    r += desenhar(pir, true);
+    let r = <h2 class="tituloPiramide">${titulo}</h2>;
+    // Passamos o bEsp (que contém as sequências especiais daquela aba) aqui:
+    r += desenhar(pir, true, bEsp); 
     
     // Texto do Regente em cima do resultado do Regente
     r += `<div class="box"><h3>⭐ Regente</h3><p>${textos.introRegente}</p><h2>Sua Potência: ${reg}</h2>${txtReg[reg] || ''}</div>`;
@@ -381,28 +382,30 @@ function detectarSequenciaFinanceira(linhas){
 function desenhar(linhas, compacta = false, bancoEsp = null) {
     let classe = compacta ? "piramide compacta" : "piramide";
     
-    const neg = detectarSequencias(linhas).posNeg || [];
-    // Agora passamos o bancoEsp para a detecção
-    const esp = detectarPosicoesEspeciais(linhas, bancoEsp);
-    const fin = detectarSequenciaFinanceira(linhas) || [];
+    // Busca as posições de cada tipo de destaque
+    const neg = (typeof detectarSequencias === 'function') ? detectarSequencias(linhas).posNeg : [];
+    const esp = (typeof detectarPosicoesEspeciais === 'function') ? detectarPosicoesEspeciais(linhas, bancoEsp) : [];
+    const fin = (typeof detectarSequenciaFinanceira === 'function') ? detectarSequenciaFinanceira(linhas) : [];
 
-    let html = <div class="${classe}">;
+    let html = `<div class="${classe}">`; // Variável criada como 'html'
 
     linhas.forEach((linha, i) => {
-        html += <div class="linha">;
+        html += `<div class="linha">`;
         linha.forEach((n, j) => {
             let classes = ["num"];
+
+            // Verifica se a posição deve ser colorida
             if (neg.some(p => p.linha === i && p.indice === j)) classes.push("negativo");
             if (fin.some(p => p.linha === i && p.indice === j)) classes.push("financeiro");
             if (esp.some(p => p.linha === i && p.indice === j)) classes.push("especial");
 
-            html += <div class="${classes.join(' ')}">${n}</div>;
+            html += `<div class="${classes.join(' ')}">${n}</div>`;
         });
-        html += </div>;
+        html += `</div>`;
     });
 
-    html += </div>;
-    return html;
+    html += `</div>`;
+    return html; // Retorno corrigido para 'html' (sem o número 1)
 }
 
 function piramidePessoal(baseNome, dia) { return piramide(baseNome.map(n => reduzir(n + reduzir(dia)))); }
@@ -463,6 +466,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
