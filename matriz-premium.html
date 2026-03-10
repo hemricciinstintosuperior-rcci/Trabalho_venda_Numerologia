@@ -15,7 +15,7 @@ body{font-family:"Times New Roman",serif;background:#f4f4f4;margin:0; color:#1a1
 .tituloPiramide{text-align:center;font-size:28px;margin-bottom:30px; font-weight: bold; color: #111; text-transform: uppercase;}
 .piramide{display:flex;flex-direction:column;align-items:center;margin:30px 0; font-family: monospace;}
 .linha{display:flex;justify-content:center;margin:1px 0; gap: 4px;}
-num{ width:24px;height:24px;border-radius:4px; display:flex;align-items:center;justify-content:center; font-weight:bold;font-size:18px; color:#000; background:#28d3ee; }
+num{ width:20px;height:20px;border-radius:4px; display:flex;align-items:center;justify-content:center; font-weight:bold;font-size:18px; color:#000; background:#28d3ee; }
 .num.negativo{background:#fff !important; color:#FF0000 !important;}
 .num.especial{background:#fff !important; color:#B88402 !important;}
 .num.financeiro{background:#fff !important; color:#008C24 !important;}
@@ -73,7 +73,7 @@ button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold
     /* Ajuste fino dos números para não quebrarem a linha no PDF */
     .num {
         padding: 1px 2px !important;
-        font-size: 11pt !important; /* Tamanho fixo ideal para impressão */
+        font-size: 14pt !important; /* Tamanho fixo ideal para impressão */
     }
 
     /* Esconde botões e abas que não devem sair no PDF */
@@ -149,6 +149,7 @@ document.onselectstart=()=>false;
 </script>
 </body>
 </html>
+
 
 
 
