@@ -40,7 +40,7 @@ button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold
     .num { width: 15px; height: 15px; font-size: 16px; }
     .linha { gap: 1px; }
 }
-
+@media print{ .no-print{display:none!important;} body { background: white; } .secao { box-shadow: none; margin: 0 auto; width: 100%; padding: 20px; } }
 @media print {
     /* Garante que o corpo da página não tenha margens extras que empurrem o conteúdo */
     body { 
@@ -130,7 +130,7 @@ Este relatório não é uma análise superficial. É a leitura estrutural da arq
 
 A proposta final do método é ampliar consciência. Quando há clareza sobre essas interações, a vida deixa de ser apenas vivida e passa a ser compreendida em sua dinâmica vibracional profunda.</div>
     </div>
-
+</div>
     ${rel.abaPrincipal ? `<div class="secao">${rel.abaPrincipal}</div>` : ''}
     ${rel.abaPessoal ? `<div class="secao">${rel.abaPessoal}</div>` : ''}
     ${rel.abaSocial ? `<div class="secao">${rel.abaSocial}</div>` : ''}
@@ -150,6 +150,7 @@ document.onselectstart=()=>false;
 </script>
 </body>
 </html>
+
 
 
 
