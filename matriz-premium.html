@@ -23,6 +23,24 @@ body{font-family:"Times New Roman",serif;background:#f4f4f4;margin:0; color:#1a1
 .rodape{text-align:center;margin-top:50px;font-size:12px;color:#999; border-top: 1px solid #eee; padding-top: 20px;}
 .btn-container { text-align:center; margin: 50px 0; }
 button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold; font-size: 18px; border-radius: 8px; cursor: pointer; }
+    
+.num { 
+    background: #28d3ee !important; 
+    color: #000 !important; 
+    /* CONTROLE DE LARGURA AQUI: */
+    min-width: 15px; /* Aumente para alargar a pirâmide, diminua para estreitar */
+    height: 15px;    /* Mantenha igual ao min-width para quadradinhos perfeitos */
+    
+    font-size: 11px; 
+    font-weight: bold; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px; 
+    border: 1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+    
 /* Esta regra faz o HTML respeitar as quebras de linha do seu textos.js */
 .box p, .box span {
     white-space: pre-wrap; /* Mantém as quebras de linha e o espaçamento original */
@@ -146,6 +164,7 @@ document.onselectstart=()=>false;
 </script>
 </body>
 </html>
+
 
 
 
