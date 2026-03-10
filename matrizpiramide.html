@@ -340,7 +340,7 @@ function montarConteudoComIntros(pir, reg, txtReg, cron, tMapa, titulo, bNeg, bE
     r += desenhar(pir, true, bEsp); 
     
     // Texto do Regente em cima do resultado do Regente
-    r += `<div class="box"><h3>⭐ Regente</h3><p>${textos.introRegente}</p><h2>Sua Potência: ${reg}</h2>${txtReg[reg] || ''}</div>`;
+    r += `<div class="box"><h1>⭐ Regente</h1><p>${textos.introRegente}</p><h2>Sua Potência: ${reg}</h2>${txtReg[reg] || ''}</div>`;
     
     // Texto de Negativas em cima do bloco de Negativas
     if (detectarSequencias(pir).posNeg.length > 0) {
@@ -524,6 +524,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
