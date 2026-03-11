@@ -380,11 +380,11 @@ function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa)
         // Aqui acrescentamos o período de data (ini e fim) ao lado da idade
         html += `<div class="box" style="text-align:center; border-left: 5px solid #111827;">
                  <h2 style="margin:0; color:#111827;">✡︎ Potência ${numArcano}</h2>
-                 <p style="margin: 5px 0; text-align:left; font-weight: bold; color: #374151; font-size: 20px;">
+                 <p style="text-align:left; margin: 5px 0;  font-weight: bold; color: #374151; font-size: 20px;">
                  📅 Período: de ${periodo.ini} até ${periodo.fim} 
                   <span style="color: #111827; font-weight: normal;">(🔍de ${periodo.idadeIni} a ${periodo.idadeFim} anos de idade)</span>
                  </p>
-                 <p style= "font-size:16px; margin-top:5px;">${textosMapa[numArcano] || `<i>Interpretação em análise.</i>`}</p>
+                 <p style= "font-size:18px; margin-top:5px;">${textosMapa[numArcano] || `<i>Interpretação em análise.</i>`}</p>
                  </div>`;
     });
     
@@ -528,6 +528,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
