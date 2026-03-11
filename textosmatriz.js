@@ -3,23 +3,276 @@
 // =======================
 const textosVida={
 
-1:"Início e Liderança. A Potência Regente 1 representa o princípio da individualidade, da iniciativa e da força criadora. Ela rege toda a vida do indivíduo impulsionando-o a agir liderar e abrir caminhos próprios. É a energia do começo da autonomia e da afirmação do eu. No aspecto positivo manifesta liderança natural coragem criatividade inteligência estratégica capacidade de decisão e forte espírito de independência. Indica personalidade ativa inovadora e determinada com potencial para posições de destaque. No aspecto negativo pode gerar egoísmo autoritarismo impulsividade orgulho excessivo e dificuldade em aceitar limites. Quando desequilibrada pode levar ao isolamento e conflitos. A Potência Regente 1 ensina que o verdadeiro líder domina a si mesmo antes de dominar o mundo",
 
-2:"Sensibilidade e Intuição. A Potência Regente 2 representa percepção espiritual sensibilidade emocional e compreensão do invisível. Rege a vida de  através da intuição empatia e busca por equilíbrio interior. No aspecto positivo manifesta na vida de  intuição aguçada espiritualidade diplomacia cooperação e profundidade emocional. No aspecto negativo pode gerar insegurança dependência indecisão passividade e fantasia excessiva levando  à fuga da realidade. A Potência Regente 2 ensina para  que a verdadeira força nasce da sensibilidade consciente",
+1:`<h3>1️⃣Iniciativa, Autonomia e Caminho Individual.1️⃣</h3> 
 
-3:"Expressão e Criação. A Potência Regente 3 representa criatividade comunicação e expansão da consciência. Rege a vida pela expressão intelectual artística e emocional. No aspecto positivo manifesta alegria sociabilidade criatividade e inspiração. No aspecto negativo pode gerar dispersão vaidade instabilidade emocional e dificuldade de concluir projetos. A Potência Regente 3 ensina que criatividade precisa de disciplina para virar realização",
+<p>Para você, o Regente 1 da Vida representa a força que impulsiona a construção da própria identidade e o desenvolvimento da independência. Essa vibração indica uma trajetória marcada pela iniciativa, pela coragem de tomar decisões e pela capacidade de abrir caminhos novos ao longo da existência.</p> 
 
-4:"Ordem e Estrutura. A Potência Regente 4 representa estabilidade disciplina e construção de bases sólidas. Rege a vida pelo trabalho organização e perseverança. No aspecto positivo manifesta responsabilidade pragmatismo senso de justiça e confiabilidade. No aspecto negativo pode gerar rigidez medo de mudanças e conservadorismo excessivo. A Potência Regente 4 ensina que segurança nasce da constância",
+<p>A presença do Regente 1 revela natureza ativa, espírito de liderança e desejo profundo de conquistar espaço próprio no mundo. Ao longo da vida você tende a desenvolver autonomia, aprendendo através das experiências a confiar na própria capacidade de agir, decidir e conduzir o próprio destino.</p> 
 
-5:"Sabedoria e Orientação. A Potência Regente 5 representa conhecimento ética e busca da verdade. Rege a vida pelo aprendizado experiência e orientação moral. No aspecto positivo manifesta inteligência espiritualidade e capacidade de ensinar. No aspecto negativo pode gerar dogmatismo intolerância e orgulho intelectual. A Potência Regente 5 ensina que o saber verdadeiro liberta",
+<p>Quando essa vibração se origina da potência 10 pode indicar momentos de reconhecimento ou mudanças favoráveis que impulsionam novas oportunidades na vida.</p> 
 
-6:"Escolha e Equilíbrio Emocional. A Potência Regente 6 representa conflito entre razão e emoção necessidade de escolha e aprendizado do amor consciente. Rege a vida pelas relações afetivas. No aspecto positivo manifesta amor harmonia responsabilidade afetiva e conciliação. No aspecto negativo pode gerar indecisão ciúme dependência emocional e conflitos internos. A Potência Regente 6 ensina que amar é escolher com consciência",
+<p>Quando se origina da potência 19 pode revelar desafios relacionados ao orgulho ou à necessidade de aprender lições importantes sobre responsabilidade e humildade.</p> 
 
-7:"Vitória e Autodomínio. A Potência Regente 7 representa triunfo do espírito sobre a matéria e domínio mental. Rege a vida pela busca de equilíbrio entre razão e instinto. No aspecto positivo manifesta disciplina autoconfiança e superação. No aspecto negativo pode gerar arrogância frieza emocional e obsessão por controle. A Potência Regente 7 ensina que a verdadeira vitória é conquistar a si mesmo",
+<p>Quando se origina da potência 28 pode indicar experiências ligadas a disputas, rivalidades ou situações que exigem firmeza para defender seus interesses.</p> 
 
-8:"Justiça e Equilíbrio Universal. A Potência Regente 8 representa lei do equilíbrio causa e efeito e justiça universal. Rege a vida pela harmonização de forças opostas. No aspecto positivo manifesta ética responsabilidade e liderança equilibrada. No aspecto negativo pode gerar fanatismo rigidez moral e autoritarismo. A Potência Regente 8 ensina que toda ação gera consequências",
+<p>Quando se origina da potência 37 revela potencial para crescimento através da inteligência, da estratégia e da capacidade de tomar decisões firmes.</p> 
 
-9:"Sabedoria e Sacrifício. A Potência Regente 9 representa prudência sabedoria e renúncia. Rege a vida pelo autoconhecimento e busca de significado. No aspecto positivo manifesta maturidade espiritualidade e altruísmo. No aspecto negativo pode gerar isolamento pessimismo e apego ao passado. A Potência Regente 9 ensina que a sabedoria nasce da experiência",
+<p>Quando se origina da potência 46 pode indicar conquistas materiais alcançadas através de esforço constante e disciplina.</p> 
+
+<p>Quando se origina da potência 55 revela forte impulso de liberdade e necessidade de viver experiências intensas ao longo da vida.</p> 
+
+<p>Quando se origina da potência 64 pode indicar mudanças repentinas ou situações inesperadas que servem como aprendizado e transformação.</p> 
+
+<p>Quando se origina da potência 73 pode revelar natureza reflexiva e tendência a desenvolver sabedoria através das experiências pessoais.</p> 
+
+<p>Quando se origina da potência 82 pode indicar aprendizado sobre poder pessoal, liderança e responsabilidade diante das consequências das próprias ações.</p> 
+
+<p>Quando se origina da potência 91 pode revelar forte processo de maturidade espiritual, conduzindo a pessoa a compreender a vida através de experiências profundas.</p> 
+
+<p>No aspecto positivo manifesta liderança, coragem, criatividade, iniciativa e capacidade de abrir novos caminhos.</p> 
+
+<p>No aspecto negativo pode gerar arrogância, impulsividade, individualismo excessivo ou conflitos provocados pelo desejo de dominar situações.</p> 
+
+<p>O aprendizado do Regente 1 da Vida consiste em desenvolver liderança com consciência, utilizando a força interior para construir caminhos positivos para si e para os outros.</p> `,
+
+
+2:`Sensibilidade, Dualidade e Consciência das Relações. Para você, o Regente 2 da Vida representa a vibração da sensibilidade, da percepção intuitiva e da busca constante por equilíbrio nas relações humanas. Essa regência indica uma trajetória marcada pelo desenvolvimento da empatia, da cooperação e da compreensão emocional.
+
+A presença do Regente 2 revela natureza sensível e observadora. Ao longo da vida você tende a perceber com facilidade os sentimentos das pessoas e os movimentos sutis das situações. Muitas experiências surgem para ensinar equilíbrio entre razão e emoção.
+
+Quando essa vibração se origina da potência 29 pode indicar inteligência brilhante, porém acompanhada de desafios emocionais que exigem maturidade e discernimento.
+
+Quando se origina da potência 38 revela capacidade de adaptação, sensibilidade artística e facilidade para lidar com pessoas.
+
+Quando se origina da potência 47 pode indicar habilidade para lidar com questões materiais e capacidade de organização.
+
+Quando se origina da potência 56 revela natureza ativa e potencial para conquistar posições de destaque através da iniciativa.
+
+Quando se origina da potência 65 pode indicar aprendizado através das relações afetivas e das responsabilidades emocionais.
+
+Quando se origina da potência 74 revela necessidade de disciplina e estrutura para alcançar estabilidade na vida.
+
+Quando se origina da potência 83 pode indicar talento intelectual e facilidade de comunicação.
+
+Quando se origina da potência 92 revela sensibilidade espiritual e forte intuição.
+
+No aspecto positivo manifesta empatia, diplomacia, cooperação e grande percepção emocional.
+
+No aspecto negativo pode gerar insegurança, dependência emocional ou tendência a viver preso às expectativas dos outros.
+
+O aprendizado do Regente 2 da Vida consiste em desenvolver equilíbrio emocional e confiar na própria intuição.`,
+
+3:`Criatividade, Expressão e Expansão da Consciência. Para você, o Regente 3 da Vida representa a vibração da criatividade, da comunicação e da expressão dos talentos naturais. Essa regência indica uma trajetória marcada pela busca de experiências que estimulem o pensamento, a imaginação e o contato com diferentes ambientes.
+
+A presença do Regente 3 revela mente ativa, espírito curioso e grande capacidade de expressão. Ao longo da vida você tende a desenvolver habilidades relacionadas à comunicação, às artes ou à transmissão de ideias.
+
+Quando essa vibração se origina da potência 12 pode indicar aprendizado através de sacrifícios ou experiências que exigem mudança de perspectiva.
+
+Quando se origina da potência 21 revela potencial para crescimento social e reconhecimento através da comunicação.
+
+Quando se origina da potência 30 pode indicar forte criatividade e imaginação.
+
+Quando se origina da potência 39 revela natureza entusiasta e facilidade de interação social.
+
+Quando se origina da potência 48 pode indicar desafios ligados à disciplina ou à organização da vida prática.
+
+Quando se origina da potência 57 revela inteligência estratégica e capacidade de adaptação.
+
+Quando se origina da potência 66 pode indicar grande sensibilidade emocional e inclinação para ajudar outras pessoas.
+
+Quando se origina da potência 75 revela natureza reflexiva e capacidade de aprendizado profundo.
+
+Quando se origina da potência 84 pode indicar experiências ligadas à responsabilidade material.
+
+Quando se origina da potência 93 revela maturidade espiritual e compreensão mais ampla da vida.
+
+No aspecto positivo manifesta criatividade, entusiasmo, sociabilidade e talento para comunicação.
+
+No aspecto negativo pode gerar dispersão, instabilidade emocional ou tendência a prometer mais do que consegue realizar.
+
+O aprendizado do Regente 3 da Vida consiste em transformar criatividade em realização concreta.`,
+
+4:`Estrutura, Disciplina e Construção da Vida. Para você, o Regente 4 da Vida representa a vibração da estabilidade, da organização e do esforço constante para construir bases sólidas. Essa regência indica uma trajetória marcada pelo trabalho persistente e pela necessidade de criar segurança material e emocional.
+
+A presença do Regente 4 revela natureza responsável, disciplinada e prática. Ao longo da vida você tende a desenvolver habilidades relacionadas à organização, à estrutura e ao planejamento.
+
+Quando essa vibração se origina da potência 13 pode indicar experiências desafiadoras que exigem transformação e coragem.
+
+Quando se origina da potência 22 revela potencial para liderança e construção de projetos importantes.
+
+Quando se origina da potência 31 pode indicar talento intelectual e capacidade de expressão.
+
+Quando se origina da potência 40 revela necessidade de superar períodos de estagnação ou reflexão profunda.
+
+Quando se origina da potência 49 pode indicar experiências intensas que transformam sua visão de mundo.
+
+Quando se origina da potência 58 revela desafios ligados ao poder material ou às ambições pessoais.
+
+Quando se origina da potência 67 pode indicar desenvolvimento espiritual através do conhecimento.
+
+Quando se origina da potência 76 revela natureza introspectiva e tendência ao estudo profundo.
+
+Quando se origina da potência 85 pode indicar lições relacionadas ao uso equilibrado do poder.
+
+Quando se origina da potência 94 revela processos de transformação que levam à maturidade.
+
+No aspecto positivo manifesta disciplina, responsabilidade e capacidade de construir estabilidade duradoura.
+
+No aspecto negativo pode gerar rigidez, teimosia ou excesso de preocupação material.
+
+O aprendizado do Regente 4 da Vida consiste em equilibrar disciplina com flexibilidade.`,
+
+5:`Movimento, Experiência e Liberdade. Para você, o Regente 5 da Vida representa a vibração da mudança, da curiosidade e da busca por experiências variadas. Essa regência indica uma trajetória marcada pelo aprendizado através do movimento e da adaptação às circunstâncias.
+
+A presença do Regente 5 revela natureza inquieta e mente aberta para novas possibilidades. Ao longo da vida você tende a buscar conhecimento através da experiência direta.
+
+Quando essa vibração se origina da potência 14 pode indicar habilidade para comunicação e expressão pública.
+
+Quando se origina da potência 23 revela proteção ou auxílio de pessoas influentes.
+
+Quando se origina da potência 32 pode indicar talento criativo e facilidade de comunicação.
+
+Quando se origina da potência 41 revela capacidade de liderança prática.
+
+Quando se origina da potência 50 pode indicar momentos de pausa ou reflexão importantes.
+
+Quando se origina da potência 59 revela sensibilidade espiritual e intuição.
+
+Quando se origina da potência 68 pode indicar aprendizado sobre poder material.
+
+Quando se origina da potência 77 revela forte inclinação para conhecimento profundo.
+
+Quando se origina da potência 86 pode indicar experiências intensas ligadas a responsabilidades materiais.
+
+Quando se origina da potência 95 revela processos de transformação e renovação.
+
+No aspecto positivo manifesta versatilidade, inteligência e grande capacidade de adaptação.
+
+No aspecto negativo pode gerar instabilidade, impulsividade ou dificuldade em manter constância.
+
+O aprendizado do Regente 5 da Vida consiste em transformar experiência em sabedoria.`,
+
+6:`Amor, Harmonia e Responsabilidade Afetiva. Para você, o Regente 6 da Vida representa a vibração do amor, da família e da responsabilidade emocional. Essa regência indica uma trajetória marcada por experiências relacionadas ao cuidado, à proteção e ao desenvolvimento das relações afetivas.
+
+A presença do Regente 6 revela natureza sensível e desejo de construir harmonia nas relações.
+
+Quando essa vibração se origina da potência 15 pode indicar forte magnetismo pessoal.
+
+Quando se origina da potência 24 revela facilidade para construir relações estáveis.
+
+Quando se origina da potência 33 indica grande potencial de prosperidade e ajuda aos outros.
+
+Quando se origina da potência 42 pode indicar aprendizado através das responsabilidades familiares.
+
+Quando se origina da potência 51 revela experiências de mudança importantes.
+
+Quando se origina da potência 60 pode indicar períodos de reflexão emocional.
+
+Quando se origina da potência 69 revela sensibilidade profunda e busca de equilíbrio afetivo.
+
+Quando se origina da potência 78 pode indicar desafios relacionados à disciplina emocional.
+
+Quando se origina da potência 87 revela desenvolvimento espiritual através das relações.
+
+Quando se origina da potência 96 pode indicar maturidade emocional conquistada através das experiências.
+
+No aspecto positivo manifesta amor, generosidade e capacidade de harmonizar ambientes.
+
+No aspecto negativo pode gerar ciúme, dependência emocional ou excesso de preocupação com os outros.
+
+O aprendizado do Regente 6 da Vida consiste em amar com equilíbrio e responsabilidade.`,
+
+7:`Busca de Conhecimento e Evolução Interior. Para você, o Regente 7 da Vida representa a vibração da introspecção, da investigação e da busca por sabedoria. Essa regência indica uma trajetória marcada pelo desenvolvimento intelectual e espiritual.
+
+A presença do Regente 7 revela mente analítica e necessidade de compreender profundamente os mistérios da vida.
+
+Quando essa vibração se origina da potência 16 pode indicar experiências que levam a profundas transformações pessoais.
+
+Quando se origina da potência 25 revela sensibilidade intelectual e capacidade de reflexão.
+
+Quando se origina da potência 34 pode indicar criatividade aliada à inteligência.
+
+Quando se origina da potência 43 revela capacidade de liderança intelectual.
+
+Quando se origina da potência 52 pode indicar aprendizado através das experiências práticas.
+
+Quando se origina da potência 61 revela sensibilidade espiritual.
+
+Quando se origina da potência 70 pode indicar períodos de recolhimento e reflexão.
+
+Quando se origina da potência 79 revela busca intensa por conhecimento.
+
+Quando se origina da potência 88 pode indicar grande poder mental.
+
+Quando se origina da potência 97 revela maturidade espiritual profunda.
+
+No aspecto positivo manifesta sabedoria, intuição e grande capacidade de análise.
+
+No aspecto negativo pode gerar isolamento, excesso de introspecção ou dificuldade de convivência social.
+
+O aprendizado do Regente 7 da Vida consiste em transformar conhecimento em sabedoria.`,
+
+8:`Poder, Justiça e Responsabilidade Material. Para você, o Regente 8 da Vida representa a vibração do poder, da organização e da lei de causa e efeito. Essa regência indica uma trajetória marcada por experiências relacionadas à liderança, à administração e ao equilíbrio entre conquistas materiais e valores morais.
+
+Quando essa vibração se origina da potência 17 pode indicar proteção espiritual e sucesso gradual.
+
+Quando se origina da potência 26 revela aprendizado através de responsabilidades financeiras.
+
+Quando se origina da potência 35 pode indicar inteligência estratégica.
+
+Quando se origina da potência 44 revela grande potencial de liderança.
+
+Quando se origina da potência 53 pode indicar mudanças inesperadas.
+
+Quando se origina da potência 62 revela aprendizado através das relações.
+
+Quando se origina da potência 71 pode indicar forte capacidade de análise.
+
+Quando se origina da potência 80 revela necessidade de disciplina material.
+
+Quando se origina da potência 89 pode indicar experiências intensas relacionadas ao poder.
+
+Quando se origina da potência 98 revela maturidade e compreensão profunda da justiça da vida.
+
+No aspecto positivo manifesta liderança equilibrada, disciplina e senso de justiça.
+
+No aspecto negativo pode gerar autoritarismo, materialismo excessivo ou abuso de poder.
+
+O aprendizado do Regente 8 da Vida consiste em utilizar o poder com responsabilidade.`,
+
+9:`Sabedoria, Conclusões e Consciência Universal. Para você, o Regente 9 da Vida representa a vibração da experiência acumulada, da maturidade espiritual e da compreensão profunda da existência.
+
+Essa regência indica uma trajetória marcada por aprendizados intensos e momentos de reflexão que conduzem ao desenvolvimento da sabedoria.
+
+Quando essa vibração se origina da potência 18 pode indicar desafios emocionais ou situações que exigem grande discernimento.
+
+Quando se origina da potência 27 revela sensibilidade espiritual e capacidade de ajudar outras pessoas.
+
+Quando se origina da potência 36 pode indicar forte criatividade aliada à sensibilidade.
+
+Quando se origina da potência 45 revela aprendizado através de responsabilidades materiais.
+
+Quando se origina da potência 54 pode indicar experiências ligadas a mudanças e transformações.
+
+Quando se origina da potência 63 revela maturidade emocional.
+
+Quando se origina da potência 72 pode indicar grande percepção intuitiva.
+
+Quando se origina da potência 81 revela forte capacidade de liderança espiritual.
+
+Quando se origina da potência 90 pode indicar encerramento de ciclos importantes.
+
+Quando se origina da potência 99 revela vibração espiritual elevada e profunda compreensão da vida.
+
+No aspecto positivo manifesta sabedoria, generosidade e compaixão.
+
+No aspecto negativo pode gerar isolamento, pessimismo ou dificuldade em desapegar do passado.
+
+O aprendizado do Regente 9 da Vida consiste em transformar experiência em sabedoria e utilizar esse conhecimento para ajudar outras pessoas.`,
+
+
+
 
 11:"Força e Autodomínio. A Potência 11 representa energia vital consciente impulso interior aliado ao controle emocional e inteligência estratégica. Simboliza dominar instintos e direcionar a força interior para objetivos elevados. No aspecto positivo manifesta coragem disciplina autoconfiança liderança e superação tornando a pessoa resiliente e influente. No aspecto negativo pode gerar agressividade orgulho impulsividade autoritarismo e descontrole emocional levando a conflitos. A Potência 11 ensina que a verdadeira força está no domínio consciente de si mesmo",
 
@@ -191,29 +444,282 @@ const textosVida={
 
 98:"Recompensa e Ascensão. A Potência 98 representa conquista reconhecimento e elevação de status. Rege a vida pela colheita dos méritos. No aspecto positivo manifesta poder influência e sucesso. No aspecto negativo pode gerar arrogância e sede de domínio. A Potência 98 ensina que o poder precisa de consciência",
 
-99:"Sabedoria Suprema. A Potência 99 representa culminação do ciclo evolutivo e domínio da própria essência. Rege a vida pela integração entre experiência e consciência. No aspecto positivo manifesta realização plena sabedoria e visão elevada. No aspecto negativo pode gerar isolamento excesso de controle e distanciamento emocional. A Potência 99 ensina que a verdadeira grandeza une poder sabedoria e consciência",
+99:"Sabedoria Suprema. A Potência 99 representa culminação do ciclo evolutivo e domínio da própria essência. Rege a vida pela integração entre experiência e consciência. No aspecto positivo manifesta realização plena sabedoria e visão elevada. No aspecto negativo pode gerar isolamento excesso de controle e distanciamento emocional. A Potência 99 ensina que a verdadeira grandeza une poder sabedoria e consciência"
   
   
 };
   
 const textosPessoal={
-1:"Início e Liderança. A Potência Regente 1 representa o princípio da individualidade, da iniciativa e da força criadora. Ela rege toda a vida do indivíduo impulsionando-o a agir liderar e abrir caminhos próprios. É a energia do começo da autonomia e da afirmação do eu. No aspecto positivo manifesta liderança natural coragem criatividade inteligência estratégica capacidade de decisão e forte espírito de independência. Indica personalidade ativa inovadora e determinada com potencial para posições de destaque. No aspecto negativo pode gerar egoísmo autoritarismo impulsividade orgulho excessivo e dificuldade em aceitar limites. Quando desequilibrada pode levar ao isolamento e conflitos. A Potência Regente 1 ensina que o verdadeiro líder domina a si mesmo antes de dominar o mundo",
 
-2:"Sensibilidade e Intuição. A Potência Regente 2 representa percepção espiritual sensibilidade emocional e compreensão do invisível. Rege a vida de  através da intuição empatia e busca por equilíbrio interior. No aspecto positivo manifesta na vida de  intuição aguçada espiritualidade diplomacia cooperação e profundidade emocional. No aspecto negativo pode gerar insegurança dependência indecisão passividade e fantasia excessiva levando  à fuga da realidade. A Potência Regente 2 ensina para  que a verdadeira força nasce da sensibilidade consciente",
 
-3:"Expressão e Criação. A Potência Regente 3 representa criatividade comunicação e expansão da consciência. Rege a vida pela expressão intelectual artística e emocional. No aspecto positivo manifesta alegria sociabilidade criatividade e inspiração. No aspecto negativo pode gerar dispersão vaidade instabilidade emocional e dificuldade de concluir projetos. A Potência Regente 3 ensina que criatividade precisa de disciplina para virar realização",
 
-4:"Ordem e Estrutura. A Potência Regente 4 representa estabilidade disciplina e construção de bases sólidas. Rege a vida pelo trabalho organização e perseverança. No aspecto positivo manifesta responsabilidade pragmatismo senso de justiça e confiabilidade. No aspecto negativo pode gerar rigidez medo de mudanças e conservadorismo excessivo. A Potência Regente 4 ensina que segurança nasce da constância",
+1:`Autonomia Mental e Consciência Individual. Para você, o Regente 1 Pessoal representa a vibração da independência mental, da iniciativa intelectual e da força interior que impulsiona suas decisões e percepções da vida.
 
-5:"Sabedoria e Orientação. A Potência Regente 5 representa conhecimento ética e busca da verdade. Rege a vida pelo aprendizado experiência e orientação moral. No aspecto positivo manifesta inteligência espiritualidade e capacidade de ensinar. No aspecto negativo pode gerar dogmatismo intolerância e orgulho intelectual. A Potência Regente 5 ensina que o saber verdadeiro liberta",
+Essa regência revela uma mente ativa, direta e orientada para a ação. No campo interior você tende a confiar na própria opinião e prefere construir suas conclusões através da experiência pessoal. Existe forte necessidade de autonomia no pensamento e resistência natural a imposições externas.
 
-6:"Escolha e Equilíbrio Emocional. A Potência Regente 6 representa conflito entre razão e emoção necessidade de escolha e aprendizado do amor consciente. Rege a vida pelas relações afetivas. No aspecto positivo manifesta amor harmonia responsabilidade afetiva e conciliação. No aspecto negativo pode gerar indecisão ciúme dependência emocional e conflitos internos. A Potência Regente 6 ensina que amar é escolher com consciência",
+Quando essa vibração se origina da potência 10 pode indicar mente criativa e facilidade para iniciar projetos ou ideias originais.
 
-7:"Vitória e Autodomínio. A Potência Regente 7 representa triunfo do espírito sobre a matéria e domínio mental. Rege a vida pela busca de equilíbrio entre razão e instinto. No aspecto positivo manifesta disciplina autoconfiança e superação. No aspecto negativo pode gerar arrogância frieza emocional e obsessão por controle. A Potência Regente 7 ensina que a verdadeira vitória é conquistar a si mesmo",
+Quando se origina da potência 19 pode revelar conflitos internos relacionados ao orgulho ou à necessidade de aprender lições de humildade.
 
-8:"Justiça e Equilíbrio Universal. A Potência Regente 8 representa lei do equilíbrio causa e efeito e justiça universal. Rege a vida pela harmonização de forças opostas. No aspecto positivo manifesta ética responsabilidade e liderança equilibrada. No aspecto negativo pode gerar fanatismo rigidez moral e autoritarismo. A Potência Regente 8 ensina que toda ação gera consequências",
+Quando se origina da potência 28 pode indicar tendência a enfrentar disputas de ideias ou desafios intelectuais.
 
-9:"Sabedoria e Sacrifício. A Potência Regente 9 representa prudência sabedoria e renúncia. Rege a vida pelo autoconhecimento e busca de significado. No aspecto positivo manifesta maturidade espiritualidade e altruísmo. No aspecto negativo pode gerar isolamento pessimismo e apego ao passado. A Potência Regente 9 ensina que a sabedoria nasce da experiência",
+Quando se origina da potência 37 revela inteligência estratégica e facilidade para encontrar soluções rápidas.
+
+Quando se origina da potência 46 pode indicar mente prática voltada para conquistas materiais.
+
+Quando se origina da potência 55 revela pensamento inquieto e forte desejo de liberdade intelectual.
+
+Quando se origina da potência 64 pode indicar mudanças repentinas na forma de pensar ou momentos de revisão profunda de ideias.
+
+Quando se origina da potência 73 revela tendência a reflexões profundas e busca de conhecimento interior.
+
+Quando se origina da potência 82 pode indicar forte senso de autoridade intelectual.
+
+Quando se origina da potência 91 revela amadurecimento mental através de experiências marcantes.
+
+No aspecto positivo manifesta liderança mental, iniciativa intelectual, criatividade e coragem para defender suas ideias.
+
+No aspecto negativo pode gerar orgulho intelectual, impaciência, autoritarismo mental ou dificuldade de ouvir opiniões diferentes.
+
+O aprendizado do Regente 1 Pessoal consiste em desenvolver liderança interior sem perder a capacidade de ouvir e aprender.`,
+
+2:`Sensibilidade Intelectual e Percepção Psicológica. Para você, o Regente 2 Pessoal representa a vibração da sensibilidade emocional e da percepção intuitiva que influencia sua maneira de pensar e interpretar o mundo.
+
+Essa regência revela mente observadora e sensível aos detalhes das relações humanas. Você tende a perceber facilmente o ambiente emocional das situações e das pessoas, desenvolvendo forte capacidade de empatia e compreensão psicológica.
+
+Quando essa vibração se origina da potência 29 pode indicar inteligência sensível acompanhada de conflitos emocionais que exigem equilíbrio interior.
+
+Quando se origina da potência 38 revela talento criativo e sensibilidade artística.
+
+Quando se origina da potência 47 pode indicar mente organizada e habilidade para lidar com assuntos práticos.
+
+Quando se origina da potência 56 revela pensamento ativo e espírito competitivo.
+
+Quando se origina da potência 65 pode indicar forte ligação entre pensamento e emoções.
+
+Quando se origina da potência 74 revela necessidade de disciplina mental.
+
+Quando se origina da potência 83 pode indicar facilidade de comunicação e raciocínio rápido.
+
+Quando se origina da potência 92 revela intuição profunda e percepção espiritual.
+
+No aspecto positivo manifesta empatia, diplomacia, percepção emocional e inteligência intuitiva.
+
+No aspecto negativo pode gerar insegurança mental, indecisão ou tendência a absorver excessivamente os problemas dos outros.
+
+O aprendizado do Regente 2 Pessoal consiste em confiar na própria intuição sem perder o equilíbrio emocional.`,
+
+3:`Criatividade Mental e Expressão Intelectual. Para você, o Regente 3 Pessoal representa a vibração da criatividade, da imaginação e da necessidade de expressar pensamentos e ideias.
+
+Essa regência revela mente dinâmica, comunicativa e inclinada à expressão verbal ou artística. Existe facilidade para aprender através da observação, da conversa e do intercâmbio de ideias.
+
+Quando essa vibração se origina da potência 12 pode indicar momentos de sacrifício ou aprendizado profundo que transformam sua forma de pensar.
+
+Quando se origina da potência 21 revela facilidade para crescimento intelectual através das relações sociais.
+
+Quando se origina da potência 30 pode indicar forte imaginação e criatividade mental.
+
+Quando se origina da potência 39 revela entusiasmo intelectual e sociabilidade.
+
+Quando se origina da potência 48 pode indicar desafios relacionados à disciplina mental.
+
+Quando se origina da potência 57 revela inteligência estratégica e visão analítica.
+
+Quando se origina da potência 66 pode indicar forte sensibilidade emocional influenciando o pensamento.
+
+Quando se origina da potência 75 revela mente investigativa e reflexiva.
+
+Quando se origina da potência 84 pode indicar responsabilidade intelectual em assuntos materiais.
+
+Quando se origina da potência 93 revela maturidade mental e visão ampla da vida.
+
+No aspecto positivo manifesta criatividade, comunicação clara, imaginação e entusiasmo intelectual.
+
+No aspecto negativo pode gerar dispersão, superficialidade ou dificuldade de manter foco em objetivos.
+
+O aprendizado do Regente 3 Pessoal consiste em transformar criatividade em conhecimento estruturado.`,
+
+4:`Estrutura Mental e Disciplina Intelectual. Para você, o Regente 4 Pessoal representa a vibração da organização mental, da lógica e da necessidade de estruturar ideias com clareza e disciplina.
+
+Essa regência revela mente prática e analítica, inclinada a organizar pensamentos de forma objetiva. Existe forte necessidade de segurança intelectual e coerência nas decisões.
+
+Quando essa vibração se origina da potência 13 pode indicar transformações profundas na forma de pensar.
+
+Quando se origina da potência 22 revela potencial intelectual voltado para grandes projetos ou liderança.
+
+Quando se origina da potência 31 pode indicar talento para comunicação estruturada.
+
+Quando se origina da potência 40 revela períodos de reflexão profunda.
+
+Quando se origina da potência 49 pode indicar mudanças importantes na visão de mundo.
+
+Quando se origina da potência 58 revela desafios ligados ao poder intelectual.
+
+Quando se origina da potência 67 pode indicar interesse por conhecimento espiritual.
+
+Quando se origina da potência 76 revela mente introspectiva e investigativa.
+
+Quando se origina da potência 85 pode indicar aprendizado sobre responsabilidade intelectual.
+
+Quando se origina da potência 94 revela maturidade mental através das experiências.
+
+No aspecto positivo manifesta disciplina mental, organização e raciocínio lógico.
+
+No aspecto negativo pode gerar rigidez de pensamento ou resistência a novas ideias.
+
+O aprendizado do Regente 4 Pessoal consiste em equilibrar lógica com flexibilidade.`,
+
+5:`Curiosidade Intelectual e Movimento Mental. Para você, o Regente 5 Pessoal representa a vibração da curiosidade, da busca por conhecimento e da necessidade de experimentar novas ideias.
+
+Essa regência revela mente inquieta, adaptável e aberta a diferentes pontos de vista.
+
+Quando essa vibração se origina da potência 14 pode indicar talento para comunicação pública.
+
+Quando se origina da potência 23 revela auxílio intelectual de pessoas influentes.
+
+Quando se origina da potência 32 pode indicar criatividade e facilidade de expressão.
+
+Quando se origina da potência 41 revela liderança intelectual.
+
+Quando se origina da potência 50 pode indicar períodos de reflexão mental.
+
+Quando se origina da potência 59 revela sensibilidade espiritual.
+
+Quando se origina da potência 68 pode indicar aprendizado relacionado ao poder material.
+
+Quando se origina da potência 77 revela forte inclinação para estudos profundos.
+
+Quando se origina da potência 86 pode indicar desafios intelectuais ligados a responsabilidades.
+
+Quando se origina da potência 95 revela transformações importantes na forma de pensar.
+
+No aspecto positivo manifesta inteligência versátil, curiosidade e capacidade de adaptação.
+
+No aspecto negativo pode gerar inquietação mental ou dificuldade de concentração.
+
+O aprendizado do Regente 5 Pessoal consiste em transformar curiosidade em conhecimento sólido.`,
+
+6:`Consciência Emocional e Harmonia Interior. Para você, o Regente 6 Pessoal representa a vibração do amor, da responsabilidade emocional e da busca de harmonia interior.
+
+Essa regência revela mente sensível às relações afetivas e forte preocupação com o bem-estar das pessoas próximas.
+
+Quando essa vibração se origina da potência 15 pode indicar magnetismo emocional e forte influência afetiva.
+
+Quando se origina da potência 24 revela facilidade para construir relações estáveis.
+
+Quando se origina da potência 33 indica generosidade e vocação para ajudar os outros.
+
+Quando se origina da potência 42 pode indicar responsabilidades emocionais importantes.
+
+Quando se origina da potência 51 revela mudanças emocionais marcantes.
+
+Quando se origina da potência 60 pode indicar momentos de reflexão interior.
+
+Quando se origina da potência 69 revela forte sensibilidade afetiva.
+
+Quando se origina da potência 78 pode indicar desafios ligados ao autocontrole emocional.
+
+Quando se origina da potência 87 revela aprendizado espiritual através das relações.
+
+Quando se origina da potência 96 indica maturidade emocional conquistada ao longo do tempo.
+
+No aspecto positivo manifesta amor, compaixão e capacidade de harmonizar ambientes.
+
+No aspecto negativo pode gerar dependência emocional ou excesso de preocupação com os outros.
+
+O aprendizado do Regente 6 Pessoal consiste em amar com equilíbrio.`,
+
+7:`Investigação Mental e Busca de Sabedoria. Para você, o Regente 7 Pessoal representa a vibração da introspecção, da investigação intelectual e da busca por conhecimento profundo.
+
+Essa regência revela mente analítica e tendência natural a refletir sobre os mistérios da vida.
+
+Quando essa vibração se origina da potência 16 pode indicar experiências que provocam mudanças profundas na forma de pensar.
+
+Quando se origina da potência 25 revela sensibilidade intelectual.
+
+Quando se origina da potência 34 pode indicar criatividade mental.
+
+Quando se origina da potência 43 revela liderança intelectual.
+
+Quando se origina da potência 52 indica aprendizado através das experiências práticas.
+
+Quando se origina da potência 61 revela sensibilidade espiritual.
+
+Quando se origina da potência 70 pode indicar períodos de recolhimento mental.
+
+Quando se origina da potência 79 revela intensa busca por conhecimento.
+
+Quando se origina da potência 88 pode indicar grande poder mental.
+
+Quando se origina da potência 97 revela maturidade intelectual profunda.
+
+No aspecto positivo manifesta sabedoria, intuição e capacidade de análise profunda.
+
+No aspecto negativo pode gerar isolamento mental ou excesso de introspecção.
+
+O aprendizado do Regente 7 Pessoal consiste em transformar conhecimento em sabedoria.`,
+
+8:`Força Mental e Consciência de Poder. Para você, o Regente 8 Pessoal representa a vibração da força mental, da disciplina intelectual e da consciência de responsabilidade.
+
+Essa regência revela mente estratégica e capacidade de liderança intelectual.
+
+Quando essa vibração se origina da potência 17 pode indicar proteção espiritual.
+
+Quando se origina da potência 26 revela aprendizado relacionado a responsabilidades materiais.
+
+Quando se origina da potência 35 pode indicar inteligência estratégica.
+
+Quando se origina da potência 44 revela grande poder de liderança.
+
+Quando se origina da potência 53 pode indicar mudanças inesperadas na visão de mundo.
+
+Quando se origina da potência 62 revela aprendizado através das relações.
+
+Quando se origina da potência 71 indica mente analítica e investigativa.
+
+Quando se origina da potência 80 revela necessidade de disciplina mental.
+
+Quando se origina da potência 89 pode indicar experiências intensas ligadas ao poder.
+
+Quando se origina da potência 98 revela maturidade e compreensão profunda da vida.
+
+No aspecto positivo manifesta liderança intelectual, disciplina e senso de justiça.
+
+No aspecto negativo pode gerar autoritarismo mental ou obsessão por controle.
+
+O aprendizado do Regente 8 Pessoal consiste em usar o poder mental com responsabilidade.`,
+
+9:`Consciência Interior e Sabedoria Mental. Para você, o Regente 9 Pessoal representa a vibração da sabedoria, da reflexão e da compreensão profunda da existência.
+
+Essa regência revela mente filosófica, sensível e inclinada a compreender o significado das experiências da vida.
+
+Quando essa vibração se origina da potência 18 pode indicar conflitos emocionais que conduzem ao amadurecimento mental.
+
+Quando se origina da potência 27 revela sensibilidade espiritual.
+
+Quando se origina da potência 36 pode indicar criatividade aliada à sensibilidade.
+
+Quando se origina da potência 45 revela aprendizado através de responsabilidades.
+
+Quando se origina da potência 54 pode indicar mudanças importantes na forma de pensar.
+
+Quando se origina da potência 63 revela maturidade emocional.
+
+Quando se origina da potência 72 indica forte percepção intuitiva.
+
+Quando se origina da potência 81 revela liderança espiritual.
+
+Quando se origina da potência 90 pode indicar encerramento de ciclos intelectuais.
+
+Quando se origina da potência 99 revela elevada compreensão espiritual.
+
+No aspecto positivo manifesta sabedoria, compaixão e visão ampla da vida.
+
+No aspecto negativo pode gerar isolamento mental ou excesso de idealismo.
+
+O aprendizado do Regente 9 Pessoal consiste em transformar experiência em sabedoria.`,
+
+
   
 11:"Força Interior e Autodomínio Emocional. Na Pirâmide Pessoal, a Potência 11 indica que a pessoa percebe a realidade como um campo de desafios emocionais que exigem coragem, firmeza e domínio interno. Existe a sensação de que a vida testa constantemente a sua força psicológica, como se fosse necessário manter controle sobre impulsos, reações e sentimentos intensos. No aspecto positivo manifesta autoconfiança emocional, coragem para enfrentar conflitos internos e capacidade de transformar tensão em crescimento psicológico. A pessoa sente que precisa ser forte por dentro e superar a si mesma repetidamente. No aspecto negativo pode gerar irritabilidade, impulsividade emocional e sensação de estar sempre em estado de alerta ou defesa. A Potência 11 ensina que a realidade é percebida como um processo de fortalecimento interior contínuo.",
   
@@ -386,25 +892,276 @@ const textosPessoal={
 99:"Consciência Suprema e Integração Interior. Na Pirâmide Pessoal, a Potência 99 faz com que a pessoa perceba a realidade como integração total da experiência emocional. No aspecto positivo manifesta sabedoria profunda. No aspecto negativo pode gerar isolamento emocional. A Potência 99 ensina que a realidade é percebida como integração da consciência."};
 
   const textosSocial={ 
-1:"Início e Liderança. A Potência Regente 1 representa o princípio da individualidade, da iniciativa e da força criadora. Ela rege toda a vida do indivíduo impulsionando-o a agir liderar e abrir caminhos próprios. É a energia do começo da autonomia e da afirmação do eu. No aspecto positivo manifesta liderança natural coragem criatividade inteligência estratégica capacidade de decisão e forte espírito de independência. Indica personalidade ativa inovadora e determinada com potencial para posições de destaque. No aspecto negativo pode gerar egoísmo autoritarismo impulsividade orgulho excessivo e dificuldade em aceitar limites. Quando desequilibrada pode levar ao isolamento e conflitos. A Potência Regente 1 ensina que o verdadeiro líder domina a si mesmo antes de dominar o mundo",
 
-2:"Sensibilidade e Intuição. A Potência Regente 2 representa percepção espiritual sensibilidade emocional e compreensão do invisível. Rege a vida de  através da intuição empatia e busca por equilíbrio interior. No aspecto positivo manifesta na vida de  intuição aguçada espiritualidade diplomacia cooperação e profundidade emocional. No aspecto negativo pode gerar insegurança dependência indecisão passividade e fantasia excessiva levando  à fuga da realidade. A Potência Regente 2 ensina para  que a verdadeira força nasce da sensibilidade consciente",
 
-3:"Expressão e Criação. A Potência Regente 3 representa criatividade comunicação e expansão da consciência. Rege a vida pela expressão intelectual artística e emocional. No aspecto positivo manifesta alegria sociabilidade criatividade e inspiração. No aspecto negativo pode gerar dispersão vaidade instabilidade emocional e dificuldade de concluir projetos. A Potência Regente 3 ensina que criatividade precisa de disciplina para virar realização",
 
-4:"Ordem e Estrutura. A Potência Regente 4 representa estabilidade disciplina e construção de bases sólidas. Rege a vida pelo trabalho organização e perseverança. No aspecto positivo manifesta responsabilidade pragmatismo senso de justiça e confiabilidade. No aspecto negativo pode gerar rigidez medo de mudanças e conservadorismo excessivo. A Potência Regente 4 ensina que segurança nasce da constância",
+1:`Percepção de Liderança no Meio Social. Para você, o Regente 1 do Meio Social representa uma visão do ambiente baseada na iniciativa, na independência e na capacidade de liderança das pessoas ao seu redor.
 
-5:"Sabedoria e Orientação. A Potência Regente 5 representa conhecimento ética e busca da verdade. Rege a vida pelo aprendizado experiência e orientação moral. No aspecto positivo manifesta inteligência espiritualidade e capacidade de ensinar. No aspecto negativo pode gerar dogmatismo intolerância e orgulho intelectual. A Potência Regente 5 ensina que o saber verdadeiro liberta",
+Essa regência indica que você tende a observar o meio social como um espaço onde indivíduos buscam afirmar suas ideias, conquistar autonomia e demonstrar força de vontade. Muitas vezes você percebe nas outras pessoas atitudes de competição, iniciativa ou desejo de se destacar.
 
-6:"Escolha e Equilíbrio Emocional. A Potência Regente 6 representa conflito entre razão e emoção necessidade de escolha e aprendizado do amor consciente. Rege a vida pelas relações afetivas. No aspecto positivo manifesta amor harmonia responsabilidade afetiva e conciliação. No aspecto negativo pode gerar indecisão ciúme dependência emocional e conflitos internos. A Potência Regente 6 ensina que amar é escolher com consciência",
+Quando essa vibração se origina da potência 10 pode indicar percepção de ambientes sociais dinâmicos e cheios de oportunidades.
 
-7:"Vitória e Autodomínio. A Potência Regente 7 representa triunfo do espírito sobre a matéria e domínio mental. Rege a vida pela busca de equilíbrio entre razão e instinto. No aspecto positivo manifesta disciplina autoconfiança e superação. No aspecto negativo pode gerar arrogância frieza emocional e obsessão por controle. A Potência Regente 7 ensina que a verdadeira vitória é conquistar a si mesmo",
+Quando se origina da potência 19 pode revelar visão crítica sobre atitudes de orgulho ou autoritarismo nas pessoas.
 
-8:"Justiça e Equilíbrio Universal. A Potência Regente 8 representa lei do equilíbrio causa e efeito e justiça universal. Rege a vida pela harmonização de forças opostas. No aspecto positivo manifesta ética responsabilidade e liderança equilibrada. No aspecto negativo pode gerar fanatismo rigidez moral e autoritarismo. A Potência Regente 8 ensina que toda ação gera consequências",
+Quando se origina da potência 28 pode indicar percepção de disputas ou rivalidades no meio social.
 
-9:"Sabedoria e Sacrifício. A Potência Regente 9 representa prudência sabedoria e renúncia. Rege a vida pelo autoconhecimento e busca de significado. No aspecto positivo manifesta maturidade espiritualidade e altruísmo. No aspecto negativo pode gerar isolamento pessimismo e apego ao passado. A Potência Regente 9 ensina que a sabedoria nasce da experiência",
+Quando se origina da potência 37 revela visão estratégica das relações sociais.
 
-    
+Quando se origina da potência 46 pode indicar percepção de ambientes voltados ao trabalho e às conquistas materiais.
+
+Quando se origina da potência 55 revela ambientes sociais inquietos ou marcados pela busca de liberdade.
+
+Quando se origina da potência 64 pode indicar percepção de mudanças repentinas nas relações sociais.
+
+Quando se origina da potência 73 revela tendência a observar as pessoas com análise profunda.
+
+Quando se origina da potência 82 pode indicar percepção de disputas por poder no meio social.
+
+Quando se origina da potência 91 revela compreensão madura das atitudes humanas.
+
+No aspecto positivo manifesta visão de liderança, iniciativa e capacidade de reconhecer pessoas fortes.
+
+No aspecto negativo pode gerar tendência a perceber o meio social como competitivo ou dominado por conflitos de ego.
+
+O aprendizado do Regente 1 do Meio Social consiste em compreender a liderança sem transformar todas as relações em competição.`,
+
+2:`Percepção Sensível das Relações Sociais. Para você, o Regente 2 do Meio Social representa uma visão do ambiente baseada na sensibilidade emocional e na observação das relações entre as pessoas.
+
+Essa regência indica que você tende a perceber facilmente os sentimentos presentes no ambiente social. Muitas vezes você identifica tensões, alianças ou conflitos que outras pessoas não percebem com facilidade.
+
+Quando essa vibração se origina da potência 29 pode indicar percepção de ambientes sociais emocionalmente complexos.
+
+Quando se origina da potência 38 revela visão sensível das relações humanas.
+
+Quando se origina da potência 47 pode indicar percepção de ambientes organizados ou estruturados.
+
+Quando se origina da potência 56 revela ambientes sociais ativos e competitivos.
+
+Quando se origina da potência 65 pode indicar forte percepção das relações afetivas no meio social.
+
+Quando se origina da potência 74 revela ambientes que exigem disciplina nas relações.
+
+Quando se origina da potência 83 pode indicar percepção de pessoas comunicativas e intelectuais.
+
+Quando se origina da potência 92 revela forte sensibilidade espiritual na observação das pessoas.
+
+No aspecto positivo manifesta empatia social e grande percepção emocional.
+
+No aspecto negativo pode gerar tendência a absorver excessivamente os conflitos das pessoas ao redor.
+
+O aprendizado do Regente 2 do Meio Social consiste em observar as emoções do ambiente sem carregar para si os problemas dos outros.`,
+
+3:`Percepção Criativa das Relações Sociais. Para você, o Regente 3 do Meio Social representa uma visão do ambiente baseada na comunicação, na criatividade e na interação entre as pessoas.
+
+Essa regência indica que você tende a perceber o meio social como um espaço de troca de ideias, conversas e manifestações de personalidade.
+
+Quando essa vibração se origina da potência 12 pode indicar percepção de pessoas que passam por processos de aprendizado ou transformação.
+
+Quando se origina da potência 21 revela ambientes sociais dinâmicos e comunicativos.
+
+Quando se origina da potência 30 pode indicar percepção de criatividade coletiva.
+
+Quando se origina da potência 39 revela ambientes animados e sociáveis.
+
+Quando se origina da potência 48 pode indicar percepção de conflitos relacionados à organização social.
+
+Quando se origina da potência 57 revela ambientes onde a estratégia e a inteligência são valorizadas.
+
+Quando se origina da potência 66 pode indicar forte presença de emoções nas relações sociais.
+
+Quando se origina da potência 75 revela ambientes reflexivos ou intelectuais.
+
+Quando se origina da potência 84 pode indicar percepção de responsabilidade social.
+
+Quando se origina da potência 93 revela visão madura das relações humanas.
+
+No aspecto positivo manifesta visão otimista e comunicativa das relações sociais.
+
+No aspecto negativo pode gerar tendência a perceber superficialidade nas interações sociais.
+
+O aprendizado do Regente 3 do Meio Social consiste em valorizar a comunicação sem perder a profundidade nas relações.`,
+
+4:`Percepção Estruturada do Ambiente Social. Para você, o Regente 4 do Meio Social representa uma visão das relações sociais baseada na disciplina, na organização e na estabilidade.
+
+Essa regência indica que você tende a observar o meio social como um sistema de regras, responsabilidades e estruturas.
+
+Quando essa vibração se origina da potência 13 pode indicar percepção de mudanças intensas nas relações sociais.
+
+Quando se origina da potência 22 revela ambientes sociais ligados a grandes responsabilidades.
+
+Quando se origina da potência 31 pode indicar percepção de comunicação estruturada.
+
+Quando se origina da potência 40 revela ambientes marcados por reflexão ou pausa.
+
+Quando se origina da potência 49 pode indicar percepção de conflitos ou transformações sociais.
+
+Quando se origina da potência 58 revela ambientes voltados ao poder ou às conquistas materiais.
+
+Quando se origina da potência 67 pode indicar percepção de ambientes ligados ao conhecimento.
+
+Quando se origina da potência 76 revela ambientes introspectivos ou reservados.
+
+Quando se origina da potência 85 pode indicar disputas de autoridade.
+
+Quando se origina da potência 94 revela percepção de transformações profundas na sociedade.
+
+No aspecto positivo manifesta visão organizada e realista das relações sociais.
+
+No aspecto negativo pode gerar percepção rígida ou crítica das atitudes das pessoas.
+
+O aprendizado do Regente 4 do Meio Social consiste em compreender que as relações humanas nem sempre seguem regras fixas.`,
+
+5:`Percepção Dinâmica do Meio Social. Para você, o Regente 5 do Meio Social representa uma visão das relações humanas marcada pela mudança, pela diversidade e pela curiosidade em relação às pessoas.
+
+Essa regência indica que você tende a perceber o ambiente social como algo dinâmico, onde as pessoas estão sempre mudando ou buscando novas experiências.
+
+Quando essa vibração se origina da potência 14 pode indicar percepção de pessoas comunicativas.
+
+Quando se origina da potência 23 revela ambientes sociais protegidos por influências positivas.
+
+Quando se origina da potência 32 pode indicar criatividade coletiva.
+
+Quando se origina da potência 41 revela percepção de liderança social.
+
+Quando se origina da potência 50 pode indicar períodos de pausa ou reflexão coletiva.
+
+Quando se origina da potência 59 revela ambientes espirituais ou sensíveis.
+
+Quando se origina da potência 68 pode indicar disputas por poder ou recursos.
+
+Quando se origina da potência 77 revela ambientes intelectuais.
+
+Quando se origina da potência 86 pode indicar responsabilidades sociais intensas.
+
+Quando se origina da potência 95 revela transformações sociais importantes.
+
+No aspecto positivo manifesta curiosidade social e capacidade de compreender diferentes tipos de pessoas.
+
+No aspecto negativo pode gerar percepção de instabilidade ou imprevisibilidade nas relações sociais.
+
+O aprendizado do Regente 5 do Meio Social consiste em compreender a diversidade das pessoas sem perder o equilíbrio.`,
+
+6:`Percepção Afetiva do Meio Social. Para você, o Regente 6 do Meio Social representa uma visão das relações humanas baseada no afeto, na responsabilidade emocional e na harmonia entre as pessoas.
+
+Essa regência indica que você tende a observar o meio social através da qualidade das relações afetivas.
+
+Quando essa vibração se origina da potência 15 pode indicar percepção de forte magnetismo social.
+
+Quando se origina da potência 24 revela ambientes harmoniosos.
+
+Quando se origina da potência 33 pode indicar percepção de generosidade coletiva.
+
+Quando se origina da potência 42 revela responsabilidades familiares ou sociais.
+
+Quando se origina da potência 51 pode indicar mudanças importantes nas relações sociais.
+
+Quando se origina da potência 60 revela períodos de reflexão emocional coletiva.
+
+Quando se origina da potência 69 pode indicar forte sensibilidade social.
+
+Quando se origina da potência 78 revela desafios nas relações.
+
+Quando se origina da potência 87 indica aprendizado social através das relações.
+
+Quando se origina da potência 96 revela maturidade nas relações humanas.
+
+No aspecto positivo manifesta percepção de amor, cooperação e harmonia social.
+
+No aspecto negativo pode gerar tendência a perceber conflitos emocionais entre as pessoas.
+
+O aprendizado do Regente 6 do Meio Social consiste em compreender as relações humanas com equilíbrio emocional.`,
+
+7:`Percepção Analítica do Meio Social. Para você, o Regente 7 do Meio Social representa uma visão das relações humanas baseada na análise, na observação e na busca de compreensão profunda do comportamento das pessoas.
+
+Essa regência indica que você tende a observar o ambiente social de forma reflexiva, analisando atitudes e motivações.
+
+Quando essa vibração se origina da potência 16 pode indicar percepção de mudanças bruscas no comportamento das pessoas.
+
+Quando se origina da potência 25 revela sensibilidade intelectual.
+
+Quando se origina da potência 34 pode indicar criatividade social.
+
+Quando se origina da potência 43 revela liderança intelectual.
+
+Quando se origina da potência 52 indica aprendizado através das experiências sociais.
+
+Quando se origina da potência 61 revela sensibilidade espiritual nas relações.
+
+Quando se origina da potência 70 pode indicar períodos de reflexão coletiva.
+
+Quando se origina da potência 79 revela busca intensa por conhecimento social.
+
+Quando se origina da potência 88 pode indicar percepção de grande poder coletivo.
+
+Quando se origina da potência 97 revela maturidade social profunda.
+
+No aspecto positivo manifesta compreensão profunda do comportamento humano.
+
+No aspecto negativo pode gerar tendência ao distanciamento social ou excesso de análise.
+
+O aprendizado do Regente 7 do Meio Social consiste em compreender as pessoas sem se afastar emocionalmente delas.`,
+
+8:`Percepção de Poder no Meio Social. Para você, o Regente 8 do Meio Social representa uma visão das relações humanas baseada no poder, na autoridade e nas estruturas sociais.
+
+Essa regência indica que você tende a perceber o ambiente social como um espaço onde existem hierarquias, responsabilidades e disputas por influência.
+
+Quando essa vibração se origina da potência 17 pode indicar percepção de proteção ou reconhecimento social.
+
+Quando se origina da potência 26 revela aprendizado através de responsabilidades materiais.
+
+Quando se origina da potência 35 pode indicar inteligência estratégica nas relações.
+
+Quando se origina da potência 44 revela ambientes sociais ligados à liderança.
+
+Quando se origina da potência 53 pode indicar mudanças inesperadas no meio social.
+
+Quando se origina da potência 62 revela aprendizado através das relações humanas.
+
+Quando se origina da potência 71 indica análise profunda das estruturas sociais.
+
+Quando se origina da potência 80 revela necessidade de disciplina coletiva.
+
+Quando se origina da potência 89 pode indicar percepção de conflitos de poder.
+
+Quando se origina da potência 98 revela maturidade social e compreensão das leis da vida.
+
+No aspecto positivo manifesta visão estratégica e compreensão das estruturas sociais.
+
+No aspecto negativo pode gerar percepção excessiva de competição ou disputa por poder.
+
+O aprendizado do Regente 8 do Meio Social consiste em compreender o poder sem transformar todas as relações em competição.`,
+
+9:`Percepção Humanitária do Meio Social. Para você, o Regente 9 do Meio Social representa uma visão das relações humanas baseada na sabedoria, na compaixão e na compreensão das experiências coletivas.
+
+Essa regência indica que você tende a observar o ambiente social com olhar filosófico ou humanitário.
+
+Quando essa vibração se origina da potência 18 pode indicar percepção de conflitos emocionais no meio social.
+
+Quando se origina da potência 27 revela sensibilidade espiritual nas relações humanas.
+
+Quando se origina da potência 36 pode indicar criatividade coletiva.
+
+Quando se origina da potência 45 revela responsabilidade social.
+
+Quando se origina da potência 54 pode indicar mudanças sociais importantes.
+
+Quando se origina da potência 63 revela maturidade emocional coletiva.
+
+Quando se origina da potência 72 indica percepção intuitiva das pessoas.
+
+Quando se origina da potência 81 revela liderança social espiritualizada.
+
+Quando se origina da potência 90 pode indicar encerramento de ciclos sociais.
+
+Quando se origina da potência 99 revela compreensão profunda da humanidade.
+
+No aspecto positivo manifesta compaixão, sabedoria social e visão humanitária.
+
+No aspecto negativo pode gerar sensação de distância emocional ou desilusão com o comportamento humano.
+
+O aprendizado do Regente 9 do Meio Social consiste em compreender a humanidade com sabedoria e equilíbrio.`,
+
+   
 11:"Força Social e Percepção de Liderança. Na Pirâmide Social, a Potência 11 indica que a pessoa percebe o ambiente externo como um campo de força, iniciativa e tomada de decisões. Enxerga as relações sociais como espaços onde liderança, posicionamento e atitude definem os rumos coletivos. Costuma notar quem assume o controle, quem conduz situações e quem evita responsabilidades. No aspecto positivo manifesta postura firme, visão estratégica e capacidade de compreender dinâmicas de poder. No aspecto negativo pode perceber o ambiente como excessivamente competitivo ou exigente. A Potência 11 mostra que a pessoa vive e interpreta o mundo social como um cenário de liderança e afirmação.",
 
 12:"Cooperação Social e Percepção de Sacrifício. Na Pirâmide Social, a Potência 12 indica que a pessoa percebe o ambiente social como um espaço onde colaboração, paciência e concessões são necessárias para manter o equilíbrio coletivo. Enxerga as relações como processos que exigem apoio mútuo e sustentação constante. Costuma notar quem ajuda, quem se sacrifica e quem evita compromissos. No aspecto positivo manifesta empatia e compreensão das necessidades do grupo. No aspecto negativo pode perceber o meio como pesado ou marcado por cobranças excessivas. A Potência 12 revela uma vivência social interpretada sob a ótica da cooperação.",
@@ -579,23 +1336,274 @@ const textosPessoal={
   };
   
   const textosDestino={ 
-1:"Início e Liderança. A Potência Regente 1 representa o princípio da individualidade, da iniciativa e da força criadora. Ela rege toda a vida do indivíduo impulsionando-o a agir liderar e abrir caminhos próprios. É a energia do começo da autonomia e da afirmação do eu. No aspecto positivo manifesta liderança natural coragem criatividade inteligência estratégica capacidade de decisão e forte espírito de independência. Indica personalidade ativa inovadora e determinada com potencial para posições de destaque. No aspecto negativo pode gerar egoísmo autoritarismo impulsividade orgulho excessivo e dificuldade em aceitar limites. Quando desequilibrada pode levar ao isolamento e conflitos. A Potência Regente 1 ensina que o verdadeiro líder domina a si mesmo antes de dominar o mundo",
 
-2:"Sensibilidade e Intuição. A Potência Regente 2 representa percepção espiritual sensibilidade emocional e compreensão do invisível. Rege a vida de  através da intuição empatia e busca por equilíbrio interior. No aspecto positivo manifesta na vida de  intuição aguçada espiritualidade diplomacia cooperação e profundidade emocional. No aspecto negativo pode gerar insegurança dependência indecisão passividade e fantasia excessiva levando  à fuga da realidade. A Potência Regente 2 ensina para  que a verdadeira força nasce da sensibilidade consciente",
 
-3:"Expressão e Criação. A Potência Regente 3 representa criatividade comunicação e expansão da consciência. Rege a vida pela expressão intelectual artística e emocional. No aspecto positivo manifesta alegria sociabilidade criatividade e inspiração. No aspecto negativo pode gerar dispersão vaidade instabilidade emocional e dificuldade de concluir projetos. A Potência Regente 3 ensina que criatividade precisa de disciplina para virar realização",
+1:`Influência de Iniciativa e Despertar da Autonomia. Para você, o Regente 1 da Influência representa a ação do universo conduzindo situações que estimulam iniciativa, coragem e desenvolvimento da autonomia pessoal.
 
-4:"Ordem e Estrutura. A Potência Regente 4 representa estabilidade disciplina e construção de bases sólidas. Rege a vida pelo trabalho organização e perseverança. No aspecto positivo manifesta responsabilidade pragmatismo senso de justiça e confiabilidade. No aspecto negativo pode gerar rigidez medo de mudanças e conservadorismo excessivo. A Potência Regente 4 ensina que segurança nasce da constância",
+Essa regência indica que acontecimentos externos frequentemente impulsionam você a assumir liderança, tomar decisões importantes ou iniciar novos caminhos. Muitas vezes a vida coloca diante de você circunstâncias que exigem atitude, independência e confiança na própria capacidade.
 
-5:"Sabedoria e Orientação. A Potência Regente 5 representa conhecimento ética e busca da verdade. Rege a vida pelo aprendizado experiência e orientação moral. No aspecto positivo manifesta inteligência espiritualidade e capacidade de ensinar. No aspecto negativo pode gerar dogmatismo intolerância e orgulho intelectual. A Potência Regente 5 ensina que o saber verdadeiro liberta",
+Quando essa vibração se origina da potência 10 pode indicar influências favoráveis que despertam oportunidades de crescimento pessoal.
 
-6:"Escolha e Equilíbrio Emocional. A Potência Regente 6 representa conflito entre razão e emoção necessidade de escolha e aprendizado do amor consciente. Rege a vida pelas relações afetivas. No aspecto positivo manifesta amor harmonia responsabilidade afetiva e conciliação. No aspecto negativo pode gerar indecisão ciúme dependência emocional e conflitos internos. A Potência Regente 6 ensina que amar é escolher com consciência",
+Quando se origina da potência 19 pode revelar situações que desafiam o orgulho ou a necessidade de aprender lições de humildade.
 
-7:"Vitória e Autodomínio. A Potência Regente 7 representa triunfo do espírito sobre a matéria e domínio mental. Rege a vida pela busca de equilíbrio entre razão e instinto. No aspecto positivo manifesta disciplina autoconfiança e superação. No aspecto negativo pode gerar arrogância frieza emocional e obsessão por controle. A Potência Regente 7 ensina que a verdadeira vitória é conquistar a si mesmo",
+Quando se origina da potência 28 pode indicar influências externas ligadas a disputas ou desafios que exigem firmeza de caráter.
 
-8:"Justiça e Equilíbrio Universal. A Potência Regente 8 representa lei do equilíbrio causa e efeito e justiça universal. Rege a vida pela harmonização de forças opostas. No aspecto positivo manifesta ética responsabilidade e liderança equilibrada. No aspecto negativo pode gerar fanatismo rigidez moral e autoritarismo. A Potência Regente 8 ensina que toda ação gera consequências",
+Quando se origina da potência 37 revela acontecimentos que estimulam inteligência estratégica e tomada de decisões importantes.
 
-9:"Sabedoria e Sacrifício. A Potência Regente 9 representa prudência sabedoria e renúncia. Rege a vida pelo autoconhecimento e busca de significado. No aspecto positivo manifesta maturidade espiritualidade e altruísmo. No aspecto negativo pode gerar isolamento pessimismo e apego ao passado. A Potência Regente 9 ensina que a sabedoria nasce da experiência",
+Quando se origina da potência 46 pode indicar influências ligadas ao trabalho e às conquistas materiais.
+
+Quando se origina da potência 55 revela situações que despertam desejo de liberdade e mudança.
+
+Quando se origina da potência 64 pode indicar acontecimentos inesperados que transformam sua direção de vida.
+
+Quando se origina da potência 73 revela influências que conduzem ao desenvolvimento da sabedoria interior.
+
+Quando se origina da potência 82 pode indicar situações relacionadas a poder ou responsabilidade.
+
+Quando se origina da potência 91 revela influências que conduzem à maturidade espiritual.
+
+No aspecto positivo manifesta coragem, liderança e capacidade de iniciar novos caminhos.
+
+No aspecto negativo pode gerar impulsividade ou tendência a enfrentar conflitos desnecessários.
+
+O aprendizado do Regente 1 da Influência consiste em transformar desafios externos em crescimento pessoal.`,
+
+2:`Influência de Sensibilidade e Aprendizado Emocional. Para você, o Regente 2 da Influência representa a ação do universo trazendo experiências que desenvolvem sensibilidade emocional, empatia e compreensão das relações humanas.
+
+Essa regência indica que muitas influências externas chegam até você através das relações com outras pessoas. Situações emocionais, encontros e vínculos afetivos tendem a desempenhar papel importante em seu crescimento.
+
+Quando essa vibração se origina da potência 29 pode indicar experiências emocionais intensas que despertam maturidade.
+
+Quando se origina da potência 38 revela influências que estimulam criatividade e sensibilidade artística.
+
+Quando se origina da potência 47 pode indicar situações externas ligadas à organização ou responsabilidade.
+
+Quando se origina da potência 56 revela acontecimentos que despertam iniciativa e atividade.
+
+Quando se origina da potência 65 pode indicar influências relacionadas às relações afetivas.
+
+Quando se origina da potência 74 revela experiências que exigem disciplina emocional.
+
+Quando se origina da potência 83 pode indicar influências ligadas à comunicação e ao conhecimento.
+
+Quando se origina da potência 92 revela experiências espirituais ou intuitivas.
+
+No aspecto positivo manifesta empatia, sensibilidade e compreensão das pessoas.
+
+No aspecto negativo pode gerar excesso de preocupação emocional ou tendência a absorver problemas alheios.
+
+O aprendizado do Regente 2 da Influência consiste em desenvolver equilíbrio emocional diante das experiências da vida.`,
+
+3:`Influência de Criatividade e Expansão de Ideias. Para você, o Regente 3 da Influência representa a ação do universo trazendo experiências que estimulam criatividade, comunicação e expressão intelectual.
+
+Essa regência indica que acontecimentos externos frequentemente despertam em você novas ideias, formas de expressão ou oportunidades de compartilhar pensamentos.
+
+Quando essa vibração se origina da potência 12 pode indicar experiências que transformam sua forma de pensar.
+
+Quando se origina da potência 21 revela influências sociais que estimulam crescimento intelectual.
+
+Quando se origina da potência 30 pode indicar forte inspiração criativa.
+
+Quando se origina da potência 39 revela ambientes sociais dinâmicos e comunicativos.
+
+Quando se origina da potência 48 pode indicar desafios relacionados à organização das ideias.
+
+Quando se origina da potência 57 revela acontecimentos que estimulam inteligência estratégica.
+
+Quando se origina da potência 66 pode indicar influências emocionais profundas.
+
+Quando se origina da potência 75 revela aprendizado intelectual intenso.
+
+Quando se origina da potência 84 pode indicar experiências relacionadas à responsabilidade.
+
+Quando se origina da potência 93 revela influências que conduzem à maturidade mental.
+
+No aspecto positivo manifesta criatividade, entusiasmo e inspiração intelectual.
+
+No aspecto negativo pode gerar dispersão ou excesso de estímulos mentais.
+
+O aprendizado do Regente 3 da Influência consiste em transformar inspiração em realização.`,
+
+4:`Influência de Estrutura e Construção da Vida. Para você, o Regente 4 da Influência representa a ação do universo trazendo experiências que desenvolvem disciplina, organização e construção de estabilidade.
+
+Essa regência indica que acontecimentos externos frequentemente exigem responsabilidade e esforço constante para alcançar segurança.
+
+Quando essa vibração se origina da potência 13 pode indicar transformações profundas provocadas por eventos marcantes.
+
+Quando se origina da potência 22 revela influências relacionadas a grandes responsabilidades.
+
+Quando se origina da potência 31 pode indicar estímulos ao desenvolvimento intelectual.
+
+Quando se origina da potência 40 revela períodos de reflexão ou pausa na vida.
+
+Quando se origina da potência 49 pode indicar acontecimentos intensos que provocam mudanças de visão.
+
+Quando se origina da potência 58 revela experiências ligadas ao poder material.
+
+Quando se origina da potência 67 pode indicar influências espirituais ou filosóficas.
+
+Quando se origina da potência 76 revela tendência a introspecção e estudo.
+
+Quando se origina da potência 85 pode indicar desafios relacionados à autoridade.
+
+Quando se origina da potência 94 revela transformações importantes ao longo da vida.
+
+No aspecto positivo manifesta disciplina e construção sólida.
+
+No aspecto negativo pode gerar rigidez ou excesso de responsabilidade.
+
+O aprendizado do Regente 4 da Influência consiste em construir estabilidade através da perseverança.`,
+
+5:`Influência de Mudança e Experiência. Para você, o Regente 5 da Influência representa a ação do universo trazendo acontecimentos que estimulam mudança, liberdade e diversidade de experiências.
+
+Essa regência indica que sua vida tende a ser influenciada por situações inesperadas, viagens, novos contatos ou mudanças de ambiente.
+
+Quando essa vibração se origina da potência 14 pode indicar influência de comunicação pública.
+
+Quando se origina da potência 23 revela proteção ou auxílio de pessoas influentes.
+
+Quando se origina da potência 32 pode indicar criatividade e expressão.
+
+Quando se origina da potência 41 revela estímulo à liderança.
+
+Quando se origina da potência 50 pode indicar momentos de pausa ou reflexão.
+
+Quando se origina da potência 59 revela influências espirituais.
+
+Quando se origina da potência 68 pode indicar experiências relacionadas ao poder material.
+
+Quando se origina da potência 77 revela forte busca por conhecimento.
+
+Quando se origina da potência 86 pode indicar responsabilidades intensas.
+
+Quando se origina da potência 95 revela transformações profundas.
+
+No aspecto positivo manifesta adaptação, versatilidade e espírito aventureiro.
+
+No aspecto negativo pode gerar instabilidade ou impulsividade.
+
+O aprendizado do Regente 5 da Influência consiste em transformar mudanças em crescimento.`,
+
+6:`Influência de Amor e Responsabilidade Afetiva. Para você, o Regente 6 da Influência representa a ação do universo trazendo experiências relacionadas ao amor, à família e às responsabilidades emocionais.
+
+Essa regência indica que muitas influências externas chegam através das relações afetivas.
+
+Quando essa vibração se origina da potência 15 pode indicar magnetismo emocional.
+
+Quando se origina da potência 24 revela ambientes harmoniosos.
+
+Quando se origina da potência 33 indica forte influência de generosidade e ajuda aos outros.
+
+Quando se origina da potência 42 pode indicar responsabilidades familiares.
+
+Quando se origina da potência 51 revela mudanças emocionais importantes.
+
+Quando se origina da potência 60 indica momentos de reflexão afetiva.
+
+Quando se origina da potência 69 revela profunda sensibilidade emocional.
+
+Quando se origina da potência 78 pode indicar desafios nos relacionamentos.
+
+Quando se origina da potência 87 revela aprendizado espiritual através das relações.
+
+Quando se origina da potência 96 indica maturidade emocional ao longo da vida.
+
+No aspecto positivo manifesta amor, harmonia e responsabilidade afetiva.
+
+No aspecto negativo pode gerar dependência emocional.
+
+O aprendizado do Regente 6 da Influência consiste em desenvolver equilíbrio nas relações.`,
+
+7:`Influência de Conhecimento e Despertar Espiritual. Para você, o Regente 7 da Influência representa a ação do universo trazendo experiências que despertam reflexão, busca de conhecimento e compreensão espiritual.
+
+Essa regência indica que acontecimentos externos muitas vezes conduzem você ao estudo, à introspecção ou à busca de significado mais profundo para a vida.
+
+Quando essa vibração se origina da potência 16 pode indicar eventos que provocam grandes mudanças na visão de mundo.
+
+Quando se origina da potência 25 revela sensibilidade intelectual.
+
+Quando se origina da potência 34 pode indicar criatividade mental.
+
+Quando se origina da potência 43 revela liderança intelectual.
+
+Quando se origina da potência 52 indica aprendizado através da experiência.
+
+Quando se origina da potência 61 revela sensibilidade espiritual.
+
+Quando se origina da potência 70 pode indicar períodos de recolhimento.
+
+Quando se origina da potência 79 revela intensa busca por conhecimento.
+
+Quando se origina da potência 88 pode indicar grande poder mental.
+
+Quando se origina da potência 97 revela maturidade espiritual profunda.
+
+No aspecto positivo manifesta sabedoria e compreensão profunda da vida.
+
+No aspecto negativo pode gerar isolamento ou excesso de introspecção.
+
+O aprendizado do Regente 7 da Influência consiste em transformar experiências em sabedoria.`,
+
+8:`Influência de Poder e Responsabilidade. Para você, o Regente 8 da Influência representa a ação do universo trazendo experiências ligadas ao poder, à autoridade e às responsabilidades materiais.
+
+Essa regência indica que acontecimentos externos frequentemente envolvem questões de liderança, organização ou administração de recursos.
+
+Quando essa vibração se origina da potência 17 pode indicar proteção espiritual.
+
+Quando se origina da potência 26 revela aprendizado financeiro.
+
+Quando se origina da potência 35 pode indicar inteligência estratégica.
+
+Quando se origina da potência 44 revela grande potencial de liderança.
+
+Quando se origina da potência 53 pode indicar mudanças inesperadas.
+
+Quando se origina da potência 62 revela aprendizado através das relações.
+
+Quando se origina da potência 71 indica análise profunda.
+
+Quando se origina da potência 80 revela necessidade de disciplina.
+
+Quando se origina da potência 89 pode indicar conflitos de poder.
+
+Quando se origina da potência 98 revela maturidade e compreensão das leis da vida.
+
+No aspecto positivo manifesta liderança equilibrada e capacidade administrativa.
+
+No aspecto negativo pode gerar excesso de controle ou apego ao poder.
+
+O aprendizado do Regente 8 da Influência consiste em usar o poder com responsabilidade.`,
+
+9:`Influência de Sabedoria e Experiências Universais. Para você, o Regente 9 da Influência representa a ação do universo trazendo experiências profundas que conduzem ao desenvolvimento da sabedoria e da compreensão da vida.
+
+Essa regência indica que acontecimentos externos frequentemente estimulam reflexão, maturidade e percepção espiritual.
+
+Quando essa vibração se origina da potência 18 pode indicar desafios emocionais importantes.
+
+Quando se origina da potência 27 revela sensibilidade espiritual.
+
+Quando se origina da potência 36 pode indicar criatividade emocional.
+
+Quando se origina da potência 45 revela responsabilidades importantes.
+
+Quando se origina da potência 54 pode indicar mudanças profundas.
+
+Quando se origina da potência 63 revela maturidade emocional.
+
+Quando se origina da potência 72 indica percepção intuitiva.
+
+Quando se origina da potência 81 revela liderança espiritual.
+
+Quando se origina da potência 90 pode indicar encerramento de ciclos.
+
+Quando se origina da potência 99 revela elevada consciência espiritual.
+
+No aspecto positivo manifesta sabedoria, compaixão e visão universal da vida.
+
+No aspecto negativo pode gerar desilusão ou distanciamento emocional.
+
+O aprendizado do Regente 9 da Influência consiste em transformar experiências em compreensão profunda da vida.`,
+
 
     
 11: `Força e Autodomínio
@@ -1265,8 +2273,8 @@ Essa influência pode estimular maturidade nas decisões e capacidade de reconhe
 
 <p>A potência 99 favorece conclusão, síntese e preparação para novos ciclos. A percepção central desse período envolve reconhecer os aprendizados acumulados e encerrar etapas com consciência e compreensão ampliada.</p>
 `,
-
-  };  
+};
+    
 
 // 🚨 TEXTOS SEQUÊNCIAS NEGATIVAS
 const textosSeqNegVida = {
@@ -1990,8 +2998,8 @@ destino: `
 </div>
 `
 
-};  
-
+ 
+};
 window.introsPiramides = {
 
 vida:{
@@ -2189,8 +3197,12 @@ vigencias:`<h1>⏳ O que são as Vigências do Destino?</h1>
 <p>Conhecer essas vigências ajuda a perceber quando determinados acontecimentos fazem parte de um ciclo maior de transformação. Isso permite encarar essas fases com mais consciência, compreendendo que cada período pode trazer lições e oportunidades importantes para a construção do seu caminho.</p>`
 
 },
-
 };
+
+
+
+
+
 
 
 
