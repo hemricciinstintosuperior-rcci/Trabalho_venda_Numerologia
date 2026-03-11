@@ -1992,7 +1992,80 @@ destino: `
 
 };  
 
+window.introsPiramides = {
 
+vida:{
+    regente: ` <h1> O que é um Regente?</h1>
+<p>O Regente é o coração da sua pirâmide; ele representa a força central que governa toda a sua estrutura energética durante toda a existência. Imagine o Regente como o "Sol" do seu mapa numerológico: tudo gira em torno dele. Ele define a sua identidade básica, o seu temperamento e a maneira como você se posiciona diante do mundo.</p>
+
+<p>Esta é a frequência que permanece constante, independentemente das mudanças externas ou dos ciclos temporários que você atravessa. Conhecer o seu Regente é fundamental para entender por que você reage de certas formas a determinados estímulos, funcionando como o filtro principal da sua percepção da vida.</p>
+
+<p>Quando você está em harmonia com essa energia, a vida flui com uma naturalidade impressionante e os obstáculos parecem menores. Por outro lado, agir contra a natureza do seu Regente gera um desgaste energético imenso, resultando em cansaço e frustração.</p>
+
+<p>Esta seção detalha como essa força central se manifesta na sua personalidade, revelando talentos natos e a energia que você emana de forma inconsciente para as pessoas ao seu redor, sendo a base fundamental de todo o seu magnetismo pessoal.</p>`,
+ 
+negativas:   `<h1 style="color:#d32f2f;">⚠️ O que são Sequências Negativas?</h1>
+<p>As Sequências Negativas dentro da Pirâmide Quântica não devem ser vistas como "má sorte", mas sim como padrões que indicam áreas de fricção e desafios recorrentes. Elas funcionam como alertas no seu mapa, apontando onde você tende a repetir erros, onde gasta energia de forma desnecessária ou onde possui bloqueios que impedem o seu crescimento.</p>
+
+<p>Identificar essas sequências é o primeiro passo para quebrá-las e transmutar essa energia em aprendizado consciente. Muitas vezes, essas sequências representam lições que não foram totalmente integradas no passado e se manifestam como medos irracionais ou situações difíceis que parecem se repetir ciclicamente.</p>
+
+<p>Ao compreender a natureza dessas vibrações desafiadoras, você ganha o poder da escolha. Em vez de ser uma vítima inconsciente desses padrões, você passa a ser o observador consciente que pode decidir agir de forma diferente diante dos gatilhos emocionais.</p>
+
+<p>Esta análise é essencial para quem busca uma evolução real, pois revela exatamente o que precisa ser curado e fortalecido para que os seus caminhos se abram sem resistências, permitindo que a luz da sua essência brilhe sem as interferências desses ruídos energéticos.</p>`,
+  
+ especiais: ` <h1 style="color:#b8860b;">⚡️  O que são as Sequências Especiais?</h1>
+<p>As Sequências Especiais representam ocorrências pontuais e situações específicas que se manifestam em momentos determinados da sua trajetória. Diferente do seu Regente, que é constante, essas sequências surgem como "eventos" no seu campo vibracional, sinalizando uma fase onde certas energias estarão temporariamente mais intensas e disponíveis.</p>
+
+<p>É fundamental entender que uma sequência especial não define quem você é, mas sim o que está acontecendo com você ou ao seu redor neste exato período. Elas funcionam como gatilhos de oportunidade ou de teste, exigindo uma postura diferenciada para que você possa colher os frutos dessa configuração momentânea sem se perder no excesso de intensidade que elas costumam carregar.</p>
+
+<p>Muitas vezes, essas situações surgem para acelerar processos que estavam estagnados ou para trazer à tona verdades que precisam ser encaradas. Por serem passageiras, exigem atenção plena: se você não perceber o momento em que esse portal se abre, a energia se dissipa e a situação se altera, voltando ao fluxo normal do seu mapa.</p>
+
+<p>Nesta parte do relatório, detalhamos a natureza dessa situação específica que o seu mapa apresenta agora, orientando sobre como agir enquanto essa influência estiver ativa para que você tire o melhor proveito desse evento cósmico singular.</p>`,
+  
+ financeiro: ` <h1 style="color:#2e7d32;">💰 O que são as Sequências Financeiras?</h1>
+<p>A análise da Sequência Financeira foca em uma vibração específica de manifestação material que se apresenta como uma circunstância favorável ou um desafio de fluxo em sua vida atual. Não tratamos aqui de uma condição permanente de riqueza ou escassez, mas sim de uma "janela financeira" — um momento onde a sua relação com a energia do dinheiro assume um padrão determinado.</p>
+
+<p>Esta situação financeira descrita no seu mapa indica como as energias de prosperidade estão circulando no momento. Pode representar uma fase de colheita rápida, onde os esforços passados se materializam de forma súbita, ou um período que exige uma gestão mais estratégica e cautelosa para preparar o terreno para um salto futuro. É uma fotografia do seu momento material.</p>
+
+<p>Entender essa vibração momentânea permite que você ajuste suas velas conforme o vento da prosperidade sopra. Se o momento é de expansão, você deve agir com audácia; se o momento é de consolidação, a prudência se torna sua melhor ferramenta. O segredo não está em mudar quem você é, mas em adaptar suas ações à situação financeira que os números indicam para este agora.</p>
+
+<p>Lembre-se que as situações financeiras são dinâmicas. Ao compreender a vibração que rege o seu aspecto material neste período, você ganha a clareza necessária para tomar decisões mais assertivas, evitando desperdícios e potencializando cada oportunidade de ganho que essa frequência específica está tentando manifestar.</p>`,
+  vigencias: ` <h1>⏳ O que é Vigência da Potencia numerológica? </h1>
+<p>As Vigências representam os ciclos de atuação das potências numerológicas ao longo da sua vida. Nada na natureza é estático, e com a nossa energia pessoal não seria diferente. As vigências dividem a sua trajetória em períodos específicos, cada um regido por uma vibração diferente que dita o "clima" das suas experiências.</p>
+
+<p>Existem épocas para plantar silenciosamente e épocas para colher publicamente; momentos de introspecção profunda e fases de intensa atividade social e expansão. Compreender as suas vigências atuais permite que você pare de lutar contra a correnteza do tempo universal.</p>
+
+<p>Se você está em uma vigência que pede introspecção e tenta forçar um crescimento externo agressivo, encontrará resistência e frustração. Por outro lado, se está em um ciclo de expansão e se mantém estagnado por medo, perderá oportunidades valiosas que podem não se repetir tão cedo.</p>
+
+<p>Conhecer esses períodos ajuda você a planejar o seu futuro com inteligência estratégica e paciência, sabendo exatamente quando deve acelerar seus projetos e quando deve recuar para recarregar as energias. É a arte milenar de viver em harmonia com os ritmos naturais do seu próprio destino.</p>`,
+
+},
+
+pessoal:{
+regente:"Introdução do regente da pirâmide pessoal",
+negativas:"Introdução das sequências negativas pessoais",
+especiais:"Introdução das sequências especiais pessoais",
+financeiro:"Introdução financeira pessoal",
+vigencias:"Introdução vigências pessoais"
+},
+
+social:{
+regente:"Introdução do regente da pirâmide social",
+negativas:"Introdução das sequências negativas sociais",
+especiais:"Introdução das sequências especiais sociais",
+financeiro:"Introdução financeira social",
+vigencias:"Introdução vigências sociais"
+},
+
+destino:{
+regente:"Introdução do regente da pirâmide destino",
+negativas:"Introdução das sequências negativas destino",
+especiais:"Introdução das sequências especiais destino",
+financeiro:"Introdução financeira destino",
+vigencias:"Introdução vigências destino"
+}
+
+};
 
 
 
