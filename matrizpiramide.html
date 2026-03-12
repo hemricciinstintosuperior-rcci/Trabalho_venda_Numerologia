@@ -126,6 +126,16 @@ async function verificarAcesso() {
 verificarAcesso();
 // === FIM DA ADAPTAÇÃO PARA VENDA ===
 
+// 1. Função que limpa e personaliza qualquer texto que venha do banco
+function personalizarTexto(texto) {
+    if (!texto) return "";
+    const nomeCompleto = document.getElementById("nome").value.trim();
+    const primeiroNome = nomeCompleto.split(" ")[0] || "você";
+    
+    // Procura por "de você" e troca pelo nome real do usuário em negrito
+    return texto.replace(/você/g, `<strong>${primeiroNome}</strong>`);
+}
+ 
 const mapa = { A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6,X:6, O:7,Z:7, F:8,P:8 };
 
 function valorLetra(letra){
@@ -214,22 +224,22 @@ function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt) {
     if (!posNeg || posNeg.length === 0) return "";
     let h = `<div class="box"><h2 style="color:#d32f2f;">⚠️ Sequências Negativas</h2>`;
     let gruposContados = new Set();
-    let encontrou = false;
     posNeg.forEach(p => {
         let num = linhas[p.linha][p.indice];
         let idGrupo = `neg-${num}-L${p.linha}`;
         if (!gruposContados.has(idGrupo)) {
-            encontrou = true;
             gruposContados.add(idGrupo);
             let vigencia = calcularVigenciaPorPosicao(p.linha, p.indice, crono);
+            // ADICIONADO personalizarTexto AQUI:
+            let textoFormatado = personalizarTexto(bancoTxt[num] || "Desafio vibracional detectado.");
             h += `<div style="margin-bottom:12px; border-left:4px solid #ff6b6b; padding-left:10px; text-align:left;">
                     <b style="font-size:20px;">🚫 Sequência ${num}</b><br>
-                    <small><h3>Período Crítico:</h3><h3> ${vigencia}</small><br></h3>
-                    <span style="font-size:16px; color:#000;">${bancoTxt[num] || "Desafio vibracional detectado."}</span>
+                    <small><h3>Período Crítico: ${vigencia}</h3></small>
+                    <span style="font-size:16px; color:#000;">${textoFormatado}</span>
                   </div>`;
         }
     });
-    return encontrou ? h + "</div>" : "";
+    return h + "</div>";
 }
 
 function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
@@ -245,10 +255,12 @@ function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
                     encontrou = true;
                     gruposContados.add(idImpacto);
                     let vigencia = calcularVigenciaPorPosicao(i, j, crono);
+                    // ADICIONADO personalizarTexto AQUI:
+                    let textoFormatado = personalizarTexto(bancoTxt[seq]);
                     h += `<div style="margin-bottom:12px; border-left:4px solid #b8860b; padding-left:10px; text-align:left;">
                             <b style="font-size:20px;"><h3>✨ Impacto ${seq}</b></h3>
-                            <small><h3>Período Ativo:</h3> <h3> de ${vigencia}</small></h3>
-                            <span style="font-size:16px; color:#000;">${bancoTxt[seq]}</span>
+                            <small><h3>Período Ativo: de ${vigencia}</h3></small>
+                            <span style="font-size:16px; color:#000;">${textoFormatado}</span>
                           </div>`;
                 }
             }
@@ -266,14 +278,14 @@ function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt) {
     posFin.forEach(p => {
         let idGrupo = `linha-${p.linha}-col-${p.indice}`;
         if (!gruposIdentificados.has(idGrupo)) {
-            gruposIdentificados.add(`linha-${p.linha}-col-${p.indice}`);
-            gruposIdentificados.add(`linha-${p.linha}-col-${p.indice + 1}`);
-            gruposIdentificados.add(`linha-${p.linha + 1}-col-${p.indice}`);
+            gruposIdentificados.add(idGrupo);
             let vigencia = calcularVigenciaPorPosicao(p.linha, p.indice, crono);
+            // ADICIONADO personalizarTexto AQUI:
+            let textoFormatado = personalizarTexto(bancoTxt[999] || 'Momento de colheita material.');
             h += `<div style="margin-bottom:12px; border-left:4px solid #34c759; padding-left:10px; text-align:left;">
                     <b style="font-size:20px;">✅ Sequência Financeira 99/9</b><br>
-                    <small><h3>Janela:</h3><h3>de ${vigencia}</small><br></h3>
-                    <span style="font-size:16px; color:#000;">${bancoTxt[999] || 'Momento de colheita material.'}</span>
+                    <small><h3>Janela: de ${vigencia}</h3></small>
+                    <span style="font-size:16px; color:#000;">${textoFormatado}</span>
                   </div>`;
             contadorReal++;
         }
@@ -281,126 +293,81 @@ function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt) {
     return contadorReal > 0 ? h + "</div>" : "";
 }
 
-function montarConteudoComIntros(
-linhas,
-regente,
-txtReg,
-crono,
-txtVig,
-nomePiramide,
-txtNeg,
-txtEsp,
-txtFin
-){
-
-let html = "";
-
-/* TÍTULO + PIRÂMIDE */
-
-html += `<div class="box">`;
-html += `<h2>${nomePiramide}</h2>`;
-html += desenhar(linhas, true, txtEsp);
-html += `</div>`;
 
 
-/* identifica tipo da pirâmide */
+// 2. Nova versão da montarConteudoComIntros (Ajustada para processar os textos)
+function montarConteudoComIntros(linhas, regente, txtReg, crono, txtVig, nomePiramide, txtNeg, txtEsp, txtFin) {
+    let html = "";
 
-let tipo = "vida";
-if(nomePiramide.includes("Pessoal")) tipo = "pessoal";
-if(nomePiramide.includes("Social")) tipo = "social";
-if(nomePiramide.includes("Destino")) tipo = "destino";
+    /* TÍTULO + PIRÂMIDE */
+    html += `<div class="box">`;
+    html += `<h2>${nomePiramide}</h2>`;
+    html += desenhar(linhas, true, txtEsp);
+    html += `</div>`;
 
-/* intros */
+    let tipo = "vida";
+    if(nomePiramide.includes("Pessoal")) tipo = "pessoal";
+    if(nomePiramide.includes("Social")) tipo = "social";
+    if(nomePiramide.includes("Destino")) tipo = "destino";
 
-const intro = window.introsPiramides ? window.introsPiramides[tipo] : {};
+    const intro = window.introsPiramides ? window.introsPiramides[tipo] : {};
 
+    /* REGENTE (Personalizado) */
+    if(intro.regente) {
+        html += `<div class="box">${personalizarTexto(intro.regente)}</div>`;
+    }
+    if(txtReg && txtReg[regente]) {
+        html += `<div class="box">${personalizarTexto(txtReg[regente])}</div>`;
+    }
 
-/* REGENTE */
+    /* NEGATIVAS (Personalizado dentro da função original) */
+    const relNeg = gerarRelatorioNegativasComVigencia(linhas, crono, txtNeg);
+    if(relNeg) {
+        if(intro.negativas) html += `<div class="box">${personalizarTexto(intro.negativas)}</div>`;
+        html += personalizarTexto(relNeg);
+    }
 
-if(intro.regente){
-html += `<div class="box">${intro.regente}</div>`;
+    /* ESPECIAIS (Personalizado) */
+    const relEsp = gerarRelatorioEspeciaisComVigencia(linhas, crono, txtEsp);
+    if(relEsp) {
+        if(intro.especiais) html += `<div class="box">${personalizarTexto(intro.especiais)}</div>`;
+        html += personalizarTexto(relEsp);
+    }
+
+    /* FINANCEIRO (Personalizado) */
+    const relFin = gerarRelatorioFinanceiroComVigencia(linhas, crono, txtFin);
+    if(relFin) {
+        if(intro.financeiro) html += `<div class="box">${personalizarTexto(intro.financeiro)}</div>`;
+        html += personalizarTexto(relFin);
+    }
+
+    /* VIGÊNCIAS (Personalizado) */
+    if(crono) {
+        if(intro.vigencias) html += `<div class="box">${personalizarTexto(intro.vigencias)}</div>`;
+        html += montarVigenciasSincronizadas(crono, topo(linhas[0]), txtVig);
+    }
+
+    return html;
 }
 
-if(txtReg && txtReg[regente]){
-html += `<div class="box">${txtReg[regente]}</div>`;
-}
-
-
-/* NEGATIVAS */
-
-const relNeg = gerarRelatorioNegativasComVigencia(linhas, crono, txtNeg);
-
-if(relNeg){
-
-if(intro.negativas){
-html += `<div class="box">${intro.negativas}</div>`;
-}
-
-html += relNeg;
-
-}
-
-
-/* ESPECIAIS */
-
-const relEsp = gerarRelatorioEspeciaisComVigencia(linhas, crono, txtEsp);
-
-if(relEsp){
-
-if(intro.especiais){
-html += `<div class="box">${intro.especiais}</div>`;
-}
-
-html += relEsp;
-
-}
-
-
-/* FINANCEIRO */
-
-const relFin = gerarRelatorioFinanceiroComVigencia(linhas, crono, txtFin);
-
-if(relFin){
-
-if(intro.financeiro){
-html += `<div class="box">${intro.financeiro}</div>`;
-}
-
-html += relFin;
-
-}
-
-
-/* VIGÊNCIAS */
-
-if(crono){
-
-if(intro.vigencias){
-html += `<div class="box">${intro.vigencias}</div>`;
-}
-
-html += montarVigenciasSincronizadas(crono, topo(linhas[0]), txtVig);
-
-}
-
-return html;
-
-}
-
+// 3. Nova versão da montarVigenciasSincronizadas
 function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa) {
-    let html = "<div class='box'><h1>⏳ Fluxo das Potências Quânticas</h1>";
+    let html = "<div class='box'><h2>⏳ Fluxo das Potências Quânticas</h2>";
     
     cronograma.forEach((periodo) => {
         let indiceTopo = periodo.indiceArcano % arcanosDaPiramide.length;
         let numArcano = arcanosDaPiramide[indiceTopo];
         
-        // Aqui acrescentamos o período de data (ini e fim) ao lado da idade
+        // Pega o texto e já passa pela personalização
+        let textoFinal = personalizarTexto(textosMapa[numArcano] || `<i>Interpretação da Potência ${numArcano} em análise.</i>`);
+
         html += `<div class="blocoRelatorio" style="text-align:center; border-left: 5px solid #111827;">
                  <h2 style="margin:0; color:#111827;">✡︎ Potência ${numArcano}</h2>
-                <span style="margin:0; color:#111827;"> 📅 Período: de ${periodo.ini} até ${periodo.fim} </span>
-                  <span style="color: #111827; font-weight: normal;">🔍de ${periodo.idadeIni} a ${periodo.idadeFim} anos de idade</span>
-                 </p>
-                 <p style= "font-size:18px; margin-top:5px;">${textosMapa[numArcano] || `<i>Interpretação em análise.</i>`}</p>
+                 <span style="margin:0; color:#111827;"> 📅 Período: de ${periodo.ini} até ${periodo.fim} </span><br>
+                 <span style="color: #111827; font-weight: normal;">🔍 de ${periodo.idadeIni} a ${periodo.idadeFim} anos de idade</span>
+                 <div style="font-size:18px; margin-top:15px; text-align:left; color:#333;">
+                    ${textoFinal}
+                 </div>
                  </div>`;
     });
     
@@ -506,7 +473,8 @@ function gerar() {
     const aVida = topo(base);
     const crono = gerarCronogramaMestre(aVida, data);
     
-    // Agora o montarConteudo já coloca as intros nos lugares certos individualmente
+// Agora o montarConteudo já coloca as intros nos lugares certos individualmente
+
 const htmlVida = explicacoes.principal + montarConteudoComIntros(
 pVida,
 pVida.at(-1)[0],
@@ -558,7 +526,6 @@ textosSeqEspDestino,
 textosFinDestino
 
 );
-
     document.getElementById("aba_principal").innerHTML = htmlVida;
     document.getElementById("aba_pessoal").innerHTML = htmlPessoal;
     document.getElementById("aba_social").innerHTML = htmlSocial;
@@ -591,6 +558,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
