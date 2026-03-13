@@ -127,7 +127,6 @@ verificarAcesso();
 // === FIM DA ADAPTAÇÃO PARA VENDA ===
 
 // 1. Função que limpa e personaliza qualquer texto que venha do banco
-// 1. Função que limpa e personaliza qualquer texto que venha do banco
 function personalizarTexto(texto) {
     if (!texto) return "";
     const nomeCompleto = document.getElementById("nome").value.trim();
@@ -545,7 +544,56 @@ function mostrarAba(nome){
     document.querySelectorAll('.aba').forEach(a=>a.style.display='none');
     document.getElementById("aba_"+nome).style.display="block";
 }
+function gerarSinteseFinal(v, p, s, d, bancoSintese) {
+    let h = `<div class="box" style="border: 2px solid #6366f1; background: #fdfeff;">
+                <h2 style="color:#6366f1; text-align:center; margin-bottom: 20px;">🌌 Síntese de Dinâmica Quântica</h2>`;
+    
+    let matches = [];
+    // Verificação das 6 combinações de sincronia
+    if (p === v) matches.push({id: "pessoal_vida", tit: "Sincronia Pessoal e Vida"});
+    if (s === v) matches.push({id: "social_vida", tit: "Sincronia Social e Vida"});
+    if (d === v) matches.push({id: "destino_vida", tit: "Sincronia Destino e Vida"});
+    if (p === s) matches.push({id: "pessoal_social", tit: "Sincronia Pessoal e Social"});
+    if (p === d) matches.push({id: "pessoal_destino", tit: "Sincronia Pessoal e Destino"});
+    if (s === d) matches.push({id: "social_destino", tit: "Sincronia Social e Destino"});
 
+    // 1. PARTE: CONEXÕES ESPECÍFICAS
+    if (matches.length > 0) {
+        matches.forEach(m => {
+            let txt = (bancoSintese && bancoSintese[m.id]) ? bancoSintese[m.id] : "Análise de conexão em processamento...";
+            h += `<div class="blocoRelatorio" style="border-left:5px solid #6366f1; background:#f1f5f9; padding:15px; margin-bottom:15px; border-radius: 0 8px 8px 0;">
+                    <b style="font-size:18px; color: #4338ca;">🔗 ${m.tit}</b><br>
+                    <p style="margin:8px 0 0 0; line-height:1.5;">${personalizarTexto(txt)}</p>
+                  </div>`;
+        });
+    }
+
+    // 2. PARTE: ASSINATURA GERAL (A quarta parte da síntese)
+    h += `<hr style="border:0; border-top:1px dashed #cbd5e1; margin:25px 0;">`;
+    
+    let resumoGeral = "";
+    const conjunto = new Set([v, p, s, d]);
+
+    if (conjunto.size === 1) {
+        // TODOS IGUAIS (Convergência Total)
+        resumoGeral = bancoSintese["convergencia_total"];
+    } else if (conjunto.size === 4) {
+        // TODOS DIFERENTES (Autonomia/Versatilidade)
+        resumoGeral = bancoSintese["autonomia_total"];
+    } else {
+        // MISTO
+        resumoGeral = bancoSintese["equilibrio_misto"];
+    }
+
+    h += `<div style="text-align:left; padding: 10px;">
+            <b style="font-size:20px; color:#1e293b; display:block; margin-bottom:10px;">📋 Assinatura Geral das Potências</b>
+            <div style="font-size:16px; line-height:1.7; color:#334155;">
+                ${personalizarTexto(resumoGeral || "Sua configuração de potências indica um equilíbrio dinâmico entre as áreas da sua vida.")}
+            </div>
+          </div>`;
+
+    return h + "</div>";
+}
 function gerar() {
     const nome = document.getElementById("nome").value;
     const data = document.getElementById("data").value;
@@ -553,72 +601,60 @@ function gerar() {
 
     const base = nomeNumeros(nome);
     const [y, m, d] = data.split("-").map(Number);
+    
+    // Geração das 4 Pirâmides
     const pVida = piramide(base);
+    const pPes = piramidePessoal(base, d);
+    const pSoc = piramideSocial(base, m);
+    const pDes = piramideDestino(base, d, m);
+
     const aVida = topo(base);
     const crono = gerarCronogramaMestre(aVida, data);
     
-// Agora o montarConteudo já coloca as intros nos lugares certos individualmente
+    // CAPTURA DAS POTÊNCIAS (Último número de cada pirâmide)
+    const potVida = pVida.at(-1)[0];
+    const potPessoal = pPes.at(-1)[0];
+    const potSocial = pSoc.at(-1)[0];
+    const potDestino = pDes.at(-1)[0];
 
-const htmlVida = explicacoes.principal + montarConteudoComIntros(
-pVida,
-pVida.at(-1)[0],
-textosVida,
-crono,
-textosVida,
-"Matriz da Vida",
-textosSeqNegVida,
-textosSeqEspVida,
-textosFinVida
+    // GERAÇÃO DA SÍNTESE FINAL (Injeta no início da aba principal)
+    // Nota: Verifique se 'textosSintese' está definido no seu textos.js
+    const htmlSintese = gerarSinteseFinal(potVida, potPessoal, potSocial, potDestino, window.textosSintese || {});
 
-);
+    const htmlVida = explicacoes.principal + montarConteudoComIntros(
+        pVida, potVida, textosVida, crono, textosVida, "Matriz da Vida",
+        textosSeqNegVida, textosSeqEspVida, textosFinVida
+    );
 
-const htmlPessoal = explicacoes.pessoal + montarConteudoComIntros(
-piramidePessoal(base, d),
-piramidePessoal(base, d).at(-1)[0],
-textosPessoal,
-crono,
-textosPessoal,
-"Matriz Pessoal",
-textosSeqNegPessoal,
-textosSeqEspPessoal,
-textosFinPessoal
+    const htmlPessoal = explicacoes.pessoal + montarConteudoComIntros(
+        pPes, potPessoal, textosPessoal, crono, textosPessoal, "Matriz Pessoal",
+        textosSeqNegPessoal, textosSeqEspPessoal, textosFinPessoal
+    );
 
-);
+    const htmlSocial = explicacoes.social + montarConteudoComIntros(
+        pSoc, potSocial, textosSocial, crono, textosSocial, "Matriz Social",
+        textosSeqNegSocial, textosSeqEspSocial, textosFinSocial
+    );
 
-const htmlSocial = explicacoes.social + montarConteudoComIntros(
-piramideSocial(base, m),
-piramideSocial(base, m).at(-1)[0],
-textosSocial,
-crono,
-textosSocial,
-"Matriz Social",
-textosSeqNegSocial,
-textosSeqEspSocial,
-textosFinSocial
+    const htmlDestino = explicacoes.destino + montarConteudoComIntros(
+        pDes, potDestino, textosDestino, crono, textosDestino, "Matriz de Destino",
+        textosSeqNegDestino, textosSeqEspDestino, textosFinDestino
+    );
 
-);
-
-const htmlDestino = explicacoes.destino + montarConteudoComIntros(
-piramideDestino(base, d, m),
-piramideDestino(base, d, m).at(-1)[0],
-textosDestino,
-crono,
-textosDestino,
-"Matriz de Destino",
-textosSeqNegDestino,
-textosSeqEspDestino,
-textosFinDestino
-
-);
-    document.getElementById("aba_principal").innerHTML = htmlVida;
+    // Injeção nos HTMLs das Abas (Síntese vai no topo da Principal)
+    document.getElementById("aba_principal").innerHTML = htmlSintese + htmlVida;
     document.getElementById("aba_pessoal").innerHTML = htmlPessoal;
     document.getElementById("aba_social").innerHTML = htmlSocial;
     document.getElementById("aba_destino").innerHTML = htmlDestino;
 
     localStorage.setItem("relatorioPiramide", JSON.stringify({
         nome, data: data.split("-").reverse().join("/"),
-        abaPrincipal: htmlVida, abaPessoal: htmlPessoal, abaSocial: htmlSocial, abaDestino: htmlDestino
+        abaPrincipal: htmlSintese + htmlVida, 
+        abaPessoal: htmlPessoal, 
+        abaSocial: htmlSocial, 
+        abaDestino: htmlDestino
     }));
+    
     mostrarAba('principal');
 }
 
