@@ -127,6 +127,7 @@ verificarAcesso();
 // === FIM DA ADAPTAÇÃO PARA VENDA ===
 
 // 1. Função que limpa e personaliza qualquer texto que venha do banco
+// 1. Função que limpa e personaliza qualquer texto que venha do banco
 function personalizarTexto(texto) {
     if (!texto) return "";
     const nomeCompleto = document.getElementById("nome").value.trim();
@@ -186,14 +187,25 @@ function topo(base){
     return arcanos;
 }
 
-function calcularVigenciaPorPosicao(linha, coluna, cronograma) {
-    let indiceInicio = coluna;
-    let indiceFim = coluna + linha; 
-    let periodosAfetados = cronograma.filter(p => p.indiceArcano >= indiceInicio && p.indiceArcano <= indiceFim);
-    if (periodosAfetados.length === 0) return "Fase de transição";
-    let idadeIni = periodosAfetados[0].idadeIni;
-    let idadeFim = periodosAfetados[periodosAfetados.length - 1].idadeFim;
-    return `${idadeIni} a ${idadeFim} anos`;
+// --- FUNÇÃO DE APOIO: CÁLCULO LINEAR VERTICAL ---
+function calcularVigenciaLinearVertical(coluna, tamanhoSeq, cronograma, arcanosTopo) {
+    let detalhes = [];
+    // Cada número da sequência pega a potência da sua própria coluna no topo
+    for (let i = 0; i < tamanhoSeq; i++) {
+        let indiceColuna = coluna + i;
+        let arcRef = arcanosTopo[indiceColuna]; 
+        let periodo = cronograma.find(p => p.indiceArcano === indiceColuna);
+        
+        if (periodo) {
+            detalhes.push({
+                potencia: arcRef,
+                duracao: parseInt(arcRef.toString()[0]) || 1,
+                idadeIni: periodo.idadeIni,
+                idadeFim: periodo.idadeFim
+            });
+        }
+    }
+    return detalhes;
 }
 
 function gerarCronogramaMestre(arcanosVida, data) {
@@ -220,49 +232,104 @@ function gerarCronogramaMestre(arcanosVida, data) {
 }
 
 function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt) {
-    const { posNeg } = detectarSequencias(linhas);
-    if (!posNeg || posNeg.length === 0) return "";
     let h = `<div class="box"><h2 style="color:#d32f2f;">⚠️ Sequências Negativas</h2>`;
-    let gruposContados = new Set();
-    posNeg.forEach(p => {
-        let num = linhas[p.linha][p.indice];
-        let idGrupo = `neg-${num}-L${p.linha}`;
-        if (!gruposContados.has(idGrupo)) {
-            gruposContados.add(idGrupo);
-            let vigencia = calcularVigenciaPorPosicao(p.linha, p.indice, crono);
-            // ADICIONADO personalizarTexto AQUI:
-            let textoFormatado = personalizarTexto(bancoTxt[num] || "Desafio vibracional detectado.");
-            h += `<div style="margin-bottom:12px; border-left:4px solid #ff6b6b; padding-left:10px; text-align:left;">
-                    <b style="font-size:20px;">🚫 Sequência ${num}</b><br>
-                    <small><h3>Período Crítico: ${vigencia}</h3></small>
-                    <span style="font-size:16px; color:#000;">${textoFormatado}</span>
-                  </div>`;
+    let encontrou = false;
+    const baseTopo = linhas[0]; 
+
+    linhas.forEach((linha, i) => {
+        let j = 0;
+        while (j < linha.length) {
+            let num = linha[j];
+            let cont = 1;
+            while (j + cont < linha.length && linha[j + cont] === num) {
+                cont++;
+            }
+
+            if (cont >= 3) {
+                encontrou = true;
+                let duracaoAnosTotal = 0;
+                
+                // --- O ELEVADOR CENTRALIZADO ---
+                // Calculamos o deslocamento real (offset) da pirâmide: i / 2
+                let offset = Math.floor(i / 2);
+                let indiceInicioReal = j + offset;
+                let indiceFimReal = (j + cont - 1) + offset;
+
+                // Busca as idades exatas no cronograma usando o índice real
+                let periodoInicio = crono[indiceInicioReal];
+                let periodoFim = crono[indiceFimReal];
+
+                let idadeIni = periodoInicio ? periodoInicio.idadeIni : "?";
+                let idadeFim = periodoFim ? periodoFim.idadeFim : "?";
+
+                // Soma as vigências baseadas nos Arcanos Duplos do Topo
+                for (let k = 0; k < cont; k++) {
+                    let colReal = j + offset + k;
+                    
+                    if (colReal < baseTopo.length - 1) {
+                        // Ex: baseTopo[col] = 1, baseTopo[col+1] = 3 -> Arcano "13"
+                        let n1 = baseTopo[colReal];
+                        let n2 = baseTopo[colReal + 1];
+                        let arcano = "" + n1 + n2;
+                        
+                        // Pega o 1º dígito (Ex: de "13", pega 1)
+                        duracaoAnosTotal += parseInt(arcano[0]) || 0;
+                    }
+                }
+
+                h += `<div class="blocoRelatorio" style="border-left:5px solid #ff0000; padding-left:10px; margin-bottom:20px; text-align:left;">
+                        <b style="font-size:18px;">🚫 Sequência ${num}</b><br>
+                        <span style="font-weight:bold; color:#d32f2f;">Vigência: ${duracaoAnosTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
+                        <p style="margin-top:5px;">${personalizarTexto(bancoTxt[num])}</p>
+                      </div>`;
+                
+                j += cont;
+            } else {
+                j++;
+            }
         }
     });
-    return h + "</div>";
+    return encontrou ? h + "</div>" : "";
 }
 
 function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
     let h = `<div class="box"><h2 style="color:#b8860b;">⚡️ Sequências Especiais</h2>`;
-    let gruposContados = new Set();
     let encontrou = false;
+    const baseTopo = linhas[0];
+
     linhas.forEach((linha, i) => {
+        // Percorre a linha buscando trios
         for (let j = 0; j < linha.length - 2; j++) {
             let seq = "" + linha[j] + linha[j + 1] + linha[j + 2];
+            
+            // Se o código da sequência existe no seu banco de textos
             if (bancoTxt && bancoTxt[seq]) {
-                let idImpacto = `esp-${seq}-L${i}-C${j}`;
-                if (!gruposContados.has(idImpacto)) {
-                    encontrou = true;
-                    gruposContados.add(idImpacto);
-                    let vigencia = calcularVigenciaPorPosicao(i, j, crono);
-                    // ADICIONADO personalizarTexto AQUI:
-                    let textoFormatado = personalizarTexto(bancoTxt[seq]);
-                    h += `<div style="margin-bottom:12px; border-left:4px solid #b8860b; padding-left:10px; text-align:left;">
-                            <b style="font-size:20px;"><h3>✨ Impacto ${seq}</b></h3>
-                            <small><h3>Período Ativo: de ${vigencia}</h3></small>
-                            <span style="font-size:16px; color:#000;">${textoFormatado}</span>
-                          </div>`;
+                encontrou = true;
+                let duracaoTotal = 0;
+                
+                // COMPENSAÇÃO DE PIRÂMIDE (ELEVADOR)
+                let offset = Math.floor(i / 2);
+                let indiceInicioReal = j + offset;
+                let indiceFimReal = (j + 2) + offset;
+
+                // Idades vindas do Cronograma Mestre
+                let idadeIni = crono[indiceInicioReal] ? crono[indiceInicioReal].idadeIni : "?";
+                let idadeFim = crono[indiceFimReal] ? crono[indiceFimReal].idadeFim : "?";
+
+                // Soma as potências do topo (3 colunas de largura)
+                for (let k = 0; k < 3; k++) {
+                    let colReal = j + offset + k;
+                    if (colReal < baseTopo.length - 1) {
+                        let arcano = "" + baseTopo[colReal] + baseTopo[colReal + 1];
+                        duracaoTotal += parseInt(arcano[0]) || 0;
+                    }
                 }
+
+                h += `<div class="blocoRelatorio" style="border-left:5px solid #b8860b; padding-left:10px; margin-bottom:20px;">
+                        <b style="font-size:18px;">✨ Impacto ${seq}</b><br>
+                        <span style="font-weight:bold; color:#b8860b;">Vigência: ${duracaoTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
+                        <p style="margin-top:5px;">${personalizarTexto(bancoTxt[seq])}</p>
+                      </div>`;
             }
         }
     });
@@ -270,29 +337,46 @@ function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
 }
 
 function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt) {
-    const posFin = detectarSequenciaFinanceira(linhas);
-    if (!posFin || posFin.length === 0) return "";
-    let h = `<div class="box"><h2 style="color:#2e7d32;">💰 Fluxo financeiro</h2>`;
-    let gruposIdentificados = new Set();
-    let contadorReal = 0;
-    posFin.forEach(p => {
-        let idGrupo = `linha-${p.linha}-col-${p.indice}`;
-        if (!gruposIdentificados.has(idGrupo)) {
-            gruposIdentificados.add(idGrupo);
-            let vigencia = calcularVigenciaPorPosicao(p.linha, p.indice, crono);
-            // ADICIONADO personalizarTexto AQUI:
-            let textoFormatado = personalizarTexto(bancoTxt[999] || 'Momento de colheita material.');
-            h += `<div style="margin-bottom:12px; border-left:4px solid #34c759; padding-left:10px; text-align:left;">
-                    <b style="font-size:20px;">✅ Sequência Financeira 99/9</b><br>
-                    <small><h3>Janela: de ${vigencia}</h3></small>
-                    <span style="font-size:16px; color:#000;">${textoFormatado}</span>
-                  </div>`;
-            contadorReal++;
+    let h = `<div class="box"><h2 style="color:#2e7d32;">💰 Fluxo Financeiro</h2>`;
+    let encontrou = false;
+    const baseTopo = linhas[0];
+
+    linhas.forEach((linha, i) => {
+        // O financeiro foca no par "99" (2 colunas)
+        for (let j = 0; j < linha.length - 1; j++) {
+            if (linha[j] === 9 && linha[j + 1] === 9) {
+                // Opcional: verificar se existe um 9 abaixo (pode ser adicionado se necessário)
+                
+                encontrou = true;
+                let duracaoTotal = 0;
+                
+                // COMPENSAÇÃO DE PIRÂMIDE (ELEVADOR)
+                let offset = Math.floor(i / 2);
+                let indiceInicioReal = j + offset;
+                let indiceFimReal = (j + 1) + offset;
+
+                let idadeIni = crono[indiceInicioReal] ? crono[indiceInicioReal].idadeIni : "?";
+                let idadeFim = crono[indiceFimReal] ? crono[indiceFimReal].idadeFim : "?";
+
+                // Soma as potências do topo (2 colunas de largura para o 99)
+                for (let k = 0; k < 2; k++) {
+                    let colReal = j + offset + k;
+                    if (colReal < baseTopo.length - 1) {
+                        let arcano = "" + baseTopo[colReal] + baseTopo[colReal + 1];
+                        duracaoTotal += parseInt(arcano[0]) || 0;
+                    }
+                }
+
+                h += `<div class="blocoRelatorio" style="border-left:5px solid #2e7d32; padding-left:10px; margin-bottom:20px;">
+                        <b style="font-size:18px;">✅ Sequência Financeira 99/9</b><br>
+                        <span style="font-weight:bold; color:#2e7d32;">Vigência: ${duracaoTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
+                        <p style="margin-top:5px;">${personalizarTexto(bancoTxt[999] || "Momento de prosperidade e fluxo financeiro.")}</p>
+                      </div>`;
+            }
         }
     });
-    return contadorReal > 0 ? h + "</div>" : "";
+    return encontrou ? h + "</div>" : "";
 }
-
 
 
 // 2. Nova versão da montarConteudoComIntros (Ajustada para processar os textos)
@@ -558,6 +642,7 @@ document.onselectstart=()=>false;
 </script> 
 </body>
 </html>
+
 
 
 
