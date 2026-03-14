@@ -1,16 +1,17 @@
-self.addEventListener("install", e => {
-  e.waitUntil(
-    caches.open("app-mapa").then(cache => {
-      return cache.addAll([
-        "index.html",
-        "manifest.json"
-      ]);
-    })
-  );
-});
-
-self.addEventListener("fetch", e => {
-  e.respondWith(
-    caches.match(e.request).then(resp => resp || fetch(e.request))
-  );
-});
+{
+  "name": "Portal Numerológico Premium",
+  "short_name": "Portal Num",
+  "description": "Acesse seus mapas e estudos numerológicos",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#030202",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "icone-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
