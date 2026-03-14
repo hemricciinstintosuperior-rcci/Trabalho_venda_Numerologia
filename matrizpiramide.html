@@ -137,8 +137,15 @@ function personalizarTexto(texto) {
     const nomeCompleto = document.getElementById("nome").value.trim();
     const primeiroNome = nomeCompleto.split(" ")[0] || "você";
     
-    // Procura por "de você" e troca pelo nome real do usuário em negrito
-    return texto.replace(/você/g, `<strong>${primeiroNome}</strong>`);
+    let processado = texto.replace(/você/g, `<strong>${primeiroNome}</strong>`);
+    
+    // Divide o texto por quebras de linha e cria parágrafos reais
+    return processado.split('\n').map(paragrafo => {
+        if(paragrafo.trim().length > 0) {
+            return `<p style="text-align: left;">${paragrafo}</p>`;
+        }
+        return "";
+    }).join("");
 }
  
 const mapa = { A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6,X:6, O:7,Z:7, F:8,P:8 };
@@ -238,7 +245,7 @@ function gerarCronogramaMestre(arcanosVida, data) {
 // --- NEGATIVAS ---
 // --- SEQUÊNCIAS NEGATIVAS (Agora lê o topo) ---
 function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt, topoVida) {
-    let h = `<div class="box"><h2 style="color:#d32f2f;">⚠️ Vulnerabilidade e Insegurança</h2>`;
+    let h = `<div class="blocoRelatorio"><h2 style="color:#d32f2f;">⚠️ Vulnerabilidade e Insegurança</h2>`;
     let encontrou = false;
     
     linhas.forEach((linha, i) => {
@@ -279,7 +286,7 @@ function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt, topoVida) {
 
 // --- SEQUÊNCIAS ESPECIAIS (Agora lê o topo) ---
 function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt, topoVida) {
-    let h = `<div class="box"><h2 style="color:#b8860b;">⚡️ Sequências Especiais</h2>`;
+    let h = `<div class="blocoRelatorio"><h2 style="color:#b8860b;">⚡️ Sequências Especiais</h2>`;
     let encontrou = false;
     
     linhas.forEach((linha, i) => {
@@ -315,7 +322,7 @@ function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt, topoVida) {
 
 // --- FLUXO FINANCEIRO (Agora lê o topo) ---
 function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt, topoVida) {
-    let h = `<div class="box"><h2 style="color:#2e7d32;">💰 Fluxo Financeiro</h2>`;
+    let h = `<div class="blocoRelatorio"><h2 style="color:#2e7d32;">💰 Fluxo Financeiro</h2>`;
     let encontrou = false;
     
     linhas.forEach((linha, i) => {
@@ -356,7 +363,7 @@ function montarConteudoComIntros(linhas, regente, txtReg, crono, txtVig, nomePir
     const intro = window.introsPiramides ? window.introsPiramides[tipo] : {};
 
     if(intro.regente) html += `<div>${personalizarTexto(intro.regente)}</div>`;
-    if(txtReg && txtReg[regente]) html += `<div class="box">${personalizarTexto(txtReg[regente])}</div>`;
+    if(txtReg && txtReg[regente]) html += `<div class="blocoRelatorio">${personalizarTexto(txtReg[regente])}</div>`;
 
     const relNeg = gerarRelatorioNegativasComVigencia(linhas, crono, txtNeg, topoVida);
     if(relNeg) {
@@ -385,7 +392,7 @@ function montarConteudoComIntros(linhas, regente, txtReg, crono, txtVig, nomePir
 
 // 3. Nova versão da montarVigenciasSincronizadas
 function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa) {
-    let html = "<div class='box'><h2>⏳ Fluxo das Potências Quânticas</h2>";
+    let html = "<div class='blocoRelatorio'><h2>⏳ Fluxo das Potências Quânticas</h2>";
     
     cronograma.forEach((periodo) => {
         // Pega o arcano correspondente ao índice, ou o último se passar do tamanho
