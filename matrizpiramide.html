@@ -124,8 +124,6 @@ async function verificarAcesso() {
     } catch (e) { console.error("Erro Firebase"); }
 }
 verificarAcesso();
-// === FIM DA ADAPTAÇÃO PARA VENDA ===
-
 // 1. Função que limpa e personaliza qualquer texto que venha do banco
 function personalizarTexto(texto) {
     if (!texto) return "";
@@ -346,7 +344,7 @@ function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt, topoVida) 
 
 // 2. Nova versão da montarConteudoComIntros (Ajustada para processar os textos)
 function montarConteudoComIntros(linhas, regente, txtReg, crono, txtVig, nomePiramide, txtNeg, txtEsp, txtFin, topoVida) {
-    let html = `<div class="box"><h2>${nomePiramide}</h2>` + desenhar(linhas, true, txtEsp) + `</div>`;
+    let html = `<div class="blocoRelatorio"><h2>${nomePiramide}</h2>` + desenhar(linhas, true, txtEsp) + `</div>`;
     let tipo = nomePiramide.toLowerCase().includes("vida") ? "vida" : (nomePiramide.toLowerCase().includes("pessoal") ? "pessoal" : (nomePiramide.toLowerCase().includes("social") ? "social" : "destino"));
     const intro = window.introsPiramides ? window.introsPiramides[tipo] : {};
 
@@ -389,7 +387,7 @@ function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa)
         
         let textoFinal = personalizarTexto(textosMapa[numArcano] || `Interpretação da Potência ${numArcano} em análise.`);
 
-          html += `<div class="blocoRelatorio" style="text-align:center; border-left: 5px solid #111827;">
+         html += `<div class="blocoRelatorio" style="text-align:center; border-left: 5px solid #111827;">
                  <h2 style="margin:0; color:#111827;">✡︎ Potência ${numArcano}</h2>
                  <span style="margin:0; color:#111827;"> 📅 Período: de ${periodo.ini} até ${periodo.fim} </span><br>
                  <span style="color: #111827; font-weight: normal;">🔍 de ${periodo.idadeIni} a ${periodo.idadeFim} anos de idade</span>
@@ -490,7 +488,7 @@ function mostrarAba(nome){
     document.getElementById("aba_"+nome).style.display="block";
 }
 function gerarSinteseFinal(v, p, s, d, bancoSintese) {
-    let h = `<div class="box" style="border: 2px solid #6366f1; background: #fdfeff;">
+    let h = `<div class="blocoRelatorio" style="border: 2px solid #6366f1; background: #fdfeff;">
                 <h2 style="color:#6366f1; text-align:center; margin-bottom: 20px;">👑 Síntese de Dinâmica Quântica 👑</h2>`;
     
     let matches = [];
