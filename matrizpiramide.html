@@ -230,104 +230,77 @@ function gerarCronogramaMestre(arcanosVida, data) {
     return cronograma;
 }
 
-function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt) {
-    let h = `<div class="box"><h2 style="color:#d32f2f;">⚠️ Sequências Negativas</h2>`;
+// --- NEGATIVAS ---
+// --- SEQUÊNCIAS NEGATIVAS (Agora lê o topo) ---
+function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt, topoVida) {
+    let h = `<div class="box"><h2 style="color:#d32f2f;">⚠️ Vulnerabilidade e Insegurança</h2>`;
     let encontrou = false;
-    const baseTopo = linhas[0]; 
-
+    
     linhas.forEach((linha, i) => {
+        // REMOVIDO: if (i === 0) return; -> Agora ele lê a linha 0 (o topo)
         let j = 0;
         while (j < linha.length) {
             let num = linha[j];
             let cont = 1;
-            while (j + cont < linha.length && linha[j + cont] === num) {
-                cont++;
-            }
-
+            while (j + cont < linha.length && linha[j + cont] === num) { cont++; }
+            
             if (cont >= 3) {
                 encontrou = true;
-                let duracaoAnosTotal = 0;
-                
-                // --- O ELEVADOR CENTRALIZADO ---
-                // Calculamos o deslocamento real (offset) da pirâmide: i / 2
+                let duracaoTotal = 0;
                 let offset = Math.floor(i / 2);
-                let indiceInicioReal = j + offset;
-                let indiceFimReal = (j + cont - 1) + offset;
-
-                // Busca as idades exatas no cronograma usando o índice real
-                let periodoInicio = crono[indiceInicioReal];
-                let periodoFim = crono[indiceFimReal];
-
-                let idadeIni = periodoInicio ? periodoInicio.idadeIni : "?";
-                let idadeFim = periodoFim ? periodoFim.idadeFim : "?";
-
-                // Soma as vigências baseadas nos Arcanos Duplos do Topo
+                
                 for (let k = 0; k < cont; k++) {
                     let colReal = j + offset + k;
-                    
-                    if (colReal < baseTopo.length - 1) {
-                        // Ex: baseTopo[col] = 1, baseTopo[col+1] = 3 -> Arcano "13"
-                        let n1 = baseTopo[colReal];
-                        let n2 = baseTopo[colReal + 1];
-                        let arcano = "" + n1 + n2;
-                        
-                        // Pega o 1º dígito (Ex: de "13", pega 1)
-                        duracaoAnosTotal += parseInt(arcano[0]) || 0;
+                    if (colReal < topoVida.length) {
+                        duracaoTotal += parseInt(topoVida[colReal].toString()[0]) || 0;
                     }
                 }
-
-                h += `<div class="blocoRelatorio" style="border-left:5px solid #ff0000; padding-left:10px; margin-bottom:20px; text-align:left;">
-                        <b style="font-size:18px;">🚫 Sequência ${num}</b><br>
-                        <span style="font-weight:bold; color:#d32f2f;">Vigência: ${duracaoAnosTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
-                        <p style="margin-top:5px;">${personalizarTexto(bancoTxt[num])}</p>
-                      </div>`;
                 
+                let periodo = crono[j + offset] || crono[0];
+                let idadeIni = periodo.idadeIni;
+                let idadeFim = idadeIni + duracaoTotal;
+                
+                h += `<div class="blocoRelatorio" style="border-left:5px solid #ff0000; padding-left:10px; margin-bottom:20px;">
+                        <b style="font-size:18px;">🚫 Sequência ${num}</b><br>
+                        <span style="font-weight:bold; color:#d32f2f;">Vigência: ${duracaoTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
+                        <p>${personalizarTexto(bancoTxt[num])}</p>
+                      </div>`;
                 j += cont;
-            } else {
-                j++;
-            }
+            } else { j++; }
         }
     });
     return encontrou ? h + "</div>" : "";
 }
 
-function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
+// --- SEQUÊNCIAS ESPECIAIS (Agora lê o topo) ---
+function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt, topoVida) {
     let h = `<div class="box"><h2 style="color:#b8860b;">⚡️ Sequências Especiais</h2>`;
     let encontrou = false;
-    const baseTopo = linhas[0];
-
+    
     linhas.forEach((linha, i) => {
-        // Percorre a linha buscando trios
+        // REMOVIDO: if (i === 0) return; -> Agora processa o topo também
         for (let j = 0; j < linha.length - 2; j++) {
             let seq = "" + linha[j] + linha[j + 1] + linha[j + 2];
-            
-            // Se o código da sequência existe no seu banco de textos
             if (bancoTxt && bancoTxt[seq]) {
                 encontrou = true;
                 let duracaoTotal = 0;
-                
-                // COMPENSAÇÃO DE PIRÂMIDE (ELEVADOR)
                 let offset = Math.floor(i / 2);
-                let indiceInicioReal = j + offset;
-                let indiceFimReal = (j + 2) + offset;
-
-                // Idades vindas do Cronograma Mestre
-                let idadeIni = crono[indiceInicioReal] ? crono[indiceInicioReal].idadeIni : "?";
-                let idadeFim = crono[indiceFimReal] ? crono[indiceFimReal].idadeFim : "?";
-
-                // Soma as potências do topo (3 colunas de largura)
+                
                 for (let k = 0; k < 3; k++) {
                     let colReal = j + offset + k;
-                    if (colReal < baseTopo.length - 1) {
-                        let arcano = "" + baseTopo[colReal] + baseTopo[colReal + 1];
-                        duracaoTotal += parseInt(arcano[0]) || 0;
+                    if (colReal < topoVida.length) {
+                        duracaoTotal += parseInt(topoVida[colReal].toString()[0]) || 0;
                     }
                 }
-
+                
+                let periodo = crono[j + offset] || crono[0];
+                let idadeIni = periodo.idadeIni;
+                let idadeFim = idadeIni + duracaoTotal;
+                
                 h += `<div class="blocoRelatorio" style="border-left:5px solid #b8860b; padding-left:10px; margin-bottom:20px;">
                         <b style="font-size:18px;">✨ Impacto ${seq}</b><br>
                         <span style="font-weight:bold; color:#b8860b;">Vigência: ${duracaoTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
-                        <p style="margin-top:5px;">${personalizarTexto(bancoTxt[seq])}</p>
+                        <p>${personalizarTexto(bancoTxt[seq])}</p>
                       </div>`;
             }
         }
@@ -335,41 +308,34 @@ function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt) {
     return encontrou ? h + "</div>" : "";
 }
 
-function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt) {
+// --- FLUXO FINANCEIRO (Agora lê o topo) ---
+function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt, topoVida) {
     let h = `<div class="box"><h2 style="color:#2e7d32;">💰 Fluxo Financeiro</h2>`;
     let encontrou = false;
-    const baseTopo = linhas[0];
-
+    
     linhas.forEach((linha, i) => {
-        // O financeiro foca no par "99" (2 colunas)
+        // REMOVIDO: if (i === 0) return; -> O topo pode ter sequências 99
         for (let j = 0; j < linha.length - 1; j++) {
             if (linha[j] === 9 && linha[j + 1] === 9) {
-                // Opcional: verificar se existe um 9 abaixo (pode ser adicionado se necessário)
-                
                 encontrou = true;
                 let duracaoTotal = 0;
-                
-                // COMPENSAÇÃO DE PIRÂMIDE (ELEVADOR)
                 let offset = Math.floor(i / 2);
-                let indiceInicioReal = j + offset;
-                let indiceFimReal = (j + 1) + offset;
-
-                let idadeIni = crono[indiceInicioReal] ? crono[indiceInicioReal].idadeIni : "?";
-                let idadeFim = crono[indiceFimReal] ? crono[indiceFimReal].idadeFim : "?";
-
-                // Soma as potências do topo (2 colunas de largura para o 99)
+                
                 for (let k = 0; k < 2; k++) {
                     let colReal = j + offset + k;
-                    if (colReal < baseTopo.length - 1) {
-                        let arcano = "" + baseTopo[colReal] + baseTopo[colReal + 1];
-                        duracaoTotal += parseInt(arcano[0]) || 0;
+                    if (colReal < topoVida.length) {
+                        duracaoTotal += parseInt(topoVida[colReal].toString()[0]) || 0;
                     }
                 }
-
+                
+                let periodo = crono[j + offset] || crono[0];
+                let idadeIni = periodo.idadeIni;
+                let idadeFim = idadeIni + duracaoTotal;
+                
                 h += `<div class="blocoRelatorio" style="border-left:5px solid #2e7d32; padding-left:10px; margin-bottom:20px;">
                         <b style="font-size:18px;">✅ Sequência Financeira 99/9</b><br>
                         <span style="font-weight:bold; color:#2e7d32;">Vigência: ${duracaoTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
-                        <p style="margin-top:5px;">${personalizarTexto(bancoTxt[999] || "Momento de prosperidade e fluxo financeiro.")}</p>
+                        <p>${personalizarTexto(bancoTxt[999])}</p>
                       </div>`;
             }
         }
@@ -379,57 +345,36 @@ function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt) {
 
 
 // 2. Nova versão da montarConteudoComIntros (Ajustada para processar os textos)
-function montarConteudoComIntros(linhas, regente, txtReg, crono, txtVig, nomePiramide, txtNeg, txtEsp, txtFin) {
-    let html = "";
-
-    /* TÍTULO + PIRÂMIDE */
-    html += `<div class="box">`;
-    html += `<h2>${nomePiramide}</h2>`;
-    html += desenhar(linhas, true, txtEsp);
-    html += `</div>`;
-
-    let tipo = "vida";
-    if(nomePiramide.includes("Pessoal")) tipo = "pessoal";
-    if(nomePiramide.includes("Social")) tipo = "social";
-    if(nomePiramide.includes("Destino")) tipo = "destino";
-
+function montarConteudoComIntros(linhas, regente, txtReg, crono, txtVig, nomePiramide, txtNeg, txtEsp, txtFin, topoVida) {
+    let html = `<div class="box"><h2>${nomePiramide}</h2>` + desenhar(linhas, true, txtEsp) + `</div>`;
+    let tipo = nomePiramide.toLowerCase().includes("vida") ? "vida" : (nomePiramide.toLowerCase().includes("pessoal") ? "pessoal" : (nomePiramide.toLowerCase().includes("social") ? "social" : "destino"));
     const intro = window.introsPiramides ? window.introsPiramides[tipo] : {};
 
-    /* REGENTE (Personalizado) */
-    if(intro.regente) {
-        html += `<div class="box">${personalizarTexto(intro.regente)}</div>`;
-    }
-    if(txtReg && txtReg[regente]) {
-        html += `<div class="box">${personalizarTexto(txtReg[regente])}</div>`;
-    }
+    if(intro.regente) html += `<div>${personalizarTexto(intro.regente)}</div>`;
+    if(txtReg && txtReg[regente]) html += `<div class="box">${personalizarTexto(txtReg[regente])}</div>`;
 
-    /* NEGATIVAS (Personalizado dentro da função original) */
-    const relNeg = gerarRelatorioNegativasComVigencia(linhas, crono, txtNeg);
+    const relNeg = gerarRelatorioNegativasComVigencia(linhas, crono, txtNeg, topoVida);
     if(relNeg) {
-        if(intro.negativas) html += `<div class="box">${personalizarTexto(intro.negativas)}</div>`;
-        html += personalizarTexto(relNeg);
+        if(intro.negativas) html += `<div>${personalizarTexto(intro.negativas)}</div>`;
+        html += relNeg;
     }
 
-    /* ESPECIAIS (Personalizado) */
-    const relEsp = gerarRelatorioEspeciaisComVigencia(linhas, crono, txtEsp);
+    const relEsp = gerarRelatorioEspeciaisComVigencia(linhas, crono, txtEsp, topoVida);
     if(relEsp) {
-        if(intro.especiais) html += `<div class="box">${personalizarTexto(intro.especiais)}</div>`;
-        html += personalizarTexto(relEsp);
+        if(intro.especiais) html += `<div>${personalizarTexto(intro.especiais)}</div>`;
+        html += relEsp;
     }
 
-    /* FINANCEIRO (Personalizado) */
-    const relFin = gerarRelatorioFinanceiroComVigencia(linhas, crono, txtFin);
+    const relFin = gerarRelatorioFinanceiroComVigencia(linhas, crono, txtFin, topoVida);
     if(relFin) {
-        if(intro.financeiro) html += `<div class="box">${personalizarTexto(intro.financeiro)}</div>`;
-        html += personalizarTexto(relFin);
+        if(intro.financeiro) html += `<div>${personalizarTexto(intro.financeiro)}</div>`;
+        html += relFin;
     }
 
-    /* VIGÊNCIAS (Personalizado) */
     if(crono) {
-        if(intro.vigencias) html += `<div class="box">${personalizarTexto(intro.vigencias)}</div>`;
+        if(intro.vigencias) html += `<div>${personalizarTexto(intro.vigencias)}</div>`;
         html += montarVigenciasSincronizadas(crono, topo(linhas[0]), txtVig);
     }
-
     return html;
 }
 
@@ -438,16 +383,15 @@ function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa)
     let html = "<div class='box'><h2>⏳ Fluxo das Potências Quânticas</h2>";
     
     cronograma.forEach((periodo) => {
-        let indiceTopo = periodo.indiceArcano % arcanosDaPiramide.length;
-        let numArcano = arcanosDaPiramide[indiceTopo];
+        // Pega o arcano correspondente ao índice, ou o último se passar do tamanho
+        let idx = periodo.indiceArcano;
+        let numArcano = arcanosDaPiramide[idx] || arcanosDaPiramide[arcanosDaPiramide.length - 1];
         
-        // Pega o texto e já passa pela personalização
-        let textoFinal = personalizarTexto(textosMapa[numArcano] || `<i>Interpretação da Potência ${numArcano} em análise.</i>`);
+        let textoFinal = personalizarTexto(textosMapa[numArcano] || `Interpretação da Potência ${numArcano} em análise.`);
 
         html += `<div class="blocoRelatorio" style="text-align:center; border-left: 5px solid #111827;">
                  <h2 style="margin:0; color:#111827;">✡︎ Potência ${numArcano}</h2>
-                 <span style="margin:0; color:#111827;"> 📅 Período: de ${periodo.ini} até ${periodo.fim} </span><br>
-                 <span style="color: #111827; font-weight: normal;">🔍 de ${periodo.idadeIni} a ${periodo.idadeFim} anos de idade</span>
+                 <span style="margin:0; color:#111827;"> 📅 de ${periodo.idadeIni} a ${periodo.idadeFim} anos </span>
                  <div style="font-size:18px; margin-top:15px; text-align:left; color:#333;">
                     ${textoFinal}
                  </div>
@@ -546,7 +490,7 @@ function mostrarAba(nome){
 }
 function gerarSinteseFinal(v, p, s, d, bancoSintese) {
     let h = `<div class="box" style="border: 2px solid #6366f1; background: #fdfeff;">
-                <h2 style="color:#6366f1; text-align:center; margin-bottom: 20px;">🌌 Síntese de Dinâmica Quântica</h2>`;
+                <h2 style="color:#6366f1; text-align:center; margin-bottom: 20px;">👑 Síntese de Dinâmica Quântica 👑</h2>`;
     
     let matches = [];
     // Verificação das 6 combinações de sincronia
@@ -557,7 +501,7 @@ function gerarSinteseFinal(v, p, s, d, bancoSintese) {
     if (p === d) matches.push({id: "pessoal_destino", tit: "Sincronia Pessoal e Destino"});
     if (s === d) matches.push({id: "social_destino", tit: "Sincronia Social e Destino"});
 
-    // 1. PARTE: CONEXÕES ESPECÍFICAS
+    // 1. PARTE: CONEXÕES ESPECÍFICAS (As que geram os emojis grandes)
     if (matches.length > 0) {
         matches.forEach(m => {
             let txt = (bancoSintese && bancoSintese[m.id]) ? bancoSintese[m.id] : "Análise de conexão em processamento...";
@@ -568,27 +512,36 @@ function gerarSinteseFinal(v, p, s, d, bancoSintese) {
         });
     }
 
-    // 2. PARTE: ASSINATURA GERAL (A quarta parte da síntese)
+    // 2. PARTE: ASSINATURA GERAL PERSONALIZADA
     h += `<hr style="border:0; border-top:1px dashed #cbd5e1; margin:25px 0;">`;
     
-    let resumoGeral = "";
     const conjunto = new Set([v, p, s, d]);
+    let resumoGeral = "";
+    let detalhesMistos = "";
 
     if (conjunto.size === 1) {
-        // TODOS IGUAIS (Convergência Total)
         resumoGeral = bancoSintese["convergencia_total"];
     } else if (conjunto.size === 4) {
-        // TODOS DIFERENTES (Autonomia/Versatilidade)
         resumoGeral = bancoSintese["autonomia_total"];
     } else {
-        // MISTO
+        // EQUILÍBRIO MISTO - Aqui entra a sua personalização!
         resumoGeral = bancoSintese["equilibrio_misto"];
+        
+        // Adiciona detalhes específicos baseados no que deu igual
+        if (p === s) detalhesMistos += bancoSintese["misto_pessoal_social"] || "";
+        if (p === d) detalhesMistos += bancoSintese["misto_pessoal_destino"] || "";
+        if (p === v) detalhesMistos += bancoSintese["misto_pessoal_vida"] || "";
+        if (s === d) detalhesMistos += bancoSintese["misto_social_destino"] || "";
     }
 
     h += `<div style="text-align:left; padding: 10px;">
             <b style="font-size:20px; color:#1e293b; display:block; margin-bottom:10px;">📋 Assinatura Geral das Potências</b>
             <div style="font-size:16px; line-height:1.7; color:#334155;">
-                ${personalizarTexto(resumoGeral || "Sua configuração de potências indica um equilíbrio dinâmico entre as áreas da sua vida.")}
+                ${personalizarTexto(resumoGeral)}
+                <div style="margin-top:20px; padding:10px; border:1px solid #e2e8f0; border-radius:8px; background:#fff;">
+                    <b style="color:#6366f1;">Análise de Fluxos Combinados:</b>
+                    ${personalizarTexto(detalhesMistos || "<p>Suas potências operam de forma independente, garantindo versatilidade em sua jornada.</p>")}
+                </div>
             </div>
           </div>`;
 
@@ -602,46 +555,31 @@ function gerar() {
     const base = nomeNumeros(nome);
     const [y, m, d] = data.split("-").map(Number);
     
-    // Geração das 4 Pirâmides
+    // 1. GERA A PIRÂMIDE DA VIDA PRIMEIRO PARA PEGAR O TOPO MESTRE
     const pVida = piramide(base);
+    const topoVidaMestre = topo(pVida[0]); 
+
+    // 2. GERA AS OUTRAS PIRÂMIDES (ELAS MANTÊM SEUS NÚMEROS PRÓPRIOS)
     const pPes = piramidePessoal(base, d);
     const pSoc = piramideSocial(base, m);
     const pDes = piramideDestino(base, d, m);
 
-    const aVida = topo(base);
-    const crono = gerarCronogramaMestre(aVida, data);
+    // 3. CRONOGRAMA ÚNICO BASEADO NO TOPO DA VIDA
+    const cronoMestre = gerarCronogramaMestre(topoVidaMestre, data);
     
-    // CAPTURA DAS POTÊNCIAS (Último número de cada pirâmide)
     const potVida = pVida.at(-1)[0];
     const potPessoal = pPes.at(-1)[0];
     const potSocial = pSoc.at(-1)[0];
     const potDestino = pDes.at(-1)[0];
 
-    // GERAÇÃO DA SÍNTESE FINAL (Injeta no início da aba principal)
-    // Nota: Verifique se 'textosSintese' está definido no seu textos.js
     const htmlSintese = gerarSinteseFinal(potVida, potPessoal, potSocial, potDestino, window.textosSintese || {});
 
-    const htmlVida = explicacoes.principal + montarConteudoComIntros(
-        pVida, potVida, textosVida, crono, textosVida, "Matriz da Vida",
-        textosSeqNegVida, textosSeqEspVida, textosFinVida
-    );
+    // 4. MONTAGEM: TODAS AS MATRIZES USAM 'cronoMestre' E 'topoVidaMestre'
+    const htmlVida = (explicacoes.principal || "") + montarConteudoComIntros(pVida, potVida, textosVida, cronoMestre, textosVida, "Matriz da Vida", textosSeqNegVida, textosSeqEspVida, textosFinVida, topoVidaMestre);
+    const htmlPessoal = (explicacoes.pessoal || "") + montarConteudoComIntros(pPes, potPessoal, textosPessoal, cronoMestre, textosPessoal, "Matriz Pessoal", textosSeqNegPessoal, textosSeqEspPessoal, textosFinPessoal, topoVidaMestre);
+    const htmlSocial = (explicacoes.social || "") + montarConteudoComIntros(pSoc, potSocial, textosSocial, cronoMestre, textosSocial, "Matriz Social", textosSeqNegSocial, textosSeqEspSocial, textosFinSocial, topoVidaMestre);
+    const htmlDestino = (explicacoes.destino || "") + montarConteudoComIntros(pDes, potDestino, textosDestino, cronoMestre, textosDestino, "Matriz de Destino", textosSeqNegDestino, textosSeqEspDestino, textosFinDestino, topoVidaMestre);
 
-    const htmlPessoal = explicacoes.pessoal + montarConteudoComIntros(
-        pPes, potPessoal, textosPessoal, crono, textosPessoal, "Matriz Pessoal",
-        textosSeqNegPessoal, textosSeqEspPessoal, textosFinPessoal
-    );
-
-    const htmlSocial = explicacoes.social + montarConteudoComIntros(
-        pSoc, potSocial, textosSocial, crono, textosSocial, "Matriz Social",
-        textosSeqNegSocial, textosSeqEspSocial, textosFinSocial
-    );
-
-    const htmlDestino = explicacoes.destino + montarConteudoComIntros(
-        pDes, potDestino, textosDestino, crono, textosDestino, "Matriz de Destino",
-        textosSeqNegDestino, textosSeqEspDestino, textosFinDestino
-    );
-
-    // Injeção nos HTMLs das Abas (Síntese vai no topo da Principal)
     document.getElementById("aba_principal").innerHTML = htmlSintese + htmlVida;
     document.getElementById("aba_pessoal").innerHTML = htmlPessoal;
     document.getElementById("aba_social").innerHTML = htmlSocial;
@@ -649,10 +587,7 @@ function gerar() {
 
     localStorage.setItem("relatorioPiramide", JSON.stringify({
         nome, data: data.split("-").reverse().join("/"),
-        abaPrincipal: htmlSintese + htmlVida, 
-        abaPessoal: htmlPessoal, 
-        abaSocial: htmlSocial, 
-        abaDestino: htmlDestino
+        abaPrincipal: htmlSintese + htmlVida, abaPessoal: htmlPessoal, abaSocial: htmlSocial, abaDestino: htmlDestino
     }));
     
     mostrarAba('principal');
