@@ -3271,7 +3271,7 @@ Existe o risco de enfrentar críticas infundadas ou situações que visam abalar
  
   "123": `Uma fase brilhante se aproxima, trazendo o justo reconhecimento por todo o seu esforço, talento e dedicação criativa.
 Você poderá receber prêmios, honrarias ou elogios públicos que validam oficialmente sua trajetória e seus projetos de vida.
-Essa energia de êxito também se estende ao campo familiar, trazendo motivos de grande orgulho e celebração através de seus filhos.`,
+Essa energia de êxito também se estende ao campo familiar, trazendo motivos de grande orgulho e celebração.`,
 
   "168":`  Uma poderosa corrente de prosperidade se manifesta nesta fase, favorecendo diretamente seus ganhos materiais e o sucesso nos negócios. 
   É um período propício para a obtenção de prêmios, bonificações ou resultados financeiros acima da média, fruto de um alinhamento favorável em suas atividades práticas. 
@@ -3406,7 +3406,7 @@ const explicacoes = {
 
 principal: `
 <div>
-<h2>👑 Pirâmide da Vida Principal</h2>
+<h1>👑 Pirâmide da Vida Principal</h1>
 <p>
 <p>​A Pirâmide da Vida Principal é o alicerce absoluto de todo o seu mapa numerológico quântico. Ela funciona como o "DNA" da sua jornada, representando a estrutura macro da sua existência. Diferente das outras pirâmides que focam em áreas específicas, esta matriz revela o caminho mestre, as fases evolutivas e as potências que regem a sua história do início ao fim.</p>
 
@@ -3418,7 +3418,7 @@ principal: `
 
 pessoal: `
 <div>
-<h2>👤 Pirâmide do intelecto Pessoal</h2>
+<h1>👤 Pirâmide do intelecto Pessoal</h1>
 <p>Enquanto a pirâmide anterior trata do "quem sou eu no universo", a Pirâmide do Intelecto Pessoal mergulha no "como eu me sinto e como eu processo a vida". Ela é formada pela combinação da equivalência numérica do seu nome somada ao seu dia de nascimento reduzido. Essa pequena adição do dia de nascimento muda o foco do destino geral para a sua atitude íntima e psicológica diante do mundo.</p>
 
 <p>​Esta aba revela o seu mundo subjetivo: o campo emocional, o intelecto e os processos psicológicos que ocorrem longe dos olhos dos outros. Ela é essencial para entender os seus conflitos internos e como você vive cada fase da vida "do lado de dentro". Muitas vezes, a Pirâmide da Vida pode indicar um período de sucesso externo, mas a Pirâmide Pessoal pode revelar que, internamente, você está enfrentando uma crise de identidade ou um crescimento interior silencioso.</p>
@@ -3430,7 +3430,7 @@ pessoal: `
 
 social: `
 <div>
-<h2>🌎 Pirâmide da percepcão do seu meio de convivencia</h2>
+<h1>🌎 Pirâmide da percepcão do seu meio de convivencia</h1>
 <p>​A Pirâmide da Percepção do seu Meio de Convivência (ou Pirâmide Social) assume aqui um papel único de "testemunha ocular" da realidade coletiva. Ela é formada pela frequência numérica do seu nome de nascimento em sintonia com o seu mês de nascimento, o que gera o seu radar de percepção sobre o que ocorre ao seu redor. Diferente das outras matrizes que trazem influências diretas para o seu ser, esta aba descreve especificamente a sua capacidade de ver as engrenagens da vida girando para as pessoas do seu meio social.</p>
 
 <p>​É nesta seção que entendemos que nem tudo o que acontece no nosso campo de visão nos pertence. Esta pirâmide revela os acontecimentos, as crises, as vitórias e as transformações que você testemunha na vida de amigos, familiares e colegas. Enquanto a Pirâmide do Destino é a que realmente molda a sua jornada pessoal e traz os eventos que o influenciam diretamente, a Pirâmide Social é um mapa do "teatro da vida" alheia que se desenrola diante dos seus olhos.</p>
@@ -3444,7 +3444,7 @@ social: `
 
 destino: `
 <div>
-<h2>☄️ Pirâmide do Propósito e Influencia do Universo</h2>
+<h1>☄️ Pirâmide do Propósito e Influencia do Universo</h1>
 
 <p>​A Pirâmide do Propósito e Influência do Universo (ou Pirâmide Destino) é a síntese final de toda a sua análise. Ela utiliza a combinação mais completa: seu nome, dia e mês de nascimento. Por unir todos os elementos, ela reflete os aspectos do seu destino de forma multidimensional, combinando o que está previsto na Matriz Principal com as suas necessidades Pessoais e as demandas do seu Meio Social.</p>
 
@@ -3496,7 +3496,7 @@ financeiro:`<h1 style="color:#2e7d32;">💰 O que são Sequências Financeiras d
 
 <p>A análise dessas sequências mostra como a vibração material está operando dentro da sua Pirâmide da Vida neste momento, oferecendo uma visão mais clara para que suas escolhas financeiras sejam feitas com maior consciência e equilíbrio.</p>`,
 
-vigencias:`<h1>⏳ O que são Potências da Vida(Principal) ?</h1>
+vigencias:`<h1>✡︎ O que são as Potências da Vida(Principal) ?</h1>
 <p>As Vigências representam os ciclos temporais em que determinadas potências numerológicas se tornam predominantes na sua vida. Assim como as estações do ano alteram o ritmo da natureza, as vigências indicam períodos em que diferentes energias passam a influenciar as experiências que você vive.</p>
 
 <p>Cada fase carrega um tipo específico de movimento. Existem momentos voltados para crescimento, expansão e realização, assim como períodos que pedem reflexão, reorganização ou preparação para mudanças futuras. Esses ciclos não surgem por acaso, mas fazem parte de um fluxo natural que organiza o desenvolvimento da sua trajetória.</p>
@@ -3546,7 +3546,7 @@ financeiro:`<h1 style="color:#2e7d32;">💰 O que são Sequências Financeiras P
 
 <p>Compreender essa vibração pessoal ajuda a perceber se sua mente está favorecendo ou limitando sua relação com a prosperidade. Ao reconhecer esse padrão interno, torna-se possível ajustar pensamentos e atitudes para criar uma relação mais equilibrada com a energia material.</p>`,
 
-vigencias:`<h1>⏳ O que são as Potências do seu sentimento Pessoal(interior)?</h1>
+vigencias:`<h1>✡︎ O que são as Potências do seu sentimento Pessoal(interior)?</h1>
 <p>As Vigências da Pirâmide Pessoal representam ciclos internos de percepção, reflexão e amadurecimento mental. Diferente das vigências da Pirâmide da Vida, que indicam acontecimentos externos mais concretos, essas fases revelam mudanças no seu estado psicológico e emocional ao longo do tempo.</p>
 
 <p>Cada período pode trazer uma atmosfera mental diferente. Existem fases em que a mente se volta mais para introspecção e autoconhecimento, enquanto outras estimulam maior clareza de pensamento, criatividade ou desejo de transformação pessoal.</p>
@@ -3595,7 +3595,7 @@ financeiro:`<h1 style="color:#2e7d32;">💰 O que são Sequências Financeiras S
 
 <p>Ao reconhecer esse padrão vibracional no campo social, você passa a perceber com maior clareza como o fluxo material circula entre as pessoas ao seu redor, entendendo melhor o contexto econômico das relações e das oportunidades que aparecem nesse ambiente.</p>`,
 
-vigencias:`<h1>⏳ O que são as Potências do seu meio social?</h1>
+vigencias:`<h1>✡︎ O que são as Potências do seu meio social?</h1>
 <p>As Vigências da Pirâmide Social representam os ciclos que influenciam o ambiente coletivo ao seu redor ao longo do tempo. Esses períodos mostram como determinadas energias passam a atuar nas relações sociais, nos grupos e nas interações que fazem parte do seu cotidiano.</p>
 
 <p>Cada fase pode trazer mudanças na forma como as pessoas se relacionam, colaboram ou enfrentam desafios em conjunto. Existem momentos em que o ambiente social favorece conexões, cooperação e crescimento coletivo, enquanto outros períodos podem trazer maior tensão ou necessidade de ajustes nas relações.</p>
@@ -3644,7 +3644,7 @@ financeiro:`<h1 style="color:#2e7d32;">💰 O que é uma Sequência Financeira d
 
 <p>Compreender essa dinâmica ajuda a perceber quando certos movimentos financeiros fazem parte de um contexto maior de transformação no caminho da vida, permitindo que você reconheça melhor as oportunidades que surgem através das circunstâncias externas.</p>`,
 
-vigencias:`<h1>⏳ O que são as Potências do Destino?</h1>
+vigencias:`<h1>✡︎ O que são as Potências do Destino?</h1>
 <p>As Vigências da Pirâmide do Destino representam períodos em que determinadas influências externas ganham maior força dentro da sua trajetória de vida. Esses ciclos indicam momentos em que acontecimentos, encontros ou mudanças podem exercer um papel importante no direcionamento do seu caminho.</p>
 
 <p>Diferente das vigências da Pirâmide da Vida, que refletem ciclos pessoais, aqui observamos fases em que forças externas parecem organizar circunstâncias que contribuem para a evolução do seu percurso.</p>
@@ -3722,6 +3722,7 @@ window.textosSintese = {
         <p>Nesse estado, a manifestação da sua realidade é direta e sem filtros: o que você pensa e sente (Pessoal), é exatamente o que o mundo oferece (Social), é o que acontece de fato na sua rotina (Vida) e é exatamente o que o plano superior planejou (Destino). É um estado de força concentrada onde todas as engrenagens da sua existência giram sincronizadas em uma única direção. Quando você toma uma decisão, o movimento da sua vida é imparável, pois não há nenhuma parte de você ou do universo remando contra.</p>
         <p>O grande desafio dessa configuração de 'Unidade' é a responsabilidade sobre o foco. Como toda a sua energia está concentrada em um único ponto, você deve garantir que esse ponto seja elevado e construtivo, pois a velocidade com que suas intenções se tornam realidade é assombrosa. Se houver queda na negatividade, sua vida inteira sofre o impacto com a mesma velocidade que subiria se houvesse positividade. Você é uma potência de realização pura, onde a dualidade deu lugar ao alinhamento total.</p>
         <p>Você veio ao mundo para ser um exemplo de integridade. Em você, pensamento, sentimento, ação social e destino espiritual são uma única e indissociável força da natureza. Use esse poder para criar um legado sólido e coerente. Sua vida não admite 'meio-termo' ou dubiedade; você é a personificação da verdade da sua potência. Quando você brilha, você ilumina todos os setores da sua jornada simultaneamente, criando uma marca indelével por onde passar.</p>
+       <p> Nesse cenário, o método não aponta erro, mas complexidade vibracional</p>
     `,
     
     "equilibrio_misto": `🌎+👤   ☄️+👑  👤+👑    🌎+☄️   👤+☄️    🌎+👑  
