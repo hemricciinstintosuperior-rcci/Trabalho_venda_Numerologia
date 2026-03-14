@@ -344,7 +344,7 @@ function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt, topoVida) 
 
 // 2. Nova versão da montarConteudoComIntros (Ajustada para processar os textos)
 function montarConteudoComIntros(linhas, regente, txtReg, crono, txtVig, nomePiramide, txtNeg, txtEsp, txtFin, topoVida) {
-    let html = `<div class="blocoRelatorio"><h2>${nomePiramide}</h2>` + desenhar(linhas, true, txtEsp) + `</div>`;
+    let html = `<div class="box"><h2>${nomePiramide}</h2>` + desenhar(linhas, true, txtEsp) + `</div>`;
     let tipo = nomePiramide.toLowerCase().includes("vida") ? "vida" : (nomePiramide.toLowerCase().includes("pessoal") ? "pessoal" : (nomePiramide.toLowerCase().includes("social") ? "social" : "destino"));
     const intro = window.introsPiramides ? window.introsPiramides[tipo] : {};
 
