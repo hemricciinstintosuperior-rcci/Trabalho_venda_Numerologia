@@ -3405,8 +3405,8 @@ const textosFinDestino = { 999: "Propósito de abundância e legado financeiro, 
 const explicacoes = {
 
 principal: `
-<div class="box">
-<h2>🔺 Pirâmide da Vida Principal</h2>
+<div>
+<h2>👑 Pirâmide da Vida Principal</h2>
 <p>
 <p>​A Pirâmide da Vida Principal é o alicerce absoluto de todo o seu mapa numerológico quântico. Ela funciona como o "DNA" da sua jornada, representando a estrutura macro da sua existência. Diferente das outras pirâmides que focam em áreas específicas, esta matriz revela o caminho mestre, as fases evolutivas e as potências que regem a sua história do início ao fim.</p>
 
@@ -3417,7 +3417,7 @@ principal: `
 `,
 
 pessoal: `
-<div class="box">
+<div>
 <h2>👤 Pirâmide do intelecto Pessoal</h2>
 <p>Enquanto a pirâmide anterior trata do "quem sou eu no universo", a Pirâmide do Intelecto Pessoal mergulha no "como eu me sinto e como eu processo a vida". Ela é formada pela combinação da equivalência numérica do seu nome somada ao seu dia de nascimento reduzido. Essa pequena adição do dia de nascimento muda o foco do destino geral para a sua atitude íntima e psicológica diante do mundo.</p>
 
@@ -3429,7 +3429,7 @@ pessoal: `
 `,
 
 social: `
-<div class="box">
+<div>
 <h2>🌎 Pirâmide da percepcão do seu meio de convivencia</h2>
 <p>​A Pirâmide da Percepção do seu Meio de Convivência (ou Pirâmide Social) assume aqui um papel único de "testemunha ocular" da realidade coletiva. Ela é formada pela frequência numérica do seu nome de nascimento em sintonia com o seu mês de nascimento, o que gera o seu radar de percepção sobre o que ocorre ao seu redor. Diferente das outras matrizes que trazem influências diretas para o seu ser, esta aba descreve especificamente a sua capacidade de ver as engrenagens da vida girando para as pessoas do seu meio social.</p>
 
@@ -3443,8 +3443,8 @@ social: `
 `,
 
 destino: `
-<div class="box">
-<h2>⭐ Pirâmide do Propósito e Influencia do Universo</h2>
+<div>
+<h2>☄️ Pirâmide do Propósito e Influencia do Universo</h2>
 
 <p>​A Pirâmide do Propósito e Influência do Universo (ou Pirâmide Destino) é a síntese final de toda a sua análise. Ela utiliza a combinação mais completa: seu nome, dia e mês de nascimento. Por unir todos os elementos, ela reflete os aspectos do seu destino de forma multidimensional, combinando o que está previsto na Matriz Principal com as suas necessidades Pessoais e as demandas do seu Meio Social.</p>
 
@@ -3460,7 +3460,7 @@ destino: `
 window.introsPiramides = {
 
 vida:{
-regente:`<h1>O que é o Regente da Vida?</h1>
+regente:`<h1>Regente da Vida 🔱</h1>
 <p>O Regente da Vida representa o núcleo vibracional da sua existência. Ele é a força central que sustenta toda a estrutura da sua Pirâmide da Vida, funcionando como o eixo principal em torno do qual todas as demais energias se organizam. Assim como o Sol mantém o equilíbrio do sistema solar, o Regente mantém o alinhamento das experiências que compõem a sua trajetória.</p>
 
 <p>Essa vibração revela a essência mais autêntica da sua natureza, indicando como você reage aos acontecimentos, quais padrões emocionais predominam e de que maneira sua energia se projeta no mundo. Diferente de eventos momentâneos, o Regente atua como uma base constante que acompanha você durante toda a vida.</p>
@@ -3469,7 +3469,7 @@ regente:`<h1>O que é o Regente da Vida?</h1>
 
 <p>Compreender o seu Regente é compreender o fundamento da sua identidade energética. Ele revela talentos naturais, tendências comportamentais e a forma como a sua presença influencia o ambiente ao redor, sendo a base sobre a qual todo o restante da análise da Pirâmide da Vida se apoia.</p>`,
 
-negativas:`<h1 style="color:#d32f2f;">⚠️ O que são Sequências Negativas da Vida?</h1>
+negativas:`<h1 style="color:#d32f2f;">⚠️ O que são Sequências de Vulnerabilidade, fragilidade e insegurança da Vida?</h1>
 <p>As Sequências Negativas indicam pontos de tensão dentro da estrutura energética da sua vida. Elas não representam punições nem destinos inevitáveis, mas sim padrões que revelam áreas onde a energia tende a se repetir de maneira desafiadora. Funcionam como sinais que mostram onde determinados comportamentos ou situações podem gerar desgaste ou bloqueios.</p>
 
 <p>Muitas dessas sequências estão associadas a experiências que exigem aprendizado e amadurecimento. Elas surgem quando certos aspectos da sua natureza ainda não foram plenamente compreendidos ou integrados. Por isso, podem se manifestar como situações recorrentes que parecem reaparecer em diferentes fases da vida.</p>
@@ -3496,7 +3496,7 @@ financeiro:`<h1 style="color:#2e7d32;">💰 O que são Sequências Financeiras d
 
 <p>A análise dessas sequências mostra como a vibração material está operando dentro da sua Pirâmide da Vida neste momento, oferecendo uma visão mais clara para que suas escolhas financeiras sejam feitas com maior consciência e equilíbrio.</p>`,
 
-vigencias:`<h1>⏳ O que são Vigências das Potências da Vida ?</h1>
+vigencias:`<h1>⏳ O que são Potências da Vida(Principal) ?</h1>
 <p>As Vigências representam os ciclos temporais em que determinadas potências numerológicas se tornam predominantes na sua vida. Assim como as estações do ano alteram o ritmo da natureza, as vigências indicam períodos em que diferentes energias passam a influenciar as experiências que você vive.</p>
 
 <p>Cada fase carrega um tipo específico de movimento. Existem momentos voltados para crescimento, expansão e realização, assim como períodos que pedem reflexão, reorganização ou preparação para mudanças futuras. Esses ciclos não surgem por acaso, mas fazem parte de um fluxo natural que organiza o desenvolvimento da sua trajetória.</p>
@@ -3510,7 +3510,7 @@ vigencias:`<h1>⏳ O que são Vigências das Potências da Vida ?</h1>
 
 pessoal:{
 
-regente:`<h1>O que é o Regente Pessoal?</h1>
+regente:`<h1>Regente Pessoal🔱</h1>
 <p>O Regente Pessoal representa o estado interno predominante da sua mente e da sua percepção sobre si mesmo. Diferente do Regente da Vida, que expressa uma força real que atua no mundo externo, o Regente Pessoal mostra como você se percebe internamente e como interpreta as situações que vive.</p>
 
 <p>Essa vibração revela o clima psicológico que acompanha seus pensamentos, sentimentos e reflexões mais profundas. Muitas vezes ela funciona como um filtro interno, determinando a forma como você entende os acontecimentos da sua própria vida, mesmo que a realidade externa esteja seguindo outro caminho.</p>
@@ -3519,7 +3519,7 @@ regente:`<h1>O que é o Regente Pessoal?</h1>
 
 <p>Conhecer o seu Regente Pessoal permite observar com mais clareza como sua mente processa experiências e emoções. Ele revela a forma como você se enxerga por dentro, mostrando o padrão mental e emocional que influencia diretamente suas decisões, sua autoconfiança e sua visão da própria identidade.</p>`,
 
-negativas:`<h1 style="color:#d32f2f;">⚠️ O que são Sequências Negativas Pessoais?</h1>
+negativas:`<h1 style="color:#d32f2f;">⚠️ O que são Sequências de Vulnerabilidade, fragilidade e insegurança do sentimento interno (Pessoal)?</h1>
 <p>As Sequências Negativas da Pirâmide Pessoal indicam padrões de pensamento ou percepções internas que podem gerar tensão psicológica ou conflito emocional. Elas não representam acontecimentos externos obrigatórios, mas sim tendências internas que podem influenciar a forma como você interpreta determinadas situações.</p>
 
 <p>Muitas vezes essas sequências revelam momentos em que a mente tende a focar em inseguranças, medos ou interpretações excessivamente críticas sobre si mesmo. Isso pode fazer com que você sinta dificuldades internas mesmo quando as circunstâncias externas não são necessariamente negativas.</p>
@@ -3546,7 +3546,7 @@ financeiro:`<h1 style="color:#2e7d32;">💰 O que são Sequências Financeiras P
 
 <p>Compreender essa vibração pessoal ajuda a perceber se sua mente está favorecendo ou limitando sua relação com a prosperidade. Ao reconhecer esse padrão interno, torna-se possível ajustar pensamentos e atitudes para criar uma relação mais equilibrada com a energia material.</p>`,
 
-vigencias:`<h1>⏳ O que são as Vigências Pessoais(interior)?</h1>
+vigencias:`<h1>⏳ O que são as Potências do seu sentimento Pessoal(interior)?</h1>
 <p>As Vigências da Pirâmide Pessoal representam ciclos internos de percepção, reflexão e amadurecimento mental. Diferente das vigências da Pirâmide da Vida, que indicam acontecimentos externos mais concretos, essas fases revelam mudanças no seu estado psicológico e emocional ao longo do tempo.</p>
 
 <p>Cada período pode trazer uma atmosfera mental diferente. Existem fases em que a mente se volta mais para introspecção e autoconhecimento, enquanto outras estimulam maior clareza de pensamento, criatividade ou desejo de transformação pessoal.</p>
@@ -3559,7 +3559,7 @@ vigencias:`<h1>⏳ O que são as Vigências Pessoais(interior)?</h1>
 
 social:{
 
-regente:`<h1>O que é o Regente Social?</h1>
+regente:`<h1>O que é o Regente Social🔱?</h1>
 <p>O Regente Social representa a vibração predominante do ambiente humano ao seu redor. Diferente do Regente da Vida, que expressa a sua própria essência energética, o Regente Social revela o tipo de energia que você tende a perceber nas pessoas com quem convive ou interage com maior frequência.</p>
 
 <p>Essa vibração mostra o clima vibracional do seu meio social, indicando o padrão de comportamento, mentalidade ou postura que aparece com mais força entre as pessoas que fazem parte do seu cotidiano. Em outras palavras, ele descreve o tipo de energia que você observa no mundo ao seu redor.</p>
@@ -3568,7 +3568,7 @@ regente:`<h1>O que é o Regente Social?</h1>
 
 <p>Compreender essa vibração ajuda a interpretar melhor o ambiente social que o cerca. Ao reconhecer esse padrão coletivo, você passa a perceber com mais clareza o tipo de influência que o meio exerce sobre suas experiências e relações.</p>`,
 
-negativas:`<h1 style="color:#d32f2f;">⚠️ O que são Sequências Negativas Sociais?</h1>
+negativas:`<h1 style="color:#d32f2f;">⚠️ O que são Sequências de Vulnerabilidade, fragilidade e insegurança no seu meio de convivencia?</h1>
 <p>As Sequências Negativas da Pirâmide Social indicam padrões de tensão ou desafios que podem surgir no ambiente de convivência ao seu redor. Elas não representam necessariamente problemas pessoais diretos, mas sim comportamentos, atitudes ou situações que você pode perceber com frequência nas pessoas que fazem parte do seu meio social.</p>
 
 <p>Essas vibrações podem refletir conflitos coletivos, disputas de interesses, dificuldades de comunicação ou padrões de comportamento que geram desgaste dentro de determinados grupos. Em muitos casos, elas mostram ambientes onde certas tensões emocionais ou psicológicas tendem a aparecer com maior intensidade.</p>
@@ -3595,7 +3595,7 @@ financeiro:`<h1 style="color:#2e7d32;">💰 O que são Sequências Financeiras S
 
 <p>Ao reconhecer esse padrão vibracional no campo social, você passa a perceber com maior clareza como o fluxo material circula entre as pessoas ao seu redor, entendendo melhor o contexto econômico das relações e das oportunidades que aparecem nesse ambiente.</p>`,
 
-vigencias:`<h1>⏳ O que são as Vigências Sociais?</h1>
+vigencias:`<h1>⏳ O que são as Potências do seu meio social?</h1>
 <p>As Vigências da Pirâmide Social representam os ciclos que influenciam o ambiente coletivo ao seu redor ao longo do tempo. Esses períodos mostram como determinadas energias passam a atuar nas relações sociais, nos grupos e nas interações que fazem parte do seu cotidiano.</p>
 
 <p>Cada fase pode trazer mudanças na forma como as pessoas se relacionam, colaboram ou enfrentam desafios em conjunto. Existem momentos em que o ambiente social favorece conexões, cooperação e crescimento coletivo, enquanto outros períodos podem trazer maior tensão ou necessidade de ajustes nas relações.</p>
@@ -3608,7 +3608,7 @@ vigencias:`<h1>⏳ O que são as Vigências Sociais?</h1>
 
 destino:{
 
-regente:`<h1>O que é o Regente do Destino?</h1>
+regente:`<h1>Regente do Destino🔱</h1>
 <p>O Regente do Destino representa uma força de influência que atua sobre a sua jornada de vida a partir de fatores externos ao seu núcleo essencial. Diferente do Regente da Vida, que expressa quem você é em sua essência, o Regente do Destino revela uma vibração que pode direcionar acontecimentos, encontros e experiências importantes ao longo do seu caminho.</p>
 
 <p>Essa energia funciona como um campo de propósito ou influência que se manifesta através das circunstâncias da vida. Muitas vezes ela aparece por meio de oportunidades inesperadas, mudanças de direção ou situações que parecem conduzir você para determinados caminhos que possuem um significado maior dentro da sua trajetória.</p>
@@ -3617,7 +3617,7 @@ regente:`<h1>O que é o Regente do Destino?</h1>
 
 <p>Compreender essa vibração permite observar com mais clareza quais forças externas podem estar direcionando certas experiências da sua vida. Isso ajuda a perceber quando determinadas situações fazem parte de um movimento maior de propósito ou evolução dentro da sua jornada.</p>`,
 
-negativas:`<h1 style="color:#d32f2f;">⚠️ O que são Sequências Negativas do Destino?</h1>
+negativas:`<h1 style="color:#d32f2f;">⚠️ O que são Sequências de Vulnerabilidade, fragilidade e insegurança que vem da influência do Destino?</h1>
 <p>As Sequências Negativas da Pirâmide do Destino indicam desafios ou tensões que podem surgir a partir de influências externas ao seu campo pessoal. Elas representam situações que aparecem ao longo da vida como testes, obstáculos ou experiências que exigem amadurecimento diante de circunstâncias que muitas vezes estão além do controle imediato.</p>
 
 <p>Diferente das sequências negativas da Pirâmide da Vida, que refletem padrões pessoais, aqui estamos observando forças que podem surgir no caminho como eventos ou contextos que pressionam a pessoa a desenvolver novas capacidades ou superar determinadas limitações.</p>
@@ -3635,7 +3635,7 @@ especiais:`<h1 style="color:#b8860b;">⚡️ O que são Sequências Especiais do
 
 <p>Reconhecer essas sequências permite perceber quando determinados acontecimentos possuem um significado maior dentro do seu percurso. Ao compreender essas influências, torna-se possível aproveitar melhor essas oportunidades e compreender o papel que elas desempenham na construção do seu destino.</p>`,
 
-financeiro:`<h1 style="color:#2e7d32;">💰 O que são Sequências Financeiras do Destino?</h1>
+financeiro:`<h1 style="color:#2e7d32;">💰 O que é uma Sequência Financeira do Destino?</h1>
 <p>As Sequências Financeiras da Pirâmide do Destino refletem influências externas que podem impactar sua relação com oportunidades materiais ao longo da vida. Diferente da análise financeira pessoal, aqui observamos circunstâncias que podem surgir através de fatores externos, como ambientes, encontros ou mudanças inesperadas no cenário material.</p>
 
 <p>Essas vibrações podem indicar momentos em que oportunidades financeiras aparecem de forma inesperada ou situações em que o contexto externo exige adaptação e estratégia para lidar com mudanças no fluxo material.</p>
@@ -3644,7 +3644,7 @@ financeiro:`<h1 style="color:#2e7d32;">💰 O que são Sequências Financeiras d
 
 <p>Compreender essa dinâmica ajuda a perceber quando certos movimentos financeiros fazem parte de um contexto maior de transformação no caminho da vida, permitindo que você reconheça melhor as oportunidades que surgem através das circunstâncias externas.</p>`,
 
-vigencias:`<h1>⏳ O que são as Vigências do Destino?</h1>
+vigencias:`<h1>⏳ O que são as Potências do Destino?</h1>
 <p>As Vigências da Pirâmide do Destino representam períodos em que determinadas influências externas ganham maior força dentro da sua trajetória de vida. Esses ciclos indicam momentos em que acontecimentos, encontros ou mudanças podem exercer um papel importante no direcionamento do seu caminho.</p>
 
 <p>Diferente das vigências da Pirâmide da Vida, que refletem ciclos pessoais, aqui observamos fases em que forças externas parecem organizar circunstâncias que contribuem para a evolução do seu percurso.</p>
@@ -3660,7 +3660,7 @@ vigencias:`<h1>⏳ O que são as Vigências do Destino?</h1>
 
 
 window.textosSintese = {
-    "pessoal_vida": `🪞➛👑
+    "pessoal_vida": `👤➛👑
         <p><b>Sincronia de Manifestação Direta e Alinhamento Real:</b></p>
         <p>Existe em sua matriz uma das configurações mais raras e potentes da dinâmica quântica. Quando sua Potência Pessoal se iguala à Potência da Vida, o véu entre o desejo e a realidade material torna-se extremamente fino. Isto indica que existe um canal direto de comunicação entre sua mente subconsciente e o campo de possibilidades externas. Você não atua apenas como alguém que observa sua jornada; você é a mente consciente por trás de cada evento, agindo de forma integrada e poderosa à sua realidade tangível.</p>
         <p>Na prática, esse nível de sincronia exige uma higiene mental rigorosa e uma vigilância constante sobre seus estados internos. Como sua vibração pessoal e a vibração da sua vida estão na mesma nota, seus medos e inseguranças possuem o mesmo poder de manifestação que seus sonhos e metas. Você não é alguém refém das circunstâncias; você é a força que as impulsiona. O mundo ao seu redor responde ao seu comando interno como um espelho de alta fidelidade, refletindo com precisão absoluta sua postura íntima e suas crenças mais profundas.</p>
@@ -3684,7 +3684,7 @@ window.textosSintese = {
         <p>O sucesso para você vem através da paciência e da observação atenta. Você atua como quem protagoniza um livro escrito pelas estrelas, e seu papel é aprender a ser intérprete das vontades do alto. Não se desespere quando os planos humanos falharem, pois o plano do destino é infalível e sempre visa o seu crescimento máximo. Sua vida é um testemunho de que existe uma ordem no caos, e que você está sob condução para um lugar de realização que sua mente lógica sequer consegue imaginar ainda.</p>
     `,
     
-    "pessoal_social": `🪞➛🌎
+    "pessoal_social": `👤➛🌎
         <p><b>Sincronia de Influência, Identidade e Adaptação:</b></p>
         <p>Esta conexão revela um desafio quântico constante entre o 'Eu' e o 'Nós'. Você possui uma personalidade dotada de uma plasticidade incrível, com grande capacidade de adaptação e permeabilidade às energias ao seu redor. Isso faz de você uma presença extremamente carismática, magnética e de fácil convívio, mas traz o risco intrínseco de perder a clareza sobre sua própria essência devido à necessidade inconsciente de pertencer e ser uma pessoa aceita pelos grupos.</p>
         <p>O seu 'Pessoal' (quem você sente que é) é constantemente moldado pelas pressões e expectativas do seu meio social. Você tem a capacidade de sentir o que o grupo sente e, muitas vezes, acaba adotando metas, desejos, gostos e opiniões que não são originalmente seus, mas que foram absorvidos para manter a harmonia do ambiente. Essa facilidade de sofrer influência pode ser sua maior virtude, se houver convívio com mentes brilhantes, ou seu maior perigo, se o convívio for com pessoas medíocres.</p>
@@ -3692,7 +3692,7 @@ window.textosSintese = {
         <p>Quando você domina essa troca e aprende a filtrar o que entra no seu campo, você se transforma em uma autoridade de influência social. Você passará a usar sua adaptabilidade de forma consciente, conseguindo entrar em qualquer ambiente e se conectar com qualquer nível hierárquico, mantendo-se fiel ao seu núcleo interno. Você se torna alguém que lidera e entende a alma das pessoas, pois sabe como é sentir a energia delas, usando essa sensibilidade para guiar, e não mais para sofrer apenas a condução pelo desejo alheio.</p>
     `,
     
-    "pessoal_destino": `🪞➛☄️
+    "pessoal_destino": `👤➛☄️
         <p><b>Sincronia de Intuição Profunda e Chamado da Alma:</b></p>
         <p>O Universo possui um canal de comunicação direta com você, que funciona de dentro para fora. Nesta rara e profunda configuração, sua Potência Pessoal está em ressonância direta com o seu Plano de Destino, o que gera uma conexão intuitiva avassaladora. Você não precisa buscar bússolas ou conselhos no mundo externo com tanta frequência; seu interior já possui o 'mapa' do tesouro antes mesmo da sua mente racional começar a analisar as opções.</p>
         <p>Seus desejos mais genuínos e seus impulsos criativos já estão 'carregados' com o seu propósito de vida. Você sente o chamado do destino não como um evento externo, mas como um entusiasmo inexplicável, uma certeza absoluta ou até um incômodo no peito que empurra você para certas direções. Quando você segue sua intuição, você está, literalmente, cumprindo sua missão de vida. O maior erro que você pode cometer é tentar agir com lógica excessiva ou seguir conselhos 'pragmáticos' que silenciam o que seu coração está gritando.</p>
@@ -3708,7 +3708,7 @@ window.textosSintese = {
         <p>Tenha plena consciência do impacto que você causa nas pessoas, pois sua liderança e sua capacidade de colaboração são as ferramentas que o Universo utiliza para entregar os resultados que sua alma almeja. Você atua como representante do seu próprio destino no mundo. Lembre-se que sua vida é um grande evento social orquestrado pelo divino, onde cada relação, por mais simples que pareça, pode conter o código secreto para o próximo capítulo fundamental da sua história de sucesso.</p>
     `,
 
-    "autonomia_total": `🌎❌🪞❌☄️❌👑
+    "autonomia_total": `🌎❌👤❌☄️❌👑
         <p><b>Assinatura de Independência, Versatilidade e Liberdade Quântica:</b></p>
         <p>A matriz revela que você opera sob uma lei de autonomia absoluta, o que é um sinal de grande maturidade energética. O fato de todas as suas potências serem números diferentes indica que você não está sob dependência de um único padrão de influência ou comportamento. Você é uma pessoa multifacetada, dotada de uma versatilidade rara, capaz de atuar em diferentes 'frequências' e 'personagens' dependendo da área da vida, adaptando-se com maestria às exigências de cada situação.</p>
         <p>Essa configuração garante que você tenha compartimentos bem definidos em sua existência: no seu interior (Pessoal), você mantém seus valores sagrados; na convivência social, você sabe usar a diplomacia necessária; nos fatos cotidianos (Vida), você lida com o pragmatismo da realidade; e no seu propósito maior (Destino), você flui conforme o chamado. Essa separação é uma proteção incrível, pois impede que uma crise em um setor contamine os outros. Se o lado social está turbulento, sua paz pessoal permanece intacta, permitindo que você tome decisões lúcidas.</p>
@@ -3716,7 +3716,7 @@ window.textosSintese = {
         <p>Você é a mente que governa sua própria diversidade. Livre de influências cruzadas que poderiam limitar seu crescimento, você tem o caminho aberto para experimentar a vida em todas as suas cores, sabores e nuances. Sua força vem da sua capacidade de não ser 'uma coisa só'. Você atua na mediação entre suas várias versões, garantindo que sua jornada seja rica, variada e, acima de tudo, autêntica. Use essa autonomia para explorar novos territórios sem medo, pois você possui a estrutura necessária para se reinventar sempre que o universo pedir uma nova postura.</p>
     `,
     
-    "convergencia_total": `🌎➛🪞➛☄️➛👑
+    "convergencia_total": `🌎➛👤➛☄️➛👑
         <p><b>Assinatura de Unidade, Laser Quântico e Alinhamento Absoluto:</b></p>
         <p>Você vive um fenômeno numerológico de convergência absoluta, algo extremamente raro e impactante. Quando todos os pilares da sua matriz (Vida, Pessoal, Social e Destino) vibram no mesmo número, você se torna o que chamamos de 'Laser Quântico'. Não existem conflitos internos entre o que você quer e o que o mundo pede; não há resistência do meio e não há desvios de rota. Existe apenas uma entrega total e avassaladora à sua frequência principal.</p>
         <p>Nesse estado, a manifestação da sua realidade é direta e sem filtros: o que você pensa e sente (Pessoal), é exatamente o que o mundo oferece (Social), é o que acontece de fato na sua rotina (Vida) e é exatamente o que o plano superior planejou (Destino). É um estado de força concentrada onde todas as engrenagens da sua existência giram sincronizadas em uma única direção. Quando você toma uma decisão, o movimento da sua vida é imparável, pois não há nenhuma parte de você ou do universo remando contra.</p>
@@ -3724,11 +3724,32 @@ window.textosSintese = {
         <p>Você veio ao mundo para ser um exemplo de integridade. Em você, pensamento, sentimento, ação social e destino espiritual são uma única e indissociável força da natureza. Use esse poder para criar um legado sólido e coerente. Sua vida não admite 'meio-termo' ou dubiedade; você é a personificação da verdade da sua potência. Quando você brilha, você ilumina todos os setores da sua jornada simultaneamente, criando uma marca indelével por onde passar.</p>
     `,
     
-    "equilibrio_misto": `🌎+🪞   ☄️+👑  🪞+👑    🌎+☄️   🪞+☄️    🌎+👑  
+    "equilibrio_misto": `🌎+👤   ☄️+👑  👤+👑    🌎+☄️   👤+☄️    🌎+👑  
         <p><b>Assinatura de Integração Dinâmica e Equilíbrio de Forças:</b></p>
         <p>Sua matriz revela uma configuração de equilíbrio estratégico e inteligência existencial. Você possui áreas de sincronia perfeita, onde a vida flui com uma facilidade quase mágica, intercaladas com áreas de autonomia total, onde você tem o poder do livre-arbítrio absoluto e a liberdade de escolher seus próprios caminhos. Isso cria uma existência protegida por diretrizes superiores, mas flexível o suficiente para que você exerça sua criatividade humana.</p>
         <p>Você desfruta do benefício de ter conexões diretas com o destino ou com o social em certos momentos cruciais, o que lhe confere um suporte invisível e uma sensação de segurança — você sabe que não está só. Ao mesmo tempo, o universo deixa outros canais abertos para que você aprenda através da experimentação, da tentativa e do erro, garantindo que sua evolução não seja apenas um roteiro pronto, mas uma conquista pessoal baseada na sua coragem e esforço.</p>
         <p>Esta é a assinatura do equilíbrio quântico: você possui a sabedoria para saber quando deve se render ao fluxo maior das coisas e quando deve assumir o controle total e agir por conta própria. Você não é alguém totalmente previsível para o sistema, o que traz proteção contra influências externas negativas, nem alguém totalmente caótico, o que garante que seus projetos tenham um fundamento sólido. Você transita entre o destino e o livre-arbítrio com uma maestria natural.</p>
         <p>Sua jornada é rica e equilibrada, permitindo que você experimente tanto o conforto acolhedor da sincronia divina quanto a aventura estimulante da descoberta individual. Você atua como mediação da sua própria história, equilibrando com perfeição as forças externas que cercam você e os desejos profundos que impulsionam sua vida. Continue honrando esses dois lados: confie no plano maior quando ele se manifestar, mas nunca deixe de lutar e criar sua própria sorte nas áreas onde o universo deu a você as chaves da independência.</p>
+    `,
+  
+    "misto_pessoal_social": `
+        <p><b>Atenção à Influência Social:</b></p>
+        <p>Sua assinatura revela que sua identidade pessoal está fortemente ligada ao seu meio social. Isso indica que <strong>você</strong> possui um magnetismo capaz de influenciar grupos, mas também possui uma "antena" muito sensível às opiniões alheias. Muitas vezes, <strong>você</strong> pode acabar agindo para atender às expectativas dos outros ou absorvendo as metas do grupo como se fossem suas. O desafio aqui é manter sua essência intacta: aprenda a filtrar o que é seu e o que é apenas reflexo das pessoas ao seu redor.</p>
+    `,
+
+    "misto_pessoal_destino": `
+        <p><b>Condução Pelo Destino:</b></p>
+        <p>Nesta configuração, sua vontade própria está em diálogo direto com o seu propósito maior. Isso significa que nem sempre <strong>você</strong> está no controle total das suas decisões racionais; existe uma força de destino que "empurra" sua alma para certas direções. É uma conexão de proteção, onde o universo não permite que <strong>você</strong> se desvie do seu contrato espiritual. Se sentir um impulso inexplicável para mudar algo, confie: é o seu destino agindo através da sua personalidade.</p>
+    `,
+
+    "misto_pessoal_vida": `
+        <p><b>Autonomia de Manifestação:</b></p>
+        <p>Você possui uma conexão direta entre sua força interna e os fatos da vida cotidiana. Isso garante que <strong>você</strong> tenha um poder de realização muito acima da média. As coisas tendem a acontecer na sua vida conforme sua postura interna. Se <strong>você</strong> estiver com a mente clara e focada, a vida responde rápido. É a assinatura de quem "faz a própria sorte" através da atitude e da energia pessoal, sem depender tanto de fatores externos ou sorte.</p>
+    `,
+
+    "misto_social_destino": `
+        <p><b>Missão no Coletivo:</b></p>
+        <p>Sua presença no mundo não é por acaso. Esta combinação mostra que seu destino se cumpre através das pessoas. <strong>Você</strong> é alguém que atrai encontros de destino: pessoas que aparecem do nada com propostas ou chaves que mudam sua vida. Sua vida social é o laboratório onde sua missão espiritual acontece. Mantenha seus contatos ativos, pois a resposta que <strong>você</strong> busca sempre virá através de outra pessoa.</p>
     `
+  
 };
