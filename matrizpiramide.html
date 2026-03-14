@@ -21,30 +21,60 @@ button:active { transform: scale(0.98); }
     display: block;
     margin-bottom: 15px;    /* Cria um espaço extra entre cada parágrafo */
     line-height: 1.4;       /* Deixa a leitura mais confortável, menos "espremida" */
-}   
+}  
+
+/* Títulos centralizados */
+h1, h2, h3 {
+    text-align: center !important;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* Textos e parágrafos alinhados à esquerda */
+.texto, .box p, .blocoRelatorio p, .blocoRelatorio div {
+    text-align: left !important; /* Força o alinhamento à esquerda */
+    white-space: pre-wrap;      /* Mantém os parágrafos do textos.js */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Garante que a pirâmide continue centralizada mesmo com textos à esquerda */
+.piramide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+} 
 /* Cor Padrão (Ciano) */
+/* Isso centraliza os quadradinhos e impede que eles estiquem */
 .linha { 
     display: flex; 
     justify-content: center; 
-    gap: 2px; /* Diminua este valor para encurtar a largura total */
-    margin: 1px 0; 
+    gap: 4px; 
+    margin: 2px 0; 
+    width: 100%; /* Garante que a linha ocupe a largura toda para centralizar */
 }
 
 .num { 
-    background: #28d3ee !important; 
-    color: #000 !important; 
-    /* CONTROLE DE LARGURA AQUI: */
-    min-width: 15px; /* Aumente para alargar a pirâmide, diminua para estreitar */
-    height: 15px;    /* Mantenha igual ao min-width para quadradinhos perfeitos */
+    /* O segredo está aqui: largura e altura IGUAIS e fixas */
+    width: 15px; 
+    height: 15px; 
+    min-width: 15px; /* Impede de esmagar no mobile */
     
-    font-size: 11px; 
-    font-weight: bold; 
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 3px; 
-    border: 1px solid rgba(0,0,0,0.1);
-    box-sizing: border-box;
+    
+    background: #28d3ee; 
+    color: #000; 
+    font-size: 12px; 
+    font-weight: bold; 
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que a borda não aumente o tamanho */
 }
 
 /* 🟥 SEQUÊNCIA NEGATIVA (Vermelho Vivo) */
@@ -79,7 +109,7 @@ button:active { transform: scale(0.98); }
 @media(min-width: 768px) { .abas { display: block; } .abas button { width: auto; display: inline-block; } }
 @media(max-width: 768px) { .piramide.compacta { font-size: 3.2vw; } .num { padding: 4px 1.5vw; } }
 
- /* Adicione isso ao final do seu bloco <style> */
+/* Adicione isso ao final do seu bloco <style> */
 div.texto, .blocoRelatorio div, .box p {
     white-space: pre-line !important;
     margin-bottom: 20px !important;
