@@ -532,7 +532,7 @@ function mostrarAba(nome){
     document.getElementById("aba_"+nome).style.display="block";
 }
 function gerarSinteseFinal(v, p, s, d, bancoSintese) {
-    let h = `<div class="blocoRelatorio" style="border: 2px solid #6366f1; background: #fdfeff;">
+    let h = `<div class="blocoRelatorio" style="border: 2px solid #fff; background: #fdfeff;">
                 <h2 style="color:#6366f1; text-align:center; margin-bottom: 20px;">👑 Síntese de Dinâmica Quântica 👑</h2>`;
     
     let matches = [];
@@ -548,15 +548,15 @@ function gerarSinteseFinal(v, p, s, d, bancoSintese) {
     if (matches.length > 0) {
         matches.forEach(m => {
             let txt = (bancoSintese && bancoSintese[m.id]) ? bancoSintese[m.id] : "Análise de conexão em processamento...";
-            h += `<div class="blocoRelatorio" style="border-left:5px solid #6366f1; background:#f1f5f9; padding:15px; margin-bottom:15px; border-radius: 0 8px 8px 0;">
-                    <b style="font-size:18px; color: #4338ca;">🔗 ${m.tit}</b><br>
+            h += `<div class="blocoRelatorio" style="border-left:5px solid #fff; background:#f1f5f9; padding:15px; margin-bottom:15px; border-radius: 0 8px 8px 0;">
+                    <b style="font-size:18px; color: #6366F1;">🔗 ${m.tit}</b><br>
                     <p style="margin:8px 0 0 0; line-height:1.5;">${personalizarTexto(txt)}</p>
                   </div>`;
         });
     }
 
     // 2. PARTE: ASSINATURA GERAL PERSONALIZADA
-    h += `<hr style="border:0; border-top:1px dashed #cbd5e1; margin:25px 0;">`;
+    h += `<hr style="border:0; border-top:1px dashed #4338ca; margin:25px 0;">`;
     
     const conjunto = new Set([v, p, s, d]);
     let resumoGeral = "";
@@ -577,14 +577,15 @@ function gerarSinteseFinal(v, p, s, d, bancoSintese) {
         if (s === d) detalhesMistos += bancoSintese["misto_social_destino"] || "";
     }
 
-    h += `<div style="text-align:left; padding: 10px;">
+    h += `<div style="margin-top:20px; padding:10px; border:1px solid #e2e8f0; border-radius:8px; background:#f1f5f9;">
+           <b style="color:#6366f1;">Análise de Fluxos Combinados:</b>
+           ${personalizarTexto(detalhesMistos || "<p>Suas potências operam de forma independente, garantindo versatilidade em sua jornada.</p>")}
+            </div>
+    <div style="text-align:left; padding: 10px;">
             <b style="font-size:20px; color:#1e293b; display:block; margin-bottom:10px;">📋 Assinatura Geral das Potências</b>
             <div style="font-size:16px; line-height:1.7; color:#334155;">
                 ${personalizarTexto(resumoGeral)}
-                <div style="margin-top:20px; padding:10px; border:1px solid #e2e8f0; border-radius:8px; background:#fff;">
-                    <b style="color:#6366f1;">Análise de Fluxos Combinados:</b>
-                    ${personalizarTexto(detalhesMistos || "<p>Suas potências operam de forma independente, garantindo versatilidade em sua jornada.</p>")}
-                </div>
+
             </div>
           </div>`;
 
