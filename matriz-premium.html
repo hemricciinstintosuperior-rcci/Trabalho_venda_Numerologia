@@ -6,14 +6,14 @@
 <title>Relatório Premium • Pirâmide Quântica</title>
 <style>
    html, body {
-    background: #ffffff;
+    background: white;
 } 
-    body{font-family:"Times New Roman",serif;background:#f4f4f4;margin:0; color:#1a1a1a;}
+    body{font-family:"Times New Roman",serif;background:white;margin:0; color:#1a1a1a;}
     *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
     .capa{background:white;text-align:center;padding:100px 40px; page-break-after: always;}
     .logo{width:200%; max-width:900px; margin-bottom:40px;}
     .logo {
-    background: #ffffff;
+    background: #transparent;
     padding: 10px;
 }
     .nomeCliente{margin-top:50px;font-size:28px; border-top: 1px solid #ccc; padding-top: 20px; display: inline-block;}
@@ -21,7 +21,7 @@
     /* ESTILO DO SUMÁRIO DETALHADO CORRIGIDO */
     .sumario-detalhado {
         max-width: 800px; margin: 20px auto; background: white; padding: 40px;
-        border-radius: 10px; border: 1px solid #1a1a1a; page-break-after: always;
+        border-radius: 10px; border: 1px solid #fff; page-break-after: always;
     }
     .sumario-detalhado h2 { text-align: center; text-transform: uppercase; border-bottom: 3px solid #facc15; margin-bottom: 30px; }
     .secao-indice { margin-bottom: 20px; }
@@ -37,9 +37,9 @@
     .num.negativo{background:#FF0000 !important; color:#fff !important;}
     .num.especial{background:#b8860b !important; color:#fff !important;}
     .num.financeiro{background:#34c759 !important; color:#fff !important;}
-    .box { border: 1px solid #fff; padding: 20px; margin: 10px 0; border-radius: 8px; background: #ffffff; text-align: center; }
+    .box { border: 1px solid #fff; padding: 20px; margin: 10px 0; border-radius: 8px; background: #transparent; text-align: center; }
     .box p { white-space: pre-wrap; display: block; margin-bottom: 15px; line-height: 1.4; text-align: justify; background: transparent;}
-    .rodape{text-align:center;margin-top:50px;font-size:12px;color:#999; border-top: 1px solid #eee; padding-top: 20px;}
+    .rodape{text-align:center;margin-top:50px;font-size:20px;color:#999; border-top: 1px solid #fff; padding-top: 20px;}
     .btn-container { text-align:center; margin: 30px 0; }
     button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold; font-size: 18px; border-radius: 8px; cursor: pointer; }
 /* Títulos centralizados */
@@ -49,7 +49,25 @@ h1, h2, h3 {
     margin-top: 25px;
     margin-bottom: 15px;
 }
+/* Estilo para a mini-logo em todas as páginas */
+.mini-logo-fixa {
+    position: fixed;
+    top: 0px; /* Distância do fim da folha */
+    right: 0px;  /* Distância do canto direito */
+    width: 60px;  /* Tamanho bem pequeno, tipo um emoji */
+    height: auto;
+    z-index: 9999;
+    pointer-events: none; /* Garante que não atrapalhe cliques */
+    opacity: 1.9; /* Um pouco de transparência para ficar elegante */
+}
 
+/* Garante que o conteúdo não cubra a logo na impressão */
+@media print {
+    .mini-logo-fixa {
+        display: block !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
 /* Textos e parágrafos alinhados à esquerda */
 .texto, .box p, .blocoRelatorio p, .blocoRelatorio div {
     text-align: left !important; /* Força o alinhamento à esquerda */
@@ -69,7 +87,7 @@ h1, h2, h3 {
     width: 100%;
 }
     @media print {
-        body { background: white !important; }
+        body { background:transparent !important; }
         .btn-container { display: none !important; }
     }
 
@@ -98,6 +116,7 @@ if(!dados){
 
     <div class="capa">
         <img class="logo" src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matriz.png"<img src="logo.png" style="background:#ffffff; padding:10px;">
+                   <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/ícone-512.jpg" class="mini-logo-fixa">
         <div class="nomeCliente">Relatório Personalizado para:<br><strong>${rel.nome}</strong><br>Nascimento: ${rel.data}</div>
     </div>
 
@@ -177,9 +196,7 @@ Este relatório não é uma análise superficial. É a leitura estrutural da arq
 
 A proposta final do método é ampliar consciência. Quando há clareza sobre essas interações, a vida deixa de ser apenas vivida e passa a ser compreendida em sua dinâmica vibracional profunda.</div>
     </div>
-  <div class="secao">
-        <h1 style="text-align: center;">⬇️Aqui começa seu estudo das Matrizes Quânticas⬇️</h1>
-         </div>
+
     ${rel.abaPrincipal ? `<div class="secao"style="text-align: center;">${rel.abaPrincipal}</div>` : ''}
     ${rel.abaPessoal ? `<div class="secao"style="text-align: center;">${rel.abaPessoal}</div>` : ''}
     ${rel.abaSocial ? `<div class="secao"style="text-align: center;">${rel.abaSocial}</div>` : ''}
@@ -191,6 +208,7 @@ A proposta final do método é ampliar consciência. Quando há clareza sobre es
             <p>Este relatório foi desenvolvido exclusivamente para apoiar o seu processo de autoconhecimento...</p>
             <p>Você é o arquiteto da sua própria realidade...</p>
             <p>Gratidão por confiar no trabalho do Instinto Superior...</p>
+            
         </div>
     </div>
 
@@ -203,7 +221,7 @@ A proposta final do método é ampliar consciência. Quando há clareza sobre es
         </p>
     </div>
     
-    <div class="rodape">Relatório Confidencial • Instinto Superior • 2026</div>`;
+    <div class="rodape">Relatório Confidencial • Instinto Superior</div>`;
 }
 </script>
 </body>
