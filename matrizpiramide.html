@@ -290,7 +290,7 @@ function calcularPeriodoSequencia(periodoBase, duracaoTotal) {
 // --- NEGATIVAS ---
 // --- SEQUÊNCIAS NEGATIVAS (Agora lê o topo) ---
 function gerarRelatorioNegativasComVigencia(linhas, crono, bancoTxt, topoVida) {
-    let h = `<div class="blocoRelatorio"><h2 style="color:#d32f2f;">⚠️ Vulnerabilidade e Insegurança</h2>`;
+    let h = `<div class="blocoRelatorio"><h2 style="color:#d32f2f;"> Vulnerabilidade e Insegurança  ⚠️</h2>`;
     let encontrou = false;
     
     linhas.forEach((linha, i) => {
@@ -322,8 +322,8 @@ let dataFim = datas.fim;
              
                 h += `<div class="blocoRelatorio" style="border-left:5px solid #ff0000; padding-left:10px; margin-bottom:20px;">
                         <b style="font-size:18px;">🚫 Sequência ${num}</b><br>
-                         <span style="color:#111827;">📅 Período: de ${dataIni} até ${dataFim}</span><br>
-                        <span style="font-weight:bold; color:#d32f2f;">Vigência: ${duracaoTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
+                         <span style="color:#111827;">📅 Data: de ${dataIni} até ${dataFim}</span><br>
+                        <span style="font-weight:bold; color:#d32f2f;">Periodo mais crítico: ${duracaoTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
                         <p>${personalizarTexto(bancoTxt[num])}</p>
                       </div>`;
                 j += cont;
@@ -335,7 +335,7 @@ let dataFim = datas.fim;
 
 // --- SEQUÊNCIAS ESPECIAIS (Agora lê o topo) ---
 function gerarRelatorioEspeciaisComVigencia(linhas, crono, bancoTxt, topoVida) {
-    let h = `<div class="blocoRelatorio"><h2 style="color:#b8860b;">⚡️ Sequências Especiais</h2>`;
+    let h = `<div class="blocoRelatorio"><h2 style="color:#b8860b;"> Sequências Especiais  ⚡️</h2>`;
     let encontrou = false;
     
     linhas.forEach((linha, i) => {
@@ -363,8 +363,8 @@ let dataFim = datas.fim;
              
                 h += `<div class="blocoRelatorio" style="border-left:5px solid #b8860b; padding-left:10px; margin-bottom:20px;">
                         <b style="font-size:18px;">✨ Impacto ${seq}</b><br>
-                        <span style="color:#111827;">📅 Período: de ${dataIni} até ${dataFim}</span><br>
-                        <span style="font-weight:bold; color:#b8860b;">Vigência: ${duracaoTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
+                        <span style="color:#111827;">📅 Data: de ${dataIni} até ${dataFim}</span><br>
+                        <span style="font-weight:bold; color:#b8860b;">Periodo mais crítico: ${duracaoTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
                         <p>${personalizarTexto(bancoTxt[seq])}</p>
                       </div>`;
             }
@@ -375,7 +375,7 @@ let dataFim = datas.fim;
 
 // --- FLUXO FINANCEIRO (Agora lê o topo) ---
 function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt, topoVida) {
-    let h = `<div class="blocoRelatorio"><h2 style="color:#2e7d32;">💰 Fluxo Financeiro</h2>`;
+    let h = `<div class="blocoRelatorio"><h2 style="color:#2e7d32;"> Fluxo Financeiro  💰</h2>`;
     let encontrou = false;
     
     linhas.forEach((linha, i) => {
@@ -400,10 +400,10 @@ function gerarRelatorioFinanceiroComVigencia(linhas, crono, bancoTxt, topoVida) 
 let dataIni = datas.ini;
 let dataFim = datas.fim;
              
-                h += `<div class="blocoRelatorio" style="border-left:5px solid #2e7d32; padding-left:10px; margin-bottom:20px;">
-                        <b style="font-size:18px;">✅ Sequência Financeira 99/9</b><br>
-                       <span style="color:#111827;">📅 Período: de ${dataIni} até ${dataFim}</span><br>
-                        <span style="font-weight:bold; color:#2e7d32;">Vigência: ${duracaoTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
+                h += `<div class="blocoRelatorio" style="border-left:5px solid #2e7d32; padding-center:10px; margin-bottom:20px;">
+                        <b style="text-align:center;font-size:18px;">✅ Sequência Financeira 99/9</b><br>
+                       <span style="text-align:center;color:#111827;">📅 Data: de ${dataIni} até ${dataFim}</span><br>
+                        <span style="font-weight:bold;text-align:center; color:#2e7d32;">Vigência: ${duracaoTotal} anos (dos ${idadeIni} aos ${idadeFim} anos)</span>
                         <p>${personalizarTexto(bancoTxt[999])}</p>
                       </div>`;
             }
@@ -449,7 +449,7 @@ function montarConteudoComIntros(linhas, regente, txtReg, crono, txtVig, nomePir
 
 // 3. Nova versão da montarVigenciasSincronizadas
 function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa) {
-    let html = "<div class='blocoRelatorio'><h2>⏳ Fluxo das Potências Quânticas</h2>";
+    let html = "<div class='blocoRelatorio'><h2>⏳ Fluxo das Potências ⏳</h2>";
     
     cronograma.forEach((periodo) => {
         // Pega o arcano correspondente ao índice, ou o último se passar do tamanho
@@ -460,9 +460,9 @@ function montarVigenciasSincronizadas(cronograma, arcanosDaPiramide, textosMapa)
 
          html += `<div class="blocoRelatorio" style="text-align:center; border-left: 5px solid #ffffff;">
                  <h2 style="margin:0; color:#111827;">✡︎ Potência ${numArcano}</h2>
-                 <span style="margin:0; color:#000;"> 📅 Período: de ${periodo.ini} até ${periodo.fim} </span><br>
+                 <span style="margin:0; color:#111827;"> 📅 Período: de ${periodo.ini} até ${periodo.fim} </span><br>
                  <span style="color: #111827; font-weight: normal;">🔍 de ${periodo.idadeIni} a ${periodo.idadeFim} anos de idade</span>
-                 <div style="font-size:18px; margin-top:15px; text-align:center; color:#000;">
+                 <div style="font-size:18px; margin-top:15px; text-align:left; color:#333;">
                     ${textoFinal}
                  </div>
                  </div>`;
@@ -560,30 +560,31 @@ function mostrarAba(nome){
 }
 function gerarSinteseFinal(v, p, s, d, bancoSintese) {
     let h = `<div class="blocoRelatorio" style="border: 2px solid #fff; background: #fdfeff;">
-                <h2 style="color:#6366f1; text-align:center; margin-bottom: 20px;">👑 Síntese de Dinâmica Quântica 👑</h2>`;
+       <h1 style="color:#6366f1; text-align:center; margin-bottom: 20px;">▼ Resultado da Dinâmica entre as Matrizes ▼</h1>`;
+             
     
     let matches = [];
     // Verificação das 6 combinações de sincronia
-    if (p === v) matches.push({id: "pessoal_vida", tit: "Sincronia Pessoal e Vida"});
-    if (s === v) matches.push({id: "social_vida", tit: "Sincronia Social e Vida"});
-    if (d === v) matches.push({id: "destino_vida", tit: "Sincronia Destino e Vida"});
-    if (p === s) matches.push({id: "pessoal_social", tit: "Sincronia Pessoal e Social"});
-    if (p === d) matches.push({id: "pessoal_destino", tit: "Sincronia Pessoal e Destino"});
-    if (s === d) matches.push({id: "social_destino", tit: "Sincronia Social e Destino"});
+    if (p === v) matches.push({id: "pessoal_vida", tit: "Sincronia Pessoal e Vida  👤➛👑"});
+    if (s === v) matches.push({id: "social_vida", tit: "Sincronia Social e Vida  🌎➛👑"});
+    if (d === v) matches.push({id: "destino_vida", tit: "Sincronia Destino e Vida  ☄️➛👑"});
+    if (p === s) matches.push({id: "pessoal_social", tit: "Sincronia Pessoal e Social  👤➛🌎"});
+    if (p === d) matches.push({id: "pessoal_destino", tit: "Sincronia Pessoal e Destino  👤➛☄️"});
+    if (s === d) matches.push({id: "social_destino", tit: "Sincronia Social e Destino  🌎➛☄️"});
 
     // 1. PARTE: CONEXÕES ESPECÍFICAS (As que geram os emojis grandes)
     if (matches.length > 0) {
         matches.forEach(m => {
             let txt = (bancoSintese && bancoSintese[m.id]) ? bancoSintese[m.id] : "Análise de conexão em processamento...";
-            h += `<div class="blocoRelatorio" style="border-left:5px solid #fff; background:#f1f5f9; padding:15px; margin-bottom:15px; border-radius: 0 8px 8px 0;">
-                    <b style="font-size:18px; color: #6366F1;">🔗 ${m.tit}</b><br>
+            h += `<div class="blocoRelatorio" style="border-center:5px solid #fff; background:#f1f5f9; padding:15px; margin-bottom:15px; border-radius: 0 8px 8px 0;">
+                    <b style="font-size:20px; color: #6366F1;">🔗 ${m.tit}</b><br>
                     <p style="margin:8px 0 0 0; line-height:1.5;">${personalizarTexto(txt)}</p>
                   </div>`;
         });
     }
 
     // 2. PARTE: ASSINATURA GERAL PERSONALIZADA
-    h += `<hr style="border:0; border-top:1px dashed #4338ca; margin:25px 0;">`;
+    h += `<hr style="border-center:5px; border-top:1px dashed #4338ca; margin:25px 0;">`;
     
     const conjunto = new Set([v, p, s, d]);
     let resumoGeral = "";
@@ -598,22 +599,35 @@ function gerarSinteseFinal(v, p, s, d, bancoSintese) {
         resumoGeral = bancoSintese["equilibrio_misto"];
         
         // Adiciona detalhes específicos baseados no que deu igual
-        if (p === s) detalhesMistos += bancoSintese["misto_pessoal_social"] || "";
-        if (p === d) detalhesMistos += bancoSintese["misto_pessoal_destino"] || "";
-        if (p === v) detalhesMistos += bancoSintese["misto_pessoal_vida"] || "";
-        if (s === d) detalhesMistos += bancoSintese["misto_social_destino"] || "";
+        if (p === s) detalhesMistos += bancoSintese["misto_pessoal_social  👤⬌🌎"] || "";
+        if (p === d) detalhesMistos += bancoSintese["misto_pessoal_destino  👤⬌☄️"] || "";
+        if (p === v) detalhesMistos += bancoSintese["misto_pessoal_vida  👤⬌👑"] || "";
+        if (s === d) detalhesMistos += bancoSintese["misto_social_destino  🌎⬌☄️"] || "";
     }
 
     h += `<div style="margin-top:20px; padding:10px; border:1px solid #e2e8f0; border-radius:8px; background:#f1f5f9;">
            <b style="color:#6366f1;">Análise de Fluxos Combinados:</b>
-           ${personalizarTexto(detalhesMistos || "<p>Suas potências operam de forma independente, garantindo versatilidade em sua jornada.</p>")}
+           ${personalizarTexto(detalhesMistos || `<p>Quando as pirâmides apresentam números totalmente distintos entre si, forma-se um conjunto de potências que operam de maneira independente. Isso indica uma estrutura energética marcada pela autonomia entre os campos pessoal, social e de destino.</p>
+
+<p>Nesse tipo de configuração, cada força atua por si, sem exercer influência direta sobre as demais. Como resultado, a jornada de você tende a apresentar grande versatilidade e múltiplas direções possíveis.</p>
+
+<p>No entanto, essa independência também torna a experiência de vida mais complexa e cheia de nuances. você pode perceber que suas decisões, sentimentos e percepções nem sempre seguem um padrão previsível.</p>
+
+<p>Em muitos momentos, você pode sentir uma coisa, enxergar outra realidade e ser conduzida por estímulos internos ou externos difíceis de explicar. Isso cria uma dinâmica existencial rica, porém profundamente multifacetada.</p>
+
+<p>A ausência de influência direta entre os campos não significa falta de movimento, mas sim um fluxo mais sutil e não linear. Assim, a vida se desenvolve de forma natural, guiada por interações complexas entre percepção, experiência e influências mais amplas do universo.</p>`)}
             </div>
-    <div style="text-align:left; padding: 10px;">
-            <b style="font-size:20px; color:#1e293b; display:block; margin-bottom:10px;">📋 Assinatura Geral das Potências</b>
-            <div style="font-size:16px; line-height:1.7; color:#334155;">
+    <div style="text-align:center; padding: 10px;">
+            <b style="font-size:20px; color:#002663; display:block; margin-bottom:10px;">📋 Assinatura Geral do Relatório</b>
+            <div style="font-size:20px; line-height:1.7; color:#334155;">
                 ${personalizarTexto(resumoGeral)}
 
             </div>
+              <div class="secao">
+        <h1 style="text-align: center;">Aqui começa seu estudo das Matrizes Quânticas </h1>
+        
+                  <h1 style="text-align: center;">   ▼ </h1>
+                   </div>
           </div>`;
 
     return h + "</div>";
