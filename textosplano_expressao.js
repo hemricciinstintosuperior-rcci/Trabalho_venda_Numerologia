@@ -8,52 +8,52 @@ const textosPlanos = {
       1: `Existe em você um grande impulso de ação, iniciativa e realização prática no mundo material. A sua energia física manifesta-se com intensidade, favorecendo o começo de projetos e a tomada de decisões rápidas.
 Você tem uma tendência natural à autonomia e à liderança na execução, sentindo necessidade de abrir caminhos próprios e construir sua independência.
 O seu principal aprendizado envolve desenvolver constância e paciência, garantindo que sua forte iniciativa produza resultados duradouros.
-Sua vitalidade é um motor constante que empurra você para a superação de obstáculos físicos e materiais.`,
+A vitalidade é um motor constante que empurra você para a superação de obstáculos físicos e materiais.`,
 
       2: `A sua energia física manifesta-se de forma cooperativa, constante e extremamente equilibrada no dia a dia. Você possui grande capacidade de trabalhar em equipe e sustentar projetos de longo prazo com ritmo.
 Sua ação prática acontece com sensibilidade ao ambiente, favorecendo que você mantenha relações harmoniosas e produtivas no trabalho.
-O seu desafio está em manter a autonomia pessoal e não depender excessivamente de suporte externo para que você tome atitudes práticas.
+O seu desafio de você  está em manter a autonomia pessoal e não depender excessivamente de suporte externo para que tome atitudes práticas.
 Sua força física é sutil, agindo como a "cola" que mantém os seus processos materiais funcionando sem grandes sobressaltos.`,
 
       3: `A sua energia física é dinâmica e versátil, permitindo que você se adapte a diferentes funções com facilidade. Existe em você uma facilidade natural para executar tarefas múltiplas e manter um ritmo entusiasmado.
-Sua ação costuma ser acompanhada de criatividade, tornando a sua produtividade mais leve e expressiva para quem observa você.
+A ação de você  costuma ser acompanhada de criatividade, tornando a sua produtividade mais leve e expressiva para quem a observa.
 O seu principal cuidado é evitar a dispersão de forças e aprender a direcionar o seu dinamismo para objetivos verdadeiramente significativos.
 Sua vitalidade manifesta-se como alegria em realizar, transformando o seu trabalho em uma forma de expressão pessoal.`,
 
       4: `Você possui forte capacidade de disciplina, organização rigorosa e construção material sólida. Sua energia física favorece a rotina e a sua perseverança diante de tarefas complexas ou repetitivas.
 Seus projetos tendem a ser desenvolvidos com método e planejamento, garantindo que você entregue resultados tangíveis ao longo do tempo.
-O seu desafio consiste em equilibrar essa rigidez com a flexibilidade, evitando que você sofra com sobrecarga física por perfeccionismo.
+O desafio de você  consiste em equilibrar essa rigidez com a flexibilidade, evitando que sofra com sobrecarga física por perfeccionismo.
 É a sua energia de construtor, que prefere a segurança do progresso gradual à incerteza dos saltos impulsivos.`,
 
       5: `Sua energia física manifesta-se com grande vitalidade e uma adaptabilidade impressionante. Existe em você um forte impulso para agir, explorar novos territórios e experimentar possibilidades práticas.
 Mudanças repentinas estimulam a sua ação e aumentam a sua produtividade, favorecendo o seu crescimento através da experiência direta.
 O seu principal aprendizado envolve desenvolver foco para transformar o seu movimento frenético em realização concreta e estável.
-A liberdade de movimento é essencial para que você não se sinta estagnado, sendo o dinamismo a sua característica central.`,
+A liberdade de movimento é essencial para que você não sinta estagnação, sendo o dinamismo a sua característica central.`,
 
       6: `Existe em você forte disposição para assumir responsabilidades e cuidar da estabilidade do seu ambiente. Sua energia física favorece o compromisso com o dever e a manutenção do bem-estar material ao seu redor.
-Sua ação é direcionada à construção de harmonia e funcionalidade no espaço em que você vive e trabalha.
+A ação de  você é direcionada à construção de harmonia e funcionalidade no espaço em que vive e trabalha.
 O seu desafio está em evitar a sobrecarga de tarefas alheias e aprender a equilibrar suas responsabilidades com o seu autocuidado.
-Sua produtividade é guiada pelo desejo de servir, tornando você um pilar de sustentação prática para o seu grupo.`,
+Sua produtividade de você é guiada pelo desejo de servir, tornando um pilar de sustentação prática para o seu grupo.`,
 
       7: `Sua energia física manifesta-se com direção e uma busca constante por eficiência estratégica. Você tem capacidade de agir com foco profundo, poupando sua energia para o que realmente exige precisão.
 Sua ação tende a acontecer de forma seletiva ou quando você encontra um significado claro ou uma necessidade técnica na realidade.
-O seu principal aprendizado envolve manter o equilíbrio entre a ação externa e o seu recolhimento, evitando que você sofra cansaço por excesso de análise.
-Sua força física é canalizada através da mente, resultando em movimentos precisos e execuções de alta qualidade feitas por você.`,
+O  principal aprendizado de você envolve manter o equilíbrio entre a ação externa e o seu recolhimento, evitando que  sofra cansaço por excesso de análise.
+A força  física de você é canalizada através da mente, resultando em movimentos precisos e execuções de alta qualidade.`,
 
       8: `Você possui forte capacidade de realização material em larga escala, com foco total em resultados e poder. Sua energia física favorece a sua liderança executiva e o cumprimento de metas ambiciosas.
-Seus projetos são conduzidos com determinação férrea e uma visão prática voltada para a sua eficiência e o seu lucro.
+Os  projetos de você são conduzidos com determinação férrea e uma visão prática voltada para a sua eficiência e o seu lucro.
 O seu desafio consiste em equilibrar essa ambição com o seu bem-estar, evitando que sua busca pelo sucesso resulte em negligência com sua saúde.
 É a sua energia de comando, capaz de gerenciar recursos para que você construa obras de grande impacto.`,
 
       9: `Sua energia física manifesta-se com impulso de realização voltado a propósitos coletivos. Existe em você uma disposição incansável para agir em projetos que tragam contribuição social para o mundo.
 Sua ação é guiada por ideais elevados e um profundo senso de missão que transcende o seu interesse puramente individual.
 O seu principal aprendizado envolve equilibrar esse idealismo com a praticidade necessária nas pequenas tarefas que você executa no cotidiano.
-Sua vitalidade é alimentada pela inspiração, permitindo que você realize grandes feitos físicos em nome de uma causa maior.`
+A vitalidade de você  é alimentada pela inspiração, permitindo que você realize grandes feitos físicos em nome de uma causa maior.`
     },
 
     medio: {
       1: `Você tem boa capacidade de iniciativa e ação quando possui motivação clara e um objetivo definido. Sua energia física tende a responder bem a metas, permitindo que você coloque ideias em prática.
-Sua constância pode variar, exigindo esforço consciente para que você não desanime diante de obstáculos lentos ou burocráticos.
+A constância de  você  pode variar, exigindo esforço consciente para que não desanime diante de obstáculos lentos ou burocráticos.
 Equilibrar sua iniciativa com disciplina permite que você transforme esse potencial em resultados sólidos e consistentes.
 A autonomia é presente em você, mas você ainda valoriza o reconhecimento para sentir que sua ação está no caminho correto.`,
 
@@ -597,7 +597,7 @@ O seu aprendizado envolve você abrir-se para a percepção de que faz parte de 
 };
 
 const textosExpressao = {
-    criativo: ` "Plano Criativo" 
+    criativo: ` "você possui mais Criatividade" 
     
 Você possui ideias originais, enxerga a realidade de forma diferenciada e encara imprevistos com otimismo e espontaneidade.
 Analisa problemas complexos dividindo-os em partes menores, focando em soluções eficazes e na adaptação rápida a novas situações.
@@ -606,7 +606,7 @@ Você é movido por estímulos internos e grande motivação pessoal, ignorando 
 Pelo lado negativo, você pode manifestar arrogância, rebeldia contra regras e sofrer com grandes flutuações de humor e desconfiança.
 Sua busca constante pelo novo pode levar você a perder a noção de tempo e espaço ou a se deixar envolver por ilusões.`,
 
-    indeciso: ` "Plano Indeciso" 
+    indeciso: ` "A indecisão toma conta de você" 
     
 Você apresenta grande sensibilidade e necessidade de atenção, podendo agir de forma dramática ou precipitada sob pressão emocional.
 Suas reações são influenciáveis pelo ambiente, o que gera em você mudanças frequentes de opinião e certa dificuldade em agir sozinho.
@@ -615,7 +615,7 @@ Você possui um lado sedutor e provocante, mas que pode ser interpretado como in
 O fortalecimento do seu caráter ocorre ao descobrir sua verdadeira identidade, trocando a busca por reconhecimento por desejos internos.
 Negativamente, você pode se tornar inconstante, manipuladora e impulsiva quando é dominada por seus receios e emoções intensas.`,
 
-    neutro: ` "Plano Neutro" 
+    neutro: ` "voçê possui equilibrio nas decisões" 
     
 Você é alguém equilibrado e observador, que prefere analisar todos os pontos de vista antes de tomar partido em qualquer conflito.
 Age movido por interesses próprios e raramente sai da zona de conforto, sendo você excessivamente cauteloso para evitar riscos inúteis.
@@ -631,41 +631,61 @@ const introducoes = {
 };
 
 const textosTrânsito = {
-    1: `Você inicia agora um ciclo de novos começos e renovação profunda. Este trânsito marca o limiar de uma fase inovadora, onde novas ideias devem ser aceitas e desenvolvidas por você com coragem. É a sua hora de avançar, abandonando o passado e eliminando tudo o que não serve mais ao seu futuro.
-Uma nova identidade está surgindo em você: mais eficiente e líder. O período exigirá que você enfrente desafios de frente. Você terá o poder necessário para promover as mudanças que deseja, mas precisará de sua força de vontade. É um tempo de luta, mas com grandes recompensas para você.
-Sua determinação será testada e, embora o desânimo possa surgir, seguir adiante garantirá a você um nível elevado de autoestima. Aproveite para tirar projetos do papel e aumentar o seu poder pessoal agora.`,
 
-    2: `Este é um período voltado para a sua cooperação e a sua sensibilidade. A vibração 2 pede que você aprenda a buscar orientação e trabalhar em parceria. O seu sucesso depende da sua capacidade de adaptação e de ouvir os outros. Você estará mais intuitiva, o que favorece o seu papel de conselheiro.
-Mantenha o foco em seus ideais, mas evite sua teimosia. Deixe que as coisas fluam naturalmente para você. É uma fase de consolidação onde seus relacionamentos ganham protagonismo. Você pode se sentir mais dependente da opinião alheia, por isso, cerque-se de pessoas de sua confiança.
-Este trânsito pode trazer atrasos que servem como aprendizado para você. Cuide da sua saúde emocional, pois a sua sensibilidade pode aflorar. Busque ambientes harmoniosos e compartilhe seus sentimentos com quem você ama para manter seu equilíbrio.`,
+1: `<p>Você inicia agora um ciclo de novos começos e renovação profunda. Este trânsito marca o limiar de uma fase inovadora, onde novas ideias devem ser aceitas e desenvolvidas por você com coragem. É a sua hora de avançar, abandonando o passado e eliminando tudo o que não serve mais ao seu futuro.</p>
 
-    3: `Sua capacidade de expressão atinge o ápice neste ciclo. Este é um período de inspiração para você, onde seu magnetismo atrairá oportunidades. Você se sentirá mais leve e jovial, como se um fardo fosse retirado de seus ombros, permitindo que sua vida flua com mais alegria e diversão para você.
-O seu desafio é a disciplina: com tantos convites, há o risco de você dispersar energia em futilidades. É essencial manter o foco para não desperdiçar seus talentos. O número 3 rege as palavras, por isso, meça o que você diz para não ressuscitar problemas do passado por sua impulsividade.
-Aproveite para expandir seus horizontes. É uma fase de realização que pode representar uma grande virada em sua vida. Contudo, cuidado com o seu exibicionismo, especialmente se você deseja manter sua estabilidade futura.`,
+<p>Uma nova identidade está surgindo em você: mais eficiente e líder. O período exigirá que você enfrente desafios de frente. Você terá o poder necessário para promover as mudanças que deseja, mas precisará de sua força de vontade. É um tempo de luta, mas com grandes recompensas para você.</p>
 
-    4: `Este é o ciclo da sua construção e do seu esforço recompensado. O período exige de você organização e disciplina para estabelecer as bases sólidas do seu futuro. As recompensas virão na medida direta do seu empenho, especialmente nas finanças. É o momento de você agir com praticidade.
-Gerencie seu tempo com rigor e valorize cada conquista sua. As pessoas podem ver você como um porto seguro e exigir muito de você, por isso, seja dedicada, mas não permita que você seja sobrecarregado por responsabilidades que não são suas. É o momento de você colocar a vida em ordem.
-Embora possa parecer um período monótono para você, o triunfo final é garantido para quem não foge da luta. O seu resultado será um sucesso consolidado. Mantenha sua economia como prioridade, garantindo que cada passo seu seja dado com segurança.`,
+<p>Sua determinação será testada e, embora o desânimo possa surgir, seguir adiante garantirá a você um nível elevado de autoestima. Aproveite para tirar projetos do papel e aumentar o seu poder pessoal agora.</p>`,
 
-    5: `Um tempo de progresso acelerado e liberdade espera por você. O trânsito 5 traz a você um sentimento de alívio, abrindo portas nos negócios. Seu magnetismo e habilidade com as palavras serão ferramentas poderosas para que você promova suas ideias e atraia colaboradores para você.
-Velhos hábitos tendem a desaparecer de sua vida, abrindo espaço para o seu crescimento pessoal rápido. No entanto, seu desejo de satisfazer os sentidos aumenta, exigindo cuidado com seus excessos. O seu desafio é manter o foco em meio a tantos acontecimentos repentinos para você.
-Este ciclo favorece suas viagens, mas exige sua flexibilidade. Se durar muito, pode trazer a você instabilidade financeira pelo seu cansaço mental. Evite sua impulsividade, lembrando que mudança nem sempre significa evolução para você. Mantenha os pés no chão.`,
+2: `<p>Este é um período voltado para a sua cooperação e a sua sensibilidade. A vibração 2 pede que você aprenda a buscar orientação e trabalhar em parceria. O seu sucesso depende da sua capacidade de adaptação e de ouvir os outros. Você estará mais intuitiva, o que favorece o seu papel de conselheiro.</p>
 
-    6: `Este ciclo coloca a sua família e o seu lar no centro das atenções. Você será impelido a apoiar os outros e agir com altruísmo, servindo como fonte de inspiração para quem rodeia você. O seu sucesso virá através de sua disposição em ajudar, mas não se anule nem interfira demais no outro.
-Na carreira, o seu progresso virá acompanhado de desafios que exigirão sua dedicação integral. Emocionalmente, é um período de cobranças: você estará mais exigente e as pessoas esperarão mais de você. Questões mal resolvidas na sua família podem vir à tona agora.
-Busque sua harmonia e proteja seus laços afetivos com diálogo. É um trânsito ideal para você melhorar o convívio e se dedicar a causas da sua comunidade. Se você aceitar as responsabilidades com amor, suas recompensas serão imensas em sua jornada.`,
+<p>Mantenha o foco em seus ideais, mas evite sua teimosia. Deixe que as coisas fluam naturalmente para você. É uma fase de consolidação onde seus relacionamentos ganham protagonismo. Você pode se sentir mais dependente da opinião alheia, por isso, cerque-se de pessoas de sua confiança.</p>
 
-    7: `Um período sagrado para a sua autorreflexão e o seu crescimento interior. Você sentirá necessidade de introspecção para avaliar sua vida e suas motivações profundas. Sua sensibilidade estará aguçada, permitindo que você enxergue verdades que antes passavam despercebidas por você.
-Refine sua forma de se expressar para evitar conflitos com seus familiares. Este ciclo é ideal para que você se aprofunde em conhecimentos, pois sua clareza mental está potencializada. Use este tempo para você se recompor, livrando-se de mágoas que impedem sua evolução.
-Evite o seu isolamento total que beira a solidão. O seu desafio é equilibrar sua busca interna com o seu convívio social mínimo. Use o silêncio para ouvir sua verdadeira voz e descobrir o que realmente traz satisfação para você na vida.`,
+<p>Este trânsito pode trazer atrasos que servem como aprendizado para você. Cuide da sua saúde emocional, pois a sua sensibilidade pode aflorar. Busque ambientes harmoniosos e compartilhe seus sentimentos com quem você ama para manter seu equilíbrio.</p>`,
 
-    8: `O foco agora recai sobre o seu poder material e sua carreira. Este é um trânsito de grande potencial para o seu progresso financeiro, mas que exige de você planejamento rigoroso. Seus negócios devem ser tratados com inteligência; sucessos obtidos agora por você podem ser monumentais.
-Você sentirá que é um sobrevivente, retomando o controle de sua trajetória e ganhando credibilidade. É um momento de sua autoridade, onde pessoas estarão dispostas a apoiar seus projetos. O número 8 reflete a lei do retorno para tudo o que você plantou.
-Atenção para você não negligenciar sua saúde devido à obsessão pelo trabalho. Use o seu poder com sabedoria, seja justa em suas negociações e lembre-se que o seu verdadeiro sucesso depende do equilíbrio entre sua ambição e sua paz espiritual.`,
+3: `<p>Sua capacidade de expressão atinge o ápice neste ciclo. Este é um período de inspiração para você, onde seu magnetismo atrairá oportunidades. Você se sentirá mais leve e jovial, como se um fardo fosse retirado de seus ombros, permitindo que sua vida flua com mais alegria e diversão para você.</p>
 
-    9: `Um ciclo de conclusões, desapego e expansão de sua consciência. Você passará por uma transformação que levará você a abandonar hábitos que não servem mais à sua identidade. É a sua hora de perdoar mágoas antigas; manter-se apegada ao negativo apenas atrasará o seu florescimento.
-Sua sensibilidade estará elevada, despertando em você o desejo de servir e orientar os outros. O seu altruísmo é a chave para as recompensas deste período. Você terá uma visão humanitária da vida, agindo como uma visionária que busca a compreensão universal para você.
-Prepare-se para finalizações, pois o que antes era importante pode perder o sentido para você. Encerre seus ciclos com gratidão para que o novo possa entrar em sua vida com força total. O seu desgaste pode ser maior, exigindo de você clareza.`
+<p>O seu desafio é a disciplina: com tantos convites, há o risco de você dispersar energia em futilidades. É essencial manter o foco para não desperdiçar seus talentos. O número 3 rege as palavras, por isso, meça o que você diz para não ressuscitar problemas do passado por sua impulsividade.</p>
+
+<p>Aproveite para expandir seus horizontes. É uma fase de realização que pode representar uma grande virada em sua vida. Contudo, cuidado com o seu exibicionismo, especialmente se você deseja manter sua estabilidade futura.</p>`,
+
+4: `<p>Este é o ciclo da sua construção e do seu esforço recompensado. O período exige de você organização e disciplina para estabelecer as bases sólidas do seu futuro. As recompensas virão na medida direta do seu empenho, especialmente nas finanças. É o momento de você agir com praticidade.</p>
+
+<p>Gerencie seu tempo com rigor e valorize cada conquista sua. As pessoas podem ver você como um porto seguro e exigir muito de você, por isso, seja dedicada, mas não permita que você seja sobrecarregado por responsabilidades que não são suas. É o momento de você colocar a vida em ordem.</p>
+
+<p>Embora possa parecer um período monótono para você, o triunfo final é garantido para quem não foge da luta. O seu resultado será um sucesso consolidado. Mantenha sua economia como prioridade, garantindo que cada passo seu seja dado com segurança.</p>`,
+
+5: `<p>Um tempo de progresso acelerado e liberdade espera por você. O trânsito 5 traz a você um sentimento de alívio, abrindo portas nos negócios. Seu magnetismo e habilidade com as palavras serão ferramentas poderosas para que você promova suas ideias e atraia colaboradores para você.</p>
+
+<p>Velhos hábitos tendem a desaparecer de sua vida, abrindo espaço para o seu crescimento pessoal rápido. No entanto, seu desejo de satisfazer os sentidos aumenta, exigindo cuidado com seus excessos. O seu desafio é manter o foco em meio a tantos acontecimentos repentinos para você.</p>
+
+<p>Este ciclo favorece suas viagens, mas exige sua flexibilidade. Se durar muito, pode trazer a você instabilidade financeira pelo seu cansaço mental. Evite sua impulsividade, lembrando que mudança nem sempre significa evolução para você. Mantenha os pés no chão.</p>`,
+
+6: `<p>Este ciclo coloca a sua família e o seu lar no centro das atenções. Você será impelido a apoiar os outros e agir com altruísmo, servindo como fonte de inspiração para quem rodeia você. O seu sucesso virá através de sua disposição em ajudar, mas não se anule nem interfira demais no outro.</p>
+
+<p>Na carreira, o seu progresso virá acompanhado de desafios que exigirão sua dedicação integral. Emocionalmente, é um período de cobranças: você estará mais exigente e as pessoas esperarão mais de você. Questões mal resolvidas na sua família podem vir à tona agora.</p>
+
+<p>Busque sua harmonia e proteja seus laços afetivos com diálogo. É um trânsito ideal para você melhorar o convívio e se dedicar a causas da sua comunidade. Se você aceitar as responsabilidades com amor, suas recompensas serão imensas em sua jornada.</p>`,
+
+7: `<p>Um período sagrado para a sua autorreflexão e o seu crescimento interior. Você sentirá necessidade de introspecção para avaliar sua vida e suas motivações profundas. Sua sensibilidade estará aguçada, permitindo que você enxergue verdades que antes passavam despercebidas por você.</p>
+
+<p>Refine sua forma de se expressar para evitar conflitos com seus familiares. Este ciclo é ideal para que você se aprofunde em conhecimentos, pois sua clareza mental está potencializada. Use este tempo para você se recompor, livrando-se de mágoas que impedem sua evolução.</p>
+
+<p>Evite o seu isolamento total que beira a solidão. O seu desafio é equilibrar sua busca interna com o seu convívio social mínimo. Use o silêncio para ouvir sua verdadeira voz e descobrir o que realmente traz satisfação para você na vida.</p>`,
+
+8: `<p>O foco agora recai sobre o seu poder material e sua carreira. Este é um trânsito de grande potencial para o seu progresso financeiro, mas que exige de você planejamento rigoroso. Seus negócios devem ser tratados com inteligência; sucessos obtidos agora por você podem ser monumentais.</p>
+
+<p>Você sentirá que é um sobrevivente, retomando o controle de sua trajetória e ganhando credibilidade. É um momento de sua autoridade, onde pessoas estarão dispostas a apoiar seus projetos. O número 8 reflete a lei do retorno para tudo o que você plantou.</p>
+
+<p>Atenção para você não negligenciar sua saúde devido à obsessão pelo trabalho. Use o seu poder com sabedoria, seja justa em suas negociações e lembre-se que o seu verdadeiro sucesso depende do equilíbrio entre sua ambição e sua paz espiritual.</p>`,
+
+9: `<p>Um ciclo de conclusões, desapego e expansão de sua consciência. Você passará por uma transformação que levará você a abandonar hábitos que não servem mais à sua identidade. É a sua hora de perdoar mágoas antigas; manter-se apegada ao negativo apenas atrasará o seu florescimento.</p>
+
+<p>Sua sensibilidade estará elevada, despertando em você o desejo de servir e orientar os outros. O seu altruísmo é a chave para as recompensas deste período. Você terá uma visão humanitária da vida, agindo como uma visionária que busca a compreensão universal para você.</p>
+
+<p>Prepare-se para finalizações, pois o que antes era importante pode perder o sentido para você. Encerre seus ciclos com gratidão para que o novo possa entrar em sua vida com força total. O seu desgaste pode ser maior, exigindo de você clareza.</p>`
+
 };
 
 const conectores = ["Além disso,", "Também,", "Outro ponto importante,", "Somando-se a isso,", "Em complemento,"];
