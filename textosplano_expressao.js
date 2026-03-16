@@ -597,7 +597,7 @@ O seu aprendizado envolve você abrir-se para a percepção de que faz parte de 
 };
 
 const textosExpressao = {
-    criativo: ` "você possui mais Criatividade" 
+    criativo: ` "você tem mais Criatividade" 
     
 Você possui ideias originais, enxerga a realidade de forma diferenciada e encara imprevistos com otimismo e espontaneidade.
 Analisa problemas complexos dividindo-os em partes menores, focando em soluções eficazes e na adaptação rápida a novas situações.
@@ -615,7 +615,7 @@ Você possui um lado sedutor e provocante, mas que pode ser interpretado como in
 O fortalecimento do seu caráter ocorre ao descobrir sua verdadeira identidade, trocando a busca por reconhecimento por desejos internos.
 Negativamente, você pode se tornar inconstante, manipuladora e impulsiva quando é dominada por seus receios e emoções intensas.`,
 
-    neutro: ` "voçê possui equilibrio nas decisões" 
+    neutro: ` "você possui mais equilibrio nas decisões" 
     
 Você é alguém equilibrado e observador, que prefere analisar todos os pontos de vista antes de tomar partido em qualquer conflito.
 Age movido por interesses próprios e raramente sai da zona de conforto, sendo você excessivamente cauteloso para evitar riscos inúteis.
