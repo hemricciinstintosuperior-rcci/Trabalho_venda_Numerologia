@@ -6,12 +6,102 @@
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#111827">
 <style>
-body { font-family: Arial, sans-serif; background:#ffffff; color:#000; text-align:center; margin: 0; padding: 10px; }
-input, button { padding:12px; margin:8px auto; border-radius:8px; border:none; display: block; box-sizing: border-box; width: 100%; max-width: 600px; }
-input { font-size: 18px; background-color: #f3f4f6; border: 1px solid #d1d5db; }
-button { background:#facc15; font-weight:bold; cursor:pointer; transition: transform 0.1s; }
-button:active { transform: scale(0.98); }
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(180deg, #11193D, #11193D);
+    color: #041221;
+    margin: 0;
+    padding: 20px;
+}
 
+/* CONTAINER CENTRAL */
+.folhaRelatorio {
+    background: white;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+.topo-dados {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.campo {
+    text-align: left;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.campo input {
+    width: 100%;
+}
+/* INPUTS */
+input {
+    padding: 14px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px solid #DBDBDB;
+    width: 100%;
+    max-width: 500px;
+    font-size: 16px;
+    background: #DBDBDB;
+}
+
+/* BOTÕES */
+button {
+    padding: 14px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    max-width: 500px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* BOTÃO PRINCIPAL */
+button:first-of-type {
+    background: linear-gradient(90deg, #6366f1, #4338ca);
+    color: white;
+}
+
+/* BOTÃO PREMIUM */
+button:last-of-type {
+    background: linear-gradient(90deg, #827108, #827108);
+    color: white;
+}
+
+/* HOVER */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  
+}
+
+/* TÍTULO */
+h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
 /* --- ESTILO DA PIRÂMIDE --- */
 .piramide.compacta { font-size: 10px; line-height: 0.80; padding: 5px 0; display: inline-block; }
 .linha { display:flex; justify-content:center; gap: 2px; margin: 1px; }
@@ -102,8 +192,25 @@ h1, h2, h3 {
 /* --- LAYOUT E RELATÓRIO --- */
 .box { background:#ffffff; border:2px solid #fff; padding:15px; margin:15px auto; border-radius:10px; max-width:800px; }
 .box p { white-space: pre-wrap; display: block; margin-bottom: 15px; line-height: 1.6; }   
-.abas { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
-.aba { margin-top:20px; display:none; }
+.abas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.abas button {
+    width: auto;
+    padding: 8px 12px;
+    background: #000070;
+    color: white;
+}
+
+.abas button:hover {
+    background: #000070;
+    color: white;
+}
+
 .folhaRelatorio { background:white; width: 100%; max-width:800px; margin:20px auto; padding: 20px 10px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.05); }
 
 @media(min-width: 768px) { .abas { display: block; } .abas button { width: auto; display: inline-block; } }
@@ -115,19 +222,49 @@ div.texto, .blocoRelatorio div, .box p {
     margin-bottom: 20px !important;
     display: block !important;
 }
+ div {
+    margin-bottom: 10px;
+}
 </style>
 </head>
 <body>
+<div class="container">
 
-<h2>Matriz Quântica da Vida</h2>
-Nome completo igual a certidão<input id="nome" placeholder="">
-Data de nascimento<input type="date" id="data">
+    <h2>Matriz Quântica da Vida</h2>
 
-<button onclick="gerar()">GERAR AS MATRIZES</button>
-<button onclick="abrirPremium()">LIBERAR O RELATÓRIO </button>
+    <!-- DADOS -->
+    <div class="card">
 
-<div class="folhaRelatorio">
-    <div id="resultado"></div>
+        <h3>Dados Pessoais</h3>
+
+        <div class="topo-dados">
+
+            <div class="campo">
+                <label>Nome completo (igual à certidão)</label>
+                <input id="nome">
+            </div>
+
+            <div class="campo">
+                <label>Data de nascimento</label>
+                <input id="data" type="date">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- AÇÕES -->
+    <div class="card">
+
+        <h3>Gerar Análise</h3>
+
+       <button onclick="gerar()">GERAR AS MATRIZES</button>
+<button onclick="abrirPremium()">BAIXAR O RELATÓRIO EM PDF</button>
+
+    </div>
+   <div class="card">
+
+        <h3>Resultados</h3>
     <div class="abas">
         <button onclick="mostrarAba('principal')">Principal / Vida</button>
         <button onclick="mostrarAba('pessoal')">Pessoal</button>
