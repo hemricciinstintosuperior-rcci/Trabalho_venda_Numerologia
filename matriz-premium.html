@@ -16,7 +16,7 @@
     background: #transparent;
     padding: 10px;
 }
-    .nomeCliente{margin-top:50px;font-size:28px; border-top: 1px solid #ccc; padding-top: 20px; display: inline-block;}
+    .nomeCliente{margin-top:30px;font-size:24px; border-top: 1px solid #ccc; padding-top: 20px; display: inline-block;}
     
     /* ESTILO DO SUMÁRIO DETALHADO CORRIGIDO */
     .sumario-detalhado {
@@ -40,9 +40,61 @@
     .box { border: 1px solid #fff; padding: 20px; margin: 10px 0; border-radius: 8px; background: #transparent; text-align: center; }
     .box p { white-space: pre-wrap; display: block; margin-bottom: 15px; line-height: 1.4; text-align: justify; background: transparent;}
     .rodape{text-align:center;margin-top:50px;font-size:20px;color:#999; border-top: 1px solid #fff; padding-top: 20px;}
-    .btn-container { text-align:center; margin: 30px 0; }
-    button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold; font-size: 18px; border-radius: 8px; cursor: pointer; }
-/* Títulos centralizados */
+    .btn-container { text-align:center; margin: 10px 0; }
+    button{ background: #facc15; border: none; padding: 15px 30px; font-weight: bold; font-size: 30px; border-radius: 8px; cursor: pointer;  }
+/* Centralização geral */
+.btn-container, .logo-container, .nomeCliente {
+    text-align: center;
+    width: 100%;
+}
+
+.logo-container img.logo {
+    max-width: 1300px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+.nomeCliente {
+    font-size: 30px;
+    margin: 40px auto 50px auto;
+}
+
+/* Esconde o relatório na tela */
+#relatorio-premium {
+    display: none;
+}
+
+/* Mostra apenas no PDF */
+@media print {
+    #relatorio-premium {
+        display: block;
+    }
+
+    .btn-container, .logo-container, .nomeCliente {
+        display: none; /* não imprimir botão e tela de nome */
+    }
+}
+
+/* Responsividade para celular */
+@media (max-width: 480px) {
+    .logo-container img.logo {
+        width: 70%;
+        max-width: 200px;
+    }
+    .nomeCliente {
+        font-size: 18px;
+    }
+    .btn-container button {
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+}
+   
+   /* Títulos centralizados */
+
+   
 h1, h2, h3 {
     text-align: center !important;
     width: 100%;
@@ -61,13 +113,7 @@ h1, h2, h3 {
     opacity: 1.9; /* Um pouco de transparência para ficar elegante */
 }
 
-/* Garante que o conteúdo não cubra a logo na impressão */
-@media print {
-    .mini-logo-fixa {
-        display: block !important;
-        -webkit-print-color-adjust: exact;
-    }
-}
+
 /* Textos e parágrafos alinhados à esquerda */
 .texto, .box p, .blocoRelatorio p, .blocoRelatorio div {
     text-align: left !important; /* Força o alinhamento à esquerda */
@@ -97,7 +143,31 @@ div.texto, .blocoRelatorio div, .box p {
     margin-bottom: 20px !important;
     display: block !important;
 }
-    
+#relatorio-premium {
+    display: none; /* Esconde na tela */
+}
+
+@media print {
+    #relatorio-premium {
+        display: block; /* Mostra somente na hora de gerar o PDF */
+    }
+}    
+
+@media print {
+    #relatorio-premium {
+        display: block; /* mantém relatório completo no PDF */
+    }
+
+    /* Mostrar também a pirâmide e o nome no PDF */
+    .logo-container, .nomeCliente {
+        display: block !important;
+    }
+
+    /* Esconder só o botão no PDF */
+    .btn-container {
+        display: none !important;
+    }
+}   
 </style>
 </head>
 <body>
@@ -110,15 +180,29 @@ if(!dados){
 } else {
     const rel = JSON.parse(dados);
     document.getElementById("conteudo").innerHTML = `
-    <div class="btn-container">
-        <button onclick="window.print()">📄 Baixar Relatório em PDF</button>
-    </div>
+        <!-- Botão amarelo centralizado -->
+        <div class="btn-container">   
+            <button onclick="window.print()">📄 Baixar Relatório em PDF</button>
+        </div>
 
-    <div class="capa">
-        <img class="logo" src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matriz.png"<img src="logo.png" style="background:#ffffff; padding:10px;">
-                   <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/ícone-512.jpg" class="mini-logo-fixa">
-        <div class="nomeCliente">Relatório Personalizado para:<br><strong>${rel.nome}</strong><br>Nascimento: ${rel.data}</div>
-    </div>
+        <!-- Pirâmide/logo centralizada -->
+        <div class="logo-container">
+            <img class="logo" src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matriz.png">
+        </div>
+
+        <!-- Nome do cliente centralizado -->
+        <div class="nomeCliente">
+            Relatório Personalizado para:<br>
+            <strong>${rel.nome}</strong><br>
+            Nascimento: ${rel.data}
+        </div>
+
+       
+<div id="relatorio-premium">
+    <!-- Todo o conteúdo do relatório vai aqui -->
+
+
+  
 
     <div class="sumario-detalhado">
         <h2>Sumário Completo</h2>
@@ -167,7 +251,7 @@ if(!dados){
     </div>
     
     <div class="secao">
-        <h1 style="text-align: center;">💎Introdução ao Método💎</h1>
+        <h1 style="text-align: center;">💎  Introdução ao Método   💎</h1>
         <div class="texto">A Pirâmide Quântica representa um dos métodos mais sofisticados de autoconhecimento da atualidade, unindo a sabedoria ancestral da numerologia à compreensão moderna das frequências vibracionais. Neste sistema, os números não são tratados apenas como ferramentas matemáticas, mas como códigos vivos que expressam estruturas energéticas ativas, responsáveis por organizar percepções, experiências e direcionamentos existenciais.
 
 No centro do método está a Pirâmide da Vida, a base principal. Ela rege a experiência concreta do indivíduo e revela o que efetivamente está acontecendo em sua trajetória. É a estrutura objetiva da existência — o campo dos acontecimentos reais. Todas as demais pirâmides dialogam com ela.
@@ -221,7 +305,10 @@ A proposta final do método é ampliar consciência. Quando há clareza sobre es
         </p>
     </div>
     
-    <div class="rodape">Relatório Confidencial • Instinto Superior</div>`;
+    <div class="rodape">Relatório Confidencial • Instinto Superior</div>
+    </div>
+    `;
+    
 }
 </script>
 </body>
