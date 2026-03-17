@@ -277,19 +277,19 @@ const neuroMapa = {
 const perfisNeuro = {
     fisico: {
         titulo: "Executor Motor",
-        descricao: "Você atua principalmente com ações físicas e respostas rápidas. Sua energia se concentra no corpo e na execução prática das tarefas."
+        descricao: "Como um perfil focado na ação, você atua principalmente com respostas rápidas e uma interação direta com o ambiente material. Sua energia vital se concentra na inteligência do corpo e na execução prática de tarefas que exigem presença e movimento. Para você, a concretização de objetivos é uma prioridade, utilizando o córtex motor para transformar ideias abstratas em resultados visíveis. Você possui uma resiliência biológica que facilita a superação de obstáculos físicos, mantendo o foco na eficiência e na resolução imediata de problemas do cotidiano."
     },
     mental: {
         titulo: "Analítico Mental",
-        descricao: "Sua força está na análise lógica e na resolução de problemas complexos. O pensamento racional domina suas decisões."
+        descricao: "Sua principal força reside na arquitetura do pensamento lógico e na decomposição de problemas complexos em partes compreensíveis. Para você, o processamento de dados e a organização de estratégias são naturais, permitindo que o pensamento racional domine suas decisões mais importantes. Através de um córtex pré-frontal altamente ativo, você consegue antecipar cenários e planejar com precisão cirúrgica. É essencial que você cultive momentos de clareza mental, pois sua mente é uma ferramenta poderosa que busca constantemente a verdade, a ordem e a coerência em todas as áreas da vida."
     },
     emocional: {
         titulo: "Sensível Emocional",
-        descricao: "Você processa o mundo através das emoções e da empatia. Conecta-se profundamente com sentimentos próprios e alheios."
+        descricao: "A forma como você processa o mundo é profundamente filtrada pelas emoções e por uma percepção empática aguçada. Você se conecta de maneira genuína com os sentimentos próprios e alheios, utilizando o sistema límbico como uma bússola para navegar em suas relações. Para você, a harmonia interpessoal e o significado afetivo das experiências são a base da felicidade. Essa inteligência emocional permite que você identifique nuances nas interações sociais que outros ignoram, transformando sua sensibilidade em uma poderosa força de coesão e compreensão humana no seu círculo social."
     },
     intuitivo: {
         titulo: "Intuitivo Estratégico",
-        descricao: "Sua percepção vai além do óbvio. Você capta padrões sutis e conecta ideias de forma criativa e estratégica."
+        descricao: "Sua percepção cognitiva opera em uma frequência que vai muito além do óbvio ou do meramente visível. Você consegue captar padrões sutis e conexões invisíveis, unindo ideias aparentemente distantes de forma criativa e estratégica. Para você, a intuição não é um acaso, mas um processamento veloz da Rede de Modo Padrão do cérebro. Você confia em seus pressentimentos porque eles são baseados em uma síntese profunda de experiências arquivadas. Quando você se permite silenciar o ruído externo, sua visão estratégica se expande, revelando caminhos inovadores e soluções originais."
     }
 };
 
@@ -298,152 +298,89 @@ const perfisNeuro = {
 // ============================================
 
 const mapaNeuro = {
+    fisico: {
+        regiao: "Córtex Motor e Cerebelo",
+        funcao: "execução de ações, coordenação motora e resposta prática ao ambiente",
+        forte: `Você apresenta uma predominância de circuitos motores e pragmáticos altamente eficientes. Para você, a tendência biológica é agir com rapidez, transformando impulsos mentais em ações concretas sem hesitação. Esta configuração neural indica que seu córtex motor e cerebelo trabalham em harmonia para garantir precisão e estabilidade. Quando você utiliza essa força, sua capacidade de execução se torna um diferencial, permitindo que você manifeste seus projetos no mundo físico com agilidade e vigor.`,
+        
+        medio: `Você possui uma integração equilibrada entre o planejamento cognitivo e a execução motora. Para você, existe uma moderação natural: você não age por impulso, mas também não fica paralisado pela análise. Essa estabilidade permite que você mantenha a constância em suas tarefas diárias. Quando você se propõe a realizar algo, seu cérebro coordena o ritmo e a precisão de forma sustentável, garantindo que você tenha energia física suficiente para concluir o que começou sem desgaste excessivo.`,
+        
+        fraco: `Neste momento, você pode sentir certa dificuldade em tirar as ideias do papel ou manter a constância física em seus projetos. Para você, o desafio neurocientífico reside em fortalecer a via que conecta a intenção à ação prática. É importante que você estimule essa região com tarefas manuais ou movimentos repetitivos, pois isso ajudará seu cérebro a criar novas rotas de execução. Quando você começa a agir, mesmo que em pequenos passos, você treina seu cerebelo para automatizar o sucesso e a fluidez motora.`
+    },
 
-fisico:{
-regiao:"Córtex Motor e Cerebelo",
-funcao:"execução de ações, coordenação motora e resposta prática ao ambiente",
-forte:"Predominância de circuitos motores e pragmáticos. A tendência é agir rapidamente e transformar ideias em ação concreta.",
-medio:"Boa integração entre planejamento mental e execução prática.",
-fraco:"Pode haver dificuldade em transformar ideias em ação ou manter constância comportamental."
-},
+    mental: {
+        regiao: "Córtex Pré-frontal",
+        funcao: "planejamento, raciocínio lógico e tomada de decisão",
+        forte: `Sua atividade neural é marcada pela dominância de circuitos executivos focados em estratégia e visão de longo prazo. Para você, o córtex pré-frontal atua como um filtro potente, permitindo que você analise dados complexos e tome decisões assertivas sob pressão. Quando você mergulha em processos analíticos, sua clareza de pensamento se destaca, dando a você o controle total sobre a atenção e a capacidade de ignorar distrações externas em favor da lógica.`,
+        
+        medio: `Você apresenta um equilíbrio funcional entre a reflexão racional e a adaptação às circunstâncias. Para você, a lógica é uma ferramenta importante, mas você também sabe quando ceder à intuição ou ao contexto emocional. Essa flexibilidade indica que seu córtex pré-frontal está bem integrado às outras áreas cerebrais. Quando você enfrenta um problema, sua mente busca uma solução que seja estrategicamente viável, mas que também respeite o equilíbrio da sua rotina atual.`,
+        
+        fraco: `Existe uma tendência atual para que você tome decisões baseadas mais no impulso ou no cansaço mental do que na análise criteriosa. Para você, é essencial recuperar o foco nas funções executivas para evitar a sobrecarga cognitiva. Quando você reserva um tempo para organizar suas metas de forma escrita ou lógica, você ajuda seu cérebro a retomar o comando estratégico, permitindo que você visualize o futuro com mais segurança e menos ansiedade.`
+    },
 
-mental:{
-regiao:"Córtex Pré-frontal",
-funcao:"planejamento, raciocínio lógico e tomada de decisão",
-forte:"Predominância de circuitos executivos ligados à análise, estratégia e visão de longo prazo.",
-medio:"Equilíbrio entre reflexão racional e adaptação emocional.",
-fraco:"Pode existir tendência a agir mais pela emoção ou impulso do que pela análise."
-},
+    emocional: {
+        regiao: "Sistema Límbico",
+        funcao: "processamento emocional, empatia e vínculos sociais",
+        forte: `Você possui uma sensibilidade límbica elevada, o que confere a você uma capacidade extraordinária de conexão afetiva e leitura de ambiente. Para você, as emoções não são apenas reações, mas bússolas precisas que guiam suas escolhas e fortalecem seus vínculos sociais. Quando você abraça essa inteligência emocional, você se torna capaz de liderar e colaborar através da empatia, criando uma atmosfera de confiança onde quer que você esteja.`,
+        
+        medio: `Sua regulação emocional é equilibrada, permitindo que você transite entre a razão e o sentimento sem perder o centro. Para você, a estabilidade psicológica é uma construção diária que evita picos de estresse. Essa homeostase emocional garante que você consiga lidar com pressões externas sem comprometer sua saúde mental. Quando você se comunica, sua expressão é clara e ponderada, refletindo um sistema límbico que trabalha em total parceria com sua mente racional.`,
+        
+        fraco: `Você pode estar vivenciando um período de repressão emocional ou dificuldade em processar o que sente. Para você, o sistema límbico pode estar sobrecarregado, gerando uma sensação de desconexão ou apatia. É vital que você busque atividades que promovam o bem-estar e a liberação de neurotransmissores positivos. Quando você se permite expressar suas vulnerabilidades, você reinicia seus circuitos de motivação, permitindo que a alegria e o entusiasmo voltem a fluir em sua vida.`
+    },
 
-emocional:{
-regiao:"Sistema Límbico",
-funcao:"processamento emocional, empatia e vínculos sociais",
-forte:"Alta sensibilidade emocional e forte capacidade de conexão afetiva.",
-medio:"Regulação emocional equilibrada entre razão e sentimento.",
-fraco:"Tendência a reprimir emoções ou ter dificuldade em expressar sentimentos."
-},
-
-intuitivo:{
-regiao:"Rede Default Mode",
-funcao:"introspecção, imaginação e percepção simbólica",
-forte:"Grande capacidade introspectiva, criatividade simbólica e percepção de padrões profundos.",
-medio:"Boa integração entre reflexão interior e interação com o mundo externo.",
-fraco:"Pouca tendência a reflexão profunda ou busca de significado interno."
-}
-
+    intuitivo: {
+        regiao: "Rede de Modo Padrão",
+        funcao: "introspecção, imaginação e percepção simbólica",
+        forte: `Sua rede de modo padrão é altamente ativa, conferindo a você uma percepção interna profunda e uma criatividade quase ilimitada. Para você, as respostas para dilemas complexos costumam surgir em momentos de quietude, através de insights poderosos. Quando você confia em sua visão interior, você acessa um reservatório de sabedoria que ultrapassa a lógica comum, permitindo que você antecipe tendências e compreenda o significado oculto por trás dos fatos.`,
+        
+        medio: `Você mantém uma integração saudável entre sua vida interior e as demandas do mundo externo. Para você, a introspecção é uma ferramenta de recarga: você sabe quando silenciar para ouvir sua intuição, mas não se perde em devaneios. Essa harmonia permite que você aplique sua criatividade de forma prática. Quando você se dedica a refletir sobre sua jornada, seu cérebro organiza as experiências passadas para projetar soluções inovadoras para o seu presente.`,
+        
+        fraco: `Sua mente pode estar excessivamente voltada para o ruído externo, dificultando o acesso à sua percepção intuitiva. Para você, a falta de momentos de silêncio pode estar bloqueando a imaginação e a clareza simbólica. É fundamental que você cultive espaços de pausa e contemplação. Quando você se desconecta das demandas tecnológicas e sociais por alguns instantes, você permite que sua rede neural de reflexão profunda volte a brilhar, revelando o propósito que você procura.`
+    }
 };
-
 // ============================================
 // MAPA DE EDUCAÇÃO NEURO (TEXTOS GRANDES PRONTOS)
 // ============================================
-
 const mapaEducacaoNeuro = {
 
 fisico: `
-FÍSICO — Córtex Motor e Cerebelo
-
-Esta região do cérebro está ligada à execução das ações físicas, coordenação motora, equilíbrio e capacidade de transformar pensamento em ação prática. 
-O córtex motor envia comandos para os músculos enquanto o cerebelo ajusta precisão, ritmo e estabilidade dos movimentos.
-
-Quando esse sistema funciona bem, a pessoa apresenta boa coordenação, agilidade e facilidade para realizar tarefas físicas ou práticas.
-
-ALIMENTOS QUE FAVORECEM O FUNCIONAMENTO
-
-• Ovos – ricos em colina, importante para neurotransmissores.
-• Sardinha e salmão – fontes de ômega-3 que fortalecem conexões neurais.
-• Banana – rica em potássio e suporte neuromuscular.
-• Aveia – fornece energia estável para o cérebro.
-• Castanhas e nozes – magnésio e gorduras boas para atividade neural.
-
-HÁBITOS QUE ESTIMULAM ESSA REGIÃO
-
-• Exercícios físicos regulares
-• Caminhadas
-• Alongamentos
-• Atividades que exigem coordenação manual
-• Dança ou esportes
+A região composta pelo **Córtex Motor e o Cerebelo** é o centro de comando da nossa interação física com o mundo. Enquanto o Córtex Motor inicia o movimento voluntário, o Cerebelo atua como um processador de alta precisão, ajustando o equilíbrio e a coordenação fina. Na neurociência, essa área é vital para a **plasticidade sináptica**, pois é através da ação e do movimento que o cérebro consolida o aprendizado prático e a memória procedimental. Estimular essa região fortalece a conexão mente-corpo, permitindo que as intenções mentais se transformem em resultados concretos e eficientes.
 `,
 
 mental: `
-MENTAL — Córtex Pré-frontal
-
-O córtex pré-frontal é o centro das funções executivas do cérebro: raciocínio lógico, planejamento, tomada de decisões, estratégia e controle da atenção.
-
-Quando bem nutrido e estimulado, o pensamento se torna mais claro, analítico e estratégico.
-
-ALIMENTOS QUE FORTALECEM O CÓRTEX PRÉ-FRONTAL
-
-• Chocolate amargo (70% ou mais cacau) – melhora circulação cerebral.
-• Mirtilo e frutas vermelhas – antioxidantes neurais.
-• Abacate – gorduras saudáveis para os neurônios.
-• Chá verde – melhora foco e atenção.
-• Peixes ricos em ômega-3.
-
-HÁBITOS QUE ESTIMULAM ESSA REGIÃO
-
-• Leitura e estudo
-• Planejamento de metas
-• Jogos de estratégia
-• Aprender novas habilidades
-• Resolver problemas complexos
+O **Córtex Pré-frontal** é a estrutura cerebral mais evoluída, responsável pelas chamadas **Funções Executivas**. Ele atua como o "CEO do cérebro", gerenciando o raciocínio lógico, a capacidade de planejamento, a memória de trabalho e o controle de impulsos. Sob a ótica neurocientífica, esta área é essencial para a tomada de decisões estratégicas e para a antecipação de cenários futuros. Manter este estímulo em alta permite que o indivíduo processe informações complexas com clareza, mantendo o foco atencional e a disciplina necessária para resolver problemas de forma analítica e racional.
 `,
 
 emocional: `
-EMOCIONAL — Sistema Límbico
-
-O sistema límbico é o centro do processamento emocional, da empatia e da motivação.
-
-Quando equilibrado, ajuda a lidar com emoções, desenvolver vínculos e manter estabilidade psicológica.
-
-ALIMENTOS QUE AJUDAM A REGULAR O SISTEMA LÍMBICO
-
-• Banana – auxilia produção de serotonina.
-• Cacau natural – estimula neurotransmissores do bem-estar.
-• Aveia – ajuda na estabilidade energética do cérebro.
-• Iogurte natural e alimentos fermentados – fortalecem o eixo intestino-cérebro.
-• Castanhas e sementes – magnésio e triptofano.
-
-HÁBITOS QUE EQUILIBRAM O SISTEMA EMOCIONAL
-
-• Sono de qualidade
-• Meditação ou respiração profunda
-• Convívio social saudável
-• Atividades relaxantes
-• Contato com a natureza
+O **Sistema Límbico**, que inclui estruturas como a Amígdala e o Hipocampo, é o epicentro do processamento emocional e da memória afetiva. Ele regula nossas respostas de sobrevivência e a formação de vínculos sociais através da neurobiologia da empatia. A importância deste estímulo reside na **homeostase emocional**: a capacidade do cérebro de regular o estresse e gerar motivação através do sistema de recompensa (dopamina). Uma área emocional bem integrada permite uma inteligência intrapessoal robusta, facilitando o gerenciamento de sentimentos e a construção de relacionamentos saudáveis e resilientes.
 `,
 
 intuitivo: `
-INTUITIVO — Rede de Reflexão Interna (Default Mode)
-
-Esta rede cerebral está relacionada à introspecção, criatividade, imaginação e percepção intuitiva, ativando-se em momentos de reflexão profunda.
-
-ALIMENTOS QUE FAVORECEM CLAREZA MENTAL
-
-• Nozes e amêndoas – nutrientes para atividade cerebral.
-• Peixes ricos em ômega-3 – fortalecem conexões neurais.
-• Frutas frescas – antioxidantes naturais.
-• Chá de ervas – relaxamento mental.
-• Água – hidratação adequada do cérebro.
-
-HÁBITOS QUE ESTIMULAM ESSA REDE
-
-• Momentos de silêncio
-• Escrita reflexiva
-• Contemplação
-• Contato com a natureza
-• Práticas de introspecção
+A Intuição, do ponto de vista neurocientífico, está fortemente ligada à **Default Mode Network (Rede de Modo Padrão)**. Esta rede neural é ativada durante estados de introspecção, pensamento livre e "vaguear mental". Ela permite o processamento de informações subcorticais — dados que o cérebro captou, mas que ainda não chegaram à consciência lógica. Este estímulo é fundamental para a criatividade e para a percepção de padrões sutis (insights). Ao fortalecer essa rede, o cérebro consegue realizar sínteses complexas entre conhecimentos arquivados e percepções presentes, gerando a chamada "visão estratégica" ou sabedoria intuitiva.
 `
 };
+
 
 // ============================================
 // FUNÇÃO PARA GERAR O CONTEÚDO NA DIV DO HTML
 // ============================================
 
 function gerarEducacaoNeuroRetorno() {
-    let html = "<h3>Educação Neurocognitiva</h3>";
+    let html = "<h3 style='margin-top:30px; color:#06b6d4;'>Educação Neurocognitiva</h3>";
     for (let plano in mapaEducacaoNeuro) {
-        html += `<h4>${plano.toUpperCase()}</h4>`;
-        html += `<p>${mapaEducacaoNeuro[plano]}</p>`;
+        // 1. Primeiro pegamos o texto original
+        let textoOriginal = mapaEducacaoNeuro[plano];
+        
+        // 2. Aplicamos o filtro que troca "você" pelo Nome em negrito
+        let textoComNome = aplicarFiltroTexto(textoOriginal);
+        
+        // 3. Trocamos as quebras de linha por <br> para ficar separadinho
+        let textoFinal = textoComNome.replace(/\n/g, '<br>');
+        
+        html += `<div style="margin-bottom:20px;">
+                    <h4 style="color:#3b82f6; margin-bottom:8px;">${plano.toUpperCase()}</h4>
+                    <p style="line-height:1.6; text-align:justify;">${textoFinal}</p>
+                 </div>`;
     }
     return html;
 }
@@ -451,6 +388,7 @@ function gerarEducacaoNeuroRetorno() {
 // ============================================
 
   
+
 const educacaoNeuro = {
 
 fisico: `
@@ -564,7 +502,6 @@ Essas atividades fortalecem a capacidade de percepção interna e criatividade.
 
 
 
-
 // Mapeamento das imagens correspondentes
 const imagensPerfil = {
     fisico: "https://hemricciinstintosuperior-rcci.github.io/app-plano-de-expressao/icon-fisico.png",
@@ -575,43 +512,44 @@ const imagensPerfil = {
 
 // Função para gerar dominância neurocognitiva
 // Apenas retorna o HTML da dominância
-function gerarDominanciaNeuro(dados){
-    // Determina qual plano tem o maior valorReal
-    let dominante = Object.keys(dados).sort((a,b) => dados[b].valorReal - dados[a].valorReal)[0];
+function gerarDominanciaNeuro(dados) {
+    let dominante = Object.keys(dados).sort((a, b) => dados[b].valorReal - dados[a].valorReal)[0];
     let perfil = perfisNeuro[dominante];
-    let urlImagem = imagensPerfil[dominante]; // Puxa o link do seu repositório
+    let urlImagem = imagensPerfil[dominante];
 
-    // Retorna o HTML incluindo a imagem centralizada
+    // Aplicamos o filtro no título e na descrição do perfil
+    let tituloPersonalizado = aplicarFiltroTexto(perfil.titulo);
+    let descricaoPersonalizada = aplicarFiltroTexto(perfil.descricao);
+
     return `
         <div style="text-align: center; margin-bottom: 20px;">
             <img src="${urlImagem}" alt="${perfil.titulo}" style="width: 150px; height: auto; border-radius: 10px;">
         </div>
-        <h3>Dominância Neurocognitiva</h3>
-        <p><strong>${perfil.titulo}</strong><br><br>${perfil.descricao}</p>
+        <h3 style="color:#06b6d4;">Dominância Neurocognitiva</h3>
+        <p><strong>${tituloPersonalizado}</strong><br><br>${descricaoPersonalizada}</p>
     `;
 }
-function gerarInterpretacaoNeuro(dados){
+   
+function gerarInterpretacaoNeuro(dados) {
+    let html = "<h3 style='color:#06b6d4;'>Análise Neurocognitiva</h3>";
 
-let html = "<h3>Análise Neurocognitiva</h3>";
+    for (let plano in dados) {
+        let nivel = dados[plano].nivel;
+        let info = mapaNeuro[plano];
+        let textoNivel = info[nivel] || "";
 
-for(let plano in dados){
+        // Aplicamos o filtro no texto do nível (Forte/Médio/Fraco)
+        // E usamos o .replace para garantir que as quebras de linha funcionem
+        let textoFiltrado = aplicarFiltroTexto(textoNivel).replace(/\n/g, '<br>');
 
-let nivel = dados[plano].nivel;
-let info = mapaNeuro[plano];
-
-let textoNivel = info[nivel] || "";
-
-html += `
-<p>
-<strong>${plano.toUpperCase()}</strong> — ${info.regiao}<br>
-${textoNivel}
-</p>
-`;
-
-}
-
-return html;
-
+        html += `
+        <div style="margin-bottom: 15px; border-bottom: 1px solid #1f2937; padding-bottom: 10px;">
+            <strong style="color:#3b82f6;">${plano.toUpperCase()}</strong> — <span style="font-size: 0.9em; color: #94a3b8;">${info.regiao}</span><br>
+            <p style="margin-top: 8px; text-align: justify;">${textoFiltrado}</p>
+        </div>
+        `;
+    }
+    return html;
 }
   
 
@@ -729,7 +667,7 @@ function gerarTextoPlano(tipo, dados) {
 
     let textoVeredito = `--- \n SÍNTESE DO PERFIL \n\n`;
     textoVeredito += `Sua Força Principal (${nomesAmigaveis[p1.chave]}): \n${baseTextos[p1.chave][p1.nivel]} \n\n`;
-    textoVeredito += `Seu Desafio Atual (${nomesAmigaveis[p4.chave]}): \n${baseTextos[p4.chave][p4.nivel]} \n\n`;
+    textoVeredito += `Seu dasafio Atual (${nomesAmigaveis[p4.chave]}): \n${baseTextos[p4.chave][p4.nivel]} \n\n`;
     textoVeredito += `A CONEXÃO FINAL: \n${conclusaoDinamica}`;
     
     return aplicarFiltroTexto(textoFinal + "\n" + textoVeredito);
@@ -761,11 +699,11 @@ let resultadoNeuro = gerarDominanciaNeuro(dados);
 document.getElementById("resumoNatural").innerHTML =
 textoPlano +
 "<br><br>" +
-resultadoNeuro +
+aplicarFiltroTexto(resultadoNeuro) +
 "<br><br>" +
-textoNeuro +
+aplicarFiltroTexto(textoNeuro) +
 "<br><br>" +
-  textoEducacao;
+aplicarFiltroTexto(textoEducacao);
 
     for(let p in soma) atualizarBarraNatural(p.charAt(0).toUpperCase() + p.slice(1) + "Nat", soma[p], maior, dados[p].numero);
     atualizarTabela3(nome.split(""), "Nat");
@@ -829,9 +767,8 @@ gerarTextoPlano("momento", dadosTxt) +
   
 gerarDominanciaNeuro(dadosTxt) + "<br><br>" +  
   
-gerarInterpretacaoNeuro(dadosTxt) +
-"<br><br>" +
-gerarEducacaoNeuroRetorno(); // <-- aqui mesmo, já concatenado
+gerarInterpretacaoNeuro(dadosTxt);
+
 
     const somaTransito = d.fisico + d.mental + d.emocional + d.intuitivo;
     const numTransito = reduzirNumero(somaTransito);
@@ -839,12 +776,12 @@ gerarEducacaoNeuroRetorno(); // <-- aqui mesmo, já concatenado
     
     document.getElementById("resultadoTrânsito").innerHTML = `
         <div style="display:flex; align-items:left; gap:10px; margin-bottom:10px;">
-            <span style="background:#ffd633; color:#000; padding:5px 12px; border-radius:50%; font-weight:bold; font-size:1.4rem;">${numTransito}</span>
+            <span style="background:#FFFFFF; color:#000; padding:5px 12px; border-radius:50%; font-weight:bold; font-size:1.4rem;">${numTransito}</span>
         </div>
         <p>${txtTransito}</p>
-       
     `;
-   
+
+ 
 }
 
 function atualizarBarraNatural(tipo, val, maior, red) {
