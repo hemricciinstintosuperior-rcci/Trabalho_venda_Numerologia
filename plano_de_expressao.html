@@ -933,7 +933,8 @@ async function exportarRelatorio() {
     // 4. Abre o prêmio e redireciona o painel original
     window.open("premium_plano_expressao.html", "_blank");
     
- 
+ document.oncontextmenu=()=>false;
+document.onselectstart=()=>false;
 }
 </script>
   
