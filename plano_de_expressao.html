@@ -26,15 +26,20 @@ min-height:100vh;
 .emocional{background:#33cc66;}
 .intuitivo{background:#ffd633;}
 .criativo { background: #a855f7; } 
-.indeciso { background: #f97316; } 
-.neutro { background: #94a3b8; }  
+.indeciso { background: #EB8500; } 
+.neutro { background: #4A4A4A; }  
 .resumoMomento{margin-top:25px;padding:20px;background:#1f2937;border-radius:8px;}
 /* Esconde o texto que fica abaixo das barras */
 #txtFisicoNat, #txtMentalNat, #txtEmocionalNat, #txtIntuitivoNat,
 #txtFisico, #txtMental, #txtEmocional, #txtIntuitivo {
     display: none;
 }
-
+.introGeral {
+    background: transparent; /* Tira a cor cinza */
+    border-left: none;       /* Tira a barra lateral se quiser */
+    padding: 0;              /* Remove o preenchimento interno */
+    margin-top: 20px;
+}
 .barra{
 height:18px;
 border-radius:12px;
@@ -42,12 +47,12 @@ margin-bottom:14px;
 background:#1f2937;
 overflow:hidden;
 }
-
+/* NÃO ESQUEÇA ESSA CHAVE AQUI */
 .barra::after{
 content:"";
 display:block;
 height:100%;
-background:linear-gradient(90deg,#06b6d4,#3b82f6);
+background:linear-gradient(90deg,#000000,#000000);
 width:0;
 transition:width 0.8s ease;
 }
@@ -216,7 +221,10 @@ Neutro: <span id="numNeutroMom"></span><div class="bar-bg"><div id="barNeutroMom
     <h3 style="color: #ffd633;">VIBRAÇÃO DE TRÂNSITO DO ANO</h3>
     <div id="resultadoTrânsito"></div>
 </div>
-
+<div id="secaoEducacaoFinal" class="resumoMomento" style="margin-top:20px; border-top: 4px solid #06b6d4; display:none;">
+    <h3 style="color: #06b6d4; text-align: center;">EDUCAÇÃO NEUROCOGNITIVA</h3>
+    <div id="areaTextoEducativo"></div>
+</div>
   
 </section>
 
@@ -341,53 +349,73 @@ const mapaNeuro = {
         fraco: `Sua mente pode estar excessivamente voltada para o ruído externo, dificultando o acesso à sua percepção intuitiva. Para você, a falta de momentos de silêncio pode estar bloqueando a imaginação e a clareza simbólica. É fundamental que você cultive espaços de pausa e contemplação. Quando você se desconecta das demandas tecnológicas e sociais por alguns instantes, você permite que sua rede neural de reflexão profunda volte a brilhar, revelando o propósito que você procura.`
     }
 };
-// ============================================
 // MAPA DE EDUCAÇÃO NEURO (TEXTOS GRANDES PRONTOS)
 // ============================================
 const mapaEducacaoNeuro = {
 
 fisico: `
 A região composta pelo **Córtex Motor e o Cerebelo** é o centro de comando da nossa interação física com o mundo. Enquanto o Córtex Motor inicia o movimento voluntário, o Cerebelo atua como um processador de alta precisão, ajustando o equilíbrio e a coordenação fina. Na neurociência, essa área é vital para a **plasticidade sináptica**, pois é através da ação e do movimento que o cérebro consolida o aprendizado prático e a memória procedimental. Estimular essa região fortalece a conexão mente-corpo, permitindo que as intenções mentais se transformem em resultados concretos e eficientes.
+
+**Alimentação para estímulo físico e motor:**  
+Ovos (colina para transmissão neuromuscular), salmão e sardinha (ômega-3 para integridade neuronal), banana (potássio para condução elétrica), abacate (gorduras saudáveis), espinafre (magnésio muscular), beterraba (óxido nítrico para circulação), aveia (energia contínua), frango (proteína para reparo), castanhas (vitamina E), sementes de abóbora (zinco neurológico).
+
+**Exercícios para ativação do córtex motor e cerebelo:**  
+Musculação (força e ativação neural), treino funcional (coordenação integrada), caminhada (ritmo motor), corrida (sincronização corporal), exercícios de equilíbrio (cerebelo), alongamento (consciência corporal), dança (coordenação e ritmo), artes marciais (resposta motora), yoga (controle motor), pilates (precisão e estabilidade).
 `,
 
 mental: `
 O **Córtex Pré-frontal** é a estrutura cerebral mais evoluída, responsável pelas chamadas **Funções Executivas**. Ele atua como o "CEO do cérebro", gerenciando o raciocínio lógico, a capacidade de planejamento, a memória de trabalho e o controle de impulsos. Sob a ótica neurocientífica, esta área é essencial para a tomada de decisões estratégicas e para a antecipação de cenários futuros. Manter este estímulo em alta permite que o indivíduo processe informações complexas com clareza, mantendo o foco atencional e a disciplina necessária para resolver problemas de forma analítica e racional.
+
+**Alimentação para desempenho cognitivo e foco:**  
+Mirtilo (antioxidantes neurais), cacau 70%+ (fluxo sanguíneo cerebral), café (estimulação dopaminérgica), chá verde (foco equilibrado), nozes (ômega-3), brócolis (vitamina K), ovos (colina para memória), cúrcuma (anti-inflamatório cerebral), azeite de oliva (proteção neural), tomate (licopeno antioxidante).
+
+**Exercícios para fortalecimento do córtex pré-frontal:**  
+Leitura analítica (processamento profundo), resolução de problemas (lógica), jogos estratégicos (planejamento), escrita reflexiva (organização mental), meditação focada (atenção), estudo contínuo (plasticidade), aprendizado de idiomas (expansão cognitiva), quebra-cabeças (memória operacional), planejamento de metas (função executiva), debates (flexibilidade mental).
 `,
 
 emocional: `
 O **Sistema Límbico**, que inclui estruturas como a Amígdala e o Hipocampo, é o epicentro do processamento emocional e da memória afetiva. Ele regula nossas respostas de sobrevivência e a formação de vínculos sociais através da neurobiologia da empatia. A importância deste estímulo reside na **homeostase emocional**: a capacidade do cérebro de regular o estresse e gerar motivação através do sistema de recompensa (dopamina). Uma área emocional bem integrada permite uma inteligência intrapessoal robusta, facilitando o gerenciamento de sentimentos e a construção de relacionamentos saudáveis e resilientes.
+
+**Alimentação para equilíbrio emocional:**  
+Chocolate amargo (serotonina), banana (triptofano), aveia (estabilidade de humor), iogurte natural (eixo intestino-cérebro), kefir (microbiota), salmão (anti-inflamatório cerebral), amêndoas (magnésio calmante), abacate (equilíbrio hormonal), mel (bem-estar), folhas verdes (ácido fólico).
+
+**Exercícios para regulação do sistema límbico:**  
+Meditação (reduz reatividade emocional), respiração profunda (controle do estresse), terapia emocional (processamento interno), escrita emocional (liberação), caminhada na natureza (redução de cortisol), práticas de gratidão (reprogramação emocional), mindfulness (consciência), exercícios leves (endorfina), música (regulação afetiva), convivência social saudável (equilíbrio emocional).
 `,
 
 intuitivo: `
 A Intuição, do ponto de vista neurocientífico, está fortemente ligada à **Default Mode Network (Rede de Modo Padrão)**. Esta rede neural é ativada durante estados de introspecção, pensamento livre e "vaguear mental". Ela permite o processamento de informações subcorticais — dados que o cérebro captou, mas que ainda não chegaram à consciência lógica. Este estímulo é fundamental para a criatividade e para a percepção de padrões sutis (insights). Ao fortalecer essa rede, o cérebro consegue realizar sínteses complexas entre conhecimentos arquivados e percepções presentes, gerando a chamada "visão estratégica" ou sabedoria intuitiva.
+
+**Alimentação para clareza mental e intuição:**  
+Chás naturais (calmante neural), água (hidratação cerebral), maçã (energia leve), castanhas (estabilidade energética), mel (suporte cognitivo), cacau (criatividade), vegetais crus (leveza metabólica), peixes leves (nutrição cerebral), sementes (micronutrientes), alimentos naturais (redução de inflamação).
+
+**Exercícios para ativação da rede de modo padrão:**  
+Meditação profunda (introspecção), contemplação (silêncio mental), escrita intuitiva (acesso interno), visualização criativa (imaginação), solitude consciente (autoconhecimento), práticas espirituais (integração interna), contato com natureza (expansão perceptiva), redução de estímulos digitais (desaceleração), respiração consciente (presença), ócio criativo (insights).
 `
 };
 
-
-// ============================================
-// FUNÇÃO PARA GERAR O CONTEÚDO NA DIV DO HTML
-// ============================================
 
 // FUNÇÃO PARA GERAR O CONTEÚDO NA DIV DO HTML
 // ============================================
 
 function gerarEducacaoNeuroRetorno() {
-    let html = "<h3 style='margin-top:35px; color:#06b6d4;'>Educação Neurocognitiva</h3>";
+    let html = "<h3 style='margin-top:35px; color:#000000; text-align:center;'> 🧠 Educação Neurocognitiva dos Planos 🧠</h3>";
     const cores = { fisico: "#ff4d4d", mental: "#4da6ff", emocional: "#33cc66", intuitivo: "#ffd633" };
 
     for (let plano in mapaEducacaoNeuro) {
         let corAtual = cores[plano];
-        let textoFinal = aplicarFiltroTexto(mapaEducacaoNeuro[plano]).replace(/\n/g, '<br>');
+       let textoFiltrado = aplicarFiltroTexto(mapaEducacaoNeuro[plano]);
+let textoFinal = aplicarFiltroTexto(mapaEducacaoNeuro[plano]).replace(/\n/g, '<br><br>');
         
+        // MUDEI O BACKGROUND ABAIXO DE CINZA ESCURO PARA BRANCO (#FFFFFF)
         html += `
-        <div style="margin-bottom:25px; background: rgba(31, 41, 55, 0.4); padding: 15px; border-radius: 8px;">
-            <h4 style="color:${corAtual}; margin-bottom:10px; border-bottom: 1px solid ${corAtual}33;">${plano.toUpperCase()}</h4>
-            <p style="line-height:1.6; text-align:justify; font-size: 0.95em;">${textoFinal}</p>
+        <div style="margin-bottom:25px; background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e5e7eb; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <h4 style="color:${corAtual}; margin-bottom:12px; border-bottom: 2px solid ${corAtual}33; text-align:center; font-weight:bold;">${plano.toUpperCase()}</h4>
+            <p style="line-height:1.7; text-align:justify; font-size: 1rem; color:#333;">${textoFinal}</p>
         </div>`;
     }
     return html;
 }
-
 // ============================================
 
   
@@ -521,20 +549,20 @@ function gerarDominanciaNeuro(dados) {
     let urlImagem = imagensPerfil[dominante];
 
     // Aplicamos o filtro no título e na descrição do perfil
-    let tituloPersonalizado = aplicarFiltroTexto(perfil.titulo);
+    let tituloPersonalizado = aplicarFiltroTexto(perfil.titulo);   
     let descricaoPersonalizada = aplicarFiltroTexto(perfil.descricao);
 
     return `
         <div style="text-align: center; margin-bottom: 20px;">
-            <img src="${urlImagem}" alt="${perfil.titulo}" style="width: 150px; height: auto; border-radius: 10px;">
+            <img src="${urlImagem}" alt="${perfil.titulo}" style="width: 100px; height: auto; border-radius: 10px;">
         </div>
-        <h3 style="color:#06b6d4;">Dominância Neurocognitiva</h3>
+        <h3 style="color:#0C3138;">Dominância Neurocognitiva</h3>
         <p><strong>${tituloPersonalizado}</strong><br><br>${descricaoPersonalizada}</p>
     `;
 }
    
 function gerarInterpretacaoNeuro(dados) {
-    let html = "<h3 style='color:#06b6d4; margin-top:25px;'>Análise Neurocognitiva</h3>";
+    let html = "<h3 style='color:#0C3138; margin-top:25px;'>Análise Neurocognitiva</h3>";
 
     // Mapeamento interno de cores baseado no seu CSS original
     const cores = {
@@ -561,8 +589,6 @@ function gerarInterpretacaoNeuro(dados) {
     }
     return html;
 }
-  
-
   
 
 
@@ -636,7 +662,7 @@ function gerarTextoPlano(tipo, dados) {
     planosOrdenados.forEach((plano, index) => {
         let posicao = index + 1;
         let nomePlano = nomesAmigaveis[plano.chave];
-        textoFinal += `${posicao}ºIntensidade - ${nomePlano} \n`;
+       textoFinal += `<strong>${posicao}ºIntensidade - ${nomePlano}</strong> \n`;
         if (typeof explicacoesPosicao !== 'undefined') textoFinal += (explicacoesPosicao[posicao] || "") + "\n\n";
         if (typeof textosPlanos !== 'undefined' && textosPlanos[plano.chave]) {
             let txt = textosPlanos[plano.chave][plano.nivel][plano.num];
@@ -677,12 +703,13 @@ function gerarTextoPlano(tipo, dados) {
         conclusaoDinamica = `Seu perfil mostra uma dinâmica entre ${nomesAmigaveis[p1.chave]} e ${nomesAmigaveis[p4.chave]}.`;
     }
 
-    let textoVeredito = `--- \n SÍNTESE DO PERFIL \n\n`;
-    textoVeredito += `Sua Força Principal (${nomesAmigaveis[p1.chave]}): \n${baseTextos[p1.chave][p1.nivel]} \n\n`;
-    textoVeredito += `Seu dasafio Atual (${nomesAmigaveis[p4.chave]}): \n${baseTextos[p4.chave][p4.nivel]} \n\n`;
-    textoVeredito += `A CONEXÃO FINAL: \n${conclusaoDinamica}`;
+let textoVeredito = ` \n <strong>SÍNTESE DO PERFIL</strong> \n`;
+textoVeredito += `<strong>Sua Força Principal (${nomesAmigaveis[p1.chave]}):</strong> \n${baseTextos[p1.chave][p1.nivel]} \n`;
+textoVeredito += `<strong>Seu Desafio Atual (${nomesAmigaveis[p4.chave]}):</strong> \n${baseTextos[p4.chave][p4.nivel]} \n`;
+textoVeredito += `<strong>A CONEXÃO FINAL:</strong> \n${conclusaoDinamica}`;
     
-    return aplicarFiltroTexto(textoFinal + "\n" + textoVeredito);
+   let textoComParagrafos = (textoFinal + "\n" + textoVeredito).replace(/\n/g, '<br><br>');
+return aplicarFiltroTexto(textoComParagrafos);
 }
 
 function planoNatural(nome) {
@@ -713,9 +740,7 @@ textoPlano +
 "<br><br>" +
 aplicarFiltroTexto(resultadoNeuro) +
 "<br><br>" +
-aplicarFiltroTexto(textoNeuro) +
-"<br><br>" +
-aplicarFiltroTexto(textoEducacao);
+aplicarFiltroTexto(textoNeuro);
 
     for(let p in soma) atualizarBarraNatural(p.charAt(0).toUpperCase() + p.slice(1) + "Nat", soma[p], maior, dados[p].numero);
     atualizarTabela3(nome.split(""), "Nat");
@@ -754,9 +779,16 @@ function gerarStatusMomento() {
     const ano = document.getElementById("anoSelect").value;
     const d = bancoMomentos.find(a => a.ano == ano);
     if (!d) return;
-    const maior = Math.max(d.fisico, d.mental, d.emocional, d.intuitivo);
-    const red = { fisico: reduzirNumero(d.fisico), mental: reduzirNumero(d.mental), emocional: reduzirNumero(d.emocional), intuitivo: reduzirNumero(d.intuitivo) };
 
+    const maior = Math.max(d.fisico, d.mental, d.emocional, d.intuitivo);
+    const red = { 
+        fisico: reduzirNumero(d.fisico), 
+        mental: reduzirNumero(d.mental), 
+        emocional: reduzirNumero(d.emocional), 
+        intuitivo: reduzirNumero(d.intuitivo) 
+    };
+
+    // Atualiza as barras de progresso do Momento
     for(let p in d) {
         if(p !== "ano" && p !== "letras" && p !== "intervalo") {
             atualizarBarraNatural(p.charAt(0).toUpperCase() + p.slice(1), d[p], maior, reduzirNumero(d[p]));
@@ -770,30 +802,37 @@ function gerarStatusMomento() {
         emocional: { nivel: classificarIntensidade(d.emocional, maior), numero: red.emocional, valorReal: d.emocional },
         intuitivo: { nivel: classificarIntensidade(d.intuitivo, maior), numero: red.intuitivo, valorReal: d.intuitivo }
     };
-  
 
-document.getElementById("resumoMomento").innerHTML =
-"No ano de " + ano + " (" + d.intervalo + "):\n\n" +
-gerarTextoPlano("momento", dadosTxt) +
-"<br><br>" +
-  
-gerarDominanciaNeuro(dadosTxt) + "<br><br>" +  
-  
-gerarInterpretacaoNeuro(dadosTxt);
+    // Preenche o texto do Momento (Análise dos Planos)
+    document.getElementById("resumoMomento").innerHTML =
+        "No ano de " + ano + " (" + d.intervalo + "):\n\n" +
+        gerarTextoPlano("momento", dadosTxt) +
+        "<br><br>" +
+        gerarDominanciaNeuro(dadosTxt) + "<br><br>" +  
+        gerarInterpretacaoNeuro(dadosTxt);
 
-
+    // Cálculos da Vibração de Trânsito
     const somaTransito = d.fisico + d.mental + d.emocional + d.intuitivo;
     const numTransito = reduzirNumero(somaTransito);
     let txtTransito = (typeof textosTrânsito !== 'undefined' && textosTrânsito[numTransito]) ? aplicarFiltroTexto(textosTrânsito[numTransito]) : "A vibração deste ciclo é " + numTransito;
     
+    // Exibe a Vibração do Ano
     document.getElementById("resultadoTrânsito").innerHTML = `
         <div style="display:flex; align-items:left; gap:10px; margin-bottom:10px;">
-            <span style="background:#FFFFFF; color:#000; padding:5px 12px; border-radius:50%; font-weight:bold; font-size:1.4rem;">${numTransito}</span>
-        </div>
+            <span style="background:#fff; color:#000; padding:5px 12px; border-radius:50%; font-weight:bold; font-size:1.4rem;">Trânsito N°  ${numTransito}</span>
+        </div>                
         <p>${txtTransito}</p>
     `;
 
- 
+    // --- PARTE DA EDUCAÇÃO (O AJUSTE QUE VOCÊ QUERIA) ---
+    // Pega o conteúdo da função lá de baixo e joga na div correta do HTML
+    const areaEdu = document.getElementById("areaTextoEducativo");
+    const secaoEdu = document.getElementById("secaoEducacaoFinal");
+
+    if (areaEdu) {
+        areaEdu.innerHTML = gerarEducacaoNeuroRetorno(); 
+        secaoEdu.style.display = "block"; // Faz a seção aparecer abaixo da vibração
+    }
 }
 
 function atualizarBarraNatural(tipo, val, maior, red) {
@@ -811,10 +850,20 @@ function gerarTudo() {
     const n = document.getElementById("nome").value;
     const d = document.getElementById("dataNascimento").value;
     if(!n || !d) return alert("Preencha nome e data.");
+
+    // Faz os cálculos
     planoNatural(n);
     planoMomento(n, d);
     gerarStatusMomento();
-    gerarEducacaoNeuro(); // <-- insere os textos grandes na div
+
+    // Manda o texto para a div que você colou abaixo do trânsito
+    const areaEdu = document.getElementById("areaTextoEducativo");
+    const secaoEdu = document.getElementById("secaoEducacaoFinal");
+
+    if (areaEdu) {
+        areaEdu.innerHTML = gerarEducacaoNeuroRetorno(); 
+        secaoEdu.style.display = "block";
+    }
 }
 
 // --- CONFIGURAÇÃO DE SEGURANÇA E TRAVA (PLANO DE EXPRESSÃO) ---
@@ -845,9 +894,11 @@ async function exportarRelatorio() {
         console.error("Erro na trava de segurança:", e);
     }
 
-    // 3. Monta o pacote de dados (Mantendo sua lógica original)
+    // Captura os valores das barras do Natural
     const valNat = valoresBrutosNatural;
     const expNat = document.getElementById("resumoExpressaoNat").innerHTML;
+    
+    // Captura os valores do Momento selecionado
     const ano = document.getElementById("anoSelect").value;
     const d = bancoMomentos.find(a => a.ano == ano);
 
@@ -856,11 +907,17 @@ async function exportarRelatorio() {
         data: document.getElementById("dataNascimento").value,
         anoMomento: ano,
         inicioFimMomento: d.intervalo, 
+        // Textos
         textoNatural: document.getElementById("resumoNatural").innerHTML,
         textoMomento: document.getElementById("resumoMomento").innerHTML,
         textoExpressaoNat: expNat,
         textoExpressaoMom: document.getElementById("resumoExpressaoMom").innerHTML,
         transitoHTML: document.getElementById("resultadoTrânsito").innerHTML,
+        // ADICIONE ESTA LINHA ABAIXO:
+        textoEducacao: document.getElementById("areaTextoEducativo").innerHTML,
+        
+        
+        // Valores para os Gráficos Natural
         fisico: valNat.fisico,
         mental: valNat.mental,
         emocional: valNat.emocional,
@@ -868,6 +925,7 @@ async function exportarRelatorio() {
         criativoNat: parseInt(document.getElementById("numCriativoNat").innerText),
         indecisoNat: parseInt(document.getElementById("numIndecisoNat").innerText),
         neutroNat: parseInt(document.getElementById("numNeutroNat").innerText),
+        // Valores para os Gráficos Momento
         fisicoMomento: d.fisico,
         mentalMomento: d.mental,
         emocionalMomento: d.emocional,
