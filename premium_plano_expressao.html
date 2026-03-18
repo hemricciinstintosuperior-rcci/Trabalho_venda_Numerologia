@@ -18,9 +18,9 @@ margin:0;
 display:block;
 margin:0 auto 25px auto;
 
-max-width:1000px;
+max-width:1500px;
 width:100%;
-height:auto;
+height:900px;
 
 }
 
@@ -50,7 +50,7 @@ font-size:32px;
 
 h2{
 margin-top:45px;
-border-left:6px solid #6366f1;
+border-left:6px solid #000000;
 padding-left:12px;
 font-size:22px;
 }
@@ -125,10 +125,10 @@ gap:40px;
 /* BLOCOS */
 
 .bloco{
-background:#f9fafb;
+background:#fff;
 padding:25px;
 border-radius:12px;
-border:1px solid #e5e7eb;
+border:1px solid #fff;
 text-align:left;          
 }
 .bloco{
@@ -197,7 +197,7 @@ background:#fb923c;
 
 #barNeutroNat,
 #barNeutroMom{
-background:#6b7280;
+background:#4A4A4A;
 }
 
 /* TEXTOS */
@@ -211,47 +211,12 @@ line-height:1.7;
 margin-bottom:20px;
 }
 
-.introGeral{
 
-margin-top:30px;
-margin-bottom:40px;
-
-font-size:16px;
-line-height:1.8;
-
-color:#333;
-
-background:#f8fafc;
-
-padding:25px;
-
-border-left:6px solid #6366f1;
-
-border-radius:8px;
-
-}
-
-.introGeral p{
-margin-bottom:18px;
-}          
-.intro{
-
-margin-top:10px;
-margin-bottom:25px;
-
-font-size:15px;
-line-height:1.7;
-
-color:#444;
-
-background:#f8fafc;
-
-padding:15px;
-
-border-left:4px solid #6366f1;
-
-border-radius:6px;
-
+.introGeral {
+    background: transparent; /* Tira a cor cinza */
+    border-left: none;       /* Tira a barra lateral se quiser */
+    padding: 0;              /* Remove o preenchimento interno */
+    margin-top: 20px;
 }
 
 #transito p{
@@ -289,7 +254,44 @@ padding:25px;
 }
 
 }
+.barra span{
+display:block;
+height:100%;
+width:0%;
 
+background-color:currentColor;
+
+}
+
+#barFisicoNat,
+#barFisicoMom{
+color:#ef4444;
+}
+
+#barMentalNat,
+#barMentalMom{
+color:#3b82f6;
+}
+
+#barEmocionalNat,
+#barEmocionalMom{
+color:#22c55e;
+}
+
+#barIntuitivoNat,
+#barIntuitivoMom{
+color:#facc15;
+}
+
+ @media print{
+
+*{
+-webkit-print-color-adjust:exact;
+print-color-adjust:exact;
+}
+
+}         
+          
 </style>
 
 </head>
@@ -303,25 +305,32 @@ padding:25px;
 <div class="capa">
           <div class="capa">
             <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/plano.png"class="logoRelatorio">
-<h1>Plano de Expressão Quântico</h1>
+
 <h3 id="nomePessoa"></h3>
 <p id="dataPessoa"></p>
 </div>
 
+
+          
 <div class="sumario">
 
 <h2>Sumário</h2>
 
 <ul>
 <li>1. Introdução do método</li>          
-<li>2. Plano de Expressão Natural</li>
+<li>2. Plano de Energia Natural</li>
 <li>3. Perfil de Expressão Natural</li>
-<li>4. Plano de Expressão do Momento</li>
-<li>5. Perfil de Expressão do Momento</li>
-<li>6. Vibração de Trânsito Anual</li>
+<li>4. Dominancia e analise Neurocognitiva Natural</li>          
+<li>5. Plano de Expressão do Momento</li>
+<li>6. Perfil de Expressão do Momento</li>
+<li>7. Dominancia e analise Neurocognitiva do Momento</li>         
+<li>8. Vibração de Trânsito Anual</li>
+<li>9. Educação Neurocognitiva</li> 
+<li>10. Conclusão</li>            
 </ul>
 
 </div>
+ <h1>Plano de Expressão Quântico</h1>         
 <h2>Introdução</h2>          
 <div class="introGeral">
 
@@ -344,7 +353,7 @@ Essa abordagem amplia a interpretação tradicional ao incorporar uma perspectiv
 
 <div class="bloco">
 
-<h3>Planos</h3>
+<h3>Plano de Energia Natural</h3>
 <p class="intro">
 O Plano de Expressão Natural revela como as energias cognitivas e comportamentais da pessoa se organizam de forma estrutural ao longo da vida. Ele demonstra a predominância dos planos físico, mental, emocional e intuitivo, indicando como a consciência tende a perceber, interpretar e reagir ao mundo ao redor.
 </p>
@@ -364,7 +373,7 @@ Intuitivo
 
 <div class="bloco">
 
-<h3>Expressão</h3>
+<h3>Expressão Natural</h3>
 <p class="intro">
 O Perfil de Expressão Natural demonstra a forma como a mente organiza decisões, criatividade e posicionamento diante das situações da vida. Ele indica se a tendência predominante é criativa, neutra ou indecisa, revelando padrões estruturais de manifestação da consciência.
 </p>
@@ -393,7 +402,7 @@ Neutro
 
 <div class="bloco">
 
-<h3>Planos</h3>
+<h3>Plano de Enegia atual</h3>
 <p class="intro">
 O Plano de Expressão do Momento representa o estado energético atual da consciência dentro do ciclo de vida analisado. Diferente do plano natural, ele mostra como os planos cognitivos estão operando no período presente, revelando tendências temporárias de comportamento, percepção e tomada de decisão.
 </p>
@@ -413,7 +422,7 @@ Intuitivo
 
 <div class="bloco">
 
-<h3>Expressão</h3>
+<h3>Expressão atual</h3>
 <p class="intro">
 O Perfil de Expressão do Momento demonstra como a mente está estruturando suas respostas no ciclo atual. Ele revela se o período favorece manifestações criativas, estados de indecisão ou equilíbrio neutro entre as possibilidades de ação.
 </p>
@@ -438,7 +447,47 @@ Neutro
 A Vibração de Trânsito Anual representa o campo vibracional que influencia o período atual da vida. Ela indica tendências de movimento, mudanças e oportunidades que podem se manifestar ao longo do ciclo anual, funcionando como um direcionamento energético para experiências e aprendizados.
 </p>
 <div id="transito"></div>
+          
+<h2>Educação Neurocognitiva  </h2>
+<p class="intro">
+    <p>A <strong>Educação Neurocognitiva</strong> baseia-se nos princípios fundamentais da neurociência aplicada para otimizar o potencial humano através da compreensão profunda das nossas redes neurais. Cada pilar identificado no seu Mapa — <strong>Físico, Mental, Emocional e Intuitivo</strong> — possui uma correlação direta com áreas específicas do encéfalo, como o córtex pré-frontal, o sistema límbico e a sofisticada rede de modo padrão.</p>
 
+<p>Ao integrar esses conhecimentos, o objetivo é promover a <strong>neuroplasticidade</strong>, que é a capacidade biológica do cérebro de reorganizar suas conexões sinápticas, fortalecendo circuitos que favorecem a alta performance e o equilíbrio psíquico. Esta abordagem permite que você saia do modo de reação automática e passe a operar em um estado de comando consciente sobre suas funções cognitivas e biológicas.</p>
+
+<p>A bioenergética do seu cérebro depende diretamente da oferta de precursores neuroquímicos específicos. Nutrientes como a <strong>colina</strong>, o <strong>triptofano</strong> e os ácidos graxos essenciais não são apenas alimentos, mas combustíveis críticos para a produção de neurotransmissores como dopamina e serotonina, que regulam desde o seu foco atencional até a sua resiliência diante do estresse cotidiano.</p>
+
+<p>Esta análise busca reduzir a sua <strong>carga alostática</strong> — o desgaste físico e mental causado pelo desequilíbrio entre as demandas do ambiente e a sua capacidade de resposta. Ao aplicar os protocolos de nutrição e exercícios cerebrais sugeridos para cada plano, você estará realizando um verdadeiro <em>biohacking</em> no seu sistema nervoso, favorecendo a homeostase e o bem-estar integral.</p>
+
+<p>Compreender a sua dominância neurocognitiva é a chave para acessar o estado de <strong>Flow (Fluxo)</strong>, onde o esforço diminui e a produtividade aumenta significativamente. Este relatório serve como um guia técnico para que você aprenda a gerenciar sua biologia interna, utilizando a inteligência neurocientífica para sustentar sua evolução pessoal e profissional de forma estratégica e duradoura.</p>      
+   <div id="textoEducativoPDF"> </div>
+
+<div class="secao" style="text-align: center; page-break-before: always; padding: 40px;">
+    <h2 style="color: #1e293b; margin-bottom: 30px;">🏆 PARABÉNS, <strong id="nomeConclusao"></strong>!</h2>
+    
+   <img src="https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/ícone-512.jpg" style="max-width: 100%; border-radius: 10px; margin-bottom: 20px;">
+
+    <div style="max-width: 800px; margin: auto; text-align: justify; line-height: 1.8; color: #334155; font-size: 1.1rem;">
+        <p>
+            Ao finalizar este relatório, você detém em mãos não apenas dados, mas um mapa estratégico de sua própria arquitetura interna. O equilíbrio entre os planos físico, mental, emocional e intuitivo é o que define a maestria sobre a vida.
+        </p>
+
+        <p>
+            Assim como a <strong>Águia</strong>, que possui a visão binocular necessária para focar no detalhe sem perder a percepção do todo, este estudo foi desenhado para elevar sua consciência acima das névoas do cotidiano. A verdadeira clareza surge quando conseguimos observar nossos padrões de uma altura segura, permitindo decisões mais assertivas e alinhadas ao nosso propósito real.
+        </p>
+
+        <p>
+            Lembre-se de que a <strong>Justiça e o Equilíbrio</strong> (simbolizados pela balança) não são estados estáticos, mas um processo contínuo de ajuste. A neurociência nos ensina que o cérebro é plástico e capaz de evoluir a cada nova escolha consciente. Ao aplicar os protocolos de educação neurocognitiva e respeitar seus ritmos naturais, você calibra sua biologia para sustentar suas mais altas aspirações.
+        </p>
+
+        <p style="text-align: center; font-style: italic; margin-top: 30px; font-size: 1.2rem; color: #1e293b;">
+            "Que sua jornada seja guiada pelo equilíbrio perfeito entre o céu da intuição e a terra da realização. Que a clareza aqui encontrada seja a luz que ilumina seus próximos passos rumo ao <strong>Instinto Superior</strong>."
+        </p>
+    </div>
+</div>
+    
+    <div class="rodape">Relatório Confidencial • www.instintosuperior.com</div>
+    </div>
+    
 </div>
 
 <script>
@@ -452,6 +501,8 @@ alert("Nenhum relatório encontrado.");
 /* CAPA */
 
 document.getElementById("nomePessoa").innerText = dados.nome;
+ // ADICIONE ESTA LINHA AQUI ABAIXO PARA PREENCHER A CONCLUSÃO:
+document.getElementById("nomeConclusao").innerText = dados.nome;         
 // FORMATAR DATA (De AAAA-MM-DD para DD/MM/AAAA)
 if (dados.data && dados.data.includes("-")) {
     const partes = dados.data.split("-");
@@ -483,8 +534,10 @@ document.getElementById("textoNatural").innerHTML = formatarTexto(dados.textoNat
 document.getElementById("textoMomento").innerHTML = formatarTexto(dados.textoMomento);
 document.getElementById("textoExpressaoNat").innerHTML = formatarTexto(dados.textoExpressaoNat);
 document.getElementById("textoExpressaoMom").innerHTML = formatarTexto(dados.textoExpressaoMom);
-
+// ADICIONE ESTA LINHA ABAIXO PARA O TEXTO APARECER:
+document.getElementById("textoEducativoPDF").innerHTML = dados.textoEducacao || "Conteúdo não disponível.";
 document.getElementById("transito").innerHTML = dados.transitoHTML;
+          
 
 /* FUNÇÃO PARA BARRAS */
 
@@ -543,8 +596,7 @@ dados.neutroMom
 barra("barCriativoMom",dados.criativoMom,maxExpMom);
 barra("barIndecisoMom",dados.indecisoMom,maxExpMom);
 barra("barNeutroMom",dados.neutroMom,maxExpMom);
-document.oncontextmenu=()=>false;
-document.onselectstart=()=>false;
+
 </script>
 
 </body>
