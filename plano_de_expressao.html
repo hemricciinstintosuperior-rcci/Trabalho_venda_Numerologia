@@ -27,7 +27,7 @@ min-height:100vh;
 .intuitivo{background:#ffd633;}
 .criativo { background: #a855f7; } 
 .indeciso { background: #EB8500; } 
-.neutro { background: #4A4A4A; }  
+.neutro { background: #B89A9A; }  
 .resumoMomento{margin-top:25px;padding:20px;background:#1f2937;border-radius:8px;}
 /* Esconde o texto que fica abaixo das barras */
 #txtFisicoNat, #txtMentalNat, #txtEmocionalNat, #txtIntuitivoNat,
@@ -219,6 +219,7 @@ Neutro: <span id="numNeutroMom"></span><div class="bar-bg"><div id="barNeutroMom
 
 <div id="blocoTrânsitoAnual" class="resumoMomento" style="margin-top:20px; border-top: 4px solid #ffd633;">
     <h3 style="color: #ffd633;">VIBRAÇÃO DE TRÂNSITO DO ANO</h3>
+       <p id="dataCicloTransito" style="font-size: 0.9rem; color: #94a3b8; margin-top: -10px; margin-bottom: 15px;"></p>
     <div id="resultadoTrânsito"></div>
 </div>
 <div id="secaoEducacaoFinal" class="resumoMomento" style="margin-top:20px; border-top: 4px solid #06b6d4; display:none;">
@@ -399,7 +400,7 @@ Meditação profunda (introspecção), contemplação (silêncio mental), escrit
 // ============================================
 
 function gerarEducacaoNeuroRetorno() {
-    let html = "<h3 style='margin-top:35px; color:#000000; text-align:center;'> 🧠 Educação Neurocognitiva dos Planos 🧠</h3>";
+    let html = "<h3 style='margin-top:35px; color:#000000; text-align:center;'> 🧠 Educação NeuroCognitiva dos Planos de Expressão 🧠</h3>";
     const cores = { fisico: "#ff4d4d", mental: "#4da6ff", emocional: "#33cc66", intuitivo: "#ffd633" };
 
     for (let plano in mapaEducacaoNeuro) {
@@ -556,7 +557,7 @@ function gerarDominanciaNeuro(dados) {
         <div style="text-align: center; margin-bottom: 20px;">
             <img src="${urlImagem}" alt="${perfil.titulo}" style="width: 100px; height: auto; border-radius: 10px;">
         </div>
-        <h3 style="color:#0C3138;">Dominância Neurocognitiva</h3>
+        <h3 style="color:#0C3138;">Dominância</h3>
         <p><strong>${tituloPersonalizado}</strong><br><br>${descricaoPersonalizada}</p>
     `;
 }
@@ -702,7 +703,6 @@ function gerarTextoPlano(tipo, dados) {
     } else {
         conclusaoDinamica = `Seu perfil mostra uma dinâmica entre ${nomesAmigaveis[p1.chave]} e ${nomesAmigaveis[p4.chave]}.`;
     }
-
 let textoVeredito = ` \n <strong>SÍNTESE DO PERFIL</strong> \n`;
 textoVeredito += `<strong>Sua Força Principal (${nomesAmigaveis[p1.chave]}):</strong> \n${baseTextos[p1.chave][p1.nivel]} \n`;
 textoVeredito += `<strong>Seu Desafio Atual (${nomesAmigaveis[p4.chave]}):</strong> \n${baseTextos[p4.chave][p4.nivel]} \n`;
@@ -779,7 +779,9 @@ function gerarStatusMomento() {
     const ano = document.getElementById("anoSelect").value;
     const d = bancoMomentos.find(a => a.ano == ano);
     if (!d) return;
-
+    // --- ADICIONE ESTA LINHA ABAIXO ---
+    document.getElementById("dataCicloTransito").innerText = d.intervalo; 
+    // ---------------------------------
     const maior = Math.max(d.fisico, d.mental, d.emocional, d.intuitivo);
     const red = { 
         fisico: reduzirNumero(d.fisico), 
@@ -894,51 +896,63 @@ async function exportarRelatorio() {
         console.error("Erro na trava de segurança:", e);
     }
 
-    // Captura os valores das barras do Natural
-    const valNat = valoresBrutosNatural;
-    const expNat = document.getElementById("resumoExpressaoNat").innerHTML;
-    
-    // Captura os valores do Momento selecionado
+   const valNat = valoresBrutosNatural;
+    const maiorNat = Math.max(valNat.fisico, valNat.mental, valNat.emocional, valNat.intuitivo);
     const ano = document.getElementById("anoSelect").value;
     const d = bancoMomentos.find(a => a.ano == ano);
+    const maiorMom = Math.max(d.fisico, d.mental, d.emocional, d.intuitivo);
+
+    // DADOS NATURAIS COMPLETOS (Com Nível e Número para o Neuro e Planos)
+    const dadosNat = {
+        fisico: { nivel: classificarIntensidade(valNat.fisico, maiorNat), numero: reduzirNumero(valNat.fisico), valorReal: valNat.fisico },
+        mental: { nivel: classificarIntensidade(valNat.mental, maiorNat), numero: reduzirNumero(valNat.mental), valorReal: valNat.mental },
+        emocional: { nivel: classificarIntensidade(valNat.emocional, maiorNat), numero: reduzirNumero(valNat.emocional), valorReal: valNat.emocional },
+        intuitivo: { nivel: classificarIntensidade(valNat.intuitivo, maiorNat), numero: reduzirNumero(valNat.intuitivo), valorReal: valNat.intuitivo }
+    };
+
+    // DADOS MOMENTO COMPLETOS
+    const dadosMom = {
+        fisico: { nivel: classificarIntensidade(d.fisico, maiorMom), numero: reduzirNumero(d.fisico), valorReal: d.fisico },
+        mental: { nivel: classificarIntensidade(d.mental, maiorMom), numero: reduzirNumero(d.mental), valorReal: d.mental },
+        emocional: { nivel: classificarIntensidade(d.emocional, maiorMom), numero: reduzirNumero(d.emocional), valorReal: d.emocional },
+        intuitivo: { nivel: classificarIntensidade(d.intuitivo, maiorMom), numero: reduzirNumero(d.intuitivo), valorReal: d.intuitivo }
+    };
 
     const pacote = {
         nome: document.getElementById("nome").value,
         data: document.getElementById("dataNascimento").value,
         anoMomento: ano,
         inicioFimMomento: d.intervalo, 
-        // Textos
-        textoNatural: document.getElementById("resumoNatural").innerHTML,
-        textoMomento: document.getElementById("resumoMomento").innerHTML,
-        textoExpressaoNat: expNat,
+        
+        // Agora o gerarTextoPlano vai achar o [numero] correto!
+        textoNatural: gerarTextoPlano("natural", dadosNat),
+        textoMomento: gerarTextoPlano("momento", dadosMom),
+        
+        // Gerando o HTML do Neuro já mastigado para o PDF
+        dominanciaNat: gerarDominanciaNeuro(dadosNat),
+        analiseNeuroNat: gerarInterpretacaoNeuro(dadosNat),
+        dominanciaMom: gerarDominanciaNeuro(dadosMom),
+        analiseNeuroMom: gerarInterpretacaoNeuro(dadosMom),
+
+        textoExpressaoNat: document.getElementById("resumoExpressaoNat").innerHTML,
         textoExpressaoMom: document.getElementById("resumoExpressaoMom").innerHTML,
         transitoHTML: document.getElementById("resultadoTrânsito").innerHTML,
-        // ADICIONE ESTA LINHA ABAIXO:
         textoEducacao: document.getElementById("areaTextoEducativo").innerHTML,
         
-        
-        // Valores para os Gráficos Natural
-        fisico: valNat.fisico,
-        mental: valNat.mental,
-        emocional: valNat.emocional,
-        intuitivo: valNat.intuitivo,
+        // Valores das Barras e Números
+        fisico: valNat.fisico, mental: valNat.mental, emocional: valNat.emocional, intuitivo: valNat.intuitivo,
         criativoNat: parseInt(document.getElementById("numCriativoNat").innerText),
         indecisoNat: parseInt(document.getElementById("numIndecisoNat").innerText),
         neutroNat: parseInt(document.getElementById("numNeutroNat").innerText),
-        // Valores para os Gráficos Momento
-        fisicoMomento: d.fisico,
-        mentalMomento: d.mental,
-        emocionalMomento: d.emocional,
-        intuitivoMomento: d.intuitivo,
+        fisicoMomento: d.fisico, mentalMomento: d.mental, emocionalMomento: d.emocional, intuitivoMomento: d.intuitivo,
         criativoMom: parseInt(document.getElementById("numCriativoMom").innerText),
         indecisoMom: parseInt(document.getElementById("numIndecisoMom").innerText),
         neutroMom: parseInt(document.getElementById("numNeutroMom").innerText)
     };
     
     localStorage.setItem("relatorioMapa", JSON.stringify(pacote));
-
-    // 4. Abre o prêmio e redireciona o painel original
-    window.open("premium_plano_expressao.html", "_blank");
+    window.open("premium.html", "_blank");
+}
     
  document.oncontextmenu=()=>false;
 document.onselectstart=()=>false;
