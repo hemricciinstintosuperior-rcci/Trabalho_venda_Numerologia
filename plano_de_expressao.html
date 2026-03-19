@@ -868,16 +868,7 @@ function gerarTudo() {
     }
 }
 
-// --- CONFIGURAÇÃO DE SEGURANÇA E TRAVA (PLANO DE EXPRESSÃO) ---
-const urlParams = new URLSearchParams(window.location.search);
-const userEmail = urlParams.get('user'); 
-const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-// Bloqueio de entrada direta
-if (!userEmail) {
-    alert("Acesso não autorizado. Por favor, valide seu código no portal.");
-    window.location.href = "index.html";
-}
 
 async function exportarRelatorio() {
     if(!resultadoPlanosNatural) return alert("Gere o mapa primeiro.");
