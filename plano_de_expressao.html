@@ -868,12 +868,33 @@ function gerarTudo() {
     }
 }
 
+// --- CONFIGURAÇÃO DE SEGURANÇA E TRAVA (PLANO DE EXPRESSÃO) ---
+const urlParams = new URLSearchParams(window.location.search);
+const userEmail = urlParams.get('user'); 
+const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
+// Bloqueio de entrada direta
+if (!userEmail) {
+    alert("Acesso não autorizado. Por favor, valide seu código no portal.");
+    window.location.href = "index.html";
+}
 
 async function exportarRelatorio() {
     if(!resultadoPlanosNatural) return alert("Gere o mapa primeiro.");
     
+// 1. Alerta de acesso único
+    alert("Seu Relatório Premium do Plano de Expressão será aberto. Este acesso é único.");
 
+    // 2. Trava o acesso no Firebase
+    try {
+        await fetch(`${DB_URL}vendas/${userEmail}.json`, {
+            method: 'PATCH',
+            body: JSON.stringify({ status: 'usado' }),
+            headers: { 'Content-Type': 'application/json' }
+        });
+    } catch (e) {
+        console.error("Erro na trava de segurança:", e);
+    }
 
    const valNat = valoresBrutosNatural;
     const maiorNat = Math.max(valNat.fisico, valNat.mental, valNat.emocional, valNat.intuitivo);
