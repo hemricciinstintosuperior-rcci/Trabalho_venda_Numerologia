@@ -1,4 +1,30 @@
 const textos = {
+introducoes: {
+        graficos: `Estes gráficos representam a força das suas vibrações e potenciais naturais.`,
+        dia: `O dia do nascimento revela sua forma natural de agir e seus talentos inatos.`,
+        comportamento: `O comportamento define como você lida com as situações do cotidiano.`,
+        essencia: `A essência é o seu "eu" mais profundo, sua verdadeira identidade espiritual.`,
+        equilibrio: `O equilíbrio mostra sua capacidade de manter a estabilidade em momentos de crise.`,
+        talento: `O talento revela as habilidades naturais que você deve desenvolver nesta vida.`,
+        motivacao: `A motivação é o combustível da sua alma, o que realmente te faz feliz.`,
+        influencia: `A influência mostra como o seu ambiente e as pessoas ao redor te afetam.`,
+        Personalidade: `A personalidade é a "máscara" social, como o mundo enxerga você.`,
+        Relacionamento: `O pilar de relacionamento define como você se entrega e troca com os outros.`,
+        CaminhodeVida: `O Caminho de Vida é a estrada principal da sua existência e seus aprendizados.`,
+        Propósito: `O Propósito revela a meta final e o grande objetivo da sua encarnação.`,
+        Maturidade: `A Maturidade mostra o que te espera na fase mais experiente da sua vida.`,
+        inclinacoes: `As inclinações mostram tendências naturais que você traz de sua bagagem.`,
+        subconsciente: `O subconsciente revela seus medos e reações automáticas mais profundas.`,
+        anoPessoal: `O ano pessoal descreve a energia específica que rege o seu momento atual.`,
+        deficiencias: `As lições cármicas mostram o que você veio aprender e ajustar nesta jornada.`,
+        deficits: `Os déficits de comportamento indicam padrões repetitivos que precisam de atenção.`,
+        ciclos: `Os ciclos de vida dividem sua jornada em três grandes fases de aprendizado.`,
+        momentos: `Os momentos decisivos são oportunidades únicas de crescimento e realização.`,
+        desafios: `Os desafios são as lições que, se superadas, trazem seu maior fortalecimento.`,
+    
+        
+    Conclusao: `Este mapa é uma ferramenta de autoconhecimento poderosa para sua evolução.`
+},
   // --- DIA DE NASCIMENTO (TALENTOS NATURAIS 1 AO 31) ---
  dia: {
     1: `<p>O dia 1 traz para <strong>você</strong> uma das vibrações mais potentes de liderança e originalidade de toda a numerologia. <strong>você</strong> traz consigo uma capacidade intrínseca de abrir caminhos onde outros enxergam apenas obstáculos, agindo com uma força que impulsiona a inovação em todos os setores da vida e da jornada pessoal.</p>
@@ -816,7 +842,6 @@ desafios:{
 8: `<p>Este é o seu desafio principal, relacionado ao poder, à abundância e à justiça no plano material. Durante a vida, <strong>você</strong> enfrentará situações que envolvem autoridade, gestão de recursos e escolhas éticas importantes. A sombra para <strong>você</strong> pode surgir como disputa de ego ou medo de perder controle, o que pode levar a atitudes rígidas ou excesso de vigilância sobre tudo ao redor. <strong>você</strong> precisará compreender que o poder verdadeiro nasce da integridade e da responsabilidade com o coletivo. O desafio para <strong>você</strong> é equilibrar ambição com consciência espiritual, agindo sempre com honestidade e senso de justiça.</p>`
 }
   },
-
 // --- ANO PESSOAL (A ENERGIA DO SEU MOMENTO ATUAL) ---
 anoPessoal:{
     // --- ANO PESSOAL (A ENERGIA DO SEU MOMENTO ATUAL) ---
@@ -867,5 +892,80 @@ deficiencias: {
 
     9: `<p>Lição 9</p>
     <p>Esta vibração representa uma necessidade de conscientização constante sobre o significado maior da existência humana, focando na bondade, na humanidade e no altruísmo. <strong>você</strong> deve aprender a agir com compaixão, tolerância e compreensão, ampliando a visão para enxergar a vida sob um aspecto muito mais vasto do que os próprios interesses imediatos. Haverá momentos em que <strong>você</strong> precisará sacrificar ambições egocêntricas em benefício do bem coletivo, percebendo o enorme potencial que possui para influenciar positivamente o destino alheio. Esta não é exatamente uma deficiência, mas uma convocação para despertar a sensibilidade e compartilhar a dor e o sofrimento do próximo de forma solidária e generosa. <strong>você</strong> poderá enfrentar situações de injustiça, julgamentos e agressões ao ego, que servirão como testes para a sua capacidade de abrir mão do orgulho e da vaidade. A lição definitiva para <strong>você</strong> é o aprendizado do perdão e da entrega, entendendo que a verdadeira grandeza reside na capacidade de se doar sem esperar recompensas. Ao abraçar o amor universal, <strong>você</strong> transmuta o sofrimento em sabedoria, tornando-se uma alma carismática e inspiradora que controla o próprio destino através do serviço à vida. A superação do ego permite que <strong>você</strong> conclua a jornada com uma plenitude que transcende o plano material, alcançando a paz de quem compreendeu o mais elevado de todos os sentimentos.</p>`
-  }
+  },
+
+    deficits: {
+        1: "Tendência à impulsividade e dificuldade em ouvir opiniões alheias.",
+        2: "Excesso de sensibilidade ou dependência emocional de terceiros.",
+        3: "Dispersão de energia e falta de foco em projetos práticos.",
+        4: "Rigidez excessiva ou dificuldade em aceitar mudanças necessárias.",
+        5: "Instabilidade e desejo de fuga quando surgem responsabilidades.",
+        6: "Perfeccionismo sufocante com a família ou consigo mesmo.",
+        7: "Isolamento excessivo e tendência a guardar sentimentos negativos.",
+        8: "Ambição desmedida ou apego excessivo ao controle material.",
+        9: "Sacrifício pessoal exagerado ou falta de limites com os outros."
+    },
+    inclinacoes: {
+        1: "Forte impulso de liderança e originalidade em tudo o que faz.",
+        2: "Habilidade natural para mediação e diplomacia silenciosa.",
+        3: "Grande capacidade de comunicação e expressão criativa.",
+        4: "Talento nato para organização, estrutura e métodos.",
+        5: "Necessidade de liberdade e facilidade em lidar com o público.",
+        6: "Forte senso de justiça e acolhimento comunitário.",
+        7: "Poderosa intuição e facilidade para estudos profundos.",
+        8: "Capacidade executiva e visão de negócios apurada.",
+        9: "Humanitarismo e compreensão profunda da alma humana."
+    },
+    subconsciente: {
+        1: "Sua primeira reação é de ação imediata e autoconfiança.",
+        2: "Sua reação inicial é buscar apoio e analisar os sentimentos.",
+        3: "Tende a reagir com otimismo e criatividade sob pressão.",
+        4: "Busca segurança e ordem assim que algo inesperado ocorre.",
+        5: "Reage com rapidez e adaptabilidade a mudanças bruscas.",
+        6: "Sua primeira preocupação é o bem-estar dos envolvidos.",
+        7: "Tende a se retrair para analisar a situação racionalmente.",
+        8: "Reage focando na solução prática e no controle do dano.",
+        9: "Mantém a calma e busca uma visão ampla do problema."
+    },
+    talento:    {     
+      1: "Sua primeira reação é de ação imediata e autoconfiança.",
+        2: "Sua reação inicial é buscar apoio e analisar os sentimentos.",
+        3: "Tende a reagir com otimismo e criatividade sob pressão.",
+        4: "Busca segurança e ordem assim que algo inesperado ocorre.",
+        5: "Reage com rapidez e adaptabilidade a mudanças bruscas.",
+        6: "Sua primeira preocupação é o bem-estar dos envolvidos.",
+        7: "Tende a se retrair para analisar a situação racionalmente.",
+        8: "Reage focando na solução prática e no controle do dano.",
+        9: "Mantém a calma e busca uma visão ampla do problema."
+},
+
+
+essencia : {
+    1: "Sua alma vibra na frequência da originalidade. Você busca ser o primeiro, o desbravador. Sua essência é pura iniciativa.",
+    2: "Sua alma busca harmonia e parceria. Você vibra no acolhimento e na sensibilidade de entender o que não é dito.",
+    3: "Sua essência é a alegria e a autoexpressão. Você brilha quando comunica e coloca sua marca criativa no mundo.",
+    4: "Sua alma busca segurança e ordem. Você vibra na construção de bases sólidas e na honestidade absoluta.",
+    5: "Sua essência é a liberdade e o movimento. Você vibra na mudança, na curiosidade e na quebra de padrões antigos.",
+    6: "Sua alma vibra no amor e na responsabilidade familiar. Você busca ser o porto seguro para quem está ao seu redor.",
+    7: "Sua essência é o mistério e a sabedoria. Você busca o conhecimento profundo, a introspecção e a verdade espiritual.",
+    8: "Sua alma vibra na justiça e na eficiência. Você busca o equilíbrio entre o mundo espiritual e o poder material.",
+    9: "Sua essência é a compaixão universal. Você vibra no desapego e no desejo de servir à humanidade de forma ampla."
+},
+
+
+
+equilibrio :{
+    1: "Em momentos de crise, você precisa confiar em si mesmo e evitar o isolamento excessivo.",
+    2: "Seu equilíbrio vem da paciência. Evite a hipersensibilidade e busque o diálogo calmo.",
+    3: "Para se equilibrar, use sua criatividade. Não deixe o pessimismo calar a sua voz.",
+    4: "O equilíbrio vem do método. Respire fundo e coloque os fatos em ordem antes de agir.",
+    5: "Sua estabilidade volta quando você aceita a mudança. Não tente controlar o incontrolável.",
+    6: "Busque o equilíbrio cuidando de si mesmo, não apenas dos outros. Evite a autocrítica.",
+    7: "O equilíbrio surge no silêncio. Tire um tempo para refletir sozinho antes de explodir.",
+    8: "Seu ponto de equilíbrio é a imparcialidade. Use a lógica para não se deixar levar pela raiva.",
+    9: "O equilíbrio vem da aceitação. Deixe ir o que não pode ser mudado para encontrar a paz."
+}
+
 };
+
+  
