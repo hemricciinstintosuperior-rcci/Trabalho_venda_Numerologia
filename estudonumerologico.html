@@ -78,6 +78,8 @@
     <script>
         const tabela = { A:1, J:1, I:1, Q:1, Y:1, B:2, K:2, R:2, C:3, G:3, L:3, S:3, D:4, M:4, T:4, E:5, H:5, N:5, U:6, V:6, W:6, X:6, Ç:6, O:7, Z:7, F:8, P:8 };
         const vogais = ["A","E","I","O","U","Y"];
+
+        let mapaGerado = false; // Controle para saber se o mapa já foi criado
 // DICIONÁRIO DE EXIBIÇÃO PREMIUM (Tradução da Lógica para o Relatório)
 const nomesExibicao = {
     "dia": "Vibração do Dia de Nascimento",
@@ -448,7 +450,7 @@ const datasFases = {
 // --- NOVO SISTEMA DE INTENSIDADE (GRÁFICOS COLORIDOS E NECESSIDADES) ---
 // --- INÍCIO DA MONTAGEM PREMIUM ---
             let html = `
-                <button class="btn-pdf no-print" onclick="window.print()">📥 SALVAR PDF PREMIUM</button>
+                <button class="btn-pdf no-print" onclick="executarSaidaSegura()">📥 SALVAR PDF PREMIUM</button>
 
 <div class="capa">
     <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png" class="logo-capa" alt="Logo">
@@ -595,46 +597,51 @@ listaPremium.forEach(chave => {
             `;
 
             document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
+            mapaGerado = true;
         } // FIM DA FUNÇÃO
     </script>
+
+    
 <script>
-// --- CONFIGURAÇÃO DE SEGURANÇA (NO FINAL DO ARQUIVO) ---
+// --- CONFIGURAÇÃO DE SEGURANÇA E TRAVA DE ACESSO ---
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-// 1. Bloqueio: Se o cara não veio do portal (index), ele nem consegue usar a página
+// Se não tem e-mail na URL, manda de volta pro portal
 if (!userEmail) {
     alert("Acesso não autorizado. Por favor, valide seu código no portal.");
     window.location.href = "index.html";
 }
 
-// 2. Nova função validarPremium (Substitui a antiga)
-async function validarPremium() {
-   if(!mapaGerado){ 
-       alert("⚠️ Gere o mapa primeiro preenchendo seus dados."); 
-       return; 
-   }
+async function executarSaidaSegura() {
+    if(!mapaGerado) {
+        alert("Gere o mapa primeiro!");
+        return;
+    }
 
-   alert("Seu Relatório Premium será aberto. Este acesso é único e será encerrado após a visualização.");
+    // 1. Abre a caixa de impressão
+    window.print();
 
-   // Trava o acesso no Firebase para 'usado'
-   try {
-       await fetch(`${DB_URL}vendas/${userEmail}.json`, {
-           method: 'PATCH',
-           body: JSON.stringify({ status: 'usado' }),
-           headers: { 'Content-Type': 'application/json' }
-       });
-   } catch (e) {
-       console.error("Erro ao comunicar com Firebase:", e);
-   }
-
-
-
-   // Redireciona a página principal de volta para o portal
-   setTimeout(() => {
-       window.location.href = "index.html";
-   }, 3000);
+    // 2. Trava o acesso no Firebase (Troca ponto por underline pois Firebase não aceita ponto em chaves)
+    const emailLimpo = userEmail.replace(/\./g, '_');
+    
+    try {
+        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+            method: 'PATCH',
+            body: JSON.stringify({ 
+                status: 'usado', 
+                dataUso: new Date().toLocaleString('pt-BR') 
+            }),
+            headers: { 'Content-Type': 'application/json' }
+        });
+        
+        alert("Obrigado por utilizar o Instinto Superior. Seu acesso único foi concluído com sucesso.");
+        window.location.href = "index.html"; 
+    } catch (e) {
+        console.error("Erro ao comunicar com Firebase:", e);
+        window.location.href = "index.html";
+    }
 }
 </script>
   
