@@ -3366,100 +3366,59 @@ html += resultadoMomentoCompleto.html;
 const campoDataElemento = document.getElementById('dataNascimento');
 // --- CÁLCULO DA DATA BLINDADO ---
 // 1. CAPTURA E CÁLCULO DAS VIGÊNCIAS (ATUAL E PRÓXIMA)
+// 1. CÁLCULO E LOGICA (Mantenha isso no topo)
 const anoBase = new Date().getFullYear();
 let vigenciaCiclo1 = "Data não disponível";
 let vigenciaCiclo2 = "Data não disponível";
 
 if (dataRaw) {
-    let dia, mes;
+    let dia, mes_nasc;
     if (dataRaw.includes('-')) {
         const p = dataRaw.split('-');
-        dia = p[2]; mes = p[1];
+        dia = p[2]; mes_nasc = p[1];
     } else if (dataRaw.includes('/')) {
         const p = dataRaw.split('/');
-        dia = p[0]; mes = p[1];
+        dia = p[0]; mes_nasc = p[1];
     }
-
-    if (dia && mes) {
-        // Ciclo 1: Ano Atual até Ano Atual + 1
-        vigenciaCiclo1 = `${dia}/${mes}/${anoBase} a ${dia}/${mes}/${anoBase + 1}`;
-        // Ciclo 2: Ano Atual + 1 até Ano Atual + 2
-        vigenciaCiclo2 = `${dia}/${mes}/${anoBase + 1} a ${dia}/${mes}/${anoBase + 2}`;
+    if (dia && mes_nasc) {
+        vigenciaCiclo1 = `${dia}/${mes_nasc}/${anoBase} a ${dia}/${mes_nasc}/${anoBase + 1}`;
+        vigenciaCiclo2 = `${dia}/${mes_nasc}/${anoBase + 1} a ${dia}/${mes_nasc}/${anoBase + 2}`;
     }
 }
 
-// 2. CÁLCULO DO PRÓXIMO ANO PESSOAL
-// Se o atual é 9, o próximo é 1. Caso contrário, é apenas +1.
 let proximoAnoPessoal = parseInt(res.anoPessoal) + 1;
 if (proximoAnoPessoal > 9) proximoAnoPessoal = 1;
 
+const mesParaCronograma = res.mesNascimento; 
+const anoAtualParaCronograma = res.anoPessoal;
 
+// =========================================================
+// BLOCO 1: ANO PESSOAL ATUAL + SEUS MESES
+// =========================================================
 
-
- tituloBonito = "Ano Pessoal - Ciclo Atual";  
-// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
+// Título Ano Atual
+tituloBonito = "Ano Pessoal - Ciclo Atual";  
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
         <h2>${tituloBonito}</h2>
     </div>
 </div>
-
-
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${nomesExibicao.anoPessoal} - Ciclo Atual</h2>
-    
     <div class="resultado-bloco">
         <div class="intro-texto" style="margin-bottom:15px; font-style:italic; color:#555;">
             ${aplicarFiltroTexto(textos.introducoes.anoPessoal || "")}
         </div>
-               
         <h3 class="vigencia-texto" style="color: #666; font-weight: bold; margin-bottom: 15px;">
             Vigência: ${vigenciaCiclo1}
         </h3>
-
         <div class="texto-res">${aplicarFiltroTexto(textos.anoPessoal[res.anoPessoal])}</div>
     </div>
-</div> `,
-// CICLO 1: Ano Atual
+</div>`; // Removi a vírgula errada que estava aqui
 
- tituloBonito = "Ano Pessoal - Próximo Ciclo";  
-// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>
-
-
-
-<div class="page" style="width: 100%; margin-top: 40px; border-top: 1px dashed var(--gold);">
-    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${nomesExibicao.anoPessoal} - Próximo Ciclo</h2>
-    
-    <div class="resultado-bloco">
-       
-          <div class="conteudo-travado">
-        <h3 class="vigencia-texto" style="color: #666; font-weight: bold; margin-bottom: 15px;">
-            Vigência: ${vigenciaCiclo2}
-        </h3>
-
-        <div class="texto-res">${aplicarFiltroTexto(textos.anoPessoal[proximoAnoPessoal])}</div>
-    </div> 
-    </div>
-</div>
-`;
-
-// --- BLOCO DO MÊS PESSOAL (CÁLCULO DOS 12 MESES) ---
-
-// Usamos as variáveis 'mes' e 'res.anoPessoal' que já existem no seu código
-const mesParaCronograma = res.mesNascimento; 
-const anoAtualParaCronograma = res.anoPessoal;
-const proximoAnoParaCronograma = res.proximoAnoPessoal;
-
-
-    const cronogramaAtualHTML = gerarCronogramaMensal(anoAtualParaCronograma, mesParaCronograma);
-
+// Título Meses do Ano Atual
+const cronogramaAtualHTML = gerarCronogramaMensal(anoAtualParaCronograma, mesParaCronograma);
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -3468,23 +3427,40 @@ html += `
 </div>
 <div class="page">
     <div class="texto-res">
-        <p style="text-align:center; margin-bottom:20px;">A vida de cada pessoa deve ser conduzida de acordo com as vibrações numéricas do momento. 
-        Devemos sempre aguardar o momento oportuno para tomarmos certas decisões e isso deverá ser feito nos momentos favoráveis da vibração numérica, pois elas apoiarão as decisões e, por certo, abrirão as portas, desimpedindo os caminhos. 
-        Entre as suas diversas vibrações, o mês pessoal é uma orientação especial que deve ser levada em consideração.
-        Este ciclo inicia no mês do seu aniversário (${mesParaCronograma}) e mostra as vibrações até o fechamento do seu ano pessoal atual.</p>
+        <p style="text-align:center; margin-bottom:20px;">Este ciclo inicia no mês do seu aniversário e mostra as vibrações até o fechamento do seu ano pessoal atual.</p>
         ${cronogramaAtualHTML}
     </div>
-</div>
-`;
+</div>`;
 
 
-// CICLO 2: Próximo Ano
-const cronogramaProximoHTML = gerarCronogramaMensal(proximoAnoParaCronograma, mesParaCronograma);
+// =========================================================
+// BLOCO 2: PRÓXIMO ANO PESSOAL + SEUS MESES
+// =========================================================
 
+// Título Próximo Ano
+tituloBonito = "Ano Pessoal - Próximo Ciclo";  
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
-        <h2>Planejamento Mensal: Ano Pessoal ${proximoAnoParaCronograma}</h2>
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${nomesExibicao.anoPessoal} - Próximo Ciclo</h2>
+    <div class="resultado-bloco">
+        <h3 class="vigencia-texto" style="color: #666; font-weight: bold; margin-bottom: 15px;">
+            Vigência: ${vigenciaCiclo2}
+        </h3>
+        <div class="texto-res">${aplicarFiltroTexto(textos.anoPessoal[proximoAnoPessoal])}</div>
+    </div>
+</div>`;
+
+// Título Meses do Próximo Ano
+const cronogramaProximoHTML = gerarCronogramaMensal(proximoAnoPessoal, mesParaCronograma);
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>Planejamento Mensal: Ano Pessoal ${proximoAnoPessoal}</h2>
     </div>
 </div>
 <div class="page">
@@ -3492,8 +3468,7 @@ html += `
         <p style="text-align:center; margin-bottom:20px;">Projeção para o ciclo seguinte, iniciando no seu próximo aniversário.</p>
         ${cronogramaProximoHTML}
     </div>
-</div>
-`;
+</div>`;
 
 // 1. CAPA PARA O BLOCO DE TEMPO
 html += `
