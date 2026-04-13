@@ -3962,9 +3962,15 @@ html += `
     </div>
 </div>
 `;
-            document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
-        } // FIM DA FUNÇÃO
-
+       // Onde o relatório aparece
+const elementoResultado = document.getElementById("resultado");
+if (elementoResultado) {
+    elementoResultado.innerHTML = `<div class="relatorio-premium">${html}</div>`;
+    
+    // IMPORTANTE: Assim que o relatório aparecer, 
+    // rodamos a verificação para travar o botão que está dentro ou fora dele.
+    verificarLiberacaoPDF(dataInicioGlobal); 
+}
         document.oncontextmenu=()=>false;
 document.onselectstart=()=>false;
     </script>
