@@ -2096,6 +2096,15 @@ function analisarAptidaoPremium(res) {
 }
 
 
+  function formatarProfissoesSimples(res) {
+    const dados = analisarAptidaoPremium(res);
+    // Pega as 3 principais e junta com um ponto ou vírgula
+    return dados.vocacaoMaster.length > 0 
+        ? dados.vocacaoMaster.slice(0, 3).join(" • ") 
+        : "Consultoria • Gestão"; // Fallback caso esteja vazio
+}      
+
+
 const bancoMesPessoal = {
     1: {
         titulo: "Iniciativa e Liderança",
@@ -2560,7 +2569,7 @@ const listaItensSintese = [
     
     { label: "Maturidade", valor: res.Maturidade },
 
-    { label: "Profissão", valor: htmlProfissao},
+    { label: "Profissão", valor: formatarProfissoesSimples(res) },
     
     { label: "Ciclos da Vida", valor: res.ciclos },
     
