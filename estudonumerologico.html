@@ -12,7 +12,14 @@
 }
     
         :root { --gold: #d97a1e; --dark: #000000; --card-bg: #ffffff; --text: #1a1a1a; }
-
+@media print {
+    .apenas-no-pdf {
+        display: block !important;
+    }
+    .conteudo-travado {
+        filter: none !important; /* Remove o desfoque no PDF */
+    }
+}
 @media print {
 
     @page {
@@ -121,8 +128,54 @@
 
  }
 
-    
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--dark); color: #A38A2A; margin: 0; padding: 0; display: block;}
+   .conteudo-travado {
+    filter: blur(8px); /* Borra o texto */
+    -webkit-filter: blur(8px);
+    opacity: 0.7; /* Deixa levemente transparente */
+    user-select: none; /* Impede que o usuário copie o texto */
+    pointer-events: none; /* Impede que ele clique em links lá dentro */
+    transition: 0.3s;
+    margin-bottom: 20px;
+    display: block; /* Garante que ela ocupe o espaço dela */
+}
+/* Container da trava para permitir posicionar a mensagem */
+.conteudo-travado {
+    position: relative;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    opacity: 0.7;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* A mensagem que aparece por cima do borrão */
+.conteudo-travado::after {
+    content: "🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(10, 14, 26, 0.9); /* Fundo escuro igual ao seu tema */
+    color: #d4af37; /* Dourado Instinto Superior */
+    padding: 10px 20px;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* REMOVE A MENSAGEM NO PDF */
+@media print {
+    .conteudo-travado::after {
+        display: none !important;
+    }
+}
+ 
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--dark); color: #1a1a1a; margin: 0; padding: 0; display: block;}
         /* Estilo para os Logos */
 .logo-capa {
     width: 700px !important; /* Tamanho ideal para uma folha A4 */
@@ -3247,12 +3300,13 @@ html += `
                 <span style="color: #d97a1e; font-weight: bold; font-size: 20px; text-transform: uppercase;">
                    Idade ${info.idade} -  Data ${info.anos}
                 </span>
-                <p style="margin-top: 5px;">
+                 <div class="conteudo-travado"> <p style="margin-top: 5px;">
                     <strong> </strong><br>
                     ${aplicarFiltroTexto(textos[sec][i][res[sec][i]])}
                 </p>
                 <hr style="border:0; border-top:1px solid #ffffff">
-            </div>`;
+           </div>
+           </div>`;
     }
     html += `</div>`;
 });
@@ -3300,7 +3354,7 @@ const resultadoMomentoCompleto = montarHtmlPlanosMomento(
     regenteVida, 
     dadosNegativas.nums
 );
-
+  
     
 // 2. Como o gráfico já está embutido no HTML da função, basta somar o resultado
 html += resultadoMomentoCompleto.html;
@@ -3338,6 +3392,13 @@ if (dataRaw) {
 // Se o atual é 9, o próximo é 1. Caso contrário, é apenas +1.
 let proximoAnoPessoal = parseInt(res.anoPessoal) + 1;
 if (proximoAnoPessoal > 9) proximoAnoPessoal = 1;
+// --- BLOCO DO MÊS PESSOAL (CÁLCULO DOS 12 MESES) ---
+
+// Usamos as variáveis 'mes' e 'res.anoPessoal' que já existem no seu código
+const mesParaCronograma = res.mesNascimento; 
+const anoAtualParaCronograma = res.anoPessoal;
+const proximoAnoParaCronograma = res.proximoAnoPessoal;
+
 
 
  tituloBonito = "Ano Pessoal - Ciclo Atual";  
@@ -3365,41 +3426,6 @@ html += `
         <div class="texto-res">${aplicarFiltroTexto(textos.anoPessoal[res.anoPessoal])}</div>
     </div>
 </div> `,
-
-
- tituloBonito = "Ano Pessoal - Próximo Ciclo";  
-// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>
-
-
-
-<div class="page" style="width: 100%; margin-top: 40px; border-top: 1px dashed var(--gold);">
-    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${nomesExibicao.anoPessoal} - Próximo Ciclo</h2>
-    
-    <div class="resultado-bloco">
-       
-        
-        <h3 class="vigencia-texto" style="color: #666; font-weight: bold; margin-bottom: 15px;">
-            Vigência: ${vigenciaCiclo2}
-        </h3>
-
-        <div class="texto-res">${aplicarFiltroTexto(textos.anoPessoal[proximoAnoPessoal])}</div>
-    </div>
-</div>
-`;
-
-// --- BLOCO DO MÊS PESSOAL (CÁLCULO DOS 12 MESES) ---
-
-// Usamos as variáveis 'mes' e 'res.anoPessoal' que já existem no seu código
-const mesParaCronograma = res.mesNascimento; 
-const anoAtualParaCronograma = res.anoPessoal;
-const proximoAnoParaCronograma = res.proximoAnoPessoal;
-
 // CICLO 1: Ano Atual
 const cronogramaAtualHTML = gerarCronogramaMensal(anoAtualParaCronograma, mesParaCronograma);
 
@@ -3419,6 +3445,35 @@ html += `
     </div>
 </div>
 `;
+
+ tituloBonito = "Ano Pessoal - Próximo Ciclo";  
+// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+
+
+
+<div class="page" style="width: 100%; margin-top: 40px; border-top: 1px dashed var(--gold);">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${nomesExibicao.anoPessoal} - Próximo Ciclo</h2>
+    
+    <div class="resultado-bloco">
+       
+          <div class="conteudo-travado">
+        <h3 class="vigencia-texto" style="color: #666; font-weight: bold; margin-bottom: 15px;">
+            Vigência: ${vigenciaCiclo2}
+        </h3>
+
+        <div class="texto-res">${aplicarFiltroTexto(textos.anoPessoal[proximoAnoPessoal])}</div>
+    </div> 
+    </div>
+</div>
+`;
+
+
 
 // CICLO 2: Próximo Ano
 const cronogramaProximoHTML = gerarCronogramaMensal(proximoAnoParaCronograma, mesParaCronograma);
