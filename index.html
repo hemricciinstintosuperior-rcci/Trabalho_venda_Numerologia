@@ -85,7 +85,6 @@
     </div>
 
 <script>
-    // URL do seu Firebase que acabamos de criar
     const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
     const config = {
@@ -102,9 +101,7 @@
 
         if(!emailOriginal || !codigo) return alert("Por favor, preencha o e-mail e o código!");
 
-        // O Firebase não aceita "." no nome da chave (id), por isso trocamos por "_"
         const emailChave = emailOriginal.replace(/\./g, '_');
-        
         btn.innerText = "VERIFICANDO...";
         btn.disabled = true;
 
@@ -116,14 +113,24 @@
                 if (dados.status === "usado") {
                     alert("Atenção: Este acesso já foi utilizado e expirou.");
                 } else {
+                    // --- NOVA LÓGICA: REGISTRA INÍCIO DO ACESSO SE NÃO EXISTIR ---
+                    if (!dados.data_inicio) {
+                        const agora = new Date().toISOString();
+                        await fetch(`${DB_URL}vendas/${emailChave}.json`, {
+                            method: 'PATCH',
+                            body: JSON.stringify({ data_inicio: agora })
+                        });
+                    }
+                    // ----------------------------------------------------------
+
                     liberarProduto(dados.produto, emailChave);
                     document.getElementById('area-login').style.display = 'none';
                 }
             } else {
-                alert("Dados incorretos ou venda ainda processando. Verifique o código no seu e-mail.");
+                alert("Dados incorretos ou venda ainda processando.");
             }
         } catch (e) {
-            alert("Erro de conexão. Verifique se o banco está em 'Modo de Teste'.");
+            alert("Erro de conexão.");
         } finally {
             btn.innerText = "Verificar Credenciais";
             btn.disabled = false;
@@ -140,9 +147,9 @@
             card.classList.add('active');
             status.innerText = "✅ ACESSO LIBERADO";
             status.className = "status unlocked";
-            
-            // Enviamos o e-mail na URL para que o gerador saiba quem bloquear depois
-            container.innerHTML = `<a href="${app.link}?user=${emailChave}" class="btn-acessar">ABRIR GERADOR AGORA</a>`;
+
+            // O link agora leva o e-mail para o gerador fazer o cálculo do cronômetro lá dentro
+            container.innerHTML = `<a href="${app.link}/index.html?user=${emailChave}" class="btn-acessar">ABRIR GERADOR AGORA</a>`;
         }
     }
 </script>
