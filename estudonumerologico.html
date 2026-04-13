@@ -3971,41 +3971,43 @@ const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-// Variável global para guardar a data e usar na trava do botão após gerar o mapa
 let dataInicioGlobal = null;
 
-// 1. REDIRECIONAMENTO E VALIDAÇÃO DE USUÁRIO
+// 1. VALIDAÇÃO DE USUÁRIO E REDIRECIONAMENTO LIMPO
 if (!userEmail) {
     alert("Acesso não autorizado.");
-    // Redireciona para a raiz do seu site no GitHub Pages
-    window.location.href = "index.html"; 
+    window.location.href = "index.html"; // Volta para a raiz se não houver e-mail
 }
 
 const emailLimpo = userEmail.replace(/\./g, '_');
 
-// 2. BUSCA DADOS NO FIREBASE E INICIA O SISTEMA
 async function inicializarSeguranca() {
     try {
+        // Busca os dados no Firebase
         const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
         const dados = await res.json();
 
-        const labelElement = document.getElementById("label-tempo");
-
-        if (!dados || dados.status !== 'ativo') {
-            alert("Este acesso expirou ou não está ativo.");
-            window.location.href = "https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/index.html";
+        if (!dados) {
+            alert("Acesso não encontrado no sistema.");
+            window.location.href = "index.html";
             return;
         }
 
+        // Se o status estiver como 'usado' ou não for 'ativo', bloqueia
+        if (dados.status === 'usado' || dados.status !== 'ativo') {
+            alert("Este acesso expirou ou está inativo.");
+            window.location.href = "index.html";
+            return;
+        }
+
+        // Se não houver data_inicio, o cronômetro não inicia. 
+        // Como o Portal já cria essa data no login, aqui apenas lemos.
         if (!dados.data_inicio) {
-            console.error("Data de início não encontrada.");
-            if (labelElement) labelElement.innerHTML = "Aguardando registro de primeiro acesso...";
+            console.warn("Aguardando registro de data inicial...");
             return;
         }
 
-        // Armazena a data para uso posterior no botão de PDF
         dataInicioGlobal = dados.data_inicio;
-
         const dataReferencia = new Date(dados.data_inicio);
         const dataExpiracao = new Date(dataReferencia);
         dataExpiracao.setDate(dataReferencia.getDate() + 7); 
@@ -4018,7 +4020,6 @@ async function inicializarSeguranca() {
     }
 }
 
-// 3. RELÓGIO DE CONTAGEM REGRESSIVA
 function iniciarTimer(dataAlvo) {
     const intervalo = setInterval(() => {
         const timerElement = document.getElementById("timer");
@@ -4029,6 +4030,14 @@ function iniciarTimer(dataAlvo) {
         const agora = new Date().getTime();
         const distancia = dataAlvo - agora;
 
+        if (distancia < 0) {
+            clearInterval(intervalo);
+            timerElement.innerHTML = "LIBERADO!";
+            labelElement.innerHTML = "Seu estudo já pode ser baixado!";
+            verificarLiberacaoPDF(dataInicioGlobal); // Libera o botão na hora
+            return;
+        }
+
         const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
         const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
@@ -4036,27 +4045,19 @@ function iniciarTimer(dataAlvo) {
 
         timerElement.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
         labelElement.innerHTML = "Seu PDF Premium será liberado em:";
-
-        if (distancia < 0) {
-            clearInterval(intervalo);
-            timerElement.innerHTML = "LIBERADO!";
-            labelElement.innerHTML = "Seu estudo já pode ser baixado!";
-        }
     }, 1000);
 }
 
-// 4. TRAVA DO BOTÃO DE PDF (MESMO QUE O RELATÓRIO APAREÇA)
 function verificarLiberacaoPDF(dataInicio) {
     if (!dataInicio) return;
-
     const agora = new Date();
     const dataRef = new Date(dataInicio);
     const diffDias = (agora - dataRef) / (1000 * 60 * 60 * 24);
     
-    // Procura o botão pelo ID que definimos
     const btnPDF = document.getElementById("btn-pdf-premium");
     const msgTrava = document.getElementById("msg-trava");
 
+    // LIBERAÇÃO SE PASSOU 7 DIAS
     if (diffDias >= 7) {
         if (btnPDF) {
             btnPDF.disabled = false;
@@ -4072,28 +4073,21 @@ function verificarLiberacaoPDF(dataInicio) {
             btnPDF.style.opacity = "0.5";
             btnPDF.style.cursor = "not-allowed";
         }
-        if (msgTrava) {
-            msgTrava.innerHTML = "🔒 PDF disponível após o período de garantia.";
-        }
+        if (msgTrava) msgTrava.innerHTML = "🔒 PDF disponível após o período de garantia.";
     }
 }
 
-// 5. ESSA FUNÇÃO VOCÊ CHAMA QUANDO O RELATÓRIO É GERADO
+// Chame esta função após o innerHTML do seu relatório ser preenchido
 function exibirRelatorio(htmlConteudo) {
     const areaResultado = document.getElementById("resultado");
     if (areaResultado) {
         areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
-        
-        // Assim que o relatório (e o botão dentro dele) aparece, aplicamos a trava
         verificarLiberacaoPDF(dataInicioGlobal);
     }
 }
 
-// 6. INICIALIZAÇÃO AO CARREGAR A PÁGINA
 window.onload = function() {
     inicializarSeguranca();
-    
-    // Bloqueios de cópia (Opcional, mas você mencionou querer proteger)
     document.oncontextmenu = () => false;
     document.onselectstart = () => false;
 };
