@@ -3392,12 +3392,7 @@ if (dataRaw) {
 // Se o atual é 9, o próximo é 1. Caso contrário, é apenas +1.
 let proximoAnoPessoal = parseInt(res.anoPessoal) + 1;
 if (proximoAnoPessoal > 9) proximoAnoPessoal = 1;
-// --- BLOCO DO MÊS PESSOAL (CÁLCULO DOS 12 MESES) ---
 
-// Usamos as variáveis 'mes' e 'res.anoPessoal' que já existem no seu código
-const mesParaCronograma = res.mesNascimento; 
-const anoAtualParaCronograma = res.anoPessoal;
-const proximoAnoParaCronograma = res.proximoAnoPessoal;
 
 
 
@@ -3427,24 +3422,6 @@ html += `
     </div>
 </div> `,
 // CICLO 1: Ano Atual
-const cronogramaAtualHTML = gerarCronogramaMensal(anoAtualParaCronograma, mesParaCronograma);
-
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>Planejamento Mensal: Ano Pessoal ${anoAtualParaCronograma}</h2>
-    </div>
-</div>
-<div class="page">
-    <div class="texto-res">
-        <p style="text-align:center; margin-bottom:20px;">A vida de cada pessoa deve ser conduzida de acordo com as vibrações numéricas do momento. 
-        Devemos sempre aguardar o momento oportuno para tomarmos certas decisões e isso deverá ser feito nos momentos favoráveis da vibração numérica, pois elas apoiarão as decisões e, por certo, abrirão as portas, desimpedindo os caminhos. 
-        Entre as suas diversas vibrações, o mês pessoal é uma orientação especial que deve ser levada em consideração.
-        Este ciclo inicia no mês do seu aniversário (${mesParaCronograma}) e mostra as vibrações até o fechamento do seu ano pessoal atual.</p>
-        ${cronogramaAtualHTML}
-    </div>
-</div>
-`;
 
  tituloBonito = "Ano Pessoal - Próximo Ciclo";  
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
@@ -3473,6 +3450,32 @@ html += `
 </div>
 `;
 
+// --- BLOCO DO MÊS PESSOAL (CÁLCULO DOS 12 MESES) ---
+
+// Usamos as variáveis 'mes' e 'res.anoPessoal' que já existem no seu código
+const mesParaCronograma = res.mesNascimento; 
+const anoAtualParaCronograma = res.anoPessoal;
+const proximoAnoParaCronograma = res.proximoAnoPessoal;
+
+
+    const cronogramaAtualHTML = gerarCronogramaMensal(anoAtualParaCronograma, mesParaCronograma);
+
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>Planejamento Mensal: Ano Pessoal ${anoAtualParaCronograma}</h2>
+    </div>
+</div>
+<div class="page">
+    <div class="texto-res">
+        <p style="text-align:center; margin-bottom:20px;">A vida de cada pessoa deve ser conduzida de acordo com as vibrações numéricas do momento. 
+        Devemos sempre aguardar o momento oportuno para tomarmos certas decisões e isso deverá ser feito nos momentos favoráveis da vibração numérica, pois elas apoiarão as decisões e, por certo, abrirão as portas, desimpedindo os caminhos. 
+        Entre as suas diversas vibrações, o mês pessoal é uma orientação especial que deve ser levada em consideração.
+        Este ciclo inicia no mês do seu aniversário (${mesParaCronograma}) e mostra as vibrações até o fechamento do seu ano pessoal atual.</p>
+        ${cronogramaAtualHTML}
+    </div>
+</div>
+`;
 
 
 // CICLO 2: Próximo Ano
