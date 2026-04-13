@@ -2508,6 +2508,13 @@ const dadosNegativas = detectarNegativas(piramideVida);
 
 // 2. DEPOIS: COMEÇA A MONTAR O HTML DO RELATÓRIO
 let html = `
+
+<div id="status-acesso" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
+    <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 5px;">Calculando seu tempo de acesso...</div>
+    <div id="timer" style="font-family: 'Courier New', monospace; font-size: 1.8rem; font-weight: bold; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);">00:00:00:00</div>
+    <div id="msg-trava" style="font-size: 0.75rem; opacity: 0.7; margin-top: 5px;"></div>
+</div>
+
 <button class="btn-pdf no-print" onclick="window.print()">📥 BAIXAR SEU PDF PREMIUM</button>
 
     <div id="capa-numerologica" style="
@@ -3962,46 +3969,118 @@ document.onselectstart=()=>false;
 
     
 <script>
-// --- CONFIGURAÇÃO DE SEGURANÇA E TRAVA DE ACESSO ---
+// --- CONFIGURAÇÃO DE SEGURANÇA AVANÇADA INSTINTO SUPERIOR ---
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-// Se não tem e-mail na URL, manda de volta pro portal
 if (!userEmail) {
-    alert("Acesso não autorizado. Por favor, valide seu código no portal.");
-    window.location.href = "index.html";
+    alert("Acesso não autorizado.");
+    window.location.href = "../index.html"; // Volta para o portal
 }
 
+const emailLimpo = userEmail.replace(/\./g, '_');
+
+// 1. CARREGA DADOS E INICIA CRONÔMETRO
+async function inicializarSeguranca() {
+    try {
+        const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
+        const dados = await res.json();
+
+        if (!dados || dados.status === 'usado') {
+            alert("Este acesso já expirou ou foi utilizado.");
+            window.location.href = "../index.html";
+            return;
+        }
+
+        // Definimos o prazo de 7 dias baseado na data_inicio (que criamos no index)
+        const dataReferencia = new Date(dados.data_inicio);
+        const dataExpiracao = new Date(dataReferencia);
+        dataExpiracao.setDate(dataReferencia.getDate() + 7); // +7 dias da Hotmart
+
+        iniciarTimer(dataExpiracao);
+        verificarLiberacaoPDF(dataReferencia);
+
+    } catch (e) {
+        console.error("Erro ao validar acesso.");
+    }
+}
+
+// 2. CONTROLE DO TIMER
+function iniciarTimer(dataAlvo) {
+    const timerElement = document.getElementById("timer");
+    const labelElement = document.getElementById("label-tempo");
+
+    const intervalo = setInterval(() => {
+        const agora = new Date().getTime();
+        const distancia = dataAlvo - agora;
+
+        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+        timerElement.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+        labelElement.innerHTML = "Seu PDF será liberado em:";
+
+        if (distancia < 0) {
+            clearInterval(intervalo);
+            timerElement.innerHTML = "LIBERADO!";
+            labelElement.innerHTML = "Você já pode baixar seu PDF!";
+        }
+    }, 1000);
+}
+
+// 3. BLOQUEIO DO BOTÃO DE PDF (REGRA DE 7 DIAS)
+function verificarLiberacaoPDF(dataInicio) {
+    const agora = new Date();
+    const diffDias = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+    
+    // Pegue o ID real do seu botão de imprimir/gerar PDF
+    const btnGerar = document.querySelector(".btn-acessar") || document.getElementById("btn-imprimir"); 
+
+    if (diffDias < 7) {
+        btnGerar.disabled = true;
+        btnGerar.style.filter = "grayscale(100%)";
+        btnGerar.style.opacity = "0.5";
+        btnGerar.title = "Disponível após 7 dias de garantia.";
+        document.getElementById("msg-trava").innerHTML = "🔒 O download do PDF fica disponível após o período de garantia.";
+    }
+}
+
+// 4. SAÍDA SEGURA (TRAVA DEFINITIVA)
 async function executarSaidaSegura() {
-    if(!mapaGerado) {
-        alert("Gere o mapa primeiro!");
+    // Se o cara tentar burlar e o botão estiver desativado, a função para aqui
+    const dataInicioRes = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
+    const dadosCheck = await dataInicioRes.json();
+    const dataInicio = new Date(dadosCheck.data_inicio);
+    const diasPassados = Math.floor((new Date() - dataInicio) / (1000 * 60 * 60 * 24));
+
+    if (diasPassados < 7) {
+        alert("O PDF só pode ser gerado após os 7 dias de garantia.");
         return;
     }
 
-    // 1. Abre a caixa de impressão
-    window.print();
+    if(!mapaGerado) { alert("Gere o mapa primeiro!"); return; }
 
-    // 2. Trava o acesso no Firebase (Troca ponto por underline pois Firebase não aceita ponto em chaves)
-    const emailLimpo = userEmail.replace(/\./g, '_');
-    
+    // Trava no Firebase ANTES de imprimir para evitar que ele feche a aba e tente de novo
     try {
         await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
             method: 'PATCH',
-            body: JSON.stringify({ 
-                status: 'usado', 
-                dataUso: new Date().toLocaleString('pt-BR') 
-            }),
+            body: JSON.stringify({ status: 'usado', dataUso: new Date().toLocaleString('pt-BR') }),
             headers: { 'Content-Type': 'application/json' }
         });
         
-        alert("Obrigado por utilizar o Instinto Superior. Seu acesso único foi concluído com sucesso.");
-        window.location.href = "index.html"; 
+        window.print();
+        alert("Acesso concluído. O Instinto Superior agradece!");
+        window.location.href = "../index.html"; 
     } catch (e) {
-        console.error("Erro ao comunicar com Firebase:", e);
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
     }
 }
+
+// Inicia o processo assim que a página carrega
+inicializarSeguranca();
 </script>
   
 </body>
