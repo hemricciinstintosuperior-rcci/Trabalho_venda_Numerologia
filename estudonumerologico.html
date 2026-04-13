@@ -2096,14 +2096,27 @@ function analisarAptidaoPremium(res) {
 }
 
 
-  function formatarProfissoesSimples(res) {
+function formatarProfissoesSimples(res) {
+    // Chamamos a análise que você já tem
     const dados = analisarAptidaoPremium(res);
-    // Pega as 3 principais e junta com um ponto ou vírgula
-    return dados.vocacaoMaster.length > 0 
-        ? dados.vocacaoMaster.slice(0, 3).join(" • ") 
-        : "Consultoria • Gestão"; // Fallback caso esteja vazio
-}      
+    
+    // Tentamos pegar a Vocação Master (3+ pontos), 
+    // se estiver vazia, pegamos a Afinidade (2 pontos)
+    let listaParaExibir = dados.vocacaoMaster.length > 0 
+        ? dados.vocacaoMaster 
+        : dados.afinidade;
 
+    // Se ainda assim não tiver nada, pegamos as primeiras áreas do banco
+    if (listaParaExibir.length === 0) {
+        listaParaExibir = ["Consultoria", "Gestão"]; 
+    }
+
+    // Pegamos apenas as 2 primeiras para não espremer o layout
+    const textoFinal = listaParaExibir.slice(0, 2).join(" • ");
+
+    // Retornamos com um span para diminuir o tamanho da letra
+    return `<span style="font-size: 0.75rem; line-height: 1.1; display: block;">${textoFinal}</span>`;
+}
 
 const bancoMesPessoal = {
     1: {
