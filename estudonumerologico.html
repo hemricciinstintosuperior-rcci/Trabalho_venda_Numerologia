@@ -4050,39 +4050,28 @@ function iniciarTimer(dataAlvo) {
 
 // 3. BLOQUEIO DO BOTÃO
 function verificarLiberacaoPDF(dataInicio) {
+    if (!dataInicio) return;
+
     const agora = new Date();
-    const dataInicioDoc = new Date(dataInicio);
-    
-    // Calcula a diferença em milissegundos e transforma em dias
-    const diffTempo = agora - dataInicioDoc;
-    const diffDias = diffTempo / (1000 * 60 * 60 * 24);
+    const dataRef = new Date(dataInicio);
+    const diffDias = (agora - dataRef) / (1000 * 60 * 60 * 24);
     
     const btnPDF = document.getElementById("btn-pdf-premium");
-    const msgTrava = document.getElementById("msg-trava");
-
-    // Se já passou de 7 dias
+    
     if (diffDias >= 7) {
+        // LIBERADO
         if (btnPDF) {
             btnPDF.disabled = false;
             btnPDF.style.filter = "none";
             btnPDF.style.opacity = "1";
-            btnPDF.style.cursor = "pointer";
-        }
-        if (msgTrava) {
-            msgTrava.innerHTML = "✅ Seu PDF Premium está liberado para download!";
-            msgTrava.style.color = "#d4af37";
+            btnPDF.innerHTML = "📥 BAIXAR SEU PDF PREMIUM";
         }
     } else {
-        // Caso ainda esteja no prazo de segurança
+        // BLOQUEADO (Mas o relatório continua visível)
         if (btnPDF) {
             btnPDF.disabled = true;
-            btnPDF.onclick = function(e) { 
-                e.preventDefault(); 
-                alert("O download será liberado após o período de garantia."); 
-            };
-        }
-        if (msgTrava) {
-            msgTrava.innerHTML = "🔒 O download do PDF fica disponível após o período de garantia.";
+            btnPDF.style.filter = "grayscale(100%)";
+            btnPDF.style.opacity = "0.5";
         }
     }
 }
