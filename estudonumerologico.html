@@ -3993,7 +3993,7 @@ async function inicializarSeguranca() {
             window.location.href = "../index.html";
             return;
         }
-
+   const labelElement = document.getElementById("label-tempo");
         // Se não houver data_inicio no banco, o relógio não terá de onde calcular
         if (!dados.data_inicio) {
             console.error("Data de início não encontrada no Firebase.");
