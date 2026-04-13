@@ -2515,7 +2515,7 @@ let html = `
     <div id="msg-trava" style="font-size: 0.75rem; opacity: 0.7; margin-top: 5px;"></div>
 </div>
 
-<button id="btn-pdf-premium" class="btn-pdf no-print" onclick="window.print()" disabled style="filter: grayscale(100%); opacity: 0.5; cursor: not_allowed;">
+<button id="btn-pdf-premium" class="btn-pdf no-print" onclick="window.print()" disabled style="filter: grayscale(100%); opacity: 0.5; cursor: not-allowed;">
     📥 BAIXAR SEU PDF PREMIUM
 </button>
 
@@ -3971,55 +3971,54 @@ const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-// Variável global para armazenar a data e usar na trava do botão após gerar o relatório
+// Variável global para guardar a data e usar na trava do botão após gerar o mapa
 let dataInicioGlobal = null;
 
-// 1. REDIRECIONAMENTO SEGURO
+// 1. REDIRECIONAMENTO E VALIDAÇÃO DE USUÁRIO
 if (!userEmail) {
     alert("Acesso não autorizado.");
-    // Ajustado para o caminho do seu GitHub Pages
-    window.location.href = "index.html"; 
+    // Redireciona para a raiz do seu site no GitHub Pages
+    window.location.href = "https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/index.html"; 
 }
 
 const emailLimpo = userEmail.replace(/\./g, '_');
 
-// 2. CARREGA DADOS E INICIA O CRONÔMETRO
+// 2. BUSCA DADOS NO FIREBASE E INICIA O SISTEMA
 async function inicializarSeguranca() {
     try {
         const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
         const dados = await res.json();
 
         const labelElement = document.getElementById("label-tempo");
-        const timerElement = document.getElementById("timer");
 
         if (!dados || dados.status !== 'ativo') {
-            alert("Este acesso já expirou ou não está ativo.");
-            window.location.href = "index.html";
+            alert("Este acesso expirou ou não está ativo.");
+            window.location.href = "https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/index.html";
             return;
         }
 
         if (!dados.data_inicio) {
-            console.error("Data de início não encontrada no Firebase.");
+            console.error("Data de início não encontrada.");
             if (labelElement) labelElement.innerHTML = "Aguardando registro de primeiro acesso...";
             return;
         }
 
-        // Salva a data globalmente para ser usada quando o botão de PDF nascer
+        // Armazena a data para uso posterior no botão de PDF
         dataInicioGlobal = dados.data_inicio;
 
         const dataReferencia = new Date(dados.data_inicio);
         const dataExpiracao = new Date(dataReferencia);
-        dataExpiracao.setDate(dataReferencia.getDate() + 7); // Prazo de 7 dias
+        dataExpiracao.setDate(dataReferencia.getDate() + 7); 
 
         iniciarTimer(dataExpiracao);
         verificarLiberacaoPDF(dataReferencia);
 
     } catch (e) {
-        console.error("Erro ao validar acesso:", e);
+        console.error("Erro na comunicação com Firebase:", e);
     }
 }
 
-// 3. CONTROLE DO RELÓGIO (TIMER)
+// 3. RELÓGIO DE CONTAGEM REGRESSIVA
 function iniciarTimer(dataAlvo) {
     const intervalo = setInterval(() => {
         const timerElement = document.getElementById("timer");
@@ -4036,17 +4035,17 @@ function iniciarTimer(dataAlvo) {
         const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
 
         timerElement.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
-        labelElement.innerHTML = "O download do seu PDF Premium será liberado em:";
+        labelElement.innerHTML = "Seu PDF Premium será liberado em:";
 
         if (distancia < 0) {
             clearInterval(intervalo);
             timerElement.innerHTML = "LIBERADO!";
-            labelElement.innerHTML = "Seu PDF Premium já está disponível!";
+            labelElement.innerHTML = "Seu estudo já pode ser baixado!";
         }
     }, 1000);
 }
 
-// 4. LÓGICA DE TRAVA DO BOTÃO (SÓ PDF, O RELATÓRIO FICA LIVRE)
+// 4. TRAVA DO BOTÃO DE PDF (MESMO QUE O RELATÓRIO APAREÇA)
 function verificarLiberacaoPDF(dataInicio) {
     if (!dataInicio) return;
 
@@ -4054,21 +4053,19 @@ function verificarLiberacaoPDF(dataInicio) {
     const dataRef = new Date(dataInicio);
     const diffDias = (agora - dataRef) / (1000 * 60 * 60 * 24);
     
+    // Procura o botão pelo ID que definimos
     const btnPDF = document.getElementById("btn-pdf-premium");
     const msgTrava = document.getElementById("msg-trava");
 
     if (diffDias >= 7) {
-        // --- LIBERADO ---
         if (btnPDF) {
             btnPDF.disabled = false;
             btnPDF.style.filter = "none";
             btnPDF.style.opacity = "1";
             btnPDF.style.cursor = "pointer";
-            btnPDF.innerHTML = "📥 BAIXAR SEU PDF PREMIUM";
         }
-        if (msgTrava) msgTrava.innerHTML = "";
+        if (msgTrava) msgTrava.innerHTML = "✅ Download liberado!";
     } else {
-        // --- BLOQUEADO ---
         if (btnPDF) {
             btnPDF.disabled = true;
             btnPDF.style.filter = "grayscale(100%)";
@@ -4076,28 +4073,27 @@ function verificarLiberacaoPDF(dataInicio) {
             btnPDF.style.cursor = "not-allowed";
         }
         if (msgTrava) {
-            msgTrava.innerHTML = "🔒 O download fica disponível após os 7 dias de garantia.";
-            msgTrava.style.color = "#d4af37";
+            msgTrava.innerHTML = "🔒 PDF disponível após o período de garantia.";
         }
     }
 }
 
-// 5. GATILHO PARA QUANDO O MAPA FOR GERADO
-// Use esta lógica dentro da sua função que cria o relatório
-function mostrarRelatorio(html) {
-    const elementoResultado = document.getElementById("resultado");
-    if (elementoResultado) {
-        elementoResultado.innerHTML = `<div class="relatorio-premium">${html}</div>`;
+// 5. ESSA FUNÇÃO VOCÊ CHAMA QUANDO O RELATÓRIO É GERADO
+function exibirRelatorio(htmlConteudo) {
+    const areaResultado = document.getElementById("resultado");
+    if (areaResultado) {
+        areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
         
-        // Re-executa a trava para o botão que acabou de aparecer no HTML
+        // Assim que o relatório (e o botão dentro dele) aparece, aplicamos a trava
         verificarLiberacaoPDF(dataInicioGlobal);
     }
 }
 
-// 6. INICIALIZAÇÃO AUTOMÁTICA AO CARREGAR PÁGINA
+// 6. INICIALIZAÇÃO AO CARREGAR A PÁGINA
 window.onload = function() {
     inicializarSeguranca();
-    // Proteção de cópia
+    
+    // Bloqueios de cópia (Opcional, mas você mencionou querer proteger)
     document.oncontextmenu = () => false;
     document.onselectstart = () => false;
 };
