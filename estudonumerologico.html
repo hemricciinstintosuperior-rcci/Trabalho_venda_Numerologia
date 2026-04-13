@@ -3968,6 +3968,7 @@ document.onselectstart=()=>false;
     </script>
 
     
+
 <script>
 // --- CONFIGURAÇÃO DE SEGURANÇA AVANÇADA INSTINTO SUPERIOR ---
 const urlParams = new URLSearchParams(window.location.search);
@@ -3976,12 +3977,12 @@ const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
 if (!userEmail) {
     alert("Acesso não autorizado.");
-    window.location.href = "../index.html"; // Volta para o portal
+    window.location.href = "../index.html";
 }
 
 const emailLimpo = userEmail.replace(/\./g, '_');
 
-// 1. CARREGA DADOS E INICIA CRONÔMETRO
+// 1. CARREGA DADOS E INICIA TUDO
 async function inicializarSeguranca() {
     try {
         const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
@@ -3993,25 +3994,33 @@ async function inicializarSeguranca() {
             return;
         }
 
-        // Definimos o prazo de 7 dias baseado na data_inicio (que criamos no index)
+        // Se não houver data_inicio no banco, o relógio não terá de onde calcular
+        if (!dados.data_inicio) {
+            console.error("Data de início não encontrada no Firebase.");
+            document.getElementById("label-tempo").innerHTML = "Erro: Data de início não registrada.";
+            return;
+        }
+
         const dataReferencia = new Date(dados.data_inicio);
         const dataExpiracao = new Date(dataReferencia);
-        dataExpiracao.setDate(dataReferencia.getDate() + 7); // +7 dias da Hotmart
+        dataExpiracao.setDate(dataReferencia.getDate() + 7); // Prazo de 7 dias
 
         iniciarTimer(dataExpiracao);
         verificarLiberacaoPDF(dataReferencia);
 
     } catch (e) {
-        console.error("Erro ao validar acesso.");
+        console.error("Erro ao validar acesso:", e);
     }
 }
 
-// 2. CONTROLE DO TIMER
+// 2. CONTROLE DO TIMER (CORRIGIDO)
 function iniciarTimer(dataAlvo) {
-    const timerElement = document.getElementById("timer");
-    const labelElement = document.getElementById("label-tempo");
-
     const intervalo = setInterval(() => {
+        const timerElement = document.getElementById("timer");
+        const labelElement = document.getElementById("label-tempo");
+
+        if (!timerElement || !labelElement) return; // Segurança contra erro 'null'
+
         const agora = new Date().getTime();
         const distancia = dataAlvo - agora;
 
@@ -4031,56 +4040,29 @@ function iniciarTimer(dataAlvo) {
     }, 1000);
 }
 
-// 3. BLOQUEIO DO BOTÃO DE PDF (REGRA DE 7 DIAS)
+// 3. BLOQUEIO DO BOTÃO
 function verificarLiberacaoPDF(dataInicio) {
     const agora = new Date();
-    const diffDias = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+    const diffDias = (agora - dataInicio) / (1000 * 60 * 60 * 24);
     
-    // Pegue o ID real do seu botão de imprimir/gerar PDF
-    const btnGerar = document.querySelector(".btn-acessar") || document.getElementById("btn-imprimir"); 
+    // Tenta encontrar seu botão de impressão (ajuste o ID se necessário)
+    const btnGerar = document.getElementById("btn-imprimir") || document.querySelector(".btn-acessar"); 
 
-    if (diffDias < 7) {
+    if (diffDias < 7 && btnGerar) {
         btnGerar.disabled = true;
         btnGerar.style.filter = "grayscale(100%)";
         btnGerar.style.opacity = "0.5";
-        btnGerar.title = "Disponível após 7 dias de garantia.";
-        document.getElementById("msg-trava").innerHTML = "🔒 O download do PDF fica disponível após o período de garantia.";
+        const msg = document.getElementById("msg-trava");
+        if(msg) msg.innerHTML = "🔒 O download do PDF fica disponível após o período de garantia.";
     }
 }
 
-// 4. SAÍDA SEGURA (TRAVA DEFINITIVA)
-async function executarSaidaSegura() {
-    // Se o cara tentar burlar e o botão estiver desativado, a função para aqui
-    const dataInicioRes = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
-    const dadosCheck = await dataInicioRes.json();
-    const dataInicio = new Date(dadosCheck.data_inicio);
-    const diasPassados = Math.floor((new Date() - dataInicio) / (1000 * 60 * 60 * 24));
+// --- ESSA PARTE É A MAIS IMPORTANTE ---
+// Garante que o código só rode quando a página (e o cronômetro) estiverem prontos
+window.onload = function() {
+    inicializarSeguranca();
+};
 
-    if (diasPassados < 7) {
-        alert("O PDF só pode ser gerado após os 7 dias de garantia.");
-        return;
-    }
-
-    if(!mapaGerado) { alert("Gere o mapa primeiro!"); return; }
-
-    // Trava no Firebase ANTES de imprimir para evitar que ele feche a aba e tente de novo
-    try {
-        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ status: 'usado', dataUso: new Date().toLocaleString('pt-BR') }),
-            headers: { 'Content-Type': 'application/json' }
-        });
-        
-        window.print();
-        alert("Acesso concluído. O Instinto Superior agradece!");
-        window.location.href = "../index.html"; 
-    } catch (e) {
-        window.location.href = "../index.html";
-    }
-}
-
-// Inicia o processo assim que a página carrega
-inicializarSeguranca();
 </script>
   
 </body>
