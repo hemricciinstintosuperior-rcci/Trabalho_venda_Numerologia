@@ -1755,7 +1755,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
     const dtNasci = new Date(partesData[2], partesData[1] - 1, partesData[0]);
 
     // Função interna para processar cada ciclo separadamente
-    const processarUmCiclo = (anoReferencia, tituloSecao) => {
+   const processarUmCiclo = (anoReferencia, tituloSecao, travado = false) => {
         let inicioCiclo = new Date(anoReferencia, dtNasci.getMonth(), dtNasci.getDate());
         
         // Ajuste para garantir que o "Atual" pegue o início correto do ano pessoal vigente
@@ -1836,9 +1836,14 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
                     ${dominanteMomento[0]}
                 </div>
                 <div>
+
+                <div class="conteudo-travado">
                     <h4 style="margin: 0; color: #827108; text-transform: uppercase;">Perfil de Ação Atual: ${dominanteMomento}</h4>
                     <div style="margin: 5px 0 0 0; font-size: 14px; color: #555;">${aplicarFiltroTexto(descricoesPerfilMomento[dominanteMomento])}</div>
-                </div>
+                </div> </div>
+                  <div class="aviso-trava">
+            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
+         </div>  
             </div>
 
             <div style="margin: 25px 0; background: #fff; padding: 20px; border-radius: 8px;">`;
@@ -1936,10 +1941,13 @@ h += `
                 <span style="color:var(--gold); font-weight:bold; font-size:20px;">IDADE: ${indiceAno} ANOS </span><br>
                 <span style="color:var(--gold); font-weight:bold; font-size:20px;">PERÍODO: ${periodoVigente}</span>
             </div>
-
+              <div class="conteudo-travado">
             <div class="texto-res">
                 ${aplicarFiltroTexto(window.TextosTransito ? window.TextosTransito[vTransitoCalculado] : "")}
-            </div>
+            </div> </div>
+                <div class="aviso-trava">
+            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
+         </div>
         </div>
     </div>`;
 
@@ -1964,15 +1972,17 @@ vibracoes: {
         // --- FIM DO QUE VOCÊ COLOU ---
 h += `</div>`; // Fecha a div secao-card
         h += `</div>`; // Fecha o container de transição se houver
+
+         
         return h;
     };
    
 
     // Gera o Ciclo Atual
-    let htmlFinal = processarUmCiclo(anoBase, "Status do Momento: Ciclo Atual");
+    let htmlFinal = processarUmCiclo(anoBase, "Status do Momento: Ciclo Atual", false);
     
     // Gera o Próximo Ciclo (AnoBase + 1)
-    htmlFinal += processarUmCiclo(anoBase + 1, "Status do Momento: Próximo Ciclo");
+    htmlFinal += processarUmCiclo(anoBase + 1, "Status do Momento: Próximo Ciclo", true);
 
     // Retorno para manter compatibilidade com o resto do seu script
     return { html: htmlFinal, dados: {} }; 
