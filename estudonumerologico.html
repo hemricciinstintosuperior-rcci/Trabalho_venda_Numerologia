@@ -3295,9 +3295,10 @@ html += `
                     ${aplicarFiltroTexto(textos[sec][i][res[sec][i]])}
                 </p>
                 <hr style="border:0; border-top:1px solid #ffffff">
+                 </div>
           <div class="aviso-trava">
             🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
- </div>
+
          </div>
            </div>`;
     }
@@ -3461,10 +3462,11 @@ html += `
         <p style="text-align:center; margin-bottom:20px;">Projeção para o ciclo seguinte, iniciando no seu próximo aniversário.</p>
         <div class="conteudo-travado">
         ${cronogramaProximoHTML}
+        </div>
         <div class="aviso-trava">
             🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
          </div> 
-         </div>
+         
          </div>
 </div>`;
 
@@ -3648,9 +3650,10 @@ if(dadosNegativas.detalhes.length > 0){
                 <span style="color:red; font-weight: bold;font-size: 21px;">Tempo : ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
                 <div class="conteudo-travado">
                 <p style="margin-top: 8px; color: #222; text-align: left;">${aplicarFiltroTexto(textos.SeqNegVida[neg.numero])}</p>
+                 </div>
                  <div class="aviso-trava">
             🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
-         </div></div></div>`;
+         </div></div>`;
     });
 }
 
@@ -3684,10 +3687,11 @@ if (listaEspeciais.length > 0) {
                <div class="conteudo-travado">
                 <div class="texto-res" style="text-align: justify; margin-top:15px;">
                     ${aplicarFiltroTexto(textos.SeqEspeciais[esp.numero])}
+                          </div>
+         </div>
                          <div class="aviso-trava">
             🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
-         </div>
-         </div>
+        
          </div>
             </div>`;
     });
@@ -3722,13 +3726,13 @@ if (listaFin.length > 0) {
                 <div class="conteudo-travado">
                 <div class="texto-res" style="text-align: justify; margin-top:15px;">
                     ${aplicarFiltroTexto(textos.SeqFinanceira[999])}
-                    </div>
+                          <div class="aviso-trava">
+            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>
          </div>
-                                 <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
-         
+                           
          </div>
          </div>
+        
             </div>`;
     });
 }
@@ -3774,15 +3778,12 @@ while (idadeAcumulada < 100) {
                     📅 VIGÊNCIA: ${dataIniPot.toLocaleDateString('pt-BR')} até ${dataFimPot.toLocaleDateString('pt-BR')}
                 </div>
 
-                <div class="conteudo-travado">
+               
                 <div class="texto-res" style="${potenciaAtivaAgora ? 'color:#000; font-weight:500;' : 'color:#222;'}">
                     ${aplicarFiltroTexto(textos.Potencias[p] || "Vibração em análise.")}
-                             </div>
+                             
          </div>            
-         <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
-        
-         </div>
+      
          </div>
             </div>`;
         
