@@ -1896,10 +1896,10 @@ const textoIndiv = (textosPlanosMomento[p] && textosPlanosMomento[p][int]) ? tex
                         <div class="texto-res">${aplicarFiltroTexto(textoIndiv)}</div>
                         </div>
                          ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''} 
-         </div>  </div>`;
+         `;
             }
         }
-
+  h += `</div>`; 
         h += ` <div class="secao-card quebra-pagina" style="width: 100%;"> 
             <div style="margin-top:40px; border:2px solid #ffffff; padding:25px; border-radius:12px; background:#fff;">
                 <div style="text-align:center; margin-bottom:20px;">
