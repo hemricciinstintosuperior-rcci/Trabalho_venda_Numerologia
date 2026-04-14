@@ -3782,11 +3782,13 @@ while (idadeAcumulada < 100) {
                     📅 VIGÊNCIA: ${dataIniPot.toLocaleDateString('pt-BR')} até ${dataFimPot.toLocaleDateString('pt-BR')}
                 </div>
 
-               
+               <div class="conteudo-travado">
                 <div class="texto-res" style="${potenciaAtivaAgora ? 'color:#000; font-weight:500;' : 'color:#222;'}">
                     ${aplicarFiltroTexto(textos.Potencias[p] || "Vibração em análise.")}
-                             
-                 
+                         </div>     </div> 
+                  <div class="aviso-trava">
+            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
+         </div>
       
          </div>
             </div>`;
