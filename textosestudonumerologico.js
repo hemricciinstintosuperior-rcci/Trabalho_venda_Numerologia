@@ -293,39 +293,48 @@ Se o número do Momento Decisivo coincide com o número de uma de suas Fraquezas
 Esses desafios não devem ser vistos como limitações permanentes, mas como oportunidades de crescimento e desenvolvimento pessoal. Ao reconhecer essas tendências, torna-se possível agir com mais consciência, fortalecer qualidades internas e transformar dificuldades em maturidade e experiência.
 Cada desafio mostra uma etapa específica do processo de evolução e revela quais atitudes favorecem o equilíbrio e a superação.  
  
- Sempre que o número de um Desafio coincidir com o número de um Ciclo de Vida, Momento Decisivo ou Caminho de Vida, pode sugerir alguma predisposição a questões de saúde, que podem se apresentar no período conforme descrito abaixo:
-  Possíveis Problemas
-  
-1️⃣
-Região da cabeça, coração, sistema circulatório e respiratório, alergias, ferimentos nos olhos, rosto, orelhas e maxilar, problemas circulatórios e cardíacos. Especialmente em idades mais avançadas; 
-anorexia, edema pulmonar, tosse, tuberculose, impotência masculina. Na fase infantil: facilidade para urinar na cama.
-  
-2️⃣
-Região dos rins, estômago e sistema nervoso. Pode acarretar retenção de líquidos no corpo, afetar ainda o sistema linfático, estômago e intestino, manchas hepáticas, infecções urinárias, esclerose múltipla, 
-distúrbios nos seios, excesso de peso, incontinência urinária, envelhecimento precoce. Problemas femininos em especial na fase da menopausa, perda de cabelos, facilidade para queimaduras.
-  
-3️⃣
-Região da garganta, fígado, e vesícula são os mais críticos. Também podem ocorrer quadros de enxaquecas, problemas glandulares, em especial na tireóidea e na hipófise, oscilações na pressão arterial, furúnculos, hematomas, problemas nos ombros e dores ciáticas causados por tensão nervosa; problemas nas coxas e nos pés.
-  
-4️⃣
-O “4” pode indicar doenças incomuns e de difícil diagnóstico, acidentes inesperados e ferimentos inexplicáveis, além de problemas de circulação sanguínea, anemia, hipoglicemia, problemas psicossomáticos, histeria, medos e fobias, perturbações mentais e emocionais; problemas ósseos em 
-geral; nos dentes; espasmos e palpitações; úlceras, colites e distúrbios digestivos.
-  
-5️⃣
-Problemas nos pulmões, aparelho respiratório, olhos e sistema nervoso. Ansiedade e alterações repentinas de humor, tensão nervosa, apneia, exaustão mental ou estafa; insônia, amnésia, paralisia 
-facial, gagueira, acidentes graves por imprudência, vícios em geral (álcool e drogas), distúrbio nos órgãos reprodutores e problemas na tireoide.
-  
-6️⃣
-Doenças renais, distúrbios pulmonares; irregularidades na circulação do sangue, hemofilia, palpitações cardíacas, quistos e tumores nos seios, colites, problemas na coluna em geral e dores lombares, problemas de próstata, excesso de peso, incontinência urinária, problemas cardíacos e na região do pescoço.
-  
-7️⃣
-Problemas glandulares, sistema nervoso, nos pés e o sistema linfático. Poderá haver certa vulnerabilidade à infecções, problemas de pele, como alergias em geral, coceiras, arteriosclerose, derrame cerebral, problemas mentais e cerebrais em geral, medos e fobias, depressão, síndrome do 
-pânico, problemas de varizes e vícios em geral, em especial o alcoolismo.
-  
-8️⃣
-Problemas de estômago e sistema nervoso, os pontos mais sensíveis, no entanto são: os joelhos, dentes, ossos e ligamentos. Podem ocorrer doenças sanguíneas, tendência a se submeter a tratamento médico 
-inadequado ou de receber prescrições médicas inadequadas, problemas de fígado e baço; distúrbios no digestivo e intestino, estados de desânimo profundo, dores de cabeça frequentes, derrames, hérnia de disco, desmaios, hipertensão, apendicite, problemas na próstata, cirurgias frequentes e obesidade.
-  `,
+​⚠️ Convergência de Desafios e Ciclos de Vida
+​Nota Importante: As análises abaixo tornam-se relevantes quando o número de um Desafio coincide com o seu Ciclo de Vida, Momento Decisivo ou Caminho de Vida. Nestes períodos, o mapa indica situações que podem ocorrer e que exigem maior atenção.
+
+​⚠️ Situação de Atenção: Número 1
+​Regiões Sensíveis: Cabeça, Coração e Sistema Respiratório
+​Pontos de Observação: Região da cabeça, coração, sistema circulatório e respiratório, alergias, ferimentos nos olhos, rosto, orelhas e maxilar.
+​Tendências de Longo Prazo: Especialmente em idades mais avançadas; anorexia, edema pulmonar, tosse, tuberculose, impotência masculina. Na fase infantil: facilidade para urinar na cama.
+
+​⚠️ Situação de Atenção: Número 2
+​Regiões Sensíveis: Sistema Renal e Nervoso
+​Pontos de Observação: Região dos rins, estômago e sistema nervoso. Pode acarretar retenção de líquidos no corpo, afetar o sistema linfático, manchas hepáticas e infecções urinárias.
+​Tendências de Longo Prazo: Esclerose múltipla, distúrbios nos seios, excesso de peso, incontinência urinária, envelhecimento precoce. Problemas femininos na menopausa, perda de cabelos e facilidade para queimaduras.
+
+​⚠️ Situação de Atenção: Número 3
+​Regiões Sensíveis: Garganta, Fígado e Vesícula
+​Pontos de Observação: Região da garganta, fígado e vesícula são os mais críticos. Também podem ocorrer quadros de enxaquecas e problemas glandulares (especialmente tireoide e hipófise).
+​Tendências de Longo Prazo: Oscilações na pressão arterial, furúnculos, hematomas, problemas nos ombros e dores ciáticas causados por tensão nervosa; problemas nas coxas e nos pés.
+
+​⚠️ Situação de Atenção: Número 4
+​Regiões Sensíveis: Estrutura Óssea e Psicossomática
+​Pontos de Observação: O “4” pode indicar doenças incomuns de difícil diagnóstico, acidentes inesperados e ferimentos inexplicáveis, além de problemas de circulação sanguínea, anemia e hipoglicemia.
+​Tendências de Longo Prazo: Problemas psicossomáticos, medos e fobias, perturbações mentais e emocionais; problemas ósseos em geral e nos dentes; espasmos, palpitações, úlceras e colites.
+
+​⚠️ Situação de Atenção: Número 5
+​Regiões Sensíveis: Pulmões e Sistema Nervoso Central
+​Pontos de Observação: Problemas nos pulmões, aparelho respiratório, olhos e sistema nervoso. Ansiedade, alterações repentinas de humor, tensão nervosa e apneia.
+​Tendências de Longo Prazo: Exaustão mental ou estafa, insônia, amnésia, paralisia facial, gagueira, acidentes por imprudência, vícios em geral, distúrbios nos órgãos reprodutores e tireoide.
+
+​⚠️ Situação de Atenção: Número 6
+​Regiões Sensíveis: Coluna, Coração e Região Lombar
+​Pontos de Observação: Doenças renais, distúrbios pulmonares, irregularidades na circulação do sangue, hemofilia e palpitações cardíacas.
+​Tendências de Longo Prazo: Quistos e tumores nos seios, colites, problemas na coluna em geral e dores lombares, problemas de próstata, excesso de peso, incontinência urinária e problemas no pescoço.
+
+​⚠️ Situação de Atenção: Número 7
+​Regiões Sensíveis: Sistema Imunológico e Mental
+​Pontos de Observação: Problemas glandulares, sistema nervoso, nos pés e o sistema linfático. Vulnerabilidade a infecções e problemas de pele (alergias e coceiras).
+​Tendências de Longo Prazo: Arteriosclerose, derrame cerebral, problemas mentais e cerebrais em geral, medos e fobias, depressão, síndrome do pânico, varizes e vícios em geral.
+
+​⚠️ Situação de Atenção: Número 8
+​Regiões Sensíveis: Estômago, Articulações e Ossos
+​Pontos de Observação: Problemas de estômago e sistema nervoso. Os pontos mais sensíveis são: joelhos, dentes, ossos e ligamentos.
+​Tendências de Longo Prazo: Doenças sanguíneas, problemas de fígado e baço, distúrbios digestivos, estados de desânimo profundo, dores de cabeça, hérnia de disco, hipertensão, apendicite e obesidade. `,
         
         // Nova chave para os Gráficos do Ano
     statusAnual: "O Status do Momento revela a configuração do seu plano de Expressão para o ano vigente. Diferente do seu Plano Natural, esta análise identifica quais áreas da sua vida estão recebendo carga extra de energia e quais exigem maior cautela estratégica no ciclo atual.",
