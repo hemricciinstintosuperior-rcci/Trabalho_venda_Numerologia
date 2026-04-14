@@ -2568,7 +2568,7 @@ let html = `
 
 
 
-<button id="btn-pdf-premium" class="btn-pdf no-print" onclick="window.print()" disabled style="filter: grayscale(100%); opacity: 0.5; cursor: not-allowed;">
+<button id="btn-pdf-premium" class="btn-pdf no-print" onclick="window.print(); registrarDownloadRealizado();" disabled style="filter: grayscale(100%); opacity: 0.5; cursor: not-allowed;">
     📥 BAIXAR SEU PDF PREMIUM
 </button>
 
@@ -2770,7 +2770,7 @@ html += `
     </h3>
 </div>
 
-</div> // Fecha a div folha-resumo-premium
+</div> 
     
 <div id="status-acesso" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
     <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 5px;">Calculando seu tempo de acesso...</div>
@@ -4087,7 +4087,7 @@ async function inicializarSeguranca() {
         dataExpiracao.setDate(dataReferencia.getDate() + 7); 
 
         iniciarTimer(dataExpiracao);
-        verificarLiberacaoPDF(dataReferencia);
+        verificarLiberacaoPDF(dados);
 
     } catch (e) {
         console.error("Erro na comunicação com Firebase:", e);
@@ -4122,16 +4122,29 @@ function iniciarTimer(dataAlvo) {
     }, 1000);
 }
 
-function verificarLiberacaoPDF(dataInicio) {
-    if (!dataInicio) return;
+function verificarLiberacaoPDF(dados) {
+    if (!dados || !dados.data_inicio) return;
+    
     const agora = new Date();
-    const dataRef = new Date(dataInicio);
+    const dataRef = new Date(dados.data_inicio);
     const diffDias = (agora - dataRef) / (1000 * 60 * 60 * 24);
     
     const btnPDF = document.getElementById("btn-pdf-premium");
     const msgTrava = document.getElementById("msg-trava");
 
-    // LIBERAÇÃO SE PASSOU 7 DIAS
+    // NOVA TRAVA: Se no Firebase o campo pdf_baixado for true, bloqueia o botão
+    if (dados.pdf_baixado === true) {
+        if (btnPDF) {
+            btnPDF.disabled = true;
+            btnPDF.style.filter = "grayscale(100%)";
+            btnPDF.style.opacity = "0.5";
+            btnPDF.style.cursor = "not-allowed";
+        }
+        if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado anteriormente.";
+        return; // Para a execução aqui e não libera o botão
+    }
+
+    // REGRA DOS 7 DIAS (Sua lógica original)
     if (diffDias >= 7) {
         if (btnPDF) {
             btnPDF.disabled = false;
@@ -4150,6 +4163,30 @@ function verificarLiberacaoPDF(dataInicio) {
         if (msgTrava) msgTrava.innerHTML = "🔒 PDF disponível após o período de garantia.";
     }
 }
+
+async function registrarDownloadRealizado() {
+    try {
+        // Envia para o Firebase que o PDF foi baixado
+        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+            method: 'PATCH',
+            body: JSON.stringify({ pdf_baixado: true })
+        });
+        
+        // Bloqueia o botão na tela imediatamente
+        const btnPDF = document.getElementById("btn-pdf-premium");
+        const msgTrava = document.getElementById("msg-trava");
+        if (btnPDF) {
+            btnPDF.disabled = true;
+            btnPDF.style.filter = "grayscale(100%)";
+            btnPDF.style.opacity = "0.5";
+        }
+        if (msgTrava) msgTrava.innerHTML = "⚠️ Download registrado. Acesso ao PDF encerrado.";
+        
+    } catch (e) {
+        console.error("Erro ao registrar download:", e);
+    }
+}
+    
 
 // Chame esta função após o innerHTML do seu relatório ser preenchido
 function exibirRelatorio(htmlConteudo) {
