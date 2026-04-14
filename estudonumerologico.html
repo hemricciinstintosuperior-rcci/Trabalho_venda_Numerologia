@@ -1441,11 +1441,14 @@ function gerarTodosOsGraficosMomento(res, faltantes, nomeRaw, d3, regenteMatriz,
         ordemVisual.forEach((p, index) => {
             const status = statusPlanos[p];
             const cor = status === "forte" ? "#827108" : (status === "medio" ? "#555" : "#cc0000");
-            
+
+
+              // INÍCIO DO ENVOLVIMENTO (TRAVA)
+            html += travado ? '<div class="conteudo-travado">' : '<div>';
             // Início do Card Individual (com regra para não quebrar página)
-            html += `${travado ? '<div class="conteudo-travado">' : '<div>'}
+            html += `
                 <div style="margin-top: 20px; margin-bottom: 30px; break-inside: avoid; border: 1px solid #ffffff; padding: 25px; border-radius: 12px; background: #fff; border-top: 5px solid ${cor};">
-                </div>
+                
             `;
 
             // SE FOR O PRIMEIRO ITEM (FÍSICO), INJETA O TÍTULO E INTRODUÇÃO AQUI DENTRO
@@ -1477,8 +1480,8 @@ function gerarTodosOsGraficosMomento(res, faltantes, nomeRaw, d3, regenteMatriz,
             const atributos = rankingMomento.filter(item => item.plano === p);
             const subgrupos = [...new Set(atributos.map(item => item.sub))];
 
-            subgrupos.forEach(sub => {
-                // Mantive o break-inside avoid aqui para os subgrupos não quebrarem
+      subgrupos.forEach(sub => {
+                // Abre o subgrupo (ex: Realização, Relacionamento)
                 html += `<div style="margin-bottom: 30px; padding-top: 10px; break-inside: avoid;">`;
                 html += `<h4 style="color:#000000; font-size:16px; text-align:center; text-transform:uppercase; margin: 0 0 15px 0;">${sub}</h4>`;
                 
@@ -1486,23 +1489,26 @@ function gerarTodosOsGraficosMomento(res, faltantes, nomeRaw, d3, regenteMatriz,
                     html += montarBarraGrafico(item);
                 });
 
-                html += `</div>`; 
+                html += `</div>`; // Fecha o subgrupo
             });
 
-            html += `</div>`; // Fecha o card do plano
-
-             ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''}
-             
+            // --- FECHAMENTOS CRUCIAL AQUI ---
+            html += `</div>`; // 1. Fecha o Card Branco (o que tem a borda colorida no topo)
             
-        });
+            html += `</div>`; // 2. Fecha a DIV que a interrogação abriu lá no topo (conteudo-travado ou div comum)
+
+            // 3. Adiciona o aviso de trava fora de tudo para não ficar embaçado
+            html += travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : '';
+            
+        }); // Fim do ordemVisual.forEach
 
         return html;
+
     } catch (e) {
         console.error("Erro nos gráficos de momento:", e);
         return "";
     }
 }
-
 
         
 // FUNÇÃO PARA TROCAR AS ABAS
