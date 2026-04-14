@@ -1443,11 +1443,10 @@ function gerarTodosOsGraficosMomento(res, faltantes, nomeRaw, d3, regenteMatriz,
             const cor = status === "forte" ? "#827108" : (status === "medio" ? "#555" : "#cc0000");
             
             // Início do Card Individual (com regra para não quebrar página)
-            html += `<div class="conteudo-travado">
+            html += `${travado ? '<div class="conteudo-travado">' : '<div>'}
                 <div style="margin-top: 20px; margin-bottom: 30px; break-inside: avoid; border: 1px solid #ffffff; padding: 25px; border-radius: 12px; background: #fff; border-top: 5px solid ${cor};">
                 </div>
-                <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
+              ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''}
          </div>
             `;
 
@@ -1835,15 +1834,12 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
                 <div style="background: var(--gold); color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; text-transform: uppercase; flex-shrink: 0;">
                     ${dominanteMomento[0]}
                 </div>
-                <div>
-
-                <div class="conteudo-travado">
+                
+                ${travado ? '<div class="conteudo-travado">' : '<div>'}
                     <h4 style="margin: 0; color: #827108; text-transform: uppercase;">Perfil de Ação Atual: ${dominanteMomento}</h4>
                     <div style="margin: 5px 0 0 0; font-size: 14px; color: #555;">${aplicarFiltroTexto(descricoesPerfilMomento[dominanteMomento])}</div>
-                </div> </div>
-                  <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
-         </div>  
+                </div>  
+                 ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''} 
             </div>
 
             <div style="margin: 25px 0; background: #fff; padding: 20px; border-radius: 8px;">`;
@@ -1888,8 +1884,11 @@ const textoIndiv = (textosPlanosMomento[p] && textosPlanosMomento[p][int]) ? tex
                 h += `
                     <div style="margin-bottom: 20px; border-left: 1px solid ${coresPlanos[p] || 'var(--gold)'}; padding-left: 15px;">
                         <h4 style="margin:0; color:${coresPlanos[p] || 'var(--dark)'}; text-transform:uppercase; font-size:18px;">${nomesAmigaveis[p]} <small>(${int})</small></h4>
+                         ${travado ? '<div class="conteudo-travado">' : '<div>'}
                         <div class="texto-res">${aplicarFiltroTexto(textoIndiv)}</div>
-                    </div>`;
+                        </div>
+                         ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''} 
+         </div>  </div>`;
             }
         }
 
@@ -1941,12 +1940,11 @@ h += `
                 <span style="color:var(--gold); font-weight:bold; font-size:20px;">IDADE: ${indiceAno} ANOS </span><br>
                 <span style="color:var(--gold); font-weight:bold; font-size:20px;">PERÍODO: ${periodoVigente}</span>
             </div>
-              <div class="conteudo-travado">
+              ${travado ? '<div class="conteudo-travado">' : '<div>'}
             <div class="texto-res">
                 ${aplicarFiltroTexto(window.TextosTransito ? window.TextosTransito[vTransitoCalculado] : "")}
             </div> </div>
-                <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
+              ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''} 
          </div>
         </div>
     </div>`;
