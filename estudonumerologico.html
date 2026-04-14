@@ -4045,7 +4045,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-let dataInicioGlobal = null;
+let dadosGlobais = null; // Vamos salvar tudo aqui
 
 // 1. VALIDAÇÃO DE USUÁRIO E REDIRECIONAMENTO LIMPO
 if (!userEmail) {
@@ -4081,7 +4081,7 @@ async function inicializarSeguranca() {
             return;
         }
 
-        dataInicioGlobal = dados.data_inicio;
+        dadosGlobais = dados; // Salva o objeto inteiro do Firebase
         const dataReferencia = new Date(dados.data_inicio);
         const dataExpiracao = new Date(dataReferencia);
         dataExpiracao.setDate(dataReferencia.getDate() + 7); 
@@ -4104,13 +4104,13 @@ function iniciarTimer(dataAlvo) {
         const agora = new Date().getTime();
         const distancia = dataAlvo - agora;
 
-        if (distancia < 0) {
-            clearInterval(intervalo);
-            timerElement.innerHTML = "LIBERADO!";
-            labelElement.innerHTML = "Seu estudo já pode ser baixado!";
-            verificarLiberacaoPDF(dataInicioGlobal); // Libera o botão na hora
-            return;
-        }
+if (distancia < 0) {
+    clearInterval(intervalo);
+    timerElement.innerHTML = "LIBERADO!";
+    labelElement.innerHTML = "Seu estudo já pode ser baixado!";
+    verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI (Passando o objeto todo)
+    return;
+}
 
         const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
         const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -4188,12 +4188,11 @@ async function registrarDownloadRealizado() {
 }
     
 
-// Chame esta função após o innerHTML do seu relatório ser preenchido
 function exibirRelatorio(htmlConteudo) {
     const areaResultado = document.getElementById("resultado");
     if (areaResultado) {
         areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
-        verificarLiberacaoPDF(dataInicioGlobal);
+        verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI
     }
 }
 
