@@ -1445,9 +1445,10 @@ function gerarTodosOsGraficosMomento(res, faltantes, nomeRaw, d3, regenteMatriz,
             // Início do Card Individual (com regra para não quebrar página)
             html += `<div class="conteudo-travado">
                 <div style="margin-top: 20px; margin-bottom: 30px; break-inside: avoid; border: 1px solid #ffffff; padding: 25px; border-radius: 12px; background: #fff; border-top: 5px solid ${cor};">
+                </div>
                 <div class="aviso-trava">
             🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
-         </div></div>
+         </div>
             `;
 
             // SE FOR O PRIMEIRO ITEM (FÍSICO), INJETA O TÍTULO E INTRODUÇÃO AQUI DENTRO
@@ -3722,14 +3723,15 @@ if (listaFin.length > 0) {
         htmlPiramide += `
             <div style="margin-bottom: 35px; text-align: center;">
                 <h2 style="color:#28a745; font-size: 22px;">Potencial de Prosperidade 99/9</h2>
+               <div class="conteudo-travado">
                 <span style="color:#28a745; font-weight: bold; font-size: 19px;">📅 Período de maior influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
-                <div class="conteudo-travado">
+                
                 <div class="texto-res" style="text-align: justify; margin-top:15px;">
                     ${aplicarFiltroTexto(textos.SeqFinanceira[999])}
                     </div>
                     </div>
                           <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>
+            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
          
                            
          
