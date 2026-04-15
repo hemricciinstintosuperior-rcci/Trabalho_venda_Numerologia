@@ -3315,7 +3315,7 @@ itensAlinhamento.forEach(chave => {
     if (chave === "inclinacoes") {
         if (res.inclinacoes && res.inclinacoes.length > 0) {
             res.inclinacoes.forEach(num => {
-                conteudoFinal += `<p><strong> </strong><br>${aplicarFiltroTexto(textos.inclinacoes[num])}</p><hr style="border:0; border-top:1px dotted #ffffff">`;
+                conteudoFinal += `<div class="texto-res">${aplicarFiltroTexto(textos.inclinacoes[num])}</p><hr style="border:0; border-top:1px dotted #ffffff"></div>`;
             });
         } else {
             conteudoFinal = "<p>Nenhuma inclinação específica detectada.</p>";
