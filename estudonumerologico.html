@@ -2455,7 +2455,8 @@ function gerarCronogramaMensal(valorAnoPessoal, mesNascimento) {
 function gerarMapaCompleto() {
     const nomeRaw = document.getElementById("nome").value.trim();
     const dataRaw = document.getElementById("data").value; // Agora vem como DD/MM/AAAA
-
+// IMPLEMENTAÇÃO APENAS:
+const nomeParaCalculo = tratarNomeParaCalculo(nomeRaw);
     if (!nomeRaw || !dataRaw) return alert("Por favor, preencha todos os dados.");
 
     // 1. CAPTURA DO TEXTO DIGITADO (Lógica para DD/MM/AAAA)
