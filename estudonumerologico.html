@@ -633,35 +633,6 @@ input:focus {
     background-color: #fff;
 }    
 
-@media print {
-    /* Define as regras para a folha física */
-    @page {
-        margin: 1.5cm; /* Margem de segurança para não cortar o texto */
-        
-        /* Cria o contador de páginas no topo à direita */
-        @top-right {
-            content: "Página " counter(page);
-            font-family: 'Cinzel', serif;
-            font-size: 10pt;
-            color: #827108;
-            font-weight: bold;
-        }
-    }
-
-    /* Garante que o contador seja reiniciado na capa, se necessário */
-    body {
-        counter-reset: page;
-    }
-}
-
- @media print {
-    /* Regra específica só para a PRIMEIRA página */
-    @page :first {
-        @top-right {
-            content: ""; /* Deixa vazio o topo da primeira página */
-        }
-    }
-}   
 
     
 
