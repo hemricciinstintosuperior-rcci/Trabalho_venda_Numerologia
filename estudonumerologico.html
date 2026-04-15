@@ -2069,9 +2069,60 @@ const bancoAreasAtuacao = {
     ]
 };
 
+const bancoOcupacoesPraticas = {
+    1: [
+        "Operador de Máquina Solitário", "Entregador Autônomo", "Motorista de App", "Vigilante Noturno", "Líder de Turma", "Pedreiro de Acabamento", "Segurança Particular", "Operador de Trator", "Instalador de Internet", "Auxiliar de Manutenção Elétrica", "Encanador", "Montador de Móveis", "Pintor Residencial", "Marceneiro", "Serralheiro", "Eletricista Predial", "Soldador", "Mecânico de Motos", "Borrachante", "Taxista", "Vendedor Porta a Porta", "Segurança de Eventos", "Operador de Empilhadeira", "Armador de Ferragens", "Gesseiro"
+        // (O 1 gosta de autonomia e trabalhar sem ninguém dando ordem direta no ouvido)
+    ],
+    2: [
+        "Auxiliar de Escritório", "Atendente de Farmácia", "Recepcionista de Clínica", "Auxiliar de Almoxarifado", "Separador de Mercadorias", "Auxiliar de Biblioteca", "Atendente de Telemarketing", "Copeiro", "Auxiliar de Classe", "Ajudante de Cozinha", "Operador de Caixa", "Balconista de Padaria", "Auxiliar de Expedição", "Conferente", "Empacotador", "Auxiliar de Arquivo", "Porteiro de Condomínio", "Fiscal de Loja", "Auxiliar de Lavanderia", "Monitor de Transporte Escolar", "Garçom", "Auxiliar de RH", "Atendente de Pet Shop", "Frentista", "Auxiliar de Estética"
+        // (O 2 trabalha bem em dupla, dando suporte e organizando detalhes)
+    ],
+    3: [
+        "Vendedor de Loja", "Promotor de Vendas", "Locutor de Loja", "Animador de Festas", "Atendente de Fast Food", "Barbeiro/Cabeleireiro", "Manicure/Pedicure", "Garçom de Eventos", "Recreador Infantil", "Panfleteiro Estratégico", "Vendedor de Quiosque", "Operador de Telemarketing Ativo", "Recepcionista de Hotel", "Guia de Turismo Local", "Instrutor de Autoescola", "Cozinheiro de Restaurante", "Auxiliar de Marketing", "Decorador de Vitrines", "Agente de Viagens (Balcão)", "Modelista", "Promotor de Degustação", "Auxiliar de Eventos", "Fotógrafo de Festas", "Vendedor de Veículos", "Consultor de Beleza"
+        // (O 3 precisa falar, vender e estar com o público)
+    ],
+    4: [
+        "Auxiliar de Produção (Linha de Montagem)", "Servente de Pedreiro", "Zelador", "Faxineiro/Auxiliar de Limpeza", "Operador de Máquina Industrial", "Auxiliar de Estoque", "Conferente de Carga", "Almoxarife", "Segurança de Banco", "Apontador de Obras", "Técnico de Manutenção", "Auxiliar de Mecânico", "Calceteiro", "Lixador Industrial", "Operador de Prensa", "Auxiliar de Fundição", "Montador de Estruturas", "Vigilante Patrimonial", "Auxiliar de Marcenaria", "Pedreiro", "Carpinteiro", "Cimentador", "Auxiliar de Logística", "Jardineiro", "Pintor Industrial"
+        // (O 4 é o braço forte: rotina, esforço físico e disciplina)
+    ],
+    5: [
+        "Motorista de Caminhão", "Motoboy/Entregador", "Viajante Comercial", "Promotor de Vendas Externo", "Guia de Excursão", "Operador de Guindaste", "Instalador de Antenas", "Montador de Eventos", "Vendedor de Feira", "Agente de Campo", "Cobrador de Ônibus", "Motorista de Ônibus", "Operador de Draga", "Trabalhador Rural", "Pescador Profissional", "Guarda-Vidas", "Instrutor de Academia", "Auxiliar de Topografia", "Operador de Betoneira", "Mecânico de Campo", "Vendedor de Rota", "Auxiliar de Sondagem", "Limpador de Vidros (Altura)", "Eletricista de Rede", "Marinheiro de Convés"
+        // (O 5 odeia ficar preso: precisa de movimento e rua)
+    ],
+    6: [
+        "Cozinheiro de Escola", "Cuidador de Idosos", "Berçarista", "Auxiliar de Serviços Gerais", "Florista", "Dona de Casa Profissional", "Babá", "Auxiliar de Enfermagem (Home Care)", "Governanta", "Atendente de Creche", "Padeiro", "Confeiteiro", "Auxiliar de Veterinária", "Tratador de Animais", "Canteiro (Jardinagem)", "Lavadeiro", "Auxiliar de Limpeza Hospitalar", "Copeiro Hospitalar", "Costureiro de Reformas", "Alfaiate", "Sapateiro", "Artesão Comunitário", "Agente de Saúde Local", "Monitor de Abrigo", "Auxiliar de Cozinha Escolar"
+        // (O 6 cuida, serve e mantém o ambiente harmonioso)
+    ],
+    7: [
+        "Relojoeiro", "Técnico de Manutenção de Celular", "Operador de Painel (Monitoramento)", "Auxiliar de Laboratório", "Digitador", "Auxiliar de Farmácia de Manipulação", "Controlador de Acesso (Monitorado)", "Mecânico de Precisão", "Luthier (Conserto de Instrumentos)", "Auxiliar de TI", "Bibliotecário de Escola", "Auxiliar de Radiologia", "Instalador de Alarmes", "Testador de Equipamentos", "Auxiliar de Pesquisa de Campo", "Codificador de Dados", "Balanceador de Rodas", "Auxiliar de Ótica", "Operador de Raio-X Industrial", "Eletricista de Autos", "Ajustador Mecânico", "Ferramenteiro", "Apontador de Dados", "Auxiliar de Qualidade", "Inspetor de Risco"
+        // (O 7 é o detalhista: funções que exigem foco e silêncio)
+    ],
+    8: [
+        "Gerente de Pequena Loja", "Encarregado de Obra", "Supervisor de Limpeza", "Líder de Almoxarifado", "Chefe de Cozinha (Operacional)", "Mestre de Obras", "Dono de Pequeno Negócio", "Corretor de Imóveis (Popular)", "Comerciante de Bazar", "Gerente de Posto de Gasolina", "Supervisor de Vendas", "Líder de Produção", "Fiscal de Caixa", "Gestor de Equipe de Segurança", "Comprador de Sucata/Reciclagem", "Industrial de Fundo de Quintal", "Administrador de Pequena Fazenda", "Líder de Logística", "Encarregado de Manutenção", "Vendedor de Atacado", "Representante Comercial", "Gerente de Oficina", "Supervisor de Operações", "Líder de Equipe de Telemarketing", "Coordenador de Pátio"
+        // (O 8 é o comando: mesmo na base, ele quer ser o chefe da equipe)
+    ],
+    9: [
+        "Educador Social", "Auxiliar de Proteção Ambiental", "Trabalhador de Reciclagem", "Monitor de Projetos Sociais", "Auxiliar de Funerária", "Tratador de Cavalos/Animais Grandes", "Auxiliar de Creche Comunitária", "Orientador de Trânsito", "Trabalhador de ONG", "Auxiliar de Saneamento", "Agente de Zoonoses", "Limpador de Praças", "Coveiro", "Auxiliar de Terapia Alternativa", "Guarda Civil Municipal", "Instrutor de Artesanato", "Auxiliar de Reabilitação", "Agente de Defesa Civil", "Trabalhador de Refeitório Popular", "Guia de Museus Locais", "Auxiliar de Igreja/Templo", "Atendente de Posto de Saúde", "Voluntário Remunerado", "Auxiliar de Reflorestamento", "Cozinheiro de Hospital"
+        // (O 9 é o serviço ao próximo e ao coletivo)
+    ],
+    // Números Mestres (Geralmente atuam como referências técnicas ou mentores no que fazem)
+    11: [
+        "Mentor de Equipe", "Instrutor Técnico", "Consultor Operacional", "Líder Motivacional de Vendas", "Treinador de Pessoal", "Especialista em Segurança", "Técnico em Inovação de Processos", "Monitor de Ensino Técnico", "Inspirador de Metas", "Avaliador de Performance"
+    ],
+    22: [
+        "Planejador de Logística", "Mestre de Obras Complexas", "Organizador de Grandes Estoques", "Gestor de Projetos Comunitários", "Construtor de Estruturas Metálicas", "Estrategista Industrial", "Coordenador de Grandes Eventos", "Líder de Expansão", "Gestor de Infraestrutura", "Mentor de Grandes Equipes"
+    ],
+    33: [
+        "Guia de Saúde Comunitária", "Mestre em Ofícios Manuais", "Conselheiro de Equipe", "Coordenador de Assistência Social", "Professor de Cursos Livres", "Líder de Projetos de Cura", "Mentor de Jovens Aprendizes", "Gestor de Projetos Humanitários", "Educador de Valores", "Referência Ética na Empresa"
+    ]
+};
+        
+
 function calcularAptidaoProfissional(res) {
+    const pilarPrincipal = reduzirPuro(res.dia);
     const pilares = [
-        reduzirPuro(res.dia), 
+        pilarPrincipal, 
         res.CaminhodeVida, 
         res.Propósito, 
         res.Personalidade
@@ -2087,41 +2138,50 @@ function calcularAptidaoProfissional(res) {
         });
     });
 
-    // 2. Transforma o objeto em um array e ordena do MAIS frequente para o MENOS frequente
     let areasOrdenadas = Object.keys(contagem).map(area => {
         return { nome: area, pontos: contagem[area] };
     });
 
-    // Ordenação Decrescente (Prioriza áreas que aparecem em mais números do mapa)
     areasOrdenadas.sort((a, b) => b.pontos - a.pontos);
 
-    // 3. LOGICA DE PREENCHIMENTO EXPANDIDA
-    
-    // Zona de Sucesso Absoluto: Pegamos os 18 primeiros resultados (Top 18)
+    // 2. Definição das Listas
     let vocacaoMaster = areasOrdenadas.slice(0, 18).map(item => item.nome);
-
-    // Campo de Afinidade: Pega da 19ª posição até a 48ª (Totalizando 30 resultados)
     let afinidade = areasOrdenadas.slice(18, 48).map(item => item.nome);
+
+    // 3. BUSCA DE OCUPAÇÕES PRÁTICAS (O NOVO BANCO)
+    // Usamos o número do Dia (pilar principal) para dar a direção mais firme
+    let caminhosPraticos = bancoOcupacoesPraticas[pilarPrincipal] || [];
+    let listaCLT = caminhosPraticos.slice(0, 20).join(" • ");
 
     // 4. MONTAGEM DO HTML DINÂMICO
     return `
         <div style="margin-top: 10px; padding: 20px; background: #fffcf0; border: 1px solid #d97a1e; border-left: 8px solid #d97a1e; border-radius: 8px;">
             <h4 style="color: #d97a1e; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🚩 Zona de Sucesso Absoluto (Foco Principal)</h4>
             <p style="font-size: 1.1rem; font-weight: bold; color: #1a1a1a; line-height: 1.5; text-align: justify;">
-                ${vocacaoMaster.length > 0 ? vocacaoMaster.join(" • ") : "Liderança Estratégica • Empreendedorismo • Gestão de Inovação"}
+                ${vocacaoMaster.length > 0 ? vocacaoMaster.join(" • ") : "Liderança Estratégica • Empreendedorismo"}
             </p>
             <p style="font-size: 0.85rem; color: #666; margin-top: 12px; font-style: italic;">
-                *Estes são os seus 18 pilares de maior retorno financeiro e satisfação pessoal baseados na convergência do seu mapa.
+                *Estes são os seus pilares de maior retorno financeiro e satisfação pessoal.
+            </p>
+        </div>
+
+        <div style="margin-top: 20px; padding: 20px; background: #f0fdf4; border: 1px solid #16a34a; border-left: 8px solid #16a34a; border-radius: 8px;">
+            <h4 style="color: #16a34a; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🚀 Caminhos de Entrada Imediata (Mercado CLT)</h4>
+            <p style="font-size: 1rem; font-weight: 600; color: #1a1a1a; line-height: 1.6; text-align: justify;">
+                ${listaCLT}
+            </p>
+            <p style="font-size: 0.85rem; color: #666; margin-top: 12px; font-style: italic;">
+                *Direcionamento prático para ocupações reais que não exigem necessariamente formação superior, mas que utilizam seus talentos naturais.
             </p>
         </div>
 
         <div style="margin-top: 20px; padding: 20px; background: #f4f7f9; border: 1px solid #3498db; border-left: 8px solid #3498db; border-radius: 8px;">
             <h4 style="color: #3498db; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🔍 Campo de Afinidade (Caminhos Favoráveis)</h4>
             <p style="font-size: 0.95rem; font-weight: 500; color: #444; line-height: 1.6; text-align: justify;">
-                ${afinidade.length > 0 ? afinidade.join(" • ") : "Desenvolvimento Profissional • Planejamento • Liderança Coletiva"}
+                ${afinidade.length > 0 ? afinidade.join(" • ") : "Desenvolvimento • Planejamento • Liderança"}
             </p>
             <p style="font-size: 0.85rem; color: #666; margin-top: 12px; font-style: italic;">
-                *Lista expandida com 30 áreas onde você possui talentos naturais que facilitam o crescimento.
+                *Áreas onde você possui facilidade de adaptação e crescimento a longo prazo.
             </p>
         </div>
     `;
