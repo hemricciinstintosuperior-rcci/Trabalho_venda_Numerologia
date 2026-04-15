@@ -3234,12 +3234,12 @@ html += `
     <div class="page">
         <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">Déficits de Comportamento</h2>
         <div class="intro-texto">${textos.introducoes.deficits || ""}</div>
-        <pfont-size: 1.2rem; color: var(--gold)><strong> </strong> ${aplicarFiltroTexto(textos.deficits[res.deficitRecorrente])}</p>
+        <p style="margin-bottom: 20px; display: block;"> ${aplicarFiltroTexto(textos.deficits[res.deficitRecorrente])}</p>
         <hr style="border:0; border-top:1px solid #ffffff">
 `;
 if (res.deficitsOcultos.length > 0) {
     res.deficitsOcultos.forEach(d => {
-        html += `<p><strong></strong> ${aplicarFiltroTexto(textos.deficits[d])}</p><hr style="border:0; border-top:1px solid #ffffff">`;
+        html += `<p style="margin-bottom: 20px; display: block;"> ${aplicarFiltroTexto(textos.deficits[d])}</p><hr style="border:0; border-top:1px solid #ffffff">`;
     });
 }
 html += `</div>`;
