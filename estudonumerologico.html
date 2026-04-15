@@ -3213,7 +3213,7 @@ html += `
 `;
 if (res.deficiencias.length > 0) {
     res.deficiencias.forEach(f => {
-        html += `<p><strong></strong> ${aplicarFiltroTexto(textos.deficiencias[f])}</p><hr style="border:0; border-top:1px solid #ffffff">`;
+        html += `<div class="texto-res"> ${aplicarFiltroTexto(textos.deficiencias[f])}</p><hr style="border:0; border-top:1px solid #ffffff"></div>`;
     });
 } else { html += `<p>Nenhuma deficiência encontrada.</p>`; }
 html += `</div>`;
@@ -3234,12 +3234,12 @@ html += `
     <div class="page">
         <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">Déficits de Comportamento</h2>
         <div class="intro-texto">${textos.introducoes.deficits || ""}</div>
-        <p style="margin-bottom: 20px; display: block;"> ${aplicarFiltroTexto(textos.deficits[res.deficitRecorrente])}</p>
+        <div class="texto-res"> ${aplicarFiltroTexto(textos.deficits[res.deficitRecorrente])}</div>
         <hr style="border:0; border-top:1px solid #ffffff">
 `;
 if (res.deficitsOcultos.length > 0) {
     res.deficitsOcultos.forEach(d => {
-        html += `<p style="margin-bottom: 20px; display: block;"> ${aplicarFiltroTexto(textos.deficits[d])}</p><hr style="border:0; border-top:1px solid #ffffff">`;
+        html += `<div class="texto-res"> ${aplicarFiltroTexto(textos.deficits[d])}</p><hr style="border:0; border-top:1px solid #ffffff"></div>`;
     });
 }
 html += `</div>`;
