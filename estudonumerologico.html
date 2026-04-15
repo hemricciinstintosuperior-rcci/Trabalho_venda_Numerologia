@@ -2450,7 +2450,13 @@ function gerarCronogramaMensal(valorAnoPessoal, mesNascimento) {
     return htmlGerado;
 }
 
-
+function formatarNomeParaExibicao(nomeDigitado) {
+    // Esta função coloca um espaço antes de qualquer letra maiúscula 
+    // que esteja "grudada" em outra, exceto no início.
+    // Ex: "DeSouza" -> "De Souza" | "Vanderlei" -> "Vanderlei" (permanece igual)
+    
+    return nomeDigitado.replace(/([a-z])([A-Z])/g, '$1 $2');
+}
         
 function gerarMapaCompleto() {
     const nomeRaw = document.getElementById("nome").value.trim();
@@ -2586,7 +2592,7 @@ desafios: {
  proximoAnoPessoal: reduzir(resultadoAnoPessoal + 1) 
 };
 
-const nomeParaCalculo = tratarNomeParaCalculo(nomeRaw);
+
     
     
 const introProfissionalTexto = `
@@ -2743,7 +2749,7 @@ let html = `
  
             
             <div class="capa-cliente" style="color: #000000;">
-                <strong style="font-size: 28px; text-transform: uppercase;">${nomeRaw}</strong><br>
+                <strong style="font-size: 28px; text-transform: uppercase;">${nomeFormatadoRelatorio}</strong><br>
                 <span style="font-size: 20px; letter-spacing: 2px;">
                     ${dataRaw.split('-').reverse().join('/')}
                 </span> 
@@ -2915,7 +2921,7 @@ html += `
 
 <div style="margin-top: 30px; background: #4a3728; padding: 15px; border-radius: 4px; text-align: center;">
     <h3 style="color: #d97a1e; margin: 0; text-transform: uppercase; letter-spacing: 2px; font-size: 18px;">
-     ${nomeRaw}
+     ${nomeFormatadoRelatorio}
     </h3>
 </div>
 
@@ -4182,7 +4188,8 @@ html += `
     </div>
 </div>
 `;
-
+// Criamos o nome formatado para o layout
+const nomeFormatadoRelatorio = formatarNomeExibicao(nomeRaw);
      document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
         } // FIM DA FUNÇÃO
 
