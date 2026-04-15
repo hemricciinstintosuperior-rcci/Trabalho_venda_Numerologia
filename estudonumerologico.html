@@ -2172,44 +2172,78 @@ const bancoOcupacoesPraticas = {
         
 
 function calcularAptidaoProfissional(res) {
+    // 1. Definição do número principal (usamos o Dia para o lado prático)
     const pilarPrincipal = reduzirPuro(res.dia);
-    const pilares = [pilarPrincipal, res.CaminhodeVida, res.Propósito, res.Personalidade];
+    const pilares = [
+        pilarPrincipal, 
+        res.CaminhodeVida, 
+        res.Propósito, 
+        res.Personalidade
+    ];
     
-    // ... (lógica de ordenação de áreas que já temos) ...
+    let contagem = {};
 
-    // Busca os estudos recomendados para o número principal
+    // 2. Mapeia a frequência de cada área (Lógica das Áreas de Atuação)
+    pilares.forEach(num => {
+        const areas = bancoAreasAtuacao[num] || [];
+        areas.forEach(area => {
+            contagem[area] = (contagem[area] || 0) + 1;
+        });
+    });
+
+    let areasOrdenadas = Object.keys(contagem).map(area => {
+        return { nome: area, pontos: contagem[area] };
+    });
+
+    // Ordenação Decrescente
+    areasOrdenadas.sort((a, b) => b.pontos - a.pontos);
+
+    // 3. CRIAÇÃO DAS VARIÁVEIS (O que estava faltando)
+    let vocacaoMaster = areasOrdenadas.slice(0, 18).map(item => item.nome);
+    let afinidade = areasOrdenadas.slice(18, 48).map(item => item.nome);
+
+    // Busca ocupações CLT (Práticas)
+    let caminhosPraticos = bancoOcupacoesPraticas[pilarPrincipal] || [];
+    let listaCLT = caminhosPraticos.slice(0, 20).join(" • ");
+
+    // Busca Estudos (Faculdade e Técnico)
     const estudos = bancoEstudos[pilarPrincipal] || { faculdades: [], cursosTecnicos: [] };
     const listaFaculdades = estudos.faculdades.join(" • ");
     const listaTecnicos = estudos.cursosTecnicos.join(" • ");
 
+    // 4. MONTAGEM DO HTML (Com todos os quadros)
     return `
         <div style="margin-top: 10px; padding: 20px; background: #fffcf0; border: 1px solid #d97a1e; border-left: 8px solid #d97a1e; border-radius: 8px;">
             <h4 style="color: #d97a1e; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🚩 Zona de Sucesso Absoluto</h4>
-            <p style="font-size: 1.1rem; font-weight: bold; color: #1a1a1a;">${vocacaoMaster.slice(0, 15).join(" • ")}</p>
+            <p style="font-size: 1.1rem; font-weight: bold; color: #1a1a1a; line-height: 1.5; text-align: justify;">
+                ${vocacaoMaster.length > 0 ? vocacaoMaster.join(" • ") : "Liderança Estratégica • Gestão de Negócios"}
+            </p>
         </div>
 
         <div style="margin-top: 20px; padding: 20px; background: #fdf2f8; border: 1px solid #be185d; border-left: 8px solid #be185d; border-radius: 8px;">
             <h4 style="color: #be185d; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🎓 Guia de Formação Recomendada</h4>
-            
-            <p style="margin-bottom: 12px; font-size: 0.95rem;">
+            <p style="margin-bottom: 12px; font-size: 0.95rem; color: #1a1a1a;">
                 <strong>Ensino Superior (Graduações):</strong><br>
                 <span style="color: #444;">${listaFaculdades}</span>
             </p>
-
-            <p style="font-size: 0.95rem;">
-                <strong>Cursos Profissionalizantes e Técnicos (Foco Rápido):</strong><br>
+            <p style="font-size: 0.95rem; color: #1a1a1a;">
+                <strong>Cursos Profissionalizantes e Técnicos:</strong><br>
                 <span style="color: #444;">${listaTecnicos}</span>
             </p>
         </div>
 
         <div style="margin-top: 20px; padding: 20px; background: #f0fdf4; border: 1px solid #16a34a; border-left: 8px solid #16a34a; border-radius: 8px;">
-            <h4 style="color: #16a34a; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🚀 Entrada Imediata (Mercado de Trabalho CLT)</h4>
-            <p style="font-size: 1rem; font-weight: 600;">${listaCLT}</p>
+            <h4 style="color: #16a34a; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🚀 Entrada Imediata (Mercado CLT)</h4>
+            <p style="font-size: 1rem; font-weight: 600; color: #1a1a1a; line-height: 1.6;">
+                ${listaCLT}
+            </p>
         </div>
 
         <div style="margin-top: 20px; padding: 20px; background: #f4f7f9; border: 1px solid #3498db; border-left: 8px solid #3498db; border-radius: 8px;">
-            <h4 style="color: #3498db; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🔍 Campo de Afinidade (Caminhos Favoráveis)</h4>
-            <p style="font-size: 0.95rem;">${afinidade.join(" • ")}</p>
+            <h4 style="color: #3498db; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🔍 Campo de Afinidade</h4>
+            <p style="font-size: 0.95rem; font-weight: 500; color: #444; line-height: 1.6;">
+                ${afinidade.length > 0 ? afinidade.join(" • ") : "Desenvolvimento Profissional • Planejamento"}
+            </p>
         </div>
     `;
 }
