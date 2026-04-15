@@ -2592,7 +2592,8 @@ desafios: {
  proximoAnoPessoal: reduzir(resultadoAnoPessoal + 1) 
 };
 
-
+// Criamos o nome formatado para o layout
+const nomeFormatadoRelatorio = formatarNomeExibicao(nomeRaw);
     
     
 const introProfissionalTexto = `
@@ -4188,8 +4189,8 @@ html += `
     </div>
 </div>
 `;
-// Criamos o nome formatado para o layout
-const nomeFormatadoRelatorio = formatarNomeExibicao(nomeRaw);
+
+    
      document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
         } // FIM DA FUNÇÃO
 
