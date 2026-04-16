@@ -3953,7 +3953,7 @@ htmlPiramide += `
 <p>Compreender o seu Regente é compreender o fundamento da sua identidade energética. Ele revela talentos naturais, tendências comportamentais e a forma como a sua presença influencia o ambiente ao redor, sendo a base sobre a qual todo o restante da análise da Pirâmide da Vida se apoia.</p>`}
 </div>
 
-<div class="bloco-regente" style="margin-top: 50px; padding-top: 20px; border-top: 1px inset #fff;">
+<div class="bloco-regente evitar-corte" style="margin-top: 50px; padding-top: 20px; border-top: 1px inset #fff;">
     <div class="texto-res" style="font-size: 20px; color: #111;">
         ${aplicarFiltroTexto(textos.RegenteVida[regenteVida])}
     </div>
@@ -4003,7 +4003,7 @@ if(dadosNegativas.detalhes.length > 0){
         const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
 
         htmlPiramide += `
-            <div style="margin-bottom: 25px; border-left:none; padding-left: 15px; text-align: center;">
+             <div class="evitar-corte" style="margin-bottom: 25px; border-left:none; padding-left: 15px; text-align: center;">
                <h2  style="color:red; font-size: 22px;">Bloqueio n°  ${neg.numero}  ⚠️</h2></b><br>
                 <span style="color:red; font-weight: bold;font-size: 21px;">📅 Período de maior influência: de ${datas.ini} até ${datas.fim}</span><br><br>
                 <span style="color:red; font-weight: bold;font-size: 21px;">Tempo : ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
@@ -4040,7 +4040,7 @@ if (listaEspeciais.length > 0) {
         const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
 
         htmlPiramide += `
-            <div style="margin-bottom: 35px; text-align: center;">
+             <div class="evitar-corte" style="margin-bottom: 35px; text-align: center;">
                 <h2 style="color:#d97a1e; font-size: 22px;">Alinhamento Especial ${esp.numero}</h2>
                 <span style="color:#d97a1e; font-weight: bold; font-size: 19px;">📅 Período de maior influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
                <div class="conteudo-travado">
@@ -4079,7 +4079,7 @@ if (listaFin.length > 0) {
         const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
 
         htmlPiramide += `
-            <div style="margin-bottom: 35px; text-align: center;">
+             <div class="evitar-corte" style="margin-bottom: 35px; text-align: center;">
                 <h2 style="color:#28a745; font-size: 22px;">Potencial de Prosperidade 99/9</h2>
                <div class="conteudo-travado">
                 <span style="color:#28a745; font-weight: bold; font-size: 19px;">📅 Período de maior influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
