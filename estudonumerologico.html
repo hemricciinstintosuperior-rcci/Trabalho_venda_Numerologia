@@ -640,27 +640,10 @@
         margin-bottom: 5px !important;
     }
 
-@media print {
-    /* Força os resultados a sempre começarem em uma folha nova */
-    .texto-res {
-        page-break-before: always;
-        break-before: page;
-        margin-top: 20px; /* Um respiro no topo da nova página */
-    }
-
-    /* Opcional: Garante que os títulos de seção também comecem em página nova */
-    .separador-luxo {
-        page-break-before: always;
-        break-before: page;
-    }
-
-    /* Impede que um parágrafo seja cortado ao meio entre duas páginas */
-    p {
-        page-break-inside: avoid;
-        break-inside: avoid;
-    }
+.pula-pagina { 
+    page-break-before: always !important; 
+    break-before: page !important; 
 }
-    
 
 h3 {
      
@@ -3433,7 +3416,7 @@ html += `
 `;
 if (res.deficiencias.length > 0) {
     res.deficiencias.forEach(f => {
-        html += `<div class="texto-res"> ${aplicarFiltroTexto(textos.deficiencias[f])}</p><hr style="border:0; border-top:1px solid #ffffff"></div>`;
+        html += `<div class="texto-res pula-pagina"> ${aplicarFiltroTexto(textos.deficiencias[f])}</p><hr style="border:0; border-top:1px solid #ffffff"></div>`;
     });
 } else { html += `<p>Nenhuma deficiência encontrada.</p>`; }
 html += `</div>`;
@@ -3454,7 +3437,7 @@ html += `
     <div class="page">
         <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">Déficits de Comportamento</h2>
         <div class="intro-texto">${textos.introducoes.deficits || ""}</div>
-        <div class="texto-res"> ${aplicarFiltroTexto(textos.deficits[res.deficitRecorrente])}</div>
+        <div class="texto-res pula-pagina"> ${aplicarFiltroTexto(textos.deficits[res.deficitRecorrente])}</div>
         <hr style="border:0; border-top:1px solid #ffffff">
 `;
 if (res.deficitsOcultos.length > 0) {
