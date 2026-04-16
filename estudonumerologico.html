@@ -2141,9 +2141,9 @@ let vTransitoCalculado = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValo
             <div class="intro-secao" style="margin-bottom: 20px; font-size: 17px; line-height: 1.6; color: #333;">
                 <p>Os <b>Ciclos de Trânsito</b> representam a síntese das energias que regem o seu momento atual. Ele é o resultado direto da soma e redução dos quatro pilares do seu <b>Plano de Expressão</b>: o Físico, o Mental, o Emocional e o Intuitivo. Esta correlação profunda indica como a integração de todas as suas facetas está se manifestando agora.</p>
             <p>Ao unir essas quatro forças, o Trânsito revela a frequência vibracional dominante para este período específico, servindo como um mapa prático para orientar as ações e decisões enquanto essa influência estiver vigente em sua jornada.</p>
-            </div>`
-html += `<div class="grupo-respostas-bloco pula-pagina">`;
-             `<div style="text-align:left; margin-bottom:15px;">
+            </div>
+<div class="grupo-respostas-bloco pula-pagina">
+             <div style="text-align:left; margin-bottom:15px;">
                 <div class="resultado-bloco">
                     <h3>Seu Trânsito: <span style="color: var(--gold);">${vTransitoCalculado}</span></h3>
                     <h3> IDADE: <span style="color: var(--gold);">${indiceAno} ANOS | PERÍODO: ${periodoVigente}</span></h3>
@@ -2154,9 +2154,9 @@ html += `<div class="grupo-respostas-bloco pula-pagina">`;
                         ${aplicarFiltroTexto(window.TextosTransito ? window.TextosTransito[vTransitoCalculado] : "")}
                     </div> 
                 </div> ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''} 
-            </div>
+            </div></div>
         </div>`; // FECHA A SEÇÃO DE TRÂNSITO
- html += `</div>`;
+
         // 4. GRÁFICOS FINAIS
         const statusParaGrafico = {
             status: {
