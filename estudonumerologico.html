@@ -2141,9 +2141,9 @@ let vTransitoCalculado = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValo
             <div class="intro-secao" style="margin-bottom: 20px; font-size: 17px; line-height: 1.6; color: #333;">
                 <p>Os <b>Ciclos de Trânsito</b> representam a síntese das energias que regem o seu momento atual. Ele é o resultado direto da soma e redução dos quatro pilares do seu <b>Plano de Expressão</b>: o Físico, o Mental, o Emocional e o Intuitivo. Esta correlação profunda indica como a integração de todas as suas facetas está se manifestando agora.</p>
             <p>Ao unir essas quatro forças, o Trânsito revela a frequência vibracional dominante para este período específico, servindo como um mapa prático para orientar as ações e decisões enquanto essa influência estiver vigente em sua jornada.</p>
-            </div>
-
-            <div style="text-align:left; margin-bottom:15px;">
+            </div>`
+html += `<div class="grupo-respostas-bloco pula-pagina">`;
+             `<div style="text-align:left; margin-bottom:15px;">
                 <div class="resultado-bloco">
                     <h3>Seu Trânsito: <span style="color: var(--gold);">${vTransitoCalculado}</span></h3>
                     <h3> IDADE: <span style="color: var(--gold);">${indiceAno} ANOS | PERÍODO: ${periodoVigente}</span></h3>
@@ -2156,7 +2156,7 @@ let vTransitoCalculado = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValo
                 </div> ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''} 
             </div>
         </div>`; // FECHA A SEÇÃO DE TRÂNSITO
-
+ html += `</div>`;
         // 4. GRÁFICOS FINAIS
         const statusParaGrafico = {
             status: {
@@ -2412,14 +2412,14 @@ function calcularAptidaoProfissional(res) {
 
     // 4. MONTAGEM DO HTML (Com todos os quadros)
     return `
-        <div style="margin-top: 10px; padding: 20px; background: #fffcf0; border: 1px solid #d97a1e; border-left: 8px solid #d97a1e; border-radius: 8px;">
+         <div class="evitar-corte" style="margin-top: 10px; padding: 20px; background: #fffcf0; border: 1px solid #d97a1e; border-left: 8px solid #d97a1e; border-radius: 8px;">
             <h4 style="color: #d97a1e; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🚩 Zona de Sucesso Absoluto</h4>
             <p style="font-size: 1.1rem; font-weight: bold; color: #1a1a1a; line-height: 1.5; text-align: justify;">
                 ${vocacaoMaster.length > 0 ? vocacaoMaster.join(" • ") : "Liderança Estratégica • Gestão de Negócios"}
             </p>
         </div>
 
-        <div style="margin-top: 20px; padding: 20px; background: #fdf2f8; border: 1px solid #be185d; border-left: 8px solid #be185d; border-radius: 8px;">
+         <div class="evitar-corte" style="margin-top: 20px; padding: 20px; background: #fdf2f8; border: 1px solid #be185d; border-left: 8px solid #be185d; border-radius: 8px;">
             <h4 style="color: #be185d; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🎓 Guia de Formação Recomendada</h4>
             <p style="margin-bottom: 12px; font-size: 0.95rem; color: #1a1a1a;">
                 <strong>Ensino Superior (Graduações):</strong><br>
@@ -2431,14 +2431,14 @@ function calcularAptidaoProfissional(res) {
             </p>
         </div>
 
-        <div style="margin-top: 20px; padding: 20px; background: #f0fdf4; border: 1px solid #16a34a; border-left: 8px solid #16a34a; border-radius: 8px;">
+         <div class="evitar-corte" style="margin-top: 20px; padding: 20px; background: #f0fdf4; border: 1px solid #16a34a; border-left: 8px solid #16a34a; border-radius: 8px;">
             <h4 style="color: #16a34a; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🚀 Entrada Imediata (Mercado CLT)</h4>
             <p style="font-size: 1rem; font-weight: 600; color: #1a1a1a; line-height: 1.6;">
                 ${listaCLT}
             </p>
         </div>
 
-        <div style="margin-top: 20px; padding: 20px; background: #f4f7f9; border: 1px solid #3498db; border-left: 8px solid #3498db; border-radius: 8px;">
+         <div class="evitar-corte" style="margin-top: 20px; padding: 20px; background: #f4f7f9; border: 1px solid #3498db; border-left: 8px solid #3498db; border-radius: 8px;">
             <h4 style="color: #3498db; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🔍 Campo de Afinidade</h4>
             <p style="font-size: 0.95rem; font-weight: 500; color: #444; line-height: 1.6;">
                 ${afinidade.length > 0 ? afinidade.join(" • ") : "Desenvolvimento Profissional • Planejamento"}
@@ -3493,7 +3493,7 @@ html += `
     <p>A Vibração do Desejo Oculto possui um poder próprio para moldar a trajetória humana, gerando um impulso profundo para o desenvolvimento e a expressão de habilidades muito específicas. Esta força exige que a própria natureza seja experimentada em sua essência, permitindo que esse potencial guie a personalidade de forma autêntica.</p>
     <p>No Estudo Numerológico Quântico, esta é uma das vibrações mais significativas, pois representa comportamentos recorrentes que se manifestam de forma cíclica. É necessário manter a vigilância sobre esses padrões, que podem se tornar vícios de atitude se não houver a quebra do ciclo existente. O reconhecimento dessa energia permite escolher direções que evitem círculos viciosos, transformando tendências latentes em ferramentas de evolução.</p>
 `}</div>
-        <div class="resultado-bloco" style="text-align: center; margin-bottom: 20px;">
+         <div class="evitar-corte resultado-bloco" style="text-align: center; margin-bottom: 20px;">
             <span style="font-size: 1.2rem; color: var(--gold);"> </span>
             <span class="numero-destaque" style="font-size: 2.5rem; font-weight: bold;"></span>
         </div>
@@ -3522,7 +3522,7 @@ html += `
 `}</div>
         ${talentoNum ? `
             <p><strong> </strong></p>
-            <div class="texto-res">${aplicarFiltroTexto(textos.talentosEspeciais[talentoNum])}</div>
+            <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.talentosEspeciais[talentoNum])}</div>
         ` : `
             <p style="font-style: italic; color: #666;">Não foi detectada uma predominância numérica (dobro de frequência) no primeiro nome para um talento especial específico.</p>
         `}
@@ -3540,13 +3540,13 @@ itensAlinhamento.forEach(chave => {
     if (chave === "inclinacoes") {
         if (res.inclinacoes && res.inclinacoes.length > 0) {
             res.inclinacoes.forEach(num => {
-                conteudoFinal += `<div class="texto-res">${aplicarFiltroTexto(textos.inclinacoes[num])}</p><hr style="border:0; border-top:1px dotted #ffffff"></div>`;
+                conteudoFinal += ` <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.inclinacoes[num])}</p><hr style="border:0; border-top:1px dotted #ffffff"></div>`;
             });
         } else {
             conteudoFinal = "<p>Nenhuma inclinação específica detectada.</p>";
         }
     } else {
-        conteudoFinal = `<div class="texto-res">${aplicarFiltroTexto(textos[chave][res[chave]])}</div>`;
+        conteudoFinal = ` <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos[chave][res[chave]])}</div>`;
     }
 
     
@@ -3590,7 +3590,7 @@ html += `
         <div class="intro-texto"><p>O Desafio Principal é a vibração mestra que permeia toda a jornada de um indivíduo, do nascimento à maturidade. Diferente dos desafios temporários das fases iniciais ou adultas, esta é a lição central que a alma busca integrar. Ela representa a sombra mais persistente e, simultaneamente, a maior oportunidade de crescimento espiritual e autorrealização.</p>
     <p>Superar o Desafio Principal exige uma vigilância constante sobre padrões repetitivos de comportamento. Ele funciona como um "norte" para o desenvolvimento do caráter: ao enfrentar e transmutar as dificuldades impostas por essa frequência, <strong>você</strong> desbloqueia o fluxo de todos os outros talentos do mapa. É o ponto onde a resistência se transforma em maestria, permitindo que a vida seja conduzida com integridade, consciência e propósito real.</p></div>
         
-        <div class="texto-res">${aplicarFiltroTexto(textos.desafios[3][res.desafios[3]])}</div>
+         <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.desafios[3][res.desafios[3]])}</div>
         <div style="margin-top:15px; background:#fff5f5; padding:15px; border-radius:8px; border:1px solid #ffebeb; font-style:italic; font-size:14px; color:#666;">
             Nota: Diferente dos desafios temporários, esta vibração exige atenção constante para o seu pleno alinhamento.
         </div>
