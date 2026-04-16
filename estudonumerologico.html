@@ -700,6 +700,21 @@ input:focus {
     }
 }
 
+@media print {
+    .grupo-respostas-bloco {
+        display: block;
+        width: 100%;
+        page-break-before: always !important; /* Força o pulo antes de começar o grupo */
+    }
+    
+    /* Remove o pulo individual das respostas para elas não separarem */
+    .grupo-respostas-bloco .texto-res {
+        page-break-before: auto !important; 
+        margin-bottom: 20px;
+    }
+}
+    
+
  @media print {
     /* Regra específica só para a PRIMEIRA página */
     @page :first {
@@ -3415,9 +3430,13 @@ html += `
         <div class="intro-texto">${textos.introducoes.deficiencias}</div>
 `;
 if (res.deficiencias.length > 0) {
+    html += `<div class="grupo-respostas-bloco pula-pagina">`;
     res.deficiencias.forEach(f => {
-        html += `<div class="texto-res pula-pagina"> ${aplicarFiltroTexto(textos.deficiencias[f])}</p><hr style="border:0; border-top:1px solid #ffffff"></div>`;
+        html += `
+        <div class="texto-res"> ${aplicarFiltroTexto(textos.deficiencias[f])}</p><hr style="border:0; border-top:1px solid #ffffff"></div>`;
     });
+html += `</div>`;
+    
 } else { html += `<p>Nenhuma deficiência encontrada.</p>`; }
 html += `</div>`;
 
