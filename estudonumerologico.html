@@ -706,31 +706,45 @@ function mascaraData(campo) {
     campo.value = v;
 }
 
-function normalizarNomeParaNumerologia(nomeCompleto) {
-    // Lista mestre de partículas de conexão (Ocidentais)
-    const conectivos = [
-        'de', 'da', 'do', 'das', 'dos', 'del', 'de la', 'de los', // PT/ES
-        'di', 'degli', 'dei', 'd', 'lo', 'la',                   // IT
-        'du', 'des', 'le', 'l',                                  // FR
-        'von', 'van', 'vander', 'vanden', 'zu',                  // GE/NL
-        'mac', 'mc', 'st', 'y', 'e'                              // EN/Outros
-    ];
+function tratarNomeParaCalculo(nome) {
+    if (!nome) return "";
 
-    let nomeTratado = nomeCompleto.toLowerCase().trim();
+const particulas = [
+    // Português e Espanhol
+    'de', 'da', 'do', 'das', 'dos', 'del', 'de la', 'de las', 'de lo', 'de los', 'y', 'e',
+    
+    // Italiano (Muitas variações com apóstrofo)
+    'di', 'da', 'degli', 'dei', 'de', 'dall', 'dalla', 'dallo', 'dai', 'dagli', 'delle', 'delli', 'lo', 'la',
+    
+    // Francês
+    'du', 'des', 'le', 'la', 'l', 'de la', 'de l', 'd',
+    
+    // Alemão e Holandês (Comuns em sobrenomes do sul do Brasil)
+    'von', 'van', 'vander', 'vanden', 'vane', 'vom', 'zu', 'zur', 'zum', 'auf', 'der',
+    
+    // Inglês/Escocês/Irlandês (Aglutinados ou prefixos)
+    'mac', 'mc', 'st', 'saint', 'o',
+    
+    // Árabe (Muito comum em nomes brasileiros de origem libanesa/síria)
+    'al', 'el', 'bin', 'ben', 'abd'
+];
 
-    conectivos.forEach(particula => {
-        // Esta regra procura a partícula isolada (com espaço antes/depois ou apóstrofe)
-        // e remove o espaço ou caractere especial que a separa do próximo nome.
-        const regexEspaco = new RegExp('\\b' + particula + '\\s+', 'gi');
-        const regexApostrofe = new RegExp('\\b' + particula + "[''’]\\s*", 'gi');
+    let nomeProcessado = nome.trim(); // Mantém as maiúsculas originais
 
-        nomeTratado = nomeTratado.replace(regexEspaco, particula);
-        nomeTratado = nomeTratado.replace(regexApostrofe, particula);
+    particulas.forEach(p => {
+        // O segredo está na flag 'gi' da RegExp:
+        // 'g' = global (todas as vezes que aparecer)
+        // 'i' = insensitive (ignora se é maiúsculo ou minúsculo)
+        const regexEspaco = new RegExp('\\b' + p + '\\s+', 'gi');
+        
+        // Usamos uma função no replace para manter a escrita original da partícula
+        // mas remover o espaço que vem depois dela
+        nomeProcessado = nomeProcessado.replace(regexEspaco, (match) => {
+            return match.trim(); // Remove o espaço, mantendo a partícula como foi digitada
+        });
     });
 
-    // Retorna o nome com a primeira letra de cada bloco em maiúsculo, 
-    // mas mantendo a junção (Ex: lucas desouza)
-    return nomeTratado;
+    return nomeProcessado;
 }
   // Função de Redução Pura (Para usar onde NÃO pode ter 11/22/33)
 function reduzirPuro(n) {
@@ -1790,6 +1804,7 @@ const textoIndiv = (textosPlanos[p] && textosPlanos[p][int]) ? textosPlanos[p][i
 // ============================================
 // FUNÇÃO: PLANO DE EXPRESSÃO DO MOMENTO (CICLO ATUAL E PRÓXIMO)
 function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d3, regenteMatriz, negativasMatriz) {
+    const nomeParaCalculo = tratarNomeParaCalculo(nomeCompleto);
     const agora = new Date();
     const anoBase = agora.getFullYear();
     const partesData = dataNascimento.split("/");
@@ -1807,7 +1822,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         let fimCiclo = new Date(inicioCiclo.getFullYear() + 1, dtNasci.getMonth(), dtNasci.getDate());
         const periodoVigente = `${inicioCiclo.toLocaleDateString('pt-BR')} a ${fimCiclo.toLocaleDateString('pt-BR')}`;
 
-        const partes = nomeCompleto.toUpperCase().trim().split(/\s+/);
+        const partes = nomeParaCalculo.toUpperCase().trim().split(/\s+/);
         let timelines = partes.map(p => {
             let t = [];
             for(let l of p) { 
@@ -1816,6 +1831,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
             }
             return t;
         });
+
 
         const indiceAno = inicioCiclo.getFullYear() - dtNasci.getFullYear();
         let somaMomento = { fisico: 0, mental: 0, emocional: 0, intuitivo: 0 };
@@ -2603,8 +2619,8 @@ desafios: {
  proximoAnoPessoal: reduzir(resultadoAnoPessoal + 1) 
 };
 
-// Criamos o nome formatado para o layout
-const nomeFormatadoRelatorio = formatarNomeExibicao(nomeRaw);
+// IMPLEMENTAÇÃO APENAS:
+const nomeParaCalculo = tratarNomeParaCalculo(nomeRaw);
     
     
 const introProfissionalTexto = `
@@ -2767,7 +2783,7 @@ let html = `
     text-transform: uppercase; 
     letter-spacing: 2px; 
     color: #827108; 
-    font-weight: bold;">${nomeFormatadoRelatorio}</strong><br>
+    font-weight: bold;">${nomeRaw}</strong><br>
                 <strong style="
     font-family: 'Cinzel', serif; 
     font-size: 28px; 
@@ -2943,7 +2959,7 @@ html += `
 
 <div style="margin-top: 30px; background: #4a3728; padding: 15px; border-radius: 4px; text-align: center;">
     <h3 style="color: #d97a1e; margin: 0; text-transform: uppercase; letter-spacing: 2px; font-size: 18px;">
-     ${nomeFormatadoRelatorio}
+     ${nomeRaw}
     </h3>
 </div>
 
