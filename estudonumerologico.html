@@ -4279,11 +4279,11 @@ html += `
         ${aplicarFiltroTexto(textos.introducoes.conclusaoEvolutiva)}
     </div>
 
-    <div style="margin-top: 40px; padding: 25px; background: var(--dark); border-radius: 10px; text-align: center; border: 2px solid #ffffff;">
-        <h4 style="color: var(--gold); margin: 0; text-transform: uppercase; letter-spacing: 1px;">Conhecer a realidade da vida é o principio do conhecimento</h4>
-        <p style="color: #fff; font-size: 14px; margin-top: 10px; opacity: 0.9;">
+    <div class="evitar-corte" style="margin-top: 40px; padding: 25px; background: var(--dark); border-radius: 10px; text-align: center; border: 2px solid #ffffff;">
+        <h3 style="color: var(--gold); margin: 0; text-transform: uppercase; letter-spacing: 1px;">Conhecer a realidade da vida é o principio do conhecimento</h3>
+        <h3 style="color: #fff; font-size: 14px; margin-top: 10px; opacity: 0.9;">
             "Conhecer a si mesmo é o começo de toda a sabedoria." – Aristóteles
-        </p>
+        </h3>
     </div>
 </div>
 `;
@@ -4311,7 +4311,7 @@ html += `
         <div style="width: 50px; height: 3px; background: #827108; margin: 0 auto;"></div>
     </div>
 
-    <div class="texto-res" style="font-size: 20px; line-height: 1.8; color: #333; text-align: justify;">
+    <div class="evitar-corte texto-res" style="font-size: 20px; line-height: 1.8; color: #333; text-align: justify;">
         ${aplicarFiltroTexto(textos.introducoes.historiaModerna)}
     </div>
 </div>
@@ -4327,7 +4327,7 @@ html += `
     </div>
 </div>
 `;    
-html += `<div class="grupo-respostas-bloco pula-pagina">`;
+
 html += `
 <div style="width: 100%; max-width: 900px; margin: 0 auto; text-align: center; padding: 20px;">
     <div style="margin-bottom: 40px;">
@@ -4337,7 +4337,7 @@ html += `
         <div style="width: 60px; height: 3px; background: #827108; margin: 0 auto;"></div>
     </div>      
     
-     <div class="evitar-corte texto-res" style="font-size: 20px; line-height: 1.8; color: #333; text-align: justify; margin-bottom: 25px;">
+     <div class="texto-res" style="font-size: 20px; line-height: 1.8; color: #333; text-align: justify; margin-bottom: 25px;">
         ${aplicarFiltroNomeComposto(textos.introducoes.Conclusao)}
     </div>
         <div style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 40px;">
@@ -4349,8 +4349,7 @@ html += `
         <div style="display: flex; justify-content: center; margin: 30px 0; filter: grayscale(1);">
             <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/logosite.png" style="width: 500px; max-width: 90%; height: auto; opacity: 0.8;">
         </div>
-        
-           
+                   
         <div style="font-size: 12px; color: #999; margin-top: 10px; text-transform: uppercase; letter-spacing: 2px;">
             Estudo Numerológico Cabalístico • Edição Premium<br>
             www.instintosuperior.com 
@@ -4358,7 +4357,7 @@ html += `
     </div>
 </div>
 `;
-html += `</div>`;
+
 // --- CAPA DE TRANSIÇÃO FINAL ---
 html += `
 <div class="capa-transicao" style="width: 100%; background: #0f2a36; border-bottom: 1px solid #827108; padding: 60px 0; text-align: center; color: white;">
@@ -4374,12 +4373,13 @@ html += `
         ★ ★ ★ ★ ★
     </div>
 </div>
-`;
-
-    
+`;    
      document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
         } // FIM DA FUNÇÃO
 
+
+
+        
     </script>
     
 <script>
