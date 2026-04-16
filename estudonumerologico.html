@@ -1845,7 +1845,8 @@ let html = `
             <div style="text-align: center; margin: 30px 0;">
                 <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/planoestudo.png" alt="Logo Plano de Expressão" style="max-width: 350px; height: auto; display: inline-block;">
             </div>
-            <div style="margin-bottom: 25px; padding: 20px; border: 2px solid #827108; border-radius: 12px; background: #fff; display: flex; align-items: center; gap: 20px;">
+            
+            <div class="evitar-corte" style="margin-bottom: 25px; padding: 20px; border: 2px solid #827108; border-radius: 12px; background: #fff; display: flex; align-items: center; gap: 20px;">
                 <div style="background: #827108; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; text-transform: uppercase; flex-shrink: 0;">
                     ${dados.dominantePerfil[0]}
                 </div>
@@ -1910,7 +1911,7 @@ const textoIndiv = (textosPlanos[p] && textosPlanos[p][int]) ? textosPlanos[p][i
 
 
             html += `
-                <div style="margin-bottom: 20px; border-left: 1px solid ${coresPlanos[p]}; padding-left: 15px;">
+                <div class="evitar-corte" style="margin-bottom: 20px; border-left: 1px solid ${coresPlanos[p]}; padding-left: 15px;">
                     <h4 style="margin:0; color:${coresPlanos[p]}; text-transform:uppercase; font-size:18px;">${nomesAmigaveis[p]} <small>(${int})</small></h4>
                     <div class="texto-res">${aplicarFiltroTexto(textoIndiv)}</div>
                 </div>
@@ -1921,7 +1922,7 @@ const textoIndiv = (textosPlanos[p] && textosPlanos[p][int]) ? textosPlanos[p][i
 
     // Síntese e Diretriz (Caixa Preta)
     html += `
-        <div style="margin-top:40px; border:0px #ffffff; padding:25px; border-radius:12px; background:#fff;">
+        <div class="evitar-corte" style="margin-top:40px; border:0px #ffffff; padding:25px; border-radius:12px; background:#fff;">
             <div style="text-align:center; margin-bottom:20px;">
                 <span style="background:var(--gold); color:white; padding:4px 12px; border-radius:20px; font-size:11px; font-weight:bold;">${titulosEstrutura[sigla] || "SÍNTESE"}</span>
                 <h3 style="margin-top:10px; text-transform:uppercase;">Síntese de Expressão Natural</h3>
@@ -2032,7 +2033,9 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
    <div style="text-align: center; margin: 30px 0;">
                 <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/planoestudo.png" alt="Logo Plano de Expressão" style="max-width: 350px; height: auto; display: inline-block;">
             </div>
-            <div style="margin-bottom: 25px; padding: 20px; border: 2px solid #827108; border-radius: 12px; background: #fff; display: flex; align-items: center; gap: 20px;">
+
+            
+           <div class="evitar-corte" style="margin-bottom: 25px; padding: 20px; border: 2px solid #827108; border-radius: 12px; background: #fff; display: flex; align-items: center; gap: 20px;">
                 <div style="background: #827108; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; text-transform: uppercase; flex-shrink: 0;">
                     ${dominanteMomento[0]}
                 </div>
@@ -2089,7 +2092,7 @@ h += `</div>`;
             
             if(textoIndiv) {
                 h += `
-                    <div style="margin-bottom: 20px; border-left: 1px solid ${coresPlanos[p] || 'var(--gold)'}; padding-left: 15px;">
+                    <div class="evitar-corte" style="margin-bottom: 20px; border-left: 1px solid ${coresPlanos[p] || 'var(--gold)'}; padding-left: 15px;">
                         <h4 style="margin:0; color:${coresPlanos[p] || 'var(--dark)'}; text-transform:uppercase; font-size:18px;">${nomesAmigaveis[p]} <small>(${int})</small></h4>
                         
                         ${travado ? '<div class="conteudo-travado">' : '<div>'}
@@ -2104,7 +2107,7 @@ h += `</div>`;
         // 2. SEÇÃO DE SÍNTESE
         h += ` 
         <div class="secao-card quebra-pagina" style="width: 100%;"> 
-            <div style="margin-top:40px; border:2px solid #ffffff; padding:25px; border-radius:12px; background:#fff;">
+           <div class="evitar-corte" style="margin-top:40px; border:2px solid #ffffff; padding:25px; border-radius:12px; background:#fff;">
                 <div style="text-align:center; margin-bottom:20px;">
                     <span style="background:var(--gold); color:white; padding:4px 12px; border-radius:20px; font-size:11px; font-weight:bold;">
                         ${titulosEstrutura[siglaMomento] || "SÍNTESE"}
@@ -3639,8 +3642,8 @@ html += `
         }
 
         
-
-        html += `
+html += `<div class="grupo-respostas-bloco pula-pagina">`;
+        html += ` 
             <div style="margin-bottom: 18px;">
                 <span style="color: #d97a1e; font-weight: bold; font-size: 20px; text-transform: uppercase;">
                    Idade ${info.idade} -  Data ${info.anos}
@@ -3649,21 +3652,22 @@ html += `
                     <div class="texto-res" style="margin-top: 10px; line-height: 1.6;">
                     ${aplicarFiltroTexto(textos[sec][i][res[sec][i]])}
                 </div></div>
-                  <hr style="border:0; border-top:1px solid #eeeeee; margin-top: 15px;">
-                 
-          <div class="aviso-trava">
+                        <div class="aviso-trava">
             🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
 
          </div>
+                  <hr style="border:0; border-top:1px solid #eeeeee; margin-top: 15px;">
+                 
+  
            </div>`;
-    }
-    html += `</div>`;
+        
+    }       
 });
 
-
+ html += `</div>`;
 // ... (depois de terminar os Desafios)
 
-
+html += `</div>`;
 
 // 2. INSERIR A MATURIDADE AQUI (Como você pediu)
 const tituloMat = nomesExibicao["Maturidade"] || "Fase de Maturidade";
