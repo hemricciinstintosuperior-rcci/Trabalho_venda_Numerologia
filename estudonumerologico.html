@@ -631,8 +631,7 @@
         margin-bottom: 5px !important;
        border-bottom: 1px solid #ffffff!important;
      border: 1px solid #ffffff!important;
-    page-break-before: always;
-     break-before: page;
+ 
         }
 
     /* FORÇAR PARÁGRAFOS DENTRO DOS RESULTADOS */
@@ -641,7 +640,26 @@
         margin-bottom: 5px !important;
     }
 
+@media print {
+    /* Força os resultados a sempre começarem em uma folha nova */
+    .texto-res {
+        page-break-before: always;
+        break-before: page;
+        margin-top: 20px; /* Um respiro no topo da nova página */
+    }
 
+    /* Opcional: Garante que os títulos de seção também comecem em página nova */
+    .separador-luxo {
+        page-break-before: always;
+        break-before: page;
+    }
+
+    /* Impede que um parágrafo seja cortado ao meio entre duas páginas */
+    p {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+}
     
 
 h3 {
