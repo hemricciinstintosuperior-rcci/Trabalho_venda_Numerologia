@@ -2522,9 +2522,10 @@ if (agora < new Date(agora.getFullYear(), dtNasci.getMonth(), dtNasci.getDate())
     let usados = new Set();
     
     // O resto do seu código segue igual...
-
-            // A partir daqui o seu código continua igual...
-
+// IMPLEMENTAÇÃO APENAS:
+const nomeParaCalculo = tratarNomeParaCalculo(nomeRaw);
+    
+           nomesArray = nomeParaCalculo.split(/\s+/); 
             // Essência: 1ª letra de cada nome
             nomesArray.forEach(n => { sE += calcularValorLetra(n[0]); });
 
@@ -2619,8 +2620,7 @@ desafios: {
  proximoAnoPessoal: reduzir(resultadoAnoPessoal + 1) 
 };
 
-// IMPLEMENTAÇÃO APENAS:
-const nomeParaCalculo = tratarNomeParaCalculo(nomeRaw);
+
     
     
 const introProfissionalTexto = `
