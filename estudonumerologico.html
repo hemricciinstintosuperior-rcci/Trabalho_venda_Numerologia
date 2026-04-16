@@ -2051,7 +2051,9 @@ h += `</div>`;
         </div>`; // FECHA A SEÇÃO DE SÍNTESE
 
         // 3. SEÇÃO DE TRÂNSITO
-        const vTransitoCalculado = reduzirPuro(somaMomento.fisico + somaMomento.mental + somaMomento.emocional + somaMomento.intuitivo);
+        // 3. SEÇÃO DE TRÂNSITO (Alinhado com Letras de Passagem)
+let letrasAno = timelines.map(t => t[indiceAno % t.length]);
+let vTransitoCalculado = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValorLetra(l), 0));
 
         h += `
         <div class="separador-luxo">
