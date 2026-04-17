@@ -2647,6 +2647,28 @@ function formatarNomeExibicao(nomeDigitado) {
     
     return nomeDigitado.replace(/([a-z])([A-Z])/g, '$1 $2');
 }
+
+function calcularNumerosSocial(nome) {
+    // Esta é uma versão simplificada para garantir que o res.social seja preenchido
+    // Substitua pela sua lógica real de cálculo se necessário
+    let soma = 0;
+    const nomeLimpo = nome.toUpperCase().replace(/\s/g, '');
+    
+    // Simulação básica (substitua pela sua tabela pitagórica se quiser precisão)
+    for (let i = 0; i < nomeLimpo.length; i++) {
+        soma += (nomeLimpo.charCodeAt(i) % 9) + 1;
+    }
+    
+    const resultadoFinal = (soma % 9) || 9;
+
+    return {
+        personalidade: resultadoFinal,
+        motivacao: resultadoFinal, // Exemplo
+        influencia: resultadoFinal  // Exemplo
+    };
+}
+
+        
         
 function gerarMapaCompleto() {
     const nomeRaw = document.getElementById("nome").value.trim();
@@ -3342,12 +3364,12 @@ html += `
 // --- SEÇÃO DO NOME SOCIAL (VIBRAÇÃO DE ASSINATURA) ---
 const nomeSocialValor = document.getElementById("nomeSocial").value.trim();
 
+
 if (nomeSocialValor !== "") {
-    // --- ADICIONE ESTA PARTE PARA CALCULAR ---
+    
     if (!res.social) { 
-        // Aqui chamamos a função que calcula os números do nome social
-        // Certifique-se de que a função calcularNumeros existe no seu script
-        res.social = calcularNumeros(nomeSocialValor); 
+        // Use o nome EXATO da função que você criou acima
+        res.social = calcularNumerosSocial(nomeSocialValor); 
     }
     
     // 1. Definimos o título bonito para o separador
