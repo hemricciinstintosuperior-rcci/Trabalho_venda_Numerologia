@@ -2672,20 +2672,36 @@ if (agora < new Date(agora.getFullYear(), dtNasci.getMonth(), dtNasci.getDate())
 // IMPLEMENTAÇÃO APENAS:
 const nomeParaCalculo = tratarNomeParaCalculo(nomeRaw);
     
-          // Adicione o toUpperCase() aqui também para a tabela reconhecer as letras!
-nomesArray = nomeParaCalculo.toUpperCase().split(/\s+/);
-            // Essência: 1ª letra de cada nome
-            nomesArray.forEach(n => { sE += calcularValorLetra(n[0]); });
+// COLE ESTE NOVO BLOCO:
+const radicaisWConsoante = ["WAGN", "WALD", "WAND", "WALT", "WALP", "WERNER", "WOLN", "WALM", "WALY"];
+const nomeBaseParaW = nomeRaw.toUpperCase().trim();
 
-            // Motivação, Influência e Contagem (Frequência)
-            for (let l of nomeRaw.toUpperCase()) {
-                const v = calcularValorLetra(l);
-                if (v > 0) {
-                    const base = l.normalize("NFD")[0];
-                    if(tabela[base]) { contagem[tabela[base]]++; usados.add(tabela[base]); }
-                    vogais.includes(base) ? sV += v : sC += v;
-                }
-            }
+for (let l of nomeRaw.toUpperCase()) {
+    const v = calcularValorLetra(l);
+    if (v > 0) {
+        const base = l.normalize("NFD")[0];
+        
+        if(tabela[base]) { 
+            contagem[tabela[base]]++; 
+            usados.add(tabela[base]); 
+        }
+
+        let ehVogal = false;
+        if (vogais.includes(base)) {
+            ehVogal = true;
+        } 
+        else if (base === 'W') {
+            const temSomDeV = radicaisWConsoante.some(rad => nomeBaseParaW.startsWith(rad));
+            ehVogal = !temSomDeV; 
+        }
+
+        if (ehVogal) {
+            sV += v;
+        } else {
+            sC += v;
+        }
+    }
+}
 
            // Onde era: const exp = reduzir(sV + sC);
 const exp = calcularNumerologia(sV + sC, true); // Aceita Mestre
