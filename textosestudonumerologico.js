@@ -347,7 +347,13 @@ Cada desafio mostra uma etapa específica do processo de evolução e revela qua
     <p>Tudo na criação exige a união dos princípios ativo (masculino) e receptivo (feminino), uma dinâmica observada na física como a interação entre carga e potencial. Na Numerologia, isso se reflete no equilíbrio entre números ímpares (ação) e pares (acolhimento). A criação de qualquer resultado real na sua vida depende da harmonia entre a sua vontade de realizar e a sua sabedoria em gestar. Esta lei ensina que o excesso de um princípio sem o outro gera esterilidade nos projetos. Através do seu mapa, você aprende a equilibrar essas forças internas, integrando a lógica analítica com a intuição profunda. É a união sagrada da semente numérica com o solo da consciência que permite a manifestação plena de todos os seus objetivos e sonhos.</p>`
 },
  
-
+// ... seus outros textos
+    nomeSocial: {
+        1: "Ao usar o nome [MASCULINO-FEMININO-NEUTRO], você projeta uma imagem de forte liderança e iniciativa. Este apelido estimula sua coragem e faz com que as pessoas o vejam como alguém pioneiro e independente...",
+        2: "A vibração deste nome traz uma suavidade à sua presença. [MASCULINO-FEMININO-NEUTRO] é visto como alguém diplomático, acolhedor e um excelente parceiro em qualquer colaboração...",
+        // Continue do 1 ao 9, e inclua 11, 22 e 33
+    
+},
     
 RegenteVida: {
  1:` <h3>🔱  Regente  N° 1</h3> 
