@@ -2649,22 +2649,61 @@ function formatarNomeExibicao(nomeDigitado) {
 }
 
 function calcularNumerosSocial(nome) {
-    // Esta é uma versão simplificada para garantir que o res.social seja preenchido
-    // Substitua pela sua lógica real de cálculo se necessário
-    let soma = 0;
-    const nomeLimpo = nome.toUpperCase().replace(/\s/g, '');
+    const tabelaBase = {
+        'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 8, 'G': 3, 'H': 5,
+        'I': 1, 'J': 1, 'K': 2, 'L': 3, 'M': 4, 'N': 5, 'O': 7, 'P': 8,
+        'Q': 1, 'R': 2, 'S': 3, 'T': 4, 'U': 6, 'V': 6, 'W': 6, 'X': 6,
+        'Y': 1, 'Z': 7
+    };
+
+    let totalMotivacao = 0; // Vogais
+    let totalInfluencia = 0; // Consoantes
     
-    // Simulação básica (substitua pela sua tabela pitagórica se quiser precisão)
-    for (let i = 0; i < nomeLimpo.length; i++) {
-        soma += (nomeLimpo.charCodeAt(i) % 9) + 1;
+    const vogais = "AEIOUYÁÉÍÓÚÂÊÎÔÛÃÕÀÈÌÒÙÄËÏÖÜ";
+    const nomeLimpo = nome.trim().toUpperCase();
+
+    // Divide o nome em palavras para tratar cada letra e seus acentos
+    for (let char of nomeLimpo) {
+        if (char === " ") continue;
+
+        let valorLetra = 0;
+        let base = char.normalize("NFD")[0]; // Pega a letra sem acento
+        
+        if (tabelaBase[base]) {
+            valorLetra = tabelaBase[base];
+
+            // --- LÓGICA DE MODIFICADORES CABALÍSTICOS ---
+            if (/[ÁÉÍÓÚ]/.test(char)) valorLetra += 2;
+            if (/[ÃÕ]/.test(char)) valorLetra += 3;
+            if (/[ÂÊÎÔÛ]/.test(char)) valorLetra += 7;
+            if (char === "Ç") valorLetra += 6;
+            if (/[ÀÈÌÒÙÄËÏÖÜ]/.test(char)) valorLetra *= 2; // Multiplicador (dobra)
+
+            // Separação para Motivação e Influência
+            if (vogais.includes(char)) {
+                totalMotivacao += valorLetra;
+            } else {
+                totalInfluencia += valorLetra;
+            }
+        }
     }
-    
-    const resultadoFinal = (soma % 9) || 9;
+
+    // Função interna para redução cabalística (mantém 11 e 22 se você usar, ou reduz tudo)
+    const reduzir = (num) => {
+        while (num > 9 && num !== 11 && num !== 22) {
+            num = String(num).split('').reduce((a, b) => parseInt(a) + parseInt(b), 0);
+        }
+        return num;
+    };
+
+    const mot = reduzir(totalMotivacao);
+    const inf = reduzir(totalInfluencia);
+    const pers = reduzir(mot + inf);
 
     return {
-        personalidade: resultadoFinal,
-        motivacao: resultadoFinal, // Exemplo
-        influencia: resultadoFinal  // Exemplo
+        personalidade: pers,
+        motivacao: mot,
+        influencia: inf
     };
 }
 
