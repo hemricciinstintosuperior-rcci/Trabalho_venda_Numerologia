@@ -2671,7 +2671,11 @@ if (agora < new Date(agora.getFullYear(), dtNasci.getMonth(), dtNasci.getDate())
     // O resto do seu código segue igual...
 // IMPLEMENTAÇÃO APENAS:
 const nomeParaCalculo = tratarNomeParaCalculo(nomeRaw);
-    
+        
+          // Adicione o toUpperCase() aqui também para a tabela reconhecer as letras!
+nomesArray = nomeParaCalculo.toUpperCase().split(/\s+/);
+            // Essência: 1ª letra de cada nome
+            nomesArray.forEach(n => { sE += calcularValorLetra(n[0]); });
 // COLE ESTE NOVO BLOCO:
 const radicaisWConsoante = ["WAGN", "WALD", "WAND", "WALT", "WALP", "WERNER", "WOLN", "WALM", "WALY"];
 const nomeBaseParaW = nomeRaw.toUpperCase().trim();
