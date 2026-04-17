@@ -3214,74 +3214,76 @@ html += `
 </div>
 
 </div> `;
-    
-// --- SEÇÃO DO NOME SOCIAL (VIBRAÇÃO DE ASSINATURA) ---
-const nomeSocialValor = document.getElementById("nomeSocial").value.trim();
 
+// --- PÁGINA 2: NOME SOCIAL (SE EXISTIR) ---
+const nomeSocialValor = document.getElementById("nomeSocial").value.trim();
 
 if (nomeSocialValor !== "") {
     if (!res.social) { 
         res.social = calcularNumerosSocial(nomeSocialValor); 
     }
 
-    // BUSCA DINÂMICA: Cada um na sua categoria
     const tMot = textos.nomeSocial.motivacao[res.social.motivacao];
     const tImp = textos.nomeSocial.impressao[res.social.influencia];
     const tPer = textos.nomeSocial.personalidade[res.social.personalidade];
 
     html += `
-    <div class="separador-luxo">
-        <div class="caixa-interna">
-            <h2>Sua Assinatura: ${nomeSocialValor}</h2>
+    <div class="page" style="page-break-before: always; min-height: 100vh;">
+        <div class="separador-luxo">
+            <div class="caixa-interna">
+                <h2>Sua Assinatura: ${nomeSocialValor}</h2>
+            </div>
         </div>
-    </div>
-    
-    <div class="page">
-        <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Análise da Frequência Social</h2>
         
-         <p class="intro-texto"> <p>O nome pelo qual escolhemos ser chamados atua como uma "assinatura vibracional". Enquanto o nome de registro contém o projeto original da sua alma, o nome <strong>${nomeSocialValor}</strong> funciona como a interface com a qual você se apresenta ao mundo e como as pessoas sentem a sua energia no dia a dia.</p>
+        <div style="padding: 20px;">
+            <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Análise da Frequência Social</h2>
+            
+            <div class="intro-texto"> 
+                <p>O nome pelo qual escolhemos ser chamados atua como uma "assinatura vibracional". Enquanto o nome de registro contém o projeto original da sua alma, o nome <strong>${nomeSocialValor}</strong> funciona como a interface com a qual você se apresenta ao mundo.</p>
                 <p>Esta análise revela como esse apelido ou nome social ajusta sua personalidade, motivação e a impressão que você causa nos outros.</p>
-            </p>
+            </div>
 
-        <div style="display: flex; justify-content: space-around; gap: 10px; margin: 30px 0;">
-            <div style="text-align: center; flex: 1; background: #fdfaf0; padding: 15px; border-radius: 10px; border: 1px solid #e0d5a8;">
-                <p style="font-size: 0.7rem; font-weight: bold; color: #827108; margin-bottom: 5px; text-transform: uppercase;">Motivação</p>
-                <span style="font-size: 2rem; font-weight: bold;">${res.social.motivacao}</span>
+            <div style="display: flex; justify-content: space-around; gap: 10px; margin: 30px 0;">
+                <div style="text-align: center; flex: 1; background: #fdfaf0; padding: 15px; border-radius: 10px; border: 1px solid #e0d5a8;">
+                    <p style="font-size: 0.7rem; font-weight: bold; color: #827108; margin-bottom: 5px; text-transform: uppercase;">Motivação</p>
+                    <span style="font-size: 2rem; font-weight: bold;">${res.social.motivacao}</span>
+                </div>
+                <div style="text-align: center; flex: 1.2; background: #fffcf5; padding: 15px; border-radius: 10px; border: 2px solid var(--gold); transform: scale(1.1); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                    <p style="font-size: 0.7rem; font-weight: bold; color: #827108; margin-bottom: 5px; text-transform: uppercase;">Personalidade</p>
+                    <span style="font-size: 2.5rem; font-weight: bold;">${res.social.personalidade}</span>
+                </div>
+                <div style="text-align: center; flex: 1; background: #fdfaf0; padding: 15px; border-radius: 10px; border: 1px solid #e0d5a8;">
+                    <p style="font-size: 0.7rem; font-weight: bold; color: #827108; margin-bottom: 5px; text-transform: uppercase;">Impressão</p>
+                    <span style="font-size: 2rem; font-weight: bold;">${res.social.influencia}</span>
+                </div>
             </div>
-            <div style="text-align: center; flex: 1.2; background: #fffcf5; padding: 15px; border-radius: 10px; border: 2px solid var(--gold); transform: scale(1.1); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-                <p style="font-size: 0.7rem; font-weight: bold; color: #827108; margin-bottom: 5px; text-transform: uppercase;">Personalidade</p>
-                <span style="font-size: 2.5rem; font-weight: bold;">${res.social.personalidade}</span>
+
+            <div class="evitar-corte" style="margin-bottom: 30px; background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 5px solid var(--gold);">
+                <div style="margin-bottom: 15px;">
+                    <strong style="color: #827108;">Vontade Interna (${res.social.motivacao}):</strong><br>
+                    ${aplicarFiltroTexto(tMot)}
+                </div>
+                <div>
+                    <strong style="color: #827108;">Imagem Externa (${res.social.influencia}):</strong><br>
+                    ${aplicarFiltroTexto(tImp)}
+                </div>
             </div>
-            <div style="text-align: center; flex: 1; background: #fdfaf0; padding: 15px; border-radius: 10px; border: 1px solid #e0d5a8;">
-                <p style="font-size: 0.7rem; font-weight: bold; color: #827108; margin-bottom: 5px; text-transform: uppercase;">Impressão</p>
-                <span style="font-size: 2rem; font-weight: bold;">${res.social.influencia}</span>
+
+            <hr style="border:0; border-top:1px solid #eee; margin: 30px 0;">
+
+            <div class="evitar-corte texto-res">
+                <h3 style="text-align: center; color: #827108; margin-bottom: 20px;">A Síntese da sua Expressão: Número ${res.social.personalidade}</h3>
+                ${aplicarFiltroTexto(tPer)}
             </div>
         </div>
-
-        <div class="evitar-corte" style="margin-bottom: 30px; background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 5px solid var(--gold);">
-            <div style="margin-bottom: 15px;">
-                <strong style="color: #827108;">Vontade Interna (${res.social.motivacao}):</strong><br>
-                ${aplicarFiltroTexto(tMot)}
-            </div>
-            <div>
-                <strong style="color: #827108;">Imagem Externa (${res.social.influencia}):</strong><br>
-                ${aplicarFiltroTexto(tImp)}
-            </div>
-        
-
-        <hr style="border:0; border-top:1px solid #eee; margin: 30px 0;">
-
-        <div class="evitar-corte texto-res">
-            <h3 style="text-align: center; color: #827108; margin-bottom: 20px;">A Síntese da sua Expressão: Número ${res.social.personalidade}</h3>
-            ${aplicarFiltroTexto(tPer)}
-        </div></div>
     </div>
     `;
 }
-
     
+    
+// --- PÁGINA 1: SUMÁRIO ---
 html += `
-<div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100%; padding: 40px; font-family: 'serif'; background: transparent;">
+<div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 40px; font-family: 'serif'; background: transparent; page-break-after: always;">
     
     <div style="text-align: center; margin-bottom: 60px;">
         <h2 style="color: var(--gold); font-size: 2.8rem; letter-spacing: 8px; text-transform: uppercase; margin-bottom: 5px; font-weight: 300;">
@@ -3293,42 +3295,32 @@ html += `
         </p>
     </div>
 
-    <div style="width: 100%; max-width: 900px; display: flex; flex-direction: column; gap: 45px;">
+    <div style="width: 100%; max-width: 900px; display: flex; flex-direction: column; gap: 40px;">
                 
         <div style="text-align: center;">
-            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600;">
-                Introdução 
-            </h3>
-            <p style="color: #444; font-size: 1.1rem; margin: 0; font-style: italic;">
-              Cabala Ancestral e  Direcionamento de Jornada
-            </p>
+            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; font-weight: 600;">Introdução</h3>
+            <p style="color: #444; font-size: 1.1rem; margin: 0; font-style: italic;">Cabala Ancestral e Direcionamento de Jornada</p>
         </div>
         
         <div style="text-align: center;">
-            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600;">
-                Parte 1: Performance Natural
-            </h3>
-            <div style="color: #333; font-size: 1.1rem; line-height: 1.8;">
+            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; font-weight: 600;">Parte 1: Performance Natural</h3>
+            <div style="color: #333; font-size: 1.1rem; line-height: 1.6;">
                 <span style="color: var(--gold); margin-right: 5px;">✶</span> Gráficos dos Planos de Expressão Natural com interpretação <br>
                 <span style="color: var(--gold); margin-right: 5px;">✶</span> Gráficos de Potenciais Naturais 
             </div>
         </div>
 
         <div style="text-align: center;">
-            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600;">
-                Parte 2: Essência e Identidade
-            </h3>
-            <div style="color: #333; font-size: 1.1rem; line-height: 1.8;">
+            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; font-weight: 600;">Parte 2: Essência e Identidade</h3>
+            <div style="color: #333; font-size: 1.1rem; line-height: 1.6;">
                 Vibração do Dia e Essência <span style="color: var(--gold); padding: 0 10px;">✶</span> Talento e Motivação <span style="color: var(--gold); padding: 0 10px;">✶</span> Influência e Personalidade <br>
                 Dinâmicas de Relacionamento <span style="color: var(--gold); padding: 0 10px;">✶</span> Caminho de Vida e Propósito <span style="color: var(--gold); padding: 0 10px;">✶</span> Direcionamento Profissional
             </div>
         </div>
 
         <div style="text-align: center;">
-            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600;">
-                Parte 3: Alinhamento e Desafios
-            </h3>
-            <div style="color: #333; font-size: 1.1rem; line-height: 1.8;">
+            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; font-weight: 600;">Parte 3: Alinhamento e Desafios</h3>
+            <div style="color: #333; font-size: 1.1rem; line-height: 1.6;">
                 <span style="color: var(--gold); margin-right: 5px;">✶</span> Fraquezas, Inclinações ocultas e Défitis no Comportamento <br>
                 <span style="color: var(--gold); margin-right: 5px;">✶</span> Habilidades, Deficiências, Desejos Oculto e Equilíbrio Interno <br>
                 <span style="color: var(--gold); margin-right: 5px;">✶</span> O Desafio Principal: Vibração Mestra
@@ -3336,20 +3328,16 @@ html += `
         </div>
 
         <div style="text-align: center;">
-            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600;">
-                Parte 4: Trajetória e Tendências
-            </h3>
-            <div style="color: #333; font-size: 1.1rem; line-height: 1.8;">
+            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; font-weight: 600;">Parte 4: Trajetória e Tendências</h3>
+            <div style="color: #333; font-size: 1.1rem; line-height: 1.6;">
                 Ciclos de Vida e Maturidade <span style="color: var(--gold); padding: 0 10px;">✶</span> Performance de Momento <br>
                 Gráficos de Potenciais <span style="color: var(--gold); padding: 0 10px;">✶</span> Ciclos de Ano Pessoal e Mensal
             </div>
         </div>
 
         <div style="text-align: center;">
-            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600;">
-                Parte 5: A Grande Matriz 
-            </h3>
-            <div style="color: #333; font-size: 1.1rem; line-height: 1.8;">
+            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; font-weight: 600;">Parte 5: A Grande Matriz</h3>
+            <div style="color: #333; font-size: 1.1rem; line-height: 1.6;">
                 <span style="color: var(--gold); margin-right: 5px;">✶</span> Matriz Vibracional: A Pirâmide Invertida <br>
                 <span style="color: var(--gold); margin-right: 5px;">✶</span> O Regente da Matriz e Sequências Numéricas de impacto e Bloqueio <br>
                 <span style="color: var(--gold); margin-right: 5px;">✶</span> Ciclos de Potência Numérica para até 100 Anos de idade
@@ -3357,23 +3345,20 @@ html += `
         </div>
 
         <div style="text-align: center;">
-            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; font-weight: 600;">
-                Parte 6: O Despertar do Legado
-            </h3>
-            <div style="color: #333; font-size: 1.1rem; line-height: 1.8;">
+            <h3 style="color: var(--gold); font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 8px; font-weight: 600;">Parte 6: O Despertar do Legado</h3>
+            <div style="color: #333; font-size: 1.1rem; line-height: 1.6;">
                 Raízes da Numerologia e Contexto Histórico <span style="color: var(--gold); padding: 0 10px;">✶</span> Direcionamento Evolutivo e Conclusão
             </div>
         </div>
-
     </div>
     
-    <div style="margin-top: 80px; text-align: center; opacity: 0.6;">
-        <p style="font-weight: bold; color: #d97a1e; letter-spacing: 8px; font-size: 0.85rem; text-transform: uppercase;">
-            Instinto Superior
-        </p>
+    <div style="margin-top: 50px; text-align: center; opacity: 0.6;">
+        <p style="font-weight: bold; color: #d97a1e; letter-spacing: 8px; font-size: 0.85rem; text-transform: uppercase;">Instinto Superior</p>
     </div>
 </div>
 `;
+
+
 
  tituloBonito = " A Gênese dos Números";    
 html += `
