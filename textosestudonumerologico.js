@@ -359,7 +359,8 @@ nomeSocial : {
         8: "Sua motivação íntima, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a conquista do sucesso em grande escala e o desejo de gerir recursos com autoridade e justiça.",
         9: "A motivação mais profunda deste nome, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o desejo sincero de servir à humanidade e deixar um impacto positivo no mundo.",
         11: "Sua motivação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, indica uma alma que busca a iluminação e a transcendência, agindo como um farol intuitivo para os outros.",
-        22: "Sua assinatura anseia por construir algo grandioso que dure por gerações, unindo visão idealista com uma capacidade prática monumental."
+        22: "Sua assinatura anseia por construir algo grandioso que dure por gerações, unindo visão idealista com uma capacidade prática monumental.",
+     33: "A sua Motivação nesta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, representa a maestria na compaixão e o chamado profundo para o amor incondicional e a proteção universal."
     },
     impressao: {
         1: "O mundo vê em você uma aura de pioneirismo e vigor. As pessoas percebem, <strong>MASCULINO-FEMININO-NEUTRO</strong>, alguém que não espera ordens para agir e liderar.",
@@ -372,109 +373,71 @@ nomeSocial : {
         8: "Sua primeira impressão é de força e comando. O mundo vê em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma liderança nata com grande capacidade de realização.",
         9: "A imagem que você projeta é universal e generosa. As pessoas veem em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, alguém inspirado pelo amor incondicional.",
         11: "Sua imagem transmite magnetismo intuitivo. O mundo te vê como alguém 'fora da curva', <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma figura visionária e inspiradora.",
-        22: "A primeira impressão é de competência extrema. O mundo vê em você o 'mestre construtor', <strong>MASCULINO-FEMININO-NEUTRO</strong>, capaz de realizar o impossível."
+        22: "A primeira impressão é de competência extrema. O mundo vê em você o 'mestre construtor', <strong>MASCULINO-FEMININO-NEUTRO</strong>, capaz de realizar o impossível.",
+     33: "Sua imagem irradia uma energia de paz e acolhimento absoluto. O mundo vê em você um guia amoroso, <strong>MASCULINO-FEMININO-NEUTRO</strong>, que exala sabedoria compassiva."
     },
      
-    personalidade: {
-        // Aqui você cola os textos de Personalidade que mandou antes, 
-      1: `<h3>Personalidade 1 - O Líder Pioneiro e Independente</h3>
-    <p>A imagem que você projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma presença poderosa, dinâmica e dotada de uma competência que se manifesta assim que você pisa em qualquer ambiente. As pessoas percebem imediatamente a sua autoridade natural, vendo em você alguém que possui clareza absoluta sobre o que quer e a força de vontade para chegar lá sem hesitar.</p>
-    <p>Você se expressa de maneira direta e assertiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Por isso, é comum que as pessoas te procurem para tomar decisões rápidas ou liderar frentes que exigem coragem. O mundo enxerga em você uma figura resolutiva, que encara os problemas de frente e não se deixa abalar por críticas superficiais, mantendo o foco inabalável no topo.</p>
-    <p>Muitas vezes, essa sua fachada de força e autonomia pode fazer com que os outros te vejam como alguém um pouco distante, mas isso é apenas o reflexo do seu compromisso total com a excelência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua presença é sinônimo de progresso, consolidando a imagem de quem nasceu para o comando e possui a resiliência para sustentar grandes responsabilidades com elegância.</p>
-    
-       <h4>As cores favoráveis para sua personalidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, as suas cores favoráveis são estas: tons de amarelo e laranja, marrom, dourado, verde, creme e branco. Estas tonalidades harmonizam perfeitamente com a sua vibração pessoal.</p>
-    `,
+personalidade: {
+    1: `<h3>Personalidade 1 - O Impacto do Pioneirismo</h3>
+    <p>Ao adotar o nome <strong>${nomeSocialValor}</strong>, você projeta uma assinatura de forte independência e liderança. Este nome funciona como um cartão de visitas que diz ao mundo que você é uma pessoa de iniciativa, que não teme abrir novos caminhos e que possui uma autoridade natural.</p>
+    <p>A vibração desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que as pessoas te vejam como alguém resolutivo. É um nome que inspira confiança em cargos de comando e projeta uma imagem de alguém que encara desafios de frente, sem hesitar.</p>
+    <p>O impacto social desta escolha é o progresso. Através deste nome, você é percebido(a) como uma força dinâmica, consolidando uma imagem de autonomia e resiliência em todas as suas interações sociais.</p>`,
 
-    2: `<h3>Personalidade 2 - O Diplomata Atencioso e Harmonioso</h3>
-    <p>A imagem que você projeta para a sociedade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma presença extremamente gentil, diplomática e acolhedora. Você transmite uma sensação de paz imediata; as pessoas veem em você uma figura harmoniosa, dotada de uma capacidade de escuta rara e de um tato social que permite lidar com qualquer temperamento com elegância.</p>
-    <p>Você é percebido(a) como a parceria ideal, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Alguém em quem se pode confiar segredos e buscar apoio seguro. Seus modos refletem bom gosto e discrição, preferindo brilhar pela sensibilidade do que pela ostentação. O mundo vê em você o "cimento" que mantém os grupos unidos, valorizando a sua habilidade de perceber nuances que outros ignoram.</p>
-    <p>Essa sua postura receptiva faz com que todos se sintam seguros ao seu lado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você recebe admiração pela sua paciência e mediação, provando que a gentileza é uma ferramenta de influência poderosa. O seu legado social é construído sobre a base da confiança e do afeto que você distribui com maestria.</p>
-    <h4>As cores favoráveis para sua personalidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, as suas cores favoráveis são estas: tons de verde, creme, branco e cinza. Elas ajudam a equilibrar sua energia, sendo recomendável evitar o preto, púrpura e o vermelho escuro.</p>
-    `,
+    2: `<h3>Personalidade 2 - A Diplomacia da Assinatura</h3>
+    <p>O nome <strong>${nomeSocialValor}</strong> ajusta sua frequência social para a harmonia e a cooperação. Esta assinatura projeta uma imagem de alguém extremamente gentil, acessível e capaz de ouvir, tornando você o ponto de equilíbrio em qualquer grupo.</p>
+    <p>Através deste nome, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o mundo te enxerga como a parceria ideal. É uma vibração que facilita a mediação e atrai a confiança das pessoas pela sua discrição e tato social. Você brilha pela sensibilidade e pelo acolhimento.</p>
+    <p>O reflexo social desta escolha é a união. Este nome funciona como um convite à colaboração, construindo pontes e fortalecendo laços baseados na gentileza e no respeito mútuo.</p>`,
 
-    3: `<h3>Personalidade 3 - O Comunicador Criativo e Carismático</h3>
-    <p>A imagem que você projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é vibrante e repleta de um carisma que ilumina qualquer lugar. As pessoas te percebem como uma figura solar, com um magnetismo social irresistível que atrai amizades e oportunidades através de uma facilidade de comunicação simplesmente admirável.</p>
-    <p>Sua expressão externa é a de uma presença entusiasmada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, capaz de motivar os outros com uma naturalidade contagiante. Você é visto(a) como uma inteligência rápida e versátil, que transita entre diferentes assuntos com charme. O mundo admira a forma como você encara os desafios com otimismo, agindo como um catalisador de boas notícias.</p>
-    <p>Para a sociedade, você representa a alegria e a sociabilidade plena, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe um brilho no seu olhar que comunica paixão pela vida, fazendo de você uma peça fundamental em qualquer projeto que precise de criatividade e brilho. Você prova, diariamente, que a expressão da alma é o caminho mais curto para o êxito social.</p>
-    <h4>As cores favoráveis para sua personalidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, as suas cores favoráveis são estas: violeta, vinho, púrpura e vermelho. Tons de azul e rosa também funcionam muito bem se utilizados como cores secundárias.</p>
-    `,
+    3: `<h3>Personalidade 3 - O Brilho da Expressão Social</h3>
+    <p>A escolha do nome <strong>${nomeSocialValor}</strong> potencializa imensamente o seu magnetismo e carisma. Esta assinatura projeta uma imagem vibrante e solar, agindo como um farol que atrai as pessoas através de uma comunicação leve, fluida e contagiante.</p>
+    <p>A vibração deste nome social, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que você seja visto(a) como uma presença entusiasmada e criativa. É um nome que comunica otimismo e inteligência rápida, facilitando sua entrada em qualquer círculo social com charme e alegria.</p>
+    <p>O impacto desta assinatura é a expansão. Através deste nome, você transforma o ambiente ao seu redor, provando que a alegria é uma ferramenta poderosa de conexão e sucesso.</p>`,
 
-    4: `<h3>Personalidade 4 - O Construtor Disciplinado e Estável</h3>
-    <p>A imagem que você projeta para a sociedade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma solidez absoluta e de um compromisso inabalável com a verdade. As pessoas veem em você alguém com os pés firmemente plantados no chão, que valoriza a ordem e as bases seguras, agindo com uma seriedade que impõe respeito imediato.</p>
-    <p>Você é visto(a) como a figura que planeja com cuidado e executa com perfeição, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Alguém que nunca foge das responsabilidades e que prefere o que é prático e duradouro. O mundo confia em você porque a sua palavra é uma lei e a sua entrega é garantida. Você é a rocha que permanece firme em meio às tempestades.</p>
-    <p>As pessoas admiram a sua capacidade de construir resultados concretos através da dedicação honesta, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Essa sua imagem de seriedade faz de você a escolha prioritária para gerir grandes projetos. Você não busca o aplauso fácil, mas sim o reconhecimento da sua competência e do seu caráter inatacável.</p>
-    <h4>As cores favoráveis para sua personalidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, as suas cores favoráveis são estas: azul, cinza, púrpura e dourado. Essas cores trazem a estabilidade e a força necessárias para o seu perfil.</p>
-    `,
+    4: `<h3>Personalidade 4 - A Segurança da Estrutura Social</h3>
+    <p>O nome <strong>${nomeSocialValor}</strong> confere à sua imagem pública uma aura de solidez, seriedade e confiança absoluta. Esta assinatura projeta alguém que valoriza a ordem, a ética e o compromisso, passando a sensação de que "tudo está sob controle".</p>
+    <p>Ao usar este nome, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a sociedade te enxerga como uma rocha firme. É uma vibração que impõe respeito pela disciplina e pelo trabalho bem feito, fazendo de você a pessoa em quem todos confiam para gerir projetos que exigem pé no chão e fidelidade.</p>
+    <p>O reflexo social desta escolha é a estabilidade. Este nome consolida uma imagem de integridade inatacável, onde sua palavra é vista como lei e sua entrega é garantida.</p>`,
 
-    5: `<h3>Personalidade 5 - O Aventureiro Versátil e Inovador</h3>
-    <p>A imagem que você projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma personalidade moderna e dotada de uma energia vital inesgotável. As pessoas percebem em você uma alma livre e progressista, que está sempre em movimento e pronta para se adaptar a qualquer mudança com uma agilidade mental impressionante.</p>
-    <p>Sua expressão externa é magnética, <strong>MASCULINO-FEMININO-NEUTRO</strong>, atraindo a atenção pela sua coragem de experimentar o novo sem medo. Você é visto(a) como uma figura inteligente e desimpedida, capaz de romper barreiras com um charme pessoal único. Você desafia o "sempre foi assim", trazendo frescor para ambientes estagnados.</p>
-    <p>Para os outros, você representa a quebra de padrões e a busca pela autonomia plena, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sociedade vê em você a prova de que a vida é um campo de possibilidades para quem tem a ousadia de seguir o próprio ritmo. Seu sucesso vem da sua habilidade em ser o elo entre o presente e o futuro.</p>
-    <h4>As cores favoráveis para sua personalidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, as suas cores favoráveis são estas: todas as cores claras, principalmente o branco, cinza e prata. Elas potencializam sua clareza mental e movimento.</p>
-    `,
+    5: `<h3>Personalidade 5 - A Dinâmica da Liberdade Social</h3>
+    <p>Adotar o nome <strong>${nomeSocialValor}</strong> projeta uma imagem de modernidade, versatilidade e movimento constante. Esta assinatura diz ao mundo que você é uma pessoa desimpedida, progressista e pronta para se adaptar a qualquer mudança com agilidade.</p>
+    <p>A vibração deste nome, <strong>MASCULINO-FEMININO-NEUTRO</strong>, atrai a atenção pela coragem de experimentar o novo. Você é visto(a) como alguém inteligente e magnético, que desafia o tédio e traz frescor para ambientes estagnados através de uma postura livre e inovadora.</p>
+    <p>O impacto social desta escolha é a evolução. Este nome funciona como um motor de mudanças, mostrando que você é o elo entre o presente e as infinitas possibilidades do futuro.</p>`,
 
-    6: `<h3>Personalidade 6 - O Guardião Responsável e Acolhedor</h3>
-    <p>A imagem que você projeta para a sociedade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma presença calorosa e inteiramente voltada para o cuidado. As pessoas veem em você uma figura de proteção e consolo, alguém que valoriza os laços afetivos e a ética acima de qualquer interesse egoísta.</p>
-    <p>Você é percebido(a) como a pessoa que torna os ambientes mais bonitos e harmoniosos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sociedade busca em você conselhos sábios, confiando na sua integridade moral para resolver conflitos. Sua dedicação ao bem-estar dos outros é admirada, fazendo de você o ponto de apoio seguro para todos em momentos de crise.</p>
-    <p>Para o mundo, você é o exemplo vivo da bondade ativa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. As pessoas sentem amparo na sua vibração de amor e na sua capacidade de entender o coração alheio. Sua presença é considerada um presente para a sociedade, provando que o serviço ao próximo é o alicerce de uma vida bem-sucedida.</p>
-    <h4>As cores favoráveis para sua personalidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, as suas cores favoráveis são estas: rosa, azul e verde. Note que cores muito escuras são desfavoráveis e devem ser evitadas para manter sua energia em alta.</p>
-    `,
+    6: `<h3>Personalidade 6 - O Acolhimento da Presença Social</h3>
+    <p>O nome <strong>${nomeSocialValor}</strong> ajusta sua vibração social para o cuidado, a harmonia e a responsabilidade afetiva. Esta assinatura projeta a imagem de um porto seguro, alguém que se preocupa genuinamente com o bem-estar coletivo e com a ética.</p>
+    <p>Através deste nome, <strong>MASCULINO-FEMININO-NEUTRO</strong>, as pessoas sentem amparo e proteção na sua presença. É uma vibração que embeleza as relações e atrai quem busca conselhos sábios e equilíbrio, fazendo de você a figura que pacifica e harmoniza os ambientes.</p>
+    <p>O reflexo social desta escolha é o amor em ação. Este nome consolida uma reputação de bondade e lealdade, tornando sua presença um presente para a comunidade ao seu redor.</p>`,
 
-    7: `<h3>Personalidade 7 - O Observador Sábio e Analítico</h3>
-    <p>A imagem que você projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma personalidade culta, reservada e dotada de uma inteligência profunda. As pessoas veem em você uma aura de sabedoria e dignidade, percebendo alguém que prefere a observação atenta e o silêncio reflexivo ao barulho das massas.</p>
-    <p>Você emana uma classe natural que impõe respeito profundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sociedade te enxerga como um(a) especialista, alguém que segue o próprio caminho com uma integridade inquestionável. Você não segue modismos; mantém fidelidade aos seus princípios, o que te torna uma referência de solidez mental.</p>
-    <p>As pessoas buscam a sua opinião quando precisam de uma análise precisa e imparcial, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Essa sua projeção de seriedade protege você de influências indesejadas e atrai conexões que possuem substância real. Seu sucesso é baseado na autoridade que você constrói através do conhecimento puro.</p>
-<h4>As cores favoráveis para sua personalidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, as suas cores favoráveis são estas: verde, amarelo, branco, cinza e azul claro. Procure evitar cores escuras para não sobrecarregar sua vibração natural.</p>
-    `,
+    7: `<h3>Personalidade 7 - A Distinção da Sabedoria Social</h3>
+    <p>A assinatura <strong>${nomeSocialValor}</strong> confere à sua imagem pública uma aura de profundidade, mistério e classe silenciosa. Este nome projeta alguém culto e analítico, que prefere a observação atenta e a qualidade intelectual ao barulho das massas.</p>
+    <p>Ao usar este nome, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você emana uma dignidade que impõe respeito imediato. A sociedade te enxerga como um(a) especialista, alguém que detém conhecimentos profundos e que não se deixa levar por futilidades ou opiniões superficiais.</p>
+    <p>O impacto social desta escolha é a lucidez. Este nome protege sua privacidade e atrai conexões de substância, consolidando sua autoridade através do conhecimento e da busca pela verdade.</p>`,
 
-    8: `<h3>Personalidade 8 - O Executivo Poderoso e Eficiente</h3>
-    <p>A imagem que você projeta para a sociedade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma figura poderosa e nitidamente bem-sucedida. As pessoas veem em você alguém que nasceu para o comando, com uma capacidade natural para gerir grandes recursos e liderar projetos com um pragmatismo extraordinário.</p>
-    <p>Sua expressão externa transmite autoconfiança e uma força que indica que você sabe exatamente como lidar com o poder, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é percebido(a) como uma personalidade vencedora, que conquistou seu espaço com disciplina e coragem. Essa sua solidez faz de você a liderança natural em qualquer crise.</p>
-    <p>Para o mundo, você representa a realização material plena, <strong>MASCULINO-FEMININO-NEUTRO</strong>. As pessoas confiam na sua liderança porque enxergam em você a força necessária para garantir a prosperidade de todos. Sua trajetória é respeitada não apenas pelo que você possui, mas pela forma magistral como você conduz a realidade.</p>
-<h4>As cores favoráveis para sua personalidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, as suas cores favoráveis são estas: púrpura, azul, cinza, preto e marrom. Para o seu perfil, as cores escuras trazem elegância e autoridade.</p>
-    `,
+    8: `<h3>Personalidade 8 - A Autoridade da Realização Social</h3>
+    <p>O nome <strong>${nomeSocialValor}</strong> projeta uma imagem poderosa de comando, sucesso e eficiência material. Esta assinatura atua como um símbolo de força, indicando ao mundo que você possui visão estratégica e pragmatismo para liderar grandes metas.</p>
+    <p>Através deste nome, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você é percebido(a) como uma personalidade vitoriosa e segura de si. É uma vibração que atrai responsabilidades de liderança e grandes negócios, pois transmite a confiança de quem nasceu para organizar a realidade e gerar prosperidade.</p>
+    <p>O reflexo social desta escolha é a vitória. Este nome consolida sua trajetória como uma força realizadora, capaz de transformar visões abstratas em resultados tangíveis e duradouros.</p>`,
 
-    9: `<h3>Personalidade 9 - O Humanitário Sábio e Altruísta</h3>
-    <p>A imagem que você projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma personalidade generosa, sábia e dotada de uma visão que vai muito além do próprio ego. As pessoas te veem como uma alma carismática, que possui uma compreensão profunda da vida e age com uma compaixão que inspira confiança imediata.</p>
-    <p>Sua presença é descrita como inspiradora, <strong>MASCULINO-FEMININO-NEUTRO</strong>, atraindo pessoas de todas as origens que buscam na sua experiência um pouco de luz e direção. A sociedade te percebe como alguém desapegado, capaz de grandes gestos por uma causa nobre. Você emana uma sabedoria que parece vir de muitas vidas.</p>
-    <p>Você é visto(a) como alguém que veio para curar e transformar a realidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. As pessoas admiram a sua coragem de ser autêntico(a) e a forma como trata todos com a mesma dignidade. Sua trajetória é celebrada como um exemplo de que a verdadeira grandeza reside na generosidade absoluta.</p>
-    <h4>As cores favoráveis para sua personalidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, as suas cores favoráveis são estas: vermelho, rosa, coral e vinho. Essas cores intensas ressoam com a sua natureza generosa e ativa.</p>
-    `,
+    9: `<h3>Personalidade 9 - O Humanitarismo da Visão Social</h3>
+    <p>A escolha do nome <strong>${nomeSocialValor}</strong> projeta uma imagem universal, generosa e inspiradora. Esta assinatura indica alguém que possui uma compreensão profunda da vida e que age com uma compaixão que vai muito além de interesses pessoais.</p>
+    <p>A vibração deste nome social, <strong>MASCULINO-FEMININO-NEUTRO</strong>, atrai pessoas de todas as origens que buscam na sua experiência uma luz ou direção. Você é visto(a) como uma alma sábia e carismática, capaz de grandes gestos altruístas por um bem maior.</p>
+    <p>O impacto desta assinatura é a cura e a transformação. Através deste nome, você deixa um impacto positivo no coletivo, consolidando uma imagem de desprendimento e amor incondicional pela humanidade.</p>`,
 
-    11: `<h3>Personalidade 11 - O Visionário Inspirador e Intuitivo</h3>
-    <p>A imagem que você projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma presença magnética e dotada de uma intuição que parece captar o invisível. As pessoas percebem em você uma alma visionária, alguém com uma sensibilidade superior que se destaca naturalmente em qualquer grupo.</p>
-    <p>Sua expressão é persuasiva e sábia, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sociedade vê em você uma inteligência brilhante, capaz de propor soluções que tocam a essência dos problemas. Sua presença é associada ao despertar de consciências, tornando você a figura ideal para guiar projetos que exijam visão de vanguarda.</p>
-    <p>Essa sua aura de profundidade faz com que os outros te vejam como alguém especial, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você valoriza o equilíbrio acima de tudo, e o mundo respeita a sua atuação como uma personalidade que traz luz para a obscuridade através de uma criatividade que não conhece limites.</p>
-    <h4>As cores favoráveis para sua personalidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, as suas cores favoráveis são estas: branco, violeta e todas as tonalidades claras, que elevam sua percepção e intuição.</p>
-    `,
+    11: `<h3>Personalidade 11 - A Inspiração da Visão Social</h3>
+    <p>O nome <strong>${nomeSocialValor}</strong> confere à sua imagem uma aura de magnetismo intuitivo e misticismo sutil. Esta assinatura projeta uma alma visionária, alguém que parece captar ideias e verdades que escapam à maioria das pessoas.</p>
+    <p>Através deste nome, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você é percebido(a) como uma inteligência brilhante e inspiradora. É uma vibração que desperta a consciência alheia e atrai quem busca um propósito elevado, tornando sua presença sinônimo de progresso mental e espiritual.</p>
+    <p>O impacto social desta escolha é o despertar. Este nome consolida sua imagem como um canal de ideias inovadoras, agindo como uma referência de luz e percepção aguçada.</p>`,
 
-    22: `<h3>Personalidade 22 - O Grande Construtor e Estrategista Mundial</h3>
-    <p>A imagem que você projeta para a sociedade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma força de vontade extraordinária e uma competência absoluta. As pessoas veem em você uma visão estratégica fora do comum, capaz de organizar estruturas gigantescas com uma lógica que impressiona a todos.</p>
-    <p>Você é visto(a) como o(a) mestre da construção, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Alguém que planeja em escala global e executa com precisão impecável. Sua postura transmite eficiência, indicando uma mentalidade voltada para o progresso de todos. O mundo confia em você para liderar os projetos mais difíceis e importantes.</p>
-    <p>Para o mundo, você é o exemplo máximo do poder construtivo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. As pessoas admiram a sua resiliência e a forma como você gera benefícios que alcançam comunidades inteiras. Você constrói uma reputação de prestígio baseada na magnitude dos resultados reais que você apresenta.</p>
-    <h4>As cores favoráveis para sua personalidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, as suas cores favoráveis são estas: vermelho, rosa, coral e vinho. Tons que reforçam sua capacidade de realização e magnetismo.</p>
-    `,
+    22: `<h3>Personalidade 22 - A Maestria da Construção Social</h3>
+    <p>Adotar o nome <strong>${nomeSocialValor}</strong> projeta uma imagem de competência extrema e potência realizadora gigante. Esta assinatura indica o "mestre construtor", alguém capaz de unir grandes sonhos à capacidade prática de executá-los para o bem comum.</p>
+    <p>Ao usar este nome, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a sociedade vê em você uma força de vontade extraordinária. É uma vibração que organiza recursos e lidera projetos monumentais, transmitindo a segurança absoluta de que sob sua guarda o impossível se materializa.</p>
+    <p>O reflexo social desta escolha é a magnitude. Este nome consolida sua reputação de prestígio baseada na magnitude dos benefícios reais que você constrói para a sociedade.</p>`,
 
-    33: `<h3>Personalidade 33 - O Mestre do Amor Altruísta e da Evolução</h3>
-    <p>A imagem que você projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma personalidade profundamente bondosa e acolhedora. As pessoas veem em você uma figura de proteção e amor incondicional, percebendo alguém que age movido por um dever sagrado de trazer harmonia para a humanidade.</p>
-    <p>Você é percebido(a) como quem possui o dom da palavra que educa e cura, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sociedade te vê como um mestre do amor em ação, com uma integridade moral que atrai o respeito de todas as gerações. Você traz conforto e esperança de forma natural e constante por onde passa.</p>
-    <p>Para o mundo, você representa a entrega aos ideais superiores, <strong>MASCULINO-FEMININO-NEUTRO</strong>. As pessoas buscam a sua companhia porque se sentem amparadas pela paz que emana de cada gesto seu. Sua trajetória é celebrada como a prova de que o serviço ao próximo é o caminho mais elevado para a paz espiritual plena.</p>
-    <h4>As cores favoráveis para sua personalidade</h4>
-<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, as suas cores favoráveis são estas: roxo, violeta, azul claro, rosa, amarelo e verde. Essas tonalidades emanam a energia de cura e compaixão necessária para equilibrar a sua elevada vibração pessoal.</p>
-    `
-
-    }
+ 33: `<h3>Personalidade 33 - O Mestre do Amor e Evolução Social</h3>
+<p>O nome <strong>${nomeSocialValor}</strong> confere à sua presença pública uma aura de profunda bondade e proteção. Esta assinatura projeta a imagem de um guia amoroso, alguém que age movido por um senso de dever sagrado em trazer harmonia para a humanidade.</p>
+<p>Ao adotar este nome, <strong>MASCULINO-FEMININO-NEUTRO</strong>, as pessoas buscam sua companhia porque se sentem amparadas pela paz que emana de cada gesto seu. É uma vibração que educa e cura, tornando você uma referência de integridade moral e altruísmo.</p>
+<p>O impacto social desta escolha é a elevação coletiva. Através deste nome, você é percebido(a) como uma personalidade dedicada ao bem-estar alheio, consolidando uma trajetória de serviço que transforma a dor em esperança por onde passa.</p>`
+}
 },
     
 RegenteVida: {
