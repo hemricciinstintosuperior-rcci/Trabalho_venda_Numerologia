@@ -785,6 +785,7 @@ input:focus {
     <div class="container">
         <h1>Estudo Numerológico</h1>
      <input type="text" id="nome" placeholder="NOME COMPLETO" >
+     <input type="text" id="nomeSocial" placeholder="COMO PREFERE SER CHAMADO? (OPCIONAL)">   
      <input type="text" id="data" placeholder="DD/MM/AAAA" maxlength="10" onInput="this.value = this.value.replace(/\D/g, '').replace(/^(\d{2})(\d)/, '$1/$2').replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3');">
         <button class="btn-gerar" onclick="gerarMapaCompleto()">GERAR O MAPA</button>
     </div>
@@ -1152,12 +1153,27 @@ function reduzirRespeitandoMestres(num) {
         }
 
 function aplicarFiltroTexto(texto) {
-    // Se o texto não existir, for nulo ou não for uma string, retorna vazio ou um aviso
     if (!texto || typeof texto !== 'string') {
         return ""; 
     }
-    let pNome = document.getElementById("nome").value.trim().split(' ')[0] || "MASCULINO-FEMININO-NEUTRO";
-    return texto.replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${pNome}</strong>`).replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${pNome}</strong>`);
+
+    // 1. Captura os valores dos inputs
+    const nomeSocial = document.getElementById("nomeSocial").value.trim();
+    const nomeCompleto = document.getElementById("nome").value.trim();
+    
+    let pNome = "";
+
+    // 2. Lógica de Prioridade:
+    // Se o usuário preencheu o Nome Social, usamos ele.
+    // Se não preencheu, pegamos o primeiro nome do Nome Completo.
+    if (nomeSocial !== "") {
+        pNome = nomeSocial;
+    } else {
+        pNome = nomeCompleto.split(/\s+/)[0] || "MASCULINO-FEMININO-NEUTRO";
+    }
+
+    // 3. Aplica a substituição no texto
+    return texto.replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${pNome}</strong>`);
 }
 
 function aplicarFiltroNomeComposto(texto) {
