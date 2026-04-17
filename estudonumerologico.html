@@ -3343,6 +3343,13 @@ html += `
 const nomeSocialValor = document.getElementById("nomeSocial").value.trim();
 
 if (nomeSocialValor !== "") {
+    // --- ADICIONE ESTA PARTE PARA CALCULAR ---
+    if (!res.social) { 
+        // Aqui chamamos a função que calcula os números do nome social
+        // Certifique-se de que a função calcularNumeros existe no seu script
+        res.social = calcularNumeros(nomeSocialValor); 
+    }
+    
     // 1. Definimos o título bonito para o separador
     const tituloSocial = "Sua Assinatura: " + nomeSocialValor;
 
