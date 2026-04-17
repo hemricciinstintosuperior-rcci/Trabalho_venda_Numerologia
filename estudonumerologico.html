@@ -3338,7 +3338,49 @@ html += `
 </div>
 `;   
 
+// --- SEÇÃO DO NOME SOCIAL (VIBRAÇÃO DE ASSINATURA) ---
+const nomeSocialValor = document.getElementById("nomeSocial").value.trim();
 
+if (nomeSocialValor !== "") {
+    // 1. Definimos o título bonito para o separador
+    const tituloSocial = "Sua Assinatura: " + nomeSocialValor;
+
+    // 2. Inserimos o Separador Luxo
+    html += `
+    <div class="separador-luxo">
+        <div class="caixa-interna">
+            <h2>${tituloSocial}</h2>
+        </div>
+    </div>
+    `;
+
+    // 3. Montamos a página de análise
+    // Aqui usamos o resultado da 'Personalidade Social' (res.social.personalidade) 
+    // para buscar o texto compilado que você vai criar.
+    html += `
+        <div class="page">
+            <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Vibração Social e Expressão</h2>
+            <div class="intro-texto">
+                <p>O nome pelo qual escolhemos ser chamados atua como uma "assinatura vibracional". Enquanto o nome de registro contém o projeto original da sua alma, o nome <strong>${nomeSocialValor}</strong> funciona como a interface com a qual você se apresenta ao mundo e como as pessoas sentem a sua energia no dia a dia.</p>
+                <p>Esta análise revela como esse apelido ou nome social ajusta sua personalidade, motivação e a impressão que você causa nos outros.</p>
+            </div>
+
+            <div class="evitar-corte resultado-bloco" style="text-align: center; margin-bottom: 20px; background: #fdfaf0; padding: 15px; border-radius: 8px;">
+                <p style="margin: 0; color: #827108; font-weight: bold; text-transform: uppercase; font-size: 0.9rem;">Frequência da Assinatura</p>
+                <span class="numero-destaque" style="font-size: 3rem; font-weight: bold; color: #000;">${res.social.personalidade}</span>
+            </div>
+
+            <div class="evitar-corte texto-res">
+                ${aplicarFiltroTexto(textos.nomeSocial[res.social.personalidade])}
+            </div>
+            
+            <hr style="border:0; border-top:1px solid #eee; margin: 20px 0;">
+            <p style="font-size: 0.9rem; font-style: italic; color: #666;">
+                * Esta vibração combina a Motivação (${res.social.motivacao}) e a Influência (${res.social.influencia}) contidas especificamente no nome "${nomeSocialValor}".
+            </p>
+        </div>
+    `;
+}
 
     
 html += `
