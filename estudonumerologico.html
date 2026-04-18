@@ -3227,13 +3227,13 @@ if (nomeSocialValor !== "") {
     <div class="page" style="height: 100vh; max-height: 1120px; padding: 20px; box-sizing: border-box; overflow: hidden; page-break-before: always; display: flex; flex-direction: column;">
         <div class="separador-luxo" style="margin-bottom: 10px;">
             <div class="caixa-interna">
-                <h2 style="font-size: 1.5rem;">Sua Assinatura: ${nomeSocialValor}</h2>
+                <h2 style="font-size: 1.5rem;">Seu nome social: ${nomeSocialValor}</h2>
             </div>
         </div>
         
         <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
             <div style="text-align: center;">
-                <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 5px; font-size: 1.3rem;">Análise da Frequência Social</h2>
+                <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 5px; font-size: 2.3rem;">Análise da Frequência Social</h2>
                       <p>O nome pelo qual escolhemos ser chamados atua como uma "assinatura vibracional". Enquanto o nome de registro contém o projeto original da sua alma, o nome <strong>${nomeSocialValor}</strong> funciona como a interface com a qual você se apresenta ao mundo.</p>
                 <p>Esta análise revela como esse apelido ou nome social ajusta sua personalidade, motivação e a impressão que você causa nos outros.</p>
             </div>
@@ -3251,18 +3251,18 @@ if (nomeSocialValor !== "") {
                     <p style="font-size: 0.6rem; font-weight: bold; color: #827108; margin-bottom: 2px; text-transform: uppercase;">Impressão</p>
                     <span style="font-size: 1.5rem; font-weight: bold;">${res.social.influencia}</span>
                 </div>
-            
+            </div>
 
-            <div style="background: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 5px solid var(--gold); font-size: 0.85rem; line-height: 1;">
+            <div style="background: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 5px solid var(--gold); font-size: 1.85rem; line-height: 1;">
                 <p style="margin-bottom: 8px;"><strong>Vontade Interna:</strong> ${aplicarFiltroTexto(tMot)}</p>
                 <p style="margin: 0;"><strong>Imagem Externa:</strong> ${aplicarFiltroTexto(tImp)}</p>
             
 
             <div style="margin-top: 15px;">
                 <h3 style="text-align: center; color: #827108; font-size: 1.1rem; margin-bottom: 10px;">A Síntese da sua Expressão: ${res.social.personalidade}</h3>
-                <div style="font-size: 0.85rem; line-height: 1; text-align: justify;">
+                <div style="font-size: 1.85rem; line-height: 1; text-align: justify;">
                     ${aplicarFiltroTexto(tPer)}
-                </div>
+                
                 </div>
             </div>
             </div>
