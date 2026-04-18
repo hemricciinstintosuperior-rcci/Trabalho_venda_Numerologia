@@ -4085,7 +4085,7 @@ if(dadosNegativas.detalhes.length > 0){
         `}
     </div>
 
-    <h2 style="color:red; margin-top:30px; border-bottom: 2px solid red; padding-bottom:10px; text-align: center;"> Sequências de Vulnerabilidade</h2>
+    <h2 style="color:red; margin-top:30px; border-bottom: 2px solid red; padding-bottom:10px; text-align: center;"> Vulnerabilidade</h2>
     `;
     
    
@@ -4115,7 +4115,7 @@ if(dadosNegativas.detalhes.length > 0){
                 <span style="color:red; font-weight: bold;font-size: 21px;">📅 Período de maior influência: de ${datas.ini} até ${datas.fim}</span><br><br>
                 <span style="color:red; font-weight: bold;font-size: 21px;">Tempo : ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
                 <div class="conteudo-travado">
-                <p style="margin-top: 8px; color: #222; text-align: left;">${aplicarFiltroTexto(textos.SeqNegVida[neg.numero])}</p>
+                <p style="margin-top: 8px; color: #222; font-size: 18px; text-align: left;">${aplicarFiltroTexto(textos.SeqNegVida[neg.numero])}</p>
                  </div>
                  <div class="aviso-trava">
             🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
@@ -4149,7 +4149,7 @@ if (listaEspeciais.length > 0) {
         htmlPiramide += `
              <div class="evitar-corte" style="margin-bottom: 35px; text-align: center;">
                 <h2 style="color:#d97a1e; font-size: 22px;">Alinhamento Especial ${esp.numero}</h2>
-                <span style="color:#d97a1e; font-weight: bold; font-size: 19px;">📅 Período de maior influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
+                <span style="color:#d97a1e; font-weight: bold; font-size: 20px;">📅 Período de maior influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
                <div class="conteudo-travado">
                 <div class="texto-res" style="text-align: justify; margin-top:15px;">
                     ${aplicarFiltroTexto(textos.SeqEspeciais[esp.numero])}
@@ -4189,7 +4189,7 @@ if (listaFin.length > 0) {
              <div class="evitar-corte" style="margin-bottom: 35px; text-align: center;">
                 <h2 style="color:#28a745; font-size: 22px;">Potencial de Prosperidade 99/9</h2>
                <div class="conteudo-travado">
-                <span style="color:#28a745; font-weight: bold; font-size: 19px;">📅 Período de maior influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
+                <span style="color:#28a745; font-weight: bold; font-size: 20px;">📅 Período de maior influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
                 
                 <div class="texto-res" style="text-align: justify; margin-top:15px;">
                     ${aplicarFiltroTexto(textos.SeqFinanceira[999])}
