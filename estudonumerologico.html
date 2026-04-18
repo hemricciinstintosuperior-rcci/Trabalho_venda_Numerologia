@@ -3057,17 +3057,21 @@ html += `
         <h2 style="color: var(--gold); font-size: 2.4rem; letter-spacing: 6px; text-transform: uppercase; margin: 0; font-weight: 300;">
             Sumário
         </h2>
-
+        <div style="width: 50px; height: 1px; background: var(--gold); margin: 10px auto;"></div>
+        <p style="font-size: 0.8rem; color: #d97a1e; letter-spacing: 4px; text-transform: uppercase; font-weight: bold; opacity: 0.8; margin: 0;">
+            Perspectiva Evolutiva
+        </p>
+    </div>
 
     <div style="width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 25px;">
         ${[
-            { t: "Introdução", c: "Resultado Numerológico ✶ Nome Social ✶ Cabala Ancestral ✶ Direcionamento de Jornada  " },
-            { t: "Parte 1: Performance Natural", c: `Planos de Expressão ✶ Performance de Potenciais` },
-            { t: "Parte 2: Essência e Identidade", c: `Dia de Nascimento ✶ Talento ou Habilidade Oculta ✶ Motivação ✶ Aparência ou Influência ✶ Personalidade ✶ Tendência de Comportamento ✶ Comportamento de Vida ✶ Propósito ✶ Direcionamento Profissional`},
-            { t: "Parte 3: Alinhamento e Desafios", c: `Fraquezas ✶ Inibições ✶ Déficit de Comportamento ✶ Desejo Oculto ✶ Habilidades Especiais ✶ Deficiências ✶ Inclinações Ocultas ✶ Mecanismo do Subconsciente ✶ Pilar de Equilíbrio Emocional ✶ Desafio Principal`},
-            { t: "Parte 4: Trajetória e Tendências", c: `Ciclos de Vida ✶ Momento de Decisão ✶ Desafios de Jornada ✶ Fase de Maturidade ✶ Status no Momento ✶ Ciclo Atual ✶ Status Momentos ✶ Segundo Ciclo ✶ Ciclos de Trânsito ✶ Potenciais do Momento ✶ Ano Pessoal ✶ Mês Pessoal` },
-            { t: "Parte 5: A Grande Matriz", c: `Pirâmide Invertida ✶ Sequências Numéricas ✶ Potência até 100 anos` },
-            { t: "Parte 6: Filodofia, Ciência e Numerologia", c: `Contexto Histórico ✶ Conclusão Evolutiva` }
+            { t: "Introdução", c: "Cabala Ancestral e Direcionamento de Jornada" },
+            { t: "Parte 1: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais" },
+            { t: "Parte 2: Essência e Identidade", c: "Vibração do Dia ✶ Motivação ✶ Personalidade ✶ Propósito" },
+            { t: "Parte 3: Alinhamento e Desafios", c: "Fraquezas ✶ Habilidades ✶ Desafio Principal" },
+            { t: "Parte 4: Trajetória e Tendências", c: "Ciclos de Vida ✶ Maturidade ✶ Ano Pessoal" },
+            { t: "Parte 5: A Grande Matriz", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Potência até 100 anos" },
+            { t: "Parte 6: O Despertar do Legado", c: "Contexto Histórico e Conclusão Evolutiva" }
         ].map(item => `
             <div style="text-align: center;">
                 <h3 style="color: var(--gold); font-size: 1.6rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; font-weight: 600;">${item.t}</h3>
@@ -3083,7 +3087,6 @@ html += `
     </div>
 </div>
 `;
-
 
   html += `
     <div class="capa-transicao">
