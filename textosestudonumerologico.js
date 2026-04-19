@@ -227,7 +227,7 @@ Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização 
     <p>Ao identificar em qual fase do ciclo <strong>você</strong> se encontra, torna-se possível tomar decisões mais estratégicas sobre carreira, relacionamentos e saúde. Cada ano traz oportunidades e desafios únicos; saber aproveitá-los com consciência transforma o tempo em um aliado da evolução pessoal, garantindo que cada passo contribua para a construção de uma trajetória equilibrada e próspera.</p>`,
  
         
-        deficiencias: deficiencias: ` O que são fraquezas e inibições que precisam ser tratados em sua personalidade. Essas características podem ser comparadas a uma caixa de ferramentas onde algumas ferramentas estão disponíveis para você e outras precisam ser adquiridas.
+        deficiencias: ` O que são fraquezas e inibições que precisam ser tratados em sua personalidade. Essas características podem ser comparadas a uma caixa de ferramentas onde algumas ferramentas estão disponíveis para você e outras precisam ser adquiridas.
    
 Imagine que cada letra em seu nome é uma ferramenta que você tem disponível e que as letras faltantes em seu nome de nascimento, representam as ferramentas que não estão disponíveis e devem ser aprendidas e dominadas.
    
