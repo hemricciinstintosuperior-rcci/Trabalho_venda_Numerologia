@@ -227,15 +227,21 @@ Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização 
     <p>Ao identificar em qual fase do ciclo <strong>você</strong> se encontra, torna-se possível tomar decisões mais estratégicas sobre carreira, relacionamentos e saúde. Cada ano traz oportunidades e desafios únicos; saber aproveitá-los com consciência transforma o tempo em um aliado da evolução pessoal, garantindo que cada passo contribua para a construção de uma trajetória equilibrada e próspera.</p>`,
  
         
-        deficiencias: ` O que são fraquezas e inibições que precisam ser tratados em sua personalidade. Essas características podem ser comparadas a uma caixa de ferramentas onde algumas ferramentas estão disponíveis para você e outras precisam ser adquiridas.
-   
-Imagine que cada letra em seu nome é uma ferramenta que você tem disponível e que as letras faltantes em seu nome de nascimento, representam as ferramentas que não estão disponíveis e devem ser aprendidas e dominadas.
-   
-Corrigir nossas fraquezas e inibições faz parte de um aprendizado que leva a evolução do ser humano, e devem ser aprendidas. Obviamente, se você puder dispor de todas as ferramentas, poderá ser capaz de lidar com qualquer evento ou situação que se apresente com muito mais facilidade.
-   
-É importante entender que na numerologia moderna o que é chamado de "lições cármicas" pela numerologia antiga e mítica; na realidade não são lições, mas sim necessidades que cada ser humano possui individualmente e que lhes permite tornar sua vida muito mais fácil, prática e prazerosa.`,  
-      
-        deficits: `<p>No cenário ideal, todos compartilharíamos a mesma clareza e cumpriríamos nossas responsabilidades com precisão. Contudo, a realidade nos mostra que falhas de comportamento e atitudes impulsivas frequentemente surgem, tornando-se obstáculos que nos afastam dos resultados que tanto buscamos alcançar.</p>
+        deficiencias: `As deficiências em nosso perfil representam os pontos de sombra e as inibições que aguardam por desenvolvimento e cura em nossa jornada pessoal. No contexto da análise vibracional, elas não devem ser vistas como punições, mas sim como lacunas em nossa "caixa de ferramentas" existencial, indicando habilidades que ainda não foram totalmente integradas à nossa personalidade. Cada letra de nosso nome de nascimento carrega uma energia específica e, quando certas frequências estão ausentes, deparamo-nos com desafios práticos e emocionais que exigem um esforço consciente para serem superados.
+
+Essas ausências manifestam-se como hesitações, bloqueios ou dificuldades recorrentes em áreas específicas da vida, funcionando como um mapa exato do que precisamos aprender para evoluir. Ao identificarmos esses números faltantes, deixamos de agir por impulso cego e passamos a compreender por que certas situações parecem tão complexas para nós. O trabalho de correção e domínio sobre essas fraquezas é o que permite a transformação de um ser limitado em uma pessoa plena e capaz de transitar por qualquer circunstância.
+
+Na perspectiva moderna, abandonamos o peso de conceitos antigos como "lições cármicas" para abraçar a ideia de necessidades de aprimoramento que tornam a existência mais fluida. Adquirir essas novas competências é como adicionar novos recursos ao nosso repertório, garantindo que tenhamos a ferramenta certa para cada novo desafio. Dominar essas inibições é um ato de liberdade, pois retira os obstáculos internos que nos impedem de acessar nosso potencial máximo. 
+
+Portanto, encarar as deficiências é o primeiro passo para uma vida mais prazerosa, prática e em total harmonia com o propósito de crescimento contínuo. Ao preenchermos esses vazios com autoconhecimento e prática, transformamos a falta em força e a hesitação em maestria absoluta sobre nosso destino. Desenvolver essas competências ausentes exige paciência e uma observação atenta aos padrões de comportamento que nos limitam no dia a dia.
+
+Quando abraçamos o desafio de integrar essas novas ferramentas, paramos de lutar contra as mesmas dificuldades e começamos a construir uma base sólida para o sucesso. A jornada de maestria sobre as próprias fraquezas é o que diferencia o indivíduo comum daquele que manifesta plenamente sua essência. Cada passo dado em direção à correção dessas inibições reflete uma maior clareza mental e uma capacidade renovada de lidar com as pressões externas. 
+
+A verdadeira evolução ocorre quando deixamos de esconder nossas faltas e passamos a tratá-las como oportunidades de expansão de consciência. Ao dominar cada ferramenta que antes faltava, você se torna o arquiteto de uma realidade muito mais rica e sem as amarras do passado. Esse processo de lapidação pessoal é contínuo e garante que a sua expressão no mundo seja autêntica, forte e livre de bloqueios inconscientes. Alcançar esse equilíbrio é o que permite que a vida flua com leveza, transformando o que era deficiência em um diferencial de sabedoria.`,
+
+
+ 
+ deficits: `<p>No cenário ideal, todos compartilharíamos a mesma clareza e cumpriríamos nossas responsabilidades com precisão. Contudo, a realidade nos mostra que falhas de comportamento e atitudes impulsivas frequentemente surgem, tornando-se obstáculos que nos afastam dos resultados que tanto buscamos alcançar.</p>
 
 <p>A Numerologia Moderna fundamenta-se no conceito de continuidade existencial. Sob essa perspectiva, embora atravessemos diversas experiências, mantemos uma identidade única ao longo do tempo. Nessa jornada, acumulamos sabedoria por meio de acertos, mas também carregamos as marcas de escolhas menos alinhadas ao nosso propósito.</p>
 
