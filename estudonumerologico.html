@@ -4121,19 +4121,27 @@ if(dadosNegativas.detalhes.length > 0){
 
         const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
 
-HtmlPiramide += `
-             <div class="evitar-corte" style="margin-bottom: 25px; border-left:none; padding-left: 15px; text-align: center;">
-               <h2 style="color:red; font-size: 22px;">Bloqueio n° ${neg.numero} ⚠️</h2></b><br>
-                <span style="color:red; font-weight: bold; font-size: 21px;">📅 Período de maior influência: de ${datas.ini} até ${datas.fim}</span><br><br>
-                <span style="color:red; font-weight: bold; font-size: 21px;">Tempo : ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
-                
-                <div class="conteudo-travado" style="text-align: left; font-size: 18px; line-height: 1.6;">
-                <p style="margin-top: 8px; color: #222;">${aplicarFiltroTexto(textos.SeqNegVida[neg.numero])}</p>
-                 </div>
+htmlPiramide += `
+    <div class="evitar-corte" style="margin-bottom: 35px; border-left:none; padding: 15px; text-align: center;">
+        
+        <h2 style="color:red; font-size: 24px; margin-bottom: 10px;">Bloqueio n° ${neg.numero} ⚠️</h2>
+        <span style="color:red; font-weight: bold; font-size: 21px; display: block; margin-bottom: 5px;">
+            📅 Período de maior influência: de ${datas.ini} até ${datas.fim}
+        </span>
+        <span style="color:red; font-weight: bold; font-size: 21px; display: block; margin-bottom: 20px;">
+            Tempo: ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)
+        </span>
 
-                 <div class="aviso-trava">
+        <div class="conteudo-travado" style="text-align: left; font-size: 18px; line-height: 1.7; color: #222;">
+            <p style="margin-top: 8px;">
+                ${aplicarFiltroTexto(textos.SeqNegVida[neg.numero])}
+            </p>
+        </div>
+
+        <div class="aviso-trava" style="margin-top: 20px; font-weight: bold; color: #666;">
             🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
-         </div></div>`;
+        </div>
+    </div>`;
     });
 }
 
