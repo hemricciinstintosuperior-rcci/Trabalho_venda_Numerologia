@@ -227,14 +227,13 @@ Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização 
     <p>Ao identificar em qual fase do ciclo <strong>você</strong> se encontra, torna-se possível tomar decisões mais estratégicas sobre carreira, relacionamentos e saúde. Cada ano traz oportunidades e desafios únicos; saber aproveitá-los com consciência transforma o tempo em um aliado da evolução pessoal, garantindo que cada passo contribua para a construção de uma trajetória equilibrada e próspera.</p>`,
  
         
-        deficiencias: ` O que são fraquezas e inibições que precisam ser tratados em sua personalidade. Essas características podem ser comparadas a uma caixa de ferramentas onde algumas ferramentas estão disponíveis para você e outras precisam ser adquiridas.
+        deficiencias: deficiencias: ` O que são fraquezas e inibições que precisam ser tratados em sua personalidade. Essas características podem ser comparadas a uma caixa de ferramentas onde algumas ferramentas estão disponíveis para você e outras precisam ser adquiridas.
    
 Imagine que cada letra em seu nome é uma ferramenta que você tem disponível e que as letras faltantes em seu nome de nascimento, representam as ferramentas que não estão disponíveis e devem ser aprendidas e dominadas.
    
 Corrigir nossas fraquezas e inibições faz parte de um aprendizado que leva a evolução do ser humano, e devem ser aprendidas. Obviamente, se você puder dispor de todas as ferramentas, poderá ser capaz de lidar com qualquer evento ou situação que se apresente com muito mais facilidade.
    
-É importante entender que na numerologia moderna o que é chamado de "lições cármicas" pela numerologia antiga e mítica; na realidade não são lições, mas sim necessidades que cada ser humano possui individualmente e que lhes permite tornar sua vida muito mais fácil, prática e prazerosa.`,
-        
+É importante entender que na numerologia moderna o que é chamado de "lições cármicas" pela numerologia antiga e mítica; na realidade não são lições, mas sim necessidades que cada ser humano possui individualmente e que lhes permite tornar sua vida muito mais fácil, prática e prazerosa.`,  
       
         deficits: `<p>No cenário ideal, todos compartilharíamos a mesma clareza e cumpriríamos nossas responsabilidades com precisão. Contudo, a realidade nos mostra que falhas de comportamento e atitudes impulsivas frequentemente surgem, tornando-se obstáculos que nos afastam dos resultados que tanto buscamos alcançar.</p>
 
