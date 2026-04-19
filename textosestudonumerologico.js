@@ -294,10 +294,15 @@ Se o número do Momento Decisivo coincide com o número de uma de suas Fraquezas
 
  
         
-        desafios: `Os Desafios representam padrões de aprendizado e superação que acompanham a pessoa ao longo da vida. Eles indicam áreas onde podem surgir obstáculos, inseguranças, medos ou dificuldades que precisam ser compreendidos e trabalhados.
-Esses desafios não devem ser vistos como limitações permanentes, mas como oportunidades de crescimento e desenvolvimento pessoal. Ao reconhecer essas tendências, torna-se possível agir com mais consciência, fortalecer qualidades internas e transformar dificuldades em maturidade e experiência.
-Cada desafio mostra uma etapa específica do processo de evolução e revela quais atitudes favorecem o equilíbrio e a superação.  
- ​`,
+        desafios: `<p>Os Desafios Temporários representam ciclos específicos de aprendizado que possuem um tempo determinado para acontecer em sua jornada. Diferente do desafio principal, que é uma constante vitalícia, estas vibrações surgem como etapas de treinamento intensivo, vinculadas aos seus ciclos de vida. O Primeiro Desafio geralmente acompanha a fase da juventude e do desenvolvimento inicial, enquanto o Segundo Desafio surge na maturidade para refinar aspectos mais profundos da sua personalidade e competências sociais.</p>
+
+<p>Cada um desses desafios atua como uma barreira necessária que, uma vez superada, libera uma nova camada de potencial e maturidade. Eles são dinâmicos e possuem um prazo de validade em seu mapa; ou seja, eles têm um início, um meio e um fim bem definidos pela cronologia numerológica. Durante o período em que estão ativos, você sentirá uma pressão maior em áreas específicas, sendo convidado a desenvolver ferramentas que antes estavam adormecidas ou que eram desconhecidas por você.</p>
+
+<p>A transição entre o primeiro e o segundo desafio marca um momento de grande evolução, pois indica que uma lição foi processada e agora a alma está pronta para um novo nível de complexidade. É fundamental compreender que esses obstáculos temporários não visam punir, mas sim moldar o caráter para que você esteja preparado para as fases seguintes. Quando o tempo de um desafio se encerra, a resistência diminui, deixando em seu lugar a sabedoria e a experiência adquiridas através do esforço consciente.</p>
+
+<p>Enfrentar essas fases com clareza permite que você não se sinta sobrecarregado pelas dificuldades do momento, sabendo que elas são passageiras e funcionais. Eles funcionam como "portais de competência" que precisam ser atravessados para que a vida flua com a naturalidade desejada. Ao identificar em qual ciclo de desafio você se encontra atualmente, torna-se muito mais fácil direcionar sua energia para resolver as pendências emocionais ou práticas que aquela frequência específica está exigindo de você no agora.</p>
+
+<p>Portanto, os Desafios Temporários são convites para uma transformação rápida e focada, garantindo que você não estagne em sua evolução pessoal. Ao dominar as lições de cada período, você constrói uma base sólida de resiliência que servirá de apoio para enfrentar o desafio principal de forma muito mais íntegra. Esta dinâmica de tempo e aprendizado é o que traz movimento à vida, transformando cada ciclo de anos em uma oportunidade única de se tornar uma versão mais completa, preparada e consciente de si mesmo.</p>`,
         
         // Nova chave para os Gráficos do Ano
     statusAnual: "O Status do Momento revela a configuração do seu plano de Expressão para o ano vigente. Diferente do seu Plano Natural, esta análise identifica quais áreas da sua vida estão recebendo carga extra de energia e quais exigem maior cautela estratégica no ciclo atual.",
