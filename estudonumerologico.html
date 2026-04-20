@@ -2622,7 +2622,7 @@ function gerarCronogramaMensal(valorAnoPessoal, mesNascimento) {
         if (dados) {
             htmlGerado += `
             <div style="margin-bottom: 25px; border: 1px solid #d4af37; background: #fff; page-break-inside: avoid; border-radius: 8px; overflow: hidden;">
-             <h3>Planejamento Mensal: Ano ${proximoAnoPessoal}</h3>
+            
                 <div style="background: #1a1a1a; padding: 10px 15px; display: flex; justify-content: space-between; align-items: center;">
                
                     <strong style="color: #d4af37; text-transform: uppercase;">${nomeMes}</strong>
@@ -3937,7 +3937,8 @@ html += `
 <div class="page">
  
    
-    <div class="texto-res">
+    <div class="texto-res"> 
+    <h3>Planejamento Mensal: Ano ${proximoAnoPessoal}</h3>
         <p style="text-align:center; margin-bottom:20px;">Projeção para o ciclo seguinte, iniciando no seu próximo aniversário.</p>
         <div class="conteudo-travado">
         ${cronogramaProximoHTML}
