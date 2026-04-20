@@ -3871,7 +3871,7 @@ const anoAtualParaCronograma = res.anoPessoal;
 // =========================================================
 
 // Título Ano Atual
-tituloBonito = "Ano Pessoal - Ciclo Atual";  
+tituloBonito = "Ano Pessoal";  
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -3883,7 +3883,18 @@ html += `
     <div class="resultado-bloco">
         <div class="intro-texto" style="margin-bottom:15px; font-style:arial; color:#555;">
             ${aplicarFiltroTexto(textos.introducoes.anoPessoal || "")}
-        </div>
+        </div>`;
+
+        // Título Ano Atual
+tituloBonito = "Ano Pessoal + Planejamento Mensal<br> Ciclo Atual";  
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${nomesExibicao.anoPessoal} - Ciclo Atual</h2>
         <h3 class="vigencia-texto" style="color: #666; font-weight: bold; margin-bottom: 15px;">
             Vigência: ${vigenciaCiclo1}
         </h3>
@@ -3893,11 +3904,8 @@ html += `
 
 // Título Meses do Ano Atual
 const cronogramaAtualHTML = gerarCronogramaMensal(anoAtualParaCronograma, mesParaCronograma);
+    
 html += `
-
-        
-   
-
 <div class="page"><h3>Planejamento Mensal: Ano Pessoal ${anoAtualParaCronograma}</h3>
     <div class="texto-res">
         <p style="text-align:center; margin-bottom:20px;">Este ciclo inicia no mês do seu aniversário e mostra as vibrações até o fechamento do seu ano pessoal atual.</p>
@@ -3938,7 +3946,7 @@ html += `
  
    
     <div class="texto-res"> 
-    <h3>Planejamento Mensal: Ano ${proximoAnoPessoal}</h3>
+    <h3style="text-align:center; margin-bottom:20px;">Planejamento Mensal: Ano ${proximoAnoPessoal}</h3>
         <p style="text-align:center; margin-bottom:20px;">Projeção para o ciclo seguinte, iniciando no seu próximo aniversário.</p>
         <div class="conteudo-travado">
         ${cronogramaProximoHTML}
