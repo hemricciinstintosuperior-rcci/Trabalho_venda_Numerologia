@@ -2622,9 +2622,11 @@ function gerarCronogramaMensal(valorAnoPessoal, mesNascimento) {
         if (dados) {
             htmlGerado += `
             <div style="margin-bottom: 25px; border: 1px solid #d4af37; background: #fff; page-break-inside: avoid; border-radius: 8px; overflow: hidden;">
+             <h3>Planejamento Mensal: Ano ${proximoAnoPessoal}</h3>
                 <div style="background: #1a1a1a; padding: 10px 15px; display: flex; justify-content: space-between; align-items: center;">
+               
                     <strong style="color: #d4af37; text-transform: uppercase;">${nomeMes}</strong>
-                    <span style="background: #d4af37; color: #1a1a1a; padding: 2px 10px; border-radius: 20px; font-weight: bold; font-size: 0.8rem;">MÊS PESSOAL ${numMP}</span>
+                    <span style="background: #d4af37; color: #1a1a1a; padding: 2px 10px; border-radius: 20px; font-weight: bold; font-size: 0.9rem;">MÊS PESSOAL ${numMP}</span>
                 </div>
                 
                 <div style="padding: 15px; font-size: 1.2rem; line-height: 1.5; color: #333;">
@@ -3892,12 +3894,11 @@ html += `
 // Título Meses do Ano Atual
 const cronogramaAtualHTML = gerarCronogramaMensal(anoAtualParaCronograma, mesParaCronograma);
 html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>Planejamento Mensal: Ano Pessoal ${anoAtualParaCronograma}</h2>
-    </div>
-</div>
-<div class="page">
+
+        
+   
+
+<div class="page"><h3>Planejamento Mensal: Ano Pessoal ${anoAtualParaCronograma}</h3>
     <div class="texto-res">
         <p style="text-align:center; margin-bottom:20px;">Este ciclo inicia no mês do seu aniversário e mostra as vibrações até o fechamento do seu ano pessoal atual.</p>
         ${cronogramaAtualHTML}
@@ -3910,7 +3911,7 @@ html += `
 // =========================================================
 
 // Título Próximo Ano
-tituloBonito = "Ano Pessoal - Próximo Ciclo";  
+tituloBonito = "Ano Pessoal + Planejamento Mensal<br> Próximo Ciclo";  
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -3934,7 +3935,7 @@ html += `
        
  
 <div class="page">
- <h2>Planejamento Mensal: Ano Pessoal ${proximoAnoPessoal}</h2>
+ 
    
     <div class="texto-res">
         <p style="text-align:center; margin-bottom:20px;">Projeção para o ciclo seguinte, iniciando no seu próximo aniversário.</p>
