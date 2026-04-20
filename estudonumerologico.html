@@ -3890,7 +3890,7 @@ html += `
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
-        <h2>Ano Pessoal ${nomesExibicao.anoPessoal} + Planejamento Mensal<br> Ciclo Atual</h2>
+        <h2> ${nomesExibicao.anoPessoal} + Planejamento Mensal<br> Ciclo Atual</h2>
     </div>
 </div>
 <div class="page">
@@ -3908,7 +3908,7 @@ const cronogramaAtualHTML = gerarCronogramaMensal(anoAtualParaCronograma, mesPar
 html += `
 <div class="page"><h3 style="text-align:center; margin-bottom:20px;">Planejamento Mensal: Ano Pessoal ${anoAtualParaCronograma}</h3>
     <div class="texto-res">
-        <p style="text-align:center; margin-bottom:20px;">Este ciclo inicia no mês do seu aniversário e mostra as vibrações até o fechamento do seu ano pessoal atual.</p>
+        <p style="text-align:center; margin-bottom:0px;">Este ciclo inicia no mês do seu aniversário e mostra as vibrações até o fechamento do seu ano pessoal atual.</p>
         ${cronogramaAtualHTML}
     </div>
 </div>`;
@@ -3922,7 +3922,7 @@ html += `
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
-        <h2>Ano Pessoal: ${nomesExibicao.anoPessoal} + Planejamento Mensal<br> Próximo Ciclo</h2>
+        <h2>${nomesExibicao.anoPessoal} + Planejamento Mensal<br> Próximo Ciclo</h2>
     </div>
 </div>
 <div class="page">
@@ -3945,8 +3945,8 @@ html += `
  
    
     <div class="texto-res"> 
-    <h3 style="text-align:center; margin-bottom:20px;">Planejamento Mensal: Ano ${proximoAnoPessoal}</h3>
-        <p style="text-align:center; margin-bottom:20px;">Projeção para o ciclo seguinte, iniciando no seu próximo aniversário.</p>
+    <h3 style="text-align:center; margin-bottom:20px;">Planejamento Mensal</h3>
+        <p style="text-align:center; margin-bottom:0px;">Projeção para o ciclo seguinte, iniciando no seu próximo aniversário.</p>
         <div class="conteudo-travado">
         ${cronogramaProximoHTML}
         </div>
