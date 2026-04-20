@@ -2627,7 +2627,7 @@ function gerarCronogramaMensal(valorAnoPessoal, mesNascimento) {
                     <span style="background: #d4af37; color: #1a1a1a; padding: 2px 10px; border-radius: 20px; font-weight: bold; font-size: 0.8rem;">MÊS PESSOAL ${numMP}</span>
                 </div>
                 
-                <div style="padding: 15px; font-size: 0.9rem; line-height: 1.5; color: #333;">
+                <div style="padding: 15px; font-size: 1.2rem; line-height: 1.5; color: #333;">
                     <p style="color: #b8860b; font-weight: bold; font-size: 1.1rem; margin-bottom: 10px;">${dados.titulo}</p>
                     
                     <p style="margin-bottom: 8px;"><strong>👤 Pessoal:</strong> ${dados.pessoal}</p>
@@ -3038,14 +3038,14 @@ let html = `
     font-size: 28px; 
     text-transform: uppercase; 
     letter-spacing: 2px; 
-    color: #827108; 
+    color: #ffffff; 
     font-weight: bold;">${nomeRaw}</strong><br>
                 <strong style="
     font-family: 'Cinzel', serif; 
     font-size: 28px; 
     text-transform: uppercase; 
     letter-spacing: 2px; 
-    color: #827108; 
+    color: #ffffff; 
     font-weight: bold;"> ${dataRaw.split('-').reverse().join('/')}</strong>
             </div>
             
@@ -3305,7 +3305,7 @@ if (nomeSocialValor !== "") {
 </div>
 
 <div style="background: #f9f9f9; padding: 12px; border-radius: 8px; border-left: 4px solid var(--gold); font-size: 18px; margin-top: 5px;">
-    <p style="margin-bottom: 5px;"><strong>Vontade Interna:</strong> ${aplicarFiltroTexto(tMot)}</p>
+    <p style="margin-bottom: 5px;"><strong>Vontade Interna:</strong> ${aplicarFiltroTexto(tMot)}</p><br>
     <p style="margin: 0;"><strong>Imagem Externa:</strong> ${aplicarFiltroTexto(tImp)}</p>
 </div>
             
@@ -3879,7 +3879,7 @@ html += `
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${nomesExibicao.anoPessoal} - Ciclo Atual</h2>
     <div class="resultado-bloco">
-        <div class="intro-texto" style="margin-bottom:15px; font-style:italic; color:#555;">
+        <div class="intro-texto" style="margin-bottom:15px; font-style:arial; color:#555;">
             ${aplicarFiltroTexto(textos.introducoes.anoPessoal || "")}
         </div>
         <h3 class="vigencia-texto" style="color: #666; font-weight: bold; margin-bottom: 15px;">
