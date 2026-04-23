@@ -3531,62 +3531,6 @@ html += `
     `;
 }); // <--- AQUI ESTAVA FALTANDO FECHAR O FOREACH
 
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>Direcionamento Profissional</h2>
-    </div>
-</div>
-
-<div class="page">
-    <div class="texto-res">
-        ${introProfissionalTexto}
-        ${blocoProfissionalHTML}
-    </div>
-</div>
-`;
-
-
-
-// --- INÍCIO DO PILAR 02 ORGANIZADO ---
-html += `
-    <div class="capa-transicao">
-        <p>  </p>
-        <h2>Parte 3 <br><br>Alinhamento & <br> Superação de Desafios</h2>
-        <p>Onde a luz encontra a sombra: lições de Vida e mecanismos do subconsciente para o seu equilíbrio.</p>
-    </div>
-`;
-
- tituloBonito = "fraquezas e inibições";   
-// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>
-`;
-
-    
-// A. LIÇÕES CÁRMICAS
-html += `
-    <div class="page">
-        <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">fraquezas e inibições </h2>
-        <div class="intro-texto">${textos.introducoes.deficiencias}</div>
-`;
-if (res.deficiencias.length > 0) {
-    html += `<div class="grupo-respostas-bloco pula-pagina">`;
-    res.deficiencias.forEach(f => {
-        html += `
-        <div class="texto-res"> ${aplicarFiltroTexto(textos.deficiencias[f])}</p><hr style="border:0; border-top:1px solid #ffffff"></div>`;
-    });
-html += `</div>`;
-    
-} else { html += `<p>Nenhuma deficiência encontrada.</p>`; }
-html += `</div>`;
-
-
-
 // --- INCLUSÃO: DESEJO OCULTO E TALENTOS ESPECIAIS ---
 const dadosDesejo = calcularDesejoOculto(nomeRaw);
 const primeiroNome = nomeRaw.split(' ')[0];
@@ -3615,9 +3559,41 @@ html += `
             <span class="numero-destaque" style="font-size: 2.5rem; font-weight: bold;"></span>
         </div>
         <div class="texto-res">${aplicarFiltroTexto(textos.desejoOculto[dadosDesejo.numero])}</div>
-    </div>`
+    </div>`;
 
+// Removemos o "equilibrio" daqui para ele não causar erro nos outros
+const itensAlinhamento = ["inclinacoes", "subconsciente"];
 
+itensAlinhamento.forEach(chave => {
+    const tituloBonito = nomesExibicao[chave] || chave;
+    let conteudoFinal = "";
+
+    if (chave === "inclinacoes") {
+        if (res.inclinacoes && res.inclinacoes.length > 0) {
+            res.inclinacoes.forEach(num => {
+                conteudoFinal += `<div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.inclinacoes[num])}</p><hr style="border:0; border-top:1px dotted #ffffff"></div>`;
+            });
+        } else {
+            conteudoFinal = "<p>Nenhuma inclinação específica detectada.</p>";
+        }
+    } else {
+        // Trata apenas o Subconsciente aqui
+        const valSub = res[chave];
+        conteudoFinal = (textos[chave] && textos[chave][valSub]) 
+            ? `<div class="evitar-corte texto-res">${aplicarFiltroTexto(textos[chave][valSub])}</div>`
+            : `<p>Dados não localizados.</p>`;
+    }
+
+    // Montagem do HTML padrão para Inclinações e Subconsciente
+    html += `
+        <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
+        <div class="page">
+            <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+            <div class="intro-texto">${textos.introducoes[chave] || ""}</div>
+            ${conteudoFinal}
+        </div>
+    `;
+});
 
 // --- INÍCIO DO BLOCO DO EQUILÍBRIO ---
 
@@ -3703,43 +3679,87 @@ html += `
     </div>
 `;
     
+    
+    
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>Direcionamento Profissional</h2>
+    </div>
+</div>
 
-// Removemos o "equilibrio" daqui para ele não causar erro nos outros
-const itensAlinhamento = ["inclinacoes", "subconsciente"];
+<div class="page">
+    <div class="texto-res">
+        ${introProfissionalTexto}
+        ${blocoProfissionalHTML}
+    </div>
+</div>
+`;
 
-itensAlinhamento.forEach(chave => {
-    const tituloBonito = nomesExibicao[chave] || chave;
-    let conteudoFinal = "";
-
-    if (chave === "inclinacoes") {
-        if (res.inclinacoes && res.inclinacoes.length > 0) {
-            res.inclinacoes.forEach(num => {
-                conteudoFinal += `<div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.inclinacoes[num])}</p><hr style="border:0; border-top:1px dotted #ffffff"></div>`;
-            });
-        } else {
-            conteudoFinal = "<p>Nenhuma inclinação específica detectada.</p>";
-        }
-    } else {
-        // Trata apenas o Subconsciente aqui
-        const valSub = res[chave];
-        conteudoFinal = (textos[chave] && textos[chave][valSub]) 
-            ? `<div class="evitar-corte texto-res">${aplicarFiltroTexto(textos[chave][valSub])}</div>`
-            : `<p>Dados não localizados.</p>`;
-    }
-
-    // Montagem do HTML padrão para Inclinações e Subconsciente
-    html += `
-        <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
-        <div class="page">
-            <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-            <div class="intro-texto">${textos.introducoes[chave] || ""}</div>
-            ${conteudoFinal}
-        </div>
-    `;
-});
+// 2. INSERIR A MATURIDADE AQUI (Como você pediu)
+const tituloMat = nomesExibicao["Maturidade"] || "Fase de Maturidade";
+   // Crie esta linha logo ACIMA do código da ondinha:
+ tituloBonito = "FASE DE MATURIDADE";  
+// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+`;
 
 
     
+html += `
+    <div class="page">
+        <h2 class="titulo-topico" style="border-bottom: 1px solid var(--gold);">${tituloMat}</h2>
+        <div class="intro-texto">${textos.introducoes.Maturidade || ""}</div>
+        <div class="texto-res">${aplicarFiltroTexto(textos.Maturidade[res.Maturidade])}</div>
+    </div>
+`;
+
+
+// --- INÍCIO DO PILAR 02 ORGANIZADO ---
+html += `
+    <div class="capa-transicao">
+        <p>  </p>
+        <h2>Parte 3 <br><br>Alinhamento & <br> Superação de Desafios</h2>
+        <p>Onde a luz encontra a sombra: lições de Vida e mecanismos do subconsciente para o seu equilíbrio.</p>
+    </div>
+`;
+
+ tituloBonito = "fraquezas e inibições";   
+// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+`;
+
+    
+// A. LIÇÕES CÁRMICAS
+html += `
+    <div class="page">
+        <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">fraquezas e inibições </h2>
+        <div class="intro-texto">${textos.introducoes.deficiencias}</div>
+`;
+if (res.deficiencias.length > 0) {
+    html += `<div class="grupo-respostas-bloco pula-pagina">`;
+    res.deficiencias.forEach(f => {
+        html += `
+        <div class="texto-res"> ${aplicarFiltroTexto(textos.deficiencias[f])}</p><hr style="border:0; border-top:1px solid #ffffff"></div>`;
+    });
+html += `</div>`;
+    
+} else { html += `<p>Nenhuma deficiência encontrada.</p>`; }
+html += `</div>`;
+
+
+
+   
 
 
 
@@ -3800,6 +3820,7 @@ html += `
     </div>
 `;    
     
+
 
 // 1. CAPA PARA O BLOCO DE TEMPO
 html += `
@@ -3872,29 +3893,6 @@ html += `
 
 
     
-// 2. INSERIR A MATURIDADE AQUI (Como você pediu)
-const tituloMat = nomesExibicao["Maturidade"] || "Fase de Maturidade";
-   // Crie esta linha logo ACIMA do código da ondinha:
- tituloBonito = "FASE DE MATURIDADE";  
-// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>
-`;
-
-
-    
-html += `
-    <div class="page">
-        <h2 class="titulo-topico" style="border-bottom: 1px solid var(--gold);">${tituloMat}</h2>
-        <div class="intro-texto">${textos.introducoes.Maturidade || ""}</div>
-        <div class="texto-res">${aplicarFiltroTexto(textos.Maturidade[res.Maturidade])}</div>
-    </div>
-`;
-
 
             
 
