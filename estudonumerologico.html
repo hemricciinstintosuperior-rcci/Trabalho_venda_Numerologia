@@ -2715,6 +2715,77 @@ function calcularNumerosSocial(nome) {
     };
 }
 
+
+
+// 1. CORES FAVORÁVEIS (Baseado na Foto 3)
+// Usa a "Expressão" (que você chama de Personalidade)
+function obterCoresFavoraveis(numExpressao) {
+    const tabelaCores = {
+        1: "Tons de amarelo e laranja, marrom, dourado, verde, creme e branco",
+        2: "Tons de verde, creme, branco e cinza. Evitar cores escuras (preto, púrpura, vermelho escuro)",
+        3: "Violeta, vinho púrpura e vermelho. Tons de azul e rosa como secundárias",
+        4: "Azul, cinza, púrpura e dourado",
+        5: "Todas as cores claras, principalmente o branco, cinza e prata",
+        6: "Rosa, azul e verde. Evitar cores escuras ao máximo",
+        7: "Verde, amarelo, branco, cinza e azul claro. Evitar cores escuras",
+        8: "Púrpura, azul, cinza, preto e marrom. Evitar cores claras em roupas",
+        9: "Vermelho, rosa, coral e vinho",
+        11: "Branco, violeta e todas as cores claras",
+        22: "Vermelho, rosa, coral e vinho"
+    };
+    return tabelaCores[numExpressao] || "Consulte a tabela de cores.";
+}
+
+// 2. NÚMEROS HARMÔNICOS (Baseado na Foto 4)
+// Usa o Dia de Nascimento reduzido
+function obterNumerosHarmonicos(diaNascimento) {
+    const res = reduzirPuro(diaNascimento);
+    const tabela = {
+        1: "2, 4 e 9",
+        2: "1, 2, 3, 4, 5, 6, 7, 8 e 9",
+        3: "2, 3, 6, 8 e 9",
+        4: "1, 2, 6 e 7",
+        5: "2, 5, 6, 7 e 9",
+        6: "2, 3, 4, 5, 6 e 9",
+        7: "2, 4, 5 e 7",
+        8: "2, 3 e 9",
+        9: "1, 2, 3, 5, 6, 8 e 9"
+    };
+    return tabela[res] || res;
+}
+
+// Retorna todos os dias do mês que possuem o mesmo radical do dia de nascimento
+function obterDiasFavoraveisRessonancia(diaNascimento) {
+    const radicalAlvo = reduzirPuro(diaNascimento);
+    let diasResultantes = [];
+    
+    for (let i = 1; i <= 31; i++) {
+        // Se o dia do calendário reduz para o mesmo número do nascimento
+        if (reduzirPuro(i) === radicalAlvo) {
+            diasResultantes.push(i);
+        }
+    }
+    return diasResultantes;
+}
+
+function obterDiaSemanaVibracional(diaNascimento) {
+    const radical = reduzirPuro(diaNascimento);
+    const tabelaVibracional = {
+        1: "Domingo",
+        2: "Segunda-feira",
+        3: "Quinta-feira",
+        4: "Domingo",
+        5: "Quarta-feira",
+        6: "Sexta-feira",
+        7: "Segunda-feira",
+        8: "Sábado",
+        9: "Terça-feira"
+    };
+    return tabelaVibracional[radical] || "Não identificado";
+}  
+
+
+        
         
         
 function gerarMapaCompleto() {
@@ -3099,15 +3170,18 @@ html += `
         ${[
               { t: "Introdução", c: "Resultado Numerológico ✶ Nome Social ✶ Cabala Ancestral ✶ Direcionamento de Jornada"},
             { t: "Parte 1: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais"},
-            { t: "Parte 2: Essência e Identidade", c: "Dia de Nascimento ✶ Talento ou Habilidade Oculta ✶ Motivação ✶ Aparência ou Influência ✶ Personalidade ✶ Tendência de Comportamento ✶ Comportamento de Vida ✶ Propósito ✶ Direcionamento Profissional"},
-            { t: "Parte 3: Alinhamento e Desafios",   c: "Fraquezas ✶ Inibições ✶ Déficit de Comportamento ✶ Desejo Oculto ✶ Habilidades Especiais ✶ Deficiências ✶ Inclinações Ocultas ✶ Mecanismo do Subconsciente ✶ Pilar de Equilíbrio Emocional ✶ Desafio Principal"},
-            { t: "Parte 4: Trajetória e Tendências", c: "Ciclos de Vida ✶ Momento de Decisão ✶ Desafios de Jornada ✶ Fase de Maturidade ✶ Status no Momento ✶ Ciclo Atual ✶ Status Momentos ✶ Segundo Ciclo ✶ Ciclos de Trânsito ✶ Potenciais do Momento ✶ Ano Pessoal ✶ Mês Pessoal"}, 
-            { t: "Parte 5: A Grande Matriz", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Potência até 100 anos"},
-            { t: "Parte 6: Filosofia e Ciência", c: "Contexto Histórico ✶ Conclusão Evolutiva ✶ Agradecimento"}
+            { t: "Parte 2: Essência e Identidade", c: "Dia de Nascimento ✶ Talento ou Habilidade Oculta ✶ Motivação ✶ Aparência ou Influência ✶ Personalidade ✶ Tendência de Comportamento ✶ Desejo Oculto ✶ Habilidades Especiais ✶  Inclinações Ocultas ✶  Pilar de Equilíbrio Emocional"},
+            { t: "Parte 3: Finalidade e Realização", c: "✶ Caminho de Vida ✶ Propósito ✶ Direcionamento Profissional ✶ Fase de Maturidade"},
+            { t: "Parte 4: Alinhamento e Desafios",   c: "Fraquezas e Inibições ✶ Mecanismo do Subconsciente ✶ Déficit de Comportamento ✶ Desafio Principal"},
+            { t: "Parte 5: Complementares", c: " ✶  ✶ Número de Relacionamento ✶ Cores Favoráveis ✶ Dias de Poder do Mês ✶ Números harmonicos"}, 
+            { t: "Parte 6: Ciclos", c: "Ciclos de Vida ✶ Momento de Decisão ✶ Desafios de Jornada"},
+            { t: "Parte 7:  Tendências do Momento", c: "Status no Momento ✶ Ciclo Atual ✶ Status nos Momentos do Segundo Ciclo ✶ Ciclos de Trânsito ✶ Potenciais do Momento ✶ Ano Pessoal ✶ Mês Pessoal""},
+            { t: "Parte 8: A Grande Matriz", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Potências até 100 anos de idade"},
+            { t: "Parte 9: Filosofia e Ciência", c: "Contexto Histórico ✶ Conclusão Evolutiva ✶ Agradecimento"}
         ].map(item => `
             <div style="text-align: center;">
                 <h3 style="color: var(--gold); font-size: 1.6rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; font-weight: 600;">${item.t}</h3>
-                <p style="color: #333; font-size: 1.6rem; margin: 0; line-height: 1.4;">${item.c}</p>
+                <p style="color: #333; font-size: 1.2rem; margin: 0; line-height: 1.4;">${item.c}</p>
             </div>
         `).join('')}
     </div>
@@ -3123,7 +3197,7 @@ html += `
   html += `
     <div class="capa-transicao">
         <p>  </p>
-        <h2>Introdução<br>Resultado, Nome Social & <br>  Direcionamento</h2>
+        <h2>Introdução<br><br>Resultado, Nome Social & <br>  Direcionamento</h2>
         <p>Resultado Numerológico ✶ Nome Social ✶ Cabala Ancestral ✶ Direcionamento de Jornada</p>
     </div>
 `;  
@@ -3147,7 +3221,7 @@ const listaItensSintese = [
     
     { label: "Talento Oculto", valor: res.talento },
     
-    { label: "Equilíbrio", valor: res.equilibrio },
+     { label: "Equilíbrio", valor: res.equilibrio },
     
     { label: "Inclinações Ocultas", valor: res.inclinacoes },
     
@@ -3450,7 +3524,7 @@ html += `
 html += `
     <div class="capa-transicao">
         <p>  </p>
-        <h2>Parte 1<br> Seus Graficos de Expressão Natural</h2>
+        <h2>Parte 1<br><br> Seus Graficos de Expressão Natural</h2>
         <p>A decodificação das Energias e Potenciais nativas que definem sua personalidade.</p>
     </div>
 `;
@@ -3497,12 +3571,12 @@ html += `
     <div class="capa-transicao">
         <p>  </p>
         <h2>Parte 2 <br>Sua Essência & <br> Identidade Numerológica</h2>
-        <p>A definição da sua personalidade e propósito original..</p>
+        <p>A definição da sua personalidade e comportamento</p>
     </div>
     `;
             
 // 1. A lista deve ter exatamente as chaves que você colocou no 'res'
-const listaPremium = ["dia",  "essencia", "talento", "motivacao", "influencia", "Personalidade", "comportamento", "Relacionamento", "CaminhodeVida", "Propósito"];
+const listaPremium = ["dia",  "essencia", "talento", "motivacao", "influencia", "Personalidade", "comportamento"];
 
 
 
@@ -3561,39 +3635,40 @@ html += `
         <div class="texto-res">${aplicarFiltroTexto(textos.desejoOculto[dadosDesejo.numero])}</div>
     </div>`;
 
-// Removemos o "equilibrio" daqui para ele não causar erro nos outros
-const itensAlinhamento = ["inclinacoes", "subconsciente"];
+// ==========================================
+// BLOCO INDIVIDUAL: INCLINAÇÕES (inclinacoes)
+// ==========================================
+tituloBonito = "Inclinações"; 
+let conteudoInclinacoes = "";
 
-itensAlinhamento.forEach(chave => {
-    const tituloBonito = nomesExibicao[chave] || chave;
-    let conteudoFinal = "";
+if (res.inclinacoes && res.inclinacoes.length > 0) {
+    res.inclinacoes.forEach(num => {
+        // Usando a chave 'inclinacoes' em minúsculo conforme seu padrão
+        conteudoInclinacoes += `
+            <div class="evitar-corte texto-res">
+                ${aplicarFiltroTexto(textos.inclinacoes[num])}
+                <hr style="border:0; border-top:1px dotted #ffffff; margin: 15px 0;">
+            </div>`;
+    });
+} else {
+    conteudoInclinacoes = "<p>Nenhuma inclinação específica detectada.</p>";
+}
 
-    if (chave === "inclinacoes") {
-        if (res.inclinacoes && res.inclinacoes.length > 0) {
-            res.inclinacoes.forEach(num => {
-                conteudoFinal += `<div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.inclinacoes[num])}</p><hr style="border:0; border-top:1px dotted #ffffff"></div>`;
-            });
-        } else {
-            conteudoFinal = "<p>Nenhuma inclinação específica detectada.</p>";
-        }
-    } else {
-        // Trata apenas o Subconsciente aqui
-        const valSub = res[chave];
-        conteudoFinal = (textos[chave] && textos[chave][valSub]) 
-            ? `<div class="evitar-corte texto-res">${aplicarFiltroTexto(textos[chave][valSub])}</div>`
-            : `<p>Dados não localizados.</p>`;
-    }
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    <div class="intro-texto">${textos.introducoes.inclinacoes || ""}</div>
+    ${conteudoInclinacoes}
+</div>
+`;
 
-    // Montagem do HTML padrão para Inclinações e Subconsciente
-    html += `
-        <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
-        <div class="page">
-            <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-            <div class="intro-texto">${textos.introducoes[chave] || ""}</div>
-            ${conteudoFinal}
-        </div>
-    `;
-});
+// ==========================================
+
 
 // --- INÍCIO DO BLOCO DO EQUILÍBRIO ---
 
@@ -3681,6 +3756,50 @@ html += `
     
     
     
+// --- INÍCIO DO PILAR 02 ORGANIZADO ---
+html += `
+    <div class="capa-transicao">
+        <p>  </p>
+        <h2>Parte 3 <br>Finalidade & <br> Realização</h2>
+        <p>Propósito, Caminho de Vida e sua Maturidade</p>
+    </div>
+`;
+
+// ==========================================
+// BLOCO INDIVIDUAL: CAMINHO DE VIDA
+// ==========================================
+tituloBonito = "Caminho de Vida"; 
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    <div class="intro-texto">${textos.introducoes.CaminhodeVida || ""}</div>
+    <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.CaminhodeVida[res.CaminhodeVida])}</div>
+</div>
+`;
+
+// ==========================================
+// BLOCO INDIVIDUAL: PROPÓSITO
+// ==========================================
+tituloBonito = "Propósito"; 
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    <div class="intro-texto">${textos.introducoes.Propósito || ""}</div>
+    <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.Propósito[res.Propósito])}</div>
+</div>
+`;
+
+
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -3696,7 +3815,7 @@ html += `
 </div>
 `;
 
-// 2. INSERIR A MATURIDADE AQUI (Como você pediu)
+ // 2. INSERIR A MATURIDADE AQUI (Como você pediu)
 const tituloMat = nomesExibicao["Maturidade"] || "Fase de Maturidade";
    // Crie esta linha logo ACIMA do código da ondinha:
  tituloBonito = "FASE DE MATURIDADE";  
@@ -3709,23 +3828,31 @@ html += `
 </div>
 `;
 
-
-    
-html += `
+  html += `
     <div class="page">
         <h2 class="titulo-topico" style="border-bottom: 1px solid var(--gold);">${tituloMat}</h2>
         <div class="intro-texto">${textos.introducoes.Maturidade || ""}</div>
         <div class="texto-res">${aplicarFiltroTexto(textos.Maturidade[res.Maturidade])}</div>
     </div>
-`;
+`;  
+   
+
+
+
+    
+
+
+
+    
+
 
 
 // --- INÍCIO DO PILAR 02 ORGANIZADO ---
 html += `
     <div class="capa-transicao">
         <p>  </p>
-        <h2>Parte 3 <br>Alinhamento & <br> Superação de Desafios</h2>
-        <p>Onde a luz encontra a sombra: lições de Vida e mecanismos do subconsciente para o seu equilíbrio.</p>
+        <h2>Parte 4 <br>Alinhamento & <br> Superação de Desafios</h2>
+        <p>Onde a luz encontra a sombra: lições de Vida e mecanismos do subconsciente.</p>
     </div>
 `;
 
@@ -3758,7 +3885,26 @@ html += `</div>`;
 html += `</div>`;
 
 
+// BLOCO INDIVIDUAL: SUBCONSCIENTE (subconsciente)
+// ==========================================
+tituloBonito = "Subconsciente"; 
+const valSub = res.subconsciente; // Pegando a variável em minúsculo
+let conteudoSubconsciente = (textos.subconsciente && textos.subconsciente[valSub]) 
+    ? `<div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.subconsciente[valSub])}</div>`
+    : `<p>Dados não localizados.</p>`;
 
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    <div class="intro-texto">${textos.introducoes.subconsciente || ""}</div>
+    ${conteudoSubconsciente}
+</div>
+`;
    
 
 
@@ -3819,16 +3965,154 @@ html += `
       
     </div>
 `;    
+
+
+// 1
+html += `
+    <div class="capa-transicao">
+        <p>  </p>
+        <h2>Parte 4 <br> Complementos & Relacionamento</h2>
+     
+        <p>Numeros harmonicos, dias favoraveis, cores atrativas e número de relacionamento</p>
+    </div>
+`;
+    
+// ==========================================
+// BLOCO INDIVIDUAL: RELACIONAMENTO
+// ==========================================
+tituloBonito = "Relacionamento"; 
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    <div class="intro-texto">${textos.introducoes.Relacionamento || ""}</div>
+    <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.Relacionamento[res.Relacionamento])}</div>
+</div>
+`;
+
+
+// Bloco dos Números Harmônicos
+const numHarmonicosRaw = obterNumerosHarmonicos(res.dia);
+const listaNums = numHarmonicosRaw.replace(' e ', ', ').split(',').map(n => n.trim());
+
+tituloBonito = "Números Harmônicos";
+html += `
+<div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    <div class="intro-texto" style="text-align: justify; line-height: 1.6;">
+        <p>Os <strong>Números Harmônicos</strong> representam as chaves de acesso à sua sorte e fluidez no mundo material. Eles são calculados a partir da raiz do seu dia de nascimento e indicam quais frequências numéricas estão em "simbiose" com o seu destino. Você deve utilizar estes números como uma bússola para escolhas estratégicas: desde a numeração de uma casa ou apartamento, a escolha de placas de veículos, até datas para assinaturas de contratos importantes e gincanas de sorte. Ao alinhar seus documentos, senhas e até números de telefone com estas vibrações, você cria um escudo de proteção e um canal de menor resistência para a prosperidade. Estes números não são meras coincidências, mas sim o seu código de acesso pessoal para que o universo reconheça suas intenções e facilite a conquista de prêmios, reconhecimento e sucesso em suas empreitadas.</p>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px;">
+        ${listaNums.map(n => `
+            <div style="width: 70px; height: 70px; border: 3px solid var(--gold); border-radius: 50%; 
+                        display: flex; align-items: center; justify-content: center; 
+                        font-size: 2em; font-weight: bold; color: var(--gold); 
+                        background: rgba(218, 165, 32, 0.1); box-shadow: 0 0 15px rgba(218, 165, 32, 0.4);">
+                ${n}
+            </div>
+        `).join('')}
+    </div>
+    
+    <p style="text-align: center; margin-top: 30px; font-style: italic; color: #888;">
+        "A sorte é o encontro da preparação com a frequência numérica correta."
+    </p>
+</div>
+`;
+
+
+// Bloco das Cores Favoráveis
+const textoCoresRaw = obterCoresFavoraveis(res.Personalidade);
+const coresArray = textoCoresRaw.split(',').map(c => c.trim().replace('.', ''));
+
+// Função simples para mapear nomes de cores para cores CSS (Visual)
+const mapaCoresHex = {
+    "Vermelho": "#e74c3c", "Laranja": "#e67e22", "Amarelo": "#f1c40f", "Verde": "#27ae60", 
+    "Azul": "#3498db", "Rosa": "#fd79a8", "Branco": "#ffffff", "Preto": "#2d3436", 
+    "Cinza": "#95a5a6", "Dourado": "#d4af37", "Creme": "#f5f5dc", "Púrpura": "#8e44ad",
+    "Vinho": "#722f37", "Coral": "#ff7f50", "Turquesa": "#40e0d0", "Prata": "#c0c0c0",
+    "Marrom": "#8b4513", "Anil": "#4b0082", "Bege": "#f5f5dc", "Violeta": "#ee82ee"
+};
+
+tituloBonito = "Cores Favoráveis";
+html += `
+<div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    <div class="intro-texto" style="text-align: justify; line-height: 1.6;">
+        <p>As cores não são apenas elementos visuais; elas são frequências eletromagnéticas que interagem diretamente com o seu campo áurico e sua <strong>Expressão Pessoal</strong>. Na Numerologia Cabalística, o uso consciente das cores corretas atua como um catalisador vibracional, facilitando a manifestação dos seus talentos e protegendo sua energia de interferências externas. Quando você se veste ou se cerca das cores que harmonizam com sua Personalidade, você reduz o atrito com o ambiente e potencializa seu magnetismo social. Esta prática auxilia na clareza mental e na autoconfiança, permitindo que sua essência brilhe sem bloqueios. Cada tonalidade recomendada abaixo possui uma "assinatura" que se acopla ao seu código numérico, criando uma sinergia que favorece desde reuniões importantes até momentos de introspecção e cura.</p>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 30px;">
+        ${coresArray.map(corNome => {
+            // Tenta pegar a primeira palavra da cor (ex: "Azul claro" vira "Azul") para o fundo
+            const corBase = corNome.split(' ')[0].replace('Tons', '').trim();
+            const corHex = mapaCoresHex[corBase] || "#555";
+            const corTexto = (corHex === "#ffffff" || corHex === "#f5f5dc" || corHex === "#f1c40f") ? "#000" : "#fff";
+            
+            return `
+                <div style="background: ${corHex}; color: ${corTexto}; padding: 10px 25px; border-radius: 5px; 
+                            border: 2px solid var(--gold); font-weight: bold; text-transform: uppercase; 
+                            box-shadow: 3px 3px 10px rgba(0,0,0,0.3); min-width: 120px; text-align: center;">
+                    ${corNome}
+                </div>
+            `;
+        }).join('')}
+    </div>
+</div>
+`;
     
 
+// --- BLOCO: DIAS DE PODER E VIBRAÇÃO SEMANAL ---
+const diasPoder = obterDiasFavoraveisRessonancia(res.dia);
+const diaSemanaVib = obterDiaSemanaVibracional(res.dia);
+tituloBonito = "Dias de Poder e Fluxo Vital";
+
+html += `
+<div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    <div class="intro-texto" style="text-align: justify; line-height: 1.6;">
+        <p>Os <strong>Dias de Poder</strong> são janelas de oportunidade cronológica onde o universo "fala a mesma língua" que a sua alma. Baseado na Lei da Ressonância, esses dias não são apenas datas aleatórias, mas sim momentos de alinhamento vibracional onde a resistência do mundo diminui para você. É altamente recomendável que compromissos de grande relevância — como assinaturas de contratos, lançamentos de projetos, reuniões decisivas ou pedidos importantes — sejam agendados preferencialmente nestas datas. Nestes dias, sua aura se expande e sua capacidade de influenciar a realidade ao seu redor atinge o ápice.</p>
+        <p>Além da ressonância numérica mensal, sua energia pessoal está conectada à vibração sagrada da <strong>${diaSemanaVib}</strong>. De acordo com a Numerologia Cabalística, este é o dia da semana que governa sua vitalidade e sua força de ação. Sempre que um dos seus dias de poder coincidir com uma ${diaSemanaVib} no calendário, você estará diante de um "Dia de Ouro" — um momento de sorte excepcional onde as forças do seu destino e as frequências do tempo se fundem em total harmonia, garantindo que o resultado final de suas ações seja favorável à sua evolução e sucesso.</p>
+    </div>
+
+    <div style="margin-top: 35px; background: rgba(218, 165, 32, 0.05); border: 2px solid var(--gold); border-radius: 15px; padding: 25px; position: relative;">
+        <div style="text-align: center;">
+            <span style="display: block; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9em; color: var(--gold); margin-bottom: 15px;">Seus Dias de Ressonância Mensal</span>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                ${diasPoder.map(d => `
+                    <div style="background: var(--gold); color: #000; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 10px; font-size: 1.8em; font-weight: bold; box-shadow: 4px 4px 15px rgba(0,0,0,0.4);">
+                        ${d}
+                    </div>
+                `).join('')}
+            </div>
+            
+            <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(218, 165, 32, 0.3);">
+                <p style="margin: 0; color: #fff;">Sua Vibração Semanal Regente:</p>
+                <strong style="font-size: 1.6em; color: var(--gold); text-transform: uppercase; letter-spacing: 2px;">${diaSemanaVib}</strong>
+            </div>
+        </div>
+    </div>
+    
+    <p style="text-align: center; margin-top: 20px; font-size: 0.85em; color: #888; font-style: italic;">
+        * Planeje suas grandes decisões para estes dias e sinta a diferença no fluxo dos acontecimentos.
+    </p>
+</div>
+`;
 
 // 1. CAPA PARA O BLOCO DE TEMPO
 html += `
     <div class="capa-transicao">
         <p>  </p>
-        <h2>Parte 4 <br>Ciclos, Trajetórias & <br> Tendências do Momento</h2>
+        <h2>Parte 5 <br>Ciclos, Trajetórias & <br> Momentos</h2>
      
-        <p>A análise das janelas de oportunidade e as frequências que regem o seu agora.</p>
+        <p>Os ciclos da vida, os momentos de decisão e desafios de jornada </p>
     </div>
 `;
             // 5. CICLOS, MOMENTOS E DESAFIOS
@@ -3896,7 +4180,14 @@ html += `
 
             
 
-
+html += `
+    <div class="capa-transicao">
+        <p>  </p>
+        <h2>Parte 6 <br>Graficos & <br> Tendências do Momento</h2>
+     
+        <p>A análise das janelas de oportunidade e as frequências que regem o seu agora.</p>
+    </div>
+`;
 
 // Note que agora passamos res, res.deficiencias, etc., dentro dos parênteses
 const resultadoMomentoCompleto = montarHtmlPlanosMomento(
@@ -4037,11 +4328,12 @@ html += `
          </div>
 </div>`;
 
+
 // 1. CAPA PARA O BLOCO DE TEMPO
 html += `
     <div class="capa-transicao">
         <h4>   <h4>
-        <h2>Parte 5 <br>Matriz, Regente <br>Sequências Numéricas & Potências  </h2>
+        <h2>Parte 7 <br>Matriz, Regente <br>Sequências Numéricas & Potências  </h2>
         <p>Assim como as notas musicais determinam o ritmo da música as letras de seu nome de nascimento determinam o ritmo de sua vida. </p>
     </div>
 `;
@@ -4430,7 +4722,7 @@ html += htmlPiramide;
 html += `
     <div class="capa-transicao">
         <h4><h4>
-        <h2>Parte 6 <br><br>FILOSOFIA, CIÊNCIA  & NUMEROLOGIA </h2>
+        <h2>Parte 8 <br><br>FILOSOFIA, CIÊNCIA  & NUMEROLOGIA </h2>
         <p>Numerologia aplicada na filosofia Hermética e na ciência moderna</p>
     </div>
 `;
@@ -4569,7 +4861,7 @@ html += `
         </p>
 
         <div style="display: flex; justify-content: center; margin: 30px 0; filter: grayscale(1);">
-            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/logosite.png" style="width: 500px; max-width: 90%; height: auto; opacity: 0.8;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" style="width: 500px; max-width: 90%; height: auto; opacity: 0.8;">
         </div>
                    
         <div style="font-size: 12px; color: #999; margin-top: 10px; text-transform: uppercase; letter-spacing: 2px;">
