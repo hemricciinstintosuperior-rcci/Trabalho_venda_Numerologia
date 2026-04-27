@@ -12,6 +12,29 @@
     margin: 0;
     padding: 0;
 }
+
+@media print {
+    /* Força o "fundo da mesa" a ser branco. 
+       Se houver fresta entre as páginas, ela fica invisível. */
+    html, body {
+        background: #ffffff !important;
+        background-color: #ffffff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Remove qualquer sombra ou borda externa que possa estar 
+       sendo interpretada como um risco escuro no PDF */
+    .page, .relatorio-premium, .container-master {
+        box-shadow: none !important;
+        border: none !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+
+
+    
     
         :root { --gold: #d97a1e; --dark: #000000; --card-bg: #ffffff; --text: #1a1a1a; }
 @media print {
