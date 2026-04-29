@@ -13,6 +13,7 @@
     padding: 0;
 }
 
+
 @media print {
     /* Força o "fundo da mesa" a ser branco. 
        Se houver fresta entre as páginas, ela fica invisível. */
@@ -31,8 +32,6 @@
         margin-bottom: 0 !important;
     }
 }
-
-
 
     
     
@@ -116,7 +115,7 @@
     width: calc(100% - 2mm);
     margin: 0 auto;
     /* TOPO (40px) | LATERAIS (2mm) | BASE (40px) */
-    padding: 60px 2mm 40px 2mm; 
+    padding: 40px 2mm 20px 2mm; 
           }
 
 /* Localize este bloco dentro do seu @media print e substitua */
@@ -215,7 +214,7 @@
     }
 }
     
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--dark); color: #1a1a1a; margin: 0; padding: 0; display: block;}
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fff; color: #1a1a1a; margin: 0; padding: 0; display: block;}
         /* Estilo para os Logos */
 .logo-capa {
     width: 700px !important; /* Tamanho ideal para uma folha A4 */
@@ -246,9 +245,9 @@
     box-sizing: border-box;
 }    
         /* Container de Entrada */
-        .container { width: 100%; max-width: 850px; background: #111; padding: 25px; border-radius: 20px; border: 1px solid #A65F00; margin-top: 30px; box-shadow: 0 0 40px rgba(212, 175, 55, 0.3); }
+        .container { width: 100%; background: #111; padding: 25px; border-radius: 20px; border: 1px solid #A65F00; margin-top: 30px; box-shadow: 0 0 40px rgba(212, 175, 55, 0.3); }
         h1 { color: var(--gold); text-align: center; text-transform: uppercase; letter-spacing: 3px; }
-        input { width: 100%; padding: 15px; margin: 10px 0; border-radius: 10px; border: 1px solid #333; background: #fff; color: #000; font-size: 16px; box-sizing: border-box; }
+        input { width: 100%; padding: 15px; margin: 10px 0; border-radius: 10px; border: #333; background: #fff; color: #000; font-size: 15px; box-sizing: border-box; }
         .btn-gerar { width: 100%; padding: 20px; background: #A65F00; color: #000; border: none; border-radius: 10px; font-weight: bold; font-size: 20px; cursor: pointer; margin-top: 15px; text-transform: uppercase; }
 
         /* Estrutura do Relatório */
@@ -259,7 +258,12 @@
     background: #ffffff;
 }
         
-
+/* Isso limpa bordas fantasmas de elementos comuns que geram riscos */
+.secao-card, .resultado-bloco, .page, img {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
 /* Estilo para o número da página no PDF */
 .page-footer {
     position: fixed;
@@ -301,7 +305,7 @@
 .resultado-bloco {
     width: 100%;
 }
-
+  
 
     /* ESCONDE O TÍTULO AMARELO ANTIGO EM TODO O RELATÓRIO */
 .titulo-topico {
@@ -497,88 +501,8 @@
 .tab-content.active { display: block; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-.capa-transicao {
-    height: 297mm;
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 
-    margin:  0;
-    page-break-before: always;
-    page-break-after: always;
-    border: 4px solid #0f2a36;
-    color: #fff;
 
-    /* 🔥 FUNDO LEVE (SEM CAMADAS PESADAS) */
-    background-color: #0f2a36;
-    background-image: url('https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 450px; /* controla peso */
-
-    position: relative;
-    /* Garante que o preenchimento seja total no PDF */
-    box-sizing: border-box;
-}
-
-.capa-transicao.logo {
-    width: 700px !important; /* Tamanho ideal para uma folha A4 */
-    max-width: 90%;          /* Garante que não ultrapasse a margem da folha */
-    height: auto !important;  /* Mantém a proporção sem esticar */
-    margin: 0 auto 80px auto; /* Centraliza horizontalmente e dá espaço para o nome */
-    display: block !important;
-}
-/* TEXTO "PARTE 01" */
-.capa-transicao .parte-texto {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    font-size: 16px;
-    opacity: 0.7;
-    letter-spacing: 2px;
-    z-index: 2;
-}
-
-/* TÍTULO (LARANJA LUXO) */
-.capa-transicao h2 {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    color: #ffffff;
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin: 0;
-    width: 90%;
-
-    /* 🔥 SOMBRA LEVE (antes era pesada) */
-    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
-
-    z-index: 2;
-}
-/* TEXTO INFERIOR */
-.capa-transicao p {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    color: #ffffff;
-    font-size: 18px;
-    max-width: 80%;
-    margin: 0;
-
-    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
-
-    z-index: 2;
-}
 
 
 
@@ -657,7 +581,7 @@
         color: #111 !important;
         text-align: justify !important;
         margin-bottom: 10px !important;
-        border-bottom: 1px solid #ffffff!important;
+        border-bottom: none !important;
         font-family: 'Arial', sans-serif; /* Ou a fonte de sua preferência */
         font-style: arial;
     }
@@ -669,8 +593,8 @@
         color: #000 !important;
         text-align: justify !important;
         margin-bottom: 0px !important;
-       border-bottom: 1px solid #ffffff!important;
-     border: 1px solid #ffffff!important;
+       border-bottom: none !important;
+     border: none !important;
  
         }
 
@@ -715,7 +639,7 @@ input {
 
 /* Isso remove aquele destaque azul/cinza que o celular coloca ao focar */
 input:focus {
-    border: 2px solid #d4af37;
+    border: none !important;
     background-color: #fff;
 }    
 
@@ -858,9 +782,31 @@ input:focus {
         background-color: #000;
         box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
+
+
+/* Na tela (Relatório), mostramos o Player e escondemos o Botão de Link */
+.botao-pdf-link { display: none !important; }
+.player-relatorio { display: flex !important; }
+
+/* No PDF (Impressão), invertemos tudo */
+@media print {
+    .botao-pdf-link { display: flex !important; }
+    .player-relatorio { display: none !important; }
+    
+    /* Garante que o fundo da capa não suma no PDF */
+    .capa-transicao { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+    
+/* Mata qualquer borda azul de links ou elementos focados */
+:focus { outline: none !important; }
+a, img, audio { border: none !important; outline: none !important; text-decoration: none !important; }
+
+
     
 
     </style>
+
+   
 </head>
 <body>
 
@@ -908,8 +854,6 @@ const gruposPlanos = {
 
 const coresPlanos = { fisico: "#ff4d4d", mental: "#4da6ff", emocional: "#33cc66", intuitivo: "#ffd633" };
 
-        
- 
 function calcularValorLetra(letra) {
     const base = letra.normalize("NFD")[0].toUpperCase();
     const valorBase = tabela[base] || 0;
@@ -1206,7 +1150,7 @@ function calcularNumerologia(valor, aceitaMestre = true) {
         num = String(num).split('').reduce((acc, curr) => acc + parseInt(curr), 0);
     }
     return num;
-} 
+}
         
  // 1. Função que soma a data dígito por dígito (Linear)
 function calcularCVLinear(dia, mes, ano) {
@@ -1995,17 +1939,17 @@ let valorReduzido = reduzirPuro(dados.soma[p]);
             intuitivo: 'linear-gradient(to right, #f1c40f, #b8860b)'
         };
 
-        const fundoBarra = degradês[p] || 'linear-gradient(to right, #ccc, #666)';
+        const fundoBarra = degradês[p] || 'linear-gradient(to right, #ffffff, #ffffff)';
            // Localize o início da montagem do HTML na função e adicione esta linha:
 
         html += `
            
-            <div style="margin: 0 auto 20px auto; width: 85%;  background: #fff; border-radius: 8px; height: 42px; position: relative; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center;break-inside: avoid; 
+            <div style="margin: 0 auto 20px auto; width: 85%;  height: 42px; position: relative;  display: flex; align-items: center; justify-content: center;break-inside: avoid; 
 page-break-inside: avoid;
 margin-top: 10px;">
                 
                
-                <div style="width:${porcentagem}%; height:100%; background:${fundoBarra}; position: absolute; left: 0; top: 0; transition: width 1s ease; z-index: 1;"></div>
+                <div style="width:${porcentagem}%; height:100%; background: ${fundoBarra}; position: absolute; left: 0; top: 0; transition: width 1s ease; z-index: 1; border-radius: 8px"></div>
                 
                
                 <span style="color: #fff; font-weight: bold; font-size: 16px; text-transform: uppercase; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); letter-spacing: 1.5px; position: relative; z-index: 2; pointer-events: none;">
@@ -2033,7 +1977,7 @@ const textoIndiv = (textosPlanos[p] && textosPlanos[p][int]) ? textosPlanos[p][i
 
 
             html += `
-                <div class="evitar-corte" style="margin-bottom: 20px; border-left: 1px solid ${coresPlanos[p]}; padding-left: 15px;">
+                <div class="evitar-corte" style="margin-bottom: 20px; border-left: none; padding-left: 15px;">
                     <h4 style="margin:0; color:${coresPlanos[p]}; text-transform:uppercase; font-size:18px;">${nomesAmigaveis[p]} <small>(${int})</small></h4>
                     <div class="texto-res">${aplicarFiltroTexto(textoIndiv)}</div>
                 </div>
@@ -2185,14 +2129,14 @@ h += `<div class="evitar-corte">`;
                 intuitivo: 'linear-gradient(to right, #f1c40f, #b8860b)'
             };
 
-            const fundoBarra = degradês[p] || 'linear-gradient(to right, #444, #000)';
+            const fundoBarra = degradês[p] || 'linear-gradient(to right, #ffffff, #ffffff)';
 
             h += `
-                <div style="margin: 0 auto 20px auto; width: 85%; background: #fff; border-radius: 8px; height: 42px; position: relative; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center;break-inside: avoid; 
+                <div style="margin: 0 auto 20px auto; width: 85%;  height: 42px; position: relative;  display: flex; align-items: center; justify-content: center;break-inside: avoid; 
 page-break-inside: avoid;
 margin-top: 10px;">
                     
-                    <div style="width:${porcentagem}%; height:100%; background:${fundoBarra}; position: absolute; left: 0; top: 0; transition: width 1s ease; z-index: 1;"></div>
+                    <div style="width:${porcentagem}%; height:100%; background: ${fundoBarra}; position: absolute; left: 0; top: 0; transition: width 1s ease; z-index: 1; border-radius: 8px;"></div>
                     
                     <span style="color: #fff; font-weight: bold; font-size: 18px; text-transform: uppercase; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); letter-spacing: 1.5px; position: relative; z-index: 2; pointer-events: none;">
                         ${nomesAmigaveis[p]} EXP ${valorReduzido}
@@ -2214,7 +2158,7 @@ h += `</div>`;
             
             if(textoIndiv) {
                 h += `
-                    <div class="evitar-corte" style="margin-bottom: 20px; border-left: 1px solid ${coresPlanos[p] || 'var(--gold)'}; padding-left: 15px;">
+                    <div class="evitar-corte" style="margin-bottom: 20px; border-left: none; padding-left: 15px;">
                         <h4 style="margin:0; color:${coresPlanos[p] || 'var(--dark)'}; text-transform:uppercase; font-size:18px;">${nomesAmigaveis[p]} <small>(${int})</small></h4>
                         
                         ${travado ? '<div class="conteudo-travado">' : '<div>'}
@@ -2309,7 +2253,7 @@ let vTransitoCalculado = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValo
    
 
     // Gera o Ciclo Atual
-    let htmlFinal = processarUmCiclo(anoBase, "Status do Momento: Ciclo Atual", false);
+    let htmlFinal = processarUmCiclo(anoBase, "Status do Momento: Ciclo Atual", true);
     
     // Gera o Próximo Ciclo (AnoBase + 1)
     htmlFinal += processarUmCiclo(anoBase + 1, "Status do Momento: Próximo Ciclo", true);
@@ -2540,7 +2484,7 @@ function calcularAptidaoProfissional(res) {
 
     // 4. MONTAGEM DO HTML (Com todos os quadros)
     return `
-        <div class="evitar-corte" style="margin-top: 10px; padding: 20px; background: #fffcf0; border: 1px solid #d97a1e; border-left: 8px solid #d97a1e; border-radius: 8px;">
+         <div class="evitar-corte" style="margin-top: 10px; padding: 20px; background: #fffcf0; border: 1px solid #d97a1e; border-left: 8px solid #d97a1e; border-radius: 8px;">
             <h4 style="color: #d97a1e; margin-bottom: 10px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px;">🚩 Zona de Sucesso Absoluto</h4>
             <p style="font-size: 1.1rem; font-weight: bold; color: #1a1a1a; line-height: 1.5; text-align: justify;">
                 ${vocacaoMaster.length > 0 ? vocacaoMaster.join(" • ") : "Liderança Estratégica • Gestão de Negócios"}
@@ -2821,8 +2765,6 @@ function calcularNumerosSocial(nome) {
     };
 }
 
-
-
 // 1. CORES FAVORÁVEIS (Baseado na Foto 3)
 // Usa a "Expressão" (que você chama de Personalidade)
 function obterCoresFavoraveis(numExpressao) {
@@ -2912,8 +2854,31 @@ function obterLegendaVibração(diaNascimento) {
         9: "<strong>Força Motora, Coragem e Execução:</strong> O driver de ação está no ápice. Ideal para finalização de ciclos, atividades físicas intensas, coragem e rompimento de barreiras."
     };
     return legendas[radical] || "";
-}        
-        
+}
+
+ function renderAudioButton(url, tema) {
+    return `
+    <div style="margin-top: 30px; display: flex; justify-content: center; width: 100%;">
+        <a href="${url}" target="_blank" style="text-decoration: none;">
+            <div style="
+                background: rgba(217, 122, 30, 0.1); 
+                border: 1px solid #d97a1e; 
+                padding: 12px 25px; 
+                border-radius: 50px; 
+                display: flex; 
+                align-items: center; 
+                gap: 15px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            ">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 9px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px; font-weight: bold;">Experiência Sonora</span>
+                    <span style="display: block; font-size: 14px; color: #fff; font-family: 'Cinzel', serif;">Ouvir Frequência: ${tema}</span>
+                </div>
+            </div>
+        </a>
+    </div>`;
+}       
         
 function gerarMapaCompleto() {
     const nomeRaw = document.getElementById("nome").value.trim();
@@ -3045,7 +3010,6 @@ if (nomesArray && nomesArray[0]) {
 }
 
 
-    
 const res = {
     dia: dia,
      mesNascimento: mes, 
@@ -3059,7 +3023,9 @@ const res = {
     Relacionamento: calcularNumerologia(propCalculado, false), // Relacionamento SEMPRE reduz (1-9)
     essencia: calcularNumerologia(sE, true), // Essência aceita Mestre
     talento: calcularNumerologia(mot + exp, true), // Talento Oculto aceita Mestre
-    equilibrio: { inicio: numInicio, fim: numFim }, 
+ equilibrio: { inicio: numInicio, fim: numFim }, 
+    
+
     deficiencias: faltantes.map(d => reduzirPuro(d)), 
     deficitRecorrente: calcularNumerologia(dia, false), 
     deficitsOcultos: deficitsOcultos.map(d => reduzirPuro(d)), 
@@ -3096,14 +3062,14 @@ desafios: {
  proximoAnoPessoal: reduzir(resultadoAnoPessoal + 1) 
 };
 
-
     // ADICIONE ESTAS DUAS LINHAS ABAIXO:
 res.numEquilibrioInicio = numInicio; 
 res.numEquilibrioFim = numFim;
+
     
     
 const introProfissionalTexto = `
-    <div style="margin-bottom: 25px; text-align: justify; line-height: 1.6;">
+    <div style="margin-bottom: 15px; text-align: justify; line-height: 1.3;">
 ​<p>A verdadeira realização profissional não acontece por acaso, mas através do alinhamento preciso entre sua <strong>Engenharia de Personalidade</strong> e as demandas concretas do mundo material. Muitas vezes, a sensação de estagnação, o cansaço excessivo ou a invisibilidade no mercado são apenas os resultados diretos de atuar em frequências que não pertencem ao seu código original. Para que a prosperidade se manifeste, é indispensável que a sua ocupação seja o reflexo externo da sua estrutura numérica interna, permitindo que o trabalho deixe de ser um esforço de resistência e se torne um fluxo natural de expansão.</p>
 ​<p>Nesta seção, decodificamos os pontos de convergência do seu mapa para identificar o seu <strong>"Locus de Potência"</strong>. O cálculo realizado não é genérico; ele cruza a força da sua Motivação, o propósito do seu Caminho de Vida, a capacidade de entrega da sua Expressão e, fundamentalmente, a <strong>Vibração do seu Dia de Nascimento</strong>. Este último elemento atua como o seu talento inato, a ferramenta prática que você trouxe para manejar a realidade. Ao unificar esses pilares, revelamos as áreas de atuação onde você encontrará o caminho de menor resistência para atingir o reconhecimento e a estabilidade financeira.</p>
 ​<p>Apresentamos a seguir um mapeamento estratégico dividido em quatro eixos fundamentais: a sua <strong>Zona de Sucesso Absoluto</strong>, com as 30 profissões de maior ressonância com seu gráfico; o <strong>Guia de Formação Recomendada</strong>, indicando os caminhos acadêmicos ou técnicos mais eficazes; as opções de <strong>Entrada Imediata via CLT</strong>, para quem busca segurança e inserção rápida; e o seu <strong>Campo de Afinidade Cotidiana</strong>, que descreve as atividades onde sua energia melhor se adapta no dia a dia. Cada sugestão foi filtrada para garantir que sua base concreta de talentos esteja a serviço de resultados palpáveis.</p>
@@ -3224,6 +3190,9 @@ const piramideVida = gerarPiramide(nomeRaw);
 const regenteVida = piramideVida.at(-1)[0];
 const dadosNegativas = detectarNegativas(piramideVida);
 
+
+
+
 // 2. DEPOIS: COMEÇA A MONTAR O HTML DO RELATÓRIO
 let html = `
 
@@ -3240,7 +3209,7 @@ let html = `
 <div class="container-master">
     <div id="capa-numerologica" style="
             width: 210mm; 
-            height: 297mm; 
+            height: 297.1mm; 
             background: radial-gradient(circle, #1a1a1a 0%, #000000 100%); 
             border: 4px solid #827108;
             display: flex;
@@ -3289,8 +3258,8 @@ let html = `
 
     <div id="conteudo-relatorio" style="background: #ffffff; width: 210mm; min-height: 297mm; box-sizing: border-box;">
 `;
-// --- FIM DO BLOCO DA CAPA ---
 
+    
 // --- PÁGINA 1: SUMÁRIO (AJUSTADA PARA CABER EM UMA FOLHA) ---
 html += `
 <div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; max-height: 1120px; padding: 30px; box-sizing: border-box; overflow: hidden; page-break-after: always; position: relative;">
@@ -3304,11 +3273,11 @@ html += `
 
     <div style="width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 25px;">
         ${[
-              { t: "Introdução", c: "Resultado Numerológico ✶ Engenharia da Vida ✶ Nome Escolhido ✶ Cabala Ancestral ✶ Direcionamento de Jornada"},
+              { t: "Introdução", c: "Instinto Superior ✶ Resultado Numerológico ✶ Engenharia da Vida ✶ Nome Escolhido ✶ Cabala Ancestral ✶ Direcionamento de Jornada"},
             { t: "Parte 1: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais"},
             { t: "Parte 2: Essência e Identidade", c: "Dia de Nascimento ✶ Talento ou Habilidade Oculta ✶ Motivação ✶ Aparência ou Influência ✶ Personalidade ✶ Tendência de Comportamento ✶ Desejo Oculto ✶ Habilidades Especiais ✶  Inclinações Ocultas ✶  Pilar de Equilíbrio Emocional"},
-            { t: "Parte 3: Finalidade e Realização", c: " Caminho de Vida ✶ Propósito  ✶ Fase de Maturidade ✶ Direcionamento Profissional"},
-            { t: "Parte 4: Alinhamento e Desafios",   c: "Fraquezas e Inibições ✶ Mecanismo do Subconsciente ✶ Déficit de Comportamento ✶ Desafio Principal"},
+            { t: "Parte 3: Alinhamento e Desafios",   c: "Fraquezas e Inibições ✶ Mecanismo do Subconsciente ✶ Déficit de Comportamento ✶ Desafio Principal"},
+            { t: "Parte 4: Finalidade e Realização", c: " Caminho de Vida ✶ Propósito  ✶ Fase de Maturidade ✶ Direcionamento Profissional"},
             { t: "Parte 5: Complementares", c: " Número de Relacionamento ✶ Cores Favoráveis ✶ Dias de Poder do Mês ✶ Números harmonicos"}, 
             { t: "Parte 6: Ciclos", c: "Ciclos de Vida ✶ Momento de Decisão ✶ Desafios de Jornada"},
             { t: "Parte 7:  Tendências do Momento", c: "Status no Momento do Ciclo Atual ✶ Status no Momento do Segundo Ciclo ✶ Ciclos Trânsitórios ✶ Potenciais do Momento ✶ Ano Pessoal ✶ Mês Pessoal"},
@@ -3330,13 +3299,340 @@ html += `
 </div>
 `;
 
-  html += `
-    <div class="capa-transicao">
-        <p>  </p>
-        <h2>Introdução<br><br>Resultado, Nome escolhido & <br>  Direcionamento</h2>
-        <p>Resultado Numerológico ✶ Engenharia da Vida ✶ Nome Social ✶ Cabala Ancestral ✶ Direcionamento de Jornada</p>
+
+
+    
+
+html += `
+    <div class="capa-transicao" style="
+        height: 297mm; 
+        width: 100%; 
+        background-color: #0f2a36; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        position: relative; 
+        overflow: hidden; 
+        page-break-after: always;
+
+        /* OS DOIS COMANDOS MÁGICOS AQUI */
+        outline: 2px solid #0f2a36; 
+        outline-offset: -1px;       
+        
+        -webkit-print-color-adjust: exact;
+    ">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               INTRODUÇÃO<br><br> Resultado, Nome social & Direcionamento
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som do Nascimento</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som do Nascimento</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR E BAIXAR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+
+       <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O Instinto Superior</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O Instinto Superior</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR E BAIXAR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 1.2; padding: 0 20px; box-sizing: border-box; margin: 0;">
+          Instinto Superior ✶ Resultado Numerológico ✶ Engenharia da Vida ✶ Nome Escolhido ✶ Cabala Ancestral ✶ Direcionamento de Jornada
+        </p>
     </div>
-`;  
+`;
+
+
+tituloBonito = "O Instinto Superior: A Maestria do Equilíbrio";    
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>`;
+
+html += `
+<div class="estudo-numerologico-texto" style="max-width: 850px; margin: 0 auto; padding: 20px; line-height: 1.8;">
+    
+    <div style="text-align: center; margin-bottom: 45px; break-inside: avoid;">
+        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" alt="Logo Instinto Superior" style="width: 100%; max-width: 250px; height: auto; border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.15); border: 1px solid #ddd;">
+        <p style="font-size: 1em; color: #555; margin-top: 15px; font-weight: 300; letter-spacing: 1px;">A Quinta Essência: O Mapa da Autonomia Humana</p>
+    </div>
+
+    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #eee; padding-bottom: 20px;">O Tratado da Engenharia Comportamental</h3>
+
+    <p style="margin-bottom: 25px;">Para compreender o que chamamos de <strong>Instinto Superior</strong>, precisamos primeiro desconstruir a visão limitada sobre o potencial humano. Ao contrário do instinto animal, que é uma resposta biológica de sobrevivência, o Instinto Superior é uma <strong>tecnologia de consciência</strong>. Ele representa o ponto exato onde a biologia encontra a estratégia, permitindo que você pare de apenas reagir às circunstâncias e passe a ditar o ritmo da sua própria vida.</p>
+
+    <h4 style="color: #e67e22; border-left: 4px solid #e67e22; padding-left: 15px; margin-bottom: 20px;">A Anatomia dos Planos: O Perigo dos Extremos</h4>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; break-inside: avoid;">
+        <div style="background: #fdfdfd; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+            <strong style="color: #2c3e50;">Físico Forte vs. Mental Fraco:</strong>
+            <p style="font-size: 0.95em; color: #666;">Aqui temos a figura do "executor cego". Você possui uma energia física absurda, faz acontecer e constrói muito, mas por falta de um processador mental sólido, suas ações são desordenadas. Você se torna facilmente influenciável por mentes mais fortes.</p>
+        </div>
+        <div style="background: #fdfdfd; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+            <strong style="color: #2c3e50;">Mental Forte vs. Físico Fraco:</strong>
+            <p style="font-size: 0.95em; color: #666;">Este é o "gênio paralisado". A mente processa planos magníficos e estratégias infalíveis, mas o hardware físico não tem potência para a ignição. A inteligência nunca se traduz em realidade concreta.</p>
+        </div>
+    </div>
+
+
+<h4 style="color: #e67e22; border-left: 4px solid #e67e22; padding-left: 15px; margin-bottom: 20px;">A Hierarquia da Intensidade: Quando o Médio é Coadjuvante</h4>
+
+    <p style="margin-bottom: 25px;">Diferente do estado "Fraco", o estado <strong>Médio</strong> traz funcionalidade. Ele não sabota o sistema, mas atua como uma base de suporte estável para onde a sua maior intensidade (o estado "Forte") estiver apontando. É a diferença entre um sistema quebrado e um sistema especializado.</p>
+    
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; break-inside: avoid;">
+        <div style="background: #fdfdfd; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+            <strong style="color: #2c3e50;">Físico Forte vs. Mental Médio:</strong>
+            <p style="font-size: 0.95em; color: #666;">Aqui temos o "Realizador Estável". O corpo lidera com vitalidade absoluta, enquanto a mente atua como um suporte tático eficiente. Você age com força, mas com consciência suficiente para não errar. A mente serve ao movimento.</p>
+        </div>
+        <div style="background: #fdfdfd; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+            <strong style="color: #2c3e50;">Mental Forte vs. Físico Médio:</strong>
+            <p style="font-size: 0.95em; color: #666;">O "Estrategista Funcional". A mente é o motor principal das grandes visões. O físico não é um obstáculo; ele tem saúde e ritmo para acompanhar as demandas intelectuais, funcionando como o veículo equilibrado da vontade estratégica.</p>
+        </div>
+    </div>
+
+
+
+<h4 style="color: #e67e22; border-left: 4px solid #e67e22; padding-left: 15px; margin-bottom: 20px;">A Matriz de Interdependência: Além do Racional</h4>
+
+    <p style="margin-bottom: 25px;">O equilíbrio não é estático; é uma gestão de cargas. Quando você possui um plano em estado <strong>Forte</strong> (alta voltagem) e outros em estado <strong>Médio</strong>, seu sistema operacional tende a "vazar" energia para o pilar mais potente. Sem o trabalho de compensação, você se torna refém da sua própria força, usando um martelo para apertar um parafuso. A profundidade do Instinto Superior reside em saber quando silenciar o pilar dominante para ouvir os coadjuvantes.</p>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; break-inside: avoid;">
+        <div style="background: #fdfdfd; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+            <strong style="color: #2c3e50;">Intuitivo Forte vs. Físico Médio:</strong>
+            <p style="font-size: 0.95em; color: #666;">Aqui temos o "Visionário Distante". Sua captação de sinais e presságios é aguda, mas o corpo (médio) apenas executa o básico. O risco é viver no "amanhã" ou no plano das ideias sutis, esquecendo de aterrar essa energia no agora. É necessário esforço consciente para trazer a intuição para o músculo e transformar o <i>insight</i> em gesto concreto.</p>
+        </div>
+        <div style="background: #fdfdfd; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
+            <strong style="color: #2c3e50;">Emocional Forte vs. Físico Médio:</strong>
+            <p style="font-size: 0.95em; color: #666;">Este é o "Vibrante Instável". A intensidade das águas emocionais é o que move este ser. O físico médio sustenta a rotina, mas pode ser drenado se a emoção não for canalizada para a ação. O trabalho aqui é usar a paixão como combustível para a disciplina física, evitando que o sentir transborde e paralise a execução material.</p>
+        </div>
+    </div>
+
+    <h4 style="color: #e67e22; border-left: 4px solid #e67e22; padding-left: 15px; margin-bottom: 20px;">O Esforço da Compensação Consciente</h4>
+
+    <p style="margin-bottom: 25px;">Ter planos em nível médio é uma bênção de estabilidade, mas exige vigilância. Se o seu <strong>Físico é Forte</strong>, ele naturalmente tentará atropelar a análise do <strong>Mental Médio</strong> ou a sensibilidade do <strong>Emocional Médio</strong>. Você sentirá uma urgência biológica de "apenas fazer".</p>
+    
+    <p style="margin-bottom: 25px;">A maestria consiste em reconhecer que:
+    <br><strong>1.</strong> Se a intensidade é física, você deve "emprestar" tempo para o mental planejar.
+    <br><strong>2.</strong> Se a intensidade é intuitiva, você deve "forçar" o físico a realizar tarefas repetitivas para ganhar solo.
+    <br><strong>3.</strong> O equilíbrio real não é ter todos os números iguais por sorte, mas sim ter a <strong>Autonomia</strong> de regular a voltagem de cada plano conforme a necessidade do momento. O caminho do meio não é o caminho da fraqueza, mas o da precisão cirúrgica.</p>
+    
+   
+    <div style="background-color: #2c3e50; color: #fff; padding: 35px; border-radius: 15px; margin: 40px 0; break-inside: avoid; page-break-inside: avoid; display: block;">
+        <h3 style="color: #f1c40f; margin-top: 0; text-align: center; text-transform: uppercase;">A Simbologia da Ascensão</h3>
+        <p style="margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px;">O nosso logo é um diagrama técnico da sua evolução:</p>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 15px;"><strong>• O Pentagrama:</strong> As quatro pontas da base sustentam a realidade terrena (Mental, Intuitivo, Emocional e Físico). A ponta superior é o nascimento do Instinto Superior.</li>
+            <li style="margin-bottom: 15px;"><strong>• A Águia:</strong> Símbolo da visão macroscópica. Ela enxerga a solução e a estratégia antes de qualquer movimento.</li>
+            <li style="margin-bottom: 15px;"><strong>• A Justiça:</strong> Representa o julgamento reto e a capacidade de decidir o que é correto, mantendo os planos em constante aferição.</li>
+            <li style="margin-bottom: 15px;"><strong>• O Ser no Ápice:</strong> O indivíduo que assumiu o comando total do seu sistema operacional.</li>
+        </ul>
+    </div>
+
+    <p style="margin-bottom: 25px;">Entender que somos uma engenharia magnífica nos dá a responsabilidade de realizar a manutenção correta. A numerologia quântica fornece os códigos e o diagnóstico, mas o <strong>Instinto Superior</strong> é a prática diária desse conhecimento.</p>
+
+    <div style="text-align: center; border-top: 1px dotted #ccc; padding-top: 30px; break-inside: avoid;">
+        <p style="font-weight: bold; color: #e67e22; font-size: 1.2em;">Instinto Superior: Direção, Consistência e Autonomia.</p>
+        
+    </div>
+</div>
+`;
+    
+
+
+
+  tituloBonito = " A Engenharia da Vida";    
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>`;
+    
+html += `
+<div class="estudo-numerologico-texto">
+    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 45px;">O Equilíbrio entre a Máquina e a Essência</h3>
+
+    <p style="margin-bottom: 15px;">Para compreender a profundidade do meu trabalho com a numerologia, é preciso entender como enxergo o ser humano: a <strong>máquina orgânica</strong> mais sofisticada que existe. Se observarmos as máquinas modernas, notaremos que elas foram projetadas à nossa imagem. O que chamamos de tecnologia é, na verdade, um reflexo direto da nossa funcionalidade biológica e sistêmica.</p>
+
+    <p style="margin-bottom: 15px;">O grande regente dessa estrutura é o cérebro, o nosso <strong>processador central</strong>. Cada milímetro desse hardware possui uma função técnica e específica. No <strong>Córtex Frontal</strong>, temos o centro de comando, responsável pela lógica, planejamento e tomada de decisões. Logo ao lado, o <strong>Córtex Motor</strong> funciona como o driver de execução: é ali que o sinal elétrico nasce para que você consiga levantar o braço, fechar as mãos ou realizar movimentos precisos. Cada dedo que você mexe possui um ponto correspondente nessa área, provando que somos um projeto de engenharia milimétrico.</p>
+
+    <p style="margin-bottom: 15px;">Se você caminha, mantém a postura ou olha para os lados, é porque o seu <strong>Cerebelo</strong> e o <strong>Tronco Encefálico</strong> estão processando o equilíbrio e os sinais automáticos que mantêm seus pulmões inflando e seu coração batendo sem que você precise pensar nisso. Enquanto isso, o <strong>Sistema Límbico</strong> atua como o gestor de energia emocional, processando memórias e sentimentos que podem impulsionar ou travar o seu sistema operacional. Até mesmo a visão é processada no <strong>Lóbulo Occipital</strong>, na parte traseira, mostrando que a informação percorre todo o processador para se transformar em compreensão.</p>
+
+    <p style="margin-bottom: 15px;">Embora a ciência e a fé ofereçam narrativas distintas sobre nossa origem, o fato concreto é que somos um sistema complexo que exige manutenção constante. Sem um processador funcionando bem, o restante da estrutura entra em colapso. É aqui que a numerologia entra como o seu <strong>software de diagnóstico</strong>. Ela não é um conceito abstrato; ela é o manual que revela as "luzes e sombras" da sua configuração, indicando onde a intensidade deve ser ajustada para evitar o desgaste das peças e otimizar o desempenho.</p>
+
+    <p style="margin-bottom: 15px;">Meu objetivo é conduzir você ao que chamo de <strong>Instinto Superior</strong>. Para atingir esse estado de alta performance, trabalhamos a conexão absoluta entre os quatro planos: <strong>Mental, Intuitivo, Emocional e Físico</strong>. Quando o hardware (físico) e o software (emocional/mental) estão em sincronia, a vida flui de dentro para fora, com clareza e precisão cirúrgica.</p>
+
+    <p style="margin-bottom: 15px;">Ao entender que você é uma máquina magnífica, você para de agir por impulso e começa a operar com estratégia. A numerologia aponta os códigos e os melhores caminhos, mas é o conhecimento sobre sua própria anatomia — do sinal elétrico que move suas pernas à intuição que guia seus passos — que permite que você limpe as engrenagens, alimente o sistema e alcance o <strong>ápice da sua existência</strong>. É ciência, é lógica e é o seu projeto de vida funcionando em sua capacidade máxima.</p>
+</div>
+`;   
+
+// --- PÁGINA 2: NOME SOCIAL (SE EXISTIR) ---
+
+
+ tituloBonito = " A Gênese dos Números";    
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>`;
+
+    
+html += `
+<div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 50px; min-height: 900px; background: #fff;">
+    
+    <div style="text-align: center; max-width: 900px;">
+        <h3 class="titulo-topico mostrar-titulo" style="border-bottom: 2px solid var(--gold); display: inline-block; padding: 0 40px; font-size: 2rem; letter-spacing: 4px; margin-bottom: 10px; text-transform: uppercase;">
+            A Gênese dos Números
+        </h3>
+        <p style="font-size: 1rem; color: #d97a1e; letter-spacing: 3px; margin-bottom: 45px; font-weight: bold;">
+            DA MÍSTICA ANCESTRAL À CIÊNCIA DA CONSCIÊNCIA
+        </p>
+
+        <div class="texto-res" style="font-size: 1.25rem; line-height: 2; color: #222; text-align: justify; text-justify: inter-word;">
+            
+            <p style="margin-bottom: 25px;">
+                A história da Numerologia Cabalística mergulha suas raízes na <strong>Cabala Ancestral</strong> (<em>Qabbalah</em>), a sabedoria hebraica que compreende o universo como uma estrutura matemática e vibracional. Para os antigos sábios, o universo não foi criado por acaso, mas através de canais de inteligência e emanações numéricas. Eles entendiam que o número não era apenas uma quantidade, mas uma <strong>qualidade vibracional</strong> — a assinatura do Criador em cada átomo da existência.
+            </p>
+
+            <p style="margin-bottom: 25px;">
+                Ao longo dos séculos, essa sabedoria evoluiu e atravessou fronteiras. De Pitágoras à modernidade, a percepção dos números deixou de ser puramente esotérica para abraçar uma lógica estrutural. Com o avanço da Física Quântica e dos estudos de frequência e vibração, a numerologia sofreu sua maior metamorfose, transformando-se no que hoje chamamos de <strong>Engenharia da Personalidade</strong> ou <strong>Ciência da Consciência</strong>.
+            </p>
+
+            <p style="margin-bottom: 25px;">
+                Hoje, entendemos que o universo é fundamentalmente matemático. Se a música é matemática audível, a numerologia é a <strong>matemática do seu destino</strong>. Ao analisar sua "Matriz", não estamos lidando com adivinhação, mas com um diagnóstico de precisão sobre as tendências do seu campo eletromagnético pessoal. É uma ferramenta de precisão técnica que permite identificar padrões de interferência e ciclos de potência, garantindo o autodomínio necessário para projetar sua realidade com base no seu código-fonte original.
+            </p>
+
+        </div>
+
+        <div style="margin-top: 50px; text-align: center;">
+            <div style="width: 80px; height: 1px; background: var(--gold); margin: 0 auto 25px;"></div>
+            <p style="font-style: italic; color: #666; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                "Os números são a linguagem em que o Universo foi escrito e a chave para a compreensão da alma humana."
+            </p>
+        </div>
+    </div>
+</div>
+`;
+
+// --- SEÇÃO: ORIGEM E CODIFICAÇÃO ---
+tituloBonito = "Origem e a Codificação da Numerologia Moderna"; 
+
+// Separador Luxo
+html += `
+<div class="separador-luxo" style="width: 100%; margin: 40px 0;">
+    <div class="caixa-interna" style="text-align: center;">
+        <h2 style="margin: 0;">${tituloBonito}</h2>
+    </div>
+</div>
+`;    
+
+html += `
+<div class="secao-card quebra-pagina" style="width: 100%; max-width: 1000px; margin: 0 auto; text-align: center; padding: 20px;">
+    <div style="margin-bottom: 30px;">
+        <h2 class="titulo-topico mostrar-titulo" style="letter-spacing: 5px; color: #827108; margin-bottom: 30px; font-weight: 800;">
+            ${tituloBonito}
+        </h2>
+        <div style="width: 50px; height: 3px; background: #827108; margin: 0 auto;"></div>
+    </div>
+
+    <div class="evitar-corte texto-res" style="font-size: 20px; line-height: 1.8; color: #333; text-align: justify;">
+        ${aplicarFiltroTexto(textos.introducoes.historiaModerna)}
+    </div>
+</div>
+`; // Fechamento correto da seção
+
+  tituloBonito = " Direcionamento da sua Jornada";    
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>`;   
+
+html += `
+<div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 50px 40px; min-height: 800px;">
+    
+    <div style="text-align: center; max-width: 800px;">
+        <h3 class="titulo-topico mostrar-titulo" style="border-bottom: 2px solid var(--gold); display: inline-block; padding: 0 30px; font-size: 1.8rem; letter-spacing: 3px; margin-bottom: 30px;">
+            
+        </h3>
+
+        <div class="texto-res" style="font-size: 1.1rem; line-height: 1.6; color: #333; text-align: justify; text-justify: inter-word;">
+            <p>
+                Este estudo é um mapa detalhado da sua engenharia existencial. Para que você aproveite ao máximo, estruturamos sua jornada em nove etapas fundamentais de decodificação:
+            </p>
+            
+            <p style="margin-top: 10px;">
+                Iniciamos pela <strong>Parte 1 (Performance Natural)</strong>, onde analisamos seus Planos de Expressão e Gráficos de Potenciais. Na <strong>Parte 2 (Essência e Identidade)</strong>, mergulhamos no seu Dia de Nascimento, Motivação, Personalidade e Desejos Ocultos, revelando quem você é na sua forma mais pura. Já na <strong>Parte 3 (Finalidade e Realização)</strong>, definimos seu Caminho de Vida, Propósito e o Direcionamento Profissional ideal.
+            </p>
+
+            <p style="margin-top: 10px;">
+                Na <strong>Parte 4 (Alinhamento e Desafios)</strong>, enfrentaremos as Fraquezas, Inibições e o seu Desafio Principal para transformar obstáculos em força. Para facilitar o seu dia a dia, a <strong>Parte 5 (Complementares)</strong> traz seus Números Harmônicos, Dias de Poder, Cores Favoráveis e Dinâmicas de Relacionamento.
+            </p>
+
+            <p style="margin-top: 10px;">
+                Ao chegarmos na <strong>Parte 6 (Ciclos)</strong> e <strong>Parte 7 (Tendências do Momento)</strong>, você entenderá suas Fases de Maturidade, Ano Pessoal e os Ciclos Transitórios que regem o seu agora. A jornada atinge seu ápice na <strong>Parte 8 (A Grande Matriz)</strong>, com a Pirâmide Invertida e as potências numéricas mapeadas até os seus 100 anos de idade.
+            </p>
+
+            <p style="margin-top: 10px;">
+                Por fim, a <strong>Parte 9 (Filosofia e Ciência)</strong> traz o Contexto Histórico e a Conclusão Evolutiva desta análise. Encare este conteúdo não como uma previsão, mas como um manual técnico de autogestão. Cada seção foi desenhada para que você entenda sua estrutura interna e utilize esse conhecimento para manifestar o seu legado no mundo.
+            </p>
+
+            <p style="margin-top: 15px; font-weight: 500; font-style: italic; color: #111; text-align: center;">
+                Absorva cada frequência, reconheça sua potência e desperte o mestre que existe em você.
+            </p>
+        </div>
+
+        <div style="margin-top: 20px; text-align: center;">
+            <div style="width: 60px; height: 1px; background: var(--gold); margin: 0 auto 20px;"></div>
+            <p style="font-weight: bold; color: #d97a1e; letter-spacing: 5px; font-size: 1rem; text-transform: uppercase;">
+                A Decodificação Começa Agora
+            </p>
+        </div>
+    </div>
+</div>
+`;
+
+
 
 const listaItensSintese = [
     { label: "Dia Natalicio", valor: res.dia },
@@ -3568,143 +3864,67 @@ if (nomeSocialValor !== "") {
 }
 
 
+
+
     
 
- tituloBonito = " A Engenharia da Vida";    
 html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>`;
-    
-html += `
-<div class="estudo-numerologico-texto">
-    <h3 style="text-align: center; color: #2c3e50; margin-bottom: 45px;">O Equilíbrio entre a Máquina e a Essência</h3>
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               Parte 1<br><br> Seus Graficos de Expressão Natural
+            </h2>
+        </div>
 
-    <p style="margin-bottom: 15px;">Para compreender a profundidade do meu trabalho com a numerologia, é preciso entender como enxergo o ser humano: a <strong>máquina orgânica</strong> mais sofisticada que existe. Se observarmos as máquinas modernas, notaremos que elas foram projetadas à nossa imagem. O que chamamos de tecnologia é, na verdade, um reflexo direto da nossa funcionalidade biológica e sistêmica.</p>
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
 
-    <p style="margin-bottom: 15px;">O grande regente dessa estrutura é o cérebro, o nosso <strong>processador central</strong>. Cada milímetro desse hardware possui uma função técnica e específica. No <strong>Córtex Frontal</strong>, temos o centro de comando, responsável pela lógica, planejamento e tomada de decisões. Logo ao lado, o <strong>Córtex Motor</strong> funciona como o driver de execução: é ali que o sinal elétrico nasce para que você consiga levantar o braço, fechar as mãos ou realizar movimentos precisos. Cada dedo que você mexe possui um ponto correspondente nessa área, provando que somos um projeto de engenharia milimétrico.</p>
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
+            </audio>
+        </div>
 
-    <p style="margin-bottom: 15px;">Se você caminha, mantém a postura ou olha para os lados, é porque o seu <strong>Cerebelo</strong> e o <strong>Tronco Encefálico</strong> estão processando o equilíbrio e os sinais automáticos que mantêm seus pulmões inflando e seu coração batendo sem que você precise pensar nisso. Enquanto isso, o <strong>Sistema Límbico</strong> atua como o gestor de energia emocional, processando memórias e sentimentos que podem impulsionar ou travar o seu sistema operacional. Até mesmo a visão é processada no <strong>Lóbulo Occipital</strong>, na parte traseira, mostrando que a informação percorre todo o processador para se transformar em compreensão.</p>
+      
 
-    <p style="margin-bottom: 15px;">Embora a ciência e a fé ofereçam narrativas distintas sobre nossa origem, o fato concreto é que somos um sistema complexo que exige manutenção constante. Sem um processador funcionando bem, o restante da estrutura entra em colapso. É aqui que a numerologia entra como o seu <strong>software de diagnóstico</strong>. Ela não é um conceito abstrato; ela é o manual que revela as "luzes e sombras" da sua configuração, indicando onde a intensidade deve ser ajustada para evitar o desgaste das peças e otimizar o desempenho.</p>
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
 
-    <p style="margin-bottom: 15px;">Meu objetivo é conduzir você ao que chamo de <strong>Instinto Superior</strong>. Para atingir esse estado de alta performance, trabalhamos a conexão absoluta entre os quatro planos: <strong>Mental, Intuitivo, Emocional e Físico</strong>. Quando o hardware (físico) e o software (emocional/mental) estão em sincronia, a vida flui de dentro para fora, com clareza e precisão cirúrgica.</p>
+                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
+            </audio>
+        </div>
 
-    <p style="margin-bottom: 15px;">Ao entender que você é uma máquina magnífica, você para de agir por impulso e começa a operar com estratégia. A numerologia aponta os códigos e os melhores caminhos, mas é o conhecimento sobre sua própria anatomia — do sinal elétrico que move suas pernas à intuição que guia seus passos — que permite que você limpe as engrenagens, alimente o sistema e alcance o <strong>ápice da sua existência</strong>. É ciência, é lógica e é o seu projeto de vida funcionando em sua capacidade máxima.</p>
-</div>
-`;
-    
+                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
 
- tituloBonito = " A Gênese dos Números";    
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>`;
-
-    
-html += `
-<div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 50px; min-height: 900px; background: #fff;">
-    
-    <div style="text-align: center; max-width: 900px;">
-        <h3 class="titulo-topico mostrar-titulo" style="border-bottom: 2px solid var(--gold); display: inline-block; padding: 0 40px; font-size: 2rem; letter-spacing: 4px; margin-bottom: 10px; text-transform: uppercase;">
-            A Gênese dos Números
-        </h3>
-        <p style="font-size: 1rem; color: #d97a1e; letter-spacing: 3px; margin-bottom: 45px; font-weight: bold;">
-            DA MÍSTICA ANCESTRAL À CIÊNCIA DA CONSCIÊNCIA
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
+           A decodificação das Energias e Potenciais nativas que definem sua personalidade.
         </p>
-
-        <div class="texto-res" style="font-size: 1.25rem; line-height: 2; color: #222; text-align: justify; text-justify: inter-word;">
-            
-            <p style="margin-bottom: 25px;">
-                A história da Numerologia Cabalística mergulha suas raízes na <strong>Cabala Ancestral</strong> (<em>Qabbalah</em>), a sabedoria hebraica que compreende o universo como uma estrutura matemática e vibracional. Para os antigos sábios, o universo não foi criado por acaso, mas através de canais de inteligência e emanações numéricas. Eles entendiam que o número não era apenas uma quantidade, mas uma <strong>qualidade vibracional</strong> — a assinatura do Criador em cada átomo da existência.
-            </p>
-
-            <p style="margin-bottom: 25px;">
-                Ao longo dos séculos, essa sabedoria evoluiu e atravessou fronteiras. De Pitágoras à modernidade, a percepção dos números deixou de ser puramente esotérica para abraçar uma lógica estrutural. Com o avanço da Física Quântica e dos estudos de frequência e vibração, a numerologia sofreu sua maior metamorfose, transformando-se no que hoje chamamos de <strong>Engenharia da Personalidade</strong> ou <strong>Ciência da Consciência</strong>.
-            </p>
-
-            <p style="margin-bottom: 25px;">
-                Hoje, entendemos que o universo é fundamentalmente matemático. Se a música é matemática audível, a numerologia é a <strong>matemática do seu destino</strong>. Ao analisar sua "Matriz", não estamos lidando com adivinhação, mas com um diagnóstico de precisão sobre as tendências do seu campo eletromagnético pessoal. É uma ferramenta de precisão técnica que permite identificar padrões de interferência e ciclos de potência, garantindo o autodomínio necessário para projetar sua realidade com base no seu código-fonte original.
-            </p>
-
-        </div>
-
-        <div style="margin-top: 50px; text-align: center;">
-            <div style="width: 80px; height: 1px; background: var(--gold); margin: 0 auto 25px;"></div>
-            <p style="font-style: italic; color: #666; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
-                "Os números são a linguagem em que o Universo foi escrito e a chave para a compreensão da alma humana."
-            </p>
-        </div>
     </div>
-</div>
-`;
-
-
-  tituloBonito = " Direcionamento da sua Jornada";    
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>`;   
-
-html += `
-<div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 50px 40px; min-height: 800px;">
-    
-    <div style="text-align: center; max-width: 800px;">
-        <h3 class="titulo-topico mostrar-titulo" style="border-bottom: 2px solid var(--gold); display: inline-block; padding: 0 30px; font-size: 1.8rem; letter-spacing: 3px; margin-bottom: 30px;">
-            
-        </h3>
-
-        <div class="texto-res" style="font-size: 1.1rem; line-height: 1.6; color: #333; text-align: justify; text-justify: inter-word;">
-            <p>
-                Este estudo é um mapa detalhado da sua engenharia existencial. Para que você aproveite ao máximo, estruturamos sua jornada em nove etapas fundamentais de decodificação:
-            </p>
-            
-            <p style="margin-top: 10px;">
-                Iniciamos pela <strong>Parte 1 (Performance Natural)</strong>, onde analisamos seus Planos de Expressão e Gráficos de Potenciais. Na <strong>Parte 2 (Essência e Identidade)</strong>, mergulhamos no seu Dia de Nascimento, Motivação, Personalidade e Desejos Ocultos, revelando quem você é na sua forma mais pura. Já na <strong>Parte 3 (Finalidade e Realização)</strong>, definimos seu Caminho de Vida, Propósito e o Direcionamento Profissional ideal.
-            </p>
-
-            <p style="margin-top: 10px;">
-                Na <strong>Parte 4 (Alinhamento e Desafios)</strong>, enfrentaremos as Fraquezas, Inibições e o seu Desafio Principal para transformar obstáculos em força. Para facilitar o seu dia a dia, a <strong>Parte 5 (Complementares)</strong> traz seus Números Harmônicos, Dias de Poder, Cores Favoráveis e Dinâmicas de Relacionamento.
-            </p>
-
-            <p style="margin-top: 10px;">
-                Ao chegarmos na <strong>Parte 6 (Ciclos)</strong> e <strong>Parte 7 (Tendências do Momento)</strong>, você entenderá suas Fases de Maturidade, Ano Pessoal e os Ciclos Transitórios que regem o seu agora. A jornada atinge seu ápice na <strong>Parte 8 (A Grande Matriz)</strong>, com a Pirâmide Invertida e as potências numéricas mapeadas até os seus 100 anos de idade.
-            </p>
-
-            <p style="margin-top: 10px;">
-                Por fim, a <strong>Parte 9 (Filosofia e Ciência)</strong> traz o Contexto Histórico e a Conclusão Evolutiva desta análise. Encare este conteúdo não como uma previsão, mas como um manual técnico de autogestão. Cada seção foi desenhada para que você entenda sua estrutura interna e utilize esse conhecimento para manifestar o seu legado no mundo.
-            </p>
-
-            <p style="margin-top: 15px; font-weight: 500; font-style: italic; color: #111; text-align: center;">
-                Absorva cada frequência, reconheça sua potência e desperte o mestre que existe em você.
-            </p>
-        </div>
-
-        <div style="margin-top: 20px; text-align: center;">
-            <div style="width: 60px; height: 1px; background: var(--gold); margin: 0 auto 20px;"></div>
-            <p style="font-weight: bold; color: #d97a1e; letter-spacing: 5px; font-size: 1rem; text-transform: uppercase;">
-                A Decodificação Começa Agora
-            </p>
-        </div>
-    </div>
-</div>
 `;
 
     
-html += `
-    <div class="capa-transicao">
-        <p>  </p>
-        <h2>Parte 1<br><br> Seus Graficos de Expressão Natural</h2>
-        <p>A decodificação das Energias e Potenciais nativas que definem sua personalidade.</p>
-    </div>
-`;
-
 
 html += `
 <div class="page" style="padding: 40px; background: #fdfdfd; min-height: 100vh;">
@@ -3755,15 +3975,16 @@ html += `
 
         <div style="text-align: center; padding: 25px; background: rgba(212, 175, 55, 0.1); border-radius: 10px; border: 1px dashed #d4af37;">
             <p style="color: #1a1a1a; font-weight: bold; margin: 0; line-height: 1.6;">
-                O equilíbrio numerológico limpa as lentes dos seus sentidos. Ao alinhar seus quatro planos internos, seus sensores externos passam a operar com clareza cristalina, permitindo que você manifeste o seu <strong>Instinto Superior</strong> e domine sua própria engenharia.
+               O equilíbrio numerológico limpa as lentes dos seus sentidos. Ao alinhar seus quatro planos internos, seus sensores externos passam a operar com clareza cristalina, permitindo que você manifeste o seu <strong>Instinto Superior</strong> e domine sua própria engenharia.
             </p>
         </div>
     </div>
 </div>
 `;
 
-
     
+
+
  tituloBonito = "Performance do Plano de Expressão Natural";    
 html += `
 <div class="separador-luxo">
@@ -3800,14 +4021,42 @@ html += `
     </div>
 `;
 
-// INSERIR CAPA 1 AQUI
 html += `
-    <div class="capa-transicao">
-        <p>  </p>
-        <h2>Parte 2 <br>Sua Essência & <br> Identidade Numerológica</h2>
-        <p>A definição da sua personalidade e comportamento</p>
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               Parte 2 <br><br>Sua Essência & Identidade Numerológica
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">A sua essencia</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/essencia.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/essencia.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">A sua essencia</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 1.2; padding: 0 20px; box-sizing: border-box; margin: 0;">
+            A definição da sua personalidade e comportamento
+        </p>
     </div>
-    `;
+`;
             
 // 1. A lista deve ter exatamente as chaves que você colocou no 'res'
 const listaPremium = ["dia",  "essencia", "talento", "motivacao", "influencia", "Personalidade", "comportamento"];
@@ -3987,86 +4236,44 @@ html += `
         `}
     </div>
 `;
-    
-    
-    
-// --- INÍCIO DO PILAR 02 ORGANIZADO ---
-html += `
-    <div class="capa-transicao">
-        <p>  </p>
-        <h2>Parte 3 <br>Finalidade & <br> Realização</h2>
-        <p>Propósito, Caminho de Vida e sua Maturidade</p>
-    </div>
-`;
-
-// ==========================================
-// BLOCO INDIVIDUAL: CAMINHO DE VIDA
-// ==========================================
-tituloBonito = "Caminho de Vida"; 
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>
-<div class="page">
-    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto">${textos.introducoes.CaminhodeVida || ""}</div>
-    <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.CaminhodeVida[res.CaminhodeVida])}</div>
-</div>
-`;
-
-// ==========================================
-// BLOCO INDIVIDUAL: PROPÓSITO
-// ==========================================
-tituloBonito = "Propósito"; 
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>
-<div class="page">
-    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto">${textos.introducoes.Propósito || ""}</div>
-    <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.Propósito[res.Propósito])}</div>
-</div>
-`;
-
-
 
 
 
 
 html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>Direcionamento Profissional</h2>
-    </div>
-</div>
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+              Parte 3 <br><br>Alinhamento &  Superação de Desafios
+            </h2>
+        </div>
 
-<div class="page">
-    <div class="texto-res">
-        ${introProfissionalTexto}
-        ${blocoProfissionalHTML}
-    </div>
-</div>
-`;
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
 
-    
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som da Superação</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/fraqueza.mp3" type="audio/mpeg">
+            </audio>
+        </div>
 
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/fraqueza.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som da Superação</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
 
-
-    
-
-
-
-// --- INÍCIO DO PILAR 02 ORGANIZADO ---
-html += `
-    <div class="capa-transicao">
-        <p>  </p>
-        <h2>Parte 4 <br>Alinhamento & <br> Superação de Desafios</h2>
-        <p>Onde a luz encontra a sombra: lições de Vida e mecanismos do subconsciente.</p>
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 1.2; padding: 0 20px; box-sizing: border-box; margin: 0;">
+            Onde a luz encontra a sombra: lições de Vida e mecanismos do subconsciente.
+        </p>
     </div>
 `;
 
@@ -4091,7 +4298,7 @@ if (res.deficiencias.length > 0) {
     html += `<div class="grupo-respostas-bloco pula-pagina">`;
     res.deficiencias.forEach(f => {
         html += `
-        <div class="texto-res" style="margin-top: 20px;> ${aplicarFiltroTexto(textos.deficiencias[f])}</p><hr style="border:0; border-top:1px solid #ffffff"></div>`;
+        <div class="texto-res" style="margin-top: 20px;"> ${aplicarFiltroTexto(textos.deficiencias[f])}</p><hr style="border:0; border-top:1px solid #ffffff"></div>`;
     });
 html += `</div>`;
     
@@ -4180,14 +4387,161 @@ html += `
     </div>
 `;    
 
-
-// 1
+    
+    
+    
 html += `
-    <div class="capa-transicao">
-        <p>  </p>
-        <h2>Parte 4 <br> Complementos & Relacionamento</h2>
-     
-        <p>Números harmônicos, Dias favoraveis, Cores atrativas e Número de relacionamento</p>
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+              Parte 4 <br><br>Finalidade &  Realização
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">A sua Realização</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/caminho.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/caminho.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">A sua Realização</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 1.2; padding: 0 20px; box-sizing: border-box; margin: 0;">
+           Propósito, Caminho de Vida e Direcionamento Profissional
+        </p>
+    </div>
+`;
+
+// ==========================================
+// BLOCO INDIVIDUAL: CAMINHO DE VIDA
+// ==========================================
+tituloBonito = "Caminho de Vida"; 
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    <div class="intro-texto">${textos.introducoes.CaminhodeVida || ""}</div>
+    <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.CaminhodeVida[res.CaminhodeVida])}</div>
+</div>
+`;
+
+// ==========================================
+// BLOCO INDIVIDUAL: PROPÓSITO
+// ==========================================
+tituloBonito = "Propósito"; 
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    <div class="intro-texto">${textos.introducoes.Propósito || ""}</div>
+    <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.Propósito[res.Propósito])}</div>
+</div>
+`;
+
+
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>Direcionamento Profissional</h2>
+    </div>
+</div>
+
+<div class="page">
+    <div class="texto-res">
+        ${introProfissionalTexto}
+        ${blocoProfissionalHTML}
+    </div>
+</div>
+`;
+
+
+
+
+    
+
+
+
+    
+
+
+
+
+
+html += `
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               Parte 5 <br><br> Complementos & Relacionamento
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som da sorte</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/sorte.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/sorte.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som da sorte</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+
+               <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som da harmonia</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/aquarelacover.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/aquarelacover.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som da harmonia</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 1.2; padding: 0 20px; box-sizing: border-box; margin: 0;">
+            Números harmônicos, Dias favoraveis, Cores atrativas e Número de relacionamento
+        </p>
     </div>
 `;
     
@@ -4357,15 +4711,43 @@ html += `
 </div>
 `;
 
-// 1. CAPA PARA O BLOCO DE TEMPO
 html += `
-    <div class="capa-transicao">
-        <p>  </p>
-        <h2>Parte 5 <br>Ciclos & <br> Momentos</h2>
-     
-        <p>Os ciclos da vida, os momentos de decisão e desafios de jornada </p>
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+              Parte 6 <br><br>Ciclos &  Momentos
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos ciclos</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/ciclos.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/ciclos.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos ciclos</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 1.2; padding: 0 20px; box-sizing: border-box; margin: 0;">
+           Os ciclos de vida, os momentos de decisão, os desafios de jornada e sua Maturidade
+        </p>
     </div>
 `;
+    
             // 5. CICLOS, MOMENTOS E DESAFIOS
 // 5. CICLOS, MOMENTOS E DESAFIOS
 ["ciclos", "momentos", "desafios"].forEach(sec => {
@@ -4374,6 +4756,10 @@ html += `
     // Esta linha garante que o "tituloBonito" mude em cada volta do loop
     tituloBonito = sec === "ciclos" ? "Ciclos da Vida" : 
                    sec === "momentos" ? "Momentos de decisão" : "Desafios de Jornada";    
+
+
+
+
 
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
 html += `
@@ -4408,7 +4794,7 @@ html += `
                    Idade ${info.idade} -  Data ${info.anos}
                 </span><br>
                 <div class="conteudo-travado">
-                    <div class="evitar-corte" class="texto-res" style="font-size: 19px">
+                    <div class="evitar-corte" class="texto-res">
                     ${aplicarFiltroTexto(textos[sec][i][res[sec][i]])}
                 </div></div>
                         <div class="aviso-trava">
@@ -4427,7 +4813,7 @@ html += `
 // ... (depois de terminar os Desafios)
 
 
-       // 2. INSERIR A MATURIDADE AQUI (Como você pediu)
+      // 2. INSERIR A MATURIDADE AQUI (Como você pediu)
 const tituloMat = nomesExibicao["Maturidade"] || "Fase de Maturidade";
    // Crie esta linha logo ACIMA do código da ondinha:
  tituloBonito = "FASE DE MATURIDADE";  
@@ -4447,16 +4833,44 @@ html += `
         <div class="texto-res">${aplicarFiltroTexto(textos.Maturidade[res.Maturidade])}</div>
     </div>
 `;  
-     
+      
 
             
 
 html += `
-    <div class="capa-transicao">
-        <p>  </p>
-        <h2>Parte 6 <br>Gráficos & <br> Tendências do Momento</h2>
-     
-        <p>A análise das janelas de oportunidade e as frequências que regem o seu agora.</p>
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               Parte 7 <br><br>Gráficos &  Tendências do Momento
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos gráficos</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/statusmomento.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/statusmomento.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos gráficos</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 1.2; padding: 0 20px; box-sizing: border-box; margin: 0;">
+            A análise das janelas de oportunidade e as frequências que regem o seu agora.
+        </p>
     </div>
 `;
 
@@ -4600,18 +5014,54 @@ html += `
 </div>`;
 
 
-// 1. CAPA PARA O BLOCO DE TEMPO
+
+
+
 html += `
-    <div class="capa-transicao">
-        <h4>   <h4>
-        <h2>Parte 7 <br>Matriz, Regente <br>Sequências Numéricas & Potências  </h2>
-        <p>Assim como as notas musicais determinam o ritmo da música as letras de seu nome de nascimento determinam o ritmo de sua vida. </p>
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+              Parte 8 <br><br>Matriz, Regente, Sequências Numéricas & Potências 
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som da Vida</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/matriz.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/matriz.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som da Vida</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 1.2; padding: 0 20px; box-sizing: border-box; margin: 0;">
+            Assim como as notas musicais determinam o ritmo da música as letras de seu nome de nascimento determinam o ritmo de sua vida.
+        </p>
     </div>
 `;
+    
 // --- 1. PRIMEIRO: DETECTA TUDO (Isso resolve o erro de 'before initialization') ---
 const arcanosTopo = topo(piramideVida[0]);
 const listaEspeciais = detectarEspeciaisIndependentes(piramideVida); // Função que criamos antes
-const listaFin = detectarFinanceirasIndependentes(piramideVida);      
+const listaFin = detectarFinanceirasIndependentes(piramideVida);    
+
+
+
+    
 // Crie esta linha logo ACIMA do código da ondinha:
  tituloBonito = "A Matriz da Vida"; 
  // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
@@ -4864,10 +5314,13 @@ if (listaFin.length > 0) {
         const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
 
         htmlPiramide += `
-             <div class="evitar-corte" style="margin-bottom: 35px; text-align: center; margin-top: 100px;">
+             <div class="evitar-corte" style="margin-bottom: 35px;  text-align: center; margin-top: 100px;">
+             
                 <h2 style="color:#28a745; font-size: 22px;">Potencial de Prosperidade 99/9</h2>
+
+                
                <div class="conteudo-travado">
-                <span style="color:#28a745; font-weight: bold; font-size: 20px;">📅 Período de maior influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
+                <span style="color:#28a745; font-weight: bold; font-size: 20px;">📅 Período de influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
                 
                 <div class="texto-res" style="text-align: justify; margin-top:15px;">
                     ${aplicarFiltroTexto(textos.SeqFinanceira[999])}
@@ -4989,12 +5442,40 @@ htmlPiramide += `
 html += htmlPiramide;
 
            
-// 1. CAPA PARA O BLOCO DE TEMPO
 html += `
-    <div class="capa-transicao">
-        <h4><h4>
-        <h2>Parte 8 <br><br>FILOSOFIA, CIÊNCIA  & NUMEROLOGIA </h2>
-        <p>Numerologia aplicada na filosofia Hermética e na ciência moderna</p>
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               Parte 9 <br><br>FILOSOFIA, CIÊNCIA  & NUMEROLOGIA
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som da Filosofia</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/filosofia.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/filosofia.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som da Filosofia</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 1.2; padding: 0 20px; box-sizing: border-box; margin: 0;">
+            Numerologia aplicada na filosofia Hermética e na ciência moderna
+        </p>
     </div>
 `;
         
@@ -5125,32 +5606,6 @@ html += `
 </div>
 `;
 
-// --- SEÇÃO: ORIGEM E CODIFICAÇÃO ---
-tituloBonito = "Origem e a Codificação da Numerologia Moderna"; 
-
-// Separador Luxo
-html += `
-<div class="separador-luxo" style="width: 100%; margin: 40px 0;">
-    <div class="caixa-interna" style="text-align: center;">
-        <h2 style="margin: 0;">${tituloBonito}</h2>
-    </div>
-</div>
-`;    
-
-html += `
-<div class="secao-card quebra-pagina" style="width: 100%; max-width: 1000px; margin: 0 auto; text-align: center; padding: 20px;">
-    <div style="margin-bottom: 30px;">
-        <h2 class="titulo-topico mostrar-titulo" style="letter-spacing: 5px; color: #827108; margin-bottom: 30px; font-weight: 800;">
-            ${tituloBonito}
-        </h2>
-        <div style="width: 50px; height: 3px; background: #827108; margin: 0 auto;"></div>
-    </div>
-
-    <div class="evitar-corte texto-res" style="font-size: 20px; line-height: 1.8; color: #333; text-align: justify;">
-        ${aplicarFiltroTexto(textos.introducoes.historiaModerna)}
-    </div>
-</div>
-`; // Fechamento correto da seção
 
 
     
@@ -5252,7 +5707,7 @@ html += `
         </p>
 
         <div style="display: flex; justify-content: center; margin: 20px 0; filter: grayscale(1);">
-            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" style="width: 500px; max-width: 90%; height: auto; opacity: 0.8;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" style="width: 350px; max-width: 90%; height: auto; opacity: 0.8;">
         </div>
                    
         <div style="font-size: 12px; color: #999; margin-top: 5px; text-transform: uppercase; letter-spacing: 2px;">
@@ -5263,9 +5718,9 @@ html += `
 </div>
 `;
 
-  
+
      document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
-        } // FIM DA FUNÇÃO
+            } // FIM DA FUNÇÃO    
 
   document.oncontextmenu=()=>false;
 document.onselectstart=()=>false; 
