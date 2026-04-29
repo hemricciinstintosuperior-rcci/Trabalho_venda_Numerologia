@@ -815,13 +815,33 @@ a, img, audio { border: none !important; outline: none !important; text-decorati
     border: 2px solid #A65F00; /* Um detalhe em dourado/bronze como no seu botão */
 }
     
+.video-wrapper {
+    width: 100%;
+    margin-bottom: 20px; /* Espaço entre o vídeo e o título/campos */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--gold); /* Borda fina acompanhando sua cor principal */
+    background-color: #000;
+}
 
+.video-wrapper video {
+    display: block;
+    outline: none;
+}
     </style>
 
    
 </head>
 <body>
 
+
+    <div class="container">
+    <div class="video-wrapper">
+        <video id="videoExplicativo" width="100%" controls poster="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png">
+            <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/introducao.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </div>
     <div class="container">
         <h1>Estudo Numerológico</h1>
      <input type="text" id="nome" placeholder="NOME COMPLETO" >
@@ -3208,12 +3228,6 @@ const dadosNegativas = detectarNegativas(piramideVida);
 // 2. DEPOIS: COMEÇA A MONTAR O HTML DO RELATÓRIO
 let html = `  
 
-<div class="video-introducao">
-    <video id="meuVideo" width="100%" autoplay muted playsinline>
-        <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/introducao.mp4" type="video/mp4">
-        Seu navegador não suporta vídeos.
-    </video>
-</div>
 
 
 <div id="status-acesso"class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
