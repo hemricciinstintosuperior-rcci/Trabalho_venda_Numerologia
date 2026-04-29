@@ -801,7 +801,19 @@ input:focus {
 :focus { outline: none !important; }
 a, img, audio { border: none !important; outline: none !important; text-decoration: none !important; }
 
+.video-introducao {
+    width: 100%;
+    max-width: 800px; /* Mesma largura do seu container para alinhar */
+    margin: 0 auto 20px auto; /* Centraliza e dá espaço para o formulário */
+    border-radius: 20px;
+    overflow: hidden; /* Garante que o vídeo siga o arredondamento */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
 
+.video-introducao video {
+    display: block;
+    border: 2px solid #A65F00; /* Um detalhe em dourado/bronze como no seu botão */
+}
     
 
     </style>
@@ -3194,7 +3206,15 @@ const dadosNegativas = detectarNegativas(piramideVida);
 
 
 // 2. DEPOIS: COMEÇA A MONTAR O HTML DO RELATÓRIO
-let html = `
+let html = `  
+
+<div class="video-introducao">
+    <video id="meuVideo" width="100%" autoplay muted playsinline>
+        <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/introducao.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+</div>
+
 
 <div id="status-acesso"class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
     <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 5px;">Calculando seu tempo de acesso...</div>
