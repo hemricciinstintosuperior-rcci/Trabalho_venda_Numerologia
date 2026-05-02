@@ -3097,7 +3097,40 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, negativasOriginal) {
     return html;
 }
 
+// Sua função de valor de letra, ajustada para garantir a redução 1-9 no final
+function calcularValorCabalisticoCompleto(letra) {
+    if (!letra) return 0;
+    
+    const norm = letra.normalize("NFD");
+    const base = norm[0].toUpperCase();
+    const valorBase = tabela[base] || 0;
+    if (!valorBase) return 0;
 
+    let soma = 0, mult = 1;
+
+    for (let i = 1; i < norm.length; i++) {
+        const c = norm[i];
+        if (c === "\u0301") soma += 2;          // Agudo (´)
+        else if (c === "\u0302") soma += 7;     // Circunflexo (^)
+        else if (c === "\u0303") soma += 3;     // Til (~)
+        else if (c === "\u0327") soma += 6;     // Cedilha (¸)
+        else if (c === "\u030a") soma += 7;     // Círculo (°)
+        else if (c === "\u0300" || c === "\u0308") mult *= 2; // Grave/Trema
+    }
+
+    if (letra.includes("'")) soma += 2; // Apóstrofo
+
+    let resultadoBruto = (valorBase + soma) * mult;
+
+    // Redução Numerológica (Garante 1 a 9, mantendo 11 e 22 se necessário)
+    function reduzir(n) {
+        if (n <= 9 || n === 11 || n === 22) return n;
+        let s = n.toString().split('').reduce((acc, d) => acc + parseInt(d), 0);
+        return reduzir(s);
+    }
+
+    return reduzir(resultadoBruto);
+}
         
         
 function gerarMapaCompleto() {
@@ -3208,27 +3241,28 @@ let resultadoAnoPessoal = reduzir(diaR + mesR + reduzir(anoReferencia));
  let vTransitoCalculado = "--";   
 
 
-// --- CÁLCULO DO EQUILÍBRIO (CORRIGIDO) ---
+// --- CÁLCULO DO EQUILÍBRIO (COM SUA TABELA DE ACENTOS) ---
 let resultadoEquilibrioFinal = "";
-// 1. Declare as variáveis fora para o 'const res' conseguir ler depois
 let numInicio = 0; 
 let numFim = 0;
+// --- EXECUÇÃO DO EQUILÍBRIO ---
+if (nomesArray && nomesArray.length > 0) {
+    // Início: Primeira letra do primeiro nome
+    const primLetra = nomesArray[0][0];
+    
+    // Conclusão: Última letra do último nome
+    const ultimoNome = nomesArray[nomesArray.length - 1];
+    const ultLetra = ultimoNome.slice(-1);
 
-if (nomesArray && nomesArray[0]) {
-    const primeiroNome = nomesArray[0]; 
-    const primLetra = primeiroNome[0];
-    const ultLetra = primeiroNome.slice(-1);
+    numInicio = calcularValorCabalisticoCompleto(primLetra);
+    numFim = calcularValorCabalisticoCompleto(ultLetra);
 
-    // 2. Atribua os valores (sem usar 'const' aqui dentro, use as que já declaramos)
-    numInicio = calcularNumerologia(tabela[primLetra], false);
-    numFim = calcularNumerologia(tabela[ultLetra], false);
-
+    // Busca no banco (bancoEquilibrio.inicio e bancoEquilibrio.conclusao)
     const txtInicio = (bancoEquilibrio.inicio && bancoEquilibrio.inicio[numInicio]) ? bancoEquilibrio.inicio[numInicio] : "";
     const txtFim = (bancoEquilibrio.conclusao && bancoEquilibrio.conclusao[numFim]) ? bancoEquilibrio.conclusao[numFim] : "";
     
     resultadoEquilibrioFinal = txtInicio + txtFim;
 }
-
 
 const res = {
     dia: dia,
