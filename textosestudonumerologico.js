@@ -3029,19 +3029,19 @@ talentosEspeciais: {
     // --- CAMADA 2: O PLANO (Onde a habilidade atua) ---
  planosExpressao: {
     fisico: {
-        texto: `<h4>Campo de Atuação: Físico (Execução e Realidade)</h4>
+        forte: `<h4>Campo de Atuação: Físico (Execução e Realidade)</h4>
                 <p>Sua habilidade se manifesta primordialmente através da ação concreta e da praticidade. Você possui uma natureza voltada para o mundo material, onde o saber lidar com as situações cotidianas exige agilidade, esforço físico e a capacidade de transformar ideias em resultados visíveis e tangíveis.</p>`
     },
     mental: {
-        texto: `<h4>Campo de Atuação: Mental (Lógica e Estratégia)</h4>
+        forte: `<h4>Campo de Atuação: Mental (Lógica e Estratégia)</h4>
                 <p>Sua habilidade opera no campo do raciocínio, onde a clareza de pensamento e a análise são suas principais ferramentas. Você lida com a vida de forma lógica, buscando compreender a estrutura dos problemas para encontrar soluções inteligentes, priorizando a organização das ideias antes de qualquer tomada de decisão.</p>`
     },
     emocional: {
-        texto: `<h4>Campo de Atuação: Emocional (Sentimento e Interação)</h4>
+        forte: `<h4>Campo de Atuação: Emocional (Sentimento e Interação)</h4>
                 <p>Sua atuação é guiada pela sensibilidade e pela capacidade de sentir o ambiente e as pessoas ao seu redor. Sua habilidade cotidiana reside na empatia e na inteligência emocional, permitindo que você navegue por situações da vida através dos vínculos, dos valores humanos e da harmonia nas relações.</p>`
     },
     intuitivo: {
-        texto: `<h4>Campo de Atuação: Intuitivo (Instinto e Percepção)</h4>
+        forte: `<h4>Campo de Atuação: Intuitivo (Instinto e Percepção)</h4>
                 <p>Sua habilidade de lidar com a vida vem de uma percepção aguçada que vai além do óbvio. Você atua através do instinto e de uma sabedoria interior silenciosa, sendo capaz de captar intenções e direções que não são explicadas pela lógica, confiando na sua conexão interna para se guiar no dia a dia.</p>`
     }
 },
