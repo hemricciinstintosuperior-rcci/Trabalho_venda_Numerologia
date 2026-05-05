@@ -2240,42 +2240,52 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
             } catch(e) { console.log("Erro ao buscar texto do plano:", p); }
 
             if (textoEncontrado) {
-h += `
-                    <div class="evitar-corte" style="margin-bottom: 30px; border-left: 5px solid var(--gold); padding-left: 20px; background: #fdfdfd; padding-top: 10px; padding-bottom: 10px;">
-                        <h4 style="margin:0 0 10px 0; color:${coresPlanos[p]}; text-transform:uppercase; font-size:24px;">${nomesAmigaveis[p]} (${intensidade})</h4>
-                        
-                        <div style="font-size:18px; line-height:1.6;">${aplicarFiltroTexto(textoEncontrado)}</div>
-              
-
-         </div>`;
-            }
+// CHAMADA DOS TEXTOS DO textosPlanosMomento
+h += `<div style="margin-top: 30px;">`;
+for(let p in somaMomento) {
+    let r = somaMomento[p] / ref;
+    let intensidade = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
+    let vFinal = reduzirPuro(somaMomento[p]);
+    
+    let textoEncontrado = "";
+    try {
+        if (typeof textosPlanosMomento !== 'undefined' && textosPlanosMomento[p]) {
+            textoEncontrado = textosPlanosMomento[p][intensidade][vFinal] || "";
         }
-        h += `</div>`;
+    } catch(e) { console.log("Erro ao buscar texto do plano:", p); }
+
+    if (textoEncontrado) {
+        h += `
+            <div class="evitar-corte" style="margin-bottom: 30px; border-left: 5px solid var(--gold); padding-left: 20px; background: #fdfdfd; padding-top: 10px; padding-bottom: 10px; position: relative;">
+                <h4 style="margin:0 0 10px 0; color:${coresPlanos[p]}; text-transform:uppercase; font-size:24px;">${nomesAmigaveis[p]} (${intensidade})</h4>
+                
+                <div class="${travado ? 'conteudo-travado' : ''}">
+                    <div style="font-size:18px; line-height:1.6;">${aplicarFiltroTexto(textoEncontrado)}</div>
+                </div>
+
+                ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''}
+            </div>`;
+    }
+}
+h += `</div>`;
 
         // TRÂNSITO VIBRACIONAL
-        let letrasAno = timelines.map(t => t[indiceAno % t.length]);
-        let vTransito = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValorLetra(l), 0));
-        let txtTransito = (typeof TextosTransito !== 'undefined') ? (TextosTransito[vTransito] || "") : "";
+// TRÂNSITO VIBRACIONAL
+let letrasAno = timelines.map(t => t[indiceAno % t.length]);
+let vTransito = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValorLetra(l), 0));
+let txtTransito = (typeof TextosTransito !== 'undefined') ? (TextosTransito[vTransito] || "") : "";
 
 h += `
-            <div class= style="margin-top:60px; background:#fff; color:#000; padding:30px;">
-                <h3 style="color:var(--gold); margin:0 0 15px 0; text-transform:uppercase;">TRÂNSITO VIBRACIONAL: ${vTransito}</h3>
-                
-               
-                <div style="font-size:18px; line-height:1.6; color:#111;">${aplicarFiltroTexto(txtTransito)}</div>
-           
-        </div>`;
-
-
-
-
-        // CORREÇÃO DO ERRO AQUI:
-        // Se 'statusParaGrafico' não existe no escopo, passamos 'null' ou uma string vazia 
-        // para evitar que o código quebre.
-        const statusSeguro = (typeof statusParaGrafico !== 'undefined') ? statusParaGrafico : "";
-
-        h += gerarTodosOsGraficosMomento(res, faltantes, nomeCompleto, d3, regenteMatriz, negativasMatriz, statusSeguro, indiceAno, periodoVigente);
+    <div class="evitar-corte" style="margin-top:60px; background:#fff; color:#000; padding:30px; border: 1px solid #eee; position: relative;">
+        <h3 style="color:var(--gold); margin:0 0 15px 0; text-transform:uppercase;">TRÂNSITO VIBRACIONAL: ${vTransito}</h3>
         
+        <div class="${travado ? 'conteudo-travado' : ''}">
+            <div style="font-size:18px; line-height:1.6; color:#111;">${aplicarFiltroTexto(txtTransito)}</div>
+        </div>
+
+        ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''}
+    </div>`;
+
         return h;
     };
 
