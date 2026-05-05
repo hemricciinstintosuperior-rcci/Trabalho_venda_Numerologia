@@ -2243,7 +2243,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
 h += `
                     <div class="evitar-corte" style="margin-bottom: 30px; border-left: 5px solid var(--gold); padding-left: 20px; background: #fdfdfd; padding-top: 10px; padding-bottom: 10px;">
                         <h4 style="margin:0 0 10px 0; color:${coresPlanos[p]}; text-transform:uppercase; font-size:24px;">${nomesAmigaveis[p]} (${intensidade})</h4>
-                         ${travado ? '<div class="conteudo-travado">' : '<div>'}
+                         <div class="${travado ? 'conteudo-travado' : ''}">
                         <div style="font-size:18px; line-height:1.6;">${aplicarFiltroTexto(textoEncontrado)}</div>
                     </div>
              ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''} 
@@ -2262,11 +2262,15 @@ h += `
             <div class= style="margin-top:60px; background:#fff; color:#000; padding:30px;">
                 <h3 style="color:var(--gold); margin:0 0 15px 0; text-transform:uppercase;">TRÂNSITO VIBRACIONAL: ${vTransito}</h3>
                 
-                ${travado ? '<div class="conteudo-travado">' : '<div>'}
+                <div class="${travado ? 'conteudo-travado' : ''}">
                 <div style="font-size:18px; line-height:1.6; color:#111;">${aplicarFiltroTexto(txtTransito)}</div>
             </div>    ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''}     
         </div>`;
 
+
+
+
+        
         return h;
     };
 
