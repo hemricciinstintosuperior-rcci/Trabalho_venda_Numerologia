@@ -4571,13 +4571,6 @@ function verificarLiberacaoPDF(dados) {
 }
 
 
-     // Dentro da função verificarLiberacaoPDF(dados)
-const avisoTotal = document.getElementById("aviso-expiracao-total");
-if (avisoTotal && dados.data_inicio) {
-    const dataRef = new Date(dados.data_inicio);
-    const expiraEm = 30 - Math.floor((new Date() - dataRef) / (1000 * 60 * 60 * 24));
-    avisoTotal.innerHTML = `Acesso ao portal disponível por mais ${expiraEm} dias.`;
-}   
 
 async function registrarDownloadRealizado() {
     try {
