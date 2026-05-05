@@ -3523,6 +3523,10 @@ const dadosNegativas = detectarNegativas(piramideVida);
     <div id="msg-trava" style="font-size: 0.75rem; opacity: 0.7; margin-top: 5px;"></div>
 </div>
 
+<div id="aviso-expiracao-total" style="font-size: 0.7rem; color: #ff4444; margin-top: 10px; font-style: italic;">
+    Verificando validade do acesso...
+</div>
+
 <button id="btn-pdf-premium" class="btn-pdf no-print" onclick="window.print(); registrarDownloadRealizado();" disabled style="filter: grayscale(100%); opacity: 0.5; cursor: not-allowed;">
     📥 BAIXAR SEU PDF PREMIUM
 </button>
@@ -4440,36 +4444,44 @@ const emailLimpo = userEmail.replace(/\./g, '_');
 
 async function inicializarSeguranca() {
     try {
-        // Busca os dados no Firebase
         const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
         const dados = await res.json();
 
         if (!dados) {
-            alert("Acesso não encontrado no sistema.");
+            alert("Acesso não encontrado.");
             window.location.href = "index.html";
             return;
         }
 
-        // Se o status estiver como 'usado' ou não for 'ativo', bloqueia
+        // --- NOVA TRAVA DE 30 DIAS (EXPIRAÇÃO TOTAL) ---
+        if (dados.data_inicio) {
+            const dataInicio = new Date(dados.data_inicio);
+            const agora = new Date();
+            const diffTempo = Math.abs(agora - dataInicio);
+            const diffDiasTotal = Math.ceil(diffTempo / (1000 * 60 * 60 * 24));
+
+            if (diffDiasTotal > 30) {
+                alert("Seu período de acesso de 30 dias expirou.");
+                window.location.href = "index.html"; // Ou uma página de "Acesso Expirado"
+                return;
+            }
+        }
+
+        // Mantém suas travas existentes
         if (dados.status === 'usado' || dados.status !== 'ativo') {
             alert("Este acesso expirou ou está inativo.");
             window.location.href = "index.html";
             return;
         }
 
-        // Se não houver data_inicio, o cronômetro não inicia. 
-        // Como o Portal já cria essa data no login, aqui apenas lemos.
-        if (!dados.data_inicio) {
-            console.warn("Aguardando registro de data inicial...");
-            return;
-        }
-
-        dadosGlobais = dados; // Salva o objeto inteiro do Firebase
+        dadosGlobais = dados; 
         const dataReferencia = new Date(dados.data_inicio);
-        const dataExpiracao = new Date(dataReferencia);
-        dataExpiracao.setDate(dataReferencia.getDate() + 7); 
+        
+        // Timer dos 7 dias para o PDF
+        const dataExpiracaoPDF = new Date(dataReferencia);
+        dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
 
-        iniciarTimer(dataExpiracao);
+        iniciarTimer(dataExpiracaoPDF);
         verificarLiberacaoPDF(dados);
 
     } catch (e) {
@@ -4506,14 +4518,12 @@ if (distancia < 0) {
 }
 
 function verificarLiberacaoPDF(dados) {
-    if (!dados || !dados.data_inicio) return;
-    
-    const agora = new Date();
+const avisoTotal = document.getElementById("aviso-expiracao-total");
+if (avisoTotal && dados.data_inicio) {
     const dataRef = new Date(dados.data_inicio);
-    const diffDias = (agora - dataRef) / (1000 * 60 * 60 * 24);
-    
-    const btnPDF = document.getElementById("btn-pdf-premium");
-    const msgTrava = document.getElementById("msg-trava");
+    const expiraEm = 30 - Math.floor((new Date() - dataRef) / (1000 * 60 * 60 * 24));
+    avisoTotal.innerHTML = `Acesso ao portal disponível por mais ${expiraEm} dias.`;
+}   
 
     // NOVA TRAVA: Se no Firebase o campo pdf_baixado for true, bloqueia o botão
     if (dados.pdf_baixado === true) {
@@ -4546,6 +4556,15 @@ function verificarLiberacaoPDF(dados) {
         if (msgTrava) msgTrava.innerHTML = "🔒 PDF disponível após o período de garantia.";
     }
 }
+
+
+     // Dentro da função verificarLiberacaoPDF(dados)
+const avisoTotal = document.getElementById("aviso-expiracao-total");
+if (avisoTotal && dados.data_inicio) {
+    const dataRef = new Date(dados.data_inicio);
+    const expiraEm = 30 - Math.floor((new Date() - dataRef) / (1000 * 60 * 60 * 24));
+    avisoTotal.innerHTML = `Acesso ao portal disponível por mais ${expiraEm} dias.`;
+}   
 
 async function registrarDownloadRealizado() {
     try {
