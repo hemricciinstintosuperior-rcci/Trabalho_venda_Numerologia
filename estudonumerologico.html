@@ -3600,7 +3600,7 @@ let html = `
     <div id="msg-trava" style="font-size: 0.75rem; opacity: 0.7; margin-top: 5px;"></div>
 </div>
 
-<div id="aviso-expiracao-total" style="font-size: 0.7rem; color: #ff4444; margin-top: 10px; font-style: italic;">
+<div id="aviso-expiracao-total" class="no-print" style="font-size: 0.75rem; color: #ffbc00; margin-top: 10px; opacity: 0.9;">
     Verificando validade do acesso...
 </div>
 
@@ -6415,13 +6415,6 @@ function verificarLiberacaoPDF(dados) {
 }
 
 
-     // Dentro da função verificarLiberacaoPDF(dados)
-const avisoTotal = document.getElementById("aviso-expiracao-total");
-if (avisoTotal && dados.data_inicio) {
-    const dataRef = new Date(dados.data_inicio);
-    const expiraEm = 30 - Math.floor((new Date() - dataRef) / (1000 * 60 * 60 * 24));
-    avisoTotal.innerHTML = `Acesso ao portal disponível por mais ${expiraEm} dias.`;
-}   
 
 async function registrarDownloadRealizado() {
     try {
