@@ -2268,7 +2268,13 @@ h += `
 
 
 
-h += gerarTodosOsGraficosMomento(res, faltantes, nomeCompleto, d3, regenteMatriz, negativasMatriz, statusParaGrafico, indiceAno, periodoVigente);
+
+        // CORREÇÃO DO ERRO AQUI:
+        // Se 'statusParaGrafico' não existe no escopo, passamos 'null' ou uma string vazia 
+        // para evitar que o código quebre.
+        const statusSeguro = (typeof statusParaGrafico !== 'undefined') ? statusParaGrafico : "";
+
+        h += gerarTodosOsGraficosMomento(res, faltantes, nomeCompleto, d3, regenteMatriz, negativasMatriz, statusSeguro, indiceAno, periodoVigente);
         
         return h;
     };
