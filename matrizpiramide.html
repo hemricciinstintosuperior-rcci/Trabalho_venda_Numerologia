@@ -273,6 +273,16 @@
     }
 }
 
+
+
+/* Cores de Destaque nas Pirâmides */
+.num.negativo { background: #ffcccc !important; color: #d32f2f !important; border: 1px solid #d32f2f !important; font-weight: bold; }
+.num.especial { background: #fff3cd !important; color: #856404 !important; border: 1px solid #856404 !important; font-weight: bold; }
+.num.financeiro { background: #d4edda !important; color: #155724 !important; border: 1px solid #155724 !important; font-weight: bold; }
+.num.regente { background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728) !important; color: #4a3b00 !important; border: 1px solid #827108 !important; transform: scale(1.2); z-index: 10; box-shadow: 0 0 10px rgba(130,113,8,0.5); }
+.num.potencia { border: 2px solid #827108 !important; background: #fff !important; color: #827108 !important; }
+
+    
     
     
 </style>
@@ -437,33 +447,22 @@ function calcularPeriodoSequencia(periodoBase, duracaoTotal) {
 
 
 function montarSecaoMatriz(titulo, matriz, bancoDeTextos, introPiramide) {
-    // 1. Identifica o Regente (o último número da ponta da pirâmide)
     const ultimaLinha = matriz[matriz.length - 1];
     const regente = ultimaLinha[0];
-    
-    // 2. Busca o resultado específico (1 ao 9) no banco de textos que passamos
-    const resultadoTexto = bancoDeTextos[regente] || "Resultado não encontrado para este número.";
+    const resultadoTexto = bancoDeTextos[regente] || "Resultado não encontrado.";
 
+    // O segredo está aqui: passamos 'titulo' para o desenhar saber a cor
     let h = `
     <div class="page evitar-corte" style="margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 40px;">
-        <h2 style="text-align:center; color:#827108; text-transform: uppercase; letter-spacing: 2px;">Matriz de ${titulo}</h2>
+        <h2 style="text-align:center; color:#827108; text-transform: uppercase;">Matriz de ${titulo}</h2>
         
-        <div class="texto-introducao" style="font-style: italic; color: #555; margin-bottom: 20px;">
-            ${personalizarTexto(introPiramide)}
-        </div>
-
         <div style="margin: 20px 0;">
-            ${desenhar(matriz)}
+            ${desenhar(matriz, titulo)} 
         </div>
 
-        <div class="resultado-regente-container" style="background: #fdfaf0; border: 1px solid #e6d5a8; border-radius: 12px; padding: 25px; margin-top: 20px;">
-            <h3 style="color: #827108; margin-top: 0; display: flex; align-items: center; gap: 10px;">
-                <span style="font-size: 24px;">🔱</span> 
-                RESULTADO DO REGENTE ${regente} - ${titulo}
-            </h3>
-            <div class="texto-resultado-pratico" style="font-size: 16px; line-height: 1.7; color: #333;">
-                ${personalizarTexto(resultadoTexto)}
-            </div>
+        <div class="resultado-regente-container" style="background: #fdfaf0; border: 1px solid #e6d5a8; border-radius: 12px; padding: 25px;">
+            <h3 style="color: #827108;">🔱 REGENTE ${regente} - ${titulo}</h3>
+            ${personalizarTexto(resultadoTexto)}
         </div>
     </div>`;
     return h;
@@ -778,15 +777,77 @@ function detectarSequenciaFinanceira(linhas){
     return pos;
 }
 
-function desenhar(linhas, compacta = false) {
-    let classe = compacta ? "piramide compacta" : "piramide";
-    let html = `<div class="${classe}">`;
 
-    linhas.forEach((linha) => {
-        // ESSA DIV 'LINHA' É O QUE FAZ FICAR UM DO LADO DO OUTRO
-        html += `<div class="linha">`; 
-        linha.forEach((n) => {
-            html += `<div class="num">${n}</div>`;
+
+
+// Função que decide a cor de cada bolinha da pirâmide
+function obterMapaCores(linhas, tipoPira) {
+    let mapa = linhas.map(linha => linha.map(() => ""));
+
+    // 1. Marcar Regente (A ponta de baixo)
+    mapa[mapa.length - 1][0] = "regente";
+
+    // 2. Marcar Potências (A primeira linha)
+    linhas[0].forEach((_, j) => { mapa[0][j] += " potencia"; });
+
+    // 3. Detectar Financeiro (99/9) - VERDE
+    for (let i = 0; i < linhas.length - 1; i++) {
+        for (let j = 0; j < linhas[i].length - 1; j++) {
+            if (linhas[i][j] === 9 && linhas[i][j+1] === 9 && linhas[i+1][j] === 9) {
+                mapa[i][j] = "financeiro";
+                mapa[i][j+1] = "financeiro";
+                mapa[i+1][j] = "financeiro";
+            }
+        }
+    }
+
+    // 4. Detectar Negativos (3 ou mais iguais) - VERMELHO
+    linhas.forEach((linha, i) => {
+        let j = 0;
+        while (j < linha.length) {
+            let num = linha[j];
+            let cont = 1;
+            while (j + cont < linha.length && linha[j + cont] === num) { cont++; }
+            if (cont >= 3) {
+                for (let k = 0; k < cont; k++) { mapa[i][j + k] = "negativo"; }
+                j += cont;
+            } else { j++; }
+        }
+    });
+
+    // 5. Detectar Especiais (Sequências de 3 dígitos do banco) - AMARELO
+    // Escolhe o banco de acordo com a pirâmide sendo desenhada
+    let banco = {};
+    if(tipoPira === "VIDA") banco = window.textosSeqEspVida || {};
+    else if(tipoPira === "PESSOAL") banco = window.textosSeqEspPessoal || {};
+    else if(tipoPira === "SOCIAL") banco = window.textosSeqEspSocial || {};
+    else if(tipoPira === "DESTINO") banco = window.textosSeqEspDestino || {};
+
+    linhas.forEach((linha, i) => {
+        for (let j = 0; j < linha.length - 2; j++) {
+            let seq = "" + linha[j] + linha[j+1] + linha[j+2];
+            if (banco[seq]) {
+                mapa[i][j] = "especial";
+                mapa[i][j+1] = "especial";
+                mapa[i][j+2] = "especial";
+            }
+        }
+    });
+
+    return mapa;
+}
+
+// Função desenhar atualizada para aplicar as cores
+function desenhar(linhas, tipoPira = "VIDA", compacta = false) {
+    const mapaCores = obterMapaCores(linhas, tipoPira);
+    let classePira = compacta ? "piramide compacta" : "piramide";
+    let html = `<div class="${classePira}">`;
+
+    linhas.forEach((linha, i) => {
+        html += `<div class="linha">`;
+        linha.forEach((num, j) => {
+            let corClasse = mapaCores[i][j];
+            html += `<div class="num ${corClasse}">${num}</div>`;
         });
         html += `</div>`;
     });
@@ -794,6 +855,15 @@ function desenhar(linhas, compacta = false) {
     html += `</div>`;
     return html;
 }
+
+
+
+
+
+
+
+
+    
 
 function piramidePessoal(baseNome, dia) { return piramide(baseNome.map(n => reduzir(n + reduzir(dia)))); }
 function piramideSocial(baseNome, mes) { return piramide(baseNome.map(n => reduzir(n + reduzir(mes)))); }
