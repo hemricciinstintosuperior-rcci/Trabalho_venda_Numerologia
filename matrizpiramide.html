@@ -176,6 +176,8 @@
     border: 1px solid #eee;
 }
 
+
+
 /* Cores de destaque para as sequências (se quiser usar) */
 .num.negativo { background-color: #ffcccc; color: #d32f2f; border-color: #d32f2f; }
 .num.especial { background-color: #fff3cd; color: #856404; border-color: #856404; }
@@ -277,10 +279,12 @@
 
 /* Cores de Destaque nas Pirâmides */
 .num.negativo { background: #ffcccc !important; color: #d32f2f !important; border: 1px solid #d32f2f !important; font-weight: bold; }
-.num.especial { background: #fff3cd !important; color: #856404 !important; border: 1px solid #856404 !important; font-weight: bold; }
+
 .num.financeiro { background: #d4edda !important; color: #155724 !important; border: 1px solid #155724 !important; font-weight: bold; }
+
+.num.especial { background-color: #fff3cd !important; color: #856404 !important; border: 1px solid #856404 !important; }    
 .num.regente { background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728) !important; color: #4a3b00 !important; border: 1px solid #827108 !important; transform: scale(1.2); z-index: 10; box-shadow: 0 0 10px rgba(130,113,8,0.5); }
-.num.potencia { border: 2px solid #827108 !important; background: #fff !important; color: #827108 !important; }
+
 
     
     
@@ -446,16 +450,20 @@ function calcularPeriodoSequencia(periodoBase, duracaoTotal) {
 
 
 
-function montarSecaoMatriz(titulo, matriz, bancoDeTextos, introPiramide) {
+function montarSecaoMatriz(titulo, matriz, bancoDeTextos, textoIntro) {
     const ultimaLinha = matriz[matriz.length - 1];
     const regente = ultimaLinha[0];
-    const resultadoTexto = bancoDeTextos[regente] || "Resultado não encontrado.";
+    const resultadoTexto = bancoDeTextos ? bancoDeTextos[regente] : "Resultado não encontrado.";
+    
+    // Se a introdução for indefinida, ele apenas ignora em vez de dar erro
+    let introExibicao = textoIntro ? personalizarTexto(textoIntro) : "";
 
-    // O segredo está aqui: passamos 'titulo' para o desenhar saber a cor
     let h = `
     <div class="page evitar-corte" style="margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 40px;">
         <h2 style="text-align:center; color:#827108; text-transform: uppercase;">Matriz de ${titulo}</h2>
         
+        ${introExibicao}
+
         <div style="margin: 20px 0;">
             ${desenhar(matriz, titulo)} 
         </div>
@@ -779,64 +787,81 @@ function detectarSequenciaFinanceira(linhas){
 
 
 
-
-// Função que decide a cor de cada bolinha da pirâmide
 function obterMapaCores(linhas, tipoPira) {
     let mapa = linhas.map(linha => linha.map(() => ""));
 
-    // 1. Marcar Regente (A ponta de baixo)
+    // 1. REGENTE
     mapa[mapa.length - 1][0] = "regente";
 
-    // 2. Marcar Potências (A primeira linha)
-    linhas[0].forEach((_, j) => { mapa[0][j] += " potencia"; });
+    // 2. PEGAR O BANCO DE DADOS
+// 2. SELEÇÃO DO BANCO (Ajustado para buscar a const direto)
+    let bancoEspecial = {};
+    const t = String(tipoPira).toUpperCase();
+    
+    // Tentamos pegar a variável global (window) ou a const direta
+    if(t.includes("VIDA")) bancoEspecial = (typeof textosSeqEspVida !== 'undefined') ? textosSeqEspVida : {};
+    else if(t.includes("PESSOAL")) bancoEspecial = (typeof textosSeqEspPessoal !== 'undefined') ? textosSeqEspPessoal : {};
+    else if(t.includes("SOCIAL")) bancoEspecial = (typeof textosSeqEspSocial !== 'undefined') ? textosSeqEspSocial : {};
+    else if(t.includes("DESTINO")) bancoEspecial = (typeof textosSeqEspDestino !== 'undefined') ? textosSeqEspDestino : {};
 
-    // 3. Detectar Financeiro (99/9) - VERDE
-    for (let i = 0; i < linhas.length - 1; i++) {
-        for (let j = 0; j < linhas[i].length - 1; j++) {
-            if (linhas[i][j] === 9 && linhas[i][j+1] === 9 && linhas[i+1][j] === 9) {
-                mapa[i][j] = "financeiro";
-                mapa[i][j+1] = "financeiro";
-                mapa[i+1][j] = "financeiro";
+    linhas.forEach((linha, i) => {
+        
+        // --- 3. SEQUÊNCIAS FINANCEIRAS (VERDE - 99/9) ---
+        // Adicionada de volta com prioridade
+        if (i < linhas.length - 1) {
+            for (let j = 0; j < linha.length - 1; j++) {
+                let v1 = String(linha[j]).split('').pop();
+                let v2 = String(linha[j+1]).split('').pop();
+                let v3 = String(linhas[i+1][j]).split('').pop();
+
+                if (v1 === "9" && v2 === "9" && v3 === "9") {
+                    mapa[i][j] = "financeiro";
+                    mapa[i][j+1] = "financeiro";
+                    mapa[i+1][j] = "financeiro";
+                }
             }
         }
-    }
 
-    // 4. Detectar Negativos (3 ou mais iguais) - VERMELHO
-    linhas.forEach((linha, i) => {
-        let j = 0;
-        while (j < linha.length) {
-            let num = linha[j];
-            let cont = 1;
-            while (j + cont < linha.length && linha[j + cont] === num) { cont++; }
-            if (cont >= 3) {
-                for (let k = 0; k < cont; k++) { mapa[i][j + k] = "negativo"; }
-                j += cont;
-            } else { j++; }
-        }
-    });
-
-    // 5. Detectar Especiais (Sequências de 3 dígitos do banco) - AMARELO
-    // Escolhe o banco de acordo com a pirâmide sendo desenhada
-    let banco = {};
-    if(tipoPira === "VIDA") banco = window.textosSeqEspVida || {};
-    else if(tipoPira === "PESSOAL") banco = window.textosSeqEspPessoal || {};
-    else if(tipoPira === "SOCIAL") banco = window.textosSeqEspSocial || {};
-    else if(tipoPira === "DESTINO") banco = window.textosSeqEspDestino || {};
-
-    linhas.forEach((linha, i) => {
+        // --- 4. SEQUÊNCIAS ESPECIAIS (DOURADO) ---
         for (let j = 0; j < linha.length - 2; j++) {
-            let seq = "" + linha[j] + linha[j+1] + linha[j+2];
-            if (banco[seq]) {
-                mapa[i][j] = "especial";
-                mapa[i][j+1] = "especial";
-                mapa[i][j+2] = "especial";
+            let n1 = String(linha[j]).split('').pop();
+            let n2 = String(linha[j+1]).split('').pop();
+            let n3 = String(linha[j+2]).split('').pop();
+            let seq = n1 + n2 + n3;
+            
+            // Pinta de dourado se existir no banco e não for financeiro
+            if (bancoEspecial[seq]) {
+                if (mapa[i][j] === "") mapa[i][j] = "especial";
+                if (mapa[i][j+1] === "") mapa[i][j+1] = "especial";
+                if (mapa[i][j+2] === "") mapa[i][j+2] = "especial";
             }
+        }
+        
+        // --- 5. SEQUÊNCIAS NEGATIVAS (VERMELHO) ---
+        let jNeg = 0;
+        while (jNeg < linha.length) {
+            let num = String(linha[jNeg]).split('').pop();
+            let cont = 1;
+            while (jNeg + cont < linha.length && String(linha[jNeg+cont]).split('').pop() === num) { cont++; }
+            
+            if (cont >= 3) {
+                for (let k = 0; k < cont; k++) {
+                    // Só pinta de vermelho se o espaço ainda estiver vazio (branco)
+                    if (mapa[i][jNeg + k] === "") {
+                        mapa[i][jNeg + k] = "negativo";
+                    }
+                }
+                jNeg += cont;
+            } else { jNeg++; }
         }
     });
 
     return mapa;
 }
 
+
+
+    
 // Função desenhar atualizada para aplicar as cores
 function desenhar(linhas, tipoPira = "VIDA", compacta = false) {
     const mapaCores = obterMapaCores(linhas, tipoPira);
@@ -846,7 +871,7 @@ function desenhar(linhas, tipoPira = "VIDA", compacta = false) {
     linhas.forEach((linha, i) => {
         html += `<div class="linha">`;
         linha.forEach((num, j) => {
-            let corClasse = mapaCores[i][j];
+          let corClasse = mapaCores[i][j];
             html += `<div class="num ${corClasse}">${num}</div>`;
         });
         html += `</div>`;
@@ -1044,7 +1069,7 @@ meuHtml += `
             <div style="width: 40px; height: 1px; background: #827108; margin: 10px auto;"></div>
         </div>
 
-        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png" 
+        <img src="https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/matrizlogopdf.png" 
              class="logo-capa" 
              style="width: 400px; height: auto; filter: drop-shadow(0px 0px 15px rgba(130,113,8,0.3));">
 
