@@ -892,23 +892,33 @@ a, img, audio { border: none !important; outline: none !important; text-decorati
 </head>
 <body>
 
-  <div class="card-input-premium">
-    <div class="input-group">
-       
-     <input type="text" id="nome" placeholder="NOME COMPLETO IGUAL CERTIDÃO" >
-       <input type="text" id="data" placeholder="DD/MM/AAAA" maxlength="10" onInput="this.value = this.value.replace(/\D/g, '').replace(/^(\d{2})(\d)/, '$1/$2').replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3');">  
- 
+<div class="container">
+    <button type="button" id="btnVideo" class="btn-video-toggle">
+        <span>🎥 Assistir Vídeo Introdutório</span>
+        <i class="seta">▼</i>
+    </button>
+
+    <div id="wrapperVideo" class="video-wrapper" style="display: none; margin-top: 10px;">
+        <video id="videoExplicativo" width="100%" controls poster="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png">
+            <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/introducao.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
     </div>
 
-    <div class="botoes-acao">
-        <button onclick="gerar()" class="btn-gerar">
-            <span class="icon">🔱</span> GERAR MATRIZES INTEGRADAS
-        </button>
-        <button onclick="abrirPremium()" class="btn-pdf">
-            <span class="icon">📄</span> BAIXAR RELATÓRIO PDF
-        </button>
+    
+        <h1>MATRIZ QUÂNTICA</h1>
+     <input type="text" id="nome" placeholder="NOME COMPLETO IGUAL CERTIDÃO" >
+       <input type="text" id="data" placeholder="DD/MM/AAAA" maxlength="10" onInput="this.value = this.value.replace(/\D/g, '').replace(/^(\d{2})(\d)/, '$1/$2').replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3');">  
+     <input type="text" id="nomeSocial" placeholder="COMO PREFERE SER CHAMADO? (OPCIONAL)"> 
+        
+           
+    
+        <button class="btn-gerar" onclick="gerar()">GERAR AS MATRIZES</button>
     </div>
-</div>  
+       
+     
+   
+
 
 
 <div id="resultado-final" style="width: 110%; max-width: 800px; margin: 0 auto;">
@@ -917,21 +927,7 @@ a, img, audio { border: none !important; outline: none !important; text-decorati
 
 <script>
 // 1. Função que limpa e personaliza qualquer texto que venha do banco
-function personalizarTexto(texto) {
-    if (!texto) return "";
-    const nomeCompleto = document.getElementById("nome").value.trim();
-    const primeiroNome = nomeCompleto.split(" ")[0] || "você";
-    
-    let processado = texto.replace(/você/g, `<strong>${primeiroNome}</strong>`);
-    
-    // Divide o texto por quebras de linha e cria parágrafos reais
-    return processado.split('\n').map(paragrafo => {
-        if(paragrafo.trim().length > 0) {
-            return `<p style="text-align: left;">${paragrafo}</p>`;
-        }
-        return "";
-    }).join("");
-}
+
  
 const mapa = { A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6,X:6, O:7,Z:7, F:8,P:8 };
 
@@ -952,6 +948,51 @@ function valorLetra(letra){
     }
     return (valorBase + somaAcentos) * multAcentos;
 }
+
+
+ function aplicarFiltroTexto(texto) {
+    if (!texto || typeof texto !== 'string') {
+        return ""; 
+    }
+
+    // 1. Captura os valores dos inputs
+    const nomeSocial = document.getElementById("nomeSocial").value.trim();
+    const nomeCompleto = document.getElementById("nome").value.trim();
+    
+    let pNome = "";
+
+    // 2. Lógica de Prioridade com extração do primeiro nome:
+    if (nomeSocial !== "") {
+        // Pega apenas o primeiro nome do campo Nome Social
+        pNome = nomeSocial.split(/\s+/)[0];
+    } else if (nomeCompleto !== "") {
+        // Pega apenas o primeiro nome do campo Nome Completo
+        pNome = nomeCompleto.split(/\s+/)[0];
+    } else {
+        // Valor padrão caso ambos estejam vazios
+        pNome = "MASCULINO-FEMININO-NEUTRO";
+    }
+
+    // 3. Aplica a substituição no texto com a tag strong
+    return texto.replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${pNome}</strong>`);
+}
+
+function aplicarFiltroNomeComposto(texto) {
+    // Se o texto não existir, for nulo ou não for uma string, retorna vazio
+    if (!texto || typeof texto !== 'string') {
+        return ""; 
+    }
+
+    // Pega o valor do input, remove espaços inúteis e divide por espaços
+    let partesNome = document.getElementById("nome").value.trim().split(/\s+/);
+    
+    // Pega os dois primeiros elementos e junta com um espaço
+    // Se só houver um nome, o join lidará com isso graciosamente
+    let pNome = partesNome.slice(0, 2).join(' ') || "MASCULINO-FEMININO-NEUTRO";
+
+    // Retorna o texto substituindo a tag pelo nome em negrito
+    return texto.replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${pNome}</strong>`);
+}   
 
 function reduzir(n){
     while(n>9){ n=n.toString().split('').reduce((a,b)=>+a+ +b,0); }
@@ -1051,7 +1092,7 @@ function montarSecaoMatriz(titulo, matriz, bancoDeTextos, textoIntro) {
     const regente = ultimaLinha[0];
     const resultadoTexto = bancoDeTextos ? bancoDeTextos[regente] : "Resultado não encontrado.";
     
-    let introExibicao = textoIntro ? personalizarTexto(textoIntro) : "";
+    let introExibicao = textoIntro ? aplicarFiltroTexto(textoIntro) : "";
 
     return `
     <div class="page evitar-corte">
@@ -1073,10 +1114,10 @@ function montarSecaoMatriz(titulo, matriz, bancoDeTextos, textoIntro) {
 
 <div class="resultado-regente-aberto" style="margin-top: 40px; padding: 20px;">
     <h3 style="color: #827108; border-bottom: 2px solid #e6d5a8; padding-bottom: 10px;">
-        🔱 REGENTE ${regente} - ${titulo}
+        🔱 SEU REGENTE ${regente} - ${titulo}
     </h3>
-    <div class="texto-personalizado" style="margin-top: 15px;">
-        ${personalizarTexto(resultadoTexto)}
+    <div class="texto-personalizado evitar-corte" style="margin-top: 15px;">
+        ${aplicarFiltroTexto(resultadoTexto)}
     </div>
 </div>
 `;
@@ -1103,10 +1144,10 @@ function gerarLoopNegativo(mV, mP, mS, mD, crono) {
                 ⚠️ DESAFIOS E BLOQUEIOS: ${periodo.idadeIni} a ${periodo.idadeFim} anos
             </div>
             <div class="conteudo-vibracoes">
-                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 VIDA:</b> ${personalizarTexto(textosSeqNegVida[nV] || "Sem bloqueios severos mapeados para esta vibração.")}</div>
-                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 PESSOAL:</b> ${personalizarTexto(textosSeqNegPessoal[nP] || "Fluxo pessoal em harmonia.")}</div>
-                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 SOCIAL:</b> ${personalizarTexto(textosSeqNegSocial[nS] || "Interações sociais protegidas.")}</div>
-                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 DESTINO:</b> ${personalizarTexto(textosSeqNegDestino[nD] || "Caminho de destino livre de obstruções.")}</div>
+                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 VIDA:</b> ${aplicarFiltroTexto(textosSeqNegVida[nV] || "Sem bloqueios severos mapeados para esta vibração.")}</div>
+                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 PESSOAL:</b> ${aplicarFiltroTexto(textosSeqNegPessoal[nP] || "Fluxo pessoal em harmonia.")}</div>
+                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 SOCIAL:</b> ${aplicarFiltroTexto(textosSeqNegSocial[nS] || "Interações sociais protegidas.")}</div>
+                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 DESTINO:</b> ${aplicarFiltroTexto(textosSeqNegDestino[nD] || "Caminho de destino livre de obstruções.")}</div>
             </div>
         </div>`;
     });
@@ -1172,14 +1213,13 @@ function extrairNegativasSincronizadas(mV, mP, mS, mD, crono, topoV) {
                         ⚠️ ALERTA DE BLOQUEIO: DOS ${periodoBase.idadeIni} AOS ${idadeFim} ANOS
                     </div>
                     <div class="conteudo-vibracoes">
-                        <p style="font-size: 14px; color: #111827; margin-bottom: 15px; border-bottom: 1px dashed #ff0000; padding-bottom: 5px;">
-                            📅 <b>Período:</b> de ${periodoBase.ini} até ${datas.fim} (${duracaoTotal} anos)
-                        </p>
+                         <div style="font-size: 18px; color: #111827; margin-bottom: 15px; border-bottom: 1px dashed #ff0000; padding-bottom: 5px;">
+                            📅  Período de maior influência ${periodoBase.ini} até ${datas.fim} (${duracaoTotal} anos)  </div>
                         
-                        <div class="vibracao-row"><b>🚫 VIDA (${resV}${resV}${resV}):</b> ${personalizarTexto(textosSeqNegVida[resV] || "Bloqueio no fluxo vital.")}</div>
-                        <div class="vibracao-row"><b>🚫 PESSOAL (${resP}${resP}${resP}):</b> ${personalizarTexto(textosSeqNegPessoal[resP] || "Desafio na expressão pessoal.")}</div>
-                        <div class="vibracao-row"><b>🚫 SOCIAL (${resS}${resS}${resS}):</b> ${personalizarTexto(textosSeqNegSocial[resS] || "Instabilidade nas relações.")}</div>
-                        <div class="vibracao-row"><b>🚫 DESTINO (${resD}${resD}${resD}):</b> ${personalizarTexto(textosSeqNegDestino[resD] || "Obstrução no caminho de destino.")}</div>
+                        <div class="vibracao-row"><b>🚫 SEQUÊNCIA PRINCIPAL ${resV}${resV}${resV}</b><br> ${aplicarFiltroTexto(textosSeqNegVida[resV] || "Bloqueio no fluxo vital.")}</div>
+                        <div class="vibracao-row"><b>🚫 SEQUÊNCIA INTERNA ${resP}${resP}${resP}</b><br> ${aplicarFiltroTexto(textosSeqNegPessoal[resP] || "Desafio na expressão pessoal.")}</div>
+                        <div class="vibracao-row"><b>🚫 SEQUÊNCIA DE PERCEPÇÃO DO MEIO  ${resS}${resS}${resS}</b><br> ${aplicarFiltroTexto(textosSeqNegSocial[resS] || "Instabilidade nas relações.")}</div>
+                        <div class="vibracao-row"><b>🚫 SEQUÊNCIA DE INFLUÊNCIA NATURAL  ${resD}${resD}${resD}</b><br> ${aplicarFiltroTexto(textosSeqNegDestino[resD] || "Obstrução no caminho de destino.")}</div>
                     </div>
                 </div>`;
                 
@@ -1208,10 +1248,10 @@ function extrairFinanceiroSincronizado(mV, mP, mS, mD, crono, topoV) {
     const bD = typeof textosSeqFinancDestino !== 'undefined' ? textosSeqFinancDestino : {};
 
     const piramides = [
-        { matriz: mV, banco: bV, nome: "VIDA", prefixo: "🔱" },
-        { matriz: mP, banco: bP, nome: "PESSOAL", prefixo: "👤" },
-        { matriz: mS, banco: bS, nome: "SOCIAL", prefixo: "🌎" },
-        { matriz: mD, banco: bD, nome: "DESTINO", prefixo: "☄️" }
+        { matriz: mV, banco: bV, nome: "SEQUÊNCIA PRINCIPAL", prefixo: "👑" },
+        { matriz: mP, banco: bP, nome: "SEQUÊNCIA INTERNA", prefixo: "👤" },
+        { matriz: mS, banco: bS, nome: "SEQUÊNCIA DE PERCEPÇÃO", prefixo: "🌎" },
+        { matriz: mD, banco: bD, nome: "SEQUÊNCIA DE INFLUÊNCIA NATURAL", prefixo: "☄️" }
     ];
 
 
@@ -1261,11 +1301,11 @@ function extrairFinanceiroSincronizado(mV, mP, mS, mD, crono, topoV) {
                             💰 FLUXO FINANCEIRO (${pira.nome}): DOS ${periodoBase.idadeIni} AOS ${idadeFim} ANOS
                         </div>
                         <div class="conteudo-vibracoes" style="margin-top:10px;">
-                            <p style="font-size: 14px; color: #111827; margin-bottom: 10px; border-bottom: 1px dashed #2e7d32; padding-bottom: 5px;">
-                                📅 <b>Período:</b> de ${periodoBase.ini} até ${datas.fim} (${duracaoTotal} anos)
+                            <p style="font-size: 18px; color: #111827; margin-bottom: 10px; border-bottom: 1px dashed #2e7d32; padding-bottom: 5px;">
+                                📅 <b>Período de influência</b> ${periodoBase.ini} até ${datas.fim} (${duracaoTotal} anos)
                             </p>
                             <div class="vibracao-row">
-                                <b>${pira.prefixo} ${pira.nome} (99/9):</b> ${personalizarTexto(textoResultado)}
+                                <b>${pira.prefixo} ${pira.nome} (99/9):</b> ${aplicarFiltroTexto(textoResultado)}
                             </div>
                         </div>
                     </div>`;
@@ -1293,10 +1333,10 @@ function extrairEspeciaisSincronizadas(mV, mP, mS, mD, crono, topoV) {
     
     // Mapeamento de quais pirâmides buscar e quais bancos de texto usar
     const piramides = [
-        { matriz: mV, banco: typeof textosSeqEspVida !== 'undefined' ? textosSeqEspVida : {}, nome: "VIDA", prefixo: "🔱", classe: "vida" },
-        { matriz: mP, banco: typeof textosSeqEspPessoal !== 'undefined' ? textosSeqEspPessoal : {}, nome: "PESSOAL", prefixo: "👤", classe: "pessoal" },
-        { matriz: mS, banco: typeof textosSeqEspSocial !== 'undefined' ? textosSeqEspSocial : {}, nome: "SOCIAL", prefixo: "🌎", classe: "social" },
-        { matriz: mD, banco: typeof textosSeqEspDestino !== 'undefined' ? textosSeqEspDestino : {}, nome: "DESTINO", prefixo: "☄️", classe: "destino" }
+        { matriz: mV, banco: typeof textosSeqEspVida !== 'undefined' ? textosSeqEspVida : {}, nome: "SEQUÊNCIA PRINCIPAL", prefixo: "👑", classe: "vida" },
+        { matriz: mP, banco: typeof textosSeqEspPessoal !== 'undefined' ? textosSeqEspPessoal : {}, nome: "SEQUÊNCIA INTERNA", prefixo: "👤", classe: "pessoal" },
+        { matriz: mS, banco: typeof textosSeqEspSocial !== 'undefined' ? textosSeqEspSocial : {}, nome: "SEQUÊNCIA DE PERCEPÇÃO", prefixo: "🌎", classe: "social" },
+        { matriz: mD, banco: typeof textosSeqEspDestino !== 'undefined' ? textosSeqEspDestino : {}, nome: "SEQUÊNCIA DE INFLUÊNCIA NATURAL", prefixo: "☄️", classe: "destino" }
     ];
 
 
@@ -1343,11 +1383,11 @@ function extrairEspeciaisSincronizadas(mV, mP, mS, mD, crono, topoV) {
                             ✨ IMPACTO ${pira.nome}: DOS ${periodoBase.idadeIni} AOS ${idadeFim} ANOS
                         </div>
                         <div class="conteudo-vibracoes" style="margin-top:10px;">
-                            <p style="font-size: 14px; color: #111827; margin-bottom: 10px; border-bottom: 1px dashed #b8860b; padding-bottom: 5px;">
+                            <p style="font-size: 18px; color: #111827; margin-bottom: 10px; border-bottom: 1px dashed #b8860b; padding-bottom: 5px;">
                                 📅 <b>Período:</b> de ${periodoBase.ini} até ${datas.fim} (${duracaoTotal} anos)
                             </p>
                             <div class="vibracao-row">
-                                <b>${pira.prefixo} ${pira.nome} (${seq}):</b> ${personalizarTexto(pira.banco[seq])}
+                                <b>${pira.prefixo} ${pira.nome} (${seq}):</b> ${aplicarFiltroTexto(pira.banco[seq])}
                             </div>
                             <p style="font-size: 11px; color: #827108; margin-top: 5px; font-style: italic;">
                                 *Vigência calculada pela matriz temporal da Pirâmide da Vida.
@@ -1542,7 +1582,7 @@ function gerarSinteseFinal(v, p, s, d, bancoSintese) {
             let txt = (bancoSintese && bancoSintese[m.id]) ? bancoSintese[m.id] : "Análise de conexão em processamento...";
             h += `<div class="blocoRelatorio" style="border-center:5px solid #fff; background:#f1f5f9; padding:15px; margin-bottom:15px; border-radius: 0 8px 8px 0;">
                     <b style="font-size:20px; color: #6366F1;">🔗 ${m.tit}</b><br>
-                    <p style="margin:8px 0 0 0; line-height:1.5;">${personalizarTexto(txt)}</p>
+                    <p style="margin:8px 0 0 0; line-height:1.5;">${aplicarFiltroTexto(txt)}</p>
                   </div>`;
         });
     }
@@ -1571,7 +1611,7 @@ function gerarSinteseFinal(v, p, s, d, bancoSintese) {
 
     h += `<div style="margin-top:20px; padding:10px; border:1px solid #e2e8f0; border-radius:8px; background:#f1f5f9;">
            <b style="color:#6366f1;">Análise de Fluxos Combinados:</b>
-           ${personalizarTexto(detalhesMistos || `<p>Quando as pirâmides apresentam números totalmente distintos entre si, forma-se um conjunto de potências que operam de maneira independente. Isso indica uma estrutura energética marcada pela autonomia entre os campos pessoal, social e de destino.</p>
+           ${aplicarFiltroTexto(detalhesMistos || `<p>Quando as pirâmides apresentam números totalmente distintos entre si, forma-se um conjunto de potências que operam de maneira independente. Isso indica uma estrutura energética marcada pela autonomia entre os campos pessoal, social e de destino.</p>
 
 <p>Nesse tipo de configuração, cada força atua por si, sem exercer influência direta sobre as demais. Como resultado, a jornada de você tende a apresentar grande versatilidade e múltiplas direções possíveis.</p>
 
@@ -1584,15 +1624,10 @@ function gerarSinteseFinal(v, p, s, d, bancoSintese) {
     <div style="text-align:center; padding: 10px;">
             <b style="text-align:center; font-size:20px; color:#002663; display:block; margin-bottom:10px;">📋 Assinatura Geral do Relatório</b>
             <div style="text-align:center; font-size:20px; line-height:1.7; color:#334155;">
-                ${personalizarTexto(resumoGeral)}
+                ${aplicarFiltroTexto(resumoGeral)}
             </div>
             
-                <div class="capa-transicao">
-        <h3>PIRAMIDE DA VIDA</h3>
-        <h2>👑</h2>
-        <h2>Matriz Pincipal<br> Regente e seus Ciclos de potências</h2>
-            
-    </div>
+   
     
           </div>`;
 
@@ -1615,12 +1650,12 @@ function gerarLoopIntegrado(mV, mP, mS, mD, crono) {
 
         h += `
         <div class="card-integrado evitar-corte">
-            <div class="titulo-ciclo">Ciclo: ${periodo.idadeIni} a ${periodo.idadeFim} anos (${periodo.ini} a ${periodo.fim})</div>
+            <h3 class="titulo-ciclo">Ciclo: ${periodo.idadeIni} a ${periodo.idadeFim} anos <br> (${periodo.ini} a ${periodo.fim})</h3>
             <div class="conteudo-vibracoes">
-                <div class="vibracao-row"><b>👑 VIDA (Potência ${pV})</b>${personalizarTexto(textosVida[pV])}</div>
-                <div class="vibracao-row"><b>👤 PESSOAL (Potência ${pP})</b>${personalizarTexto(textosPessoal[pP])}</div>
-                <div class="vibracao-row"><b>🌎 SOCIAL (Potência ${pS})</b>${personalizarTexto(textosSocial[pS])}</div>
-                <div class="vibracao-row"><b>☄️ DESTINO (Potência ${pD})</b>${personalizarTexto(textosDestino[pD])}</div>
+                <div class="vibracao-row"><b>👑 MATRIZ DA VIDA <br>Potência ${pV}</b>${aplicarFiltroTexto(textosVida[pV])}</div>
+                <div class="vibracao-row"><b>👤 MATRIZ PESSOAL<br> Potência ${pP}</b>${aplicarFiltroTexto(textosPessoal[pP])}</div>
+                <div class="vibracao-row"><b>🌎 MATRIZ DO MEIO <br>Potência ${pS}</b>${aplicarFiltroTexto(textosSocial[pS])}</div>
+                <div class="vibracao-row"><b>☄️ MATRIZ DA INFLUÊNCIA<br> Potência ${pD}</b>${aplicarFiltroTexto(textosDestino[pD])}</div>
             </div>
         </div>`;
     });
@@ -1675,9 +1710,11 @@ function gerar() {
     const topoV = topo(mVida[0]);
     const crono = gerarCronogramaMestre(topoV, dataISO);
 
-    let meuHtml = `<div class="container-master">`;
+
     
-meuHtml += `
+
+    let meuHtml = `  
+        
 <div class="container-master">
     <div id="capa-numerologica" style="
             width: 210mm; 
@@ -1701,7 +1738,7 @@ meuHtml += `
         <div style="position: absolute; bottom: 15px; right: 15px; width: 60px; height: 60px; border-bottom: 3px solid #827108; border-right: 3px solid #827108;"></div>
 
         <div style="text-align: center; margin-top: 20px;">
-            <span style="color: #827108; letter-spacing: 8px; font-size: 12px; text-transform: uppercase;">Portal Numerológico</span>
+            <span style="color: #827108; letter-spacing: 8px; font-size: 12px; text-transform: uppercase;"></span>
             <div style="width: 40px; height: 1px; background: #827108; margin: 10px auto;"></div>
         </div>
 
@@ -1724,12 +1761,60 @@ meuHtml += `
         </div>
 
         <p style="font-size: 9px; color: #ffffff; letter-spacing: 3px; text-transform: uppercase; opacity: 0.5; margin-bottom: 20px;">
-            Instinto Superior • Engenharia da Alma
+           • Instinto Superior • 
         </p>
     </div>
 
     <div id="conteudo-relatorio" style="background: #ffffff; width: 210mm; min-height: 297mm; box-sizing: border-box;">
 `;
+
+
+    
+
+
+
+meuHtml += ` <button class="btn-pdf no-print" onclick="window.print()">📥 BAIXAR SEU PDF PREMIUM</button>`;
+
+    
+// --- PÁGINA 1: SUMÁRIO (AJUSTADA PARA CABER EM UMA FOLHA) ---
+meuHtml += `
+<div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; max-height: 1120px; padding: 30px; box-sizing: border-box; overflow: hidden; page-break-after: always; position: relative;">
+    
+    <div style="text-align: center; margin-bottom: 5px;">
+        <h2 style="color: var(--gold); font-size: 0.4rem; letter-spacing: 6px; text-transform: uppercase; margin: 0; font-weight: 300;">
+    
+        </h2>
+     
+    </div>
+
+    <div style="width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 25px;">
+        ${[
+            { t: "Introdução", c: "Instinto Superior ✶ Resultado Numerológico ✶ Engenharia da Vida ✶ Nome Escolhido ✶ Origem e Numerologia Moderna ✶ Direcionamento de Jornada"},
+            { t: "Parte 1: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais"},
+            { t: "Parte 2: Essência e Identidade", c: "Dia de Nascimento ✶ Talento ou Habilidade Oculta ✶ Motivação ✶ Aparência ou Influência ✶ Personalidade ✶ Nome de casado(a) (se houver) ✶ Tendência de Comportamento ✶ Desejo Oculto ✶ Habilidades Especiais ✶  Inclinações Ocultas ✶  Pilar de Equilíbrio Emocional"},
+            { t: "Parte 3: Alinhamento e Desafios",   c: "Fraquezas e Inibições ✶ Mecanismo do Subconsciente ✶ Déficit de Comportamento ✶ Desafio Principal"},
+            { t: "Parte 4: Finalidade e Realização", c: " Caminho de Vida ✶ Propósito  ✶ Fase de Maturidade ✶ Direcionamento Profissional"},
+            { t: "Parte 5: Complementares", c: " Número de Relacionamento ✶ Cores Favoráveis ✶ Dias de Poder do Mês ✶ Números harmonicos"}, 
+            { t: "Parte 6: Ciclos", c: "Ciclos de Vida ✶ Momento de Decisão ✶ Desafios de Jornada"},
+            { t: "Parte 7:  Tendências do Momento", c: "Status no Momento do Ciclo Atual ✶ Status no Momento do Segundo Ciclo ✶ Ciclos Trânsitórios ✶ Potenciais do Momento ✶ Ano Pessoal ✶ Mês Pessoal"},
+            { t: "Parte 8: A Grande Matriz", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Potências até 100 anos de idade"},
+            { t: "Parte 9: Filosofia e Ciência", c: "Contexto Histórico ✶ Conclusão Evolutiva ✶ Agradecimento"}
+        ].map(item => `
+            <div style="text-align: center;">
+                <h3 style="color: var(--gold); font-size: 1.6rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; font-weight: 600;">${item.t}</h3>
+                <p style="color: #333; font-size: 1.2rem; margin: 0; line-height: 1.4;">${item.c}</p>
+            </div>
+        `).join('')}
+    </div>
+    
+    <div style="margin-top: 40px; text-align: center; opacity: 0.6;">
+        <p style="font-weight: bold; color: #d97a1e; letter-spacing: 6px; font-size: 0.75rem; text-transform: uppercase; margin: 0;">
+            Instinto Superior
+        </p>
+    </div>
+</div>
+`;
+
 
 
 meuHtml += `
@@ -1857,6 +1942,13 @@ meuHtml += `
 `;
 
 
+      meuHtml += `<div class="separador-luxo"><div class="caixa-interna"><h2>Sequências Especiais ⭐</h2></div></div>`;
+    
+    // Texto de introdução para Especiais
+    meuHtml += `<div class="intro-texto" style="margin-bottom: 20px;"><p>As sequências especiais representam períodos específicos dentro da Pirâmide da Vida em que determinadas energias numéricas se intensificam, influenciando diretamente tendências, comportamentos e possíveis acontecimentos. Esses momentos não indicam fatos fixos ou garantidos, mas apontam para um campo de maior probabilidade onde certas experiências podem se manifestar.</p>
+    <p>Cada número presente nessas sequências carrega uma vibração própria, ativando cenários compatíveis com sua natureza. Isso pode se refletir em oportunidades, desafios, mudanças internas ou situações externas que dialogam com aquela energia predominante no período.</p>
+    <p>É importante compreender que essas influências atuam como direcionamentos, e não como determinações absolutas. Ou seja, elas indicam caminhos mais propensos a ocorrer, mas a forma como cada situação se concretiza depende das escolhas, do contexto e da consciência da pessoa.</p>
+    <p>Assim, as sequências especiais funcionam como marcadores de tempo energético, revelando fases em que certos temas ganham destaque e podem se desenvolver com mais intensidade, abrindo espaço para vivências alinhadas à vibração daquele número.</p></div>`;
     
     // Exemplo de como colocar no seu gerar()
 meuHtml += `
@@ -1928,14 +2020,34 @@ meuHtml += `
 `;
 
 
-    
-    // 2. NOVO LOOP DE NEGATIVAS (Sincronizado pela Vida)
+        // 1. TÍTULO E SEPARADOR
+    tituloBonito = "Vulnerabilidades e Bloqueios  ⚠️ ";
     meuHtml += `
+    <div class="separador-luxo">
+        <div class="caixa-interna">
+            <h2>${tituloBonito}</h2>
+        </div>
+    </div>`;
+    
+  meuHtml += ` 
+    <div class="intro-secao" style="margin: 30px 0; width: 100%; font-size: 21px; line-height: 1.6; color: #333; text-align: justify;">
+         
+ <p style="margin-bottom: 20px;">As <b>Sequências de Bloqueios</b> identificam pontos de tensão latentes em sua estrutura vibracional, manifestando-se como tendências e desafios que o acompanham desde o nascimento até a plena maturidade. Elas representam os números iguais que aparecem de forma repetitiva em sua Matriz, como as sequências 111, 222, 333 e assim por diante, sinalizando áreas onde a sua energia pessoal encontra maior resistência ou padrões de repetição exaustivos. Estas sequências não devem ser interpretadas como punições ou destinos imutáveis, mas sim como indicadores precisos de comportamentos automáticos e limitações internas que precisam ser trabalhados e integrados com consciência ao longo da sua jornada evolutiva.</p>
+
+    <p style="margin-bottom: 20px;">Muitas dessas sequências estão profundamente vinculadas a experiências fundamentais que demandam um aprendizado contínuo e um amadurecimento constante por parte do indivíduo. Elas sinalizam aspectos da sua natureza que ainda buscam plena expressão, funcionando como um mapa exato das lições que a vida solicita com maior insistência e rigor. Quando uma pessoa nasce com essas vibrações em sua matriz, ela carrega consigo ferramentas que, embora potentes, estão inicialmente "travadas" ou desequilibradas, gerando bloqueios que podem afetar desde a vida profissional até os relacionamentos mais íntimos e a saúde emocional, exigindo um esforço de autolapidação constante.</p>
+
+    <p style="margin-bottom: 20px;">Ao reconhecer a existência dessas frequências em seu mapa, você desenvolve a lucidez necessária para transcender as reações instintivas e os ciclos de autossabotagem que esses números iguais tendem a provocar. Esse processo de autodomínio transforma obstáculos aparentemente intransponíveis em degraus estratégicos para uma evolução autêntica e deliberada, permitindo que você tome as rédeas da sua própria energia. Trabalhar essas sequências negativas é, na verdade, um ato de libertação, onde você identifica a raiz do problema e aplica a cura através do autoconhecimento, garantindo que o seu potencial original não seja sufocado por medos ou padrões herdados que não servem mais ao seu crescimento.</p>
+
+    <p style="margin-bottom: 20px;">Portanto, encare este estudo das sequências de bloqueios como um manual de instruções para lidar com suas partes mais complexas e desafiadoras. À medida que você domina essas vibrações, a resistência diminui e a sua vida passa a fluir com uma leveza que antes parecia inalcançável. A transmutação dessas energias é o que diferencia o ser que é refém do acaso daquele que se torna o mestre de sua própria vibração. Com paciência e disciplina, cada sequência negativa é gradualmente convertida em uma fonte de sabedoria prática, tornando sua jornada muito mais assertiva, próspera e livre das amarras que impedem a sua máxima performance humana e espiritual.</p>
+
+    </div>`;
+    
+      meuHtml += `
     <section class="page" style="margin-top: 50px;">
         <div style="height: 4px; background: #d32f2f; margin-bottom: 20px; border-radius: 2px;"></div>
         <h2 style="text-align:center; color:#d32f2f; text-transform: uppercase;">Mapeamento de Desafios e Bloqueios</h2>
         <p style="text-align:center; font-style:italic; margin-bottom: 30px;">Identificação de sequências negativas sincronizadas pelo tempo da Matriz da Vida.</p>
-        ${extrairNegativasSincronizadas(mVida, mPes, mSoc, mDes, crono, topoV)}
+        <div class="texto-res evitar-corte">${extrairNegativasSincronizadas(mVida, mPes, mSoc, mDes, crono, topoV)}</div>
     </section>`;
 
 
@@ -2007,6 +2119,21 @@ meuHtml += `
 const htmlFinanceiro = extrairFinanceiroSincronizado(mVida, mPes, mSoc, mDes, crono, topoV);
 
 if (htmlFinanceiro) {
+
+
+    meuHtml += `<div class="separador-luxo"><div class="caixa-interna"><h2>Fluxos Financeiros 💰</h2></div></div>`;
+    
+    // Texto de introdução para Financeiro
+   meuHtml += `<div class="intro-texto" style="margin-bottom: 20px;">O potencial de fluxo financeiro indica janelas de oportunidade para a expansão material e a consolidação de recursos, baseadas no seu magnetismo de prosperidade do momento. 
+   <p>No contexto financeiro, esse período pode se manifestar como uma fase de recebimentos, retornos ou entradas de recursos que não dependem exclusivamente do esforço direto e imediato da pessoa, mas sim de circunstâncias já construídas ao longo do tempo. É como se houvesse uma “colheita” de situações passadas, que agora se concretizam em forma material.</p>
+   <p>Nesse momento, a pessoa pode, por exemplo, ser desligada de uma empresa e receber corretamente todos os seus direitos trabalhistas — como rescisão, multa do FGTS, férias proporcionais e outros valores acumulados. Também pode ocorrer o recebimento de valores que estavam pendentes, como dívidas antigas sendo quitadas, restituições, reembolsos ou até ajustes financeiros inesperados a seu favor.</p>
+   <p>Há ainda possibilidades relacionadas ao acaso ou à sorte, como ganhos em loterias, apostas esportivas, sorteios ou premiações diversas. Embora não sejam garantias, esse período tende a ampliar a probabilidade de ganhos vindos de fontes não convencionais ou não planejadas diretamente.</p><p>Outro cenário comum envolve heranças, partilhas ou divisão de bens familiares, onde a pessoa passa a ter acesso a valores ou patrimônios que antes não estavam sob sua posse. Isso também pode incluir doações, ajudas financeiras de terceiros ou apoio inesperado em momentos específicos.</p>
+   <p>Além disso, pode haver ganhos relacionados a investimentos antigos que começam a dar retorno, venda de bens (como imóveis, veículos ou objetos de valor), ou até oportunidades de negócio que surgem trazendo lucro de forma mais rápida do que o habitual.</p>
+   <p>Em alguns casos, esse movimento também pode se manifestar como economia indireta — por exemplo, deixar de ter um gasto significativo, resolver uma pendência que geraria prejuízo, ou encontrar soluções que aliviam a pressão financeira, o que, na prática, representa um ganho.</p><p>Portanto, esse tipo de vibração não se limita a um único formato de dinheiro direto, mas abrange qualquer forma de entrada, recuperação ou liberação financeira. O importante é observar que, nesse período, existe uma tendência de “retorno” — seja ele fruto de mérito passado, de circunstâncias externas ou de oportunidades que se apresentam de maneira inesperada.</p></div>`;
+    
+    
+
+    
     meuHtml += `
     <section class="page" style="margin-top: 40px;">
         <div style="height: 4px; background: #2e7d32; margin-bottom: 20px; border-radius: 2px;"></div>
@@ -2083,13 +2210,39 @@ meuHtml += `
 `;
 
     
+tituloBonito = "Ciclos de Potências Numéricas ✡︎ ";
+meuHtml += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>`,
+         
+meuHtml += `
+    <div class="secao-potencias" style=" width: 100%; background: #fff; color: #000; padding: 25px; border-radius: 8px; border: 1px solid #ffffff; margin-top: 25px;">  
+        <h2 style="color: #827108; text-align: center; font-size: 24px; text-transform: uppercase; margin-bottom: 20px; border-bottom: 2px solid #827108; padding-bottom: 10px;"> </h2>
 
-    // 3. Loop de 100 Anos (Potências)
-    meuHtml += `
+<div class="intro-secao evitar-corte" style="margin: 35px 0; width: 100%; font-size: 19px; line-height: 1.8; color: #1a1a1a; text-align: justify; background: #fdfbf7; padding: 30px; border-radius: 15px; border-left: 1px solid #d4af37; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+    
+    <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-variant: small-caps; letter-spacing: 2px;">🎼 A Sinfonia do Destino: O Poder das Potências Numéricas</h2>
+
+    <p style="margin-bottom: 20px;">Imagine que o seu nome de batismo não é apenas um conjunto de letras, mas uma <b>partitura musical sagrada</b> escrita no momento em que você chegou ao mundo. Na Numerologia Quântica, entendemos que cada letra do seu nome carrega uma frequência específica — uma <b>Potência</b> — que funciona como uma nota musical batida no silêncio do tempo. A sua vida não acontece ao acaso; ela segue um ritmo orquestrado por essas vibrações que emanam do topo da sua <b>Pirâmide da Vida</b>.</p>
+
+    <p style="margin-bottom: 20px;">Essas Potências representam os ciclos de maturação do seu ser. Assim como uma música tem momentos de notas agudas e intensas, seguidos por pausas e melodias mais suaves, a sua jornada é dividida em períodos onde certas energias dominam o seu campo vibracional. Quando uma Potência está ativa, ela dita o "tom" das suas experiências: pode ser um tempo de expansão solar, de introspecção profunda ou de colheita material. Não são Arcanos estáticos, são forças dinâmicas que moldam a sua percepção e as suas escolhas.</p>
+
+    <p style="margin-bottom: 20px;">Compreender a sequência desses ciclos é como ter o roteiro do maestro em mãos. Ao observar a vigência de cada Potência, você descobre quando a "música" da sua vida exige mais coragem, mais paciência ou mais criatividade. Como bem ensinou o Professor e Físico Reinaldo Martins Garcia, somos um eco dessas letras que ressoam através das décadas.</p>
+
+    <p style="font-style: italic; color: #777; font-size: 15px; text-align: center; border-top: 1px solid #eee; pt-20px; margin-top: 25px;">
+        "Assim como as notas determinam o ritmo da música, as letras de seu nome determinam o ritmo de sua vida." <br>
+        — <b>Professor e Físico Reinaldo Martins Garcia</b>
+    </p>
+        </div>
+ 
+    
     <section id="ciclos-cem-anos" class="page" style="margin-top: 50px;">
         <div style="height: 4px; background: #827108; margin-bottom: 20px; border-radius: 2px;"></div>
         <h2 style="text-align:center; color:#827108;">VIBRAÇÕES TEMPORAIS INTEGRADAS (100 ANOS)</h2>
-        ${gerarLoopIntegrado(mVida, mPes, mSoc, mDes, crono)}
+        <div class="texto-res evitar-corte "> ${gerarLoopIntegrado(mVida, mPes, mSoc, mDes, crono)}</div>
     </section>`;
 
     meuHtml += `</div>`;
@@ -2100,5 +2253,25 @@ document.oncontextmenu=()=>false;
 document.onselectstart=()=>false;
 
  </script> 
+
+<script>
+document.getElementById('btnVideo').addEventListener('click', function() {
+    const wrapper = document.getElementById('wrapperVideo');
+    const video = document.getElementById('videoExplicativo');
+    const btn = this;
+
+    if (wrapper.style.display === 'none') {
+        wrapper.style.display = 'block';
+        btn.classList.add('ativo');
+        btn.querySelector('span').innerText = '❌ Fechar Vídeo';
+    } else {
+        wrapper.style.display = 'none';
+        btn.classList.remove('ativo');
+        btn.querySelector('span').innerText = '🎥 Assistir Vídeo Introdutório';
+        video.pause(); // Pausa o vídeo automaticamente ao fechar para não ficar saindo som
+    }
+});
+</script>
+    
 </body>
 </html>
