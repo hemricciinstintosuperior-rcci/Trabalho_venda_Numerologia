@@ -3,192 +3,219 @@
 <head>
 <meta charset="UTF-8">
 <title>Pirâmide da Vida Quântica</title>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#111827">
+
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     
 <style>
-/* Reset de Impressão para o PDF não sair "zoado" */
+* {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+}
+
+
 @media print {
-    .container-master { 
-        width: 100% !important; 
-        margin: 0 !important; 
-        padding: 0 !important;
+    /* Força o "fundo da mesa" a ser branco. 
+       Se houver fresta entre as páginas, ela fica invisível. */
+    html, body {
+        background: #ffffff !important;
+        background-color: #ffffff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Remove qualquer sombra ou borda externa que possa estar 
+       sendo interpretada como um risco escuro no PDF */
+    .page, .relatorio-premium, .container-master {
         box-shadow: none !important;
         border: none !important;
+        margin-bottom: 0 !important;
     }
-    .evitar-corte { page-break-inside: avoid; }
 }
 
-.container-master {
-    width: 100%; /* Seu padrão para PDF A4 no PC */
-    margin: auto;
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
+    
+    
+        :root { --gold: #d97a1e; --dark: #000000; --card-bg: #ffffff; --text: #1a1a1a; }
+@media print {
+    .apenas-no-pdf {
+        display: block !important;
+    }
+    .conteudo-travado {
+        filter: none !important; /* Remove o desfoque no PDF */
+    }
 }
+@media print {
 
-/* Grade das Pirâmides */
-.grid-quatro-piramides {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas por linha */
-    gap: 20px;
-    margin: 40px 0;
-}
+    @page {
+        size: A4;
+        margin: 0 ; /* equilíbrio perfeito PDF + impressão */
+    }
 
-.bloco-piramide {
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    background: #fff;
-}
-
-.bloco-piramide h3 {
-    font-size: 14px;
-    color: #827108;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-/* Estilo do Bloco Único de Texto */
-.card-integrado {
-    border-left: 6px solid #827108;
-    background: #fdfdfd;
-    margin-bottom: 30px;
-    border-radius: 0 15px 15px 0;
-    overflow: hidden;
-}
-
-.titulo-ciclo {
-    background: #f4f4f4;
-    padding: 10px 20px;
-    font-weight: bold;
-    border-bottom: 1px solid #eee;
-}
-
-.conteudo-vibracoes { padding: 20px; }
-
-.vibracao-row { margin-bottom: 15px; }
-
-.vibracao-row b { display: block; color: #827108; font-size: 15px; }
-
-.card-input-premium {
-    background: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    max-width: 800px;
-    margin: 20px auto;
-    border: 1px solid #eee;
-}
-
-.input-group {
-    margin-bottom: 20px;
-}
-
-.input-group label {
-    display: block;
-    font-size: 12px;
-    font-weight: bold;
-    color: #827108; /* Seu Dourado */
-    margin-bottom: 8px;
-    letter-spacing: 1.5px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    outline: none;
-    transition: 0.3s;
-}
-
-.input-group input:focus {
-    border-color: #827108;
-    box-shadow: 0 0 8px rgba(130, 113, 8, 0.2);
-}
-
-.botoes-acao {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-
-.btn-gerar, .btn-pdf {
-    padding: 15px;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.btn-gerar {
-    background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728);
-    color: #4a3b00;
-}
-
-.btn-pdf {
-    background: #111827;
-    color: #fff;
-}
-
-.btn-gerar:hover, .btn-pdf:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
-}
+       /* Esta classe impede que qualquer bloco dentro dela seja cortado ao meio */
+    .evitar-corte {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        display: block;
+        width: 100%;
+    }
 
 
-/* Estilo da Pirâmide - Igual ao Estudo Numerológico */
-.piramide {
+
+    body {
+        background: white !important;
+        color: #1a1a1a !important;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+.capa {
+    height: 297mm;
+    width: 210mm;
+    background-color: #ffffff !important;
+   
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza as linhas para formar o triângulo */
-    gap: 5px;
-    margin: 20px 0;
-    width: 100%;
-}
-
-.piramide .linha {
-    display: flex;
     justify-content: center;
-    gap: 10px; /* Espaço entre os números na mesma linha */
-}
-
-.piramide .num {
-    width: 15px;
-    height: 15px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    position: relative;
+    z-index: 1; /* Garante que a camada base existe */
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+  .capa h1 { font-size: 45px; margin: 10px 0; }
+
+.logo-capa, .capa-cliente {
+    position: relative;
+    z-index: 10; /* Força o logo e o texto para a frente de tudo */
+    visibility: visible !important;
+    display: block !important;
+}
+
+
+    
+
+
+    .no-print, .container, .btn-pdf, .btn-gerar, input {
+        display: none !important;
+    }
+
+.relatorio-premium {
+    width: 210mm !important;
+    max-width: 210mm !important;
+    margin: 0 auto !important;
+    overflow: visible !important; /* Fundamental para não criar barras de rolagem internas */
+    background: #fff;
+}
+
+    /* 🔥 CORREÇÃO PRINCIPAL */
+    .page {
+    width: calc(100% - 2mm);
+    margin: 0 auto;
+    /* TOPO (40px) | LATERAIS (2mm) | BASE (40px) */
+    padding: 40px 2mm 20px 2mm; 
+          }
+
+/* Localize este bloco dentro do seu @media print e substitua */
+.capa, .capa-transicao {
+    height: 297mm !important; /* Força a altura total do papel A4 */
+    min-height: 297mm !important; 
+   
+    margin: 0 !important;
+    padding: 0 !important;
+    page-break-before: always;
+    page-break-after: always;
+}
+
+    /* 🔥 EVITA QUEBRAS FEIAS */
+    .secao-card,
+    .resultado-bloco,
+    .container-barra,
+    .bloco-potencia {
+        page-break-inside: avoid;
+        break-inside: avoid;
+         max-width: 100%;
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+
+    p {
+        page-break-inside: avoid;
+    }
+
+    /* 🔥 GARANTE CORES */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+ }
+
+.nome-usuario {
+    width: 100%;             /* Garante que ele ocupe a largura total disponível */
+    max-width: 800px;        /* Ou a largura máxima da sua folha PDF */
+    margin: 0 auto;          /* Centraliza o bloco na folha */
+    text-align: center;      /* Centraliza o texto dentro do bloco */
+    word-wrap: break-word;   /* Força a quebra de palavras muito longas */
+    overflow-wrap: break-word; 
+    white-space: normal;     /* Permite que o texto pule para a linha de baixo */
+    display: block;          /* Garante que ele se comporte como um bloco inteiro */
+}
+    
+
+/* 1. O CONTEÚDO (O que fica por baixo) */
+/* O texto que fica atrás continua borrado como você gosta */
+.conteudo-travado {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    opacity: 0.5;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* A nova caixa de aviso (totalmente independente e nítida) */
+.aviso-trava {
+    background: #0a0e1a; /* Cor do seu fundo */
+    color: #d4af37;    /* Dourado Instinto Superior */
+    border: 2px solid #d4af37;
+    padding: 15px;
+    border-radius: 8px;
     font-weight: bold;
-    font-size: 14px;
-    border-radius: 50%;
-    background: #f8f9fa; /* Fundo suave para os números */
-    border: 1px solid #eee;
+    text-align: center;
+    margin-top: -50px; /* Faz ela subir para cima do borrão */
+    position: relative;
+    z-index: 9999;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-
-/* Cores de destaque para as sequências (se quiser usar) */
-.num.negativo { background-color: #ffcccc; color: #d32f2f; border-color: #d32f2f; }
-.num.especial { background-color: #fff3cd; color: #856404; border-color: #856404; }
-.num.financeiro { background-color: #d4edda; color: #155724; border-color: #155724; }
-
-/* Para as pirâmides menores no topo */
-.compacta {
-    transform: scale(0.8);
-    margin: -10px 0;
+@media print {
+    .conteudo-travado { filter: none !important; opacity: 1 !important; }
+    .aviso-trava { display: none !important; }
 }
 
+@media print {
+    .conteudo-travado { 
+        filter: none !important; 
+        opacity: 1 !important; 
+    }
+    .aviso-trava { 
+        display: none !important; 
+        visibility: hidden !important; /* Reforço extra */
+        height: 0 !important;       /* Garante que não ocupe espaço */
+        margin: 0 !important;
+    }
+}
+    
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fff; color: #1a1a1a; margin: 0; padding: 0; display: block;}
+        /* Estilo para os Logos */
 .logo-capa {
     width: 700px !important; /* Tamanho ideal para uma folha A4 */
     max-width: 90%;          /* Garante que não ultrapasse a margem da folha */
@@ -216,92 +243,661 @@
 }   
 * {
     box-sizing: border-box;
+}    
+        /* Container de Entrada */
+        .container { width: 100%; max-width: 800px; background: #111; padding: 25px; border-radius: 20px; border: 1px solid #A65F00; margin-top: 30px; box-shadow: 0 0 40px rgba(212, 175, 55, 0.3); margin: 0 auto 30px auto; }
+        h1 { color: var(--gold); text-align: center; text-transform: uppercase; letter-spacing: 3px; }
+        input { width: 100%; padding: 15px; margin: 10px 0; border-radius: 10px; border: #333; background: #fff; color: #000; font-size: 18px; box-sizing: border-box; }
+        .btn-gerar { width: 100%; padding: 20px; background: #A65F00; color: #000; border: none; border-radius: 10px; font-weight: bold; font-size: 20px; cursor: pointer; margin-top: 15px; text-transform: uppercase; }
+
+        /* Estrutura do Relatório */
+       .relatorio-premium { 
+    width: 100%;
+    max-width: none;        /* 🔥 remove limite */
+    margin: 25px 0;         /* 🔥 tira centralização */
+    background: #ffffff;
+}
+        
+/* Isso limpa bordas fantasmas de elementos comuns que geram riscos */
+.secao-card, .resultado-bloco, .page, img {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+/* Estilo para o número da página no PDF */
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 10pt;
+    color: #827108;
+    display: none; /* Esconde na tela do sistema */
+}
+
+@media print {
+    .page-footer {
+        display: block; /* Mostra apenas no PDF/Impressão */
+        position: fixed;
+        bottom: 10mm;
+        right: 10mm;
+    }
+
+    /* Truque para o contador de páginas funcionar no corpo */
+    body {
+        counter-reset: page;
+    }
+    
+    .page-number::after {
+        counter-increment: page;
+        content: "Página " counter(page);
+    }
+}
+
+
+
+        .btn-pdf { position: fixed; top: 20px; right: 20px; background: #cc0000; color: white; padding: 12px 25px; border-radius: 50px; font-weight: bold; border: none; cursor: pointer; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+.secao-card, .card { 
+    border-left: none !important; 
+}
+
+.secao-card,
+.container-barra,
+.resultado-bloco {
+    width: 100%;
+}
+  
+
+    /* ESCONDE O TÍTULO AMARELO ANTIGO EM TODO O RELATÓRIO */
+.titulo-topico {
+    display: none !important;
+}
+
+    /* 2. EXCEÇÃO: Se a página tiver a classe 'mostrar-titulo', o título APARECE */
+    .page.mostrar-titulo .titulo-topico {
+        display: block !important;
+    }    
+
+/* AJUSTE OPCIONAL: DIMINUI O ESPAÇO NO TOPO DA PÁGINA PARA O TEXTO SUBIR */
+.page {
+    margin-top: 0 !important;
+    padding-top: 5px !important;
+}
+    
+.secao-card {
+    width: 100% !important; /* Força a ocupar toda a largura da folha */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    /* Use padding para o texto não colar na borda, em vez de margin lateral */
+    padding: 20px 15px !important; 
+    position: relative;
+}
+        .titulo-topico {   text-align: center; font-size: 24px; color: #000; text-transform: uppercase; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 10px; }
+        .intro-texto { font-style: arial; color: #333; font-size: 24px; margin-bottom: 5px; white-space: pre-line; border-bottom: 1px solid #BDBDBD; padding-bottom: 15px; }
+        .texto-res { line-height: 1.6; font-size: 20px; white-space: pre-line; }
+        
+        /* Gráficos dentro do card */
+        .barra-vermelha { height: 14px; background: #ddd; border-radius: 7px; overflow: hidden; margin-top: 5px; }
+        .progresso-vermelho { height: 100%; background: linear-gradient(90deg, #ff9999, #cc0000); }
+        .card-necessidades { background: #fdf5e6; padding: 20px; border-radius: 4px; border-left: 12px solid #ffffff; margin-top: 10px; }
+       /* ESSENCIAL: Faz as cores das barras aparecerem no PDF/PWA */
+        * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    .piramide { display: flex; flex-direction: column; align-items: center; margin: 20px auto; }
+.linha { display: flex; justify-content: center; gap: 2px; margin: 1px 0; }
+.num { width: 16px; height: 16px; display: flex; align-items: center; justify-content: center; background: #fff; color: #000; font-size: 18px; font-weight: bold; border-radius: 2px; }
+.num.negativo { background-color: #fff !important; color: #FF0000 !important; }
+    /* Sequências Especiais (Dourado/Laranja Luxo) */
+.num.especial { 
+    color: #d97a1e !important; 
+    font-weight: 900 !important;
+    background-color: #ffffff !important; /* Garante fundo branco */
+}
+
+/* Sequências Financeiras / Triângulo de 9 (Verde) */
+.num.financeiro { 
+    color: #28a745 !important; 
+    font-weight: 900 !important;
+    background-color: #ffffff !important; /* Garante fundo branco */
+}
+
+.bloco-piramide { background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #ffffff; }
+/* Fundo sempre branco para todos os números da pirâmide */
+
+.container-piramide, .piramide {
+    max-width: 100vw !important; /* Impede que ela tente ser maior que a folha */
+    overflow-x: hidden !important; /* Corta qualquer tentativa de vazar para os lados */
+}
+
+
+
+
+
+
+/* O Regente mantém o seu estilo especial de triângulo que já definimos */
+    .container-piramide {
+        page-break-inside: avoid !important; /* Impede que quebre no meio */
+        break-inside: avoid !important;      /* Reforço para navegadores modernos */
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+       .piramide {
+        /* Margem superior de 60px para descolar do texto de introdução */
+        margin-top: 60px !important; 
+        
+        /* Margem inferior de 40px para não colar no que vem depois */
+        margin-bottom: 40px !important; 
+        
+        /* Garante que ela fique centralizada e isolada */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        clear: both;
+    } 
+
+.linha-letras {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.num-letra {
+    /* Mesma largura e gap da classe .num para alinhar verticalmente */
+    width: 22px; 
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 0.8;
+}
+    
+  /* Estilo Premium para a Seção de Potências */
+.secao-potencias {
+    background: #ffffff;
+    color: #1a1a1a; /* Texto quase preto para leitura fácil */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.bloco-potencia {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff!important;
+}
+
+.bloco-potencia b {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    border: 1px solid #ffffff!important;
+}
+
+.item-potencia-tag {
+    background: #827108;
+    color: #ffffff !important; /* Força o número a ser branco dentro da tag dourada */
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}  
+
+/* Cor Especial para o Regente da Vida - FORMATO TRIÂNGULO */
+.num.regente-destaque {
+    background: none !important;
+    color: #827108 !important;
+    font-weight: 900 !important;
+    border: none !important;
+    box-shadow: none !important;
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;  /* Ajuste a largura se precisar */
+    height: 40px; /* Ajuste a altura se precisar */
+}
+
+.num.regente-destaque::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    /* Aqui acontece a mágica do triângulo invertido */
+    border-left: 22px solid transparent;  /* Lado esquerdo */
+    border-right: 22px solid transparent; /* Lado direito */
+    border-top: 38px solid #ffffff;       /* Fundo Branco do triângulo */
+    filter: drop-shadow(0 0 5px rgba(184, 134, 11, 0.6)); /* Brilho dourado */
+    z-index: -1;
+}
+
+/* Opcional: Se quiser uma bordinha fina no triângulo */
+.num.regente-destaque::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-top: 41px solid #827108; /* Cor da "borda" dourada */
+    z-index: -2;
+}
+
+/* Estilo das Abas de Planos */
+.tabs-planos { display: flex; justify-content: center; gap: 5px; margin-bottom: 20px; flex-wrap: wrap; }
+.tab-btn { 
+    padding: 10px 15px; border: 1px solid #827108; background: #fff; color: #827108; 
+    cursor: pointer; font-weight: bold; text-transform: uppercase; font-size: 12px; border-radius: 4px; transition: 0.3s;
+}
+.tab-btn.active { background: #827108; color: #fff; }
+.tab-content { display: none; animation: fadeIn 0.5s; }
+.tab-content.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+
+
+
+
+
+.separador-luxo {
+    /* Espaçamento e Quebra de Página */
+    margin: 80px auto 40px auto;
+    page-break-before: always;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.separador-luxo .caixa-interna {
+    position: relative;
+    width: 110%;
+    height: 110px;
+
+    /* FUNDO COM PROFUNDIDADE (PRETO + AZUL PETRÓLEO) */
+    background: linear-gradient(180deg, #d97a1e 0%, #d97a1e 100%);
+
+    /* ESPIRAIS SUAVES (EFEITO LUXO) */
+    background-image:
+        radial-gradient(circle at 50% 100%, rgba(212,175,55,0.06) 10%, #d97a1e),
+        radial-gradient(circle at 50% 0%, rgba(212,175,55,0.04) 10%, #d97a1e);
+    background-size: 120px 60px;
+
+    /* BORDA MAIS NOBRE */
+    border-top: 3px solid #c57a1a;
+    border-bottom: 3px solid #c57a1a;
+
+    border-radius: 6px;
+
+    /* SOMBRA MAIS PROFUNDA */
+    box-shadow:
+        0 15px 30px rgba(0,0,0,0.5),
+        inset 0 0 80px rgba(0,0,0,0.7);
+
+    /* CENTRALIZAÇÃO */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* VINHETA INTERNA (EFEITO PREMIUM) */
+.separador-luxo .caixa-interna::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.3));
+    pointer-events: none;
+}
+
+.separador-luxo h2 {
+    color: #ffffff !important;
+    font-size: 1.8rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 5px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Times New Roman', serif !important;
+    font-weight: bold !important;
+
+    /* GLOW CONTROLADO */
+    text-shadow:
+        0 0 5px rgba(217,122,30,0.6),
+        0 0 15px rgba(217,122,30,0.3);
+
+    line-height: 1;
+}
+
+/* 1. Ajuste Geral para o Relatório (Tela e PDF) */
+.texto-personalizado p, .texto-res p {
+    margin-bottom: 1.2em !important; /* Cria o espaço entre um parágrafo e outro */
+    line-height: 1.6 !important;    /* Dá "ar" entre as linhas do mesmo parágrafo */
+    text-align: justify;             /* Deixa as bordas alinhadas e elegantes */
+    display: block;
+}
+
+@media print {
+    /* 2. Ajuste específico para quando for gerar o PDF */
+    .texto-personalizado, .texto-res {
+        padding: 10px 5px !important; /* Afasta o texto das bordas da folha */
+    }
+
+    .vibracao-row {
+        margin-bottom: 15px !important; /* Espaça as linhas de Vida, Pessoal, Social, etc */
+        line-height: 1.5;
+    }
+
+    /* Evita que um parágrafo seja cortado no meio entre uma folha e outra */
+    p {
+        page-break-inside: avoid;
+    }
+}
+
+.pula-pagina { 
+    page-break-before: always !important; 
+    break-before: page !important; 
+}
+
+h3 {
+     
+    font-size: 22px !important; 
+    color: #d97a1e !important;
+
+    -webkit-text-stroke: 0.5px #d97a1e;
+
+    text-decoration: none !important;
+
+    font-family: 'Cormorant Garamond', serif !important;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px; /* mais compacto */
+    margin-bottom: 8px; /* aproxima do texto */
+line-height: 1.1;
+    display: block;
+}
+    
+
+input {
+    outline: none !important; /* Tira o traço de seleção ao clicar */
+    box-shadow: none !important; /* Tira sombras que o celular cria */
+    border: 1px solid #A65F00; /* Mantém apenas a sua borda dourada */
+    -webkit-appearance: none; /* Remove estética padrão do iPhone/Android */
+}
+
+/* Isso remove aquele destaque azul/cinza que o celular coloca ao focar */
+input:focus {
+    border: none !important;
+    background-color: #fff;
+}    
+
+@media print {
+    /* Define as regras para a folha física */
+    @page {
+        margin: 1.5cm; /* Margem de segurança para não cortar o texto */
+        
+        /* Cria o contador de páginas no topo à direita */
+        @top-right {
+            content: "Página " counter(page);
+            font-family: 'Cinzel', serif;
+            font-size: 10pt;
+            color: #827108;
+            font-weight: bold;
+        }
+    }
+
+    /* Garante que o contador seja reiniciado na capa, se necessário */
+    body {
+        counter-reset: page;
+    }
+}
+
+@media print {
+    .grupo-respostas-bloco {
+        display: block;
+        width: 100%;
+        page-break-before: always !important; /* Força o pulo antes de começar o grupo */
+    }
+    
+    /* Remove o pulo individual das respostas para elas não separarem */
+    .grupo-respostas-bloco .texto-res {
+        page-break-before: auto !important; 
+        margin-bottom: 20px;
+    }
+}
+    
+
+ @media print {
+    /* Regra específica só para a PRIMEIRA página */
+    @page :first {
+        @top-right {
+            content: ""; /* Deixa vazio o topo da primeira página */
+        }
+    }
 }  
     
+@media print {
+    /* 1. Criamos um "reset" para as capas de transição */
+    .capa, .capa-transicao {
+        page-break-before: always !important;
+        page-break-after: always !important;
+        /* Força a capa a ignorar as margens padrão do PDF para ocupar a folha toda */
+        margin: 0 !important; 
+        padding: 0 !important;
+        height: 297mm !important;
+    }
 
-@media (max-width: 600px) {
-    .botoes-acao { grid-template-columns: 1fr; }
-}
+    /* 2. Removemos o cabeçalho/rodapé (incluindo numeração) nestas páginas específicas */
+    /* Nota: Como o CSS padrão não permite selecionar @page por classe de elemento, 
+       usamos o truque de esconder qualquer elemento que renderize a numeração 
+       ou forçamos uma margem que "jogue" o número para fora se ele estiver no corpo. */
 
+    .capa-transicao {
+        /* Se você estiver usando um elemento HTML para simular a numeração, 
+           garanta que ele tenha uma classe como '.numero-pagina' e use: */
+        counter-increment: none !important; 
+    }
 
+    /* 3. A regra de ouro para PDFs modernos (Chrome/Edge):
+       Isso remove os cabeçalhos e rodapés automáticos do navegador (Data, Título e URL) */
+    @page {
+        margin: 1.5cm; /* Margem padrão para páginas de conteúdo */
+    }
+
+    /* Definimos que a PRIMEIRA página e qualquer página com a classe capa/transição 
+       não deve exibir os seletores de margem que contêm o contador */
     
-/* Celular */
-@media (max-width: 768px) {
-    .container-master { width: 100% !important; }
-    .grid-quatro-piramides { grid-template-columns: 1fr; }
+    .capa, .capa-transicao {
+        /* Isso garante que o conteúdo da capa cubra qualquer elemento de numeração 
+           que o navegador tente inserir por baixo */
+        position: relative;
+        z-index: 9999;
+        background-color: #0f2a36 !important;
+    }
+}
+    
+  @media print {
+    /* Esconde o container do cronômetro e mensagens de trava pelo ID */
+    #status-acesso, 
+    #label-tempo, 
+    #timer, 
+    #msg-trava {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}  
+
+
+
+
+/* Na tela (Relatório), mostramos o Player e escondemos o Botão de Link */
+.botao-pdf-link { display: none !important; }
+.player-relatorio { display: flex !important; }
+
+/* No PDF (Impressão), invertemos tudo */
+@media print {
+    .botao-pdf-link { display: flex !important; }
+    .player-relatorio { display: none !important; }
+    
+    /* Garante que o fundo da capa não suma no PDF */
+    .capa-transicao { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+    
+/* Mata qualquer borda azul de links ou elementos focados */
+:focus { outline: none !important; }
+a, img, audio { border: none !important; outline: none !important; text-decoration: none !important; }
+
+.video-introducao {
+    width: 100%;
+    max-width: 800px; /* Mesma largura do seu container para alinhar */
+    margin: 0 auto 20px auto; /* Centraliza e dá espaço para o formulário */
+    border-radius: 20px;
+    overflow: hidden; /* Garante que o vídeo siga o arredondamento */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
+.video-introducao video {
+    display: block;
+    border: 2px solid #A65F00; /* Um detalhe em dourado/bronze como no seu botão */
+}
+    
+.video-wrapper {
+    width: 100%;
+    margin-bottom: 20px; /* Espaço entre o vídeo e o título/campos */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--gold); /* Borda fina acompanhando sua cor principal */
+    background-color: #000;
+}
 
-@media (max-width: 768px) {
-    .container-master { width: 100% !important; overflow-x: hidden; }
-    .piramide .num { width: 15px; height: 15px; font-size: 11px; } /* Diminui a bola no celular */
-    .piramide .linha { gap: 4px; } 
+.video-wrapper video {
+    display: block;
+    outline: none;
 }
 
 
 @media print {
-    /* Força o conteúdo a caber na largura da folha A4 */
-    body { background: none; }
-    .container-master { 
-        width: 100% !important; 
-        margin: 0 !important; 
-        padding: 0 !important;
-    }
-    
-    /* Diminui o tamanho das pirâmides no PDF para caberem 2 por linha ou as 4 */
-    .piramide {
-        transform: scale(0.7); /* Diminui em 30% no papel */
-        transform-origin: top center;
-        margin-bottom: -50px; /* Compensa o espaço vazio do scale */
-    }
-
-    .grid-quatro-piramides {
-        gap: 10px;
-        margin: 10px 0;
-    }
-
-    .bloco-piramide {
-        border: none !important; /* Remove bordas para ficar mais limpo no PDF */
-        padding: 5px !important;
-    }
-
-    .evitar-corte { 
-        page-break-inside: avoid; /* Não deixa um texto quebrar no meio de duas páginas */
-    }
-
-    /* Esconde os botões e inputs no PDF */
-    .card-input-premium, .botoes-acao, button {
+    /* Esconde o vídeo e o container de entrada para não atrapalhar o PDF */
+    .video-wrapper, 
+    .container, 
+    #videoExplicativo {
         display: none !important;
+    }
+
+    /* Garante que o relatório possa fluir por várias páginas */
+    .relatorio-premium {
+        display: block !important;
+        position: static !important;
+        overflow: visible !important;
     }
 }
 
 
+.btn-video-toggle {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #A65F00 0%, #FFD700 100%);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(166, 95, 0, 0.3);
+    margin-bottom: 10px;
+}
 
-/* Cores de Destaque nas Pirâmides */
-.num.negativo { background: #ffcccc !important; color: #d32f2f !important; border: 1px solid #d32f2f !important; font-weight: bold; }
+.btn-video-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(166, 95, 0, 0.4);
+}
 
-.num.financeiro { background: #d4edda !important; color: #155724 !important; border: 1px solid #155724 !important; font-weight: bold; }
+.btn-video-toggle .seta {
+    transition: transform 0.3s ease;
+}
 
-.num.especial { background-color: #fff3cd !important; color: #856404 !important; border: 1px solid #856404 !important; }    
-.num.regente { background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728) !important; color: #4a3b00 !important; border: 1px solid #827108 !important; transform: scale(1.2); z-index: 10; box-shadow: 0 0 10px rgba(130,113,8,0.5); }
+.btn-video-toggle.ativo .seta {
+    transform: rotate(180deg);
+}
 
 
+
+
+/* O título onde vai o Nome da Pessoa */
+.titulo-piramide-nome {
+    font-size: 16px;
+    color: #827108;
+    margin-bottom: 20px; /* Aumentamos aqui para o nome não encostar nos círculos */
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media print {
+    /* 1. Força a pirâmide a nunca ser cortada ao meio */
+    .container-piramide-isolada, .piramide {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        display: block !important;
+        position: relative !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* 2. Garante que o container master não tenha alturas fixas que forcem páginas vazias */
+    .container-master, #conteudo-relatorio {
+        height: auto !important;
+        display: block !important;
+        overflow: visible !important;
+    }
+
+    /* 3. Se você quer que a pirâmide SEMPRE comece em uma nova página para não empurrar nada */
+    .container-piramide-isolada {
+        page-break-before: auto !important; /* Mude para 'always' se quiser que ela sempre pule de página */
+    }
+
+    /* 4. Remove larguras maiores que 100% que causam desalinhamento */
+    #resultado-final {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+
+    /* 2. Esconde barras de rolagem específicas de navegadores Webkit (Chrome/Edge) */
+    ::-webkit-scrollbar {
+        display: none !important;
+        width: 0 !important;
+    }
     
     
     
-</style>
+    </style>
 </head>
 <body>
 
   <div class="card-input-premium">
     <div class="input-group">
-        <label for="nome">NOME COMPLETO DO ANALISADO</label>
-        <input type="text" id="nome" placeholder="Ex: NOME COMPLETO DO CLIENTE" autocomplete="off">
-    </div>
-
-    <div class="input-group">
-        <label for="data">DATA DE NASCIMENTO (PARA CÁLCULO QUÂNTICO)</label>
-        <input type="date" id="data" placeholder="Ex: dd/mm/aaaa" autocomplete="off">
+       
+     <input type="text" id="nome" placeholder="NOME COMPLETO IGUAL CERTIDÃO" >
+       <input type="text" id="data" placeholder="DD/MM/AAAA" maxlength="10" onInput="this.value = this.value.replace(/\D/g, '').replace(/^(\d{2})(\d)/, '$1/$2').replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3');">  
+ 
     </div>
 
     <div class="botoes-acao">
@@ -455,27 +1051,36 @@ function montarSecaoMatriz(titulo, matriz, bancoDeTextos, textoIntro) {
     const regente = ultimaLinha[0];
     const resultadoTexto = bancoDeTextos ? bancoDeTextos[regente] : "Resultado não encontrado.";
     
-    // Se a introdução for indefinida, ele apenas ignora em vez de dar erro
     let introExibicao = textoIntro ? personalizarTexto(textoIntro) : "";
 
-    let h = `
-    <div class="page evitar-corte" style="margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 40px;">
-        <h2 style="text-align:center; color:#827108; text-transform: uppercase;">Matriz de ${titulo}</h2>
+    return `
+    <div class="page evitar-corte">
+        <div class="separador-luxo">
+            <div class="caixa-interna">
+                <h2>MATRIZ  ${titulo}</h2>
+            </div>
+        </div>
         
-        ${introExibicao}
-
-        <div style="margin: 20px 0;">
-            ${desenhar(matriz, titulo)} 
+        <div class="texto-intro-pessoal">
+            ${introExibicao}
         </div>
+    </div>
 
-        <div class="resultado-regente-container" style="background: #fdfaf0; border: 1px solid #e6d5a8; border-radius: 12px; padding: 25px;">
-            <h3 style="color: #827108;">🔱 REGENTE ${regente} - ${titulo}</h3>
-            ${personalizarTexto(resultadoTexto)}
-        </div>
-    </div>`;
-    return h;
+<div class="container-piramide-isolada">
+    <div class="titulo-piramide-nome">${titulo}<br>${nome.value}  </div>
+    ${desenhar(matriz, titulo)} 
+</div>
+
+<div class="resultado-regente-aberto" style="margin-top: 40px; padding: 20px;">
+    <h3 style="color: #827108; border-bottom: 2px solid #e6d5a8; padding-bottom: 10px;">
+        🔱 REGENTE ${regente} - ${titulo}
+    </h3>
+    <div class="texto-personalizado" style="margin-top: 15px;">
+        ${personalizarTexto(resultadoTexto)}
+    </div>
+</div>
+`;
 }
-
 
 
 function gerarLoopNegativo(mV, mP, mS, mD, crono) {
@@ -513,6 +1118,8 @@ function extrairNegativasSincronizadas(mV, mP, mS, mD, crono, topoV) {
     let html = "";
     let encontrou = false;
     let sequenciasProcessadas = new Set();
+
+
 
     // Varre cada linha da Matriz da Vida (Guia Mestre)
     mV.forEach((linha, i) => {
@@ -591,6 +1198,8 @@ function extrairFinanceiroSincronizado(mV, mP, mS, mD, crono, topoV) {
     let html = "";
     let encontrou = false;
     let sequenciasProcessadas = new Set();
+
+
     
     // Nomes das variáveis de texto conforme seu padrão
     const bV = typeof textosSeqFinancVida !== 'undefined' ? textosSeqFinancVida : {};
@@ -604,6 +1213,9 @@ function extrairFinanceiroSincronizado(mV, mP, mS, mD, crono, topoV) {
         { matriz: mS, banco: bS, nome: "SOCIAL", prefixo: "🌎" },
         { matriz: mD, banco: bD, nome: "DESTINO", prefixo: "☄️" }
     ];
+
+
+
 
     piramides.forEach((pira) => {
         // Varremos até a penúltima linha, pois precisamos checar a linha de baixo
@@ -640,6 +1252,9 @@ function extrairFinanceiroSincronizado(mV, mP, mS, mD, crono, topoV) {
                     // Busca o texto pela chave exata "99/9"
                     let textoResultado = pira.banco["99/9"] || bV["99/9"] || "Vibração de fluxo financeiro detectada.";
 
+              
+                    
+               
                     html += `
                     <div class="card-integrado evitar-corte" style="border-left: 6px solid #2e7d32; margin-bottom: 25px; background: #f1f8e9; padding: 15px; border-radius: 8px;">
                         <div class="titulo-ciclo" style="background: #c8e6c9; color: #1b5e20; padding: 8px; font-weight: bold; border-radius: 4px;">
@@ -670,6 +1285,11 @@ function extrairEspeciaisSincronizadas(mV, mP, mS, mD, crono, topoV) {
     let html = "";
     let encontrou = false;
     let sequenciasProcessadas = new Set();
+
+
+
+    
+ 
     
     // Mapeamento de quais pirâmides buscar e quais bancos de texto usar
     const piramides = [
@@ -679,6 +1299,9 @@ function extrairEspeciaisSincronizadas(mV, mP, mS, mD, crono, topoV) {
         { matriz: mD, banco: typeof textosSeqEspDestino !== 'undefined' ? textosSeqEspDestino : {}, nome: "DESTINO", prefixo: "☄️", classe: "destino" }
     ];
 
+
+
+    
     piramides.forEach((pira) => {
         pira.matriz.forEach((linha, i) => {
             for (let j = 0; j < linha.length - 2; j++) {
@@ -710,6 +1333,10 @@ function extrairEspeciaisSincronizadas(mV, mP, mS, mD, crono, topoV) {
                     let datas = calcularPeriodoSequencia(periodoBase, duracaoTotal);
                     let idadeFim = periodoBase.idadeIni + duracaoTotal;
 
+
+
+      
+                    
                     html += `
                     <div class="card-integrado evitar-corte" style="border-left: 6px solid #b8860b; margin-bottom: 25px; background: #fffcf5; padding: 15px; border-radius: 8px;">
                         <div class="titulo-ciclo" style="background: #fcf6ba; color: #827108; padding: 8px; font-weight: bold; border-radius: 4px;">
@@ -1021,26 +1648,35 @@ function abrirPremium() {
 
 function gerar() {
     const nome = document.getElementById("nome").value.trim();
-    const data = document.getElementById("data").value;
+    const dataInput = document.getElementById("data").value; // Ex: "15/05/1990"
 
-    if (!nome || !data) {
-        alert("Preencha nome e data!");
+    if (!nome || !dataInput || dataInput.length < 10) {
+        alert("Preencha nome e data corretamente (DD/MM/AAAA)!");
         return;
     }
 
-    const dia = data.split("-")[2];
-    const mes = data.split("-")[1];
+    // Corrigindo a leitura da data para evitar o erro de inversão/NaN
+    const partes = dataInput.split("/");
+    const diaNum = parseInt(partes[0]);
+    const mesNum = parseInt(partes[1]);
+    const anoNum = parseInt(partes[2]);
+
+    // Data no formato ISO para o cronograma
+    const dataISO = `${anoNum}-${partes[1]}-${partes[0]}`;
+
     const baseN = nomeNumeros(nome);
 
+    // Agora os cálculos das outras pirâmides funcionarão corretamente
     const mVida = piramide(baseN);
-    const mPes  = piramidePessoal(baseN, dia);
-    const mSoc  = piramideSocial(baseN, mes);
-    const mDes  = piramideDestino(baseN, dia, mes);
+    const mPes  = piramidePessoal(baseN, diaNum);
+    const mSoc  = piramideSocial(baseN, mesNum);
+    const mDes  = piramideDestino(baseN, diaNum, mesNum);
     
     const topoV = topo(mVida[0]);
-    const crono = gerarCronogramaMestre(topoV, data);
+    const crono = gerarCronogramaMestre(topoV, dataISO);
 
     let meuHtml = `<div class="container-master">`;
+    
 meuHtml += `
 <div class="container-master">
     <div id="capa-numerologica" style="
@@ -1083,7 +1719,7 @@ meuHtml += `
             <div style="width: 150px; height: 1px; background: linear-gradient(to right, transparent, #827108, transparent); margin: 15px auto;"></div>
             
             <div style="font-family: 'Cinzel', serif; font-size: 18px; color: #827108; letter-spacing: 4px;">
-                ${data.split('-').reverse().join('/')}
+                ${dataInput}
             </div>
         </div>
 
@@ -1103,6 +1739,66 @@ meuHtml += `
     meuHtml += montarSecaoMatriz("DESTINO", mDes, textosDestino, explicacoes.destino);
 
 
+
+
+meuHtml += `
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               Parte 1<br><br> Seus Graficos de Expressão Natural
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+      
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
+           A decodificação das Energias e Potenciais nativas que definem sua personalidade.
+        </p>
+    </div>
+`;
+
+
+    
     // Exemplo de como colocar no seu gerar()
 meuHtml += `
 <section class="page" style="margin-top: 50px;">
@@ -1111,6 +1807,69 @@ meuHtml += `
     ${extrairEspeciaisSincronizadas(mVida, mPes, mSoc, mDes, crono, topoV)}
 </section>`;
 
+
+
+
+
+
+meuHtml += `
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               Parte 1<br><br> Seus Graficos de Expressão Natural
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+      
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
+           A decodificação das Energias e Potenciais nativas que definem sua personalidade.
+        </p>
+    </div>
+`;
+
+
+    
     // 2. NOVO LOOP DE NEGATIVAS (Sincronizado pela Vida)
     meuHtml += `
     <section class="page" style="margin-top: 50px;">
@@ -1119,6 +1878,71 @@ meuHtml += `
         <p style="text-align:center; font-style:italic; margin-bottom: 30px;">Identificação de sequências negativas sincronizadas pelo tempo da Matriz da Vida.</p>
         ${extrairNegativasSincronizadas(mVida, mPes, mSoc, mDes, crono, topoV)}
     </section>`;
+
+
+
+
+
+
+
+meuHtml += `
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               Parte 1<br><br> Seus Graficos de Expressão Natural
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+      
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
+           A decodificação das Energias e Potenciais nativas que definem sua personalidade.
+        </p>
+    </div>
+`;
+
+
+    
 
     // --- SEÇÃO DE FLUXO FINANCEIRO ---
 const htmlFinanceiro = extrairFinanceiroSincronizado(mVida, mPes, mSoc, mDes, crono, topoV);
@@ -1136,6 +1960,70 @@ if (htmlFinanceiro) {
         ${htmlFinanceiro}
     </section>`;
 }
+
+
+
+
+
+
+
+meuHtml += `
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               Parte 1<br><br> Seus Graficos de Expressão Natural
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+      
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
+           A decodificação das Energias e Potenciais nativas que definem sua personalidade.
+        </p>
+    </div>
+`;
+
+    
 
     // 3. Loop de 100 Anos (Potências)
     meuHtml += `
@@ -1155,57 +2043,4 @@ document.onselectstart=()=>false;
  </script> 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
