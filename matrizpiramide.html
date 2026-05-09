@@ -115,7 +115,7 @@
     width: calc(100% - 2mm);
     margin: 0 auto;
     /* TOPO (40px) | LATERAIS (2mm) | BASE (40px) */
-    padding: 40px 2mm 20px 2mm; 
+    padding: 20px 2mm 10px 2mm; 
           }
 
 /* Localize este bloco dentro do seu @media print e substitua */
@@ -320,7 +320,7 @@
 /* AJUSTE OPCIONAL: DIMINUI O ESPAÇO NO TOPO DA PÁGINA PARA O TEXTO SUBIR */
 .page {
     margin-top: 0 !important;
-    padding-top: 5px !important;
+    padding-top: 0px !important;
 }
     
 .secao-card {
@@ -397,18 +397,37 @@
         clear: both;
     } 
 
-.linha-letras {
+.num-letra {
+    /* IMPORTANTE: Estes valores devem ser IGUAIS aos da classe .num */
+    width: 16px;            
+    height: 16px;           
+    
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 2px;
+    
+    /* Estilo da Letra */
+    color: #000E52;
+    font-size: 11px;       /* Diminuímos aqui para a letra caber no espaço de 16px */
+    font-weight: 700;      /* Um pouco menos que 900 para não borrar no PDF */
+    text-transform: uppercase;
+    font-family: sans-serif;
+    
+    /* Alinhamento */
+    flex-shrink: 0;        /* Impede que a letra esprema se o nome for longo */
 }
 
-.num-letra {
-    /* Mesma largura e gap da classe .num para alinhar verticalmente */
-    width: 22px; 
-    text-align: center;
-    font-family: 'Segoe UI', sans-serif;
-    opacity: 0.8;
+.linha-letras {
+    display: flex;
+    justify-content: center; 
+    gap: 2px;              /* Deve ser o mesmo gap da classe .linha */
+    margin-bottom: 8px;    /* Espaço entre o nome e o início dos números */
+}
+
+@media print {
+    .num-letra {
+        -webkit-print-color-adjust: exact;
+    }
 }
     
   /* Estilo Premium para a Seção de Potências */
@@ -880,12 +899,124 @@ a, img, audio { border: none !important; outline: none !important; text-decorati
 }
 
 
-    /* 2. Esconde barras de rolagem específicas de navegadores Webkit (Chrome/Edge) */
+.texto-intro-pessoal { 
+    white-space: pre-line !important; /* Força a separação dos parágrafos */
+    line-height: 1.8 !important;      /* Aumenta o espaço entre as linhas para facilitar a leitura */
+    margin-top: 20px !important;      /* Afasta o texto do título da matriz */
+    margin-bottom: 30px !important;   /* Dá um respiro antes de começar a pirâmide */
+    text-align: justify;              /* Alinha o texto dos dois lados, padrão premium */
+    font-size: 18px;                  /* Tamanho confortável para o PDF */
+    color: #333;                      /* Tom de cinza escuro profissional */
+    padding: 0 5px;                   /* Pequena folga nas laterais */
+}
+    
+  @media print {
+    /* Esconde a barra de rolagem visual no PDF */
     ::-webkit-scrollbar {
         display: none !important;
-        width: 0 !important;
     }
+
+    /* Garante que o conteúdo não tente "rolar" dentro da folha A4 */
+    html, body, .relatorio-premium, .page {
+        overflow: visible !important;
+        height: auto !important;
+    }
+}  
+
+
+/* Nova classe exclusiva para centralizar os títulos dos ciclos */
+.centralizar-titulos {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    justify-content: center !important;
+}
+
+/* Garante que o ícone e o texto dentro fiquem na mesma linha se quiser */
+.centralizar-titulos b {
+    display: block;
+    margin-bottom: 5px;
+}
+
+ .titulo-ciclo-dourado {
+    text-align: center !important; /* Centraliza no meio da página */
+    color: #827108 !important;    /* Seu dourado padrão */
+    font-size: 22px !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-family: 'Cinzel', serif; /* Se você tiver essa fonte, fica excelente */
+    border-bottom: 1px solid rgba(130, 113, 8, 0.2); /* Linha fina decorativa */
+    padding-bottom: 10px;
+    width: 100%;
+    display: block;
+}
+
+/* Garante que o container dos ciclos não esprema o conteúdo */
+.conteudo-vibracoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}   
+
+/* Centraliza apenas o nome da Matriz */
+.titulo-matriz-central {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #1a1a1a;
+}
+
+/* Estiliza o bloco de texto explicativo */
+.texto-com-potencia {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+/* Cria a "tag" da potência na lateral do texto */
+.tag-potencia {
+    background: #827108; /* Dourado */
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 8px; /* Espaço entre a tag e o início do texto */
+    display: inline-block; /* Faz ela ficar na mesma linha do texto */
+    vertical-align: middle;
+}
+
+
+
+.triangulo-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    line-height: 0.8;
+    margin: 0 4px;
+    font-weight: bold;
+    color: #2d5a27; /* Verde da pirâmide */
+    font-size: 13px;
+}
+
+.topo-tri {
+    letter-spacing: 1px;
+}
+
+.base-tri {
+    margin-top: -1px;
+}
     
+
     
     
     </style>
@@ -1087,7 +1218,7 @@ function calcularPeriodoSequencia(periodoBase, duracaoTotal) {
 
 
 
-function montarSecaoMatriz(titulo, matriz, bancoDeTextos, textoIntro) {
+function montarSecaoMatriz(titulo, matriz, bancoDeTextos, textoIntro, nomeCliente = "") {
     const ultimaLinha = matriz[matriz.length - 1];
     const regente = ultimaLinha[0];
     const resultadoTexto = bancoDeTextos ? bancoDeTextos[regente] : "Resultado não encontrado.";
@@ -1098,29 +1229,29 @@ function montarSecaoMatriz(titulo, matriz, bancoDeTextos, textoIntro) {
     <div class="page evitar-corte">
         <div class="separador-luxo">
             <div class="caixa-interna">
-                <h2>MATRIZ  ${titulo}</h2>
+                <h2>MATRIZ ${titulo}</h2>
             </div>
         </div>
         
         <div class="texto-intro-pessoal">
             ${introExibicao}
         </div>
-    </div>
 
-<div class="container-piramide-isolada">
-    <div class="titulo-piramide-nome">${titulo}<br>${nome.value}  </div>
-    ${desenhar(matriz, titulo)} 
-</div>
+        <div class="container-piramide-isolada" style="margin-top: 30px;">
+            <div class="titulo-piramide-nome">Geometria : ${titulo}</div>
+            ${desenhar(matriz, titulo, false, nomeCliente)} 
+        </div>
 
-<div class="resultado-regente-aberto" style="margin-top: 40px; padding: 20px;">
-    <h3 style="color: #827108; border-bottom: 2px solid #e6d5a8; padding-bottom: 10px;">
-        🔱 SEU REGENTE ${regente} - ${titulo}
-    </h3>
-    <div class="texto-personalizado evitar-corte" style="margin-top: 15px;">
-        ${aplicarFiltroTexto(resultadoTexto)}
+        <div class="resultado-regente-aberto evitar-corte" style="margin-top: 40px; padding: 20px;">
+            <h3 style="color: #827108; border-bottom: 2px solid #e6d5a8; padding-bottom: 10px;">
+                🔱 SEU REGENTE ${regente} - ${titulo}
+            </h3>
+            <div class="texto-personalizado evitar-corte" style="margin-top: 15px;">
+                ${aplicarFiltroTexto(resultadoTexto)}
+            </div>
+        </div>
     </div>
-</div>
-`;
+    `;
 }
 
 
@@ -1146,7 +1277,7 @@ function gerarLoopNegativo(mV, mP, mS, mD, crono) {
             <div class="conteudo-vibracoes">
                 <div class="vibracao-row"><b style="color:#d32f2f;">🚫 VIDA:</b> ${aplicarFiltroTexto(textosSeqNegVida[nV] || "Sem bloqueios severos mapeados para esta vibração.")}</div>
                 <div class="vibracao-row"><b style="color:#d32f2f;">🚫 PESSOAL:</b> ${aplicarFiltroTexto(textosSeqNegPessoal[nP] || "Fluxo pessoal em harmonia.")}</div>
-                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 SOCIAL:</b> ${aplicarFiltroTexto(textosSeqNegSocial[nS] || "Interações sociais protegidas.")}</div>
+                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 SOCIAL:</b> ${aplicarFiltroTexto(textosSeqNegSocial[nS] || "Sem percepção Social  .")}</div>
                 <div class="vibracao-row"><b style="color:#d32f2f;">🚫 DESTINO:</b> ${aplicarFiltroTexto(textosSeqNegDestino[nD] || "Caminho de destino livre de obstruções.")}</div>
             </div>
         </div>`;
@@ -1160,23 +1291,17 @@ function extrairNegativasSincronizadas(mV, mP, mS, mD, crono, topoV) {
     let encontrou = false;
     let sequenciasProcessadas = new Set();
 
-
-
-    // Varre cada linha da Matriz da Vida (Guia Mestre)
     mV.forEach((linha, i) => {
         let j = 0;
         while (j < linha.length) {
             let num = linha[j];
             let cont = 1;
-            // Conta quantos números iguais aparecem em sequência (3 ou mais)
             while (j + cont < linha.length && linha[j + cont] === num) {
                 cont++;
             }
 
             if (cont >= 3) {
                 encontrou = true;
-                
-                // Evita duplicatas se a mesma sequência aparecer em contextos repetidos
                 let chaveUnica = `lin-${i}-col-${j}-num-${num}`;
                 if (sequenciasProcessadas.has(chaveUnica)) {
                     j += cont;
@@ -1184,10 +1309,7 @@ function extrairNegativasSincronizadas(mV, mP, mS, mD, crono, topoV) {
                 }
                 sequenciasProcessadas.add(chaveUnica);
 
-                // --- CÁLCULO DE VIGÊNCIA (Soma das Potências do Topo) ---
                 let duracaoTotal = 0;
-                // Na pirâmide, conforme descemos as linhas (i), a coluna real (offset) muda
-                // Mas para sincronizar com o Topo (Vibração Temporal), usamos o índice J + a compensação da linha
                 for (let k = 0; k < cont; k++) {
                     let colReal = j + k + Math.floor(i / 2); 
                     if (colReal < topoV.length) {
@@ -1195,31 +1317,54 @@ function extrairNegativasSincronizadas(mV, mP, mS, mD, crono, topoV) {
                     }
                 }
 
-                // Sincroniza com o cronograma de 100 anos
                 let idxCrono = j + Math.floor(i / 2);
                 let periodoBase = crono[idxCrono] || crono[0];
                 let datas = calcularPeriodoSequencia(periodoBase, duracaoTotal);
                 let idadeFim = periodoBase.idadeIni + duracaoTotal;
 
-                // Captura o resultado das 4 pirâmides na mesma posição exata
                 const resV = mV[i][j];
                 const resP = mP[i][j];
                 const resS = mS[i][j];
                 const resD = mD[i][j];
 
+                // NOVO DESIGN: Menos "pesado" para evitar quebras de página bruscas
                 html += `
-                <div class="card-integrado evitar-corte" style="border-left: 6px solid #ff0000; margin-bottom: 25px;">
-                    <div class="titulo-ciclo" style="background: #fee2e2; color: #b91c1c;">
-                        ⚠️ ALERTA DE BLOQUEIO: DOS ${periodoBase.idadeIni} AOS ${idadeFim} ANOS
+                <div class="card-alerta-vulnerabilidade evitar-corte" style="margin-bottom: 30px; border: 1px solid #fecaca; border-radius: 10px; overflow: hidden; background: #fff;">
+                    
+                    <div style="background: #fef2f2; padding: 15px; border-bottom: 2px solid #fee2e2; display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 24px;">⚠️</span>
+                        <div style="flex: 1;">
+                            <h4 style="margin: 0; color: #b91c1c; font-size: 16px; text-transform: uppercase; letter-spacing: 1px;">Alerta de Bloqueio Ativo</h4>
+                            <span style="color: #ef4444; font-weight: bold; font-size: 14px;">Dos ${periodoBase.idadeIni} aos ${idadeFim} anos</span>
+                        </div>
                     </div>
-                    <div class="conteudo-vibracoes">
-                         <div style="font-size: 18px; color: #111827; margin-bottom: 15px; border-bottom: 1px dashed #ff0000; padding-bottom: 5px;">
-                            📅  Período de maior influência ${periodoBase.ini} até ${datas.fim} (${duracaoTotal} anos)  </div>
+
+                    <div style="padding: 20px;">
+                        <div style="font-size: 16px; color: #374151; margin-bottom: 20px; padding: 10px; background: #fffafb; border-radius: 5px; border-left: 3px solid #d32f2f;">
+                            📅 <b>Vigência:</b> ${periodoBase.ini} até ${datas.fim} <span style="color: #6b7280; font-size: 13px;">(${duracaoTotal} anos de influência)</span>
+                        </div>
                         
-                        <div class="vibracao-row"><b>🚫 SEQUÊNCIA PRINCIPAL ${resV}${resV}${resV}</b><br> ${aplicarFiltroTexto(textosSeqNegVida[resV] || "Bloqueio no fluxo vital.")}</div>
-                        <div class="vibracao-row"><b>🚫 SEQUÊNCIA INTERNA ${resP}${resP}${resP}</b><br> ${aplicarFiltroTexto(textosSeqNegPessoal[resP] || "Desafio na expressão pessoal.")}</div>
-                        <div class="vibracao-row"><b>🚫 SEQUÊNCIA DE PERCEPÇÃO DO MEIO  ${resS}${resS}${resS}</b><br> ${aplicarFiltroTexto(textosSeqNegSocial[resS] || "Instabilidade nas relações.")}</div>
-                        <div class="vibracao-row"><b>🚫 SEQUÊNCIA DE INFLUÊNCIA NATURAL  ${resD}${resD}${resD}</b><br> ${aplicarFiltroTexto(textosSeqNegDestino[resD] || "Obstrução no caminho de destino.")}</div>
+                        <div class="grid-sequencias" style="display: grid; gap: 15px;">
+                            <div class="centralizar-titulos" style="text-align: left !important; align-items: flex-start !important;">
+                                <b style="color: #b91c1c;">🚫 VIBRAÇÃO MESTRA(VIDA) ${resV}${resV}${resV}</b>
+                                <div style="font-size: 15px; color: #4b5563; margin-top: 5px;">${aplicarFiltroTexto(textosSeqNegVida[resV] || "Bloqueio no fluxo vital.")}</div>
+                            </div>
+
+                            <div class="centralizar-titulos" style="text-align: left !important; align-items: flex-start !important;">
+                                <b style="color: #b91c1c;">🚫 MUNDO INTERIOR (O QUE VOCÊ SENTE POR DENTRO) ${resP}${resP}${resP}</b>
+                                <div style="font-size: 15px; color: #4b5563; margin-top: 5px;">${aplicarFiltroTexto(textosSeqNegPessoal[resP] || "Desafio na expressão.")}</div>
+                            </div>
+
+                            <div class="centralizar-titulos" style="text-align: left !important; align-items: flex-start !important;">
+                                <b style="color: #b91c1c;">🚫 SEQUÊNCIA DE PERCEPÇÃO DO MEIO ${resS}${resS}${resS}</b>
+                                <div style="font-size: 15px; color: #4b5563; margin-top: 5px;">${aplicarFiltroTexto(textosSeqNegSocial[resS] || "Instabilidade nas relações.")}</div>
+                            </div>
+
+                            <div class="centralizar-titulos" style="text-align: left !important; align-items: flex-start !important;">
+                                <b style="color: #b91c1c;">🚫 TENDENCIAS DO DESTINO (PROPÓSITO OU INFLUÊNCIA) ${resD}${resD}${resD}</b>
+                                <div style="font-size: 15px; color: #4b5563; margin-top: 5px;">${aplicarFiltroTexto(textosSeqNegDestino[resD] || "Obstrução no caminho.")}</div>
+                            </div>
+                        </div>
                     </div>
                 </div>`;
                 
@@ -1230,9 +1375,21 @@ function extrairNegativasSincronizadas(mV, mP, mS, mD, crono, topoV) {
         }
     });
 
-    return encontrou ? html : "<p style='text-align:center;'>Nenhuma sequência negativa crítica detectada.</p>";
+    return encontrou ? html : "<p style='text-align:center; color: #666;'>Nenhuma sequência negativa crítica detectada nesta análise.</p>";
 }
 
+
+
+function formatarTrianguloNove(texto) {
+    // Procura por 99/9 no texto e substitui pelo HTML do triângulo
+    return texto.replace(/99\/9/g, `
+        <span class="triangulo-container">
+            <span class="topo-tri">9 9</span>
+            <span class="base-tri">9</span>
+        </span>
+    `);
+}
+    
 
 function extrairFinanceiroSincronizado(mV, mP, mS, mD, crono, topoV) {
     let html = "";
@@ -1248,10 +1405,10 @@ function extrairFinanceiroSincronizado(mV, mP, mS, mD, crono, topoV) {
     const bD = typeof textosSeqFinancDestino !== 'undefined' ? textosSeqFinancDestino : {};
 
     const piramides = [
-        { matriz: mV, banco: bV, nome: "SEQUÊNCIA PRINCIPAL", prefixo: "👑" },
-        { matriz: mP, banco: bP, nome: "SEQUÊNCIA INTERNA", prefixo: "👤" },
-        { matriz: mS, banco: bS, nome: "SEQUÊNCIA DE PERCEPÇÃO", prefixo: "🌎" },
-        { matriz: mD, banco: bD, nome: "SEQUÊNCIA DE INFLUÊNCIA NATURAL", prefixo: "☄️" }
+        { matriz: mV, banco: bV, nome: "VIBRAÇÃO MESTRA(VIDA)", prefixo: "👑" },
+        { matriz: mP, banco: bP, nome: "MUNDO INTERIOR (O QUE VOCÊ SENTE POR DENTRO)", prefixo: "👤" },
+        { matriz: mS, banco: bS, nome: "PERCEPÇÃO DO MEIO (COMO VOCÊ VÊ O MUNDO)", prefixo: "🌎" },
+        { matriz: mD, banco: bD, nome: "TENDENCIAS DO DESTINO (PROPÓSITO OU INFLUÊNCIA)", prefixo: "☄️" }
     ];
 
 
@@ -1290,7 +1447,7 @@ function extrairFinanceiroSincronizado(mV, mP, mS, mD, crono, topoV) {
                     let idadeFim = periodoBase.idadeIni + duracaoTotal;
 
                     // Busca o texto pela chave exata "99/9"
-                    let textoResultado = pira.banco["99/9"] || bV["99/9"] || "Vibração de fluxo financeiro detectada.";
+                    let textoResultado = pira.banco["99/9"] || bV["99/9"] || "<b>99/9</b>";
 
               
                     
@@ -1298,14 +1455,14 @@ function extrairFinanceiroSincronizado(mV, mP, mS, mD, crono, topoV) {
                     html += `
                     <div class="card-integrado evitar-corte" style="border-left: 6px solid #2e7d32; margin-bottom: 25px; background: #f1f8e9; padding: 15px; border-radius: 8px;">
                         <div class="titulo-ciclo" style="background: #c8e6c9; color: #1b5e20; padding: 8px; font-weight: bold; border-radius: 4px;">
-                            💰 FLUXO FINANCEIRO (${pira.nome}): DOS ${periodoBase.idadeIni} AOS ${idadeFim} ANOS
+                            💰 VIBRAÇÃO DE FLUXO FINANCEIRO DETECTADO: DOS ${periodoBase.idadeIni} AOS ${idadeFim} ANOS
                         </div>
                         <div class="conteudo-vibracoes" style="margin-top:10px;">
                             <p style="font-size: 18px; color: #111827; margin-bottom: 10px; border-bottom: 1px dashed #2e7d32; padding-bottom: 5px;">
                                 📅 <b>Período de influência</b> ${periodoBase.ini} até ${datas.fim} (${duracaoTotal} anos)
                             </p>
                             <div class="vibracao-row">
-                                <b>${pira.prefixo} ${pira.nome} (99/9):</b> ${aplicarFiltroTexto(textoResultado)}
+                                <b>${pira.prefixo} ${pira.nome} </b> ${formatarTrianguloNove(textoResultado)}
                             </div>
                         </div>
                     </div>`;
@@ -1333,10 +1490,10 @@ function extrairEspeciaisSincronizadas(mV, mP, mS, mD, crono, topoV) {
     
     // Mapeamento de quais pirâmides buscar e quais bancos de texto usar
     const piramides = [
-        { matriz: mV, banco: typeof textosSeqEspVida !== 'undefined' ? textosSeqEspVida : {}, nome: "SEQUÊNCIA PRINCIPAL", prefixo: "👑", classe: "vida" },
-        { matriz: mP, banco: typeof textosSeqEspPessoal !== 'undefined' ? textosSeqEspPessoal : {}, nome: "SEQUÊNCIA INTERNA", prefixo: "👤", classe: "pessoal" },
-        { matriz: mS, banco: typeof textosSeqEspSocial !== 'undefined' ? textosSeqEspSocial : {}, nome: "SEQUÊNCIA DE PERCEPÇÃO", prefixo: "🌎", classe: "social" },
-        { matriz: mD, banco: typeof textosSeqEspDestino !== 'undefined' ? textosSeqEspDestino : {}, nome: "SEQUÊNCIA DE INFLUÊNCIA NATURAL", prefixo: "☄️", classe: "destino" }
+        { matriz: mV, banco: typeof textosSeqEspVida !== 'undefined' ? textosSeqEspVida : {}, nome: "VIBRAÇÃO MESTRA(VIDA)", prefixo: "👑", classe: "vida" },
+        { matriz: mP, banco: typeof textosSeqEspPessoal !== 'undefined' ? textosSeqEspPessoal : {}, nome: "MUNDO INTERIOR (O QUE VOCÊ SENTE POR DENTRO)", prefixo: "👤", classe: "pessoal" },
+        { matriz: mS, banco: typeof textosSeqEspSocial !== 'undefined' ? textosSeqEspSocial : {}, nome: "PERCEPÇÃO DO MEIO (COMO VOCÊ VÊ O MUNDO)", prefixo: "🌎", classe: "social" },
+        { matriz: mD, banco: typeof textosSeqEspDestino !== 'undefined' ? textosSeqEspDestino : {}, nome: "TENDENCIAS DO DESTINO (PROPÓSITO OU INFLUÊNCIA)", prefixo: "☄️", classe: "destino" }
     ];
 
 
@@ -1387,7 +1544,7 @@ function extrairEspeciaisSincronizadas(mV, mP, mS, mD, crono, topoV) {
                                 📅 <b>Período:</b> de ${periodoBase.ini} até ${datas.fim} (${duracaoTotal} anos)
                             </p>
                             <div class="vibracao-row">
-                                <b>${pira.prefixo} ${pira.nome} (${seq}):</b> ${aplicarFiltroTexto(pira.banco[seq])}
+                                <b> SEQUÊNCIA ${pira.prefixo} ${seq}</b>: ${aplicarFiltroTexto(pira.banco[seq])}
                             </div>
                             <p style="font-size: 11px; color: #827108; margin-top: 5px; font-style: italic;">
                                 *Vigência calculada pela matriz temporal da Pirâmide da Vida.
@@ -1529,16 +1686,26 @@ function obterMapaCores(linhas, tipoPira) {
 
 
     
-// Função desenhar atualizada para aplicar as cores
-function desenhar(linhas, tipoPira = "VIDA", compacta = false) {
+function desenhar(linhas, tipoPira = "VIDA", compacta = false, nomeRaw = "") {
     const mapaCores = obterMapaCores(linhas, tipoPira);
     let classePira = compacta ? "piramide compacta" : "piramide";
     let html = `<div class="${classePira}">`;
 
+    // --- NOVA PARTE: LINHA DO NOME NO TOPO ---
+    if (nomeRaw) {
+        const letrasNomeTopo = nomeRaw.toUpperCase().replace(/\s+/g, '').split('');
+        html += `<div class="linha linha-letras" style="margin-bottom: 5px; display: flex; justify-content: center; gap: 2px;">`;
+        letrasNomeTopo.forEach(letra => {
+            html += `<div class="num-letra" style="width: 16px; height: 16px; display: flex; align-items: center; justify-content: center; color: #000E52; font-size: 18px; font-weight: 900; background: transparent; border-radius: 2px;">${letra}</div>`;
+        });
+        html += `</div>`;
+    }
+
+    // DESENHO DAS LINHAS DE NÚMEROS
     linhas.forEach((linha, i) => {
         html += `<div class="linha">`;
         linha.forEach((num, j) => {
-          let corClasse = mapaCores[i][j];
+            let corClasse = mapaCores[i][j];
             html += `<div class="num ${corClasse}">${num}</div>`;
         });
         html += `</div>`;
@@ -1547,7 +1714,6 @@ function desenhar(linhas, tipoPira = "VIDA", compacta = false) {
     html += `</div>`;
     return html;
 }
-
 
 
 
@@ -1648,16 +1814,41 @@ function gerarLoopIntegrado(mV, mP, mS, mD, crono) {
         const pS = topoS[periodo.indiceArcano] || topoS[topoS.length-1];
         const pD = topoD[periodo.indiceArcano] || topoD[topoD.length-1];
 
-        h += `
-        <div class="card-integrado evitar-corte">
-            <h3 class="titulo-ciclo">Ciclo: ${periodo.idadeIni} a ${periodo.idadeFim} anos <br> (${periodo.ini} a ${periodo.fim})</h3>
-            <div class="conteudo-vibracoes">
-                <div class="vibracao-row"><b>👑 MATRIZ DA VIDA <br>Potência ${pV}</b>${aplicarFiltroTexto(textosVida[pV])}</div>
-                <div class="vibracao-row"><b>👤 MATRIZ PESSOAL<br> Potência ${pP}</b>${aplicarFiltroTexto(textosPessoal[pP])}</div>
-                <div class="vibracao-row"><b>🌎 MATRIZ DO MEIO <br>Potência ${pS}</b>${aplicarFiltroTexto(textosSocial[pS])}</div>
-                <div class="vibracao-row"><b>☄️ MATRIZ DA INFLUÊNCIA<br> Potência ${pD}</b>${aplicarFiltroTexto(textosDestino[pD])}</div>
-            </div>
-        </div>`;
+h += `
+<div class="card-integrado evitar-corte" style="margin-bottom: 40px; border: 1px solid #e6d5a8; padding: 20px; border-radius: 12px;">
+    <h3 class="titulo-ciclo-dourado">
+        Ciclo: ${periodo.idadeIni} a ${periodo.idadeFim} anos <br> 
+        <span style="font-size: 0.8em; opacity: 0.8;">(${periodo.ini} a ${periodo.fim})</span>
+    </h3>
+       
+
+    
+    <div class="conteudo-vibracoes-moderno">
+         <div class="titulo-matriz-central"><b>👑 VIBRAÇÃO MESTRA(VIDA)</b></div>
+         <div class="texto-com-potencia">
+            <span class="tag-potencia">POTÊNCIA ${pV} ✡︎</span> 
+            ${aplicarFiltroTexto(textosVida[pV])}
+         </div>
+
+         <div class="titulo-matriz-central"><b>👤 MUNDO INTERIOR (O QUE VOCÊ SENTE POR DENTRO)</b></div>
+         <div class="texto-com-potencia">
+            <span class="tag-potencia">POTÊNCIA ${pP} ✡︎</span> 
+            ${aplicarFiltroTexto(textosPessoal[pP])}
+         </div>
+
+         <div class="titulo-matriz-central"><b>🌎 PERCEPÇÃO DO MEIO (COMO VOCÊ VÊ O MUNDO)</b></div>
+         <div class="texto-com-potencia">
+            <span class="tag-potencia">POTÊNCIA ${pS} ✡︎</span> 
+            ${aplicarFiltroTexto(textosSocial[pS])}
+         </div>
+
+         <div class="titulo-matriz-central"><b>☄️ TENDENCIAS DO DESTINO (PROPÓSITO OU INFLUÊNCIA)</b></div>
+         <div class="texto-com-potencia">
+            <span class="tag-potencia">POTÊNCIA ${pD} ✡︎</span> 
+            ${aplicarFiltroTexto(textosDestino[pD])}
+         </div>
+    </div>
+</div>`;
     });
     return h;
 }
@@ -1737,10 +1928,7 @@ function gerar() {
         <div style="position: absolute; bottom: 15px; left: 15px; width: 60px; height: 60px; border-bottom: 3px solid #827108; border-left: 3px solid #827108;"></div>
         <div style="position: absolute; bottom: 15px; right: 15px; width: 60px; height: 60px; border-bottom: 3px solid #827108; border-right: 3px solid #827108;"></div>
 
-        <div style="text-align: center; margin-top: 20px;">
-            <span style="color: #827108; letter-spacing: 8px; font-size: 12px; text-transform: uppercase;"></span>
-            <div style="width: 40px; height: 1px; background: #827108; margin: 10px auto;"></div>
-        </div>
+   
 
         <img src="https://hemricciinstintosuperior-rcci.github.io/Matriz_quantica_da_vida/matrizlogopdf.png" 
              class="logo-capa" 
@@ -1789,16 +1977,13 @@ meuHtml += `
 
     <div style="width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 25px;">
         ${[
-            { t: "Introdução", c: "Instinto Superior ✶ Resultado Numerológico ✶ Engenharia da Vida ✶ Nome Escolhido ✶ Origem e Numerologia Moderna ✶ Direcionamento de Jornada"},
-            { t: "Parte 1: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais"},
-            { t: "Parte 2: Essência e Identidade", c: "Dia de Nascimento ✶ Talento ou Habilidade Oculta ✶ Motivação ✶ Aparência ou Influência ✶ Personalidade ✶ Nome de casado(a) (se houver) ✶ Tendência de Comportamento ✶ Desejo Oculto ✶ Habilidades Especiais ✶  Inclinações Ocultas ✶  Pilar de Equilíbrio Emocional"},
-            { t: "Parte 3: Alinhamento e Desafios",   c: "Fraquezas e Inibições ✶ Mecanismo do Subconsciente ✶ Déficit de Comportamento ✶ Desafio Principal"},
-            { t: "Parte 4: Finalidade e Realização", c: " Caminho de Vida ✶ Propósito  ✶ Fase de Maturidade ✶ Direcionamento Profissional"},
-            { t: "Parte 5: Complementares", c: " Número de Relacionamento ✶ Cores Favoráveis ✶ Dias de Poder do Mês ✶ Números harmonicos"}, 
-            { t: "Parte 6: Ciclos", c: "Ciclos de Vida ✶ Momento de Decisão ✶ Desafios de Jornada"},
-            { t: "Parte 7:  Tendências do Momento", c: "Status no Momento do Ciclo Atual ✶ Status no Momento do Segundo Ciclo ✶ Ciclos Trânsitórios ✶ Potenciais do Momento ✶ Ano Pessoal ✶ Mês Pessoal"},
-            { t: "Parte 8: A Grande Matriz", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Potências até 100 anos de idade"},
-            { t: "Parte 9: Filosofia e Ciência", c: "Contexto Histórico ✶ Conclusão Evolutiva ✶ Agradecimento"}
+            { t: "Introdução", c: "A ciência da observação ✶ Origem & Numerologia Moderna ✶ Matriz da Vida"},
+            { t: "Parte 1: As 4 Matrizez e Regentes", c: " Vida ✶ Pessoal ✶ Social ✶ Destino"},
+            { t: "Parte 2: Sequências Especiais", c: "Vida ✶ Pessoal ✶ Social ✶ Destino"},
+            { t: "Parte 3: Sequências de Bloqueio",   c: "Vida ✶ Pessoal ✶ Social ✶ Destino"},
+            { t: "Parte 4: Sequências Financeiras", c: "Vida ✶ Pessoal ✶ Social ✶ Destino"},
+            { t: "Parte 5: Potências", c: "Vida ✶ Pessoal ✶ Social ✶ Destino"},         
+            { t: "Parte 6: Filosofia e Ciência", c: "Contexto Histórico ✶ Conclusão Evolutiva ✶ Agradecimento"}
         ].map(item => `
             <div style="text-align: center;">
                 <h3 style="color: var(--gold); font-size: 1.6rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; font-weight: 600;">${item.t}</h3>
@@ -1822,7 +2007,192 @@ meuHtml += `
         
         <div style="margin-top: 60px; z-index: 10; width: 100%;">
             <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-               Parte 1<br><br> Seus Graficos de Expressão Natural
+              Introdução<br><br> Origem & História Moderna
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matrizezintro.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+      
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matrizezintro.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/potenciais.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+                <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
+           A ciência da observação ✶ Origem & Numerologia Moderna ✶ Matriz da Vida
+        </p>
+    </div>
+`;
+
+
+
+    
+
+// --- SEÇÃO: ORIGEM E CODIFICAÇÃO ---
+tituloBonito = "Origem e a Codificação da Numerologia Moderna"; 
+
+// 1. SEPARADOR LUXO (Fica no topo da seção)
+meuHtml += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>`;
+
+// 2. CONTEÚDO (Removi 'quebra-pagina' e o título repetido para compactar)
+meuHtml += `
+<div class="secao-card" style="width: 100%; max-width: 1000px; margin: -10px auto 20px auto; padding: 0 20px;">
+    
+    <div class="evitar-corte texto-res" style="font-size: 17px; line-height: 1.8; color: #333; text-align: justify; margin-top: 10px;">
+        ${aplicarFiltroTexto(textos.introducoes.historiaModerna)}
+    </div>
+
+</div>
+`;
+
+
+
+tituloBonito = "Numerologia Moderna: O Tratado da Evolução Consciente";    
+meuHtml += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>`;
+
+meuHtml += `
+<div class="estudo-numerologico-texto" style="max-width: 850px; margin: 0 auto; padding: 20px; line-height: 1.8; color: #333; font-family: sans-serif;">
+    
+    <div style="text-align: center; margin-bottom: 45px; break-inside: avoid;">
+        <p style="font-size: 1.1em; color: #555; margin-top: 15px; font-weight: 300; letter-spacing: 1px; text-transform: uppercase;">A Ciência da Observação de Padrões</p>
+    </div>
+
+    <p style="margin-bottom: 25px; text-align: justify;">
+        A numerologia, no contexto deste estudo, é compreendida como uma <strong>pseudociência</strong>, uma vez que ainda não possui comprovação dentro dos critérios rigorosos da ciência moderna. No entanto, destaca-se por apresentar um elevado índice de acertos na análise de padrões comportamentais, ciclos de vida e tendências individuais, aproximando-se, em muitos aspectos, de uma <strong>lógica científica aplicada</strong>.
+    </p>
+
+    <div style="background: #f9f9f9; padding: 25px; border-radius: 15px; border-left: 5px solid #2c3e50; margin-bottom: 30px;">
+        <p style="margin: 0;">
+            Sua estrutura não é baseada em adivinhação, crença espiritual ou práticas místicas, mas sim na <strong>observação e interpretação de padrões numéricos</strong> que se manifestam na experiência humana. Diferente de sistemas como astrologia ou tarô, a numerologia aqui tratada é um <strong>estudo analítico</strong>, voltado à compreensão do indivíduo em sua totalidade.
+        </p>
+    </div>
+
+    <h3 style="color: #2980b9; border-left: 5px solid #2980b9; padding-left: 15px; margin-bottom: 25px;">DESENVOLVIMENTO E PROJEÇÃO FUTURA</h3>
+    <p style="margin-bottom: 25px;">
+        Trata-se de um campo que possui base, desenvolvimento e projeção — sendo este “fim” não como um encerramento, mas como uma <strong>possibilidade real de validação científica</strong>. Até que isso ocorra, o avanço da numerologia depende de:
+    </p>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px;">
+        <div style="background: #f0f7ff; padding: 20px; border-radius: 10px; border: 1px solid #d0e2f3;">
+            <strong>Aprofundamento:</strong><br>
+            <small>Investigação contínua das correlações numéricas na psique humana.</small>
+        </div>
+        <div style="background: #f0f7ff; padding: 20px; border-radius: 10px; border: 1px solid #d0e2f3;">
+            <strong>Refinamento:</strong><br>
+            <small>Melhoria constante do rigor metodológico nas interpretações.</small>
+        </div>
+    </div>
+
+    <h3 style="color: #e67e22; border-left: 5px solid #e67e22; padding-left: 15px; margin-bottom: 25px;">A TRANSFORMAÇÃO INDIVIDUAL COMO CHAVE SOCIAL</h3>
+    <p style="margin-bottom: 25px;">
+        O foco central está no indivíduo, não no coletivo. A transformação social é <strong>consequência direta</strong> da evolução individual. Ao compreender seus próprios padrões — mentais, emocionais, intuitivos e comportamentais — o indivíduo desenvolve o equilíbrio necessário para agir.
+    </p>
+
+    <div style="background: #101015; color: #fff; padding: 30px; border-radius: 15px; margin-bottom: 40px;">
+        <strong style="color: #d4af37; font-size: 1.2em;">A Transição do Instinto</strong>
+        <p style="margin-top: 15px; font-size: 1.05em; color: #eee;">
+            Este processo leva à transição do <strong>instinto animal</strong>, comum a todos os seres, para o chamado <strong>Instinto Superior</strong>, que representa um estado de domínio interno, lucidez e direção soberana.
+        </p>
+    </div>
+
+    <h3 style="color: #c0392b; border-left: 5px solid #c0392b; padding-left: 15px; margin-bottom: 25px;">CONCLUSÃO: O PROPÓSITO DA CONSCIÊNCIA</h3>
+    <div style="background: #fff5f5; padding: 25px; border-radius: 15px; border: 1px solid #fed7d7; text-align: justify;">
+        <p style="margin-bottom: 15px;">
+            A numerologia moderna propõe utilizar os números como ferramenta de <strong>consciência e autoconhecimento</strong>. Ao atingir um nível elevado de equilíbrio, o indivíduo torna-se capaz de liderar a si mesmo e, por consequência, influenciar positivamente o meio em que vive.
+        </p>
+        <p style="font-weight: bold; color: #1a1a1a; text-align: center; margin-top: 20px;">
+            A verdadeira mudança na sociedade não parte do coletivo abstrato, mas de indivíduos conscientes, equilibrados e alinhados com seu propósito.
+        </p>
+    </div>
+
+            <div style="margin-top: 50px; text-align: center;">
+            <div style="width: 80px; height: 1px; background: var(--gold); margin: 0 auto 25px;"></div>
+            <p style="font-style: italic; color: #666; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                "Os números são a linguagem em que o Universo foi escrito e a chave para a compreensão da alma humana."
+            </p>
+        </div>
+
+    <div style="margin-bottom: 50px;"></div>
+</div>
+`;
+
+
+// --- SEÇÃO: INTRODUÇÃO ÀS MATRIZES QUÂNTICAS ---
+tituloMatrizes = "As Quatro Dimensões da Sua Existência"; 
+
+// 1. SEPARADOR LUXO
+meuHtml += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloMatrizes}</h2>
+    </div>
+</div>`;
+
+// 2. CONTEÚDO DA INTRODUÇÃO
+meuHtml += `
+<div class="secao-card" style="width: 100%; max-width: 1000px; margin: -10px auto 20px auto; padding: 0 20px;">
+    
+    <div class="evitar-corte texto-res" style="font-size: 17px; line-height: 1.7; color: #333; text-align: justify; margin-top: 10px;">
+        Neste estudo, mergulhamos na <b>Numerologia Quântica Moderna</b>, uma análise científica das frequências que regem sua jornada. Diferente de abordagens esotéricas, aqui tratamos de <b>Potências Numéricas</b> e seus impactos reais em quatro dimensões fundamentais da vida, representadas por nossas Matrizes. A <b>Matriz da Vida (👑)</b> reflete os fatos concretos e o impacto real do seu regente; a <b>Matriz de Sentimento Interno (👤)</b> revela como você processa suas emoções e o que sente no íntimo, independentemente das aparências; a <b>Matriz de Percepção do Meio (🌎)</b> traduz sua interação social e como o mundo ao redor é absorvido por você; e a <b>Matriz de Influência Natural (☄️)</b> aponta as tendências de propósito e forças externas que moldam seu destino.
+        <br><br>
+        Ao longo deste relatório, analisaremos a <b>Pirâmide de Vigência</b>, onde o topo revela sua potência máxima atual. Exploraremos as <b>Sequências Especiais</b>, que abrem portais de possibilidades, e as <b>Sequências de Bloqueio</b>, que identificam padrões repetitivos a serem superados. Além disso, destacamos as <b>Sequências Financeiras</b>, pontos estratégicos onde a energia da abundância se manifesta em cada uma das quatro matrizes. Cada número aqui não é apenas um símbolo, mas uma frequência ativa que define períodos de vigência específicos, oferecendo um mapa exato para o seu desenvolvimento, prosperidade e compreensão total da sua realidade quântica.
+    </div>
+
+</div>
+`;
+    
+
+
+meuHtml += `
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               Parte 1<br><br> Matrizez & Regentes
             </h2>
         </div>
 
@@ -1868,7 +2238,7 @@ meuHtml += `
         </a>
 
         <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
-           A decodificação das Energias e Potenciais nativas que definem sua personalidade.
+           Vida ✶ Pessoal ✶ Social ✶ Destino
         </p>
     </div>
 `;
@@ -1877,20 +2247,21 @@ meuHtml += `
 
     
     // 1. Matrizes Detalhadas com Regente
-    meuHtml += montarSecaoMatriz("VIDA", mVida, textosVida, explicacoes.principal);
-    meuHtml += montarSecaoMatriz("PESSOAL", mPes, textosPessoal, explicacoes.pessoal);
-    meuHtml += montarSecaoMatriz("SOCIAL", mSoc, textosSocial, explicacoes.social);
-    meuHtml += montarSecaoMatriz("DESTINO", mDes, textosDestino, explicacoes.destino);
+    meuHtml += montarSecaoMatriz("VIDA", mVida, textosVida, explicacoes.principal,nome);
+    meuHtml += montarSecaoMatriz("PESSOAL", mPes, textosPessoal, explicacoes.pessoal,nome);
+    meuHtml += montarSecaoMatriz("SOCIAL", mSoc, textosSocial, explicacoes.social,nome);
+    meuHtml += montarSecaoMatriz("DESTINO", mDes, textosDestino, explicacoes.destino,nome);
 
 
-
+          
+       
 
 meuHtml += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
         <div style="margin-top: 60px; z-index: 10; width: 100%;">
             <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-               Parte 1<br><br> Seus Graficos de Expressão Natural
+               Parte 1<br><br> Sequências Especiais
             </h2>
         </div>
 
@@ -1936,26 +2307,169 @@ meuHtml += `
         </a>
 
         <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
-           A decodificação das Energias e Potenciais nativas que definem sua personalidade.
+          Vida ✶ Pessoal ✶ Social ✶ Destino
         </p>
     </div>
 `;
 
 
-      meuHtml += `<div class="separador-luxo"><div class="caixa-interna"><h2>Sequências Especiais ⭐</h2></div></div>`;
-    
-    // Texto de introdução para Especiais
-    meuHtml += `<div class="intro-texto" style="margin-bottom: 20px;"><p>As sequências especiais representam períodos específicos dentro da Pirâmide da Vida em que determinadas energias numéricas se intensificam, influenciando diretamente tendências, comportamentos e possíveis acontecimentos. Esses momentos não indicam fatos fixos ou garantidos, mas apontam para um campo de maior probabilidade onde certas experiências podem se manifestar.</p>
-    <p>Cada número presente nessas sequências carrega uma vibração própria, ativando cenários compatíveis com sua natureza. Isso pode se refletir em oportunidades, desafios, mudanças internas ou situações externas que dialogam com aquela energia predominante no período.</p>
-    <p>É importante compreender que essas influências atuam como direcionamentos, e não como determinações absolutas. Ou seja, elas indicam caminhos mais propensos a ocorrer, mas a forma como cada situação se concretiza depende das escolhas, do contexto e da consciência da pessoa.</p>
-    <p>Assim, as sequências especiais funcionam como marcadores de tempo energético, revelando fases em que certos temas ganham destaque e podem se desenvolver com mais intensidade, abrindo espaço para vivências alinhadas à vibração daquele número.</p></div>`;
-    
-    // Exemplo de como colocar no seu gerar()
+// 1. TÍTULO E SEPARADOR
+meuHtml += `<div class="separador-luxo"><div class="caixa-interna"><h2>Sequências Especiais ⭐</h2></div></div>`;
+
+// 2. INTRODUÇÃO REFORMULADA (ABORDAGEM TÉCNICA E PROBABILÍSTICA)
 meuHtml += `
-<section class="page" style="margin-top: 50px;">
-    <div style="height: 4px; background: #b8860b; margin-bottom: 20px; border-radius: 2px;"></div>
-    <h2 style="text-align:center; color:#b8860b; text-transform: uppercase;">Sequências Especiais e Portais</h2>
-    ${extrairEspeciaisSincronizadas(mVida, mPes, mSoc, mDes, crono, topoV)}
+<div class="page evitar-corte" style="padding: 20px 0;">
+    <div class="intro-secao-especial" style="background: #fff; border: 1px solid #e6d5a8; border-radius: 15px; padding: 35px; position: relative; overflow: hidden; box-shadow: 0 8px 25px rgba(184, 134, 11, 0.05);">
+        
+        <div style="position: absolute; top: -15px; right: -15px; font-size: 70px; color: rgba(184, 134, 11, 0.05); transform: rotate(20deg);">⭐</div>
+
+        <h2 style="color: #b8860b; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
+            Portais de Ativação <br>
+            <span style="font-size: 13px; color: #827108; letter-spacing: 3px;">Campos de Alta Probabilidade</span>
+        </h2>
+
+        <div style="color: #444; line-height: 1.7; font-size: 17px; text-align: justify;">
+            <p style="margin-bottom: 15px;">As <b>Sequências Especiais</b> são configurações numéricas raras que funcionam como janelas de oportunidade. Diferente das matrizes fixas, estas sequências representam um <b>campo de probabilidade</b> em constante estudo. É importante ressaltar que a ciência numerológica é evolutiva; estas detecções baseiam-se em observações contemporâneas de diversos profissionais e podem ser expandidas ou refinadas conforme novos padrões são codificados.</p>
+
+            <p style="margin-bottom: 15px;">A manifestação destes portais depende da interação entre a <b>Matriz da Vida (Mestra)</b> e os demais pilares. Se uma sequência especial surge na sua Matriz Pessoal, ela reflete um despertar interno; se surge no Social, o evento tende a vir através de terceiros. Quando a vibração de uma sequência especial coincide com a da Matriz da Vida, a probabilidade de impacto factual aumenta drasticamente, indicando que o portal está diretamente alinhado ao seu momento presente.</p>
+
+            <p style="margin-bottom: 15px;">Contudo, a leitura não deve ser isolada. Uma sequência especial pode ter sua força <b>potencializada</b> por um fluxo financeiro favorável ou, inversamente, ser <b>atenuada</b> por sequências negativas (bloqueios) que ocorram na mesma direção ou idade. Se houver um bloqueio ativo sobre um portal especial, o "acesso" a essa energia pode exigir um esforço dobrado de superação.</p>
+
+            <p>Lembre-se: estes marcadores não são destinos imutáveis, mas sim tendências vibracionais que oferecem um leve direcionamento. Eles iluminam cenários possíveis, permitindo que você navegue com maior consciência por entre as complexas camadas de sua Sinfonia Numérica.</p>
+        </div>
+
+        <div style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #fdfaf2; border-top: 2px solid #b8860b; text-align: center;">
+            <p style="font-style: italic; color: #b8860b; font-size: 15px;">
+                "Os números apontam tendências em um universo de infinitas possibilidades; a sabedoria consiste em discernir o tempo de cada portal."
+            </p>
+        </div>
+    </div>
+</div>`;
+
+// --- SUBSTITUIR APENAS A SEÇÃO DE RESULTADOS DAS ESPECIAIS ---
+meuHtml += `
+<section class="page" style="margin-top: 15px;">
+    <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+        <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #b8860b, transparent); opacity: 0.5;"></div>
+        <span style="padding: 0 10px; color: #b8860b; font-size: 10px; letter-spacing: 1px; font-weight: bold; text-transform: uppercase;">Portais Detectados</span>
+        <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #b8860b, transparent); opacity: 0.5;"></div>
+    </div>
+
+    <div class="texto-res-compacto evitar-corte" style="font-size: 15px; line-height: 1.5; color: #333;">
+        ${extrairEspeciaisSincronizadas(mVida, mPes, mSoc, mDes, crono, topoV)}
+    </div>
+</section>`;
+
+
+
+
+   
+
+meuHtml += `
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               Parte 3<br><br> Sequências de Bloqueio
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+      
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
+          Vida ✶ Pessoal ✶ Social ✶ Destino
+        </p>
+    </div>
+`;
+
+
+// 1. TÍTULO E SEPARADOR
+tituloBonito = "Vulnerabilidades e Bloqueios ⚠️";
+meuHtml += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>`;
+
+// 2. INTRODUÇÃO REFORMULADA (ABORDAGEM TÉCNICA DAS MATRIZES)
+meuHtml += `
+<div class="page evitar-corte" style="padding: 20px 0;">
+    <div class="intro-secao-vulnerabilidade" style="background: #fff; border: 1px solid #f5c2c2; border-radius: 15px; padding: 35px; position: relative; overflow: hidden; box-shadow: 0 8px 25px rgba(211, 47, 47, 0.05);">
+        
+        <div style="position: absolute; top: -15px; right: -15px; font-size: 70px; color: rgba(211, 47, 47, 0.04); transform: rotate(-10deg);">⚠️</div>
+
+        <h2 style="color: #d32f2f; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
+            Mapeamento de Desafios <br>
+            <span style="font-size: 13px; color: #827108; letter-spacing: 3px;">Análise de Resistências nas Matrizes</span>
+        </h2>
+
+        <div style="color: #444; line-height: 1.7; font-size: 17px; text-align: justify; font-family: 'Segoe UI', sans-serif;">
+            <p style="margin-bottom: 15px;">As <b>Sequências de Bloqueios</b> sinalizam áreas onde sua energia encontra maior resistência, mas sua intensidade e origem dependem de qual matriz as sustenta. A <b>Matriz da Vida (Mestra)</b> é o campo de manifestação mais forte: quando um bloqueio surge aqui, ele é factual, afetando diretamente a sua realidade prática e exigindo uma lapidação imediata de comportamentos e atitudes.</p>
+
+            <p style="margin-bottom: 15px;">Se este bloqueio ressoa simultaneamente na <b>Matriz Pessoal (Mundo Interior)</b>, existe uma influência direta entre o que você sente e o que vive, indicando um sentimento real de travamento que nasce de dentro para fora. Já se a origem for a <b>Matriz Social</b>, a resistência é externa; o meio em que você convive ou as pessoas ao seu redor estão exercendo uma pressão que a faz seguir por caminhos de maior dificuldade, moldando negativamente a sua jornada.</p>
+
+            <p style="margin-bottom: 15px;">Quando o bloqueio advém da <b>Matriz do Destino</b>, trata-se de uma tensão no propósito ou influência universal, servindo como um teste evolutivo necessário. É importante notar que, embora o Pessoal, o Social e o Destino exerçam pressão, eles possuem um potencial de impacto menor que a Matriz da Vida. Eles indicam tendências e sentimentos que, se não harmonizados, podem acabar contaminando a Mestra.</p>
+
+            <p>Compreender se a sua dificuldade nasce de um sentimento interno, de uma pressão social ou de um desafio de destino é a chave para transmutar essas frequências. Ao identificar a raiz dessas tensões, você deixa de ser refém das resistências para se tornar a mestre de sua própria vibração.</p>
+        </div>
+
+        <div style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #fffafb; border-top: 2px solid #d32f2f; text-align: center;">
+            <p style="font-style: italic; color: #d32f2f; font-size: 15px;">
+                "O bloqueio na Matriz da Vida é um chamado à ação; nas demais matrizes, é um convite à percepção e ao ajuste de rota."
+            </p>
+        </div>
+    </div>
+</div>`;
+
+// 3. SEÇÃO DE RESULTADOS (SINCRONIZADAS) - VERSÃO COMPACTA
+meuHtml += `
+<section class="page" style="margin-top: 5px;"> <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;"> <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #d32f2f, transparent); opacity: 0.5;"></div>
+        <span style="padding: 0 10px; color: #d32f2f; font-size: 10px; letter-spacing: 1px; font-weight: bold; text-transform: uppercase;">Detecção de Bloqueios</span>
+        <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #d32f2f, transparent); opacity: 0.5;"></div>
+    </div>
+
+    <div class="texto-res-compacto" style="background: transparent; padding: 0; margin-top: -5px;"> ${extrairNegativasSincronizadas(mVida, mPes, mSoc, mDes, crono, topoV)}
+    </div>
 </section>`;
 
 
@@ -1968,7 +2482,7 @@ meuHtml += `
         
         <div style="margin-top: 60px; z-index: 10; width: 100%;">
             <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-               Parte 1<br><br> Seus Graficos de Expressão Natural
+               Parte 4<br><br> Sequências Financeiras
             </h2>
         </div>
 
@@ -2014,100 +2528,7 @@ meuHtml += `
         </a>
 
         <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
-           A decodificação das Energias e Potenciais nativas que definem sua personalidade.
-        </p>
-    </div>
-`;
-
-
-        // 1. TÍTULO E SEPARADOR
-    tituloBonito = "Vulnerabilidades e Bloqueios  ⚠️ ";
-    meuHtml += `
-    <div class="separador-luxo">
-        <div class="caixa-interna">
-            <h2>${tituloBonito}</h2>
-        </div>
-    </div>`;
-    
-  meuHtml += ` 
-    <div class="intro-secao" style="margin: 30px 0; width: 100%; font-size: 21px; line-height: 1.6; color: #333; text-align: justify;">
-         
- <p style="margin-bottom: 20px;">As <b>Sequências de Bloqueios</b> identificam pontos de tensão latentes em sua estrutura vibracional, manifestando-se como tendências e desafios que o acompanham desde o nascimento até a plena maturidade. Elas representam os números iguais que aparecem de forma repetitiva em sua Matriz, como as sequências 111, 222, 333 e assim por diante, sinalizando áreas onde a sua energia pessoal encontra maior resistência ou padrões de repetição exaustivos. Estas sequências não devem ser interpretadas como punições ou destinos imutáveis, mas sim como indicadores precisos de comportamentos automáticos e limitações internas que precisam ser trabalhados e integrados com consciência ao longo da sua jornada evolutiva.</p>
-
-    <p style="margin-bottom: 20px;">Muitas dessas sequências estão profundamente vinculadas a experiências fundamentais que demandam um aprendizado contínuo e um amadurecimento constante por parte do indivíduo. Elas sinalizam aspectos da sua natureza que ainda buscam plena expressão, funcionando como um mapa exato das lições que a vida solicita com maior insistência e rigor. Quando uma pessoa nasce com essas vibrações em sua matriz, ela carrega consigo ferramentas que, embora potentes, estão inicialmente "travadas" ou desequilibradas, gerando bloqueios que podem afetar desde a vida profissional até os relacionamentos mais íntimos e a saúde emocional, exigindo um esforço de autolapidação constante.</p>
-
-    <p style="margin-bottom: 20px;">Ao reconhecer a existência dessas frequências em seu mapa, você desenvolve a lucidez necessária para transcender as reações instintivas e os ciclos de autossabotagem que esses números iguais tendem a provocar. Esse processo de autodomínio transforma obstáculos aparentemente intransponíveis em degraus estratégicos para uma evolução autêntica e deliberada, permitindo que você tome as rédeas da sua própria energia. Trabalhar essas sequências negativas é, na verdade, um ato de libertação, onde você identifica a raiz do problema e aplica a cura através do autoconhecimento, garantindo que o seu potencial original não seja sufocado por medos ou padrões herdados que não servem mais ao seu crescimento.</p>
-
-    <p style="margin-bottom: 20px;">Portanto, encare este estudo das sequências de bloqueios como um manual de instruções para lidar com suas partes mais complexas e desafiadoras. À medida que você domina essas vibrações, a resistência diminui e a sua vida passa a fluir com uma leveza que antes parecia inalcançável. A transmutação dessas energias é o que diferencia o ser que é refém do acaso daquele que se torna o mestre de sua própria vibração. Com paciência e disciplina, cada sequência negativa é gradualmente convertida em uma fonte de sabedoria prática, tornando sua jornada muito mais assertiva, próspera e livre das amarras que impedem a sua máxima performance humana e espiritual.</p>
-
-    </div>`;
-    
-      meuHtml += `
-    <section class="page" style="margin-top: 50px;">
-        <div style="height: 4px; background: #d32f2f; margin-bottom: 20px; border-radius: 2px;"></div>
-        <h2 style="text-align:center; color:#d32f2f; text-transform: uppercase;">Mapeamento de Desafios e Bloqueios</h2>
-        <p style="text-align:center; font-style:italic; margin-bottom: 30px;">Identificação de sequências negativas sincronizadas pelo tempo da Matriz da Vida.</p>
-        <div class="texto-res evitar-corte">${extrairNegativasSincronizadas(mVida, mPes, mSoc, mDes, crono, topoV)}</div>
-    </section>`;
-
-
-
-
-
-
-
-meuHtml += `
-    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
-        
-        <div style="margin-top: 60px; z-index: 10; width: 100%;">
-            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-               Parte 1<br><br> Seus Graficos de Expressão Natural
-            </h2>
-        </div>
-
-        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
-            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
-                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
-        </div>
-
-       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
-            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-
-      
-
-        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
-            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
-                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
-                <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
-                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
-                </div>
-            </div>
-        </a>
-
-                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
-            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-
-                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
-            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
-                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
-                <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
-                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
-                </div>
-            </div>
-        </a>
-
-        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
-           A decodificação das Energias e Potenciais nativas que definem sua personalidade.
+           Vida ✶ Pessoal ✶ Social ✶ Destino
         </p>
     </div>
 `;
@@ -2115,50 +2536,78 @@ meuHtml += `
 
     
 
-    // --- SEÇÃO DE FLUXO FINANCEIRO ---
 const htmlFinanceiro = extrairFinanceiroSincronizado(mVida, mPes, mSoc, mDes, crono, topoV);
 
 if (htmlFinanceiro) {
-
-
-    meuHtml += `<div class="separador-luxo"><div class="caixa-interna"><h2>Fluxos Financeiros 💰</h2></div></div>`;
-    
-    // Texto de introdução para Financeiro
-   meuHtml += `<div class="intro-texto" style="margin-bottom: 20px;">O potencial de fluxo financeiro indica janelas de oportunidade para a expansão material e a consolidação de recursos, baseadas no seu magnetismo de prosperidade do momento. 
-   <p>No contexto financeiro, esse período pode se manifestar como uma fase de recebimentos, retornos ou entradas de recursos que não dependem exclusivamente do esforço direto e imediato da pessoa, mas sim de circunstâncias já construídas ao longo do tempo. É como se houvesse uma “colheita” de situações passadas, que agora se concretizam em forma material.</p>
-   <p>Nesse momento, a pessoa pode, por exemplo, ser desligada de uma empresa e receber corretamente todos os seus direitos trabalhistas — como rescisão, multa do FGTS, férias proporcionais e outros valores acumulados. Também pode ocorrer o recebimento de valores que estavam pendentes, como dívidas antigas sendo quitadas, restituições, reembolsos ou até ajustes financeiros inesperados a seu favor.</p>
-   <p>Há ainda possibilidades relacionadas ao acaso ou à sorte, como ganhos em loterias, apostas esportivas, sorteios ou premiações diversas. Embora não sejam garantias, esse período tende a ampliar a probabilidade de ganhos vindos de fontes não convencionais ou não planejadas diretamente.</p><p>Outro cenário comum envolve heranças, partilhas ou divisão de bens familiares, onde a pessoa passa a ter acesso a valores ou patrimônios que antes não estavam sob sua posse. Isso também pode incluir doações, ajudas financeiras de terceiros ou apoio inesperado em momentos específicos.</p>
-   <p>Além disso, pode haver ganhos relacionados a investimentos antigos que começam a dar retorno, venda de bens (como imóveis, veículos ou objetos de valor), ou até oportunidades de negócio que surgem trazendo lucro de forma mais rápida do que o habitual.</p>
-   <p>Em alguns casos, esse movimento também pode se manifestar como economia indireta — por exemplo, deixar de ter um gasto significativo, resolver uma pendência que geraria prejuízo, ou encontrar soluções que aliviam a pressão financeira, o que, na prática, representa um ganho.</p><p>Portanto, esse tipo de vibração não se limita a um único formato de dinheiro direto, mas abrange qualquer forma de entrada, recuperação ou liberação financeira. O importante é observar que, nesse período, existe uma tendência de “retorno” — seja ele fruto de mérito passado, de circunstâncias externas ou de oportunidades que se apresentam de maneira inesperada.</p></div>`;
-    
-    
-
-    
+    // 1. TÍTULO E SEPARADOR
     meuHtml += `
-    <section class="page" style="margin-top: 40px;">
-        <div style="height: 4px; background: #2e7d32; margin-bottom: 20px; border-radius: 2px;"></div>
-        <h2 style="text-align:center; color:#2e7d32; text-transform: uppercase; letter-spacing: 2px;">
-            💰 Fluxo Financeiro e Prosperidade
-        </h2>
-        <p style="text-align:center; color:#666; font-size:13px; margin-bottom:25px;">
-            Identificação de janelas de oportunidade e expansão material baseada na geometria 99/9.
-        </p>
+    <div class="separador-luxo">
+        <div class="caixa-interna">
+            <h2>Fluxos Financeiros 💰</h2>
+        </div>
+    </div>`;
+    
+    // 2. INTRODUÇÃO REFORMULADA (FOCO EM INTERAÇÃO DE MATRIZES E ALERTAS)
+    meuHtml += `
+    <div class="page evitar-corte" style="padding: 20px 0;">
+        <div class="intro-secao-financeira" style="background: #fff; border: 1px solid #c8e6c9; border-radius: 15px; padding: 35px; position: relative; overflow: hidden; box-shadow: 0 8px 25px rgba(46, 125, 50, 0.05);">
+            
+            <div style="position: absolute; top: -15px; right: -15px; font-size: 70px; color: rgba(46, 125, 50, 0.04); transform: rotate(-10deg);">💰</div>
+
+            <h2 style="color: #2e7d32; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
+                Magnetismo de Prosperidade <br>
+                <span style="font-size: 13px; color: #827108; letter-spacing: 3px;">Janelas de Oportunidade Material</span>
+            </h2>
+
+            <div style="color: #444; line-height: 1.7; font-size: 17px; text-align: justify;">
+                <p style="margin-bottom: 15px;">O potencial de fluxo financeiro não é um evento isolado, mas o resultado da interação entre as suas quatro matrizes vibracionais. A <b>Matriz da Vida (Mestra)</b> dita a colheita real em suas mãos, porém, o sucesso desse fluxo depende de quem está "regendo" a música da abundância no momento.</p>
+
+                <p style="margin-bottom: 15px;">Quando o seu <b>Mundo Interior (Pessoal)</b> coincide com o financeiro da Vida, a prosperidade é fruto direto de suas decisões e méritos plantados. Se a ressonância vier do <b>Social</b>, o dinheiro flui através de parcerias e do meio em que você circula. Contudo, fique atento: se houver uma <b>Sequência Negativa (como o alerta 999)</b> acima, abaixo ou na mesma direção deste fluxo — especialmente na Matriz da Vida — essa energia de prosperidade pode ser drenada, gerando perdas inesperadas ou dificuldades de retenção, mesmo que o dinheiro entre.</p>
+
+                <p style="margin-bottom: 15px;">É fundamental observar que o <b>Mundo Pessoal</b> reflete como você sente suas finanças, mas a <b>Matriz da Vida</b> é onde o recurso efetivamente se materializa. Uma divergência entre elas pode significar que você se sente próspero, mas o meio externo está bloqueado, ou vice-versa.</p>
+
+                <p>Nesta análise, identificamos onde as portas estão abertas e onde as "frequências de bloqueio" exigem cautela. O domínio dessas informações permite que você proteja seus ganhos e aproveite as janelas de oportunidade com máxima assertividade e segurança material.</p>
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #f1f8e9; border-top: 2px solid #2e7d32; text-align: center;">
+                <p style="font-style: italic; color: #2e7d32; font-size: 15px;">
+                    "A verdadeira abundância nasce do alinhamento das matrizes, mas se consolida através da vigilância contra os fluxos de perda."
+                </p>
+            </div>
+        </div>
+    </div>`;
+    
+    // 3. SEÇÃO DE RESULTADOS (Onde entra o conteúdo da função)
+// --- SUBSTITUIR APENAS A SEÇÃO DE RESULTADOS DO FINANCEIRO ---
+meuHtml += `
+<section class="page" style="margin-top: 15px;">
+    <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+        <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #2e7d32, transparent); opacity: 0.5;"></div>
+        <span style="padding: 0 10px; color: #2e7d32; font-size: 10px; letter-spacing: 1px; font-weight: bold; text-transform: uppercase;">Oportunidades Ativas</span>
+        <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #2e7d32, transparent); opacity: 0.5;"></div>
+    </div>
+
+    <div class="texto-res-compacto evitar-corte" style="font-size: 15px; line-height: 1.5; color: #333;">
         ${htmlFinanceiro}
-    </section>`;
+    </div>
+</section>`;
+
 }
 
 
 
 
 
+       
+            
 
-
+    
 meuHtml += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
         <div style="margin-top: 60px; z-index: 10; width: 100%;">
             <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-               Parte 1<br><br> Seus Graficos de Expressão Natural
+              Parte 5 <br><br> Potências &  Sinfonia do Destino
             </h2>
         </div>
 
@@ -2204,46 +2653,235 @@ meuHtml += `
         </a>
 
         <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
-           A decodificação das Energias e Potenciais nativas que definem sua personalidade.
+          Os Ciclos de Potências Numéricas em todos os campos de Vida, Mundo interno, Percepção e Influência.
         </p>
     </div>
 `;
 
     
-tituloBonito = "Ciclos de Potências Numéricas ✡︎ ";
+tituloBonito = "Ciclos de Potências Numéricas ✡︎";
+
+// --- PARTE 1: O SEPARADOR DE LUXO ---
 meuHtml += `
 <div class="separador-luxo">
     <div class="caixa-interna">
         <h2>${tituloBonito}</h2>
     </div>
-</div>`,
-         
+</div>`;
+
+// --- PARTE 2: A INTRODUÇÃO (DESIGN REFORMULADO E CONTEÚDO TÉCNICO) ---
 meuHtml += `
-    <div class="secao-potencias" style=" width: 100%; background: #fff; color: #000; padding: 25px; border-radius: 8px; border: 1px solid #ffffff; margin-top: 25px;">  
-        <h2 style="color: #827108; text-align: center; font-size: 24px; text-transform: uppercase; margin-bottom: 20px; border-bottom: 2px solid #827108; padding-bottom: 10px;"> </h2>
+<div class="page evitar-corte" style="padding: 20px 0;">
+    <div class="intro-secao-premium" style="background: #fff; border: 1px solid #e6d5a8; border-radius: 12px; padding: 35px; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+        
+        <div style="position: absolute; top: -20px; right: -20px; font-size: 80px; color: rgba(212, 175, 55, 0.05); transform: rotate(15deg);">✡︎</div>
 
-<div class="intro-secao evitar-corte" style="margin: 35px 0; width: 100%; font-size: 19px; line-height: 1.8; color: #1a1a1a; text-align: justify; background: #fdfbf7; padding: 30px; border-radius: 15px; border-left: 1px solid #d4af37; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    
-    <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-variant: small-caps; letter-spacing: 2px;">🎼 A Sinfonia do Destino: O Poder das Potências Numéricas</h2>
+        <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
+            🎼 A Sinfonia das Quatro Matrizes <br>
+            <span style="font-size: 14px; color: #b59b4d; letter-spacing: 4px;">A Ressonância do Ser e do Destino</span>
+        </h2>
 
-    <p style="margin-bottom: 20px;">Imagine que o seu nome de batismo não é apenas um conjunto de letras, mas uma <b>partitura musical sagrada</b> escrita no momento em que você chegou ao mundo. Na Numerologia Quântica, entendemos que cada letra do seu nome carrega uma frequência específica — uma <b>Potência</b> — que funciona como uma nota musical batida no silêncio do tempo. A sua vida não acontece ao acaso; ela segue um ritmo orquestrado por essas vibrações que emanam do topo da sua <b>Pirâmide da Vida</b>.</p>
+        <div style="color: #333; line-height: 1.7; font-size: 17px; text-align: justify;">
+            <p style="margin-bottom: 15px;">Na Numerologia Quântica, seu caminho é regido por quatro vibrações fundamentais: a <b>Matriz da Vida (Mestra)</b>, o <b>Mundo Interior (Pessoal)</b>, a <b>Percepção do Meio (Social)</b> e as <b>Tendências do Destino (Propósito)</b>. A interação entre elas revela se você está vivendo em harmonia ou enfrentando complexidades necessárias ao seu crescimento.</p>
 
-    <p style="margin-bottom: 20px;">Essas Potências representam os ciclos de maturação do seu ser. Assim como uma música tem momentos de notas agudas e intensas, seguidos por pausas e melodias mais suaves, a sua jornada é dividida em períodos onde certas energias dominam o seu campo vibracional. Quando uma Potência está ativa, ela dita o "tom" das suas experiências: pode ser um tempo de expansão solar, de introspecção profunda ou de colheita material. Não são Arcanos estáticos, são forças dinâmicas que moldam a sua percepção e as suas escolhas.</p>
+            <p style="margin-bottom: 15px;">A <b>Matriz da Vida</b> é a regente principal. Quando uma das outras três matrizes vibra no mesmo número que a Mestra, ocorre uma <b>Influência Direta</b>. Se o seu Pessoal coincide com a Vida, é você quem governa seus dias; suas vontades internas manifestam-se imediatamente na realidade. Se o Social for igual à Vida, o meio em que você convive molda sua jornada, fazendo com que o externo dite o seu ritmo. Já se o Destino ressoar com a Vida, você está em pleno alinhamento com seu propósito, onde os eventos parecem conspirar para cumprir sua missão maior.</p>
 
-    <p style="margin-bottom: 20px;">Compreender a sequência desses ciclos é como ter o roteiro do maestro em mãos. Ao observar a vigência de cada Potência, você descobre quando a "música" da sua vida exige mais coragem, mais paciência ou mais criatividade. Como bem ensinou o Professor e Físico Reinaldo Martins Garcia, somos um eco dessas letras que ressoam através das décadas.</p>
+            <p style="margin-bottom: 15px;">Por outro lado, quando as quatro matrizes apresentam resultados diferentes, você vivencia a <b>Riqueza da Complexidade</b>. Nesses ciclos, você pode sentir algo no íntimo (Pessoal), enquanto o mundo lhe pede outra atitude (Social), sob uma pressão do Destino que ainda não se reflete totalmente no que acontece no dia a dia (Vida). É um período de múltiplos aprendizados, onde cada área da vida exige uma nota diferente da sua sinfonia pessoal.</p>
 
-    <p style="font-style: italic; color: #777; font-size: 15px; text-align: center; border-top: 1px solid #eee; pt-20px; margin-top: 25px;">
-        "Assim como as notas determinam o ritmo da música, as letras de seu nome determinam o ritmo de sua vida." <br>
-        — <b>Professor e Físico Reinaldo Martins Garcia</b>
-    </p>
+            <p>Compreender essas conexões é decifrar o roteiro do mestre: saber se a música que toca é fruto do seu desejo, do ambiente, do destino ou de uma sofisticada orquestração de todos esses elementos juntos.</p>
         </div>
- 
+
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px double #e6d5a8; text-align: center;">
+            <p style="font-style: italic; color: #827108; font-size: 15px; line-height: 1.5;">
+                "Quando as matrizes se fundem, o homem torna-se o autor de sua própria história; quando se diversificam, torna-se um aprendiz da vastidão da vida." <br>
+                <span style="font-weight: bold; font-style: normal; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">— Prof. Reinaldo Martins Garcia</span>
+            </p>
+        </div>
+    </div>
+</div>`;
+// --- PARTE 3: OS CICLOS (RESULTADO DO LOOP) ---
+// Note que removi margens exageradas para o conteúdo começar logo após a introdução se houver espaço
+meuHtml += `
+<div class="page" style="margin-top: 10px;">
+    <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+        <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #d4af37, transparent);"></div>
+        <span style="padding: 0 15px; color: #827108; font-size: 12px; letter-spacing: 2px;">MAPA CRONOLÓGICO</span>
+        <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, #d4af37, transparent);"></div>
+    </div>
     
-    <section id="ciclos-cem-anos" class="page" style="margin-top: 50px;">
-        <div style="height: 4px; background: #827108; margin-bottom: 20px; border-radius: 2px;"></div>
-        <h2 style="text-align:center; color:#827108;">VIBRAÇÕES TEMPORAIS INTEGRADAS (100 ANOS)</h2>
-        <div class="texto-res evitar-corte "> ${gerarLoopIntegrado(mVida, mPes, mSoc, mDes, crono)}</div>
-    </section>`;
+    <div class="conteudo-ciclos-integrados">
+        ${gerarLoopIntegrado(mVida, mPes, mSoc, mDes, crono)}
+    </div>
+</div>`;
+
+
+
+meuHtml += `
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+              Parte 6 <br><br> Filosofia e Ciência
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+      
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
+          Contexto Histórico ✶ Conclusão Evolutiva ✶ Agradecimento
+        </p>
+    </div>
+`;
+
+
+
+meuHtml += `
+<div class="page-final" style="
+    page-break-before: always; 
+    page-break-after: avoid;   /* Instrução para NÃO quebrar página depois desta */
+    height: 99.5vh;            /* Altura ligeiramente menor para evitar transbordo de pixels */
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+">
+    
+    <div style="
+        width: 85%;
+        height: 85%;
+        border: 3px solid #d9b87f; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #101015;
+        box-sizing: border-box;
+    ">
+        <h1 style="
+            color: #d9b87f;
+            font-size: 5rem;
+            text-transform: uppercase;
+            letter-spacing: 15px;
+            margin: 0;
+            font-weight: 900;
+        ">
+            FIM
+        </h1>
+
+        <div style="width: 150px; height: 1px; background: rgba(255,255,255,0.3); margin: 30px 0;"></div>
+
+        <p style="
+            color: #fff;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            opacity: 0.8;
+            margin: 0;
+        ">
+           Matriz Quântica
+        </p>
+
+        <p style="
+            color: #d9b87f;
+            font-size: 1rem;
+            margin-top: 40px;
+            font-style: italic;
+        ">
+            Sua jornada na Sinfonia da Vida está apenas começando.
+        </p>
+    </div>
+</div>
+`;    
+
+
+// --- SEÇÃO: AGRADECIMENTO ---
+tituloBonito = "Agradecimento"; 
+
+meuHtml += `
+<div class="separador-luxo" style="width: 100%; margin: 40px 0;">
+    <div class="caixa-interna" style="text-align: center;">
+        <h2 style="margin: 0;">${tituloBonito}</h2>
+    </div>
+</div>
+`;      
+
+meuHtml += `
+<div style="width: 100%; max-width: 900px; margin: 0 auto; text-align: center; padding: 20px;">
+    <div style="margin-bottom: 40px;">
+        <h2 class="titulo-topico" style="letter-spacing: 5px; color: #827108; margin-bottom: 20px; font-weight: 800; text-transform: uppercase;">
+            Agradecimento
+        </h2>
+        <div style="width: 60px; height: 3px; background: #827108; margin: 0 auto;"></div>
+    </div>      
+    
+     <div class="texto-res" style="font-size: 20px; line-height: 1.8; color: #333; text-align: justify; margin-bottom: 15px;">
+        ${aplicarFiltroNomeComposto(textos.introducoes.Conclusao)}
+    </div>
+        <div style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 40px;">
+        <p style="font-family: 'Times New Roman', serif; font-size: 2px; font-style: italic; font-weight: bold; margin-bottom: 5px; color: #000;">
+          </p>
+        <p style="font-size: 1px; margin-bottom: 10px; letter-spacing: 1px;">
+        </p>
+
+        <div style="display: flex; justify-content: center; margin: 20px 0; filter: grayscale(1);">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matrizlogopdf.png" style="width: 350px; max-width: 90%; height: auto; opacity: 0.8;">
+        </div>
+                   
+        <div style="font-size: 12px; color: #999; margin-top: 5px; text-transform: uppercase; letter-spacing: 2px;">
+             Matriz Quântica • Edição Premium<br>
+            www.instintosuperior.com 
+        </div>
+    </div>
+</div>
+`;
+    
+
+    
 
     meuHtml += `</div>`;
     document.getElementById('resultado-final').innerHTML = meuHtml;
