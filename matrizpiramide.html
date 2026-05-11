@@ -462,52 +462,7 @@
     display: inline-block;
 }  
 
-/* Cor Especial para o Regente da Vida - FORMATO TRIÂNGULO */
-.num.regente-destaque {
-    background: none !important;
-    color: #827108 !important;
-    font-weight: 900 !important;
-    border: none !important;
-    box-shadow: none !important;
-    position: relative;
-    z-index: 1;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;  /* Ajuste a largura se precisar */
-    height: 40px; /* Ajuste a altura se precisar */
-}
 
-.num.regente-destaque::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    /* Aqui acontece a mágica do triângulo invertido */
-    border-left: 22px solid transparent;  /* Lado esquerdo */
-    border-right: 22px solid transparent; /* Lado direito */
-    border-top: 38px solid #ffffff;       /* Fundo Branco do triângulo */
-    filter: drop-shadow(0 0 5px rgba(184, 134, 11, 0.6)); /* Brilho dourado */
-    z-index: -1;
-}
-
-/* Opcional: Se quiser uma bordinha fina no triângulo */
-.num.regente-destaque::after {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 24px solid transparent;
-    border-right: 24px solid transparent;
-    border-top: 41px solid #827108; /* Cor da "borda" dourada */
-    z-index: -2;
-}
 
 /* Estilo das Abas de Planos */
 .tabs-planos { display: flex; justify-content: center; gap: 5px; margin-bottom: 20px; flex-wrap: wrap; }
@@ -1017,6 +972,43 @@ a, img, audio { border: none !important; outline: none !important; text-decorati
 }
     
 
+
+
+/* O Segredo do Triângulo Invertido no Regente */
+.destaque-regente {
+    background-color: #757500 !important; /* Cor Dourada */
+    color: #fff !important;           /* Azul escuro para o número */
+    font-weight: 900 !important;
+    
+    /* Cria o formato de triângulo invertido */
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    
+    /* Ajustes de tamanho para o triângulo aparecer bem */
+    width: 28px !important; 
+    height: 28px !important;
+    display: flex !important;
+    align-items: flex-start !important; /* Alinha o número mais para o topo do triângulo */
+    justify-content: center !important;
+    padding-top: -4px;                   /* Ajuste fino para o número não sumir na ponta */
+    
+    transform: scale(1.1);              /* Deixa ele um pouco maior que os outros */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+/* Efeito opcional: Brilho pulsante no Regente */
+@keyframes pulsarRegente {
+    0% { filter: drop-shadow(0 0 2px #000); }
+    50% { filter: drop-shadow(0 0 8px #4D4D10); }
+    100% { filter: drop-shadow(0 0 2px #4D4D10); }
+}
+
+.destaque-regente {
+    animation: pulsarRegente 2s infinite;
+}
+
+
+    
     
     
     </style>
@@ -1074,12 +1066,27 @@ function valorLetra(letra){
         else if(a === "\u0302") somaAcentos += 7;
         else if(a === "\u0303") somaAcentos += 3;
         else if(a === "\u0327") somaAcentos += 3;
+        else if (a === "\u030a") somaAcentos += 7;     // Círculo/Grau superior (°)     
         else if(a === "\u0300") multAcentos *= 2;
         else if(a === "\u0308") multAcentos *= 2;
     }
-    return (valorBase + somaAcentos) * multAcentos;
+    
+    let resultado = (valorBase + somaAcentos) * multAcentos;
+    
+    // A CORREÇÃO ESTÁ AQUI: 
+    // Reduzimos o resultado final para um único dígito (1-9)
+    return reduzir(resultado); 
 }
 
+function reduzir(n) {
+    if (!n || n === 0) return 0;
+    // Enquanto for maior que 9, soma os dígitos
+    while (n > 9) {
+        n = n.toString().split('').reduce((acc, curr) => parseInt(acc) + parseInt(curr), 0);
+    }
+    return n;
+}
+    
 
  function aplicarFiltroTexto(texto) {
     if (!texto || typeof texto !== 'string') {
@@ -1125,10 +1132,7 @@ function aplicarFiltroNomeComposto(texto) {
     return texto.replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${pNome}</strong>`);
 }   
 
-function reduzir(n){
-    while(n>9){ n=n.toString().split('').reduce((a,b)=>+a+ +b,0); }
-    return n;
-}
+
 
 function nomeNumeros(nome){
     nome=nome.toUpperCase();
@@ -1218,32 +1222,52 @@ function calcularPeriodoSequencia(periodoBase, duracaoTotal) {
 
 
 
-function montarSecaoMatriz(titulo, matriz, bancoDeTextos, textoIntro, textoIntroRegente, nomeCliente = "") {
+function montarSecaoMatriz(titulo, matriz, bancoDeTextos, textoIntroPiramide, bancoPotencia, textoIntroGeral, textoIntroRegente, nomeCliente = "") {
+    
     const ultimaLinha = matriz[matriz.length - 1];
     const regente = ultimaLinha[0];
-    const resultadoTexto = bancoDeTextos ? bancoDeTextos[regente] : "Resultado não encontrado.";
+    
+    let textoDaPotencia = "";
+    
+    if (matriz && matriz.length >= 2) {
+        const penultimaLinha = matriz[matriz.length - 2];
+        const p1 = penultimaLinha[0];
+        const p2 = penultimaLinha[1];
+        const combinacao = `${p1}${p2}`; 
+
+        // Agora o nome do parâmetro e da verificação estão idênticos: bancoPotencia
+        if (bancoPotencia && bancoPotencia[combinacao]) {
+            textoDaPotencia = `
+                <div class="potencia-integrada" style="margin-top: 20px; padding: 15px; background: #fdfbf7; border-left: 4px solid #b59b4d; font-size: 16px; border-radius: 4px;">
+                    <strong style="color: #827108; display: block; margin-bottom: 5px; text-transform: uppercase;">
+                        ⚡ POTÊNCIA: ${combinacao}
+                    </strong>
+                    <div style="color: #555; font-style: italic; line-height: 1.5;">
+                        ${aplicarFiltroTexto(bancoPotencia[combinacao])}
+                    </div>
+                </div>`;
+        }
+    }
+
+    const resultadoTextoRegente = bancoDeTextos ? bancoDeTextos[regente] : "Resultado não encontrado.";
     
     return `
     <div class="page evitar-corte">
-        <!-- 1. TÍTULO PRINCIPAL DA SEÇÃO -->
         <div class="separador-luxo">
             <div class="caixa-interna">
                 <h2>MATRIZ ${titulo}</h2>
             </div>
         </div>
         
-      
         <div class="texto-intro-pessoal" style="margin-bottom: 20px;">
-            ${aplicarFiltroTexto(textoIntro)}
+            ${aplicarFiltroTexto(textoIntroPiramide)}
         </div>
 
-        
         <div class="container-piramide-isolada" style="margin-top: 30px;">
             <div class="titulo-piramide-nome">Geometria : ${titulo}</div>
             ${desenhar(matriz, titulo, false, nomeCliente)} 
         </div>
 
-        <!-- 4. NOVO TÍTULO E INTRODUÇÃO DO REGENTE (Sem misturar com o nome) -->
         <div class="resultado-regente-aberto evitar-corte" style="margin-top: 50px; padding: 20px; border-top: 2px solid #e6d5a8;">
             <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
                 <br>
@@ -1254,12 +1278,13 @@ function montarSecaoMatriz(titulo, matriz, bancoDeTextos, textoIntro, textoIntro
                 ${aplicarFiltroTexto(textoIntroRegente)}
             </div>
 
-           
             <h3 style="color: #827108; border-bottom: 1px solid #e6d5a8; padding-bottom: 10px; text-transform: uppercase;">
                 🔱 Significado do Regente ${regente}
             </h3>
+            
             <div class="texto-personalizado evitar-corte" style="margin-top: 15px;">
-                ${aplicarFiltroTexto(resultadoTexto)}
+                ${aplicarFiltroTexto(resultadoTextoRegente)}
+                ${textoDaPotencia}
             </div>
         </div>
     </div>
@@ -1286,9 +1311,9 @@ function gerarLoopNegativo(mV, mP, mS, mD, crono) {
                 ⚠️ DESAFIOS E BLOQUEIOS: ${periodo.idadeIni} a ${periodo.idadeFim} anos
             </div>
             <div class="conteudo-vibracoes">
-                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 VIDA:</b> ${aplicarFiltroTexto(textosSeqNegVida[nV] || "Sem bloqueios severos mapeados para esta vibração.")}</div>
+                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 VIDA:</b> ${aplicarFiltroTexto(textosSeqNegVida[nV] || "Sem bloqueios mapeados para esta vibração.")}</div>
                 <div class="vibracao-row"><b style="color:#d32f2f;">🚫 PESSOAL:</b> ${aplicarFiltroTexto(textosSeqNegPessoal[nP] || "Fluxo pessoal em harmonia.")}</div>
-                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 SOCIAL:</b> ${aplicarFiltroTexto(textosSeqNegSocial[nS] || "Sem percepção Social  .")}</div>
+                <div class="vibracao-row"><b style="color:#d32f2f;">🚫 SOCIAL:</b> ${aplicarFiltroTexto(textosSeqNegSocial[nS] || "Sem percepção Social evidente.")}</div>
                 <div class="vibracao-row"><b style="color:#d32f2f;">🚫 DESTINO:</b> ${aplicarFiltroTexto(textosSeqNegDestino[nD] || "Caminho de destino livre de obstruções.")}</div>
             </div>
         </div>`;
@@ -1345,19 +1370,19 @@ function extrairNegativasSincronizadas(mV, mP, mS, mD, crono, topoV) {
                     <div style="background: #fef2f2; padding: 15px; border-bottom: 2px solid #fee2e2; display: flex; align-items: center; gap: 10px;">
                         <span style="font-size: 24px;">⚠️</span>
                         <div style="flex: 1;">
-                            <h4 style="margin: 0; color: #b91c1c; font-size: 16px; text-transform: uppercase; letter-spacing: 1px;">Alerta de Bloqueio Ativo</h4>
+                            <h4 style="margin: 0; color: #b91c1c; font-size: 16px; text-transform: uppercase; letter-spacing: 1px;">Alerta de Bloqueio Identificado</h4>
                             <span style="color: #ef4444; font-weight: bold; font-size: 14px;">Dos ${periodoBase.idadeIni} aos ${idadeFim} anos</span>
                         </div>
                     </div>
 
                     <div style="padding: 20px;">
                         <div style="font-size: 16px; color: #374151; margin-bottom: 20px; padding: 10px; background: #fffafb; border-radius: 5px; border-left: 3px solid #d32f2f;">
-                            📅 <b>Vigência:</b> ${periodoBase.ini} até ${datas.fim} <span style="color: #6b7280; font-size: 13px;">(${duracaoTotal} anos de influência)</span>
+                            📅 <b>Período mais intenso:</b> ${periodoBase.ini} até ${datas.fim} <span style="color: #6b7280; font-size: 13px;">(${duracaoTotal} anos de influência)</span>
                         </div>
                         
                         <div class="grid-sequencias" style="display: grid; gap: 15px;">
                             <div class="centralizar-titulos" style="text-align: left !important; align-items: flex-start !important;">
-                                <b style="color: #b91c1c;">🚫 VIBRAÇÃO MESTRA(VIDA) ${resV}${resV}${resV}</b>
+                                <b style="color: #b91c1c;">🚫 VIBRAÇÃO MESTRA (VIDA) ${resV}${resV}${resV}</b>
                                 <div style="font-size: 15px; color: #4b5563; margin-top: 5px;">${aplicarFiltroTexto(textosSeqNegVida[resV] || "Bloqueio no fluxo vital.")}</div>
                             </div>
 
@@ -1386,7 +1411,7 @@ function extrairNegativasSincronizadas(mV, mP, mS, mD, crono, topoV) {
         }
     });
 
-    return encontrou ? html : "<p style='text-align:center; color: #666;'>Nenhuma sequência negativa crítica detectada nesta análise.</p>";
+    return encontrou ? html : "<p style='text-align:center; color: #666;'>Nenhuma sequência negativa detectada nesta análise.</p>";
 }
 
 
@@ -1416,7 +1441,7 @@ function extrairFinanceiroSincronizado(mV, mP, mS, mD, crono, topoV) {
     const bD = typeof textosSeqFinancDestino !== 'undefined' ? textosSeqFinancDestino : {};
 
     const piramides = [
-        { matriz: mV, banco: bV, nome: "VIBRAÇÃO MESTRA(VIDA)", prefixo: "👑" },
+        { matriz: mV, banco: bV, nome: "VIBRAÇÃO MESTRA (VIDA)", prefixo: "👑" },
         { matriz: mP, banco: bP, nome: "MUNDO INTERIOR (O QUE VOCÊ SENTE POR DENTRO)", prefixo: "👤" },
         { matriz: mS, banco: bS, nome: "PERCEPÇÃO DO MEIO (COMO VOCÊ VÊ O MUNDO)", prefixo: "🌎" },
         { matriz: mD, banco: bD, nome: "TENDENCIAS DO DESTINO (PROPÓSITO OU INFLUÊNCIA)", prefixo: "☄️" }
@@ -1501,7 +1526,7 @@ function extrairEspeciaisSincronizadas(mV, mP, mS, mD, crono, topoV) {
     
     // Mapeamento de quais pirâmides buscar e quais bancos de texto usar
     const piramides = [
-        { matriz: mV, banco: typeof textosSeqEspVida !== 'undefined' ? textosSeqEspVida : {}, nome: "VIBRAÇÃO MESTRA(VIDA)", prefixo: "👑", classe: "vida" },
+        { matriz: mV, banco: typeof textosSeqEspVida !== 'undefined' ? textosSeqEspVida : {}, nome: "VIBRAÇÃO MESTRA (VIDA)", prefixo: "👑", classe: "vida" },
         { matriz: mP, banco: typeof textosSeqEspPessoal !== 'undefined' ? textosSeqEspPessoal : {}, nome: "MUNDO INTERIOR (O QUE VOCÊ SENTE POR DENTRO)", prefixo: "👤", classe: "pessoal" },
         { matriz: mS, banco: typeof textosSeqEspSocial !== 'undefined' ? textosSeqEspSocial : {}, nome: "PERCEPÇÃO DO MEIO (COMO VOCÊ VÊ O MUNDO)", prefixo: "🌎", classe: "social" },
         { matriz: mD, banco: typeof textosSeqEspDestino !== 'undefined' ? textosSeqEspDestino : {}, nome: "TENDENCIAS DO DESTINO (PROPÓSITO OU INFLUÊNCIA)", prefixo: "☄️", classe: "destino" }
@@ -1548,17 +1573,17 @@ function extrairEspeciaisSincronizadas(mV, mP, mS, mD, crono, topoV) {
                     html += `
                     <div class="card-integrado evitar-corte" style="border-left: 6px solid #b8860b; margin-bottom: 25px; background: #fffcf5; padding: 15px; border-radius: 8px;">
                         <div class="titulo-ciclo" style="background: #fcf6ba; color: #827108; padding: 8px; font-weight: bold; border-radius: 4px;">
-                            ✨ IMPACTO ${pira.nome}: DOS ${periodoBase.idadeIni} AOS ${idadeFim} ANOS
+                            ✨  ${pira.nome}: DOS ${periodoBase.idadeIni} AOS ${idadeFim} ANOS
                         </div>
                         <div class="conteudo-vibracoes" style="margin-top:10px;">
                             <p style="font-size: 18px; color: #111827; margin-bottom: 10px; border-bottom: 1px dashed #b8860b; padding-bottom: 5px;">
-                                📅 <b>Período:</b> de ${periodoBase.ini} até ${datas.fim} (${duracaoTotal} anos)
+                                📅 <b>Período de vigência:</b> de ${periodoBase.ini} até ${datas.fim} (${duracaoTotal} anos)
                             </p>
                             <div class="vibracao-row">
-                                <b> SEQUÊNCIA ${pira.prefixo} ${seq}</b>: ${aplicarFiltroTexto(pira.banco[seq])}
+                                <b> Número Especial ${pira.prefixo} ${seq}</b>: ${aplicarFiltroTexto(pira.banco[seq])}
                             </div>
                             <p style="font-size: 11px; color: #827108; margin-top: 5px; font-style: italic;">
-                                *Vigência calculada pela matriz temporal da Pirâmide da Vida.
+                                *Essas sêquencias ainda estão em processo de estudo e mais números poderão ser análisados.
                             </p>
                         </div>
                     </div>`;
@@ -1717,6 +1742,14 @@ function desenhar(linhas, tipoPira = "VIDA", compacta = false, nomeRaw = "") {
         html += `<div class="linha">`;
         linha.forEach((num, j) => {
             let corClasse = mapaCores[i][j];
+
+            // --- ADIÇÃO DO REGENTE AQUI ---
+            // Se for a última linha (o topo da pirâmide), adicionamos a classe 'destaque-regente'
+            if (i === linhas.length - 1) {
+                corClasse += " destaque-regente";
+            }
+            // ------------------------------
+
             html += `<div class="num ${corClasse}">${num}</div>`;
         });
         html += `</div>`;
@@ -1725,7 +1758,6 @@ function desenhar(linhas, tipoPira = "VIDA", compacta = false, nomeRaw = "") {
     html += `</div>`;
     return html;
 }
-
 
 
 
@@ -1988,17 +2020,17 @@ meuHtml += `
 
     <div style="width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 25px;">
         ${[
-            { t: "Introdução", c: "A ciência da observação ✶ Origem & Numerologia Moderna ✶ Matriz da Vida"},
+            { t: "Introdução", c: "Fundamentação ✶ A ciência da observação ✶ Origem & Numerologia Moderna ✶ Matriz da Vida"},
             { t: "Parte 1: As 4 Matrizez e Regentes", c: " Vida ✶ Pessoal ✶ Social ✶ Destino"},
             { t: "Parte 2: Sequências Especiais", c: "Vida ✶ Pessoal ✶ Social ✶ Destino"},
             { t: "Parte 3: Sequências de Bloqueio",   c: "Vida ✶ Pessoal ✶ Social ✶ Destino"},
             { t: "Parte 4: Sequências Financeiras", c: "Vida ✶ Pessoal ✶ Social ✶ Destino"},
             { t: "Parte 5: Potências", c: "Vida ✶ Pessoal ✶ Social ✶ Destino"},         
-            { t: "Parte 6: Filosofia e Ciência", c: "Contexto Histórico ✶ Conclusão Evolutiva ✶ Agradecimento"}
+            { t: "Complementos: Filosofia e Numerologia", c: "Leis Universais ✶ Agradecimento"}
         ].map(item => `
             <div style="text-align: center;">
-                <h3 style="color: var(--gold); font-size: 1.6rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; font-weight: 600;">${item.t}</h3>
-                <p style="color: #333; font-size: 1.2rem; margin: 0; line-height: 1.4;">${item.c}</p>
+                <h3 style="color: var(--gold); font-size: 2.4rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; font-weight: 900;">${item.t}</h3>
+                <p style="color: #333; font-size: 1.9rem; margin: 0; line-height: 1.4;">${item.c}</p>
             </div>
         `).join('')}
     </div>
@@ -2023,12 +2055,12 @@ meuHtml += `
         </div>
 
         <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
-            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matrizlogopdf.png" 
                  style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
         </div>
 
        <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Matriz Quântica</span>
             <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
                 <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matrizezintro.mp3" type="audio/mpeg">
             </audio>
@@ -2040,31 +2072,31 @@ meuHtml += `
             <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
                 <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
                 <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Matriz Quântica</span>
                     <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
                 </div>
             </div>
         </a>
 
                  <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Seu Mapa </span>
             <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/potenciais.mp3" type="audio/mpeg">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matriz.mp3" type="audio/mpeg">
             </audio>
         </div>
 
-                <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+                <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matriz.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
             <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
                 <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
                 <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Seu Mapa</span>
                     <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
                 </div>
             </div>
         </a>
 
         <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
-           A ciência da observação ✶ Origem & Numerologia Moderna ✶ Matriz da Vida
+         Fundamentação ✶  A ciência da observação ✶ Origem & Numerologia Moderna ✶ Matriz da Vida
         </p>
     </div>
 `;
@@ -2330,45 +2362,30 @@ meuHtml += `
         </div>
 
         <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
-            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matrizlogopdf.png" 
                  style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
         </div>
 
        <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Desenho as Piramides</span>
             <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/piramideRegente.mp3" type="audio/mpeg">
             </audio>
         </div>
 
       
 
-        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+        <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/piramideRegente.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
             <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
                 <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
                 <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Desenho as Piramides</span>
                     <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
                 </div>
             </div>
         </a>
 
-                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
-            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
-            </audio>
-        </div>
 
-                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
-            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
-                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
-                <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
-                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
-                </div>
-            </div>
-        </a>
 
         <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
            Vida ✶ Pessoal ✶ Social ✶ Destino
@@ -2379,12 +2396,13 @@ meuHtml += `
 
 
     
-// Localize esse bloco no seu código e altere para passar os 6 parâmetros:
-meuHtml += montarSecaoMatriz("VIDA", mVida, textosVida, explicacoes.principal, window.introsPiramides.vida.regente, nome);
-meuHtml += montarSecaoMatriz("PESSOAL", mPes, textosPessoal, explicacoes.pessoal, window.introsPiramides.pessoal.regente, nome);
-meuHtml += montarSecaoMatriz("SOCIAL", mSoc, textosSocial, explicacoes.social, window.introsPiramides.social.regente, nome);
-meuHtml += montarSecaoMatriz("DESTINO", mDes, textosDestino, explicacoes.destino, window.introsPiramides.destino.regente, nome);
+meuHtml += montarSecaoMatriz("VIDA", mVida, textosVida, explicacoes.principal, resultadoPotencia.principal, window.introsPiramides.vida.intro, window.introsPiramides.vida.regente, nome);
 
+meuHtml += montarSecaoMatriz("PESSOAL", mPes, textosPessoal, explicacoes.pessoal, resultadoPotencia.pessoal, window.introsPiramides.pessoal.intro, window.introsPiramides.pessoal.regente, nome);
+
+meuHtml += montarSecaoMatriz("SOCIAL", mSoc, textosSocial, explicacoes.social, resultadoPotencia.social, window.introsPiramides.social.intro, window.introsPiramides.social.regente, nome);
+
+meuHtml += montarSecaoMatriz("DESTINO", mDes, textosDestino, explicacoes.destino, resultadoPotencia.destino, window.introsPiramides.destino.intro, window.introsPiramides.destino.regente, nome);
 
           
        
@@ -2394,50 +2412,35 @@ meuHtml += `
         
         <div style="margin-top: 60px; z-index: 10; width: 100%;">
             <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-               Parte 1<br><br> Sequências Especiais
+               Parte 2<br><br> Sequências Especiais
             </h2>
         </div>
 
         <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
-            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matrizlogopdf.png" 
                  style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
         </div>
 
        <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Números Especiais</span>
             <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/sequeEspeciais.mp3" type="audio/mpeg">
             </audio>
         </div>
 
       
 
-        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+        <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/sequeEspeciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
             <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
                 <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
                 <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Números Especiais</span>
                     <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
                 </div>
             </div>
         </a>
 
-                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
-            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
-            </audio>
-        </div>
 
-                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
-            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
-                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
-                <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
-                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
-                </div>
-            </div>
-        </a>
 
         <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
           Vida ✶ Pessoal ✶ Social ✶ Destino
@@ -2508,41 +2511,41 @@ meuHtml += `
         </div>
 
         <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
-            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matrizlogopdf.png" 
                  style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
         </div>
 
        <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Bloqueios</span>
             <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/sequeNegativas.mp3" type="audio/mpeg">
             </audio>
         </div>
 
       
 
-        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+        <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/sequeNegativas.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
             <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
                 <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
                 <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Bloqueios</span>
                     <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
                 </div>
             </div>
         </a>
 
                  <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Não a Barreiras</span>
             <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/barreiraNegativas.mp3" type="audio/mpeg">
             </audio>
         </div>
 
-                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+                <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/barreiraNegativas.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
             <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
                 <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
                 <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Não a Barreiras</span>
                     <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
                 </div>
             </div>
@@ -2620,45 +2623,30 @@ meuHtml += `
         </div>
 
         <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
-            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matrizlogopdf.png" 
                  style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
         </div>
 
        <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Fluxo Financeiro</span>
             <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/fluxo2.mp3" type="audio/mpeg">
             </audio>
         </div>
 
       
 
-        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+        <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/fluxo2.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
             <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
                 <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
                 <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Fluxo Financeiro</span>
                     <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
                 </div>
             </div>
         </a>
 
-                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
-            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
-            </audio>
-        </div>
 
-                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
-            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
-                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
-                <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
-                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
-                </div>
-            </div>
-        </a>
 
         <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
            Vida ✶ Pessoal ✶ Social ✶ Destino
@@ -2745,37 +2733,20 @@ meuHtml += `
         </div>
 
         <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
-            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matrizlogopdf.png" 
                  style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
         </div>
 
-       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
-            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
-            </audio>
-        </div>
 
-      
-
-        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
-            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
-                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
-                <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
-                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
-                </div>
-            </div>
-        </a>
 
                  <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
             <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
             <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/sinfoniadodestino.mp3" type="audio/mpeg">
             </audio>
         </div>
 
-                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+                <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/sinfoniadodestino.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
             <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
                 <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
                 <div style="text-align: left;">
@@ -2920,7 +2891,7 @@ meuHtml += `
         
         <div style="margin-top: 60px; z-index: 10; width: 100%;">
             <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-              Parte 6 <br><br> Filosofia e Ciência
+              Complemento<br><br> Filosofia e Numerologia
             </h2>
         </div>
 
@@ -2930,40 +2901,25 @@ meuHtml += `
         </div>
 
        <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Rap da filosofia</span>
             <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" type="audio/mpeg">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/filosofiarap.mp3" type="audio/mpeg">
             </audio>
         </div>
 
       
 
-        <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+        <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/filosofiarap.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
             <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
                 <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
                 <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Rap da filosofia</span>
                     <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
                 </div>
             </div>
         </a>
 
-                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
-            <audio controls style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" type="audio/mpeg">
-            </audio>
-        </div>
 
-                <a href="https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
-            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
-                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
-                <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
-                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
-                </div>
-            </div>
-        </a>
 
         <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
           Contexto Histórico ✶ Conclusão Evolutiva ✶ Agradecimento
@@ -3029,7 +2985,7 @@ meuHtml += `
 
     <div style="margin-top: 20px; text-align: center; border-top: 1px solid #e6d5a8; padding-top: 15px;">
         <p style="font-family: 'Cinzel', serif; font-size: 13px; color: #827108; letter-spacing: 3px; font-weight: bold;">
-            INSTINTO SUPERIOR • ENGENHARIA DE POTÊNCIAS NUMÉRICAS
+            INSTINTO SUPERIOR • ENGENHARIA DOS NÚMEROS
         </p>
     </div>
 </div>
@@ -3078,7 +3034,7 @@ meuHtml += `
 
         <div style="margin-top: 10px; border-top: 1px solid #f2f2f2; padding-top: 60px;">
             <div style="display: flex; justify-content: center; margin-bottom: 20px;">
-                <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/matrizlogopdf.png" 
+                <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" 
                      style="width: 1180px; max-width: 80%; height: auto; filter: brightness(0.5); opacity: 0.9;">
             </div>
                        
