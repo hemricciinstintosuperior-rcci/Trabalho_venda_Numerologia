@@ -1,572 +1,729 @@
-// =======================
-// 📚 COLE TEXTOS AQUI
-// =======================
+const resultadoPotencia = {
+ principal:{
+"10": "Esta vibração se origina da potência 10, que indica momentos de reconhecimento ou mudanças favoráveis que impulsionam novas oportunidades na vida. Representa o início de um novo ciclo onde o universo conspira para que sua liderança natural floresça sem grandes obstruções externas.",
+"11": "Esta vibração se origina da potência 11, trazendo um canal de intuição e inspiração que ilumina suas decisões. Indica que sua força de vontade é guiada por uma percepção superior, permitindo que você tome a frente de projetos com uma sensibilidade que outros não possuem.",
+"12": "Esta vibração se origina da potência 12, indicando aprendizado através de sacrifícios ou experiências que exigem mudança de perspectiva. É um convite para você olhar a vida sob um novo ângulo, percebendo que as pausas e as concessões são, na verdade, ferramentas de amadurecimento espiritual.",
+"13": "Esta vibração se origina da potência 13, indicando experiências desafiadoras que exigem transformação e coragem. Representa a necessidade de romper com o que está estagnado para que o novo possa nascer, exigindo que você seja o arquiteto de sua própria regeneração constante.",
+"14": "Esta vibração se origina da potência 14, indicando habilidade para comunicação e expressão pública. Sugere um fluxo de vida onde a temperança e o equilíbrio entre o falar e o ouvir se tornam essenciais para que sua liberdade de movimento não se perca no caos.",
+"15": "Esta vibração se origina da potência 15, indicando um forte magnetismo pessoal e uma energia vital intensa. Revela que sua presença tem o poder de influenciar ambientes, exigindo atenção para que seus desejos e paixões sejam direcionados de forma construtiva e ética.",
+"16": "Esta vibração se origina da potência 16, indicando experiências que levam a profundas transformações pessoais. Muitas vezes, estruturas antigas podem ruir para que você descubra uma força interior inabalável, fundamentada em valores muito mais sólidos e verdadeiros.",
+"17": "Esta vibração se origina da potência 17, indicando proteção espiritual e sucesso gradual. É a estrela que guia seu caminho material, sugerindo que, mesmo em tempos difíceis, existe uma esperança renovadora que mantém seus planos alinhados com a prosperidade.",
+"18": "Esta vibração se origina da potência 18, indicando desafios emocionais ou situações que exigem grande discernimento. Convida você a mergulhar nas profundezas da própria mente para distinguir o que é ilusão do que é intuição real, fortalecendo sua fé durante os processos obscuros.",
+"19": "Esta vibração se origina da potência 19, revelando desafios relacionados ao orgulho ou à necessidade de aprender lições sobre responsabilidade e humildade. É uma luz intensa que expõe suas ações, pedindo que você brilhe sem ofuscar os outros, cultivando a generosidade como base do sucesso.",
+"20": "Esta vibração se origina da potência 20, sugerindo um renascimento através de chamados internos ou julgamentos de consciência. Indica que sua trajetória será marcada por decisões que exigem uma avaliação honesta do passado para que o futuro seja trilhado com total clareza.",
+"21": "Esta vibração se origina da potência 21, revelando potencial para crescimento social e reconhecimento através da comunicação. Indica a conclusão bem-sucedida de etapas e a capacidade de se sentir em harmonia com o mundo, expandindo seus horizontes de forma plena.",
+"22": "Esta vibração se origina da potência 22, revelando potencial para liderança e construção de projetos importantes. É a marca do mestre construtor, indicando que você possui a capacidade de transformar sonhos abstratos em realidades concretas que beneficiam a coletividade.",
+"23": "Esta vibração se origina da potência 23, revelando proteção ou auxílio de pessoas influentes em sua caminhada. Sugere que sua diplomacia e carisma natural atraem aliados poderosos, facilitando o sucesso em empreendimentos que exigem negociação e tato social.",
+"24": "Esta vibração se origina da potência 24, revelando facilidade para construir relações estáveis e harmoniosas. Indica que seu caminho de vida é fortalecido pelo apoio familiar e afetivo, criando uma base de segurança que permite seu crescimento profissional equilibrado.",
+"25": "Esta vibração se origina da potência 25, revelando sensibilidade intelectual e grande capacidade de reflexão. Sugere um caminho onde o estudo e a análise detalhada das situações precedem a vitória, garantindo que suas escolhas sejam sempre pautadas na lógica e na sabedoria.",
+"26": "Esta vibração se origina da potência 26, revelando aprendizado através de responsabilidades financeiras e gestão de recursos. Indica que o equilíbrio entre o dar e o receber será crucial para que o poder material não se torne um fardo, mas uma ferramenta de realização.",
+"27": "Esta vibração se origina da potência 27, revelando sensibilidade espiritual e capacidade de ajudar outras pessoas. Sugere que sua inteligência é movida por um senso humanitário, permitindo que você encontre soluções que trazem bem-estar tanto para si quanto para o próximo.",
+"28": "Esta vibração se origina da potência 28, indicando experiências ligadas a disputas, rivalidades ou situações que exigem firmeza. É um chamado para o desenvolvimento da resiliência, onde você aprende a defender seus interesses com diplomacia, mas sem abrir mão de sua autoridade.",
+"29": "Esta vibração se origina da potência 29, indicando inteligência brilhante, porém acompanhada de desafios emocionais que exigem maturidade. Sugere que seu potencial mental é vasto, mas precisa estar ancorado em um propósito estável para evitar flutuações e inseguranças.",
+"30": "Esta vibração se origina da potência 30, indicando forte criatividade e imaginação fértil. Revela um caminho onde a autoexpressão é a chave para o sucesso, sugerindo que sua capacidade de idealizar novos mundos e ideias é o que mantém sua energia vital em alta.",
+"31": "Esta vibração se origina da potência 31, indicando talento intelectual e capacidade de expressão. Sugere uma força de trabalho focada na organização do pensamento, onde a clareza mental ajuda a superar obstáculos e a estabelecer metas práticas e alcançáveis.",
+"32": "Esta vibração se origina da potência 32, indicando talento criativo e facilidade de comunicação. Sugere que sua rede de contatos e sua capacidade de persuasão são motores fundamentais para o progresso, permitindo que você navegue por diferentes grupos sociais com facilidade.",
+"33": "Esta vibração se origina da potência 33, indicando grande potencial de prosperidade e o desejo de servir ao próximo. É uma vibração de amor universal, sugerindo que seu sucesso na vida está diretamente ligado à generosidade e ao cuidado com as necessidades alheias.",
+"34": "Esta vibração se origina da potência 34, indicando criatividade aliada à inteligência prática. Sugere que você possui o dom de estruturar ideias artísticas ou inovadoras de forma que elas se tornem úteis e produtivas no dia a dia, gerando resultados sólidos.",
+"35": "Esta vibração se origina da potência 35, indicando inteligência estratégica e visão de longo alcance. Revela que sua trajetória será marcada por escolhas calculadas que permitem contornar imprevistos com rapidez e eficiência, garantindo sua estabilidade futura.",
+"36": "Esta vibração se origina da potência 36, indicando forte criatividade aliada à sensibilidade emocional. Sugere que sua jornada é enriquecida por laços afetivos que inspiram suas criações, mostrando que o equilíbrio do coração é o que sustenta suas ambições.",
+"37": "Esta vibração se origina da potência 37, revelando potencial para crescimento através da inteligência e da estratégia. Sugere que suas decisões são pautadas em uma lógica refinada, permitindo que você se destaque em posições que exigem comando e visão analítica.",
+"38": "Esta vibração se origina da potência 38, revelando capacidade de adaptação, sensibilidade artística e facilidade para lidar com pessoas. Indica um caminho fluido onde a diplomacia abre portas que a força bruta não conseguiria, trazendo sucesso através da colaboração.",
+"39": "Esta vibração se origina da potência 39, revelando natureza entusiasta e facilidade de interação social. Sugere um otimismo contagiante que atrai oportunidades diversas, mostrando que sua alegria e disposição são suas maiores ferramentas de progresso.",
+"40": "Esta vibração se origina da potência 40, revelando a necessidade de superar períodos de estagnação através da reflexão profunda. Indica que sua força é construída no silêncio e na paciência, preparando você para fundações extremamente duradouras.",
+"41": "Esta vibração se origina da potência 41, revelando capacidade de liderança prática e executora. Sugere que você prefere o caminho da ação direta, onde cada passo é planejado para gerar um impacto imediato na organização de sua realidade material.",
+"42": "Esta vibração se origina da potência 42, indicando aprendizado através das responsabilidades familiares e deveres domésticos. Sugere que a dedicação aos entes queridos e o serviço ao lar são pilares que trazem a maturidade necessária para suas conquistas externas.",
+"43": "Esta vibração se origina da potência 43, revelando capacidade de liderança intelectual e autoridade no conhecimento. Indica que você é visto como uma referência em seu campo de atuação, onde sua palavra tem o peso da experiência e da pesquisa profunda.",
+"44": "Esta vibração se origina da potência 44, revelando grande potencial de liderança e administração de grandes projetos. É uma potência de alto impacto material, sugerindo que sua disciplina e visão sistêmica podem construir impérios ou legados de longa duração.",
+"45": "Esta vibração se origina da potência 45, revelando aprendizado através de responsabilidades materiais e metas concretas. Sugere que o sucesso financeiro vem como consequência de uma conduta ética e de uma organização impecável de seus esforços diários.",
+"46": "Esta vibração se origina da potência 46, indicando conquistas materiais alcançadas através de esforço constante e disciplina. Revela que sua segurança financeira não vem do acaso, mas de uma construção lenta e persistente que valoriza cada etapa do processo.",
+"47": "Esta vibração se origina da potência 47, indicando habilidade para lidar com questões materiais e capacidade de organização. Sugere um talento especial para enxergar a viabilidade de negócios e projetos, garantindo que os recursos sejam utilizados com máxima eficiência.",
+"48": "Esta vibração se origina da potência 48, indicando desafios ligados à disciplina ou à organização da vida prática. É um chamado para que você desenvolva métodos mais claros de ação, evitando a dispersão de energia para que seus grandes talentos não se percam na desorganização.",
+"49": "Esta vibração se origina da potência 49, indicando experiências intensas que transformam profundamente sua visão de mundo. Sugere um caminho de vida onde crises se tornam catalisadores de uma nova consciência, forjando uma personalidade resiliente e sábia.",
+"50": "Esta vibração se origina da potência 50, indicando momentos de pausa ou reflexão que são fundamentais para o próximo passo. Revela que o equilíbrio entre a ação externa e o repouso mental é o que garante que sua liberdade não se torne uma fuga da realidade.",
+"51": "Esta vibração se origina da potência 51, revelando experiências de mudança importantes e súbitas. Sugere que sua trajetória não é linear e que você possui a coragem necessária para se reinventar sempre que o destino exigir uma nova direção.",
+"52": "Esta vibração se origina da potência 52, indicando aprendizado através de experiências práticas e do contato direto com a matéria. Sugere que a teoria só faz sentido para você quando aplicada, transformando cada erro em um degrau concreto para o sucesso.",
+"53": "Esta vibração se origina da potência 53, indicando mudanças inesperadas que exigem rapidez mental. Revela que sua adaptabilidade é sua maior defesa, permitindo que você encontre novas saídas em situações onde outros se sentiriam bloqueados ou perdidos.",
+"54": "Esta vibração se origina da potência 54, indicando experiências ligadas a mudanças e transformações estruturais. Sugere que você tem o dom de reformar ambientes e situações, trazendo uma nova ordem para onde antes existia o caos ou a obsolescência.",
+"55": "Esta vibração se origina da potência 55, revelando um forte impulso de liberdade e necessidade de viver experiências intensas. Sugere uma alma aventureira que se recusa a ficar presa a rotinas sufocantes, buscando sempre o novo como combustível para a alma.",
+"56": "Esta vibração se origina da potência 56, revelando natureza ativa e potencial para conquistar posições de destaque. Indica que sua iniciativa pessoal, quando aliada ao senso de cooperação, abre portas para uma liderança respeitada e equilibrada.",
+"57": "Esta vibração se origina da potência 57, revelando inteligência estratégica e capacidade de adaptação. Sugere que você é um observador silencioso que sabe exatamente o momento certo de agir para obter os melhores resultados com o menor esforço possível.",
+"58": "Esta vibração se origina da potência 58, revelando desafios ligados ao poder material ou às ambições pessoais. Indica a necessidade de equilibrar seus desejos de conquista com a consciência social, garantindo que sua ascensão não ignore as leis do equilíbrio e da justiça.",
+"59": "Esta vibração se origina da potência 59, revelando sensibilidade espiritual e intuição aguçada. Sugere que suas mudanças de rota são frequentemente guiadas por sentimentos internos profundos, indicando uma vida protegida por uma conexão espiritual constante.",
+"60": "Esta vibração se origina da potência 60, indicando períodos de reflexão emocional e busca por paz interior. Sugere que a harmonia no lar e a tranquilidade da mente são pré-requisitos essenciais para que você consiga performar bem em suas obrigações mundanas.",
+"61": "Esta vibração se origina da potência 61, revelando sensibilidade espiritual e um olhar voltado para o transcendente. Indica que sua inteligência é enriquecida por valores éticos e morais elevados, fazendo com que sua conduta seja sempre inspiradora para os outros.",
+"62": "Esta vibração se origina da potência 62, revelando aprendizado através das relações interpessoais e parcerias. Sugere que as pessoas que passam por sua vida funcionam como espelhos que ajudam você a enxergar suas próprias qualidades e pontos de melhoria.",
+"63": "Esta vibração se origina da potência 63, revelando maturidade emocional e compreensão dos sentimentos alheios. Indica um caminho de vida onde o acolhimento e a escuta ativa se tornam diferenciais importantes em sua atuação profissional e pessoal.",
+"64": "Esta vibração se origina da potência 64, indicando mudanças repentinas ou situações inesperadas que servem como aprendizado. Revela que a vida frequentemente testa sua flexibilidade, ensinando que o desapego é a chave para transitar por transformações com elegância.",
+"65": "Esta vibração se origina da potência 65, indicando aprendizado através das relações afetivas e responsabilidades emocionais. Sugere que o crescimento pessoal está ligado à sua capacidade de nutrir vínculos duradouros sem perder sua própria essência e autonomia.",
+"66": "Esta vibração se origina da potência 66, indicando grande sensibilidade emocional e inclinação para ajudar o próximo. Revela um caminho de serviço abnegado, onde a proteção à família e à comunidade traz uma profunda satisfação e propósito à sua existência.",
+"67": "Esta vibração se origina da potência 67, indicando desenvolvimento espiritual através do conhecimento teórico e prático. Sugere que o estudo das leis universais ou de temas profundos é o que dá sentido à sua trajetória e orienta suas escolhas.",
+"68": "Esta vibração se origina da potência 68, indicando aprendizado sobre poder material e gestão de recursos. Sugere que o sucesso financeiro duradouro virá através da integridade e da capacidade de liderar com o exemplo, evitando atalhos que comprometam sua ética.",
+"69": "Esta vibração se origina da potência 69, revelando sensibilidade profunda e busca de equilíbrio afetivo. Indica uma jornada onde o dar e o receber precisam estar em sintonia, mostrando que a paz emocional é o terreno onde todos os seus outros sucessos florescem.",
+"70": "Esta vibração se origina da potência 70, indicando períodos de recolhimento e reflexão necessários para a evolução. Sugere que momentos de solitude não são isolamento, mas sim um tempo sagrado para que sua sabedoria interna se manifeste com clareza.",
+"71": "Esta vibração se origina da potência 71, indicando forte capacidade de análise e visão crítica da realidade. Revela que você possui o dom de ver além das aparências, permitindo que identifique problemas e soluções antes que eles se tornem evidentes para os outros.",
+"72": "Esta vibração se origina da potência 72, indicando grande percepção intuitiva e sensibilidade social. Sugere que sua jornada é marcada por uma compreensão natural dos movimentos da coletividade, permitindo que você se posicione de forma estratégica e influente.",
+"73": "Esta vibração se origina da potência 73, revelando natureza reflexiva e tendência a desenvolver sabedoria através das experiências. Sugere que sua mente analítica processa a vida de forma profunda, transformando cada vivência em um capítulo de autoconhecimento.",
+"74": "Esta vibração se origina da potência 74, revelando necessidade de disciplina e estrutura para alcançar estabilidade. Sugere que o sucesso não aceita improvisos sob esta vibração, exigindo que você construa sua rotina sobre bases muito bem planejadas e sólidas.",
+"75": "Esta vibração se origina da potência 75, revelando natureza reflexiva e capacidade de aprendizado profundo. Indica que você é um eterno estudante da vida, cuja curiosidade intelectual abre portas para níveis superiores de consciência e realização profissional.",
+"76": "Esta vibração se origina da potência 76, revelando natureza introspectiva e tendência ao estudo aprofundado. Sugere que seu poder pessoal é silencioso e fundamentado na perícia técnica, fazendo de você um especialista respeitado naquilo que decide fazer.",
+"77": "Esta vibração se origina da potência 77, revelando forte inclinação para o conhecimento profundo e esotérico. Indica uma mente privilegiada que busca as causas das coisas, sugerindo uma vida marcada por descobertas intelectuais e espirituais significativas.",
+"78": "Esta vibração se origina da potência 78, indicando desafios relacionados à disciplina emocional e foco. Sugere que o domínio sobre os próprios sentimentos é a chave para que sua vasta inteligência não se disperse em dúvidas ou hesitações desnecessárias.",
+"79": "Esta vibração se origina da potência 79, revelando uma busca intensa por conhecimento e verdade. Indica que sua trajetória será sempre pautada pela integridade intelectual, recusando respostas superficiais em busca daquilo que é essencial e duradouro.",
+"80": "Esta vibração se origina da potência 80, revelando a necessidade de disciplina material e controle rigoroso. Indica que o poder acumulado precisa ser gerido com mão firme e visão de longo prazo para evitar que a abundância se transforme em desperdício ou caos.",
+"81": "Esta vibração se origina da potência 81, revelando forte capacidade de liderança espiritual e autoridade moral. Sugere que sua influência sobre os outros nasce de sua coerência interna, fazendo com que você seja seguido por sua sabedoria e não apenas por seu cargo.",
+"82": "Esta vibração se origina da potência 82, indicando aprendizado sobre poder pessoal e responsabilidade pelas ações. Revela que cada decisão sua tem um eco profundo, exigindo que você lidere com consciência das consequências e respeito pelo livre-arbítrio alheio.",
+"83": "Esta vibração se origina da potência 83, indicando talento intelectual e facilidade de comunicação estratégica. Sugere que você possui o dom de verbalizar conceitos complexos de forma simples e poderosa, o que facilita sua ascensão em áreas de comando e ensino.",
+"84": "Esta vibração se origina da potência 84, indicando experiências ligadas à responsabilidade material e dever social. Sugere que suas conquistas financeiras estão atreladas a um compromisso com o bem-estar da comunidade, gerando prosperidade que se distribui e retorna.",
+"85": "Esta vibração se origina da potência 85, indicando lições relacionadas ao uso equilibrado do poder e da ambição. Revela a importância de manter a humildade mesmo no topo, garantindo que sua autoridade seja um fator de união e não de separação entre as pessoas.",
+"86": "Esta vibração se origina da potência 86, indicando experiências intensas ligadas a responsabilidades materiais e familiares. Sugere que o sucesso no mundo dos negócios e a harmonia doméstica são fios que se entrelaçam, exigindo atenção dobrada para ambos os pilares.",
+"87": "Esta vibração se origina da potência 87, revelando desenvolvimento espiritual através das relações e do trabalho. Indica que sua rotina diária é o campo de provas onde você exercita sua fé e sua ética, transformando o dever em uma forma de evolução interior.",
+"88": "Esta vibração se origina da potência 88, indicando grande poder mental e capacidade executiva fora do comum. Sugere um potencial ilimitado para a realização material, desde que o foco seja mantido na justiça e no equilíbrio para evitar o desgaste por excesso de controle.",
+"89": "Esta vibração se origina da potência 89, indicando experiências intensas relacionadas ao poder e ao desapego. Revela que grandes ciclos de ganho e transformação fazem parte de sua jornada, ensinando que o verdadeiro poder reside na sabedoria de saber quando agir e quando soltar.",
+"90": "Esta vibração se origina da potência 90, indicando o encerramento de ciclos importantes e a colheita de esforços passados. Sugere um período de vida onde a maturidade permite uma visão panorâmica de seus acertos, preparando o terreno para uma nova e elevada fase.",
+"91": "Esta vibração se origina da potência 91, revelando um forte processo de maturidade espiritual e autonomia. Indica que você alcançou um nível de compreensão onde sua independência não é mais rebeldia, mas sim uma expressão consciente de sua verdade interior.",
+"92": "Esta vibração se origina da potência 92, revelando sensibilidade espiritual e forte intuição guiando suas escolhas. Sugere que você aprendeu a ouvir a voz do coração antes da voz do mundo, o que garante que seu caminho seja sempre autêntico e cheio de paz.",
+"93": "Esta vibração se origina da potência 93, revelando maturidade espiritual e uma compreensão mais ampla da vida. Indica que você possui o dom de aconselhar e inspirar através de sua própria história, servindo como um farol de criatividade e esperança para os outros.",
+"94": "Esta vibração se origina da potência 94, revelando processos de transformação que levam à estabilidade final. Sugere que após muitas mudanças, você encontrou a estrutura ideal para viver com propósito, unindo sua disciplina à sua visão espiritual do mundo.",
+"95": "Esta vibração se origina da potência 95, revelando processos de renovação constante e adaptabilidade espiritual. Indica que sua alma busca sempre novas formas de se expressar, mantendo sua energia vital jovem e conectada com as tendências do futuro.",
+"96": "Esta vibração se origina da potência 96, indicando maturidade emocional conquistada através de ricas experiências de vida. Revela que o amor e a responsabilidade agora fluem sem esforço, tornando você uma figura de apoio e equilíbrio para todos ao seu redor.",
+"97": "Esta vibração se origina da potência 97, revelando maturidade espiritual profunda e sabedoria analítica. Sugere que você compreende as leis ocultas que regem a realidade, permitindo que viva com uma serenidade que nasce do conhecimento da verdade.",
+"98": "Esta vibração se origina da potência 98, revelando maturidade e compreensão profunda da justiça universal. Indica que você vive em sintonia com a lei de causa e efeito, colhendo os frutos de uma vida pautada na integridade e no equilíbrio entre o espírito e a matéria.",
+"99": "Esta vibração se origina da potência 99, revelando uma vibração espiritual elevada e profunda compreensão da vida. É o ápice da jornada humana, indicando que você possui a sabedoria necessária para compreender o sofrimento e a alegria como partes de um todo sagrado e evolutivo."
+},
+ 
+
+ pessoal:{
+"10": "Esta vibração se origina da potência 10, indicando uma mente altamente criativa e facilidade para iniciar projetos originais. Sugere que sua consciência individual desperta de forma pioneira, permitindo que você enxergue soluções onde outros veem apenas problemas.",
+"11": "Esta vibração se origina da potência 11, trazendo uma percepção intuitiva que atua como um radar mental. Indica que seu intelecto está conectado a uma sensibilidade superior, capaz de captar ideias inovadoras antes que elas se tornem óbvias para o mundo.",
+"12": "Esta vibração se origina da potência 12, indicando momentos de aprendizado profundo que exigem uma nova perspectiva intelectual. Revela que, ao silenciar sua vontade e observar os fatos por outro ângulo, você desbloqueia uma sabedoria interna transformadora.",
+"13": "Esta vibração se origina da potência 13, indicando renovações profundas na sua forma de pensar. Sugere que sua mente possui a capacidade de se desapegar de crenças antigas com coragem, permitindo um renascimento intelectual constante e vigoroso.",
+"14": "Esta vibração se origina da potência 14, revelando talento para a comunicação e moderação de ideias. Indica que sua mente busca o equilíbrio entre o racional e o emocional, permitindo que você transmita seus pensamentos de forma clara e diplomática.",
+"15": "Esta vibração se origina da potência 15, sugerindo magnetismo emocional e uma forte influência intelectual sobre os outros. Indica que suas ideias possuem uma carga vital poderosa, sendo necessário direcionar esse magnetismo para propósitos que tragam harmonia.",
+"16": "Esta vibração se origina da potência 16, indicando experiências que provocam quebras de paradigmas na sua forma de pensar. Revela que crises intelectuais são, na verdade, oportunidades para reconstruir sua visão de mundo sobre bases muito mais reais e sólidas.",
+"17": "Esta vibração se origina da potência 17, indicando uma proteção mental que mantém seu otimismo e fé nas próprias ideias. Sugere que sua consciência está alinhada com uma estrela guia, permitindo que você planeje o futuro com esperança e clareza de propósito.",
+"18": "Esta vibração se origina da potência 18, revelando conflitos internos que servem como gatilhos para o amadurecimento mental. Indica a necessidade de enfrentar seus medos subconscientes para que sua percepção da realidade não seja distorcida por ilusões passageiras.",
+"19": "Esta vibração se origina da potência 19, revelando desafios relacionados ao orgulho intelectual. Sugere que o desenvolvimento da humildade mental é o que permitirá que sua luz interior brilhe com autenticidade, atraindo o respeito e a admiração sincera dos outros.",
+"20": "Esta vibração se origina da potência 20, sugerindo uma consciência que se renova através do autojulgamento honesto. Indica que sua mente está sempre pronta para um novo chamado, avaliando o passado com sabedoria para decidir os próximos passos intelectuais.",
+"21": "Esta vibração se origina da potência 21, revelando facilidade para o crescimento intelectual através das trocas sociais. Indica uma mente que se sente completa ao compartilhar conhecimentos, alcançando um estado de realização e sucesso mental pleno.",
+"22": "Esta vibração se origina da potência 22, revelando um potencial intelectual voltado para grandes projetos e liderança visionária. Sugere que sua mente trabalha em larga escala, sendo capaz de organizar ideias complexas para construir algo de valor duradouro.",
+"23": "Esta vibração se origina da potência 23, revelando auxílio intelectual de pessoas influentes ou mentores em sua vida. Indica que sua facilidade de expressão atrai mentes brilhantes que ajudam a polir suas ideias e a expandir seu alcance mental.",
+"24": "Esta vibração se origina da potência 24, revelando facilidade para construir uma estrutura mental estável e segura. Sugere que sua harmonia interior é a base para o desenvolvimento de raciocínios lógicos que protegem seus interesses e de sua família.",
+"25": "Esta vibração se origina da potência 25, indicando sensibilidade intelectual e uma mente voltada para a análise técnica. Sugere que você possui o dom de aprofundar-se em estudos complexos, transformando dados brutos em conhecimento refinado e útil.",
+"26": "Esta vibração se origina da potência 26, revelando aprendizado relacionado a responsabilidades práticas e gestão mental. Indica que sua mente amadurece ao lidar com a justiça e com o equilíbrio entre o esforço intelectual e os resultados materiais.",
+"27": "Esta vibração se origina da potência 27, revelando sensibilidade espiritual que influencia suas conclusões lógicas. Sugere que sua mente é movida por um idealismo humanitário, buscando sempre respostas que tragam algum benefício para o bem comum.",
+"28": "Esta vibração se origina da potência 28, indicando tendência a enfrentar desafios intelectuais que exigem firmeza. Revela que sua mente é forjada no debate de ideias, aprendendo a defender seus pontos de vista com autoridade e estratégia.",
+"29": "Esta vibração se origina da potência 29, revelando uma inteligência sensível acompanhada de oscilações emocionais. Indica que seu desafio é estabilizar a mente para que sua brilhante percepção intuitiva não seja ofuscada por dúvidas momentâneas.",
+"30": "Esta vibração se origina da potência 30, indicando forte imaginação e uma criatividade mental inesgotável. Sugere que sua mente é um laboratório de ideias, onde a inovação nasce da sua capacidade de visualizar possibilidades que outros ignoram.",
+"31": "Esta vibração se origina da potência 31, indicando talento para comunicação estruturada e lógica. Revela uma mente que busca dar forma ao que pensa, transformando o fluxo criativo em métodos e planos que podem ser executados com precisão.",
+"32": "Esta vibração se origina da potência 32, indicando facilidade de expressão e uma mente que se adapta rapidamente a novos ambientes. Sugere que sua inteligência é social, fluindo melhor quando você pode interagir e trocar informações com diferentes mentes.",
+"33": "Esta vibração se origina da potência 33, indicando generosidade mental e uma forte vocação para o ensino ou aconselhamento. Revela que sua consciência se expande quando você utiliza seu conhecimento para iluminar o caminho de outras pessoas.",
+"34": "Esta vibração se origina da potência 34, indicando criatividade mental aliada a uma forte capacidade de investigação. Sugere que você não aceita explicações superficiais, usando sua imaginação para desvendar os mecanismos ocultos das coisas.",
+"35": "Esta vibração se origina da potência 35, revelando inteligência estratégica e uma visão mental perspicaz. Indica que você possui a habilidade de antecipar movimentos e adaptar seu pensamento conforme as mudanças de cenário, mantendo-se sempre à frente.",
+"36": "Esta vibração se origina da potência 36, indicando criatividade aliada à sensibilidade estética e emocional. Sugere que seus pensamentos são coloridos por um senso de harmonia, fazendo de você uma pessoa que pensa com o coração e com a mente em sintonia.",
+"37": "Esta vibração se origina da potência 37, revelando inteligência estratégica e facilidade para encontrar soluções rápidas e eficientes. Sugere que sua mente funciona como uma bússola, sempre apontando o caminho mais inteligente para a superação de obstáculos.",
+"38": "Esta vibração se origina da potência 38, revelando talento criativo e uma sensibilidade artística que permeia sua forma de pensar. Indica que sua mente interpreta a realidade através de símbolos e emoções, gerando percepções únicas e originais.",
+"39": "Esta vibração se origina da potência 39, revelando entusiasmo intelectual e uma grande sociabilidade mental. Sugere que você aprende melhor em grupo e que sua mente é alimentada pela alegria de descobrir novos horizontes ao lado de outras pessoas.",
+"40": "Esta vibração se origina da potência 40, revelando a necessidade de períodos de silêncio e reflexão mental profunda. Indica que sua força intelectual nasce da estabilidade e do tempo que você dedica para organizar suas convicções mais íntimas.",
+"41": "Esta vibração se origina da potência 41, revelando liderança intelectual voltada para a realização prática. Sugere uma mente executora que não se perde em abstrações, focando sempre na viabilidade e na aplicação direta das suas ideias.",
+"42": "Esta vibração se origina da potência 42, indicando que suas responsabilidades e vínculos afetivos moldam sua forma de pensar. Revela uma consciência madura que considera o impacto de suas decisões na vida daqueles que você ama e protege.",
+"43": "Esta vibração se origina da potência 43, revelando liderança intelectual e uma autoridade natural no campo do conhecimento. Indica que você é uma pessoa que pensa com profundidade técnica, sendo respeitada pela seriedade de suas análises.",
+"44": "Esta vibração se origina da potência 44, revelando um enorme poder de liderança mental e capacidade de gestão. Sugere que sua mente é capaz de processar grandes volumes de responsabilidade sem perder a lógica e o senso de justiça.",
+"45": "Esta vibração se origina da potência 45, revelando aprendizado através de deveres e responsabilidades intelectuais. Indica que sua consciência cresce à medida que você se compromete com metas reais, transformando sua visão de mundo em algo concreto.",
+"46": "Esta vibração se origina da potência 46, indicando uma mente prática voltada para conquistas materiais e segurança. Revela que seu pensamento é disciplinado e focado na construção de bases sólidas para sua vida e para seus projetos pessoais.",
+"47": "Esta vibração se origina da potência 47, indicando mente organizada e habilidade para lidar com assuntos técnicos ou científicos. Sugere uma consciência que valoriza a precisão e a eficiência, buscando sempre a melhor forma de estruturar a realidade.",
+"48": "Esta vibração se origina da potência 48, indicando desafios relacionados à disciplina mental e ao foco. Sugere a necessidade de evitar o excesso de preocupações materiais para que sua inteligência possa florescer de forma mais livre e produtiva.",
+"49": "Esta vibração se origina da potência 49, indicando mudanças importantes na sua visão de mundo e na sua consciência. Revela que sua mente passa por ciclos de renovação intensa, onde velhas ideias são substituídas por percepções muito mais elevadas.",
+"50": "Esta vibração se origina da potência 50, indicando períodos de reflexão mental necessários para manter o equilíbrio. Sugere que sua curiosidade precisa de pausas estratégicas para que o excesso de informações não gere estresse ou confusão mental.",
+"51": "Esta vibração se origina da potência 51, revelando mudanças emocionais e mentais marcantes que impulsionam seu crescimento. Indica uma consciência que se adapta rapidamente ao novo, encontrando motivação na própria capacidade de se reinventar.",
+"52": "Esta vibração se origina da potência 52, indicando aprendizado intelectual através das experiências do dia a dia. Revela que sua mente é pragmática, absorvendo conhecimento muito melhor quando ele pode ser testado e comprovado na prática.",
+"53": "Esta vibração se origina da potência 53, indicando mudanças inesperadas na sua forma de pensar ou interpretar a realidade. Sugere que sua adaptabilidade mental é o que permite que você se recupere rapidamente de imprevistos intelectuais.",
+"54": "Esta vibração se origina da potência 54, indicando transformações importantes na forma de pensar, focadas na melhoria do ambiente. Revela uma mente que busca reformar e aperfeiçoar tudo ao seu redor, usando a lógica para promover o progresso.",
+"55": "Esta vibração se origina da potência 55, revelando pensamento inquieto e um forte desejo de liberdade intelectual. Indica uma mente que se recusa a ser aprisionada por dogmas, buscando sempre a expansão através de novas e ousadas ideias.",
+"56": "Esta vibração se origina da potência 56, revelando pensamento ativo e um espírito competitivo saudável. Sugere que sua consciência é estimulada por desafios, impulsionando você a buscar sempre o melhor desempenho em suas atividades mentais.",
+"57": "Esta vibração se origina da potência 57, revelando inteligência estratégica e uma visão analítica aguçada. Indica que você possui o dom de observar os detalhes que passam despercebidos, usando essa percepção para agir com total segurança.",
+"58": "Esta vibração se origina da potência 58, revelando desafios ligados ao uso do poder intelectual e da influência. Sugere a necessidade de usar sua autoridade mental para construir e integrar, evitando que o desejo de controle gere resistências inúteis.",
+"59": "Esta vibração se origina da potência 59, revelando sensibilidade espiritual e uma intuição que guia seu raciocínio. Indica que sua mente está sintonizada com percepções sutis, permitindo que você compreenda a vida para além da lógica puramente material.",
+"60": "Esta vibração se origina da potência 60, indicando momentos de reflexão interior focados na harmonia da alma. Sugere que seu equilíbrio mental depende do cultivo de pensamentos de paz e da resolução de conflitos afetivos que possam perturbar sua clareza.",
+"61": "Esta vibração se origina da potência 61, revelando sensibilidade espiritual e um intelecto voltado para valores nobres. Indica que sua consciência busca a beleza e a verdade em tudo, fazendo de você uma pessoa de pensamento elevado e inspirador.",
+"62": "Esta vibração se origina da potência 62, revelando aprendizado mental através das relações e parcerias. Sugere que sua forma de pensar amadurece ao entrar em contato com diferentes pontos de vista, aprendendo o valor da cooperação intelectual.",
+"63": "Esta vibração se origina da potência 63, revelando maturidade emocional influenciando positivamente seu pensamento. Indica que você possui a sabedoria de não deixar que impulsos momentâneos dominem sua lógica, mantendo a lucidez em situações críticas.",
+"64": "Esta vibração se origina da potência 64, indicando mudanças repentinas na forma de pensar ou momentos de revisão profunda de ideias. Revela que sua mente é capaz de dar guinadas corajosas quando percebe que um ciclo intelectual chegou ao fim.",
+"65": "Esta vibração se origina da potência 65, indicando uma forte ligação entre o pensamento racional e as emoções profundas. Sugere que sua consciência busca integrar o que você sente com o que você sabe, gerando uma visão de vida muito mais completa.",
+"66": "Esta vibração se origina da potência 66, indicando forte sensibilidade emocional influenciando cada pensamento seu. Revela uma mente voltada para o cuidado e para a proteção, onde o intelecto está sempre a serviço do bem-estar coletivo e familiar.",
+"67": "Esta vibração se origina da potência 67, indicando um profundo interesse por conhecimento espiritual e filosófico. Sugere que sua mente busca as respostas nas leis universais, encontrando conforto intelectual na compreensão dos grandes mistérios.",
+"68": "Esta vibração se origina da potência 68, indicando aprendizado relacionado ao poder material e à ética intelectual. Revela que sua consciência se fortalece quando você utiliza sua inteligência para organizar recursos de forma justa e produtiva.",
+"69": "Esta vibração se origina da potência 69, revelando forte sensibilidade afetiva e uma busca constante por equilíbrio interior. Indica uma mente que precisa de harmonia emocional para conseguir produzir e pensar com total clareza e eficiência.",
+"70": "Esta vibração se origina da potência 70, indicando períodos de recolhimento mental que são essenciais para sua evolução. Revela que o silêncio é o seu maior professor, permitindo que sua consciência processe a vida com uma profundidade rara.",
+"71": "Esta vibração se origina da potência 71, indicando uma mente analítica, investigativa e voltada para a descoberta da verdade. Sugere que você possui um filtro mental rigoroso, que não aceita nada sem antes passar por uma profunda análise lógica.",
+"72": "Esta vibração se origina da potência 72, revelando forte percepção intuitiva e sensibilidade social. Indica que sua mente capta as necessidades dos outros de forma quase telepática, permitindo que você atue como um conselheiro nato e respeitado.",
+"73": "Esta vibração se origina da potência 73, revelando tendência a reflexões profundas e busca constante de conhecimento interior. Sugere que sua consciência amadurece através do autoexame, transformando cada pensamento em uma ferramenta de evolução pessoal.",
+"74": "Esta vibração se origina da potência 74, revelando a necessidade de disciplina mental para evitar a dispersão. Indica que sua mente funciona melhor sob uma estrutura organizada, onde cada ideia possui um tempo e um lugar certo para ser desenvolvida.",
+"75": "Esta vibração se origina da potência 75, revelando uma mente investigativa, reflexiva e voltada para o estudo profundo. Sugere que você se sente atraído por temas complexos que exigem paciência e dedicação intelectual para serem plenamente compreendidos.",
+"76": "Esta vibração se origina da potência 76, revelando uma mente introspectiva que busca a perfeição técnica. Indica que você valoriza a precisão do pensamento e prefere trabalhar sozinho para garantir que suas conclusões sejam as mais exatas possíveis.",
+"77": "Esta vibração se origina da potência 77, revelando forte inclinação para estudos profundos e sabedoria oculta. Sugere uma consciência que habita níveis superiores de pensamento, buscando sempre a conexão entre a lógica humana e a inteligência universal.",
+"78": "Esta vibração se origina da potência 78, indicando desafios ligados ao autocontrole emocional e mental. Revela a importância de manter a mente focada no presente, evitando que arrependimentos ou ansiedades perturbem sua capacidade de raciocínio claro.",
+"79": "Esta vibração se origina da potência 79, revelando uma intensa busca por conhecimento e verdade intelectual. Indica que sua consciência não se satisfaz com o óbvio, mergulhando fundo em cada tema para extrair a essência que realmente importa.",
+"80": "Esta vibração se origina da potência 80, revelando a necessidade de uma disciplina intelectual férrea e voltada para resultados. Indica que sua mente possui um grande poder de comando, que deve ser usado para organizar e estruturar o caos ao seu redor.",
+"81": "Esta vibração se origina da potência 81, revelando liderança espiritual e uma autoridade mental baseada na experiência. Sugere que sua consciência atingiu um nível de autonomia onde suas convicções internas servem de guia para muitas outras pessoas.",
+"82": "Esta vibração se origina da potência 82, indicando forte senso de autoridade intelectual e responsabilidade. Revela que você possui consciência do peso de suas palavras e pensamentos, agindo com a cautela e a firmeza de quem conhece as leis da vida.",
+"83": "Esta vibração se origina da potência 83, indicando facilidade de comunicação e um raciocínio estratégico rápido. Sugere que sua mente processa informações em alta velocidade, permitindo que você se expresse com uma clareza que convence e lidera.",
+"84": "Esta vibração se origina da potência 84, indicando responsabilidade intelectual em assuntos práticos e sociais. Revela uma consciência que se preocupa em transformar ideias em benefícios coletivos, unindo a lógica financeira ao bem-estar humano.",
+"85": "Esta vibração se origina da potência 85, indicando aprendizado sobre a responsabilidade do poder mental. Sugere a necessidade de usar sua inteligência para mediar conflitos e promover a justiça, evitando que o intelecto se torne uma ferramenta de dominação.",
+"86": "Esta vibração se origina da potência 86, indicando desafios intelectuais ligados a grandes responsabilidades e deveres. Revela que sua mente é testada em situações de pressão, onde a calma e a organização são suas únicas aliadas para o sucesso.",
+"87": "Esta vibração se origina da potência 87, revelando aprendizado espiritual através das relações e das vivências mentais. Indica que cada troca de ideias é uma oportunidade para expandir sua alma, encontrando o sagrado no ato de compreender o outro.",
+"88": "Esta vibração se origina da potência 88, indicando grande poder mental e uma consciência executiva excepcional. Sugere que sua mente é capaz de arquitetar grandes conquistas, desde que você mantenha o equilíbrio entre a ambição e a paz interior.",
+"89": "Esta vibração se origina da potência 89, indicando experiências intensas ligadas ao poder intelectual e ao desapego. Revela que sua mente passa por processos de purificação, onde apenas o que é essencial e verdadeiro permanece em sua consciência.",
+"90": "Esta vibração se origina da potência 90, indicando o encerramento de ciclos intelectuais e a síntese de todo o conhecimento adquirido. Sugere um momento de vida onde sua mente se torna uma biblioteca de sabedoria, pronta para ser compartilhada com o mundo.",
+"91": "Esta vibração se origina da potência 91, revelando amadurecimento mental através de experiências marcantes e autonomia. Indica que sua consciência se libertou de influências externas, permitindo que você pense e aja com total fidelidade à sua essência.",
+"92": "Esta vibração se origina da potência 92, revelando intuição profunda e uma percepção espiritual que guia seu intelecto. Sugere que sua mente funciona como um canal, recebendo orientações que transcendem a lógica comum e trazem soluções iluminadas.",
+"93": "Esta vibração se origina da potência 93, revelando maturidade mental e uma visão ampla da vida. Indica que você compreende a interconexão de todas as coisas, usando sua criatividade para expressar verdades que tocam o coração e a mente da humanidade.",
+"94": "Esta vibração se origina da potência 94, revelando processos de transformação que consolidam sua estrutura mental. Sugere que sua consciência encontrou o equilíbrio perfeito entre a disciplina prática e a sabedoria espiritual, vivendo com total coerência.",
+"95": "Esta vibração se origina da potência 95, revelando transformações importantes na sua forma de pensar, movidas pela busca de liberdade. Indica uma mente que se renova constantemente, mantendo-se jovem, curiosa e sempre aberta ao fluxo da vida.",
+"96": "Esta vibração se origina da potência 96, indicando maturidade emocional e mental conquistada através da responsabilidade. Revela que seu pensamento é agora um porto seguro para os outros, oferecendo clareza e acolhimento em momentos de incerteza.",
+"97": "Esta vibração se origina da potência 97, revelando maturidade intelectual profunda e uma sabedoria que vem da observação silenciosa. Sugere que você desvendou os códigos da própria mente, vivendo com uma lucidez que poucos conseguem atingir.",
+"98": "Esta vibração se origina da potência 98, revelando maturidade e compreensão profunda das leis da vida. Indica que sua mente está em paz com o passado e focada em usar seu poder intelectual para construir um presente justo e equilibrado.",
+"99": "Esta vibração se origina da potência 99, revelando uma elevada compreensão espiritual e mental. Indica o estado de consciência onde o conhecimento se torna compaixão universal, permitindo que você enxergue a perfeição divina em todos os processos da vida humana."
+},
+
+
+
+
+
+ social:{
+"10": "Esta vibração se origina da potência 10, indicando uma percepção de ambientes sociais dinâmicos e cheios de oportunidades. Revela que você enxerga o mundo como um palco de novos começos, onde a liderança e a coragem são os motores que abrem portas em qualquer grupo social.",
+"11": "Esta vibração se origina da potência 11, trazendo uma visão intuitiva sobre as intenções alheias. Sugere que você percebe o meio social como um campo de trocas vibracionais, onde a inspiração e o exemplo pessoal têm mais poder de influência do que palavras ou cargos.",
+"12": "Esta vibração se origina da potência 12, indicando percepção de pessoas que passam por processos de sacrifício ou mudança de rumo. Revela que você enxerga a necessidade de adaptação social e entende que, às vezes, o recuo estratégico é fundamental para o sucesso coletivo.",
+"13": "Esta vibração se origina da potência 13, indicando percepção de mudanças intensas e necessárias nas relações sociais. Sugere que você enxerga quando um ciclo social precisa terminar, percebendo a renovação das amizades e grupos como algo natural e evolutivo.",
+"14": "Esta vibração se origina da potência 14, revelando uma percepção de ambientes onde a comunicação e o equilíbrio são valorizados. Indica que você observa como as pessoas se expressam publicamente, reconhecendo a importância da temperança para o convívio social harmonioso.",
+"15": "Esta vibração se origina da potência 15, indicando percepção de um forte magnetismo social ao seu redor. Sugere que você identifica facilmente as paixões e os desejos que movem os grupos, percebendo a força de atração e influência que certas pessoas exercem no meio.",
+"16": "Esta vibração se origina da potência 16, indicando percepção de mudanças bruscas no comportamento coletivo ou em estruturas sociais. Revela que você está atento a como as crises podem derrubar aparências e expor a verdadeira essência das relações humanas.",
+"17": "Esta vibração se origina da potência 17, indicando percepção de proteção ou reconhecimento social gradativo. Sugere que você enxerga o meio como um lugar de esperança, onde o sucesso é fruto de uma conduta ética e de uma rede de apoio espiritualmente alinhada.",
+"18": "Esta vibração se origina da potência 18, revelando visão sobre conflitos emocionais ocultos no meio social. Indica que você percebe as inseguranças e as sombras das pessoas ao seu redor, sendo necessário discernimento para não se deixar levar por intrigas ou aparências enganosas.",
+"19": "Esta vibração se origina da potência 19, revelando uma visão crítica sobre atitudes de orgulho ou autoritarismo no ambiente social. Indica que você identifica rapidamente quando alguém tenta se impor pela força, valorizando mais a luz de quem lidera com generosidade.",
+"20": "Esta vibração se origina da potência 20, sugerindo uma percepção social baseada no julgamento de caráter e nas escolhas do passado. Revela que você observa como as pessoas lidam com suas colheitas, percebendo o meio social como um tribunal de constantes aprendizados.",
+"21": "Esta vibração se origina da potência 21, revelando ambientes sociais dinâmicos, expansivos e comunicativos. Sugere que você enxerga o mundo como um lugar globalizado e interconectado, onde o sucesso social vem da capacidade de se sentir parte de um todo maior.",
+"22": "Esta vibração se origina da potência 22, revelando ambientes sociais ligados a grandes responsabilidades e projetos coletivos. Indica que você percebe quem são as pessoas capazes de construir legados e como a organização social pode transformar a realidade material.",
+"23": "Esta vibração se origina da potência 23, revelando percepção de proteção social e a influência de mentores ou pessoas experientes. Sugere que você enxerga os benefícios de boas alianças, percebendo como o apoio mútuo facilita o caminho para o reconhecimento público.",
+"24": "Esta vibração se origina da potência 24, revelando ambientes harmoniosos onde a cooperação familiar ou grupal é o foco. Indica que você observa o meio social como uma extensão do lar, valorizando círculos onde a segurança e a lealdade são prioridades.",
+"25": "Esta vibração se origina da potência 25, indicando percepção de ambientes intelectuais e reflexivos. Sugere que você identifica rapidamente o nível de conhecimento das pessoas ao redor, sentindo-se atraído por meios onde o estudo e a análise são os critérios de valor.",
+"26": "Esta vibração se origina da potência 26, revelando aprendizado através de responsabilidades práticas e hierarquias sociais. Indica que você observa como o poder e o dinheiro circulam nos grupos, percebendo a importância da justiça nas trocas interpessoais.",
+"27": "Esta vibração se origina da potência 27, revelando sensibilidade espiritual nas relações humanas. Sugere que você enxerga o meio social com compaixão, identificando as necessidades anímicas das pessoas e o potencial transformador de atos de bondade coletiva.",
+"28": "Esta vibração se origina da potência 28, indicando percepção de disputas, rivalidades ou momentos de competição no meio social. Revela que você está atento às lutas de interesse, aprendendo a identificar quem joga limpo e quem usa a estratégia para se sobrepor.",
+"29": "Esta vibração se origina da potência 29, indicando percepção de ambientes sociais emocionalmente complexos e instáveis. Revela que você enxerga as fragilidades psicológicas das pessoas, o que exige tato social para navegar em meios onde a sensibilidade está à flor da pele.",
+"30": "Esta vibração se origina da potência 30, indicando percepção de criatividade coletiva e entusiasmo nas interações. Sugere que você enxerga o mundo como um lugar vibrante, sentindo-se motivado por ambientes que estimulam a arte, a festa e a livre expressão.",
+"31": "Esta vibração se origina da potência 31, indicando percepção de comunicação estruturada e de pessoas disciplinadas no meio social. Revela que você valoriza a clareza e a ordem nas relações, sentindo-se confortável em grupos onde as metas são bem definidas.",
+"32": "Esta vibração se origina da potência 32, indicando percepção de ambientes sociais versáteis e cheios de movimento. Sugere que você enxerga como a adaptabilidade das pessoas garante a sobrevivência e o sucesso nos grupos, valorizando a inteligência social fluida.",
+"33": "Esta vibração se origina da potência 33, revelando percepção de generosidade coletiva e ideais humanitários. Indica que você identifica pessoas com vocação para o serviço e o cuidado, percebendo o meio social como um campo fértil para a prática do amor fraternal.",
+"34": "Esta vibração se origina da potência 34, indicando criatividade social aliada à inteligência investigativa. Sugere que você observa como as ideias originais são implantadas na sociedade, percebendo a técnica por trás das inovações que movem os grupos.",
+"35": "Esta vibração se origina da potência 35, revelando percepção de inteligência estratégica e agilidade nas relações sociais. Indica que você enxerga o 'jogo' social com clareza, identificando rapidamente quem sabe negociar e quem possui visão de futuro.",
+"36": "Esta vibração se origina da potência 36, indicando percepção de ambientes onde a criatividade e a harmonia afetiva se misturam. Revela que você observa como os laços de amizade profunda podem gerar frutos produtivos e um clima social acolhedor.",
+"37": "Esta vibração se origina da potência 37, revelando visão estratégica e analítica das relações sociais. Sugere que você percebe o meio como uma rede de inteligências, valorizando o contato com pessoas que oferecem conhecimento e soluções práticas.",
+"38": "Esta vibração se origina da potência 38, revelando visão sensível das relações humanas e dos talentos artísticos alheios. Indica que você percebe a beleza e a vulnerabilidade das pessoas, atraindo círculos onde a expressão emocional é respeitada.",
+"39": "Esta vibração se origina da potência 39, revelando ambientes sociais animados, sociáveis e cheios de entusiasmo. Sugere que você enxerga o lado positivo das interações, percebendo como o otimismo coletivo pode impulsionar grandes conquistas e parcerias.",
+"40": "Esta vibração se origina da potência 40, revelando percepção de ambientes marcados por reflexão, pausa ou conservadorismo. Indica que você observa como o tempo e a paciência consolidam as relações sociais, valorizando a tradição e a estabilidade dos grupos.",
+"41": "Esta vibração se origina da potência 41, revelando percepção de liderança social voltada à realização prática e executiva. Sugere que você identifica quem são os realizadores em um grupo, focando sua atenção em pessoas que entregam resultados concretos.",
+"42": "Esta vibração se origina da potência 42, revelando percepção de fortes responsabilidades familiares e deveres sociais nas pessoas. Indica que você observa o peso que os compromissos afetivos exercem sobre o comportamento coletivo e as dinâmicas de grupo.",
+"43": "Esta vibração se origina da potência 43, revelando percepção de liderança intelectual e autoridade no conhecimento no meio social. Sugere que você identifica as mentes brilhantes de um círculo, valorizando quem possui profundidade técnica e sabedoria teórica.",
+"44": "Esta vibração se origina da potência 44, revelando percepção de ambientes sociais ligados a grandes estruturas de poder e gestão. Indica que você observa como o comando organizado pode sustentar comunidades inteiras, valorizando a disciplina social.",
+"45": "Esta vibração se origina da potência 45, revelando percepção de responsabilidade social e compromisso ético. Sugere que você enxerga o dever das pessoas para com o mundo material, valorizando aqueles que trabalham com honestidade e senso de utilidade pública.",
+"46": "Esta vibração se origina da potência 46, indicando percepção de ambientes voltados ao trabalho, ao esforço e às conquistas materiais. Revela que você observa como a persistência individual gera respeito e estabilidade dentro de um contexto social competitivo.",
+"47": "Esta vibração se origina da potência 47, indicando percepção de ambientes sociais organizados, técnicos ou estruturados. Sugere que você enxerga a eficiência como um valor social, sentindo-se atraído por grupos onde a competência é o principal critério de inclusão.",
+"48": "Esta vibração se origina da potência 48, indicando percepção de conflitos relacionados à desorganização ou falta de disciplina social. Revela que você percebe quando um grupo está sem rumo, sentindo a necessidade de ordem para que o meio social seja produtivo.",
+"49": "Esta vibração se origina da potência 49, indicando percepção de conflitos ou transformações sociais profundas. Sugere que você observa as tensões que precedem as grandes mudanças no mundo, compreendendo que o caos social muitas vezes esconde um novo despertar.",
+"50": "Esta vibração se origina da potência 50, indicando períodos de pausa ou reflexão coletiva no ambiente social. Revela que você percebe quando um grupo precisa parar para reavaliar seus valores, valorizando o tempo de maturação das relações interpessoais.",
+"51": "Esta vibração se origina da potência 51, revelando percepção de mudanças sociais importantes e súbitas na forma como as pessoas se relacionam. Indica que você observa a instabilidade emocional do meio, adaptando sua visão social conforme o fluxo dos acontecimentos.",
+"52": "Esta vibração se origina da potência 52, indicando aprendizado através das experiências sociais práticas e diretas. Revela que você observa como o comportamento humano se manifesta no dia a dia, extraindo lições realistas da convivência com diferentes perfis.",
+"53": "Esta vibração se origina da potência 53, indicando mudanças inesperadas no meio social que exigem flexibilidade. Sugere que você enxerga a volatilidade das amizades e parcerias, aprendendo a não se prender a estruturas sociais que não fazem mais sentido.",
+"54": "Esta vibração se origina da potência 54, indicando percepção de mudanças sociais voltadas à melhoria e reforma do ambiente. Revela que você identifica pessoas engajadas em transformar a realidade ao seu redor, sentindo-se parte de movimentos de progresso.",
+"55": "Esta vibração se origina da potência 55, revelando ambientes sociais inquietos ou marcados pela busca incessante de liberdade e novidade. Sugere que você percebe a rebeldia e a ousadia das pessoas, valorizando meios onde a regra é não ter regras fixas.",
+"56": "Esta vibração se origina da potência 56, revelando percepção de ambientes sociais ativos, vibrantes e competitivos. Indica que você observa a energia de conquista que move as pessoas, reconhecendo a importância da iniciativa para o sucesso coletivo.",
+"57": "Esta vibração se origina da potência 57, revelando percepção de ambientes onde a estratégia, a inteligência e o silêncio são valorizados. Sugere que você enxerga as intenções por trás dos gestos, preferindo círculos sociais discretos e de alto nível intelectual.",
+"58": "Esta vibração se origina da potência 58, revelando percepção de disputas por poder ou recursos no meio social. Indica que você observa como as ambições individuais podem gerar tensões nos grupos, exigindo equilíbrio para não se envolver em lutas de ego inúteis.",
+"59": "Esta vibração se origina da potência 59, revelando percepção de ambientes sociais espiritualizados, sensíveis ou intuitivos. Sugere que você identifica pessoas conectadas com o transcendente, valorizando grupos onde a alma é mais importante que as aparências.",
+"60": "Esta vibração se origina da potência 60, revelando percepção de momentos de reflexão emocional coletiva e busca de harmonia. Indica que você observa o clima afetivo de um grupo, percebendo quando a paz no lar ou na comunidade é a prioridade das pessoas.",
+"61": "Esta vibração se origina da potência 61, revelando sensibilidade espiritual nas relações sociais e um olhar para o que é nobre. Sugere que você identifica a beleza e a ética nas atitudes alheias, sentindo-se atraído por meios onde o caráter é o valor supremo.",
+"62": "Esta vibração se origina da potência 62, revelando aprendizado social através das relações humanas e trocas afetivas. Indica que você observa como a vida em parceria molda a personalidade das pessoas, valorizando a união como fator de crescimento social.",
+"63": "Esta vibração se origina da potência 63, revelando percepção de maturidade emocional coletiva e empatia. Sugere que você enxerga a capacidade das pessoas de lidar com as próprias dores, valorizando ambientes onde o apoio mútuo é real e sincero.",
+"64": "Esta vibração se origina da potência 64, indicando percepção de mudanças repentinas nas relações sociais ou rupturas de parcerias. Revela que você observa a impermanência dos laços sociais, compreendendo que certas separações são necessárias para a evolução do grupo.",
+"65": "Esta vibração se origina da potência 65, indicando forte percepção das relações afetivas e das responsabilidades familiares no meio social. Sugere que você enxerga os compromissos de amor das pessoas, valorizando quem honra seus vínculos e sua história social.",
+"66": "Esta vibração se origina da potência 66, revelando percepção de grande sensibilidade social e desejo coletivo de harmonia. Indica que você observa o papel dos 'protetores' em um grupo, valorizando aqueles que se dedicam ao bem-estar e ao equilíbrio do ambiente.",
+"67": "Esta vibração se origina da potência 67, indicando percepção de ambientes ligados ao conhecimento profundo e estudo. Sugere que você identifica círculos sociais de especialistas e pesquisadores, onde a verdade intelectual é o elo que une as pessoas.",
+"68": "Esta vibração se origina da potência 68, indicando percepção de aprendizado sobre o poder material e gestão de recursos na sociedade. Revela que você observa como a integridade financeira das pessoas impacta o respeito e a influência que elas detêm no meio.",
+"69": "Esta vibração se origina da potência 69, revelando forte sensibilidade social e uma percepção aguçada das necessidades alheias. Sugere que você enxerga o mundo com olhos de cuidado, percebendo onde falta equilíbrio e onde o afeto pode restaurar a paz social.",
+"70": "Esta vibração se origina da potência 70, indicando percepção de períodos de reflexão coletiva ou recolhimento de um grupo. Revela que você observa quando um círculo social está 'para dentro', buscando respostas internas antes de se manifestar novamente no mundo.",
+"71": "Esta vibração se origina da potência 71, indicando uma análise profunda e investigativa das estruturas sociais. Sugere que você enxerga as engrenagens ocultas da sociedade, percebendo os motivos reais por trás dos comportamentos e tendências coletivas.",
+"72": "Esta vibração se origina da potência 72, indicando percepção intuitiva das pessoas e de seus estados anímicos. Revela que você possui um radar para as emoções sociais, sabendo exatamente quem é confiável e quem está escondendo sentimentos ou intenções reais.",
+"73": "Esta vibração se origina da potência 73, revelando tendência a observar as pessoas com uma análise psicológica profunda. Sugere que você enxerga a jornada de evolução de cada indivíduo dentro do grupo social, valorizando a sabedoria que nasce da experiência.",
+"74": "Esta vibração se origina da potência 74, revelando percepção de ambientes que exigem disciplina e ordem nas relações. Indica que você observa como a falta de estrutura pode prejudicar a harmonia social, valorizando grupos onde as regras de convivência são claras.",
+"75": "Esta vibração se origina da potência 75, revelando percepção de ambientes reflexivos, intelectuais e voltados ao estudo. Sugere que você enxerga o valor do conhecimento nas interações sociais, preferindo meios onde o diálogo é rico e pautado na busca pela verdade.",
+"76": "Esta vibração se origina da potência 76, revelando percepção de ambientes introspectivos ou reservados. Indica que você observa o valor da privacidade e da discrição nas relações sociais, valorizando pessoas que agem com sobriedade e seriedade técnica.",
+"77": "Esta vibração se origina da potência 77, revelando percepção de ambientes intelectuais de alto nível ou ligados ao oculto. Sugere que você enxerga o mistério e a profundidade nas relações sociais, buscando conexões com pessoas que possuem uma visão espiritual da vida.",
+"78": "Esta vibração se origina da potência 78, revelando percepção de desafios nas relações sociais e lutas internas das pessoas. Indica que você observa como o desequilíbrio emocional alheio impacta o ambiente, exigindo de você paciência e neutralidade social.",
+"79": "Esta vibração se origina da potência 79, revelando uma busca intensa por conhecimento social e verdade nas relações. Sugere que você observa as pessoas em sua essência mais nua, recusando máscaras sociais e valorizando a autenticidade acima de tudo.",
+"80": "Esta vibração se origina da potência 80, revelando percepção da necessidade de disciplina coletiva e gestão de poder. Indica que você observa as consequências da falta de comando no meio social, valorizando lideranças que mantêm a ordem com justiça e firmeza.",
+"81": "Esta vibração se origina da potência 81, revelando percepção de liderança social espiritualizada e autoridade moral. Sugere que você identifica quem são os guias naturais de um grupo, percebendo que o verdadeiro respeito social vem da coerência entre o que se fala e o que se vive.",
+"82": "Esta vibração se origina da potência 82, indicando percepção de disputas por poder pessoal ou responsabilidades coletivas. Revela que você observa como o ego pode corromper a liderança social, valorizando aqueles que exercem o comando com consciência das consequências.",
+"83": "Esta vibração se origina da potência 83, indicando percepção de pessoas comunicativas, intelectuais e estratégicas. Sugere que você enxerga o valor das palavras certas no momento certo, percebendo como o discurso pode mobilizar ou pacificar um ambiente social.",
+"84": "Esta vibração se origina da potência 84, indicando percepção de grandes responsabilidades sociais e deveres materiais coletivos. Revela que você observa o papel das instituições e dos grupos de trabalho na construção de uma sociedade mais justa e organizada.",
+"85": "Esta vibração se origina da potência 85, indicando percepção de lições relacionadas ao uso do poder e disputas de autoridade. Sugere que você observa os bastidores das hierarquias sociais, percebendo as tensões que surgem quando o controle se sobrepõe ao bem comum.",
+"86": "Esta vibração se origina da potência 86, indicando percepção de responsabilidades sociais intensas e deveres familiares pesados. Revela que você observa o esforço das pessoas para manter o equilíbrio entre o mundo público e o privado, valorizando a resiliência social.",
+"87": "Esta vibração se origina da potência 87, revelando aprendizado social através das relações e trocas espirituais. Sugere que você enxerga cada encontro social como um degrau evolutivo, percebendo as lições que a alma colhe ao interagir com a diversidade humana.",
+"88": "Esta vibração se origina da potência 88, indicando percepção de grande poder coletivo e força executiva em um grupo. Revela que você observa o potencial de realização de um meio social organizado, valorizando a ambição saudável e a capacidade de materializar metas.",
+"89": "Esta vibração se origina da potência 89, indicando percepção de conflitos de poder intensos e processos de desapego social. Sugere que você observa as quedas e ascensões das pessoas influentes, compreendendo as leis de mudança que regem o prestígio público.",
+"90": "Esta vibração se origina da potência 90, indicando percepção de encerramento de ciclos sociais e mudanças de paradigma coletivo. Revela que você observa como o tempo apaga velhas estruturas, preparando o meio social para uma nova consciência humanitária.",
+"91": "Esta vibração se origina da potência 91, revelando compreensão madura e autônoma das atitudes humanas no meio social. Sugere que você enxerga as motivações profundas das pessoas com total clareza, mantendo sua independência mental frente aos movimentos do grupo.",
+"92": "Esta vibração se origina da potência 92, revelando percepção de forte sensibilidade espiritual na observação das pessoas ao redor. Indica que você capta a aura social de um ambiente, sentindo as energias sutis que unem ou afastam os indivíduos em uma comunidade.",
+"93": "Esta vibração se origina da potência 93, revelando visão madura das relações humanas e sabedoria na comunicação social. Sugere que você enxerga o poder das histórias pessoais na construção do coletivo, valorizando a criatividade como forma de união humanitária.",
+"94": "Esta vibração se origina da potência 94, revelando percepção de transformações profundas e duradouras nas estruturas sociais. Indica que você observa como a sociedade se reconstrói sobre bases mais sábias após períodos de crise, valorizando a estabilidade final.",
+"95": "Esta vibração se origina da potência 95, revelando percepção de transformações sociais importantes movidas pela busca de liberdade. Sugere que você observa as revoluções internas e externas das pessoas, sentindo-se parte de um mundo em constante renovação.",
+"96": "Esta vibração se origina da potência 96, revelando maturidade nas relações humanas e percepção do amor como dever social. Indica que você observa como o cuidado mútuo é o que realmente sustenta um grupo, valorizando a harmonia afetiva acima do sucesso material.",
+"97": "Esta vibração se origina da potência 97, revelando percepção de uma maturidade social profunda e sabedoria analítica. Sugere que você enxerga os fios invisíveis que regem o comportamento das massas, mantendo uma visão lúcida e equilibrada sobre o destino da humanidade.",
+"98": "Esta vibração se origina da potência 98, revelando maturidade social e uma compreensão profunda das leis de causa e efeito. Indica que você observa como cada ação coletiva gera um retorno, valorizando grupos que buscam a justiça e a integridade nas relações.",
+"99": "Esta vibração se origina da potência 99, revelando percepção de uma elevada compreensão espiritual e humanitária. Indica que você enxerga o meio social como uma grande escola de almas, onde o amor universal é a única solução definitiva para os conflitos humanos."
+},
+
+
+
+
+destino:{
+"10": "Esta influência se origina da potência 10, indicando eventos que trazem novos começos e oportunidades de brilho pessoal. O universo empurra você para a frente, abrindo portas que exigem coragem imediata e iniciativa própria.",
+"11": "Esta influência se origina da potência 11, trazendo situações de forte inspiração e sincronicidades espirituais. Você atrai eventos que parecem 'mensagens' do destino, desafiando você a seguir sua intuição acima da lógica comum.",
+"12": "Esta influência se origina da potência 12, indicando situações que exigem uma pausa forçada ou um novo ângulo de visão. O universo coloca você em posição de observar mais e agir menos, ensinando que o sacrifício temporário gera sabedoria.",
+"13": "Esta influência se origina da potência 13, trazendo eventos que provocam rupturas necessárias e transformações profundas. O destino limpa o seu caminho, removendo o que não serve mais para que o novo possa florescer com força total.",
+"14": "Esta influência se origina da potência 14, revelando situações externas que exigem temperança e comunicação moderada. Você atrai circunstâncias que testam seu equilíbrio, ensinando que a paciência é a chave para o progresso constante.",
+"15": "Esta influência se origina da potência 15, indicando eventos marcados por forte magnetismo, desejos intensos ou desafios de poder. O universo coloca à prova sua força de vontade diante de tentações ou situações de grande pressão emocional.",
+"16": "Esta influência se origina da potência 16, trazendo acontecimentos inesperados que podem abalar estruturas antigas em sua vida. São eventos 'despertadores' que visam derrubar o que é falso para que você reconstrua sua jornada sobre a verdade.",
+"17": "Esta influência se origina da potência 17, indicando a chegada de oportunidades de reconhecimento e esperança renovada. O destino traz ventos favoráveis que recompensam seus esforços passados com brilho, sorte e proteção espiritual.",
+"18": "Esta influência se origina da potência 18, revelando eventos que trazem à tona questões ocultas ou flutuações emocionais. Você atrai situações que exigem discernimento para distinguir o que é real do que é ilusão ou medo infundado.",
+"19": "Esta influência se origina da potência 19, trazendo situações que favorecem o sucesso público e a clareza de objetivos. O universo coloca você sob os holofotes, mas exige que você lide com o brilho mantendo a generosidade e a humildade.",
+"20": "Esta influência se origina da potência 20, sugerindo eventos que funcionam como um 'chamado' ou um acerto de contas com o passado. O destino traz situações de renovação e julgamento, onde suas escolhas anteriores definem o novo rumo.",
+"21": "Esta influência se origina da potência 21, indicando eventos de expansão internacional, viagens ou contatos com o mundo. O universo amplia suas fronteiras, trazendo situações que fazem você se sentir parte de algo muito maior e global.",
+"22": "Esta influência se origina da potência 22, revelando a chegada de grandes responsabilidades e projetos de longo alcance. O destino coloca em suas mãos ferramentas para construir algo duradouro que beneficie a coletividade.",
+"23": "Esta influência se origina da potência 23, trazendo situações de proteção inesperada e auxílio de pessoas em posição de autoridade. Você atrai sincronicidades que facilitam o seu caminho social e profissional através de bons contatos.",
+"24": "Esta influência se origina da potência 24, indicando eventos voltados à harmonia familiar e à estabilidade afetiva. O universo conduz você a situações onde a segurança do lar e a lealdade dos amigos são os temas centrais.",
+"25": "Esta influência se origina da potência 25, trazendo estímulos ao aprendizado técnico e a descobertas intelectuais. O destino apresenta mistérios ou problemas complexos que só podem ser resolvidos com estudo, análise e introspecção.",
+"26": "Esta influência se origina da potência 26, revelando situações ligadas à gestão financeira e ao equilíbrio entre o dar e o receber. Você atrai eventos que testam sua capacidade de lidar com a matéria de forma justa e organizada.",
+"27": "Esta influência se origina da potência 27, indicando o surgimento de missões humanitárias ou experiências de forte cunho espiritual. O universo traz pessoas e causas que despertam sua compaixão e sua vontade de ensinar ou curar.",
+"28": "Esta influência se origina da potência 28, trazendo situações de concorrência ou desafios que exigem diplomacia e força. O destino coloca você em arenas de disputa para que você aprenda a vencer sem perder a ética ou a elegância.",
+"29": "Esta influência se origina da potência 29, revelando eventos de alta carga emocional que forçam o amadurecimento psíquico. Você atrai situações onde a sensibilidade é testada, exigindo que você encontre paz no meio da tempestade.",
+"30": "Esta influência se origina da potência 30, indicando uma fase de forte inspiração criativa e eventos sociais alegres. O universo traz oportunidades de lazer, festa e expressão artística que renovam seu entusiasmo pela vida.",
+"31": "Esta influência se origina da potência 31, trazendo situações que exigem foco, praticidade e ordem mental. O destino apresenta tarefas que dependem exclusivamente da sua capacidade de planejar e executar com perfeição técnica.",
+"32": "Esta influência se origina da potência 32, revelando eventos marcados pela velocidade e pela necessidade de comunicação rápida. O universo traz mudanças de cenário que exigem que você use sua lábia e seu jogo de cintura para prosperar.",
+"33": "Esta influência se origina da potência 33, indicando a chegada de oportunidades para exercer a caridade e o aconselhamento. O destino coloca pessoas sob sua proteção, permitindo que você manifeste o amor incondicional na prática.",
+"34": "Esta influência se origina da potência 34, trazendo eventos que misturam inovação criativa com segurança material. Você atrai situações onde suas ideias originais podem ser aplicadas para gerar lucro ou estabilidade concreta.",
+"35": "Esta influência se origina da potência 35, revelando situações externas que exigem inteligência estratégica e rapidez de raciocínio. O destino traz desafios que funcionam como um jogo de xadrez, onde a mente ágil é a vencedora.",
+"36": "Esta influência se origina da potência 36, indicando eventos que favorecem a união familiar e a criatividade no ambiente doméstico. O universo traz harmonia para as suas relações mais íntimas, permitindo que o afeto flua sem barreiras.",
+"37": "Esta influência se origina da potência 37, trazendo oportunidades ligadas à pesquisa, ao ensino ou à consultoria. O destino coloca você em contato com fontes de conhecimento profundo, exigindo que você use sua mente analítica.",
+"38": "Esta influência se origina da potência 38, revelando eventos que estimulam a sensibilidade estética e o sucesso através da diplomacia. Você atrai parcerias que dependem da sua capacidade de ser gentil e persuasivo ao mesmo tempo.",
+"39": "Esta influência se origina da potência 39, indicando situações de grande visibilidade social e expansão de contatos. O universo traz um movimento intenso de pessoas e convites, favorecendo aqueles que sabem se comunicar com otimismo.",
+"40": "Esta influência se origina da potência 40, trazendo eventos que impõem limites, prazos e a necessidade de paciência. O destino coloca você em processos de maturação longa, onde o resultado final depende da sua capacidade de esperar.",
+"41": "Esta influência se origina da potência 41, revelando situações externas que exigem uma postura de comando e liderança executiva. O universo apresenta projetos que só andarão se você assumir as rédeas e organizar o fluxo de trabalho.",
+"42": "Esta influência se origina da potência 42, indicando eventos que trazem responsabilidades domésticas ou comunitárias inadiáveis. O destino exige que você seja o pilar de sustentação para aqueles que dependem da sua força e cuidado.",
+"43": "Esta influência se origina da potência 43, trazendo situações que testam sua resistência intelectual e autoridade técnica. Você atrai eventos que exigem provas de competência e dedicação total ao aprimoramento de suas habilidades.",
+"44": "Esta influência se origina da potência 44, revelando a chegada de grandes desafios de gestão e poder material. O universo coloca você em situações de alta complexidade que exigem uma mente visionária e mãos firmes para realizar.",
+"45": "Esta influência se origina da potência 45, indicando eventos que misturam conquistas materiais com o serviço ao próximo. O destino traz oportunidades de trabalho que possuem um propósito maior, gerando satisfação tanto financeira quanto espiritual.",
+"46": "Esta influência se origina da potência 46, trazendo situações que exigem esforço físico ou dedicação exaustiva a um objetivo prático. O universo recompensa a sua suor, mostrando que a construção sólida exige tempo e persistência.",
+"47": "Esta influência se origina da potência 47, revelando eventos que favorecem a organização de sistemas, métodos e processos. Você atrai situações onde a sua clareza técnica será requisitada para colocar ordem no que está confuso.",
+"48": "Esta influência se origina da potência 48, indicando desafios externos ligados a burocracias ou obstáculos materiais que exigem disciplina. O destino ensina que a superação dessas barreiras é o que consolida o seu verdadeiro poder.",
+"49": "Esta influência se origina da potência 49, trazendo eventos de forte transformação social ou mudanças de planos em larga escala. O universo retira você de rotinas previsíveis para que você aprenda a lidar com o inesperado e o novo.",
+"50": "Esta influência se origina da potência 50, revelando momentos de calmaria forçada ou períodos de observação. O destino traz um 'vazio' produtivo, onde o silêncio externo serve para que você reavalie para onde quer canalizar sua energia.",
+"51": "Esta influência se origina da potência 51, indicando eventos súbitos que mudam a sua direção emocional. O universo traz surpresas no campo dos afetos ou parcerias, exigindo que você se adapte rapidamente a novas realidades sociais.",
+"52": "Esta influência se origina da potência 52, trazendo situações de aprendizado empírico e experiências 'mão na massa'. O destino ensina através da prática, colocando você em situações onde a teoria não basta e a vivência é o único mestre.",
+"53": "Esta influência se origina da potência 53, revelando eventos que trazem instabilidade financeira ou mudanças de emprego. O universo desafia seu desapego, mostrando que a segurança real vem da sua capacidade de se reinventar constantemente.",
+"54": "Esta influência se origina da potência 54, indicando situações que favorecem reformas, melhorias de ambiente ou mudanças de casa. O destino traz um impulso de renovação física que reflete o seu desejo interno de progresso.",
+"55": "Esta influência se origina da potência 55, trazendo acontecimentos eletrizantes e uma busca por liberdade radical. Você atrai situações que rompem com a mesmice, favorecendo viagens, aventuras e a quebra de tabus pessoais.",
+"56": "Esta influência se origina da potência 56, revelando eventos que misturam ação social com responsabilidades afetivas. O destino coloca você em movimento, mas exige que cada passo seja dado pensando no bem-estar daqueles que você ama.",
+"57": "Esta influência se origina da potência 57, indicando a chegada de mentores, livros ou conhecimentos que mudam seu modo de agir. O universo traz 'pistas' intelectuais que ajudam você a traçar planos mais inteligentes para o futuro.",
+"58": "Esta influência se origina da potência 58, trazendo situações de embate por recursos ou disputas de território. O destino exige que você seja firme na defesa dos seus direitos, ensinando o valor da autovalorização no mundo material.",
+"59": "Esta influência se origina da potência 59, revelando eventos de forte conexão intuitiva e auxílio espiritual invisível. Você atrai sincronicidades que parecem mágicas, guiando seus passos em momentos de incerteza ou perigo.",
+"60": "Esta influência se origina da potência 60, indicando eventos que pedem reconciliação familiar ou ajustes no ambiente doméstico. O universo traz situações que exigem que você seja o diplomata e o pacificador entre as pessoas próximas.",
+"61": "Esta influência se origina da potência 61, trazendo oportunidades de estudo ou vivências que elevam seu padrão moral e intelectual. O destino afasta você de ambientes vulgares e o aproxima de pessoas e situações de alta linhagem ética.",
+"62": "Esta influência se origina da potência 62, revelando eventos que trazem aprendizado através do espelho das parcerias. O universo coloca em sua vida pessoas que refletem exatamente o que você precisa ajustar em si mesmo para crescer.",
+"63": "Esta influência se origina da potência 63, indicando situações de colheita emocional e maturidade nas relações. O destino traz momentos de paz e compreensão mútua, onde os conflitos do passado são finalmente superados com sabedoria.",
+"64": "Esta influência se origina da potência 64, trazendo eventos que encerram sociedades ou parcerias de forma inesperada. O universo corta os laços que impediam sua autonomia, forçando você a caminhar com as próprias pernas.",
+"65": "Esta influência se origina da potência 65, revelando situações que aumentam seu carisma e sua influência sobre as massas ou grandes grupos. O destino traz uma aura de proteção para sua imagem pública e para seus assuntos familiares.",
+"66": "Esta influência se origina da potência 66, indicando a chegada de grandes deveres de cuidado e proteção. O universo confia a você a guarda de algo precioso — seja um projeto, um ideal ou uma pessoa — exigindo amor total.",
+"67": "Esta influência se origina da potência 67, trazendo eventos que favorecem o isolamento produtivo e a descoberta de verdades ocultas. O destino afasta o barulho externo para que você possa se dedicar a um trabalho de fôlego ou pesquisa.",
+"68": "Esta influência se origina da potência 68, revelando situações ligadas à herança, gestão de bens de terceiros ou grandes negócios. O universo exige de você uma ética impecável ao lidar com o que não é seu, gerando colheitas positivas.",
+"69": "Esta influência se origina da potência 69, indicando eventos que despertam uma profunda sensibilidade para com o sofrimento alheio. O destino traz causas sociais ou pedidos de ajuda que forçam você a manifestar sua compaixão ativa.",
+"70": "Esta influência se origina da potência 70, trazendo situações de recolhimento espiritual e silêncio necessário. O universo 'pausa' suas atividades externas para que você possa realizar uma grande faxina interna em suas crenças.",
+"71": "Esta influência se origina da potência 71, revelando eventos que exigem uma análise fria e cirúrgica da realidade. O destino tira as ilusões do caminho, apresentando fatos que obrigam você a usar a razão pura e a investigação profunda.",
+"72": "Esta influência se origina da potência 72, indicando situações de forte percepção extra-sensorial e intuição profética. Você atrai eventos que confirmam seus pressentimentos, ensinando você a confiar cegamente na sua voz interior.",
+"73": "Esta influência se origina da potência 73, trazendo oportunidades de ensino e transmissão de sabedoria. O destino coloca você em posição de mestre ou conselheiro, onde suas experiências de vida servem de luz para o caminho de outros.",
+"74": "Esta influência se origina da potência 74, revelando eventos que exigem uma disciplina quase monástica em relação a um projeto. O universo retira as distrações e pede que você foque toda a sua energia na perfeição de uma obra.",
+"75": "Esta influência se origina da potência 75, indicando situações de aprendizado intelectual em ambientes de elite ou alta especialização. O destino favorece congressos, cursos e contatos que refinam sua visão técnica do mundo.",
+"76": "Esta influência se origina da potência 76, trazendo eventos que testam sua integridade diante da solidão ou do julgamento alheio. O universo exige que você se mantenha fiel aos seus princípios, mesmo que ninguém esteja vendo.",
+"77": "Esta influência se origina da potência 77, revelando sincronicidades místicas e encontros com 'almas afins'. O destino traz uma atmosfera de mistério e revelação, onde o véu entre o material e o espiritual se torna muito fino.",
+"78": "Esta influência se origina da potência 78, indicando eventos desafiadores que exigem um ajuste entre a sua mente e as suas emoções. O universo traz situações de 'choque de realidade' para que você aprenda a não ser tão crítico.",
+"79": "Esta influência se origina da potência 79, trazendo situações de busca solitária pela verdade e desmascaramento de mentiras. O destino faz com que a verdade apareça em sua vida de forma crua, exigindo que você a aceite sem medos.",
+"80": "Esta influência se origina da potência 80, revelando eventos que exigem um controle rigoroso sobre as finanças e o poder. O universo coloca você em situações onde a negligência não é permitida, forçando você a ser um gestor implacável.",
+"81": "Esta influência se origina da potência 81, trazendo situações de liderança espiritual e autoridade reconhecida. O destino coroa seus esforços, trazendo eventos onde você é chamado a liderar com base no seu exemplo moral.",
+"82": "Esta influência se origina da potência 82, indicando eventos que trazem conflitos de hierarquia ou disputas de ego no ambiente profissional. O universo testa sua capacidade de manter a calma e a justiça enquanto outros lutam por poder.",
+"83": "Esta influência se origina da potência 83, revelando situações que favorecem a escrita, o jornalismo ou qualquer forma de comunicação influente. O destino traz meios para que sua mensagem alcance muitas pessoas e gere resultados materiais.",
+"84": "Esta influência se origina da potência 84, trazendo grandes responsabilidades administrativas que podem gerar cansaço, mas trazem lucro. O universo exige que você organize o trabalho de outros, agindo como o arquiteto do sucesso coletivo.",
+"85": "Esta influência se origina da potência 85, indicando eventos que ensinam lições sobre o uso correto da força e da autoridade. O destino apresenta situações onde o autoritarismo falha, forçando você a encontrar o caminho da liderança inspiradora.",
+"86": "Esta influência se origina da potência 86, revelando situações de sobrecarga por deveres familiares que exigem uma gestão financeira eficiente. O universo ensina você a equilibrar o sustento material com a presença afetiva.",
+"87": "Esta influência se origina da potência 87, trazendo eventos que mostram a conexão entre o sucesso financeiro e a conduta espiritual. O destino traz 'sortes' inesperadas que são, na verdade, retornos de atos de bondade praticados no passado.",
+"88": "Esta influência se origina da potência 88, indicando a chegada de uma fase de grande prosperidade e expansão de negócios. O universo traz situações de alta voltagem material, onde tudo o que você toca tende a crescer e se estruturar.",
+"89": "Esta influência se origina da potência 89, revelando eventos que exigem o desapego de cargos ou bens materiais em prol de uma paz maior. O destino ensina que o verdadeiro poder não pode ser perdido, pois está dentro da sua consciência.",
+"90": "Esta influência se origina da potência 90, trazendo eventos que marcam o fim definitivo de uma era em sua vida. O universo fecha as cortinas de um longo capítulo, preparando você para um renascimento em bases muito mais elevadas.",
+"91": "Esta influência se origina da potência 91, revelando situações que favorecem a independência total e o sucesso alcançado pelo próprio mérito. O destino traz eventos que confirmam que você não precisa de muletas sociais para vencer.",
+"92": "Esta influência se origina da potência 92, indicando situações de profunda sensibilidade psíquica e auxílio a pessoas em crises graves. O universo coloca você em contato com a dor do mundo para que você manifeste sua luz curadora.",
+"93": "Esta influência se origina da potência 93, trazendo eventos que favorecem a comunicação de massas com um propósito educativo ou espiritual. O destino traz meios de expressão (mídia, livros, palestras) que espalham sabedoria.",
+"94": "Esta influência se origina da potência 94, revelando eventos que consolidam sua reputação após anos de esforço invisível. O universo traz a 'pedra angular' que faltava para completar o seu edifício de vida, gerando respeito eterno.",
+"95": "Esta influência se origina da potência 95, trazendo situações de mudança que libertam você de dogmas ou amarras do passado. O destino sopra ventos de renovação que fazem você questionar tudo e encontrar sua própria verdade.",
+"96": "Esta influência se origina da potência 96, indicando eventos de grande harmonia familiar e colheita de amor. O universo traz situações onde você é celebrado pelo bem que fez, rodeado de afeto e segurança emocional.",
+"97": "Esta influência se origina da potência 97, revelando eventos que trazem uma clareza quase mística sobre o funcionamento da vida. O destino permite que você enxergue o futuro ou as consequências das ações humanas com precisão cirúrgica.",
+"98": "Esta influência se origina da potência 98, trazendo situações que exigem o cumprimento rigoroso das leis — civis ou universais. O universo ensina que a ordem é a base do progresso, trazendo eventos que premiam a sua integridade.",
+"99": "Esta influência se origina da potência 99, revelando eventos de alcance mundial ou experiências de êxtase espiritual. O destino traz a conclusão máxima da sua busca, onde você compreende que o universo e você são um só."
+},
+};
+
 const textosVida={
 
 
-1:` <h2>🔱  Regente da Vida(Principal) N°1</h2> 
-<h3>1️⃣Iniciativa, Autonomia e Caminho Individual.1️⃣</h3> 
 
+1: `<h3>Iniciativa, Autonomia e Caminho Individual</h3> 
 <p>Para você, o Regente 1 da Vida representa a força que impulsiona a construção da própria identidade e o desenvolvimento da independência. Essa vibração indica uma trajetória marcada pela iniciativa, pela coragem de tomar decisões e pela capacidade de abrir caminhos novos ao longo da existência.</p> 
-
 <p>A presença do Regente 1 revela natureza ativa, espírito de liderança e desejo profundo de conquistar espaço próprio no mundo. Ao longo da vida você tende a desenvolver autonomia, aprendendo através das experiências a confiar na própria capacidade de agir, decidir e conduzir o próprio destino.</p> 
+<p>No aspecto positivo manifesta liderança, coragem, criatividade, iniciativa e capacidade de abrir novos caminhos. No aspecto negativo pode gerar arrogância, impulsividade, individualismo excessivo ou conflitos provocados pelo desejo de dominar situações.</p> 
+<p>O aprendizado do Regente 1 da Vida consiste em desenvolver liderança com consciência, utilizando a força interior para construir caminhos positivos para si e para os outros.</p>`,
 
-<p>Quando essa vibração se origina da potência 10 pode indicar momentos de reconhecimento ou mudanças favoráveis que impulsionam novas oportunidades na vida.</p> 
-
-<p>Quando se origina da potência 19 pode revelar desafios relacionados ao orgulho ou à necessidade de aprender lições importantes sobre responsabilidade e humildade.</p> 
-
-<p>Quando se origina da potência 28 pode indicar experiências ligadas a disputas, rivalidades ou situações que exigem firmeza para defender seus interesses.</p> 
-
-<p>Quando se origina da potência 37 revela potencial para crescimento através da inteligência, da estratégia e da capacidade de tomar decisões firmes.</p> 
-
-<p>Quando se origina da potência 46 pode indicar conquistas materiais alcançadas através de esforço constante e disciplina.</p> 
-
-<p>Quando se origina da potência 55 revela forte impulso de liberdade e necessidade de viver experiências intensas ao longo da vida.</p> 
-
-<p>Quando se origina da potência 64 pode indicar mudanças repentinas ou situações inesperadas que servem como aprendizado e transformação.</p> 
-
-<p>Quando se origina da potência 73 pode revelar natureza reflexiva e tendência a desenvolver sabedoria através das experiências pessoais.</p> 
-
-<p>Quando se origina da potência 82 pode indicar aprendizado sobre poder pessoal, liderança e responsabilidade diante das consequências das próprias ações.</p> 
-
-<p>Quando se origina da potência 91 pode revelar forte processo de maturidade espiritual, conduzindo a pessoa a compreender a vida através de experiências profundas.</p> 
-
-<p>No aspecto positivo manifesta liderança, coragem, criatividade, iniciativa e capacidade de abrir novos caminhos.</p> 
-
-<p>No aspecto negativo pode gerar arrogância, impulsividade, individualismo excessivo ou conflitos provocados pelo desejo de dominar situações.</p> 
-
-<p>O aprendizado do Regente 1 da Vida consiste em desenvolver liderança com consciência, utilizando a força interior para construir caminhos positivos para si e para os outros.</p> `,
-
-
-2:`<h2>🔱  Regente da Vida(Principal) N°2</h2> 
-<h3>2️⃣Sensibilidade, Dualidade e Consciência das Relações2️⃣</h3> 
+2: `<h3>Sensibilidade, Dualidade e Consciência das Relações</h3> 
 <p>Para você, o Regente 2 da Vida representa a vibração da sensibilidade, da percepção intuitiva e da busca constante por equilíbrio nas relações humanas. Essa regência indica uma trajetória marcada pelo desenvolvimento da empatia, da cooperação e da compreensão emocional.</p>
-
 <p>A presença do Regente 2 revela natureza sensível e observadora. Ao longo da vida você tende a perceber com facilidade os sentimentos das pessoas e os movimentos sutis das situações. Muitas experiências surgem para ensinar equilíbrio entre razão e emoção.</p>
-
-<p>Quando essa vibração se origina da potência 29 pode indicar inteligência brilhante, porém acompanhada de desafios emocionais que exigem maturidade e discernimento.</p>
-
-<p>Quando se origina da potência 38 revela capacidade de adaptação, sensibilidade artística e facilidade para lidar com pessoas.</p>
-
-<p>Quando se origina da potência 47 pode indicar habilidade para lidar com questões materiais e capacidade de organização.</p>
-
-<p>Quando se origina da potência 56 revela natureza ativa e potencial para conquistar posições de destaque através da iniciativa.</p>
-
-<p>Quando se origina da potência 65 pode indicar aprendizado através das relações afetivas e das responsabilidades emocionais.</p>
-
-<p>Quando se origina da potência 74 revela necessidade de disciplina e estrutura para alcançar estabilidade na vida.</p>
-
-<p>Quando se origina da potência 83 pode indicar talento intelectual e facilidade de comunicação.</p>
-
-<p>Quando se origina da potência 92 revela sensibilidade espiritual e forte intuição.</p>
-
-<p>No aspecto positivo manifesta empatia, diplomacia, cooperação e grande percepção emocional.</p>
-
-<p>No aspecto negativo pode gerar insegurança, dependência emocional ou tendência a viver preso às expectativas dos outros.</p>
-
+<p>No aspecto positivo manifesta empatia, diplomacia, cooperação e grande percepção emocional. No aspecto negativo pode gerar insegurança, dependência emocional ou tendência a viver preso às expectativas dos outros.</p>
 <p>O aprendizado do Regente 2 da Vida consiste em desenvolver equilíbrio emocional e confiar na própria intuição.</p>`,
 
-3:`<h2>🔱  Regente da Vida(Principal) N°3</h2> 
-<h3> 3️⃣Criatividade, Expressão e Expansão da Consciência3️⃣ </h3> 
-
+3: `<h3>Criatividade, Expressão e Expansão da Consciência</h3> 
 <p>Para você, o Regente 3 da Vida representa a vibração da criatividade, da comunicação e da expressão dos talentos naturais. Essa regência indica uma trajetória marcada pela busca de experiências que estimulem o pensamento, a imaginação e o contato com diferentes ambientes.</p>
-
 <p>A presença do Regente 3 revela mente ativa, espírito curioso e grande capacidade de expressão. Ao longo da vida você tende a desenvolver habilidades relacionadas à comunicação, às artes ou à transmissão de ideias.</p>
-
-<p>Quando essa vibração se origina da potência 12 pode indicar aprendizado através de sacrifícios ou experiências que exigem mudança de perspectiva.</p>
-
-<p>Quando se origina da potência 21 revela potencial para crescimento social e reconhecimento através da comunicação.</p>
-
-<p>Quando se origina da potência 30 pode indicar forte criatividade e imaginação.</p>
-
-<p>Quando se origina da potência 39 revela natureza entusiasta e facilidade de interação social.</p>
-
-<p>Quando se origina da potência 48 pode indicar desafios ligados à disciplina ou à organização da vida prática.</p>
-
-<p>Quando se origina da potência 57 revela inteligência estratégica e capacidade de adaptação.</p>
-
-<p>Quando se origina da potência 66 pode indicar grande sensibilidade emocional e inclinação para ajudar outras pessoas.</p>
-
-<p>Quando se origina da potência 75 revela natureza reflexiva e capacidade de aprendizado profundo.</p>
-
-<p>Quando se origina da potência 84 pode indicar experiências ligadas à responsabilidade material.</p>
-
-<p>Quando se origina da potência 93 revela maturidade espiritual e compreensão mais ampla da vida.</p>
-
-<p>No aspecto positivo manifesta criatividade, entusiasmo, sociabilidade e talento para comunicação.</p>
-
-<p>No aspecto negativo pode gerar dispersão, instabilidade emocional ou tendência a prometer mais do que consegue realizar.</p>
-
+<p>No aspecto positivo manifesta criatividade, entusiasmo, sociabilidade e talento para comunicação. No aspecto negativo pode gerar dispersão, instabilidade emocional ou tendência a prometer mais do que consegue realizar.</p>
 <p>O aprendizado do Regente 3 da Vida consiste em transformar criatividade em realização concreta.</p>`,
 
-4:`<h2>🔱  Regente da Vida(Principal) N°4</h2> 
-<h3> 4️⃣Estrutura, Disciplina e Construção da Vida4️⃣ </h3> 
-
+4: `<h3>Estrutura, Disciplina e Construção da Vida</h3> 
 <p>Para você, o Regente 4 da Vida representa a vibração da estabilidade, da organização e do esforço constante para construir bases sólidas. Essa regência indica uma trajetória marcada pelo trabalho persistente e pela necessidade de criar segurança material e emocional.</p>
-
 <p>A presença do Regente 4 revela natureza responsável, disciplinada e prática. Ao longo da vida você tende a desenvolver habilidades relacionadas à organização, à estrutura e ao planejamento.</p>
-
-<p>Quando essa vibração se origina da potência 13 pode indicar experiências desafiadoras que exigem transformação e coragem.</p>
-
-<p>Quando se origina da potência 22 revela potencial para liderança e construção de projetos importantes.</p>
-
-<p>Quando se origina da potência 31 pode indicar talento intelectual e capacidade de expressão.</p>
-
-<p>Quando se origina da potência 40 revela necessidade de superar períodos de estagnação ou reflexão profunda.</p>
-
-<p>Quando se origina da potência 49 pode indicar experiências intensas que transformam sua visão de mundo.</p>
-
-<p>Quando se origina da potência 58 revela desafios ligados ao poder material ou às ambições pessoais.</p>
-
-<p>Quando se origina da potência 67 pode indicar desenvolvimento espiritual através do conhecimento.</p>
-
-<p>Quando se origina da potência 76 revela natureza introspectiva e tendência ao estudo profundo.</p>
-
-<p>Quando se origina da potência 85 pode indicar lições relacionadas ao uso equilibrado do poder.</p>
-
-<p>Quando se origina da potência 94 revela processos de transformação que levam à maturidade.</p>
-
-<p>No aspecto positivo manifesta disciplina, responsabilidade e capacidade de construir estabilidade duradoura.</p>
-
-<p>No aspecto negativo pode gerar rigidez, teimosia ou excesso de preocupação material.</p>
-
+<p>No aspecto positivo manifesta disciplina, responsabilidade e capacidade de construir estabilidade duradoura. No aspecto negativo pode gerar rigidez, teimosia ou excesso de preocupação material.</p>
 <p>O aprendizado do Regente 4 da Vida consiste em equilibrar disciplina com flexibilidade.</p>`,
 
-5:`<h2>🔱  Regente da Vida(Principal) N°5</h2> 
-<h3> 5️⃣Movimento, Experiência e Liberdade5️⃣ </h3> 
-
+5: `<h3>Movimento, Experiência e Liberdade</h3> 
 <p>Para você, o Regente 5 da Vida representa a vibração da mudança, da curiosidade e da busca por experiências variadas. Essa regência indica uma trajetória marcada pelo aprendizado através do movimento e da adaptação às circunstâncias.</p>
-
 <p>A presença do Regente 5 revela natureza inquieta e mente aberta para novas possibilidades. Ao longo da vida você tende a buscar conhecimento através da experiência direta.</p>
-
-<p>Quando essa vibração se origina da potência 14 pode indicar habilidade para comunicação e expressão pública.</p>
-
-<p>Quando se origina da potência 23 revela proteção ou auxílio de pessoas influentes.</p>
-
-<p>Quando se origina da potência 32 pode indicar talento criativo e facilidade de comunicação.</p>
-
-<p>Quando se origina da potência 41 revela capacidade de liderança prática.</p>
-
-<p>Quando se origina da potência 50 pode indicar momentos de pausa ou reflexão importantes.</p>
-
-<p>Quando se origina da potência 59 revela sensibilidade espiritual e intuição.</p>
-
-<p>Quando se origina da potência 68 pode indicar aprendizado sobre poder material.</p>
-
-<p>Quando se origina da potência 77 revela forte inclinação para conhecimento profundo.</p>
-
-<p>Quando se origina da potência 86 pode indicar experiências intensas ligadas a responsabilidades materiais.</p>
-
-<p>Quando se origina da potência 95 revela processos de transformação e renovação.</p>
-
-<p>No aspecto positivo manifesta versatilidade, inteligência e grande capacidade de adaptação.</p>
-
-<p>No aspecto negativo pode gerar instabilidade, impulsividade ou dificuldade em manter constância.</p>
-
+<p>No aspecto positivo manifesta versatilidade, inteligência e grande capacidade de adaptação. No aspecto negativo pode gerar instabilidade, impulsividade ou dificuldade em manter constância.</p>
 <p>O aprendizado do Regente 5 da Vida consiste em transformar experiência em sabedoria.</p>`,
 
-6:`<h2>🔱  Regente da Vida(Principal) N°6</h2> 
-<h3>6️⃣Amor, Harmonia e Responsabilidade Afetiva6️⃣ </h3>
-
+6: `<h3>Amor, Harmonia e Responsabilidade Afetiva</h3>
 <p>Para você, o Regente 6 da Vida representa a vibração do amor, da família e da responsabilidade emocional. Essa regência indica uma trajetória marcada por experiências relacionadas ao cuidado, à proteção e ao desenvolvimento das relações afetivas.</p>
-
 <p>A presença do Regente 6 revela natureza sensível e desejo de construir harmonia nas relações.</p>
-
-<p>Quando essa vibração se origina da potência 15 pode indicar forte magnetismo pessoal.</p>
-
-<p>Quando se origina da potência 24 revela facilidade para construir relações estáveis.</p>
-
-<p>Quando se origina da potência 33 indica grande potencial de prosperidade e ajuda aos outros.</p>
-
-<p>Quando se origina da potência 42 pode indicar aprendizado através das responsabilidades familiares.</p>
-
-<p>Quando se origina da potência 51 revela experiências de mudança importantes.</p>
-
-<p>Quando se origina da potência 60 pode indicar períodos de reflexão emocional.</p>
-
-<p>Quando se origina da potência 69 revela sensibilidade profunda e busca de equilíbrio afetivo.</p>
-
-<p>Quando se origina da potência 78 pode indicar desafios relacionados à disciplina emocional.</p>
-
-<p>Quando se origina da potência 87 revela desenvolvimento espiritual através das relações.</p>
-
-<p>Quando se origina da potência 96 pode indicar maturidade emocional conquistada através das experiências.</p>
-
-<p>No aspecto positivo manifesta amor, generosidade e capacidade de harmonizar ambientes.</p>
-
-<p>No aspecto negativo pode gerar ciúme, dependência emocional ou excesso de preocupação com os outros.</p>
-
+<p>No aspecto positivo manifesta amor, generosidade e capacidade de harmonizar ambientes. No aspecto negativo pode gerar ciúme, dependência emocional ou excesso de preocupação com os outros.</p>
 <p>O aprendizado do Regente 6 da Vida consiste em amar com equilíbrio e responsabilidade.</p>`,
 
-7:`<h2>🔱  Regente da Vida(Principal) N°7</h2> 
-<h3>7️⃣Busca de Conhecimento e Evolução Interior7️⃣ </h3>
-
+7: `<h3>Busca de Conhecimento e Evolução Interior</h3>
 <p>Para você, o Regente 7 da Vida representa a vibração da introspecção, da investigação e da busca por sabedoria. Essa regência indica uma trajetória marcada pelo desenvolvimento intelectual e espiritual.</p>
-
 <p>A presença do Regente 7 revela mente analítica e necessidade de compreender profundamente os mistérios da vida.</p>
-
-<p>Quando essa vibração se origina da potência 16 pode indicar experiências que levam a profundas transformações pessoais.</p>
-
-<p>Quando se origina da potência 25 revela sensibilidade intelectual e capacidade de reflexão.</p>
-
-<p>Quando se origina da potência 34 pode indicar criatividade aliada à inteligência.</p>
-
-<p>Quando se origina da potência 43 revela capacidade de liderança intelectual.</p>
-
-<p>Quando se origina da potência 52 pode indicar aprendizado através das experiências práticas.</p>
-
-<p>Quando se origina da potência 61 revela sensibilidade espiritual.</p>
-
-<p>Quando se origina da potência 70 pode indicar períodos de recolhimento e reflexão.</p>
-
-<p>Quando se origina da potência 79 revela busca intensa por conhecimento.</p>
-
-<p>Quando se origina da potência 88 pode indicar grande poder mental.</p>
-
-<p>Quando se origina da potência 97 revela maturidade espiritual profunda.</p>
-
-<p>No aspecto positivo manifesta sabedoria, intuição e grande capacidade de análise.</p>
-
-<p>No aspecto negativo pode gerar isolamento, excesso de introspecção ou dificuldade de convivência social.</p>
-
+<p>No aspecto positivo manifesta sabedoria, intuição e grande capacidade de análise. No aspecto negativo pode gerar isolamento, excesso de introspecção ou dificuldade de convivência social.</p>
 <p>O aprendizado do Regente 7 da Vida consiste em transformar conhecimento em sabedoria.</p>`,
 
-8:`<h2>🔱  Regente da Vida(Principal) N°8</h2> 
-<h3>8️⃣Poder, Justiça e Responsabilidade Material8️⃣</h3> 
-
+8: `<h3>Poder, Justiça e Responsabilidade Material</h3> 
 <p>Para você, o Regente 8 da Vida representa a vibração do poder, da organização e da lei de causa e efeito. Essa regência indica uma trajetória marcada por experiências relacionadas à liderança, à administração e ao equilíbrio entre conquistas materiais e valores morais.</p>
-
-<p>Quando essa vibração se origina da potência 17 pode indicar proteção espiritual e sucesso gradual.</p>
-
-<p>Quando se origina da potência 26 revela aprendizado através de responsabilidades financeiras.</p>
-
-<p>Quando se origina da potência 35 pode indicar inteligência estratégica.</p>
-
-<p>Quando se origina da potência 44 revela grande potencial de liderança.</p>
-
-<p>Quando se origina da potência 53 pode indicar mudanças inesperadas.</p>
-
-<p>Quando se origina da potência 62 revela aprendizado através das relações.</p>
-
-<p>Quando se origina da potência 71 pode indicar forte capacidade de análise.</p>
-
-<p>Quando se origina da potência 80 revela necessidade de disciplina material.</p>
-
-<p>Quando se origina da potência 89 pode indicar experiências intensas relacionadas ao poder.</p>
-
-<p>Quando se origina da potência 98 revela maturidade e compreensão profunda da justiça da vida.</p>
-
-<p>No aspecto positivo manifesta liderança equilibrada, disciplina e senso de justiça.</p>
-
-<p>No aspecto negativo pode gerar autoritarismo, materialismo excessivo ou abuso de poder.</p>
-
+<p>No aspecto positivo manifesta liderança equilibrada, disciplina e senso de justiça. No aspecto negativo pode gerar autoritarismo, materialismo excessivo ou abuso de poder.</p>
 <p>O aprendizado do Regente 8 da Vida consiste em utilizar o poder com responsabilidade.</p>`,
 
-9:`<h2>🔱  Regente da Vida (Principal) N°9</h2> 
-<h3> 9️⃣Sabedoria, Conclusões e Consciência Universal9️⃣</h3>  
-
-<p>Para você, o Regente 9 da Vida representa a vibração da experiência acumulada, da maturidade espiritual e da compreensão profunda da existência.</p>
-
-<p>Essa regência indica uma trajetória marcada por aprendizados intensos e momentos de reflexão que conduzem ao desenvolvimento da sabedoria.</p>
-
-<p>Quando essa vibração se origina da potência 18 pode indicar desafios emocionais ou situações que exigem grande discernimento.</p>
-
-<p>Quando se origina da potência 27 revela sensibilidade espiritual e capacidade de ajudar outras pessoas.</p>
-
-<p>Quando se origina da potência 36 pode indicar forte criatividade aliada à sensibilidade.</p>
-
-<p>Quando se origina da potência 45 revela aprendizado através de responsabilidades materiais.</p>
-
-<p>Quando se origina da potência 54 pode indicar experiências ligadas a mudanças e transformações.</p>
-
-<p>Quando se origina da potência 63 revela maturidade emocional.</p>
-
-<p>Quando se origina da potência 72 pode indicar grande percepção intuitiva.</p>
-
-<p>Quando se origina da potência 81 revela forte capacidade de liderança espiritual.</p>
-
-<p>Quando se origina da potência 90 pode indicar encerramento de ciclos importantes.</p>
-
-<p>Quando se origina da potência 99 revela vibração espiritual elevada e profunda compreensão da vida.</p>
-
-<p>No aspecto positivo manifesta sabedoria, generosidade e compaixão.</p>
-
-<p>No aspecto negativo pode gerar isolamento, pessimismo ou dificuldade em desapegar do passado.</p>
-
+9: `<h3>Sabedoria, Conclusões e Consciência Universal</h3>  
+<p>Para você, o Regente 9 da Vida representa a vibração da experiência acumulada, da maturidade espiritual e da compreensão profunda da existência. Essa regência indica uma trajetória marcada por aprendizados intensos e momentos de reflexão que conduzem ao desenvolvimento da sabedoria.</p>
+<p>No aspecto positivo manifesta sabedoria, generosidade e compaixão. No aspecto negativo pode gerar isolamento, pessimismo ou dificuldade em desapegar do passado.</p>
 <p>O aprendizado do Regente 9 da Vida consiste em transformar experiência em sabedoria e utilizar esse conhecimento para ajudar outras pessoas.</p>`,
 
 
-11:`<p>Na estrutura principal de você, a Potência 11 se manifesta como um pilar de força e autodomínio. Ela indica que sua jornada física é movida por uma energia vital intensa, que exige direção consciente e inteligência estratégica para não se dispersar no caos cotidiano. É o símbolo do controle absoluto sobre os instintos em favor de objetivos elevados, mostrando que sua realização no mundo depende da sua capacidade de canalizar esse vigor interno para construções sólidas.</p>
+
+11:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 11 se manifesta como um pilar de força e autodomínio. Ela indica que sua jornada é movida por uma energia vital intensa, que exige direção consciente e inteligência estratégica para não se dispersar no caos cotidiano. É o símbolo do controle absoluto sobre os instintos em favor de objetivos elevados, mostrando que sua realização no mundo depende da sua capacidade de canalizar esse vigor interno para construções sólidas.</p>
 <p>No aspecto positivo, esta influência traz uma capacidade ímpar de liderança e resiliência, permitindo que você supere obstáculos com disciplina e coragem inabalável. Você se torna uma figura influente e respeitada, capaz de inspirar confiança através da sua autoconfiança e do domínio que exerce sobre suas próprias reações e decisões.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da agressividade, do orgulho e do autoritarismo. Sem o devido controle emocional, essa força bruta pode se transformar em impulsividade, gerando conflitos desnecessários e um grande desgaste de energia vital. A Potência 11 ensina que a sua verdadeira soberania na vida surge apenas quando você conquista o domínio total e consciente de si mesmo.</p>`,
-12:`<p>Na estrutura principal de você, a Potência 12 atua como um ciclo necessário de renúncia consciente e profunda transformação interior. Ela marca momentos onde a realidade física exige uma pausa para introspecção, indicando que o seu crescimento real virá do abandono de padrões obsoletos e comportamentos que já não servem mais à sua evolução. É o tempo de sacrificar o ego em favor de uma maturidade muito maior e mais estável.</p>
+
+ 12:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 12 atua como um ciclo necessário de renúncia consciente e profunda transformação interior. Ela marca momentos onde a realidade atual exige uma pausa para introspecção, indicando que o seu crescimento real virá do abandono de padrões obsoletos e comportamentos que já não servem mais à sua evolução. É o tempo de sacrificar o ego em favor de uma maturidade muito maior e mais estável.</p>
 <p>Quando vivida positivamente, esta potência manifesta uma grande humildade e paciência, permitindo que você extraia aprendizados valiosos através das dificuldades aparentes. É um período de maturação silenciosa da personalidade, onde o desapego de desejos imediatos prepara o terreno para uma conquista muito mais sólida, significativa e duradoura no seu futuro.</p>
-<p>Pelo lado negativo, há o perigo da vitimização, da estagnação e do sentimento de impotência diante dos fatos. Você pode se sentir preso em indecisões crônicas ou aceitar sofrimentos desnecessários por medo de avançar e mudar. A Potência 12 ensina que toda renúncia feita com consciência não é uma perda material, mas sim uma preparação espiritual e física essencial para um renascimento maior.</p>`,
-13:`<p>Na estrutura principal de você, a Potência 13 representa a morte simbólica e a renovação radical em sua trajetória de vida física. Ela atua como um agente de limpeza profunda, forçando o encerramento definitivo de ciclos que já perderam a função e promovendo uma ruptura necessária com estruturas rígidas e obsoletas. É o momento em que a vida exige um desapego total para que uma nova identidade e novas oportunidades possam finalmente florescer.</p>
+<p>Pelo lado negativo, há o perigo da vitimização, da estagnação e do sentimento de impotência diante dos fatos. Você pode se sentir preso em indecisões crônicas ou aceitar sofrimentos desnecessários por medo de avançar e mudar. A Potência 12 ensina que toda renúncia feita com consciência não é uma perda material, mas sim uma preparação espiritual essencial para um renascimento maior.</p>`,
+
+ 13:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 13 representa a morte simbólica e a renovação radical em sua trajetória de vida. Ela atua como um agente de limpeza profunda, forçando o encerramento definitivo de ciclos que já perderam a função e promovendo uma ruptura necessária com estruturas rígidas e obsoletas. É o momento em que a vida exige um desapego total para que uma nova identidade e novas oportunidades possam finalmente florescer.</p>
 <p>No aspecto positivo, essa influência gera uma libertação poderosa e uma reconstrução autêntica de todos os seus caminhos. Você descobre fontes inesperadas de força ao se permitir renovar, vivendo de forma mais leve e alinhada com sua verdade presente, livre dos fardos e das máscaras do passado que antes limitavam seu movimento e seu sucesso.</p>
 <p>Já no aspecto negativo, pode surgir um medo paralisante da mudança e um apego doentio ao que está sendo deixado para trás. A resistência ao fim natural das coisas pode trazer perdas dolorosas e uma sensação constante de ruína. A Potência 13 ensina que na mecânica da vida, todo fim é apenas o prelúdio indispensável para um recomeço vigoroso e cheio de novas possibilidades.</p>`,
-14:`<p>Na estrutura principal de você, a Potência 14 manifesta-se como a busca contínua pelo equilíbrio e pela harmonia entre as forças opostas do seu dia a dia. Ela indica um caminho onde a moderação, a paciência e a conciliação são as chaves mestras para o sucesso tanto material quanto emocional. É a habilidade de integrar a razão e a emoção de maneira fluida e produtiva, evitando os extremos que geram instabilidade.</p>
+
+ 14:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 14 manifesta-se como a busca contínua pelo equilíbrio e pela harmonia entre as forças opostas do seu dia a dia. Ela indica um caminho onde a moderação, a paciência e a conciliação são as chaves mestras para o sucesso tanto material quanto emocional. É a habilidade de integrar a razão e a emoção de maneira fluida e produtiva, evitando os extremos que geram instabilidade.</p>
 <p>No seu aspecto positivo, você demonstra uma diplomacia nata e uma serenidade que ajuda a pacificar ambientes e resolver conflitos complexos com facilidade. A cooperação torna-se sua ferramenta mais poderosa de crescimento, permitindo que você construa relações estáveis e bases sólidas para seus projetos, sempre baseadas no entendimento mútuo e na tolerância.</p>
 <p>No aspecto negativo, essa busca incessante por equilíbrio pode se transformar em indecisão, acomodação ou um medo profundo de enfrentar confrontos que são necessários. A tentativa de evitar tensões a qualquer custo pode gerar uma estagnação perigosa e a perda de grandes oportunidades. A Potência 14 ensina que o verdadeiro poder de realização reside na manutenção do seu equilíbrio interior inabalável.</p>`,
-15:`<p>Na estrutura principal de você, a Potência 15 simboliza o intenso confronto entre os seus desejos materiais e a sua consciência superior. Ela traz para o plano físico uma energia de magnetismo, ambição e paixão que pode ser usada tanto para a criação magnífica quanto para a autodestruição. É uma potência de enorme força realizadora, mas que exige uma vigilância ética e moral constante em todas as suas ações.</p>
+
+ 15:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 15 simboliza o intenso confronto entre os seus desejos materiais e a sua consciência superior. Ela traz para o plano uma energia de magnetismo, ambição e paixão que pode ser usada tanto para a criação magnífica quanto para a autodestruição. É uma potência de enorme força realizadora, mas que exige uma vigilância ética e moral constante em todas as suas ações.</p>
 <p>No aspecto positivo, ela se manifesta como uma vitalidade transbordante, criatividade e um carisma que abre portas anteriormente fechadas. Você encontra a energia necessária para buscar o que deseja e transformar sua realidade material com vigor, usando sua força instintiva como o combustível principal para sua evolução e para a conquista de seus sonhos mais ambiciosos.</p>
 <p>Contudo, no aspecto negativo, essa mesma força pode levar a obsessões, vícios, manipulações e ciclos severos de autossabotagem. Ocorre um aprisionamento quando os prazeres imediatos e o ego assumem o controle absoluto da sua vida. A Potência 15 ensina que o desejo é um mestre muito cruel, mas torna-se um servo extraordinário quando é guiado pela vontade firme e pela consciência plena.</p>`,
-16:`<p>Na estrutura principal de você, a Potência 16 atua através de rupturas súbitas e despertares intensos que forçam a queda de ilusões. Ela funciona como um evento catalisador que destrói estruturas falsas e conceitos equivocados que você construiu ao longo do tempo. Embora o impacto inicial pareça desestabilizador, o objetivo final é sempre a libertação de uma base que já não era sólida o suficiente para sustentar seu futuro.</p>
+
+ 16:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 16 atua através de rupturas súbitas e despertares intensos que forçam a queda de ilusões. Ela funciona como um evento catalisador que destrói estruturas falsas e conceitos equivocados que você construiu ao longo do tempo. Embora o impacto inicial pareça desestabilizador, o objetivo final é sempre a libertação de uma base que já não era sólida o suficiente para sustentar seu futuro.</p>
 <p>No aspecto positivo, essa potência promove uma clareza mental imediata e a oportunidade de reconstruir sua existência sobre alicerces verdadeiros e inabaláveis. Após a queda das barreiras que limitavam sua visão, você ganha a chance de recomeçar com muito mais integridade e uma compreensão profunda da realidade, tornando-se mais forte do que jamais foi.</p>
 <p>No aspecto negativo, a resistência desesperada à mudança pode causar colapsos emocionais, perdas materiais e uma sensação prolongada de sofrimento. O medo de perder o que era conhecido, mesmo que fosse limitante, gera negação e impede o progresso. A Potência 16 ensina que certas destruições são atos de purificação divina necessários para que a verdade e a luz possam finalmente prevalecer.</p>`,
-17:`<p>Na estrutura principal de você, a Potência 17 representa o surgimento da esperança, da fé e da inspiração renovada após períodos de crise ou escuridão. Em sua vida física, ela atua como uma luz guia que conecta suas ações práticas a ideais elevados, trazendo a certeza de que a renovação é possível. É a energia que suaviza as feridas do passado e aponta para um futuro onde a harmonia e o propósito caminham juntos.</p>
+
+ 17:`<p>Na estrutura principal de você, a Potência 17 representa o surgimento da esperança, da fé e da inspiração renovada após períodos de crise ou escuridão. Em sua vida, ela atua como uma luz guia que conecta suas ações práticas a ideais elevados, trazendo a certeza de que a renovação é possível. É a energia que suaviza as feridas do passado e aponta para um futuro onde a harmonia e o propósito caminham juntos.</p>
 <p>No aspecto positivo, manifesta-se através de uma criatividade brilhante e um forte desejo de agir com altruísmo e generosidade. Você sente uma renovação espiritual que o impulsiona a acreditar novamente na vida, tornando-se uma fonte de inspiração para as pessoas ao seu redor. É um ciclo extremamente favorável para novos projetos que visam a expressão da sua essência mais pura e verdadeira.</p>
 <p>No aspecto negativo, pode haver uma tendência perigosa a viver de ilusões, fantasias e expectativas irreais que não encontram base no mundo concreto. A fuga da realidade para um mundo idealizado pode impedir que você tome as medidas práticas para realizar seus planos. A Potência 17 ensina que a esperança é a ponte ativa e luminosa que une a dor do aprendizado à glória da realização.</p>`,
-18:`<p>Na estrutura principal de você, a Potência 18 traz o contato direto com o subconsciente, as emoções represadas e os mistérios da sua própria mente. Ela indica um tempo onde a realidade física é fortemente influenciada por intuições poderosas, mas também por medos invisíveis que precisam ser enfrentados. É um convite imperativo para mergulhar nas águas profundas do autoconhecimento e da sombra.</p>
+
+ 18:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 18 traz o contato direto com o subconsciente, as emoções represadas e os mistérios da sua própria mente. Ela indica um tempo onde a realidade é fortemente influenciada por intuições poderosas, mas também por medos invisíveis que precisam ser enfrentados. É um convite imperativo para mergulhar nas águas profundas do autoconhecimento e da sombra.</p>
 <p>Vivida positivamente, esta potência desenvolve uma intuição aguçada e uma imaginação fértil que pode ser aplicada em soluções criativas e empatia profunda. Você se torna capaz de captar o que não é dito, usando essa sensibilidade para navegar na vida com mais sabedoria e proteção. É um momento de grande crescimento interno ao entender as mensagens que vêm de dentro da sua alma.</p>
 <p>Pelo lado negativo, a confusão emocional, a paranoia e o autoengano podem se manifestar, criando um cenário de insegurança e instabilidade. O medo do desconhecido pode gerar ansiedade e uma visão distorcida dos fatos, levando a escolhas erradas por puro receio. A Potência 18 ensina que a maior batalha da sua vida ocorre na sua mente e que iluminar sua própria escuridão é o único caminho para a paz.</p>`,
-19:`<p>Na estrutura principal de você, a Potência 19 representa o triunfo absoluto, a clareza e a plena realização em sua jornada física. Ela simboliza o momento de máxima luz, onde as recompensas por todos os seus esforços passados finalmente se manifestam de forma visível e concreta. É a energia da expansão, do sucesso e da vitalidade que dissipa qualquer sombra de dúvida ou dificuldade que possa ter existido anteriormente.</p>
+
+ 19:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 19 representa o triunfo absoluto, a clareza e a plena realização em sua jornada. Ela simboliza o momento de máxima luz, onde as recompensas por todos os seus esforços passados finalmente se manifestam de forma visível e concreta. É a energia da expansão, do sucesso e da vitalidade que dissipa qualquer sombra de dúvida ou dificuldade que possa ter existido anteriormente.</p>
 <p>No aspecto positivo, você experimenta uma autoconfiança contagiante e um reconhecimento merecido por suas conquistas. A prosperidade flui em sua direção e você se sente em total harmonia com o mundo e com as pessoas ao seu redor. É um ciclo de felicidade genuína, onde sua luz pessoal brilha intensamente, trazendo calor, clareza e sucesso para todos os seus empreendimentos atuais.</p>
 <p>No aspecto negativo, o excesso de brilho e sucesso pode levar à arrogância, ao egocentrismo e a uma vaidade que cega. O orgulho desmedido pode isolá-lo em sua própria importância, fazendo com que você perca a conexão com a realidade e com os outros. A Potência 19 ensina que a luz do sucesso só atinge sua plenitude máxima quando é compartilhada com generosidade, iluminando o caminho de todos.</p>`,
-20:`<p>Na estrutura principal de você, a Potência 20 representa o despertar e o julgamento das suas ações. Ela indica um momento de chamado para uma nova vida, onde você é convidado a avaliar sua trajetória e assumir uma nova consciência. É o símbolo da renovação de propósitos e da libertação de antigos fardos através de uma nova percepção da realidade.</p>
-<p>No aspecto positivo, esta influência manifesta uma clareza espiritual e mental que permite tomar decisões definitivas e libertadoras. Você sente que recebeu uma "segunda chance" para fazer as coisas de forma mais correta e alinhada com seu destino, resultando em uma profunda paz interior e na resolução de pendências antigas que travavam o seu progresso no mundo físico.</p>
+
+ 20:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 20 representa o despertar e o julgamento das suas ações. Ela indica um momento de chamado para uma nova vida, onde você é convidado a avaliar sua trajetória e assumir uma nova consciência. É o símbolo da renovação de propósitos e da libertação de antigos fardos através de uma nova percepção da realidade.</p>
+<p>No aspecto positivo, esta influência manifesta uma clareza espiritual e mental que permite tomar decisões definitivas e libertadoras. Você sente que recebeu uma "segunda chance" para fazer as coisas de forma mais correta e alinhada com seu destino, resultando em uma profunda paz interior e na resolução de pendências antigas que travavam o seu progresso no mundo.</p>
 <p>No entanto, no aspecto negativo, pode surgir a resistência em ouvir esse chamado interno, levando ao arrependimento amargo ou ao medo de enfrentar as consequências de escolhas passadas. O julgamento severo de si mesmo ou dos outros pode gerar estagnação e amargura. A Potência 20 ensina que o despertar da consciência é um processo de libertação que exige honestidade total com a própria história.</p>`,
 
-21:`<p>Na estrutura principal de você, a Potência 21 representa a conclusão de um grande ciclo e a integração harmoniosa de todos os seus aprendizados no plano físico. Ela indica que você atingiu um estado de plenitude onde o sucesso não é apenas uma conquista isolada, mas a manifestação de um equilíbrio global entre seus desejos, suas ações e o meio em que vive. É o símbolo da expansão consciente e do triunfo que nasce da totalidade do ser.</p>
+21:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 21 representa a conclusão de um grande ciclo e a integração harmoniosa de todos os seus aprendizados no plano. Ela indica que você atingiu um estado de plenitude onde o sucesso não é apenas uma conquista isolada, mas a manifestação de um equilíbrio global entre seus desejos, suas ações e o meio em que vive. É o símbolo da expansão consciente e do triunfo que nasce da totalidade do ser.</p>
 <p>No aspecto positivo, esta potência manifesta uma realização completa, viagens significativas e o reconhecimento público de seus talentos. Você experimenta uma sensação de liberdade e pertencimento, sentindo que o mundo colabora com seus planos. É uma fase de colheitas abundantes, onde a sua presença irradia uma segurança que atrai novas oportunidades e consolida sua posição de destaque em qualquer área que escolher atuar.</p>
 <p>Pelo lado negativo, pode surgir a dificuldade em lidar com o sucesso, gerando um medo paralisante de novos começos ou uma arrogância que o isola da realidade. A sensação de que "já alcançou tudo" pode levar à estagnação ou à futilidade. A Potência 21 ensina que a perfeição é um movimento contínuo e que cada chegada vitoriosa é, na verdade, o ponto de partida para um nível de consciência e realização ainda mais elevado.</p>`,
-22:`<p>Na estrutura principal de você, a Potência 22 atua como a energia do mestre construtor, indicando uma capacidade extraordinária de materializar sonhos em larga escala. Ela rege a vida pela visão de longo prazo e pelo pragmatismo, mostrando que você possui o vigor necessário para erguer estruturas que beneficiam não apenas a si mesmo, mas a toda uma coletividade. É o símbolo da ambição elevada unida à disciplina rigorosa.</p>
+
+ 22:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 22 atua como a energia do mestre construtor, indicando uma capacidade extraordinária de materializar sonhos em larga escala. Ela rege a vida pela visão de longo prazo e pelo pragmatismo, mostrando que você possui o vigor necessário para erguer estruturas que beneficiam não apenas a si mesmo, mas a toda uma coletividade. É o símbolo da ambição elevada unida à disciplina rigorosa.</p>
 <p>Vivida positivamente, esta potência manifesta um progresso material sólido e a construção de um legado duradouro. Você demonstra uma habilidade ímpar para organizar recursos e liderar projetos complexos, conquistando uma estabilidade financeira e social invejável. É um ciclo de grande poder realizador, onde a sua persistência transforma obstáculos em degraus para uma ascensão segura e respeitada por todos ao seu redor.</p>
-<p>No aspecto negativo, o foco excessivo no mundo material pode levar à frieza emocional, ao autoritarismo ou a uma obsessão pelo poder que ignora os valores humanos. O medo do fracasso pode gerar uma tensão constante e um comportamento controlador. A Potência 22 ensina que a verdadeira grandeza de uma construção física reside na ética de seus fundamentos e na capacidade de servir ao crescimento de todos.</p>`,
-23:`<p>Na estrutura principal de você, a Potência 23 representa a força da comunicação, do aprendizado e da troca intelectual como motores de progresso. Ela indica que sua trajetória é marcada pela necessidade de expressar suas ideias e de buscar conhecimento constante para refinar sua atuação no mundo. É o símbolo do dinamismo mental que abre portas através da diplomacia, do estudo e da habilidade em articular parcerias estratégicas.</p>
+<p>No aspecto negativo, o foco excessivo no mundo material pode levar à frieza emocional, ao autoritarismo ou a uma obsessão pelo poder que ignora os valores humanos. O medo do fracasso pode gerar uma tensão constante e um comportamento controlador. A Potência 22 ensina que a verdadeira grandeza de uma construção reside na ética de seus fundamentos e na capacidade de servir ao crescimento de todos.</p>`,
+
+ 23:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 23 representa a força da comunicação, do aprendizado e da troca intelectual como motores de progresso. Ela indica que sua trajetória é marcada pela necessidade de expressar suas ideias e de buscar conhecimento constante para refinar sua atuação no mundo. É o símbolo do dinamismo mental que abre portas através da diplomacia, do estudo e da habilidade em articular parcerias estratégicas.</p>
 <p>No aspecto positivo, esta influência manifesta uma inteligência versátil e uma grande facilidade em se adaptar a novos ambientes e tecnologias. Você atrai oportunidades através do seu magnetismo pessoal e da sua capacidade de convencer e inspirar os outros. É um período de expansão de horizontes, onde viagens e novos estudos trazem retornos financeiros rápidos e fortalecem sua autoridade profissional de maneira dinâmica e moderna.</p>
 <p>Pelo lado negativo, a dispersão de energia e a superficialidade podem comprometer seus resultados. Querer saber de tudo um pouco sem se aprofundar em nada pode gerar instabilidade e falhas de comunicação que prejudicam sua reputação. A Potência 23 ensina que o conhecimento é uma ferramenta de poder, mas que ele só produz frutos sólidos quando é aplicado com foco, disciplina e um propósito claro.</p>`,
-24:`<p>Na estrutura principal de você, a Potência 24 manifesta-se através da busca por segurança, estabilidade e harmonia familiar. Ela rege a vida pela necessidade de construir bases sólidas e afetuosas, indicando que sua realização física está intimamente ligada ao bem-estar daqueles que você ama. É o símbolo do zelo e da responsabilidade, onde o sucesso material é visto como um meio de garantir proteção e conforto para o seu círculo íntimo.</p>
-<p>Quando vivida positivamente, esta potência manifesta uma prosperidade equilibrada e um ambiente doméstico pacífico que serve como refúgio e fonte de energia vital. Você demonstra uma grande capacidade de nutrir seus projetos e suas relações, atraindo sorte e estabilidade através da sua postura íntegra e generosa. É uma fase de consolidação de patrimônio e de fortalecimento de vínculos que trazem uma profunda satisfação emocional e física.</p>
+
+ 24:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 24 manifesta-se através da busca por segurança, estabilidade e harmonia familiar. Ela rege a vida pela necessidade de construir bases sólidas e afetuosas, indicando que sua realização está intimamente ligada ao bem-estar daqueles que você ama. É o símbolo do zelo e da responsabilidade, onde o sucesso material é visto como um meio de garantir proteção e conforto para o seu círculo íntimo.</p>
+<p>Quando vivida positivamente, esta potência manifesta uma prosperidade equilibrada e um ambiente doméstico pacífico que serve como refúgio e fonte de energia vital. Você demonstra uma grande capacidade de nutrir seus projetos e suas relações, atraindo sorte e estabilidade através da sua postura íntegra e generosa. É uma fase de consolidação de patrimônio e de fortalecimento de vínculos que trazem uma profunda satisfação emocional.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo do apego excessivo, do ciúme e de uma preocupação paralisante com a segurança material. O medo de perdas pode tornar você alguém possessivo ou resistente a mudanças necessárias para a sua própria evolução. A Potência 24 ensina que a verdadeira segurança nasce da confiança interna e que o equilíbrio externo é apenas um reflexo da paz que você cultiva dentro de si.</p>`,
-25:`<p>Na estrutura principal de você, a Potência 25 simboliza o progresso através da análise, do discernimento e do aperfeiçoamento constante. Ela indica que sua jornada exige momentos de retiro para reflexão, permitindo que você reorganize suas estratégias antes de agir no mundo material. É a energia do estrategista que entende que o silêncio e a observação são fundamentais para garantir que cada passo seja dado com precisão e eficiência.</p>
+
+ 25:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 25 simboliza o progresso através da análise, do discernimento e do aperfeiçoamento constante. Ela indica que sua jornada exige momentos de retiro para reflexão, permitindo que você reorganize suas estratégias antes de agir no mundo material. É a energia do estrategista que entende que o silêncio e a observação são fundamentais para garantir que cada passo seja dado com precisão e eficiência.</p>
 <p>Vivida positivamente, esta potência manifesta um amadurecimento mental que o torna imune a influências externas superficiais. Você desenvolve uma visão clara sobre seus objetivos, agindo com uma prudência que evita desperdícios de tempo e recursos. É um ciclo de conquistas inteligentes, onde a sua autoridade é reconhecida pela profundidade do seu conhecimento e pela segurança das suas decisões, resultando em um crescimento sólido e respeitado.</p>
-<p>Pelo lado negativo, o excesso de análise pode levar à indecisão, ao isolamento melancólico ou a um perfeccionismo que impede a ação prática. O medo de errar pode mantê-lo estagnado em teorias, perdendo janelas de oportunidade no mundo físico. A Potência 25 ensina que a reflexão deve ser o combustível para uma ação consciente, e que a sabedoria só se torna poder quando é colocada em movimento para transformar a realidade.</p>`,
-26:`<p>Na estrutura principal de você, a Potência 26 atua através da força de vontade, da resiliência e da superação de grandes desafios materiais. Ela representa o momento em que sua determinação é testada pela realidade, exigindo que você assuma o comando total da sua vida com coragem e disciplina. É o símbolo da vitória sobre a matéria, onde o seu esforço pessoal é o único caminho para a conquista da independência e do sucesso.</p>
-<p>No aspecto positivo, esta influência manifesta um fortalecimento notável do caráter e a obtenção de resultados concretos através do trabalho árduo. Você experimenta a satisfação de vencer obstáculos que pareciam intransponíveis, conquistando um lugar de honra e estabilidade pelo seu próprio mérito. É uma fase de grande vigor físico e mental, onde a sua capacidade de persistir garante que você alcance seus objetivos mais ambiciosos com dignidade.</p>
+<p>Pelo lado negativo, o excesso de análise pode levar à indecisão, ao isolamento melancólico ou a um perfeccionismo que impede a ação prática. O medo de errar pode mantê-lo estagnado em teorias, perdendo janelas de oportunidade no mundo. A Potência 25 ensina que a reflexão deve ser o combustível para uma ação consciente, e que a sabedoria só se torna poder quando é colocada em movimento para transformar a realidade.</p>`,
+
+ 26:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 26 atua através da força de vontade, da resiliência e da superação de grandes desafios materiais. Ela representa o momento em que sua determinação é testada pela realidade, exigindo que você assuma o comando total da sua vida com coragem e disciplina. É o símbolo da vitória sobre a matéria, onde o seu esforço pessoal é o único caminho para a conquista da independência e do sucesso.</p>
+<p>No aspecto positivo, esta influência manifesta um fortalecimento notável do caráter e a obtenção de resultados concretos através do trabalho árduo. Você experimenta a satisfação de vencer obstáculos que pareciam intransponíveis, conquistando um lugar de honra e estabilidade pelo seu próprio mérito. É uma fase de grande vigor mental, onde a sua capacidade de persistir garante que você alcance seus objetivos mais ambiciosos com dignidade.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da agressividade, do estresse crônico e do endurecimento do coração em nome do sucesso. A luta constante pode gerar um esgotamento que prejudica sua saúde e suas relações. A Potência 26 ensina que a verdadeira força não é bruta, mas sim uma firmeza serena que sabe ser resiliente sem perder a sensibilidade e a capacidade de cooperar com os outros.</p>`,
-27:`<p>Na estrutura principal de você, a Potência 27 representa a sabedoria aplicada à diplomacia e ao equilíbrio social. Ela indica que seu sucesso está ligado à sua habilidade em mediar interesses e em construir pontes entre diferentes realidades. É o símbolo da justiça e da elegância nas ações, mostrando que a sua trajetória é fortalecida quando você age com retidão, transparência e uma visão humanitária das situações materiais.</p>
+27:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 27 representa a sabedoria aplicada à diplomacia e ao equilíbrio social. Ela indica que seu sucesso está ligado à sua habilidade em mediar interesses e em construir pontes entre diferentes realidades. É o símbolo da justiça e da elegância nas ações, mostrando que a sua trajetória é fortalecida quando você age com retidão, transparência e uma visão humanitária das situações materiais.</p>
 <p>Quando vivida positivamente, esta potência manifesta reconhecimento público, parcerias prósperas e uma facilidade natural em circular por diversos ambientes com respeito e autoridade. Você atrai apoio e recursos porque as pessoas confiam no seu julgamento e na sua integridade. É um ciclo de expansão social e material, onde a sua capacidade de ser justo e harmonioso garante uma prosperidade que é sustentada pela admiração e pela lealdade alheia.</p>
 <p>Pelo lado negativo, a preocupação excessiva com a imagem social ou a indecisão diante de conflitos pode gerar uma postura hipócrita ou superficial. Fugir de escolhas difíceis para manter uma paz aparente pode levar a perdas de autoridade e a crises de identidade. A Potência 27 ensina que o equilíbrio real nasce da fidelidade aos seus princípios internos, independentemente das pressões externas ou das aparências sociais.</p>`,
-28:`<p>Na estrutura principal de você, a Potência 28 simboliza a renovação das parcerias e o despertar de novas oportunidades através da colaboração. Ela rege a vida pela dinâmica das trocas, indicando que este é um momento de abrir mão do isolamento para unir forças com quem compartilha dos seus ideais. É a energia da reciprocidade, onde o seu crescimento individual é potencializado pela força dos vínculos que você decide fortalecer ou iniciar.</p>
+28:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 28 simboliza a renovação das parcerias e o despertar de novas oportunidades através da colaboração. Ela rege a vida pela dinâmica das trocas, indicando que este é um momento de abrir mão do isolamento para unir forças com quem compartilha dos seus ideais. É a energia da reciprocidade, onde o seu crescimento individual é potencializado pela força dos vínculos que você decide fortalecer ou iniciar.</p>
 <p>Vivida positivamente, esta potência manifesta contratos vantajosos, reconciliações produtivas e um novo fôlego em sua vida profissional e afetiva. Você sente que a sorte volta a sorrir através de encontros providenciais e ideias compartilhadas que geram lucro e bem-estar. É uma fase de otimismo e movimento, onde a sua disposição para cooperar abre caminhos que antes estavam bloqueados por falta de apoio ou visão coletiva.</p>
 <p>Contudo, no aspecto negativo, pode surgir uma dependência excessiva do julgamento alheio ou uma tendência a entrar em sociedades desequilibradas por medo de agir sozinho. A falta de critérios na escolha de parceiros pode levar a decepções e perdas financeiras. A Potência 28 ensina que a união faz a força, mas que toda parceria duradoura exige clareza de papéis, respeito mútuo e uma identidade individual forte e bem definida.</p>`,
-29:`<p>Na estrutura principal de você, a Potência 29 representa a força da intuição e da sensibilidade espiritual transformadas em resultados práticos no mundo físico. Ela indica que sua jornada é guiada por uma percepção profunda que vai além do óbvio, permitindo que você antecipe tendências e proteja seus interesses com uma sabedoria quase instintiva. É o símbolo da luz interior que ilumina as decisões materiais complexas.</p>
+29:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 29 representa a força da intuição e da sensibilidade espiritual transformadas em resultados práticos no mundo. Ela indica que sua jornada é guiada por uma percepção profunda que vai além do óbvio, permitindo que você antecipe tendências e proteja seus interesses com uma sabedoria quase instintiva. É o símbolo da luz interior que ilumina as decisões materiais complexas.</p>
 <p>No aspecto positivo, esta influência manifesta um magnetismo pessoal poderoso e um sucesso que parece vir de fontes invisíveis de sorte e proteção. Você toma decisões acertadas em momentos críticos porque confia na sua voz interna, atraindo abundância e reconhecimento através da sua originalidade e profundidade. É um ciclo de cura e prosperidade, onde a sua conexão com o seu propósito de alma traz um brilho único para todas as suas realizações mundanas.</p>
-<p>No entanto, o aspecto negativo alerta para o perigo das ilusões, do fanatismo ou de uma fuga da realidade prática para um mundo de fantasias. A instabilidade emocional pode gerar confusão em seus negócios e relações, dificultando a concretização de seus planos. A Potência 29 ensina que a intuição é um guia sagrado, mas que ela deve ser aterrada pela razão para que o seu potencial espiritual se transforme em conquistas físicas sólidas.</p>`,
+<p>No entanto, o aspecto negativo alerta para o perigo das ilusões, do fanatismo ou de uma fuga da realidade prática para um mundo de fantasias. A instabilidade emocional pode gerar confusão em seus negócios e relações, dificultando a concretização de seus planos. A Potência 29 ensina que a intuição é um guia sagrado, mas que ela deve ser aterrada pela razão para que o seu potencial espiritual se transforme em conquistas sólidas.</p>`,
 30:`<p>Na estrutura principal de você, a Potência 30 simboliza a realização através da ordem, da lei e do compromisso com a verdade. Ela indica que você atingiu um patamar onde suas ações são pesadas pelo critério da justiça, exigindo que você assuma a responsabilidade total pelo seu destino. É o símbolo da colheita merecida, onde a estrutura da sua vida se estabiliza de acordo com a retidão e a disciplina que você aplicou até aqui.</p>
 <p>Quando vivida positivamente, esta potência manifesta segurança material, resolução de pendências jurídicas ou burocráticas e um sólido reconhecimento profissional. Você experimenta a paz de quem construiu sobre bases honestas, sentindo que a vida se organiza de forma eficiente ao seu redor. É uma fase de consolidação de poder e prestígio, onde a sua palavra tem peso e a sua integridade é o escudo que garante a continuidade do seu sucesso.</p>
 <p>Pelo lado negativo, o rigor excessivo, a teimosia ou a dificuldade em perdoar falhas próprias e alheias podem gerar um ambiente de tensão e isolamento. Se houve negligência no passado, esta potência pode trazer cobranças severas da realidade. A Potência 30 ensina que a justiça é o equilíbrio dinâmico da vida; agir com equilíbrio e honestidade é a única forma de garantir uma estabilidade que seja verdadeiramente duradoura e recompensadora.</p>`,  
 
-31:`<p>Na estrutura principal de você, a Potência 31 representa a necessidade de recolhimento estratégico para a reorganização da sua força vital e dos seus planos materiais. Ela indica que sua jornada física atingiu um ponto onde o movimento contínuo deve dar lugar ao silêncio para que a clareza retorne. É o símbolo da prudência necessária, onde você se afasta das pressões externas para ouvir sua própria sabedoria e fortalecer seus alicerces antes de um novo ciclo de expansão.</p>
-<p>No aspecto positivo, esta influência manifesta um profundo autoconhecimento e um amadurecimento que evita erros por impulsividade. Você utiliza este tempo para planejar com precisão, agindo com uma segurança que inspira respeito e autoridade. É uma fase de cura e fortalecimento interno, onde o descanso e a análise cuidadosa dos fatos garantem que seus próximos passos sejam certeiros, sólidos e extremamente produtivos no mundo físico.</p>
+31:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 31 representa a necessidade de recolhimento estratégico para a reorganização da sua força vital e dos seus planos materiais. Ela indica que sua jornada atingiu um ponto onde o movimento contínuo deve dar lugar ao silêncio para que a clareza retorne. É o símbolo da prudência necessária, onde você se afasta das pressões externas para ouvir sua própria sabedoria e fortalecer seus alicerces antes de um novo ciclo de expansão.</p>
+<p>No aspecto positivo, esta influência manifesta um profundo autoconhecimento e um amadurecimento que evita erros por impulsividade. Você utiliza este tempo para planejar com precisão, agindo com uma segurança que inspira respeito e autoridade. É uma fase de cura e fortalecimento interno, onde o descanso e a análise cuidadosa dos fatos garantem que seus próximos passos sejam certeiros, sólidos e extremamente produtivos no mundo.</p>
 <p>No entanto, o aspecto negativo alerta para o risco do isolamento por medo do enfrentamento social ou da procrastinação disfarçada de reflexão. A falta de iniciativa pode levar à perda de oportunidades valiosas por puro receio de errar. A Potência 31 ensina que o retiro deve ser uma ferramenta de poder e não um lugar de fuga; saber quando parar é tão importante quanto saber quando avançar para garantir o sucesso duradouro.</p>`,
-32:`<p>Na estrutura principal de você, a Potência 32 simboliza a virada da sorte e o movimento favorável das circunstâncias externas em direção aos seus objetivos. Ela representa a ciclicidade da vida, indicando que após períodos de esforço ou espera, a roda do destino volta a girar, trazendo novas oportunidades, viagens e encontros providenciais. É a energia do dinamismo que recompensa a sua flexibilidade e a sua prontidão para agir no momento certo.</p>
+ 
+ 32:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 32 simboliza a virada da sorte e o movimento favorável das circunstâncias externas em direção aos seus objetivos. Ela representa a ciclicidade da vida, indicando que após períodos de esforço ou espera, a roda do destino volta a girar, trazendo novas oportunidades, viagens e encontros providenciais. É a energia do dinamismo que recompensa a sua flexibilidade e a sua prontidão para agir no momento certo.</p>
 <p>Vivida positivamente, esta potência manifesta uma sucessão de eventos afortunados e uma expansão rápida em diversas áreas da sua vida. Você se sente no lugar certo e na hora certa, atraindo recursos e parcerias que impulsionam sua carreira e seu bem-estar. É um ciclo de renovação e otimismo, onde a sua capacidade de se adaptar às mudanças garante que você suba de nível social e material com uma fluidez surpreendente.</p>
 <p>Pelo lado negativo, o excesso de mudanças ou a dependência exclusiva da sorte pode gerar instabilidade e falta de foco. Confiar apenas no acaso sem manter uma estratégia sólida pode levar a ganhos rápidos que desaparecem com a mesma velocidade. A Potência 32 ensina que o destino oferece as chances, mas é a sua vontade consciente e estratégica que deve dar a direção final para que a prosperidade seja permanente e segura.</p>`,
-33:`<p>Na estrutura principal de você, a Potência 33 representa a força da resiliência e a capacidade de dominar situações complexas através da determinação suave e persistente. Ela indica que sua jornada é marcada por uma vitalidade que permite superar qualquer resistência externa sem precisar recorrer à força bruta. É o símbolo do autodomínio, onde você aprende que a inteligência emocional é a sua ferramenta mais poderosa para conquistar o seu espaço no mundo.</p>
+33:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 33 representa a força da resiliência e a capacidade de dominar situações complexas através da determinação suave e persistente. Ela indica que sua jornada é marcada por uma vitalidade que permite superar qualquer resistência externa sem precisar recorrer à força bruta. É o símbolo do autodomínio, onde você aprende que a inteligência emocional é a sua ferramenta mais poderosa para conquistar o seu espaço no mundo.</p>
 <p>No aspecto positivo, esta influência manifesta uma coragem inabalável e um magnetismo pessoal que atrai sucesso e colaboração. Você enfrenta desafios com serenidade, transformando conflitos em oportunidades de crescimento através da sua firmeza de caráter. É um ciclo de grandes vitórias pessoais, onde a sua saúde e disposição física estão em alta, permitindo que você lidere projetos e pessoas com uma autoridade natural e respeitada.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da impaciência, do desejo de controle excessivo ou do uso da manipulação para obter o que deseja. A força mal canalizada pode gerar desgaste físico e tensões desnecessárias em suas relações. A Potência 33 ensina que a verdadeira soberania sobre a matéria nasce da harmonia interna; quanto mais calmo é o seu centro, maior é o seu poder de influência sobre a realidade externa.</p>`,
-34:`<p>Na estrutura principal de você, a Potência 34 atua como um ciclo de reavaliação profunda e sacrifício consciente em favor de um propósito maior e mais sólido. Ela rege a vida indicando que certas pausas na ação externa são fundamentais para que ocorra uma mudança de perspectiva necessária para o seu progresso. É o símbolo da visão renovada, onde você percebe que abrir mão de algo agora é o que garantirá uma conquista muito mais valiosa no futuro.</p>
+34:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 34 atua como um ciclo de reavaliação profunda e sacrifício consciente em favor de um propósito maior e mais sólido. Ela rege a vida indicando que certas pausas na ação externa são fundamentais para que ocorra uma mudança de perspectiva necessária para o seu progresso. É o símbolo da visão renovada, onde você percebe que abrir mão de algo agora é o que garantirá uma conquista muito mais valiosa no futuro.</p>
 <p>Vivida positivamente, esta potência manifesta uma paciência extraordinária e uma sabedoria que nasce da aceitação dos tempos naturais da vida. Você utiliza este período para se libertar de velhos vícios de comportamento e para fortalecer sua resiliência espiritual e mental. É uma fase de maturação onde a sua força interior cresce silenciosamente, preparando você para assumir responsabilidades maiores com uma base emocional e ética muito mais firme.</p>
 <p>Pelo lado negativo, pode surgir um sentimento de vitimização ou uma estagnação amarga por não entender o sentido do momento. A resistência em soltar padrões antigos pode gerar uma sensação de estar "preso" às circunstâncias. A Potência 34 ensina que parar voluntariamente para observar e mudar a rota é um ato de suprema inteligência, permitindo que o sucesso futuro seja construído sobre uma verdade interna incontestável.</p>`,
-35:`<p>Na estrutura principal de você, a Potência 35 representa a transformação radical e o encerramento definitivo de ciclos que já não possuem energia vital. Em sua trajetória física, ela atua como uma força de renovação que remove o que é obsoleto para que o novo possa emergir com vigor. É o símbolo da transmutação, indicando que a sua realidade está sendo limpa de estruturas frágeis para dar lugar a uma existência mais autêntica e potente.</p>
+35:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 35 representa a transformação radical e o encerramento definitivo de ciclos que já não possuem energia vital. Em sua trajetória física, ela atua como uma força de renovação que remove o que é obsoleto para que o novo possa emergir com vigor. É o símbolo da transmutação, indicando que a sua realidade está sendo limpa de estruturas frágeis para dar lugar a uma existência mais autêntica e potente.</p>
 <p>No aspecto positivo, esta influência manifesta uma libertação profunda e a coragem necessária para recomeçar do zero, se necessário, com uma visão muito mais clara. Você experimenta o alívio de soltar fardos que bloqueavam sua prosperidade, ganhando uma força renovada para reconstruir sua carreira e suas relações sobre bases honestas. É um ciclo de renascimento onde as perdas aparentes revelam-se como grandes livramentos estratégicos.</p>
 <p>No entanto, o aspecto negativo alerta para o medo paralisante do fim e para a dor gerada pela resistência à mudança inevitável. O apego ao que está morrendo pode causar angústia e impedir que você veja as novas portas que já estão se abrindo. A Potência 35 ensina que na mecânica da evolução, a morte de uma fase é o útero da próxima; aceitar o fim com dignidade é a garantia de um recomeço glorioso e cheio de luz.</p>`,
-36:`<p>Na estrutura principal de você, a Potência 36 manifesta-se através da busca pelo equilíbrio sagrado, pela temperança e pela cura das suas estruturas materiais e emocionais. Ela rege sua trajetória pela moderação, indicando que o sucesso sustentável nasce da sua habilidade em evitar extremos e em agir com paciência. É o símbolo da alquimia prática, onde você aprende a combinar seus recursos com inteligência para criar uma vida estável e pacífica.</p>
+36:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 36 manifesta-se através da busca pelo equilíbrio sagrado, pela temperança e pela cura das suas estruturas materiais e emocionais. Ela rege sua trajetória pela moderação, indicando que o sucesso sustentável nasce da sua habilidade em evitar extremos e em agir com paciência. É o símbolo da alquimia prática, onde você aprende a combinar seus recursos com inteligência para criar uma vida estável e pacífica.</p>
 <p>Quando vivida positivamente, esta potência manifesta serenidade, saúde equilibrada e uma diplomacia que resolve impasses de forma suave e eficiente. Você se torna um ponto de equilíbrio para os outros, atraindo confiança e parcerias duradouras baseadas na cooperação mútua. É uma fase de regeneração física e financeira, onde a constância e a moderação garantem que você avance sem as turbulências causadas pela pressa ou pelo excesso de ambição.</p>
 <p>No aspecto negativo, a busca por harmonia pode se transformar em passividade ou em uma tendência a aceitar situações medíocres para evitar o esforço da mudança. A falta de firmeza em decisões cruciais pode gerar uma lentidão que atrasa seus resultados. A Potência 36 ensina que o verdadeiro equilíbrio exige uma vontade ativa; é a arte de fluir com as circunstâncias sem nunca perder o foco na direção que você escolheu para o seu destino.</p>`,
-37:`<p>Na estrutura principal de você, a Potência 37 simboliza o magnetismo realizador e o confronto necessário com as ambições e desejos do plano material. Ela traz para a sua realidade física uma energia de poder e influência muito forte, indicando que você possui o carisma e a astúcia necessários para conquistar grandes espaços sociais e financeiros. É a força primordial da matéria que exige ser guiada por uma consciência desperta para não gerar aprisionamentos.</p>
+37:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 37 simboliza o magnetismo realizador e o confronto necessário com as ambições e desejos do plano material. Ela traz para a sua realidade física uma energia de poder e influência muito forte, indicando que você possui o carisma e a astúcia necessários para conquistar grandes espaços sociais e financeiros. É a força primordial da matéria que exige ser guiada por uma consciência desperta para não gerar aprisionamentos.</p>
 <p>Vivida positivamente, esta potência manifesta um sucesso material impressionante e uma capacidade de liderança estratégica que atrai recursos abundantes. Você encontra a coragem para romper tabus e limitações, agindo com uma audácia que o coloca em posições de destaque. É um ciclo de grande vigor e realização, onde a sua inteligência prática e seu magnetismo pessoal trabalham juntos para materializar seus projetos mais ousados com eficiência.</p>
 <p>Pelo lado negativo, o foco exclusivo no ganho pessoal e no controle sobre os outros pode levar a comportamentos manipuladores ou a um vazio existencial profundo. A obsessão pelo poder pode criar prisões emocionais e conflitos éticos que comprometem sua paz. A Potência 37 ensina que o poder material só é uma ferramenta de evolução real quando está a serviço de um propósito que respeita a liberdade e a integridade de todos envolvidos.</p>`,
-38:`<p>Na estrutura principal de você, a Potência 38 representa a quebra brusca de ilusões e a necessidade imperativa de reconstrução sobre bases verdadeiras. Em sua vida física, ela atua como um despertador que derruba o que foi construído com orgulho, falsidade ou negligência, forçando você a encarar os fatos como eles são. Embora o choque inicial possa ser intenso, ele é o ponto de partida para a libertação de uma estrutura que já estava prestes a ruir.</p>
+38:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 38 representa a quebra brusca de ilusões e a necessidade imperativa de reconstrução sobre bases verdadeiras. Em sua vida física, ela atua como um despertador que derruba o que foi construído com orgulho, falsidade ou negligência, forçando você a encarar os fatos como eles são. Embora o choque inicial possa ser intenso, ele é o ponto de partida para a libertação de uma estrutura que já estava prestes a ruir.</p>
 <p>No aspecto positivo, esta influência manifesta uma clareza mental súbita e a oportunidade de edificar um futuro inabalável sobre a rocha da verdade. Ao se ver livre das máscaras e das situações opressivas, você ganha a chance de recomeçar com muito mais força e honestidade. É o momento de despertar da consciência, onde a destruição do supérfluo permite que o essencial finalmente floresça e que sua vida ganhe um sentido muito mais profundo e resiliente.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da revolta e do desespero diante de perdas materiais ou sociais imprevistas. A resistência em aceitar a falha de um projeto pode gerar amargura e impedir o aprendizado necessário para o novo ciclo. A Potência 38 ensina que certas quedas são, na verdade, livramentos da vida; é preciso ter humildade para aprender com os escombros e coragem para construir algo infinitamente melhor e mais seguro.</p>`,
-39:`<p>Na estrutura principal de você, a Potência 39 simboliza o surgimento da esperança, da inspiração e da renovação espiritual que guia suas ações no plano concreto. Ela indica que, após períodos de desafio ou mudança radical, a luz do seu propósito volta a brilhar com força, trazendo clareza e novas metas. É o símbolo da harmonia recuperada, sugerindo que o seu sucesso material será um reflexo direto da paz e da fé que você cultiva em seu interior.</p>
+39:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 39 simboliza o surgimento da esperança, da inspiração e da renovação espiritual que guia suas ações no plano concreto. Ela indica que, após períodos de desafio ou mudança radical, a luz do seu propósito volta a brilhar com força, trazendo clareza e novas metas. É o símbolo da harmonia recuperada, sugerindo que o seu sucesso material será um reflexo direto da paz e da fé que você cultiva em seu interior.</p>
 <p>Vivida positivamente, esta potência manifesta uma criatividade vibrante e uma sorte que parece atrair as pessoas e os recursos certos no momento exato. Você experimenta uma fase de grande otimismo, onde a sua presença transmite calma e inspiração, abrindo portas para parcerias generosas e projetos inovadores. É um ciclo de beleza e fluidez, onde a vida sorri para quem age com transparência e acredita na abundância infinita do destino.</p>
 <p>Pelo lado negativo, pode haver uma tendência ao idealismo ingênuo ou ao escapismo, esperando que a sorte resolva questões que exigem esforço prático. Perder-se em sonhos sem aterrizá-los pode levar a frustrações e ao desperdício de potencial criativo. A Potência 39 ensina que a esperança é a luz que ilumina o caminho, mas que é o seu passo firme e disciplinado que percorre a estrada e transforma a visão em realidade tangível e duradoura.</p>`,
 40:`<p>Na estrutura principal de você, a Potência 40 representa o mergulho nas profundezas das emoções e o enfrentamento de medos ancestrais para alcançar a verdadeira segurança interna. Em sua trajetória, ela rege a fase de maior sensibilidade e intuição, indicando que a realidade física está sendo moldada por forças subconscientes que precisam ser compreendidas. É o símbolo do mistério que precede a clareza, exigindo coragem para olhar além das aparências.</p>
 <p>No aspecto positivo, esta influência manifesta uma intuição poderosa e uma capacidade de percepção que protege você de enganos e perigos invisíveis. Você se torna capaz de ler as entrelinhas das situações sociais e financeiras, agindo com uma cautela sábia que garante sua estabilidade. É um ciclo de profunda cura emocional, onde o entendimento da sua própria sombra permite que você se torne alguém muito mais íntegro, empático e preparado para o sucesso.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da confusão mental, da paranoia ou da instabilidade emocional que gera insegurança em suas decisões práticas. Deixar-se levar por ilusões ou medos infundados pode travar seu progresso e causar conflitos em suas relações. A Potência 40 ensina que a sensibilidade é um dom de proteção, desde que seja iluminada pela razão e pela coragem de encarar a verdade sem filtros e sem fugas.</p>`,
-41:`<p>Na estrutura principal de você, a Potência 41 representa o triunfo da clareza, da verdade e da vitalidade plena em sua jornada física. Ela simboliza o momento em que a luz do entendimento dissipa todas as dúvidas, permitindo que você enxergue o caminho para o sucesso com absoluta nitidez. É o símbolo da alegria realizadora, indicando que suas ações estão em total sintonia com o seu propósito, o que atrai reconhecimento e prosperidade de forma natural.</p>
+41:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 41 representa o triunfo da clareza, da verdade e da vitalidade plena em sua jornada física. Ela simboliza o momento em que a luz do entendimento dissipa todas as dúvidas, permitindo que você enxergue o caminho para o sucesso com absoluta nitidez. É o símbolo da alegria realizadora, indicando que suas ações estão em total sintonia com o seu propósito, o que atrai reconhecimento e prosperidade de forma natural.</p>
 <p>No aspecto positivo, esta potência manifesta um sucesso radiante, saúde vigorosa e a concretização de projetos que trazem felicidade e bem-estar. Você experimenta um ciclo de grande magnetismo pessoal, onde sua presença inspira confiança e clareza nas outras pessoas. É uma fase de colheitas abundantes e celebração, onde a verdade atua como sua maior proteção e guia para uma expansão material e social segura.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da arrogância, da vaidade cega ou da superexposição desnecessária. O brilho excessivo do ego pode ocultar detalhes práticos importantes e gerar inveja ou conflitos de poder. A Potência 41 ensina que a verdadeira luz é aquela que aquece e ilumina sem queimar, exigindo humildade para que o sucesso seja compartilhado e mantido por bases éticas e humanas sólidas.</p>`,
-42:`<p>Na estrutura principal de você, a Potência 42 representa o chamado para o despertar da consciência e a avaliação profunda de suas escolhas de vida. Ela indica um momento de transição onde você é convidado a deixar para trás velhos julgamentos e culpas para assumir uma nova responsabilidade sobre seu destino físico. É o símbolo da ressurreição em vida, sinalizando que você possui a maturidade necessária para transformar sua realidade através de uma percepção mais elevada.</p>
+42:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 42 representa o chamado para o despertar da consciência e a avaliação profunda de suas escolhas de vida. Ela indica um momento de transição onde você é convidado a deixar para trás velhos julgamentos e culpas para assumir uma nova responsabilidade sobre seu destino físico. É o símbolo da ressurreição em vida, sinalizando que você possui a maturidade necessária para transformar sua realidade através de uma percepção mais elevada.</p>
 <p>Vivida positivamente, esta potência manifesta a libertação de padrões limitantes e a resolução de questões do passado que impediam seu progresso. Você experimenta uma renovação de propósitos, agindo com uma integridade que atrai respeito e abre portas para uma vida muito mais autêntica e próspera. É um ciclo de cura e clareza mental, onde o perdão — a si mesmo e aos outros — atua como a chave para uma nova e brilhante etapa de realizações.</p>
 <p>Pelo lado negativo, pode surgir a resistência em enfrentar a própria verdade, levando à autocondenação ou à repetição de erros antigos por medo da mudança. O julgamento severo das circunstâncias pode gerar amargura e estagnação. A Potência 42 ensina que o despertar exige coragem para olhar para trás com justiça e para frente com esperança, permitindo que a vida se renove de forma consciente e poderosa.</p>`,
-43:`<p>Na estrutura principal de você, a Potência 43 simboliza a integração final de todos os seus aprendizados e a conquista de um sucesso que reflete a totalidade do seu ser. Ela representa a conclusão de etapas complexas e a harmonia entre suas ambições materiais e sua evolução espiritual. É o símbolo da plenitude, indicando que você atingiu um estado de equilíbrio onde o mundo físico responde positivamente à sua clareza interna e ao seu esforço persistente.</p>
+43:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 43 simboliza a integração final de todos os seus aprendizados e a conquista de um sucesso que reflete a totalidade do seu ser. Ela representa a conclusão de etapas complexas e a harmonia entre suas ambições materiais e sua evolução espiritual. É o símbolo da plenitude, indicando que você atingiu um estado de equilíbrio onde o mundo físico responde positivamente à sua clareza interna e ao seu esforço persistente.</p>
 <p>No aspecto positivo, esta influência manifesta realizações globais, reconhecimento público e uma sensação de liberdade e pertencimento. Você se sente "em casa" no mundo, atraindo viagens, parcerias internacionais e novas oportunidades de expansão que consolidam sua autoridade. É um ciclo de triunfo merecido, onde a sua visão estratégica e sua integridade garantem uma prosperidade que é estável, vasta e profundamente recompensadora.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da inércia após a conquista ou do isolamento em uma zona de conforto dourada. O medo de que o ciclo termine pode gerar ansiedade ou um apego excessivo ao status conquistado. A Potência 43 ensina que a perfeição é dinâmica; cada grande conquista é o alicerce para um novo nível de evolução, exigindo que você continue em movimento para que a abundância continue fluindo.</p>`,
-44:`<p>Na estrutura principal de você, a Potência 44 representa a energia do mestre construtor aplicada à criação de um legado material e social inabalável. Ela indica que você possui uma capacidade extraordinária de organizar recursos e pessoas para manifestar visões de grande escala no plano físico. É o símbolo do pragmatismo elevado, onde a sua disciplina e sua vontade firme transformam grandes sonhos em estruturas concretas e duradouras.</p>
+44:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 44 representa a energia do mestre construtor aplicada à criação de um legado material e social inabalável. Ela indica que você possui uma capacidade extraordinária de organizar recursos e pessoas para manifestar visões de grande escala no plano físico. É o símbolo do pragmatismo elevado, onde a sua disciplina e sua vontade firme transformam grandes sonhos em estruturas concretas e duradouras.</p>
 <p>Vivida positivamente, esta potência manifesta um progresso financeiro sólido, autoridade respeitada e a construção de projetos que beneficiam o coletivo. Você demonstra uma resiliência exemplar, lidando com responsabilidades complexas com uma calma que transmite segurança a todos. É uma fase de conquistas institucionais e estabilidade de longo prazo, onde seu trabalho árduo é validado pelo sucesso tangível e pela admiração de seus pares e subordinados.</p>
 <p>Pelo lado negativo, o foco absoluto no poder e nos resultados materiais pode endurecer sua personalidade, gerando frieza emocional ou uma postura controladora e autoritária. O excesso de ambição pode cegá-lo para as necessidades humanas básicas ao seu redor. A Potência 44 ensina que a verdadeira grandeza de um legado físico não se mede apenas pela sua altura, mas pela justiça de seus fundamentos e pela humanidade de quem o construiu.</p>`,
-45:`<p>Na estrutura principal de você, a Potência 45 simboliza a força da comunicação e do conhecimento como ferramentas supremas de evolução e influência. Ela indica que sua jornada física é potencializada pela sua habilidade em articular ideias, negociar parcerias e buscar um aprendizado contínuo que refina sua atuação no mundo. É o símbolo do dinamismo intelectual, mostrando que o seu sucesso depende da sua capacidade de ser um eterno estudante da vida.</p>
+45:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 45 simboliza a força da comunicação e do conhecimento como ferramentas supremas de evolução e influência. Ela indica que sua jornada física é potencializada pela sua habilidade em articular ideias, negociar parcerias e buscar um aprendizado contínuo que refina sua atuação no mundo. É o símbolo do dinamismo intelectual, mostrando que o seu sucesso depende da sua capacidade de ser um eterno estudante da vida.</p>
 <p>No aspecto positivo, esta influência manifesta uma inteligência estratégica brilhante, versatilidade e uma facilidade natural em circular por diferentes esferas sociais e profissionais. Você atrai abundância através da diplomacia e do uso inteligente da informação, conquistando o seu espaço através do diálogo e da inovação. É um ciclo de expansão mental e material, onde novas ideias geram resultados rápidos e fortalecem sua autoridade de forma moderna e fluida.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da superficialidade, da fofoca ou do uso da inteligência para manipular os outros em benefício próprio. A dispersão de energia em muitos projetos ao mesmo tempo pode comprometer a solidez das suas realizações. A Potência 45 ensina que a comunicação é um poder sagrado; quando usada com ética e foco, ela é capaz de transformar qualquer realidade e abrir as portas mais difíceis do destino.</p>`,
-46:`<p>Na estrutura principal de você, a Potência 46 manifesta-se através da busca pela estabilidade afetiva e financeira como base para a sua segurança física. Ela rege a trajetória pela necessidade de harmonia e proteção, indicando que a sua realização material está conectada ao equilíbrio do seu ambiente doméstico e das suas relações mais próximas. É o símbolo da nutrição e do zelo, onde o sucesso é construído com afeto e responsabilidade.</p>
+46:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 46 manifesta-se através da busca pela estabilidade afetiva e financeira como base para a sua segurança física. Ela rege a trajetória pela necessidade de harmonia e proteção, indicando que a sua realização material está conectada ao equilíbrio do seu ambiente doméstico e das suas relações mais próximas. É o símbolo da nutrição e do zelo, onde o sucesso é construído com afeto e responsabilidade.</p>
 <p>Quando vivida positivamente, esta potência manifesta uma prosperidade equilibrada, conforto e uma sorte que parece proteger seus interesses e os de sua família. Você demonstra uma grande capacidade de gestão emocional e financeira, criando um refúgio seguro onde a vida pode florescer com paz e abundância. É um ciclo de consolidação de vínculos e patrimônio, onde a sua postura íntegra atrai colaboração e reconhecimento sincero das pessoas ao seu redor.</p>
 <p>Pelo lado negativo, pode surgir uma tendência à possessividade, ao ciúme ou a uma preocupação excessiva com a segurança que impede o crescimento e a aventura. O medo de perder o que conquistou pode torná-lo alguém conservador demais ou resistente a mudanças necessárias. A Potência 46 ensina que a verdadeira estabilidade é um estado interno; quando você está em paz consigo mesmo, a segurança externa torna-se uma consequência natural e fluida.</p>`,
-47:`<p>Na estrutura principal de você, a Potência 47 simboliza o poder do discernimento e da análise profunda aplicados à estratégia de vida. Ela indica que sua jornada exige momentos de retiro e observação cuidadosa para que você não desperdice sua força em batalhas inúteis ou projetos superficiais. É a energia do sábio estrategista, que entende que a verdadeira eficiência no mundo material nasce de um planejamento mental silencioso e rigoroso.</p>
+47:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 47 simboliza o poder do discernimento e da análise profunda aplicados à estratégia de vida. Ela indica que sua jornada exige momentos de retiro e observação cuidadosa para que você não desperdice sua força em batalhas inúteis ou projetos superficiais. É a energia do sábio estrategista, que entende que a verdadeira eficiência no mundo material nasce de um planejamento mental silencioso e rigoroso.</p>
 <p>Vivida positivamente, esta potência manifesta um amadurecimento intelectual que o torna imune a manipulações externas e enganos sociais. Você age com uma prudência que garante resultados certeiros, sendo capaz de resolver problemas complexos com uma visão que ninguém mais possui. É um ciclo de conquistas de alta qualidade, onde a sua autoridade é construída sobre o conhecimento real e a segurança das suas escolhas, gerando um progresso respeitado e duradouro.</p>
 <p>No entanto, o aspecto negativo alerta para o risco do perfeccionismo paralisante, do isolamento melancólico ou de uma postura fria e excessivamente crítica que afasta as pessoas. O medo de errar pode impedir que você coloque suas ideias em prática, mantendo-as apenas no campo teórico. A Potência 47 ensina que a análise deve servir à ação; a sabedoria só atinge seu propósito quando é usada para transformar o mundo físico e melhorar a experiência de vida.</p>`,
-48:`<p>Na estrutura principal de você, a Potência 48 atua através da força de vontade, da resiliência física e da determinação em vencer as limitações do ambiente. Ela representa o momento em que sua coragem é convocada para assumir o controle total da sua realidade material, exigindo que você dome suas fraquezas internas para conquistar o sucesso externo. É o símbolo da vitória pelo esforço pessoal, onde o seu caráter é forjado na superação de desafios concretos.</p>
+48:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 48 atua através da força de vontade, da resiliência física e da determinação em vencer as limitações do ambiente. Ela representa o momento em que sua coragem é convocada para assumir o controle total da sua realidade material, exigindo que você dome suas fraquezas internas para conquistar o sucesso externo. É o símbolo da vitória pelo esforço pessoal, onde o seu caráter é forjado na superação de desafios concretos.</p>
 <p>No aspecto positivo, esta influência manifesta um fortalecimento notável da sua autoconfiança e a obtenção de vitórias expressivas através da persistência. Você experimenta a satisfação de conquistar sua independência e seu espaço no mundo pelo seu próprio mérito, ganhando o respeito de todos pela sua firmeza e disciplina. É uma fase de grande vigor e realização material, onde a sua capacidade de não desistir garante que você atinja metas que outros considerariam impossíveis.</p>
 <p>Pelo lado negativo, a luta constante pode levar a um estado de estresse crônico, agressividade ou a um endurecimento emocional que prejudica sua saúde e suas relações interpessoais. O desejo de vencer a qualquer custo pode cegar você para o valor da cooperação e do descanso. A Potência 48 ensina que a verdadeira força é resiliente e serena; ela não precisa gritar para ser ouvida, nem usar de violência para se impor e conquistar o que deseja no mundo físico.</p>`,
-49:`<p>Na estrutura principal de você, a Potência 49 representa o equilíbrio sagrado entre a diplomacia social e a justiça material. Ela indica que sua trajetória é fortalecida pela sua habilidade em agir com ética, transparência e respeito às leis — tanto humanas quanto universais. É o símbolo da retidão, mostrando que o seu sucesso duradouro depende da sua capacidade de ser justo em todas as suas parcerias e transações no plano físico.</p>
+49:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 49 representa o equilíbrio sagrado entre a diplomacia social e a justiça material. Ela indica que sua trajetória é fortalecida pela sua habilidade em agir com ética, transparência e respeito às leis — tanto humanas quanto universais. É o símbolo da retidão, mostrando que o seu sucesso duradouro depende da sua capacidade de ser justo em todas as suas parcerias e transações no plano físico.</p>
 <p>Vivida positivamente, esta potência manifesta reconhecimento público, resoluções favoráveis em questões burocráticas ou legais e uma estabilidade baseada na confiança mútua. Você atrai oportunidades e aliados de valor porque sua conduta é impecável e suas decisões são pautadas no equilíbrio e na verdade. É um ciclo de consolidação de prestígio, onde a sua integridade atua como um escudo que protege suas conquistas e garante um progresso seguro e respeitado.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da indecisão, da preocupação excessiva com as aparências sociais ou de uma postura hipócrita para manter uma paz superficial. Se houve falta de ética no passado, este período pode trazer cobranças severas da realidade. A Potência 49 ensina que a justiça é a base de toda construção real; agir com equilíbrio e honestidade é a única forma de garantir uma prosperidade que resista ao teste do tempo e da consciência.</p>`,
 50:`<p>Na estrutura principal de você, a Potência 50 simboliza a renovação das alianças e o despertar de novas perspectivas através da troca e da colaboração. Ela rege a vida pelo princípio da reciprocidade, indicando que este é um momento de expandir seus horizontes unindo sua força à de outras pessoas que vibram na mesma sintonia. É a energia do movimento coletivo, onde o seu crescimento pessoal é acelerado pela qualidade dos seus vínculos e contratos.</p>
 <p>Quando vivida positivamente, esta potência manifesta sorte em parcerias, reconciliações produtivas e um novo fôlego em sua vida profissional e afetiva. Você sente que a vida flui melhor quando você compartilha ideias e recursos, atraindo encontros providenciais que abrem caminhos antes bloqueados. É uma fase de otimismo e progresso social, onde a sua disposição para cooperar gera um ambiente de sucesso compartilhado e bem-estar mútuo.</p>
 <p>Pelo lado negativo, pode surgir uma dependência excessiva da aprovação alheia ou uma tendência a entrar em acordos desequilibrados por medo da solidão ou da autonomia. A falta de critérios na escolha de seus aliados pode gerar decepções e perdas financeiras. A Potência 50 ensina que a união só é uma potência real quando ocorre entre seres inteiros e independentes, onde a soma das partes cria uma realidade muito maior, mais justa e próspera para todos.</p>`,
-51:`<p>Na estrutura principal de você, a Potência 51 representa a força da intuição e da percepção profunda aplicadas à jornada da vida. Ela indica que você possui uma sensibilidade aguçada para identificar oportunidades e perigos antes que eles se materializem, agindo com uma sabedoria que vai além da lógica comum. É o símbolo da luz interior, mostrando que o seu sucesso depende da sua coragem em confiar na sua voz interna para tomar decisões cruciais.</p>
+51:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 51 representa a força da intuição e da percepção profunda aplicadas à jornada da vida. Ela indica que você possui uma sensibilidade aguçada para identificar oportunidades e perigos antes que eles se materializem, agindo com uma sabedoria que vai além da lógica comum. É o símbolo da luz interior, mostrando que o seu sucesso depende da sua coragem em confiar na sua voz interna para tomar decisões cruciais.</p>
 <p>No aspecto positivo, esta influência manifesta um magnetismo pessoal poderoso e uma sorte que parece guiada por uma proteção invisível. Você toma decisões acertadas em momentos de incerteza, atraindo abundância e reconhecimento através da sua originalidade. É um ciclo de cura e prosperidade, onde a sua conexão com a verdade da sua alma traz um brilho único e resultados concretos para todas as suas realizações mundanas.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo das ilusões, do fanatismo ou de uma fuga da realidade prática. A instabilidade emocional pode gerar confusão em seus negócios e relações, dificultando a materialização dos seus planos. A Potência 51 ensina que a intuição é um guia sagrado, mas que ela deve ser equilibrada pela razão para que o seu potencial se transforme em conquistas reais e duradouras.</p>`,
-52:`<p>Na estrutura principal de você, a Potência 52 simboliza a colheita merecida e a estabilidade alcançada através da retidão e da disciplina na jornada da vida. Ela indica que você atingiu um patamar onde suas ações passadas são pesadas pela justiça, trazendo a organização necessária para o seu progresso. É o símbolo da ordem e da lei, sugerindo que a sua realidade se estabiliza de acordo com a integridade que você aplicou em sua caminhada.</p>
+52:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 52 simboliza a colheita merecida e a estabilidade alcançada através da retidão e da disciplina na jornada da vida. Ela indica que você atingiu um patamar onde suas ações passadas são pesadas pela justiça, trazendo a organização necessária para o seu progresso. É o símbolo da ordem e da lei, sugerindo que a sua realidade se estabiliza de acordo com a integridade que você aplicou em sua caminhada.</p>
 <p>Vivida positivamente, esta potência manifesta segurança material, resolução de pendências burocráticas e um sólido reconhecimento profissional. Você experimenta a paz de quem construiu sobre bases honestas, sentindo que a vida se organiza de forma eficiente ao seu redor. É uma fase de consolidação de prestígio, onde a sua palavra tem peso e a sua conduta ética é o escudo que garante a continuidade e a expansão do seu sucesso.</p>
 <p>Pelo lado negativo, o rigor excessivo, a teimosia ou a dificuldade em perdoar falhas podem gerar um ambiente de tensão e isolamento social. Se houve negligência ética no passado, este período pode trazer cobranças severas da realidade. A Potência 52 ensina que a justiça é o equilíbrio dinâmico da vida; agir com honestidade e transparência é a única forma de garantir uma estabilidade que seja verdadeiramente recompensadora.</p>`,
-53:`<p>Na estrutura principal de você, a Potência 53 representa a necessidade de retiro estratégico e recuperação de energias na jornada da vida. Ela indica que sua trajetória atingiu um ponto onde o movimento contínuo deve dar lugar ao silêncio para que a clareza retorne. É o símbolo do recolhimento consciente, onde você se afasta das pressões externas para processar emoções, organizar pensamentos e fortalecer sua estrutura antes do próximo avanço.</p>
+53:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 53 representa a necessidade de retiro estratégico e recuperação de energias na jornada da vida. Ela indica que sua trajetória atingiu um ponto onde o movimento contínuo deve dar lugar ao silêncio para que a clareza retorne. É o símbolo do recolhimento consciente, onde você se afasta das pressões externas para processar emoções, organizar pensamentos e fortalecer sua estrutura antes do próximo avanço.</p>
 <p>No aspecto positivo, esta influência manifesta um profundo autoconhecimento e um equilíbrio emocional que traz uma visão nítida da realidade. Você utiliza este período para se curar de desgastes passados e planejar seu futuro com inteligência. É uma fase de fortalecimento, onde o descanso não é fuga, mas uma ferramenta estratégica que garante que suas próximas ações no mundo físico sejam precisas, vigorosas e bem fundamentadas.</p>
 <p>No entanto, o aspecto negativo alerta para o risco do isolamento excessivo por medo de enfrentar o mundo ou de uma inércia paralisante. Se o retiro não for usado para a renovação, ele pode se transformar em uma prisão mental de medos alimentados. A Potência 53 ensina que o recolhimento consciente é o que dá suporte para a manifestação do verdadeiro poder, pois a força real nasce no silêncio e na organização da alma.</p>`,
-54:`<p>Na estrutura principal de você, a Potência 54 simboliza o movimento da sorte e as mudanças rápidas que impulsionam a jornada da vida. Ela representa a ciclicidade da existência, indicando que após um tempo de esforço ou estagnação, as circunstâncias voltam a girar a seu favor, trazendo novas oportunidades e encontros providenciais. É a energia da renovação, onde a sua flexibilidade e prontidão para agir são as chaves para aproveitar o fluxo da abundância.</p>
+54:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 54 simboliza o movimento da sorte e as mudanças rápidas que impulsionam a jornada da vida. Ela representa a ciclicidade da existência, indicando que após um tempo de esforço ou estagnação, as circunstâncias voltam a girar a seu favor, trazendo novas oportunidades e encontros providenciais. É a energia da renovação, onde a sua flexibilidade e prontidão para agir são as chaves para aproveitar o fluxo da abundância.</p>
 <p>Vivida positivamente, esta potência manifesta uma sucessão de eventos afortunados e um progresso rápido em diversas áreas. Você se sente no lugar certo e na hora certa, atraindo recursos e parcerias que parecem cair do céu para favorecer seus projetos. É um ciclo de expansão e otimismo, onde a sua capacidade de se adaptar garante que você suba de nível social e material, desfrutando de uma vitalidade que renova seu prazer de viver.</p>
 <p>Pelo lado negativo, a instabilidade gerada pelo excesso de mudanças ou a falta de controle sobre o destino pode causar ansiedade. Confiar apenas na sorte sem manter bases sólidas pode levar a ganhos voláteis que não se sustentam. A Potência 54 ensina que o destino oferece as oportunidades, mas é a sua vontade consciente e estratégica que deve dar a direção final para que o sucesso conquistado se torne permanente.</p>`,
-55:`<p>Na estrutura principal de você, a Potência 55 representa a coragem da resiliência e o autodomínio necessário na jornada da vida. Ela indica que sua trajetória é movida por uma força vital intensa que permite superar obstáculos sem o uso da agressividade. É o símbolo da determinação suave, onde você aprende que a verdadeira potência nasce da harmonia entre a sua vontade e a sua capacidade de agir com mansidão e inteligência emocional.</p>
+55:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 55 representa a coragem da resiliência e o autodomínio necessário na jornada da vida. Ela indica que sua trajetória é movida por uma força vital intensa que permite superar obstáculos sem o uso da agressividade. É o símbolo da determinação suave, onde você aprende que a verdadeira potência nasce da harmonia entre a sua vontade e a sua capacidade de agir com mansidão e inteligência emocional.</p>
 <p>No aspecto positivo, esta influência manifesta uma coragem inabalável e um magnetismo pessoal que atrai sucesso e admiração. Você enfrenta desafios complexos com serenidade, usando sua energia interna para construir uma realidade próspera e influente. É um ciclo de grandes vitórias pessoais, onde sua autoconfiança atua como um escudo protetor, permitindo que você lidere situações com uma autoridade natural baseada no equilíbrio.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da impaciência, do desejo de controle absoluto ou do uso abusivo da força. A energia mal canalizada pode se transformar em desgaste físico ou em conflitos desnecessários que atrasam seus resultados. A Potência 55 ensina que o seu sucesso duradouro depende da sua capacidade de manter a paz no coração mesmo diante das maiores batalhas, garantindo que sua força seja sempre construtiva.</p>
 <p>É hora de finalizar uma ideia, um período ou uma situação que se esgotou.</p>`,
-56:`<p>Na estrutura principal de você, a Potência 56 atua como um ciclo de maturação profunda e mudança de perspectiva na jornada da vida. Ela rege a trajetória indicando que certas pausas na ação externa são fundamentais para que ocorra um fortalecimento interior e estratégico. É o símbolo da visão renovada, sugerindo que o que parece um atraso é, na verdade, um preparo essencial para uma vitória muito mais sólida e significativa no futuro.</p>
+56:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 56 atua como um ciclo de maturação profunda e mudança de perspectiva na jornada da vida. Ela rege a trajetória indicando que certas pausas na ação externa são fundamentais para que ocorra um fortalecimento interior e estratégico. É o símbolo da visão renovada, sugerindo que o que parece um atraso é, na verdade, um preparo essencial para uma vitória muito mais sólida e significativa no futuro.</p>
 <p>Vivida positivamente, esta potência manifesta uma paciência extraordinária e uma sabedoria que nasce do entendimento dos ciclos naturais. Você utiliza este tempo para se libertar de velhos hábitos e para organizar suas metas sob um novo ângulo, ganhando uma clareza que o torna imune às pressões do ego. É uma fase de crescimento silencioso, onde sua força interior se consolida para que você possa assumir responsabilidades maiores com total segurança.</p>
 <p>Pelo lado negativo, pode surgir um sentimento de vitimização ou uma paralisia por medo de tomar decisões difíceis. A estagnação pode se tornar amarga se você não compreender o propósito do momento, levando a um estado de inércia que consome sua energia. A Potência 56 ensina que saber esperar o momento certo é uma das formas mais elevadas de inteligência, e que o sacrifício de urgências fúteis é o que garante a colheita dos grandes frutos.</p>`,
-57:`<p>Na estrutura principal de você, a Potência 57 representa a transformação profunda e o encerramento de ciclos obsoletos na jornada da vida. Ela atua como um agente de renovação radical, indicando que para o novo florescer, as estruturas antigas e sem vida devem ser deixadas para trás com dignidade. É o símbolo da transmutação, onde você abandona fardos do passado para assumir uma nova identidade, mais potente e alinhada com seu destino.</p>
+57:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 57 representa a transformação profunda e o encerramento de ciclos obsoletos na jornada da vida. Ela atua como um agente de renovação radical, indicando que para o novo florescer, as estruturas antigas e sem vida devem ser deixadas para trás com dignidade. É o símbolo da transmutação, onde você abandona fardos do passado para assumir uma nova identidade, mais potente e alinhada com seu destino.</p>
 <p>No aspecto positivo, esta influência manifesta uma libertação extraordinária e a reconstrução de sua realidade sobre alicerces muito mais puros e eficientes. Você sente o alívio de soltar situações que bloqueavam sua evolução, ganhando um vigor renovado para recomeçar com clareza e determinação. É um ciclo de renascimento onde as mudanças forçadas revelam-se como livramentos necessários que permitem que você construa um sucesso muito mais autêntico.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo do apego desesperado ao que está findando, gerando sofrimento e uma sensação de ruína iminente. A resistência à mudança inevitável pode causar traumas e impedir que você perceba as novas oportunidades que já estão surgindo. A Potência 57 ensina que a renovação é a lei da vida; aceitar o fim de uma etapa é o ato de coragem que garante que você jamais fique estagnado ou preso ao que não lhe serve mais.</p>`,
-58:`<p>Na estrutura principal de você, a Potência 58 manifesta-se através da temperança e da busca pelo equilíbrio sagrado na jornada da vida. Ela rege sua trajetória pela moderação, indicando que o sucesso sustentável nasce da sua capacidade de harmonizar opostos e evitar excessos que desgastam sua vitalidade física e emocional. É o símbolo da regeneração, onde você aprende a conduzir seus recursos com paciência, serenidade e inteligência prática.</p>
+58:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 58 manifesta-se através da temperança e da busca pelo equilíbrio sagrado na jornada da vida. Ela rege sua trajetória pela moderação, indicando que o sucesso sustentável nasce da sua capacidade de harmonizar opostos e evitar excessos que desgastam sua vitalidade física e emocional. É o símbolo da regeneração, onde você aprende a conduzir seus recursos com paciência, serenidade e inteligência prática.</p>
 <p>Quando vivida positivamente, esta potência manifesta uma saúde equilibrada, paz de espírito e uma diplomacia que resolve conflitos de forma suave. Você se torna um mediador eficiente, atraindo parcerias duradouras baseadas na confiança e na cooperação. É uma fase de estabilidade financeira e pessoal, onde a constância e a capacidade de se adaptar com doçura às circunstâncias garantem um progresso constante e livre das turbulências dos extremos.</p>
 <p>No aspecto negativo, a busca por harmonia pode se transformar em passividade, indecisão ou uma tendência a se anular para evitar confrontos necessários. Tentar manter uma paz superficial pode gerar estagnação e a perda da sua própria identidade. A Potência 58 ensina que a verdadeira temperança exige firmeza interior; é o equilíbrio entre saber quando fluir com os outros e quando manter a solidez da sua própria verdade e propósito material.</p>`,
-59:`<p>Na estrutura principal de você, a Potência 59 simboliza o magnetismo realizador e o confronto com as grandes ambições na jornada da vida. Ela traz para o plano concreto uma energia de poder imensa, indicando que você possui as ferramentas necessárias para conquistar riqueza material e influência social, mas que isso exige uma vigilância ética rigorosa. É o símbolo da força primordial que move o mundo, revelando que suas paixões podem ser o combustível para o topo.</p>
+59:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 59 simboliza o magnetismo realizador e o confronto com as grandes ambições na jornada da vida. Ela traz para o plano concreto uma energia de poder imensa, indicando que você possui as ferramentas necessárias para conquistar riqueza material e influência social, mas que isso exige uma vigilância ética rigorosa. É o símbolo da força primordial que move o mundo, revelando que suas paixões podem ser o combustível para o topo.</p>
 <p>Vivida positivamente, esta potência manifesta um carisma avassalador, inteligência estratégica e um sucesso material que muitos considerariam impossível. Você encontra coragem para romper limitações e agir com uma audácia que o coloca em posições de liderança e impacto. É um ciclo de grande vigor, onde sua vontade de vencer se materializa em conquistas tangíveis, permitindo que você exerça poder com eficiência e conquiste o respeito do seu meio social.</p>
 <p>Pelo lado negativo, o foco exclusivo no ganho material e no controle pode levar a comportamentos manipuladores ou a um vazio emocional apesar do sucesso externo. O egoísmo desmedido pode criar conflitos destrutivos e prisões de desejo que comprometem sua liberdade. A Potência 59 ensina que o poder é uma ferramenta neutra; ele só se torna um aliado da sua evolução quando é guiado por uma consciência que valoriza a integridade acima da conveniência.</p>`,
 60:`<p>Na estrutura principal de você, a Potência 60 representa a quebra de ilusões e o despertar para a realidade nua e crua na jornada da vida. Ela atua como um raio que atinge as estruturas construídas sobre bases frágeis ou orgulho excessivo, forçando uma reconstrução total sobre o que é verdadeiramente sólido. Embora o impacto inicial pareça desestabilizador, ele tem o propósito de libertar você de prisões de aparências e de situações opressivas.</p>
 <p>No aspecto positivo, esta influência manifesta uma libertação súbita e a oportunidade de recomeçar com uma visão limpa e renovada. A queda das velhas barreiras em sua vida permite que você enxergue o horizonte de forma plena, sem as amarras que sua própria mente ou a sociedade haviam imposto. É o momento do despertar da consciência, onde a verdade prevalece e você ganha a chance de edificar um futuro inabalável, baseado na integridade absoluta dos fatos.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo do colapso emocional ou da revolta contra o destino por não aceitar a própria responsabilidade na ruína de certos projetos. A dor da perda pode cegar para o aprendizado necessário. A Potência 60 ensina que certas destruições são atos de misericórdia da vida para que você não continue investindo em algo falso; é preciso ter humildade para aprender com os escombros e coragem para construir algo infinitamente melhor.</p>`,
 
-61:`<p>Na estrutura principal de você, a Potência 61 representa o surgimento da esperança e da inspiração renovada que guia suas ações na jornada da vida. Ela indica que, após períodos de grandes desafios ou mudanças drásticas, a luz do seu propósito volta a brilhar, trazendo clareza sobre suas metas futuras. É o símbolo da harmonia recuperada, sugerindo que o seu sucesso material será um reflexo direto da fé e do otimismo que você cultiva em seu interior.</p>
+61:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 61 representa o surgimento da esperança e da inspiração renovada que guia suas ações na jornada da vida. Ela indica que, após períodos de grandes desafios ou mudanças drásticas, a luz do seu propósito volta a brilhar, trazendo clareza sobre suas metas futuras. É o símbolo da harmonia recuperada, sugerindo que o seu sucesso material será um reflexo direto da fé e do otimismo que você cultiva em seu interior.</p>
 <p>Vivida positivamente, esta potência manifesta uma criatividade vibrante e uma sorte que parece atrair as pessoas e os recursos certos no momento exato. Você experimenta uma fase de grande leveza, onde a sua presença transmite calma e inspiração, abrindo portas para parcerias generosas. É um ciclo de beleza e fluidez, onde a vida sorri para quem age com transparência e acredita na abundância infinita do destino e do seu próprio potencial.</p>
 <p>Pelo lado negativo, pode haver uma tendência ao idealismo ingênuo ou ao escapismo, esperando que a sorte resolva questões que exigem esforço prático. Perder-se em sonhos sem aterrizá-los pode levar a frustrações e ao desperdício de energia. A Potência 61 ensina que a esperança é a luz que ilumina o caminho, mas que é o seu passo firme e consciente que percorre a estrada e transforma a visão em realidade tangível e duradoura.</p>`,
-62:`<p>Na estrutura principal de você, a Potência 62 representa o mergulho nas profundezas das emoções e o enfrentamento de medos internos na jornada da vida. Ela rege a fase de maior sensibilidade e intuição, indicando que sua realidade física está sendo influenciada por correntes subconscientes que precisam ser compreendidas. É o símbolo do mistério que precede a clareza, exigindo coragem para olhar além das aparências e descobrir as verdades ocultas.</p>
+62:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 62 representa o mergulho nas profundezas das emoções e o enfrentamento de medos internos na jornada da vida. Ela rege a fase de maior sensibilidade e intuição, indicando que sua realidade física está sendo influenciada por correntes subconscientes que precisam ser compreendidas. É o símbolo do mistério que precede a clareza, exigindo coragem para olhar além das aparências e descobrir as verdades ocultas.</p>
 <p>No aspecto positivo, esta influência manifesta uma intuição poderosa e uma capacidade de percepção que protege você de enganos e perigos invisíveis. Você se torna capaz de ler as entrelinhas das situações sociais e profissionais, agindo com uma cautela sábia que garante sua estabilidade. É um ciclo de profunda cura, onde o entendimento da sua própria sombra permite que você se torne alguém muito mais íntegro, empático e preparado para o sucesso real.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da confusão mental ou da instabilidade emocional que gera insegurança em suas decisões. Deixar-se levar por medos infundados ou ilusões pode travar seu progresso e causar conflitos em suas relações. A Potência 62 ensina que a sensibilidade é um dom de proteção, desde que seja iluminada pela razão e pela coragem de encarar a verdade sobre si mesmo sem filtros.</p>`,
-63:`<p>Na estrutura principal de você, a Potência 63 simboliza o triunfo da clareza, da verdade e da vitalidade plena na jornada da vida. Ela representa o momento em que a luz do entendimento dissipa as nuvens da dúvida, permitindo que você enxergue o caminho para o sucesso com absoluta nitidez. É o símbolo da alegria realizadora, indicando que suas ações estão em total sintonia com o seu propósito, o que atrai reconhecimento e prosperidade.</p>
+63:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 63 simboliza o triunfo da clareza, da verdade e da vitalidade plena na jornada da vida. Ela representa o momento em que a luz do entendimento dissipa as nuvens da dúvida, permitindo que você enxergue o caminho para o sucesso com absoluta nitidez. É o símbolo da alegria realizadora, indicando que suas ações estão em total sintonia com o seu propósito, o que atrai reconhecimento e prosperidade.</p>
 <p>Vivida positivamente, esta potência manifesta um sucesso radiante, saúde vigorosa e a concretização de projetos que trazem felicidade e bem-estar coletivo. Você experimenta um ciclo de grande magnetismo pessoal, onde sua presença inspira confiança e clareza nas outras pessoas. É uma fase de colheitas abundantes, onde a verdade atua como sua maior proteção e guia para uma expansão material e social segura, sólida e muito brilhante.</p>
 <p>Pelo lado negativo, o excesso de brilho pode gerar arrogância, vaidade ou uma exposição desnecessária que atrai inveja. O orgulho pelo sucesso conquistado pode ocultar detalhes práticos importantes e gerar conflitos de poder. A Potência 63 ensina que a verdadeira luz é aquela que aquece e ilumina sem queimar, exigindo humildade para que o sucesso seja mantido sobre bases éticas e humanas duradouras.</p>`,
-64:`<p>Na estrutura principal de você, a Potência 64 representa o chamado para o despertar da consciência e a avaliação profunda de suas escolhas na jornada da vida. Ela indica um momento de transição onde você é convidado a deixar para trás velhos padrões e culpas para assumir uma nova responsabilidade sobre seu destino. É o símbolo da renovação em vida, sinalizando que você possui a maturidade necessária para transformar sua realidade através de uma visão superior.</p>
+64:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 64 representa o chamado para o despertar da consciência e a avaliação profunda de suas escolhas na jornada da vida. Ela indica um momento de transição onde você é convidado a deixar para trás velhos padrões e culpas para assumir uma nova responsabilidade sobre seu destino. É o símbolo da renovação em vida, sinalizando que você possui a maturidade necessária para transformar sua realidade através de uma visão superior.</p>
 <p>No aspecto positivo, esta influência manifesta a libertação de limitações passadas e a resolução de questões que impediam seu progresso material e emocional. Você experimenta uma renovação de propósitos, agindo com uma integridade que atrai respeito e abre portas para uma vida muito mais autêntica. É um ciclo de clareza mental, onde o perdão — a si mesmo e aos outros — atua como a chave para uma nova e bem-sucedida etapa de realizações.</p>
 <p>No entanto, o aspecto negativo alerta para a resistência em enfrentar a própria verdade, o que pode levar à autocondenação ou à repetição de erros por medo da mudança. O julgamento severo das circunstâncias pode gerar amargura e estagnação. A Potência 64 ensina que o despertar exige coragem para avaliar o passado com justiça e olhar para o futuro com esperança, permitindo que a vida se renove de forma consciente e potente.</p>`,
-65:`<p>Na estrutura principal de você, a Potência 65 simboliza a integração final de seus aprendizados e a conquista da plenitude na jornada da vida. Ela representa a conclusão de etapas complexas e a harmonia entre suas ambições e sua evolução pessoal. É o símbolo da realização global, indicando que você atingiu um estado de equilíbrio onde o mundo responde positivamente à sua clareza interna e ao seu esforço persistente e dedicado.</p>
+65:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 65 simboliza a integração final de seus aprendizados e a conquista da plenitude na jornada da vida. Ela representa a conclusão de etapas complexas e a harmonia entre suas ambições e sua evolução pessoal. É o símbolo da realização global, indicando que você atingiu um estado de equilíbrio onde o mundo responde positivamente à sua clareza interna e ao seu esforço persistente e dedicado.</p>
 <p>Vivida positivamente, esta potência manifesta sucessos expressivos, reconhecimento público e uma profunda sensação de liberdade. Você se sente em harmonia com o mundo, atraindo viagens, novas parcerias e oportunidades de expansão que consolidam sua autoridade social e material. É um ciclo de triunfo merecido, onde a sua visão estratégica e sua integridade garantem uma prosperidade que é estável, vasta e profundamente satisfatória.</p>
 <p>Pelo lado negativo, pode surgir o perigo da inércia após a conquista ou do apego excessivo ao status conquistado por medo de que o ciclo termine. A sensação de que "já alcançou tudo" pode gerar desmotivação ou arrogância. A Potência 65 ensina que a perfeição é dinâmica; cada grande chegada vitoriosa é, na verdade, o alicerce para um novo nível de evolução, exigindo que você continue em movimento para que a abundância continue fluindo.</p>`,
-66:`<p>Na estrutura principal de você, a Potência 66 representa a energia do mestre construtor aplicada à criação de um legado sólido na jornada da vida. Ela indica que você possui uma capacidade extraordinária de organizar recursos e liderar pessoas para materializar visões de grande escala. É o símbolo do pragmatismo elevado, onde a sua disciplina e sua vontade firme transformam grandes ideais em estruturas concretas, seguras e duradouras.</p>
+66:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 66 representa a energia do mestre construtor aplicada à criação de um legado sólido na jornada da vida. Ela indica que você possui uma capacidade extraordinária de organizar recursos e liderar pessoas para materializar visões de grande escala. É o símbolo do pragmatismo elevado, onde a sua disciplina e sua vontade firme transformam grandes ideais em estruturas concretas, seguras e duradouras.</p>
 <p>No aspecto positivo, esta influência manifesta um progresso financeiro sólido, autoridade respeitada e a construção de projetos que beneficiam o seu meio. Você demonstra uma resiliência exemplar, lidando com responsabilidades complexas com uma calma que transmite segurança. É uma fase de conquistas institucionais e estabilidade de longo prazo, onde seu trabalho é validado pelo sucesso tangível e pela admiração genuína de seus pares.</p>
 <p>No entanto, o aspecto negativo alerta para o risco de o foco absoluto nos resultados endurecer sua personalidade, gerando frieza ou uma postura excessivamente controladora. A ambição desmedida pode cegar você para as necessidades humanas básicas ao seu redor. A Potência 66 ensina que a verdadeira grandeza de um legado não se mede apenas pela sua solidez material, mas pela justiça de seus fundamentos e pela humanidade de quem o ergueu.</p>`,
-67:`<p>Na estrutura principal de você, a Potência 67 simboliza a força da comunicação e do conhecimento como ferramentas de evolução na jornada da vida. Ela indica que sua trajetória é potencializada pela sua habilidade em articular ideias e buscar um aprendizado contínuo que refina sua atuação no mundo. É o símbolo do dinamismo intelectual, mostrando que o seu sucesso depende da sua capacidade de ser um eterno estudante e um diplomata nato.</p>
+67:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 67 simboliza a força da comunicação e do conhecimento como ferramentas de evolução na jornada da vida. Ela indica que sua trajetória é potencializada pela sua habilidade em articular ideias e buscar um aprendizado contínuo que refina sua atuação no mundo. É o símbolo do dinamismo intelectual, mostrando que o seu sucesso depende da sua capacidade de ser um eterno estudante e um diplomata nato.</p>
 <p>Vivida positivamente, esta potência manifesta uma inteligência estratégica brilhante e uma facilidade natural em circular por diferentes esferas sociais. Você atrai abundância através do uso inteligente da informação e da negociação ética, conquistando seu espaço através do diálogo e da inovação. É um ciclo de expansão mental e material, onde novas ideias geram resultados rápidos e fortalecem sua autoridade de forma moderna e fluida.</p>
 <p>Pelo lado negativo, pode haver o risco da superficialidade ou do uso da inteligência para manipular situações em benefício próprio, ignorando a ética. A dispersão em muitos projetos ao mesmo tempo pode comprometer a solidez das suas realizações finais. A Potência 67 ensina que a comunicação é um poder sagrado; quando usada com foco e verdade, ela é capaz de transformar a realidade e abrir as portas mais difíceis do seu destino.</p>`,
-68:`<p>Na estrutura principal de você, a Potência 68 manifesta-se através da busca pela estabilidade e harmonia como base para a segurança na jornada da vida. Ela rege a trajetória pela necessidade de proteção e zelo, indicando que a sua realização material está conectada ao equilíbrio do seu ambiente e das suas relações próximas. É o símbolo da nutrição, onde o sucesso é construído com responsabilidade, afeto e uma visão prática de cuidado.</p>
+68:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 68 manifesta-se através da busca pela estabilidade e harmonia como base para a segurança na jornada da vida. Ela rege a trajetória pela necessidade de proteção e zelo, indicando que a sua realização material está conectada ao equilíbrio do seu ambiente e das suas relações próximas. É o símbolo da nutrição, onde o sucesso é construído com responsabilidade, afeto e uma visão prática de cuidado.</p>
 <p>Quando vivida positivamente, esta potência manifesta uma prosperidade equilibrada e uma sorte que parece proteger seus interesses e os de sua família. Você demonstra uma grande capacidade de gestão, criando um ambiente seguro onde a vida e os negócios podem florescer com paz. É um ciclo de consolidação de patrimônio e fortalecimento de vínculos, onde a sua postura íntegra atrai colaboração e reconhecimento sincero das pessoas.</p>
 <p>No entanto, o aspecto negativo alerta para a tendência à possessividade ou a uma preocupação excessiva com a segurança que impede o crescimento e a inovação. O medo de perder o que conquistou pode torná-lo alguém resistente a mudanças necessárias para a sua evolução. A Potência 68 ensina que a verdadeira estabilidade nasce da confiança interna; quando você está em paz, a segurança externa torna-se uma consequência natural.</p>`,
-69:`<p>Na estrutura principal de você, a Potência 69 simboliza o poder do discernimento e da análise profunda aplicados à estratégia na jornada da vida. Ela indica que sua trajetória exige momentos de observação cuidadosa para que você não desperdice sua força em ações superficiais. É a energia do estrategista sábio, que compreende que a verdadeira eficiência no mundo material nasce de um planejamento mental silencioso, rigoroso e bem fundamentado.</p>
+69:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 69 simboliza o poder do discernimento e da análise profunda aplicados à estratégia na jornada da vida. Ela indica que sua trajetória exige momentos de observação cuidadosa para que você não desperdice sua força em ações superficiais. É a energia do estrategista sábio, que compreende que a verdadeira eficiência no mundo material nasce de um planejamento mental silencioso, rigoroso e bem fundamentado.</p>
 <p>Vivida positivamente, esta potência manifesta um amadurecimento intelectual que o torna imune a enganos e pressões externas. Você age com uma prudência que garante resultados certeiros, sendo capaz de resolver problemas complexos com uma visão única. É um ciclo de conquistas de alta qualidade, onde a sua autoridade é construída sobre o conhecimento real e a segurança das suas escolhas, gerando um progresso respeitado e duradouro.</p>
 <p>Pelo lado negativo, o excesso de análise pode levar ao perfeccionismo paralisante ou a uma postura fria que afasta as pessoas. O medo de errar pode impedir que você coloque suas ideias em prática, mantendo-as apenas no campo teórico e perdendo o tempo da ação. A Potência 69 ensina que a análise deve servir à realização; a sabedoria só atinge seu propósito pleno quando é usada para transformar o mundo e melhorar a sua experiência física.</p>`,
 70:`<p>Na estrutura principal de você, a Potência 70 atua através da força de vontade, da resiliência e da determinação em vencer limitações na jornada da vida. Ela representa o momento em que sua coragem é convocada para assumir o controle total da sua realidade, exigindo que você dome suas fraquezas internas para conquistar o sucesso externo. É o símbolo da vitória pelo mérito e pelo esforço pessoal, onde seu caráter é forjado na superação.</p>
 <p>No aspecto positivo, esta influência manifesta um fortalecimento notável da sua autoconfiança e a obtenção de vitórias expressivas através da persistência. Você experimenta a satisfação de conquistar sua independência pelo seu próprio mérito, ganhando o respeito de todos pela sua firmeza. É uma fase de grande vigor e realização material, onde a sua capacidade de não desistir garante que você atinja metas que outros considerariam impossíveis.</p>
 <p>No entanto, o aspecto negativo alerta para o risco de o estresse crônico ou a agressividade prejudicarem sua saúde e suas relações. O desejo de vencer a qualquer custo pode cegar você para o valor da cooperação. A Potência 70 ensina que a verdadeira força é resiliente e serena; ela não precisa de violência para se impor, mas sim de uma constância inabalável que gradualmente molda a realidade de acordo com a sua vontade soberana.</p>`,
 
-71:`<p>Na estrutura principal de você, a Potência 71 representa o equilíbrio sagrado entre a diplomacia e a justiça na jornada da vida. Ela indica que sua trajetória é fortalecida pela sua habilidade em agir com ética, transparência e respeito às leis universais. É o símbolo da retidão, mostrando que o seu sucesso duradouro depende da sua capacidade de ser justo em todas as suas transações e parcerias no plano concreto.</p>
+71:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 71 representa o equilíbrio sagrado entre a diplomacia e a justiça na jornada da vida. Ela indica que sua trajetória é fortalecida pela sua habilidade em agir com ética, transparência e respeito às leis universais. É o símbolo da retidão, mostrando que o seu sucesso duradouro depende da sua capacidade de ser justo em todas as suas transações e parcerias no plano concreto.</p>
 <p>Vivida positivamente, esta potência manifesta reconhecimento público, resoluções favoráveis em questões burocráticas e uma estabilidade baseada na confiança. Você atrai aliados de valor porque sua conduta é impecável e suas decisões são pautadas na verdade. É um ciclo de consolidação de prestígio, onde a sua integridade atua como um escudo que protege suas conquistas e garante um progresso seguro e respeitado por todos.</p>
 <p>Pelo lado negativo, a indecisão ou a preocupação excessiva com as aparências podem gerar uma postura superficial. Se houve falta de ética no passado, este período pode trazer cobranças da realidade para que o equilíbrio seja restaurado. A Potência 71 ensina que a justiça é a base de toda construção real; agir com honestidade é a única forma de garantir uma prosperidade que resista ao teste do tempo e da consciência.</p>`,
-72:`<p>Na estrutura principal de você, a Potência 72 simboliza a renovação das parcerias e o despertar de novas perspectivas através da colaboração na jornada da vida. Ela rege a vida pelo princípio da reciprocidade, indicando que este é um momento de expandir seus horizontes unindo sua força à de outras pessoas que vibram na mesma sintonia. É a energia do movimento coletivo, onde o seu crescimento é acelerado pela qualidade dos seus vínculos.</p>
+72:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 72 simboliza a renovação das parcerias e o despertar de novas perspectivas através da colaboração na jornada da vida. Ela rege a vida pelo princípio da reciprocidade, indicando que este é um momento de expandir seus horizontes unindo sua força à de outras pessoas que vibram na mesma sintonia. É a energia do movimento coletivo, onde o seu crescimento é acelerado pela qualidade dos seus vínculos.</p>
 <p>Quando vivida positivamente, esta potência manifesta sorte em parcerias, reconciliações produtivas e um novo fôlego em sua trajetória profissional. Você sente que a vida flui melhor quando compartilha ideias e recursos, atraindo encontros providenciais que abrem caminhos antes bloqueados. É uma fase de otimismo e progresso social, onde a sua disposição para cooperar gera um ambiente de sucesso compartilhado e bem-estar mútuo.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da dependência excessiva da aprovação alheia ou de acordos desequilibrados por medo da autonomia. A falta de critérios na escolha de aliados pode gerar decepções. A Potência 72 ensina que a união só é uma potência real quando ocorre entre indivíduos inteiros, onde a soma das partes cria uma realidade muito maior, mais justa e próspera para todos os envolvidos.</p>`,
-73:`<p>Na estrutura principal de você, a Potência 73 representa a força da intuição e da percepção profunda aplicadas à jornada da vida. Ela indica que você possui uma sensibilidade aguçada para identificar oportunidades antes que elas se tornem óbvias para os outros, agindo com uma sabedoria que transcende a lógica fria. É o símbolo da luz interior, mostrando que o seu sucesso depende da coragem em confiar na sua voz interna para tomar decisões.</p>
+73:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 73 representa a força da intuição e da percepção profunda aplicadas à jornada da vida. Ela indica que você possui uma sensibilidade aguçada para identificar oportunidades antes que elas se tornem óbvias para os outros, agindo com uma sabedoria que transcende a lógica fria. É o símbolo da luz interior, mostrando que o seu sucesso depende da coragem em confiar na sua voz interna para tomar decisões.</p>
 <p>Vivida positivamente, esta potência manifesta um magnetismo pessoal poderoso e uma sorte que parece guiada por uma proteção especial. Você toma decisões acertadas em momentos de incerteza, atraindo abundância e reconhecimento através da sua originalidade. É um ciclo de cura e prosperidade, onde a sua conexão com a verdade da sua alma traz um brilho único e resultados sólidos para todas as suas realizações no mundo.</p>
 <p>Pelo lado negativo, o risco das ilusões ou de uma fuga da realidade prática pode comprometer seus resultados. A instabilidade emocional pode gerar confusão nos negócios, dificultando a materialização dos planos. A Potência 73 ensina que a intuição é um guia sagrado, mas que ela deve ser aterrada pela razão para que o seu potencial espiritual se transforme em conquistas físicas tangíveis, seguras e duradouras.</p>`,
-74:`<p>Na estrutura principal de você, a Potência 74 simboliza a colheita merecida e a estabilidade alcançada através da disciplina na jornada da vida. Ela indica que você atingiu um patamar onde suas ações são pesadas pelo critério da justiça, trazendo a organização necessária para o seu progresso material. É o símbolo da ordem, sugerindo que a sua realidade se estabiliza de acordo com a integridade que você aplicou em sua caminhada até aqui.</p>
+74:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 74 simboliza a colheita merecida e a estabilidade alcançada através da disciplina na jornada da vida. Ela indica que você atingiu um patamar onde suas ações são pesadas pelo critério da justiça, trazendo a organização necessária para o seu progresso material. É o símbolo da ordem, sugerindo que a sua realidade se estabiliza de acordo com a integridade que você aplicou em sua caminhada até aqui.</p>
 <p>No aspecto positivo, esta influência manifesta segurança financeira, resolução de pendências e um sólido reconhecimento profissional. Você experimenta a paz de quem construiu sobre bases honestas, sentindo que a vida se organiza de forma eficiente ao seu redor. É uma fase de consolidação de prestígio, onde a sua palavra tem peso e a sua conduta ética é o escudo que garante a continuidade e a expansão legítima do seu sucesso.</p>
 <p>No entanto, o aspecto negativo alerta para o rigor excessivo ou para a teimosia que pode gerar um ambiente de tensão. Se houve negligência no passado, este período pode trazer ajustes necessários da realidade. A Potência 74 ensina que a justiça é o equilíbrio dinâmico da existência; agir com honestidade e transparência é a única forma de garantir uma estabilidade que seja verdadeiramente duradoura e recompensadora.</p>`,
-75:`<p>Na estrutura principal de você, a Potência 75 representa a necessidade de recolhimento estratégico e a reorganização da sua força na jornada da vida. Ela indica que sua trajetória atingiu um ponto onde o movimento externo deve dar lugar ao silêncio para que a clareza retorne. É o símbolo da prudência, onde você se afasta das pressões para ouvir sua própria sabedoria e fortalecer seus alicerces antes de um novo ciclo de expansão.</p>
+75:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 75 representa a necessidade de recolhimento estratégico e a reorganização da sua força na jornada da vida. Ela indica que sua trajetória atingiu um ponto onde o movimento externo deve dar lugar ao silêncio para que a clareza retorne. É o símbolo da prudência, onde você se afasta das pressões para ouvir sua própria sabedoria e fortalecer seus alicerces antes de um novo ciclo de expansão.</p>
 <p>Vivida positivamente, esta potência manifesta um profundo autoconhecimento e um amadurecimento que evita erros por impulsividade. Você utiliza este tempo para planejar com precisão, agindo com uma segurança que inspira respeito. É uma fase de cura e fortalecimento interno, onde o descanso e a análise cuidadosa garantem que seus próximos passos sejam certeiros, sólidos e extremamente produtivos na realidade prática.</p>
 <p>Pelo lado negativo, o risco do isolamento por medo ou da procrastinação pode levar à perda de oportunidades valiosas. A falta de iniciativa pode estagnar o progresso se o retiro for usado como fuga. A Potência 75 ensina que o recolhimento deve ser uma ferramenta de poder; saber quando parar para afiar o pensamento é tão importante quanto saber quando avançar para garantir o sucesso duradouro no mundo.</p>`,
-76:`<p>Na estrutura principal de você, a Potência 76 simboliza a virada da sorte e o movimento favorável das circunstâncias na jornada da vida. Ela representa a ciclicidade da existência, indicando que após períodos de esforço, a roda do destino volta a girar a seu favor, trazendo novas oportunidades e encontros providenciais. É a energia do dinamismo que recompensa a sua flexibilidade e a sua prontidão para agir no momento certo.</p>
+76:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 76 simboliza a virada da sorte e o movimento favorável das circunstâncias na jornada da vida. Ela representa a ciclicidade da existência, indicando que após períodos de esforço, a roda do destino volta a girar a seu favor, trazendo novas oportunidades e encontros providenciais. É a energia do dinamismo que recompensa a sua flexibilidade e a sua prontidão para agir no momento certo.</p>
 <p>No aspecto positivo, esta influência manifesta uma sucessão de eventos afortunados e uma expansão rápida em diversas áreas. Você se sente no lugar certo e na hora certa, atraindo recursos que impulsionam sua carreira e seu bem-estar. É um ciclo de renovação e otimismo, onde a sua capacidade de se adaptar às mudanças garante que você suba de nível social e material com uma fluidez surpreendente e revigorante.</p>
 <p>No entanto, o aspecto negativo alerta que o excesso de mudanças ou a confiança cega na sorte pode gerar instabilidade. Confiar apenas no acaso sem manter uma estratégia sólida pode levar a ganhos voláteis. A Potência 76 ensina que o destino oferece as chances, mas é a sua vontade consciente que deve dar a direção final para que a prosperidade conquistada se torne uma base sólida e permanente.</p>`,
-77:`<p>Na estrutura principal de você, a Potência 77 representa a força da resiliência e a capacidade de dominar situações complexas na jornada da vida. Ela indica que sua trajetória é marcada por uma vitalidade que permite superar resistências externas através da determinação persistente. É o símbolo do autodomínio, onde você aprende que a inteligência emocional é a sua ferramenta mais poderosa para conquistar e manter o seu espaço.</p>
+77:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 77 representa a força da resiliência e a capacidade de dominar situações complexas na jornada da vida. Ela indica que sua trajetória é marcada por uma vitalidade que permite superar resistências externas através da determinação persistente. É o símbolo do autodomínio, onde você aprende que a inteligência emocional é a sua ferramenta mais poderosa para conquistar e manter o seu espaço.</p>
 <p>Vivida positivamente, esta potência manifesta uma coragem inabalável e um magnetismo que atrai sucesso e colaboração. Você enfrenta desafios com serenidade, transformando conflitos em oportunidades de crescimento através da sua firmeza de caráter. É um ciclo de grandes vitórias pessoais, onde a sua disposição física e mental está em alta, permitindo que você lidere projetos com uma autoridade natural e amplamente respeitada.</p>
 <p>Pelo lado negativo, o risco da impaciência ou do desejo de controle excessivo pode gerar desgaste e tensões desnecessárias. A força mal canalizada pode atrasar seus resultados. A Potência 77 ensina que a verdadeira soberania sobre a matéria nasce da harmonia interna; quanto mais calmo é o seu centro, maior é o seu poder de influência sobre a realidade externa para construir um destino próspero.</p>`,
-78:`<p>Na estrutura principal de você, a Potência 78 atua como um ciclo de reavaliação e sacrifício consciente em favor de um bem maior na jornada da vida. Ela indica que certas pausas na ação externa são fundamentais para que ocorra um amadurecimento estratégico. É o símbolo da visão renovada, sugerindo que o que parecia um atraso é, na verdade, um preparo essencial para uma vitória muito mais sólida e recompensadora no futuro.</p>
+78:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 78 atua como um ciclo de reavaliação e sacrifício consciente em favor de um bem maior na jornada da vida. Ela indica que certas pausas na ação externa são fundamentais para que ocorra um amadurecimento estratégico. É o símbolo da visão renovada, sugerindo que o que parecia um atraso é, na verdade, um preparo essencial para uma vitória muito mais sólida e recompensadora no futuro.</p>
 <p>No aspecto positivo, esta influência manifesta uma paciência extraordinária e uma sabedoria que nasce da aceitação dos processos naturais. Você utiliza este período para se libertar de velhos hábitos e fortalecer sua resiliência, ganhando uma clareza que o torna imune às pressões imediatas. É uma fase de maturação onde sua força interior cresce silenciosamente, preparando você para assumir responsabilidades maiores com total segurança.</p>
 <p>No entanto, o aspecto negativo alerta para o sentimento de vitimização ou para a inércia por medo de decidir. A estagnação pode se tornar pesada se você não compreender o propósito do momento. A Potência 78 ensina que parar voluntariamente para observar é um ato de inteligência superior, permitindo que o sucesso futuro seja construído sobre uma verdade interna incontestável e muito mais potente.</p>`,
-79:`<p>Na estrutura principal de você, a Potência 79 representa a transformação radical e o encerramento de ciclos obsoletos na jornada da vida. Ela atua como um agente de renovação profunda, indicando que para o novo florescer, o velho deve ser deixado para trás com dignidade. É o símbolo da transmutação, onde você abandona fardos para assumir uma nova identidade, mais potente e alinhada com as verdades que descobriu.</p>
+79:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 79 representa a transformação radical e o encerramento de ciclos obsoletos na jornada da vida. Ela atua como um agente de renovação profunda, indicando que para o novo florescer, o velho deve ser deixado para trás com dignidade. É o símbolo da transmutação, onde você abandona fardos para assumir uma nova identidade, mais potente e alinhada com as verdades que descobriu.</p>
 <p>Vivida positivamente, esta potência manifesta uma libertação extraordinária e a reconstrução de sua realidade sobre alicerces muito mais puros. Você sente o alívio de soltar situações que bloqueavam sua evolução, ganhando um vigor renovado para recomeçar com clareza. É um ciclo de renascimento onde as perdas aparentes revelam-se como livramentos necessários, permitindo que você construa um sucesso baseado na sua essência real.</p>
 <p>Pelo lado negativo, o apego ao que está findando pode causar angústia e impedir que você perceba as novas portas que se abrem. A resistência à mudança inevitável pode gerar estagnação dolorosa. A Potência 79 ensina que na natureza nada se perde, tudo se transforma; aceitar o fim de um ciclo é o ato de coragem que garante que você jamais fique preso ao passado e possa sempre evoluir para o próximo nível.</p>`,
 80:`<p>Na estrutura principal de você, a Potência 80 manifesta-se através da temperança e da busca pelo equilíbrio na jornada da vida. Ela rege sua trajetória pela moderação, indicando que o sucesso sustentável nasce da sua capacidade de harmonizar opostos e evitar excessos que desgastam sua vitalidade. É o símbolo da alquimia prática, onde você aprende a conduzir seus recursos com paciência, serenidade e inteligência.</p>
 <p>No aspecto positivo, esta influência manifesta saúde equilibrada, paz de espírito e uma diplomacia que resolve impasses de forma suave. Você se torna um ponto de equilíbrio para os outros, atraindo confiança e parcerias duradouras. É uma fase de estabilidade onde a constância e a capacidade de se adaptar com doçura às circunstâncias garantem um progresso constante e livre das turbulências geradas pela pressa ou ambição.</p>
 <p>No entanto, o aspecto negativo alerta que a busca por harmonia pode se transformar em passividade ou na tendência de se anular para evitar confrontos necessários. Tentar manter uma paz superficial pode gerar estagnação. A Potência 80 ensina que a verdadeira temperança exige firmeza interior; é o equilíbrio entre saber quando fluir com a vida e quando manter a solidez da sua própria verdade e propósito para vencer.</p>`,
 
-81:`<p>Na estrutura principal de você, a Potência 81 simboliza o magnetismo realizador e o confronto com as grandes ambições na jornada da vida. Ela traz para o plano físico uma energia de poder imensa, indicando que você possui o carisma e a astúcia necessários para conquistar riqueza e influência, mas que isso exige uma vigilância ética constante. É o símbolo da força primordial que move a matéria, revelando que suas paixões são o combustível para o seu sucesso.</p>
+81:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 81 simboliza o magnetismo realizador e o confronto com as grandes ambições na jornada da vida. Ela traz para o plano físico uma energia de poder imensa, indicando que você possui o carisma e a astúcia necessários para conquistar riqueza e influência, mas que isso exige uma vigilância ética constante. É o símbolo da força primordial que move a matéria, revelando que suas paixões são o combustível para o seu sucesso.</p>
 <p>Vivida positivamente, esta potência manifesta um carisma avassalador e um sucesso material que muitos considerariam impossível. Você encontra coragem para romper limitações e agir com uma audácia que o coloca em posições de liderança e impacto. É um ciclo de grande vigor, onde sua vontade de vencer se materializa em conquistas tangíveis, garantindo que você exerça seu poder com eficiência e conquiste o respeito do seu meio.</p>
 <p>Pelo lado negativo, o foco exclusivo no ganho pessoal pode levar a comportamentos manipuladores ou a um vazio emocional. O egoísmo desmedido pode criar prisões de desejo que comprometem sua liberdade. A Potência 81 ensina que o poder é uma ferramenta neutra; ele só se torna um aliado da sua evolução quando é guiado por uma consciência que valoriza a integridade acima da mera conveniência material.</p>`,
-82:`<p>Na estrutura principal de você, a Potência 82 representa a quebra de ilusões e a necessidade de reconstrução sobre bases verdadeiras na jornada da vida. Ela atua como um despertador que derruba o que foi construído com orgulho ou negligência, forçando você a encarar os fatos como eles são. Embora o choque inicial possa ser intenso, ele tem o propósito de libertar você de estruturas falsas que impediam seu crescimento real.</p>
+82:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 82 representa a quebra de ilusões e a necessidade de reconstrução sobre bases verdadeiras na jornada da vida. Ela atua como um despertador que derruba o que foi construído com orgulho ou negligência, forçando você a encarar os fatos como eles são. Embora o choque inicial possa ser intenso, ele tem o propósito de libertar você de estruturas falsas que impediam seu crescimento real.</p>
 <p>No aspecto positivo, esta influência manifesta uma clareza mental súbita e a oportunidade de edificar um futuro inabalável sobre a rocha da verdade. Ao se ver livre de situações opressivas, você ganha a chance de recomeçar com muito mais força e honestidade. É o momento do despertar, onde a destruição do supérfluo permite que o essencial floresça e que sua vida ganhe um sentido muito mais profundo, resiliente e autêntico.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da revolta diante de mudanças imprevistas. A resistência em aceitar a falha de um projeto antigo pode gerar amargura e impedir o aprendizado. A Potência 82 ensina que certas quedas são livramentos estratégicos da vida; é preciso ter humildade para aprender com os escombros e coragem para construir algo infinitamente melhor e mais seguro para o seu destino.</p>`,
-83:`<p>Na estrutura principal de você, a Potência 83 representa o surgimento da esperança e da inspiração renovada na jornada da vida. Ela indica que, após períodos de desafio, a luz do seu propósito volta a brilhar com força, trazendo clareza sobre suas metas. É o símbolo da harmonia recuperada, sugerindo que o seu sucesso no mundo será um reflexo direto da paz e da fé que você cultiva em seu interior.</p>
+83:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 83 representa o surgimento da esperança e da inspiração renovada na jornada da vida. Ela indica que, após períodos de desafio, a luz do seu propósito volta a brilhar com força, trazendo clareza sobre suas metas. É o símbolo da harmonia recuperada, sugerindo que o seu sucesso no mundo será um reflexo direto da paz e da fé que você cultiva em seu interior.</p>
 <p>Vivida positivamente, esta potência manifesta uma criatividade vibrante e uma sorte que parece atrair as pessoas e os recursos certos no momento exato. Você experimenta uma fase de otimismo, onde a sua presença transmite calma e inspiração, abrindo portas para parcerias generosas e projetos inovadores. É um ciclo de fluidez, onde a vida sorri para quem age com transparência e acredita na abundância infinita do seu próprio potencial.</p>
 <p>Pelo lado negativo, pode haver uma tendência ao idealismo ingênuo, esperando que a sorte resolva questões que exigem esforço prático. Perder-se em sonhos sem aterrizá-los pode levar a frustrações. A Potência 83 ensina que a esperança é a luz que ilumina o caminho, mas que é o seu passo firme e disciplinado que percorre a estrada e transforma a visão em uma realidade tangível, sólida e duradoura.</p>`,
-84:`<p>Na estrutura principal de você, a Potência 84 representa o mergulho na intuição e o enfrentamento de medos internos na jornada da vida. Ela rege a fase de maior sensibilidade, indicando que a realidade física está sendo moldada por forças subconscientes que precisam ser compreendidas. É o símbolo do mistério que precede a clareza, exigindo coragem para olhar além das aparências e descobrir o que realmente move os seus caminhos.</p>
+84:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 84 representa o mergulho na intuição e o enfrentamento de medos internos na jornada da vida. Ela rege a fase de maior sensibilidade, indicando que a realidade física está sendo moldada por forças subconscientes que precisam ser compreendidas. É o símbolo do mistério que precede a clareza, exigindo coragem para olhar além das aparências e descobrir o que realmente move os seus caminhos.</p>
 <p>No aspecto positivo, esta influência manifesta uma percepção poderosa que protege você de enganos invisíveis. Você se torna capaz de ler as entrelinhas das situações sociais e profissionais, agindo com uma cautela sábia que garante sua estabilidade. É um ciclo de cura profunda, onde o entendimento da sua própria sombra permite que você se torne alguém muito mais íntegro, empático e preparado para alcançar o sucesso real e duradouro.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da confusão mental ou da insegurança emocional. Deixar-se levar por medos infundados pode travar seu progresso e causar conflitos desnecessários. A Potência 84 ensina que a sensibilidade é um dom de proteção, desde que seja iluminada pela razão e pela coragem de encarar a verdade sobre si mesmo sem filtros, garantindo uma caminhada segura e consciente.</p>`,
-85:`<p>Na estrutura principal de você, a Potência 85 simboliza o triunfo da clareza e da vitalidade plena na jornada da vida. Ela representa o momento em que a luz do entendimento dissipa todas as dúvidas, permitindo que você enxergue o caminho para o sucesso com absoluta nitidez. É o símbolo da alegria realizadora, indicando que suas ações estão em total sintonia com o seu propósito, o que atrai reconhecimento e prosperidade natural.</p>
+85:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 85 simboliza o triunfo da clareza e da vitalidade plena na jornada da vida. Ela representa o momento em que a luz do entendimento dissipa todas as dúvidas, permitindo que você enxergue o caminho para o sucesso com absoluta nitidez. É o símbolo da alegria realizadora, indicando que suas ações estão em total sintonia com o seu propósito, o que atrai reconhecimento e prosperidade natural.</p>
 <p>Vivida positivamente, esta potência manifesta um sucesso radiante, saúde vigorosa e a concretização de projetos que trazem felicidade e bem-estar. Você experimenta um ciclo de grande magnetismo pessoal, onde sua presença inspira confiança. É uma fase de colheitas abundantes, onde a verdade atua como sua maior proteção e guia para uma expansão material e social que é, ao mesmo tempo, segura, ética e extremamente brilhante.</p>
 <p>Pelo lado negativo, o excesso de brilho pode gerar arrogância ou uma vaidade que cega para detalhes práticos. O orgulho pelo sucesso pode atrair inveja ou conflitos de poder se não for gerido com sabedoria. A Potência 85 ensina que a verdadeira luz é aquela que aquece e ilumina sem queimar, exigindo humildade para que o sucesso conquistado seja mantido e respeitado por todos ao seu redor.</p>`,
-86:`<p>Na estrutura principal de você, a Potência 86 representa o chamado para o despertar e a avaliação profunda das suas escolhas na jornada da vida. Ela indica um momento de transição onde você é convidado a deixar para trás velhas culpas para assumir uma nova responsabilidade sobre seu destino. É o símbolo da renovação em vida, sinalizando que você possui a maturidade necessária para transformar sua realidade através de uma visão superior.</p>
+86:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 86 representa o chamado para o despertar e a avaliação profunda das suas escolhas na jornada da vida. Ela indica um momento de transição onde você é convidado a deixar para trás velhas culpas para assumir uma nova responsabilidade sobre seu destino. É o símbolo da renovação em vida, sinalizando que você possui a maturidade necessária para transformar sua realidade através de uma visão superior.</p>
 <p>No aspecto positivo, esta influência manifesta a libertação de padrões limitantes e a resolução de questões passadas que impediam seu progresso. Você experimenta uma renovação de propósitos, agindo com uma integridade que atrai respeito e abre portas para uma vida muito mais autêntica e próspera. É um ciclo de clareza mental, onde o perdão atua como a chave mestra para uma nova e bem-sucedida etapa de realizações concretas.</p>
 <p>No entanto, o aspecto negativo alerta para a resistência em enfrentar a própria verdade, o que pode levar à estagnação por medo da mudança. O julgamento severo das circunstâncias pode gerar amargura. A Potência 86 ensina que o despertar exige coragem para olhar o passado com justiça e o futuro com esperança, permitindo que a sua vida se renove de forma consciente, potente e totalmente alinhada com seu propósito real.</p>`,
-87:`<p>Na estrutura principal de você, a Potência 87 simboliza a integração final de aprendizados e a conquista da plenitude na jornada da vida. Ela representa a conclusão de etapas complexas e a harmonia entre suas ambições materiais e sua evolução pessoal. É o símbolo da realização global, indicando que você atingiu um estado de equilíbrio onde o mundo responde positivamente à sua clareza interna e ao seu esforço persistente.</p>
+87:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 87 simboliza a integração final de aprendizados e a conquista da plenitude na jornada da vida. Ela representa a conclusão de etapas complexas e a harmonia entre suas ambições materiais e sua evolução pessoal. É o símbolo da realização global, indicando que você atingiu um estado de equilíbrio onde o mundo responde positivamente à sua clareza interna e ao seu esforço persistente.</p>
 <p>Vivida positivamente, esta potência manifesta sucessos expressivos, reconhecimento público e uma profunda sensação de liberdade e pertencimento. Você se sente em harmonia com o mundo, atraindo viagens e oportunidades de expansão que consolidam sua autoridade social. É um ciclo de triunfo merecido, onde a sua visão estratégica e sua integridade garantem uma prosperidade que é estável, vasta e profundamente recompensadora para o seu ser.</p>
 <p>Pelo lado negativo, pode surgir o perigo da inércia após a conquista ou do apego excessivo ao status por medo de que o ciclo termine. A sensação de que "já alcançou tudo" pode gerar desmotivação ou arrogância. A Potência 87 ensina que a perfeição é dinâmica; cada grande chegada vitoriosa é o alicerce para um novo nível de evolução, exigindo que você continue em movimento para que a abundância e o sucesso continuem fluindo.</p>`,
-88:`<p>Na estrutura principal de você, a Potência 88 representa a energia do mestre construtor aplicada à criação de um legado duradouro na jornada da vida. Ela indica que você possui uma capacidade extraordinária de organizar recursos e liderar pessoas para materializar visões de grande escala. É o símbolo do pragmatismo elevado, onde a sua disciplina e sua vontade firme transformam grandes ideais em estruturas concretas e seguras.</p>
+88:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 88 representa a energia do mestre construtor aplicada à criação de um legado duradouro na jornada da vida. Ela indica que você possui uma capacidade extraordinária de organizar recursos e liderar pessoas para materializar visões de grande escala. É o símbolo do pragmatismo elevado, onde a sua disciplina e sua vontade firme transformam grandes ideais em estruturas concretas e seguras.</p>
 <p>No aspecto positivo, esta influência manifesta um progresso financeiro sólido, autoridade respeitada e a construção de projetos que beneficiam o coletivo. Você demonstra uma resiliência exemplar, lidando com responsabilidades complexas com uma calma que transmite segurança. É uma fase de conquistas institucionais e estabilidade de longo prazo, onde seu trabalho é validado pelo sucesso tangível e pela admiração genuína de seus pares.</p>
 <p>No entanto, o aspecto negativo alerta para o risco de o foco absoluto nos resultados endurecer sua personalidade, gerando frieza ou uma postura controladora. A ambição desmedida pode cegar você para as necessidades humanas básicas ao seu redor. A Potência 88 ensina que a verdadeira grandeza de um legado não se mede apenas pela sua solidez, mas pela justiça de seus fundamentos e pela humanidade de quem o ergueu e liderou.</p>`,
-89:`<p>Na estrutura principal de você, a Potência 89 simboliza a força da comunicação e do conhecimento como ferramentas de influência na jornada da vida. Ela indica que sua trajetória é potencializada pela sua habilidade em articular ideias e buscar aprendizado contínuo para refinar sua atuação. É o símbolo do dinamismo intelectual, mostrando que o seu sucesso depende da sua capacidade de ser um eterno estudante e um diplomata estratégico.</p>
+89:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 89 simboliza a força da comunicação e do conhecimento como ferramentas de influência na jornada da vida. Ela indica que sua trajetória é potencializada pela sua habilidade em articular ideias e buscar aprendizado contínuo para refinar sua atuação. É o símbolo do dinamismo intelectual, mostrando que o seu sucesso depende da sua capacidade de ser um eterno estudante e um diplomata estratégico.</p>
 <p>Vivida positivamente, esta potência manifesta uma inteligência brilhante e uma facilidade natural em circular por diferentes esferas sociais. Você atrai abundância através do uso inteligente da informação e da negociação ética, conquistando seu espaço através do diálogo e da inovação constante. É um ciclo de expansão mental e material, onde novas ideias geram resultados rápidos e fortalecem sua autoridade de forma moderna, fluida e respeitada.</p>
 <p>Pelo lado negativo, pode haver o risco da superficialidade ou do uso da inteligência de forma manipuladora em benefício próprio. A dispersão em muitos projetos ao mesmo tempo pode comprometer a solidez das suas realizações finais. A Potência 89 ensina que a comunicação é um poder sagrado; quando usada com foco e verdade, ela é capaz de transformar qualquer realidade e abrir as portas mais difíceis do seu destino e sucesso.</p>`,
 90:`<p>Na estrutura principal de você, a Potência 90 manifesta-se através da busca pela estabilidade e harmonia na jornada da vida. Ela rege a trajetória pela necessidade de proteção, indicando que a sua realização material está conectada ao equilíbrio do seu ambiente e das suas relações. É o símbolo da nutrição e do zelo, onde o sucesso é construído com responsabilidade, afeto e uma visão prática de cuidado com o que é seu.</p>
 <p>Quando vivida positivamente, esta potência manifesta uma prosperidade equilibrada e uma sorte que parece proteger seus interesses. Você demonstra uma grande capacidade de gestão, criando um ambiente seguro onde a vida e os projetos podem florescer com paz. É um ciclo de consolidação de patrimônio e fortalecimento de vínculos, onde a sua postura íntegra atrai colaboração e reconhecimento sincero das pessoas ao seu redor.</p>
 <p>No entanto, o aspecto negativo alerta para a tendência à possessividade ou a uma preocupação excessiva com a segurança que impede o crescimento. O medo de perder o que conquistou pode torná-lo alguém resistente a mudanças necessárias. A Potência 90 ensina que a verdadeira estabilidade nasce da confiança interna; quando você está em paz consigo mesmo, a segurança externa torna-se uma consequência natural, fluida e inabalável.</p>`,
-91:`<p>Na estrutura principal de você, a Potência 91 representa a maestria sobre os ciclos e a compreensão das leis de causa e efeito na jornada da vida. Ela indica que sua trajetória atingiu um ponto de integração total, onde você compreende o porquê de cada conquista. É o símbolo do arquiteto consciente, que usa a experiência acumulada para projetar um futuro de estabilidade absoluta, agindo com uma prudência fruto de sabedoria.</p>
+91:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 91 representa a maestria sobre os ciclos e a compreensão das leis de causa e efeito na jornada da vida. Ela indica que sua trajetória atingiu um ponto de integração total, onde você compreende o porquê de cada conquista. É o símbolo do arquiteto consciente, que usa a experiência acumulada para projetar um futuro de estabilidade absoluta, agindo com uma prudência fruto de sabedoria.</p>
 <p>No aspecto positivo, esta influência manifesta um sucesso sólido e uma autoridade natural que emana de sua integridade. Você experimenta uma fase de grandes realizações onde a sua mente estratégica trabalha em perfeita sintonia com a sua intuição, permitindo que você consolide seu patrimônio de forma inquestionável. É um ciclo de plenitude, onde você se torna um ponto de referência para os outros, oferecendo segurança e direção.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da rigidez dogmática e do medo de novas transformações por estar muito apegado à estrutura que construiu. A crença de que sua forma de ver o mundo é a única correta pode gerar isolamento. A Potência 91 ensina que a verdadeira maestria reside na capacidade de manter a solidez das suas bases enquanto permanece aberto ao fluxo contínuo de renovação que a vida exige para não estagnar.</p>`,
-92:`<p>Na estrutura principal de você, a Potência 92 atua como uma força de expansão altruísta e a realização de propósitos elevados na jornada da vida. Ela rege sua trajetória indicando que sua prosperidade está ligada à sua capacidade de contribuir para a evolução do meio em que vive. É o símbolo da abundância compartilhada, onde o sucesso pessoal ganha um significado maior quando se torna uma ferramenta de apoio e crescimento para o todo.</p>
+92:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 92 atua como uma força de expansão altruísta e a realização de propósitos elevados na jornada da vida. Ela rege sua trajetória indicando que sua prosperidade está ligada à sua capacidade de contribuir para a evolução do meio em que vive. É o símbolo da abundância compartilhada, onde o sucesso pessoal ganha um significado maior quando se torna uma ferramenta de apoio e crescimento para o todo.</p>
 <p>Vivida positivamente, esta potência manifesta uma sorte excepcional e uma fluidez nos negócios que parece ser guiada por uma força superior. Você atrai recursos e parcerias valiosas porque sua intenção é pura e seus objetivos são éticos, gerando um ciclo de retorno positivo constante. É uma fase de grande brilho social, onde a sua liderança é celebrada e sua presença traz harmonia e progresso, consolidando uma trajetória de sucesso e generosidade.</p>
 <p>Pelo lado negativo, pode surgir uma tendência à autossuficiência orgulhosa ou a uma generosidade mal direcionada que gera dependência alheia. O desejo de reconhecimento pode alimentar a vaidade. A Potência 92 ensina que a verdadeira prosperidade é um fluxo que deve circular; quanto mais você se torna um canal para o bem no plano físico, mais a vida garante que nunca falte abundância em seus próprios caminhos e projetos.</p>`,
-93:`<p>Na estrutura principal de você, a Potência 93 representa a energia da inovação constante e a necessidade de manter o espírito curioso na jornada da vida. Ela atua como um sopro de criatividade que impede que suas conquistas se tornem áridas. É o símbolo da renovação mental, indicando que o seu sucesso contínuo depende da sua habilidade de reinventar seus métodos e de abraçar novos conceitos sem medo de perder a sua essência.</p>
+93:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 93 representa a energia da inovação constante e a necessidade de manter o espírito curioso na jornada da vida. Ela atua como um sopro de criatividade que impede que suas conquistas se tornem áridas. É o símbolo da renovação mental, indicando que o seu sucesso contínuo depende da sua habilidade de reinventar seus métodos e de abraçar novos conceitos sem medo de perder a sua essência.</p>
 <p>No aspecto positivo, esta influência manifesta uma vitalidade intelectual contagiante e uma capacidade de adaptação que o mantém à frente do seu tempo. Você experimenta um crescimento renovado em sua carreira, atraindo oportunidades que exigem visão de futuro e originalidade. É um ciclo de descobertas onde a sua mente aberta atua como uma chave mestra que abre portas em mercados e círculos sociais antes inexplorados, trazendo frescor à vida.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da dispersão e da inconstância por estar sempre em busca da "próxima novidade". A instabilidade gerada pela impaciência pode comprometer as bases sólidas que você levou anos para construir. A Potência 93 ensina que a inovação só é verdadeiramente poderosa quando está a serviço de uma estrutura sólida; é a união entre sabedoria e audácia que gera a realização perene e respeitada.</p>`,
-94:`<p>Na estrutura principal de você, a Potência 94 manifesta-se como a força da organização suprema e a consolidação de legados na jornada da vida. Ela rege sua trajetória através da responsabilidade, indicando que este é o momento de pensar em como suas ações e conquistas impactarão o futuro a longo prazo. É o símbolo da construção de monumentos que possuem a solidez necessária para resistir ao tempo e às crises com integridade.</p>
+94:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 94 manifesta-se como a força da organização suprema e a consolidação de legados na jornada da vida. Ela rege sua trajetória através da responsabilidade, indicando que este é o momento de pensar em como suas ações e conquistas impactarão o futuro a longo prazo. É o símbolo da construção de monumentos que possuem a solidez necessária para resistir ao tempo e às crises com integridade.</p>
 <p>Quando vivida positivamente, esta potência manifesta um senso de dever cumprido e uma autoridade que é respeitada como um pilar de estabilidade na sociedade. Você experimenta a segurança de quem construiu sobre rocha, colhendo o respeito de todos pela sua integridade e visão. É uma fase de colheitas institucionais, onde sua palavra tem força e sua capacidade de gerir grandes estruturas garante a prosperidade de todos sob sua liderança.</p>
 <p>No aspecto negativo, o foco obsessivo na ordem pode levar a um autoritarismo asfixiante ou a um medo paralisante de qualquer erro que possa "manchar" a sua imagem. A rigidez pode afastar as pessoas e transformar sua vida em uma estrutura fria. A Potência 94 ensina que um verdadeiro legado não é feito apenas de posses, mas da memória viva da justiça e do amor que você semeou em sua caminhada física através da integridade.</p>`,
-95:`<p>Na estrutura principal de você, a Potência 95 simboliza a coragem de enfrentar as grandes transições e a sabedoria de conduzir sua jornada da vida. Ela indica que você atingiu um nível de maturidade onde as mudanças não são temidas, mas compreendidas como veículos de expansão. É a energia da pilotagem consciente, onde você assume o leme da sua vida com total confiança, sabendo navegar em qualquer circunstância com a mesma eficiência.</p>
+95:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 95 simboliza a coragem de enfrentar as grandes transições e a sabedoria de conduzir sua jornada da vida. Ela indica que você atingiu um nível de maturidade onde as mudanças não são temidas, mas compreendidas como veículos de expansão. É a energia da pilotagem consciente, onde você assume o leme da sua vida com total confiança, sabendo navegar em qualquer circunstância com a mesma eficiência.</p>
 <p>Vivida positivamente, esta potência manifesta uma adaptabilidade magistral e um sucesso que surge da sua habilidade em ler os sinais do tempo. Você experimenta uma transição suave para novas fases, onde antigos problemas são resolvidos e novas oportunidades são agarradas com precisão. É um ciclo de evolução guiada, onde a sua segurança interna permite explorar novos horizontes, atraindo progresso e reconhecimento pela sua resiliência e visão.</p>
 <p>Pelo lado negativo, a autoconfiança excessiva pode levar à imprudência ou a uma arrogância que ignora riscos reais. O desejo de controlar o incontrolável pode gerar estresse se as coisas não seguirem o seu cronograma exato. A Potência 95 ensina que o segredo da mestria não é ter controle total sobre os eventos externos, mas possuir o domínio total sobre a sua própria vontade e direção, permitindo que você flua com o destino sem perder seu centro.</p>`,
-96:`<p>Na estrutura principal de você, a Potência 96 representa a síntese do amor universal aplicada à harmonia da sua base na jornada da vida. Ela indica que a verdadeira potência nasce da qualidade dos seus vínculos e da paz que você cultiva em seu ambiente. É o símbolo da cura das relações, onde a maturidade emocional permite transformar conflitos antigos em cooperação profunda e transformar sua realidade em um centro de bem-estar.</p>
+96:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 96 representa a síntese do amor universal aplicada à harmonia da sua base na jornada da vida. Ela indica que a verdadeira potência nasce da qualidade dos seus vínculos e da paz que você cultiva em seu ambiente. É o símbolo da cura das relações, onde a maturidade emocional permite transformar conflitos antigos em cooperação profunda e transformar sua realidade em um centro de bem-estar.</p>
 <p>No aspecto positivo, esta influência manifesta uma felicidade social plena, onde a sua generosidade retorna em forma de proteção e apoio. Você experimenta uma fase de grande estabilidade afetiva que serve de alicerce para seus sucessos materiais, sentindo-se em paz com seu papel no mundo. É um ciclo de concórdia, onde a sua capacidade de unir as pessoas em torno de propósitos nobres garante uma prosperidade celebrada por todos que o cercam.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da superproteção ou de um sacrifício excessivo que gera anulação pessoal. O medo de quebrar a harmonia aparente pode levar à negação de problemas reais, acumulando tensões. A Potência 96 ensina que o amor só é uma potência realizadora quando é livre e honesto; a verdadeira harmonia não é a ausência de divergências, mas a presença constante do respeito e da verdade entre seres inteiros.</p>`,
-97:`<p>Na estrutura principal de você, a Potência 97 simboliza o triunfo da inteligência intuitiva e a independência mental absoluta na jornada da vida. Ela rege a vida pela clareza de pensamento que não se deixa contaminar por opiniões alheias, indicando que você atingiu o estágio de autonomia intelectual. É a energia da originalidade estratégica, onde você desenha seus caminhos baseado em uma lógica que une observação e percepção aguda.</p>
+97:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 97 simboliza o triunfo da inteligência intuitiva e a independência mental absoluta na jornada da vida. Ela rege a vida pela clareza de pensamento que não se deixa contaminar por opiniões alheias, indicando que você atingiu o estágio de autonomia intelectual. É a energia da originalidade estratégica, onde você desenha seus caminhos baseado em uma lógica que une observação e percepção aguda.</p>
 <p>Vivida positivamente, esta potência manifesta sucessos brilhantes em áreas que exigem inovação ou liderança intelectual. Você experimenta o reconhecimento por ideias que transformam o seu meio, atraindo admiradores devido à sua mente visionária. É uma fase de grande lucidez, onde a sua capacidade de enxergar além do óbvio permite tomar decisões que antecipam tendências e protegem seus interesses, garantindo uma vida de destaque e propósito.</p>
 <p>Pelo lado negativo, a agudeza mental pode se transformar em frieza ou um isolamento em uma torre de superioridade que desdenha das necessidades emocionais básicas. O excesso de racionalização pode secar a alegria da vida e transformar relações em meras transações lógicas. A Potência 97 ensina que a inteligência superior é um dom que deve servir à evolução, e que a maior prova de sabedoria é a capacidade de manter a simplicidade e a conexão.</p>`,
-98:`<p>Na estrutura principal de você, a Potência 98 representa a justiça manifestada na realidade e o recebimento das recompensas por uma jornada da vida de retidão. Ela atua como o grande fiel da balança, indicando que este é o momento de colher os resultados legais, materiais e morais de suas ações passadas. É o símbolo da integridade coroada, onde a verdade prevalece e sua reputação torna-se o seu maior e mais lucrativo ativo no mundo.</p>
+98:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 98 representa a justiça manifestada na realidade e o recebimento das recompensas por uma jornada da vida de retidão. Ela atua como o grande fiel da balança, indicando que este é o momento de colher os resultados legais, materiais e morais de suas ações passadas. É o símbolo da integridade coroada, onde a verdade prevalece e sua reputação torna-se o seu maior e mais lucrativo ativo no mundo.</p>
 <p>No aspecto positivo, esta influência manifesta a resolução favorável de litígios e uma prosperidade baseada inteiramente no mérito real. Você experimenta a tranquilidade de quem está em paz com as leis, colhendo o respeito de todos pela sua conduta exemplar. É um ciclo de ordem e equilíbrio, onde a sua vida se organiza de forma harmoniosa, permitindo desfrutar da abundância com a certeza de que cada conquista foi honestamente obtida e sustentada.</p>
 <p>No entanto, o aspecto negativo alerta que qualquer desvio ético do passado será cobrado com rigor durante este período. A sensação de severidade pode surgir se houver resistência em enfrentar as consequências de atos antigos. A Potência 98 ensina que a justiça não é uma punição, mas um ajuste necessário para que a vida flua corretamente; agir com transparência é o único caminho para que este poder atue como seu maior aliado e protetor definitivo.</p>`,
-99:`<p>Na estrutura principal de você, a Potência 99 representa o encerramento do grande ciclo de experiência e a preparação para uma transição sem precedentes na jornada da vida. Ela simboliza a totalidade e o acúmulo de toda a sabedoria anterior. É o símbolo do mestre que concluiu sua obra, indicando que você atingiu o ápice da sua evolução e que sua presença agora serve como um farol de luz e guia para as gerações futuras.</p>
+99:`<p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 99 representa o encerramento do grande ciclo de experiência e a preparação para uma transição sem precedentes na jornada da vida. Ela simboliza a totalidade e o acúmulo de toda a sabedoria anterior. É o símbolo do mestre que concluiu sua obra, indicando que você atingiu o ápice da sua evolução e que sua presença agora serve como um farol de luz e guia para as gerações futuras.</p>
 <p>Vivida positivamente, esta potência manifesta uma paz absoluta e uma conexão profunda com o sentido da existência. Você experimenta a glória de ver seus projetos consolidados, sentindo-se em harmonia com o tempo e com o destino. É um ciclo de plenitude onde a riqueza material é o cenário para uma riqueza espiritual transbordante, permitindo que você viva com uma dignidade e sabedoria que inspiram todos ao seu redor a buscarem sua própria evolução.</p>
 <p>Pelo lado negativo, a proximidade do fim de um ciclo pode gerar melancolia ou um desejo desesperado de se apegar ao poder por medo da perda de relevância. O sentimento de que "tudo acabou" pode levar ao desânimo se não houver a percepção de que todo fim é o portal para uma realidade ainda maior. A Potência 99 ensina que a conclusão de uma grande obra é a maior das vitórias; é o momento de entregar os frutos ao mundo com gratidão e honra.</p>`
   
@@ -576,296 +733,60 @@ const textosPessoal={
 
 
 
-1:`<h2>🔱  Regente Pessoal(Aspecto Mental e Emocional) N°1 </h2> 
-<h3>1️⃣Autonomia Mental e Consciência Individual1️⃣</h3> 
 
+1: `<h3>Autonomia Mental e Consciência Individual</h3> 
 <p>Para você, o Regente 1 Pessoal representa a vibração da independência mental, da iniciativa intelectual e da força interior que impulsiona suas decisões e percepções da vida.</p>
-
 <p>Essa regência revela uma mente ativa, direta e orientada para a ação. No campo interior você tende a confiar na própria opinião e prefere construir suas conclusões através da experiência pessoal. Existe forte necessidade de autonomia no pensamento e resistência natural a imposições externas.</p>
-
-<p>Quando essa vibração se origina da potência 10 pode indicar mente criativa e facilidade para iniciar projetos ou ideias originais.</p>
-
-<p>Quando se origina da potência 19 pode revelar conflitos internos relacionados ao orgulho ou à necessidade de aprender lições de humildade.</p>
-
-<p>Quando se origina da potência 28 pode indicar tendência a enfrentar disputas de ideias ou desafios intelectuais.</p>
-
-<p>Quando se origina da potência 37 revela inteligência estratégica e facilidade para encontrar soluções rápidas.</p>
-
-<p>Quando se origina da potência 46 pode indicar mente prática voltada para conquistas materiais.</p>
-
-<p>Quando se origina da potência 55 revela pensamento inquieto e forte desejo de liberdade intelectual.</p>
-
-<p>Quando se origina da potência 64 pode indicar mudanças repentinas na forma de pensar ou momentos de revisão profunda de ideias.</p>
-
-<p>Quando se origina da potência 73 revela tendência a reflexões profundas e busca de conhecimento interior.</p>
-
-<p>Quando se origina da potência 82 pode indicar forte senso de autoridade intelectual.</p>
-
-<p>Quando se origina da potência 91 revela amadurecimento mental através de experiências marcantes.</p>
-
-<p>No aspecto positivo manifesta liderança mental, iniciativa intelectual, criatividade e coragem para defender suas ideias.</p>
-
-<p>No aspecto negativo pode gerar orgulho intelectual, impaciência, autoritarismo mental ou dificuldade de ouvir opiniões diferentes.</p>
-
+<p>No aspecto positivo manifesta liderança mental, iniciativa intelectual, criatividade e coragem para defender suas ideias. No aspecto negativo pode gerar orgulho intelectual, impaciência, autoritarismo mental ou dificuldade de ouvir opiniões diferentes.</p>
 <p>O aprendizado do Regente 1 Pessoal consiste em desenvolver liderança interior sem perder a capacidade de ouvir e aprender.</p>`,
 
-2:`<h2>🔱  Regente Pessoal(Aspecto Mental e Emocional) N°2</h2> 
-<h3> 2️⃣Sensibilidade Intelectual e Percepção Psicológica2️⃣</h3>  
-
+2: `<h3>Sensibilidade Intelectual e Percepção Psicológica</h3>  
 <p>Para você, o Regente 2 Pessoal representa a vibração da sensibilidade emocional e da percepção intuitiva que influencia sua maneira de pensar e interpretar o mundo.</p>
-
 <p>Essa regência revela mente observadora e sensível aos detalhes das relações humanas. Você tende a perceber facilmente o ambiente emocional das situações e das pessoas, desenvolvendo forte capacidade de empatia e compreensão psicológica.</p>
-
-<p>Quando essa vibração se origina da potência 29 pode indicar inteligência sensível acompanhada de conflitos emocionais que exigem equilíbrio interior.</p>
-
-<p>Quando se origina da potência 38 revela talento criativo e sensibilidade artística.</p>
-
-<p>Quando se origina da potência 47 pode indicar mente organizada e habilidade para lidar com assuntos práticos.</p>
-
-<p>Quando se origina da potência 56 revela pensamento ativo e espírito competitivo.</p>
-
-<p>Quando se origina da potência 65 pode indicar forte ligação entre pensamento e emoções.</p>
-
-<p>Quando se origina da potência 74 revela necessidade de disciplina mental.</p>
-
-<p>Quando se origina da potência 83 pode indicar facilidade de comunicação e raciocínio rápido.</p>
-
-<p>Quando se origina da potência 92 revela intuição profunda e percepção espiritual.</p>
-
-<p>No aspecto positivo manifesta empatia, diplomacia, percepção emocional e inteligência intuitiva.</p>
-
-<p>No aspecto negativo pode gerar insegurança mental, indecisão ou tendência a absorver excessivamente os problemas dos outros.</p>
-
+<p>No aspecto positivo manifesta empatia, diplomacia, percepção emocional e inteligência intuitiva. No aspecto negativo pode gerar insegurança mental, indecisão ou tendência a absorver excessivamente os problemas dos outros.</p>
 <p>O aprendizado do Regente 2 Pessoal consiste em confiar na própria intuição sem perder o equilíbrio emocional.</p>`,
 
-3:`<h2>🔱  Regente Pessoal(Aspecto Mental e Emocional) N°3</h2> 
-<h3>3️⃣Criatividade Mental e Expressão Intelectual3️⃣</h3>  
-
+3: `<h3>Criatividade Mental e Expressão Intelectual</h3>  
 <p>Para você, o Regente 3 Pessoal representa a vibração da criatividade, da imaginação e da necessidade de expressar pensamentos e ideias.</p>
-
 <p>Essa regência revela mente dinâmica, comunicativa e inclinada à expressão verbal ou artística. Existe facilidade para aprender através da observação, da conversa e do intercâmbio de ideias.</p>
-
-<p>Quando essa vibração se origina da potência 12 pode indicar momentos de sacrifício ou aprendizado profundo que transformam sua forma de pensar.</p>
-
-<p>Quando se origina da potência 21 revela facilidade para crescimento intelectual através das relações sociais.</p>
-
-<p>Quando se origina da potência 30 pode indicar forte imaginação e criatividade mental.</p>
-
-<p>Quando se origina da potência 39 revela entusiasmo intelectual e sociabilidade.</p>
-
-<p>Quando se origina da potência 48 pode indicar desafios relacionados à disciplina mental.</p>
-
-<p>Quando se origina da potência 57 revela inteligência estratégica e visão analítica.</p>
-
-<p>Quando se origina da potência 66 pode indicar forte sensibilidade emocional influenciando o pensamento.</p>
-
-<p><p>Quando se origina da potência 75 revela mente investigativa e reflexiva.</p>
-
-<p><p>Quando se origina da potência 84 pode indicar responsabilidade intelectual em assuntos materiais.</p>
-
-<p>Quando se origina da potência 93 revela maturidade mental e visão ampla da vida.</p>
-
-<p>No aspecto positivo manifesta criatividade, comunicação clara, imaginação e entusiasmo intelectual.</p>
-
-<p>No aspecto negativo pode gerar dispersão, superficialidade ou dificuldade de manter foco em objetivos.</p>
-
+<p>No aspecto positivo manifesta criatividade, comunicação clara, imaginação e entusiasmo intelectual. No aspecto negativo pode gerar dispersão, superficialidade ou dificuldade de manter foco em objetivos.</p>
 <p>O aprendizado do Regente 3 Pessoal consiste em transformar criatividade em conhecimento estruturado.</p>`,
 
-4:`<h2>🔱  Regente Pessoal(Aspecto Mental e Emocional) N°4</h2> 
-<h3>4️⃣Estrutura Mental e Disciplina Intelectual4️⃣</h3> 
-
+4: `<h3>Estrutura Mental e Disciplina Intelectual</h3> 
 <p>Para você, o Regente 4 Pessoal representa a vibração da organização mental, da lógica e da necessidade de estruturar ideias com clareza e disciplina.</p>
-
 <p>Essa regência revela mente prática e analítica, inclinada a organizar pensamentos de forma objetiva. Existe forte necessidade de segurança intelectual e coerência nas decisões.</p>
-
-<p>Quando essa vibração se origina da potência 13 pode indicar transformações profundas na forma de pensar.</p>
-
-<p>Quando se origina da potência 22 revela potencial intelectual voltado para grandes projetos ou liderança.</p>
-
-<p>Quando se origina da potência 31 pode indicar talento para comunicação estruturada.</p>
-
-<p>Quando se origina da potência 40 revela períodos de reflexão profunda.</p>
-
-<p>Quando se origina da potência 49 pode indicar mudanças importantes na visão de mundo.</p>
-
-<p>Quando se origina da potência 58 revela desafios ligados ao poder intelectual.</p>
-
-<p>Quando se origina da potência 67 pode indicar interesse por conhecimento espiritual.</p>
-
-<p>Quando se origina da potência 76 revela mente introspectiva e investigativa.</p>
-
-<p>Quando se origina da potência 85 pode indicar aprendizado sobre responsabilidade intelectual.</p>
-
-<p>Quando se origina da potência 94 revela maturidade mental através das experiências.</p>
-
-<p>No aspecto positivo manifesta disciplina mental, organização e raciocínio lógico.</p>
-
-<p>No aspecto negativo pode gerar rigidez de pensamento ou resistência a novas ideias.</p>
-
+<p>No aspecto positivo manifesta disciplina mental, organização e raciocínio lógico. No aspecto negativo pode gerar rigidez de pensamento ou resistência a novas ideias.</p>
 <p>O aprendizado do Regente 4 Pessoal consiste em equilibrar lógica com flexibilidade.</p>`,
 
-5:`<h2>🔱  Regente Pessoal(Aspecto Mental e Emocional) N°5</h2> 
-<h3> 5️⃣Curiosidade Intelectual e Movimento Mental5️⃣</h3>  
-
+5: `<h3>Curiosidade Intelectual e Movimento Mental</h3>  
 <p>Para você, o Regente 5 Pessoal representa a vibração da curiosidade, da busca por conhecimento e da necessidade de experimentar novas ideias.</p>
-
-<p>Essa regência revela mente inquieta, adaptável e aberta a diferentes pontos de vista.</p>
-
-<p>Quando essa vibração se origina da potência 14 pode indicar talento para comunicação pública.</p>
-
-<p>Quando se origina da potência 23 revela auxílio intelectual de pessoas influentes.</p>
-
-<p>Quando se origina da potência 32 pode indicar criatividade e facilidade de expressão.</p>
-
-<p>Quando se origina da potência 41 revela liderança intelectual.</p>
-
-<p>Quando se origina da potência 50 pode indicar períodos de reflexão mental.</p>
-
-<p>Quando se origina da potência 59 revela sensibilidade espiritual.</p>
-
-<p>Quando se origina da potência 68 pode indicar aprendizado relacionado ao poder material.</p>
-
-<p>Quando se origina da potência 77 revela forte inclinação para estudos profundos.</p>
-
-<p>Quando se origina da potência 86 pode indicar desafios intelectuais ligados a responsabilidades.</p>
-
-<p>Quando se origina da potência 95 revela transformações importantes na forma de pensar.</p>
-
-<p>No aspecto positivo manifesta inteligência versátil, curiosidade e capacidade de adaptação.</p>
-
-<p>No aspecto negativo pode gerar inquietação mental ou dificuldade de concentração.</p>
-
+<p>Essa regência revela mente inquieta, adaptável e aberta a diferentes pontos de vista. No campo interior, o movimento constante é o que mantém sua motivação elevada.</p>
+<p>No aspecto positivo manifesta inteligência versátil, curiosidade e capacidade de adaptação. No aspecto negativo pode gerar inquietação mental ou dificuldade de concentração.</p>
 <p>O aprendizado do Regente 5 Pessoal consiste em transformar curiosidade em conhecimento sólido.</p>`,
 
-6:`<h2>🔱  Regente Pessoal(Aspecto Mental e Emocional) N°6</h2> 
-<h3>6️⃣Consciência Emocional e Harmonia Interior6️⃣</h3>
-
+6: `<h3>Consciência Emocional e Harmonia Interior</h3>
 <p>Para você, o Regente 6 Pessoal representa a vibração do amor, da responsabilidade emocional e da busca de harmonia interior.</p>
-
-<p>Essa regência revela mente sensível às relações afetivas e forte preocupação com o bem-estar das pessoas próximas.</p>
-
-<p>Quando essa vibração se origina da potência 15 pode indicar magnetismo emocional e forte influência afetiva.</p>
-
-<p>Quando se origina da potência 24 revela facilidade para construir relações estáveis.</p>
-
-<p>Quando se origina da potência 33 indica generosidade e vocação para ajudar os outros.</p>
-
-<p>Quando se origina da potência 42 pode indicar responsabilidades emocionais importantes.</p>
-
-<p>Quando se origina da potência 51 revela mudanças emocionais marcantes.</p>
-
-<p>Quando se origina da potência 60 pode indicar momentos de reflexão interior.</p>
-
-<p>Quando se origina da potência 69 revela forte sensibilidade afetiva.</p>
-
-<p>Quando se origina da potência 78 pode indicar desafios ligados ao autocontrole emocional.</p>
-
-<p>Quando se origina da potência 87 revela aprendizado espiritual através das relações.</p>
-
-<p>Quando se origina da potência 96 indica maturidade emocional conquistada ao longo do tempo.</p>
-
-<p>No aspecto positivo manifesta amor, compaixão e capacidade de harmonizar ambientes.</p>
-
-<p>No aspecto negativo pode gerar dependência emocional ou excesso de preocupação com os outros.</p>
-
+<p>Essa regência revela mente sensível às relações afetivas e forte preocupação com o bem-estar das pessoas próximas. Seu equilíbrio mental depende diretamente da paz nos seus relacionamentos.</p>
+<p>No aspecto positivo manifesta amor, compaixão e capacidade de harmonizar ambientes. No aspecto negativo pode gerar dependência emocional ou excesso de preocupação com os outros.</p>
 <p>O aprendizado do Regente 6 Pessoal consiste em amar com equilíbrio.</p>`,
 
-7:`<h2>🔱  Regente Pessoal(Aspecto Mental e Emocional) N°7</h2> 
-<h3>7️⃣Investigação Mental e Busca de Sabedoria7️⃣</h3> 
-
+7: `<h3>Investigação Mental e Busca de Sabedoria</h3> 
 <p>Para você, o Regente 7 Pessoal representa a vibração da introspecção, da investigação intelectual e da busca por conhecimento profundo.</p>
-
-<p>Essa regência revela mente analítica e tendência natural a refletir sobre os mistérios da vida.</p>
-
-<p>Quando essa vibração se origina da potência 16 pode indicar experiências que provocam mudanças profundas na forma de pensar.</p>
-
-<p>Quando se origina da potência 25 revela sensibilidade intelectual.</p>
-
-<p>Quando se origina da potência 34 pode indicar criatividade mental.</p>
-
-<p>Quando se origina da potência 43 revela liderança intelectual.</p>
-
-<p>Quando se origina da potência 52 indica aprendizado através das experiências práticas.</p>
-
-<p>Quando se origina da potência 61 revela sensibilidade espiritual.</p>
-
-<p>Quando se origina da potência 70 pode indicar períodos de recolhimento mental.</p>
-
-<p>Quando se origina da potência 79 revela intensa busca por conhecimento.</p>
-
-<p>Quando se origina da potência 88 pode indicar grande poder mental.</p>
-
-<p>Quando se origina da potência 97 revela maturidade intelectual profunda.</p>
-
-<p>No aspecto positivo manifesta sabedoria, intuição e capacidade de análise profunda.</p>
-
-<p>No aspecto negativo pode gerar isolamento mental ou excesso de introspecção.</p>
-
+<p>Essa regência revela mente analítica e tendência natural a refletir sobre os mistérios da vida. Você busca a verdade por trás das aparências e valoriza o silêncio para processar informações.</p>
+<p>No aspecto positivo manifesta sabedoria, intuição e capacidade de análise profunda. No aspecto negativo pode gerar isolamento mental ou excesso de introspecção.</p>
 <p>O aprendizado do Regente 7 Pessoal consiste em transformar conhecimento em sabedoria.</p>`,
 
-8:`<h2>🔱  Regente Pessoal(Aspecto Mental e Emocional) N°8</h2> 
-<h3> 8️⃣Força Mental e Consciência de Poder8️⃣</h3>  
+8: `<h3>Força Mental e Consciência de Poder</h3>  
+<p>Para você, o Regente 8 Pessoal representa a vibração da força mental, da disciplina intelectual e da consciência de responsabilidade.</p>
+<p>Essa regência revela mente estratégica e capacidade de liderança intelectual. Você possui uma visão de longo prazo e entende as implicações práticas de cada pensamento e decisão.</p>
+<p>No aspecto positivo manifesta liderança intelectual, disciplina e senso de justiça. No aspecto negativo pode gerar autoritarismo mental ou obsessão por controle.</p>
+<p>O aprendizado do Regente 8 Pessoal consiste em usar o poder mental com responsabilidade.</p>`,
 
-Para você, o Regente 8 Pessoal representa a vibração da força mental, da disciplina intelectual e da consciência de responsabilidade.</p>
-
-Essa regência revela mente estratégica e capacidade de liderança intelectual.</p>
-
-Quando essa vibração se origina da potência 17 pode indicar proteção espiritual.</p>
-
-Quando se origina da potência 26 revela aprendizado relacionado a responsabilidades materiais.</p>
-
-Quando se origina da potência 35 pode indicar inteligência estratégica.</p>
-
-Quando se origina da potência 44 revela grande poder de liderança.</p>
-
-Quando se origina da potência 53 pode indicar mudanças inesperadas na visão de mundo.</p>
-
-Quando se origina da potência 62 revela aprendizado através das relações.</p>
-
-Quando se origina da potência 71 indica mente analítica e investigativa.</p>
-
-Quando se origina da potência 89 pode indicar experiências intensas ligadas ao poder.</p>
-
-Quando se origina da potência 98 revela maturidade e compreensão profunda da vida.</p>
-
-No aspecto positivo manifesta liderança intelectual, disciplina e senso de justiça.</p>
-
-No aspecto negativo pode gerar autoritarismo mental ou obsessão por controle.</p>
-
-O aprendizado do Regente 8 Pessoal consiste em usar o poder mental com responsabilidade.</p>`,
-
-9:`<h2>🔱  Regente Pessoal(Aspecto Mental e Emocional) N°9</h2> 
-<h3> 9️⃣Consciência Interior e Sabedoria Mental9️⃣ </h3> 
-
-Para você, o Regente 9 Pessoal representa a vibração da sabedoria, da reflexão e da compreensão profunda da existência.</p>
-
-Essa regência revela mente filosófica, sensível e inclinada a compreender o significado das experiências da vida.</p>
-
-Quando essa vibração se origina da potência 18 pode indicar conflitos emocionais que conduzem ao amadurecimento mental.</p>
-
-Quando se origina da potência 27 revela sensibilidade espiritual.</p>
-
-Quando se origina da potência 36 pode indicar criatividade aliada à sensibilidade.</p>
-
-Quando se origina da potência 45 revela aprendizado através de responsabilidades.</p>
-
-Quando se origina da potência 54 pode indicar mudanças importantes na forma de pensar.</p>
-
-Quando se origina da potência 63 revela maturidade emocional.</p>
-
-Quando se origina da potência 72 indica forte percepção intuitiva.</p>
-
-Quando se origina da potência 81 revela liderança espiritual.</p>
-
-Quando se origina da potência 90 pode indicar encerramento de ciclos intelectuais.</p>
-
-Quando se origina da potência 99 revela elevada compreensão espiritual.</p>
-
-No aspecto positivo manifesta sabedoria, compaixão e visão ampla da vida.</p>
-
-No aspecto negativo pode gerar isolamento mental ou excesso de idealismo.</p>
-
-O aprendizado do Regente 9 Pessoal consiste em transformar experiência em sabedoria.</p>`,
+9: `<h3>Consciência Interior e Sabedoria Mental</h3> 
+<p>Para você, o Regente 9 Pessoal representa a vibração da sabedoria, da reflexão e da compreensão profunda da existência.</p>
+<p>Essa regência revela mente filosófica, sensível e inclinada a compreender o significado das experiências da vida. Sua percepção ultrapassa o óbvio, buscando uma conexão com o coletivo e o humanitário.</p>
+<p>No aspecto positivo manifesta sabedoria, compaixão e visão ampla da vida. No aspecto negativo pode gerar isolamento mental ou excesso de idealismo.</p>
+<p>O aprendizado do Regente 9 Pessoal consiste em transformar experiência em sabedoria.</p>`,
 
 
   
@@ -1377,298 +1298,59 @@ O aprendizado do Regente 9 Pessoal consiste em transformar experiência em sabed
 
 
 
-1:`<h2>🔱  Regente Social(Aspecto Fisico) N°1</h2> 
-<h3> 1️⃣Percepção de Liderança no Meio Social1️⃣</h3>  
 
-
+1: `<h3>Percepção de Liderança no Meio Social</h3>  
 <p>Para você, o Regente 1 do Meio Social representa uma visão do ambiente baseada na iniciativa, na independência e na capacidade de liderança das pessoas ao seu redor.</p>
-
 <p>Essa regência indica que você tende a observar o meio social como um espaço onde indivíduos buscam afirmar suas ideias, conquistar autonomia e demonstrar força de vontade. Muitas vezes você percebe nas outras pessoas atitudes de competição, iniciativa ou desejo de se destacar.</p>
-
-<p>Quando essa vibração se origina da potência 10 pode indicar percepção de ambientes sociais dinâmicos e cheios de oportunidades.</p>
-
-<p>Quando se origina da potência 19 pode revelar visão crítica sobre atitudes de orgulho ou autoritarismo nas pessoas.</p>
-
-<p>Quando se origina da potência 28 pode indicar percepção de disputas ou rivalidades no meio social.</p>
-
-<p>Quando se origina da potência 37 revela visão estratégica das relações sociais.</p>
-
-<p>Quando se origina da potência 46 pode indicar percepção de ambientes voltados ao trabalho e às conquistas materiais.</p>
-
-<p>Quando se origina da potência 55 revela ambientes sociais inquietos ou marcados pela busca de liberdade.</p>
-
-<p>Quando se origina da potência 64 pode indicar percepção de mudanças repentinas nas relações sociais.</p>
-
-<p>Quando se origina da potência 73 revela tendência a observar as pessoas com análise profunda.</p>
-
-<p>Quando se origina da potência 82 pode indicar percepção de disputas por poder no meio social.</p>
-
-<p>Quando se origina da potência 91 revela compreensão madura das atitudes humanas.</p>
-
-<p>No aspecto positivo manifesta visão de liderança, iniciativa e capacidade de reconhecer pessoas fortes.</p>
-
-<p>No aspecto negativo pode gerar tendência a perceber o meio social como competitivo ou dominado por conflitos de ego.</p>
-
+<p>No aspecto positivo manifesta visão de liderança, iniciativa e capacidade de reconhecer pessoas fortes. No aspecto negativo pode gerar tendência a perceber o meio social como competitivo ou dominado por conflitos de ego.</p>
 <p>O aprendizado do Regente 1 do Meio Social consiste em compreender a liderança sem transformar todas as relações em competição.</p>`,
 
-2:`<h2>🔱  Regente Social(Aspecto Fisico) N°V2</h2> 
-<h3> 2️⃣vPercepção Sensível das Relações Sociais2️⃣</h3>  
-
+2: `<h3>Percepção Sensível das Relações Sociais</h3>  
 <p>Para você, o Regente 2 do Meio Social representa uma visão do ambiente baseada na sensibilidade emocional e na observação das relações entre as pessoas.</p>
-
-<p>Essa regência indica que você tende a perceber facilmente os sentimentos presentes no ambiente social. Muitas vezes você identifica tensões, alianças ou conflitos que outras pessoas não percebem com facilidade.</p>
-
-<p>Quando essa vibração se origina da potência 29 pode indicar percepção de ambientes sociais emocionalmente complexos.</p>
-
-<p>Quando se origina da potência 38 revela visão sensível das relações humanas.</p>
-
-<p>Quando se origina da potência 47 pode indicar percepção de ambientes organizados ou estruturados.</p>
-
-<p>Quando se origina da potência 56 revela ambientes sociais ativos e competitivos.</p>
-
-<p>Quando se origina da potência 65 pode indicar forte percepção das relações afetivas no meio social.</p>
-
-<p>Quando se origina da potência 74 revela ambientes que exigem disciplina nas relações.</p>
-
-<p>Quando se origina da potência 83 pode indicar percepção de pessoas comunicativas e intelectuais.</p>
-
-<p>Quando se origina da potência 92 revela forte sensibilidade espiritual na observação das pessoas.</p>
-
-<p>No aspecto positivo manifesta empatia social e grande percepção emocional.</p>
-
-<p>No aspecto negativo pode gerar tendência a absorver excessivamente os conflitos das pessoas ao redor.</p>
-
+<p>Essa regência indica que você tende a perceber facilmente os sentimentos presentes no ambiente social. Muitas vezes você identifica tensões, alianças ou conflitos ocultos que outras pessoas não percebem com facilidade. Sua visão do mundo é filtrada pela empatia.</p>
+<p>No aspecto positivo manifesta empatia social e grande percepção emocional. No aspecto negativo pode gerar tendência a absorver excessivamente os conflitos das pessoas ao redor.</p>
 <p>O aprendizado do Regente 2 do Meio Social consiste em observar as emoções do ambiente sem carregar para si os problemas dos outros.</p>`,
 
-3:`<h2>🔱  Regente Social(Aspecto Fisico) N°3</h2> 
-<h3>3️⃣Percepção Criativa das Relações Sociais3️⃣</h3> 
-
+3: `<h3>Percepção Criativa das Relações Sociais</h3> 
 <p>Para você, o Regente 3 do Meio Social representa uma visão do ambiente baseada na comunicação, na criatividade e na interação entre as pessoas.</p>
-
-<p>Essa regência indica que você tende a perceber o meio social como um espaço de troca de ideias, conversas e manifestações de personalidade.</p>
-
-<p>Quando essa vibração se origina da potência 12 pode indicar percepção de pessoas que passam por processos de aprendizado ou transformação.</p>
-
-<p>Quando se origina da potência 21 revela ambientes sociais dinâmicos e comunicativos.</p>
-
-<p>Quando se origina da potência 30 pode indicar percepção de criatividade coletiva.</p>
-
-<p>Quando se origina da potência 39 revela ambientes animados e sociáveis.</p>
-
-<p>Quando se origina da potência 48 pode indicar percepção de conflitos relacionados à organização social.</p>
-
-<p>Quando se origina da potência 57 revela ambientes onde a estratégia e a inteligência são valorizadas.</p>
-
-<p>Quando se origina da potência 66 pode indicar forte presença de emoções nas relações sociais.</p>
-
-<p>Quando se origina da potência 75 revela ambientes reflexivos ou intelectuais.</p>
-
-<p>Quando se origina da potência 84 pode indicar percepção de responsabilidade social.</p>
-
-<p>Quando se origina da potência 93 revela visão madura das relações humanas.</p>
-
-<p>No aspecto positivo manifesta visão otimista e comunicativa das relações sociais.</p>
-
-<p>No aspecto negativo pode gerar tendência a perceber superficialidade nas interações sociais.</p>
-
+<p>Essa regência indica que você tende a perceber o meio social como um espaço de troca de ideias, conversas e manifestações de personalidade. Você valoriza o brilho individual e a capacidade das pessoas de se expressarem no mundo.</p>
+<p>No aspecto positivo manifesta visão otimista e comunicativa das relações sociais. No aspecto negativo pode gerar tendência a perceber superficialidade nas interações sociais.</p>
 <p>O aprendizado do Regente 3 do Meio Social consiste em valorizar a comunicação sem perder a profundidade nas relações.</p>`,
 
-4:`<h2>🔱  Regente Social(Aspecto Fisico) N°4</h2> 
-<h3>4️⃣Percepção Estruturada do Ambiente Social4️⃣</h3> 
-
+4: `<h3>Percepção Estruturada do Ambiente Social</h3> 
 <p>Para você, o Regente 4 do Meio Social representa uma visão das relações sociais baseada na disciplina, na organização e na estabilidade.</p>
-
-<p>Essa regência indica que você tende a observar o meio social como um sistema de regras, responsabilidades e estruturas.</p>
-
-<p>Quando essa vibração se origina da potência 13 pode indicar percepção de mudanças intensas nas relações sociais.</p>
-
-<p>Quando se origina da potência 22 revela ambientes sociais ligados a grandes responsabilidades.</p>
-
-<p>Quando se origina da potência 31 pode indicar percepção de comunicação estruturada.</p>
-
-<p>Quando se origina da potência 40 revela ambientes marcados por reflexão ou pausa.</p>
-
-<p>Quando se origina da potência 49 pode indicar percepção de conflitos ou transformações sociais.</p>
-
-<p>Quando se origina da potência 58 revela ambientes voltados ao poder ou às conquistas materiais.</p>
-
-<p>Quando se origina da potência 67 pode indicar percepção de ambientes ligados ao conhecimento.</p>
-
-<p>Quando se origina da potência 76 revela ambientes introspectivos ou reservados.</p>
-
-<p>Quando se origina da potência 85 pode indicar disputas de autoridade.</p>
-
-<p>Quando se origina da potência 94 revela percepção de transformações profundas na sociedade.</p>
-
-<p>No aspecto positivo manifesta visão organizada e realista das relações sociais.</p>
-
-<p>No aspecto negativo pode gerar percepção rígida ou crítica das atitudes das pessoas.</p>
-
+<p>Essa regência indica que você tende a observar o meio social como um sistema de regras, responsabilidades e estruturas. Você percebe quem são as pessoas confiáveis e quem são as que fogem das normas ou da ordem estabelecida.</p>
+<p>No aspecto positivo manifesta visão organizada e realista das relações sociais. No aspecto negativo pode gerar percepção rígida ou crítica das atitudes das pessoas.</p>
 <p>O aprendizado do Regente 4 do Meio Social consiste em compreender que as relações humanas nem sempre seguem regras fixas.</p>`,
 
-5:`<h2>🔱  Regente Social(Aspecto Fisico) N°5</h2> 
-<h3> 5️⃣Percepção Dinâmica do Meio Social5️⃣</h3>  
-
+5: `<h3>Percepção Dinâmica do Meio Social</h3>  
 <p>Para você, o Regente 5 do Meio Social representa uma visão das relações humanas marcada pela mudança, pela diversidade e pela curiosidade em relação às pessoas.</p>
+<p>Essa regência indica que você tende a perceber o ambiente social como algo dinâmico, onde as pessoas estão sempre mudando ou buscando novas experiências. Você se sente atraído por meios plurais e detesta a monotonia social.</p>
+<p>No aspecto positivo manifesta curiosidade social e capacidade de compreender diferentes tipos de pessoas. No aspecto negativo pode gerar percepção de instabilidade ou imprevisibilidade nas relações sociais.</p>
+<p>O aprendizado do Regente 5 do Meio Social consiste em compreender a diversidade das pessoas sem perder o equilíbrio.</p>`,
 
-<p>Essa regência indica que você tende a perceber o ambiente social como algo dinâmico, onde as pessoas estão sempre mudando ou buscando novas experiências.</p>
-
-<p>Quando essa vibração se origina da potência 14 pode indicar percepção de pessoas comunicativas.</p>
-
-<p>Quando se origina da potência 23 revela ambientes sociais protegidos por influências positivas.</p>
-
-<p>Quando se origina da potência 32 pode indicar criatividade coletiva.</p>
-
-<p>Quando se origina da potência 41 revela percepção de liderança social.</p>
-
-<p>Quando se origina da potência 50 pode indicar períodos de pausa ou reflexão coletiva.</p>
-
-<p>Quando se origina da potência 59 revela ambientes espirituais ou sensíveis.</p>
-
-<p>Quando se origina da potência 68 pode indicar disputas por poder ou recursos.</p>
-
-<p>Quando se origina da potência 77 revela ambientes intelectuais.</p>
-
-<p>Quando se origina da potência 86 pode indicar responsabilidades sociais intensas.</p>
-
-<p>Quando se origina da potência 95 revela transformações sociais importantes.</p>
-
-<p>No aspecto positivo manifesta curiosidade social e capacidade de compreender diferentes tipos de pessoas.</p>
-
-<p>No aspecto negativo pode gerar percepção de instabilidade ou imprevisibilidade nas relações sociais.</p>
-
-<p>O aprendizado do Regente 5 do Meio Social consiste em compreender a diversidade das pessoas sem perder o equilíbrio.</p></p>`,
-
-6:`<h2>🔱  Regente Social(Aspecto Fisico) N°6</h2> 
-<h3> 6️⃣Percepção Afetiva do Meio Social6️⃣ </h3> 
-
-<p>Para você, o Regente 6 do Meio Social representa uma visão das relações humanas baseada no afeto, na responsabilidade emocional e na harmonia entre as pessoas.</p></p>
-
-<p>Essa regência indica que você tende a observar o meio social através da qualidade das relações afetivas.</p>
-
-<p>Quando essa vibração se origina da potência 15 pode indicar percepção de forte magnetismo social.</p>
-
-<p>Quando se origina da potência 24 revela ambientes harmoniosos.</p>
-
-<p>Quando se origina da potência 33 pode indicar percepção de generosidade coletiva.</p>
-
-<p>Quando se origina da potência 42 revela responsabilidades familiares ou sociais.</p>
-
-<p>Quando se origina da potência 51 pode indicar mudanças importantes nas relações sociais.</p>
-
-<p>Quando se origina da potência 60 revela períodos de reflexão emocional coletiva.</p>
-
-<p>Quando se origina da potência 69 pode indicar forte sensibilidade social.</p>
-
-<p>Quando se origina da potência 78 revela desafios nas relações.</p>
-
-<p>Quando se origina da potência 87 indica aprendizado social através das relações.</p>
-
-<p>Quando se origina da potência 96 revela maturidade nas relações humanas.</p>
-
-<p>No aspecto positivo manifesta percepção de amor, cooperação e harmonia social.</p>
-
-<p>No aspecto negativo pode gerar tendência a perceber conflitos emocionais entre as pessoas.</p>
-
+6: `<h3>Percepção Afetiva do Meio Social</h3> 
+<p>Para você, o Regente 6 do Meio Social representa uma visão das relações humanas baseada no afeto, na responsabilidade emocional e na harmonia entre as pessoas.</p>
+<p>Essa regência indica que você tende a observar o meio social através da qualidade das relações afetivas e familiares. Você percebe quem cuida de quem e valoriza ambientes onde a cooperação e o amor são as bases principais.</p>
+<p>No aspecto positivo manifesta percepção de amor, cooperação e harmonia social. No aspecto negativo pode gerar tendência a perceber conflitos emocionais entre as pessoas.</p>
 <p>O aprendizado do Regente 6 do Meio Social consiste em compreender as relações humanas com equilíbrio emocional.</p>`,
 
-7:`<h2>🔱  Regente Social(Aspecto Fisico) N°7</h2> 
-<h3>7️⃣Percepção Analítica do Meio Social7️⃣ </h3>
-
+7: `<h3>Percepção Analítica do Meio Social</h3> 
 <p>Para você, o Regente 7 do Meio Social representa uma visão das relações humanas baseada na análise, na observação e na busca de compreensão profunda do comportamento das pessoas.</p>
-
-<p>Essa regência indica que você tende a observar o ambiente social de forma reflexiva, analisando atitudes e motivações.</p>
-
-<p>Quando essa vibração se origina da potência 16 pode indicar percepção de mudanças bruscas no comportamento das pessoas.</p>
-
-<p>Quando se origina da potência 25 revela sensibilidade intelectual.</p>
-
-<p>Quando se origina da potência 34 pode indicar criatividade social.</p>
-
-<p>Quando se origina da potência 43 revela liderança intelectual.</p>
-
-<p>Quando se origina da potência 52 indica aprendizado através das experiências sociais.</p>
-
-<p>Quando se origina da potência 61 revela sensibilidade espiritual nas relações.</p>
-
-<p>Quando se origina da potência 70 pode indicar períodos de reflexão coletiva.</p>
-
-<p>Quando se origina da potência 79 revela busca intensa por conhecimento social.</p>
-
-<p>Quando se origina da potência 88 pode indicar percepção de grande poder coletivo.</p>
-
-<p>Quando se origina da potência 97 revela maturidade social profunda.</p>
-
-<p>No aspecto positivo manifesta compreensão profunda do comportamento humano.</p>
-
-<p>No aspecto negativo pode gerar tendência ao distanciamento social ou excesso de análise.</p>
-
+<p>Essa regência indica que você tende a observar o ambiente social de forma reflexiva, analisando atitudes e motivações ocultas. Você prefere observar a distância antes de se integrar totalmente a um grupo.</p>
+<p>No aspecto positivo manifesta compreensão profunda do comportamento humano. No aspecto negativo pode gerar tendência ao distanciamento social ou excesso de análise.</p>
 <p>O aprendizado do Regente 7 do Meio Social consiste em compreender as pessoas sem se afastar emocionalmente delas.</p>`,
 
-8:`<h2>🔱  Regente Social(Aspecto Fisico) N°8</h2> 
-<h3> 8️⃣Percepção de Poder no Meio Social8️⃣ </h3> 
-
+8: `<h3>Percepção de Poder no Meio Social</h3> 
 <p>Para você, o Regente 8 do Meio Social representa uma visão das relações humanas baseada no poder, na autoridade e nas estruturas sociais.</p>
-
-<p>Essa regência indica que você tende a perceber o ambiente social como um espaço onde existem hierarquias, responsabilidades e disputas por influência.</p>
-
-<p>Quando essa vibração se origina da potência 17 pode indicar percepção de proteção ou reconhecimento social.</p>
-
-<p>Quando se origina da potência 26 revela aprendizado através de responsabilidades materiais.</p>
-
-<p>Quando se origina da potência 35 pode indicar inteligência estratégica nas relações.</p>
-
-<p>Quando se origina da potência 44 revela ambientes sociais ligados à liderança.</p>
-
-<p>Quando se origina da potência 53 pode indicar mudanças inesperadas no meio social.</p>
-
-<p>Quando se origina da potência 62 revela aprendizado através das relações humanas.</p>
-
-<p>Quando se origina da potência 71 indica análise profunda das estruturas sociais.</p>
-
-<p>Quando se origina da potência 80 revela necessidade de disciplina coletiva.</p>
-
-<p>Quando se origina da potência 89 pode indicar percepção de conflitos de poder.</p>
-
-<p>Quando se origina da potência 98 revela maturidade social e compreensão das leis da vida.</p>
-
-<p>No aspecto positivo manifesta visão estratégica e compreensão das estruturas sociais.</p>
-
-<p>No aspecto negativo pode gerar percepção excessiva de competição ou disputa por poder.</p>
-
+<p>Essa regência indica que você tende a perceber o ambiente social como um espaço onde existem hierarquias, responsabilidades e disputas por influência. Você reconhece rapidamente quem detém a autoridade em qualquer grupo.</p>
+<p>No aspecto positivo manifesta visão estratégica e compreensão das estruturas sociais. No aspecto negativo pode gerar percepção excessiva de competição ou disputa por poder.</p>
 <p>O aprendizado do Regente 8 do Meio Social consiste em compreender o poder sem transformar todas as relações em competição.</p>`,
 
-9:`<h2>🔱  Regente Social(Aspecto Fisico) N°9</h2> 
-<h3>9️⃣Percepção Humanitária do Meio Social9️⃣</h3>
-
+9: `<h3>Percepção Humanitária do Meio Social</h3>
 <p>Para você, o Regente 9 do Meio Social representa uma visão das relações humanas baseada na sabedoria, na compaixão e na compreensão das experiências coletivas.</p>
-
-<p>Essa regência indica que você tende a observar o ambiente social com olhar filosófico ou humanitário.</p>
-
-<p>Quando essa vibração se origina da potência 18 pode indicar percepção de conflitos emocionais no meio social.</p>
-
-<p>Quando se origina da potência 27 revela sensibilidade espiritual nas relações humanas.</p>
-
-<p>Quando se origina da potência 36 pode indicar criatividade coletiva.</p>
-
-<p>Quando se origina da potência 45 revela responsabilidade social.</p>
-
-<p>Quando se origina da potência 54 pode indicar mudanças sociais importantes.</p>
-
-<p>Quando se origina da potência 63 revela maturidade emocional coletiva.</p>
-
-<p>Quando se origina da potência 72 indica percepção intuitiva das pessoas.</p>
-
-<p><p>Quando se origina da potência 81 revela liderança social espiritualizada.</p>
-
-<p><p>Quando se origina da potência 90 pode indicar encerramento de ciclos sociais.</p>
-
-<p>Quando se origina da potência 99 revela compreensão profunda da humanidade.</p>
-
-<p>No aspecto positivo manifesta compaixão, sabedoria social e visão humanitária.</p>
-
-<p>No aspecto negativo pode gerar sensação de distância emocional ou desilusão com o comportamento humano.</p>
-
+<p>Essa regência indica que você tende a observar o ambiente social com olhar filosófico ou humanitário. Você percebe as dores e as necessidades do mundo, sentindo-se atraído por causas que visam o bem comum e a evolução da humanidade.</p>
+<p>No aspecto positivo manifesta compaixão, sabedoria social e visão humanitária. No aspecto negativo pode gerar sensação de distância emocional ou desilusão com o comportamento humano.</p>
 <p>O aprendizado do Regente 9 do Meio Social consiste em compreender a humanidade com sabedoria e equilíbrio.</p>`,
 
    
@@ -2193,317 +1875,60 @@ O aprendizado do Regente 9 Pessoal consiste em transformar experiência em sabed
   const textosDestino={ 
 
 
-1:`<h2>🔱  Regente Destino(Aspecto Fisico e Intuitivo) n°1</h2> 
-<h3>1️⃣Influência de Iniciativa e Despertar da Autonomia1️⃣ </h3>
 
-
-<p>Para você, o Regente 1 da Influência representa a ação do universo conduzindo situações que estimulam iniciativa, coragem e desenvolvimento da autonomia pessoal.</p>
-
-<p>Essa regência indica que acontecimentos externos frequentemente impulsionam você a assumir liderança, tomar decisões importantes ou iniciar novos caminhos. Muitas vezes a vida coloca diante de você circunstâncias que exigem atitude, independência e confiança na própria capacidade.</p>
-
-<p><p>Quando essa vibração se origina da potência 10 pode indicar influências favoráveis que despertam oportunidades de crescimento pessoal.</p>
-
-<p>Quando se origina da potência 19 pode revelar situações que desafiam o orgulho ou a necessidade de aprender lições de humildade.</p>
-
-<p>Quando se origina da potência 28 pode indicar influências externas ligadas a disputas ou desafios que exigem firmeza de caráter.</p>
-
-<p>Quando se origina da potência 37 revela acontecimentos que estimulam inteligência estratégica e tomada de decisões importantes.</p>
-
-<p>Quando se origina da potência 46 pode indicar influências ligadas ao trabalho e às conquistas materiais.</p>
-
-<p>Quando se origina da potência 55 revela situações que despertam desejo de liberdade e mudança.</p>
-
-<p>Quando se origina da potência 64 pode indicar acontecimentos inesperados que transformam sua direção de vida.</p>
-
-<p>Quando se origina da potência 73 revela influências que conduzem ao desenvolvimento da sabedoria interior.</p>
-
-<p>Quando se origina da potência 82 pode indicar situações relacionadas a poder ou responsabilidade.</p>
-
-<p>Quando se origina da potência 91 revela influências que conduzem à maturidade espiritual.</p>
-
-<p>No aspecto positivo manifesta coragem, liderança e capacidade de iniciar novos caminhos.</p>
-
-<p>No aspecto negativo pode gerar impulsividade ou tendência a enfrentar conflitos desnecessários.</p>
-
-<p>O aprendizado do Regente 1 da Influência consiste em transformar desafios externos em crescimento pessoal.</p>`,
-
-2:`<h2>🔱  Regente Destino(Aspecto Fisico e Intuitivo) n°2</h2> 
-<h3>3️⃣Influência de Sensibilidade e Aprendizado Emocional3️⃣ </h3>
-
-<p>Para você, o Regente 2 da Influência representa a ação do universo trazendo experiências que desenvolvem sensibilidade emocional, empatia e compreensão das relações humanas.</p>
-
-<p>Essa regência indica que muitas influências externas chegam até você através das relações com outras pessoas. Situações emocionais, encontros e vínculos afetivos tendem a desempenhar papel importante em seu crescimento.</p>
-
-<p>Quando essa vibração se origina da potência 29 pode indicar experiências emocionais intensas que despertam maturidade.</p>
-
-<p>Quando se origina da potência 38 revela influências que estimulam criatividade e sensibilidade artística.</p>
-
-<p>Quando se origina da potência 47 pode indicar situações externas ligadas à organização ou responsabilidade.</p>
-
-<p>Quando se origina da potência 56 revela acontecimentos que despertam iniciativa e atividade.</p>
-
-<p><p>Quando se origina da potência 65 pode indicar influências relacionadas às relações afetivas.</p>
-
-<p>Quando se origina da potência 74 revela experiências que exigem disciplina emocional.</p>
-
-<p>Quando se origina da potência 83 pode indicar influências ligadas à comunicação e ao conhecimento.</p>
-
-<p>Quando se origina da potência 92 revela experiências espirituais ou intuitivas.</p>
-
-<p>No aspecto positivo manifesta empatia, sensibilidade e compreensão das pessoas.</p>
-
-<p>No aspecto negativo pode gerar excesso de preocupação emocional ou tendência a absorver problemas alheios.</p>
-
-<p>O aprendizado do Regente 2 da Influência consiste em desenvolver equilíbrio emocional diante das experiências da vida.</p>`,
-
-3:`<h2>🔱  Regente Destino(Aspecto Fisico e Intuitivo) n°3</h2> 
-<h3>3️⃣Influência de Criatividade e Expansão de Ideias3️⃣ </h3>
-
-<p>Para você, o Regente 3 da Influência representa a ação do universo trazendo experiências que estimulam criatividade, comunicação e expressão intelectual.</p>
-
-<p>Essa regência indica que acontecimentos externos frequentemente despertam em você novas ideias, formas de expressão ou oportunidades de compartilhar pensamentos.</p>
-
-<p>Quando essa vibração se origina da potência 12 pode indicar experiências que transformam sua forma de pensar.</p>
-
-<p>Quando se origina da potência 21 revela influências sociais que estimulam crescimento intelectual.</p>
-
-<p>Quando se origina da potência 30 pode indicar forte inspiração criativa.</p>
-
-<p>Quando se origina da potência 39 revela ambientes sociais dinâmicos e comunicativos.</p>
-
-<p>Quando se origina da potência 48 pode indicar desafios relacionados à organização das ideias.</p>
-
-<p>Quando se origina da potência 57 revela acontecimentos que estimulam inteligência estratégica.</p>
-
-<p>Quando se origina da potência 66 pode indicar influências emocionais profundas.</p>
-
-<p>Quando se origina da potência 75 revela aprendizado intelectual intenso.</p>
-
-<p>Quando se origina da potência 84 pode indicar experiências relacionadas à responsabilidade.</p>
-
-<p>Quando se origina da potência 93 revela influências que conduzem à maturidade mental.</p>
-
-<p>No aspecto positivo manifesta criatividade, entusiasmo e inspiração intelectual.</p>
-
-<p>No aspecto negativo pode gerar dispersão ou excesso de estímulos mentais.</p>
-
-<p>O aprendizado do Regente 3 da Influência consiste em transformar inspiração em realização.</p>`,
-
-4:`<h2>🔱  Regente Destino(Aspecto Fisico e Intuitivo) n°4</h2> 
-<h3>4️⃣Influência de Estrutura e Construção da Vida4️⃣</h3> 
-
-
-<p>Para você, o Regente 4 da Influência representa a ação do universo trazendo experiências que desenvolvem disciplina, organização e construção de estabilidade.</p>
-
-<p>Essa regência indica que acontecimentos externos frequentemente exigem responsabilidade e esforço constante para alcançar segurança.</p>
-
-<p>Quando essa vibração se origina da potência 13 pode indicar transformações profundas provocadas por eventos marcantes.</p>
-
-<p>Quando se origina da potência 22 revela influências relacionadas a grandes responsabilidades.</p>
-
-<p>Quando se origina da potência 31 pode indicar estímulos ao desenvolvimento intelectual.</p>
-
-<p>Quando se origina da potência 40 revela períodos de reflexão ou pausa na vida.</p>
-
-<p>Quando se origina da potência 49 pode indicar acontecimentos intensos que provocam mudanças de visão.</p>
-
-<p>Quando se origina da potência 58 revela experiências ligadas ao poder material.</p>
-
-<p>Quando se origina da potência 67 pode indicar influências espirituais ou filosóficas.</p>
-
-<p>Quando se origina da potência 76 revela tendência a introspecção e estudo.</p>
-
-<p>Quando se origina da potência 85 pode indicar desafios relacionados à autoridade.</p>
-
-<p>Quando se origina da potência 94 revela transformações importantes ao longo da vida.</p>
-
-<p>No aspecto positivo manifesta disciplina e construção sólida.</p>
-
-<p>No aspecto negativo pode gerar rigidez ou excesso de responsabilidade.</p>
-
-<p>O aprendizado do Regente 4 da Influência consiste em construir estabilidade através da perseverança.</p>`,
-
-5:`<h2>🔱  Regente Destino(Aspecto Fisico e Intuitivo) n°5</h2>
-<h3> 5️⃣Influência de Mudança e Experiência5️⃣</h3> 
-
-<p>Para você, o Regente 5 da Influência representa a ação do universo trazendo acontecimentos que estimulam mudança, liberdade e diversidade de experiências.</p>
-
-<p>Essa regência indica que sua vida tende a ser influenciada por situações inesperadas, viagens, novos contatos ou mudanças de ambiente.</p>
-
-<p>Quando essa vibração se origina da potência 14 pode indicar influência de comunicação pública.</p>
-
-<p>Quando se origina da potência 23 revela proteção ou auxílio de pessoas influentes.</p>
-
-<p>Quando se origina da potência 32 pode indicar criatividade e expressão.</p>
-
-<p>Quando se origina da potência 41 revela estímulo à liderança.</p>
-
-<p>Quando se origina da potência 50 pode indicar momentos de pausa ou reflexão.</p>
-
-<p>Quando se origina da potência 59 revela influências espirituais.</p>
-
-<p>Quando se origina da potência 68 pode indicar experiências relacionadas ao poder material.</p>
-
-<p>Quando se origina da potência 77 revela forte busca por conhecimento.</p>
-
-<p>Quando se origina da potência 86 pode indicar responsabilidades intensas.</p>
-
-<p>Quando se origina da potência 95 revela transformações profundas.</p>
-
-<p>No aspecto positivo manifesta adaptação, versatilidade e espírito aventureiro.</p>
-
-<p>No aspecto negativo pode gerar instabilidade ou impulsividade.</p>
-
-<p>O aprendizado do Regente 5 da Influência consiste em transformar mudanças em crescimento.</p>`,
-
-6:`<h2>🔱  Regente Destino(Aspecto Fisico e Intuitivo) n°6</h2>
-<h3> 6️⃣Influência de Amor e Responsabilidade Afetiva6️⃣</h3>  
-
-
-<p>Para você, o Regente 6 da Influência representa a ação do universo trazendo experiências relacionadas ao amor, à família e às responsabilidades emocionais.</p>
-
-<p>Essa regência indica que muitas influências externas chegam através das relações afetivas.</p>
-
-<p>Quando essa vibração se origina da potência 15 pode indicar magnetismo emocional.</p>
-
-<p>Quando se origina da potência 24 revela ambientes harmoniosos.</p>
-
-<p>Quando se origina da potência 33 indica forte influência de generosidade e ajuda aos outros.</p>
-
-<p>Quando se origina da potência 42 pode indicar responsabilidades familiares.</p>
-
-<p>Quando se origina da potência 51 revela mudanças emocionais importantes.</p>
-
-<p>Quando se origina da potência 60 indica momentos de reflexão afetiva.</p>
-
-<p>Quando se origina da potência 69 revela profunda sensibilidade emocional.</p>
-
-<p>Quando se origina da potência 78 pode indicar desafios nos relacionamentos.</p>
-
-<p>Quando se origina da potência 87 revela aprendizado espiritual através das relações.</p>
-
-<p>Quando se origina da potência 96 indica maturidade emocional ao longo da vida.</p>
-
-<p>No aspecto positivo manifesta amor, harmonia e responsabilidade afetiva.</p>
-
-<p>No aspecto negativo pode gerar dependência emocional.</p>
-
-<p>O aprendizado do Regente 6 da Influência consiste em desenvolver equilíbrio nas relações.</p>`,
-
-7:`<h2>🔱  Regente Destino(Aspecto Fisico e Intuitivo) n°7</h2>
-<h3>7️⃣Influência de Conhecimento e Despertar Espiritual7️⃣ </h3>
-
-<p>Para você, o Regente 7 da Influência representa a ação do universo trazendo experiências que despertam reflexão, busca de conhecimento e compreensão espiritual.</p>
-
-
-<p>Essa regência indica que acontecimentos externos muitas vezes conduzem você ao estudo, à introspecção ou à busca de significado mais profundo para a vida.</p>
-
-
-<p>Quando essa vibração se origina da potência 16 pode indicar eventos que provocam grandes mudanças na visão de mundo.</p>
-
-
-<p>Quando se origina da potência 25 revela sensibilidade intelectual.</p>
-
-
-<p>Quando se origina da potência 34 pode indicar criatividade mental.</p>
-
-
-<p>Quando se origina da potência 43 revela liderança intelectual.</p>
-
-
-<p>Quando se origina da potência 52 indica aprendizado através da experiência.</p>
-
-
-<p>Quando se origina da potência 61 revela sensibilidade espiritual.</p>
-
-
-<p>Quando se origina da potência 70 pode indicar períodos de recolhimento.</p>
-
-
-<p>Quando se origina da potência 79 revela intensa busca por conhecimento.</p>
-
-
-<p>Quando se origina da potência 88 pode indicar grande poder mental.</p>
-
-
-<p>Quando se origina da potência 97 revela maturidade espiritual profunda.</p>
-
-
-<p>No aspecto positivo manifesta sabedoria e compreensão profunda da vida.</p>
-
-
-<p>No aspecto negativo pode gerar isolamento ou excesso de introspecção.</p>
-
-
-<p>O aprendizado do Regente 7 da Influência consiste em transformar experiências em sabedoria.</p>`,
-
-8:`<h2>🔱  Regente Destino(Aspecto Fisico e Intuitivo) n°8</h2>
-<h3>Influência de Poder e Responsabilidade</h3> 
-
-<p>Para você, o Regente 8 da Influência representa a ação do universo trazendo experiências ligadas ao poder, à autoridade e às responsabilidades materiais.</p>
-
-<p>Essa regência indica que acontecimentos externos frequentemente envolvem questões de liderança, organização ou administração de recursos.</p>
-
-<p>Quando essa vibração se origina da potência 17 pode indicar proteção espiritual.</p>
-
-<p>Quando se origina da potência 26 revela aprendizado financeiro.</p>
-
-<p>Quando se origina da potência 35 pode indicar inteligência estratégica.</p>
-
-<p>Quando se origina da potência 44 revela grande potencial de liderança.</p>
-
-<p>Quando se origina da potência 53 pode indicar mudanças inesperadas.</p>
-
-<p>Quando se origina da potência 62 revela aprendizado através das relações.</p>
-
-<p>Quando se origina da potência 71 indica análise profunda.</p>
-
-<p>Quando se origina da potência 80 revela necessidade de disciplina.</p>
-
-<p>Quando se origina da potência 89 pode indicar conflitos de poder.</p>
-
-<p>Quando se origina da potência 98 revela maturidade e compreensão das leis da vida.</p>
-
-<p>No aspecto positivo manifesta liderança equilibrada e capacidade administrativa.</p>
-
-<p>No aspecto negativo pode gerar excesso de controle ou apego ao poder.</p>
-
-<p>O aprendizado do Regente 8 da Influência consiste em usar o poder com responsabilidade.</p>`,
-
-9:`<h2>🔱  Regente Destino(Aspecto Fisico e Intuitivo) n°9</h2>
-<h3>9️⃣Influência de Sabedoria e Experiências Universais9️⃣</h3>
-
-<p>Para você, o Regente 9 da Influência representa a ação do universo trazendo experiências profundas que conduzem ao desenvolvimento da sabedoria e da compreensão da vida.</p>
-
-<p>Essa regência indica que acontecimentos externos frequentemente estimulam reflexão, maturidade e percepção espiritual.</p>
-
-<p>Quando essa vibração se origina da potência 18 pode indicar desafios emocionais importantes.</p>
-
-<p>Quando se origina da potência 27 revela sensibilidade espiritual.</p>
-
-<p>Quando se origina da potência 36 pode indicar criatividade emocional.</p>
-
-<p>Quando se origina da potência 45 revela responsabilidades importantes.</p>
-
-<p>Quando se origina da potência 54 pode indicar mudanças profundas.</p>
-
-<p>Quando se origina da potência 63 revela maturidade emocional.</p>
-
-<p>Quando se origina da potência 72 indica percepção intuitiva.</p>
-
-<p>Quando se origina da potência 81 revela liderança espiritual.</p>
-
-<p>Quando se origina da potência 90 pode indicar encerramento de ciclos.</p>
-
-<p>Quando se origina da potência 99 revela elevada consciência espiritual.</p>
-
-<p>No aspecto positivo manifesta sabedoria, compaixão e visão universal da vida.</p>
-
-<p>No aspecto negativo pode gerar desilusão ou distanciamento emocional.</p>
-
-<p>O aprendizado do Regente 9 da Influência consiste em transformar experiências em compreensão profunda da vida.</p>`,
-
-
+1: `<h3>Influência de Iniciativa e Despertar da Autonomia</h3>
+<p>Para você, o Regente 1 da Influência representa a ação do universo conduzindo situações que estimulam iniciativa, coragem e o desenvolvimento da autonomia pessoal.</p>
+<p>Essa regência indica que acontecimentos externos frequentemente impulsionam você a assumir liderança, tomar decisões importantes ou iniciar novos caminhos. Muitas vezes a vida coloca diante de você circunstâncias que exigem atitude, independência e confiança na própria capacidade, forçando você a sair da zona de conforto.</p>
+<p>No aspecto positivo manifesta coragem, liderança e capacidade de abrir portas. No aspecto negativo pode gerar impulsividade ou a sensação de estar sempre enfrentando batalhas sozinho.</p>
+<p>O aprendizado do Regente 1 da Influência consiste em transformar desafios externos em combustível para sua evolução pessoal.</p>`,
+
+2: `<h3>Influência de Sensibilidade e Aprendizado Emocional</h3>
+<p>Para você, o Regente 2 da Influência representa a ação do universo trazendo experiências que desenvolvem a sensibilidade emocional, a empatia e a compreensão profunda das relações humanas.</p>
+<p>Essa regência indica que muitas influências externas chegam até você através das relações com outras pessoas. Situações emocionais, encontros significativos e vínculos afetivos tendem a ser os principais gatilhos para as grandes mudanças em sua vida. O universo ensina você através do espelho do outro.</p>
+<p>No aspecto positivo manifesta empatia, sensibilidade e acolhimento. No aspecto negativo pode gerar excesso de preocupação emocional ou tendência a absorver as crises alheias como se fossem suas.</p>
+<p>O aprendizado do Regente 2 da Influência consiste em desenvolver equilíbrio emocional diante das marés da vida.</p>`,
+
+3: `<h3>Influência de Criatividade e Expansão de Ideias</h3>
+<p>Para você, o Regente 3 da Influência representa a ação do universo trazendo experiências que estimulam a criatividade, a comunicação e a expressão intelectual.</p>
+<p>Essa regência indica que acontecimentos externos frequentemente despertam em você novas ideias, formas de expressão ou oportunidades de compartilhar seus pensamentos com o mundo. Você atrai situações onde a sua voz precisa ser ouvida e onde o seu brilho pessoal é o diferencial.</p>
+<p>No aspecto positivo manifesta entusiasmo e inspiração intelectual constante. No aspecto negativo pode gerar dispersão ou uma sobrecarga de estímulos que dificulta a finalização de projetos.</p>
+<p>O aprendizado do Regente 3 da Influência consiste em transformar a inspiração externa em realização concreta.</p>`,
+
+4: `<h3>Influência de Estrutura e Construção da Vida</h3>
+<p>Para você, o Regente 4 da Influência representa a ação do universo trazendo experiências que desenvolvem disciplina, organização e a construção de uma base sólida para o futuro.</p>
+<p>Essa regência indica que acontecimentos externos frequentemente exigem de você seriedade, pés no chão e esforço constante. A vida apresenta circunstâncias que testam sua persistência, forçando você a organizar o caos e a construir segurança através do trabalho e da ordem.</p>
+<p>No aspecto positivo manifesta disciplina e a capacidade de materializar sonhos. No aspecto negativo pode gerar rigidez ou a sensação de que a vida é feita apenas de deveres e obrigações.</p>
+<p>O aprendizado do Regente 4 da Influência consiste em construir estabilidade sem perder a flexibilidade.</p>`,
+
+5: `<h3>Influência de Mudança e Experiência</h3>
+<p>Para você, o Regente 5 da Influência representa a ação do universo trazendo acontecimentos que estimulam a mudança, a liberdade e a diversidade de experiências.</p>
+<p>Essa regência indica que sua vida tende a ser influenciada por situações inesperadas: viagens repentinas, novos contatos sociais ou mudanças bruscas de ambiente. O universo impede que você fique estagnado, trazendo o novo de forma acelerada para expandir seus horizontes.</p>
+<p>No aspecto positivo manifesta versatilidade e um espírito aventureiro que se adapta a tudo. No aspecto negativo pode gerar instabilidade excessiva ou dificuldade em criar raízes.</p>
+<p>O aprendizado do Regente 5 da Influência consiste em transformar as mudanças externas em autoconhecimento e sabedoria prática.</p>`,
+
+6: `<h3>Influência de Amor e Responsabilidade Afetiva</h3>
+<p>Para você, o Regente 6 da Influência representa a ação do universo trazendo experiências diretamente ligadas ao amor, à família e às responsabilidades comunitárias.</p>
+<p>Essa regência indica que muitas influências externas chegam através de deveres afetivos ou da necessidade de mediar conflitos ao seu redor. A vida coloca você em situações onde o seu papel é trazer harmonia, cuidar e assumir responsabilidades pelos laços que criou.</p>
+<p>No aspecto positivo manifesta amor, harmonia e um forte senso de justiça afetiva. No aspecto negativo pode gerar dependência emocional ou a sobrecarga de carregar os problemas familiares nas costas.</p>
+<p>O aprendizado do Regente 6 da Influência consiste em cuidar do mundo sem esquecer de cuidar de si mesmo.</p>`,
+
+7: `<h3>Influência de Conhecimento e Despertar Espiritual</h3>
+<p>Para você, o Regente 7 da Influência representa a ação do universo trazendo experiências que despertam a reflexão profunda, a busca pelo conhecimento e a compreensão espiritual.</p>
+<p>Essa regência indica que acontecimentos externos — muitas vezes desafiadores ou isoladores — conduzem você ao estudo, à introspecção e à busca de um significado superior. O universo "retira" você do barulho do mundo para que você possa ouvir sua própria voz interior.</p>
+<p>No aspecto positivo manifesta sabedoria e uma conexão espiritual autêntica. No aspecto negativo pode gerar isolamento excessivo ou uma visão crítica e cética demais sobre a realidade.</p>
+<p>O aprendizado do Regente 7 da Influência consiste em transformar cada experiência de vida em um degrau de sabedoria.</p>`,
+
+8: `<h3>Influência de Poder e Responsabilidade Material</h3>
+<p>Para você, o Regente 8 da Influência representa a ação do universo trazendo experiências ligadas ao poder, à autoridade, às finanças e às responsabilidades materiais.</p>
+<p>Essa regência indica que acontecimentos externos frequentemente envolvem questões de liderança, gestão de recursos ou administração de grandes projetos. Você atrai situações que testam sua integridade e sua capacidade de lidar com o sucesso e a autoridade.</p>
+<p>No aspecto positivo manifesta liderança equilibrada e grande capacidade de realização material. No aspecto negativo pode gerar lutas de poder ou perdas financeiras por excesso de ambição.</p>
+<p>O aprendizado do Regente 8 da Influência consiste em usar o poder e os recursos como ferramentas para o bem maior.</p>`,
+
+9: `<h3>Influência de Sabedoria e Experiências Universais</h3>
+<p>Para você, o Regente 9 da Influência representa a ação do universo trazendo experiências profundas que conduzem à finalização de ciclos e ao desenvolvimento de uma consciência humanitária.</p>
+<p>Essa regência indica que acontecimentos externos frequentemente estimulam o desapego, a generosidade e a visão filosófica. Você atrai situações que exigem uma compreensão mais ampla da vida, muitas vezes lidando com o público ou com causas que transcendem o interesse pessoal.</p>
+<p>No aspecto positivo manifesta compaixão e uma sabedoria que serve de guia para outros. No aspecto negativo pode gerar desilusão com o mundo ou a sensação de cansaço emocional por lidar com as dores coletivas.</p>
+<p>O aprendizado do Regente 9 da Influência consiste em encerrar ciclos com gratidão e compreender o propósito maior da jornada humana.</p>`,
     
 
 11: `<p>Força e Autodomínio</p>
@@ -3080,7 +2505,7 @@ O aprendizado do Regente 9 Pessoal consiste em transformar experiência em sabed
 // 🚨 TEXTOS SEQUÊNCIAS NEGATIVAS
 const textosSeqNegVida = {
 
-  1: `SEQUENCIA 111 Nesta fase, você poderá sentir que sua chama interna de motivação está sendo abafada por obstáculos inesperados.
+  1: ` Nesta fase, você poderá sentir que sua chama interna de motivação está sendo abafada por obstáculos inesperados.
 A influência desta sequência tende a minar sua capacidade de iniciativa, tornando o ato de começar algo novo um verdadeiro desafio.
 É comum surgir um sentimento de impotência, onde a coragem para arriscar parece desaparecer, dando lugar à inatividade.
 
@@ -3093,7 +2518,7 @@ Existe uma tendência vibracional que pode afetar o sistema cardíaco se o estre
 É um momento que exige esforço consciente para não se deixar abater pelo desemprego ou pela falta de propósito.
 A chave aqui é buscar reacender sua determinação interna, mesmo quando o cenário externo parecer desfavorável.`,
 
-  2: `SEQUENCIA 222 Esta configuração vibracional atua diretamente sobre o seu senso de valor próprio e autoconfiança.
+  2: `Esta configuração vibracional atua diretamente sobre o seu senso de valor próprio e autoconfiança.
 Você poderá se perceber mais vulnerável à opinião alheia, permitindo que amigos ou parceiros influencem demais suas decisões.
 A indecisão e a timidez podem se tornar obstáculos frequentes, dificultando a imposição de suas vontades e desejos.
 
@@ -3106,7 +2531,7 @@ No campo da saúde, essa fragilidade emocional pode abrir portas para inclinaç�
 O desafio é fortalecer o seu "eu" interno para que você não se perca nas expectativas da sociedade ou da família.
 Recuperar o comando da sua vida é a grande lição que esta sequência tenta lhe ensinar através desses testes.`,
 
-  3: `SEQUENCIA 333 A comunicação, que deveria ser sua ponte com o mundo, pode se transformar em uma barreira sob esta influência.
+  3: `A comunicação, que deveria ser sua ponte com o mundo, pode se transformar em uma barreira sob esta influência.
 Você poderá sentir uma dificuldade crescente em expressar o que sente, resultando em frequentes mal-entendidos.
 
 Seus pensamentos e ideias, por mais brilhantes que sejam, parecem não ser compreendidos pelas pessoas próximas.
@@ -3119,7 +2544,7 @@ No aspecto biológico, o estresse de não ser ouvido tende a se manifestar em á
 Fique atento a possíveis sensibilidades no sistema respiratório ou desconfortos nas articulações do corpo.
 Trabalhar a clareza e a paciência no diálogo será fundamental para atravessar essa fase sem maiores conflitos.`,
 
-  4: ` SEQUENCIA 444 Esta sequência aponta para um período de provações severas no campo da carreira e da estabilidade profissional.
+  4: `Esta sequência aponta para um período de provações severas no campo da carreira e da estabilidade profissional.
 Você poderá encontrar obstáculos que parecem bloquear qualquer tentativa de ascensão ou reconhecimento no trabalho.
 
 Existe uma tendência a enfrentar remunerações abaixo do esperado ou dificuldades em se manter estável em um emprego.
@@ -3132,7 +2557,7 @@ Na esfera física, essa pressão por estabilidade pode sobrecarregar o sistema c
 Também há um alerta vibracional para o desenvolvimento de condições reumáticas causadas pela tensão acumulada.
 Manter a fé em suas habilidades será o seu maior desafio enquanto você busca suprir suas necessidades básicas.`,
 
-  5: ` SEQUENCIA 555 A marca desta influência é a instabilidade constante, forçando mudanças que você muitas vezes não deseja realizar.
+  5: `  A marca desta influência é a instabilidade constante, forçando mudanças que você muitas vezes não deseja realizar.
 Pode haver uma alternância drástica em seus valores, status social e até mesmo em sua residência ou profissão.
 Viver em constantes altos e baixos gera um desgaste mental profundo, dificultando qualquer plano de longo prazo.
 A sensação é de que nada é sólido ou seguro, pois o que está firme hoje pode mudar completamente amanhã.
@@ -3145,7 +2570,7 @@ O corpo físico pode reagir a essa montanha-russa emocional através de manifest
 Além disso, a falta de foco característica deste período aumenta a predisposição a sofrer pequenos acidentes domésticos.
 A lição aqui é aprender a encontrar o equilíbrio interno mesmo quando o mundo externo parece estar em colapso.`,
 
-  6: ` SEQUENCIA 666 O campo dos afetos e dos sentimentos é o mais atingido por esta sequência, trazendo o peso da decepção.
+  6: `  O campo dos afetos e dos sentimentos é o mais atingido por esta sequência, trazendo o peso da decepção.
 Você poderá passar por situações onde amigos íntimos, sócios ou familiares falham com a sua confiança.
 Existe um risco elevado de sentir-se incompreendido pelo parceiro ou pela pessoa amada em seus planos de vida.
 
@@ -3158,7 +2583,7 @@ Fisicamente, essa carga emocional de tristeza costuma se concentrar na região c
 É essencial aprender a não colocar a sua felicidade exclusivamente nas mãos de terceiros para evitar o sofrimento.
 A cura virá através do amor-próprio e da compreensão de que nem todos possuem o mesmo nível de entrega que você.`,
 
-  7: `SEQUENCIA 777 Sob esta vibração, o medo e a intolerância podem se tornar companheiros constantes, alterando seu comportamento.
+  7: `Sob esta vibração, o medo e a intolerância podem se tornar companheiros constantes, alterando seu comportamento.
 Você poderá se tornar uma pessoa mais arredia, teimosa e com uma tendência perigosa ao isolamento voluntário.
 O afastamento social pode parecer uma proteção, mas acaba gerando frustrações profundas e um sentimento de vazio.
 
@@ -3171,7 +2596,7 @@ No campo da saúde, esse padrão de solidão e estresse nervoso é extremamente 
 Existe um alerta para o sistema nervoso e até para o surgimento de patologias mais graves se a mente não for cuidada.
 Buscar ajuda e manter a mente aberta para o mundo é o caminho para não se perder em sua própria escuridão.`,
 
-  8: ` SEQUENCIA 888 Esta é uma das sequências mais desafiadoras, pois afeta simultaneamente o equilíbrio emocional e o financeiro.
+  8: `  Esta é uma das sequências mais desafiadoras, pois afeta simultaneamente o equilíbrio emocional e o financeiro.
 Você poderá manifestar uma postura agressiva ou inacessível, perdendo o controle diante de pequenas adversidades.
 Isso acaba afastando o convívio social, pois as pessoas sentem dificuldade em lidar com sua instabilidade.
 
@@ -3184,7 +2609,7 @@ Esse estresse crônico é um veneno para o seu sistema nervoso, podendo gerar do
 É um momento que exige um controle férreo sobre as emoções para que elas não destruam o seu patrimônio.
 O desafio é manter a ética e a calma mesmo quando tudo parece estar sendo tirado de suas mãos.`,
 
-  9: ` SEQUENCIA 999 Aqui, a capacidade de discernimento e a compreensão das situações da vida ficam seriamente comprometidas.
+  9: `  Aqui, a capacidade de discernimento e a compreensão das situações da vida ficam seriamente comprometidas.
 Você poderá enfrentar um ciclo de estagnação onde nada parece avançar, independentemente do seu esforço.
 Dificuldades financeiras agudas e até a perda de patrimônio construído ao longo de anos são riscos reais.
 Fracassos em negócios e relacionamentos podem surgir devido a uma visão distorcida da realidade.
@@ -3199,64 +2624,64 @@ A lição fundamental deste período é o desapego e a busca por uma nova forma 
 };
 
 const textosSeqNegPessoal = { 
-  1: `<p> SEQUENCIA 111 No âmbito pessoal, esta vibração indica um conflito latente com sua própria identidade e poder de decisão. Você pode se sentir mentalmente paralisado, como se uma voz interna questionasse cada impulso de ação antes mesmo de ele se manifestar. A insegurança sobre quem você é pode gerar um estado de dúvida constante, sabotando sua autoestima e impedindo que você se sinta o protagonista da sua própria mente.</p>`,
+  1: `<p>  No âmbito pessoal, esta vibração indica um conflito latente com sua própria identidade e poder de decisão. Você pode se sentir mentalmente paralisado, como se uma voz interna questionasse cada impulso de ação antes mesmo de ele se manifestar. A insegurança sobre quem você é pode gerar um estado de dúvida constante, sabotando sua autoestima e impedindo que você se sinta o protagonista da sua própria mente.</p>`,
 
-  2: `<p> SEQUENCIA 222 Esta influência atua na sua percepção de valor interno. Há uma tendência a se sentir emocionalmente frágil e excessivamente dependente da validação interna que você imagina que os outros deveriam dar. O medo da rejeição pode criar um diálogo mental submisso, onde você se critica duramente por não ser "bom o suficiente", gerando uma timidez psicológica que sufoca sua expressão autêntica.</p>`,
+  2: `<p>  Esta influência atua na sua percepção de valor interno. Há uma tendência a se sentir emocionalmente frágil e excessivamente dependente da validação interna que você imagina que os outros deveriam dar. O medo da rejeição pode criar um diálogo mental submisso, onde você se critica duramente por não ser "bom o suficiente", gerando uma timidez psicológica que sufoca sua expressão autêntica.</p>`,
 
-  3: `<p> SEQUENCIA 333 Aqui, o bloqueio é na autoexpressão e no entendimento dos próprios sentimentos. Você pode sentir que seus pensamentos estão emaranhados, dificultando a clareza mental necessária para entender o que você realmente deseja. Existe um risco de se fechar em um casulo mental, sentindo-se incompreendido por si mesmo, o que gera uma frustração interna silenciosa e um cansaço psicológico por não conseguir "se organizar" por dentro.</p>`,
+  3: `<p>  Aqui, o bloqueio é na autoexpressão e no entendimento dos próprios sentimentos. Você pode sentir que seus pensamentos estão emaranhados, dificultando a clareza mental necessária para entender o que você realmente deseja. Existe um risco de se fechar em um casulo mental, sentindo-se incompreendido por si mesmo, o que gera uma frustração interna silenciosa e um cansaço psicológico por não conseguir "se organizar" por dentro.</p>`,
 
-  4: `<p> SEQUENCIA 444 Esta sequência no pessoal traz uma rigidez mental excessiva ou uma sensação de insegurança estrutural profunda. Você pode se cobrar por uma perfeição ou estabilidade interna que parece inalcançável, gerando ansiedade crônica. A mente foca no que falta, na escassez de recursos internos e no medo de não ter base emocional para suportar os desafios, criando um peso psicológico de autocrítica severa.</p>`,
+  4: `<p>  Esta sequência no pessoal traz uma rigidez mental excessiva ou uma sensação de insegurança estrutural profunda. Você pode se cobrar por uma perfeição ou estabilidade interna que parece inalcançável, gerando ansiedade crônica. A mente foca no que falta, na escassez de recursos internos e no medo de não ter base emocional para suportar os desafios, criando um peso psicológico de autocrítica severa.</p>`,
 
-  5: `<p> SEQUENCIA 555 A influência aqui é de uma mente inquieta e caótica. Você pode sofrer com mudanças bruscas de humor ou de opinião sobre si mesmo, nunca encontrando um equilíbrio interno. Essa instabilidade mental gera uma sensação de desorientação, onde você sente que perdeu o controle sobre seus próprios desejos, levando a impulsos de fuga de si mesmo ou a um desapego emocional que beira a apatia.</p>`,
+  5: `<p> A influência aqui é de uma mente inquieta e caótica. Você pode sofrer com mudanças bruscas de humor ou de opinião sobre si mesmo, nunca encontrando um equilíbrio interno. Essa instabilidade mental gera uma sensação de desorientação, onde você sente que perdeu o controle sobre seus próprios desejos, levando a impulsos de fuga de si mesmo ou a um desapego emocional que beira a apatia.</p>`,
 
-  6: `<p> SEQUENCIA 666 Esta vibração afeta sua capacidade de se amar e se aceitar. No nível pessoal, surge um padrão de idealização excessiva que, quando não atingida, se transforma em decepção interna profunda. Você pode se sentir indigno de afeto ou excessivamente culpado por falhas passadas, criando um amargor psicológico que dificulta o cultivo da paz interior e da harmonia com sua própria imagem.</p>`,
+  6: `<p>  Esta vibração afeta sua capacidade de se amar e se aceitar. No nível pessoal, surge um padrão de idealização excessiva que, quando não atingida, se transforma em decepção interna profunda. Você pode se sentir indigno de afeto ou excessivamente culpado por falhas passadas, criando um amargor psicológico que dificulta o cultivo da paz interior e da harmonia com sua própria imagem.</p>`,
 
-  7: `<p> SEQUENCIA 777 O desafio aqui é o isolamento mental e a desconfiança de si próprio. Você pode mergulhar em pensamentos obsessivos, desenvolvendo uma visão cética ou sombria da vida que o afasta da realidade. Existe uma tendência ao perfeccionismo arrogante ou à vaidade intelectual como defesa contra o medo interno, o que acaba gerando um vazio existencial e uma desconexão com sua essência.</p>`,
+  7: `<p>  O desafio aqui é o isolamento mental e a desconfiança de si próprio. Você pode mergulhar em pensamentos obsessivos, desenvolvendo uma visão cética ou sombria da vida que o afasta da realidade. Existe uma tendência ao perfeccionismo arrogante ou à vaidade intelectual como defesa contra o medo interno, o que acaba gerando um vazio existencial e uma desconexão com sua essência.</p>`,
 
-  8: `<p> SEQUENCIA 888 Esta sequência indica um estado de desequilíbrio entre o poder e a ética interna. Você pode se sentir constantemente irritado consigo mesmo, com explosões de raiva contida que nublam seu julgamento. O conflito entre o que você deseja conquistar e a sensação de injustiça interna pode levar a decisões autodestrutivas, onde sua mente se torna seu maior adversário, criando ciclos de estresse e punição emocional.</p>`,
+  8: `<p>  Esta sequência indica um estado de desequilíbrio entre o poder e a ética interna. Você pode se sentir constantemente irritado consigo mesmo, com explosões de raiva contida que nublam seu julgamento. O conflito entre o que você deseja conquistar e a sensação de injustiça interna pode levar a decisões autodestrutivas, onde sua mente se torna seu maior adversário, criando ciclos de estresse e punição emocional.</p>`,
 
-  9: `<p> SEQUENCIA 999 No nível pessoal, esta vibração marca o fim de um ciclo mental que você resiste em encerrar. Isso gera uma estagnação psicológica profunda, onde você se sente preso a velhas formas de pensar que já não servem mais. A sensação de "fim de linha" pode causar desânimo e uma visão turva do futuro, exigindo um desapego radical de antigas crenças para que a mente possa renascer.</p>`
+  9: `<p>  No nível pessoal, esta vibração marca o fim de um ciclo mental que você resiste em encerrar. Isso gera uma estagnação psicológica profunda, onde você se sente preso a velhas formas de pensar que já não servem mais. A sensação de "fim de linha" pode causar desânimo e uma visão turva do futuro, exigindo um desapego radical de antigas crenças para que a mente possa renascer.</p>`
 };
 
 
 const textosSeqNegSocial = {
-  1: `<p> SEQUENCIA 111 No ambiente social, você pode perceber uma atmosfera de falta de iniciativa ou bloqueios nas pessoas ao seu redor. Pode parecer que o meio em que você convive é desestimulante, onde ninguém deseja tomar a frente ou onde as novas ideias são recebidas com passividade. É um campo social marcado pela estagnação criativa dos grupos com os quais você interage.</p>`,
+  1: `<p>  No ambiente social, você pode perceber uma atmosfera de falta de iniciativa ou bloqueios nas pessoas ao seu redor. Pode parecer que o meio em que você convive é desestimulante, onde ninguém deseja tomar a frente ou onde as novas ideias são recebidas com passividade. É um campo social marcado pela estagnação criativa dos grupos com os quais você interage.</p>`,
 
-  2: `<p> SEQUENCIA 222 Esta influência revela um meio social onde impera a fofoca, a dependência emocional excessiva ou a timidez coletiva. Você pode se ver cercado por pessoas inseguras que buscam constantemente sua aprovação ou que tentam influenciá-lo através da vitimização. O ambiente social tende a ser hesitante, dificultando a construção de parcerias sólidas e independentes.</p>`,
+  2: `<p>  Esta influência revela um meio social onde impera a fofoca, a dependência emocional excessiva ou a timidez coletiva. Você pode se ver cercado por pessoas inseguras que buscam constantemente sua aprovação ou que tentam influenciá-lo através da vitimização. O ambiente social tende a ser hesitante, dificultando a construção de parcerias sólidas e independentes.</p>`,
 
-  3: `<p> SEQUENCIA 333 O desafio no campo social aqui são os ruídos de comunicação. Você perceberá que as pessoas ao seu redor têm dificuldade em se expressar ou que os mal-entendidos são a regra no seu círculo de convivência. Discussões vazias, futilidades ou silêncios desconfortáveis em grupos podem gerar uma sensação de isolamento social, mesmo quando você está acompanhado.</p>`,
+  3: `<p>  O desafio no campo social aqui são os ruídos de comunicação. Você perceberá que as pessoas ao seu redor têm dificuldade em se expressar ou que os mal-entendidos são a regra no seu círculo de convivência. Discussões vazias, futilidades ou silêncios desconfortáveis em grupos podem gerar uma sensação de isolamento social, mesmo quando você está acompanhado.</p>`,
 
-  4: `<p> SEQUENCIA 444 Esta sequência aponta para um ambiente social ou profissional rígido, burocrático ou com pessoas excessivamente focadas em dificuldades financeiras. O meio ao seu redor pode parecer limitado, com poucas oportunidades de crescimento ou com uma mentalidade de escassez que contamina o entusiasmo coletivo, gerando um clima de pessimismo sobre o futuro material.</p>`,
+  4: `<p>  Esta sequência aponta para um ambiente social ou profissional rígido, burocrático ou com pessoas excessivamente focadas em dificuldades financeiras. O meio ao seu redor pode parecer limitado, com poucas oportunidades de crescimento ou com uma mentalidade de escassez que contamina o entusiasmo coletivo, gerando um clima de pessimismo sobre o futuro material.</p>`,
 
-  5: `<p> SEQUENCIA 555 No social, esta vibração indica convivência com pessoas instáveis e ambientes em constante mutação negativa. Você pode sentir que seu círculo social é pouco confiável, com mudanças bruscas de lealdade ou comportamentos rebeldes e impulsivos de terceiros que acabam afetando sua paz. É um meio onde falta foco e onde os laços se rompem com facilidade.</p>`,
+  5: `<p>  No social, esta vibração indica convivência com pessoas instáveis e ambientes em constante mutação negativa. Você pode sentir que seu círculo social é pouco confiável, com mudanças bruscas de lealdade ou comportamentos rebeldes e impulsivos de terceiros que acabam afetando sua paz. É um meio onde falta foco e onde os laços se rompem com facilidade.</p>`,
 
-  6: `<p> SEQUENCIA 666 Esta influência revela tensões nos relacionamentos próximos e círculos de amizade. Você pode perceber desarmonia, cobranças excessivas ou falta de reciprocidade nas pessoas do seu convívio. O ambiente social pode parecer carregado de expectativas emocionais pesadas, onde as desilusões com terceiros são frequentes devido à falta de comprometimento ou lealdade dos outros.</p>`,
+  6: `<p>  Esta influência revela tensões nos relacionamentos próximos e círculos de amizade. Você pode perceber desarmonia, cobranças excessivas ou falta de reciprocidade nas pessoas do seu convívio. O ambiente social pode parecer carregado de expectativas emocionais pesadas, onde as desilusões com terceiros são frequentes devido à falta de comprometimento ou lealdade dos outros.</p>`,
 
-  7: `<p> SEQUENCIA 777 No campo social, você pode se deparar com pessoas críticas, arrogantes ou excessivamente fechadas em suas próprias verdades. O meio tende a ser elitista ou intelectualmente intolerante, onde o isolamento voluntário das pessoas dificulta a troca genuína. Existe um risco de conviver com influências que pregam o afastamento social como forma de superioridade.</p>`,
+  7: `<p>  No campo social, você pode se deparar com pessoas críticas, arrogantes ou excessivamente fechadas em suas próprias verdades. O meio tende a ser elitista ou intelectualmente intolerante, onde o isolamento voluntário das pessoas dificulta a troca genuína. Existe um risco de conviver com influências que pregam o afastamento social como forma de superioridade.</p>`,
 
-  8: `<p> SEQUENCIA 888 Esta sequência indica um ambiente social de conflitos de poder, agressividade e perdas financeiras compartilhadas. Você pode ser alvo de injustiças cometidas por grupos ou se ver em meios onde a ambição desmedida de terceiros gera um clima de tensão e desconfiança. É um cenário de disputas e julgamentos precipitados que podem prejudicar sua imagem pública.</p>`,
+  8: `<p>  Esta sequência indica um ambiente social de conflitos de poder, agressividade e perdas financeiras compartilhadas. Você pode ser alvo de injustiças cometidas por grupos ou se ver em meios onde a ambição desmedida de terceiros gera um clima de tensão e desconfiança. É um cenário de disputas e julgamentos precipitados que podem prejudicar sua imagem pública.</p>`,
 
-  9: `<p> SEQUENCIA 999 O desafio social aqui é a convivência com pessoas que estão passando por crises profundas ou que se recusam a evoluir. O meio ao seu redor pode parecer desgastado, como se os grupos de que você participa estivessem chegando ao fim. Há um sentimento coletivo de derrota ou cansaço que pode drenar sua energia se você tentar carregar os problemas dos outros nas costas.</p>`
+  9: `<p>  O desafio social aqui é a convivência com pessoas que estão passando por crises profundas ou que se recusam a evoluir. O meio ao seu redor pode parecer desgastado, como se os grupos de que você participa estivessem chegando ao fim. Há um sentimento coletivo de derrota ou cansaço que pode drenar sua energia se você tentar carregar os problemas dos outros nas costas.</p>`
 };
 
 const textosSeqNegDestino = {
-  1: `<p> SEQUENCIA 111 No caminho do destino, esta vibração se manifesta como obstáculos súbitos que impedem o início de novos ciclos. O destino parece colocar barreiras toda vez que você tenta exercer sua autonomia. São eventos externos que forçam a paciência e exigem que você encontre novas formas de liderar sua vida quando as portas parecem trancadas por forças maiores.</p>`,
+  1: `<p>  No caminho do destino, esta vibração se manifesta como obstáculos súbitos que impedem o início de novos ciclos. O destino parece colocar barreiras toda vez que você tenta exercer sua autonomia. São eventos externos que forçam a paciência e exigem que você encontre novas formas de liderar sua vida quando as portas parecem trancadas por forças maiores.</p>`,
 
-  2: `<p> SEQUENCIA 222 Esta influência traz situações de destino que testam sua capacidade de se manter firme diante de pressões externas. Você pode enfrentar circunstâncias que o colocam em posição de submissão ou que exigem que você aprenda a discernir em quem confiar. O caminho pode apresentar parcerias duvidosas que servem como teste para o seu fortalecimento pessoal.</p>`,
+  2: `<p> Esta influência traz situações de destino que testam sua capacidade de se manter firme diante de pressões externas. Você pode enfrentar circunstâncias que o colocam em posição de submissão ou que exigem que você aprenda a discernir em quem confiar. O caminho pode apresentar parcerias duvidosas que servem como teste para o seu fortalecimento pessoal.</p>`,
 
-  3: `<p> SEQUENCIA 333 O destino aqui apresenta desafios ligados à imagem pública e à circulação de informações. Podem surgir eventos inesperados causados por boatos ou falhas tecnológicas que afetam sua comunicação com o mundo. O teste é aprender a manter a verdade e a clareza mesmo quando as circunstâncias externas conspiram para gerar confusão e mal-entendidos.</p>`,
+  3: `<p>  O destino aqui apresenta desafios ligados à imagem pública e à circulação de informações. Podem surgir eventos inesperados causados por boatos ou falhas tecnológicas que afetam sua comunicação com o mundo. O teste é aprender a manter a verdade e a clareza mesmo quando as circunstâncias externas conspiram para gerar confusão e mal-entendidos.</p>`,
 
-  4: `<p> SEQUENCIA 444 Esta sequência no destino aponta para fases de provação material e desafios com autoridades ou estruturas rígidas. O caminho pode apresentar escassez temporária de recursos ou perdas que fogem ao seu controle direto, como crises econômicas ou mudanças em leis. São eventos que exigem uma resiliência de ferro para reconstruir as bases sobre um solo incerto.</p>`,
+  4: `<p>  Esta sequência no destino aponta para fases de provação material e desafios com autoridades ou estruturas rígidas. O caminho pode apresentar escassez temporária de recursos ou perdas que fogem ao seu controle direto, como crises econômicas ou mudanças em leis. São eventos que exigem uma resiliência de ferro para reconstruir as bases sobre um solo incerto.</p>`,
 
-  5: `<p> SEQUENCIA 555 A marca aqui são as reviravoltas inesperadas do destino. Mudanças forçadas de cidade, de emprego ou de planos de vida que ocorrem sem aviso prévio. O caminho se torna instável e volátil, exigindo que você desenvolva uma adaptabilidade rápida para não ser atropelado pelo movimento constante das circunstâncias externas.</p>`,
+  5: `<p>  A marca aqui são as reviravoltas inesperadas do destino. Mudanças forçadas de cidade, de emprego ou de planos de vida que ocorrem sem aviso prévio. O caminho se torna instável e volátil, exigindo que você desenvolva uma adaptabilidade rápida para não ser atropelado pelo movimento constante das circunstâncias externas.</p>`,
 
-  6: `<p> SEQUENCIA 666 Esta vibração no destino traz testes através de rompimentos afetivos ou decepções com instituições e pessoas em quem você depositava segurança. São eventos que atingem o coração da sua estabilidade emocional, forçando-o a aprender que a segurança real não depende de contratos externos ou de promessas alheias, mas da sua integridade.</p>`,
+  6: `<p>  Esta vibração no destino traz testes através de rompimentos afetivos ou decepções com instituições e pessoas em quem você depositava segurança. São eventos que atingem o coração da sua estabilidade emocional, forçando-o a aprender que a segurança real não depende de contratos externos ou de promessas alheias, mas da sua integridade.</p>`,
 
-  7: `<p> SEQUENCIA 777 O destino apresenta períodos de "deserto", onde você é levado a situações de isolamento ou a enfrentar verdades ocultas. Podem surgir eventos que o forçam a parar e refletir, muitas vezes através de situações de saúde ou crises existenciais disparadas por fatos externos. É um convite do destino para o amadurecimento espiritual através da solidão necessária.</p>`,
+  7: `<p>  O destino apresenta períodos de "deserto", onde você é levado a situações de isolamento ou a enfrentar verdades ocultas. Podem surgir eventos que o forçam a parar e refletir, muitas vezes através de situações de saúde ou crises existenciais disparadas por fatos externos. É um convite do destino para o amadurecimento espiritual através da solidão necessária.</p>`,
 
-  8: `<p> SEQUENCIA 888 Esta sequência indica confrontos diretos com a justiça, o poder ou grandes perdas materiais causadas por terceiros. O destino coloca no seu caminho situações de confronto que exigem equilíbrio absoluto para não cair em agressividade. São testes de honra e ética diante de circunstâncias onde o mundo exterior parece agir de forma injusta ou cruel.</p>`,
+  8: `<p>  Esta sequência indica confrontos diretos com a justiça, o poder ou grandes perdas materiais causadas por terceiros. O destino coloca no seu caminho situações de confronto que exigem equilíbrio absoluto para não cair em agressividade. São testes de honra e ética diante de circunstâncias onde o mundo exterior parece agir de forma injusta ou cruel.</p>`,
 
-  9: `<p> SEQUENCIA 999 No destino, esta vibração marca o encerramento forçado de grandes capítulos. O caminho pode "limpar" da sua vida tudo o que já não serve mais, muitas vezes de forma dolorosa e definitiva. São eventos de perda de patrimônio ou fim de eras que, embora desafiadores, têm o propósito de liberar seu caminho para uma nova existência totalmente diferente.</p>`
+  9: `<p>  No destino, esta vibração marca o encerramento forçado de grandes capítulos. O caminho pode "limpar" da sua vida tudo o que já não serve mais, muitas vezes de forma dolorosa e definitiva. São eventos de perda de patrimônio ou fim de eras que, embora desafiadores, têm o propósito de liberar seu caminho para uma nova existência totalmente diferente.</p>`
 };
 // ⭐ TEXTOS SEQUÊNCIAS ESPECIAIS
 const textosSeqEspVida = {
@@ -3353,7 +2778,8 @@ const textosSeqEspPessoal = {
 };
 
 const textosSeqEspSocial = {
-  "116": `<p No seu ambiente social, você pode notar pessoas sendo alvo de críticas ou discussões sobre reputação. É um momento onde a fofoca ou o julgamento público ganham força nos grupos que você frequenta.</p>`,
+  
+ "116": `<p> No seu ambiente social, você pode notar pessoas sendo alvo de críticas ou discussões sobre reputação. É um momento onde a fofoca ou o julgamento público ganham força nos grupos que você frequenta.</p>`,
   "119": `<p> Você poderá observar comportamentos de fanatismo ou falsas promessas vindo de pessoas próximas ou do meio coletivo. O ambiente social pode estar carregado de influências hipócritas ou causas vazias.</p>`,
   "123": `<p> O círculo social ao seu redor vive um momento de celebração e reconhecimento. Você pode ver amigos ou conhecidos recebendo prêmios, ou o sucesso dos filhos de pessoas próximas sendo o assunto principal.</p>`,
   "168": `<p> O meio social onde você circula demonstra sinais de prosperidade e bons negócios. Você observa pessoas ao seu redor fechando acordos lucrativos e colhendo prêmios e ganhos financeiros.</p>`,
@@ -3405,255 +2831,245 @@ const textosFinDestino = { 999: "" };
 const explicacoes = {
 
 principal: `
-<div>
-<h1> Pirâmide da Vida Principal  👑</h1>
-<p>
-<p>​A Pirâmide da Vida Principal é o alicerce absoluto de todo o seu mapa numerológico quântico. Ela funciona como o "DNA" da sua jornada, representando a estrutura macro da sua existência. Diferente das outras pirâmides que focam em áreas específicas, esta matriz revela o caminho mestre, as fases evolutivas e as potências que regem a sua história do início ao fim.</p>
 
-<p>​Esta pirâmide é construída exclusivamente a partir do seu nome de batismo, o que, na numerologia cabalística, representa a sua essência imutável e a vibração que você trouxe ao mundo. Ela reflete os aspectos gerais da vida e serve como o cenário onde todos os outros eventos acontecem. É por isso que todas as vigências de idade e períodos cronológicos do seu relatório são baseados nesta pirâmide central; ela é o relógio biológico e espiritual que governa todas as outras influências.</p>
+<div class="intro-secao-premium" style="background: #fff; border: 1px solid #e6d5a8; border-radius: 12px; padding: 35px; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+    
+    <div style="position: absolute; top: -15px; right: -15px; font-size: 70px; color: rgba(130, 113, 8, 0.05); transform: rotate(15deg);">👑</div>
 
-<p>​Ao analisar a Pirâmide da Vida, você está olhando para o seu destino em larga escala. Ela mostra as lições que você veio aprender e os ciclos de amadurecimento pelos quais passará. Se a sua vida fosse um filme, esta aba descreveria o enredo principal e o cenário de fundo. Sem a compreensão desta matriz, as outras áreas (pessoal ou social) ficam sem contexto, pois é a Pirâmide da Vida que define se você está em um momento de colheita, de plantio ou de transformação profunda. Ela é a bússola que impede que você se perca nas distrações do cotidiano, mantendo o foco no que realmente importa para a sua evolução de longo prazo.</p>
+    <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
+        👑 Vibração Mestra da Vida <br>
+        <span style="font-size: 14px; color: #b59b4d; letter-spacing: 4px;">O Alicerce Absoluto do Destino</span>
+    </h2>
+
+    <div style="color: #333; line-height: 1.8; font-size: 17px; text-align: justify;">
+        <p style="margin-bottom: 15px;">A <b>Pirâmide da Vida Principal</b> é o alicerce absoluto de todo o seu mapa numerológico quântico. Ela funciona como o "DNA" da sua jornada, representando a estrutura macro da sua existência e revelando o caminho mestre que rege sua história do início ao fim. Enquanto as outras matrizes focam em nuances emocionais ou sociais, esta vibração mestra define o enredo principal e o cenário onde sua evolução ocorre.</p>
+
+        <p style="margin-bottom: 15px;">Construída exclusivamente a partir do seu <b>nome de batismo</b>, esta matriz reflete sua essência imutável e a frequência original que você trouxe ao mundo. Na numerologia cabalística, ela é considerada o <b>Relógio Biológico e Espiritual</b>; é através desta pirâmide central que todas as vigências de idade e períodos cronológicos do seu relatório são calculados. Ela é a bússola que mantém o alinhamento das suas experiências, impedindo que você se perca nas distrações do cotidiano.</p>
+
+        <p style="margin-bottom: 15px;">Compreender a Vibração Mestra é entender as lições fundamentais e os ciclos de amadurecimento que moldam seu destino em larga escala. Ela contextualiza todas as outras áreas — seja o campo pessoal, social ou de destino — determinando se o seu momento atual é de plantio, colheita ou de uma necessária transformação profunda.</p>
+
+        <p>Esta aba descreve a sua trajetória soberana. Sem o domínio desta matriz, as outras influências perdem o seu norte, pois é a Pirâmide da Vida que sustenta o sentido mais amplo da sua existência e garante que cada passo esteja em sintonia com o seu propósito maior.</p>
+    </div>
+
+    <div style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #fdfaf2; border-top: 2px solid #827108; text-align: center;">
+        <p style="font-style: italic; color: #827108; font-size: 15px;">
+            "A Matriz da Vida é a partitura original; as outras matrizes são os instrumentos que dão tom à sua sinfonia pessoal."
+        </p>
+    </div>
 </div>
+
 `,
 
 pessoal: `
-<div>
-<h1> Pirâmide do intelecto Pessoal  👤</h1>
-<p>Enquanto a pirâmide anterior trata do "quem sou eu no universo", a Pirâmide do Intelecto Pessoal mergulha no "como eu me sinto e como eu processo a vida". Ela é formada pela combinação da equivalência numérica do seu nome somada ao seu dia de nascimento reduzido. Essa pequena adição do dia de nascimento muda o foco do destino geral para a sua atitude íntima e psicológica diante do mundo.</p>
 
-<p>​Esta aba revela o seu mundo subjetivo: o campo emocional, o intelecto e os processos psicológicos que ocorrem longe dos olhos dos outros. Ela é essencial para entender os seus conflitos internos e como você vive cada fase da vida "do lado de dentro". Muitas vezes, a Pirâmide da Vida pode indicar um período de sucesso externo, mas a Pirâmide Pessoal pode revelar que, internamente, você está enfrentando uma crise de identidade ou um crescimento interior silencioso.</p>
+<div class="intro-secao-premium" style="background: #fff; border: 1px solid #e6d5a8; border-radius: 12px; padding: 35px; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+    
+    <div style="position: absolute; top: -15px; right: -15px; font-size: 70px; color: rgba(130, 113, 8, 0.05); transform: rotate(15deg);">👤</div>
 
-<p>​É nesta seção que exploramos os sentimentos mais profundos e as reações instintivas. Se você sente que suas emoções não condizem com o que está acontecendo na sua vida prática, a resposta está aqui. Ela mapeia o seu crescimento interior e como o seu "eu" lida com as pressões da Matriz Principal. Entender a Pirâmide Pessoal permite que você tenha mais autocompaixão, pois ela valida suas lutas internas e mostra que cada conflito é, na verdade, um degrau para o fortalecimento do seu intelecto e da sua estabilidade emocional. É a aba do autoconhecimento psíquico por excelência.</p>
+    <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
+        👤 Mundo Interior e Intelecto <br>
+        <span style="font-size: 14px; color: #b59b4d; letter-spacing: 4px;">A Matriz do Sentimento e Autoconhecimento</span>
+    </h2>
 
+    <div style="color: #333; line-height: 1.8; font-size: 17px; text-align: justify;">
+        <p style="margin-bottom: 15px;">Enquanto a pirâmide anterior responde à pergunta "quem sou eu no universo", a <b>Pirâmide do Mundo Interior</b> mergulha nas profundezas do "como eu me sinto e como processo a vida". Ela é gerada pela combinação da frequência do seu nome com a energia do seu dia de nascimento. Essa união desloca o foco do destino externo para a sua atitude íntima, revelando a mecânica psicológica que governa sua visão de mundo.</p>
+
+        <p style="margin-bottom: 15px;">Esta aba desvenda o seu universo subjetivo: o campo das emoções, do intelecto e dos processos psíquicos que ocorrem longe dos olhos alheios. Ela é a chave para compreender seus conflitos internos e como você vivencia cada fase "do lado de dentro". É comum que a Matriz Principal indique sucesso externo, enquanto esta Matriz Pessoal revela um crescimento interior silencioso ou uma busca por identidade que ninguém mais percebe.</p>
+
+        <p style="margin-bottom: 15px;">Aqui, validamos suas reações instintivas e sentimentos mais profundos. Se você percebe que suas emoções nem sempre condizem com a realidade prática, a explicação reside nesta análise. Ela mapeia como o seu "eu" lida com as pressões da Matriz Principal, transformando cada desafio emocional em um degrau para o fortalecimento da sua estabilidade e maturidade mental.</p>
+
+        <p>Entender esta pirâmide é o ato supremo de autocompaixão. Ao reconhecer seus padrões internos, você deixa de ser refém das próprias emoções para se tornar o mestre da sua estabilidade psíquica, encontrando o equilíbrio necessário entre o que o mundo exige e o que a sua alma realmente sente.</p>
+    </div>
+
+    <div style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #fdfaf2; border-top: 2px solid #827108; text-align: center;">
+        <p style="font-style: italic; color: #827108; font-size: 15px;">
+            "A verdadeira jornada de descoberta não consiste em procurar novas paisagens, mas em olhar para dentro com novos olhos."
+        </p>
+    </div>
 </div>
 `,
 
 social: `
-<div>
-<h1> Pirâmide da percepcão do seu meio de convivencia  🌎</h1>
-<p>​A Pirâmide da Percepção do seu Meio de Convivência (ou Pirâmide Social) assume aqui um papel único de "testemunha ocular" da realidade coletiva. Ela é formada pela frequência numérica do seu nome de nascimento em sintonia com o seu mês de nascimento, o que gera o seu radar de percepção sobre o que ocorre ao seu redor. Diferente das outras matrizes que trazem influências diretas para o seu ser, esta aba descreve especificamente a sua capacidade de ver as engrenagens da vida girando para as pessoas do seu meio social.</p>
 
-<p>​É nesta seção que entendemos que nem tudo o que acontece no nosso campo de visão nos pertence. Esta pirâmide revela os acontecimentos, as crises, as vitórias e as transformações que você testemunha na vida de amigos, familiares e colegas. Enquanto a Pirâmide do Destino é a que realmente molda a sua jornada pessoal e traz os eventos que o influenciam diretamente, a Pirâmide Social é um mapa do "teatro da vida" alheia que se desenrola diante dos seus olhos.</p>
+<div class="intro-secao-premium" style="background: #fff; border: 1px solid #e6d5a8; border-radius: 12px; padding: 35px; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+    
+    <div style="position: absolute; top: -15px; right: -15px; font-size: 70px; color: rgba(130, 113, 8, 0.05); transform: rotate(15deg);">🌎</div>
 
-<p>​Ter essa clareza é libertador, pois permite que você observe os movimentos do seu meio sem ser sugado por eles ou acreditar que aquelas influências externas estão interferindo na sua rota individual. Ela mostra a sua atuação no mundo externo como um observador privilegiado, capaz de identificar padrões e comportamentos no entorno sem que isso altere a sua própria matriz quântica. É a lente que permite enxergar a vida social como um conjunto de experiências que você apenas presencia.</p>
+    <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
+        🌎 Percepção do Meio Social <br>
+        <span style="font-size: 14px; color: #b59b4d; letter-spacing: 4px;">A Matriz da Observação e Convivência</span>
+    </h2>
 
-<p>​Ao ler os arcanos e potências desta aba, você não está lendo o seu futuro, mas sim a "previsão do tempo" para as pessoas com quem você convive. Isso traz uma sabedoria estratégica: ao perceber o que está acontecendo com os outros, você ganha repertório e maturidade, sem precisar passar pela dor ou pelo esforço daquele evento específico. Esta aba é, portanto, o registro da sua sensibilidade social: o quanto você está atento e o que você é capaz de captar da realidade externa, mantendo sempre a distinção clara entre o que é a vida do outro e o que é o seu propósito soberano.
-</p>
+    <div style="color: #333; line-height: 1.8; font-size: 17px; text-align: justify;">
+        <p style="margin-bottom: 15px;">A <b>Pirâmide da Percepção Social</b> assume o papel de "testemunha ocular" da realidade coletiva. Formada pela sintonia entre o seu nome e o seu mês de nascimento, ela gera o seu radar de percepção sobre o mundo externo. Diferente das outras matrizes que trazem influências diretas para o seu ser, esta aba descreve sua capacidade de enxergar as engrenagens da vida girando para as pessoas ao seu redor.</p>
+
+        <p style="margin-bottom: 15px;">É nesta seção que compreendemos que nem tudo o que entra em nosso campo de visão nos pertence. Esta pirâmide revela as vitórias, crises e transformações que você testemunha na vida de amigos, familiares e colegas. Enquanto a Matriz Principal molda sua jornada direta, a Matriz Social funciona como um mapa do "teatro da vida" alheia, permitindo que você observe os movimentos do seu meio sem ser absorvida por eles.</p>
+
+        <p style="margin-bottom: 15px;">Ter essa clareza é libertador: permite identificar padrões no entorno sem que isso altere sua própria matriz quântica. Ao ler as potências desta aba, você acessa uma espécie de "previsão do tempo" para o seu círculo de convivência. Isso confere uma sabedoria estratégica, permitindo ganhar repertório e maturidade através da observação, sem a necessidade de passar pessoalmente pela dor ou pelo esforço de cada evento testemunhado.</p>
+
+        <p>Esta é a aba da sensibilidade social por excelência. Ela registra o quanto você é capaz de captar da realidade externa, mantendo sempre a distinção cristalina entre o que é a experiência do outro e o que é o seu propósito soberano. É a lente que transforma a convivência em um aprendizado contínuo e protegido.</p>
+    </div>
+
+    <div style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #fdfaf2; border-top: 2px solid #827108; text-align: center;">
+        <p style="font-style: italic; color: #827108; font-size: 15px;">
+            "Saber observar o caminho do outro é a forma mais sábia de iluminar os próprios passos, sem perder o foco na sua própria direção."
+        </p>
+    </div>
 </div>
 `,
 
 destino: `
-<div>
-<h1> Pirâmide do Propósito e Influencia do Universo  ☄️</h1>
+<div class="intro-secao-premium" style="background: #fff; border: 1px solid #e6d5a8; border-radius: 12px; padding: 35px; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
+    
+    <div style="position: absolute; top: -15px; right: -15px; font-size: 70px; color: rgba(130, 113, 8, 0.05); transform: rotate(15deg);">☄️</div>
 
-<p>​A Pirâmide do Propósito e Influência do Universo (ou Pirâmide Destino) é a síntese final de toda a sua análise. Ela utiliza a combinação mais completa: seu nome, dia e mês de nascimento. Por unir todos os elementos, ela reflete os aspectos do seu destino de forma multidimensional, combinando o que está previsto na Matriz Principal com as suas necessidades Pessoais e as demandas do seu Meio Social.</p>
+    <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
+        ☄️ Tendências do Destino e Propósito <br>
+        <span style="font-size: 14px; color: #b59b4d; letter-spacing: 4px;">A Matriz da Síntese e Influência Universal</span>
+    </h2>
 
-<p>​Esta aba é fascinante porque ela tenta prever e explicar os acontecimentos marcantes e os eventos que "moldam o destino ao longo do tempo". Se as outras pirâmides mostram os atores e o palco, a Pirâmide do Propósito mostra as intervenções do destino — as situações inesperadas ou os encontros providenciais que mudam o curso da sua vida. Ela revela a finalidade maior das suas experiências, conectando os pontos entre o que aconteceu no passado e o que o universo está preparando para o seu futuro.</p>
+    <div style="color: #333; line-height: 1.8; font-size: 17px; text-align: justify;">
+        <p style="margin-bottom: 15px;">A <b>Pirâmide do Destino</b> representa a síntese final de toda a sua análise numerológica. Por utilizar a combinação mais completa de dados — seu nome, dia e mês de nascimento — ela reflete sua jornada de forma multidimensional. Esta matriz funde o que está previsto na Matriz Principal com suas necessidades Pessoais e as demandas do seu Meio Social, revelando o ponto de equilíbrio onde sua vontade encontra o plano do universo.</p>
 
-<p>​Entender esta matriz é descobrir o "porquê" por trás das suas vivências. Ela traz clareza sobre o seu propósito de alma e sobre como o universo influencia a sua vontade pessoal. Muitas vezes, um evento que pareceu negativo na Matriz Social pode ser revelado aqui como um ponto de virada essencial para o seu propósito maior. Esta é a aba que traz paz de espírito, pois ajuda a compreender que existe uma ordem maior regendo a sua vida. Ela é o guia definitivo para quem deseja viver em fluxo com o universo, aceitando os desafios como ferramentas de moldagem do caráter e celebrando as vitórias como confirmações do seu caminho sagrado.
-</p>
+        <p style="margin-bottom: 15px;">Esta aba é fascinante pois decodifica as intervenções do destino: situações inesperadas ou encontros providenciais que mudam o curso da sua trajetória. Se as outras pirâmides descrevem os atores e o palco, a Matriz do Destino revela o "diretor" por trás das cenas. Ela conecta os pontos entre o seu passado e o que o universo está preparando para o seu futuro, mostrando a finalidade maior de cada experiência vivida.</p>
+
+        <p style="margin-bottom: 15px;">Entender esta matriz é descobrir o "porquê" por trás das suas vivências. Ela traz clareza sobre o seu propósito de alma e sobre como as forças universais influenciam sua vontade pessoal. Muitas vezes, um evento que pareceu desafiador em outras áreas é revelado aqui como um ponto de virada essencial, um ajuste de rota necessário para que você alcance seu potencial máximo.</p>
+
+        <p>Esta é a aba que traz paz de espírito e senso de direção. Ela é o guia definitivo para quem deseja viver em fluxo com o universo, aceitando os desafios como ferramentas de moldagem do caráter e celebrando cada vitória como uma confirmação de que você está percorrendo o seu caminho sagrado com consciência e maestria.</p>
+    </div>
+
+    <div style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #fdfaf2; border-top: 2px solid #827108; text-align: center;">
+        <p style="font-style: italic; color: #827108; font-size: 15px;">
+            "O destino não é uma questão de sorte, é uma questão de escolha; não é algo para se esperar, é algo para se alcançar em sintonia com o Criador."
+        </p>
+    </div>
 </div>
 `
-
- 
+  
 };
+
+
+
+
+
 window.introsPiramides = {
+    vida: {
+        regente: `
+        <div class="intro-regente-premium" style="background: #fff; border: 1px solid #e6d5a8; border-radius: 12px; padding: 35px; position: relative; overflow: hidden;">
+            
+            <div style="position: absolute; top: -15px; right: -15px; font-size: 70px; color: rgba(130, 113, 8, 0.05); transform: rotate(10deg);">🔱</div>
 
-vida:{
-regente:`<h1>🔱  Regente da Vida </h1>
-<p>O Regente da Vida representa o núcleo vibracional da sua existência. Ele é a força central que sustenta toda a estrutura da sua Pirâmide da Vida, funcionando como o eixo principal em torno do qual todas as demais energias se organizam. Assim como o Sol mantém o equilíbrio do sistema solar, o Regente mantém o alinhamento das experiências que compõem a sua trajetória.</p>
+            <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
+                🔱 O Regente da Matriz Principal <br>
+                <span style="font-size: 14px; color: #b59b4d; letter-spacing: 4px;">O Núcleo Vibracional da Existência</span>
+            </h2>
 
-<p>Essa vibração revela a essência mais autêntica da sua natureza, indicando como você reage aos acontecimentos, quais padrões emocionais predominam e de que maneira sua energia se projeta no mundo. Diferente de eventos momentâneos, o Regente atua como uma base constante que acompanha você durante toda a vida.</p>
+            <div style="color: #333; line-height: 1.8; font-size: 17px; text-align: justify;">
+                <p style="margin-bottom: 15px;">O <b>Regente da Vida</b> representa o núcleo vibracional da sua existência, funcionando como o eixo central em torno do qual todas as demais energias se organizam. Ele é a força que sustenta a estrutura da sua Pirâmide, agindo como o palco principal onde a realidade efetivamente se manifesta. No entanto, sua expressão nunca é isolada; ele é o receptor das frequências que emanam das suas outras três matrizes fundamentais.</p>
 
-<p>Quando suas escolhas estão alinhadas com essa frequência central, as situações tendem a fluir com mais naturalidade. Os desafios continuam existindo, mas passam a ser enfrentados com maior clareza e equilíbrio. No entanto, quando você se distancia dessa vibração essencial, pode surgir uma sensação de desgaste, como se estivesse nadando contra a própria corrente da sua natureza.</p>
+                <p style="margin-bottom: 15px;">Quando a vibração do seu <b>Mundo Interior (Pessoal)</b> coincide com o Regente da Vida, ocorre um alinhamento raro: o que você sente internamente é exatamente o que a vida lhe apresenta, indicando que suas vontades moldam sua realidade de forma direta. Se o impacto vem da <b>Percepção do Meio (Social)</b>, a vida reflete uma influência externa predominante; o ambiente e as pessoas ao seu redor ditam o ritmo dos acontecimentos, criando uma jornada onde o coletivo e o individual se fundem.</p>
 
-<p>Compreender o seu Regente é compreender o fundamento da sua identidade energética. Ele revela talentos naturais, tendências comportamentais e a forma como a sua presença influencia o ambiente ao redor, sendo a base sobre a qual todo o restante da análise da Pirâmide da Vida se apoia.</p>`,
+                <p style="margin-bottom: 15px;">Já a ressonância com as <b>Tendências do Destino</b> traz uma carga de propósito ou influência universal: eventos que surgem "do nada" são, na verdade, o destino movendo o seu eixo central para cumprir uma missão maior. Sem essas conexões, o Regente atua como sua base de identidade autêntica, mas sob influência, ele se torna o termômetro de como você reage às pressões internas, sociais ou espirituais.</p>
 
-negativas:`<h1 style="color:#d32f2f;">⚠️ O que são Sequências de Vulnerabilidade e insegurança na Vida?</h1>
-<p>As Sequências Negativas indicam pontos de tensão dentro da estrutura energética da sua vida. Elas não representam punições nem destinos inevitáveis, mas sim padrões que revelam áreas onde a energia tende a se repetir de maneira desafiadora. Funcionam como sinais que mostram onde determinados comportamentos ou situações podem gerar desgaste ou bloqueios.</p>
+                <p>Compreender este Regente é decifrar a nota mestra da sua sinfonia. Ele revela se você está navegando por mérito próprio, por fluxo social ou por determinação do destino, sendo a base absoluta sobre a qual toda a sua história energética é construída e lapidada.</p>
+            </div>
 
-<p>Muitas dessas sequências estão associadas a experiências que exigem aprendizado e amadurecimento. Elas surgem quando certos aspectos da sua natureza ainda não foram plenamente compreendidos ou integrados. Por isso, podem se manifestar como situações recorrentes que parecem reaparecer em diferentes fases da vida.</p>
-
-<p>Reconhecer essas vibrações permite que você desenvolva consciência sobre os próprios padrões. Em vez de reagir automaticamente aos desafios, torna-se possível observar o que está acontecendo e escolher respostas mais equilibradas. Esse processo transforma aquilo que antes parecia um obstáculo inevitável em uma oportunidade real de evolução.</p>
-
-<p>Ao identificar essas sequências dentro da sua Pirâmide da Vida, você passa a compreender com maior clareza quais aspectos da sua jornada pedem atenção e fortalecimento, abrindo espaço para que a energia vital circule de forma mais harmoniosa.</p>`,
-
-especiais:`<h1 style="color:#b8860b;">⚡️ O que são Sequências Especiais na Vida?</h1>
-<p>As Sequências Especiais representam configurações energéticas que surgem em momentos específicos da sua trajetória. Diferente do Regente, que expressa uma característica permanente da sua natureza, essas sequências aparecem como eventos vibracionais que marcam determinadas fases da vida.</p>
-
-<p>Essas formações indicam períodos em que certas forças se tornam mais intensas ou mais acessíveis, abrindo portas para experiências incomuns, oportunidades inesperadas ou situações que exigem decisões importantes. Elas funcionam como pontos de ativação dentro do seu mapa numerológico.</p>
-
-<p>Por serem temporárias, essas energias pedem atenção e consciência. Quando reconhecidas no momento certo, podem favorecer mudanças positivas, acelerar processos ou revelar caminhos que antes não estavam visíveis. Porém, quando ignoradas, tendem a se dissipar naturalmente, encerrando o ciclo daquela influência específica.</p>
-
-<p>Esta parte da análise revela quais dessas sequências estão presentes na sua Pirâmide da Vida e explica a natureza da energia envolvida, permitindo que você compreenda melhor o significado desse momento dentro da sua jornada.</p>`,
-
-financeiro:`<h1 style="color:#2e7d32;">💰 O que são Sequências Financeiras na Vida?</h1>
-<p>As Sequências Financeiras apontam como a energia material se manifesta em determinados momentos da sua vida. Elas não definem permanentemente riqueza ou escassez, mas indicam padrões vibracionais que influenciam a forma como recursos, oportunidades e resultados financeiros tendem a se apresentar em um período específico.</p>
-
-<p>Em alguns momentos, essas sequências podem revelar fases de expansão, onde oportunidades surgem com maior facilidade e os esforços realizados anteriormente começam a gerar retorno. Em outros períodos, podem indicar fases que pedem planejamento, organização e uso mais consciente dos recursos disponíveis.</p>
-
-<p>Compreender essa dinâmica permite que você ajuste suas atitudes conforme o momento energético que está vivendo. Quando o fluxo favorece o crescimento, agir com iniciativa pode ampliar resultados. Quando a energia pede prudência, decisões estratégicas ajudam a preservar e fortalecer aquilo que já foi conquistado.</p>
-
-<p>A análise dessas sequências mostra como a vibração material está operando dentro da sua Pirâmide da Vida neste momento, oferecendo uma visão mais clara para que suas escolhas financeiras sejam feitas com maior consciência e equilíbrio.</p>`,
-
-vigencias:`<h1>✡︎ O que são as Potências na Vida(Principal) ?</h1>
-<p>As Potências representam os ciclos temporais em que determinadas potências numerológicas se tornam predominantes na sua vida. Assim como as estações do ano alteram o ritmo da natureza, as vigências indicam períodos em que diferentes energias passam a influenciar as experiências que você vive.</p>
-
-<p>Cada fase carrega um tipo específico de movimento. Existem momentos voltados para crescimento, expansão e realização, assim como períodos que pedem reflexão, reorganização ou preparação para mudanças futuras. Esses ciclos não surgem por acaso, mas fazem parte de um fluxo natural que organiza o desenvolvimento da sua trajetória.</p>
-
-<p>Quando você compreende a vigência que está atuando em determinado período da vida, torna-se mais fácil interpretar os acontecimentos ao seu redor. Situações que antes pareciam aleatórias passam a revelar um padrão mais amplo de evolução.</p>
-
-<p>Conhecer esses ciclos permite alinhar suas decisões ao ritmo das energias que estão em atuação, ajudando você a aproveitar melhor as fases favoráveis e a atravessar os períodos de transformação com maior consciência e equilíbrio.</p>`
+            <div style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #fdfaf2; border-top: 2px solid #827108; text-align: center;">
+                <p style="font-style: italic; color: #827108; font-size: 15px;">
+                    "O Regente da Vida não é apenas um número; é o encontro sagrado entre o que você é e o que o universo espera de você."
+                </p>
+            </div>
+        </div>`
 },
 
 
 
-pessoal:{
-
-regente:`<h1>🔱  Regente Pessoal  </h1>
-<p>O Regente Pessoal representa o estado interno predominante da sua mente e da sua percepção sobre si mesmo. Diferente do Regente da Vida, que expressa uma força real que atua no mundo externo, o Regente Pessoal mostra como você se percebe internamente e como interpreta as situações que vive.</p>
-
-<p>Essa vibração revela o clima psicológico que acompanha seus pensamentos, sentimentos e reflexões mais profundas. Muitas vezes ela funciona como um filtro interno, determinando a forma como você entende os acontecimentos da sua própria vida, mesmo que a realidade externa esteja seguindo outro caminho.</p>
-
-<p>Quando essa energia está em equilíbrio, você tende a se sentir alinhado consigo mesmo, compreendendo melhor suas emoções, suas reações e suas motivações. Porém, quando existe conflito interno com essa vibração, podem surgir dúvidas, inseguranças ou interpretações distorcidas sobre aquilo que você realmente é ou deseja.</p>
-
-<p>Conhecer o seu Regente Pessoal permite observar com mais clareza como sua mente processa experiências e emoções. Ele revela a forma como você se enxerga por dentro, mostrando o padrão mental e emocional que influencia diretamente suas decisões, sua autoconfiança e sua visão da própria identidade.</p>`,
-
-negativas:`<h1 style="color:#d32f2f;">⚠️ O que são Sequências de Vulnerabilidade e insegurança do sentimento interno (Pessoal)?</h1>
-<p>As Sequências Negativas da Pirâmide Pessoal indicam padrões de pensamento ou percepções internas que podem gerar tensão psicológica ou conflito emocional. Elas não representam acontecimentos externos obrigatórios, mas sim tendências internas que podem influenciar a forma como você interpreta determinadas situações.</p>
-
-<p>Muitas vezes essas sequências revelam momentos em que a mente tende a focar em inseguranças, medos ou interpretações excessivamente críticas sobre si mesmo. Isso pode fazer com que você sinta dificuldades internas mesmo quando as circunstâncias externas não são necessariamente negativas.</p>
-
-<p>Ao identificar essas vibrações na Pirâmide Pessoal, você passa a perceber que certos sentimentos ou pensamentos recorrentes fazem parte de um padrão energético interno. Essa consciência permite interromper ciclos mentais automáticos e desenvolver uma visão mais equilibrada sobre suas próprias experiências.</p>
-
-<p>Compreender essas sequências ajuda a transformar conflitos internos em oportunidades de autoconhecimento. Em vez de se deixar dominar por essas percepções, você pode utilizá-las como sinais que indicam onde sua mente precisa de maior clareza, fortalecimento emocional e consciência.</p>`,
-
-especiais:`<h1 style="color:#b8860b;">⚡️ O que são Sequências Especiais no Pessoal?</h1>
-<p>As Sequências Especiais na Pirâmide Pessoal representam momentos em que determinadas ideias, inspirações ou percepções internas se tornam mais intensas dentro do seu campo mental. Elas indicam períodos em que sua mente pode estar particularmente sensível a novas compreensões ou insights sobre si mesmo.</p>
-
-<p>Diferente de acontecimentos externos concretos, essas sequências funcionam como movimentos internos que despertam novas formas de pensar, refletir ou enxergar situações da sua própria vida. Elas podem trazer clareza repentina, questionamentos profundos ou até uma sensação de despertar para novas possibilidades pessoais.</p>
-
-<p>Essas configurações costumam surgir em momentos em que a mente está preparada para compreender algo que antes passava despercebido. Por isso, podem ser vistas como pontos de ativação intelectual e emocional dentro da sua jornada interior.</p>
-
-<p>Ao reconhecer essas sequências, você pode aproveitar melhor essas fases de percepção ampliada, utilizando esse momento para refletir sobre suas escolhas, compreender padrões pessoais e fortalecer a conexão com sua própria consciência.</p>`,
-
-financeiro:`<h1 style="color:#2e7d32;">💰 O que são Sequências Financeiras no Pessoal?</h1>
-<p>As Sequências Financeiras dentro da Pirâmide Pessoal não indicam necessariamente acontecimentos materiais concretos, mas sim a forma como você percebe e sente a energia do dinheiro em sua vida. Elas revelam o estado mental e emocional que influencia sua relação interna com prosperidade, segurança e estabilidade.</p>
-
-<p>Em alguns períodos, essa vibração pode gerar uma sensação de confiança e abertura para oportunidades, mesmo antes de resultados materiais aparecerem. Em outros momentos, pode trazer preocupações ou dúvidas relacionadas à forma como você enxerga sua capacidade de gerar recursos.</p>
-
-<p>Essas percepções internas têm grande impacto sobre as decisões que você toma, pois a maneira como você se sente em relação ao dinheiro influencia diretamente suas atitudes, sua disposição para assumir riscos e sua forma de administrar oportunidades.</p>
-
-<p>Compreender essa vibração pessoal ajuda a perceber se sua mente está favorecendo ou limitando sua relação com a prosperidade. Ao reconhecer esse padrão interno, torna-se possível ajustar pensamentos e atitudes para criar uma relação mais equilibrada com a energia material.</p>`,
-
-vigencias:`<h1>✡︎ O que são as Potências do sentimento Pessoal(interior)?</h1>
-<p>As Potências da Pirâmide Pessoal representam ciclos internos de percepção, reflexão e amadurecimento mental. Diferente das vigências da Pirâmide da Vida, que indicam acontecimentos externos mais concretos, essas fases revelam mudanças no seu estado psicológico e emocional ao longo do tempo.</p>
-
-<p>Cada período pode trazer uma atmosfera mental diferente. Existem fases em que a mente se volta mais para introspecção e autoconhecimento, enquanto outras estimulam maior clareza de pensamento, criatividade ou desejo de transformação pessoal.</p>
-
-<p>Esses ciclos influenciam a maneira como você interpreta as experiências da vida. Um mesmo acontecimento pode ser percebido de formas muito diferentes dependendo da vigência interna que está ativa naquele momento.</p>
-
-<p>Conhecer essas fases permite compreender melhor seus próprios processos internos, respeitando momentos de reflexão e aproveitando períodos de maior clareza mental para tomar decisões importantes com mais consciência.</p>`
-
-},
-
-social:{
-
-regente:`<h1>🔱  O que é o Regente Social  ?</h1>
-<p>O Regente Social representa a vibração predominante do ambiente humano ao seu redor. Diferente do Regente da Vida, que expressa a sua própria essência energética, o Regente Social revela o tipo de energia que você tende a perceber nas pessoas com quem convive ou interage com maior frequência.</p>
-
-<p>Essa vibração mostra o clima vibracional do seu meio social, indicando o padrão de comportamento, mentalidade ou postura que aparece com mais força entre as pessoas que fazem parte do seu cotidiano. Em outras palavras, ele descreve o tipo de energia que você observa no mundo ao seu redor.</p>
-
-<p>Muitas vezes, o Regente Social revela o perfil das pessoas que você atrai, encontra ou percebe com mais facilidade no seu campo de convivência. Isso pode incluir amigos, colegas, parceiros profissionais ou qualquer grupo com o qual você compartilha experiências ao longo da vida.</p>
-
-<p>Compreender essa vibração ajuda a interpretar melhor o ambiente social que o cerca. Ao reconhecer esse padrão coletivo, você passa a perceber com mais clareza o tipo de influência que o meio exerce sobre suas experiências e relações.</p>`,
-
-negativas:`<h1 style="color:#d32f2f;">⚠️ O que são Sequências de Vulnerabilidade e insegurança no seu meio de convivencia?</h1>
-<p>As Sequências Negativas da Pirâmide Social indicam padrões de tensão ou desafios que podem surgir no ambiente de convivência ao seu redor. Elas não representam necessariamente problemas pessoais diretos, mas sim comportamentos, atitudes ou situações que você pode perceber com frequência nas pessoas que fazem parte do seu meio social.</p>
-
-<p>Essas vibrações podem refletir conflitos coletivos, disputas de interesses, dificuldades de comunicação ou padrões de comportamento que geram desgaste dentro de determinados grupos. Em muitos casos, elas mostram ambientes onde certas tensões emocionais ou psicológicas tendem a aparecer com maior intensidade.</p>
-
-<p>Identificar essas sequências permite observar o ambiente social com mais consciência, percebendo quando determinadas situações fazem parte de um padrão coletivo e não apenas de um evento isolado. Essa percepção ajuda a desenvolver maior discernimento nas relações e nas escolhas de convivência.</p>
-
-<p>Ao compreender essas vibrações no campo social, você ganha maior clareza para lidar com o comportamento das pessoas ao seu redor, evitando absorver conflitos desnecessários e preservando seu próprio equilíbrio emocional diante dessas influências.</p>`,
-
-especiais:`<h1 style="color:#b8860b;">⚡️ O que são  Sequências Especiais Sociais?</h1>
-<p>As Sequências Especiais da Pirâmide Social indicam momentos em que determinadas energias se manifestam de forma marcante dentro do ambiente coletivo ao seu redor. Elas revelam situações específicas que podem surgir nas relações, nos grupos ou nas interações sociais que fazem parte do seu cotidiano.</p>
-
-<p>Essas sequências representam acontecimentos ou dinâmicas que chamam atenção dentro do meio social, podendo indicar oportunidades, mudanças nas relações ou experiências que provocam reflexões importantes sobre as pessoas com quem você convive.</p>
-
-<p>Por serem eventos pontuais dentro do campo social, essas vibrações costumam surgir em momentos específicos, trazendo situações que exigem observação e sensibilidade para compreender o que está acontecendo no ambiente ao redor.</p>
-
-<p>Reconhecer essas sequências ajuda a interpretar melhor as dinâmicas sociais que surgem ao longo da vida. Elas mostram quando certas situações coletivas ganham força, permitindo que você compreenda o contexto das relações e reaja com maior consciência diante dessas experiências.</p>`,
-
-financeiro:`<h1 style="color:#2e7d32;">💰 O que são Sequências Financeiras Sociais?</h1>
-<p>As Sequências Financeiras na Pirâmide Social refletem a forma como a energia material se manifesta dentro do ambiente coletivo ao seu redor. Em vez de indicar diretamente sua condição financeira pessoal, elas mostram como a dinâmica de prosperidade ou escassez aparece nas pessoas, grupos ou contextos sociais que fazem parte do seu círculo de convivência.</p>
-
-<p>Essas vibrações podem revelar ambientes onde existem oportunidades econômicas, movimentações financeiras importantes ou momentos em que questões materiais ganham destaque dentro do meio social. Em outros casos, podem indicar fases em que o contexto coletivo exige maior cautela ou organização financeira.</p>
-
-<p>Observar essas sequências permite compreender melhor o cenário material que envolve suas relações e atividades sociais. Muitas vezes, o ambiente ao redor influencia diretamente as oportunidades que surgem ou as decisões que são tomadas dentro de grupos e parcerias.</p>
-
-<p>Ao reconhecer esse padrão vibracional no campo social, você passa a perceber com maior clareza como o fluxo material circula entre as pessoas ao seu redor, entendendo melhor o contexto econômico das relações e das oportunidades que aparecem nesse ambiente.</p>`,
-
-vigencias:`<h1>✡︎ O que são as Potências no seu meio social?</h1>
-<p>As Potências da Pirâmide Social representam os ciclos que influenciam o ambiente coletivo ao seu redor ao longo do tempo. Esses períodos mostram como determinadas energias passam a atuar nas relações sociais, nos grupos e nas interações que fazem parte do seu cotidiano.</p>
-
-<p>Cada fase pode trazer mudanças na forma como as pessoas se relacionam, colaboram ou enfrentam desafios em conjunto. Existem momentos em que o ambiente social favorece conexões, cooperação e crescimento coletivo, enquanto outros períodos podem trazer maior tensão ou necessidade de ajustes nas relações.</p>
-
-<p>Essas vigências ajudam a compreender por que certos contextos sociais parecem mudar ao longo da vida, mesmo quando a sua própria energia pessoal permanece estável. Elas revelam o ritmo natural das transformações dentro do ambiente humano que o cerca.</p>
-
-<p>Conhecer esses ciclos permite interpretar com mais clareza as mudanças nas relações e nos ambientes que você frequenta, ajudando a navegar pelas dinâmicas sociais com maior percepção e equilíbrio.</p>`
-
-},
-
-destino:{
-
-regente:`<h1>🔱  Regente do Destino  </h1>
-<p>O Regente do Destino representa uma força de influência que atua sobre a sua jornada de vida a partir de fatores externos ao seu núcleo essencial. Diferente do Regente da Vida, que expressa quem você é em sua essência, o Regente do Destino revela uma vibração que pode direcionar acontecimentos, encontros e experiências importantes ao longo do seu caminho.</p>
-
-<p>Essa energia funciona como um campo de propósito ou influência que se manifesta através das circunstâncias da vida. Muitas vezes ela aparece por meio de oportunidades inesperadas, mudanças de direção ou situações que parecem conduzir você para determinados caminhos que possuem um significado maior dentro da sua trajetória.</p>
-
-<p>Em alguns momentos, o Regente do Destino pode atuar como um chamado silencioso que estimula transformações profundas. Ele não substitui a sua essência pessoal, mas pode influenciar decisões, ambientes e experiências que ajudam a construir o sentido mais amplo da sua existência.</p>
-
-<p>Compreender essa vibração permite observar com mais clareza quais forças externas podem estar direcionando certas experiências da sua vida. Isso ajuda a perceber quando determinadas situações fazem parte de um movimento maior de propósito ou evolução dentro da sua jornada.</p>`,
-
-negativas:`<h1 style="color:#d32f2f;">⚠️ O que são Sequências de Vulnerabilidade e insegurança que vem da influência do Destino?</h1>
-<p>As Sequências Negativas da Pirâmide do Destino indicam desafios ou tensões que podem surgir a partir de influências externas ao seu campo pessoal. Elas representam situações que aparecem ao longo da vida como testes, obstáculos ou experiências que exigem amadurecimento diante de circunstâncias que muitas vezes estão além do controle imediato.</p>
-
-<p>Diferente das sequências negativas da Pirâmide da Vida, que refletem padrões pessoais, aqui estamos observando forças que podem surgir no caminho como eventos ou contextos que pressionam a pessoa a desenvolver novas capacidades ou superar determinadas limitações.</p>
-
-<p>Essas vibrações podem se manifestar através de encontros marcantes, mudanças inesperadas ou períodos em que o ambiente externo parece desafiar suas escolhas e sua estabilidade. Embora possam parecer difíceis, muitas dessas situações fazem parte de processos que impulsionam crescimento e evolução.</p>
-
-<p>Ao compreender essas sequências dentro da Pirâmide do Destino, torna-se possível interpretar esses momentos com mais consciência, percebendo que certos desafios podem representar oportunidades de transformação e fortalecimento ao longo da jornada.</p>`,
-
-especiais:`<h1 style="color:#b8860b;">⚡️ O que são Sequências Especiais do Destino?</h1>
-<p>As Sequências Especiais da Pirâmide do Destino representam momentos em que forças externas parecem abrir caminhos ou apresentar oportunidades que possuem um significado especial dentro da sua trajetória. Elas indicam situações que surgem como portais de transformação ou eventos que podem alterar o rumo natural da sua jornada.</p>
-
-<p>Diferente das sequências especiais pessoais ou sociais, aqui estamos observando acontecimentos que podem trazer experiências marcantes, encontros importantes ou oportunidades que parecem surgir em momentos decisivos da vida.</p>
-
-<p>Essas vibrações costumam aparecer quando existe um alinhamento entre circunstâncias externas e processos internos de evolução. Muitas vezes elas revelam momentos em que a vida oferece possibilidades de crescimento que podem ampliar horizontes ou revelar novos caminhos.</p>
-
-<p>Reconhecer essas sequências permite perceber quando determinados acontecimentos possuem um significado maior dentro do seu percurso. Ao compreender essas influências, torna-se possível aproveitar melhor essas oportunidades e compreender o papel que elas desempenham na construção do seu destino.</p>`,
-
-financeiro:`<h1 style="color:#2e7d32;">💰 O que é uma Sequência Financeira do Destino?</h1>
-<p>As Sequências Financeiras da Pirâmide do Destino refletem influências externas que podem impactar sua relação com oportunidades materiais ao longo da vida. Diferente da análise financeira pessoal, aqui observamos circunstâncias que podem surgir através de fatores externos, como ambientes, encontros ou mudanças inesperadas no cenário material.</p>
-
-<p>Essas vibrações podem indicar momentos em que oportunidades financeiras aparecem de forma inesperada ou situações em que o contexto externo exige adaptação e estratégia para lidar com mudanças no fluxo material.</p>
-
-<p>Muitas vezes, essas influências surgem através de conexões, projetos coletivos ou circunstâncias que ampliam o acesso a novas possibilidades de crescimento econômico. Em outros momentos, podem indicar fases que pedem atenção e aprendizado sobre como lidar com recursos e oportunidades.</p>
-
-<p>Compreender essa dinâmica ajuda a perceber quando certos movimentos financeiros fazem parte de um contexto maior de transformação no caminho da vida, permitindo que você reconheça melhor as oportunidades que surgem através das circunstâncias externas.</p>`,
-
-vigencias:`<h1>✡︎ O que são as Potências do Destino?</h1>
-<p>As Potências da Pirâmide do Destino representam períodos em que determinadas influências externas ganham maior força dentro da sua trajetória de vida. Esses ciclos indicam momentos em que acontecimentos, encontros ou mudanças podem exercer um papel importante no direcionamento do seu caminho.</p>
-
-<p>Diferente das vigências da Pirâmide da Vida, que refletem ciclos pessoais, aqui observamos fases em que forças externas parecem organizar circunstâncias que contribuem para a evolução do seu percurso.</p>
-
-<p>Esses períodos podem trazer oportunidades inesperadas, desafios que impulsionam crescimento ou situações que levam a mudanças importantes de direção. Muitas vezes, são fases em que o destino parece atuar de forma mais evidente, conduzindo experiências que ampliam a compreensão da própria jornada.</p>
-
-<p>Conhecer essas vigências ajuda a perceber quando determinados acontecimentos fazem parte de um ciclo maior de transformação. Isso permite encarar essas fases com mais consciência, compreendendo que cada período pode trazer lições e oportunidades importantes para a construção do seu caminho.</p>`
-
-},
+pessoal: {
+        regente: `
+        <div class="intro-regente-premium" style="background: #fff; border: 1px  solid #e6d5a8; border-radius: 12px; padding: 35px; position: relative; overflow: hidden;">
+            
+            <div style="position: absolute; top: -15px; right: -15px; font-size: 70px; color: rgba(130, 113, 8, 0.05); transform: rotate(10deg);">🔱</div>
+
+            <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
+                🔱 O Regente do Mundo Interior <br>
+                <span style="font-size: 14px; color: #b59b4d; letter-spacing: 4px;">A Matriz da Percepção Pessoal</span>
+            </h2>
+
+            <div style="color: #333; line-height: 1.8; font-size: 17px; text-align: justify;">
+                <p style="margin-bottom: 15px;">O <b>Regente Pessoal</b> representa o estado interno predominante da sua mente e a forma como você processa sua própria identidade. Enquanto o Regente da Vida lida com fatos concretos, o Pessoal governa o seu "clima psicológico". Ele é o filtro emocional através do qual você interpreta a realidade, determinando como você se enxerga por dentro e como reage subjetivamente aos desafios do mundo.</p>
+
+                <p style="margin-bottom: 15px;">A profundidade desta matriz se revela quando ela entra em ressonância com os outros pilares. Se o seu Regente Pessoal compartilha o mesmo número da <b>Matriz da Vida</b>, você possui uma influência direta e poderosa sobre sua própria história: seus sentimentos e ações estão em total sincronia, fazendo com que sua vontade interna se materialize em fatos reais. No entanto, se a coincidência ocorre com a <b>Matriz Social</b>, sua estabilidade emocional torna-se sensível ao ambiente externo; você é influenciado psicologicamente pelo meio, sentindo dentro de si o reflexo das expectativas e energias das pessoas ao seu redor.</p>
+
+                <p style="margin-bottom: 15px;">Já o alinhamento com as <b>Tendências do Destino</b> indica uma influência espiritual ou de propósito no campo emocional. São sentimentos e intuições que surgem como "chamados", movendo suas águas internas para prepará-la para missões que o destino reservou. Quando não há coincidências, esta matriz atua como seu refúgio particular, revelando como sua mente processa experiências de forma independente, moldando sua autoconfiança e a visão que você mantém sobre seus próprios desejos.</p>
+
+                <p>Compreender este Regente é ganhar as chaves do seu mundo interno. Ele permite distinguir o que é um sentimento genuinamente seu do que é uma influência captada do social ou uma preparação do destino, garantindo que você mantenha o equilíbrio emocional necessário para governar sua própria vida com lucidez.</p>
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #fdfaf2; border-top: 2px solid #827108; text-align: center;">
+                <p style="font-style: italic; color: #827108; font-size: 15px;">
+                    "O mundo exterior é o que acontece com você; o mundo pessoal é o que você escolhe sentir sobre o que acontece."
+                </p>
+            </div>
+        </div>`
+    },
+
+social: {
+        regente: `
+        <div class="intro-regente-premium" style="background: #fff; border: 1px solid #e6d5a8; border-radius: 12px; padding: 35px; position: relative; overflow: hidden;">
+            
+            <div style="position: absolute; top: -15px; right: -15px; font-size: 70px; color: rgba(130, 113, 8, 0.05); transform: rotate(10deg);">🔱</div>
+
+            <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
+                🔱 O Regente da Percepção do Meio <br>
+                <span style="font-size: 14px; color: #b59b4d; letter-spacing: 4px;">A Matriz de Convivência e Influência Coletiva</span>
+            </h2>
+
+            <div style="color: #333; line-height: 1.8; font-size: 17px; text-align: justify;">
+                <p style="margin-bottom: 15px;">O <b>Regente Social</b> representa a vibração predominante do ambiente humano ao seu redor. Diferente da Matriz da Vida, que expressa a sua própria essência, o Regente Social revela o tipo de energia que você percebe e atrai nas pessoas com quem convive. Ele descreve o "clima vibracional" do seu meio, indicando o padrão de mentalidade e comportamento que se manifesta com maior força entre amigos, colegas e parceiros que cruzam o seu caminho.</p>
+
+                <p style="margin-bottom: 15px;">A verdadeira dinâmica desta matriz ocorre em suas conexões. Se o seu Regente Social coincide com a <b>Matriz da Vida</b>, a sociedade exerce uma influência direta e factual em sua jornada: o meio molda sua realidade prática e as oportunidades surgem intrinsecamente ligadas aos seus contatos. Se a ressonância for com a <b>Matriz Pessoal</b>, a influência é emocional e mental; o ambiente externo não altera os fatos da sua vida, mas afeta profundamente o seu humor, seus sentimentos e a forma como você se sente psicologicamente inserida no mundo.</p>
+
+                <p style="margin-bottom: 15px;">Já o alinhamento entre o Social e as <b>Tendências do Destino</b> revela um movimento poderoso: o universo está utilizando o seu meio social para cumprir um propósito maior. Nesse caso, eventos que ocorrem na sociedade ou com pessoas próximas refletem diretamente o seu destino, como se o coletivo e a sua missão individual estivessem sintonizados na mesma frequência. Sem essas ligações, a matriz atua apenas como sua percepção periférica, mostrando o perfil das energias que orbitam seu cotidiano sem necessariamente determinar o seu passo individual.</p>
+
+                <p>Compreender o seu Regente Social permite identificar se você está apenas observando o mundo ao redor ou se está sendo moldada por ele. É a ferramenta essencial para discernir o que pertence ao outro e o que está sendo integrado à sua própria história através das interações humanas e das correntes coletivas do destino.</p>
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #fdfaf2; border-top: 2px solid #827108; text-align: center;">
+                <p style="font-style: italic; color: #827108; font-size: 15px;">
+                    "O meio social é o espelho onde vemos o reflexo das energias que o destino coloca em nosso caminho para nos ensinar a conviver."
+                </p>
+            </div>
+        </div>`
+    },
+
+destino: {
+        regente: `
+        <div class="intro-regente-premium" style="background: #fff; border: 1px solid #e6d5a8; border-radius: 12px; padding: 35px; position: relative; overflow: hidden;">
+            
+            <div style="position: absolute; top: -15px; right: -15px; font-size: 70px; color: rgba(130, 113, 8, 0.05); transform: rotate(10deg);">🔱</div>
+
+            <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-family: 'Cinzel', serif; font-size: 22px; letter-spacing: 1px; text-transform: uppercase;">
+                🔱 O Regente do Propósito e Destino <br>
+                <span style="font-size: 14px; color: #b59b4d; letter-spacing: 4px;">A Força das Influências Externas e Universais</span>
+            </h2>
+
+            <div style="color: #333; line-height: 1.8; font-size: 17px; text-align: justify;">
+                <p style="margin-bottom: 15px;">O <b>Regente do Destino</b> representa uma força de influência que atua sobre a sua jornada a partir de fatores externos ao seu núcleo essencial. Ele é o campo do propósito, manifestando-se através de circunstâncias que parecem conduzir você para caminhos de significado maior. Diferente das outras matrizes, o Destino possui um poder de influência superior: ele atua como um chamado invisível que molda direções, mesmo quando você não tem consciência plena desse movimento.</p>
+
+                <p style="margin-bottom: 15px;">A soberania desta matriz se revela na sua capacidade de impactar os outros pilares. Se o Regente do Destino possui a mesma numeração da <b>Matriz da Vida</b>, a influência é direta e absoluta; seu propósito e sua realidade prática tornam-se uma coisa só, forçando acontecimentos que cumprem sua missão. Contudo, mesmo sem essa conexão direta, o Destino ainda exerce uma influência indireta poderosa sobre a vida, agindo como um vento que sopra as velas da sua trajetória, sugerindo oportunidades e encontros que alteram o seu curso factual.</p>
+
+                <p style="margin-bottom: 15px;">Essa força também se estende aos campos sutis. Ao ressoar com a <b>Matriz Pessoal</b>, o Destino influencia seus sentimentos e intuições, plantando desejos que preparam sua mente para o que está por vir. Quando toca a <b>Matriz Social</b>, ele manipula o seu meio de convivência, trazendo pessoas e situações coletivas que servem como ferramentas para o seu crescimento. Enquanto o Social é percepção e o Pessoal é sentimento, o Destino é a influência real que vem do universo para testar, guiar e consolidar a sua evolução.</p>
+
+                <p>Compreender o Regente do Destino é aceitar que existe uma regência maior orquestrando os eventos ao seu redor. Ele não substitui o impacto real da sua Matriz da Vida, mas oferece o "porquê" por trás dos encontros inesperados e das mudanças de rota, garantindo que, independentemente da sua vontade imediata, o seu propósito maior seja eventualmente alcançado.</p>
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px; border-radius: 10px; background: #fdfaf2; border-top: 2px solid #827108; text-align: center;">
+                <p style="font-style: italic; color: #827108; font-size: 15px;">
+                    "O Destino é a mão invisível que ajusta o cenário da vida para que a alma possa representar o seu papel mais autêntico."
+                </p>
+            </div>
+        </div>`
+    },
 
 
 };
@@ -3754,3 +3170,6 @@ window.textosSintese = {
     `
   
 };
+
+
+ 
