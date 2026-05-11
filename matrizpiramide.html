@@ -2850,8 +2850,18 @@ meuHtml += `
 </div>`;
 
 
-// Adiciona ao HTML do relatório
-meuHtml += `htmlSinteseFinal`;
+// 1. Primeiro, calculamos o conteúdo chamando a função
+// Use as variáveis mVida, mPes, mSoc e mDes que aparecem no seu loop acima
+const resultadoDaSintese = gerarSinteseFinal(
+    mVida[mVida.length - 1][0], 
+    mPes[mPes.length - 1][0], 
+    mSoc[mSoc.length - 1][0], 
+    mDes[mDes.length - 1][0], 
+    window.textosSintese
+);
+
+// 2. Agora adicionamos ao relatório SEM ASPAS
+meuHtml += resultadoDaSintese;
 
 
   meuHtml += `
