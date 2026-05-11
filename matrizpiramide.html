@@ -1945,15 +1945,14 @@ function gerar() {
     const topoV = topo(mVida[0]);
     const crono = gerarCronogramaMestre(topoV, dataISO);
 
-    // 1. Pega os números centrais (topo) de cada pirâmide
-// Captura os valores do topo (última linha, primeiro elemento) de cada matriz
-const topoV = mVida[mVida.length - 1][0];
-const topoP = mPes[mPes.length - 1][0];
-const topoS = mSoc[mSoc.length - 1][0];
-const topoD = mDes[mDes.length - 1][0];
+// Dentro da função gerar(), localize onde você monta o HTML final:
+let tV = matrizVida[matrizVida.length - 1][0];
+let tP = matrizPessoal[matrizPessoal.length - 1][0];
+let tS = matrizSocial[matrizSocial.length - 1][0];
+let tD = matrizDestino[matrizDestino.length - 1][0];
 
-// Gera a síntese final usando os seus textos
-const htmlSinteseFinal = gerarSinteseFinal(topoV, topoP, topoS, topoD, window.textosSintese);
+// Note que aqui NÃO usei "const", para não dar erro de "already declared"
+let htmlSintese = gerarSinteseFinal(tV, tP, tS, tD, bancoSintese);
 
     
 
