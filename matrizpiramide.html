@@ -1945,14 +1945,15 @@ function gerar() {
     const topoV = topo(mVida[0]);
     const crono = gerarCronogramaMestre(topoV, dataISO);
 
-// Dentro da função gerar(), localize onde você monta o HTML final:
-let tV = matrizVida[matrizVida.length - 1][0];
-let tP = matrizPessoal[matrizPessoal.length - 1][0];
-let tS = matrizSocial[matrizSocial.length - 1][0];
-let tD = matrizDestino[matrizDestino.length - 1][0];
+// Localize a linha 1949 e substitua o bloco problemático por este:
+// Aqui pegamos os valores do TOPO (o último nível de cada array)
+let vTopo = mVida[mVida.length - 1][0];
+let pTopo = mPes[mPes.length - 1][0];
+let sTopo = mSoc[mSoc.length - 1][0];
+let dTopo = mDes[mDes.length - 1][0];
 
-// Note que aqui NÃO usei "const", para não dar erro de "already declared"
-let htmlSintese = gerarSinteseFinal(tV, tP, tS, tD, bancoSintese);
+// Agora chamamos a função usando esses valores
+let htmlSinteseFinal = gerarSinteseFinal(vTopo, pTopo, sTopo, dTopo, window.textosSintese);
 
     
 
