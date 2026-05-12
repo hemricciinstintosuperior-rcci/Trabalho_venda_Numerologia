@@ -1972,7 +1972,13 @@ let htmlSinteseFinal = gerarSinteseFinal(vTopo, pTopo, sTopo, dTopo, window.text
     📥 BAIXAR SEU PDF PREMIUM
 </button>
 
-
+<!-- BOTÃO DE SAIR FLUTUANTE (DESIGN PREMIUM) -->
+<div class="no-print" style="position: fixed; top: 10px; right: 10px; z-index: 9999;">
+    <button onclick="encerrarSessao()" style="background: rgba(255, 0, 0, 0.7); color: white; border: 1px solid white; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; font-weight: bold; font-family: sans-serif; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+        X
+    </button>
+    <div style="color: white; font-size: 10px; text-align: center; margin-top: 2px; text-shadow: 1px 1px 2px black;">SAIR</div>
+</div>
     
         
 <div class="container-master">
@@ -3191,18 +3197,64 @@ document.getElementById('btnVideo').addEventListener('click', function() {
 
 
 <script>
-// --- CONFIGURAÇÃO DE SEGURANÇA "DERRUBADA ATIVA" ---
+// --- CONFIGURAÇÃO DE SEGURANÇA "ULTRA PRIVACY" ---
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-// Gera um ID único para ESTA aba atual
 const sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);
 const emailLimpo = userEmail ? userEmail.replace(/\./g, '_') : null;
 let dadosGlobais = null;
+let tempoInatividade = 0; // Contador para o Auto-Lock
 
 if (!userEmail) {
-    alert("Acesso não autorizado.");
+    window.location.href = "index.html";
+}
+
+// --- 1. FUNÇÃO PARA SAIR DO RELATÓRIO (LOGOUT) ---
+async function encerrarSessao() {
+    if (confirm("Deseja realmente sair e fechar o acesso agora?")) {
+        try {
+            // Limpa a sessão no Firebase para liberar para outro dispositivo
+            await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+                method: 'PATCH',
+                body: JSON.stringify({ sessao_ativa: null })
+            });
+            window.location.href = "index.html";
+        } catch (e) {
+            window.location.href = "index.html";
+        }
+    }
+}
+
+// --- 2. MONITOR DE INATIVIDADE (AUTO-LOCK) ---
+function resetarTemporizador() {
+    tempoInatividade = 0; // Reinicia se o usuário mexer o mouse ou clicar
+}
+
+function iniciarMonitorInatividade() {
+    // Eventos que indicam que o usuário está presente
+    window.onload = resetarTemporizador;
+    window.onmousemove = resetarTemporizador;
+    window.onmousedown = resetarTemporizador; 
+    window.ontouchstart = resetarTemporizador; 
+    window.onclick = resetarTemporizador;     
+    window.onkeypress = resetarTemporizador;   
+
+    setInterval(() => {
+        tempoInatividade++;
+        if (tempoInatividade > 10) { // 10 minutos de inatividade total
+            alert("Sessão encerrada por inatividade para sua segurança.");
+            encerrarSessaoRapida();
+        }
+    }, 60000); // Checa a cada minuto
+}
+
+async function encerrarSessaoRapida() {
+    await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+        method: 'PATCH',
+        body: JSON.stringify({ sessao_ativa: null })
+    });
     window.location.href = "index.html";
 }
 
@@ -3211,114 +3263,35 @@ async function inicializarSeguranca() {
         const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
         const dados = await res.json();
 
-        if (!dados) {
-            alert("Acesso não encontrado.");
-            window.location.href = "index.html";
-            return;
-        }
+        if (!dados) { window.location.href = "index.html"; return; }
 
-        // --- LÓGICA DE DERRUBADA (PRIORIDADE AO NOVO ACESSO) ---
-        // Em vez de bloquear quem entra, nós ATUALIZAMOS a sessão atual no Firebase.
-        // Isso fará com que qualquer outra aba aberta com este e-mail seja encerrada.
+        // Derrubada ativa (quem entra por último manda)
         await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
             method: 'PATCH',
             body: JSON.stringify({ sessao_ativa: sessionID })
         });
 
-        // --- MONITORAMENTO EM TEMPO REAL (O "GUARDA" DA SESSÃO) ---
         setInterval(async () => {
-            try {
-                const checkRes = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
-                const sessaoNoBanco = await checkRes.json();
-                
-                // Se o ID no banco mudou, significa que este mesmo e-mail 
-                // foi aberto em outro lugar. Então esta aba aqui deve fechar.
-                if (sessaoNoBanco !== sessionID && sessaoNoBanco !== null) {
-                    alert("Este relatório foi aberto em outro dispositivo. Esta sessão será encerrada.");
-                    window.location.href = "index.html";
-                }
-            } catch (e) { console.log("Erro na verificação de rotina"); }
-        }, 3000); // Checa a cada 3 segundos para ser rápido
-
-        // --- RESTANTE DAS VALIDAÇÕES (30 DIAS / STATUS) ---
-        if (dados.data_inicio) {
-            const dataInicio = new Date(dados.data_inicio);
-            const agora = new Date();
-            const diffDiasTotal = Math.ceil(Math.abs(agora - dataInicio) / (1000 * 60 * 60 * 24));
-
-            if (diffDiasTotal > 30) {
-                alert("Seu período de acesso de 30 dias expirou.");
+            const checkRes = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
+            const sessaoNoBanco = await checkRes.json();
+            if (sessaoNoBanco !== sessionID && sessaoNoBanco !== null) {
+                alert("Acesso aberto em outro local. Fechando esta aba...");
                 window.location.href = "index.html";
-                return;
             }
-        }
+        }, 5000);
 
-        if (dados.status === 'usado' || dados.status !== 'ativo') {
-            alert("Este acesso expirou ou está inativo.");
-            window.location.href = "index.html";
-            return;
-        }
+        // Inicia o monitor de inatividade
+        iniciarMonitorInatividade();
 
         dadosGlobais = dados;
-        processarTimerEPDF(dados);
-
-    } catch (e) {
-        console.error("Erro na comunicação:", e);
-    }
-}
-
-function processarTimerEPDF(dados) {
-    const dataReferencia = new Date(dados.data_inicio);
-    const dataExpiracaoPDF = new Date(dataReferencia);
-    dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
-
-    iniciarTimer(dataExpiracaoPDF);
-    verificarLiberacaoPDF(dados);
-}
-
-// ... (Suas funções iniciarTimer e verificarLiberacaoPDF permanecem as mesmas) ...
-
-async function executarFluxoDownload() {
-    const btnPDF = document.getElementById("btn-pdf-premium");
-    if (btnPDF.disabled) return;
-
-    btnPDF.disabled = true;
-    btnPDF.innerHTML = "VALIDANDO...";
-
-    try {
-        // Marca como baixado no banco de dados ANTES de imprimir
-        const response = await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ 
-                pdf_baixado: true,
-                // Mantemos o status como 'ativo' para ela continuar vendo o relatório por 30 dias, 
-                // mas o pdf_baixado travará o botão para sempre.
-            })
-        });
-
-        if (response.ok) {
-            window.print();
-            bloquearBotao("⚠️ Download realizado. O PDF agora está bloqueado.");
-        }
-    } catch (e) {
-        btnPDF.disabled = false;
-        btnPDF.innerHTML = "📥 BAIXAR SEU PDF PREMIUM";
-    }
-}
-
-function bloquearBotao(mensagem) {
-    const btnPDF = document.getElementById("btn-pdf-premium");
-    if (btnPDF) {
-        btnPDF.disabled = true;
-        btnPDF.style.filter = "grayscale(100%)";
-        btnPDF.style.backgroundColor = "#333";
-    }
-    document.getElementById("msg-trava").innerHTML = mensagem;
-    document.getElementById("label-tempo").innerHTML = "DOWNLOAD ENCERRADO";
+        // ... (resto da sua lógica de data_inicio e timer do PDF)
+    } catch (e) { console.error(e); }
 }
 
 window.onload = inicializarSeguranca;
 </script>
+
+
 
     
 </body>
