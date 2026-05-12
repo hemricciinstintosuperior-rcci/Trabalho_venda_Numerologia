@@ -3186,62 +3186,56 @@ const emailLimpo = userEmail ? userEmail.replace(/\./g, '_') : null;
 let dadosGlobais = null;
 
 async function inicializarSeguranca() {
-    if (!emailLimpo) {
-        window.location.href = "index.html";
-        return;
-    }
+    if (!emailLimpo) return;
 
     try {
         const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
         const dados = await res.json();
 
-        if (!dados) {
-            window.location.href = "index.html";
+        if (!dados || !dados.data_inicio) {
+            console.error("Data não encontrada no Firebase");
             return;
         }
 
-        // 1. TRAVA DOS 30 DIAS (ACESSO AO PORTAL)
-        const dataInicio = new Date(dados.data_inicio);
+        // --- AJUSTE PARA O TIMER SAIR DO ZERO ---
+        // Removemos o 'T' e o 'Z' caso o navegador esteja recusando o formato ISO
+        const dataFormatada = dados.data_inicio.replace('T', ' ').replace('Z', '');
+        const dataInicio = new Date(dataFormatada); 
+        
+        // Validação extra: se a data for inválida, tentamos o método direto
+        if (isNaN(dataInicio.getTime())) {
+            dataInicio = new Date(dados.data_inicio);
+        }
+
         const agora = new Date();
-        const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+        
+        // Cálculo de 30 dias de acesso total
+        const diffTempoTotal = agora.getTime() - dataInicio.getTime();
+        const diffDiasTotal = Math.floor(diffTempoTotal / (1000 * 60 * 60 * 24));
 
         if (diffDiasTotal > 30) {
-            alert("Seu período de 30 dias de acesso ao relatório expirou.");
+            alert("Acesso de 30 dias expirou.");
             window.location.href = "index.html";
             return;
         }
 
-        // 2. SESSÃO ÚNICA (DERRUBADA ATIVA)
+        // Sessão Única
         await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
             method: 'PATCH',
             body: JSON.stringify({ sessao_ativa: sessionID })
         });
 
-        // Monitor de segunda aba
-        setInterval(async () => {
-            const c = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
-            const s = await c.json();
-            if (s !== sessionID && s !== null) {
-                alert("Acesso aberto em outro dispositivo.");
-                window.location.href = "index.html";
-            }
-        }, 5000);
-
         dadosGlobais = dados;
         
-        // 3. CONFIGURAÇÃO DO TIMER DE 7 DIAS (APENAS PARA O PDF)
-        const dataLiberacaoPDF = new Date(dataInicio);
-        dataLiberacaoPDF.setDate(dataInicio.getDate() + 7); 
+        // Configura o alvo dos 7 dias para o PDF
+        const dataPDF = new Date(dataInicio);
+        dataPDF.setDate(dataInicio.getDate() + 7); 
 
-        iniciarTimerPDF(dataLiberacaoPDF);
-        verificarBotaoPDF(dados, dataLiberacaoPDF);
-        
-        // Exibe quantos dias restam de portal no aviso total
-        const diasRestantesPortal = 30 - diffDiasTotal;
-        document.getElementById("aviso-expiracao-total").innerHTML = `Você tem mais ${diasRestantesPortal} dias de acesso a este portal.`;
+        iniciarTimerPDF(dataPDF); // Chama o timer com a data corrigida
+        verificarBotaoPDF(dados, dataPDF);
 
     } catch (e) {
-        console.error("Erro:", e);
+        console.error("Erro na inicialização:", e);
     }
 }
 
