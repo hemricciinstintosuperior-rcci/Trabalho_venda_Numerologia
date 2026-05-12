@@ -1973,11 +1973,11 @@ let htmlSinteseFinal = gerarSinteseFinal(vTopo, pTopo, sTopo, dTopo, window.text
 </button>
 
 <!-- BOTÃO DE SAIR FLUTUANTE (DESIGN PREMIUM) -->
-<div class="no-print" style="position: fixed; top: 10px; right: 10px; z-index: 9999;">
-    <button onclick="encerrarSessao()" style="background: rgba(255, 0, 0, 0.7); color: white; border: 1px solid white; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; font-weight: bold; font-family: sans-serif; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+<div class="no-print" style="position: fixed; top: 10px; left: 10px; z-index: 9999;">
+    <button onclick="encerrarSessao()" style="background: rgba(255, 0, 0, 0.7); color: white; border: 1px solid white; border-radius: 50%; width: 60px; height: 60px; cursor: pointer; font-weight: bold; font-family: sans-serif; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
         X
     </button>
-    <div style="color: white; font-size: 10px; text-align: center; margin-top: 2px; text-shadow: 1px 1px 2px black;">SAIR</div>
+    <div style="color: white; font-size: 16px; text-align: center; margin-top: 2px; text-shadow: 1px 1px 2px black;">SAIR E VOLTAR AO PORTAL</div>
 </div>
     
         
@@ -3177,115 +3177,152 @@ document.onselectstart=()=>false;
  </script> 
 
 <script>
-document.getElementById('btnVideo').addEventListener('click', function() {
-    const wrapper = document.getElementById('wrapperVideo');
-    const video = document.getElementById('videoExplicativo');
-    const btn = this;
-
-    if (wrapper.style.display === 'none') {
-        wrapper.style.display = 'block';
-        btn.classList.add('ativo');
-        btn.querySelector('span').innerText = '❌ Fechar Vídeo';
-    } else {
-        wrapper.style.display = 'none';
-        btn.classList.remove('ativo');
-        btn.querySelector('span').innerText = '🎥 Assistir Vídeo Introdutório';
-        video.pause(); // Pausa o vídeo automaticamente ao fechar para não ficar saindo som
-    }
-});
-</script>
-
-
-<script>
-// --- CONFIGURAÇÃO DE SEGURANÇA "ULTRA PRIVACY" ---
+// --- CONFIGURAÇÃO DE SEGURANÇA REVISADA ---
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
-
 const sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);
 const emailLimpo = userEmail ? userEmail.replace(/\./g, '_') : null;
+
 let dadosGlobais = null;
-let tempoInatividade = 0; // Contador para o Auto-Lock
-
-if (!userEmail) {
-    window.location.href = "index.html";
-}
-
-// --- 1. FUNÇÃO PARA SAIR DO RELATÓRIO (LOGOUT) ---
-async function encerrarSessao() {
-    if (confirm("Deseja realmente sair e fechar o acesso agora?")) {
-        try {
-            // Limpa a sessão no Firebase para liberar para outro dispositivo
-            await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-                method: 'PATCH',
-                body: JSON.stringify({ sessao_ativa: null })
-            });
-            window.location.href = "index.html";
-        } catch (e) {
-            window.location.href = "index.html";
-        }
-    }
-}
-
-// --- 2. MONITOR DE INATIVIDADE (AUTO-LOCK) ---
-function resetarTemporizador() {
-    tempoInatividade = 0; // Reinicia se o usuário mexer o mouse ou clicar
-}
-
-function iniciarMonitorInatividade() {
-    // Eventos que indicam que o usuário está presente
-    window.onload = resetarTemporizador;
-    window.onmousemove = resetarTemporizador;
-    window.onmousedown = resetarTemporizador; 
-    window.ontouchstart = resetarTemporizador; 
-    window.onclick = resetarTemporizador;     
-    window.onkeypress = resetarTemporizador;   
-
-    setInterval(() => {
-        tempoInatividade++;
-        if (tempoInatividade > 10) { // 10 minutos de inatividade total
-            alert("Sessão encerrada por inatividade para sua segurança.");
-            encerrarSessaoRapida();
-        }
-    }, 60000); // Checa a cada minuto
-}
-
-async function encerrarSessaoRapida() {
-    await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-        method: 'PATCH',
-        body: JSON.stringify({ sessao_ativa: null })
-    });
-    window.location.href = "index.html";
-}
 
 async function inicializarSeguranca() {
+    if (!emailLimpo) {
+        window.location.href = "index.html";
+        return;
+    }
+
     try {
         const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
         const dados = await res.json();
 
-        if (!dados) { window.location.href = "index.html"; return; }
+        if (!dados) {
+            window.location.href = "index.html";
+            return;
+        }
 
-        // Derrubada ativa (quem entra por último manda)
+        // 1. TRAVA DOS 30 DIAS (ACESSO AO PORTAL)
+        const dataInicio = new Date(dados.data_inicio);
+        const agora = new Date();
+        const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+
+        if (diffDiasTotal > 30) {
+            alert("Seu período de 30 dias de acesso ao relatório expirou.");
+            window.location.href = "index.html";
+            return;
+        }
+
+        // 2. SESSÃO ÚNICA (DERRUBADA ATIVA)
         await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
             method: 'PATCH',
             body: JSON.stringify({ sessao_ativa: sessionID })
         });
 
+        // Monitor de segunda aba
         setInterval(async () => {
-            const checkRes = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
-            const sessaoNoBanco = await checkRes.json();
-            if (sessaoNoBanco !== sessionID && sessaoNoBanco !== null) {
-                alert("Acesso aberto em outro local. Fechando esta aba...");
+            const c = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
+            const s = await c.json();
+            if (s !== sessionID && s !== null) {
+                alert("Acesso aberto em outro dispositivo.");
                 window.location.href = "index.html";
             }
         }, 5000);
 
-        // Inicia o monitor de inatividade
-        iniciarMonitorInatividade();
-
         dadosGlobais = dados;
-        // ... (resto da sua lógica de data_inicio e timer do PDF)
-    } catch (e) { console.error(e); }
+        
+        // 3. CONFIGURAÇÃO DO TIMER DE 7 DIAS (APENAS PARA O PDF)
+        const dataLiberacaoPDF = new Date(dataInicio);
+        dataLiberacaoPDF.setDate(dataInicio.getDate() + 7); 
+
+        iniciarTimerPDF(dataLiberacaoPDF);
+        verificarBotaoPDF(dados, dataLiberacaoPDF);
+        
+        // Exibe quantos dias restam de portal no aviso total
+        const diasRestantesPortal = 30 - diffDiasTotal;
+        document.getElementById("aviso-expiracao-total").innerHTML = `Você tem mais ${diasRestantesPortal} dias de acesso a este portal.`;
+
+    } catch (e) {
+        console.error("Erro:", e);
+    }
+}
+
+function iniciarTimerPDF(dataAlvo) {
+    const elTimer = document.getElementById("timer");
+    const elLabel = document.getElementById("label-tempo");
+
+    const intervalo = setInterval(() => {
+        const agora = new Date().getTime();
+        const dist = dataAlvo - agora;
+
+        if (dist <= 0) {
+            clearInterval(intervalo);
+            elTimer.innerHTML = "LIBERADO!";
+            elLabel.innerHTML = "Seu PDF Premium já pode ser baixado!";
+            verificarBotaoPDF(dadosGlobais, dataAlvo);
+            return;
+        }
+
+        const d = Math.floor(dist / (1000 * 60 * 60 * 24));
+        const h = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((dist % (1000 * 60)) / 1000);
+
+        elTimer.innerHTML = `${d}d ${h}h ${m}m ${s}s`;
+        elLabel.innerHTML = "O download do PDF será liberado em:";
+    }, 1000);
+}
+
+function verificarBotaoPDF(dados, dataAlvo) {
+    const btn = document.getElementById("btn-pdf-premium");
+    const msg = document.getElementById("msg-trava");
+    const agora = new Date();
+
+    // Regra 1: Já baixou? Bloqueia.
+    if (dados.pdf_baixado === true) {
+        btn.disabled = true;
+        btn.style.filter = "grayscale(100%)";
+        btn.style.opacity = "0.5";
+        msg.innerHTML = "⚠️ Download já realizado. O arquivo é de uso único.";
+        return;
+    }
+
+    // Regra 2: Já passou os 7 dias? Libera.
+    if (agora >= dataAlvo) {
+        btn.disabled = false;
+        btn.style.filter = "none";
+        btn.style.opacity = "1";
+        btn.style.backgroundColor = "#D62600"; 
+        btn.style.cursor = "pointer";
+        msg.innerHTML = "✅ PDF Disponível para download!";
+    } else {
+        // Ainda no prazo de garantia
+        btn.disabled = true;
+        btn.style.filter = "grayscale(100%)";
+        msg.innerHTML = "🔒 O botão de download ativa após 7 dias.";
+    }
+}
+
+async function executarFluxoDownload() {
+    const btn = document.getElementById("btn-pdf-premium");
+    btn.disabled = true;
+    btn.innerHTML = "REGISTRANDO...";
+
+    // Trava no Firebase antes de abrir a impressão
+    await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+        method: 'PATCH',
+        body: JSON.stringify({ pdf_baixado: true })
+    });
+
+    window.print();
+    setTimeout(() => { location.reload(); }, 1000);
+}
+
+async function encerrarSessao() {
+    await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+        method: 'PATCH',
+        body: JSON.stringify({ sessao_ativa: null })
+    });
+    window.location.href = "index.html";
 }
 
 window.onload = inicializarSeguranca;
