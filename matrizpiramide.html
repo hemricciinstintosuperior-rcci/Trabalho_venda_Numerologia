@@ -1960,23 +1960,22 @@ let htmlSinteseFinal = gerarSinteseFinal(vTopo, pTopo, sTopo, dTopo, window.text
     let meuHtml = `  
 
 
-<div id="status-acesso"class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
-    <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 5px;">Calculando seu tempo de acesso...</div>
+<!-- 1. INTERFACE (HTML) -->
+<div id="status-acesso" class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
+    <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; font-size: 0.8rem; margin-bottom: 5px;">Verificando Acesso...</div>
     <div id="timer" style="font-family: 'Courier New', monospace; font-size: 1.8rem; font-weight: bold; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);">00:00:00:00</div>
     <div id="msg-trava" style="font-size: 0.75rem; opacity: 0.7; margin-top: 5px;"></div>
-<div id="aviso-expiracao-total" class="no-print" style="font-size: 0.75rem; color: #ffbc00; margin-top: 10px; opacity: 0.9;">   Verificando validade do acesso...</div>
-    
+    <div id="aviso-expiracao-total" class="no-print" style="font-size: 0.75rem; color: #ffbc00; margin-top: 10px; opacity: 0.9;"></div>
 </div>
+
 <button id="btn-pdf-premium" class="btn-pdf no-print" onclick="executarFluxoDownload()" disabled style="filter: grayscale(100%); opacity: 0.5; cursor: not-allowed; width: 100%; max-width: 500px; padding: 15px; font-weight: bold; border-radius: 8px; border: none; display: block; margin: 0 auto;">
     📥 BAIXAR SEU PDF PREMIUM
 </button>
 
-<!-- BOTÃO DE SAIR FLUTUANTE (DESIGN PREMIUM) -->
-<div class="no-print" style="position: fixed; top: 10px; left: 10px; z-index: 9999;">
-    <button onclick="encerrarSessao()" style="background: rgba(255, 0, 0, 0.7); color: white; border: 1px solid white; border-radius: 50%; width: 60px; height: 60px; cursor: pointer; font-weight: bold; font-family: sans-serif; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
-        X
-    </button>
-    <div style="color: white; font-size: 16px; text-align: center; margin-top: 2px; text-shadow: 1px 1px 2px black;">SAIR E VOLTAR AO PORTAL</div>
+<!-- Botão Sair Flutuante -->
+<div class="no-print" style="position: fixed; top: 10px; right: 10px; z-index: 9999; text-align: center;">
+    <button onclick="encerrarSessao()" style="background: #d62600; color: white; border: 2px solid white; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; font-weight: bold; font-size: 18px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">X</button>
+    <div style="color: white; font-size: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">SAIR</div>
 </div>
     
         
@@ -3175,132 +3174,141 @@ document.onselectstart=()=>false;
 
  </script> 
 
+
+<!-- 2. LÓGICA (JAVASCRIPT) -->
 <script>
-// --- CONFIGURAÇÃO DE SEGURANÇA REVISADA ---
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
-const sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);
 const emailLimpo = userEmail ? userEmail.replace(/\./g, '_') : null;
+const sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);
 
 let dadosGlobais = null;
+let tempoInatividade = 0;
 
 async function inicializarSeguranca() {
-    if (!emailLimpo) return;
+    if (!emailLimpo) {
+        window.location.href = "index.html";
+        return;
+    }
 
     try {
         const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
         const dados = await res.json();
 
-        if (!dados || !dados.data_inicio) {
-            console.error("Data não encontrada no Firebase");
-            return;
-        }
-
-        // --- AJUSTE PARA O TIMER SAIR DO ZERO ---
-        // Removemos o 'T' e o 'Z' caso o navegador esteja recusando o formato ISO
-        const dataFormatada = dados.data_inicio.replace('T', ' ').replace('Z', '');
-        const dataInicio = new Date(dataFormatada); 
-        
-        // Validação extra: se a data for inválida, tentamos o método direto
-        if (isNaN(dataInicio.getTime())) {
-            dataInicio = new Date(dados.data_inicio);
-        }
-
-        const agora = new Date();
-        
-        // Cálculo de 30 dias de acesso total
-        const diffTempoTotal = agora.getTime() - dataInicio.getTime();
-        const diffDiasTotal = Math.floor(diffTempoTotal / (1000 * 60 * 60 * 24));
-
-        if (diffDiasTotal > 30) {
-            alert("Acesso de 30 dias expirou.");
+        if (!dados) {
+            alert("Acesso não encontrado.");
             window.location.href = "index.html";
             return;
         }
 
-        // Sessão Única
+        // --- TRAVA 30 DIAS (PORTAL) ---
+        const dataInicio = new Date(dados.data_inicio);
+        const agora = new Date();
+        const diffDiasTotal = Math.ceil(Math.abs(agora - dataInicio) / (1000 * 60 * 60 * 24));
+
+        if (diffDiasTotal > 30) {
+            alert("Seu período de 30 dias expirou.");
+            window.location.href = "index.html";
+            return;
+        }
+
+        // --- SESSÃO ÚNICA (DERRUBADA) ---
         await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
             method: 'PATCH',
             body: JSON.stringify({ sessao_ativa: sessionID })
         });
 
-        dadosGlobais = dados;
-        
-        // Configura o alvo dos 7 dias para o PDF
-        const dataPDF = new Date(dataInicio);
-        dataPDF.setDate(dataInicio.getDate() + 7); 
+        setInterval(async () => {
+            const check = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
+            const s = await check.json();
+            if (s !== sessionID && s !== null) {
+                alert("Este relatório foi aberto em outro dispositivo.");
+                window.location.href = "index.html";
+            }
+        }, 5000);
 
-        iniciarTimerPDF(dataPDF); // Chama o timer com a data corrigida
-        verificarBotaoPDF(dados, dataPDF);
+        // --- AUTO-LOCK (10 MINUTOS) ---
+        iniciarMonitorInatividade();
+
+        // --- CONFIGURAÇÃO DO TIMER (IGUAL AO SEU ANTIGO) ---
+        dadosGlobais = dados;
+        const dataReferencia = new Date(dados.data_inicio);
+        const dataExpiracaoPDF = new Date(dataReferencia);
+        dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
+
+        iniciarTimer(dataExpiracaoPDF);
+        verificarLiberacaoPDF(dados);
+
+        // Aviso de dias restantes
+        const diasFaltam = 30 - Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+        document.getElementById("aviso-expiracao-total").innerHTML = `Acesso ao portal disponível por mais ${diasFaltam} dias.`;
 
     } catch (e) {
-        console.error("Erro na inicialização:", e);
+        console.error("Erro no Firebase:", e);
     }
 }
 
-function iniciarTimerPDF(dataAlvo) {
-    const elTimer = document.getElementById("timer");
-    const elLabel = document.getElementById("label-tempo");
-
+function iniciarTimer(dataAlvo) {
     const intervalo = setInterval(() => {
-        const agora = new Date().getTime();
-        const dist = dataAlvo - agora;
+        const timerElement = document.getElementById("timer");
+        const labelElement = document.getElementById("label-tempo");
+        if (!timerElement || !labelElement) return;
 
-        if (dist <= 0) {
+        const agora = new Date().getTime();
+        const distancia = dataAlvo - agora;
+
+        if (distancia < 0) {
             clearInterval(intervalo);
-            elTimer.innerHTML = "LIBERADO!";
-            elLabel.innerHTML = "Seu PDF Premium já pode ser baixado!";
-            verificarBotaoPDF(dadosGlobais, dataAlvo);
+            timerElement.innerHTML = "LIBERADO!";
+            labelElement.innerHTML = "Seu PDF Premium já pode ser baixado!";
+            verificarLiberacaoPDF(dadosGlobais);
             return;
         }
 
-        const d = Math.floor(dist / (1000 * 60 * 60 * 24));
-        const h = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const m = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
-        const s = Math.floor((dist % (1000 * 60)) / 1000);
+        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
 
-        elTimer.innerHTML = `${d}d ${h}h ${m}m ${s}s`;
-        elLabel.innerHTML = "O download do PDF será liberado em:";
+        timerElement.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+        labelElement.innerHTML = "Seu PDF será liberado em:";
     }, 1000);
 }
 
-function verificarBotaoPDF(dados, dataAlvo) {
-    const btn = document.getElementById("btn-pdf-premium");
-    const msg = document.getElementById("msg-trava");
-    const agora = new Date();
+function verificarLiberacaoPDF(dados) {
+    if (!dados) return;
+    const btnPDF = document.getElementById("btn-pdf-premium");
+    const msgTrava = document.getElementById("msg-trava");
 
-    // Regra 1: Já baixou? Bloqueia.
     if (dados.pdf_baixado === true) {
-        btn.disabled = true;
-        btn.style.filter = "grayscale(100%)";
-        btn.style.opacity = "0.5";
-        msg.innerHTML = "⚠️ Download já realizado. O arquivo é de uso único.";
-        return;
+        btnPDF.disabled = true;
+        btnPDF.style.filter = "grayscale(100%)";
+        msgTrava.innerHTML = "⚠️ O download já foi realizado anteriormente.";
+        return; 
     }
 
-    // Regra 2: Já passou os 7 dias? Libera.
-    if (agora >= dataAlvo) {
-        btn.disabled = false;
-        btn.style.filter = "none";
-        btn.style.opacity = "1";
-        btn.style.backgroundColor = "#D62600"; 
-        btn.style.cursor = "pointer";
-        msg.innerHTML = "✅ PDF Disponível para download!";
+    const agora = new Date();
+    const dataRef = new Date(dados.data_inicio);
+    const diffDias = (agora - dataRef) / (1000 * 60 * 60 * 24);
+
+    if (diffDias >= 7) {
+        btnPDF.disabled = false;
+        btnPDF.style.filter = "none";
+        btnPDF.style.opacity = "1";
+        btnPDF.style.backgroundColor = "#D62600";
+        btnPDF.style.cursor = "pointer";
+        msgTrava.innerHTML = "✅ Seu estudo Premium está pronto!";
     } else {
-        // Ainda no prazo de garantia
-        btn.disabled = true;
-        btn.style.filter = "grayscale(100%)";
-        msg.innerHTML = "🔒 O botão de download ativa após 7 dias.";
+        msgTrava.innerHTML = "🔒 PDF disponível após 7 dias de garantia.";
     }
 }
 
 async function executarFluxoDownload() {
     const btn = document.getElementById("btn-pdf-premium");
     btn.disabled = true;
-    btn.innerHTML = "REGISTRANDO...";
+    btn.innerHTML = "SALVANDO...";
 
-    // Trava no Firebase antes de abrir a impressão
     await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
         method: 'PATCH',
         body: JSON.stringify({ pdf_baixado: true })
@@ -3311,6 +3319,29 @@ async function executarFluxoDownload() {
 }
 
 async function encerrarSessao() {
+    if(confirm("Deseja sair do relatório?")) {
+        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+            method: 'PATCH',
+            body: JSON.stringify({ sessao_ativa: null })
+        });
+        window.location.href = "index.html";
+    }
+}
+
+function iniciarMonitorInatividade() {
+    const reset = () => tempoInatividade = 0;
+    window.onmousemove = reset;
+    window.onclick = reset;
+    window.onkeypress = reset;
+    setInterval(() => {
+        tempoInatividade++;
+        if (tempoInatividade >= 10) { // 10 Minutos
+            encerrarSessaoRapida();
+        }
+    }, 60000);
+}
+
+async function encerrarSessaoRapida() {
     await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
         method: 'PATCH',
         body: JSON.stringify({ sessao_ativa: null })
@@ -3320,7 +3351,6 @@ async function encerrarSessao() {
 
 window.onload = inicializarSeguranca;
 </script>
-
 
 
     
