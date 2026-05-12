@@ -3546,17 +3546,26 @@ let html = `
 
 
 
-<!-- Interface HTML -->
-<div id="status-acesso" class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
-    <div id="label-tempo">Verificando segurança...</div>
+<div id="status-acesso"class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
+    <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 5px;">Calculando seu tempo de acesso...</div>
     <div id="timer" style="font-family: 'Courier New', monospace; font-size: 1.8rem; font-weight: bold; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);">00:00:00:00</div>
     <div id="msg-trava" style="font-size: 0.75rem; opacity: 0.7; margin-top: 5px;"></div>
-    <div id="aviso-expiracao-total" class="no-print" style="font-size: 0.75rem; color: #ffbc00; margin-top: 10px; opacity: 0.9;"></div>
+<div id="aviso-expiracao-total" class="no-print" style="font-size: 0.75rem; color: #ffbc00; margin-top: 10px; opacity: 0.9;">   Verificando validade do acesso...</div>
+    
 </div>
 
-<button id="btn-pdf-premium" class="btn-pdf no-print" onclick="executarFluxoDownload()" disabled style="filter: grayscale(100%); opacity: 0.5; cursor: not-allowed; width: 100%; max-width: 500px; padding: 15px; font-weight: bold; border-radius: 8px; border: none; display: block; margin: 0 auto;">
+
+
+<button id="btn-pdf-premium" class="btn-pdf no-print" onclick="window.print(); registrarDownloadRealizado();" disabled style="filter: grayscale(100%); opacity: 0.5; cursor: not-allowed;">
     📥 BAIXAR SEU PDF PREMIUM
 </button>
+
+
+<div class="no-print" style="position: fixed; top: 10px; left: 10px; z-index: 9999; text-align: center;">
+    <button onclick="window.location.href='index.html'" style="background: #d62600; color: white; border: 2px solid white; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; font-weight: bold; font-size: 18px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">X</button>
+    <div style="color: white; font-size: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">⬅️ VOLTAR AO PORTAL</div>
+</div>
+
 
 <div class="container-master">
     <div id="capa-numerologica" style="
@@ -6342,21 +6351,20 @@ document.getElementById('btnVideo').addEventListener('click', function() {
 </script>
     
 <script>
-// --- CONFIGURAÇÃO DE SEGURANÇA AVANÇADA "ULTRA INSTINTO" ---
+// --- CONFIGURAÇÃO DE SEGURANÇA AVANÇADA INSTINTO SUPERIOR ---
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 
-// Gera um ID de sessão único para esta aba/janela específica
-const sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);
-let dadosGlobais = null;
-const emailLimpo = userEmail ? userEmail.replace(/\./g, '_') : null;
+let dadosGlobais = null; // Vamos salvar tudo aqui
 
-// 1. VALIDAÇÃO DE USUÁRIO E BLOQUEIO DE MULTI-ACESSO
+// 1. VALIDAÇÃO DE USUÁRIO E REDIRECIONAMENTO LIMPO
 if (!userEmail) {
     alert("Acesso não autorizado.");
-    window.location.href = "index.html";
+    window.location.href = "index.html"; // Volta para a raiz se não houver e-mail
 }
+
+const emailLimpo = userEmail.replace(/\./g, '_');
 
 async function inicializarSeguranca() {
     try {
@@ -6369,32 +6377,7 @@ async function inicializarSeguranca() {
             return;
         }
 
-        // --- TRAVA DE SESSÃO ÚNICA (ANTI-BURLA) ---
-        // Se já existe uma sessão ativa no Firebase e não é a deste navegador
-        if (dados.sessao_ativa && dados.sessao_ativa !== sessionID) {
-            alert("Este acesso já está aberto em outro dispositivo ou aba. Feche o outro acesso para continuar.");
-            window.location.href = "index.html";
-            return;
-        }
-
-        // Registra que este navegador "tomou posse" do acesso
-        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ sessao_ativa: sessionID })
-        });
-
-        // --- MONITORAMENTO EM TEMPO REAL ---
-        // Verifica a cada 5 segundos se alguém "roubou" a sessão em outro lugar
-        setInterval(async () => {
-            const checkRes = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
-            const sessaoNoBanco = await checkRes.json();
-            if (sessaoNoBanco !== sessionID && sessaoNoBanco !== null) {
-                alert("Acesso encerrado: sua conta foi aberta em outro dispositivo.");
-                window.location.href = "index.html";
-            }
-        }, 5000);
-
-        // --- TRAVA DE 30 DIAS ---
+        // --- NOVA TRAVA DE 30 DIAS (EXPIRAÇÃO TOTAL) ---
         if (dados.data_inicio) {
             const dataInicio = new Date(dados.data_inicio);
             const agora = new Date();
@@ -6403,11 +6386,12 @@ async function inicializarSeguranca() {
 
             if (diffDiasTotal > 30) {
                 alert("Seu período de acesso de 30 dias expirou.");
-                window.location.href = "index.html";
+                window.location.href = "index.html"; // Ou uma página de "Acesso Expirado"
                 return;
             }
         }
 
+        // Mantém suas travas existentes
         if (dados.status === 'usado' || dados.status !== 'ativo') {
             alert("Este acesso expirou ou está inativo.");
             window.location.href = "index.html";
@@ -6416,6 +6400,8 @@ async function inicializarSeguranca() {
 
         dadosGlobais = dados; 
         const dataReferencia = new Date(dados.data_inicio);
+        
+        // Timer dos 7 dias para o PDF
         const dataExpiracaoPDF = new Date(dataReferencia);
         dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
 
@@ -6423,7 +6409,7 @@ async function inicializarSeguranca() {
         verificarLiberacaoPDF(dados);
 
     } catch (e) {
-        console.error("Erro na comunicação:", e);
+        console.error("Erro na comunicação com Firebase:", e);
     }
 }
 
@@ -6431,18 +6417,19 @@ function iniciarTimer(dataAlvo) {
     const intervalo = setInterval(() => {
         const timerElement = document.getElementById("timer");
         const labelElement = document.getElementById("label-tempo");
+
         if (!timerElement || !labelElement) return;
 
         const agora = new Date().getTime();
         const distancia = dataAlvo - agora;
 
-        if (distancia < 0) {
-            clearInterval(intervalo);
-            timerElement.innerHTML = "LIBERADO!";
-            labelElement.innerHTML = "Seu estudo já pode ser baixado!";
-            verificarLiberacaoPDF(dadosGlobais);
-            return;
-        }
+if (distancia < 0) {
+    clearInterval(intervalo);
+    timerElement.innerHTML = "LIBERADO!";
+    labelElement.innerHTML = "Seu estudo já pode ser baixado!";
+    verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI (Passando o objeto todo)
+    return;
+}
 
         const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
         const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -6461,16 +6448,28 @@ function verificarLiberacaoPDF(dados) {
     const msgTrava = document.getElementById("msg-trava");
     const labelTempo = document.getElementById("label-tempo");
 
+    // 1. Verificação de Expiração Total (30 dias)
     const dataRef = new Date(dados.data_inicio);
     const expiraEm = 30 - Math.floor((new Date() - dataRef) / (1000 * 60 * 60 * 24));
     const avisoTotal = document.getElementById("aviso-expiracao-total");
-    if (avisoTotal) avisoTotal.innerHTML = `Portal disponível por mais ${expiraEm} dias.`;
+    if (avisoTotal) {
+        avisoTotal.innerHTML = `Acesso ao portal disponível por mais ${expiraEm} dias.`;
+    }
 
+    // 2. Trava de Download Único (Se já baixou, bloqueia tudo)
     if (dados.pdf_baixado === true) {
-        bloquearBotao("⚠️ O download já foi realizado anteriormente.");
+        if (btnPDF) {
+            btnPDF.disabled = true;
+            btnPDF.style.filter = "grayscale(100%)";
+            btnPDF.style.backgroundColor = "#333"; // Cor de desativado
+            btnPDF.style.cursor = "not-allowed";
+        }
+        if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado anteriormente.";
+        if (labelTempo) labelTempo.innerHTML = "ACESSO AO PDF ENCERRADO";
         return; 
     }
 
+    // 3. Regra dos 7 Dias (Garantia)
     const agora = new Date();
     const diffDias = (agora - dataRef) / (1000 * 60 * 60 * 24);
 
@@ -6480,73 +6479,59 @@ function verificarLiberacaoPDF(dados) {
             btnPDF.style.filter = "none";
             btnPDF.style.opacity = "1";
             btnPDF.style.cursor = "pointer";
-            btnPDF.style.backgroundColor = "#D62600";
+            btnPDF.style.backgroundColor = "#D62600"; // Cor Dourada/Premium (ou red se preferir)
             btnPDF.style.color = "#fff";
         }
-        if (msgTrava) msgTrava.innerHTML = "✅ Seu estudo Premium está pronto!";
+        if (msgTrava) msgTrava.innerHTML = "✅ Seu estudo Premium está pronto para download!";
+        if (labelTempo) labelTempo.innerHTML = "LIBERADO!";
     } else {
-        if (btnPDF) btnPDF.disabled = true;
-        if (msgTrava) msgTrava.innerHTML = "🔒 PDF disponível após a garantia (7 dias).";
-    }
-}
-
-// --- FUNÇÃO DE DOWNLOAD REFORMULADA ---
-async function executarFluxoDownload() {
-    const btnPDF = document.getElementById("btn-pdf-premium");
-    if (btnPDF.disabled) return;
-
-    btnPDF.disabled = true;
-    btnPDF.innerHTML = "PROCESSANDO...";
-
-    try {
-        // 1. Marca no Firebase ANTES de abrir a impressão
-        const response = await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ 
-                pdf_baixado: true,
-                status: 'usado', // Inativa o acesso após o download
-                sessao_ativa: null 
-            })
-        });
-
-        if (response.ok) {
-            // 2. Só agora libera a impressão
-            window.print();
-            bloquearBotao("⚠️ Download registrado. Acesso encerrado.");
-        } else {
-            alert("Erro ao validar acesso. Tente novamente.");
-            btnPDF.disabled = false;
-            btnPDF.innerHTML = "📥 BAIXAR SEU PDF PREMIUM";
+        // Ainda no período de 7 dias
+        if (btnPDF) {
+            btnPDF.disabled = true;
+            btnPDF.style.filter = "grayscale(100%)";
         }
+        if (msgTrava) msgTrava.innerHTML = "🔒 PDF disponível após o período de garantia.";
+    }
+}
+
+
+
+async function registrarDownloadRealizado() {
+    try {
+        // Envia para o Firebase que o PDF foi baixado
+        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+            method: 'PATCH',
+            body: JSON.stringify({ pdf_baixado: true })
+        });
+        
+        // Bloqueia o botão na tela imediatamente
+        const btnPDF = document.getElementById("btn-pdf-premium");
+        const msgTrava = document.getElementById("msg-trava");
+        if (btnPDF) {
+            btnPDF.disabled = true;
+            btnPDF.style.filter = "grayscale(100%)";
+            btnPDF.style.opacity = "0.5";
+        }
+        if (msgTrava) msgTrava.innerHTML = "⚠️ Download registrado. Acesso ao PDF encerrado.";
+        
     } catch (e) {
-        console.error("Erro no download:", e);
-        btnPDF.disabled = false;
+        console.error("Erro ao registrar download:", e);
+    }
+}
+    
+
+function exibirRelatorio(htmlConteudo) {
+    const areaResultado = document.getElementById("resultado");
+    if (areaResultado) {
+        areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
+        verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI
     }
 }
 
-function bloquearBotao(mensagem) {
-    const btnPDF = document.getElementById("btn-pdf-premium");
-    const msgTrava = document.getElementById("msg-trava");
-    const labelTempo = document.getElementById("label-tempo");
+window.onload = function() {
+    inicializarSeguranca();
 
-    if (btnPDF) {
-        btnPDF.disabled = true;
-        btnPDF.style.filter = "grayscale(100%)";
-        btnPDF.style.backgroundColor = "#333";
-        btnPDF.style.cursor = "not-allowed";
-    }
-    if (msgTrava) msgTrava.innerHTML = mensagem;
-    if (labelTempo) labelTempo.innerHTML = "ACESSO ENCERRADO";
-}
-
-// Limpa a sessão ao fechar a página (ajuda a permitir trocar de dispositivo)
-window.onbeforeunload = function() {
-    if (dadosGlobais && !dadosGlobais.pdf_baixado) {
-        navigator.sendBeacon(`${DB_URL}vendas/${emailLimpo}.json`, JSON.stringify({ sessao_ativa: null }));
-    }
 };
-
-window.onload = inicializarSeguranca;
 </script>
   
 </body>
