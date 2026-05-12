@@ -6331,30 +6331,12 @@ document.onselectstart=()=>false;
     </script>
 
 
-    <script>
-document.getElementById('btnVideo').addEventListener('click', function() {
-    const wrapper = document.getElementById('wrapperVideo');
-    const video = document.getElementById('videoExplicativo');
-    const btn = this;
-
-    if (wrapper.style.display === 'none') {
-        wrapper.style.display = 'block';
-        btn.classList.add('ativo');
-        btn.querySelector('span').innerText = '❌ Fechar Vídeo';
-    } else {
-        wrapper.style.display = 'none';
-        btn.classList.remove('ativo');
-        btn.querySelector('span').innerText = '🎥 Assistir Vídeo Introdutório';
-        video.pause(); // Pausa o vídeo automaticamente ao fechar para não ficar saindo som
-    }
-});
-</script>
-    
 <script>
 // --- CONFIGURAÇÃO DE SEGURANÇA AVANÇADA INSTINTO SUPERIOR ---
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
+const sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);    
 
 let dadosGlobais = null; // Vamos salvar tudo aqui
 
@@ -6371,13 +6353,14 @@ async function inicializarSeguranca() {
         const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
         const dados = await res.json();
 
+        // 1. Verifica se o e-mail existe no banco
         if (!dados) {
             alert("Acesso não encontrado.");
             window.location.href = "index.html";
             return;
         }
 
-        // --- NOVA TRAVA DE 30 DIAS (EXPIRAÇÃO TOTAL) ---
+        // 2. Verifica se o prazo de 30 dias venceu
         if (dados.data_inicio) {
             const dataInicio = new Date(dados.data_inicio);
             const agora = new Date();
@@ -6386,22 +6369,44 @@ async function inicializarSeguranca() {
 
             if (diffDiasTotal > 30) {
                 alert("Seu período de acesso de 30 dias expirou.");
-                window.location.href = "index.html"; // Ou uma página de "Acesso Expirado"
+                window.location.href = "index.html";
                 return;
             }
         }
 
-        // Mantém suas travas existentes
+        // 3. Verifica se o status é ativo
         if (dados.status === 'usado' || dados.status !== 'ativo') {
             alert("Este acesso expirou ou está inativo.");
             window.location.href = "index.html";
             return;
         }
 
+        // ---------------------------------------------------------
+        // AGORA SIM: Se passou em todos os testes acima, ativa a trava de sessão
+        // ---------------------------------------------------------
+        
+        // Registra que VOCÊ é o dono da sessão agora
+        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+            method: 'PATCH',
+            body: JSON.stringify({ sessao_ativa: sessionID })
+        });
+
+        // Monitora se alguém entrar depois de você
+        setInterval(async () => {
+            const r = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
+            const s = await r.json();
+            if (s !== sessionID && s !== null) {
+                alert("Este acesso foi aberto em outro dispositivo ou aba.");
+                window.location.href = "index.html";
+            }
+        }, 5000);
+        
+        // ---------------------------------------------------------
+
+        // Continua com o carregamento normal do seu relatório
         dadosGlobais = dados; 
         const dataReferencia = new Date(dados.data_inicio);
         
-        // Timer dos 7 dias para o PDF
         const dataExpiracaoPDF = new Date(dataReferencia);
         dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
 
@@ -6519,6 +6524,15 @@ async function registrarDownloadRealizado() {
     }
 }
     
+async function encerrarSessao() {
+    // Limpa a trava no Firebase antes de sair
+    await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+        method: 'PATCH',
+        body: JSON.stringify({ sessao_ativa: null })
+    });
+    // Manda de volta para o login
+    window.location.href = "index.html";
+}    
 
 function exibirRelatorio(htmlConteudo) {
     const areaResultado = document.getElementById("resultado");
@@ -6533,6 +6547,7 @@ window.onload = function() {
 
 };
 </script>
+
   
 </body>
 </html>
