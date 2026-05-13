@@ -2068,7 +2068,7 @@ const processarUmCiclo = (anoReferencia, tituloSecao) => {
     for(let p in somaMomento) {
         let porcentagem = Math.max((somaMomento[p] / ref) * 100, 15);
         h += `
-            <div style="margin: 6px auto; width: 90%; height: 32px; position: relative; background: #eee; border-radius: 4px; overflow: hidden; display: block;">
+            <div style="margin: 6px auto; width: 90%; height: 32px; position: relative; background: #fff; border-radius: 4px; overflow: hidden; display: block;">
                 <div style="width:${porcentagem}%; height:100%; background: ${degradês[p]}; position: absolute; z-index: 1;"></div>
                 <span style="position: relative; color: #fff; font-weight: bold; padding-left: 12px; line-height: 32px; z-index: 2; font-size: 13px; text-shadow: 1px 1px 2px #000;">
                     ${nomesAmigaveis[p].toUpperCase()} - EXP ${reduzirPuro(somaMomento[p])}
@@ -2077,22 +2077,34 @@ const processarUmCiclo = (anoReferencia, tituloSecao) => {
     }
     h += `</div>`;
 
-    // POTENCIAIS
-    h += `<div style="margin: 30px 0; padding: 15px; background: #fdfdfd; border: 1px solid #eee; border-radius: 10px; break-inside: avoid;">
-            <h4 style="text-align:center; text-transform:uppercase; font-size:15px; color:#333; margin-bottom:15px; border-bottom: 1px solid #ddd; padding-bottom:5px;">Potenciais do Momento</h4>`;
+// POTENCIAIS
+h += `<div style="margin: 30px 0; padding: 15px; background: #fdfdfd; border: 1px solid #eee; border-radius: 10px; break-inside: avoid;">
+        <h4 style="text-align:center; text-transform:uppercase; font-size:18px; color:#333; margin-bottom:15px; border-bottom: 1px solid #ddd; padding-bottom:5px;">Potenciais do Momento</h4>`;
+
+["Físico", "Mental", "Emocional", "Intuitivo"].forEach(planoNome => {
+    // Pegamos os 2 melhores de cada plano
+    const itens = rankingPotenciais.filter(it => it.plano === planoNome).sort((a,b) => b.nota - a.nota).slice(0, 2); 
     
-    ["Físico", "Mental", "Emocional", "Intuitivo"].forEach(planoNome => {
-        const itens = rankingPotenciais.filter(it => it.plano === planoNome).sort((a,b) => b.nota - a.nota).slice(0, 2); 
-        if(itens.length > 0) {
-            h += `<div style="margin-bottom:10px;">
-                    <span style="font-size:11px; font-weight:bold; color:${coresPlanos[planoNome.toLowerCase()]}; text-transform:uppercase;">${planoNome}</span>`;
-            itens.forEach(item => {
-                h += montarBarraGrafico(item); 
-            });
-            h += `</div>`;
-        }
-    });
-    h += `</div>`;
+    if(itens.length > 0) {
+        // Mapeamento direto de cores para evitar erro de variável indefinida
+        const corFixa = {
+            "Físico": "#e74c3c",
+            "Mental": "#3498db",
+            "Emocional": "#2ecc71",
+            "Intuitivo": "#f1c40f"
+        };
+
+        h += `<div style="margin-bottom:15px; text-align: center;"> 
+                <span style="font-size:12px; font-weight:bold; color:${corFixa[planoNome]}; text-transform:uppercase; display: block; margin-bottom: 5px;">
+                    ${planoNome}
+                </span>
+                <div style="text-align: left;"> 
+                    ${itens.map(item => montarBarraGrafico(item)).join('')}
+                </div>
+            </div>`;
+    }
+});
+h += `</div>`;
 
     // TEXTOS
     h += `<div style="margin-top: 20px;">`;
