@@ -1969,7 +1969,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
     const partesData = dataNascimento.split("/");
     const dtNasci = new Date(partesData[2], partesData[1] - 1, partesData[0]);
 
-  const processarUmCiclo = (anoReferencia, tituloSecao) => {
+const processarUmCiclo = (anoReferencia, tituloSecao) => {
     let inicioCiclo = new Date(anoReferencia, dtNasci.getMonth(), dtNasci.getDate());
     const indiceAno = (idadeForcada !== null) ? idadeForcada : (inicioCiclo.getFullYear() - dtNasci.getFullYear());
     let fimCiclo = new Date(inicioCiclo.getFullYear() + 1, dtNasci.getMonth(), dtNasci.getDate());
@@ -1985,8 +1985,16 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         return t;
     });
 
+    // 1. DEFINIÇÃO DOS TEXTOS DE PERFIL (Para evitar o erro "is not defined")
+    const descricoesPerfilMomento = {
+            criativo: `<p>"Sua energia de ação este ano está em fase de expansão e Criatividade"</p><p>Neste ciclo, sua forma de agir está mais arrojada. Você sentirá uma facilidade maior para encontrar saídas rápidas e originais para problemas que antes pareciam travados.</p>`,
+            indeciso: `<p>"Sua forma de agir este ano está sob o filtro da sensibilidade e da Indecisão"</p><p>Este ciclo pede que você tenha mais cautela antes de tomar grandes decisões. É um ano para agir com diplomacia, evitando confrontos diretos.</p>`,
+            neutro: `<p>"Este ano sua ação prioriza o equilíbrio, a observação e a Neutralidade"</p><p>Sua postura atual é de 'esperar para ver'. Você prefere analisar o terreno antes de dar qualquer passo importante, agindo com máxima prudência.</p>`
+        };
+
     let somaMomento = { fisico: 0, mental: 0, emocional: 0, intuitivo: 0 };
     let contPerfilMomento = { criativo: 0, indeciso: 0, neutro: 0 };
+    let vibMomento = {};
 
     timelines.forEach((t) => {
         let letraAtiva = t[indiceAno % t.length];
@@ -2009,16 +2017,33 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         .map(([chave, valor]) => ({ chave, valor, vib: reduzirPuro(valor) }))
         .sort((a, b) => b.valor - a.valor);
 
-    const _p1 = planosOrdenados[0];
-    const ref = _p1.valor || 1;
+    const ref = planosOrdenados[0].valor || 1;
+    const statusMomentoAnual = {};
+    
+    planosOrdenados.forEach(pObj => {
+        let r = pObj.valor / ref;
+        let label = nomesAmigaveis[pObj.chave];
+        statusMomentoAnual[label] = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
+        vibMomento[label] = pObj.vib;
+    });
 
-    const descricoesPerfilMomento = {
-            criativo: `<p>"Sua energia de ação este ano está em fase de expansão e Criatividade"</p><p>Neste ciclo, sua forma de agir está mais arrojada. Você sentirá uma facilidade maior para encontrar saídas rápidas e originais para problemas que antes pareciam travados.</p>`,
-            indeciso: `<p>"Sua forma de agir este ano está sob o filtro da sensibilidade e da Indecisão"</p><p>Este ciclo pede que você tenha mais cautela antes de tomar grandes decisões. É um ano para agir com diplomacia, evitando confrontos diretos.</p>`,
-            neutro: `<p>"Este ano sua ação prioriza o equilíbrio, a observação e a Neutralidade"</p><p>Sua postura atual é de 'esperar para ver'. Você prefere analisar o terreno antes de dar qualquer passo importante, agindo com máxima prudência.</p>`
-        };
+    // --- CÁLCULO DOS POTENCIAIS ---
+    let rankingPotenciais = [];
+    for (let nomeAtributo in megaBancoAtributos) {
+        let config = megaBancoAtributos[nomeAtributo];
+        let pAlvo = config.plano;
+        let notaFinal = calcularIntensidadeMomento(
+            config, res, faltantes, nomeParaCalculo, d3, 
+            regenteMatriz, negativasMatriz, 
+            vibMomento[pAlvo], statusMomentoAnual[pAlvo], 
+            dominanteMomento, pAlvo
+        );
+        rankingPotenciais.push({
+            nome: nomeAtributo, nota: notaFinal, plano: pAlvo, sub: config.sub,
+            percentual: (notaFinal * 10).toFixed(1)
+        });
+    }
 
-    // --- DEFINIÇÃO DOS DEGRADÊS E CORES (IMPORTANTE PARA NÃO QUEBRAR) ---
     const degradês = {
         fisico: 'linear-gradient(to right, #e74c3c, #7b241c)',
         mental: 'linear-gradient(to right, #3498db, #1a5276)',
@@ -2027,54 +2052,62 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
     };
     const coresPlanos = { fisico: "#e74c3c", mental: "#3498db", emocional: "#2ecc71", intuitivo: "#f1c40f" };
 
-    // INÍCIO DO HTML DO ANO
+    // MONTAGEM DO HTML
     let h = `
-    <div class="ciclo-anual" style="page-break-after: always; clear:both; border-top: 3px solid var(--gold); padding: 20px 0;"> 
-        <h2 class="titulo-topico" style="text-align:center; font-size: 26px;">${tituloSecao}</h2>
-        <h3 style="text-align:center; color:var(--gold); font-size:20px; margin-bottom: 20px;">IDADE: ${indiceAno} ANOS | ${periodoVigente}</h3>
+    <div class="ciclo-anual" style="page-break-after: always; clear:both; border-top: 4px solid var(--gold); padding: 20px 0;"> 
+        <h2 class="titulo-topico" style="text-align:center; font-size: 24px;">${tituloSecao}</h2>
+        <h3 style="text-align:center; color:var(--gold); font-size:18px; margin-bottom: 20px;">IDADE: ${indiceAno} ANOS | ${periodoVigente}</h3>
         
         <div style="margin: 15px 0; padding: 15px; border: 1px solid #827108; border-radius: 8px; background: #fff; break-inside: avoid;">
-            <h4 style="margin: 0; color: #827108; text-transform: uppercase; font-size:18px;">Perfil de Ação: ${dominanteMomento}</h4>
-           
-            <div style="font-size: 16px; color: #444; line-height:1.4;">${aplicarFiltroTexto(descricoesPerfilMomento[dominanteMomento])}</div>
+            <h4 style="margin: 0; color: #827108; text-transform: uppercase; font-size:16px;">Perfil de Ação: ${dominanteMomento}</h4>
+            <div style="font-size: 15px; color: #444; line-height:1.4;">${aplicarFiltroTexto(descricoesPerfilMomento[dominanteMomento])}</div>
         </div>
 
-        <div class="graficos-container" style="margin: 20px 0; break-inside: avoid;">`;
+        <div style="margin: 20px 0; break-inside: avoid;">`;
 
-    // LOOP DOS GRÁFICOS
     for(let p in somaMomento) {
         let porcentagem = Math.max((somaMomento[p] / ref) * 100, 15);
-        let valorReduzido = reduzirPuro(somaMomento[p]);
         h += `
-            <div style="margin: 8px auto; width: 90%; height: 35px; position: relative; background: #fff; border-radius: 4px; overflow: hidden; display: block;">
-                <div style="width:${porcentagem}%; height:100%; background: ${degradês[p]}; position: absolute; left: 0; top: 0; z-index: 1;"></div>
-                <span style="position: relative; color: #fff; font-weight: bold; padding-left: 15px; line-height: 35px; z-index: 2; font-size: 14px; text-shadow: 1px 1px 2px #000;">
-                    ${nomesAmigaveis[p].toUpperCase()} - EXP ${valorReduzido}
+            <div style="margin: 6px auto; width: 90%; height: 32px; position: relative; background: #eee; border-radius: 4px; overflow: hidden; display: block;">
+                <div style="width:${porcentagem}%; height:100%; background: ${degradês[p]}; position: absolute; z-index: 1;"></div>
+                <span style="position: relative; color: #fff; font-weight: bold; padding-left: 12px; line-height: 32px; z-index: 2; font-size: 13px; text-shadow: 1px 1px 2px #000;">
+                    ${nomesAmigaveis[p].toUpperCase()} - EXP ${reduzirPuro(somaMomento[p])}
                 </span>
             </div>`;
     }
     h += `</div>`;
 
-    // TEXTOS EXPLICATIVOS DOS PLANOS
-    h += `<div class="textos-detalhados" style="margin-top: 20px;">`;
+    // POTENCIAIS
+    h += `<div style="margin: 30px 0; padding: 15px; background: #fdfdfd; border: 1px solid #eee; border-radius: 10px; break-inside: avoid;">
+            <h4 style="text-align:center; text-transform:uppercase; font-size:15px; color:#333; margin-bottom:15px; border-bottom: 1px solid #ddd; padding-bottom:5px;">Potenciais do Momento</h4>`;
+    
+    ["Físico", "Mental", "Emocional", "Intuitivo"].forEach(planoNome => {
+        const itens = rankingPotenciais.filter(it => it.plano === planoNome).sort((a,b) => b.nota - a.nota).slice(0, 2); 
+        if(itens.length > 0) {
+            h += `<div style="margin-bottom:10px;">
+                    <span style="font-size:11px; font-weight:bold; color:${coresPlanos[planoNome.toLowerCase()]}; text-transform:uppercase;">${planoNome}</span>`;
+            itens.forEach(item => {
+                h += montarBarraGrafico(item); 
+            });
+            h += `</div>`;
+        }
+    });
+    h += `</div>`;
+
+    // TEXTOS
+    h += `<div style="margin-top: 20px;">`;
     for(let p in somaMomento) {
         let r = somaMomento[p] / ref;
         let intensidade = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
         let vFinal = reduzirPuro(somaMomento[p]);
-        let textoEncontrado = "";
-        try {
-            if (typeof textosPlanosMomento !== 'undefined' && textosPlanosMomento[p]) {
-                textoEncontrado = textosPlanosMomento[p][intensidade][vFinal] || "";
-            }
-        } catch(e) { }
+        let textoEncontrado = (typeof textosPlanosMomento !== 'undefined' && textosPlanosMomento[p]) ? (textosPlanosMomento[p][intensidade][vFinal] || "") : "";
 
         if (textoEncontrado) {
             h += `
-                <div style="margin-bottom: 20px; border-left: 4px solid ${coresPlanos[p]}; padding-left: 15px; break-inside: avoid; background: #fafafa; padding-top: 5px; padding-bottom: 5px;">
-                    <h4 style="margin:0 0 8px 0; color:${coresPlanos[p]}; text-transform:uppercase; font-size:18px;">${nomesAmigaveis[p]} (${intensidade})</h4>
-                   
-                    <div class="conteudo-travado">
-                    <div style="font-size:15px; line-height:1.5;">${aplicarFiltroTexto(textoEncontrado)}</div>
+                <div style="margin-bottom: 15px; border-left: 4px solid ${coresPlanos[p]}; padding-left: 15px; break-inside: avoid;">
+                    <h4 style="margin:0 0 5px 0; color:${coresPlanos[p]}; text-transform:uppercase; font-size:16px;">${nomesAmigaveis[p]}</h4>
+                     <div class="conteudo-travado">
+                    <div style="font-size:14px; line-height:1.4;">${aplicarFiltroTexto(textoEncontrado)}</div>
                 </div></div>
                         <div class="aviso-trava">
             🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
@@ -2084,19 +2117,19 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
     }
     h += `</div>`;
 
-    // TRÂNSITO VIBRACIONAL (O BLOCO QUE VOCÊ QUERIA FIXO)
+    // TRANSITO
     let letrasAno = timelines.map(t => t[indiceAno % t.length]);
     let vTransito = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValorLetra(l), 0));
     let txtTransito = (typeof TextosTransito !== 'undefined') ? (TextosTransito[vTransito] || "") : "";
 
     h += `
-        <div class="secao-vibracional" style="page-break-inside: avoid; break-inside: avoid; margin-top: 30px; padding: 20px; background: #fff; border: 2px double var(--gold);">
-            <h3 style="color:var(--gold); margin:0 0 10px 0; text-transform:uppercase; font-size: 20px; text-align:center; border-bottom: 1px solid var(--gold);">
+        <div style="page-break-inside: avoid; break-inside: avoid; margin-top: 30px; padding: 20px; background: #fff; border: 2px double var(--gold);">
+            <h3 style="color:var(--gold); margin:0 0 10px 0; text-transform:uppercase; font-size: 18px; text-align:center; border-bottom: 1px solid var(--gold);">
                 TRÂNSITO VIBRACIONAL: ${vTransito}
             </h3>
-
+           
             <div class="conteudo-travado">
-            <div style="font-size:16px; line-height:1.6; color:#111;">
+            <div style="font-size:14px; line-height:1.5; color:#111;">
                 ${aplicarFiltroTexto(txtTransito)}
             </div></div>
                         <div class="aviso-trava">
@@ -2104,10 +2137,12 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
 
          </div>
         </div>
-    </div>`; // Fim da ciclo-anual
+    </div>`;
 
     return h;
 };
+
+
     if (idadeForcada !== null) {
         return { html: processarUmCiclo(dtNasci.getFullYear() + idadeForcada, `Ano de Vida: ${idadeForcada}`), dados: {} };
     } else {
