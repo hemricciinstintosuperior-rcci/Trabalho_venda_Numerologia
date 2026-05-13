@@ -1195,6 +1195,35 @@ function calcularVigenciaLinearVertical(coluna, tamanhoSeq, cronograma, arcanosT
     return detalhes;
 }
 
+
+
+function renderAudioButton(url, tema) {
+    // Geramos um ID único para o áudio
+    const audioId = "audio_instinto_" + Math.random().toString(36).substr(2, 5);
+
+    return `
+    <div class="player-relatorio" style="margin-top: 30px; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+        
+        <audio id="${audioId}" src="${url}" preload="auto"></audio>
+
+        <div onclick="const a = document.getElementById('${audioId}'); a.paused ? a.play() : a.pause();" 
+             style="cursor: pointer; width: 280px; background: rgba(0, 0, 0, 0.8); border: 1px solid #d97a1e; border-radius: 50px; padding: 10px 20px; display: flex; align-items: center; gap: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.4);">
+            
+            <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+            
+            <div style="flex-grow: 1;">
+                <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">Ouvir Frequência</span>
+                <span style="display: block; font-size: 12px; color: #fff; font-family: 'Cinzel', serif;">${tema}</span>
+            </div>
+        </div>
+        <small style="color: #d97a1e; font-size: 9px; opacity: 0.7;">Clique para dar Play/Pause</small>
+    </div>`;
+}
+
+
+
+    
+
 function gerarCronogramaMestre(arcanosVida, data) {
     let cronograma = [];
     const [ano, mes, dia] = data.split("-").map(Number);
