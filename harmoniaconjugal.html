@@ -1,328 +1,232 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Sinastria para Relacionamento Conjugal</title>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#111827">
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonia Conjugal | Instinto Superior</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+
 body{
   font-family: Arial;
   background:#111936;
   color:#fff;
   padding:20px;
 }
+        
+        :root {
+            --primary: #6B0202;
+            --secondary: #002091;
+            --bg: #0a0f24;
+            --card-bg: #111936;
+            --text: #ffffff;
+            --accent: #00e0ff;
+            --danger: #ff3b5c;
+            --success: #28a745;
+        }
 
-.container{
-  max-width:1000px;
-  margin:auto;
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); padding-bottom: 50px; }
+        .header { text-align: center; padding: 40px 20px; background: linear-gradient(180deg, #16204d 0%, var(--bg) 100%); }
+        .container { max-width: 1100px; margin: auto; padding: 0 20px; }
+
+        /* Grid */
+        .grid-pessoa {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+            background: rgba(255,255,255,0.03);
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .card-input, .card-piramide { background: var(--card-bg); padding: 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .card-piramide { text-align: center; border: 1px dashed rgba(255,255,255,0.2); }
+
+        h3 { margin-bottom: 20px; color: var(--accent); border-bottom: 1px solid #2e3c78; padding-bottom: 10px; }
+        .form-group { margin-bottom: 15px; text-align: left; }
+        label { display: block; font-size: 0.85rem; margin-bottom: 5px; color: #ccc; }
+
+        input, select {
+            width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #2e3c78;
+            background: #1c264a; color: white; font-size: 1rem;
+        }
+
+        /* Botões */
+        .btn-group { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin-top: 15px; }
+        button { padding: 10px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.3s; font-size: 0.75rem; }
+        .btn-nav { background: #2e3c78; color: white; }
+        .btn-nav:hover { background: var(--secondary); }
+        .btn-action { background: var(--primary); color: white; font-size: 1rem; padding: 15px 30px; border-radius: 50px; }
+        
+        .main-actions { display: flex; justify-content: center; gap: 15px; margin: 40px 0; flex-wrap: wrap; }
+
+        /* Pirâmide */
+        .piramide { font-family: 'Courier New', monospace; font-size: 1.1rem; line-height: 1.5; letter-spacing: 4px; margin: 15px 0; min-height: 100px; }
+        .negativo { color: var(--danger); font-weight: bold; }
+        .regente { margin-top: 10px; font-weight: bold; color: var(--accent); }
+
+        /* Modal */
+        .modal { display:none; position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index: 1000; }
+        .modal-content { background: var(--card-bg); margin: 5% auto; padding: 30px; width: 80%; max-width: 700px; border-radius: 15px; position: relative; border: 1px solid var(--accent); max-height: 80vh; overflow-y: auto; }
+        .close { position: absolute; right: 20px; top: 15px; cursor: pointer; font-size: 24px; color: var(--danger); }
+
+        @media (max-width: 850px) { .grid-pessoa { grid-template-columns: 1fr; } }
+
+
+
+/* Isso impede que o texto vá "encurtando" a cada bloco */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px; /* Reduzi um pouco para dar mais espaço */
+    background: white;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.08);
+    display: block;
+    overflow: hidden; /* Garante que nada saia para fora */
 }
 
-.bloco{
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  margin-bottom:40px;
+.bloco {
+    margin-top: 30px;
+    padding: 0; /* REMOVA o padding daqui se houver */
+    width: 100%; /* Força largura total */
+    display: block;
+    clear: both;
 }
 
-.card{
-  background:#111936;
-  padding:20px;
-  border-radius:10px;
-  width:50%;
+/* Centralização da Pirâmide corrigida */
+.piramide-wrapper {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente no flex */
+    width: 100%;
+    margin: 30px 0;
 }
 
-input {
-  width: 600px;
-  font-size: 18px;
-  padding: 14px;
-  background-color: #fff; /* Cor cinza idêntica ao padrão do sistema */
-  border: 1px solid #ccc;    /* Borda suave para dar profundidade */
-  color: #000;               /* Cor do texto ao digitar */
-  display: block;            /* Garante que fiquem um abaixo do outro */
-  margin: 10px auto;         /* Centraliza e dá espaçamento */
+.piramide {
+    font-family: 'Courier New', Courier, monospace;
+    background: var(--bg);
+    padding: 20px;
+    border: 1px solid var(--dourado-claro);
+    font-size: 14px;
+    white-space: pre; 
+    text-align: center;
+    line-height: 1.2;
+    display: block; /* Mudamos de inline-block para block */
+    margin: 0 auto;
 }
 
-button{
-  padding:8px 12px;
-  margin:5px 5px 5px 0;
-  border:none;
-  border-radius:5px;
-  cursor:pointer;
-  background:#6B0202;
-  color:#FFFFFF;
-}
-
-button:hover{
-  background:#002091;
-}
-
-.abas{
-  margin-top:10px;
-}
-
-.piramide{
-  text-align:center;
-  font-size:18px;
-  line-height:1.6;
-}
-
-.negativo{
-  color:#ff3b5c;
-  font-weight:bold;
-}
-
-.regente{
-  margin-top:10px;
-  color:#00e0ff;
-  font-weight:bold;
-}
-
-.resultadoFinal{
-  margin-top:30px;
-  padding:10px;
-  background:#111936;
-  border-radius:10px;
-}
-
-/* MODAL */
-
-.modal{
-  display:none;
-  position:fixed;
-  left:0;
-  top:0;
-  width:100%;
-  height:100%;
-  background:rgba(0,0,0,0.8);
-}
-
-.modal-content{
-  background:#111936;
-  margin:5% auto;
-  padding:20px;
-  width:70%;
-  border-radius:10px;
-  position:relative;
-}
-
-.close{
-  position:absolute;
-  right:15px;
-  top:10px;
-  cursor:pointer;
-  font-size:20px;
-}
-
-.botoes-piramide{
-  margin-top:10px;
-  display:flex;
-  gap:10px;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
-.botoes-piramide button{
-  background:#6B0202;
-  border:1px solid #2e3c78;
-}
-
-.botoes-piramide button:hover{
-  background:#24327a;
-}
-
-#resultadoBebe{
-  margin-top:10px;
-  font-size:16px;
-}
-  /* ESPAÇO ENTRE PARÁGRAFOS */
-.secao div:not(.explicacao):not(.numero) br{
-  display:block;
-  margin-bottom:12px;
-}
-
-/* Isso vai esconder o segundo título caso ele venha dentro do bloco de texto */
-#modalTexto h3:nth-of-type(2), 
-#modalTexto h2:nth-of-type(2) {
-    display: none !important;
-}  
-/* Isso força os campos a aparecerem e ficarem empilhados no celular */
-@media (max-width: 768px) {
-    .container-inputs { /* Use a classe que envolve seus inputs */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    input, select {
-        display: block !important; /* Força a exibição */
-        width: 90% !important;     /* Ajusta a largura para o celular */
-            margin: 0 auto 25px auto !important;
-        background-color: #e5e7eb !important; /* Força o cinza no celular */
-        font-size: 16px;
-    }
-  
-  }
-</style>
+        
+    </style>
 </head>
-
 <body>
+
+<div class="header">
+    <h1>❤️ Harmonia Conjugal</h1>
+    <p>Portal Numerológico Premium</p>
+</div>
+
 <div class="container">
 
-                                         <h1>❤️ ❤️ ❤️          Harmonia para Relacionamento Conjugal         ❤️  ❤️  ❤️</h1>
+    <!-- PESSOA 1 -->
+    <div class="grid-pessoa">
+        <div class="card-input">
+            <h3>Pessoa 1</h3>
+            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome1" placeholder="Nome igual certidão"></div>
+            <div class="form-group"><label>Data de Nascimento</label><input type="date" id="data1"></div>
+            <div style="display: flex; gap: 5px; margin-bottom:15px;">
+                <select id="sexo1"><option value="">Sexo</option><option value="M">M</option><option value="F">F</option></select>
+                <select id="tipo1"><option value="">Tipo</option><option>A</option><option>B</option><option>AB</option><option>O</option></select>
+                <select id="rh1"><option value="">RH</option><option value="+">+</option><option value="-">-</option></select>
+            </div>
+            <div class="btn-group">
+                <button class="btn-nav" onclick="abrirModal('m1')">Motivação</button>
+                <button class="btn-nav" onclick="abrirModal('i1')">Influência</button>
+                <button class="btn-nav" onclick="abrirModal('p1')">Personalidade</button>
+                <button class="btn-nav" onclick="abrirModal('d1')">Caminho</button>
+                <button class="btn-nav" onclick="abrirModal('pr1')">Propósito</button>
+                <button class="btn-nav" onclick="abrirModal('h1')">Harmonia</button>
+                <button class="btn-nav" onclick="abrirModal('a1')">Ano Pessoal</button>
+            </div>
+        </div>
+        <div class="card-piramide">
+            <h3>Pirâmide 1</h3>
+            <div id="piramide1" class="piramide"></div>
+            <div id="regente1" class="regente"></div>
+        </div>
+    </div>
 
-<div class="bloco">
+    <!-- PESSOA 2 -->
+    <div class="grid-pessoa">
+        <div class="card-input">
+            <h3>Pessoa 2</h3>
+            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome2" placeholder="Nome igual certidão"></div>
+            <div class="form-group"><label>Data de Nascimento</label><input type="date" id="data2"></div>
+            <div style="display: flex; gap: 5px; margin-bottom:15px;">
+                <select id="sexo2"><option value="">Sexo</option><option value="M">M</option><option value="F">F</option></select>
+                <select id="tipo2"><option value="">Tipo</option><option>A</option><option>B</option><option>AB</option><option>O</option></select>
+                <select id="rh2"><option value="">RH</option><option value="+">+</option><option value="-">-</option></select>
+            </div>
+            <div class="btn-group">
+                <button class="btn-nav" onclick="abrirModal('m2')">Motivação</button>
+                <button class="btn-nav" onclick="abrirModal('i2')">Influência</button>
+                <button class="btn-nav" onclick="abrirModal('p2')">Personalidade</button>
+                <button class="btn-nav" onclick="abrirModal('d2')">Caminho</button>
+                <button class="btn-nav" onclick="abrirModal('pr2')">Propósito</button>
+                <button class="btn-nav" onclick="abrirModal('h2')">Harmonia</button>
+                <button class="btn-nav" onclick="abrirModal('a2')">Ano Pessoal</button>
+            </div>
+        </div>
+        <div class="card-piramide">
+            <h3>Pirâmide 2</h3>
+            <div id="piramide2" class="piramide"></div>
+            <div id="regente2" class="regente"></div>
+        </div>
+    </div>
 
-<!-- PESSOA 1 -->
-<div class="card">
-<h3>Pessoa 1</h3>
- Nome completo (igual certidão)
-<input type="text" id="nome1" placeholder="">
- data de nascimento
-<input type="date" id="data1">
- <select id="sexo1">
-<option value="">Sexo</option>
- <option value="M">Masculino</option>
-<option value="F">Feminino</option>
-</select>
-                    
- <select id="tipo1">
-<option value="">Tipo Sanguíneo</option>
-<option>A</option>
- <option>B</option>
-<option>AB</option>
-<option>O</option>
-   </select>
+    <!-- BOTÕES DE AÇÃO CENTRAL -->
+    <div class="main-actions">
+        <button class="btn-action" onclick="gerar()">⚡ CALCULAR TUDO</button>
+        <button class="btn-action" style="background:var(--secondary)" onclick="mostrarSinastria()">❤️ VER COMPATIBILIDADE</button>
+        <button class="btn-action" style="background:var(--success)" onclick="abrirPremiumSinastria()">💎 RELATÓRIO PREMIUM PDF</button>
+    </div>
 
-<select id="rh1">
-<option value="">Fator RH</option>
-<option value="+">+</option>
-<option value="-">-</option>
-</select>
+    <div id="compat" style="text-align:center; margin-bottom:40px; font-weight:bold;"></div>
 
-<div class="abas">
-<button onclick="abrirModal('m1')">Motivação</button>
-<button onclick="abrirModal('i1')">Influencia</button>
-<button onclick="abrirModal('p1')">Personalidade</button>
-<button onclick="abrirModal('d1')">Caminho</button>
-<button onclick="abrirModal('pr1')">Propósito</button>
-<button onclick="abrirModal('h1')">Harmonia</button>
- <button onclick="abrirModal('a1')">Ano Pessoal</button> 
-</div>
-
-</div>
-
-<!-- PIRÂMIDE 1 -->
-<div class="card">
-<h3>Pirâmide</h3>
-<div id="piramide1" class="piramide"></div>
-<div id="regente1" class="regente"></div>
-</div>
-
-</div>
-
-<div class="bloco">
-
-<!-- PESSOA 2 -->
-<div class="card">
-<h3>Pessoa 2</h3>
-Nome completo (igual certidão)
-<input type="text" id="nome2">
-data de nascimento  
-<input type="date" id="data2">  
-<select id="sexo2">
-<option value="">Sexo</option>
-<option value="M">Masculino</option>
-<option value="F">Feminino</option>
-</select>
-
-
-<select id="tipo2">
-<option value="">Tipo Sanguíneo</option>
-<option>A</option>
-<option>B</option>
-<option>AB</option>
-<option>O</option>
-</select>
-
-<select id="rh2">
-<option value="">Fator RH</option>
-<option value="+">+</option>
-<option value="-">-</option>
-</select>
-
-<div class="abas">
-<button onclick="abrirModal('m2')">Motivação</button>
-<button onclick="abrirModal('i2')">Influencia</button>
-<button onclick="abrirModal('p2')">Personalidade</button>
-<button onclick="abrirModal('d2')">Caminho</button>
-<button onclick="abrirModal('pr2')">Propósito</button>
-<button onclick="abrirModal('h2')">Harmonia</button>
-<button onclick="abrirModal('a2')">Ano Pessoal</button>  
-</div>
+    <!-- MAPA DO BEBÊ -->
+    <div class="grid-pessoa" style="border-color: var(--accent);">
+        <div class="card-input">
+            <h3>👶 Mapa do Bebê</h3>
+            <div class="form-group">
+                <label>Sugestão de Nome</label>
+                <input type="text" id="nomeBebe" placeholder="Digite o nome para análise">
+            </div>
+            <button class="btn-action" style="width:100%; margin-bottom:15px;" onclick="gerarBebe()">Analisar Nome do Bebê</button>
+            <div class="btn-group">
+                <button class="btn-nav" onclick="abrirModal('mB')">Motivação</button>
+                <button class="btn-nav" onclick="abrirModal('iB')">Influência</button>
+                <button class="btn-nav" onclick="abrirModal('pB')">Personalidade</button>
+            </div>
+            <div id="resultadoBebe" style="margin-top:15px; font-size:0.9rem;"></div>
+        </div>
+        <div class="card-piramide">
+            <h3>Pirâmide Bebê</h3>
+            <div id="piramideBebe" class="piramide"></div>
+            <div id="regenteBebe" class="regente"></div>
+        </div>
+    </div>
 
 </div>
-
-<!-- PIRÂMIDE 2 -->
-<div class="card">
-<h3>Pirâmide</h3>
-<div id="piramide2" class="piramide"></div>
-<div id="regente2" class="regente"></div>
-</div>
-
-</div>
-
-<button onclick="gerar()">click aqui para ver o calculo</button>
-<button onclick="mostrarSinastria()">❤️ Ver a Compatibilidade do casal</button>
-<button onclick="abrirPremiumSinastria()">  Liberar o relatório e Baixar pdf premium
-
-</button>  
-
-<div class="resultadoFinal" id="compat"></div>
-
-<!-- MAPA DO BEBÊ -->
-<div class="bloco">
-
-  <!-- BLOCO ESQUERDO BEBÊ -->
-  <div class="card">
-    <h3>Mapa do Bebê</h3>
-
-    <input type="text" id="nomeBebe" placeholder="Nome do bebê">
-
-    <button onclick="gerarBebe()">Gerar Mapa do Bebê</button>
-
- <div class="abas">
-  <button onclick="abrirModal('mB')">Motivação</button>
-  <button onclick="abrirModal('iB')">Influencia</button>
-  <button onclick="abrirModal('pB')">Personalidade</button>
-</div>
-
-<div id="resultadoBebe"></div>
-
-  </div>
-
-  <!-- PIRÂMIDE BEBÊ -->
-  <div class="card">
-    <h3>Pirâmide</h3>
-    <div id="piramideBebe" class="piramide"></div>
-    <div id="regenteBebe" class="regente"></div>
-  </div>
-
-</div>
-
-</div>
-
-
 
 <!-- MODAL -->
 <div id="modal" class="modal">
-<div class="modal-content">
-<span class="close" onclick="fecharModal()">X</span>
-<div id="modalTexto"></div>
-</div>
-</div>
+    <div class="modal-content">
+        <span class="close" onclick="fecharModal()">&times;</span>
+        <div id="modalTexto" style="color:white; line-height:1.8;"></div>
+    </div>
 
-<script src="textosharmoniaconjugal.js"></script>
+<script src="textos.js"></script>
 
 <script>
 
@@ -340,7 +244,7 @@ const tabela = {
   F:8, P:8
 };
 
-const vogais = ["A","E","I","O","U"];
+const vogais = ["A","E","I","O", "Y", "U"];
 
 // =====================
 // ACENTOS
@@ -357,7 +261,7 @@ function calcularValorComAcentos(letra){
     if(c === "\u0301") soma += 2;
     else if(c === "\u0302") soma += 7;
     else if(c === "\u0303") soma += 3;
-    else if(c === "\u0327") soma += 6;
+    else if(c === "\u0327") soma += 3;
     else if(c === "\u0300") mult *= 2;
     else if(c === "\u0308") mult *= 2;
   }
@@ -812,118 +716,405 @@ function gerarBebe(){
 
 
 
-// --- CONFIGURAÇÃO DE SEGURANÇA E TRAVA (HARMÔNIA CONJUGAL) ---
-const urlParams = new URLSearchParams(window.location.search);
-const userEmail = urlParams.get('user'); 
-const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
+function abrirPremiumSinastria(){
 
-// Bloqueio de entrada forçada
-if (!userEmail) {
-    alert("Acesso não autorizado. Por favor, valide seu código no portal.");
-    window.location.href = "index.html";
-}
-
-async function abrirPremiumSinastria() {
   const nome1 = document.getElementById("nome1").value;
   const nome2 = document.getElementById("nome2").value;
+  const data1 = document.getElementById("data1").value;
+  const data2 = document.getElementById("data2").value;
 
   if(!dados1 || !dados2){
     alert("Calcule a sinastria primeiro.");
     return;
   }
+const pacote = {
 
-  // 1. Avisa o usuário
-  alert("O Relatório Premium de Sinastria será aberto. Este acesso é único.");
+  pessoa1:{
+    nome: nome1,
+    data: data1,
 
-  // 2. Trava o acesso no Firebase antes de abrir o PDF
-  try {
-      await fetch(`${DB_URL}vendas/${userEmail}.json`, {
-          method: 'PATCH',
-          body: JSON.stringify({ status: 'usado' }),
-          headers: { 'Content-Type': 'application/json' }
-      });
-  } catch (e) {
-      console.error("Erro na trava de segurança:", e);
+    piramide: document.getElementById("piramide1").innerHTML,
+    regente: dados1.regente,
+   
+
+    motivacao: dados1.motivacao,
+    influencia: dados1.influencia,
+    personalidade: dados1.personalidade,
+    caminho: dados1.caminho,
+    proposito: dados1.proposito,
+    harmonia: dados1.harmonia,
+    ano: dados1.anoPessoal,
+
+    textos:{
+      motivacao: textos.motivacao[dados1.motivacao],
+      influencia: textos.influencia[dados1.influencia],
+      personalidade: textos.personalidade[dados1.personalidade],
+      caminho: textos.CaminhodeVida[dados1.caminho],
+      proposito: textos.proposito[dados1.proposito],
+      harmonia: textos.harmonia[dados1.harmonia],
+      ano: textos.anoPessoal[dados1.anoPessoal],
+      regente: textos.regente[dados1.regente],
+ seqNegativa: dados1.sequenciaNegativa
+  ? dados1.sequenciaNegativa
+      .map(n => textos.sequenciaNegativa[n])
+      .join("<br><br>")
+  : "",
+    }
+  },
+
+  pessoa2:{
+    nome: nome2,
+    data: data2,
+
+    piramide: document.getElementById("piramide2").innerHTML,
+    regente: dados2.regente,
+    
+
+    motivacao: dados2.motivacao,
+    influencia: dados2.influencia,
+    personalidade: dados2.personalidade,
+    caminho: dados2.caminho,
+    proposito: dados2.proposito,
+    harmonia: dados2.harmonia,
+    ano: dados2.anoPessoal,
+
+    textos:{
+      motivacao: textos.motivacao[dados2.motivacao],
+      influencia: textos.influencia[dados2.influencia],
+      personalidade: textos.personalidade[dados2.personalidade],
+      caminho: textos.CaminhodeVida[dados2.caminho],
+      proposito: textos.proposito[dados2.proposito],
+      harmonia: textos.harmonia[dados2.harmonia],
+      ano: textos.anoPessoal[dados2.anoPessoal],
+      regente: textos.regente[dados2.regente],
+      seqNegativa: dados2.sequenciaNegativa
+  ? dados2.sequenciaNegativa
+      .map(n => textos.sequenciaNegativa[n])
+      .join("<br><br>")
+  : "",
+    }
+  },
+
+  sinastria:{
+    numero: chaveSinastria(dados1.proposito, dados2.proposito),
+    texto: textos.sinastria[
+      chaveSinastria(dados1.proposito, dados2.proposito)
+    ]
+  },
+
+  biologico: compatibilidadeRH(),
+
+bebe: dadosBebe ? {
+  nome: document.getElementById("nomeBebe").value,
+
+  motivacao: dadosBebe.motivacao,
+  influencia: dadosBebe.influencia,
+  personalidade: dadosBebe.personalidade,
+  regente: dadosBebe.regente,
+
+  piramide: document.getElementById("piramideBebe").innerHTML,
+
+  textos:{
+    motivacao: textos.motivacao[dadosBebe.motivacao],
+    influencia: textos.influencia[dadosBebe.influencia],
+    personalidade: textos.personalidade[dadosBebe.personalidade],
+    regente: textos.regente[dadosBebe.regente]
   }
 
-  // 3. Monta o pacote de dados (Mantive sua lógica original)
-  const pacote = {
-    pessoa1: {
-      nome: nome1,
-      data: document.getElementById("data1").value,
-      piramide: document.getElementById("piramide1").innerHTML,
-      regente: dados1.regente,
-      motivacao: dados1.motivacao,
-      influencia: dados1.influencia,
-      personalidade: dados1.personalidade,
-      caminho: dados1.caminho,
-      proposito: dados1.proposito,
-      harmonia: dados1.harmonia,
-      ano: dados1.anoPessoal,
-      textos: {
-        motivacao: textos.motivacao[dados1.motivacao],
-        influencia: textos.influencia[dados1.influencia],
-        personalidade: textos.personalidade[dados1.personalidade],
-        caminho: textos.CaminhodeVida[dados1.caminho],
-        proposito: textos.proposito[dados1.proposito],
-        harmonia: textos.harmonia[dados1.harmonia],
-        ano: textos.anoPessoal[dados1.anoPessoal],
-        regente: textos.regente[dados1.regente],
-        seqNegativa: dados1.sequenciaNegativa ? dados1.sequenciaNegativa.map(n => textos.sequenciaNegativa[n]).join("<br><br>") : "",
-      }
-    },
-    pessoa2: {
-      nome: nome2,
-      data: document.getElementById("data2").value,
-      piramide: document.getElementById("piramide2").innerHTML,
-      regente: dados2.regente,
-      motivacao: dados2.motivacao,
-      influencia: dados2.influencia,
-      personalidade: dados2.personalidade,
-      caminho: dados2.caminho,
-      proposito: dados2.proposito,
-      harmonia: dados2.harmonia,
-      ano: dados2.anoPessoal,
-      textos: {
-        motivacao: textos.motivacao[dados2.motivacao],
-        influencia: textos.influencia[dados2.influencia],
-        personalidade: textos.personalidade[dados2.personalidade],
-        caminho: textos.CaminhodeVida[dados2.caminho],
-        proposito: textos.proposito[dados2.proposito],
-        harmonia: textos.harmonia[dados2.harmonia],
-        ano: textos.anoPessoal[dados2.anoPessoal],
-        regente: textos.regente[dados2.regente],
-        seqNegativa: dados2.sequenciaNegativa ? dados2.sequenciaNegativa.map(n => textos.sequenciaNegativa[n]).join("<br><br>") : "",
-      }
-    },
-    sinastria: {
-      numero: chaveSinastria(dados1.proposito, dados2.proposito),
-      texto: textos.sinastria[chaveSinastria(dados1.proposito, dados2.proposito)]
-    },
-    biologico: compatibilidadeRH(),
-    bebe: dadosBebe ? {
-      nome: document.getElementById("nomeBebe").value,
-      motivacao: dadosBebe.motivacao,
-      influencia: dadosBebe.influencia,
-      personalidade: dadosBebe.personalidade,
-      regente: dadosBebe.regente,
-      piramide: document.getElementById("piramideBebe").innerHTML,
-      textos: {
-        motivacao: textos.motivacao[dadosBebe.motivacao],
-        influencia: textos.influencia[dadosBebe.influencia],
-        personalidade: textos.personalidade[dadosBebe.personalidade],
-        regente: textos.regente[dadosBebe.regente]
-      }
-    } : null
-  };
+} : null
 
-  localStorage.setItem("relatorioSinastria", JSON.stringify(pacote));
+};
 
-  // 4. Abre o prêmio e volta para o index
-  window.open("premiumharmonia.html", "_blank");
-  setTimeout(() => { window.location.href = "index.html"; }, 3000);
+
+// 2. DEPOIS: COMEÇA A MONTAR O HTML DO RELATÓRIO
+let html = `  
+
+
+
+<div id="status-acesso"class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
+    <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 5px;">Calculando seu tempo de acesso...</div>
+    <div id="timer" style="font-family: 'Courier New', monospace; font-size: 1.8rem; font-weight: bold; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);">00:00:00:00</div>
+    <div id="msg-trava" style="font-size: 0.75rem; opacity: 0.7; margin-top: 5px;"></div>
+<div id="aviso-expiracao-total" class="no-print" style="font-size: 0.75rem; color: #ffbc00; margin-top: 10px; opacity: 0.9;">   Verificando validade do acesso...</div>
+    
+</div>
+
+
+
+<button id="btn-pdf-premium" class="btn-pdf no-print" onclick="window.print(); registrarDownloadRealizado();" disabled style="filter: grayscale(100%); opacity: 0.5; cursor: not-allowed;">
+    📥 BAIXAR SEU PDF PREMIUM
+</button>
+
+
+<div class="no-print" style="position: fixed; top: 10px; left: 10px; z-index: 9999; text-align: center;">
+    <button onclick="window.location.href='index.html'" style="background: #d62600; color: white; border: 2px solid white; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; font-weight: bold; font-size: 18px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">X</button>
+    <div style="color: white; font-size: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">⬅️ VOLTAR AO PORTAL</div>
+</div>`;
+
+  
+
+localStorage.setItem(
+  "relatorioSinastria",
+  JSON.stringify(pacote)
+);
+
+
+
+  window.open(
+    "https://hemricciinstintosuperior-rcci.github.io/Harmonia_conjugal/premiumsinastria.html",
+    "_blank"
+  );
 }
 </script>
+  <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
+ // 🔒 BLOQUEIO CÓPIA
+// =======================
+document.oncontextmenu=()=>false;
+document.onselectstart=()=>false; 
+
+</script>
+
+
+<script>
+// --- CONFIGURAÇÃO DE SEGURANÇA AVANÇADA INSTINTO SUPERIOR ---
+const urlParams = new URLSearchParams(window.location.search);
+const userEmail = urlParams.get('user'); 
+const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
+const sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);    
+
+let dadosGlobais = null; // Vamos salvar tudo aqui
+
+// 1. VALIDAÇÃO DE USUÁRIO E REDIRECIONAMENTO LIMPO
+if (!userEmail) {
+    alert("Acesso não autorizado.");
+    window.location.href = "index.html"; // Volta para a raiz se não houver e-mail
+}
+
+const emailLimpo = userEmail.replace(/\./g, '_');
+
+async function inicializarSeguranca() {
+    try {
+        const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
+        const dados = await res.json();
+
+        // 1. Verifica se o e-mail existe no banco
+        if (!dados) {
+            alert("Acesso não encontrado.");
+            window.location.href = "index.html";
+            return;
+        }
+
+        // 2. Verifica se o prazo de 30 dias venceu
+        if (dados.data_inicio) {
+            const dataInicio = new Date(dados.data_inicio);
+            const agora = new Date();
+            const diffTempo = Math.abs(agora - dataInicio);
+            const diffDiasTotal = Math.ceil(diffTempo / (1000 * 60 * 60 * 24));
+
+            if (diffDiasTotal > 30) {
+                alert("Seu período de acesso de 30 dias expirou.");
+                window.location.href = "index.html";
+                return;
+            }
+        }
+
+        // 3. Verifica se o status é ativo
+        if (dados.status === 'usado' || dados.status !== 'ativo') {
+            alert("Este acesso expirou ou está inativo.");
+            window.location.href = "index.html";
+            return;
+        }
+
+        // ---------------------------------------------------------
+        // AGORA SIM: Se passou em todos os testes acima, ativa a trava de sessão
+        // ---------------------------------------------------------
+        
+        // Registra que VOCÊ é o dono da sessão agora
+        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+            method: 'PATCH',
+            body: JSON.stringify({ sessao_ativa: sessionID })
+        });
+
+        // Monitora se alguém entrar depois de você
+        setInterval(async () => {
+            const r = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
+            const s = await r.json();
+            if (s !== sessionID && s !== null) {
+                alert("Este acesso foi aberto em outro dispositivo ou aba.");
+                window.location.href = "index.html";
+            }
+        }, 5000);
+        
+        // ---------------------------------------------------------
+
+        // Continua com o carregamento normal do seu relatório
+        dadosGlobais = dados; 
+        const dataReferencia = new Date(dados.data_inicio);
+        
+        const dataExpiracaoPDF = new Date(dataReferencia);
+        dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
+
+        iniciarTimer(dataExpiracaoPDF);
+        verificarLiberacaoPDF(dados);
+
+    } catch (e) {
+        console.error("Erro na comunicação com Firebase:", e);
+    }
+}
+
+function iniciarTimer(dataAlvo) {
+    const intervalo = setInterval(() => {
+        const timerElement = document.getElementById("timer");
+        const labelElement = document.getElementById("label-tempo");
+
+        if (!timerElement || !labelElement) return;
+
+        const agora = new Date().getTime();
+        const distancia = dataAlvo - agora;
+
+if (distancia < 0) {
+    clearInterval(intervalo);
+    timerElement.innerHTML = "LIBERADO!";
+    labelElement.innerHTML = "Seu estudo já pode ser baixado!";
+    verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI (Passando o objeto todo)
+    return;
+}
+
+        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+        timerElement.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+        labelElement.innerHTML = "Seu PDF Premium será liberado em:";
+    }, 1000);
+}
+
+function verificarLiberacaoPDF(dados) {
+    if (!dados || !dados.data_inicio) return;
+    
+    const btnPDF = document.getElementById("btn-pdf-premium");
+    const msgTrava = document.getElementById("msg-trava");
+    const labelTempo = document.getElementById("label-tempo");
+
+    // 1. Verificação de Expiração Total (30 dias)
+    const dataRef = new Date(dados.data_inicio);
+    const expiraEm = 30 - Math.floor((new Date() - dataRef) / (1000 * 60 * 60 * 24));
+    const avisoTotal = document.getElementById("aviso-expiracao-total");
+    if (avisoTotal) {
+        avisoTotal.innerHTML = `Acesso ao portal disponível por mais ${expiraEm} dias.`;
+    }
+
+    // 2. Trava de Download Único (Se já baixou, bloqueia tudo)
+    if (dados.pdf_baixado === true) {
+        if (btnPDF) {
+            btnPDF.disabled = true;
+            btnPDF.style.filter = "grayscale(100%)";
+            btnPDF.style.backgroundColor = "#333"; // Cor de desativado
+            btnPDF.style.cursor = "not-allowed";
+        }
+        if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado anteriormente.";
+        if (labelTempo) labelTempo.innerHTML = "ACESSO AO PDF ENCERRADO";
+        return; 
+    }
+
+    // 3. Regra dos 7 Dias (Garantia)
+    const agora = new Date();
+    const diffDias = (agora - dataRef) / (1000 * 60 * 60 * 24);
+
+    if (diffDias >= 7) {
+        if (btnPDF) {
+            btnPDF.disabled = false;
+            btnPDF.style.filter = "none";
+            btnPDF.style.opacity = "1";
+            btnPDF.style.cursor = "pointer";
+            btnPDF.style.backgroundColor = "#D62600"; // Cor Dourada/Premium (ou red se preferir)
+            btnPDF.style.color = "#fff";
+        }
+        if (msgTrava) msgTrava.innerHTML = "✅ Seu estudo Premium está pronto para download!";
+        if (labelTempo) labelTempo.innerHTML = "LIBERADO!";
+    } else {
+        // Ainda no período de 7 dias
+        if (btnPDF) {
+            btnPDF.disabled = true;
+            btnPDF.style.filter = "grayscale(100%)";
+        }
+        if (msgTrava) msgTrava.innerHTML = "🔒 PDF disponível após o período de garantia.";
+    }
+}
+
+
+
+async function registrarDownloadRealizado() {
+    try {
+        // Envia para o Firebase que o PDF foi baixado
+        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+            method: 'PATCH',
+            body: JSON.stringify({ pdf_baixado: true })
+        });
+        
+        // Bloqueia o botão na tela imediatamente
+        const btnPDF = document.getElementById("btn-pdf-premium");
+        const msgTrava = document.getElementById("msg-trava");
+        if (btnPDF) {
+            btnPDF.disabled = true;
+            btnPDF.style.filter = "grayscale(100%)";
+            btnPDF.style.opacity = "0.5";
+        }
+        if (msgTrava) msgTrava.innerHTML = "⚠️ Download registrado. Acesso ao PDF encerrado.";
+        
+    } catch (e) {
+        console.error("Erro ao registrar download:", e);
+    }
+}
+    
+async function encerrarSessao() {
+    // Limpa a trava no Firebase antes de sair
+    await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+        method: 'PATCH',
+        body: JSON.stringify({ sessao_ativa: null })
+    });
+    // Manda de volta para o login
+    window.location.href = "index.html";
+}    
+
+function exibirRelatorio(htmlConteudo) {
+    const areaResultado = document.getElementById("resultado");
+    if (areaResultado) {
+        areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
+        verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI
+    }
+}
+
+window.onload = function() {
+    inicializarSeguranca();
+
+};
+</script>
+
+
+<script>
+document.getElementById('btnVideo').addEventListener('click', function() {
+    const wrapper = document.getElementById('wrapperVideo');
+    const video = document.getElementById('videoExplicativo');
+    const btn = this;
+
+    if (wrapper.style.display === 'none') {
+        wrapper.style.display = 'block';
+        btn.classList.add('ativo');
+        btn.querySelector('span').innerText = '❌ Fechar Vídeo';
+    } else {
+        wrapper.style.display = 'none';
+        btn.classList.remove('ativo');
+        btn.querySelector('span').innerText = '🎥 Assistir Vídeo Introdutório';
+        video.pause(); // Pausa o vídeo automaticamente ao fechar para não ficar saindo som
+    }
+});
+</script>
+
 
 </body>
-</html>
+</html>  
