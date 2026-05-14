@@ -2157,7 +2157,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
                     <h4 style="margin: 0; color: #827108; text-transform: uppercase;">Perfil de Ação Atual: ${dominanteMomento}</h4>
                     <div style="margin: 5px 0 0 0; font-size: 14px; color: #555;">${aplicarFiltroTexto(descricoesPerfilMomento[dominanteMomento])}</div>
                 </div>  
-                 ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''} 
+                 ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO NO PDF</div>' : ''} 
             </div>
 
             <div style="margin: 25px 0; background: #fff; padding: 20px; border-radius: 8px;">`;
@@ -2210,7 +2210,7 @@ h += `</div>`;
                         
                         ${travado ? '<div class="conteudo-travado">' : '<div>'}
                             <div class="texto-res">${aplicarFiltroTexto(textoIndiv)}</div>
-                        </div> ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''} 
+                        </div> ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO NO PDF</div>' : ''} 
                     </div>`; // FECHA O BLOCO DO PLANO (margin-bottom: 20px)
             }
         }
@@ -2272,7 +2272,7 @@ let vTransitoCalculado = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValo
                     <div class="texto-res">
                         ${aplicarFiltroTexto(window.TextosTransito ? window.TextosTransito[vTransitoCalculado] : "")}
                     </div> 
-                </div> ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA</div>' : ''} 
+                </div> ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO NO PDF</div>' : ''} 
             </div></div>
         </div>`; // FECHA A SEÇÃO DE TRÂNSITO
 
@@ -5387,7 +5387,7 @@ html += `
                     ${aplicarFiltroTexto(textos[sec][i][res[sec][i]])}
                 </div></div>
                         <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
+            🔒 CONTEÚDO LIBERADO NO PDF
 
          </div>
                   <hr style="border:0; border-top:1px solid #ffffff; margin-top: 15px;">
@@ -5596,7 +5596,7 @@ html += `
         ${cronogramaProximoHTML}
         </div>
         <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
+            🔒 CONTEÚDO LIBERADO NO PDF
         
          </div>
          </div>
@@ -5834,7 +5834,7 @@ htmlPiramide += `
         </div>
 
         <div class="aviso-trava" style="margin-top: 20px; font-weight: bold; color: #666;">
-            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
+            🔒 CONTEÚDO LIBERADO NO PDF
         </div>
     </div>`;
     });
@@ -5873,7 +5873,7 @@ if (listaEspeciais.length > 0) {
                           </div>
          </div>
                          <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
+            🔒 CONTEÚDO LIBERADO NO PDF
         
          </div>
             </div>`;
@@ -5916,7 +5916,7 @@ if (listaFin.length > 0) {
                     </div>
                     </div>
                           <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
+            🔒 CONTEÚDO LIBERADO NO PDF
          
                            
          
@@ -5972,7 +5972,7 @@ while (idadeAcumulada < 100) {
                     ${aplicarFiltroTexto(textos.Potencias[p] || "Vibração em análise.")}
                          </div>     </div> 
                   <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO APÓS O PERÍODO DE GARANTIA
+            🔒 CONTEÚDO LIBERADO NO PDF
          </div>
       
         
