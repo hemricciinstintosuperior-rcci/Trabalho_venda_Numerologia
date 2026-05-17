@@ -387,12 +387,20 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
 
 @media print {
-  /* Substitua pelos IDs (#) ou Classes (.) reais do seu projeto */
-  .btn-voltar, 
-  #botao-voltar,
-  .card-liberado,
-  .container-aviso-download {
+  /* Força tudo que tem a classe .no-print a sumir completamente */
+       #status-acesso, 
+    #label-tempo, 
+    #timer,  
+  .no-print, 
+  div.no-print, 
+  [class*="no-print"] {
     display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    opacity: 0 !important;
+    position: absolute !important; /* Garante que não ocupe espaço físico na página */
   }
 }
     
