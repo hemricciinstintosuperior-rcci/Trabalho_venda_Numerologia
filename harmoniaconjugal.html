@@ -415,6 +415,39 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         padding: 0 !important;
     }
 }      
+
+
+.conteudo-texto h2 {
+  font-size: 24px;
+  color: #1a2530; /* Um tom escuro elegante */
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.linha-decorativa {
+  width: 60px;
+  height: 3px;
+  background-color: #d4af37; /* Dourado Premium */
+  margin-bottom: 25px;
+}
+
+.conteudo-texto p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 15px;
+  text-align: justify; /* Deixa as laterais alinhadas feito livro */
+}
+
+.box-destaque {
+  border-left: 4px solid #d4af37;
+  background-color: #f9f6f0;
+  padding: 15px;
+  margin: 20px 0;
+  font-style: italic;
+}
+    
     
 </style>
 </head>
@@ -431,7 +464,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         <i class="seta">▼</i>
     </button>
 
-    <div id="wrapperVideo" class="video-wrapper" style="display: none; margin-top: 10px;">
+    <div id="wrapperVideo" class="video-wrapper" style="display: none; margin-top: 5px;">
         <video id="videoExplicativo" width="100%" controls poster="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png">
             <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/introestudo.mp4" type="video/mp4">
             Seu navegador não suporta vídeos.
@@ -898,6 +931,57 @@ function abrirPremiumSinastria(){
       </div>
   </div>
   `;
+
+
+tituloBonito = "A Engenharia de Acoplamento Vibracional"; 
+
+  relatorioHTML += `
+<div class="page evitar-corte" style="padding: 40px; background: #fff;">
+    
+    <div class="separador-luxo" style="margin-bottom: 30px;">
+        <div class="caixa-interna">
+            <h2 style="font-family: 'Cinzel', serif; text-transform: uppercase; letter-spacing: 2px;">
+                ${tituloBonito}
+            </h2>
+        </div>
+    </div>
+
+    <div class="secao-card" style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 10px;">
+        
+        <div style="line-height: 1.7; text-align: justify; color: #333; font-size: 16.5px; font-family: 'Segoe UI', sans-serif;">
+            
+            <p style="margin-bottom: 15px;">
+                No universo do <b>Instinto Superior</b>, um relacionamento afetivo não é visto como uma mera obra do acaso ou uma união puramente sentimental. Sob a ótica da física vibracional e da numerologia moderna, a união de duas pessoas representa o <b>acoplamento de duas matrizes matemáticas complexas</b>. Quando dois mapas se cruzam, suas frequências individuais colapsam, gerando uma terceira energia: a identidade do casal.
+            </p>
+
+            <p style="margin-bottom: 15px;">
+                A numerologia aplicada à sinastria baseia-se na <b>análise espectrográfica combinada</b>. Assim como na engenharia mecânica onde engrenagens precisam de calibração para funcionar sem atrito, na engenharia humana as frequências do Nome e da Data de Nascimento de ambos os parceiros interagem constantemente, determinando os pontos de fluidez natural e os nós de tensão geométrica do relacionamento.
+            </p>
+
+            <p style="margin-bottom: 15px;">
+                Diferente de abordagens tradicionais que buscam definir "compatibilidade" de forma superficial, este tratado técnico analisa a <b>ressonância de fase</b>. Investigamos como o software operacional de um indivíduo afeta o hardware interno do outro. Não existem mapas incompatíveis, existem parceiros que operam às cegas, sem compreender a arquitetura matemática que rege a dinâmica da sua convivência.
+            </p>
+
+            <p style="margin-bottom: 15px;">
+                Este estudo é o manual definitivo de alta performance para o casal. Através do cruzamento dos pilares essenciais — como a Motivação Combinada e o Caminho de Vida Cruzado —, vocês terão acesso a um diagnóstico factual sobre as tendências de comportamento, desafios de comunicação e portais de prosperidade que se abrem quando ambos operam em alinhamento.
+            </p>
+
+            <p style="margin-bottom: 0;">
+                Compreender a sinastria através do <b>Instinto Superior</b> é transitar do amor instintivo e reativo para o amor soberano e consciente. Ao decodificar os códigos ocultos da sua união, o casal deixa de ser refém de discussões cíclicas e incompatibilidades invisíveis para assumir a maestria e a direção estratégica da sua jornada em conjunto.
+            </p>
+
+        </div>
+    </div>
+
+    <div style="margin-top: 40px; text-align: center; border-top: 1px solid #e6d5a8; padding-top: 15px;">
+        <p style="font-family: 'Cinzel', serif; font-size: 13px; color: #827108; letter-spacing: 3px; font-weight: bold;">
+            HARMONIA CONJUGAL • PROTOCOLO DE SINSTRIA DE LUXO
+        </p>
+    </div>
+</div>
+`;
+
+    
 
   function extrairETratarTexto(textoBruto, nomeParceiro) {
     if (!textoBruto) return "";
