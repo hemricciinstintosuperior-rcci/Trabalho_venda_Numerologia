@@ -388,9 +388,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
 @media print {
   /* Força tudo que tem a classe .no-print a sumir completamente */
-       #status-acesso, 
-    #label-tempo, 
-    #timer,  
+
   .no-print, 
   div.no-print, 
   [class*="no-print"] {
@@ -403,6 +401,20 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
     position: absolute !important; /* Garante que não ocupe espaço físico na página */
   }
 }
+
+  @media print {
+    /* Esconde o container do cronômetro e mensagens de trava pelo ID */
+    #status-acesso, 
+    #label-tempo, 
+    #timer, 
+    #msg-trava {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}      
     
 </style>
 </head>
