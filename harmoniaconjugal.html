@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harmonia Conjugal | Instinto Superior</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
 
-
-<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -23,124 +21,371 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
 
+<style>
+    /* =======================================================
+       1. VARIÁVEIS E CONFIGURAÇÃO GLOBAL DO SITE (TELA)
+       ======================================================= */
+    :root {
+        --primary: #d49a9a; 
+        --secondary: #6B0202;
+        --bg: #0a0f24;
+        --card-bg: #121833;
+        --text: #ffffff;
+        --accent: #ffd700; 
+        --danger: #ff3b5c;
+        --success: #28a745;
+    }
 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); padding-bottom: 50px; }
     
-    <style>
+    .header { text-align: center; padding: 50px 20px; background: linear-gradient(180deg, #1d182b 0%, var(--bg) 100%); border-bottom: 1px solid rgba(212, 154, 154, 0.2); }
+    .header h1 { font-family: 'Cinzel', serif; color: var(--primary); font-size: 2.5rem; letter-spacing: 2px; text-shadow: 0 0 15px rgba(212, 154, 154, 0.3); }
+    .header p { font-size: 1rem; color: #aaa; letter-spacing: 4px; text-transform: uppercase; margin-top: 5px; }
 
-body{
-  font-family: Arial;
-  background:#111936;
-  color:#fff;
-  padding:20px;
-}
+    .container { max-width: 1100px; margin: auto; padding: 20px; }
+
+    .page {
+        width: calc(100% - 2mm);
+        margin: 0 auto;
+        padding: 40px 2mm 20px 2mm; 
+    }
+    
+    /* Grid de Inputs e Pirâmide */
+    .grid-pessoa {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 40px;
+        background: rgba(255, 255, 255, 0.02);
+        padding: 30px;
+        border-radius: 20px;
+        border: 1px solid rgba(212, 154, 154, 0.15);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .card-input, .card-piramide { background: var(--card-bg); padding: 30px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); }
+    .card-piramide { text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+    h3 { margin-bottom: 25px; font-family: 'Cinzel', serif; color: var(--primary); border-bottom: 1px solid rgba(212, 154, 154, 0.3); padding-bottom: 10px; font-size: 1.3rem; letter-spacing: 1px; }
+    .form-group { margin-bottom: 20px; text-align: left; }
+    label { display: block; font-size: 0.85rem; margin-bottom: 8px; color: #ddd; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+
+    input, select {
+        width: 100%; padding: 14px; border-radius: 8px; border: 1px solid #2e3c78;
+        background: #171e3d; color: white; font-size: 1rem; transition: 0.3s;
+    }
+    input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 10px rgba(212, 154, 154, 0.4); }
+
+    .btn-group { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; margin-top: 20px; }
+    button { padding: 12px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.3s; font-size: 0.8rem; text-transform: uppercase; }
+    .btn-nav { background: #242d54; color: white; border: 1px solid rgba(212, 154, 154, 0.2); }
+    .btn-nav:hover { background: var(--primary); color: #000; }
+    
+    .btn-action { background: linear-gradient(135deg, var(--secondary) 0%, #a81313 100%); color: white; font-size: 1rem; padding: 15px 35px; border-radius: 50px; font-family: 'Cinzel', serif; letter-spacing: 1px; box-shadow: 0 5px 20px rgba(107, 2, 2, 0.4); }
+    .btn-action:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(107, 2, 2, 0.6); }
+    
+    .main-actions { display: flex; justify-content: center; gap: 20px; margin: 40px 0; flex-wrap: wrap; }
+
+    .piramide { font-family: 'Courier New', monospace; font-size: 1.2rem; line-height: 1.6; letter-spacing: 6px; margin: 20px 0; min-height: 100px; color: #fff; white-space: pre-line; }
+    .negativo { color: var(--danger); font-weight: bold; text-shadow: 0 0 10px rgba(255,59,92,0.6); }
+    .regente { margin-top: 15px; font-weight: bold; }
+
+    .modal { display:none; position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index: 1000; backdrop-filter: blur(5px); }
+    .modal-content { background: var(--card-bg); margin: 5% auto; padding: 35px; width: 85%; max-width: 700px; border-radius: 15px; position: relative; border: 1px solid var(--primary); max-height: 80vh; overflow-y: auto; box-shadow: 0 0 30px rgba(212, 154, 154, 0.2); }
+    .close { position: absolute; right: 20px; top: 15px; cursor: pointer; font-size: 28px; color: var(--danger); }
+
+    #compat { font-family: 'Cinzel', serif; font-size: 1.1rem; color: var(--accent); letter-spacing: 1px; }
+
+    @media (max-width: 850px) { .grid-pessoa { grid-template-columns: 1fr; } }
+
+    /* =======================================================
+       2. REGRAS VISUAIS DO PREVIEW DO PDF NA TELA (RESPONSIVO)
+       ======================================================= */
+    #area-pdf-local {
+        width: 100%;
+        display: block;
+        margin-top: 50px;
+    }
+
+    /* CAPAS: Mantêm o tamanho fixo padrão A4 na tela */
+    .pag-a4 {
+        width: 100%;
+        max-width: 210mm;
+        height: 297mm;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto 40px auto;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    }
+
+    /* MIOLOS DE TEXTO: Livres para crescer caso o texto seja gigante */
+    .bloco-texto-pdf {
+        width: 100%;
+        max-width: 210mm;
+        height: auto !important; /* MUDANÇA CIRÚRGICA: Libera o crescimento do container pai */
+        min-height: 297mm;       /* Mantém pelo menos o tamanho de uma folha A4 */
+        background: #ffffff !important;
+        color: #111111 !important;
+        box-sizing: border-box;
+        padding: 25mm 20mm;
+        margin: 0 auto 40px auto;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        position: relative;
+        overflow: visible !important; /* MUDANÇA CIRÚRGICA: Permite ver o texto que passa */
+        display: block;
+    }
+
+    .titulo-secao-pdf {
+        font-family: 'Cinzel', serif; 
+        color: #6B0202; 
+        text-align: center; 
+        margin-bottom: 25px; 
+        border-bottom: 2px solid #d49a9a; 
+        padding-bottom: 10px; 
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .subtitulo-pessoa-pdf {
+        color: #8a1c32; 
+        font-family: 'Poppins', sans-serif; 
+        font-size: 14px; 
+        margin-bottom: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    .texto-cabalistico-pdf, .bloco-texto-pdf p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px; 
+        line-height: 1.7; 
+        color: #222222 !important;
+        margin-bottom: 20px;
+        display: block;
+        text-align: justify;
+    }
+
+    .texto-cabalistico-pdf strong, .bloco-texto-pdf strong {
+        color: #6B0202 !important;
+        font-weight: 600;
+        display: inline;
+    }
+
+    .divisor-pdf {
+        width: 100%; 
+        height: 1px; 
+        background: linear-gradient(to right, transparent, #d49a9a, transparent); 
+        margin: 25px 0;
+        display: block;
+    }
+
+    .botao-pdf-link { display: none !important; } 
+    .player-relatorio { display: flex !important; } 
+
+    /* =======================================================
+       3. A RÍGIDA ENGENHARIA DE IMPRESSÃO (PDF REAL)
+       ======================================================= */
+    @media print {
+        @page {
+            size: A4 portrait;
+            margin: 0 !important;
+        }
+
+        .header, .container, .grid-pessoa, .main-actions, #compat, .modal, 
+        button, #botoes-pdf-direto, .close, #botoes-modal-pdf {
+            display: none !important;
+        }
+
+        body {
+            background: #110106 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        #area-pdf-local { margin-top: 0 !important; }
+        #conteudo-pdf-rolavel { display: block !important; width: 210mm !important; }
+
+        /* CAPAS IMPRESSAS: Mantêm rigidez absoluta em 297mm (Não quebram) */
+        .pag-a4 {
+            width: 210mm !important;
+            height: 297mm !important; 
+            min-height: 297mm !important;
+            max-height: 297mm !important;
+            margin: 0 !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            page-break-before: always !important;
+            page-break-after: always !important;
+            page-break-inside: avoid !important; /* Protege a capa */
+            box-sizing: border-box !important;
+        }
+
+        /* MIOLOS IMPRESSOS: Totalmente dinâmicos. Se o texto passar, gera nova folha! */
+        .bloco-texto-pdf {
+            width: 210mm !important;
+            height: auto !important;       /* MUDANÇA CIRÚRGICA: Libera o motor do PDF */
+            min-height: 297mm !important;   /* Ocupa no mínimo uma folha inteira */
+            max-height: none !important;    /* Libera limite máximo */
+            margin: 0 !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            page-break-before: always !important;
+            page-break-after: always !important;
+            page-break-inside: auto !important; /* MUDANÇA CIRÚRGICA: Permite quebra natural */
+            box-sizing: border-box !important;
+            padding: 25mm 20mm !important; 
+            display: block !important;       /* Garante fluxo contínuo de cima para baixo */
+            overflow: visible !important;
+        }
+
+        /* Evita que uma caixinha vermelha de sequência se rompa feio ao meio na virada de página */
+        .bloco-texto-pdf div, .bloco-texto-pdf h2, .bloco-texto-pdf h3 {
+            page-break-inside: avoid !important;
+        }
+
+        .pag-a4:first-child {
+            page-break-before: avoid !important;
+        }
+
+        .pag-a4 {
+            background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important;
+            -webkit-print-color-adjust: exact !important; 
+            print-color-adjust: exact !important; 
+        }
+
+        .bloco-texto-pdf *, .texto-cabalistico-pdf {
+            color: #222222 !important;
+            background: transparent !important;
+        }
+
+        .titulo-secao-pdf { color: #6B0202 !important; }
+        .subtitulo-pessoa-pdf { color: #8a1c32 !important; }
+
+        .player-relatorio { display: none !important; }
+        .botao-pdf-link { display: flex !important; }
+    }
+
+    /* =======================================================
+       4. COMPORTAMENTO RESPONSIVO EXCLUSIVO PARA O CELULAR (TELA)
+       ======================================================= */
+    @media screen and (max-width: 768px) {
+        .pag-a4, .bloco-texto-pdf {
+            width: 100% !important;
+            height: auto !important;
+            min-height: auto !important;
+            max-height: none !important;
+            margin: 0 0 20px 0 !important;
+            padding: 30px 15px !important;
+            border-radius: 12px !important;
+        }
         
-        :root {
-            --primary: #6B0202;
-            --secondary: #002091;
-            --bg: #0a0f24;
-            --card-bg: #111936;
-            --text: #ffffff;
-            --accent: #00e0ff;
-            --danger: #ff3b5c;
-            --success: #28a745;
+        .capa-sinastria-premium, .capa-transicao-amor {
+            height: auto !important;
+            min-height: 580px !important;
+            justify-content: center !important;
+            gap: 25px !important;
+            padding: 40px 20px !important;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); padding-bottom: 50px; }
-        .header { text-align: center; padding: 40px 20px; background: linear-gradient(180deg, #16204d 0%, var(--bg) 100%); }
-        .container { max-width: 1100px; margin: auto; padding: 0 20px; }
+        .capa-sinastria-premium h1 { font-size: 20px !important; }
+        .capa-sinastria-premium img, .capa-transicao-amor img { width: 140px !important; height: auto !important; }
+        .piramide { font-size: 0.9rem; letter-spacing: 4px; }
+    }
 
-        /* Grid */
-        .grid-pessoa {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-bottom: 40px;
-            background: rgba(255,255,255,0.03);
-            padding: 25px;
-            border-radius: 20px;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .card-input, .card-piramide { background: var(--card-bg); padding: 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-        .card-piramide { text-align: center; border: 1px dashed rgba(255,255,255,0.2); }
-
-        h3 { margin-bottom: 20px; color: var(--accent); border-bottom: 1px solid #2e3c78; padding-bottom: 10px; }
-        .form-group { margin-bottom: 15px; text-align: left; }
-        label { display: block; font-size: 0.85rem; margin-bottom: 5px; color: #ccc; }
-
-        input, select {
-            width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #2e3c78;
-            background: #1c264a; color: white; font-size: 1rem;
-        }
-
-        /* Botões */
-        .btn-group { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin-top: 15px; }
-        button { padding: 10px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.3s; font-size: 0.75rem; }
-        .btn-nav { background: #2e3c78; color: white; }
-        .btn-nav:hover { background: var(--secondary); }
-        .btn-action { background: var(--primary); color: white; font-size: 1rem; padding: 15px 30px; border-radius: 50px; }
-        
-        .main-actions { display: flex; justify-content: center; gap: 15px; margin: 40px 0; flex-wrap: wrap; }
-
-        /* Pirâmide */
-        .piramide { font-family: 'Courier New', monospace; font-size: 1.1rem; line-height: 1.5; letter-spacing: 4px; margin: 15px 0; min-height: 100px; }
-        .negativo { color: var(--danger); font-weight: bold; }
-        .regente { margin-top: 10px; font-weight: bold; color: var(--accent); }
-
-        /* Modal */
-        .modal { display:none; position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index: 1000; }
-        .modal-content { background: var(--card-bg); margin: 5% auto; padding: 30px; width: 80%; max-width: 700px; border-radius: 15px; position: relative; border: 1px solid var(--accent); max-height: 80vh; overflow-y: auto; }
-        .close { position: absolute; right: 20px; top: 15px; cursor: pointer; font-size: 24px; color: var(--danger); }
-
-        @media (max-width: 850px) { .grid-pessoa { grid-template-columns: 1fr; } }
-
-
-
-/* Isso impede que o texto vá "encurtando" a cada bloco */
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 40px; /* Reduzi um pouco para dar mais espaço */
-    background: white;
-    box-shadow: 0 10px 50px rgba(0,0,0,0.08);
-    display: block;
-    overflow: hidden; /* Garante que nada saia para fora */
-}
-
-.bloco {
-    margin-top: 30px;
-    padding: 0; /* REMOVA o padding daqui se houver */
-    width: 100%; /* Força largura total */
-    display: block;
-    clear: both;
-}
-
-/* Centralização da Pirâmide corrigida */
-.piramide-wrapper {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente no flex */
+.video-introducao {
     width: 100%;
-    margin: 30px 0;
+    max-width: 800px; /* Mesma largura do seu container para alinhar */
+    margin: 0 auto 20px auto; /* Centraliza e dá espaço para o formulário */
+    border-radius: 20px;
+    overflow: hidden; /* Garante que o vídeo siga o arredondamento */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-.piramide {
-    font-family: 'Courier New', Courier, monospace;
-    background: var(--bg);
-    padding: 20px;
-    border: 1px solid var(--dourado-claro);
-    font-size: 14px;
-    white-space: pre; 
-    text-align: center;
-    line-height: 1.2;
-    display: block; /* Mudamos de inline-block para block */
-    margin: 0 auto;
+.video-introducao video {
+    display: block;
+    border: 2px solid #A65F00; /* Um detalhe em dourado/bronze como no seu botão */
+}
+    
+.video-wrapper {
+    width: 100%;
+    margin-bottom: 20px; /* Espaço entre o vídeo e o título/campos */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--gold); /* Borda fina acompanhando sua cor principal */
+    background-color: #000;
 }
 
-        
-    </style>
+.video-wrapper video {
+    display: block;
+    outline: none;
+}
+
+
+@media print {
+    /* Esconde o vídeo e o container de entrada para não atrapalhar o PDF */
+    .video-wrapper, 
+    .container, 
+    #videoExplicativo {
+        display: none !important;
+    }
+
+    /* Garante que o relatório possa fluir por várias páginas */
+    .relatorio-premium {
+        display: block !important;
+        position: static !important;
+        overflow: visible !important;
+    }
+}
+
+
+.btn-video-toggle {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #A65F00 0%, #FFD700 100%);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(166, 95, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+.btn-video-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(166, 95, 0, 0.4);
+}
+
+.btn-video-toggle .seta {
+    transition: transform 0.3s ease;
+}
+
+.btn-video-toggle.ativo .seta {
+    transform: rotate(180deg);
+}
+
+/* Garante que o botão também suma na impressão */
+@media print {
+    .btn-video-toggle {
+        display: none !important;
+    }
+}
+    
+</style>
 </head>
 <body>
 
@@ -150,18 +395,25 @@ body{
 </div>
 
 <div class="container">
+        <button type="button" id="btnVideo" class="btn-video-toggle">
+        <span>🎥 Assistir Vídeo Introdutório</span>
+        <i class="seta">▼</i>
+    </button>
 
-    <!-- PESSOA 1 -->
+    <div id="wrapperVideo" class="video-wrapper" style="display: none; margin-top: 10px;">
+        <video id="videoExplicativo" width="100%" controls poster="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png">
+            <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/introestudo.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    </div>
+
     <div class="grid-pessoa">
         <div class="card-input">
             <h3>Pessoa 1</h3>
-            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome1" placeholder="Nome igual certidão"></div>
-            <div class="form-group"><label>Data de Nascimento</label><input type="date" id="data1"></div>
-            <div style="display: flex; gap: 5px; margin-bottom:15px;">
-                <select id="sexo1"><option value="">Sexo</option><option value="M">M</option><option value="F">F</option></select>
-                <select id="tipo1"><option value="">Tipo</option><option>A</option><option>B</option><option>AB</option><option>O</option></select>
-                <select id="rh1"><option value="">RH</option><option value="+">+</option><option value="-">-</option></select>
-            </div>
+            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
+            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social1" placeholder="Nome para personalização do texto"></div>
+            <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
+            
             <div class="btn-group">
                 <button class="btn-nav" onclick="abrirModal('m1')">Motivação</button>
                 <button class="btn-nav" onclick="abrirModal('i1')">Influência</button>
@@ -179,17 +431,13 @@ body{
         </div>
     </div>
 
-    <!-- PESSOA 2 -->
     <div class="grid-pessoa">
         <div class="card-input">
             <h3>Pessoa 2</h3>
-            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome2" placeholder="Nome igual certidão"></div>
-            <div class="form-group"><label>Data de Nascimento</label><input type="date" id="data2"></div>
-            <div style="display: flex; gap: 5px; margin-bottom:15px;">
-                <select id="sexo2"><option value="">Sexo</option><option value="M">M</option><option value="F">F</option></select>
-                <select id="tipo2"><option value="">Tipo</option><option>A</option><option>B</option><option>AB</option><option>O</option></select>
-                <select id="rh2"><option value="">RH</option><option value="+">+</option><option value="-">-</option></select>
-            </div>
+            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome2" placeholder="Nome completo igual certidão"></div>
+            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social2" placeholder="Nome para personalização do texto"></div>
+            <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data2" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
+            
             <div class="btn-group">
                 <button class="btn-nav" onclick="abrirModal('m2')">Motivação</button>
                 <button class="btn-nav" onclick="abrirModal('i2')">Influência</button>
@@ -207,22 +455,24 @@ body{
         </div>
     </div>
 
-    <!-- BOTÕES DE AÇÃO CENTRAL -->
     <div class="main-actions">
         <button class="btn-action" onclick="gerar()">⚡ CALCULAR TUDO</button>
-        <button class="btn-action" style="background:var(--secondary)" onclick="mostrarSinastria()">❤️ VER COMPATIBILIDADE</button>
-        <button class="btn-action" style="background:var(--success)" onclick="abrirPremiumSinastria()">💎 RELATÓRIO PREMIUM PDF</button>
+        <button class="btn-action" style="background:var(--primary); color:#000; box-shadow: 0 5px 20px rgba(212,154,154,0.3);" onclick="mostrarSinastria()">❤️ VER COMPATIBILIDADE</button>
+        <button class="btn-action" style="background:linear-gradient(135deg, #002091 0%, #00104a 100%); box-shadow: 0 5px 20px rgba(0,32,145,0.4);" onclick="abrirPremiumSinastria()">💎 RELATÓRIO PREMIUM PDF</button>
     </div>
 
     <div id="compat" style="text-align:center; margin-bottom:40px; font-weight:bold;"></div>
 
-    <!-- MAPA DO BEBÊ -->
-    <div class="grid-pessoa" style="border-color: var(--accent);">
+    <div class="grid-pessoa" style="border-color: var(--primary);">
         <div class="card-input">
             <h3>👶 Mapa do Bebê</h3>
             <div class="form-group">
-                <label>Sugestão de Nome</label>
-                <input type="text" id="nomeBebe" placeholder="Digite o nome para análise">
+                <label>Sugestão de Nome Completo</label>
+                <input type="text" id="nomeBebe" placeholder="Digite o nome completo para análise">
+            </div>
+            <div class="form-group">
+                <label>Nome Escolhido / Chamado</label>
+                <input type="text" id="socialBebe" placeholder="Nome de tratamento do bebê">
             </div>
             <button class="btn-action" style="width:100%; margin-bottom:15px;" onclick="gerarBebe()">Analisar Nome do Bebê</button>
             <div class="btn-group">
@@ -230,7 +480,7 @@ body{
                 <button class="btn-nav" onclick="abrirModal('iB')">Influência</button>
                 <button class="btn-nav" onclick="abrirModal('pB')">Personalidade</button>
             </div>
-            <div id="resultadoBebe" style="margin-top:15px; font-size:0.9rem;"></div>
+            <div id="resultadoBebe" style="margin-top:15px; font-size:0.9rem; text-align:center; font-weight:bold;"></div>
         </div>
         <div class="card-piramide">
             <h3>Pirâmide Bebê</h3>
@@ -241,36 +491,36 @@ body{
 
 </div>
 
-<!-- MODAL -->
 <div id="modal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="fecharModal()">&times;</span>
         <div id="modalTexto" style="color:white; line-height:1.8;"></div>
     </div>
+</div>
 
-<script src="textosharmoniaconjugal.js"></script>
+<div id="area-pdf-local"></div>    
+
+<script src="textos.js"></script>
 
 <script>
+function mascaraData(input) {
+    let v = input.value.replace(/\D/g, '').slice(0, 8);
+    if (v.length >= 5) {
+        input.value = `${v.slice(0, 2)}/${v.slice(2, 4)}/${v.slice(4)}`;
+    } else if (v.length >= 3) {
+        input.value = `${v.slice(0, 2)}/${v.slice(2)}`;
+    } else {
+        input.value = v;
+    }
+}
 
-// =====================
-// TABELA CABALÍSTICA
-// =====================
 const tabela = {
-  A:1, J:1, I:1, Q:1, Y:1,
-  B:2, K:2, R:2,
-  C:3, G:3, L:3, S:3,
-  D:4, M:4, T:4,
-  E:5, H:5, N:5,
-  U:6, V:6, W:6, X:6, Ç:6,
-  O:7, Z:7,
-  F:8, P:8
+  A:1, J:1, I:1, Q:1, Y:1, B:2, K:2, R:2, C:3, G:3, L:3, S:3,
+  D:4, M:4, T:4, E:5, H:5, N:5, U:6, V:6, W:6, X:6, Ç:6, O:7, Z:7, F:8, P:8
 };
 
 const vogais = ["A","E","I","O", "Y", "U"];
 
-// =====================
-// ACENTOS
-// =====================
 function calcularValorComAcentos(letra){
   const base = letra.normalize("NFD")[0];
   const valorBase = tabela[base];
@@ -287,7 +537,6 @@ function calcularValorComAcentos(letra){
     else if(c === "\u0300") mult *= 2;
     else if(c === "\u0308") mult *= 2;
   }
-
   return (valorBase + soma) * mult;
 }
 
@@ -300,37 +549,24 @@ function reduzir(n){
 }
 
 function calcularAnoPessoal(data){
-
-  if(!data) return 0;
-
-  const [ano, mes, dia] = data.split("-").map(Number);
-
+  if(!data || data.length < 10) return 0;
+  const [dia, mes, ano] = data.split("/").map(Number);
   const anoAtual = new Date().getFullYear();
-
-  const soma =
-    reduzir(dia) +
-    reduzir(mes) +
-    reduzir(anoAtual);
-
-  return reduzir(soma);
+  return reduzir(reduzir(dia) + reduzir(mes) + reduzir(anoAtual));
 }  
 
-// =====================
-// CALCULO COMPLETO
-// =====================
+let dados1 = null;
+let dados2 = null;
+
 function calcularPessoa(nome, data){
-
   nome = nome.toUpperCase();
-
   let somaV=0, somaC=0;
   let valores=[];
 
   for(let l of nome){
     const valor = calcularValorComAcentos(l);
     if(!valor) continue;
-
     valores.push(reduzir(valor));
-
     const base = l.normalize("NFD")[0];
     if(vogais.includes(base)) somaV += valor;
     else somaC += valor;
@@ -338,282 +574,116 @@ function calcularPessoa(nome, data){
 
   const motivacao = reduzir(somaV);
   const influencia = reduzir(somaC);
-  const personalidade = reduzir(somaV+somaC);
-
+  const personality = reduzir(somaV+somaC);
   let caminho=0, proposito=0;
 
-  if(data){
-    const [ano,mes,dia] = data.split("-").map(Number);
+  if(data && data.length === 10){
+    const [dia, mes, ano] = data.split("/").map(Number);
     caminho = reduzir(dia+mes+ano);
-    proposito = reduzir(caminho+personalidade);
+    proposito = reduzir(caminho+personality);
   }
-
-const harmonia = proposito;
-
-return {
-  motivacao,
-  influencia,
-  personalidade,
-  caminho,
-  proposito,
-  harmonia,
-  valores
-}
+  return { motivacao, influencia, personalidade: personality, caminho, proposito, harmonia: proposito, valores };
 }
 
-// =====================
-// PIRÂMIDE INVERTIDA
-// =====================
-// =====================
-// PIRÂMIDE INVERTIDA
-// =====================
 function gerarPiramide(valores, elementoPiramide, elementoRegente){
-
-let sequenciaDetectada = null;
-let numerosSequencias = [];
-
+  let numerosSequencias = [];
   if(!valores || valores.length === 0){
-    elementoPiramide.innerHTML="";
-    elementoRegente.innerHTML="";
-    return;
+    elementoPiramide.innerHTML=""; elementoRegente.innerHTML=""; return;
   }
 
-  let linhas = [valores.map(Number)];
-
-  // Gera todas as linhas
-  while(linhas[linhas.length-1].length > 1){
-
-    let anterior = linhas[linhas.length-1];
+  let lines = [valores.map(Number)];
+  while(lines[lines.length-1].length > 1){
+    let anterior = lines[lines.length-1];
     let nova = [];
-
     for(let i=0;i<anterior.length-1;i++){
       nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
     }
-
-    linhas.push(nova);
+    lines.push(nova);
   }
 
-  // ============================
-  // DETECTAR TODAS AS SEQUÊNCIAS
-  // ============================
-
   let marcacoes = [];
-
-  for(let l=0; l<linhas.length; l++){
-
+  for(let l=0; l<lines.length; l++){
     marcacoes[l] = new Set();
-    let linha = linhas[l];
-
+    let linha = lines[l];
     let i=0;
-
     while(i < linha.length){
-
       let atual = Number(linha[i]);
-      let count = 1;
-      let j = i+1;
-
-      while(j < linha.length && Number(linha[j]) === atual){
-        count++;
-        j++;
-      }
-
+      let count = 1; let j = i+1;
+      while(j < linha.length && Number(linha[j]) === atual) { count++; j++; }
       if(count >= 3){
-        for(let k=i; k<i+count; k++){
-          marcacoes[l].add(k);
-        }
+        for(let k=i; k<i+count; k++) marcacoes[l].add(k);
       }
-
       i += count;
     }
   }
 
-  // ============================
-  // RENDERIZAR PIRÂMIDE
-  // ============================
-
   let html="";
-
-  for(let l=0; l<linhas.length; l++){
-
-    html += linhas[l].map((n,idx)=>{
-
-if (marcacoes[l].has(idx)){
-
-  if (!numerosSequencias.includes(n)) {
-    numerosSequencias.push(n);
-  }
-
-  return `<span class="negativo">${n}</span>`;
-}
-
+  for(let l=0; l<lines.length; l++){
+    html += lines[l].map((n,idx)=>{
+      if (marcacoes[l].has(idx)){
+        if (!numerosSequencias.includes(n)) numerosSequencias.push(n);
+        return `<span class="negativo">${n}</span>`;
+      }
       return n;
-
     }).join(" ") + "<br>";
   }
 
   elementoPiramide.innerHTML = html;
+  const regente = lines[lines.length - 1][0];
 
-  // ============================
-  // REGENTE
-  // ============================
-
- const regente = linhas[linhas.length - 1][0];
-
-// Localize o final da função gerarPiramide e substitua por este trecho:
   elementoRegente.innerHTML = `
     <div class="botoes-piramide">
-      <button onclick="abrirModalRegente(textos.regente[${regente}], '${elementoRegente.id}')">
-        Regente: ${regente}
-      </button>
-  
-      <button onclick="mostrarSequenciaNegativa('${elementoRegente.id}')">
-        Sequência Negativa
-      </button>
+      <button onclick="abrirModalRegente(textos.regente[${regente}], '${elementoRegente.id}')">Regente: ${regente}</button>
+      <button onclick="mostrarSequenciaNegativa('${elementoRegente.id}')">Sequência Negativa</button>
     </div>
   `;
 
-  if (elementoRegente.id === "regente1") dados1.regente = regente;
-  if (elementoRegente.id === "regente2") dados2.regente = regente;
-  if (elementoRegente.id === "regenteBebe") dadosBebe.regente = regente;
-  
-  if (elementoRegente.id === "regente1") dados1.sequenciaNegativa = numerosSequencias;
-  if (elementoRegente.id === "regente2") dados2.sequenciaNegativa = numerosSequencias;
-  if (elementoRegente.id === "regenteBebe") dadosBebe.sequenciaNegativa = numerosSequencias;
+  if (elementoRegente.id === "regente1") { dados1.regente = regente; dados1.sequenciaNegativa = numerosSequencias; }
+  if (elementoRegente.id === "regente2") { dados2.regente = regente; dados2.sequenciaNegativa = numerosSequencias; }
+  if (elementoRegente.id === "regenteBebe") { dadosBebe.regente = regente; dadosBebe.sequenciaNegativa = numerosSequencias; }
 
   if (elementoRegente.id === "regenteBebe") {
     const resultado = document.getElementById("resultadoBebe");
-    if (!numerosSequencias || numerosSequencias.length === 0) {
-      resultado.innerHTML = "✅ Este nome é harmônico.";
-    } else {
-      resultado.innerHTML = "❌ Este nome possui sequência negativa e não é harmônico.";
-    }
+    resultado.innerHTML = (!numerosSequencias || numerosSequencias.length === 0) ? "✅ Este nome é harmônico." : "❌ Este nome possui sequência negativa.";
   }
-} // <--- Fim da função gerarPiramide
-
-
-
-// =====================
-// COMPATIBILIDADE RH
-// =====================
-function compatibilidadeRH(){
-
-  const sexo1 = sexo1Val;
-  const sexo2 = sexo2Val;
-  const rh1 = rh1Val;
-  const rh2 = rh2Val;
-
-  let mulherRH, homemRH;
-
-  if(sexo1==="F"){
-    mulherRH = rh1;
-    homemRH = rh2;
-  }else if(sexo2==="F"){
-    mulherRH = rh2;
-    homemRH = rh1;
-  }else{
-    return "Compatibilidade biológica: Sexo feminino não informado.";
-  }
-
-  if(mulherRH==="-" && homemRH==="+"){
-    return "Compatibilidade biológica: ⚠ Mulher RH negativo e homem RH positivo. Exige acompanhamento médico.";
-  }
-
-  return "Compatibilidade biológica: Sem risco aparente.";
 }
 
-// =====================
-// SINASTRIA
-// =====================
-
-
 function chaveSinastria(a,b){
-  const menor = Math.min(a,b);
-  const maior = Math.max(a,b);
-  return `${menor}-${maior}`;
+  return `${Math.min(a,b)}-${Math.max(a,b)}`;
 }
 
 function mostrarSinastria(){
-
   if(!dados1 || !dados2) return;
+  const nome1 = document.getElementById("social1").value || document.getElementById("nome1").value;
+  const nome2 = document.getElementById("social2").value || document.getElementById("nome2").value;
+  const chave = chaveSinastria(dados1.proposito, dados2.proposito);
 
-  const nome1 = document.getElementById("nome1").value;
-  const nome2 = document.getElementById("nome2").value;
+  let texto = textos.sinastria[chave] || `A combinação entre Energia ${dados1.proposito} e Energia ${dados2.proposito}.`;
+  const menor = Math.min(dados1.proposito, dados2.proposito);
+  const maior = Math.max(dados1.proposito, dados2.proposito);
 
-  const energia1 = dados1.proposito;
-  const energia2 = dados2.proposito;
+  texto = texto.replaceAll(`Energia ${menor}`, (dados1.proposito === menor)?nome1:nome2)
+               .replaceAll(`Energia ${maior}`, (dados1.proposito === maior)?nome1:nome2);
 
-  const chave = chaveSinastria(energia1, energia2);
-
-  let texto = textos.sinastria[chave] ||
-    `A combinação entre o relacionamento de ${energia1} e  Energia ${energia2}.`;
-
-  // -----------------------------
-  // SUBSTITUIÇÕES INTELIGENTES
-  // -----------------------------
-
-  const menor = Math.min(energia1, energia2);
-  const maior = Math.max(energia1, energia2);
-
-  const nomeMenor = (energia1 === menor) ? nome1 : nome2;
-  const nomeMaior = (energia1 === maior) ? nome1 : nome2;
-
-  // Energia X
-  texto = texto.replaceAll(`Energia ${menor}`, nomeMenor);
-  texto = texto.replaceAll(`Energia ${maior}`, nomeMaior);
-
-  // número X
-  texto = texto.replaceAll(`número ${menor}`, nomeMenor);
-  texto = texto.replaceAll(`número ${maior}`, nomeMaior);
-
-  texto = texto.replaceAll(`Número ${menor}`, nomeMenor);
-  texto = texto.replaceAll(`Número ${maior}`, nomeMaior);
-
-  const textoFinal = `
-    <h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>
-    ${texto}
-  `;
-
-  abrirModalTexto(textoFinal);
+  abrirModalTexto(`<h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>${texto}`);
 }
 
-// =====================
-// MODAL
-// =====================
 function abrirModalTexto(texto){
   document.getElementById("modalTexto").innerHTML = texto;
   document.getElementById("modal").style.display="block";
 }
-// =====================
-// FUNÇÕES DE FORMATAÇÃO E MODAL (ATUALIZADAS)
-// =====================
 
-// ============================================
-// NOVAS FUNÇÕES DE FORMATAÇÃO E MODAL
-// ============================================
+function fecharModal(){ document.getElementById("modal").style.display="none"; }
 
-function formatarTextoPersonalizado(texto, nomeCompleto) {
-  if (!texto) return "";
-  
-  // Extrai apenas o primeiro nome, remove espaços e corrige maiúsculas/minúsculas
-  let primeiroNome = nomeCompleto.trim().split(' ')[0];
-  if (primeiroNome) {
-      primeiroNome = primeiroNome.charAt(0).toUpperCase() + primeiroNome.slice(1).toLowerCase();
-  } else {
-      primeiroNome = "Você";
-  }
-
-  // Substitui "você" ou "Você" pelo nome em negrito
-  let t = texto;
-  t = t.replace(/você/gi, `<strong>${primeiroNome}</strong>`);
-  return t;
+function formatarTextoPersonalizado(texto, nome) {
+    if (!texto) return "";
+    return String(texto).replace(/você/gi, ` <strong>${nome}</strong> `).replace(/voce/gi, ` <strong>${nome}</strong> `);
 }
 
 function abrirModal(tipo) {
-  let textoBase = "";
-  let nomePessoa = "";
-
+  let textoBase = "", nomePessoa = "";
   if (tipo.includes("1")) {
-    nomePessoa = document.getElementById("nome1").value;
+    nomePessoa = document.getElementById("social1").value || document.getElementById("nome1").value;
     if(tipo==="m1") textoBase = textos.motivacao[dados1.motivacao];
     if(tipo==="i1") textoBase = textos.influencia[dados1.influencia];
     if(tipo==="p1") textoBase = textos.personalidade[dados1.personalidade];
@@ -621,9 +691,8 @@ function abrirModal(tipo) {
     if(tipo==="pr1") textoBase = textos.proposito[dados1.proposito];
     if(tipo==="h1") textoBase = textos.harmonia[dados1.proposito];
     if(tipo==="a1") textoBase = textos.anoPessoal[dados1.anoPessoal];
-  } 
-  else if (tipo.includes("2")) {
-    nomePessoa = document.getElementById("nome2").value;
+  } else if (tipo.includes("2")) {
+    nomePessoa = document.getElementById("social2").value || document.getElementById("nome2").value;
     if(tipo==="m2") textoBase = textos.motivacao[dados2.motivacao];
     if(tipo==="i2") textoBase = textos.influencia[dados2.influencia];
     if(tipo==="p2") textoBase = textos.personalidade[dados2.personalidade];
@@ -631,272 +700,477 @@ function abrirModal(tipo) {
     if(tipo==="pr2") textoBase = textos.proposito[dados2.proposito];
     if(tipo==="h2") textoBase = textos.harmonia[dados2.proposito];
     if(tipo==="a2") textoBase = textos.anoPessoal[dados2.anoPessoal];
-  }
-  else if (tipo.includes("B")) {
-    nomePessoa = document.getElementById("nomeBebe").value;
+  } else if (tipo.includes("B")) {
+    nomePessoa = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
     if(tipo==="mB") textoBase = textos.motivacao[dadosBebe.motivacao];
     if(tipo==="iB") textoBase = textos.influencia[dadosBebe.influencia];
     if(tipo==="pB") textoBase = textos.personalidade[dadosBebe.personalidade];
   }
-
   abrirModalTexto(formatarTextoPersonalizado(textoBase, nomePessoa));
 }
 
 function abrirModalRegente(texto, idRegente) {
-    let nomeInput = "";
-    if (idRegente === "regente1") nomeInput = document.getElementById("nome1").value;
-    else if (idRegente === "regente2") nomeInput = document.getElementById("nome2").value;
-    else if (idRegente === "regenteBebe") nomeInput = document.getElementById("nomeBebe").value;
-
-    abrirModalTexto(formatarTextoPersonalizado(texto, nomeInput));
+    let n = (idRegente==="regente1") ? (document.getElementById("social1").value || document.getElementById("nome1").value) : (document.getElementById("social2").value || document.getElementById("nome2").value);
+    abrirModalTexto(formatarTextoPersonalizado(texto, n));
 }
 
 function mostrarSequenciaNegativa(idRegente){
-  let dados;
-  let nomeInput = "";
-
-  if (idRegente === "regente1") {
-    dados = dados1;
-    nomeInput = document.getElementById("nome1").value;
-  }
-  else if (idRegente === "regente2") {
-    dados = dados2;
-    nomeInput = document.getElementById("nome2").value;
-  }
-  else if (idRegente === "regenteBebe") {
-    dados = dadosBebe;
-    nomeInput = document.getElementById("nomeBebe").value;
-  }
-
-  if (!dados || !dados.sequenciaNegativa || dados.sequenciaNegativa.length === 0){
-    abrirModalTexto("Nenhuma sequência negativa encontrada.");
-    return;
-  }
-
-  const textoBruto = dados.sequenciaNegativa.map(n => textos.sequenciaNegativa[n]).join("<br><br>");
-  abrirModalTexto(formatarTextoPersonalizado(textoBruto, nomeInput));
+  let d = (idRegente==="regente1") ? dados1 : dados2;
+  let n = (idRegente==="regente1") ? (document.getElementById("social1").value || document.getElementById("nome1").value) : (document.getElementById("social2").value || document.getElementById("nome2").value);
+  if (!d || !d.sequenciaNegativa || d.sequenciaNegativa.length === 0) return abrirModalTexto("Nenhuma sequência.");
+  abrirModalTexto(formatarTextoPersonalizado(d.sequenciaNegativa.map(x => textos.sequenciaNegativa[x]).join("<br><br>"), n));
 }
-
-function fecharModal(){
-  document.getElementById("modal").style.display="none";
-}
-
-// =====================
-// GERAR
-// =====================
-let dados1, dados2;
-let sexo1Val, sexo2Val, rh1Val, rh2Val;
 
 function gerar(){
-
-  const nome1 = document.getElementById("nome1").value;
-  const nome2 = document.getElementById("nome2").value;
-  const data1 = document.getElementById("data1").value;
-  const data2 = document.getElementById("data2").value;
-
-  sexo1Val = document.getElementById("sexo1").value;
-  sexo2Val = document.getElementById("sexo2").value;
-  rh1Val = document.getElementById("rh1").value;
-  rh2Val = document.getElementById("rh2").value;
-
-  dados1 = calcularPessoa(nome1, data1);
-  dados2 = calcularPessoa(nome2, data2);
-  dados1.anoPessoal = calcularAnoPessoal(data1);
-dados2.anoPessoal = calcularAnoPessoal(data2);
-
-  gerarPiramide(dados1.valores,
-    document.getElementById("piramide1"),
-    document.getElementById("regente1")
-  );
-
-  gerarPiramide(dados2.valores,
-    document.getElementById("piramide2"),
-    document.getElementById("regente2")
-  );
-
-  document.getElementById("compat").innerHTML = compatibilidadeRH();
+  if(!document.getElementById("nome1").value || !document.getElementById("nome2").value) return alert("Nomes vazios.");
+  dados1 = calcularPessoa(document.getElementById("nome1").value, document.getElementById("data1").value);
+  dados2 = calcularPessoa(document.getElementById("nome2").value, document.getElementById("data2").value);
+  dados1.anoPessoal = calcularAnoPessoal(document.getElementById("data1").value);
+  dados2.anoPessoal = calcularAnoPessoal(document.getElementById("data2").value);
+  gerarPiramide(dados1.valores, document.getElementById("piramide1"), document.getElementById("regente1"));
+  gerarPiramide(dados2.valores, document.getElementById("piramide2"), document.getElementById("regente2"));
+  document.getElementById("compat").innerHTML = "⚡ Cálculos processados com sucesso!";
 }
 
-  
 let dadosBebe = null;
-  
 function gerarBebe(){
-
-  const nomeBebe = document.getElementById("nomeBebe").value;
-
-  if(!nomeBebe) return;
-
-  // calcular apenas pelo nome
-  dadosBebe = calcularPessoa(nomeBebe, null);
-
-  gerarPiramide(
-    dadosBebe.valores,
-    document.getElementById("piramideBebe"),
-    document.getElementById("regenteBebe")
-  );
+  if(!document.getElementById("nomeBebe").value) return;
+  dadosBebe = calcularPessoa(document.getElementById("nomeBebe").value, null);
+  gerarPiramide(dadosBebe.valores, document.getElementById("piramideBebe"), document.getElementById("regenteBebe"));
 }
 
+/* =============================================================
+   ENGENHARIA REVISADA DO EMISSOR DE RELATÓRIO
+   ============================================================= */
+function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, audio2Url, nomeAudio2) {
+    let playerHTML = "";
+    let linkHTML = "";
 
+    if(audio1Url && audio2Url) {
+        playerHTML = `
+        <div class="player-relatorio" style="display:flex; flex-direction:column; gap:12px; width:100%; max-width:280px; align-items:center;">
+            <div style="width:100%; background:rgba(0,0,0,0.4); padding:10px; border-radius:8px; border:1px solid rgba(212,154,154,0.2);">
+                <span style="font-size:9px; color:#d49a9a; display:block; margin-bottom:5px; text-transform:uppercase;">${nomeAudio1}</span>
+                <audio controls style="width:100%; height:30px;"><source src="${audio1Url}" type="audio/mpeg"></audio>
+            </div>
+            <div style="width:100%; background:rgba(0,0,0,0.4); padding:10px; border-radius:8px; border:1px solid rgba(212,154,154,0.2);">
+                <span style="font-size:9px; color:#d49a9a; display:block; margin-bottom:5px; text-transform:uppercase;">${nomeAudio2}</span>
+                <audio controls style="width:100%; height:30px;"><source src="${audio2Url}" type="audio/mpeg"></audio>
+            </div>
+        </div>`;
+
+        linkHTML = `
+        <div class="botao-pdf-link" style="display:none; flex-direction:column; gap:10px; width:100%; align-items:center;">
+            <a href="${audio1Url}" target="_blank" style="color:#ffd700; font-size:11px; font-family:'Cinzel', serif; text-decoration:underline;">📥 BAIXAR ÁUDIO: ${nomeAudio1}</a>
+            <a href="${audio2Url}" target="_blank" style="color:#ffd700; font-size:11px; font-family:'Cinzel', serif; text-decoration:underline;">📥 BAIXAR ÁUDIO: ${nomeAudio2}</a>
+        </div>`;
+    }
+
+    return `
+    <div class="pag-a4" style="background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important; border: 4px solid #a6843c; display: flex !important; flex-direction: column !important; justify-content: space-between !important; align-items: center !important; padding: 40px 20px !important;">
+        <div style="text-align: center;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 22px; color: #fff; text-transform: uppercase; letter-spacing: 2px;">${titulo}</h2>
+            <span style="color: #c39b9b; font-size: 12px; display: block; margin-top: 5px; letter-spacing: 3px;">${subtitulo}</span>
+        </div>
+        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/INSTINTOFOTOO.png" style="width: 150px; height: 150px; border-radius: 50%; border: 2px solid #a6843c; object-fit:cover;">
+        
+        ${playerHTML}
+        ${linkHTML}
+
+        <p style="font-size: 9px; color: #ffffff; opacity: 0.5; text-align: center; letter-spacing: 1px;">${rodape}</p>
+    </div>`;
+}
 
 function abrirPremiumSinastria(){
+  if(!dados1 || !dados2) return alert("Calcule os dados primeiro.");
 
   const nome1 = document.getElementById("nome1").value;
   const nome2 = document.getElementById("nome2").value;
-  const data1 = document.getElementById("data1").value;
-  const data2 = document.getElementById("data2").value;
+  const social1 = document.getElementById("social1").value || nome1.split(' ')[0];
+  const social2 = document.getElementById("social2").value || nome2.split(' ')[0];
+  const dataHoje = new Date().toLocaleDateString('pt-BR');
 
-  if(!dados1 || !dados2){
-    alert("Calcule a sinastria primeiro.");
-    return;
-  }
-const pacote = {
+  // Capa Principal
+  let relatorioHTML = `
+    <div class="pag-a4" style="background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important; border: 4px solid #a6843c; display: flex !important; flex-direction: column !important; justify-content: space-between !important; align-items: center !important; padding: 40px 20px !important;">
+        <div style="text-align: center; margin-top: 10px;">
+            <span style="color: #a6843c; letter-spacing: 5px; font-size: 10px; text-transform: uppercase;">Portal Numerológico Cabalístico</span>
+            <div style="width: 40px; height: 1px; background: #a6843c; margin: 8px auto;"></div>
+        </div>
+        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudo.png" style="width: 160px; height: auto; filter: drop-shadow(0 0 10px rgba(166,132,60,0.2));">
+        <div style="text-align: center; width: 100%;">
+            <div style="color: #c39b9b; font-family: 'Cinzel', serif; letter-spacing: 2px; font-size: 11px; text-transform: uppercase;">Estudo de Harmonia Conjugal & Destino</div>
+            <h1 style="font-family: 'Cinzel', serif; font-size: 24px; text-transform: uppercase; letter-spacing: 2px; color: #fff; margin: 10px 0;">MAPA NUMEROLÓGICO<br>DE SINASTRIA</h1>
+            <div style="width: 120px; height: 1px; background: #a6843c; margin: 10px auto;"></div>
+            <div style="font-family: 'Cinzel', serif; font-size: 18px; color: #fff; letter-spacing: 1px;">
+                <span>${social1}</span> <span style="color: #8a1c32;">❤️</span> <span>${social2}</span>
+            </div>
+            <div style="font-family: 'Cinzel', serif; font-size: 13px; color: #a6843c; letter-spacing: 3px; margin-top: 5px;">${dataHoje}</div>
+        </div>
+        <p style="font-size: 9px; color: #ffffff; letter-spacing: 2px; text-transform: uppercase; opacity: 0.5;">Instinto Superior • Engenharia do Amor</p>
+    </div>`;
 
-  pessoa1:{
-    nome: nome1,
-    data: data1,
+  // --- PÁGINA 2: SUMÁRIO EXECUTIVO PREMIUM ---
+  relatorioHTML += `
+  <div class="pag-a4" style="
+      background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important; 
+      border: 4px solid #a6843c; 
+      display: flex !important; 
+      flex-direction: column !important; 
+      align-items: center !important; 
+      justify-content: flex-start !important; 
+      padding: 60px 40px !important; 
+      box-sizing: border-box !important; 
+      page-break-after: always !important;
+      position: relative;
+      overflow: hidden !important;">
 
-    piramide: document.getElementById("piramide1").innerHTML,
-    regente: dados1.regente,
-   
+      <div style="position: absolute; top: 15px; left: 15px; width: 30px; height: 30px; border-top: 2px solid #a6843c; border-left: 2px solid #a6843c;"></div>
+      <div style="position: absolute; top: 15px; right: 15px; width: 30px; height: 30px; border-top: 2px solid #a6843c; border-right: 2px solid #a6843c;"></div>
 
-    motivacao: dados1.motivacao,
-    influencia: dados1.influencia,
-    personalidade: dados1.personalidade,
-    caminho: dados1.caminho,
-    proposito: dados1.proposito,
-    harmonia: dados1.harmonia,
-    ano: dados1.anoPessoal,
+      <div style="text-align: center; margin-bottom: 30px;">
+          <h2 style="font-family: 'Cinzel', serif; color: #fff; font-size: 22px; letter-spacing: 5px; text-transform: uppercase; margin: 0; font-weight: 700;">
+              Sumário Executivo
+          </h2>
+          <div style="width: 60px; height: 1px; background: #a6843c; margin: 10px auto;"></div>
+          <p style="font-family: 'Poppins', sans-serif; color: #d49a9a; font-size: 10px; text-transform: uppercase; letter-spacing: 3px;">Roteiro da Jornada Vibracional</p>
+      </div>
 
-    textos:{
-      motivacao: textos.motivacao[dados1.motivacao],
-      influencia: textos.influencia[dados1.influencia],
-      personalidade: textos.personalidade[dados1.personalidade],
-      caminho: textos.CaminhodeVida[dados1.caminho],
-      proposito: textos.proposito[dados1.proposito],
-      harmonia: textos.harmonia[dados1.harmonia],
-      ano: textos.anoPessoal[dados1.anoPessoal],
-      regente: textos.regente[dados1.regente],
- seqNegativa: dados1.sequenciaNegativa
-  ? dados1.sequenciaNegativa
-      .map(n => textos.sequenciaNegativa[n])
-      .join("<br><br>")
-  : "",
-    }
-  },
+      <div style="width: 100%; max-width: 900px; display: flex; flex-direction: column; gap: 15px;">
+          ${[
+              { t: "Introdução", c: "Instinto Superior ✶ Engenharia da Vida ✶ Direcionamento de Jornada"},
+              { t: "Parte 1: Motivação da Alma", c: "Análise Intrapessoal ✶ O Desejo Oculto e Íntimo de Cada Alma"},
+              { t: "Parte 2: Influência & Impressão", c: "A Imagem Projetada ✶ A Primeira Impressão no Mundo Exterior"},
+              { t: "Parte 3: Expressão & Personalidade", c: "Alinhamento de Temperamento ✶ Comportamento Prático do Casal"},
+              { t: "Parte 4: Caminho de Vida", c: "A Estrada do Destino ✶ Desafios e Facilidades na Linha do Tempo"},
+              { t: "Parte 5: Propósito Existencial", c: "A Grande Missão de Realização Conjunta ✶ Meta Final de Vida"},
+              { t: "Parte 6: Ciclo Anual", c: "Vibração do Ano Pessoal Atual ✶ Tendências e Oportunidades do Ciclo"},
+              { t: "Parte 7: Sinastria & União", c: "A Alquimia Amorosa ✶ Compatibilidade Direta e Pontos de Afinidade"},
+              { t: "Parte 8: A Grande Matriz", c: "Pirâmide Invertida de Registro Cabalístico ✶ Sequências Negativas"},
+              { t: "Parte 9: Filosofia e Ciência", c: "Conclusão Evolutiva do Casal ✶ Estudo Vibracional Infantil (Se Houver)"}
+          ].map((item, index) => `
+              <div style="display: flex; flex-direction: column; align-items: center; border-bottom: 1px solid rgba(166, 132, 60, 0.15); padding-bottom: 8px;">
+                  <h3 style="font-family: 'Cinzel', serif; color: #ffd700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 3px 0; font-weight: 600;">
+                     <span style="color: #a6843c; margin-right: 5px;">${index + 1}.</span> ${item.t}
+                  </h3>
+                  <p style="font-family: 'Poppins', sans-serif; color: #fff; opacity: 0.8; font-size: 10px; margin: 0; line-height: 1.2; text-align: center; font-weight: 300;">
+                      ${item.c}
+                  </p>
+              </div>
+          `).join('')}
+      </div>
+      
+      <div style="margin-top: auto; text-align: center; padding-bottom: 20px;">
+          <p style="font-family: 'Cinzel', serif; color: #a6843c; letter-spacing: 4px; font-size: 9px; text-transform: uppercase; margin: 0;">
+              Instinto Superior • Engenharia do Amor
+          </p>
+      </div>
+  </div>
+  `;
 
-  pessoa2:{
-    nome: nome2,
-    data: data2,
-
-    piramide: document.getElementById("piramide2").innerHTML,
-    regente: dados2.regente,
-    
-
-    motivacao: dados2.motivacao,
-    influencia: dados2.influencia,
-    personalidade: dados2.personalidade,
-    caminho: dados2.caminho,
-    proposito: dados2.proposito,
-    harmonia: dados2.harmonia,
-    ano: dados2.anoPessoal,
-
-    textos:{
-      motivacao: textos.motivacao[dados2.motivacao],
-      influencia: textos.influencia[dados2.influencia],
-      personalidade: textos.personalidade[dados2.personalidade],
-      caminho: textos.CaminhodeVida[dados2.caminho],
-      proposito: textos.proposito[dados2.proposito],
-      harmonia: textos.harmonia[dados2.harmonia],
-      ano: textos.anoPessoal[dados2.anoPessoal],
-      regente: textos.regente[dados2.regente],
-      seqNegativa: dados2.sequenciaNegativa
-  ? dados2.sequenciaNegativa
-      .map(n => textos.sequenciaNegativa[n])
-      .join("<br><br>")
-  : "",
-    }
-  },
-
-  sinastria:{
-    numero: chaveSinastria(dados1.proposito, dados2.proposito),
-    texto: textos.sinastria[
-      chaveSinastria(dados1.proposito, dados2.proposito)
-    ]
-  },
-
-  biologico: compatibilidadeRH(),
-
-bebe: dadosBebe ? {
-  nome: document.getElementById("nomeBebe").value,
-
-  motivacao: dadosBebe.motivacao,
-  influencia: dadosBebe.influencia,
-  personalidade: dadosBebe.personalidade,
-  regente: dadosBebe.regente,
-
-  piramide: document.getElementById("piramideBebe").innerHTML,
-
-  textos:{
-    motivacao: textos.motivacao[dadosBebe.motivacao],
-    influencia: textos.influencia[dadosBebe.influencia],
-    personalidade: textos.personalidade[dadosBebe.personalidade],
-    regente: textos.regente[dadosBebe.regente]
+  function extrairETratarTexto(textoBruto, nomeParceiro) {
+    if (!textoBruto) return "";
+    const div = document.createElement("div"); div.innerHTML = textoBruto;
+    let t = div.textContent || div.innerText || "";
+    return `<p style="color:#222222 !important; font-size:13px; line-height:1.7; text-align:justify; margin-bottom:12px;">${t.replace(/você/gi, `<strong>${nomeParceiro}</strong>`).replace(/voce/gi, `<strong>${nomeParceiro}</strong>`)}</p>`;
   }
 
-} : null
+  function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2) {
+    return `
+      <div class="bloco-texto-pdf">
+          <h2 class="titulo-secao-pdf">${titulo}</h2>
+          <h3 class="subtitulo-pessoa-pdf">${sub1}</h3>
+          <div>${extrairETratarTexto(txt1, social1)}</div>
+          <div class="divisor-pdf"></div>
+          <h3 class="subtitulo-pessoa-pdf">${sub2}</h3>
+          <div>${extrairETratarTexto(txt2, social2)}</div>
+      </div>`;
+  }
 
-};
+  // Função auxiliar interna para gerar o HTML textual da pirâmide e injetar no miolo do PDF
+  function obterHtmlTextoPiramide(valores) {
+    if(!valores || valores.length === 0) return "";
+    let lines = [valores.map(Number)];
+    while(lines[lines.length-1].length > 1){
+      let anterior = lines[lines.length-1];
+      let nova = [];
+      for(let i=0; i<anterior.length-1; i++){
+        nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
+      }
+      lines.push(nova);
+    }
+    let marcacoes = [];
+    for(let l=0; l<lines.length; l++){
+      marcacoes[l] = new Set();
+      let linha = lines[l];
+      let i=0;
+      while(i < linha.length){
+        let atual = Number(linha[i]);
+        let count = 1; let j = i+1;
+        while(j < linha.length && Number(linha[j]) === atual) { count++; j++; }
+        if(count >= 3){
+          for(let k=i; k<i+count; k++) marcacoes[l].add(k);
+        }
+        i += count;
+      }
+    }
+    let txtPiramide = "";
+    for(let l=0; l<lines.length; l++){
+      txtPiramide += lines[l].map((n, idx) => {
+        if (marcacoes[l].has(idx)) return `<span class="negativo" style="color:#ff3b5c !important; font-weight:bold;">${n}</span>`;
+        return n;
+      }).join(" ") + "\n";
+    }
+    return txtPiramide;
+  }
 
-
-// 2. DEPOIS: COMEÇA A MONTAR O HTML DO RELATÓRIO
-let html = `  
-
-
-
-<div id="status-acesso"class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
-    <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 5px;">Calculando seu tempo de acesso...</div>
-    <div id="timer" style="font-family: 'Courier New', monospace; font-size: 1.8rem; font-weight: bold; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);">00:00:00:00</div>
-    <div id="msg-trava" style="font-size: 0.75rem; opacity: 0.7; margin-top: 5px;"></div>
-<div id="aviso-expiracao-total" class="no-print" style="font-size: 0.75rem; color: #ffbc00; margin-top: 10px; opacity: 0.9;">   Verificando validade do acesso...</div>
-    
-</div>
-
-
-
-<button id="btn-pdf-premium" class="btn-pdf no-print" onclick="window.print(); registrarDownloadRealizado();" disabled style="filter: grayscale(100%); opacity: 0.5; cursor: not-allowed;">
-    📥 BAIXAR SEU PDF PREMIUM
-</button>
-
-
-<div class="no-print" style="position: fixed; top: 10px; left: 10px; z-index: 9999; text-align: center;">
-    <button onclick="window.location.href='index.html'" style="background: #d62600; color: white; border: 2px solid white; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; font-weight: bold; font-size: 18px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">X</button>
-    <div style="color: white; font-size: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">⬅️ VOLTAR AO PORTAL</div>
-</div>`;
-
-  
-
-localStorage.setItem(
-  "relatorioSinastria",
-  JSON.stringify(pacote)
-);
-
-
-
-  window.open(
-    "https://hemricciinstintosuperior-rcci.github.io/Harmonia_conjugal/premiumsinastria.html",
-    "_blank"
+  // Capa da Seção 1 com os Áudios acoplados corretamente
+  relatorioHTML += criarCapaTransicao(
+      "Expressão & Alma", 
+      "O Direcionamento do seu Destino", 
+      "Instinto Superior ✶ Relatório Premium",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
   );
-}
-</script>
-  <script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js");
-}
- // 🔒 BLOQUEIO CÓPIA
-// =======================
-document.oncontextmenu=()=>false;
-document.onselectstart=()=>false; 
 
+  // Miolos estruturados
+  relatorioHTML += gerarFolhaConteudo("PARTE 1: MOTIVAÇÃO DA ALMA", `O Desejo Íntimo de ${social1}`, textos.motivacao[dados1.motivacao], `O Desejo Íntimo de ${social2}`, textos.motivacao[dados2.motivacao]);
+  
+  relatorioHTML += criarCapaTransicao(
+      "Impressão & Imagem", 
+      "A Projeção do Ser no Mundo Exterior", 
+      "Instinto Superior ✶ Relatório Premium",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+  );
+  relatorioHTML += gerarFolhaConteudo("PARTE 2: INFLUÊNCIA & IMPRESSÃO", `A Influência de ${social1}`, textos.influencia[dados1.influencia], `A Influência de ${social2}`, textos.influencia[dados2.influencia]);
+  
+  relatorioHTML += criarCapaTransicao(
+      "Expressão & Personalidade", 
+      "O Alinhamento Prático de Temperamentos", 
+      "Instinto Superior ✶ Relatório Premium",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+  );
+  relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Expressão de ${social1}`, textos.personalidade[dados1.personalidade], `A Expressão de ${social2}`, textos.personalidade[dados2.personalidade]);
+ 
+  relatorioHTML += criarCapaTransicao(
+      "Caminho de Vida", 
+      "A Estrada do Destino e Linhas do Tempo", 
+      "Instinto Superior ✶ Relatório Premium",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+  );
+  relatorioHTML += gerarFolhaConteudo("PARTE 4: CAMINHO DE VIDA", `A Estrada de ${social1}`, textos.CaminhodeVida[dados1.caminho], `A Estrada de ${social2}`, textos.CaminhodeVida[dados2.caminho]);
+ 
+  relatorioHTML += criarCapaTransicao(
+      "Propósito Existencial", 
+      "A Missão Final e Conexão de Almas", 
+      "Instinto Superior ✶ Relatório Premium",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+  );
+  relatorioHTML += gerarFolhaConteudo("PARTE 5: PROPÓSITO EXISTENCIAL", `O Propósito de ${social1}`, textos.proposito[dados1.proposito], `O Propósito de ${social2}`, textos.proposito[dados2.proposito]);
+ 
+  relatorioHTML += criarCapaTransicao(
+      "Ciclo Anual", 
+      "O Momento Atual e Prospecção do Ano", 
+      "Instinto Superior ✶ Relatório Premium",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+  );
+  relatorioHTML += gerarFolhaConteudo("PARTE 6: CICLO ANUAL", `Ano Pessoal de ${social1}`, textos.anoPessoal[dados1.anoPessoal], `Ano Pessoal de ${social2}`, textos.anoPessoal[dados2.anoPessoal]);
+
+  // Sinastria
+  const chave = chaveSinastria(dados1.proposito, dados2.proposito);
+  let textoSinastriaPuro = extrairETratarTexto(textos.sinastria[chave], social1);
+  const menor = Math.min(dados1.proposito, dados2.proposito);
+  const maior = Math.max(dados1.proposito, dados2.proposito);
+  textoSinastriaPuro = textoSinastriaPuro.replaceAll(`Energia ${menor}`, (dados1.proposito===menor)?social1:social2)
+                                         .replaceAll(`Energia ${maior}`, (dados1.proposito===maior)?social1:social2);
+
+  relatorioHTML += criarCapaTransicao(
+      "Sinastria Conjugal", 
+      "A Alquimia Sagrada e Alinhamento de Almas", 
+      "Instinto Superior ✶ Conexão Amorosa ✶ Afinidade Vibracional"
+  );
+
+  relatorioHTML += `
+    <div class="bloco-texto-pdf">
+        <h2 class="titulo-secao-pdf">PARTE 7: SINASTRIA & UNIÃO</h2>
+        <h3 class="subtitulo-pessoa-pdf" style="text-align:center; margin-bottom:20px;">A Alquimia entre ${social1} e ${social2}</h3>
+        <div>${textoSinastriaPuro}</div>
+    </div>`;
+
+// --- PARTE 8: INJEÇÃO COMPACTA E EM ALTA RESOLUÇÃO DA PIRÂMIDE DO CASAL ---
+  let textoPiramideParceiro1 = obterHtmlTextoPiramide(dados1.valores);
+  let textoPiramideParceiro2 = obterHtmlTextoPiramide(dados2.valores);
+
+  // Busca os textos do Regente e das Sequências Negativas da Pessoa 1
+  let textoRegenteP1 = textos.regente[dados1.regente] || "";
+  let textoSequenciasP1 = "";
+  if (dados1.sequenciaNegativa && dados1.sequenciaNegativa.length > 0) {
+      textoSequenciasP1 = dados1.sequenciaNegativa.map(x => `
+          <div style="margin-top: 10px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
+              <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textos.sequenciaNegativa[x]}
+          </div>
+      `).join("");
+  } else {
+      textoSequenciasP1 = `<p style="color: #28a745 !important; font-size: 13px;">✅ Nenhuma sequência negativa identificada no nome.</p>`;
+  }
+
+  // Busca os textos do Regente e das Sequências Negativas da Pessoa 2
+  let textoRegenteP2 = textos.regente[dados2.regente] || "";
+  let textoSequenciasP2 = "";
+  if (dados2.sequenciaNegativa && dados2.sequenciaNegativa.length > 0) {
+      textoSequenciasP2 = dados2.sequenciaNegativa.map(x => `
+          <div style="margin-top: 10px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
+              <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textos.sequenciaNegativa[x]}
+          </div>
+      `).join("");
+  } else {
+      textoSequenciasP2 = `<p style="color: #28a745 !important; font-size: 13px;">✅ Nenhuma sequência negativa identificada no nome.</p>`;
+  }
+
+  relatorioHTML += criarCapaTransicao(
+      "A Grande Matriz", 
+      "Pirâmides Invertidas e Engenharia de Destino", 
+      "Instinto Superior ✶ Matriz Quântica ✶ Arcanos e Vibrações"
+  );
+
+  // Página da Matriz da Pessoa 1
+  relatorioHTML += `
+    <div class="bloco-texto-pdf">
+        <h2 class="titulo-secao-pdf">PARTE 8: MATRIZ CABALÍSTICA DE ${social1.toUpperCase()}</h2>
+        
+        <div style="text-align:center; margin-bottom:20px; background:#fdfdfd; padding:15px; border:1px dashed rgba(166,132,60,0.3); border-radius:6px;">
+            <pre style="font-family:'Courier New', monospace; font-size:12px; line-height:1.4; letter-spacing:4px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideParceiro1}</pre>
+        </div>
+        
+        <h3 class="subtitulo-pessoa-pdf">🎯 Número Regente da Matriz: Encarte ${dados1.regente}</h3>
+        <div>${extrairETratarTexto(textoRegenteP1, social1)}</div>
+        
+        <div class="divisor-pdf" style="margin:15px 0;"></div>
+        
+        <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências Numéricas</h3>
+        <div>${textoSequenciasP1}</div>
+    </div>`;
+
+  // Página da Matriz da Pessoa 2
+  relatorioHTML += `
+    <div class="bloco-texto-pdf">
+        <h2 class="titulo-secao-pdf">PARTE 8: MATRIZ CABALÍSTICA DE ${social2.toUpperCase()}</h2>
+        
+        <div style="text-align:center; margin-bottom:20px; background:#fdfdfd; padding:15px; border:1px dashed rgba(166,132,60,0.3); border-radius:6px;">
+            <pre style="font-family:'Courier New', monospace; font-size:12px; line-height:1.4; letter-spacing:4px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideParceiro2}</pre>
+        </div>
+        
+        <h3 class="subtitulo-pessoa-pdf">🎯 Número Regente da Matriz: Encarte ${dados2.regente}</h3>
+        <div>${extrairETratarTexto(textoRegenteP2, social2)}</div>
+        
+        <div class="divisor-pdf" style="margin:15px 0;"></div>
+        
+        <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências Numéricas</h3>
+        <div>${textoSequenciasP2}</div>
+    </div>`;
+
+// Processamento do bebê, se houver
+  const nomeBebeInput = document.getElementById("nomeBebe").value;
+  if (nomeBebeInput && dadosBebe) {
+      const socialBebeInput = document.getElementById("socialBebe").value || nomeBebeInput.split(' ')[0];
+      let textoPiramideBebe = obterHtmlTextoPiramide(dadosBebe.valores);
+
+      // Busca os textos do Regente e das Sequências Negativas do Bebê
+      let textoRegenteBebe = textos.regente[dadosBebe.regente] || "";
+      let textoSequenciasBebe = "";
+      if (dadosBebe.sequenciaNegativa && dadosBebe.sequenciaNegativa.length > 0) {
+          textoSequenciasBebe = dadosBebe.sequenciaNegativa.map(x => `
+              <div style="margin-top: 10px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
+                  <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textos.sequenciaNegativa[x]}
+              </div>
+          `).join("");
+      } else {
+          textoSequenciasBebe = `<p style="color: #28a745 !important; font-size: 13px;">✅ Nenhuma sequência negativa identificada no nome do bebê. Assinatura harmônica.</p>`;
+      }
+
+      relatorioHTML += criarCapaTransicao(
+          "Mapa Numerológico do Bebê", 
+          `Análise de Potencial Vibracional Infantil`, 
+          "Instinto Superior ✶ Legado Familiar ✶ Vibração Primal"
+      );
+
+      let statusHarmonia = (!dadosBebe.sequenciaNegativa || dadosBebe.sequenciaNegativa.length === 0) 
+          ? `<span style="color: #28a745; font-weight: bold;">✅ ANÁLISE: Este nome de registro é completamente harmônico.</span>`
+          : `<span style="color: #6B0202; font-weight: bold;">❌ ALERTA: Este nome de registro possui sequências numéricas negativas.</span>`;
+
+      relatorioHTML += `
+        <div class="bloco-texto-pdf">
+            <h2 class="titulo-secao-pdf">ESTUDO VIBRACIONAL INFANTIL</h2>
+            <div style="text-align: center; margin-bottom: 20px; padding: 10px; background: #fdf8f8; border: 1px solid rgba(212, 154, 154, 0.3); border-radius: 8px;">
+                <h3 style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 15px; margin-bottom: 5px;">Análise Estrutural do Nome Completo: ${nomeBebeInput}</h3>
+                <div style="font-size: 12px;">${statusHarmonia}</div>
+            </div>
+            <h3 class="subtitulo-pessoa-pdf">1. Motivação (A Alma da Criança)</h3>
+            <div>${extrairETratarTexto(textos.motivacao[dadosBebe.motivacao], socialBebeInput)}</div>
+            <h3 class="subtitulo-pessoa-pdf">2. Influência (A Impressão do Mundo)</h3>
+            <div>${extrairETratarTexto(textos.influencia[dadosBebe.influencia], socialBebeInput)}</div>
+            <h3 class="subtitulo-pessoa-pdf">3. Expressão (A Personalidade em Formação)</h3>
+            <div>${extrairETratarTexto(textos.personalidade[dadosBebe.personalidade], socialBebeInput)}</div>
+        </div>
+        
+        <div class="bloco-texto-pdf">
+            <h2 class="titulo-secao-pdf">A GRANDE MATRIZ DO BEBÊ</h2>
+            
+            <div style="text-align:center; margin-bottom:20px; background:#fdfdfd; padding:20px; border:1px dashed rgba(212,154,154,0.4); border-radius:8px;">
+                <pre style="font-family:'Courier New', monospace; font-size:13px; line-height:1.5; letter-spacing:5px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideBebe}</pre>
+            </div>
+
+            <h3 class="subtitulo-pessoa-pdf">🎯 Número Regente do Bebê: Encarte ${dadosBebe.regente}</h3>
+            <div>${extrairETratarTexto(textoRegenteBebe, socialBebeInput)}</div>
+            
+            <div class="divisor-pdf" style="margin:15px 0;"></div>
+            
+            <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências do Nome</h3>
+            <div>${textoSequenciasBebe}</div>
+        </div>`;
+  }
+
+// === INJEÇÃO DO STATUS DE ACESSO, BOTÃO PREMIUM E RELATÓRIO ===
+  const areaPDF = document.getElementById("area-pdf-local");
+  areaPDF.innerHTML = `
+      <div id="status-acesso" class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
+          <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 5px;">Calculando seu tempo de acesso...</div>
+          <div id="timer" style="font-family: 'Courier New', monospace; font-size: 1.8rem; font-weight: bold; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);">00:00:00:00</div>
+          <div id="msg-trava" style="font-size: 0.75rem; opacity: 0.7; margin-top: 5px;"></div>
+          <div id="aviso-expiracao-total" class="no-print" style="font-size: 0.75rem; color: #ffbc00; margin-top: 10px; opacity: 0.9;">Verificando validade do acesso...</div>
+      </div>
+
+      <div class="no-print" style="display: flex; justify-content: center; margin: 20px 0; width: 100%;">
+          <button id="btn-pdf-premium" class="btn-action no-print" onclick="window.print(); registrarDownloadRealizado();" disabled style="filter: grayscale(100%); opacity: 0.5; cursor: not-allowed; background: linear-gradient(135deg, #002091 0%, #00104a 100%); color: white; padding: 14px 30px; font-weight: bold; border-radius: 30px; font-size: 15px; box-shadow: 0 4px 15px rgba(0,32,145,0.4);">
+              📥 BAIXAR SEU PDF PREMIUM
+          </button>
+      </div>
+
+      <div class="no-print" style="position: fixed; top: 10px; left: 10px; z-index: 9999; text-align: center;">
+          <button onclick="encerrarSessao()" style="background: #d62600; color: white; border: 2px solid white; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; font-weight: bold; font-size: 18px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">X</button>
+          <div style="color: white; font-size: 10px; font-weight: bold; text-shadow: 1px 1px 2px black; margin-top: 3px;">⬅️ VOLTAR</div>
+      </div>
+
+      <div id="conteudo-pdf-rolavel">${relatorioHTML}</div>`;
+
+  // Rola a tela suavemente para o início do relatório
+  areaPDF.scrollIntoView({ behavior: 'smooth' });
+
+  // GATILHO DA VITÓRIA: Ativa as validações do Firebase para o Timer e Botão que acabaram de nascer
+  if (dadosGlobais) {
+      const dataReferencia = new Date(dadosGlobais.data_inicio);
+      const dataExpiracaoPDF = new Date(dataReferencia);
+      dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
+
+      iniciarTimer(dataExpiracaoPDF);
+      verificarLiberacaoPDF(dadosGlobais);
+  }
+}
 </script>
 
 
@@ -1136,7 +1410,6 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     }
 });
 </script>
-
-
+    
 </body>
-</html>  
+</html>
