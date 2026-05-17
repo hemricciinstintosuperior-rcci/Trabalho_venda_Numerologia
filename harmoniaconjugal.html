@@ -384,6 +384,22 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         display: none !important;
     }
 }
+
+
+  @media print {
+    /* Esconde o container do cronômetro e mensagens de trava pelo ID */
+    #status-acesso, 
+    #label-tempo, 
+    #timer, 
+    #msg-trava {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}  
+    
     
 </style>
 </head>
