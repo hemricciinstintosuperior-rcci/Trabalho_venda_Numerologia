@@ -1362,11 +1362,11 @@ relatorioHTML += `
                 <h3 style="color: #6B0202; font-family: 'Cinzel', serif; font-size: 15px; margin-bottom: 5px;">Análise Estrutural do Nome Completo: ${nomeBebeInput}</h3>
                 <div style="font-size: 12px;">${statusHarmonia}</div>
             </div>
-            <h3 class="subtitulo-pessoa-pdf">1. Motivação (A Alma da Criança)</h3>
+            <h3 class="subtitulo-pessoa-pdf"> Motivação (A Alma da Criança)</h3>
             <div>${extrairETratarTexto(textos.motivacao[dadosBebe.motivacao], socialBebeInput)}</div>
-            <h3 class="subtitulo-pessoa-pdf">2. Influência (A Impressão do Mundo)</h3>
+            <h3 class="subtitulo-pessoa-pdf"> Influência (A Impressão do Mundo)</h3>
             <div>${extrairETratarTexto(textos.influencia[dadosBebe.influencia], socialBebeInput)}</div>
-            <h3 class="subtitulo-pessoa-pdf">3. Expressão (A Personalidade em Formação)</h3>
+            <h3 class="subtitulo-pessoa-pdf"> Expressão (A Personalidade em Formação)</h3>
             <div>${extrairETratarTexto(textos.personalidade[dadosBebe.personalidade], socialBebeInput)}</div>
         </div>
         
@@ -1383,7 +1383,7 @@ relatorioHTML += `
             <div class="divisor-pdf" style="margin:15px 0;"></div>
             
             <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências do Nome</h3>
-            <div>${extrairETratarTexto(textoSequenciasBebe)}</div>
+            <div>${extrairETratarTexto(textoSequenciasBebe, socialBebeInput)}</div>
         </div>`;
   }
 
