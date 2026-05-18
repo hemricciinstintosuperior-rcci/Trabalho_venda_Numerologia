@@ -23,6 +23,28 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 /></noscript>
 
 <style>
+
+
+/* ===================================================
+   ESPAÇAMENTO GERAL DE RESPIRO (TOPO E BASE DA PÁGINA)
+   =================================================== */
+
+.bloco-texto-pdf {
+    /* Força o navegador a incluir o espaçamento dentro do tamanho total da folha */
+    box-sizing: border-box !important; 
+
+    /* Ajuste Geral de Margem Interna (Respiro):
+       Top: 40mm (o espaço no topo que você pediu)
+       Right: 20mm (lateral direita)
+       Bottom: 30mm (espaço na parte de baixo para não sumir texto)
+       Left: 20mm (lateral esquerda) */
+    padding: 40mm 20mm 30mm 20mm !important; 
+
+    /* Garante que o fundo branco cubra toda a área */
+    background: #ffffff !important; 
+}
+
+    
     /* =======================================================
        1. VARIÁVEIS E CONFIGURAÇÃO GLOBAL DO SITE (TELA)
        ======================================================= */
@@ -528,7 +550,179 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 }
     
     
-  
+/* Força qualquer H3 ou título que venha de dentro do JS a se comportar */
+.bloco-texto-pdf h3, 
+.conteudo-dinamico-pdf h3 {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 20px !important;
+    color: #6B0202 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    
+    /* CORREÇÃO DO ESPAÇAMENTO: */
+    margin-top: 15px !important;   /* Diminuído para não criar um buraco antes do título */
+    margin-bottom: 8px !important;  /* Mantém o título colado e conectado ao parágrafo dele */
+    display: block !important;
+    line-height: 1.2 !important;
+}
+
+/* Ajuste específico para os parágrafos subsequentes não se afastarem */
+.conteudo-dinamico-pdf p {
+    margin-top: 0 !important;
+    margin-bottom: 14px !important; /* Espaçamento ideal entre um parágrafo e outro */
+}  
+
+
+
+/* ==========================================
+   CORREÇÃO DE QUEBRA DE PÁGINA E ESPAÇAMENTO
+   ========================================== */
+
+/* 1. Impede que o título fique isolado em uma folha e o conteúdo vá para a outra */
+.bloco-texto-pdf h2, 
+.bloco-texto-pdf h3,
+.conteudo-dinamico-pdf h3 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+}
+
+/* 2. Ajuste específico para os blocos de Sequências Negativas e Desafios */
+.sequencia-negativa-box,
+.bloco-desafios-pdf,
+.bloco-bebe-pdf,
+.bloco-texto-pdf div[style*="background"] {
+    page-break-inside: auto !important; /* Permite que o texto quebre de folha se for muito longo */
+    break-inside: auto !important;
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+/* 3. Evita que um parágrafo longo crie uma linha órfã (uma única linha isolada na folha) */
+.conteudo-dinamico-pdf p {
+    page-break-inside: avoid !important; /* Mantém parágrafos pequenos juntos */
+    break-inside: avoid !important;
+    orphans: 3;
+    widows: 3;
+}    
+
+
+
+ /* ==========================================================
+   SISTEMA DE PAGINAÇÃO E RESPIRO DO TOPO (MODELO IMPORTADO)
+   ========================================================== */
+
+/* 1. Configuração da folha física no PDF */
+@media print {
+    @page {
+        size: A4;
+        margin: 1.5cm !important; /* Cria o espaço de 1,5cm no topo e nas laterais para o texto descer */
+    }
+
+    /* Força o contador a iniciar do zero no documento */
+    body {
+        counter-reset: page;
+    }
+}
+
+/* 2. Estilo do número da página (Esconde na tela, mostra no PDF) */
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 10pt;
+    color: #827108; /* Dourado nobre do seu padrão */
+    display: none; 
+}
+
+@media print {
+    .page-footer {
+        display: block !important; /* Ativa apenas na impressão/PDF */
+        position: fixed;
+        bottom: 10mm;
+        right: 10mm;
+        z-index: 9999;
+    }
+    
+    .page-number::after {
+        counter-increment: page;
+        content: "Página " counter(page);
+    }
+}
+
+
+
+
+    
+
+/* 3. Proteção da Capa (Para ela ignorar a margem e não quebrar) */
+@media print {
+    .capa, .capa-transicao, .capa-sinastria {
+        page-break-before: always !important;
+        page-break-after: always !important;
+        margin: 0 !important; /* Zera a margem de 1.5cm só aqui */
+        padding: 0 !important;
+        height: 297mm !important; /* Trava no tamanho exato do A4 */
+        position: relative;
+        z-index: 10000;
+        background-color: #000 !important;
+    }
+
+    /* Esconde a numeração especificamente na primeira página (Capa) */
+    @page :first {
+        @top-right { content: ""; }
+        @bottom-right { content: ""; }
+    }
+}
+
+/* 4. Ajuste da classe .page da Sinastria para aceitar o respiro */
+.page {
+    width: 100%;
+    margin: 0 auto !important;
+    padding-top: 10px !important; /* Deixa o @page comandar o recuo maior */
+}  
+
+/* ==========================================================
+   SISTEMA DE PAGINAÇÃO NO TOPO (CABEÇALHO DIREITO)
+   ========================================================== */
+
+@media print {
+    /* 1. Configura a folha física no PDF com margem e numeração no topo */
+    @page {
+        size: A4;
+        /* Mantém o respiro de 1.5cm nas laterais e base, e dá 2cm no topo para o número e o texto respirarem */
+        margin: 20mm 15mm 15mm 15mm !important; 
+        
+        /* Injeta o contador de páginas diretamente no TOPO DIREITO da folha */
+        @top-right {
+            content: "Página " counter(page);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            font-size: 10pt !important;
+            color: #827108 !important; /* Dourado padrão do seu sistema */
+            font-weight: bold !important;
+        }
+    }
+
+    /* 2. Força o navegador a resetar a contagem no início do documento */
+    body {
+        counter-reset: page;
+    }
+
+    /* 3. Esconde qualquer resquício da div de rodapé antiga, caso tenha colocado */
+    .page-footer {
+        display: none !important;
+    }
+
+    /* 4. Regra para sumir com o número especificamente na PRIMEIRA página (Capa) */
+    @page :first {
+        @top-right {
+            content: "" !important; /* Deixa o topo da capa totalmente limpo */
+        }
+    }
+}
+    
+    
+</style>
     
 </style>
 </head>
