@@ -741,7 +741,7 @@ function fecharModal(){ document.getElementById("modal").style.display="none"; }
 
 function formatarTextoPersonalizado(texto, nome) {
     if (!texto) return "";
-    return String(texto).replace(/você/gi, ` <strong>${nome}</strong> `).replace(/voce/gi, ` <strong>${nome}</strong> `);
+    return String(texto).replace(/MASCULINO-FEMININO-NEUTRO/gi, ` <strong>${nome}</strong> `).replace(/MASCULINO-FEMININO-NEUTRO/gi, ` <strong>${nome}</strong> `);
 }
 
 function abrirModal(tipo) {
