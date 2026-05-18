@@ -449,27 +449,86 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 }
 
 
-h3 {
-     
-    font-size: 22px !important; 
-    color: #6B0202 !important;
 
-    -webkit-text-stroke: 0.5px #6B0202;
+    
+    /* 🔥 CORREÇÃO PRINCIPAL */
+    .page {
+    width: calc(100% - 2mm);
+    margin: 0 auto;
+    /* TOPO (40px) | LATERAIS (2mm) | BASE (40px) */
+    padding: 40px 2mm 20px 2mm; 
+          }
 
-    text-decoration: none !important;
 
+         /* Esta classe impede que qualquer bloco dentro dela seja cortado ao meio */
+    .evitar-corte {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        display: block;
+        width: 100%;
+    }
+
+
+.conteudo-dinamico-pdf p {
+    margin-bottom: 15px !important;
+}
+.conteudo-dinamico-pdf h3 {
+    margin-top: 22px !important;
+    margin-bottom: 8px !important;
+}
+
+
+/* =======================================================
+   CORREÇÃO DE ESPAÇAMENTO E PONTE DO TEXTOS.JS NO PDF
+   ======================================================= */
+
+/* Alvos diretos para qualquer h3 ou h2 que venha de dentro do miolo do PDF */
+.bloco-texto-pdf h3, 
+.bloco-texto-pdf h2,
+.bloco-texto-pdf div h3 {
     font-family: 'Cormorant Garamond', serif !important;
-    font-weight: 600;
+    font-size: 18px !important;
+    color: #6B0202 !important;
+    margin-top: 25px !important;    /* Dá o espaço necessário antes de começar o título */
+    margin-bottom: 10px !important; /* Aproxima levemente do texto descritivo dele */
+    line-height: 1.3 !important;
+    display: block !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
 
-    text-transform: uppercase;
+/* Espaçamento para os blocos de Vibração Fixada (Caixas de Sequência Negativa) */
+.bloco-texto-pdf div[style*="background: #fff5f5"] {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    padding: 15px !important;
+    border-left: 4px solid #ff3b5c !important;
+    display: block !important;
+}
 
-    letter-spacing: 0.5px; /* mais compacto */
-    margin-bottom: 8px; /* aproxima do texto */
-line-height: 1.1;
-    display: block;
+/* Força os parágrafos gerados e textos internos a manterem distância saudável */
+.bloco-texto-pdf p, 
+.texto-cabalistico-pdf {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px !important;
+    line-height: 1.8 !important;   /* Texto respira melhor */
+    color: #222222 !important;
+    margin-bottom: 16px !important; /* Espaçamento padrão de parágrafo */
+    text-align: justify !important;
+}
+
+/* Ajuste fino para os strongs (como o título "Vibração Fixada X:") */
+.bloco-texto-pdf strong {
+    color: #6B0202 !important;
+    font-weight: 600 !important;
+    display: inline-block;
+    margin-bottom: 4px;
 }
     
     
+  
     
 </style>
 </head>
@@ -1002,12 +1061,16 @@ relatorioHTML += `
 
     
 
-  function extrairETratarTexto(textoBruto, nomeParceiro) {
+function extrairETratarTexto(textoBruto, nomeParceiro) {
     if (!textoBruto) return "";
-    const div = document.createElement("div"); div.innerHTML = textoBruto;
-    let t = div.textContent || div.innerText || "";
-    return `<p style="color:#222222 !important; font-size:13px; line-height:1.7; text-align:justify; margin-bottom:12px;">${t.replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${nomeParceiro}</strong>`).replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${nomeParceiro}</strong>`)}</p>`;
-  }
+    
+    // Em vez de extrair apenas o texto puro (destruindo h3 e quebras), 
+    // nós tratamos diretamente a string HTML para manter os títulos e tags vivos.
+    let textoTratado = String(textoBruto)
+        .replace(/MASCULINO-FEMININO-NEUTRO/gi, `<strong>${nomeParceiro}</strong>`);
+        
+    return `<div class="conteudo-dinamico-pdf">${textoTratado}</div>`;
+}
 
   function gerarFolhaConteudo(titulo, sub1, txt1, sub2, txt2) {
     return `
@@ -1208,7 +1271,7 @@ relatorioHTML += `
             <pre style="font-family:'Courier New', monospace; font-size:12px; line-height:1.4; letter-spacing:4px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideParceiro1}</pre>
         </div>
         
-        <h3 class="subtitulo-pessoa-pdf">🎯 Número Regente da Matriz: Encarte ${dados1.regente}</h3>
+        <h3 class="subtitulo-pessoa-pdf evitar-corte">🎯 Número Regente da Matriz: Encarte ${dados1.regente}</h3>
         <div>${extrairETratarTexto(textoRegenteP1, social1)}</div>
         
         <div class="divisor-pdf" style="margin:15px 0;"></div>
