@@ -813,11 +813,12 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
     <div class="grid-pessoa">
         <div class="card-input">
-            <h3>Pessoa 1</h3>
-            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
+            <h3>Homem</h3>
+            <div class="form-group"><label>Nome Completo Masculino e Neutro</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
             <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social1" placeholder="Nome para aparecer no relatório"></div>
             <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
-            <div class="form-group"><label>Nome de Casado(a):</label><input type="text" id="nomeCasado1" placeholder="Nome de casado se houver"></div>
+            <div class="form-group"><label>Nome de Casado:</label><input type="text" id="nomeCasado1" placeholder="Nome de casado se houver"></div>
+
             
             <div class="btn-group">
                 <button class="btn-nav" onclick="abrirModal('m1')">Motivação</button>
@@ -838,11 +839,12 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
     <div class="grid-pessoa">
         <div class="card-input">
-            <h3>Pessoa 2</h3>
-            <div class="form-group"><label>Nome Completo</label><input type="text" id="nome2" placeholder="Nome completo igual certidão"></div>
+            <h3>Mulher</h3>
+            <div class="form-group"><label>Nome Completo Feminino</label><input type="text" id="nome2" placeholder="Nome completo igual certidão"></div>
             <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social2" placeholder="Nome para aparecer no relatório"></div>
             <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data2" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
-            <div class="form-group"><label>Nome de Casado(a):</label><input type="text" id="nomeCasado2" placeholder="Nome de casado se houver"></div>
+            <div class="form-group"><label>Nome de Casada:</label><input type="text" id="nomeCasado2" placeholder="Nome de casado se houver"></div>
+
 
             
             <div class="btn-group">
@@ -878,7 +880,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
                 <input type="text" id="nomeBebe" placeholder="Digite o nome completo para análise">
             </div>
             <div class="form-group">
-                <label>Nome Escolhido / Chamado</label>
+                <label>Como ele é Chamado</label>
                 <input type="text" id="socialBebe" placeholder="Nome de tratamento do bebê">
             </div>
             <button class="btn-action" style="width:100%; margin-bottom:15px;" onclick="gerarBebe()">Analisar Nome do Bebê</button>
@@ -954,6 +956,24 @@ function reduzir(n){
   }
   return n;
 }
+
+
+
+// FUNÇÃO INTELIGENTE DE BUSCA DE TEXTOS POR GÊNERO
+function obterTexto(modulo, numeroChave, genero) {
+    // Se o gênero selecionado for feminino e a árvore feminina existir, busca nela
+    if (genero === 'feminino' && window.textosFeminino && window.textosFeminino[modulo]) {
+        return window.textosFeminino[modulo][numeroChave] || "";
+    }
+    
+    // Caso contrário, recorre à árvore padrão/masculina atual
+    if (window.textos && window.textos[modulo]) {
+        return window.textos[modulo][numeroChave] || "";
+    }
+    
+    return ""; // Retorna vazio se não encontrar nada
+}
+    
 
 function calcularAnoPessoal(data){
   if(!data || data.length < 10) return 0;
@@ -1038,13 +1058,26 @@ function gerarPiramide(valores, elementoPiramide, elementoRegente){
   elementoPiramide.innerHTML = html;
   const regente = lines[lines.length - 1][0];
 
+  // CORREÇÃO DOS TEXTOS DO MODAL AQUI:
+  // Descobre qual objeto de texto usar baseado no id do elemento
+  let textoParaPassar = "";
+  if (elementoRegente.id === "regente1") {
+    textoParaPassar = `textos.regente[${regente}]`;
+  } else if (elementoRegente.id === "regente2") {
+    textoParaPassar = `textosFeminino.regente[${regente}]`;
+  } else if (elementoRegente.id === "regenteBebe") {
+    // Aqui fazemos ele pegar do seu 'regentebb' lá do textos.js!
+    textoParaPassar = `textos.regentebb[${regente}]`; 
+  }
+
   elementoRegente.innerHTML = `
     <div class="botoes-piramide">
-      <button onclick="abrirModalRegente(textos.regente[${regente}], '${elementoRegente.id}')">Regente: ${regente}</button>
+      <button onclick="abrirModalRegente(${textoParaPassar}, '${elementoRegente.id}')">Regente: ${regente}</button>
       <button onclick="mostrarSequenciaNegativa('${elementoRegente.id}')">Sequência Negativa</button>
     </div>
   `;
 
+  // Mantendo a estrutura padrão de propriedades (.regente e .sequenciaNegativa) para o seu objeto dadosBebe funcionar redondo
   if (elementoRegente.id === "regente1") { dados1.regente = regente; dados1.sequenciaNegativa = numerosSequencias; }
   if (elementoRegente.id === "regente2") { dados2.regente = regente; dados2.sequenciaNegativa = numerosSequencias; }
   if (elementoRegente.id === "regenteBebe") { dadosBebe.regente = regente; dadosBebe.sequenciaNegativa = numerosSequencias; }
@@ -1055,6 +1088,7 @@ function gerarPiramide(valores, elementoPiramide, elementoRegente){
   }
 }
 
+    
 function chaveSinastria(a,b){
   return `${Math.min(a,b)}-${Math.max(a,b)}`;
 }
@@ -1100,32 +1134,73 @@ function abrirModal(tipo) {
     if(tipo==="a1") textoBase = textos.anoPessoal[dados1.anoPessoal];
   } else if (tipo.includes("2")) {
     nomePessoa = document.getElementById("social2").value || document.getElementById("nome2").value;
-    if(tipo==="m2") textoBase = textos.motivacao[dados2.motivacao];
-    if(tipo==="i2") textoBase = textos.influencia[dados2.influencia];
-    if(tipo==="p2") textoBase = textos.personalidade[dados2.personalidade];
-    if(tipo==="d2") textoBase = textos.CaminhodeVida[dados2.caminho];
-    if(tipo==="pr2") textoBase = textos.proposito[dados2.proposito];
-    if(tipo==="h2") textoBase = textos.harmonia[dados2.proposito];
-    if(tipo==="a2") textoBase = textos.anoPessoal[dados2.anoPessoal];
+    if(tipo==="m2") textoBase = textosFeminino.motivacao[dados2.motivacao];
+    if(tipo==="i2") textoBase = textosFeminino.influencia[dados2.influencia];
+    if(tipo==="p2") textoBase = textosFeminino.personalidade[dados2.personalidade];
+    if(tipo==="d2") textoBase = textosFeminino.CaminhodeVida[dados2.caminho];
+    if(tipo==="pr2") textoBase = textosFeminino.proposito[dados2.proposito];
+    if(tipo==="h2") textoBase = textosFeminino.harmonia[dados2.proposito];
+    if(tipo==="a2") textoBase = textosFeminino.anoPessoal[dados2.anoPessoal];
   } else if (tipo.includes("B")) {
     nomePessoa = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
-    if(tipo==="mB") textoBase = textos.motivacao[dadosBebe.motivacao];
-    if(tipo==="iB") textoBase = textos.influencia[dadosBebe.influencia];
-    if(tipo==="pB") textoBase = textos.personalidade[dadosBebe.personalidade];
+    if(tipo==="mB") textoBase = textos.motivacaobb[dadosBebe.motivacao];
+    if(tipo==="iB") textoBase = textos.influenciabb[dadosBebe.influencia];
+    if(tipo==="pB") textoBase = textos.personalidadebb[dadosBebe.personalidade];
   }
   abrirModalTexto(formatarTextoPersonalizado(textoBase, nomePessoa));
 }
 
 function abrirModalRegente(texto, idRegente) {
-    let n = (idRegente==="regente1") ? (document.getElementById("social1").value || document.getElementById("nome1").value) : (document.getElementById("social2").value || document.getElementById("nome2").value);
-    abrirModalTexto(formatarTextoPersonalizado(texto, n));
+    let n = "";
+    let textoFinal = texto; // Mantém o texto original como padrão (para Pessoa 1 e 2)
+    
+    if (idRegente === "regente1") {
+        n = document.getElementById("social1").value || document.getElementById("nome1").value;
+    } else if (idRegente === "regente2") {
+        n = document.getElementById("social2").value || document.getElementById("nome2").value;
+    } else if (idRegente === "regenteBebe") {
+        n = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
+        
+        // CORREÇÃO AQUI: 
+        // Se a sua função 'gerarPiramide' passa o número do regente (ex: 1, 2, 3...) no parâmetro 'texto',
+        // nós usamos esse número para buscar direto no seu objeto 'textos.regentebb' do textos.js
+        if (dadosBebe && dadosBebe.regente) { 
+            textoFinal = textos.regentebb[dadosBebe.regente];
+        } else {
+            // Caso o 'texto' que vem da pirâmide já seja o número/ID do regente:
+            textoFinal = textos.regentebb[texto] || texto;
+        }
+    }
+    
+    abrirModalTexto(formatarTextoPersonalizado(textoFinal, n));
 }
 
 function mostrarSequenciaNegativa(idRegente){
-  let d = (idRegente==="regente1") ? dados1 : dados2;
-  let n = (idRegente==="regente1") ? (document.getElementById("social1").value || document.getElementById("nome1").value) : (document.getElementById("social2").value || document.getElementById("nome2").value);
-  if (!d || !d.sequenciaNegativa || d.sequenciaNegativa.length === 0) return abrirModalTexto("Nenhuma sequência.");
-  abrirModalTexto(formatarTextoPersonalizado(d.sequenciaNegativa.map(x => textos.sequenciaNegativa[x]).join("<br><br>"), n));
+  let d = null;
+  let n = "";
+  let bancoDeTextos = textos.sequenciaNegativa; // Padrão Pessoa 1
+
+  if (idRegente === "regente1") {
+      d = dados1;
+      n = document.getElementById("social1").value || document.getElementById("nome1").value;
+  } else if (idRegente === "regente2") {
+      d = dados2;
+      n = document.getElementById("social2").value || document.getElementById("nome2").value;
+      // Se tiver uma sequência feminina específica futuramente, descomente a linha abaixo:
+      // bancoDeTextos = textosFeminino.sequenciaNegativa || textos.sequenciaNegativa;
+  } else if (idRegente === "regenteBebe") {
+      d = dadosBebe;
+      n = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
+      // Se você tiver um objeto 'textos.sequenciaNegativabb' no textos.js, ele usa. 
+      // Se não tiver, ele usa o padrão 'textos.sequenciaNegativa'
+      bancoDeTextos = textos.sequenciaNegativabb || textos.sequenciaNegativa; 
+  }
+
+  if (!d || !d.sequenciaNegativa || d.sequenciaNegativa.length === 0) {
+      return abrirModalTexto("Nenhuma sequência.");
+  }
+  
+  abrirModalTexto(formatarTextoPersonalizado(d.sequenciaNegativa.map(x => bancoDeTextos[x]).join("<br><br>"), n));
 }
 
 function gerar(){
@@ -1193,8 +1268,10 @@ function abrirPremiumSinastria(){
 
   const nome1 = document.getElementById("nome1").value;
   const nome2 = document.getElementById("nome2").value;
+
   const social1 = document.getElementById("social1").value || nome1.split(' ')[0];
   const social2 = document.getElementById("social2").value || nome2.split(' ')[0];
+
   const dataHoje = new Date().toLocaleDateString('pt-BR');
   
 const processarMatrizCasado = (nomeCompleto) => {
@@ -1513,7 +1590,7 @@ relatorioHTML += `
     
 
   // Miolos estruturados
-  relatorioHTML += gerarFolhaConteudo("PARTE 1: MOTIVAÇÃO DA ALMA", `O Desejo Íntimo de ${social1}`, textos.motivacao[dados1.motivacao], `O Desejo Íntimo de ${social2}`, textos.motivacao[dados2.motivacao]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 1: MOTIVAÇÃO DA ALMA", `O Desejo Íntimo de ${social1}`, textos.motivacao[dados1.motivacao], `O Desejo Íntimo de ${social2}`, textosFeminino.motivacao[dados2.motivacao]);
   
   relatorioHTML += criarCapaTransicao(
       "Impressão & Imagem", 
@@ -1566,8 +1643,10 @@ relatorioHTML += `
     </div>
 </div>
 `;
+
+
     
-  relatorioHTML += gerarFolhaConteudo("PARTE 2: INFLUÊNCIA & IMPRESSÃO", `A Influência de ${social1}`, textos.influencia[dados1.influencia], `A Influência de ${social2}`, textos.influencia[dados2.influencia]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 2: INFLUÊNCIA & IMPRESSÃO", `A Influência de ${social1}`, textos.influencia[dados1.influencia], `A Influência de ${social2}`, textosFeminino.influencia[dados2.influencia]);
   
   relatorioHTML += criarCapaTransicao(
       "Expressão & Personalidade", 
@@ -1623,7 +1702,7 @@ relatorioHTML += `
 
 
     
-  relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Expressão de ${social1}`, textos.personalidade[dados1.personalidade], `A Expressão de ${social2}`, textos.personalidade[dados2.personalidade]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Expressão de ${social1}`, textos.personalidade[dados1.personalidade], `A Expressão de ${social2}`, textosFeminino.personalidade[dados2.personalidade]);
  
   relatorioHTML += criarCapaTransicao(
       "Caminho de Vida", 
@@ -1678,7 +1757,7 @@ relatorioHTML += `
 `;
 
     
-  relatorioHTML += gerarFolhaConteudo("PARTE 4: CAMINHO DE VIDA", `A Estrada de ${social1}`, textos.CaminhodeVida[dados1.caminho], `A Estrada de ${social2}`, textos.CaminhodeVida[dados2.caminho]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 4: CAMINHO DE VIDA", `A Estrada de ${social1}`, textos.CaminhodeVida[dados1.caminho], `A Estrada de ${social2}`, textosFeminino.CaminhodeVida[dados2.caminho]);
  
   relatorioHTML += criarCapaTransicao(
       "Propósito Existencial", 
@@ -1732,7 +1811,7 @@ relatorioHTML += `
 </div>
 `;
     
-  relatorioHTML += gerarFolhaConteudo("PARTE 5: PROPÓSITO EXISTENCIAL", `O Propósito de ${social1}`, textos.proposito[dados1.proposito], `O Propósito de ${social2}`, textos.proposito[dados2.proposito]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 5: PROPÓSITO EXISTENCIAL", `O Propósito de ${social1}`, textos.proposito[dados1.proposito], `O Propósito de ${social2}`, textosFeminino.proposito[dados2.proposito]);
  
   relatorioHTML += criarCapaTransicao(
       "Ciclo Anual", 
@@ -1787,7 +1866,7 @@ relatorioHTML += `
 `;
 
     
-  relatorioHTML += gerarFolhaConteudo("PARTE 6: CICLO ANUAL", `Ano Pessoal de ${social1}`, textos.anoPessoal[dados1.anoPessoal], `Ano Pessoal de ${social2}`, textos.anoPessoal[dados2.anoPessoal]);
+  relatorioHTML += gerarFolhaConteudo("PARTE 6: CICLO ANUAL", `Ano Pessoal de ${social1}`, textos.anoPessoal[dados1.anoPessoal], `Ano Pessoal de ${social2}`, textosFeminino.anoPessoal[dados2.anoPessoal]);
 
 
 // --- PARTE 8: INJEÇÃO COMPACTA E EM ALTA RESOLUÇÃO DA PIRÂMIDE DO CASAL ---
@@ -1808,12 +1887,12 @@ relatorioHTML += `
   }
 
   // Busca os textos do Regente e das Sequências Negativas da Pessoa 2
-  let textoRegenteP2 = textos.regente[dados2.regente] || "";
+  let textoRegenteP2 = textosFeminino.regente[dados2.regente] || "";
   let textoSequenciasP2 = "";
   if (dados2.sequenciaNegativa && dados2.sequenciaNegativa.length > 0) {
       textoSequenciasP2 = dados2.sequenciaNegativa.map(x => `
           <div style="margin-top: 10px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
-              <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textos.sequenciaNegativa[x]}
+              <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textosFeminino.sequenciaNegativa[x]}
           </div>
       `).join("");
   } else {
@@ -2077,6 +2156,17 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, analiseSolteiro, analiseCas
 }
 
 
+
+
+  relatorioHTML += criarCapaTransicao(
+      "O nome de Casado(a)", 
+      "Influência do nome de acrécimo", 
+      "Bloqueios e Expressão de influencia",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+  );
+
+    
 // ==========================================
 // PROCESSAMENTO TRANSMUTAÇÃO CASADO - PESSOA 1
 // ==========================================
@@ -2167,7 +2257,7 @@ if (nomeCasado2 !== "") {
     let expressaoCasado2 = calcularPessoa(nomeCasado2, "").personalidade; 
 
     let chave2 = `de_${expressaoSolteiro2}_para_${expressaoCasado2}`;
-    let textoBruto2 = window.textos.TransicoesCasamento[chave2] || "";
+    let textoBruto2 = window.textosFeminino.TransicoesCasamento[chave2] || "";
     let textoFinal2 = textoBruto2.replace("MASCULINO-FEMININO-NEUTRO,", `<strong>${social2}</strong>`);
 
     let textoDiagnostico2 = "";
@@ -2185,7 +2275,7 @@ if (nomeCasado2 !== "") {
             const seqCompleta = neg.numero;
             const digitoUnico = String(seqCompleta).charAt(0);
             
-            let textoBruto = (window.textos && window.textos.sequenciaNegativa && window.textos.sequenciaNegativa[digitoUnico])
+            let textoBruto = (window.textos && window.textosFeminino.sequenciaNegativa && window.textosFeminino.sequenciaNegativa[digitoUnico])
                 ? window.textos.sequenciaNegativa[digitoUnico]
                 : `Análise detalhada do bloqueio ${seqCompleta} em processamento.`;
                 
@@ -2234,12 +2324,12 @@ relatorioHTML += blocoTransmutacaoP2;
       let textoPiramideBebe = obterHtmlTextoPiramide(dadosBebe.valores);
 
       // Busca os textos do Regente e das Sequências Negativas do Bebê
-      let textoRegenteBebe = textos.regente[dadosBebe.regente] || "";
+      let textoRegenteBebe = textos.regentebb[dadosBebe.regente] || "";
       let textoSequenciasBebe = "";
       if (dadosBebe.sequenciaNegativa && dadosBebe.sequenciaNegativa.length > 0) {
           textoSequenciasBebe = dadosBebe.sequenciaNegativa.map(x => `
               <div style="margin-top: 10px; padding: 10px; background: #fff5f5; border-left: 3px solid #ff3b5c; border-radius: 4px;">
-                  <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textos.sequenciaNegativa[x]}
+                  <strong style="color: #6B0202;">Vibração Fixada ${x}:</strong> ${textos.sequenciaNegativabb[x]}
               </div>
           `).join("");
       } else {
@@ -2311,11 +2401,11 @@ relatorioHTML += `
                 <div style="font-size: 12px;">${statusHarmonia}</div>
             </div>
             <h3 class="subtitulo-pessoa-pdf"> Motivação (A Alma da Criança)</h3>
-            <div>${extrairETratarTexto(textos.motivacao[dadosBebe.motivacao], socialBebeInput)}</div>
+            <div>${extrairETratarTexto(textos.motivacaobb[dadosBebe.motivacao], socialBebeInput)}</div>
             <h3 class="subtitulo-pessoa-pdf"> Influência (A Impressão do Mundo)</h3>
-            <div>${extrairETratarTexto(textos.influencia[dadosBebe.influencia], socialBebeInput)}</div>
+            <div>${extrairETratarTexto(textos.influenciabb[dadosBebe.influencia], socialBebeInput)}</div>
             <h3 class="subtitulo-pessoa-pdf"> Expressão (A Personalidade em Formação)</h3>
-            <div>${extrairETratarTexto(textos.personalidade[dadosBebe.personalidade], socialBebeInput)}</div>
+            <div>${extrairETratarTexto(textos.personalidadebb[dadosBebe.personalidade], socialBebeInput)}</div>
         </div>
         
         <div class="bloco-texto-pdf">
@@ -2334,6 +2424,7 @@ relatorioHTML += `
             <div>${extrairETratarTexto(textoSequenciasBebe, socialBebeInput)}</div>
         </div>`;
   }
+
 
 // === INJEÇÃO DO STATUS DE ACESSO, BOTÃO PREMIUM E RELATÓRIO ===
   const areaPDF = document.getElementById("area-pdf-local");
