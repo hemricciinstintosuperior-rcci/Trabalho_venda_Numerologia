@@ -120,6 +120,70 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
     #compat { font-family: 'Cinzel', serif; font-size: 1.1rem; color: var(--accent); letter-spacing: 1px; }
 
+
+
+/* =======================================================
+   BLINDAGEM E COMPACTAÇÃO DA PIRÂMIDE NA TELA (MODAL/CARD)
+   ======================================================= */
+.piramide {
+    font-family: 'Courier New', monospace;
+    
+    /* Dynamic Font: Muda entre 0.85rem (nomes gigantes) até 1.2rem (nomes normais) automaticamente */
+    font-size: clamp(0.85rem, 2vw, 1.2rem) !important;
+    
+    /* Junta as linhas verticalmente para a pirâmide não ficar espalhada */
+    line-height: 1.2 !important;
+    
+    /* Compacta o espaço horizontal entre os números */
+    letter-spacing: clamp(2px, 0.5vw, 5px) !important;
+    
+    margin: 15px 0;
+    width: 100%;
+    
+    /* Mantém a estrutura exata de espaçamentos gerados pelo JS */
+    white-space: pre !important;
+    text-align: center;
+    
+    /* TRAVA DE ALTURA: Limita o tamanho na tela para nunca empurrar o resto da página */
+    max-height: 320px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    /* Adiciona uma rolagem elegante e discreta caso o nome abuse do tamanho */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(212, 154, 154, 0.3) transparent;
+}
+
+/* Customização da barra de rolagem interna da pirâmide para navegadores Webkit (Chrome/Edge/Safari) */
+.piramide::-webkit-scrollbar {
+    width: 6px;
+}
+.piramide::-webkit-scrollbar-thumb {
+    background: rgba(212, 154, 154, 0.3);
+    border-radius: 4px;
+}
+
+/* Força os cards que guardam as pirâmides a ficarem travados e elegantes */
+.card-piramide {
+    background: var(--card-bg);
+    padding: 25px 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Mantém o título no topo, pirâmide no meio e botões na base */
+    align-items: center;
+    max-height: 480px; /* Garante que o bloco todo nunca estoure a tela */
+    overflow: hidden;
+}
+
+
+
+
+
+    
+
     @media (max-width: 850px) { .grid-pessoa { grid-template-columns: 1fr; } }
 
     /* =======================================================
@@ -630,7 +694,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
     position: fixed;
     bottom: 0;
     right: 0;
-    font-size: 10pt;
+    font-size: 11pt;
     color: #827108; /* Dourado nobre do seu padrão */
     display: none; 
 }
@@ -811,31 +875,6 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         </video>
     </div>
 
-    <div class="grid-pessoa">
-        <div class="card-input">
-            <h3>Homem</h3>
-            <div class="form-group"><label>Nome Completo Masculino e Neutro</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
-            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social1" placeholder="Nome para aparecer no relatório"></div>
-            <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
-            <div class="form-group"><label>Nome de Casado:</label><input type="text" id="nomeCasado1" placeholder="Nome de casado se houver"></div>
-
-            
-            <div class="btn-group">
-                <button class="btn-nav" onclick="abrirModal('m1')">Motivação</button>
-                <button class="btn-nav" onclick="abrirModal('i1')">Influência</button>
-                <button class="btn-nav" onclick="abrirModal('p1')">Personalidade</button>
-                <button class="btn-nav" onclick="abrirModal('d1')">Caminho</button>
-                <button class="btn-nav" onclick="abrirModal('pr1')">Propósito</button>
-                <button class="btn-nav" onclick="abrirModal('h1')">Harmonia</button>
-                <button class="btn-nav" onclick="abrirModal('a1')">Ano Pessoal</button>
-            </div>
-        </div>
-        <div class="card-piramide">
-            <h3>Pirâmide 1</h3>
-            <div id="piramide1" class="piramide"></div>
-            <div id="regente1" class="regente"></div>
-        </div>
-    </div>
 
     <div class="grid-pessoa">
         <div class="card-input">
@@ -858,11 +897,40 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
             </div>
         </div>
         <div class="card-piramide">
-            <h3>Pirâmide 2</h3>
+            <h3>Pirâmide Feminina</h3>
             <div id="piramide2" class="piramide"></div>
             <div id="regente2" class="regente"></div>
         </div>
     </div>
+    
+
+    <div class="grid-pessoa">
+        <div class="card-input">
+            <h3>Homem</h3>
+            <div class="form-group"><label>Nome Completo Masculino e Neutro</label><input type="text" id="nome1" placeholder="Nome completo igual certidão"></div>
+            <div class="form-group"><label>Nome Social / Escolhido</label><input type="text" id="social1" placeholder="Nome para aparecer no relatório"></div>
+            <div class="form-group"><label>Data de Nascimento</label><input type="text" id="data1" placeholder="DD/MM/AAAA" maxlength="10" oninput="mascaraData(this)"></div>
+            <div class="form-group"><label>Nome de Casado:</label><input type="text" id="nomeCasado1" placeholder="Nome de casado se houver"></div>
+
+            
+            <div class="btn-group">
+                <button class="btn-nav" onclick="abrirModal('m1')">Motivação</button>
+                <button class="btn-nav" onclick="abrirModal('i1')">Influência</button>
+                <button class="btn-nav" onclick="abrirModal('p1')">Personalidade</button>
+                <button class="btn-nav" onclick="abrirModal('d1')">Caminho</button>
+                <button class="btn-nav" onclick="abrirModal('pr1')">Propósito</button>
+                <button class="btn-nav" onclick="abrirModal('h1')">Harmonia</button>
+                <button class="btn-nav" onclick="abrirModal('a1')">Ano Pessoal</button>
+            </div>
+        </div>
+        <div class="card-piramide">
+            <h3>Pirâmide Masculina</h3>
+            <div id="piramide1" class="piramide"></div>
+            <div id="regente1" class="regente"></div>
+        </div>
+    </div>
+
+
 
     <div class="main-actions">
         <button class="btn-action" onclick="gerar()">⚡ CALCULAR TUDO</button>
@@ -909,7 +977,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
 <div id="area-pdf-local"></div>    
 
-<script src="textosharmoniaconjugal.js"></script>
+<script src="textos.js"></script>
 
 <script>
 function mascaraData(input) {
@@ -1094,20 +1162,51 @@ function chaveSinastria(a,b){
 }
 
 function mostrarSinastria(){
+
   if(!dados1 || !dados2) return;
-  const nome1 = document.getElementById("social1").value || document.getElementById("nome1").value;
-  const nome2 = document.getElementById("social2").value || document.getElementById("nome2").value;
-  const chave = chaveSinastria(dados1.proposito, dados2.proposito);
 
-  let texto = textos.sinastria[chave] || `A combinação entre Energia ${dados1.proposito} e Energia ${dados2.proposito}.`;
-  const menor = Math.min(dados1.proposito, dados2.proposito);
-  const maior = Math.max(dados1.proposito, dados2.proposito);
+  const nome1 = document.getElementById("nome1").value;
+  const nome2 = document.getElementById("nome2").value;
 
-  texto = texto.replaceAll(`Energia ${menor}`, (dados1.proposito === menor)?nome1:nome2)
-               .replaceAll(`Energia ${maior}`, (dados1.proposito === maior)?nome1:nome2);
+  // PRIMEIRO NOME
+  const social1 = document.getElementById("social1").value || nome1.split(' ')[0];
+  const social2 = document.getElementById("social2").value || nome2.split(' ')[0];
 
-  abrirModalTexto(`<h3>Harmonia Conjugal – ${nome1} com ${nome2}</h3>${texto}`);
+  const chave = chaveSinastria(
+    dados1.proposito,
+    dados2.proposito
+  );
+
+  let texto = textos.sinastria[chave] ||
+  `A combinação entre [P1] e [P2].`;
+
+  texto = processarTextoSinastria(
+    texto,
+    social1,
+    social2
+  );
+
+  abrirModalTexto(`
+    <h3>Harmonia Conjugal – ${social1} com ${social2}</h3>
+    ${texto}
+  `);
 }
+
+
+function aplicarGenero(texto){
+
+  texto = texto.replace(
+    /\{P1:(.*?)\|(.*?)\}/g,
+    (_, masc, fem) => masc
+  );
+
+  texto = texto.replace(
+    /\{P2:(.*?)\|(.*?)\}/g,
+    (_, masc, fem) => fem
+  );
+
+  return texto;
+}    
 
 function abrirModalTexto(texto){
   document.getElementById("modalTexto").innerHTML = texto;
@@ -1123,8 +1222,10 @@ function formatarTextoPersonalizado(texto, nome) {
 
 function abrirModal(tipo) {
   let textoBase = "", nomePessoa = "";
+
   if (tipo.includes("1")) {
     nomePessoa = document.getElementById("social1").value || document.getElementById("nome1").value;
+
     if(tipo==="m1") textoBase = textos.motivacao[dados1.motivacao];
     if(tipo==="i1") textoBase = textos.influencia[dados1.influencia];
     if(tipo==="p1") textoBase = textos.personalidade[dados1.personalidade];
@@ -1132,8 +1233,11 @@ function abrirModal(tipo) {
     if(tipo==="pr1") textoBase = textos.proposito[dados1.proposito];
     if(tipo==="h1") textoBase = textos.harmonia[dados1.proposito];
     if(tipo==="a1") textoBase = textos.anoPessoal[dados1.anoPessoal];
+
   } else if (tipo.includes("2")) {
+
     nomePessoa = document.getElementById("social2").value || document.getElementById("nome2").value;
+
     if(tipo==="m2") textoBase = textosFeminino.motivacao[dados2.motivacao];
     if(tipo==="i2") textoBase = textosFeminino.influencia[dados2.influencia];
     if(tipo==="p2") textoBase = textosFeminino.personalidade[dados2.personalidade];
@@ -1141,66 +1245,108 @@ function abrirModal(tipo) {
     if(tipo==="pr2") textoBase = textosFeminino.proposito[dados2.proposito];
     if(tipo==="h2") textoBase = textosFeminino.harmonia[dados2.proposito];
     if(tipo==="a2") textoBase = textosFeminino.anoPessoal[dados2.anoPessoal];
+
   } else if (tipo.includes("B")) {
+
     nomePessoa = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
+
     if(tipo==="mB") textoBase = textos.motivacaobb[dadosBebe.motivacao];
     if(tipo==="iB") textoBase = textos.influenciabb[dadosBebe.influencia];
     if(tipo==="pB") textoBase = textos.personalidadebb[dadosBebe.personalidade];
   }
-  abrirModalTexto(formatarTextoPersonalizado(textoBase, nomePessoa));
+
+  // PEGA APENAS O PRIMEIRO NOME
+  nomePessoa = nomePessoa.trim().split(" ")[0];
+
+  abrirModalTexto(
+    formatarTextoPersonalizado(textoBase, nomePessoa)
+  );
 }
 
+    
 function abrirModalRegente(texto, idRegente) {
     let n = "";
-    let textoFinal = texto; // Mantém o texto original como padrão (para Pessoa 1 e 2)
-    
+    let textoFinal = texto;
+
     if (idRegente === "regente1") {
         n = document.getElementById("social1").value || document.getElementById("nome1").value;
+
     } else if (idRegente === "regente2") {
         n = document.getElementById("social2").value || document.getElementById("nome2").value;
+
     } else if (idRegente === "regenteBebe") {
+
         n = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
-        
-        // CORREÇÃO AQUI: 
-        // Se a sua função 'gerarPiramide' passa o número do regente (ex: 1, 2, 3...) no parâmetro 'texto',
-        // nós usamos esse número para buscar direto no seu objeto 'textos.regentebb' do textos.js
+
         if (dadosBebe && dadosBebe.regente) { 
             textoFinal = textos.regentebb[dadosBebe.regente];
         } else {
-            // Caso o 'texto' que vem da pirâmide já seja o número/ID do regente:
             textoFinal = textos.regentebb[texto] || texto;
         }
     }
-    
+
+    // PRIMEIRO NOME
+    n = n.trim().split(" ")[0];
+
     abrirModalTexto(formatarTextoPersonalizado(textoFinal, n));
 }
 
+
+
 function mostrarSequenciaNegativa(idRegente){
+
   let d = null;
   let n = "";
-  let bancoDeTextos = textos.sequenciaNegativa; // Padrão Pessoa 1
+  let bancoDeTextos = textos.sequenciaNegativa;
+  let listaSequencias = [];
 
   if (idRegente === "regente1") {
+
       d = dados1;
-      n = document.getElementById("social1").value || document.getElementById("nome1").value;
+      n = (document.getElementById("social1").value || document.getElementById("nome1").value).split(' ')[0];
+
+      bancoDeTextos = textos.sequenciaNegativa;
+      listaSequencias = d.sequenciaNegativa || [];
+
   } else if (idRegente === "regente2") {
+
       d = dados2;
-      n = document.getElementById("social2").value || document.getElementById("nome2").value;
-      // Se tiver uma sequência feminina específica futuramente, descomente a linha abaixo:
-      // bancoDeTextos = textosFeminino.sequenciaNegativa || textos.sequenciaNegativa;
+      n = (document.getElementById("social2").value || document.getElementById("nome2").value).split(' ')[0];
+
+      bancoDeTextos = textosFeminino.sequenciaNegativa || textos.sequenciaNegativa;
+      listaSequencias = d.sequenciaNegativa || [];
+
   } else if (idRegente === "regenteBebe") {
+
       d = dadosBebe;
-      n = document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value;
-      // Se você tiver um objeto 'textos.sequenciaNegativabb' no textos.js, ele usa. 
-      // Se não tiver, ele usa o padrão 'textos.sequenciaNegativa'
-      bancoDeTextos = textos.sequenciaNegativabb || textos.sequenciaNegativa; 
+      n = (document.getElementById("socialBebe").value || document.getElementById("nomeBebe").value).split(' ')[0];
+
+      bancoDeTextos = textos.sequenciaNegativabb;
+
+      // AQUI ESTÁ A CORREÇÃO REAL
+      listaSequencias = d.detalhesNegativas || d.sequenciaNegativa || [];
   }
 
-  if (!d || !d.sequenciaNegativa || d.sequenciaNegativa.length === 0) {
+  if (!listaSequencias || listaSequencias.length === 0) {
       return abrirModalTexto("Nenhuma sequência.");
   }
-  
-  abrirModalTexto(formatarTextoPersonalizado(d.sequenciaNegativa.map(x => bancoDeTextos[x]).join("<br><br>"), n));
+
+  let htmlFinal = listaSequencias.map(x => {
+
+      let chave = x.numero || x;
+
+      // transforma 111 -> 1
+      if (typeof chave === "string" && chave.length >= 3) {
+          chave = Number(chave[0]);
+      }
+
+      return bancoDeTextos[chave];
+
+  }).join("<br><br>");
+
+  abrirModalTexto(
+      formatarTextoPersonalizado(htmlFinal, n)
+  );
 }
 
 function gerar(){
@@ -1235,16 +1381,13 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
                 <span style="font-size:9px; color:#d49a9a; display:block; margin-bottom:5px; text-transform:uppercase;">${nomeAudio1}</span>
                 <audio controls style="width:100%; height:30px;"><source src="${audio1Url}" type="audio/mpeg"></audio>
             </div>
-            <div style="width:100%; background:rgba(0,0,0,0.4); padding:10px; border-radius:8px; border:1px solid rgba(212,154,154,0.2);">
-                <span style="font-size:9px; color:#d49a9a; display:block; margin-bottom:5px; text-transform:uppercase;">${nomeAudio2}</span>
-                <audio controls style="width:100%; height:30px;"><source src="${audio2Url}" type="audio/mpeg"></audio>
-            </div>
+
         </div>`;
 
         linkHTML = `
         <div class="botao-pdf-link" style="display:none; flex-direction:column; gap:10px; width:100%; align-items:center;">
             <a href="${audio1Url}" target="_blank" style="color:#ffd700; font-size:11px; font-family:'Cinzel', serif; text-decoration:underline;">📥 BAIXAR MUSICA: ${nomeAudio1}</a>
-            <a href="${audio2Url}" target="_blank" style="color:#ffd700; font-size:11px; font-family:'Cinzel', serif; text-decoration:underline;">📥 BAIXAR MUSICA: ${nomeAudio2}</a>
+            
         </div>`;
     }
 
@@ -1254,7 +1397,7 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
             <h2 style="font-family: 'Cinzel', serif; font-size: 22px; color: #fff; text-transform: uppercase; letter-spacing: 2px;">${titulo}</h2>
             <span style="color: #c39b9b; font-size: 12px; display: block; margin-top: 5px; letter-spacing: 3px;">${subtitulo}</span>
         </div>
-        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/harmonia.png" style="width: 150px; height: 150px; border-radius: 50%; border: 2px solid #a6843c; object-fit:cover;">
+        <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/harmonia.png" style="width: 300px; height: 300px; border-radius: 50%; border: transparent; object-fit:cover;">
         
         ${playerHTML}
         ${linkHTML}
@@ -1262,6 +1405,28 @@ function criarCapaTransicao(titulo, subtitulo, rodape, audio1Url, nomeAudio1, au
         <p style="font-size: 9px; color: #ffffff; opacity: 0.5; text-align: center; letter-spacing: 1px;">${rodape}</p>
     </div>`;
 }
+
+
+
+function processarTextoSinastria(texto, nome1, nome2) {
+
+  if (!texto) return "";
+
+  texto = String(texto)
+
+    // NOMES
+    .replaceAll("[P1]", `<strong>${nome1}</strong>`)
+    .replaceAll("[P2]", `<strong>${nome2}</strong>`)
+
+    // FLEXÕES P1 = masculino
+    .replace(/\{P1:([^|]+)\|([^}]+)\}/g, "$2")
+
+    // FLEXÕES P2 = feminino
+    .replace(/\{P2:([^|]+)\|([^}]+)\}/g, "$1");
+
+  return texto;
+}
+    
 
 function abrirPremiumSinastria(){
   if(!dados1 || !dados2) return alert("Calcule os dados primeiro.");
@@ -1389,7 +1554,7 @@ const processarMatrizCasado = (nomeCompleto) => {
 
       <div style="text-align: center; margin-bottom: 30px;">
           <h2 style="font-family: 'Cinzel', serif; color: #fff; font-size: 22px; letter-spacing: 5px; text-transform: uppercase; margin: 0; font-weight: 700;">
-              Sumário Executivo
+              Sumário do Amor
           </h2>
           <div style="width: 60px; height: 1px; background: #a6843c; margin: 10px auto;"></div>
           <p style="font-family: 'Poppins', sans-serif; color: #d49a9a; font-size: 10px; text-transform: uppercase; letter-spacing: 3px;">Roteiro da Jornada Vibracional</p>
@@ -1397,16 +1562,19 @@ const processarMatrizCasado = (nomeCompleto) => {
 
       <div style="width: 100%; max-width: 900px; display: flex; flex-direction: column; gap: 15px;">
           ${[
-              { t: "Introdução", c: "Instinto Superior ✶ Engenharia da Vida ✶ Direcionamento de Jornada"},
+              { t: "Introdução", c: "Instinto Superior ✶ Engenharia Vibracional ✶ Direcionamento de Jornada"},
               { t: "Parte 1: Motivação da Alma", c: "Análise Intrapessoal ✶ O Desejo Oculto e Íntimo de Cada Alma"},
               { t: "Parte 2: Influência & Impressão", c: "A Imagem Projetada ✶ A Primeira Impressão no Mundo Exterior"},
-              { t: "Parte 3: Expressão & Personalidade", c: "Alinhamento de Temperamento ✶ Comportamento Prático do Casal"},
+              { t: "Parte 3: Expressão & Personalidade", c: "Expressão Natural ✶ Comportamento Prático individual"},
               { t: "Parte 4: Caminho de Vida", c: "A Estrada do Destino ✶ Desafios e Facilidades na Linha do Tempo"},
-              { t: "Parte 5: Propósito Existencial", c: "A Grande Missão de Realização Conjunta ✶ Meta Final de Vida"},
+              { t: "Parte 5: Propósito Existencial", c: "A Grande Missão de Realização individual ✶ Meta Final de Vida"},
               { t: "Parte 6: Ciclo Anual", c: "Vibração do Ano Pessoal Atual ✶ Tendências e Oportunidades do Ciclo"},
-              { t: "Parte 7: Sinastria & União", c: "A Alquimia Amorosa ✶ Compatibilidade Direta e Pontos de Afinidade"},
-              { t: "Parte 8: A Grande Matriz", c: "Pirâmide Invertida de Registro Cabalístico ✶ Sequências Negativas"},
-              { t: "Parte 9: Filosofia e Ciência", c: "Conclusão Evolutiva do Casal ✶ Estudo Vibracional Infantil (Se Houver)"}
+              { t: "Parte 7: A Grande Matriz", c: "Pirâmide Invertida da Vida ✶ Sequências Negativas ✶ regentes"},
+              { t: "Parte 8: Sinastria & União", c: "A Alquimia Amorosa ✶ Compatibilidade Direta e Pontos de Afinidade"},
+              
+              { t: "Parte 9: O Nome de Casamento", c: " Estudo Vibracional do nome acrecentado no cartório (Se Houver)"},
+              { t: "Parte 10: O Mapa do Bebe", c: " Estudo Vibracional Infantil (Se Houver)"},
+              { t: "Parte 11: Filosofia e Ciência", c: "Conselho para o Casal"}
           ].map((item, index) => `
               <div style="display: flex; flex-direction: column; align-items: center; border-bottom: 1px solid rgba(166, 132, 60, 0.15); padding-bottom: 8px;">
                   <h3 style="font-family: 'Cinzel', serif; color: #ffd700; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 3px 0; font-weight: 600;">
@@ -1426,6 +1594,19 @@ const processarMatrizCasado = (nomeCompleto) => {
       </div>
   </div>
   `;
+
+
+
+     // Capa da Seção 1 com os Áudios acoplados corretamente
+  relatorioHTML += criarCapaTransicao(
+      "Introdução", 
+      "O Direcionamento do seu Destino", 
+      "Instinto Superior ✶ Relatório Premium",
+      "https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/sinastriaintro.mp3", "Engenharia do amor",
+      
+      "https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/sinastriaintro.mp3", " "
+      
+  ); 
 
 relatorioHTML += `
 <div class="page evitar-corte" style="padding: 40px; background: #fff; min-height: 296mm; box-sizing: border-box; color: #2d0713; font-family: 'Segoe UI', sans-serif;">
@@ -1537,11 +1718,12 @@ function extrairETratarTexto(textoBruto, nomeParceiro) {
 
   // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
-      "Expressão & Alma", 
-      "O Direcionamento do seu Destino", 
+      "A Motivação da Alma", 
+      "O Direcionamento do seu Intelecto", 
       "Instinto Superior ✶ Relatório Premium",
-      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
-      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+      "https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/motivacaosinastria.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/motivacaosinastria.mp3", "Frequência da Alma"
+     
   );
 
 
@@ -1596,8 +1778,9 @@ relatorioHTML += `
       "Impressão & Imagem", 
       "A Projeção do Ser no Mundo Exterior", 
       "Instinto Superior ✶ Relatório Premium",
-      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
-      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/influenciasinastria.mp3", "Influência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/influenciasinastria.mp3", "Influência da Alma"
+      
   );
 
 
@@ -1992,13 +2175,19 @@ relatorioHTML += `
 
 
     
-  // Sinastria
-  const chave = chaveSinastria(dados1.proposito, dados2.proposito);
-  let textoSinastriaPuro = extrairETratarTexto(textos.sinastria[chave], social1);
-  const menor = Math.min(dados1.proposito, dados2.proposito);
-  const maior = Math.max(dados1.proposito, dados2.proposito);
-  textoSinastriaPuro = textoSinastriaPuro.replaceAll(`Energia ${menor}`, (dados1.proposito===menor)?social1:social2)
-                                         .replaceAll(`Energia ${maior}`, (dados1.proposito===maior)?social1:social2);
+// Sinastria
+const chave = chaveSinastria(dados1.proposito, dados2.proposito);
+
+let textoSinastriaPuro = extrairETratarTexto(
+  textos.sinastria[chave],
+  social1
+);
+
+textoSinastriaPuro = processarTextoSinastria(
+  textoSinastriaPuro,
+  social1,
+  social2
+);
 
   relatorioHTML += criarCapaTransicao(
       "Sinastria Conjugal", 
@@ -2057,7 +2246,7 @@ relatorioHTML += `
 
   relatorioHTML += `
     <div class="bloco-texto-pdf">
-        <h2 class="titulo-secao-pdf">PARTE 7: SINASTRIA & UNIÃO</h2>
+        <h2 class="titulo-secao-pdf">PARTE 8: SINASTRIA & UNIÃO</h2>
         <h3 class="subtitulo-pessoa-pdf" style="text-align:center; margin-bottom:20px;">A Alquimia entre ${social1} e ${social2}</h3>
         <div>${textoSinastriaPuro}</div>
     </div>`;
@@ -2165,6 +2354,57 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, analiseSolteiro, analiseCas
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
   );
+
+
+
+relatorioHTML += `
+<div class="page evitar-corte" style="padding: 40px; background: #fdfdfd; min-height: 296mm; box-sizing: border-box; color: #333; font-family: 'Segoe UI', sans-serif;">
+    
+    <div style="text-align: center; border-bottom: 2px solid #101015; padding-bottom: 20px; margin-bottom: 40px;">
+        <h1 style="font-family: 'Cinzel', serif; color: #2d0713; font-size: 24px; letter-spacing: 2px; margin: 0; text-transform: uppercase;">
+            MÓDULO IX: A Vibração do Nome de Casamento e a Nova Assinatura
+        </h1>
+        <p style="font-style: italic; color: #2d0713; margin-top: 10px; font-size: 14px;">
+            A Influência do Sobrenome do Parceiro ou Parceira: Bloqueios, Expressão e o Destino Conjugal
+        </p>
+    </div>
+
+    <div style="line-height: 1.8; text-align: justify; font-size: 16px; max-width: 850px; margin: 0 auto;">
+        
+        <p style="margin-bottom: 20px;">
+            Quando duas pessoas decidem unir suas vidas, a fusão vai muito além dos laços afetivos e contratuais. No universo da Numerologia Cabalística, o nome de nascimento é o nosso código de destino original. No entanto, o ato tradicional de **adotar o sobrenome do parceiro ou parceira** gera o nascimento de uma identidade vibracional completamente nova. Ao acrescentar ou substituir um sobrenome, você altera profundamente a sua matriz numérica.
+        </p>
+        
+        <p style="margin-bottom: 20px;">
+            Essa transição pode atuar como uma bênção ou como um grande desafio oculto. Muitas vezes, o casal inicia o relacionamento em perfeita harmonia, mas, após a mudança oficial do nome, começam a surgir conflitos inexplicáveis, barreiras financeiras ou distanciamento emocional. Isso acontece porque a introdução do novo sobrenome pode gerar **sequências negativas (bloqueios)** que não existiam no nome de solteiro(a), sobrecarregando a dinâmica do casal e trazendo à tona heranças cármicas da linhagem familiar do outro.
+        </p>
+
+        <p style="margin-bottom: 20px;">
+            Por outro lado, essa alquimia também pode ser a chave para a resolução de velhos problemas. Existem casos em que o nome de nascimento continha bloqueios severos de escassez, frustração ou solidão, e a entrada do sobrenome do cônjuge **anula ou neutraliza essas frequências nocivas**, funcionando como um verdadeiro escudo protetor. É uma blindagem que sintoniza a pessoa com uma nova vibração de prosperidade e realização.
+        </p>
+
+        <p style="margin-bottom: 25px;">
+            Mais do que isso, essa mudança altera diretamente os três pilares principais da alma: a **Motivação** (o que te impulsiona por dentro), a **Expressão** (como você se manifesta no mundo) e, principalmente, a **Personalidade** (a sua máscara social e o seu comportamento imediato). Você pode passar a ver a vida de outra forma, mudar seus gostos e até o seu jeito de reagir no dia a dia, tudo por conta dessa nova assinatura energética. Compreender essa influência é vital para entender se o nome adotado está somando forças ou criando nós no destino a dois.
+        </p>
+        
+        <div style="background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important;  color: #fff; padding: 30px; border-radius: 15px; border-left: 8px solid #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.1); margin-top: 30px;">
+            <h3 style="color: #fff; font-family: 'Cinzel', serif; font-size: 16px; margin-top: 0; margin-bottom: 15px; letter-spacing: 2px; text-transform: uppercase; text-align: center;">
+                Análise da Assinatura Conjugal e Modificações Vibracionais
+            </h3>
+            
+            <div id="resultado-nome-casamento-final" style="color: #eee; font-size: 15px; line-height: 1.7;">
+                <!-- O JavaScript injetará a análise personalizada aqui (ex: se gerou bloqueio, se mudou a Expressão, etc.) -->
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin-top: 60px; text-align: center; color: #2d0713; font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 2px;">
+        [ DIAGNÓSTICO DE ASSINATURA: O IMPACTO DO SOBRENOME NO CASAMENTO ]
+    </div>
+</div>
+`;
+    
 
     
 // ==========================================
@@ -2423,7 +2663,111 @@ relatorioHTML += `
             <h3 class="subtitulo-pessoa-pdf">⚠️ Desafios e Sequências do Nome</h3>
             <div>${extrairETratarTexto(textoSequenciasBebe, socialBebeInput)}</div>
         </div>`;
-  }
+
+ }
+
+      relatorioHTML += criarCapaTransicao(
+          "Filosofia e Ciência", 
+          `Educação  Moderna e Filosofia de Vida`, 
+          "Instinto Superior ✶ Legado Familiar ✶ Vibração Primal",
+       "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/diadonasc.mp3", "Frequência da Alma",
+      "https://hemricciinstintosuperior-rcci.github.io/estudo_numerologico/instintosuperior.mp3", "Vibração do Destino"
+  );
+
+
+      
+
+// PARTE I: A DIMENSÃO BIOMÉDICA E GENÉTICA DO CASAL
+relatorioHTML += `
+<div class="page evitar-corte" style="padding: 40px; background: #fff; min-height: 296mm; box-sizing: border-box; color: #2d0713; font-family: 'Segoe UI', sans-serif;">
+    
+    <div style="text-align: center; border-bottom: 2px solid #2d0713; padding-bottom: 20px; margin-bottom: 40px;">
+        <h1 style="font-family: 'Cinzel', serif; color: #2d0713; font-size: 24px; letter-spacing: 2px; margin: 0; text-transform: uppercase;">
+            MÓDULO X: Ciência e Filosofia Conjugal – Parte I
+        </h1>
+        <p style="font-style: italic; color: #2d0713; margin-top: 10px; font-size: 14px;">
+            A Blindagem Biológica: Planejamento Genético, Saúde Preventiva e Hereditariedade
+        </p>
+    </div>
+
+    <div style="line-height: 1.8; text-align: justify; color: #111; font-size: 16px; max-width: 850px; margin: 0 auto;">
+        
+        <p style="margin-bottom: 10px;">
+            No ecossistema do <b>Instinto Superior</b>, a construção de uma família soberana exige que a sabedoria matemática dos mapas numerológicos ande de mãos dadas com a realidade factual da ciência material. A união de um casal não é apenas o cruzamento de vetores energéticos de Motivação, Expressão e Destino; é também a fusão de duas linhagens biológicas. Portanto, a manutenção da harmonia exige o monitoramento rigoroso e consciente da saúde física e genética do homem e da mulher.
+        </p>
+        
+        <p style="margin-bottom: 10px;">
+            Para os casais que planejam a expansão do seu legado através de filhos, o primeiro e mais crítico passo técnico é a realização de exames pré-concepcionais detalhados. A avaliação da compatibilidade do **Fator RH e a tipagem sanguínea** do casal é vital para prevenir a incompatibilidade materno-fetal (eritroblastose fetal), garantindo uma gestação segura e blindada para a mãe e para o futuro bebê. O casal consciente não opera na sorte: ele utiliza a medicina preventiva para mapear predisposições antes de dar início ao processo de geração.
+        </p>
+
+        <p style="margin-bottom: 10px;">
+            <b>O Protocolo de Cuidado Feminino:</b> A mulher, como o solo sagrado onde a nova vida ganha forma, necessita de um acompanhamento ginecológico e metabólico contínuo. Exames periódicos como o hemograma completo, perfil lipídico, exames de tireoide (TSH e T4 Livre), além de ultrassonografias pélvicas e exames citológicos, são fundamentais para assegurar que o organismo esteja operando em sua máxima eficiência hormonal e nutricional, livre de carências inflamatórias que possam desgastar a relação ou comprometer a fertilidade.
+        </p>
+
+        <p style="margin-bottom: 10px;">
+            <b>O Protocolo de Cuidado Masculino:</b> O homem, como provedor da semente inicial e pilar de sustentação biológica, frequentemente negligencia o próprio mapa de saúde. No protocolo de alta performance, exames de rastreamento urológico, painel hormonal completo (incluindo testosterona total e livre), índices inflamatórios e exames cardiovasculares devem ser realizados anualmente. Manter a saúde masculina em dia regula a vitalidade, controla os níveis de estresse e garante a integridade da carga genética que será transmitida para a próxima geração.
+        </p>
+
+        <div style="background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important; padding: 25px; border-radius: 12px; border-left: 5px solid #d4af37; margin-top: 10px; margin-bottom: 10px;">
+            <h3 style="color: #fff; font-family: 'Cinzel', serif; font-size: 15px; margin-top: 0; margin-bottom: 12px; letter-spacing: 2px; text-transform: uppercase; text-align: center;">
+                Diretriz de Alinhamento Físico e Pré-Concepcional
+            </h3>
+            <p style="margin: 0; color: #eee; font-size: 14.5px; line-height: 1.7; text-align: center;">
+                Procurar especialistas médicos (Ginecologistas, Urologistas e Geneticistas) para a realização de exames de sangue detalhados, sorologias e aconselhamento genético é o primeiro pilar de soberania para proteger o amor material e a herança dos filhos.
+            </p>
+        </div>
+        
+    </div>
+
+
+</div>
+`;
+
+// PARTE II: A FILOSOFIA DE VIDA, SAÚDE MENTAL E MAESTRIA FAMILIAR
+relatorioHTML += `
+<div class="page evitar-corte" style="padding: 40px; background: #fff; min-height: 296mm; box-sizing: border-box; color: #2d0713; font-family: 'Segoe UI', sans-serif;">
+    
+    <div style="text-align: center; border-bottom: 2px solid #2d0713; padding-bottom: 20px; margin-bottom: 20px;">
+        <h1 style="font-family: 'Cinzel', serif; color: #2d0713; font-size: 24px; letter-spacing: 2px; margin: 0; text-transform: uppercase;">
+            MÓDULO X: Ciência e Filosofia Conjugal – Parte II
+        </h1>
+        <p style="font-style: italic; color: #2d0713; margin-top: 10px; font-size: 14px;">
+            A Arquitetura Psíquica: Filosofia de Convivência, Saúde Mental e Educação Soberana
+        </p>
+    </div>
+
+    <div style="line-height: 1.8; text-align: justify; color: #111; font-size: 16px; max-width: 850px; margin: 0 auto;">
+        
+        <p style="margin-bottom: 10px;">
+            Superada a fundação física e biológica, entramos na atmosfera que sustenta o relacionamento a longo prazo: a **Saúde Mental e a Filosofia de Vida**. O desgaste de uma união raramente ocorre por grandes eventos isolados, mas sim pela fricção invisível de mentes desalinhadas. Quando conhecemos a Motivação profunda e a Personalidade um do outro através da numerologia cabalística, ganhamos a chave para o gerenciamento de crises e para a manutenção da paz psíquica no lar.
+        </p>
+        
+        <p style="margin-bottom: 10px;">
+            A saúde mental do casal exige espaços individuais e coletivos de descompressão. O estresse corporativo, as pressões financeiras e a rotina diária alteram a vibração vibracional da casa. Cultivar uma filosofia onde o diálogo técnico substitui a reação emocional imediata é o segredo para blindar o casamento. Homem e mulher precisam atuar como guardiões da estabilidade psicológica um do outro, identificando gatilhos de cansaço mental e intervindo com suporte, respeito e silêncio terapêutico quando necessário.
+        </p>
+
+        <p style="margin-bottom: 10px;">
+            Quando o objetivo do casal envolve a criação de um bebê, o alinhamento da **Filosofia de Educação** torna-se o norte absoluto. Um filho absorve integralmente a frequência do ambiente nos primeiros anos de vida. Se o casal opera em desarmonia ou possui visões conflitantes sobre limites, valores e conduta, a criança crescerá sob um padrão geométrico quebrado, manifestando bloqueios emocionais e comportamentais no futuro. 
+        </p>
+
+        <p style="margin-bottom: 10px;">
+            Por isso, a educação com base no <b>Instinto Superior</b> instrui que os pais desenhem, de antemão, o código de princípios da família. Analisar as energias do Ano Pessoal de cada cônjuge permite entender quem estará em um ciclo de maior expansão, paciência ou introspecção, distribuindo os papéis de cuidado e mentoria do filho de maneira inteligente e estratégica. A educação soberana une o afeto estruturado à disciplina consciente, preparando a mente da criança para a liderança e para o equilíbrio emocional desde a infância.
+        </p>
+
+        <div style="background: radial-gradient(circle, #2d0713 0%, #110106 100%) !important; padding: 25px; border-radius: 12px; border-left: 5px solid #d4af37; margin-top: 10px; margin-bottom: 30px;">
+            <p style="margin: 0; color: #fff; font-size: 16px; text-align: center; font-style: italic;">
+                "Cuidar da mente, alinhar a filosofia e monitorar o corpo não são atos isolados de vaidade, mas o maior pacto de preservação e reverência ao amor que um casal pode assumir."
+            </p>
+        </div>
+        <p style="margin-bottom: 0;">
+            Ao cruzar os dados médicos preventivos com o mapa de desenvolvimento mental, o casal sai da posição de sobrevivência e assume a maestria da sua linhagem. O diagnóstico final deste estudo não aponta apenas tendências abstratas, mas convoca o homem e a mulher a agirem como engenheiros e filósofos práticos da própria felicidade conjugal e da longevidade de sua descendência.
+        </p>
+    </div>   </div>
+
+   
+`;
+      
+
 
 
 // === INJEÇÃO DO STATUS DE ACESSO, BOTÃO PREMIUM E RELATÓRIO ===
