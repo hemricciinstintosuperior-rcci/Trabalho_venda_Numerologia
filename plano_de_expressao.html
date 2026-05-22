@@ -773,6 +773,22 @@ a, img, audio { border: none !important; outline: none !important; text-decorati
     display: block !important;
 }    
 
+
+    /* Exemplo de como costuma estar no seu código */
+input[type="text"], select {
+    width: 100%;
+    padding: 12px; /* ou a altura que você usa */
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* sua cor de borda */
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    /* Adicione isso abaixo para o select ocupar o mesmo comportamento */
+    box-sizing: border-box; 
+}    
+    
+
     
     </style>
 
@@ -796,13 +812,19 @@ a, img, audio { border: none !important; outline: none !important; text-decorati
 
     
         <h1>Planos de Expressão</h1>
+
+    <select id="generoTexto">
+    <option value="masculino">MASCULINO (TEXTOS EM FORMATO PADRÃO)</option>
+    <option value="feminino">FEMININO (TEXTOS ADAPTADOS PARA O FEMININO)</option>
+</select>
+    
      <input type="text" id="nome" placeholder="NOME COMPLETO IGUAL CERTIDÃO" >
        <input type="text" id="data" placeholder="DD/MM/AAAA" maxlength="10" onInput="this.value = this.value.replace(/\D/g, '').replace(/^(\d{2})(\d)/, '$1/$2').replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3');">  
      <input type="text" id="nomeSocial" placeholder="COMO PREFERE SER CHAMADO? (OPCIONAL)"> 
         
           
     
-        <button class="btn-gerar" onclick="gerarMapaCompleto()">GERAR O MAPA</button>
+        <button class="btn-gerar" onclick="verificarGêneroEGerar()">GERAR O 100 anos</button>
     </div>
 
     <div id="resultado" style="width: 100%;"></div>
@@ -3081,6 +3103,46 @@ function montarSecaoHabilidadeEspecial() {
     document.getElementById('resultado-mapa').innerHTML += secaoHTML;
 }
 
+
+
+function verificarGêneroEGerar() {
+    console.log("Botão clicado! Verificando gênero...");
+    
+    const campoGênero = document.getElementById("generoTexto");
+    const formatoGênero = campoGênero ? campoGênero.value : "masculino";
+
+    let arquivoAlvo = (formatoGênero === "feminino") ? "textosfemininoexpressao.js" : "textosplano_expressao.js";
+
+    // Aqui a gente só remove o elemento de script antigo do HTML para não acumular sujeira na página
+    const scriptAntigo = document.getElementById("script-textos-dinamico");
+    if (scriptAntigo) {
+        scriptAntigo.remove();
+    }
+
+    // O '?v=' garante que o navegador pegue a alteração recente que você fez no seu GitHub
+    let urlComCacheBuster = arquivoAlvo + "?v=" + Date.now();
+    console.log("Carregando o arquivo: " + urlComCacheBuster);
+
+    let scriptNovo = document.createElement("script");
+    scriptNovo.id = "script-textos-dinamico";
+    scriptNovo.src = urlComCacheBuster; 
+    
+    scriptNovo.onload = function() {
+        console.log("Textos prontos na memória. Rodando o mapa!");
+        gerarMapaCompleto(); 
+    };
+
+    scriptNovo.onerror = function() {
+        alert("Erro ao carregar os textos do servidor.");
+    };
+    
+    document.head.appendChild(scriptNovo);
+}
+
+
+
+
+        
         
         
 function gerarMapaCompleto() {
