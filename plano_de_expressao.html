@@ -3625,32 +3625,47 @@ html += `
 
 </div>`;
   
-// --- PÁGINA 1: SUMÁRIO (AJUSTADA COM AS CORES DOS PLANOS) ---
+// --- PÁGINA 1: SUMÁRIO COM CORES INDIVIDUAIS POR SEÇÃO E BORDAS ---
 html += `
-<div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; max-height: 1120px; padding: 40px; box-sizing: border-box; overflow: hidden; page-break-after: always; position: relative; border: 15px solid transparent; background-image: linear-gradient(to right, #e74c3c 25%, #3498db 25%, #3498db 50%, #2ecc71 50%, #2ecc71 75%, #f1c40f 75%); background-origin: border-box; background-clip: padding-box, border-box; background-color: #ffffff;">
+<div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; max-height: 1120px; padding: 40px; box-sizing: border-box; overflow: hidden; page-break-after: always; position: relative; background-color: #ffffff; border-top: 15px solid #e74c3c; border-right: 15px solid #3498db; border-bottom: 15px solid #2ecc71; border-left: 15px solid #f1c40f;">
     
-    <div style="width: 100%; max-width: 950px; background: rgba(255,255,255,0.95); padding: 50px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-        ${[
-            { t: "Introdução", c: "O equilíbrio ✶ Engenharia da Vida ✶ Origem & Numerologia Moderna", color: "#e74c3c" },
-            { t: "Sua Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais", color: "#3498db" },
-            { t: "Ciclo de 100 anos", c: "Ciclo Transitório ✶ Perfil do Momento ✶ Ciclos de intensidade dos Planos", color: "#2ecc71" },
-            { t: "FIM DO CICLO", c: "Agradecimento", color: "#f1c40f" }
-        ].map(item => `
-            <div style="text-align: center; margin-bottom: 40px;">
-                <h3 style="color: ${item.color}; font-size: 2.2rem; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 15px; font-weight: 900;">${item.t}</h3>
-                <p style="color: #333; font-size: 1.5rem; margin: 0; line-height: 1.4; font-weight: 500;">${item.c}</p>
-            </div>
-        `).join('')}
+    <div style="width: 100%; max-width: 950px; display: flex; flex-direction: column; gap: 40px; text-align: center;">
         
-        <div style="margin-top: 50px; text-align: center; border-top: 2px solid #eee; padding-top: 30px;">
-            <p style="font-weight: 800; color: #2c3e50; letter-spacing: 8px; font-size: 1.8rem; text-transform: uppercase; margin: 0;">
-                Instinto Superior
-            </p>
+        <h1 style="color: #333; font-size: 3.5rem; letter-spacing: 10px; text-transform: uppercase; margin: 0 0 20px 0; font-weight: 900;">Sumário</h1>
+
+        <!-- Introdução: Vermelho (Físico) -->
+        <div style="padding: 10px; border-left: 5px solid #e74c3c;">
+            <h3 style="color: #e74c3c; font-size: 2.2rem; letter-spacing: 4px; text-transform: uppercase; margin: 0 0 10px 0; font-weight: 900;">Introdução</h3>
+            <p style="color: #555; font-size: 1.5rem; margin: 0; font-weight: 500;">O equilíbrio ✶ Engenharia da Vida ✶ Origem & Numerologia Moderna</p>
         </div>
+
+        <!-- Performance: Azul (Mental) -->
+        <div style="padding: 10px; border-left: 5px solid #3498db;">
+            <h3 style="color: #3498db; font-size: 2.2rem; letter-spacing: 4px; text-transform: uppercase; margin: 0 0 10px 0; font-weight: 900;">Sua Performance Natural</h3>
+            <p style="color: #555; font-size: 1.5rem; margin: 0; font-weight: 500;">Planos de Expressão ✶ Gráficos de Potenciais</p>
+        </div>
+
+        <!-- Ciclo: Verde (Emocional) -->
+        <div style="padding: 10px; border-left: 5px solid #2ecc71;">
+            <h3 style="color: #2ecc71; font-size: 2.2rem; letter-spacing: 4px; text-transform: uppercase; margin: 0 0 10px 0; font-weight: 900;">Ciclo de 100 anos</h3>
+            <p style="color: #555; font-size: 1.5rem; margin: 0; font-weight: 500;">Ciclo Transitório ✶ Perfil do Momento ✶ Ciclos de intensidade dos Planos</p>
+        </div>
+
+        <!-- Fim: Amarelo (Intuitivo) -->
+        <div style="padding: 10px; border-left: 5px solid #f1c40f;">
+            <h3 style="color: #f1c40f; font-size: 2.2rem; letter-spacing: 4px; text-transform: uppercase; margin: 0 0 10px 0; font-weight: 900;">FIM DO CICLO</h3>
+            <p style="color: #555; font-size: 1.5rem; margin: 0; font-weight: 500;">Agradecimento</p>
+        </div>
+        
+    </div>
+    
+    <div style="position: absolute; bottom: 40px; text-align: center;">
+        <p style="font-weight: 900; color: #333; letter-spacing: 8px; font-size: 1.8rem; text-transform: uppercase; margin: 0;">
+            Instinto Superior
+        </p>
     </div>
 </div>
 `;
-
 
 
     
