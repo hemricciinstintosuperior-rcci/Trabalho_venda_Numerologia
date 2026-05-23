@@ -1066,15 +1066,21 @@ a, img, audio { border: none !important; outline: none !important; text-decorati
     </div>
 
     
-        <h1>MATRIZ QUÂNTICA</h1>
+           <h1>MATRIZ QUÂNTICA</h1>
+
+        <select id="generoTexto">
+    <option value="masculino">MASCULINO (TEXTOS EM FORMATO PADRÃO)</option>
+    <option value="feminino">FEMININO (TEXTOS ADAPTADOS PARA O FEMININO)</option>
+</select>
      <input type="text" id="nome" placeholder="NOME COMPLETO IGUAL CERTIDÃO" >
        <input type="text" id="data" placeholder="DD/MM/AAAA" maxlength="10" onInput="this.value = this.value.replace(/\D/g, '').replace(/^(\d{2})(\d)/, '$1/$2').replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3');">  
      <input type="text" id="nomeSocial" placeholder="COMO PREFERE SER CHAMADO? (OPCIONAL)"> 
         
            
     
-        <button class="btn-gerar" onclick="gerar()">GERAR AS MATRIZES</button>
+        <button class="btn-gerar" onclick="verificarGêneroEGerar()">GERAR AS MATRIZES</button>
     </div>
+       
        
      
    
@@ -1827,6 +1833,39 @@ function desenhar(linhas, tipoPira = "VIDA", compacta = false, nomeRaw = "") {
 
 
 
+function verificarGêneroEGerar() {
+    console.log("Botão clicado! Verificando gênero...");
+    
+    const campoGênero = document.getElementById("generoTexto");
+    const formatoGênero = campoGênero ? campoGênero.value : "masculino";
+
+    let arquivoAlvo = (formatoGênero === "feminino") ? "textosfemininoMatriz.js" : "textosmatriz.js";
+
+    // Aqui a gente só remove o elemento de script antigo do HTML para não acumular sujeira na página
+    const scriptAntigo = document.getElementById("script-textos-dinamico");
+    if (scriptAntigo) {
+        scriptAntigo.remove();
+    }
+
+    // O '?v=' garante que o navegador pegue a alteração recente que você fez no seu GitHub
+    let urlComCacheBuster = arquivoAlvo + "?v=" + Date.now();
+    console.log("Carregando o arquivo: " + urlComCacheBuster);
+
+    let scriptNovo = document.createElement("script");
+    scriptNovo.id = "script-textos-dinamico";
+    scriptNovo.src = urlComCacheBuster; 
+    
+    scriptNovo.onload = function() {
+        console.log("Textos prontos na memória. Rodando o mapa!");
+        gerar(); 
+    };
+
+    scriptNovo.onerror = function() {
+        alert("Erro ao carregar os textos do servidor.");
+    };
+    
+    document.head.appendChild(scriptNovo);
+}
 
 
 
