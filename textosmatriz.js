@@ -1,4 +1,4 @@
-const resultadoPotencia = {
+let resultadoPotencia = {
  principal:{
 "10": "Esta vibração se origina da potência 10, que indica momentos de reconhecimento ou mudanças favoráveis que impulsionam novas oportunidades na vida. Representa o início de um novo ciclo onde o universo conspira para que sua liderança natural floresça sem grandes obstruções externas.",
 "11": "Esta vibração se origina da potência 11, trazendo um canal de intuição e inspiração que ilumina suas decisões. Indica que sua força de vontade é guiada por uma percepção superior, permitindo que você tome a frente de projetos com uma sensibilidade que outros não possuem.",
@@ -380,7 +380,7 @@ destino:{
 },
 };
 
-const textosVida={
+let textosVida={
 
 
 
@@ -729,7 +729,7 @@ const textosVida={
   
 };
   
-const textosPessoal={
+let textosPessoal={
 
 
 
@@ -1294,7 +1294,7 @@ const textosPessoal={
 
 };
 
-  const textosSocial={ 
+  let textosSocial={ 
 
 
 
@@ -1872,7 +1872,7 @@ const textosPessoal={
 <p>A Potência 99 revela uma percepção social marcada por consciência e sabedoria.</p>`
 };
   
-  const textosDestino={ 
+  let textosDestino={ 
 
 
 
@@ -2503,7 +2503,7 @@ const textosPessoal={
     
 
 // 🚨 TEXTOS SEQUÊNCIAS NEGATIVAS
-const textosSeqNegVida = {
+let textosSeqNegVida = {
 
   1: ` Nesta fase, você poderá sentir que sua chama interna de motivação está sendo abafada por obstáculos inesperados.
 A influência desta sequência tende a minar sua capacidade de iniciativa, tornando o ato de começar algo novo um verdadeiro desafio.
@@ -2623,7 +2623,7 @@ Doenças somáticas e hipocondria podem aparecer como reflexo de uma mente que n
 A lição fundamental deste período é o desapego e a busca por uma nova forma de enxergar o valor da vida.`
 };
 
-const textosSeqNegPessoal = { 
+let textosSeqNegPessoal = { 
   1: `<p>  No âmbito pessoal, esta vibração indica um conflito latente com sua própria identidade e poder de decisão. Você pode se sentir mentalmente paralisado, como se uma voz interna questionasse cada impulso de ação antes mesmo de ele se manifestar. A insegurança sobre quem você é pode gerar um estado de dúvida constante, sabotando sua autoestima e impedindo que você se sinta o protagonista da sua própria mente.</p>`,
 
   2: `<p>  Esta influência atua na sua percepção de valor interno. Há uma tendência a se sentir emocionalmente frágil e excessivamente dependente da validação interna que você imagina que os outros deveriam dar. O medo da rejeição pode criar um diálogo mental submisso, onde você se critica duramente por não ser "bom o suficiente", gerando uma timidez psicológica que sufoca sua expressão autêntica.</p>`,
@@ -2644,7 +2644,7 @@ const textosSeqNegPessoal = {
 };
 
 
-const textosSeqNegSocial = {
+let textosSeqNegSocial = {
   1: `<p>  No ambiente social, você pode perceber uma atmosfera de falta de iniciativa ou bloqueios nas pessoas ao seu redor. Pode parecer que o meio em que você convive é desestimulante, onde ninguém deseja tomar a frente ou onde as novas ideias são recebidas com passividade. É um campo social marcado pela estagnação criativa dos grupos com os quais você interage.</p>`,
 
   2: `<p>  Esta influência revela um meio social onde impera a fofoca, a dependência emocional excessiva ou a timidez coletiva. Você pode se ver cercado por pessoas inseguras que buscam constantemente sua aprovação ou que tentam influenciá-lo através da vitimização. O ambiente social tende a ser hesitante, dificultando a construção de parcerias sólidas e independentes.</p>`,
@@ -2664,7 +2664,7 @@ const textosSeqNegSocial = {
   9: `<p>  O desafio social aqui é a convivência com pessoas que estão passando por crises profundas ou que se recusam a evoluir. O meio ao seu redor pode parecer desgastado, como se os grupos de que você participa estivessem chegando ao fim. Há um sentimento coletivo de derrota ou cansaço que pode drenar sua energia se você tentar carregar os problemas dos outros nas costas.</p>`
 };
 
-const textosSeqNegDestino = {
+let textosSeqNegDestino = {
   1: `<p>  No caminho do destino, esta vibração se manifesta como obstáculos súbitos que impedem o início de novos ciclos. O destino parece colocar barreiras toda vez que você tenta exercer sua autonomia. São eventos externos que forçam a paciência e exigem que você encontre novas formas de liderar sua vida quando as portas parecem trancadas por forças maiores.</p>`,
 
   2: `<p> Esta influência traz situações de destino que testam sua capacidade de se manter firme diante de pressões externas. Você pode enfrentar circunstâncias que o colocam em posição de submissão ou que exigem que você aprenda a discernir em quem confiar. O caminho pode apresentar parcerias duvidosas que servem como teste para o seu fortalecimento pessoal.</p>`,
@@ -2684,7 +2684,7 @@ const textosSeqNegDestino = {
   9: `<p>  No destino, esta vibração marca o encerramento forçado de grandes capítulos. O caminho pode "limpar" da sua vida tudo o que já não serve mais, muitas vezes de forma dolorosa e definitiva. São eventos de perda de patrimônio ou fim de eras que, embora desafiadores, têm o propósito de liberar seu caminho para uma nova existência totalmente diferente.</p>`
 };
 // ⭐ TEXTOS SEQUÊNCIAS ESPECIAIS
-const textosSeqEspVida = {
+let textosSeqEspVida = {
 
   "116": `Este é um estágio onde sua imagem pública e reputação podem ser postas à prova por interferências de terceiros.
 Existe o risco de enfrentar críticas infundadas ou situações que visam abalar sua credibilidade profissional e pessoal.
@@ -2756,7 +2756,7 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
 
 };
 
-const textosSeqEspPessoal = {
+let textosSeqEspPessoal = {
   "116": `<p> No nível pessoal, você pode ou não sentir uma preocupação interna com sua própria imagem. Pode surgir o pensamento ou a insegurança de que outros estão julgando sua conduta. 
   É um processo puramente mental sobre como você imagina que sua reputação está sendo percebida.</p>`,
   "119": `<p> Esta vibração pode despertar conflitos internos de fé ou valores. Você pode se pegar questionando suas próprias crenças ou sentindo uma desconfiança mental sobre o que é verdadeiro, podendo gerar um sentimento de desilusão com conceitos que antes considerava sagrados.</p>`,
@@ -2777,7 +2777,7 @@ const textosSeqEspPessoal = {
   "927": `<p> No plano da imaginação, pode haver a preocupação com segredos ou informações ocultas. Você pode se sentir mentalmente curioso ou apreensivo sobre o que não foi dito, voltando seus pensamentos para mistérios do passado.</p>`
 };
 
-const textosSeqEspSocial = {
+let textosSeqEspSocial = {
   
  "116": `<p> No seu ambiente social, você pode notar pessoas sendo alvo de críticas ou discussões sobre reputação. É um momento onde a fofoca ou o julgamento público ganham força nos grupos que você frequenta.</p>`,
   "119": `<p> Você poderá observar comportamentos de fanatismo ou falsas promessas vindo de pessoas próximas ou do meio coletivo. O ambiente social pode estar carregado de influências hipócritas ou causas vazias.</p>`,
@@ -2798,7 +2798,7 @@ const textosSeqEspSocial = {
   "927": `<p> Você percebe um clima de mistério ou revelação de segredos no seu meio. É uma fase onde intrigas e escândalos de terceiros podem vir à tona nos círculos de convivência.</p>`
 };
 
-const textosSeqEspDestino = {
+let textosSeqEspDestino = {
   "116": `<p> O destino pode trazer eventos externos que testam sua resistência à opinião pública. Podem surgir situações inesperadas que exigem que você defenda sua integridade diante do mundo.</p>`,
   "119": `<p> Situações do destino podem colocá-lo frente a frente com instituições ou causas que se revelam falsas. O caminho pode apresentar obstáculos criados por visões dogmáticas de terceiros.</p>`,
   "123": `<p> O destino abre portas para o reconhecimento oficial. Podem surgir oportunidades externas, como prêmios ou honrarias, que chegam até você como um reflexo de sua trajetória.</p>`,
@@ -2818,17 +2818,17 @@ const textosSeqEspDestino = {
   "927": `<p> O caminho pode ser atravessado por revelações de fatos ocultos ou situações do passado que retornam através de eventos externos, exigindo ética e neutralidade.</p>`
 };
 // --- BANCOS FINANCEIROS SEPARADOS ---
-const textosFinVida = { 999: "" };
-const textosFinPessoal = { 999: "" };
-const textosFinSocial = { 999: "" };
-const textosFinDestino = { 999: "" };
+let textosFinVida = { 999: "" };
+let textosFinPessoal = { 999: "" };
+let textosFinSocial = { 999: "" };
+let textosFinDestino = { 999: "" };
 
 
 // --- Certifica-te que tens o mesmo para Negativas e Especiais (Vida, Pessoal, Social, Destino) ---  
 // =======================
 // 📖 TEXTOS EXPLICATIVOS DAS PIRÂMIDES
 // =======================
-const explicacoes = {
+let explicacoes = {
 
 principal: `
 
@@ -3078,31 +3078,31 @@ destino: {
 window.textosSintese = {
     "pessoal_vida": `
         <p><b>Sincronia de Manifestação Direta e Alinhamento Real:</b></p>
-        <p>Existe em sua matriz, MASCULINO-FEMININO-NEUTRO, uma das configurações mais raras e potentes da dinâmica quântica. Quando sua Potência Pessoal se iguala à Potência da Vida, o véu entre o desejo e a realidade material torna-se extremamente fino. Isto indica que existe um canal direto de comunicação entre sua mente subconsciente e o campo de possibilidades externas. Você não atua apenas como alguém que observa sua jornada; você é a mente consciente por trás de cada evento, agindo de forma integrada e poderosa à sua realidade tangível.</p>
-        <p>Na prática, esse nível de sincronia exige uma higiene mental rigorosa e uma vigilância constante sobre seus estados internos. Como sua vibração pessoal e a vibração da sua vida estão na mesma nota, seus medos e inseguranças possuem o mesmo poder de manifestação que seus sonhos e metas. Você, MASCULINO-FEMININO-NEUTRO, não é alguém refém das circunstâncias; você é a força que as impulsiona. O mundo ao seu redor responde ao seu comando interno como um espelho de alta fidelidade, refletindo com precisão absoluta sua postura íntima e suas crenças mais profundas.</p>
+        <p>Existe em sua matriz uma das configurações mais raras e potentes da dinâmica quântica. Quando sua Potência Pessoal se iguala à Potência da Vida, o véu entre o desejo e a realidade material torna-se extremamente fino. Isto indica que existe um canal direto de comunicação entre sua mente subconsciente e o campo de possibilidades externas. Você não atua apenas como alguém que observa sua jornada; você é a mente consciente por trás de cada evento, agindo de forma integrada e poderosa à sua realidade tangível.</p>
+        <p>Na prática, esse nível de sincronia exige uma higiene mental rigorosa e uma vigilância constante sobre seus estados internos. Como sua vibração pessoal e a vibração da sua vida estão na mesma nota, seus medos e inseguranças possuem o mesmo poder de manifestação que seus sonhos e metas. Você não é alguém refém das circunstâncias; você é a força que as impulsiona. O mundo ao seu redor responde ao seu comando interno como um espelho de alta fidelidade, refletindo com precisão absoluta sua postura íntima e suas crenças mais profundas.</p>
         <p>Quando você decide mudar sua frequência interna, sua vida financeira, amorosa e profissional tende a se ajustar quase que instantaneamente, sem a necessidade de esforços externos exaustivos ou lutas contra o fluxo. É o estado puro de 'Fluxo de Criatividade', onde a vida não acontece contra você, mas sim através de você. O grande desafio dessa configuração é abandonar definitivamente qualquer narrativa de impotência, pois a chave mestra da sua realidade está guardada no seu próprio interior, esperando que você assuma o controle do leme.</p>
         <p>Para potencializar essa força, cultive momentos de visualização e afirmação, pois para sua matriz, 'sentir é realizar'. Você veio ao mundo para provar que a vontade humana, quando alinhada às leis universais, pode moldar a matéria. Não subestime seu poder de influência sobre os fatos; cada decisão tomada em silêncio dentro da sua alma ecoa como uma ordem para o universo, que prontamente se organiza para entregar o cenário correspondente à sua nova vibração.</p>
     `,
     
     "social_vida": `
         <p><b>Sincronia de Espelhamento Coletivo e Ressonância Externa:</b></p>
-        <p>Sua jornada nesta existência, MASCULINO-FEMININO-NEUTRO, é profundamente influenciada pelo campo vibracional das pessoas, grupos e ambientes que você escolhe frequentar. Nesta configuração específica, sua vida funciona como um reflexo direto do seu convívio social e das egrégoras às quais você se conecta. Você possui uma natureza de ressonância externa: o sucesso, a abundância, a saúde ou os bloqueios que você experimenta são, em grande parte, transferidos ao seu campo pessoal devido à sua exposição constante ao meio.</p>
+        <p>Sua jornada nesta existência é profundamente influenciada pelo campo vibracional das pessoas, grupos e ambientes que você escolhe frequentar. Nesta configuração específica, sua vida funciona como um reflexo direto do seu convívio social e das egrégoras às quais você se conecta. Você possui uma natureza de ressonância externa: o sucesso, a abundância, a saúde ou os bloqueios que você experimenta são, em grande parte, transferidos ao seu campo pessoal devido à sua exposição constante ao meio.</p>
         <p>Isso significa que sua evolução e prosperidade dependem da sua capacidade estratégica de selecionar onde e com quem você gasta sua energia vital. Se você se cercar de mentes prósperas, corajosas e evoluídas, sua vida subirá de nível como que por osmose, captando a frequência do progresso sem esforço aparente. Por outro lado, ambientes tóxicos ou limitantes drenarão sua vitalidade e estagnarão seus projetos mais promissores em tempo recorde, pois sua 'antena' está programada para materializar o que capta do coletivo.</p>
-        <p>O seu destino, MASCULINO-FEMININO-NEUTRO, não costuma trazer eventos isolados ou 'sorte' abstrata; ele costuma trazer 'pessoas'. Cada nova conexão em sua vida é, na verdade, uma semente de um novo cenário de vida. Para mudar sua realidade financeira ou emocional, o caminho mais rápido é mudar seu cenário social. Você notará que portas que pareciam trancadas há anos se abrirão sozinhas apenas pelo fato de você estar em um grupo favorável ou frequentando o ambiente que vibra na solução.</p>
+        <p>O destino, para você, não costuma trazer eventos isolados ou 'sorte' abstrata; ele costuma trazer 'pessoas'. Cada nova conexão em sua vida é, na verdade, uma semente de um novo cenário de vida. Para mudar sua realidade financeira ou emocional, o caminho mais rápido é mudar seu cenário social. Você notará que portas que pareciam trancadas há anos se abrirão sozinhas apenas pelo fato de você estar em um grupo favorável ou frequentando o ambiente que vibra na solução.</p>
         <p>Sua missão envolve aprender a manter a seletividade sem perder a empatia. Entenda que sua energia é um patrimônio valioso e que você tem o direito — e o dever — de proteger seu campo de influências externas que não condizem com seu propósito. Ao dominar a arte de se conectar às frequências certas, você se torna um foco de oportunidades, onde o networking deixa de ser apenas uma ferramenta profissional e passa a ser o motor sagrado da sua própria sobrevivência e expansão material.</p>
     `,
     
     "destino_vida": `
         <p><b>Sincronia de Propósito Inevitável e Condução Superior:</b></p>
-        <p>Nesta configuração, MASCULINO-FEMININO-NEUTRO, o comando da sua existência está firmemente posicionado nas mãos do seu Plano de Destino. Existe uma força maior, um roteiro predefinido e inteligente que guia os grandes acontecimentos da sua jornada, muitas vezes sobrepondo-se às suas vontades imediatas ou aos seus planos racionais. Você sentirá, ao longo da vida, que certas situações, encontros e mudanças bruscas de rumo são absolutamente 'inevitáveis', como se tivessem sido orquestradas por uma sabedoria superior.</p>
+        <p>Nesta configuração, o comando da sua existência está firmemente posicionado nas mãos do seu Plano de Destino. Existe uma força maior, um roteiro predefinido e inteligente que guia os grandes acontecimentos da sua jornada, muitas vezes sobrepondo-se às suas vontades imediatas ou aos seus planos racionais. Você sentirá, ao longo da vida, que certas situações, encontros e mudanças bruscas de rumo são absolutamente 'inevitáveis', como se tivessem sido orquestradas por uma sabedoria superior.</p>
         <p>Esta é a marca de uma vida com uma missão específica e inegociável. Quando o Destino e a Vida se fundem na mesma potência, os acasos deixam de existir para dar lugar à Providência. Mesmo que você tente fugir de certos caminhos por medo ou dúvida, o Universo criará 'curvas' e sincronicidades que o trarão de volta ao seu trilho original. É uma jornada que exige rendição e uma confiança profunda nas forças que regem o tempo e o espaço, entendendo que há um tempo certo para cada colheita.</p>
-        <p>Quanto menos você resistir ao fluxo natural das coisas e quanto mais você aprender a ler os sinais, mais próspera e leve sua vida se tornará, MASCULINO-FEMININO-NEUTRO. Você perceberá que as grandes crises que enfrentou no passado foram, na verdade, momentos em que o Destino estava 'limpando o palco' para que o próximo ato da sua evolução pudesse começar. Nada em sua vida é por acaso; cada perda foi uma liberação de espaço e cada ganho foi um degrau calculado para o cumprimento do seu contrato espiritual nesta terra.</p>
-        <p>O seu sucesso, MASCULINO-FEMININO-NEUTRO, vem através da paciência e da observação atenta. Você atua como quem protagoniza um livro escrito pelas estrelas, e seu papel é aprender a ser intérprete das vontades do alto. Não se desespere quando os planos humanos falharem, pois o plano do destino é infalível e sempre visa o seu crescimento máximo. Sua vida é um testemunho de que existe uma ordem no caos, e que você está sob condução para um lugar de realização que sua mente lógica sequer consegue imaginar ainda.</p>
+        <p>Quanto menos você resistir ao fluxo natural das coisas e quanto mais você aprender a ler os sinais, mais próspera e leve sua vida se tornará. Você perceberá que as grandes crises que enfrentou no passado foram, na verdade, momentos em que o Destino estava 'limpando o palco' para que o próximo ato da sua evolução pudesse começar. Nada em sua vida é por acaso; cada perda foi uma liberação de espaço e cada ganho foi um degrau calculado para o cumprimento do seu contrato espiritual nesta terra.</p>
+        <p>O sucesso para você vem através da paciência e da observação atenta. Você atua como quem protagoniza um livro escrito pelas estrelas, e seu papel é aprender a ser intérprete das vontades do alto. Não se desespere quando os planos humanos falharem, pois o plano do destino é infalível e sempre visa o seu crescimento máximo. Sua vida é um testemunho de que existe uma ordem no caos, e que você está sob condução para um lugar de realização que sua mente lógica sequer consegue imaginar ainda.</p>
     `,
     
     "pessoal_social": `
-        <p><b>Sua Sincronia de Influência, Identidade e Adaptação:</b></p>
-        <p>Esta conexão revela um desafio quântico constante entre o 'Eu' e o 'Nós'. Você, MASCULINO-FEMININO-NEUTRO possui uma personalidade dotada de uma plasticidade incrível, com grande capacidade de adaptação e permeabilidade às energias ao seu redor. Isso faz de você uma presença extremamente carismática, magnética e de fácil convívio, mas traz o risco intrínseco de perder a clareza sobre sua própria essência devido à necessidade inconsciente de pertencer e ser uma pessoa aceita pelos grupos.</p>
+        <p><b>Sincronia de Influência, Identidade e Adaptação:</b></p>
+        <p>Esta conexão revela um desafio quântico constante entre o 'Eu' e o 'Nós'. Você possui uma personalidade dotada de uma plasticidade incrível, com grande capacidade de adaptação e permeabilidade às energias ao seu redor. Isso faz de você uma presença extremamente carismática, magnética e de fácil convívio, mas traz o risco intrínseco de perder a clareza sobre sua própria essência devido à necessidade inconsciente de pertencer e ser uma pessoa aceita pelos grupos.</p>
         <p>O seu 'Pessoal' (quem você sente que é) é constantemente moldado pelas pressões e expectativas do seu meio social. Você tem a capacidade de sentir o que o grupo sente e, muitas vezes, acaba adotando metas, desejos, gostos e opiniões que não são originalmente seus, mas que foram absorvidos para manter a harmonia do ambiente. Essa facilidade de sofrer influência pode ser sua maior virtude, se houver convívio com mentes brilhantes, ou seu maior perigo, se o convívio for com pessoas medíocres.</p>
         <p>O trabalho fundamental da sua vida é o processo de 'Individualização'. Você precisa aprender a construir uma membrana energética que lhe permita transitar pelos grupos sem se dissolver neles. É vital que você tenha momentos de isolamento e silêncio para 'descomprimir' as energias alheias e conseguir ouvir, com nitidez, a sua própria voz interna. Sem esse retiro periódico, você corre o risco de viver uma vida baseada no roteiro de outras pessoas, esquecendo-se da sua própria vontade autêntica.</p>
         <p>Quando você domina essa troca e aprende a filtrar o que entra no seu campo, você se transforma em uma autoridade de influência social. Você passará a usar sua adaptabilidade de forma consciente, conseguindo entrar em qualquer ambiente e se conectar com qualquer nível hierárquico, mantendo-se fiel ao seu núcleo interno. Você se torna alguém que lidera e entende a alma das pessoas, pois sabe como é sentir a energia delas, usando essa sensibilidade para guiar, e não mais para sofrer apenas a condução pelo desejo alheio.</p>
@@ -3110,30 +3110,30 @@ window.textosSintese = {
     
     "pessoal_destino": `
         <p><b>Sincronia de Intuição Profunda e Chamado da Alma:</b></p>
-        <p>O Universo possui um canal de comunicação direta com você, que funciona de dentro para fora. Nesta rara e profunda configuração, MASCULINO-FEMININO-NEUTRO,  sua Potência Pessoal está em ressonância direta com o seu Plano de Destino, o que gera uma conexão intuitiva avassaladora. Você não precisa buscar bússolas ou conselhos no mundo externo com tanta frequência; seu interior já possui o 'mapa' do tesouro antes mesmo da sua mente racional começar a analisar as opções.</p>
+        <p>O Universo possui um canal de comunicação direta com você, que funciona de dentro para fora. Nesta rara e profunda configuração, sua Potência Pessoal está em ressonância direta com o seu Plano de Destino, o que gera uma conexão intuitiva avassaladora. Você não precisa buscar bússolas ou conselhos no mundo externo com tanta frequência; seu interior já possui o 'mapa' do tesouro antes mesmo da sua mente racional começar a analisar as opções.</p>
         <p>Seus desejos mais genuínos e seus impulsos criativos já estão 'carregados' com o seu propósito de vida. Você sente o chamado do destino não como um evento externo, mas como um entusiasmo inexplicável, uma certeza absoluta ou até um incômodo no peito que empurra você para certas direções. Quando você segue sua intuição, você está, literalmente, cumprindo sua missão de vida. O maior erro que você pode cometer é tentar agir com lógica excessiva ou seguir conselhos 'pragmáticos' que silenciam o que seu coração está gritando.</p>
         <p>Para sua matriz, o sucesso não nasce do planejamento frio de escritório, mas da obediência corajosa à voz da alma. Você notará que o Universo trabalha a seu favor durante o sono, através de sonhos lúcidos, lampejos de criatividade e 'insights' que surgem no meio do silêncio. É uma vida guiada pelo espírito, onde o autoconhecimento não é um luxo, mas a ferramenta de sobrevivência mais poderosa que você possui. Se você estiver em paz consigo, o destino flui; se você se trair para agradar o mundo, o destino trava.</p>
         <p>Você é sua própria guia ou seu próprio guia espiritual. Sua jornada é sobre aprender a confiar no invisível e ter a audácia de agir com base em certezas que mais ninguém consegue ver. Você veio para provar que a alma tem um GPS infalível e que, ao estarmos em alinhamento com nosso propósito, o impossível torna-se apenas uma questão de tempo. Escute o silêncio, pois é nele que as instruções para o seu próximo grande salto quântico estão sendo transmitidas agora mesmo.</p>
     `,
     
     "social_destino": `
-        <p><b>Sua sincronia de Missão Coletiva e Atuação Pública:</b></p>
-        <p>O palco principal da sua evolução espiritual e material é o seu meio de convivência. Esta conexão poderosa indica que o propósito da sua vida não é algo para ser realizado de forma isolada ou escondida; ele depende fundamentalmente das suas interações, das suas parcerias e da sua imagem perante o coletivo. O Destino, para você, manifesta-se através do seu papel social, dos cargos que ocupa e das conexões que você cultiva ao longo do caminho.</p>
+        <p><b>Sincronia de Missão Coletiva e Atuação Pública:</b></p>
+        <p>O palco principal da sua evolução espiritual e material é a sociedade. Esta conexão poderosa indica que o propósito da sua vida não é algo para ser realizado de forma isolada ou escondida; ele depende fundamentalmente das suas interações, das suas parcerias e da sua imagem perante o coletivo. O Destino, para você, manifesta-se através do seu papel social, dos cargos que ocupa e das conexões que você cultiva ao longo do caminho.</p>
         <p>Você nasceu para ser um ponto de convergência, alguém que move peças importantes no tabuleiro das relações humanas para que algo maior se materialize. Grandes oportunidades de destino, mudanças de status, encontros de alma e negócios transformadores virão sempre através de uma ponte humana: uma indicação, um convite inesperado ou uma rede de apoio que reconhece seu valor. Você atrai pessoas que funcionam como 'mensageiras do destino', trazendo as chaves que abrem as portas que você tanto busca.</p>
         <p>Nesta configuração, sua ética e seu comportamento no meio social são os combustíveis que ditam a velocidade com que seu propósito se cumpre. Se você se isolar ou tentar trilhar um caminho de isolamento, sentirá que seu destino fica estagnado e as coisas param de acontecer. No entanto, se houver expansão, comunicação e serviço ao coletivo com integridade, as portas do universo se abrem de forma miraculosa. O mundo é o seu jardim, e cada conexão é uma semente de destino que pode florescer a qualquer momento.</p>
         <p>Tenha plena consciência do impacto que você causa nas pessoas, pois sua liderança e sua capacidade de colaboração são as ferramentas que o Universo utiliza para entregar os resultados que sua alma almeja. Você atua como representante do seu próprio destino no mundo. Lembre-se que sua vida é um grande evento social orquestrado pelo divino, onde cada relação, por mais simples que pareça, pode conter o código secreto para o próximo capítulo fundamental da sua história de sucesso.</p>
     `,
 
     "autonomia_total": `🌎❌👤❌☄️❌👑
-        <p><b>Sua assinatura de Independência, Versatilidade e Liberdade Quântica:</b></p>
-        <p>A matriz revela que você opera sob uma lei de autonomia absoluta, MASCULINO-FEMININO-NEUTRO, o que é um sinal de grande maturidade energética. O fato de todas as suas potências serem números diferentes indica que você não está sob dependência de um único padrão de influência ou comportamento. Você é uma pessoa multifacetada, dotada de uma versatilidade rara, capaz de atuar em diferentes 'frequências' e 'personagens' dependendo da área da vida, adaptando-se com maestria às exigências de cada situação.</p>
+        <p><b>Assinatura de Independência, Versatilidade e Liberdade Quântica:</b></p>
+        <p>A matriz revela que você opera sob uma lei de autonomia absoluta, o que é um sinal de grande maturidade energética. O fato de todas as suas potências serem números diferentes indica que você não está sob dependência de um único padrão de influência ou comportamento. Você é uma pessoa multifacetada, dotada de uma versatilidade rara, capaz de atuar em diferentes 'frequências' e 'personagens' dependendo da área da vida, adaptando-se com maestria às exigências de cada situação.</p>
         <p>Essa configuração garante que você tenha compartimentos bem definidos em sua existência: no seu interior (Pessoal), você mantém seus valores sagrados; na convivência social, você sabe usar a diplomacia necessária; nos fatos cotidianos (Vida), você lida com o pragmatismo da realidade; e no seu propósito maior (Destino), você flui conforme o chamado. Essa separação é uma proteção incrível, pois impede que uma crise em um setor contamine os outros. Se o lado social está turbulento, sua paz pessoal permanece intacta, permitindo que você tome decisões lúcidas.</p>
-        <p>Sua liberdade é seu maior patrimônio quântico. Você, MASCULINO-FEMININO-NEUTRO, não é alguém fácil de rotular e possui a capacidade de transitar entre mundos opostos com naturalidade. Enquanto outros ficam presos a um único fluxo energético, você tem o poder de escolher qual versão de si deseja manifestar em cada momento. Sua jornada exige que você aprenda a orquestrar essa complexidade interna com inteligência, sabendo que cada pilar da sua vida pede uma abordagem única e independente.</p>
+        <p>Sua liberdade é seu maior patrimônio quântico. Você não é alguém fácil de rotular e possui a capacidade de transitar entre mundos opostos com naturalidade. Enquanto outros ficam presos a um único fluxo energético, você tem o poder de escolher qual versão de si deseja manifestar em cada momento. Sua jornada exige que você aprenda a orquestrar essa complexidade interna com inteligência, sabendo que cada pilar da sua vida pede uma abordagem única e independente.</p>
         <p>Você é a mente que governa sua própria diversidade. Livre de influências cruzadas que poderiam limitar seu crescimento, você tem o caminho aberto para experimentar a vida em todas as suas cores, sabores e nuances. Sua força vem da sua capacidade de não ser 'uma coisa só'. Você atua na mediação entre suas várias versões, garantindo que sua jornada seja rica, variada e, acima de tudo, autêntica. Use essa autonomia para explorar novos territórios sem medo, pois você possui a estrutura necessária para se reinventar sempre que o universo pedir uma nova postura.</p>
     `,
     
     "convergencia_total": `🌎➛👤➛☄️➛👑
-        <p><b>Sua assinatura de Unidade, Laser Quântico e Alinhamento Absoluto:</b></p>
+        <p><b>Assinatura de Unidade, Laser Quântico e Alinhamento Absoluto:</b></p>
         <p>Você vive um fenômeno numerológico de convergência absoluta, algo extremamente raro e impactante. Quando todos os pilares da sua matriz (Vida, Pessoal, Social e Destino) vibram no mesmo número, você se torna o que chamamos de 'Laser Quântico'. Não existem conflitos internos entre o que você quer e o que o mundo pede; não há resistência do meio e não há desvios de rota. Existe apenas uma entrega total e avassaladora à sua frequência principal.</p>
         <p>Nesse estado, a manifestação da sua realidade é direta e sem filtros: o que você pensa e sente (Pessoal), é exatamente o que o mundo oferece (Social), é o que acontece de fato na sua rotina (Vida) e é exatamente o que o plano superior planejou (Destino). É um estado de força concentrada onde todas as engrenagens da sua existência giram sincronizadas em uma única direção. Quando você toma uma decisão, o movimento da sua vida é imparável, pois não há nenhuma parte de você ou do universo remando contra.</p>
         <p>O grande desafio dessa configuração de 'Unidade' é a responsabilidade sobre o foco. Como toda a sua energia está concentrada em um único ponto, você deve garantir que esse ponto seja elevado e construtivo, pois a velocidade com que suas intenções se tornam realidade é assombrosa. Se houver queda na negatividade, sua vida inteira sofre o impacto com a mesma velocidade que subiria se houvesse positividade. Você é uma potência de realização pura, onde a dualidade deu lugar ao alinhamento total.</p>
@@ -3142,31 +3142,31 @@ window.textosSintese = {
     `,
     
     "equilibrio_misto": `🌎⬌👤   ☄️⬌👑  👤⬌👑    🌎⬌☄️   👤⬌☄️    🌎⬌👑  
-        <p><b>Sua assinatura de Integração Dinâmica e Equilíbrio de Forças:</b></p>
-        <p>Sua matriz revela uma configuração de equilíbrio estratégico e inteligência existencial. Você possui áreas de sincronia perfeita, onde a vida flui com uma facilidade quase mágica, intercaladas com áreas de autonomia total, onde você, MASCULINO-FEMININO-NEUTRO, tem o poder do livre-arbítrio absoluto e a liberdade de escolher seus próprios caminhos. Isso cria uma existência protegida por diretrizes superiores, mas flexível o suficiente para que você exerça sua criatividade humana.</p>
+        <p><b>Assinatura de Integração Dinâmica e Equilíbrio de Forças:</b></p>
+        <p>Sua matriz revela uma configuração de equilíbrio estratégico e inteligência existencial. Você possui áreas de sincronia perfeita, onde a vida flui com uma facilidade quase mágica, intercaladas com áreas de autonomia total, onde você tem o poder do livre-arbítrio absoluto e a liberdade de escolher seus próprios caminhos. Isso cria uma existência protegida por diretrizes superiores, mas flexível o suficiente para que você exerça sua criatividade humana.</p>
         <p>Você desfruta do benefício de ter conexões diretas com o destino ou com o social em certos momentos cruciais, o que lhe confere um suporte invisível e uma sensação de segurança — você sabe que não está só. Ao mesmo tempo, o universo deixa outros canais abertos para que você aprenda através da experimentação, da tentativa e do erro, garantindo que sua evolução não seja apenas um roteiro pronto, mas uma conquista pessoal baseada na sua coragem e esforço.</p>
-        <p>MASCULINO-FEMININO-NEUTRO, esta é a assinatura do equilíbrio quântico: você possui a sabedoria para saber quando deve se render ao fluxo maior das coisas e quando deve assumir o controle total e agir por conta própria. Você não é alguém totalmente previsível para o sistema, o que traz proteção contra influências externas negativas, nem alguém totalmente caótico, o que garante que seus projetos tenham um fundamento sólido. Você transita entre o destino e o livre-arbítrio com uma maestria natural.</p>
+        <p>Esta é a assinatura do equilíbrio quântico: você possui a sabedoria para saber quando deve se render ao fluxo maior das coisas e quando deve assumir o controle total e agir por conta própria. Você não é alguém totalmente previsível para o sistema, o que traz proteção contra influências externas negativas, nem alguém totalmente caótico, o que garante que seus projetos tenham um fundamento sólido. Você transita entre o destino e o livre-arbítrio com uma maestria natural.</p>
         <p>Sua jornada é rica e equilibrada, permitindo que você experimente tanto o conforto acolhedor da sincronia divina quanto a aventura estimulante da descoberta individual. Você atua como mediação da sua própria história, equilibrando com perfeição as forças externas que cercam você e os desejos profundos que impulsionam sua vida. Continue honrando esses dois lados: confie no plano maior quando ele se manifestar, mas nunca deixe de lutar e criar sua própria sorte nas áreas onde o universo deu a você as chaves da independência.</p>
     `,
   
     "misto_pessoal_social": `<h1>👤⬌🌎</h1>
         <p><b>Atenção à Influência Social:</b></p>
-        <p>Sua assinatura, MASCULINO-FEMININO-NEUTRO revela que sua identidade pessoal está fortemente ligada ao seu meio social. Isso indica que você possui um magnetismo capaz de influenciar grupos, mas também possui uma "antena" muito sensível às opiniões alheias. Muitas vezes, <strong>você</strong> pode acabar agindo para atender às expectativas dos outros ou absorvendo as metas do grupo como se fossem suas. O desafio aqui é manter sua essência intacta: aprenda a filtrar o que é seu e o que é apenas reflexo das pessoas ao seu redor.</p>
+        <p>Sua assinatura revela que sua identidade pessoal está fortemente ligada ao seu meio social. Isso indica que <strong>você</strong> possui um magnetismo capaz de influenciar grupos, mas também possui uma "antena" muito sensível às opiniões alheias. Muitas vezes, <strong>você</strong> pode acabar agindo para atender às expectativas dos outros ou absorvendo as metas do grupo como se fossem suas. O desafio aqui é manter sua essência intacta: aprenda a filtrar o que é seu e o que é apenas reflexo das pessoas ao seu redor.</p>
     `,
 
     "misto_pessoal_destino": `<h1>👤⬌☄️</h1>
         <p><b>Condução Pelo Destino:</b></p>
-        <p>Nesta configuração, MASCULINO-FEMININO-NEUTRO, sua vontade própria está em diálogo direto com o seu propósito maior. Isso significa que nem sempre você, MASCULINO-FEMININO-NEUTRO está no controle total das suas decisões racionais; existe uma força de destino que "empurra" sua alma para certas direções. É uma conexão de proteção, onde o universo não permite que <strong>você</strong> se desvie do seu contrato espiritual. Se sentir um impulso inexplicável para mudar algo, confie: é o seu destino agindo através da sua personalidade.</p>
+        <p>Nesta configuração, sua vontade própria está em diálogo direto com o seu propósito maior. Isso significa que nem sempre <strong>você</strong> está no controle total das suas decisões racionais; existe uma força de destino que "empurra" sua alma para certas direções. É uma conexão de proteção, onde o universo não permite que <strong>você</strong> se desvie do seu contrato espiritual. Se sentir um impulso inexplicável para mudar algo, confie: é o seu destino agindo através da sua personalidade.</p>
     `,
 
     "misto_pessoal_vida": `<h1>👤⬌👑</h1>
         <p><b>Autonomia de Manifestação:</b></p>
-        <p>Você possui uma conexão direta entre sua força interna e os fatos da vida cotidiana. Isso garante que você, MASCULINO-FEMININO-NEUTRO tenha um poder de realização muito acima da média. As coisas tendem a acontecer na sua vida conforme sua postura interna. Se <strong>você</strong> estiver com a mente clara e focada, a vida responde rápido. É a assinatura de quem "faz a própria sorte" através da atitude e da energia pessoal, sem depender tanto de fatores externos ou sorte.</p>
+        <p>Você possui uma conexão direta entre sua força interna e os fatos da vida cotidiana. Isso garante que <strong>você</strong> tenha um poder de realização muito acima da média. As coisas tendem a acontecer na sua vida conforme sua postura interna. Se <strong>você</strong> estiver com a mente clara e focada, a vida responde rápido. É a assinatura de quem "faz a própria sorte" através da atitude e da energia pessoal, sem depender tanto de fatores externos ou sorte.</p>
     `,
 
     "misto_social_destino": `<h1>🌎⬌☄️</h1>
         <p><b>Missão no Coletivo:</b></p>
-        <p>Sua presença no mundo, MASCULINO-FEMININO-NEUTRO não é por acaso. Esta combinação mostra que seu destino se cumpre através das pessoas. <strong>Você</strong> é alguém que atrai encontros de destino: pessoas que aparecem do nada com propostas ou chaves que mudam sua vida. Sua vida social é o laboratório onde sua missão espiritual acontece. Mantenha seus contatos ativos, pois a resposta que <strong>você</strong> busca sempre virá através de outra pessoa.</p>
+        <p>Sua presença no mundo não é por acaso. Esta combinação mostra que seu destino se cumpre através das pessoas. <strong>Você</strong> é alguém que atrai encontros de destino: pessoas que aparecem do nada com propostas ou chaves que mudam sua vida. Sua vida social é o laboratório onde sua missão espiritual acontece. Mantenha seus contatos ativos, pois a resposta que <strong>você</strong> busca sempre virá através de outra pessoa.</p>
     `
   
 };
