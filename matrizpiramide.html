@@ -3352,7 +3352,7 @@ async function inicializarSeguranca() {
             }
         }
 
-         3. Verifica se o status é ativo
+         //3. Verifica se o status é ativo
         if (dados.status === 'usado' || dados.status !== 'ativo') {
             alert("Este acesso expirou ou está inativo.");
             window.location.href = "index.html";
@@ -3382,8 +3382,14 @@ async function inicializarSeguranca() {
         // ---------------------------------------------------------
 
         // Continua com o carregamento normal do seu relatório
+// Continua com o carregamento normal do seu relatório
         dadosGlobais = dados; 
-        const dataReferencia = new Date(dados.data_inicio);
+        console.log("Dados recebidos no Matriz:", dados); // Para vermos o que tem dentro
+        
+        // Se 'data_inicio' for inválido, o timer vai bugar
+        const dataReferencia = dados.data_inicio ? new Date(dados.data_inicio) : new Date();
+        
+        console.log("Data calculada:", dataReferencia);
         
         const dataExpiracaoPDF = new Date(dataReferencia);
         dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
