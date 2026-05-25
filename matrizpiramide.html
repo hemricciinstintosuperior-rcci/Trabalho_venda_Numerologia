@@ -3314,11 +3314,18 @@ if (!userEmail) {
     window.location.href = "index.html"; // Volta para a raiz se não houver e-mail
 }
 
-
+const emailLimpo = userEmail;
 
 async function inicializarSeguranca() {
     try {
-        const res = await fetch(`${DB_URL}vendas.json`);
+        // Mantenha o emailLimpo onde ele está, não apague nada.
+// Mude apenas a linha do fetch dentro da função inicializarSeguranca:
+
+       const res = await fetch(`${DB_URL}vendas/${userEmail}.json`);
+        
+
+
+        
         const todasVendas = await res.json();
         const dados = todasVendas[userEmail] || Object.values(todasVendas).find(v => v.email?.toLowerCase() === userEmail.toLowerCase());
 
