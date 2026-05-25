@@ -123,8 +123,7 @@ async function validarAcesso() {
 
         if(!emailOriginal || !codigo) return alert("Por favor, preencha o e-mail e o código!");
 
-        // O Firebase usa e-mail como chave, mas se houver pontos, o Make/Firebase troca por '_'
-        // Vamos formatar para garantir que a busca encontre a pasta certa
+
         const emailChave = emailOriginal.replace(/\./g, '_').replace(/@/g, '_'); 
         
         btn.innerText = "VERIFICANDO...";
@@ -152,20 +151,26 @@ async function validarAcesso() {
         }
     }
 
-    function liberarProduto(produtoID, emailChave) {
+function liberarProduto(produtoID, emailChave, nomeCliente) {
         const app = config[produtoID];
         if (app) {
             const container = document.getElementById(app.container);
             const status = document.getElementById(app.st);
             const card = document.getElementById(app.card);
 
+            // AQUI: Se você tiver um elemento na sua página para mostrar o nome, ele vai aparecer
+            // Se você não tiver criado o h2 ainda, isso não vai dar erro, fique tranquilo!
+            const saudacao = document.getElementById('saudacao-cliente');
+            if (saudacao && nomeCliente) {
+                saudacao.innerText = "Olá, " + nomeCliente + "! Bem-vindo.";
+                saudacao.style.display = "block";
+            }
+
             card.classList.add('active');
             status.innerText = "✅ ACESSO LIBERADO";
             status.className = "status unlocked";
 
-            // O link agora leva o e-mail para o gerador fazer o cálculo do cronômetro lá dentro
-         // Substitua a linha que você vê na sua foto por esta:
-container.innerHTML = `<a href="${app.link}.html?user=${emailChave}" class="btn-acessar">ABRIR GERADOR AGORA</a>`;
+            container.innerHTML = `<a href="${app.link}.html?user=${emailChave}" class="btn-acessar">ABRIR GERADOR AGORA</a>`;
         }
     }
 </script>
