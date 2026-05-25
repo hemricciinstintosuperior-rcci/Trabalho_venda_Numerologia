@@ -3316,9 +3316,7 @@ if (!userEmail) {
 
 
 
-// Mantenha o emailLimpo onde ele está, não apague nada.
-// Mude apenas a linha do fetch dentro da função inicializarSeguranca:
-let emailLimpo = chaveCorreta;
+const emailLimpo = userEmail;
 async function inicializarSeguranca() {
     try {
         // Busca a lista inteira para achar o e-mail correto dentro de qualquer pasta
@@ -3331,7 +3329,7 @@ async function inicializarSeguranca() {
         );
         
         let dados = chaveCorreta ? todasVendas[chaveCorreta] : null;
-
+let emailLimpo = chaveCorreta;
         if (!dados) {
             alert("Acesso não encontrado.");
             window.location.href = "index.html";
