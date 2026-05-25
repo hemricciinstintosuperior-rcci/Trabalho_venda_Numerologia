@@ -117,44 +117,47 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
     };
 
 async function validarAcesso() {
-        const emailOriginal = document.getElementById('email-cliente').value.trim().toLowerCase();
-        const codigo = document.getElementById('codigo-acesso').value.trim();
-        const btn = document.getElementById('btn-entrar');
+    const emailOriginal = document.getElementById('email-cliente').value.trim().toLowerCase();
+    const codigoDigitado = document.getElementById('codigo-acesso').value.trim();
+    const btn = document.getElementById('btn-entrar');
 
-        if(!emailOriginal || !codigo) return alert("Por favor, preencha o e-mail e o código!");
+    if(!emailOriginal || !codigoDigitado) return alert("Preencha e-mail e código!");
 
+    btn.innerText = "VERIFICANDO...";
+    btn.disabled = true;
 
-     // Substitua a linha do emailChave por esta exatamente:
-const emailChave = emailOriginal.replace(/\./g, '_'); 
+    try {
+        // Buscamos a lista total de vendas para não depender da formatação exata da chave
+        const res = await fetch(`${DB_URL}vendas.json`);
+        const todasVendas = await res.json();
 
-// Logo abaixo dela, adicione esta linha para a gente ver o erro no console:
-console.log("Portal está buscando por:", `${DB_URL}vendas/${emailChave}.json`);
-        
-        btn.innerText = "VERIFICANDO...";
-        btn.disabled = true;
+        // Procuramos na lista qual venda tem o e-mail que o usuário digitou
+        let dadosEncontrados = null;
+        let chaveEncontrada = null;
 
-        try {
-            // A busca agora aponta para a pasta onde salvamos no Make
-            const res = await fetch(`${DB_URL}vendas/${emailChave}.json`);
-            const dados = await res.json();
-
-            // Verifica se achou os dados e se o código confere
-            if (dados && dados.codigo === codigo) {
-                // Removemos a trava de "usado" para teste, mas você pode recolocar depois
-                liberarProduto(dados.produto, emailChave);
-                document.getElementById('area-login').style.display = 'none';
-            } else {
-                alert("Dados incorretos. Verifique se o e-mail e código estão certos.");
+        for (let chave in todasVendas) {
+            if (todasVendas[chave].email && todasVendas[chave].email.toLowerCase() === emailOriginal) {
+                dadosEncontrados = todasVendas[chave];
+                chaveEncontrada = chave;
+                break;
             }
-        } catch (e) {
-            console.error(e);
-            alert("Erro de conexão com o servidor.");
-        } finally {
-            btn.innerText = "Verificar Credenciais";
-            btn.disabled = false;
         }
-    }
 
+        if (dadosEncontrados && dadosEncontrados.codigo === codigoDigitado) {
+            liberarProduto(dadosEncontrados.produto, chaveEncontrada);
+            document.getElementById('area-login').style.display = 'none';
+        } else {
+            alert("Dados incorretos ou venda não encontrada.");
+        }
+    } catch (e) {
+        console.error(e);
+        alert("Erro de conexão.");
+    } finally {
+        btn.innerText = "Verificar Credenciais";
+        btn.disabled = false;
+    }
+}
+       
 function liberarProduto(produtoID, emailChave) {
         console.log("Tentando liberar o produto: " + produtoID); // ESPIÃO
         const app = config[produtoID];
