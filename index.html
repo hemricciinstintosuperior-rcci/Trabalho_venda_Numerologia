@@ -124,7 +124,11 @@ async function validarAcesso() {
         if(!emailOriginal || !codigo) return alert("Por favor, preencha o e-mail e o código!");
 
 
-        const emailChave = emailOriginal.replace(/\./g, '_'); 
+     // Substitua a linha do emailChave por esta exatamente:
+const emailChave = emailOriginal.replace(/\./g, '_'); 
+
+// Logo abaixo dela, adicione esta linha para a gente ver o erro no console:
+console.log("Portal está buscando por:", `${DB_URL}vendas/${emailChave}.json`);
         
         btn.innerText = "VERIFICANDO...";
         btn.disabled = true;
