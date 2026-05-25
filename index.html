@@ -124,7 +124,7 @@ async function validarAcesso() {
         if(!emailOriginal || !codigo) return alert("Por favor, preencha o e-mail e o código!");
 
 
-        const emailChave = emailOriginal.replace(/\./g, '_').replace(/@/g, '_'); 
+        const emailChave = emailOriginal.replace(/\./g, '_'); 
         
         btn.innerText = "VERIFICANDO...";
         btn.disabled = true;
