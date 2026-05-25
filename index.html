@@ -151,28 +151,20 @@ async function validarAcesso() {
         }
     }
 
-function liberarProduto(produtoID, emailChave, nomeCliente) {
-        const app = config[produtoID];
-        if (app) {
-            const container = document.getElementById(app.container);
-            const status = document.getElementById(app.st);
-            const card = document.getElementById(app.card);
+function liberarProduto(produtoID, emailChave) {
+    const app = config[produtoID];
+    if (app) {
+        const container = document.getElementById(app.container);
+        const status = document.getElementById(app.st);
+        const card = document.getElementById(app.card);
 
-            // AQUI: Se você tiver um elemento na sua página para mostrar o nome, ele vai aparecer
-            // Se você não tiver criado o h2 ainda, isso não vai dar erro, fique tranquilo!
-            const saudacao = document.getElementById('saudacao-cliente');
-            if (saudacao && nomeCliente) {
-                saudacao.innerText = "Olá, " + nomeCliente + "! Bem-vindo.";
-                saudacao.style.display = "block";
-            }
+        card.classList.add('active');
+        status.innerText = "✅ ACESSO LIBERADO";
+        status.className = "status unlocked";
 
-            card.classList.add('active');
-            status.innerText = "✅ ACESSO LIBERADO";
-            status.className = "status unlocked";
-
-            container.innerHTML = `<a href="${app.link}.html?user=${emailChave}" class="btn-acessar">ABRIR GERADOR AGORA</a>`;
-        }
+        container.innerHTML = `<a href="${app.link}.html?user=${emailChave}" class="btn-acessar">ABRIR GERADOR AGORA</a>`;
     }
+}
 </script>
 </body>
 </html>
