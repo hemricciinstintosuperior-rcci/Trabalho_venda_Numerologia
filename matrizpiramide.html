@@ -3319,33 +3319,21 @@ if (!userEmail) {
 const emailLimpo = userEmail;
 
     
+// Substitua o início da inicializarSeguranca por isto:
 async function inicializarSeguranca() {
     try {
         const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
         
-        // CORREÇÃO: Pegamos a chave exata que veio na URL
-        const chaveDaUrl = userEmail; 
+        // userEmail aqui é a chave que veio na URL (já com o formato de _)
+        // Então não precisa converter, apenas usar como chave direta:
+        let dados = todasVendas[userEmail];
+        let emailLimpo = userEmail; 
 
-        // Verificamos se essa chave existe diretamente no objeto do Firebase
-        let dados = todasVendas[chaveDaUrl] || null;
-        let emailLimpo = chaveDaUrl;
-
-        // Se não achou, tentamos achar comparando (caso a formatação da URL esteja diferente)
         if (!dados) {
-            for (let chave in todasVendas) {
-                if (chave.toLowerCase() === chaveDaUrl.toLowerCase()) {
-                    dados = todasVendas[chave];
-                    emailLimpo = chave;
-                    break;
-                }
-            }
-        }
-        
-        if (!dados) {
-            alert("Acesso não encontrado no banco de dados.");
-            window.location.href = "index.html";
-            return;
+             alert("Acesso não encontrado.");
+             window.location.href = "index.html";
+             return;
         }
         
         // ... (o resto da função permanece igual)
@@ -3364,12 +3352,12 @@ async function inicializarSeguranca() {
             }
         }
 
-        // 3. Verifica se o status é ativo
-        //if (dados.status === 'usado' || dados.status !== 'ativo') {
-           // alert("Este acesso expirou ou está inativo.");
-          //  window.location.href = "index.html";
-           // return;
-       // }
+         3. Verifica se o status é ativo
+        if (dados.status === 'usado' || dados.status !== 'ativo') {
+            alert("Este acesso expirou ou está inativo.");
+            window.location.href = "index.html";
+            return;
+        }
 
         // ---------------------------------------------------------
         // AGORA SIM: Se passou em todos os testes acima, ativa a trava de sessão
