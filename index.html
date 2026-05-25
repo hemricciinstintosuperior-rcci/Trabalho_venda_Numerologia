@@ -152,19 +152,24 @@ async function validarAcesso() {
     }
 
 function liberarProduto(produtoID, emailChave) {
-    const app = config[produtoID];
-    if (app) {
-        const container = document.getElementById(app.container);
-        const status = document.getElementById(app.st);
-        const card = document.getElementById(app.card);
+        console.log("Tentando liberar o produto: " + produtoID); // ESPIÃO
+        const app = config[produtoID];
+        
+        if (app) {
+            const container = document.getElementById(app.container);
+            const status = document.getElementById(app.st);
+            const card = document.getElementById(app.card);
 
-        card.classList.add('active');
-        status.innerText = "✅ ACESSO LIBERADO";
-        status.className = "status unlocked";
-
-        container.innerHTML = `<a href="${app.link}.html?user=${emailChave}" class="btn-acessar">ABRIR GERADOR AGORA</a>`;
+            card.classList.add('active');
+            status.innerText = "✅ ACESSO LIBERADO";
+            status.className = "status unlocked";
+            container.innerHTML = `<a href="${app.link}.html?user=${emailChave}" class="btn-acessar">ABRIR GERADOR AGORA</a>`;
+        } else {
+            // SE O ERRO FOR AQUI, SIGNIFICA QUE O NOME DO PRODUTO NO FIREBASE 
+            // NÃO BATE COM O NOME QUE ESTÁ NO SEU 'CONFIG'
+            alert("Erro: O produto '" + produtoID + "' não está configurado no portal!");
+        }
     }
-}
 </script>
 </body>
 </html>
