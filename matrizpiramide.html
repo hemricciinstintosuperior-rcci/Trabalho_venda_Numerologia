@@ -3314,12 +3314,13 @@ if (!userEmail) {
     window.location.href = "index.html"; // Volta para a raiz se não houver e-mail
 }
 
-const emailLimpo = userEmail;
+
 
 async function inicializarSeguranca() {
     try {
-        const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
-        const dados = await res.json();
+        const res = await fetch(`${DB_URL}vendas.json`);
+        const todasVendas = await res.json();
+        const dados = todasVendas[userEmail] || Object.values(todasVendas).find(v => v.email?.toLowerCase() === userEmail.toLowerCase());
 
         // 1. Verifica se o e-mail existe no banco
         if (!dados) {
