@@ -3320,13 +3320,17 @@ const emailLimpo = userEmail;
 async function inicializarSeguranca() {
     try {
         // Busca a lista inteira para achar o e-mail correto dentro de qualquer pasta
-        const res = await fetch(`${DB_URL}vendas.json`);
+const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
         
-        // Encontra a chave (nome da pasta) que contém o e-mail correto
+        console.log("E-mail vindo da URL:", userEmail);
+        console.log("Banco de dados recebido:", todasVendas);
+
         let chaveCorreta = Object.keys(todasVendas).find(chave => 
-            todasVendas[chave].email && todasVendas[chave].email.toLowerCase() === userEmail.toLowerCase()
+            todasVendas[chave].email && todasVendas[chave].email.toLowerCase().trim() === userEmail.toLowerCase().trim()
         );
+        
+        console.log("Chave encontrada:", chaveCorreta);
         
         let dados = chaveCorreta ? todasVendas[chaveCorreta] : null;
 let emailLimpo = chaveCorreta;
