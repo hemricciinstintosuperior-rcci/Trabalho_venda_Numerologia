@@ -116,48 +116,50 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         harmonia: { container: 'container-harmonia', st: 'st-harmonia', card: 'card-harmonia', link: 'harmoniaconjugal' }
     };
 
-    async function validarAcesso() {
-        const emailOriginal = document.getElementById('email-cliente').value.trim().toLowerCase();
-        const codigo = document.getElementById('codigo-acesso').value.trim();
-        const btn = document.getElementById('btn-entrar');
+async function validarAcesso() {
+    const emailOriginal = document.getElementById('email-cliente').value.trim().toLowerCase();
+    const senhaDigitada = document.getElementById('codigo-acesso').value.trim(); // Agora é senha
+    const btn = document.getElementById('btn-entrar');
 
-        if(!emailOriginal || !codigo) return alert("Por favor, preencha o e-mail e o código!");
+    if(!emailOriginal || !senhaDigitada) return alert("Por favor, preencha o e-mail e a senha!");
 
-        const emailChave = emailOriginal.replace(/\./g, '_');
-        btn.innerText = "VERIFICANDO...";
-        btn.disabled = true;
+    const emailChave = emailOriginal.replace(/\./g, '_');
+    btn.innerText = "VERIFICANDO...";
+    btn.disabled = true;
 
-        try {
-            const res = await fetch(`${DB_URL}vendas/${emailChave}.json`);
-            const dados = await res.json();
+    try {
+        const res = await fetch(`${DB_URL}vendas/${emailChave}.json`);
+        const dados = await res.json();
 
-            if (dados && dados.codigo === codigo) {
-                if (dados.status === "usado") {
-                    alert("Atenção: Este acesso já foi utilizado e expirou.");
-                } else {
-                    // --- NOVA LÓGICA: REGISTRA INÍCIO DO ACESSO SE NÃO EXISTIR ---
-                    if (!dados.data_inicio) {
-                        const agora = new Date().toISOString();
-                        await fetch(`${DB_URL}vendas/${emailChave}.json`, {
-                            method: 'PATCH',
-                            body: JSON.stringify({ data_inicio: agora })
-                        });
-                    }
-                    // ----------------------------------------------------------
-
-                    liberarProduto(dados.produto, emailChave);
-                    document.getElementById('area-login').style.display = 'none';
-                }
+        // Verificamos se o usuário existe E se a senha digitada é igual à senha salva no banco
+        if (dados && dados.senha === senhaDigitada) {
+            
+            if (dados.status === "usado") {
+                alert("Atenção: Este acesso já foi utilizado e expirou.");
             } else {
-                alert("Dados incorretos ou venda ainda processando.");
+                // Registra o início do acesso se for o primeiro login
+                if (!dados.data_inicio) {
+                    const agora = new Date().toISOString();
+                    await fetch(`${DB_URL}vendas/${emailChave}.json`, {
+                        method: 'PATCH',
+                        body: JSON.stringify({ data_inicio: agora })
+                    });
+                }
+
+                liberarProduto(dados.produto, emailChave);
+                document.getElementById('area-login').style.display = 'none';
             }
-        } catch (e) {
-            alert("Erro de conexão.");
-        } finally {
-            btn.innerText = "Verificar Credenciais";
-            btn.disabled = false;
+        } else {
+            alert("E-mail ou senha incorretos.");
         }
+    } catch (e) {
+        alert("Erro de conexão com o servidor.");
+        console.error(e);
+    } finally {
+        btn.innerText = "Verificar Credenciais";
+        btn.disabled = false;
     }
+}
 
     function liberarProduto(produtoID, emailChave) {
         const app = config[produtoID];
