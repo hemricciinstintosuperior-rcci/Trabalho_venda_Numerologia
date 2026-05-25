@@ -3317,23 +3317,23 @@ if (!userEmail) {
 
 
 const emailLimpo = userEmail;
+
+    
 async function inicializarSeguranca() {
-    try {
-        // Busca a lista inteira para achar o e-mail correto dentro de qualquer pasta
-const res = await fetch(`${DB_URL}vendas.json`);
+try {
+        const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
         
-        console.log("E-mail vindo da URL:", userEmail);
-        console.log("Banco de dados recebido:", todasVendas);
-
+        // Em vez de procurar pelo campo 'email' dentro, vamos procurar pela própria chave
+        // Vamos comparar o 'userEmail' que veio na URL com o nome da chave no banco
         let chaveCorreta = Object.keys(todasVendas).find(chave => 
-            todasVendas[chave].email && todasVendas[chave].email.toLowerCase().trim() === userEmail.toLowerCase().trim()
+            chave.toLowerCase() === userEmail.toLowerCase()
         );
         
-        console.log("Chave encontrada:", chaveCorreta);
-        
         let dados = chaveCorreta ? todasVendas[chaveCorreta] : null;
-let emailLimpo = chaveCorreta;
+        let emailLimpo = chaveCorreta; // Definimos a chave como o emailLimpo para o resto do código
+
+        
         if (!dados) {
             alert("Acesso não encontrado.");
             window.location.href = "index.html";
