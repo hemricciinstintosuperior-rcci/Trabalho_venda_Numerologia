@@ -137,9 +137,10 @@ async function validarAcesso() {
         let dadosEncontrados = null;
         let chaveEncontrada = null;
 
-        for (let chave in todasVendas) {
-// AQUI ESTÁ A MÁGICA: trocamos o @ por _ antes de comparar
-if (chave.toLowerCase() === emailOriginal.replace(/@/g, '_').replace(/\./g, '_')) {
+for (let chave in todasVendas) {
+    // Aqui comparamos a chave (que tem _) com o e-mail que você digitou (formatado para _)
+    let emailFormatado = emailOriginal.replace(/@/g, '_').replace(/\./g, '_');
+    if (chave.toLowerCase() === emailFormatado) {
     dadosEncontrados = todasVendas[chave];
     chaveEncontrada = chave;
     break;
