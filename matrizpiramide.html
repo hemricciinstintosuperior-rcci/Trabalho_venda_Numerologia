@@ -3318,14 +3318,20 @@ if (!userEmail) {
 
 // Mantenha o emailLimpo onde ele está, não apague nada.
 // Mude apenas a linha do fetch dentro da função inicializarSeguranca:
-const emailLimpo = userEmail;
+let emailLimpo = chaveCorreta;
 async function inicializarSeguranca() {
     try {
-        // TROQUE A LINHA DO FETCH POR ESTA:
-        const res = await fetch(`${DB_URL}vendas/${userEmail}.json`);
-        const dados = await res.json();
+        // Busca a lista inteira para achar o e-mail correto dentro de qualquer pasta
+        const res = await fetch(`${DB_URL}vendas.json`);
+        const todasVendas = await res.json();
+        
+        // Encontra a chave (nome da pasta) que contém o e-mail correto
+        let chaveCorreta = Object.keys(todasVendas).find(chave => 
+            todasVendas[chave].email && todasVendas[chave].email.toLowerCase() === userEmail.toLowerCase()
+        );
+        
+        let dados = chaveCorreta ? todasVendas[chaveCorreta] : null;
 
-        // 1. Verifica se o e-mail existe no banco
         if (!dados) {
             alert("Acesso não encontrado.");
             window.location.href = "index.html";
