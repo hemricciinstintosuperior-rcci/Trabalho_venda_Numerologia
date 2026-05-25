@@ -3320,27 +3320,35 @@ const emailLimpo = userEmail;
 
     
 async function inicializarSeguranca() {
-try {
+    try {
         const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
-
- 
         
-        // Em vez de procurar pelo campo 'email' dentro, vamos procurar pela própria chave
-        // Vamos comparar o 'userEmail' que veio na URL com o nome da chave no banco
-        let chaveCorreta = Object.keys(todasVendas).find(chave => 
-            chave.toLowerCase() === userEmail.toLowerCase()
-        );
-        
-        let dados = chaveCorreta ? todasVendas[chaveCorreta] : null;
-        let emailLimpo = chaveCorreta; // Definimos a chave como o emailLimpo para o resto do código
+        // CORREÇÃO: Pegamos a chave exata que veio na URL
+        const chaveDaUrl = userEmail; 
 
+        // Verificamos se essa chave existe diretamente no objeto do Firebase
+        let dados = todasVendas[chaveDaUrl] || null;
+        let emailLimpo = chaveDaUrl;
+
+        // Se não achou, tentamos achar comparando (caso a formatação da URL esteja diferente)
+        if (!dados) {
+            for (let chave in todasVendas) {
+                if (chave.toLowerCase() === chaveDaUrl.toLowerCase()) {
+                    dados = todasVendas[chave];
+                    emailLimpo = chave;
+                    break;
+                }
+            }
+        }
         
         if (!dados) {
-            alert("Acesso não encontrado.");
+            alert("Acesso não encontrado no banco de dados.");
             window.location.href = "index.html";
             return;
         }
+        
+        // ... (o resto da função permanece igual)
 
         // 2. Verifica se o prazo de 30 dias venceu
         if (dados.data_inicio) {
