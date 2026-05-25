@@ -162,10 +162,13 @@ for (let chave in todasVendas) {
     }
 }
        
-function liberarProduto(produtoID, emailChave) {
-        console.log("Tentando liberar o produto: " + produtoID); // ESPIÃO
+function liberarProduto(listaProdutos, emailChave) {
+    // Se listaProdutos for apenas um texto, transformamos em lista
+    const produtos = Array.isArray(listaProdutos) ? listaProdutos : [listaProdutos];
+    
+    // Libera todos os produtos que estiverem na lista
+    produtos.forEach(produtoID => {
         const app = config[produtoID];
-        
         if (app) {
             const container = document.getElementById(app.container);
             const status = document.getElementById(app.st);
@@ -175,12 +178,9 @@ function liberarProduto(produtoID, emailChave) {
             status.innerText = "✅ ACESSO LIBERADO";
             status.className = "status unlocked";
             container.innerHTML = `<a href="${app.link}.html?user=${emailChave}" class="btn-acessar">ABRIR GERADOR AGORA</a>`;
-        } else {
-            // SE O ERRO FOR AQUI, SIGNIFICA QUE O NOME DO PRODUTO NO FIREBASE 
-            // NÃO BATE COM O NOME QUE ESTÁ NO SEU 'CONFIG'
-            alert("Erro: O produto '" + produtoID + "' não está configurado no portal!");
         }
-    }
+    });
+}
 </script>
 </body>
 </html>
