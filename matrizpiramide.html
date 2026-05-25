@@ -3323,6 +3323,10 @@ async function inicializarSeguranca() {
 try {
         const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
+
+            // ADICIONE ESTAS DUAS LINHAS PARA TESTAR:
+        console.log("E-mail digitado:", emailOriginal);
+        console.log("Banco de dados:", todasVendas);
         
         // Em vez de procurar pelo campo 'email' dentro, vamos procurar pela própria chave
         // Vamos comparar o 'userEmail' que veio na URL com o nome da chave no banco
