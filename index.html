@@ -117,49 +117,40 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
     };
 
 async function validarAcesso() {
-    const emailOriginal = document.getElementById('email-cliente').value.trim().toLowerCase();
-    const senhaDigitada = document.getElementById('codigo-acesso').value.trim(); // Agora é senha
-    const btn = document.getElementById('btn-entrar');
+        const emailOriginal = document.getElementById('email-cliente').value.trim().toLowerCase();
+        const codigo = document.getElementById('codigo-acesso').value.trim();
+        const btn = document.getElementById('btn-entrar');
 
-    if(!emailOriginal || !senhaDigitada) return alert("Por favor, preencha o e-mail e a senha!");
+        if(!emailOriginal || !codigo) return alert("Por favor, preencha o e-mail e o código!");
 
-    const emailChave = emailOriginal.replace(/\./g, '_');
-    btn.innerText = "VERIFICANDO...";
-    btn.disabled = true;
+        // O Firebase usa e-mail como chave, mas se houver pontos, o Make/Firebase troca por '_'
+        // Vamos formatar para garantir que a busca encontre a pasta certa
+        const emailChave = emailOriginal.replace(/\./g, '_').replace(/@/g, '_'); 
+        
+        btn.innerText = "VERIFICANDO...";
+        btn.disabled = true;
 
-    try {
-        const res = await fetch(`${DB_URL}vendas/${emailChave}.json`);
-        const dados = await res.json();
+        try {
+            // A busca agora aponta para a pasta onde salvamos no Make
+            const res = await fetch(`${DB_URL}vendas/${emailChave}.json`);
+            const dados = await res.json();
 
-        // Verificamos se o usuário existe E se a senha digitada é igual à senha salva no banco
-        if (dados && dados.senha === senhaDigitada) {
-            
-            if (dados.status === "usado") {
-                alert("Atenção: Este acesso já foi utilizado e expirou.");
-            } else {
-                // Registra o início do acesso se for o primeiro login
-                if (!dados.data_inicio) {
-                    const agora = new Date().toISOString();
-                    await fetch(`${DB_URL}vendas/${emailChave}.json`, {
-                        method: 'PATCH',
-                        body: JSON.stringify({ data_inicio: agora })
-                    });
-                }
-
+            // Verifica se achou os dados e se o código confere
+            if (dados && dados.codigo === codigo) {
+                // Removemos a trava de "usado" para teste, mas você pode recolocar depois
                 liberarProduto(dados.produto, emailChave);
                 document.getElementById('area-login').style.display = 'none';
+            } else {
+                alert("Dados incorretos. Verifique se o e-mail e código estão certos.");
             }
-        } else {
-            alert("E-mail ou senha incorretos.");
+        } catch (e) {
+            console.error(e);
+            alert("Erro de conexão com o servidor.");
+        } finally {
+            btn.innerText = "Verificar Credenciais";
+            btn.disabled = false;
         }
-    } catch (e) {
-        alert("Erro de conexão com o servidor.");
-        console.error(e);
-    } finally {
-        btn.innerText = "Verificar Credenciais";
-        btn.disabled = false;
     }
-}
 
     function liberarProduto(produtoID, emailChave) {
         const app = config[produtoID];
