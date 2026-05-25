@@ -130,7 +130,9 @@ async function validarAcesso() {
         // Buscamos a lista total de vendas para não depender da formatação exata da chave
         const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
-
+        // ADICIONE ESTAS DUAS LINHAS PARA TESTAR:
+        console.log("E-mail digitado:", emailOriginal);
+        console.log("Banco de dados:", todasVendas);
         // Procuramos na lista qual venda tem o e-mail que o usuário digitou
         let dadosEncontrados = null;
         let chaveEncontrada = null;
