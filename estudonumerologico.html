@@ -6383,19 +6383,29 @@ if (!userEmail) {
     window.location.href = "index.html"; // Volta para a raiz se não houver e-mail
 }
 
-const emailLimpo = userEmail.replace(/\./g, '_');
 
+
+const emailLimpo = userEmail;
+
+    
+// Substitua o início da inicializarSeguranca por isto:
 async function inicializarSeguranca() {
     try {
-        const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
-        const dados = await res.json();
+        const res = await fetch(`${DB_URL}vendas.json`);
+        const todasVendas = await res.json();
+        
+        // userEmail aqui é a chave que veio na URL (já com o formato de _)
+        // Então não precisa converter, apenas usar como chave direta:
+        let dados = todasVendas[userEmail];
+        let emailLimpo = userEmail; 
 
-        // 1. Verifica se o e-mail existe no banco
         if (!dados) {
-            alert("Acesso não encontrado.");
-            window.location.href = "index.html";
-            return;
+             alert("Acesso não encontrado.");
+             window.location.href = "index.html";
+             return;
         }
+        
+        // ... (o resto da função permanece igual)
 
         // 2. Verifica se o prazo de 30 dias venceu
         if (dados.data_inicio) {
@@ -6411,7 +6421,7 @@ async function inicializarSeguranca() {
             }
         }
 
-        // 3. Verifica se o status é ativo
+         //3. Verifica se o status é ativo
         if (dados.status === 'usado' || dados.status !== 'ativo') {
             alert("Este acesso expirou ou está inativo.");
             window.location.href = "index.html";
@@ -6441,8 +6451,14 @@ async function inicializarSeguranca() {
         // ---------------------------------------------------------
 
         // Continua com o carregamento normal do seu relatório
+// Continua com o carregamento normal do seu relatório
         dadosGlobais = dados; 
-        const dataReferencia = new Date(dados.data_inicio);
+        console.log("Dados recebidos no Matriz:", dados); // Para vermos o que tem dentro
+        
+        // Se 'data_inicio' for inválido, o timer vai bugar
+        const dataReferencia = dados.data_inicio ? new Date(dados.data_inicio) : new Date();
+        
+        console.log("Data calculada:", dataReferencia);
         
         const dataExpiracaoPDF = new Date(dataReferencia);
         dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
@@ -6584,6 +6600,7 @@ window.onload = function() {
 
 };
 </script>
+
 
 
 <script>
