@@ -6391,6 +6391,7 @@ if (!userEmail) {
 
 const emailLimpo = userEmail;
 
+
     
 // Substitua o início da inicializarSeguranca por isto:
 async function inicializarSeguranca() {
@@ -6443,14 +6444,18 @@ async function inicializarSeguranca() {
         });
 
         // Monitora se alguém entrar depois de você
-        setInterval(async () => {
-            const r = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
-            const s = await r.json();
-            if (s !== sessionID && s !== null) {
-                alert("Este acesso foi aberto em outro dispositivo ou aba.");
-                window.location.href = "index.html";
-            }
-        }, 5000);
+// Monitora se alguém entrou depois de você
+//setInterval(async () => {
+   // const r = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
+   // const s = await r.json();
+
+    // LÓGICA: Se o que está no Firebase (s) for diferente do ID que eu tenho (sessionID),
+    // significa que ALGUÉM SOBSCREVEU minha sessão, ou seja, alguém abriu em outro lugar.
+  //  if (s !== null && s !== sessionID) {
+       // alert("Acesso negado: este acesso foi aberto em outro dispositivo ou aba.");
+      //  window.location.href = "index.html";
+    //}
+//}, 3000); // Verificação a cada 3 segundos
         
         // ---------------------------------------------------------
 
@@ -6606,8 +6611,7 @@ window.onload = function() {
 </script>
 
 
-
-<script>
+   <script>
 document.getElementById('btnVideo').addEventListener('click', function() {
     const wrapper = document.getElementById('wrapperVideo');
     const video = document.getElementById('videoExplicativo');
@@ -6624,7 +6628,7 @@ document.getElementById('btnVideo').addEventListener('click', function() {
         video.pause(); // Pausa o vídeo automaticamente ao fechar para não ficar saindo som
     }
 });
-</script>
+</script> 
 
         
 </body>
