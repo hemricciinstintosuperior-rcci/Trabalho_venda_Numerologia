@@ -2855,26 +2855,39 @@ const userEmail = urlParams.get('user');
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 const sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);    
 
-let dadosGlobais = null; 
+let dadosGlobais = null; // Vamos salvar tudo aqui
 
+// 1. VALIDAÇÃO DE USUÁRIO E REDIRECIONAMENTO LIMPO
 if (!userEmail) {
     alert("Acesso não autorizado.");
-    window.location.href = "index.html"; 
+    window.location.href = "index.html"; // Volta para a raiz se não houver e-mail
 }
 
-const emailLimpo = userEmail.replace(/\./g, '_');
 
+
+const emailLimpo = userEmail;
+
+    
+// Substitua o início da inicializarSeguranca por isto:
 async function inicializarSeguranca() {
     try {
-        const res = await fetch(`${DB_URL}vendas/${emailLimpo}.json`);
-        const dados = await res.json();
+        const res = await fetch(`${DB_URL}vendas.json`);
+        const todasVendas = await res.json();
+        
+        // userEmail aqui é a chave que veio na URL (já com o formato de _)
+        // Então não precisa converter, apenas usar como chave direta:
+        let dados = todasVendas[userEmail];
+        let emailLimpo = userEmail; 
 
         if (!dados) {
-            alert("Acesso não encontrado.");
-            window.location.href = "index.html";
-            return;
+             alert("Acesso não encontrado.");
+             window.location.href = "index.html";
+             return;
         }
+        
+        // ... (o resto da função permanece igual)
 
+        // 2. Verifica se o prazo de 30 dias venceu
         if (dados.data_inicio) {
             const dataInicio = new Date(dados.data_inicio);
             const agora = new Date();
@@ -2888,17 +2901,24 @@ async function inicializarSeguranca() {
             }
         }
 
+         //3. Verifica se o status é ativo
         if (dados.status === 'usado' || dados.status !== 'ativo') {
             alert("Este acesso expirou ou está inativo.");
             window.location.href = "index.html";
             return;
         }
+
+        // ---------------------------------------------------------
+        // AGORA SIM: Se passou em todos os testes acima, ativa a trava de sessão
+        // ---------------------------------------------------------
         
+        // Registra que VOCÊ é o dono da sessão agora
         await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
             method: 'PATCH',
             body: JSON.stringify({ sessao_ativa: sessionID })
         });
 
+        // Monitora se alguém entrar depois de você
         setInterval(async () => {
             const r = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
             const s = await r.json();
@@ -2908,8 +2928,23 @@ async function inicializarSeguranca() {
             }
         }, 5000);
         
-        // Apenas guardamos os dados. O disparo do timer vai acontecer no clique do botão Premium!
+        // ---------------------------------------------------------
+
+        // Continua com o carregamento normal do seu relatório
+// Continua com o carregamento normal do seu relatório
         dadosGlobais = dados; 
+        console.log("Dados recebidos no Matriz:", dados); // Para vermos o que tem dentro
+        
+        // Se 'data_inicio' for inválido, o timer vai bugar
+        const dataReferencia = dados.data_inicio ? new Date(dados.data_inicio) : new Date();
+        
+        console.log("Data calculada:", dataReferencia);
+        
+        const dataExpiracaoPDF = new Date(dataReferencia);
+        dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
+
+        iniciarTimer(dataExpiracaoPDF);
+        verificarLiberacaoPDF(dados);
 
     } catch (e) {
         console.error("Erro na comunicação com Firebase:", e);
@@ -2926,13 +2961,13 @@ function iniciarTimer(dataAlvo) {
         const agora = new Date().getTime();
         const distancia = dataAlvo - agora;
 
-        if (distancia < 0) {
-            clearInterval(intervalo);
-            timerElement.innerHTML = "LIBERADO!";
-            labelElement.innerHTML = "Seu estudo já pode ser baixado!";
-            verificarLiberacaoPDF(dadosGlobais); 
-            return;
-        }
+if (distancia < 0) {
+    clearInterval(intervalo);
+    timerElement.innerHTML = "LIBERADO!";
+    labelElement.innerHTML = "Seu estudo já pode ser baixado!";
+    verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI (Passando o objeto todo)
+    return;
+}
 
         const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
         const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -2951,6 +2986,7 @@ function verificarLiberacaoPDF(dados) {
     const msgTrava = document.getElementById("msg-trava");
     const labelTempo = document.getElementById("label-tempo");
 
+    // 1. Verificação de Expiração Total (30 dias)
     const dataRef = new Date(dados.data_inicio);
     const expiraEm = 30 - Math.floor((new Date() - dataRef) / (1000 * 60 * 60 * 24));
     const avisoTotal = document.getElementById("aviso-expiracao-total");
@@ -2958,19 +2994,20 @@ function verificarLiberacaoPDF(dados) {
         avisoTotal.innerHTML = `Acesso ao portal disponível por mais ${expiraEm} dias.`;
     }
 
+    // 2. Trava de Download Único (Se já baixou, bloqueia tudo)
     if (dados.pdf_baixado === true) {
         if (btnPDF) {
             btnPDF.disabled = true;
             btnPDF.style.filter = "grayscale(100%)";
-            btnPDF.style.backgroundColor = "#333"; 
+            btnPDF.style.backgroundColor = "#333"; // Cor de desativado
             btnPDF.style.cursor = "not-allowed";
-            btnPDF.style.opacity = "0.5";
         }
         if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado anteriormente.";
         if (labelTempo) labelTempo.innerHTML = "ACESSO AO PDF ENCERRADO";
         return; 
     }
 
+    // 3. Regra dos 7 Dias (Garantia)
     const agora = new Date();
     const diffDias = (agora - dataRef) / (1000 * 60 * 60 * 24);
 
@@ -2980,44 +3017,40 @@ function verificarLiberacaoPDF(dados) {
             btnPDF.style.filter = "none";
             btnPDF.style.opacity = "1";
             btnPDF.style.cursor = "pointer";
-            btnPDF.style.background = "linear-gradient(135deg, #002091 0%, #00104a 100%)"; 
+            btnPDF.style.backgroundColor = "#D62600"; // Cor Dourada/Premium (ou red se preferir)
             btnPDF.style.color = "#fff";
         }
         if (msgTrava) msgTrava.innerHTML = "✅ Seu estudo Premium está pronto para download!";
         if (labelTempo) labelTempo.innerHTML = "LIBERADO!";
     } else {
+        // Ainda no período de 7 dias
         if (btnPDF) {
             btnPDF.disabled = true;
             btnPDF.style.filter = "grayscale(100%)";
-            btnPDF.style.opacity = "0.5";
-            btnPDF.style.cursor = "not-allowed";
         }
         if (msgTrava) msgTrava.innerHTML = "🔒 PDF disponível após o período de garantia.";
     }
 }
 
+
+
 async function registrarDownloadRealizado() {
     try {
+        // Envia para o Firebase que o PDF foi baixado
         await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
             method: 'PATCH',
             body: JSON.stringify({ pdf_baixado: true })
         });
         
+        // Bloqueia o botão na tela imediatamente
         const btnPDF = document.getElementById("btn-pdf-premium");
         const msgTrava = document.getElementById("msg-trava");
-        const labelTempo = document.getElementById("label-tempo");
-        
         if (btnPDF) {
             btnPDF.disabled = true;
             btnPDF.style.filter = "grayscale(100%)";
             btnPDF.style.opacity = "0.5";
-            btnPDF.style.backgroundColor = "#333";
-            btnPDF.style.cursor = "not-allowed";
         }
         if (msgTrava) msgTrava.innerHTML = "⚠️ Download registrado. Acesso ao PDF encerrado.";
-        if (labelTempo) labelTempo.innerHTML = "ACESSO AO PDF ENCERRADO";
-        
-        if (dadosGlobais) dadosGlobais.pdf_baixado = true;
         
     } catch (e) {
         console.error("Erro ao registrar download:", e);
@@ -3025,19 +3058,26 @@ async function registrarDownloadRealizado() {
 }
     
 async function encerrarSessao() {
-    try {
-        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ sessao_ativa: null })
-        });
-    } catch(e) {
-        console.error(e);
-    }
+    // Limpa a trava no Firebase antes de sair
+    await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+        method: 'PATCH',
+        body: JSON.stringify({ sessao_ativa: null })
+    });
+    // Manda de volta para o login
     window.location.href = "index.html";
 }    
 
+function exibirRelatorio(htmlConteudo) {
+    const areaResultado = document.getElementById("resultado");
+    if (areaResultado) {
+        areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
+        verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI
+    }
+}
+
 window.onload = function() {
     inicializarSeguranca();
+
 };
 </script>
 
