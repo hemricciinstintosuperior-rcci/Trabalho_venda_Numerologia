@@ -2845,6 +2845,10 @@ relatorioHTML += `
       verificarLiberacaoPDF(dadosGlobais);
   }
 }
+
+  document.oncontextmenu=()=>false;
+document.onselectstart=()=>false; 
+    
 </script>
 
 
@@ -3111,24 +3115,7 @@ document.getElementById('btnVideo').addEventListener('click', function() {
 </script> 
 
 
-<script>
-document.getElementById('btnVideo').addEventListener('click', function() {
-    const wrapper = document.getElementById('wrapperVideo');
-    const video = document.getElementById('videoExplicativo');
-    const btn = this;
 
-    if (wrapper.style.display === 'none') {
-        wrapper.style.display = 'block';
-        btn.classList.add('ativo');
-        btn.querySelector('span').innerText = '❌ Fechar Vídeo';
-    } else {
-        wrapper.style.display = 'none';
-        btn.classList.remove('ativo');
-        btn.querySelector('span').innerText = '🎥 Assistir Vídeo Introdutório';
-        video.pause(); // Pausa o vídeo automaticamente ao fechar para não ficar saindo som
-    }
-});
-</script>
     
 </body>
 </html>
