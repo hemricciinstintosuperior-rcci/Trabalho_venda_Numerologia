@@ -126,36 +126,25 @@ async function validarAcesso() {
     btn.innerText = "VERIFICANDO...";
     btn.disabled = true;
 
+    // 1. Formata o e-mail igual o Make faz (substitui @ e . por _)
+    const emailFormatado = emailOriginal.replace(/@/g, '_').replace(/\./g, '_');
+
     try {
-        // Buscamos a lista total de vendas para não depender da formatação exata da chave
-        const res = await fetch(`${DB_URL}vendas.json`);
-        const todasVendas = await res.json();
-        // ADICIONE ESTAS DUAS LINHAS PARA TESTAR:
-        console.log("E-mail digitado:", emailOriginal);
-        console.log("Banco de dados:", todasVendas);
-        // Procuramos na lista qual venda tem o e-mail que o usuário digitou
-        let dadosEncontrados = null;
-        let chaveEncontrada = null;
+        // 2. Busca APENAS os dados deste e-mail específico no Firebase
+        // Isso elimina a necessidade daquele "for" que baixava o banco inteiro
+        const res = await fetch(`${DB_URL}vendas/${emailFormatado}.json`);
+        const dados = await res.json();
 
-for (let chave in todasVendas) {
-    // Aqui comparamos a chave (que tem _) com o e-mail que você digitou (formatado para _)
-    let emailFormatado = emailOriginal.replace(/@/g, '_').replace(/\./g, '_');
-    if (chave.toLowerCase() === emailFormatado) {
-    dadosEncontrados = todasVendas[chave];
-    chaveEncontrada = chave;
-    break;
-}
-        }
-
-        if (dadosEncontrados && dadosEncontrados.codigo === codigoDigitado) {
-            liberarProduto(dadosEncontrados.produto, chaveEncontrada);
+        // 3. Valida se o cliente existe e se o código é igual ao que está lá
+        if (dados && dados.codigo === codigoDigitado) {
+            liberarProduto(dados.produto, emailFormatado);
             document.getElementById('area-login').style.display = 'none';
         } else {
             alert("Dados incorretos ou venda não encontrada.");
         }
     } catch (e) {
-        console.error(e);
-        alert("Erro de conexão.");
+        console.error("Erro na conexão:", e);
+        alert("Erro de conexão com o servidor.");
     } finally {
         btn.innerText = "Verificar Credenciais";
         btn.disabled = false;
