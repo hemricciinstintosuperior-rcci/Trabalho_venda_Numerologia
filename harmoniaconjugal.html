@@ -2853,7 +2853,11 @@ relatorioHTML += `
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
-const sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);    
+let sessionID = localStorage.getItem('minhaSessao');
+if (!sessionID) {
+    sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);
+    localStorage.setItem('minhaSessao', sessionID);
+}  
 
 let dadosGlobais = null; // Vamos salvar tudo aqui
 
@@ -2866,6 +2870,7 @@ if (!userEmail) {
 
 
 const emailLimpo = userEmail;
+
 
     
 // Substitua o início da inicializarSeguranca por isto:
