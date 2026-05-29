@@ -1531,7 +1531,9 @@ function abrirPremiumSinastria(){
   const social2 = document.getElementById("social2").value || nome2.split(' ')[0];
 
   const dataHoje = new Date().toLocaleDateString('pt-BR');
-  
+    // Isso define que 'travado' é true se a pessoa NÃO tiver o acesso liberado
+  const travado = !dadosGlobais.liberado; 
+    
 const processarMatrizCasado = (nomeCompleto) => {
     // 1. Apenas limpa espaços extras e joga para maiúsculo (MANTÉM os acentos para o seu cálculo)
     let nomeTratado = nomeCompleto.toUpperCase().trim();
