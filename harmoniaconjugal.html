@@ -2039,9 +2039,10 @@ relatorioHTML += `
 </div>
 `;
 
-    
+    // Abertura da trava (se travado for verdadeiro, abre a div)
+relatorioHTML += `${travado ? '<div class="conteudo-travado">' : ''}`;
   relatorioHTML += gerarFolhaConteudo("PARTE 4: CAMINHO DE VIDA", `A Estrada de ${social1}`, textos.CaminhodeVida[dados1.caminho], `A Estrada de ${social2}`, textosFeminino.CaminhodeVida[dados2.caminho]);
- 
+ relatorioHTML += `${travado ? '</div><div class="aviso-trava">🔒 CONTEÚDO LIBERADO NO PDF</div>' : ''}`;
   relatorioHTML += criarCapaTransicao(
       "Propósito Existencial", 
       "A Missão Final e Conexão de Almas", 
@@ -2093,9 +2094,10 @@ relatorioHTML += `
     </div>
 </div>
 `;
-    
+    // Abertura da trava (se travado for verdadeiro, abre a div)
+relatorioHTML += `${travado ? '<div class="conteudo-travado">' : ''}`;
   relatorioHTML += gerarFolhaConteudo("PARTE 5: PROPÓSITO EXISTENCIAL", `O Propósito de ${social1}`, textos.proposito[dados1.proposito], `O Propósito de ${social2}`, textosFeminino.proposito[dados2.proposito]);
- 
+ relatorioHTML += `${travado ? '</div><div class="aviso-trava">🔒 CONTEÚDO LIBERADO NO PDF</div>' : ''}`;
   relatorioHTML += criarCapaTransicao(
       "Ciclo Anual", 
       "O Momento Atual e Prospecção do Ano", 
@@ -2148,9 +2150,10 @@ relatorioHTML += `
 </div>
 `;
 
-    
+    // Abertura da trava (se travado for verdadeiro, abre a div)
+relatorioHTML += `${travado ? '<div class="conteudo-travado">' : ''}`;
   relatorioHTML += gerarFolhaConteudo("PARTE 6: CICLO ANUAL", `Ano Pessoal de ${social1}`, textos.anoPessoal[dados1.anoPessoal], `Ano Pessoal de ${social2}`, textosFeminino.anoPessoal[dados2.anoPessoal]);
-
+relatorioHTML += `${travado ? '</div><div class="aviso-trava">🔒 CONTEÚDO LIBERADO NO PDF</div>' : ''}`;
 
 // --- PARTE 8: INJEÇÃO COMPACTA E EM ALTA RESOLUÇÃO DA PIRÂMIDE DO CASAL ---
   let textoPiramideParceiro1 = obterHtmlTextoPiramide(dados1.valores);
@@ -2236,7 +2239,8 @@ relatorioHTML += `
 
 
     
-
+// Abertura da trava (se travado for verdadeiro, abre a div)
+relatorioHTML += `${travado ? '<div class="conteudo-travado">' : ''}`;
   // Página da Matriz da Pessoa 1
   relatorioHTML += `
     <div class="bloco-texto-pdf">
@@ -2246,6 +2250,7 @@ relatorioHTML += `
             <pre style="font-family:'Courier New', monospace; font-size:12px; line-height:1.4; letter-spacing:4px; color:#111; display:block; text-align:center; margin:0 auto; white-space:pre;">${textoPiramideParceiro1}</pre>
         </div>
         
+
         <h3 class="subtitulo-pessoa-pdf evitar-corte">🎯 Número Regente da Matriz: Encarte ${dados1.regente}</h3>
         <div>${extrairETratarTexto(textoRegenteP1, social1)}</div>
         
@@ -2273,7 +2278,7 @@ relatorioHTML += `
         <div>${extrairETratarTexto(textoSequenciasP2, social2)}</div>
     </div>`;
 
-
+relatorioHTML += `${travado ? '</div><div class="aviso-trava">🔒 CONTEÚDO LIBERADO NO PDF</div>' : ''}`;
     
 // Sinastria
 const chave = chaveSinastria(dados1.proposito, dados2.proposito);
@@ -2343,7 +2348,8 @@ relatorioHTML += `
 
 
     
-
+// Abertura da trava (se travado for verdadeiro, abre a div)
+relatorioHTML += `${travado ? '<div class="conteudo-travado">' : ''}`;
   relatorioHTML += `
     <div class="bloco-texto-pdf">
         <h2 class="titulo-secao-pdf">PARTE 8: SINASTRIA & UNIÃO</h2>
@@ -2351,7 +2357,7 @@ relatorioHTML += `
         <div>${textoSinastriaPuro}</div>
     </div>`;
 
-
+relatorioHTML += `${travado ? '</div><div class="aviso-trava">🔒 CONTEÚDO LIBERADO NO PDF</div>' : ''}`;
 
 
 function gerarAbaNomeCasado(nomeCasado, expOriginal, analiseSolteiro, analiseCasado, nomeSocial) {
