@@ -1515,17 +1515,6 @@ function processarTextoSinastria(texto, nome1, nome2) {
 }
 
 
-function protegerConteudo(conteudo, travado, mensagem = "CONTEÚDO BLOQUEADO") {
-    if (!travado) return conteudo;
-    
-    return `
-    <div class="bloco-protegido" style="position: relative; filter: blur(5px); pointer-events: none; user-select: none;">
-        ${conteudo}
-    </div>
-    <div style="text-align: center; padding: 20px; border: 1px dashed #d4af37; color: #d4af37; margin: 10px 0;">
-        🔒 ${mensagem}
-    </div>`;
-}
 
 
     
