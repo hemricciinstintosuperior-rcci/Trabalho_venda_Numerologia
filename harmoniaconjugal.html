@@ -851,6 +851,52 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 }
 
 
+/* 1. O CONTEÚDO (O que fica por baixo) */
+/* O texto que fica atrás continua borrado como você gosta */
+.conteudo-travado {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    opacity: 0.5;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* A nova caixa de aviso (totalmente independente e nítida) */
+.aviso-trava {
+    background: #0a0e1a; /* Cor do seu fundo */
+    color: #d4af37;    /* Dourado Instinto Superior */
+    border: 2px solid #d4af37;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -50px; /* Faz ela subir para cima do borrão */
+    position: relative;
+    z-index: 9999;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media print {
+    .conteudo-travado { filter: none !important; opacity: 1 !important; }
+    .aviso-trava { display: none !important; }
+}
+
+@media print {
+    .conteudo-travado { 
+        filter: none !important; 
+        opacity: 1 !important; 
+    }
+    .aviso-trava { 
+        display: none !important; 
+        visibility: hidden !important; /* Reforço extra */
+        height: 0 !important;       /* Garante que não ocupe espaço */
+        margin: 0 !important;
+    }
+}
 
     
     
@@ -1925,9 +1971,9 @@ relatorioHTML += `
 `;
 
 
-     `<div class="conteudo-travado">
+     `<div class="conteudo-travado">`
   relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Expressão de ${social1}`, textos.personalidade[dados1.personalidade], `A Expressão de ${social2}`, textosFeminino.personalidade[dados2.personalidade]);
-    </div> <div class="aviso-trava">
+   ` </div> <div class="aviso-trava">
             🔒 CONTEÚDO LIBERADO NO PDF
 
          </div>`
