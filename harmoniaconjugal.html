@@ -1513,6 +1513,23 @@ function processarTextoSinastria(texto, nome1, nome2) {
 
   return texto;
 }
+
+
+function protegerConteudo(conteudo, travado, mensagem = "CONTEÚDO BLOQUEADO") {
+    if (!travado) return conteudo;
+    
+    return `
+    <div class="bloco-protegido" style="position: relative; filter: blur(5px); pointer-events: none; user-select: none;">
+        ${conteudo}
+    </div>
+    <div style="text-align: center; padding: 20px; border: 1px dashed #d4af37; color: #d4af37; margin: 10px 0;">
+        🔒 ${mensagem}
+    </div>`;
+}
+
+
+    
+
     
 
 function abrirPremiumSinastria(){
@@ -1970,13 +1987,15 @@ relatorioHTML += `
 </div>
 `;
 
+// Abertura da trava (se travado for verdadeiro, abre a div)
+relatorioHTML += `${travado ? '<div class="conteudo-travado">' : ''}`;
 
-     `<div class="conteudo-travado">`
   relatorioHTML += gerarFolhaConteudo("PARTE 3: EXPRESSÃO & PERSONALIDADE", `A Expressão de ${social1}`, textos.personalidade[dados1.personalidade], `A Expressão de ${social2}`, textosFeminino.personalidade[dados2.personalidade]);
-   ` </div> <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO NO PDF
+// Fechamento da trava e o aviso (se travado for verdadeiro, fecha a div e mostra o aviso)
+relatorioHTML += `${travado ? '</div><div class="aviso-trava">🔒 CONTEÚDO LIBERADO NO PDF</div>' : ''}`;
 
-         </div>`
+
+    
   relatorioHTML += criarCapaTransicao(
       "Caminho de Vida", 
       "A Estrada do Destino e Linhas do Tempo", 
