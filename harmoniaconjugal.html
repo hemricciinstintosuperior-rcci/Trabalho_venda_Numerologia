@@ -1525,7 +1525,8 @@ function processarTextoSinastria(texto, nome1, nome2) {
 
 function abrirPremiumSinastria(){
   if(!dados1 || !dados2) return alert("Calcule os dados primeiro.");
-
+  // Isso define que 'travado' é true se a pessoa NÃO tiver o acesso liberado
+  const travado = !dadosGlobais.liberado; 
   const nome1 = document.getElementById("nome1").value;
   const nome2 = document.getElementById("nome2").value;
 
