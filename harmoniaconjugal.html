@@ -1093,6 +1093,10 @@ function reduzir(n, aceitaMestre = true) {
     return num;
 }
 
+
+
+    
+
 function calcularCVLinear(dia, mes, ano) {
 
     let dataCompleta =
@@ -1173,12 +1177,16 @@ function gerarPiramide(valores, elementoPiramide, elementoRegente){
     elementoPiramide.innerHTML=""; elementoRegente.innerHTML=""; return;
   }
 
-  let lines = [valores.map(Number)];
+  // 1. Criamos a primeira linha, já garantindo que tudo seja reduzido para 1 dígito
+  let lines = [valores.map(n => reduzir(n, false))]; 
+
   while(lines[lines.length-1].length > 1){
     let anterior = lines[lines.length-1];
     let nova = [];
-    for(let i=0;i<anterior.length-1;i++){
-      nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
+    for(let i=0; i<anterior.length-1; i++){
+      // 2. A soma de dois números deve ser reduzida forçadamente (aceitaMestre = false)
+      let soma = anterior[i] + anterior[i+1];
+      nova.push(reduzir(soma, false)); 
     }
     lines.push(nova);
   }
@@ -1513,12 +1521,6 @@ function processarTextoSinastria(texto, nome1, nome2) {
 
   return texto;
 }
-
-
-
-
-    
-
     
 
 function abrirPremiumSinastria(){
@@ -1531,9 +1533,7 @@ function abrirPremiumSinastria(){
   const social2 = document.getElementById("social2").value || nome2.split(' ')[0];
 
   const dataHoje = new Date().toLocaleDateString('pt-BR');
-    // Isso define que 'travado' é true se a pessoa NÃO tiver o acesso liberado
-  const travado = !dadosGlobais.liberado; 
-    
+  
 const processarMatrizCasado = (nomeCompleto) => {
     // 1. Apenas limpa espaços extras e joga para maiúsculo (MANTÉM os acentos para o seu cálculo)
     let nomeTratado = nomeCompleto.toUpperCase().trim();
@@ -1565,8 +1565,12 @@ const processarMatrizCasado = (nomeCompleto) => {
         let proximaLinha = [];
         for (let i = 0; i < linhaAtual.length - 1; i++) {
             let soma = linhaAtual[i] + linhaAtual[i+1];
-            if (soma > 9) soma = Math.floor(soma / 10) + (soma % 10);
-            proximaLinha.push(soma);
+            
+            // --- A SOLUÇÃO: Use a sua função reduzir() padrão aqui ---
+            // Assim ele reduzirá recursivamente até chegar em 1-9
+            let reduzido = reduzir(soma, false); 
+            
+            proximaLinha.push(reduzido);
         }
         todasAsLinhas.push(proximaLinha);
         linhaAtual = proximaLinha;
@@ -1774,42 +1778,49 @@ function extrairETratarTexto(textoBruto, nomeParceiro) {
       </div>`;
   }
 
-  // Função auxiliar interna para gerar o HTML textual da pirâmide e injetar no miolo do PDF
-  function obterHtmlTextoPiramide(valores) {
-    if(!valores || valores.length === 0) return "";
-    let lines = [valores.map(Number)];
-    while(lines[lines.length-1].length > 1){
-      let anterior = lines[lines.length-1];
-      let nova = [];
-      for(let i=0; i<anterior.length-1; i++){
-        nova.push(Number(reduzir(anterior[i] + anterior[i+1])));
-      }
-      lines.push(nova);
+function obterHtmlTextoPiramide(valores) {
+  if(!valores || valores.length === 0) return "";
+
+  // 1. Forçamos a redução de cada valor inicial para um dígito (1-9)
+  let lines = [valores.map(n => reduzir(n, false))];
+
+  while(lines[lines.length-1].length > 1){
+    let anterior = lines[lines.length-1];
+    let nova = [];
+    for(let i=0; i<anterior.length-1; i++){
+      // 2. A soma é reduzida FORÇADAMENTE (false para aceitaMestre)
+      let soma = anterior[i] + anterior[i+1];
+      nova.push(reduzir(soma, false));
     }
-    let marcacoes = [];
-    for(let l=0; l<lines.length; l++){
-      marcacoes[l] = new Set();
-      let linha = lines[l];
-      let i=0;
-      while(i < linha.length){
-        let atual = Number(linha[i]);
-        let count = 1; let j = i+1;
-        while(j < linha.length && Number(linha[j]) === atual) { count++; j++; }
-        if(count >= 3){
-          for(let k=i; k<i+count; k++) marcacoes[l].add(k);
-        }
-        i += count;
-      }
-    }
-    let txtPiramide = "";
-    for(let l=0; l<lines.length; l++){
-      txtPiramide += lines[l].map((n, idx) => {
-        if (marcacoes[l].has(idx)) return `<span class="negativo" style="color:#ff3b5c !important; font-weight:bold;">${n}</span>`;
-        return n;
-      }).join(" ") + "\n";
-    }
-    return txtPiramide;
+    lines.push(nova);
   }
+
+  // O resto da lógica de marcações permanece igual
+  let marcacoes = [];
+  for(let l=0; l<lines.length; l++){
+    marcacoes[l] = new Set();
+    let linha = lines[l];
+    let i=0;
+    while(i < linha.length){
+      let atual = Number(linha[i]);
+      let count = 1; let j = i+1;
+      while(j < linha.length && Number(linha[j]) === atual) { count++; j++; }
+      if(count >= 3){
+        for(let k=i; k<i+count; k++) marcacoes[l].add(k);
+      }
+      i += count;
+    }
+  }
+
+  let txtPiramide = "";
+  for(let l=0; l<lines.length; l++){
+    txtPiramide += lines[l].map((n, idx) => {
+      if (marcacoes[l].has(idx)) return `<span class="negativo" style="color:#ff3b5c !important; font-weight:bold;">${n}</span>`;
+      return n;
+    }).join(" ") + "\n";
+  }
+  return txtPiramide;
+}
 
   // Capa da Seção 1 com os Áudios acoplados corretamente
   relatorioHTML += criarCapaTransicao(
