@@ -6575,28 +6575,24 @@ function verificarLiberacaoPDF(dados) {
     
 async function registrarDownloadRealizado() {
     try {
-        const urlParams = new URLSearchParams(window.location.search);
-        const userId = urlParams.get('user'); 
-        
-        // Use a referência do Firebase diretamente, em vez de 'fetch'
-        // Isso usa a conexão que já está aberta no seu site
-        const dbRef = firebase.database().ref(userId);
-        
-        await dbRef.update({
-            pdf_baixado: true
+        // Envia para o Firebase que o PDF foi baixado
+        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+            method: 'PATCH',
+            body: JSON.stringify({ pdf_baixado: true })
         });
         
-        console.log("Sucesso! Firebase atualizado com a biblioteca nativa.");
-        
-        // Bloqueia o botão na tela
+        // Bloqueia o botão na tela imediatamente
         const btnPDF = document.getElementById("btn-pdf-premium");
+        const msgTrava = document.getElementById("msg-trava");
         if (btnPDF) {
             btnPDF.disabled = true;
             btnPDF.style.filter = "grayscale(100%)";
             btnPDF.style.opacity = "0.5";
         }
+        if (msgTrava) msgTrava.innerHTML = "⚠️ Download registrado. Acesso ao PDF encerrado.";
+        
     } catch (e) {
-        console.error("Erro ao registrar no Firebase:", e);
+        console.error("Erro ao registrar download:", e);
     }
 }
     
