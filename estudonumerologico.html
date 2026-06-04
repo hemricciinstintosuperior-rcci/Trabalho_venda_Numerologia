@@ -6541,59 +6541,37 @@ if (distancia < 0) {
 function verificarLiberacaoPDF(dados) {
     if (!dados || !dados.data_inicio) return;
     
-    // Elementos da interface
     const btnPDF = document.getElementById("btn-pdf-premium");
     const msgTrava = document.getElementById("msg-trava");
     const labelTempo = document.getElementById("label-tempo");
-    const avisoTotal = document.getElementById("aviso-expiracao-total");
 
-    // Cálculo das datas (Unificado para não dar erro)
     const dataCompra = new Date(dados.data_inicio);
     const agora = new Date();
     const diffDias = (agora - dataCompra) / (1000 * 60 * 60 * 24);
+
+    // --- AQUI ESTÁ A SEPARAÇÃO DAS TRAVAS ---
     
-    // Cálculo dos 30 dias de acesso total
-    const expiraEm = 30 - Math.floor(diffDias);
-    if (avisoTotal) {
-        avisoTotal.innerHTML = `Acesso ao portal disponível por mais ${expiraEm} dias.`;
+    // 1. Relatório: Libera sempre que passar de 7 dias
+    acessoPremiumLiberado = (diffDias >= 7); 
+    
+    // 2. PDF: Libera se passou de 7 dias E não foi baixado
+    const podeBaixarPDF = (diffDias >= 7 && dados.pdf_baixado !== true);
+
+    // Lógica do Botão (PDF)
+    if (btnPDF) {
+        btnPDF.disabled = !podeBaixarPDF;
+        btnPDF.style.filter = podeBaixarPDF ? "none" : "grayscale(100%)";
     }
 
-    // --- A VARIÁVEL MESTRA DO RELATÓRIO E PDF ---
-    // Se passou de 7 dias e o download ainda não foi feito, libera TUDO.
-    acessoPremiumLiberado = (diffDias >= 7 && dados.pdf_baixado !== true);
-
-    // Lógica de Bloqueio de Download
+    // Mensagens de Status
     if (dados.pdf_baixado === true) {
-        if (btnPDF) {
-            btnPDF.disabled = true;
-            btnPDF.style.filter = "grayscale(100%)";
-            btnPDF.style.backgroundColor = "#333";
-            btnPDF.style.cursor = "not-allowed";
-        }
         if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado.";
-        if (labelTempo) labelTempo.innerHTML = "ACESSO AO PDF ENCERRADO";
-        return; 
-    }
-
-    // Lógica visual dos botões (PDF)
-    if (diffDias >= 7) {
-        if (btnPDF) {
-            btnPDF.disabled = false;
-            btnPDF.style.filter = "none";
-            btnPDF.style.backgroundColor = "#D62600";
-            btnPDF.style.color = "#fff";
-        }
-        if (msgTrava) msgTrava.innerHTML = "✅ Seu estudo Premium está pronto!";
-        if (labelTempo) labelTempo.innerHTML = "LIBERADO!";
+    } else if (diffDias < 7) {
+        if (msgTrava) msgTrava.innerHTML = "🔒 Conteúdo liberado após 7 dias.";
     } else {
-        if (btnPDF) {
-            btnPDF.disabled = true;
-            btnPDF.style.filter = "grayscale(100%)";
-        }
-        if (msgTrava) msgTrava.innerHTML = "🔒 Relatório e PDF liberados após 7 dias.";
+        if (msgTrava) msgTrava.innerHTML = "✅ Estudo pronto para acesso!";
     }
 }
-
     
 async function registrarDownloadRealizado() {
     try {
