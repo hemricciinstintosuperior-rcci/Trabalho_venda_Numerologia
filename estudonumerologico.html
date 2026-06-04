@@ -4280,7 +4280,7 @@ const listaItensSintese = [
     
     { label: "Talento Oculto", valor: res.talento },
     
-     {label: "Equilíbrio", valor: `${res.equilibrio.inicio} — ${res.equilibrio.fim}`},
+    {label: "Equilíbrio", valor: `${res.equilibrio.inicio} ⚖️ ${res.equilibrio.fim}`},
     
     { label: "Inclinações Ocultas", valor: res.inclinacoes },
     
@@ -4292,16 +4292,16 @@ const listaItensSintese = [
     
     { label: "Fraquezas / Inibições", valor: (res.deficiencias && res.deficiencias.length > 0) ? res.deficiencias : "Livre" },
     
-    { label: "Caminho de Vida", valor: res.CaminhodeVida },
+    { label: "Caminho de Vida", valor: res.CaminhodeVida, videoID: "Ls5Ryzh6iRg"},
     
     { label: "Propósito", valor: res.Propósito },
     
     { label: "Maturidade", valor: res.Maturidade },
 
     { label: "Profissão", valor: formatarProfissoesSimples(res) },
-    
+  
     { label: "Ciclos da Vida", valor: res.ciclos },
-    
+ 
     { label: "Desafios", valor: res.desafios },
     
     { label: "Momentos de Decisão", valor: res.momentos },
@@ -4317,7 +4317,6 @@ const listaItensSintese = [
     
 
 ];
-
 
 
     
@@ -4354,43 +4353,63 @@ html += `
         margin-top: 10px;
         flex-grow: 1;
     ">
-        ${listaItensSintese.map(item => {
-            let exibicaoValor = "--";
-            if (item.valor && typeof item.valor === 'object' && !Array.isArray(item.valor)) {
-                exibicaoValor = Object.values(item.valor).filter(v => v !== "").join(" · ");
-            } else if (Array.isArray(item.valor)) {
-                exibicaoValor = item.valor.join(" · ");
-            } else {
-                exibicaoValor = item.valor || "--";
-            }
+${listaItensSintese.map(item => {
+    // 1. Configuração da Trava Automática
+    // Se não estiver liberado (acessoPremiumLiberado = false), estes itens serão travados
+    const itensPremium = ["Caminho de Vida", "Ciclos da Vida", "Desafios", "Momentos de Decisão"];
+    const ehPremium = itensPremium.includes(item.label);
+    const estaTravado = ehPremium && !acessoPremiumLiberado;
 
-            // Ajuste dinâmico de fonte para valores longos não quebrarem o layout
-            let fontSize = "20px";
-            if (exibicaoValor.toString().length > 5) fontSize = "18px";
-            if (exibicaoValor.toString().length > 10) fontSize = "15px";
+    // 2. Função de Segurança para tratar Objetos/Arrays (Anti-Erro [object Object])
+    const formatarValorSeguro = (valor) => {
+        if (valor === null || valor === undefined) return "--";
+        if (typeof valor === 'object') {
+            return Object.values(valor).filter(v => v !== "").join(" · ");
+        }
+        return valor.toString();
+    };
 
-            return `
-                <div style="
-                    border: 1px solid #eee; 
-                    border-top: 3px solid #d97a1e; 
-                    background: #ffffff; 
-                    padding: 8px 4px; 
-                    text-align: center; 
-                    border-radius: 4px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    min-height: 65px;
-                ">
-                    <div style="font-size: 12px; text-transform: uppercase; color: #000000; font-weight: bold; margin-bottom: 4px; line-height: 1.1;">
-                        ${item.label}
-                    </div>
-                    <div style="font-size: ${fontSize}; font-weight: bold; color: #d97a1e; word-break: break-word;">
-                        ${exibicaoValor}
-                    </div>
-                </div>
-            `;
-        }).join('')}
+    // 3. Aplicação do valor formatado
+    let exibicaoValor = estaTravado ? "🔒 CONTEÚDO PREMIUM" : formatarValorSeguro(item.valor);
+
+    // 4. Lógica de Font-Size (Declarada no topo, sem riscos de erro)
+    let fontSize = "18px";
+    let valorStr = exibicaoValor.toString();
+    if (valorStr.length > 15) fontSize = "12px";
+    else if (valorStr.length > 10) fontSize = "15px";
+    else if (valorStr.length > 5) fontSize = "18px";
+
+    // 5. HTML do Card
+    return `
+    <div style="
+        border: 1px solid #eee; 
+        border-top: 3px solid ${estaTravado ? '#ccc' : '#d97a1e'}; 
+        background: ${estaTravado ? '#f9f9f9' : '#ffffff'}; 
+        padding: 8px 4px; 
+        text-align: center; 
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 80px;
+        opacity: ${estaTravado ? '0.7' : '1'};
+    ">
+        <div style="font-size: 12px; text-transform: uppercase; color: #000; font-weight: bold; margin-bottom: 4px;">
+            ${item.label}
+        </div>
+        
+        <div style="font-size: ${fontSize}; font-weight: bold; color: ${estaTravado ? '#666' : '#d97a1e'}; word-break: break-word;">
+            ${exibicaoValor}
+        </div>
+
+        ${(item.videoID && !estaTravado) ? `
+            <a href="http://googleusercontent.com/youtube.com/${item.videoID}" target="_blank" style="text-decoration: none; margin-top: 5px; display: block;">
+                <span style="font-size: 14px; color: #d97a1e;">▶️</span>
+            </a>
+        ` : ""}
+    </div>
+    `;
+}).join('')}
     </div>
 
 <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 15px; margin-top: 20px; flex-shrink: 0; width: 100%;">
@@ -6538,7 +6557,12 @@ function verificarLiberacaoPDF(dados) {
 
     // 3. Regra dos 7 Dias (Garantia)
     const agora = new Date();
+    const dataRef = new Date(dados.data_inicio);
     const diffDias = (agora - dataRef) / (1000 * 60 * 60 * 24);
+
+    // Atualiza a variável global
+    acessoPremiumLiberado = (diffDias >= 7 && dados.pdf_baixado !== true);
+    
 
     if (diffDias >= 7) {
         if (btnPDF) {
