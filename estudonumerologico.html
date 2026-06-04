@@ -6447,7 +6447,7 @@ async function inicializarSeguranca() {
 
             // Atualiza o texto na tela
             setTimeout(() => {
-                const elementoValidade = document.getElementById("label-validade");
+                const elementoValidade = document.getElementById("aviso-expiracao-total");
                 if (elementoValidade) {
                     elementoValidade.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
                 }
