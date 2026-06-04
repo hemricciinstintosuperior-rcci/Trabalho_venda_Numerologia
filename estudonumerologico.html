@@ -6620,21 +6620,19 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     }
 });
 </script> 
-<script> 
-   // Este script vigia o seu aviso e, se o sistema tentar mudar o texto, ele força a contagem de dias
-const observer = new MutationObserver((mutations) => {
-    const aviso = document.getElementById("aviso-expiracao-total");
-    if (aviso && aviso.innerText.includes("Verificando")) {
-        // Se o sistema tentar colocar "Verificando...", nós forçamos o valor correto
-        aviso.innerText = "Seu acesso expira em 20 dias."; 
-    }
-});
-
-const alvo = document.getElementById("aviso-expiracao-total");
-if (alvo) {
-    observer.observe(alvo, { childList: true, subtree: true, characterData: true });
-}   
-
-   </script>      
+ <script>
+    console.log("TESTE DE FORÇA BRUTA RODANDO...");
+    const tentativaFinal = setInterval(() => {
+        const elemento = document.getElementById("aviso-expiracao-total");
+        if (elemento) {
+            elemento.innerHTML = "Acesso verificado com sucesso!";
+            elemento.style.color = "lime";
+            console.log("Texto alterado com sucesso!");
+            clearInterval(tentativaFinal);
+        } else {
+            console.log("Ainda esperando o elemento...");
+        }
+    }, 500);
+</script>
 </body>
 </html>
