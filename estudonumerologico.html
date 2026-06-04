@@ -6556,9 +6556,10 @@ function verificarLiberacaoPDF(dados) {
     }
 
     // 3. Regra dos 7 Dias (Garantia)
-    const agora = new Date();
-    const dataatual = new Date(dados.data_inicio);
-    const diffDias = (agora - dataRef) / (1000 * 60 * 60 * 24);
+const dataRef = new Date(dados.data_inicio);
+// ... código ...
+const dataAtual = new Date(); // Troque o nome aqui
+const expiraEm = 30 - Math.floor((dataAtual - dataRef) / (1000 * 60 * 60 * 24));
 
     // Atualiza a variável global
     acessoPremiumLiberado = (diffDias >= 7 && dados.pdf_baixado !== true);
