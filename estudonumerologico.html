@@ -6445,17 +6445,24 @@ async function inicializarSeguranca() {
         // ... (o resto da função permanece igual)
 
 // --- SUBSTITUA APENAS ESTE BLOCO DENTRO DA inicializarSeguranca ---
-if (dados.data_inicio) {
-    const dataInicio = new Date(dados.data_inicio).getTime(); // Converte para milissegundos
-    const agora = new Date().getTime();
-    
-const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
-const diasRestantes = 30 - diffDiasTotal; // <-- CALCULAMOS O QUE FALTA
+// ... dentro da inicializarSeguranca ...
 
-// --- ADICIONE ESTA LINHA ---
-const campoValidade = document.getElementById("label-validade"); // Verifique se o ID no seu HTML é exatamente esse
-if (campoValidade) {
-    campoValidade.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
+if (dados.data_inicio) {
+    const dataInicio = new Date(dados.data_inicio).getTime();
+    const agora = new Date().getTime();
+    const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+    const diasRestantes = 30 - diffDiasTotal;
+
+    console.log("Cálculo realizado. Dias restantes:", diasRestantes);
+
+    // Damos um tempo para garantir que nada vai sobrescrever
+    setTimeout(() => {
+        const elementoValidade = document.getElementById("label-validade");
+        if (elementoValidade) {
+            elementoValidade.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
+            elementoValidade.style.color = "green"; // Só pra gente ver se mudou mesmo
+        }
+    }, 2000); 
 }
 
     console.log("Dias passados desde a compra:", diffDiasTotal);
