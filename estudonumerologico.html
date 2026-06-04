@@ -6574,25 +6574,24 @@ function verificarLiberacaoPDF(dados) {
 }
     
 async function registrarDownloadRealizado() {
-    try {
-        // Envia para o Firebase que o PDF foi baixado
-        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ pdf_baixado: true })
-        });
-        
-        // Bloqueia o botão na tela imediatamente
-        const btnPDF = document.getElementById("btn-pdf-premium");
-        const msgTrava = document.getElementById("msg-trava");
-        if (btnPDF) {
-            btnPDF.disabled = true;
-            btnPDF.style.filter = "grayscale(100%)";
-            btnPDF.style.opacity = "0.5";
-        }
-        if (msgTrava) msgTrava.innerHTML = "⚠️ Download registrado. Acesso ao PDF encerrado.";
-        
-    } catch (e) {
-        console.error("Erro ao registrar download:", e);
+    // Pega o ID da URL igual você já faz
+    const userId = new URLSearchParams(window.location.search).get('user');
+    
+    // Cola aqui a URL que o Make te deu no Passo 1
+    const webhookUrl = "https://hook.us2.make.com/k7af8f50o7wumvaw6wtuv348mfrgoaq3";
+    
+    // Envia o ID para o Make
+    await fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId: userId })
+    });
+    
+    // Trava o botão visualmente para o usuário
+    const btnPDF = document.getElementById("btn-pdf-premium");
+    if (btnPDF) {
+        btnPDF.disabled = true;
+        btnPDF.style.filter = "grayscale(100%)";
     }
 }
     
