@@ -6439,27 +6439,29 @@ async function inicializarSeguranca() {
 
         // 1. CÁLCULO DA DATA (COM VARIÁVEL DECLARADA FORA DO IF)
         let diffDiasTotal = 0;
-        if (dados.data_inicio) {
-            const dataInicio = new Date(dados.data_inicio).getTime();
-            const agora = new Date().getTime();
-            diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
-            let diasRestantes = 30 - diffDiasTotal;
+// 2. Verifica se o prazo de 30 dias venceu
+if (dados.data_inicio) {
+    const dataInicio = new Date(dados.data_inicio).getTime();
+    const agora = new Date().getTime();
+    const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+    
+    // --- O CÁLCULO QUE VOCÊ QUER MOSTRAR ---
+    const diasRestantes = 30 - diffDiasTotal;
+    
+    // --- AQUI NÓS ATUALIZAMOS O AVISO NO HTML ---
+    const aviso = document.getElementById("aviso-expiracao-total");
+    if (aviso) {
+        aviso.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
+    }
+    console.log("Dias restantes calculados e enviados para o HTML:", diasRestantes);
+    // ------------------------------------------
 
-            // Atualiza o texto na tela
-            setTimeout(() => {
-                const elementoValidade = document.getElementById("aviso-expiracao-total");
-                if (elementoValidade) {
-                    elementoValidade.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
-                }
-            }, 1000);
-        }
-
-        // 2. VERIFICAÇÃO DE EXPIRAÇÃO
-        if (diffDiasTotal > 30) {
-            alert("Seu período de acesso de 30 dias expirou.");
-            window.location.href = "index.html";
-            return;
-        }
+    if (diffDiasTotal > 30) {
+        alert("Seu período de acesso de 30 dias expirou.");
+        window.location.href = "index.html";
+        return;
+    }
+}
 
         // 3. STATUS ATIVO
         if (dados.status === 'usado' || dados.status !== 'ativo') {
