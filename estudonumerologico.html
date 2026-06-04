@@ -6483,7 +6483,7 @@ if (dados.data_inicio) {
         dadosGlobais = dados; 
         const dataReferencia = dados.data_inicio ? new Date(dados.data_inicio) : new Date();
         const dataExpiracaoPDF = new Date(dataReferencia);
-        dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
+        dataExpiracaoPDF.setDate(dataReferencia.getDate() + 8); 
 
         iniciarTimer(dataExpiracaoPDF);
         verificarLiberacaoPDF(dados);
@@ -6550,7 +6550,7 @@ function verificarLiberacaoPDF(dados) {
     if (dados.pdf_baixado === true) {
         if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado.";
     } else if (diffDias < 7) {
-        if (msgTrava) msgTrava.innerHTML = "🔒 Conteúdo liberado após 7 dias.";
+        if (msgTrava) msgTrava.innerHTML = "🔒 Conteúdo liberado após 8 dias.";
     } else {
         if (msgTrava) msgTrava.innerHTML = "✅ Estudo pronto para acesso!";
     }
