@@ -6455,7 +6455,7 @@ const diasRestantes = 30 - diffDiasTotal; // <-- CALCULAMOS O QUE FALTA
 // --- ADICIONE ESTA LINHA ---
 const campoValidade = document.getElementById("label-validade"); // Verifique se o ID no seu HTML é exatamente esse
 if (campoValidade) {
-    campoValidade.innerHTML = Seu acesso expira em ${diasRestantes} dias.;
+    campoValidade.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
 }
 
     console.log("Dias passados desde a compra:", diffDiasTotal);
