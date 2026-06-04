@@ -5437,7 +5437,9 @@ html += `
             labelFase = i == 1 ? "Primeiro Desafio" : "Segundo Desafio";
         }
 
-        
+                // --- A LÓGICA DE TRAVA ---
+        // Se acessoPremiumLiberado for false, estaTravado vira true
+        const estaTravado = !acessoPremiumLiberado; 
 
         html += ` 
             <div class="evitar-corte" style="margin-bottom: 30px;">
@@ -6397,7 +6399,9 @@ if (!sessionID) {
     sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);
     localStorage.setItem('minhaSessao', sessionID);
 }  
-
+    
+// COLOQUE AQUI:
+let acessoPremiumLiberado = false; 
 let dadosGlobais = null; // Vamos salvar tudo aqui
 
 // 1. VALIDAÇÃO DE USUÁRIO E REDIRECIONAMENTO LIMPO
@@ -6530,64 +6534,60 @@ if (distancia < 0) {
 function verificarLiberacaoPDF(dados) {
     if (!dados || !dados.data_inicio) return;
     
+    // Elementos da interface
     const btnPDF = document.getElementById("btn-pdf-premium");
     const msgTrava = document.getElementById("msg-trava");
     const labelTempo = document.getElementById("label-tempo");
-
-    // 1. Verificação de Expiração Total (30 dias)
-    const dataRef = new Date(dados.data_inicio);
-    const expiraEm = 30 - Math.floor((new Date() - dataRef) / (1000 * 60 * 60 * 24));
     const avisoTotal = document.getElementById("aviso-expiracao-total");
+
+    // Cálculo das datas (Unificado para não dar erro)
+    const dataCompra = new Date(dados.data_inicio);
+    const agora = new Date();
+    const diffDias = (agora - dataCompra) / (1000 * 60 * 60 * 24);
+    
+    // Cálculo dos 30 dias de acesso total
+    const expiraEm = 30 - Math.floor(diffDias);
     if (avisoTotal) {
         avisoTotal.innerHTML = `Acesso ao portal disponível por mais ${expiraEm} dias.`;
     }
 
-    // 2. Trava de Download Único (Se já baixou, bloqueia tudo)
+    // --- A VARIÁVEL MESTRA DO RELATÓRIO E PDF ---
+    // Se passou de 7 dias e o download ainda não foi feito, libera TUDO.
+    acessoPremiumLiberado = (diffDias >= 7 && dados.pdf_baixado !== true);
+
+    // Lógica de Bloqueio de Download
     if (dados.pdf_baixado === true) {
         if (btnPDF) {
             btnPDF.disabled = true;
             btnPDF.style.filter = "grayscale(100%)";
-            btnPDF.style.backgroundColor = "#333"; // Cor de desativado
+            btnPDF.style.backgroundColor = "#333";
             btnPDF.style.cursor = "not-allowed";
         }
-        if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado anteriormente.";
+        if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado.";
         if (labelTempo) labelTempo.innerHTML = "ACESSO AO PDF ENCERRADO";
         return; 
     }
 
-    // 3. Regra dos 7 Dias (Garantia)
-const dataRef = new Date(dados.data_inicio);
-// ... código ...
-const dataAtual = new Date(); // Troque o nome aqui
-const expiraEm = 30 - Math.floor((dataAtual - dataRef) / (1000 * 60 * 60 * 24));
-
-    // Atualiza a variável global
-    acessoPremiumLiberado = (diffDias >= 7 && dados.pdf_baixado !== true);
-    
-
+    // Lógica visual dos botões (PDF)
     if (diffDias >= 7) {
         if (btnPDF) {
             btnPDF.disabled = false;
             btnPDF.style.filter = "none";
-            btnPDF.style.opacity = "1";
-            btnPDF.style.cursor = "pointer";
-            btnPDF.style.backgroundColor = "#D62600"; // Cor Dourada/Premium (ou red se preferir)
+            btnPDF.style.backgroundColor = "#D62600";
             btnPDF.style.color = "#fff";
         }
-        if (msgTrava) msgTrava.innerHTML = "✅ Seu estudo Premium está pronto para download!";
+        if (msgTrava) msgTrava.innerHTML = "✅ Seu estudo Premium está pronto!";
         if (labelTempo) labelTempo.innerHTML = "LIBERADO!";
     } else {
-        // Ainda no período de 7 dias
         if (btnPDF) {
             btnPDF.disabled = true;
             btnPDF.style.filter = "grayscale(100%)";
         }
-        if (msgTrava) msgTrava.innerHTML = "🔒 PDF disponível após o período de garantia.";
+        if (msgTrava) msgTrava.innerHTML = "🔒 Relatório e PDF liberados após 7 dias.";
     }
 }
 
-
-
+    
 async function registrarDownloadRealizado() {
     try {
         // Envia para o Firebase que o PDF foi baixado
