@@ -6576,28 +6576,26 @@ function verificarLiberacaoPDF(dados) {
 async function registrarDownloadRealizado() {
     try {
         const urlParams = new URLSearchParams(window.location.search);
-        const userId = urlParams.get('user'); // Este é o ID que está na URL
+        const userId = urlParams.get('user'); // c_h_mantovanni_gmail_com7309242
         
-        // A SUA CHAVE DE AUTORIZAÇÃO (a mesma que está no Make)
-        const chaveAuth = "nzZklEc1GeqS2etO7pzOWryqqe7mOl4ETWLVMkTL";
-        
-        // Montamos a URL exatamente como o Make faz, com o ?auth=
-        const urlCompleta = `${DB_URL}vendas/${userId}.json?auth=${chaveAuth}`;
+        console.log("Atualizando Firebase para o usuário:", userId);
 
-        await fetch(urlCompleta, {
-            method: 'PATCH',
-            body: JSON.stringify({ pdf_baixado: true })
+        // Usamos o objeto 'firebase' que já está inicializado no seu sistema
+        // Acessamos a pasta 'vendas' e o ID do usuário
+        await firebase.database().ref('vendas/' + userId).update({
+            pdf_baixado: true
         });
         
-        console.log("Sucesso! Agora o Firebase autorizou a escrita.");
+        console.log("Sucesso! PDF marcado como baixado.");
         
+        // Bloqueia o botão na tela
         const btnPDF = document.getElementById("btn-pdf-premium");
         if (btnPDF) {
             btnPDF.disabled = true;
             btnPDF.style.filter = "grayscale(100%)";
         }
     } catch (e) {
-        console.error("Erro ao registrar:", e);
+        console.error("Erro fatal ao salvar no Firebase:", e);
     }
 }
     
