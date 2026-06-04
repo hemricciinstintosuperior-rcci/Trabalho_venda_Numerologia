@@ -6534,10 +6534,10 @@ function verificarLiberacaoPDF(dados) {
     // --- AQUI ESTÁ A SEPARAÇÃO DAS TRAVAS ---
     
     // 1. Relatório: Libera sempre que passar de 7 dias
-    acessoPremiumLiberado = (diffDias >= 7); 
+    acessoPremiumLiberado = (diffDias >= 8); 
     
     // 2. PDF: Libera se passou de 7 dias E não foi baixado
-    const podeBaixarPDF = (diffDias >= 7 && dados.pdf_baixado !== true);
+    const podeBaixarPDF = (diffDias >= 8 && dados.pdf_baixado !== true);
 
     // Lógica do Botão (PDF)
     if (btnPDF) {
