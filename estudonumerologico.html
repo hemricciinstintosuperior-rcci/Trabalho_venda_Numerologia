@@ -6423,104 +6423,62 @@ const emailLimpo = userEmail;
 
 
     
-// Substitua o início da inicializarSeguranca por isto:
 async function inicializarSeguranca() {
     try {
         const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
         
-        // userEmail aqui é a chave que veio na URL (já com o formato de _)
-        // Então não precisa converter, apenas usar como chave direta:
         let dados = todasVendas[userEmail];
         let emailLimpo = userEmail; 
-        // --- ADICIONE ISSO PARA DEBUGAR ---
-        console.log("DEBUGANDO DADOS:", dados); 
-        // ------
+
         if (!dados) {
              alert("Acesso não encontrado.");
              window.location.href = "index.html";
              return;
         }
-        
-        // ... (o resto da função permanece igual)
 
-// --- SUBSTITUA APENAS ESTE BLOCO DENTRO DA inicializarSeguranca ---
-// ... dentro da inicializarSeguranca ...
+        // 1. CÁLCULO DA DATA (COM VARIÁVEL DECLARADA FORA DO IF)
+        let diffDiasTotal = 0;
+        if (dados.data_inicio) {
+            const dataInicio = new Date(dados.data_inicio).getTime();
+            const agora = new Date().getTime();
+            diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+            let diasRestantes = 30 - diffDiasTotal;
 
-if (dados.data_inicio) {
-    const dataInicio = new Date(dados.data_inicio).getTime();
-    const agora = new Date().getTime();
-    const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
-    const diasRestantes = 30 - diffDiasTotal;
-
-    console.log("Cálculo realizado. Dias restantes:", diasRestantes);
-
-    // Damos um tempo para garantir que nada vai sobrescrever
-    setTimeout(() => {
-        const elementoValidade = document.getElementById("label-validade");
-        if (elementoValidade) {
-            elementoValidade.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
-            elementoValidade.style.color = "green"; // Só pra gente ver se mudou mesmo
+            // Atualiza o texto na tela
+            setTimeout(() => {
+                const elementoValidade = document.getElementById("label-validade");
+                if (elementoValidade) {
+                    elementoValidade.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
+                }
+            }, 1000);
         }
-    }, 2000); 
-}
 
-    console.log("Dias passados desde a compra:", diffDiasTotal);
+        // 2. VERIFICAÇÃO DE EXPIRAÇÃO
+        if (diffDiasTotal > 30) {
+            alert("Seu período de acesso de 30 dias expirou.");
+            window.location.href = "index.html";
+            return;
+        }
 
-    if (diffDiasTotal > 30) {
-        alert("Seu período de acesso de 30 dias expirou.");
-        window.location.href = "index.html";
-        return;
-    }
-
-// ------------------------------------------------------------------
-
-         //3. Verifica se o status é ativo
+        // 3. STATUS ATIVO
         if (dados.status === 'usado' || dados.status !== 'ativo') {
             alert("Este acesso expirou ou está inativo.");
             window.location.href = "index.html";
             return;
         }
 
-        // ---------------------------------------------------------
-        // AGORA SIM: Se passou em todos os testes acima, ativa a trava de sessão
-        // ---------------------------------------------------------
-        
-        // Registra que VOCÊ é o dono da sessão agora
-// --- COMENTE ESTAS LINHAS PARA O SCRIPT NÃO TRAVAR NO ERRO 401 ---
+        // 4. TRAVA DE SESSÃO (COMENTADA PARA EVITAR ERRO 401)
+        /*
+        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+            method: 'PATCH',
+            body: JSON.stringify({ sessao_ativa: sessionID })
+        });
+        */
 
-await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-    method: 'PATCH',
-    body: JSON.stringify({ sessao_ativa: sessionID })
-});
-
-
-        // Monitora se alguém entrar depois de você
-// Monitora se alguém entrou depois de você
-//setInterval(async () => {
-   // const r = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
-   // const s = await r.json();
-
-    // LÓGICA: Se o que está no Firebase (s) for diferente do ID que eu tenho (sessionID),
-    // significa que ALGUÉM SOBSCREVEU minha sessão, ou seja, alguém abriu em outro lugar.
-  //  if (s !== null && s !== sessionID) {
-       // alert("Acesso negado: este acesso foi aberto em outro dispositivo ou aba.");
-      //  window.location.href = "index.html";
-    //}
-//}, 3000); // Verificação a cada 3 segundos
-        
-        // ---------------------------------------------------------
-
-        // Continua com o carregamento normal do seu relatório
-// Continua com o carregamento normal do seu relatório
+        // 5. CARREGAMENTO DO RELATÓRIO
         dadosGlobais = dados; 
-        console.log("Dados recebidos no Matriz:", dados); // Para vermos o que tem dentro
-        
-        // Se 'data_inicio' for inválido, o timer vai bugar
         const dataReferencia = dados.data_inicio ? new Date(dados.data_inicio) : new Date();
-        
-        console.log("Data calculada:", dataReferencia);
-        
         const dataExpiracaoPDF = new Date(dataReferencia);
         dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
 
