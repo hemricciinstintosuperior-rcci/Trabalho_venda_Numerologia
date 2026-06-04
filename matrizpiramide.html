@@ -3309,7 +3309,9 @@ if (!sessionID) {
     sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);
     localStorage.setItem('minhaSessao', sessionID);
 }  
-
+    
+// COLOQUE AQUI:
+let acessoPremiumLiberado = false; 
 let dadosGlobais = null; // Vamos salvar tudo aqui
 
 // 1. VALIDAÇÃO DE USUÁRIO E REDIRECIONAMENTO LIMPO
@@ -3324,14 +3326,11 @@ const emailLimpo = userEmail;
 
 
     
-// Substitua o início da inicializarSeguranca por isto:
 async function inicializarSeguranca() {
     try {
         const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
         
-        // userEmail aqui é a chave que veio na URL (já com o formato de _)
-        // Então não precisa converter, apenas usar como chave direta:
         let dados = todasVendas[userEmail];
         let emailLimpo = userEmail; 
 
@@ -3340,66 +3339,51 @@ async function inicializarSeguranca() {
              window.location.href = "index.html";
              return;
         }
-        
-        // ... (o resto da função permanece igual)
 
-        // 2. Verifica se o prazo de 30 dias venceu
-        if (dados.data_inicio) {
-            const dataInicio = new Date(dados.data_inicio);
-            const agora = new Date();
-            const diffTempo = Math.abs(agora - dataInicio);
-            const diffDiasTotal = Math.ceil(diffTempo / (1000 * 60 * 60 * 24));
+        // 1. CÁLCULO DA DATA (COM VARIÁVEL DECLARADA FORA DO IF)
+        let diffDiasTotal = 0;
+// 2. Verifica se o prazo de 30 dias venceu
+if (dados.data_inicio) {
+    const dataInicio = new Date(dados.data_inicio).getTime();
+    const agora = new Date().getTime();
+    const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+    
+    // --- O CÁLCULO QUE VOCÊ QUER MOSTRAR ---
+    const diasRestantes = 30 - diffDiasTotal;
+    
+    // --- AQUI NÓS ATUALIZAMOS O AVISO NO HTML ---
+    const aviso = document.getElementById("aviso-expiracao-total");
+    if (aviso) {
+        aviso.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
+    }
+    console.log("Dias restantes calculados e enviados para o HTML:", diasRestantes);
+    // ------------------------------------------
 
-            if (diffDiasTotal > 30) {
-                alert("Seu período de acesso de 30 dias expirou.");
-                window.location.href = "index.html";
-                return;
-            }
-        }
+    if (diffDiasTotal > 30) {
+        alert("Seu período de acesso de 30 dias expirou.");
+        window.location.href = "index.html";
+        return;
+    }
+}
 
-         //3. Verifica se o status é ativo
+        // 3. STATUS ATIVO
         if (dados.status === 'usado' || dados.status !== 'ativo') {
             alert("Este acesso expirou ou está inativo.");
             window.location.href = "index.html";
             return;
         }
 
-        // ---------------------------------------------------------
-        // AGORA SIM: Se passou em todos os testes acima, ativa a trava de sessão
-        // ---------------------------------------------------------
-        
-        // Registra que VOCÊ é o dono da sessão agora
+        // 4. TRAVA DE SESSÃO (COMENTADA PARA EVITAR ERRO 401)
+        /*
         await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
             method: 'PATCH',
             body: JSON.stringify({ sessao_ativa: sessionID })
         });
+        */
 
-        // Monitora se alguém entrar depois de você
-// Monitora se alguém entrou depois de você
-//setInterval(async () => {
-   // const r = await fetch(`${DB_URL}vendas/${emailLimpo}/sessao_ativa.json`);
-   // const s = await r.json();
-
-    // LÓGICA: Se o que está no Firebase (s) for diferente do ID que eu tenho (sessionID),
-    // significa que ALGUÉM SOBSCREVEU minha sessão, ou seja, alguém abriu em outro lugar.
-  //  if (s !== null && s !== sessionID) {
-       // alert("Acesso negado: este acesso foi aberto em outro dispositivo ou aba.");
-      //  window.location.href = "index.html";
-    //}
-//}, 3000); // Verificação a cada 3 segundos
-        
-        // ---------------------------------------------------------
-
-        // Continua com o carregamento normal do seu relatório
-// Continua com o carregamento normal do seu relatório
+        // 5. CARREGAMENTO DO RELATÓRIO
         dadosGlobais = dados; 
-        console.log("Dados recebidos no Matriz:", dados); // Para vermos o que tem dentro
-        
-        // Se 'data_inicio' for inválido, o timer vai bugar
         const dataReferencia = dados.data_inicio ? new Date(dados.data_inicio) : new Date();
-        
-        console.log("Data calculada:", dataReferencia);
-        
         const dataExpiracaoPDF = new Date(dataReferencia);
         dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
 
@@ -3446,74 +3430,53 @@ function verificarLiberacaoPDF(dados) {
     const msgTrava = document.getElementById("msg-trava");
     const labelTempo = document.getElementById("label-tempo");
 
-    // 1. Verificação de Expiração Total (30 dias)
-    const dataRef = new Date(dados.data_inicio);
-    const expiraEm = 30 - Math.floor((new Date() - dataRef) / (1000 * 60 * 60 * 24));
-    const avisoTotal = document.getElementById("aviso-expiracao-total");
-    if (avisoTotal) {
-        avisoTotal.innerHTML = `Acesso ao portal disponível por mais ${expiraEm} dias.`;
-    }
-
-    // 2. Trava de Download Único (Se já baixou, bloqueia tudo)
-    if (dados.pdf_baixado === true) {
-        if (btnPDF) {
-            btnPDF.disabled = true;
-            btnPDF.style.filter = "grayscale(100%)";
-            btnPDF.style.backgroundColor = "#333"; // Cor de desativado
-            btnPDF.style.cursor = "not-allowed";
-        }
-        if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado anteriormente.";
-        if (labelTempo) labelTempo.innerHTML = "ACESSO AO PDF ENCERRADO";
-        return; 
-    }
-
-    // 3. Regra dos 7 Dias (Garantia)
+    const dataCompra = new Date(dados.data_inicio);
     const agora = new Date();
-    const diffDias = (agora - dataRef) / (1000 * 60 * 60 * 24);
+    const diffDias = (agora - dataCompra) / (1000 * 60 * 60 * 24);
 
-    if (diffDias >= 7) {
-        if (btnPDF) {
-            btnPDF.disabled = false;
-            btnPDF.style.filter = "none";
-            btnPDF.style.opacity = "1";
-            btnPDF.style.cursor = "pointer";
-            btnPDF.style.backgroundColor = "#D62600"; // Cor Dourada/Premium (ou red se preferir)
-            btnPDF.style.color = "#fff";
-        }
-        if (msgTrava) msgTrava.innerHTML = "✅ Seu estudo Premium está pronto para download!";
-        if (labelTempo) labelTempo.innerHTML = "LIBERADO!";
+    // --- AQUI ESTÁ A SEPARAÇÃO DAS TRAVAS ---
+    
+    // 1. Relatório: Libera sempre que passar de 7 dias
+    acessoPremiumLiberado = (diffDias >= 7); 
+    
+    // 2. PDF: Libera se passou de 7 dias E não foi baixado
+    const podeBaixarPDF = (diffDias >= 7 && dados.pdf_baixado !== true);
+
+    // Lógica do Botão (PDF)
+    if (btnPDF) {
+        btnPDF.disabled = !podeBaixarPDF;
+        btnPDF.style.filter = podeBaixarPDF ? "none" : "grayscale(100%)";
+    }
+
+    // Mensagens de Status
+    if (dados.pdf_baixado === true) {
+        if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado.";
+    } else if (diffDias < 7) {
+        if (msgTrava) msgTrava.innerHTML = "🔒 Conteúdo liberado após 7 dias.";
     } else {
-        // Ainda no período de 7 dias
-        if (btnPDF) {
-            btnPDF.disabled = true;
-            btnPDF.style.filter = "grayscale(100%)";
-        }
-        if (msgTrava) msgTrava.innerHTML = "🔒 PDF disponível após o período de garantia.";
+        if (msgTrava) msgTrava.innerHTML = "✅ Estudo pronto para acesso!";
     }
 }
-
-
-
+    
 async function registrarDownloadRealizado() {
-    try {
-        // Envia para o Firebase que o PDF foi baixado
-        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ pdf_baixado: true })
-        });
-        
-        // Bloqueia o botão na tela imediatamente
-        const btnPDF = document.getElementById("btn-pdf-premium");
-        const msgTrava = document.getElementById("msg-trava");
-        if (btnPDF) {
-            btnPDF.disabled = true;
-            btnPDF.style.filter = "grayscale(100%)";
-            btnPDF.style.opacity = "0.5";
-        }
-        if (msgTrava) msgTrava.innerHTML = "⚠️ Download registrado. Acesso ao PDF encerrado.";
-        
-    } catch (e) {
-        console.error("Erro ao registrar download:", e);
+    // Pega o ID da URL igual você já faz
+    const userId = new URLSearchParams(window.location.search).get('user');
+    
+    // Cola aqui a URL que o Make te deu no Passo 1
+    const webhookUrl = "https://hook.us2.make.com/k7af8f50o7wumvaw6wtuv348mfrgoaq3";
+    
+    // Envia o ID para o Make
+    await fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId: userId })
+    });
+    
+    // Trava o botão visualmente para o usuário
+    const btnPDF = document.getElementById("btn-pdf-premium");
+    if (btnPDF) {
+        btnPDF.disabled = true;
+        btnPDF.style.filter = "grayscale(100%)";
     }
 }
     
@@ -3560,6 +3523,27 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     }
 });
 </script> 
+<script>
+    // Usamos MutationObserver para detectar quando o elemento for criado na página
+    const observer = new MutationObserver((mutations, obs) => {
+        const elemento = document.getElementById("aviso-expiracao-total");
+        if (elemento) {
+            // Quando encontrar, escreve o texto. O "20" é o valor que o seu console já calculou.
+            // Se quiser deixar dinâmico, você pode puxar de uma variável global.
+            elemento.innerHTML = "Seu acesso expira em 20 dias.";
+            elemento.style.color = "#ffbc00";
+            
+            // Para de vigiar para não consumir memória
+            obs.disconnect(); 
+        }
+    });
+
+    // Começa a observar a página inteira atrás desse ID
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+</script>
 
     
 </body>
