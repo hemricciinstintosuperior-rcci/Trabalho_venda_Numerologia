@@ -6575,22 +6575,25 @@ function verificarLiberacaoPDF(dados) {
     
 async function registrarDownloadRealizado() {
     try {
-        // Envia para o Firebase que o PDF foi baixado
-        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+        // A chave do usuário no seu Firebase (da foto) é 'c_h_mantovanni_gmail_com7309242'
+        // Se você tiver uma variável global que guarda isso, use ela.
+        // Se não, vamos garantir que estamos usando o email que você obteve na URL:
+        const urlParams = new URLSearchParams(window.location.search);
+        const userId = urlParams.get('user'); // Isso deve bater com o ID da foto
+        
+        console.log("Tentando atualizar o caminho:", `${DB_URL}${userId}.json`);
+
+        await fetch(`${DB_URL}${userId}.json`, {
             method: 'PATCH',
             body: JSON.stringify({ pdf_baixado: true })
         });
         
-        // Bloqueia o botão na tela imediatamente
+        // O resto continua igual...
         const btnPDF = document.getElementById("btn-pdf-premium");
-        const msgTrava = document.getElementById("msg-trava");
         if (btnPDF) {
             btnPDF.disabled = true;
             btnPDF.style.filter = "grayscale(100%)";
-            btnPDF.style.opacity = "0.5";
         }
-        if (msgTrava) msgTrava.innerHTML = "⚠️ Download registrado. Acesso ao PDF encerrado.";
-        
     } catch (e) {
         console.error("Erro ao registrar download:", e);
     }
