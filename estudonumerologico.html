@@ -6433,7 +6433,9 @@ async function inicializarSeguranca() {
         // Então não precisa converter, apenas usar como chave direta:
         let dados = todasVendas[userEmail];
         let emailLimpo = userEmail; 
-
+        // --- ADICIONE ISSO PARA DEBUGAR ---
+        console.log("DEBUGANDO DADOS:", dados); 
+        // ------
         if (!dados) {
              alert("Acesso não encontrado.");
              window.location.href = "index.html";
