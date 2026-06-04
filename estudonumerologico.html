@@ -5441,19 +5441,26 @@ html += `
         // Se acessoPremiumLiberado for false, estaTravado vira true
         const estaTravado = !acessoPremiumLiberado; 
 
+
         html += ` 
             <div class="evitar-corte" style="margin-bottom: 30px;">
                 <span style="color: #d97a1e; font-weight: bold; font-size: 20px; text-transform: uppercase;">
-                   Idade ${info.idade} -  Data ${info.anos}
+                   Idade ${info.idade} - Data ${info.anos}
                 </span><br>
-                <div class="conteudo-travado">
-                    <div class="evitar-corte" class="texto-res">
-                    ${aplicarFiltroTexto(textos[sec][i][res[sec][i]])}
-                </div></div>
-                        <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO NO PDF
-
-         </div>
+                
+                ${estaTravado ? `
+                   
+                    <div class="aviso-trava" style="text-align: center; padding: 20px; border: 1px dashed #d97a1e;">
+                        🔒 CONTEÚDO PREMIUM LIBERADO NO 8º DIA
+                    </div>
+                ` : `
+                   
+                    <div class="conteudo-travado">
+                        <div class="evitar-corte" class="texto-res">
+                            ${aplicarFiltroTexto(textos[sec][i][res[sec][i]])}
+                        </div>
+                    </div>
+                `}
                   <hr style="border:0; border-top:1px solid #ffffff; margin-top: 15px;">
                  
   
