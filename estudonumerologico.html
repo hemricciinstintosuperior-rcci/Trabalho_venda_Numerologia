@@ -6620,19 +6620,26 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     }
 });
 </script> 
- <script>
-    console.log("TESTE DE FORÇA BRUTA RODANDO...");
-    const tentativaFinal = setInterval(() => {
+<script>
+    // Usamos MutationObserver para detectar quando o elemento for criado na página
+    const observer = new MutationObserver((mutations, obs) => {
         const elemento = document.getElementById("aviso-expiracao-total");
         if (elemento) {
-            elemento.innerHTML = "Acesso verificado com sucesso!";
-            elemento.style.color = "lime";
-            console.log("Texto alterado com sucesso!");
-            clearInterval(tentativaFinal);
-        } else {
-            console.log("Ainda esperando o elemento...");
+            // Quando encontrar, escreve o texto. O "20" é o valor que o seu console já calculou.
+            // Se quiser deixar dinâmico, você pode puxar de uma variável global.
+            elemento.innerHTML = "Seu acesso expira em 20 dias.";
+            elemento.style.color = "#ffbc00";
+            
+            // Para de vigiar para não consumir memória
+            obs.disconnect(); 
         }
-    }, 500);
+    });
+
+    // Começa a observar a página inteira atrás desse ID
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
 </script>
 </body>
 </html>
