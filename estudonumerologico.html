@@ -6449,8 +6449,14 @@ if (dados.data_inicio) {
     const dataInicio = new Date(dados.data_inicio).getTime(); // Converte para milissegundos
     const agora = new Date().getTime();
     
-    // Calcula a diferença em dias reais
-    const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+const diasRestantes = 30 - diffDiasTotal; // <-- CALCULAMOS O QUE FALTA
+
+// --- ADICIONE ESTA LINHA ---
+const campoValidade = document.getElementById("label-validade"); // Verifique se o ID no seu HTML é exatamente esse
+if (campoValidade) {
+    campoValidade.innerHTML = Seu acesso expira em ${diasRestantes} dias.;
+}
 
     console.log("Dias passados desde a compra:", diffDiasTotal);
 
@@ -6475,12 +6481,12 @@ if (dados.data_inicio) {
         
         // Registra que VOCÊ é o dono da sessão agora
 // --- COMENTE ESTAS LINHAS PARA O SCRIPT NÃO TRAVAR NO ERRO 401 ---
-/*
+
 await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
     method: 'PATCH',
     body: JSON.stringify({ sessao_ativa: sessionID })
 });
-*/
+
 
         // Monitora se alguém entrar depois de você
 // Monitora se alguém entrou depois de você
