@@ -6444,19 +6444,23 @@ async function inicializarSeguranca() {
         
         // ... (o resto da função permanece igual)
 
-        // 2. Verifica se o prazo de 30 dias venceu
-        if (dados.data_inicio) {
-            const dataInicio = new Date(dados.data_inicio);
-            const agora = new Date();
-            const diffTempo = Math.abs(agora - dataInicio);
-            const diffDiasTotal = Math.ceil(diffTempo / (1000 * 60 * 60 * 24));
+// --- SUBSTITUA APENAS ESTE BLOCO DENTRO DA inicializarSeguranca ---
+if (dados.data_inicio) {
+    const dataInicio = new Date(dados.data_inicio).getTime(); // Converte para milissegundos
+    const agora = new Date().getTime();
+    
+    // Calcula a diferença em dias reais
+    const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
 
-            if (diffDiasTotal > 30) {
-                alert("Seu período de acesso de 30 dias expirou.");
-                window.location.href = "index.html";
-                return;
-            }
-        }
+    console.log("Dias passados desde a compra:", diffDiasTotal);
+
+    if (diffDiasTotal > 30) {
+        alert("Seu período de acesso de 30 dias expirou.");
+        window.location.href = "index.html";
+        return;
+    }
+}
+// ------------------------------------------------------------------
 
          //3. Verifica se o status é ativo
         if (dados.status === 'usado' || dados.status !== 'ativo') {
