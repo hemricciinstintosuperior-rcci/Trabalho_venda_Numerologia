@@ -6474,10 +6474,13 @@ if (dados.data_inicio) {
         // ---------------------------------------------------------
         
         // Registra que VOCÊ é o dono da sessão agora
-        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ sessao_ativa: sessionID })
-        });
+// --- COMENTE ESTAS LINHAS PARA O SCRIPT NÃO TRAVAR NO ERRO 401 ---
+/*
+await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+    method: 'PATCH',
+    body: JSON.stringify({ sessao_ativa: sessionID })
+});
+*/
 
         // Monitora se alguém entrar depois de você
 // Monitora se alguém entrou depois de você
