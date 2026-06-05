@@ -876,6 +876,21 @@ input[type="text"], select {
     /* Adicione isso abaixo para o select ocupar o mesmo comportamento */
     box-sizing: border-box; 
 }  
+
+
+
+
+    /* Esconde o link na tela normal */
+    .link-pdf-apenas { display: none !important; }
+
+    /* Quando mandar imprimir ou gerar PDF, faz a mágica */
+    @media print {
+        .video-container { display: none !important; } /* Esconde o vídeo que não funciona no papel */
+        .link-pdf-apenas { display: block !important; } /* Mostra o link no papel */
+    }
+
+
+    
     
     </style>
 
