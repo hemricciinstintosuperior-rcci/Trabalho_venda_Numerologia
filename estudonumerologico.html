@@ -5080,7 +5080,13 @@ html += `
 
 // ==========================================
 // BLOCO INDIVIDUAL: CAMINHO DE VIDA
-// ==========================================
+// --- IMPLEMENTAÇÃO DO VÍDEO NO CAMINHO DE VIDA ---
+const resCaminho = textos.CaminhodeVida[res.CaminhodeVida];
+
+// Verifica se o resultado é um objeto (novo formato) ou apenas string (antigo)
+const textoCaminho = (typeof resCaminho === 'object') ? resCaminho.conteudo : resCaminho;
+const videoCaminho = (typeof resCaminho === 'object') ? resCaminho.videoID : null;
+
 tituloBonito = "Caminho de Vida"; 
 html += `
 <div class="separador-luxo">
@@ -5091,9 +5097,13 @@ html += `
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
     <div class="intro-texto">${textos.introducoes.CaminhodeVida || ""}</div>
-    <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.CaminhodeVida[res.CaminhodeVida])}</div>
+    <div class="evitar-corte texto-res">
+        ${aplicarFiltroTexto(textoCaminho)}
+        ${videoCaminho ? gerarPlayerYouTube(videoCaminho) : ""}
+    </div>
 </div>
 `;
+
 
 // ==========================================
 // BLOCO INDIVIDUAL: PROPÓSITO
