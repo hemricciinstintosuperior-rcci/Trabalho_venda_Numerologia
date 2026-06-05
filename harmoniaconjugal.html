@@ -2964,7 +2964,8 @@ async function inicializarSeguranca() {
     try {
         const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
-        
+        // Dentro da inicializarSeguranca
+
         let dados = todasVendas[userEmail];
         let emailLimpo = userEmail; 
 
@@ -2984,7 +2985,7 @@ if (dados.data_inicio) {
     
     // --- O CÁLCULO QUE VOCÊ QUER MOSTRAR ---
     const diasRestantes = 30 - diffDiasTotal;
-    
+    window.diasRestantesGlobais = 30 - diffDiasTotal; // O "window." torna a variável visível para todo o site
     // --- AQUI NÓS ATUALIZAMOS O AVISO NO HTML ---
     const aviso = document.getElementById("aviso-expiracao-total");
     if (aviso) {
@@ -3019,7 +3020,7 @@ if (dados.data_inicio) {
         dadosGlobais = dados; 
         const dataReferencia = dados.data_inicio ? new Date(dados.data_inicio) : new Date();
         const dataExpiracaoPDF = new Date(dataReferencia);
-        dataExpiracaoPDF.setDate(dataReferencia.getDate() + 7); 
+        dataExpiracaoPDF.setDate(dataReferencia.getDate() + 8); 
 
         iniciarTimer(dataExpiracaoPDF);
         verificarLiberacaoPDF(dados);
@@ -3071,10 +3072,10 @@ function verificarLiberacaoPDF(dados) {
     // --- AQUI ESTÁ A SEPARAÇÃO DAS TRAVAS ---
     
     // 1. Relatório: Libera sempre que passar de 7 dias
-    acessoPremiumLiberado = (diffDias >= 7); 
+    acessoPremiumLiberado = (diffDias >= 8); 
     
     // 2. PDF: Libera se passou de 7 dias E não foi baixado
-    const podeBaixarPDF = (diffDias >= 7 && dados.pdf_baixado !== true);
+    const podeBaixarPDF = (diffDias >= 8 && dados.pdf_baixado !== true);
 
     // Lógica do Botão (PDF)
     if (btnPDF) {
@@ -3086,7 +3087,7 @@ function verificarLiberacaoPDF(dados) {
     if (dados.pdf_baixado === true) {
         if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado.";
     } else if (diffDias < 7) {
-        if (msgTrava) msgTrava.innerHTML = "🔒 Conteúdo liberado após 7 dias.";
+        if (msgTrava) msgTrava.innerHTML = "🔒 Conteúdo liberado após 8 dias.";
     } else {
         if (msgTrava) msgTrava.innerHTML = "✅ Estudo pronto para acesso!";
     }
@@ -3157,14 +3158,15 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     }
 });
 </script> 
+
+        
 <script>
-    // Usamos MutationObserver para detectar quando o elemento for criado na página
     const observer = new MutationObserver((mutations, obs) => {
         const elemento = document.getElementById("aviso-expiracao-total");
-        if (elemento) {
-            // Quando encontrar, escreve o texto. O "20" é o valor que o seu console já calculou.
-            // Se quiser deixar dinâmico, você pode puxar de uma variável global.
-            elemento.innerHTML = "Seu acesso expira em 20 dias.";
+        
+        // Verifica se o elemento existe e se o valor global foi definido
+        if (elemento && window.diasRestantesGlobais !== undefined) {
+            elemento.innerHTML = `Seu acesso expira em ${window.diasRestantesGlobais} dias.`;
             elemento.style.color = "#ffbc00";
             
             // Para de vigiar para não consumir memória
@@ -3172,13 +3174,11 @@ document.getElementById('btnVideo').addEventListener('click', function() {
         }
     });
 
-    // Começa a observar a página inteira atrás desse ID
     observer.observe(document.body, {
         childList: true,
         subtree: true
     });
 </script>
-
 
 
     
