@@ -4463,47 +4463,37 @@ html += `
         flex-grow: 1;
     ">
 ${listaItensSintese.map(item => {
-    // 1. Configuração da Trava Automática
-    // Se não estiver liberado (acessoPremiumLiberado = false), estes itens serão travados
+    // 1. Definição das travas (Verifique se 'acessoPremiumLiberado' existe)
     const itensPremium = ["Caminho de Vida", "Ciclos da Vida", "Desafios", "Momentos de Decisão"];
-    const ehPremium = itensPremium.includes(item.label);
-    const estaTravado = ehPremium && !acessoPremiumLiberado;
-    // Busca apenas o ID do vídeo para este resultado
-    const videoID = buscarVideoID(item.categoria, item.valor);
-    // 2. Função de Segurança para tratar Objetos/Arrays (Anti-Erro [object Object])
-    const formatarValorSeguro = (valor) => {
-        if (valor === null || valor === undefined) return "--";
-        if (typeof valor === 'object') {
-            return Object.values(valor).filter(v => v !== "").join(" · ");
-        }
-        return valor.toString();
-    };
+    const estaTravado = itensPremium.includes(item.label) && !acessoPremiumLiberado;
 
-    // 3. Aplicação do valor formatado
-    let exibicaoValor = estaTravado ? "🔒 CONTEÚDO PREMIUM" : formatarValorSeguro(item.valor);
+    // 2. CORREÇÃO DO [object Object]:
+    // Se o valor for um objeto (como nos ciclos/desafios), vamos formatar para texto legível
+    let exibicaoValor = "";
+    if (estaTravado) {
+        exibicaoValor = "🔒 CONTEÚDO PREMIUM";
+    } else if (typeof item.valor === 'object') {
+        // Pega os valores do objeto e transforma em texto
+        exibicaoValor = Object.values(item.valor).join(' · ');
+    } else {
+        exibicaoValor = item.valor;
+    }
 
-    // 4. Lógica de Font-Size (Declarada no topo, sem riscos de erro)
-    let fontSize = "18px";
-    let valorStr = exibicaoValor.toString();
-    if (valorStr.length > 15) fontSize = "12px";
-    else if (valorStr.length > 10) fontSize = "15px";
-    else if (valorStr.length > 5) fontSize = "18px";
+    // 3. BUSCA O VÍDEO (Forçada)
+    // Se o campo categoria não estiver preenchido na lista, vamos tentar adivinhar pelo Label
+    const categoriaBusca = item.categoria || item.label.replace(/\s+/g, '');
+    const videoID = buscarVideoID(categoriaBusca, item.valor);
 
-    // 5. HTML do Card
-
-
+    // 4. HTML (O botão aparecerá se videoID existir e não estiver travado)
     return `
-  <div style="border: 1px solid #ccc; padding: 10px; margin: 5px; text-align: center;">
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 5px;">
         <div style="font-weight: bold;">${item.label}</div>
-        <div>${estaTravado ? "🔒 PREMIUM" : item.valor}</div>
-
-      
+        <div>${exibicaoValor}</div>
+        
         ${(videoID && !estaTravado) ? `
-            <div style="margin-top: 8px;">
-                <button onclick="gerarPlayerYouTube('${videoID}')" style="background: #d97a1e; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 3px;">
-                    🎥 Assistir Vídeo
-                </button>
-            </div>
+            <button onclick="gerarPlayerYouTube('${videoID}')" style="margin-top: 5px; background: #d97a1e; color: white;">
+                🎥 Assistir Vídeo
+            </button>
         ` : ""}
     </div>
     `;
