@@ -5187,7 +5187,13 @@ const resPropósito = textos.Propósito[res.Propósito];
 // Verifica se o resultado é um objeto (novo formato) ou apenas string (antigo)
 const textoPropósito = (typeof resPropósito === 'object') ? resPropósito.conteudo : resPropósito;
 const videoPropósito = (typeof resPropósito === 'object') ? resPropósito.videoID : null;
-    
+    // Dentro da sua função que renderiza o bloco do Propósito:
+const dados = textos["Propósito"][res.Propósito]; // Ajuste conforme sua variável
+console.log("Debug Propósito:", dados); 
+
+const conteudo = (typeof dados === 'object') ? dados.conteudo : dados;
+// Se o console mostrar apenas o texto, mas 'conteudo' ficar vazio, 
+// é porque a chave não é 'conteudo'.
 tituloBonito = "Propósito"; 
 html += `
 <div class="separador-luxo">
