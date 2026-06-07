@@ -6725,21 +6725,7 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     });
 </script>
 
-<script>
-        // COLE O SEU NOVO CÓDIGO AQUI
-        document.addEventListener('click', function(e) {
-            if (e.target && e.target.classList.contains('btn-video')) {
-                const id = e.target.getAttribute('data-id');
-                console.log("Botão clicado, ID capturado:", id);
-                
-                if (typeof gerarPlayerYouTube === 'function') {
-                    gerarPlayerYouTube(id);
-                } else {
-                    console.error("ERRO: A função gerarPlayerYouTube não existe!");
-                }
-            }
-        });
-    </script>
+
 </body>
 
         
