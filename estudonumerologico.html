@@ -3321,31 +3321,28 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
        
 
 function buscarVideoID(categoria, valor) {
-    // 1. Acesso direto ao objeto global
-    const banco = window.textos;
-    
-    // 2. Se o banco não existe, o problema é o carregamento do arquivo .js
-    if (!banco) {
-        console.error("ERRO CRÍTICO: O objeto 'textos' está vazio ou não foi carregado!");
-        return null;
-    }
+    // 1. Verifica se 'textos' existe e se a categoria existe nele
+    if (typeof textos === 'undefined' || !textos[categoria]) return null;
 
-    // 3. Acesso à categoria
-    const dadosCategoria = banco[categoria];
-    if (!dadosCategoria) {
-        console.warn(`Atenção: A categoria '${categoria}' não existe no objeto textos.`);
-        return null;
-    }
+    const categoriaDados = textos[categoria];
+    const item = categoriaDados[valor];
 
-    // 4. Acesso ao item e validação do videoID
-    const item = dadosCategoria[valor];
-    if (item && item.videoID) {
+    // 2. Se o item não existe, retorna null
+    if (!item) return null;
+
+    // 3. SE O SEU OBJETO TIVER A PROPRIEDADE 'videoID' DENTRO:
+    if (item.videoID) {
         return item.videoID;
-    } else {
-        console.warn(`Atenção: O item ${categoria}[${valor}] não tem um videoID configurado.`);
-        return null;
-    }
-}     
+    } 
+    
+    // 4. SE O SEU OBJETO FOR APENAS O TEXTO (COMO NO LOG):
+    // Se o seu textos.js está estruturado como '1': '<h3>Texto...</h3>',
+    // a busca vai falhar porque não existe 'videoID' ali dentro.
+    // NESTE CASO, você deve usar a biblioteca externa (Opção 2 que conversamos).
+    
+    console.warn(`DEBUG: O item ${categoria}[${valor}] não possui campo videoID.`);
+    return null;
+}
         
 function gerarMapaCompleto() {
     const nomeRaw = document.getElementById("nome").value.trim();
