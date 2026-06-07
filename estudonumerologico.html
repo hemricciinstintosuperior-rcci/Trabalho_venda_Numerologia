@@ -3321,22 +3321,30 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
 }
 
 function buscarVideoID(categoria, valor) {
-
-  console.log(categoria, valor)  
-    // 1. Acessa a categoria dentro do objeto 'textos'
-    const dadosCategoria = textos[categoria]; 
-    
-    // 2. Se a categoria ou o valor não existirem, retorna null
-    if (!dadosCategoria || !dadosCategoria[valor]) {
+    // Valida se o objeto 'textos' existe
+    if (typeof textos === 'undefined') {
+        console.warn("DEBUG: Objeto 'textos' não foi carregado!");
         return null;
     }
 
-    // 3. Pega o objeto que tem { conteudo: "...", videoID: "..." }
-    const dadosItem = dadosCategoria[valor];
+    const dadosCategoria = textos[categoria];
+    
+    // Testa se a categoria existe
+    if (!dadosCategoria) {
+        console.warn(`DEBUG: Categoria '${categoria}' não encontrada no textos.js`);
+        return null;
+    }
 
-    // 4. Retorna o videoID se ele existir
+    // Testa se o valor existe dentro da categoria
+    const dadosItem = dadosCategoria[valor];
+    if (!dadosItem) {
+        console.warn(`DEBUG: Valor '${valor}' não encontrado na categoria '${categoria}'`);
+        return null;
+    }
+
+    // Retorna o ID
     return dadosItem.videoID || null;
-} 
+}
        
         
         
