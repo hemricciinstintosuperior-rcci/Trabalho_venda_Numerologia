@@ -3484,9 +3484,7 @@ if (nomesArray && nomesArray.length > 0) {
     numInicio = calcularValorCabalisticoCompleto(letraInicio);
     numFim = calcularValorCabalisticoCompleto(letraFim);
 
-    // BUSCA NO BANCO (Verifique se o nome é bancoEquilibrio ou bancoEquilibrioUnificado)
-    // Adicionei um console.log para você ver no F12 se a chave está certa
-    console.log("Buscando chaves:", chaveInic, chaveConc);
+
 
     if(typeof bancoEquilibrioUnificado !== 'undefined'){
         txtFinalInic = bancoEquilibrioUnificado.inicio[chaveInic] || "Texto não encontrado para: " + chaveInic;
@@ -5182,18 +5180,10 @@ html += `
 // BLOCO INDIVIDUAL: PROPÓSITO
 // ==========================================
 
-const resPropósito = textos.Propósito[res.Propósito];
 
-// Verifica se o resultado é um objeto (novo formato) ou apenas string (antigo)
-const textoPropósito = (typeof resPropósito === 'object') ? resPropósito.conteudo : resPropósito;
-const videoPropósito = (typeof resPropósito === 'object') ? resPropósito.videoID : null;
-    // Dentro da sua função que renderiza o bloco do Propósito:
-const dados = textos["Propósito"][res.Propósito]; // Ajuste conforme sua variável
-console.log("Debug Propósito:", dados); 
 
-const conteudo = (typeof dados === 'object') ? dados.conteudo : dados;
-// Se o console mostrar apenas o texto, mas 'conteudo' ficar vazio, 
-// é porque a chave não é 'conteudo'.
+
+
 tituloBonito = "Propósito"; 
 html += `
 <div class="separador-luxo">
