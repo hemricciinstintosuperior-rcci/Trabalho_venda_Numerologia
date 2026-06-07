@@ -890,7 +890,13 @@ input[type="text"], select {
     }
 
 
-    @media print {
+@media print {
+    /* Esconde o botão que você clica na tela */
+    .btn-sintese {
+        display: none !important;
+    }
+
+    /* Garante que o link do PDF apareça */
     .link-pdf-apenas {
         display: block !important;
     }
@@ -4468,7 +4474,7 @@ const videoID = buscarVideoID(item.categoria, chaveParaBusca);
     <div>${exibicaoValor}</div>
     
 ${(videoID && !estaTravado) ? `
-    <button onclick="abrirVideoNovaAba('${videoID}')" style="margin-top: 5px; background: #d97a1e; color: white; cursor: pointer;">
+    <button onclick="abrirVideoNovaAba('${videoID}')" class="btn-sintese" style="margin-top: 5px; background: #d97a1e; color: white; cursor: pointer;">
         🎥 Assistir Vídeo
     </button>
 
