@@ -3262,7 +3262,7 @@ function verificarGêneroEGerar() {
 
 
    // Exemplo de como deve estar o seu "Dicionário de Vídeos"
-let bibliotecaVideos = {
+const bibliotecaVideos = {
     dia: { "1": "ID_VIDEO_1", "2": "ID_VIDEO_2", "22": "ID_VIDEO_22" },
     CaminhodeVida: { "1": "ID_VIDEO_ESSENCIA_1", "11": "ID_VIDEO_ESSENCIA_11" },
     Propósito: { "1": "ID_VIDEO_EQ_1", "2": "ID_VIDEO_EQ_2" }
@@ -3321,24 +3321,38 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
 }
 
 function buscarVideoID(categoria, valor) {
-    // Tenta usar a variável 'textos' que o arquivo carregou
-    // Se o objeto 'textos' não existir, tenta ver se ele está no window (global)
-    const banco = typeof textos !== 'undefined' ? textos : (window.textos || null);
-    
-    if (!banco) {
-        console.warn("DEBUG: Banco de textos não encontrado.");
-        return null;
-    }
+    // 1. Verifica se 'textos' existe e se a categoria existe nele
+    if (typeof textos === 'undefined' || !textos[categoria]) return null;
 
-    // Agora busca a categoria e o vídeo
-    if (banco[categoria] && banco[categoria][valor]) {
-        return banco[categoria][valor].videoID || null;
-    }
+    const categoriaDados = textos[categoria];
+    const item = categoriaDados[valor];
+
+    // 2. Se o item não existe, retorna null
+    if (!item) return null;
+
+    // 3. SE O SEU OBJETO TIVER A PROPRIEDADE 'videoID' DENTRO:
+    if (item.videoID) {
+        return item.videoID;
+    } 
     
+    // 4. SE O SEU OBJETO FOR APENAS O TEXTO (COMO NO LOG):
+    // Se o seu textos.js está estruturado como '1': '<h3>Texto...</h3>',
+    // a busca vai falhar porque não existe 'videoID' ali dentro.
+    // NESTE CASO, você deve usar a biblioteca externa (Opção 2 que conversamos).
+    
+    console.warn(`DEBUG: O item ${categoria}[${valor}] não possui campo videoID.`);
     return null;
 }
        
-        
+
+    function buscarVideoID(categoria, valor) {
+        if (typeof bibliotecaVideos !== 'undefined' && 
+            bibliotecaVideos[categoria] && 
+            bibliotecaVideos[categoria][valor]) {
+            return bibliotecaVideos[categoria][valor];
+        }
+        return null;
+    }       
         
 function gerarMapaCompleto() {
     const nomeRaw = document.getElementById("nome").value.trim();
