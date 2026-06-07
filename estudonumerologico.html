@@ -3262,7 +3262,7 @@ function verificarGêneroEGerar() {
 
 
    // Exemplo de como deve estar o seu "Dicionário de Vídeos"
-const bibliotecaVideos = {
+let bibliotecaVideos = {
     dia: { "1": "ID_VIDEO_1", "2": "ID_VIDEO_2", "22": "ID_VIDEO_22" },
     CaminhodeVida: { "1": "ID_VIDEO_ESSENCIA_1", "11": "ID_VIDEO_ESSENCIA_11" },
     Propósito: { "1": "ID_VIDEO_EQ_1", "2": "ID_VIDEO_EQ_2" }
@@ -3321,29 +3321,21 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
 }
 
 function buscarVideoID(categoria, valor) {
-    // Valida se o objeto 'textos' existe
-    if (typeof textos === 'undefined') {
-        console.warn("DEBUG: Objeto 'textos' não foi carregado!");
-        return null;
-    }
-
-    const dadosCategoria = textos[categoria];
+    // Tenta usar a variável 'textos' que o arquivo carregou
+    // Se o objeto 'textos' não existir, tenta ver se ele está no window (global)
+    const banco = typeof textos !== 'undefined' ? textos : (window.textos || null);
     
-    // Testa se a categoria existe
-    if (!dadosCategoria) {
-        console.warn(`DEBUG: Categoria '${categoria}' não encontrada no textos.js`);
+    if (!banco) {
+        console.warn("DEBUG: Banco de textos não encontrado.");
         return null;
     }
 
-    // Testa se o valor existe dentro da categoria
-    const dadosItem = dadosCategoria[valor];
-    if (!dadosItem) {
-        console.warn(`DEBUG: Valor '${valor}' não encontrado na categoria '${categoria}'`);
-        return null;
+    // Agora busca a categoria e o vídeo
+    if (banco[categoria] && banco[categoria][valor]) {
+        return banco[categoria][valor].videoID || null;
     }
-
-    // Retorna o ID
-    return dadosItem.videoID || null;
+    
+    return null;
 }
        
         
