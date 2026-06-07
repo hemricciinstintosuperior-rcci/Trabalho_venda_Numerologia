@@ -4443,7 +4443,8 @@ ${listaItensSintese.map(item => {
     const itensPremium = ["Caminho de Vida", "Ciclos da Vida", "Desafios", "Momentos de Decisão"];
     const ehPremium = itensPremium.includes(item.label);
     const estaTravado = ehPremium && !acessoPremiumLiberado;
-
+    // Busca apenas o ID do vídeo para este resultado
+    const videoID = buscarVideoID(item.categoria, item.valor);
     // 2. Função de Segurança para tratar Objetos/Arrays (Anti-Erro [object Object])
     const formatarValorSeguro = (valor) => {
         if (valor === null || valor === undefined) return "--";
@@ -4464,18 +4465,20 @@ ${listaItensSintese.map(item => {
     else if (valorStr.length > 5) fontSize = "18px";
 
     // 5. HTML do Card
-    // Busca apenas o ID do vídeo para este resultado
-    const videoID = buscarVideoID(item.categoria, item.valor);
+
 
     return `
     <div style="/* seus estilos */">
         <div style="/* título */">${item.label}</div>
         <div style="/* resultado numérico */">${exibicaoValor}</div>
 
+      
         ${(videoID && !estaTravado) ? `
-            <a href="#" onclick="gerarPlayerYouTube('${videoID}'); return false;" style="text-decoration: none; display: block; margin-top: 5px;">
-                <span style="font-size: 14px; color: #d97a1e;">🎥 Assistir Vídeo ▶️</span>
-            </a>
+            <div style="margin-top: 8px;">
+                <button onclick="gerarPlayerYouTube('${videoID}')" style="background: #d97a1e; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 3px;">
+                    🎥 Assistir Vídeo
+                </button>
+            </div>
         ` : ""}
     </div>
     `;
