@@ -3297,34 +3297,35 @@ function gerarPlayerYouTube(videoID) {
 }        
 
 
-function gerarPlayerSintese(videoID) {
+function gerarPlayerSintese(id) {
+    // 1. Segurança: se não tiver ID, nem tenta rodar
     if (!id) {
         console.error("ID de vídeo inválido!");
         return;
     }
 
-    // Monta o HTML com o ID correto do YouTube
+    // 2. Monta o HTML do player (sem o ?autoplay=1, então ele não toca sozinho)
+    // Lembre-se de usar o cifrão ${id} para o ID entrar corretamente
     const htmlPlayer = `
     <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; border: 2px solid var(--gold); margin: 20px 0;">
         <iframe 
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            src="https://www.youtube.com/embed/${videoID}" 
+            src="https://www.youtube.com/embed/${id}" 
             frameborder="0" 
-            allow="autoplay; encrypted-media" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
             allowfullscreen>
         </iframe>
     </div>`;
 
-    // AQUI ESTÁ O PULO DO GATO:
-    // Você precisa de um elemento na tela (um modal ou uma div) para receber esse HTML.
-    // Se você não tem um modal, vamos jogar direto no container que você usa para os resultados:
+    // 3. Injeta o HTML no container de destino
     const containerVideo = document.getElementById('container-player-video'); 
     
-   if (containerVideo) {
+    if (containerVideo) {
         containerVideo.innerHTML = htmlPlayer;
         containerVideo.style.display = 'block';
-    } 
-    // Removi o 'else' com window.open para evitar aberturas inesperadas
+    } else {
+        console.warn("Elemento 'container-player-video' não encontrado na tela.");
+    }
 }
         
 
