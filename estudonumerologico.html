@@ -3297,7 +3297,7 @@ function gerarPlayerYouTube(videoID) {
 }        
 
 
-function gerarPlayerYouTube(id) {
+function gerarPlayerSintese(id) {
     if (!id) {
         console.error("ID de vídeo inválido!");
         return;
@@ -3324,8 +3324,7 @@ function gerarPlayerYouTube(id) {
         containerVideo.innerHTML = htmlPlayer;
         containerVideo.style.display = 'block';
     } else {
-        // Se você não tem um container fixo, abre um alert com o link para testar:
-        window.open(`https://www.youtube.com/watch?v=${id}`, '_blank');
+
     }
 }
         
