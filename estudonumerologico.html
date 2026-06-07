@@ -3297,7 +3297,7 @@ function gerarPlayerYouTube(videoID) {
 }        
 
 
-function gerarPlayerSintese(id) {
+function gerarPlayerYouTube(id) {
     if (!id) {
         console.error("ID de vídeo inválido!");
         return;
@@ -3320,12 +3320,11 @@ function gerarPlayerSintese(id) {
     // Se você não tem um modal, vamos jogar direto no container que você usa para os resultados:
     const containerVideo = document.getElementById('container-player-video'); 
     
-    if (containerVideo) {
+   if (containerVideo) {
         containerVideo.innerHTML = htmlPlayer;
         containerVideo.style.display = 'block';
-    } else {
-
-    }
+    } 
+    // Removi o 'else' com window.open para evitar aberturas inesperadas
 }
         
 
