@@ -3317,29 +3317,7 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
     </div>`;
 }
 
-function buscarVideoID(categoria, valor) {
-    // 1. Verifica se 'textos' existe e se a categoria existe nele
-    if (typeof textos === 'undefined' || !textos[categoria]) return null;
 
-    const categoriaDados = textos[categoria];
-    const item = categoriaDados[valor];
-
-    // 2. Se o item não existe, retorna null
-    if (!item) return null;
-
-    // 3. SE O SEU OBJETO TIVER A PROPRIEDADE 'videoID' DENTRO:
-    if (item.videoID) {
-        return item.videoID;
-    } 
-    
-    // 4. SE O SEU OBJETO FOR APENAS O TEXTO (COMO NO LOG):
-    // Se o seu textos.js está estruturado como '1': '<h3>Texto...</h3>',
-    // a busca vai falhar porque não existe 'videoID' ali dentro.
-    // NESTE CASO, você deve usar a biblioteca externa (Opção 2 que conversamos).
-    
-    console.warn(`DEBUG: O item ${categoria}[${valor}] não possui campo videoID.`);
-    return null;
-}
        
 
 function buscarVideoID(categoria, valor) {
