@@ -5183,6 +5183,11 @@ html += `
 
 
 
+const resPropósito = textos.Propósito[res.Propósito];
+
+// Verifica se o resultado é um objeto (novo formato) ou apenas string (antigo)
+const textoPropósito = (typeof resPropósito === 'object') ? resPropósito.conteudo : resPropósito;
+const videoPropósito = (typeof resPropósito === 'object') ? resPropósito.videoID : null;
 
 tituloBonito = "Propósito"; 
 html += `
@@ -5195,7 +5200,7 @@ html += `
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
     <div class="intro-texto">${textos.introducoes.Propósito || ""}</div>
     <div class="evitar-corte texto-res">
-    ${aplicarFiltroTexto(textos.Propósito[res.Propósito])} 
+    ${aplicarFiltroTexto(textoPropósito[res.Propósito])} 
     ${videoPropósito ? gerarPlayerYouTube(videoPropósito) : ""}</div>
 </div>
 `;
