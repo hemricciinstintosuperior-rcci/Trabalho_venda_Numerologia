@@ -3268,6 +3268,35 @@ const bibliotecaVideos = {
 };
 
 
+function gerarPlayerYouTube(videoID) {
+    if (!videoID) return '';
+    
+    // O player que aparece na tela
+    let playerHTML = `
+    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; border: 2px solid var(--gold); margin: 20px 0;">
+
+<iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    src="https://www.youtube.com/embed/${videoID}?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=1&iv_load_policy=3&disablekb=1" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+</iframe>
+
+    </div>`;
+
+    // O link que aparecerá apenas no PDF/Impressão
+    let linkPDF = `
+    <div class="link-pdf-apenas" style="display: none; margin-top: 10px; text-align: center;">
+        <a href="https://www.youtube.com/watch?v=${videoID}" target="_blank" style="color: var(--gold); font-weight: bold; text-decoration: underline;">
+            ▶ Clique aqui para assistir ao vídeo do resultado
+        </a>
+    </div>`;
+
+    return playerHTML + linkPDF;
+}        
+
+
 function gerarPlayerYouTube(id) {
     if (!id) {
         console.error("ID de vídeo inválido!");
@@ -3279,7 +3308,7 @@ function gerarPlayerYouTube(id) {
     <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; border: 2px solid var(--gold); margin: 20px 0;">
         <iframe 
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            src="https://www.youtube.com/embed/${id}?autoplay=1" 
+            src="https://www.youtube.com/embed/${id}" 
             frameborder="0" 
             allow="autoplay; encrypted-media" 
             allowfullscreen>
