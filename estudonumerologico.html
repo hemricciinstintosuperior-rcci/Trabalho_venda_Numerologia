@@ -4498,8 +4498,8 @@ ${listaItensSintese.map(item => {
 
     // 3. BUSCA O VÍDEO (Forçada)
     // Se o campo categoria não estiver preenchido na lista, vamos tentar adivinhar pelo Label
-    const categoriaBusca = item.categoria || item.label.replace(/\s+/g, '');
-    const videoID = buscarVideoID(categoriaBusca, item.valor);
+const chaveParaBusca = item.valor.toString().split(' ')[0]; // Tenta pegar apenas o número inicial
+const videoID = buscarVideoID(item.categoria, chaveParaBusca);
 
     // 4. HTML (O botão aparecerá se videoID existir e não estiver travado)
     return `
