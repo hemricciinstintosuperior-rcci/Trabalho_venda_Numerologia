@@ -3338,14 +3338,32 @@ function buscarVideoID(categoria, valor) {
 }
        
 
-    function buscarVideoID(categoria, valor) {
-        if (typeof bibliotecaVideos !== 'undefined' && 
-            bibliotecaVideos[categoria] && 
-            bibliotecaVideos[categoria][valor]) {
-            return bibliotecaVideos[categoria][valor];
-        }
+function buscarVideoID(categoria, valor) {
+    // 1. Acesso direto ao objeto global
+    const banco = window.textos;
+    
+    // 2. Se o banco não existe, o problema é o carregamento do arquivo .js
+    if (!banco) {
+        console.error("ERRO CRÍTICO: O objeto 'textos' está vazio ou não foi carregado!");
         return null;
-    }       
+    }
+
+    // 3. Acesso à categoria
+    const dadosCategoria = banco[categoria];
+    if (!dadosCategoria) {
+        console.warn(`Atenção: A categoria '${categoria}' não existe no objeto textos.`);
+        return null;
+    }
+
+    // 4. Acesso ao item e validação do videoID
+    const item = dadosCategoria[valor];
+    if (item && item.videoID) {
+        return item.videoID;
+    } else {
+        console.warn(`Atenção: O item ${categoria}[${valor}] não tem um videoID configurado.`);
+        return null;
+    }
+}     
         
 function gerarMapaCompleto() {
     const nomeRaw = document.getElementById("nome").value.trim();
