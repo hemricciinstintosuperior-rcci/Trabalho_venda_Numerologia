@@ -4487,9 +4487,7 @@ const videoID = buscarVideoID(item.categoria, chaveParaBusca);
     <div>${exibicaoValor}</div>
     
     ${(videoID && !estaTravado) ? `
-        <button class="btn-video" data-id="${videoID}" style="margin-top: 5px; background: #d97a1e; color: white;">
-            🎥 Assistir Vídeo
-        </button>
+<button onclick="gerarPlayerSintese('${videoID}')">🎥 Assistir Vídeo</button>
     ` : ""}
 </div>
 `;
