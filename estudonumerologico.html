@@ -3316,14 +3316,20 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
 }
 
 function buscarVideoID(categoria, valor) {
-    // Se for o caso de Equilíbrio (que tem início e fim), o valor chega como array
-    // Se for um valor único, ele busca direto
-    if (bibliotecaVideos[categoria] && bibliotecaVideos[categoria][valor]) {
-        return bibliotecaVideos[categoria][valor];
+    // 1. Acessa a categoria dentro do objeto 'textos'
+    const dadosCategoria = textos[categoria]; 
+    
+    // 2. Se a categoria ou o valor não existirem, retorna null
+    if (!dadosCategoria || !dadosCategoria[valor]) {
+        return null;
     }
-    return null; // Nenhum vídeo encontrado
-}
-        
+
+    // 3. Pega o objeto que tem { conteudo: "...", videoID: "..." }
+    const dadosItem = dadosCategoria[valor];
+
+    // 4. Retorna o videoID se ele existir
+    return dadosItem.videoID || null;
+} 
        
         
         
