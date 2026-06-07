@@ -3286,6 +3286,35 @@ function gerarPlayerYouTube(videoID) {
 
     return playerHTML + linkPDF;
 }
+
+function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
+    // 1. Pega os dados brutos do seu objeto textos
+    const dados = textos[chaveNoTexto][resObjeto];
+    
+    // 2. Aplica a mesma lógica de verificação que você já usa no Caminho de Vida
+    const conteudo = (typeof dados === 'object') ? dados.conteudo : dados;
+    const video = (typeof dados === 'object') ? dados.videoID : null;
+
+    // 3. Retorna o HTML pronto
+    return `
+    <div class="page">
+        <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${titulo}</h2>
+        <div class="evitar-corte texto-res">
+            ${aplicarFiltroTexto(conteudo)}
+            ${video ? gerarPlayerYouTube(video) : ""}
+        </div>
+    </div>`;
+}
+
+function buscarVideoID(categoria, valor) {
+    // Se for o caso de Equilíbrio (que tem início e fim), o valor chega como array
+    // Se for um valor único, ele busca direto
+    if (bibliotecaVideos[categoria] && bibliotecaVideos[categoria][valor]) {
+        return bibliotecaVideos[categoria][valor];
+    }
+    return null; // Nenhum vídeo encontrado
+}
+        
        
         
         
@@ -4303,59 +4332,69 @@ html += `
 </div>
 `; 
 
+
+
+// Exemplo de como deve estar o seu "Dicionário de Vídeos"
+const bibliotecaVideos = {
+    dia: { "1": "ID_VIDEO_1", "2": "ID_VIDEO_2", "22": "ID_VIDEO_22" },
+    CaminhodeVida: { "1": "ID_VIDEO_ESSENCIA_1", "9": "ID_VIDEO_ESSENCIA_9" },
+    Propósito: { "1": "ID_VIDEO_EQ_1", "2": "ID_VIDEO_EQ_2" }
+    // ... e assim por diante para todas as categorias
+};
+    
 const listaItensSintese = [
-    { label: "Dia Natalicio", valor: res.dia, videoID: "Ls5Ryzh6iRg" },
+    { label: "Dia Natalicio", valor: res.dia},
     
-    { label: "Essência", valor: res.essencia, videoID: "Ls5Ryzh6iRg" },
+    { label: "Essência", valor: res.essencia},
     
-    { label: "Motivação", valor: res.motivacao, videoID: "Ls5Ryzh6iRg" },
+    { label: "Motivação", valor: res.motivacao},
     
-    { label: "Desejo Oculto", valor: vDesejoFinal, videoID: "Ls5Ryzh6iRg" }, // <--- CONECTADO!
+    { label: "Desejo Oculto", valor: vDesejoFinal}, // <--- CONECTADO!
     
-    { label: "Influência", valor: res.influencia, videoID: "Ls5Ryzh6iRg" },
+    { label: "Influência", valor: res.influencia},
     
-    { label: "Personalidade", valor: res.Personalidade, videoID: "Ls5Ryzh6iRg" },
+    { label: "Personalidade", valor: res.Personalidade},
     
-    { label: "Comportamento", valor: res.comportamento, videoID: "Ls5Ryzh6iRg" },
+    { label: "Comportamento", valor: res.comportamento},
     
-    { label: "Relacionamento", valor: res.Relacionamento, videoID: "Ls5Ryzh6iRg" },
+    { label: "Relacionamento", valor: res.Relacionamento},
     
-    { label: "Talento Oculto", valor: res.talento, videoID: "Ls5Ryzh6iRg" },
+    { label: "Talento Oculto", valor: res.talento},
     
-    {label: "Equilíbrio", valor: `${res.equilibrio.inicio} ⚖️ ${res.equilibrio.fim}`, videoIDs: ["Ls5Ryzh6iRg", "Ls5Ryzh6iRg"] },
+    {label: "Equilíbrio", valor: `${res.equilibrio.inicio} ⚖️ ${res.equilibrio.fim}`},
     
-    { label: "Inclinações Ocultas", valor: res.inclinacoes, videoID: "Ls5Ryzh6iRg" },
+    { label: "Inclinações Ocultas", valor: res.inclinacoes},
     
-    { label: "Subconsciente", valor: res.subconsciente, videoID: "Ls5Ryzh6iRg" },
+    { label: "Subconsciente", valor: res.subconsciente},
     
-    { label: "Déficit Comportamental", valor: vDeficitFinal, videoID: "Ls5Ryzh6iRg" }, // <--- CONECTADO!
+    { label: "Déficit Comportamental", valor: vDeficitFinal}, // <--- CONECTADO!
     
-    { label: "Habilidades / Deficiências", valor: vHabDefFinal, videoID: "Ls5Ryzh6iRg" }, // <--- CONECTADO!
+    { label: "Habilidades / Deficiências", valor: vHabDefFinal}, // <--- CONECTADO!
     
     { label: "Fraquezas / Inibições", valor: (res.deficiencias && res.deficiencias.length > 0) ? res.deficiencias : "Livre" },
     
-    { label: "Caminho de Vida", valor: res.CaminhodeVida, videoID: "Ls5Ryzh6iRg"},
+    { label: "Caminho de Vida", valor: res.CaminhodeVida},
     
-    { label: "Propósito", valor: res.Propósito, videoID: "Ls5Ryzh6iRg" },
+    { label: "Propósito", valor: res.Propósito},
     
-    { label: "Maturidade", valor: res.Maturidade, videoID: "Ls5Ryzh6iRg" },
+    { label: "Maturidade", valor: res.Maturidade},
 
-    { label: "Profissão", valor: formatarProfissoesSimples(res), videoID: "Ls5Ryzh6iRg" },
+    { label: "Profissão", valor: formatarProfissoesSimples(res)},
   
-    { label: "Ciclos da Vida", valor: res.ciclos, videoID: "Ls5Ryzh6iRg" },
+    { label: "Ciclos da Vida", valor: res.ciclos},
  
-    { label: "Desafios", valor: res.desafios, videoID: "Ls5Ryzh6iRg" },
+    { label: "Desafios", valor: res.desafios},
     
-    { label: "Momentos de Decisão", valor: res.momentos, videoID: "Ls5Ryzh6iRg" },
+    { label: "Momentos de Decisão", valor: res.momentos},
         
-    { label: "Ano Pessoal", valor: res.anoPessoal, videoID: "Ls5Ryzh6iRg" },
+    { label: "Ano Pessoal", valor: res.anoPessoal},
     
-    { label: "Trânsito", valor: vTrânsitoFinal, videoID: "Ls5Ryzh6iRg" },
+    { label: "Trânsito", valor: vTrânsitoFinal},
     
-    { label: "Números Harmônicos", valor: obterNumerosHarmonicos(res.dia), videoID: "Ls5Ryzh6iRg" },
-    { label: "Cores Favoráveis", valor: obterCoresFavoraveis(res.Personalidade), videoID: "Ls5Ryzh6iRg" },
-    { label: "Dias de Poder", valor: obterDiasFavoraveisRessonancia(res.dia).join(', '), videoID: "Ls5Ryzh6iRg" },
-    { label: "Vibração Semanal", valor: obterDiaSemanaVibracional(res.dia), videoID: "Ls5Ryzh6iRg" }
+    { label: "Números Harmônicos", valor: obterNumerosHarmonicos(res.dia)},
+    { label: "Cores Favoráveis", valor: obterCoresFavoraveis(res.Personalidade) },
+    { label: "Dias de Poder", valor: obterDiasFavoraveisRessonancia(res.dia).join(', ')},
+    { label: "Vibração Semanal", valor: obterDiaSemanaVibracional(res.dia) }
     
 
 ];
@@ -4422,31 +4461,17 @@ ${listaItensSintese.map(item => {
     else if (valorStr.length > 5) fontSize = "18px";
 
     // 5. HTML do Card
-    return `
-    <div style="
-        border: 1px solid #eee; 
-        border-top: 3px solid ${estaTravado ? '#ccc' : '#d97a1e'}; 
-        background: ${estaTravado ? '#f9f9f9' : '#ffffff'}; 
-        padding: 8px 4px; 
-        text-align: center; 
-        border-radius: 4px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 80px;
-        opacity: ${estaTravado ? '0.7' : '1'};
-    ">
-        <div style="font-size: 12px; text-transform: uppercase; color: #000; font-weight: bold; margin-bottom: 4px;">
-            ${item.label}
-        </div>
-        
-        <div style="font-size: ${fontSize}; font-weight: bold; color: ${estaTravado ? '#666' : '#d97a1e'}; word-break: break-word;">
-            ${exibicaoValor}
-        </div>
+    // Busca apenas o ID do vídeo para este resultado
+    const videoID = buscarVideoID(item.categoria, item.valor);
 
-        ${(item.videoID && !estaTravado) ? `
-            <a href="https://www.youtube.com/watch?v=${item.videoID}" target="_blank" style="text-decoration: none; margin-top: 5px; display: block;">
-                <span style="font-size: 14px; color: #d97a1e;">click aqui ▶️ </span>
+    return `
+    <div style="/* seus estilos */">
+        <div style="/* título */">${item.label}</div>
+        <div style="/* resultado numérico */">${exibicaoValor}</div>
+
+        ${(videoID && !estaTravado) ? `
+            <a href="#" onclick="gerarPlayerYouTube('${videoID}'); return false;" style="text-decoration: none; display: block; margin-top: 5px;">
+                <span style="font-size: 14px; color: #d97a1e;">🎥 Assistir Vídeo ▶️</span>
             </a>
         ` : ""}
     </div>
