@@ -4486,17 +4486,17 @@ ${listaItensSintese.map(item => {
 
     // 4. HTML (O botão aparecerá se videoID existir e não estiver travado)
     return `
-    <div style="border: 1px solid #ccc; padding: 10px; margin: 5px;">
-        <div style="font-weight: bold;">${item.label}</div>
-        <div>${exibicaoValor}</div>
-        
-        ${(videoID && !estaTravado) ? `
-            <button onclick="gerarPlayerYouTube('${videoID}')" style="margin-top: 5px; background: #d97a1e; color: white;">
-                🎥 Assistir Vídeo
-            </button>
-        ` : ""}
-    </div>
-    `;
+<div style="border: 1px solid #ccc; padding: 10px; margin: 5px;">
+    <div style="font-weight: bold;">${item.label}</div>
+    <div>${exibicaoValor}</div>
+    
+    ${(videoID && !estaTravado) ? `
+        <button class="btn-video" data-id="${videoID}" style="margin-top: 5px; background: #d97a1e; color: white;">
+            🎥 Assistir Vídeo
+        </button>
+    ` : ""}
+</div>
+`;
 }).join('')}
     </div>
 
@@ -6749,5 +6749,24 @@ document.getElementById('btnVideo').addEventListener('click', function() {
         subtree: true
     });
 </script>
+
+<script>
+        // COLE O SEU NOVO CÓDIGO AQUI
+        document.addEventListener('click', function(e) {
+            if (e.target && e.target.classList.contains('btn-video')) {
+                const id = e.target.getAttribute('data-id');
+                console.log("Botão clicado, ID capturado:", id);
+                
+                if (typeof gerarPlayerYouTube === 'function') {
+                    gerarPlayerYouTube(id);
+                } else {
+                    console.error("ERRO: A função gerarPlayerYouTube não existe!");
+                }
+            }
+        });
+    </script>
+</body>
+
+        
 </body>
 </html>
