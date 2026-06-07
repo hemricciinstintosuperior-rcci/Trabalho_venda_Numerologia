@@ -4493,9 +4493,9 @@ ${listaItensSintese.map(item => {
 
 
     return `
-    <div style="/* seus estilos */">
-        <div style="/* título */">${item.label}</div>
-        <div style="/* resultado numérico */">${exibicaoValor}</div>
+  <div style="border: 1px solid #ccc; padding: 10px; margin: 5px; text-align: center;">
+        <div style="font-weight: bold;">${item.label}</div>
+        <div>${estaTravado ? "🔒 PREMIUM" : item.valor}</div>
 
       
         ${(videoID && !estaTravado) ? `
