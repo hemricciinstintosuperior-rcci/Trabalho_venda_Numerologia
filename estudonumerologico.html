@@ -4388,62 +4388,35 @@ html += `
 
     
 const listaItensSintese = [
-    { label: "Dia Natalicio", valor: res.dia},
-    
-    { label: "Essência", valor: res.essencia},
-    
-    { label: "Motivação", valor: res.motivacao},
-    
-    { label: "Desejo Oculto", valor: vDesejoFinal}, // <--- CONECTADO!
-    
-    { label: "Influência", valor: res.influencia},
-    
-    { label: "Personalidade", valor: res.Personalidade},
-    
-    { label: "Comportamento", valor: res.comportamento},
-    
-    { label: "Relacionamento", valor: res.Relacionamento},
-    
-    { label: "Talento Oculto", valor: res.talento},
-    
-    {label: "Equilíbrio", valor: `${res.equilibrio.inicio} ⚖️ ${res.equilibrio.fim}`},
-    
-    { label: "Inclinações Ocultas", valor: res.inclinacoes},
-    
-    { label: "Subconsciente", valor: res.subconsciente},
-    
-    { label: "Déficit Comportamental", valor: vDeficitFinal}, // <--- CONECTADO!
-    
-    { label: "Habilidades / Deficiências", valor: vHabDefFinal}, // <--- CONECTADO!
-    
-    { label: "Fraquezas / Inibições", valor: (res.deficiencias && res.deficiencias.length > 0) ? res.deficiencias : "Livre" },
-    
-    { label: "Caminho de Vida", valor: res.CaminhodeVida},
-    
-    { label: "Propósito", valor: res.Propósito},
-    
-    { label: "Maturidade", valor: res.Maturidade},
-
-    { label: "Profissão", valor: formatarProfissoesSimples(res)},
-  
-    { label: "Ciclos da Vida", valor: res.ciclos},
- 
-    { label: "Desafios", valor: res.desafios},
-    
-    { label: "Momentos de Decisão", valor: res.momentos},
-        
-    { label: "Ano Pessoal", valor: res.anoPessoal},
-    
-    { label: "Trânsito", valor: vTrânsitoFinal},
-    
-    { label: "Números Harmônicos", valor: obterNumerosHarmonicos(res.dia)},
-    { label: "Cores Favoráveis", valor: obterCoresFavoraveis(res.Personalidade) },
-    { label: "Dias de Poder", valor: obterDiasFavoraveisRessonancia(res.dia).join(', ')},
-    { label: "Vibração Semanal", valor: obterDiaSemanaVibracional(res.dia) }
-    
-
+    { label: "Dia Natalicio", valor: res.dia, categoria: "dia" },
+    { label: "Essência", valor: res.essencia, categoria: "essencia" },
+    { label: "Motivação", valor: res.motivacao, categoria: "motivacao" },
+    { label: "Desejo Oculto", valor: vDesejoFinal, categoria: "desejoOculto" },
+    { label: "Influência", valor: res.influencia, categoria: "influencia" },
+    { label: "Personalidade", valor: res.Personalidade, categoria: "Personalidade" },
+    { label: "Comportamento", valor: res.comportamento, categoria: "comportamento" },
+    { label: "Relacionamento", valor: res.Relacionamento, categoria: "Relacionamento" },
+    { label: "Talento Oculto", valor: res.talento, categoria: "talento" },
+    { label: "Equilíbrio", valor: `${res.equilibrio.inicio} ⚖️ ${res.equilibrio.fim}`, categoria: null },
+    { label: "Inclinações Ocultas", valor: res.inclinacoes, categoria: "inclinacoes" },
+    { label: "Subconsciente", valor: res.subconsciente, categoria: "subconsciente" },
+    { label: "Déficit Comportamental", valor: vDeficitFinal, categoria: "deficits" },
+    { label: "Habilidades / Deficiências", valor: vHabDefFinal, categoria: "Potencias" },
+    { label: "Fraquezas / Inibições", valor: (res.deficiencias && res.deficiencias.length > 0) ? res.deficiencias : "Livre", categoria: "deficiencias" },
+    { label: "Caminho de Vida", valor: res.CaminhodeVida, categoria: "CaminhodeVida" },
+    { label: "Propósito", valor: res.Propósito, categoria: "Propósito" },
+    { label: "Maturidade", valor: res.Maturidade, categoria: "Maturidade" },
+    { label: "Profissão", valor: formatarProfissoesSimples(res), categoria: null },
+    { label: "Ciclos da Vida", valor: res.ciclos, categoria: "ciclos" },
+    { label: "Desafios", valor: res.desafios, categoria: "desafios" },
+    { label: "Momentos de Decisão", valor: res.momentos, categoria: "momentos" },
+    { label: "Ano Pessoal", valor: res.anoPessoal, categoria: "anoPessoal" },
+    { label: "Trânsito", valor: vTrânsitoFinal, categoria: null },
+    { label: "Números Harmônicos", valor: obterNumerosHarmonicos(res.dia), categoria: null },
+    { label: "Cores Favoráveis", valor: obterCoresFavoraveis(res.Personalidade), categoria: null },
+    { label: "Dias de Poder", valor: obterDiasFavoraveisRessonancia(res.dia).join(', '), categoria: null },
+    { label: "Vibração Semanal", valor: obterDiaSemanaVibracional(res.dia), categoria: null }
 ];
-
 
     
 // 2. Agora montamos o HTML do Painel (Esta parte substitui a sua partir da linha html +=)
