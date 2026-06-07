@@ -3297,35 +3297,14 @@ function gerarPlayerYouTube(videoID) {
 }        
 
 
-function gerarPlayerSintese(id) {
-    // 1. Segurança: se não tiver ID, nem tenta rodar
-    if (!id) {
-        console.error("ID de vídeo inválido!");
+function abrirVideoNovaAba(videoID) {
+    if (!videoID) {
+        console.error("ID não encontrado!");
         return;
     }
-
-    // 2. Monta o HTML do player (sem o ?autoplay=1, então ele não toca sozinho)
-    // Lembre-se de usar o cifrão ${id} para o ID entrar corretamente
-    const htmlPlayer = `
-    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; border: 2px solid var(--gold); margin: 20px 0;">
-        <iframe 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            src="https://www.youtube.com/embed/${id}" 
-            frameborder="0" 
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-    </div>`;
-
-    // 3. Injeta o HTML no container de destino
-    const containerVideo = document.getElementById('container-player-video'); 
-    
-    if (containerVideo) {
-        containerVideo.innerHTML = htmlPlayer;
-        containerVideo.style.display = 'block';
-    } else {
-        console.warn("Elemento 'container-player-video' não encontrado na tela.");
-    }
+    // Abre o vídeo do YouTube em uma nova aba
+    const urlYouTube = `https://www.youtube.com/watch?v=${videoID}`;
+    window.open(urlYouTube, '_blank');
 }
         
 
@@ -4486,9 +4465,11 @@ const videoID = buscarVideoID(item.categoria, chaveParaBusca);
     <div style="font-weight: bold;">${item.label}</div>
     <div>${exibicaoValor}</div>
     
-    ${(videoID && !estaTravado) ? `
-<button onclick="gerarPlayerSintese('${videoID}')">🎥 Assistir Vídeo</button>
-    ` : ""}
+${(videoID && !estaTravado) ? `
+    <button onclick="abrirVideoNovaAba('${videoID}')" style="margin-top: 5px; background: #d97a1e; color: white; cursor: pointer;">
+        🎥 Assistir Vídeo no YouTube
+    </button>
+` : ""}
 </div>
 `;
 }).join('')}
