@@ -5027,17 +5027,25 @@ html += `
 // A. LIÇÕES CÁRMICAS
 html += `
     <div class="page">
-        <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">fraquezas e inibições </h2>
+        <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Fraquezas e Inibições</h2>
         <div class="intro-texto">${textos.introducoes.deficiencias}</div>
 `;
 if (res.deficiencias.length > 0) {
     html += `<div class="grupo-respostas-bloco pula-pagina">`;
     res.deficiencias.forEach(f => {
+        // Lógica de extração aqui:
+        const dados = textos.deficiencias[f];
+        const conteudo = (typeof dados === 'object' && dados !== null) ? dados.conteudo : dados;
+        const video = (typeof dados === 'object' && dados !== null) ? dados.videoID : null;
+
         html += `
-        <div class="texto-res" style="margin-top: 20px;"> ${aplicarFiltroTexto(textos.deficiencias[f])}</p><hr style="border:0; border-top:1px solid #ffffff"></div>`;
+        <div class="texto-res" style="margin-top: 20px;"> 
+            ${aplicarFiltroTexto(conteudo)}
+            ${video ? gerarPlayerYouTube(video) : ""}
+            <hr style="border:0; border-top:1px solid #ffffff">
+        </div>`;
     });
-html += `</div>`;
-    
+    html += `</div>`;
 } else { html += `<p>Nenhuma deficiência encontrada.</p>`; }
 html += `</div>`;
 
@@ -5045,21 +5053,21 @@ html += `</div>`;
 // BLOCO INDIVIDUAL: SUBCONSCIENTE (subconsciente)
 // ==========================================
 tituloBonito = "Subconsciente"; 
-const valSub = res.subconsciente; // Pegando a variável em minúsculo
-let conteudoSubconsciente = (textos.subconsciente && textos.subconsciente[valSub]) 
-    ? `<div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.subconsciente[valSub])}</div>`
-    : `<p>Dados não localizados.</p>`;
+const valSub = res.subconsciente;
+const dadosSub = textos.subconsciente ? textos.subconsciente[valSub] : null;
+
+const conteudoSub = (typeof dadosSub === 'object' && dadosSub !== null) ? dadosSub.conteudo : dadosSub;
+const videoSub = (typeof dadosSub === 'object' && dadosSub !== null) ? dadosSub.videoID : null;
 
 html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>
+<div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
     <div class="intro-texto">${textos.introducoes.subconsciente || ""}</div>
-    ${conteudoSubconsciente}
+    <div class="evitar-corte texto-res">
+        ${conteudoSub ? aplicarFiltroTexto(conteudoSub) : "<p>Dados não localizados.</p>"}
+        ${videoSub ? gerarPlayerYouTube(videoSub) : ""}
+    </div>
 </div>
 `;
    
@@ -5078,14 +5086,27 @@ html += `
 // B. DÉFICITS DE COMPORTAMENTO
 html += `
     <div class="page">
-        <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">Déficits de Comportamento</h2>
+        <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Déficits de Comportamento</h2>
         <div class="intro-texto">${textos.introducoes.deficits || ""}</div>
-        <div class="texto-res pula-pagina" style="margin-top: 20px;"> ${aplicarFiltroTexto(textos.deficits[res.deficitRecorrente])}</div>
+        
+        
+        <div class="texto-res pula-pagina" style="margin-top: 20px;"> 
+            ${aplicarFiltroTexto((typeof textos.deficits[res.deficitRecorrente] === 'object') ? textos.deficits[res.deficitRecorrente].conteudo : textos.deficits[res.deficitRecorrente])}
+            ${(typeof textos.deficits[res.deficitRecorrente] === 'object' && textos.deficits[res.deficitRecorrente].videoID) ? gerarPlayerYouTube(textos.deficits[res.deficitRecorrente].videoID) : ""}
+        </div>
         <hr style="border:0; border-top:1px solid #ffffff">
 `;
 if (res.deficitsOcultos.length > 0) {
     res.deficitsOcultos.forEach(d => {
-        html += `<div class="texto-res" style="margin-top: 20px;"> ${aplicarFiltroTexto(textos.deficits[d])}</p><hr style="border:0; border-top:1px solid #ffffff"></div>`;
+        const dadosD = textos.deficits[d];
+        const cD = (typeof dadosD === 'object' && dadosD !== null) ? dadosD.conteudo : dadosD;
+        const vD = (typeof dadosD === 'object' && dadosD !== null) ? dadosD.videoID : null;
+
+        html += `<div class="texto-res" style="margin-top: 20px;"> 
+            ${aplicarFiltroTexto(cD)}
+            ${vD ? gerarPlayerYouTube(vD) : ""}
+            <hr style="border:0; border-top:1px solid #ffffff">
+        </div>`;
     });
 }
 html += `</div>`;
