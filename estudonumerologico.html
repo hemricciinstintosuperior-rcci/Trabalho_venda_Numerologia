@@ -3347,21 +3347,24 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
 
        
 
-// Certifique-se de que sua 'bibliotecaVideos' esteja definida antes disso!
 function buscarVideoID(categoria, valor, genero) {
-    // 1. TENTA BUSCAR NA BIBLIOTECA (Se o gênero foi informado)
+    // 1. TENTA NA BIBLIOTECA (Se o gênero foi passado e a biblioteca existir)
     if (genero && typeof bibliotecaVideos !== 'undefined' && bibliotecaVideos[genero]) {
-        const videoBiblioteca = bibliotecaVideos[genero][categoria] ? bibliotecaVideos[genero][categoria][valor] : null;
-        if (videoBiblioteca) return videoBiblioteca;
+        if (bibliotecaVideos[genero][categoria] && bibliotecaVideos[genero][categoria][valor]) {
+            return bibliotecaVideos[genero][categoria][valor];
+        }
     }
 
-    // 2. SE NÃO ACHOU NA BIBLIOTECA, TENTA BUSCAR DENTRO DO OBJETO 'textos' (Caso você tenha colocado o videoID lá dentro)
+    // 2. BACKUP: TENTA NO ARQUIVO DE TEXTOS (Lógica que já funcionava antes!)
+    // Se o objeto no textos.js tiver a propriedade 'videoID', ele pega.
     if (typeof textos !== 'undefined' && textos[categoria] && textos[categoria][valor]) {
         const item = textos[categoria][valor];
-        if (item.videoID) return item.videoID;
+        if (typeof item === 'object' && item.videoID) {
+            return item.videoID;
+        }
     }
 
-    console.warn(`DEBUG: Nenhum vídeo encontrado para ${categoria}[${valor}] no gênero ${genero}.`);
+    console.warn(`DEBUG: Nenhum vídeo encontrado para ${categoria}[${valor}]`);
     return null;
 }
         
