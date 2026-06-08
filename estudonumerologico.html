@@ -3241,18 +3241,24 @@ function montarSecaoHabilidadeEspecial() {
 function verificarGêneroEGerar() {
     console.log("Botão clicado! Verificando gênero...");
     
+    // 1. Pega o elemento
     const campoGênero = document.getElementById("generoTexto");
+    
+    // 2. Define o formato (o que você usa para escolher o arquivo)
     const formatoGênero = campoGênero ? campoGênero.value : "masculino";
- generoAtual = campGenero ? campGenero.value : "masculino"; // Atualiza a variável global
+    
+    // 3. ATUALIZA A VARIÁVEL GLOBAL (Corrigido para usar campoGênero)
+    generoAtual = formatoGênero; 
+    
+    // 4. Define o arquivo
     let arquivoAlvo = (formatoGênero === "feminino") ? "textosfeminino.js" : "textosestudonumerologico.js";
 
-    // Aqui a gente só remove o elemento de script antigo do HTML para não acumular sujeira na página
+    // ... o restante do seu código (scriptAntigo, scriptNovo, etc) ...
     const scriptAntigo = document.getElementById("script-textos-dinamico");
     if (scriptAntigo) {
         scriptAntigo.remove();
     }
 
-    // O '?v=' garante que o navegador pegue a alteração recente que você fez no seu GitHub
     let urlComCacheBuster = arquivoAlvo + "?v=" + Date.now();
     console.log("Carregando o arquivo: " + urlComCacheBuster);
 
@@ -3271,7 +3277,6 @@ function verificarGêneroEGerar() {
     
     document.head.appendChild(scriptNovo);
 }
-
 
 
 
