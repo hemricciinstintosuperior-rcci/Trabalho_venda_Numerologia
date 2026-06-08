@@ -3562,42 +3562,62 @@ Potencias: {
         
 // --- POTENCIAL E DESAFIO (TALENTOS ESPECIAIS / EXCESSOS) ---
 talentosEspeciais: {
-    1: `<h3>Potencial de Firmeza e Desafio da Obstinação - 1</h3>
+    1: {
+     conteudo:`<h3>Potencial de Firmeza e Desafio da Obstinação - 1</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, demonstra uma independência e uma ambição que estão muito acima da média comum. Seu potencial natural reside em uma determinação férrea e na capacidade invejável de manter a firmeza absoluta sob pressão, agindo com um brilhantismo singular em momentos de grandes crises ou desafios estratégicos onde outros recuariam.</p>
     <p>Entretanto, essa força monumental pode se tornar uma deficiência perigosa quando se transmuta em uma obstinação rígida e cega. O risco surge quando você se fecha excessivamente em seu ponto de vista, ignorando sugestões valiosas ao redor e gerando traços de possessividade ou autoritarismo que podem afastar aliados importantes. <strong>MASCULINO-FEMININO-NEUTRO</strong>, seu desafio é entender que a verdadeira liderança sabe a hora de avançar com força e a hora de ouvir com sabedoria, integrando a visão alheia para fortalecer o seu próprio império sem perder sua essência pioneira.</p>`,
-
-    2: `<h3>Potencial de Diplomacia e Desafio da Insegurança - 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2: {
+     conteudo:`<h3>Potencial de Diplomacia e Desafio da Insegurança - 2</h3>
     <p>Existe em você um dom nato para a organização harmoniosa e para a pacificação de ambientes, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua natureza gentil, detalhista e profundamente cooperativa faz de você alguém excelente na mediação de conflitos, capaz de desarmar as situações mais tensas sem recorrer a ofensas, sendo aquela presença magnética que as pessoas procuram naturalmente quando precisam de equilíbrio e bom senso.</p>
     <p>A deficiência desta vibração em excesso, porém, pode se manifestar como uma insegurança que paralisa sua tomada de decisão no momento em que você mais precisa agir. Essa receptividade constante pode, às vezes, permitir que pessoas mal-intencionadas se aproveitem da sua bondade, fazendo com que seus objetivos, <strong>MASCULINO-FEMININO-NEUTRO</strong>, se percam em favor de um desejo quase desesperado de manter a paz a qualquer custo. O aprendizado aqui é entender que dizer "não" e estabelecer limites claros é, na verdade, a forma mais alta de diplomacia que você pode exercer para proteger sua própria energia e seus projetos.</p>`,
-
-    3: `<h3>Potencial de Criatividade e Desafio da Impaciência - 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Potencial de Criatividade e Desafio da Impaciência - 3</h3>
     <p>Sua mente, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é uma verdadeira usina de lógica própria e criatividade efervescente. Seu potencial especial reside em uma imaginação extraordinária e na capacidade rara de surpreender a todos com soluções concebidas de forma única, comunicando conceitos complexos com uma clareza e um entusiasmo que são simplesmente contagiantes para quem o(a) ouve.</p>
     <p>A deficiência desse brilho em excesso é uma impaciência crônica com o ritmo de raciocínio alheio, que muitas vezes parece lento demais para a sua velocidade mental. Por estar sempre vários passos à frente, você pode demonstrar certa imprudência, negligenciando o "aterramento" das suas ideias e esquecendo-se de lidar com as responsabilidades práticas e burocráticas que sustentam o sucesso real. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua grande lição é aprender a dar tempo ao tempo e a valorizar os processos estruturais, garantindo que suas ideias geniais não sejam apenas fogos de artifício, mas construções que permanecem no tempo.</p>`,
-
-    4: `<h3>Potencial de Estabilidade e Desafio da Resistência - 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Potencial de Estabilidade e Desafio da Resistência - 4</h3>
     <p>Você tem o potencial extraordinário de construir bases sólidas, seguras e duradouras em tudo o que toca, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu perfil é o de alguém estável, metódico e extremamente confiável, que sabe respeitar limites e oferece uma segurança inabalável para quem convive ao seu redor, mantendo sempre uma postura de alta competência técnica e ética profissional.</p>
     <p>Todavia, a deficiência dessa vibração revela um tradicionalismo que pode acabar travando sua própria evolução pessoal e financeira. Uma desconfiança excessiva com o novo e uma teimosia em aceitar o que foge do "protocolo normal" podem tornar você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, alguém de difícil convencimento, que reluta em arriscar mesmo quando a mudança é necessária para o progresso. O desafio é aprender a abraçar a inovação como uma ferramenta de melhoria para suas próprias estruturas, entendendo que a flexibilidade, longe de ser uma fraqueza, é o que impede que as bases sólidas se tornem rígidas demais e acabem quebrando sob o peso do tempo.</p>`,
-
-    5: `<h3>Potencial de Ajuste e Desafio da Impulsividade - 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Potencial de Ajuste e Desafio da Impulsividade - 5</h3>
     <p>Seu potencial brilha com uma intensidade máxima justamente no meio do caos, da pressão e da imprevisibilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você possui uma capacidade incrível de ajuste a situações estressantes, conseguindo enxergar vantagens e agir de forma dinâmica onde a maioria das pessoas entraria em colapso emocional ou paralisia completa.</p>
     <p>Contudo, esse excesso de energia vital gera uma deficiência perigosa na forma de uma impulsividade nervosa e, por vezes, cortante. A falta de filtros em momentos de tensão pode fazer com que você reaja de forma direta demais a críticas, parecendo alguém distante, impaciente ou excessivamente ríspido(a). <strong>MASCULINO-FEMININO-NEUTRO</strong>, é vital que você aprenda a domar essa eletricidade interna, garantindo que sua sede de movimento e mudança não acabe rompendo conexões humanas e profissionais valiosas por puro impulso momentâneo. Use sua rapidez para criar soluções, não para criar conflitos desnecessários.</p>`,
-
-    6: `<h3>Potencial de Proteção e Desafio do Detalhismo - 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo:`<h3>Potencial de Proteção e Desafio do Detalhismo - 6</h3>
     <p>Você atua como um pilar de apoio indispensável e de responsabilidade coletiva por onde passa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu potencial especial é o protecionismo sábio e uma atenção minuciosa aos detalhes humanos, mantendo-se sempre em prontidão para defender causas justas e cuidar do seu ambiente com um senso de ética e estética muito apurado.</p>
     <p>A deficiência surge quando o seu envolvimento em tudo e com todos gera preocupações pouco práticas, fazendo com que pequenos problemas do dia a dia pareçam tragédias gregas. Essa dificuldade em esquecer as falhas alheias ou o excesso de cobrança por perfeição nas relações pode custar muito caro para sua própria paz de espírito, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O aprendizado aqui é entender que o amor e a proteção são mais eficazes quando acompanhados de aceitação. Aprenda a soltar as rédeas do controle emocional sobre os outros e foque em harmonizar a si mesmo(a) primeiro, permitindo que a perfeição seja uma meta, e não uma obsessão paralisante.</p>`,
-
-    7: `<h3>Potencial de Análise e Desafio do Isolamento - 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7: {
+     conteudo:`<h3>Potencial de Análise e Desafio do Isolamento - 7</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui uma mente analítica, perfeccionista e investigativa de altíssimo nível. Seu potencial reside na disciplina intelectual e na busca incansável pela verdade e pela qualidade técnica, o que faz com que suas conclusões sejam precisas, profundas e extremamente respeitadas por quem busca um trabalho de excelência superior.</p>
     <p>Por outro lado, o excesso dessa energia cria um perfil contestador que dificilmente aceita perder discussões ou admitir lacunas no próprio conhecimento. A irritação com falhas alheias e a dificuldade em dar segundas chances podem acabar isolando você em uma torre de marfim intelectual, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Para que seu potencial seja plenamente realizado, você precisa aprender a integrar a compaixão e a tolerância ao seu rigor analítico, entendendo que a imperfeição faz parte da experiência humana. Ao se abrir para o mundo com menos julgamento, sua sabedoria se tornará uma luz que atrai, e não uma espada que afasta.</p>`,
-
-    8: `<h3>Potencial de Comando e Desafio do Controle - 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8: {
+     conteudo:`<h3>Potencial de Comando e Desafio do Controle - 8</h3>
     <p>O seu potencial especial é o poder de comando nato e uma visão estratégica de longo alcance que poucos possuem, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe em você uma habilidade quase instintiva de organizar o caos e transformá-lo em estruturas de sucesso material, mantendo uma iniciativa que surpreende a todos pela eficiência, autoridade e capacidade de realização concreta.</p>
     <p>A sombra dessa força toda é o risco real da prepotência e do autoritarismo excessivo. Quando essa vibração está em desequilíbrio, você pode demonstrar um perfil controlador ao extremo, perdendo completamente a paciência com quem não consegue acompanhar seu ritmo acelerado de produção ou sua visão ambiciosa. <strong>MASCULINO-FEMININO-NEUTRO</strong>, seu grande desafio de mestre é aprender a equilibrar essa liderança poderosa com uma empatia real, entendendo que grandes impérios são construídos com braços fortes, mas mantidos por corações leais. Lidere inspirando, e não apenas mandando.</p>`,
-
-    9: `<h3>Potencial de Compaixão e Desafio do Desgaste - 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Potencial de Compaixão e Desafio do Desgaste - 9</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui um potencial magnífico para a compaixão e para a compreensão profunda das leis universais que regem a vida. Sua visão é generosa, ampla e humanitária, capaz de entender as necessidades do coletivo com uma sabedoria que transcende o ego, atuando como um farol de esperança e auxílio para muitos.</p>
-    <p>A deficiência, contudo, pode levá-lo(a) a um papel de sacrifício excessivo e perigoso, onde você acaba esquecendo das suas próprias necessidades básicas para carregar a dor do mundo nas costas. Existe uma tendência a se envolver em dramas alheios de forma desproporcional, o que gera um desgaste emocional e físico que acaba impedindo a manifestação do seu potencial de forma saudável. <strong>MASCULINO-FEMININO-NEUTRO</strong>, lembre-se de que para ajudar o mundo, você precisa estar inteiro(a). Aprenda a ser generoso(a) consigo mesmo(a) na mesma medida em que é com os outros, transformando seu altruísmo em uma força sustentável e equilibrada.</p>`
-},
+    <p>A deficiência, contudo, pode levá-lo(a) a um papel de sacrifício excessivo e perigoso, onde você acaba esquecendo das suas próprias necessidades básicas para carregar a dor do mundo nas costas. Existe uma tendência a se envolver em dramas alheios de forma desproporcional, o que gera um desgaste emocional e físico que acaba impedindo a manifestação do seu potencial de forma saudável. <strong>MASCULINO-FEMININO-NEUTRO</strong>, lembre-se de que para ajudar o mundo, você precisa estar inteiro(a). Aprenda a ser generoso(a) consigo mesmo(a) na mesma medida em que é com os outros, transformando seu altruísmo em uma força sustentável e equilibrada.</p>`,
+     
+  videoID: "F8bg1CTQ9HI"
+    },
+    },
  
  planosExpressao: {
     fisico: {
@@ -3631,279 +3651,420 @@ modosAcao: {
 
 desejoOculto: {
  
-    1: `<h3>Impulso de Liderança e Desafio do Egocentrismo - 1</h3>
+    1: {
+     conteudo:`<h3>Impulso de Liderança e Desafio do Egocentrismo - 1</h3>
     <p>No âmago do seu ser, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, carrega uma vibração que impulsiona fortemente para a liderança absoluta e para o pioneirismo radical. Esse acúmulo numérico gera em sua alma um desejo ardente de ser a primeira pessoa em tudo e de alcançar o topo por mérito próprio, buscando incessantemente o reconhecimento pela sua individualidade única e por sua capacidade inquestionável de comando.</p>
     <p>Entretanto, esse excesso de força motriz pode tornar você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, alguém autoritário ou excessivamente egocêntrico se não houver vigilância. O padrão a ser quebrado é a necessidade constante de estar sempre em evidência, o que pode gerar comportamentos cíclicos de arrogância ou uma busca desenfreada pelo poder que acaba isolando as pessoas que deveriam ser seus aliados. Sua alma clama por originalidade, mas o seu desafio é entender que o verdadeiro líder brilha mais quando ilumina o caminho dos outros, e não apenas o seu próprio pedestal.</p>`,
-
-    2: `<h3>Impulso de Harmonia e Desafio da Dependência - 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2: {
+     conteudo:`<h3>Impulso de Harmonia e Desafio da Dependência - 2</h3>
     <p>O desejo mais profundo da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é pela harmonia perfeita, pela cooperação e pelo equilíbrio absoluto em todas as suas relações. Por possuir essa frequência em abundância, existe dentro de você uma busca constante pela paz e por ambientes onde a diplomacia prevaleça sobre o conflito, fazendo com que você aja sempre como o ponto de união e o bálsamo entre as pessoas.</p>
     <p>Por outro lado, essa carga excessiva de sensibilidade pode levar você a uma dependência emocional prejudicial e silenciosa. O padrão recorrente aqui, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a dificuldade extrema em tomar decisões importantes sem a aprovação ou o suporte alheio, permitindo que sua própria vontade seja anulada apenas para evitar qualquer tipo de confronto. Sua alma deseja a união, mas a lição é aprender que você precisa estar inteiro(a) e seguro(a) de si para que suas parcerias sejam saudáveis e não se tornem muletas emocionais que paralisam seu crescimento pessoal.</p>`,
-
-    3: `<h3>Impulso de Expressão e Desafio da Dispersão - 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Impulso de Expressão e Desafio da Dispersão - 3</h3>
     <p>Existe em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma necessidade vital de expressão, comunicação e criatividade que transborda. Esta vibração elevada indica um talento nato para encantar, motivar e alegrar qualquer ambiente, buscando sempre o brilho social e a manifestação das suas ideias de forma extraordinária, leve e comunicativa.</p>
     <p>O alerta para você reside na dispersão perigosa desse potencial criativo imenso. O excesso de energia pode resultar em comportamentos superficiais, onde você se perde em distrações fúteis ou inicia múltiplos projetos fascinantes que nunca chegam ao fim, transformando o seu dom sagrado da palavra em uma falta de compromisso com a verdade prática e com a entrega de resultados. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma deseja criar e ser vista, mas o sucesso real virá quando você aprender a canalizar esse rio de criatividade em canais sólidos, dando profundidade e foco ao seu carisma natural.</p>`,
-
-    4: `<h3>Impulso de Segurança e Desafio da Rigidez - 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Impulso de Segurança e Desafio da Rigidez - 4</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, busca incessantemente por segurança, ordem e estabilidade através do trabalho estruturado e do método. Essa concentração numérica cria em seu íntimo um desejo poderoso de construir bases indestrutíveis para sua vida e de manter tudo sob um controle rigoroso, valorizando a tradição, a honra e a eficiência acima de qualquer aventura passageira.</p>
     <p>A deficiência desse excesso se manifesta como uma teimosia crônica e um conservadorismo que pode impedir seu progresso em tempos de mudança. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, corre o risco de se tornar alguém excessivamente rígido(a), que bloqueia a inovação e o fluxo natural da vida por medo de perder o controle ou por se apegar a métodos ultrapassados que já não funcionam mais no mundo atual. Sua alma quer segurança, mas entenda que a estrutura mais forte é aquela que possui flexibilidade para balançar com o vento sem quebrar; aprenda a confiar um pouco mais na vida e menos nas rédeas.</p>`,
-
-    5: `<h3>Impulso de Liberdade e Desafio da Instabilidade - 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Impulso de Liberdade e Desafio da Instabilidade - 5</h3>
     <p>Sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, anseia por liberdade total, por mudanças constantes e por novas e eletrizantes experiências sensoriais. Essa forte presença vibracional indica alguém que detesta a rotina como se fosse uma prisão e busca no movimento dinâmico a própria razão de sua existência, adaptando-se com uma facilidade assustadora a qualquer cenário desafiador ou desconhecido.</p>
     <p>Contudo, essa vibração em excesso gera uma instabilidade crônica e uma impaciência que pode sabotar suas conquistas. O vício de comportamento a ser observado por você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a tendência irresistível a abandonar tudo o que exige persistência ou que se torna "comum", agindo de forma inconsequente e impedindo a construção de algo duradouro. Sua alma quer o novo, mas o segredo da sua evolução é aprender que a verdadeira liberdade nasce da disciplina de saber onde se quer chegar, transformando a inquietude em inovação focada.</p>`,
-
-    6: `<h3>Impulso de Serviço e Desafio do Perfeccionismo - 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo:`<h3>Impulso de Serviço e Desafio do Perfeccionismo - 6</h3>
     <p>O foco da sua existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está totalmente voltado para o lar, para o bem-estar da família e para o serviço amoroso ao próximo. É um desejo profundo de ser o porto seguro e o conselheiro(a) de todos, assumindo responsabilidades pesadas e buscando uma perfeição estética e emocional em cada detalhe do ambiente ao seu redor.</p>
     <p>A armadilha desse excesso de cuidado é o perfeccionismo sufocante e a tendência a se sobrecarregar com problemas que não são seus. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode acabar se tornando uma pessoa polêmica ou intrometida, tentando controlar a vida de terceiros sob o pretexto benevolente de ajudar, o que inevitavelmente gera conflitos e um cansaço emocional desnecessário. Sua alma deseja a harmonia coletiva, mas o seu aprendizado é entender que cada um tem o direito de caminhar com as próprias pernas e que sua felicidade não pode depender da perfeição dos outros.</p>`,
-
-    7: `<h3>Impulso de Introspecção e Desafio do Isolamento - 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7: {
+     conteudo:`<h3>Impulso de Introspecção e Desafio do Isolamento - 7</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui uma inclinação natural e poderosa para o estudo profundo, para o silêncio e para a decifração dos grandes mistérios da vida. É o desejo ardente de encontrar a verdade absoluta, a resposta técnica perfeita e a excelência intelectual em tudo o que se propõe a analisar ou realizar.</p>
     <p>O lado sombrio desse excesso é o isolamento gélido e o uso do sarcasmo como defesa. Seu padrão cíclico, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode ser o de se afastar do mundo por julgar — mesmo que inconscientemente — que ninguém compartilha do seu nível de sabedoria ou refinamento, tornando-se alguém frio e excessivamente crítico. Sua alma quer o conhecimento, mas a lição definitiva é integrar essa sabedoria com a compaixão humana, reconhecendo que a inteligência sem a conexão emocional é apenas um castelo de gelo vazio.</p>`,
-
-    8: `<h3>Impulso de Realização e Desafio do Materialismo - 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8: {
+     conteudo:`<h3>Impulso de Realização e Desafio do Materialismo - 8</h3>
     <p>Existe um desejo voraz em você por realização material, poder executivo e justiça prática no mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Essa abundância numérica gera uma ambição legítima e necessária de organizar grandes estruturas e alcançar a prosperidade financeira de alto nível, utilizando a lógica e a autoridade para manifestar resultados concretos e duradouros.</p>
     <p>Porém, o excesso dessa vibração pode transformar você em alguém excessivamente frio, calculista e pragmático. O comportamento recorrente a ser evitado é o de colocar os interesses materiais e o status acima dos sentimentos humanos básicos, agindo de forma controladora para manter a autoridade a qualquer custo. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma quer o sucesso, mas entenda que o poder real é aquele que serve a um propósito maior; quando a riqueza é usada com ética e generosidade, ela se torna inesgotável e verdadeiramente respeitada.</p>`,
-
-    9: `<h3>Impulso de Humanitarismo e Desafio do Mártir - 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Impulso de Humanitarismo e Desafio do Mártir - 9</h3>
     <p>A vibração da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é movida pela compaixão universal e por um altruísmo que não conhece fronteiras. Existe em você um desejo sincero e emocionante de ajudar o mundo e de se dedicar a causas que tragam evolução à humanidade, buscando a finalização de ciclos com sabedoria, perdão e desprendimento.</p>
-    <p>A deficiência aqui surge quando você se perde em idealismos impraticáveis ou assume, sem perceber, o papel de mártir. O padrão negativo é o esquecimento total das suas próprias necessidades fundamentais e financeiras em favor de um "salvacionismo" irreal, o que acaba gerando esgotamento profundo e uma amarga sensação de falta de valorização. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma quer salvar o mundo, mas lembre-se que você faz parte dele: para que sua luz ajude os outros, sua própria lâmpada precisa estar abastecida e cuidada.</p>`
-
+    <p>A deficiência aqui surge quando você se perde em idealismos impraticáveis ou assume, sem perceber, o papel de mártir. O padrão negativo é o esquecimento total das suas próprias necessidades fundamentais e financeiras em favor de um "salvacionismo" irreal, o que acaba gerando esgotamento profundo e uma amarga sensação de falta de valorização. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma quer salvar o mundo, mas lembre-se que você faz parte dele: para que sua luz ajude os outros, sua própria lâmpada precisa estar abastecida e cuidada.</p>`,
+  videoID: "F8bg1CTQ9HI"
+    },
 },
  
 deficits: {
-    1: `<h3>Egoísmo - Déficit de Comportamento 1</h3>
+    1: {
+     conteudo:`<h3>Egoísmo - Déficit de Comportamento 1</h3>
         <p>Este déficit, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está profundamente ligado ao princípio universal de causa e efeito: tudo o que se manifesta hoje em sua jornada é o eco de escolhas passadas. Em algum ponto da sua trajetória de alma, você pode ter agido com intolerância, tentando impor sua vontade a qualquer custo para benefício próprio. É vital compreender que a vida é um espelho reativo; se houve injustiça no passado, o presente exigirá que você confronte essas sombras e assuma sua responsabilidade.</p>
         <p><strong>Influência:</strong> Você poderá ser exposto(a) a situações de grande desgaste emocional, onde sua autoconfiança será testada ao limite. <strong>MASCULINO-FEMININO-NEUTRO</strong>, prepare-se para lidar com pessoas falsas ou injustas, pois elas são o reflexo da energia que você precisa transmutar. Para evitar sofrimentos inúteis, seja o(a) primeiro(a) a praticar a justiça e a tolerância absoluta. O segredo da sua cura é a construção de uma imagem verdadeira e transparente, banindo qualquer artifício de falsidade do seu caminho profissional ou pessoal. Ao dominar seus impulsos e agir com retidão, você limpa esse registro e abre as portas para uma prosperidade legítima e duradoura.</p>`,
-
-    2: `<h3>Crueldade - Déficit de Comportamento 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2: {
+     conteudo:`<h3>Crueldade - Déficit de Comportamento 2</h3>
         <p>Em algum momento da sua existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, houve um uso equivocado do poder pessoal, que pode ter se manifestado como vingança, crueldade ou abusos emocionais contra outros. Esta lição atual vem para ensinar que a compaixão não é fraqueza, mas a tecnologia mais avançada da alma para cooperar e unir. Ser compassivo(a) permitirá que você ocupe um lugar de honra no coração das pessoas, trazendo um senso de equilíbrio que talvez tenha faltado em seus ciclos anteriores.</p>
         <p><strong>Influência:</strong> Sob esta vibração, você poderá se sentir explorado(a) ou submetido(a) a situações onde seu valor não é reconhecido, gerando uma baixa autoestima e um medo paralisante da solidão. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o pessimismo pode tentar nublar sua visão, tornando as decisões difíceis. Sua grande virada de chave reside em apoiar sua criatividade na ética mais rigorosa possível. Busque sempre o resultado onde todos ganham; ao se tornar um(a) agente da harmonia e do respeito mútuo, você dissolve as amarras desse déficit e resgata sua verdadeira dignidade.</p>`,
-
-    3: `<h3>Exibicionismo - Déficit de Comportamento 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Exibicionismo - Déficit de Comportamento 3</h3>
         <p>Esta energia indica que, em algum momento, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode ter se deixado levar por uma necessidade narcisista de ser o centro das atenções, agindo de forma oportunista ou superficial. O foco excessivo nas próprias prioridades, ignorando o impacto de suas ações nos outros, criou um padrão de ciúme e insensibilidade que agora precisa ser equilibrado com urgência através da lealdade e do compromisso real.</p>
         <p><strong>Influência:</strong> Você enfrentará desafios que testarão sua persistência e foco, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Procrastinar e deixar projetos pela metade será sua maior tentação, e a sensação de que nada se conclui pode gerar dramas desnecessários em seus relacionamentos. Para encontrar a felicidade plena, você deve abraçar a disciplina como um mantra diário. Desenvolva a concentração e a habilidade de seguir em frente mesmo diante das críticas. Quando você troca o palco do ego pela construção sólida de resultados úteis ao coletivo, seu magnetismo se torna real e seu sucesso deixa de ser uma aparência para se tornar um legado inabalável.</p>`,
-
-    4: `<h3>Irresponsabilidade - Déficit de Comportamento 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Irresponsabilidade - Déficit de Comportamento 4</h3>
         <p>Este déficit revela que, em ciclos passados, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode ter negligenciado responsabilidades fundamentais em troca de prazeres imediatos ou por pura preguiça. A omissão e a indiferença diante do dever podem ter causado danos a você ou a terceiros, criando uma dívida com a ordem e a estrutura do mundo material. Agora, a vida convoca você para o resgate da sua utilidade e produtividade.</p>
         <p><strong>Influência:</strong> Você poderá sentir limitações físicas ou financeiras que parecem surgir do nada, acompanhadas de uma insatisfação constante e falta de disposição. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o caminho para a sua libertação é a organização meticulosa do seu trabalho e da sua vida pessoal. Enfrente seus medos de frente e aprenda a administrar o estresse com tolerância. Ao se tornar a pessoa em quem todos podem confiar, você transmuta a antiga irresponsabilidade em uma reputação de ouro. A vitória virá através do suor honesto e do prazer de construir algo com método e persistência.</p>`,
-
-    5: `<h3>Impulsividade - Déficit de Comportamento 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Impulsividade - Déficit de Comportamento 5</h3>
         <p>A vida é feita de mudanças, mas o seu déficit, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sugere que em algum momento você buscou a liberdade de forma inconsequente, correndo riscos desnecessários e se entregando a excessos ligados aos sentidos ou vícios. Esse desperdício de energia vital resultou em uma perda de controle sobre o próprio destino, algo que você está aqui para aprender a gerir com inteligência e limites claros agora.</p>
         <p><strong>Influência:</strong> Você será testado(a) em sua integridade moral e moralidade com frequência. Situações de frustração extrema podem levar ao desequilíbrio emocional, fazendo com que você se sinta incompreendido(a) pelo mundo. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua personalidade pode tender a comportamentos viciantes se você não vigiar seus impulsos. A grande lição é a paciência: reconheça seus limites e respeite as restrições impostas pela realidade. Quando você domina seus sentidos em vez de ser escravizado(a) por eles, sua sede de liberdade se transforma em sabedoria nômade e poder de adaptação extraordinário.</p>`,
-
-    6: `<h3>Avarento - Déficit de Comportamento 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo:`<h3>Avarento - Déficit de Comportamento 6</h3>
         <p>Em algum ponto da sua jornada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a arrogância e o desejo de levar vantagem sobre os outros falaram mais alto. Pode ter havido uma intromissão excessiva na vida alheia com o intuito de controlar ou impor seus próprios valores, agindo com mesquinhez emocional ou material. Este déficit pede que você saia da zona de conforto do ego e aprenda a olhar para o próximo com um olhar de igualdade e serviço desinteressado.</p>
         <p><strong>Influência:</strong> Prepare-se para situações onde será necessário sacrificar seu próprio conforto em benefício de terceiros, enfrentando muitas vezes a ingratidão como prova de fogo. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, poderá ter dificuldade em avaliar quem realmente merece sua confiança, atraindo oportunistas que espelham sua antiga vibração. A cura reside em interagir com as pessoas sem presunção e sem tentar controlar suas vidas. Ao oferecer suporte sem exigir nada em troca, você dissolve a avareza da alma e atrai relacionamentos profundos, honestos e genuinamente prósperos.</p>`,
-
-    7: `<h3>Preconceitos - Déficit de Comportamento 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7: {
+     conteudo:`<h3>Preconceitos - Déficit de Comportamento 7</h3>
         <p>A indiferença e a intolerância foram sombras em sua trajetória, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você pode ter agido de forma fria e cínica, dando um valor exagerado às aparências e futilidades enquanto ignorava a dor ou os interesses alheios. A desonestidade intelectual, escolhendo verdades "convenientes", pode ter causado sofrimento a pessoas próximas apenas para satisfazer sua vaidade intelectual ou estética.</p>
         <p><strong>Influência:</strong> Esta energia atrairá situações que ferirão diretamente seu orgulho, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Decepções com amizades desleais serão frequentes até que você aprenda a enxergar além da superfície. Você poderá se sentir vazio(a) ou dependente da aprovação de quem você nem respeita. O antídoto é a humildade radical: seja livre de preconceitos e aja com uma justiça que não busca aplausos. Quando você troca a vaidade pela busca da verdade real e da conexão espiritual profunda, sua baixa autoestima dá lugar a uma autoconfiança inabalável baseada na sabedoria divina.</p>`,
-
-    8: `<h3>Ganância - Déficit de Comportamento 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8: {
+     conteudo:`<h3>Ganância - Déficit de Comportamento 8</h3>
         <p>Este déficit indica que a raiva, a agressividade e a ganância descontrolada podem ter guiado suas decisões no passado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desejo de possuir tudo sem nunca desfrutar de nada criou um ciclo de insatisfação crônica. Você pode ter usado seu poder para oprimir em vez de realizar, focando apenas no acúmulo material sem considerar o fator humano ou espiritual envolvido nas suas conquistas.</p>
         <p><strong>Influência:</strong> Você poderá passar por períodos de privação financeira ou limitações materiais severas que testarão sua força de vontade. <strong>MASCULINO-FEMININO-NEUTRO</strong>, a sensação de não conseguir se realizar profissionalmente pode ser frustrante. A lição de ouro é o equilíbrio e a moderação: aprenda a controlar seus impulsos e entenda que o dinheiro é uma energia de troca, não um fim em si mesmo. Quando você compreende que as pessoas confiam no que você é, e não no que você tem, o fluxo da abundância volta a correr em sua direção de forma limpa, justa e duradoura.</p>`,
-
-    9: `<h3>Vaidade - Déficit de Comportamento 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Vaidade - Déficit de Comportamento 9</h3>
         <p>Em algum momento, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a arrogância de se sentir superior aos demais levou você a ofender ou humilhar aqueles que considerava "inferiores". Esse idealismo distorcido e a dureza de coração podem ter gerado um comportamento vingativo contra quem ousasse desafiar sua vontade. Este déficit é uma convocação direta para a prática da humildade e do altruísmo universal.</p>
-        <p><strong>Influência:</strong> Prepare-se para enfrentar perdas afetivas ou materiais que parecerão injustas, mas que servem para esvaziar seu ego e preencher sua alma com humanidade. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o sentimento de vazio interior só será curado quando você começar a compartilhar suas conquistas e a beneficiar genuinamente quem cruza seu caminho. Seja solidário(a), compreensivo(a) e aja com uma justiça que acolhe. Ao transformar a vaidade em serviço humanitário, você transmuta sua dívida em luz e se torna um canal de sabedoria e paz para o mundo inteiro.</p>`
-},
+        <p><strong>Influência:</strong> Prepare-se para enfrentar perdas afetivas ou materiais que parecerão injustas, mas que servem para esvaziar seu ego e preencher sua alma com humanidade. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o sentimento de vazio interior só será curado quando você começar a compartilhar suas conquistas e a beneficiar genuinamente quem cruza seu caminho. Seja solidário(a), compreensivo(a) e aja com uma justiça que acolhe. Ao transformar a vaidade em serviço humanitário, você transmuta sua dívida em luz e se torna um canal de sabedoria e paz para o mundo inteiro.</p>`,
+       videoID: "F8bg1CTQ9HI"
+    },
+
+    
+    },
+
+     
 inclinacoes: {
-    1: `<h3>Controlador e Individualista - Inclinação Oculta 1</h3>
+    1: {
+     conteudo:`<h3>Controlador e Individualista - Inclinação Oculta 1</h3>
         <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta uma autoconfiança inabalável e uma busca incessante pela perfeição, alimentada por um espírito competitivo que o(a) impele a liderar em todas as esferas. Essa força motriz, contudo, é uma faca de dois gumes: se não for vigiada, pode transparecer como uma tendência à manipulação sutil para atingir objetivos específicos, colocando seus interesses acima do bem-estar coletivo.</p>
         <p>Há um risco latente de você se inclinar ao individualismo radical e ao egocentrismo, permitindo que atitudes prepotentes ou autoritárias dominem suas relações profissionais e pessoais. Quando essa energia entra em desequilíbrio, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode parecer arrogante e pouco permeável a novas ideias, dificultando a colaboração e a empatia necessárias para grandes feitos. Seu desafio é entender que a verdadeira liderança não precisa sufocar os outros para brilhar; aprenda a delegar e a valorizar o gênio alheio tanto quanto o seu.</p>`,
-
-    2: `<h3>Dependente e Indeciso - Inclinação Oculta 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2: {
+     conteudo:`<h3>Dependente e Indeciso - Inclinação Oculta 2</h3>
         <p>Sua natureza fundamental, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de um(a) mediador(a) nato(a), capaz de harmonizar os conflitos mais ásperos e buscar o ponto de equilíbrio entre partes divergentes. No entanto, essa busca quase obsessiva por agradar a todos ao seu redor pode mascarar uma insegurança profunda, manifestando--se como uma timidez excessiva ou uma falta de iniciativa que trava seu progresso.</p>
         <p>Existe uma inclinação perigosa à indecisão e à dependência emocional de terceiros, o que abre margem para comportamentos dissimulados ou atitudes mesquinhas por medo de ser rejeitado(a). O grande desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é não permitir que o desânimo ou a passividade tomem conta diante dos obstáculos. Aprenda a sustentar sua própria opinião mesmo que ela cause desconforto inicial, pois sua voz é essencial para que o equilíbrio que você tanto busca seja real e não apenas uma fachada de conveniência.</p>`,
-
-    3: `<h3>Exibicionismo e Superficialidade - Inclinação Oculta 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Exibicionismo e Superficialidade - Inclinação Oculta 3</h3>
         <p>Você possui o dom divino de motivar e encantar as pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas frequentemente sofre com uma dispersão mental que drena sua energia vital. O desejo por entretenimento, prazer imediato e gratificação social pode acabar se sobrepondo às suas responsabilidades reais, levando a uma vida de muitos começos e poucas conclusões concretas.</p>
         <p>A preocupação excessiva com as aparências e o julgamento baseado na superfície das coisas são marcas fortes desta inclinação. Essa vaidade, somada a um estado de agitação constante, pode resultar em um grande desperdício do seu tempo em questões fúteis ou puramente estéticas que não alimentam sua alma a longo prazo. <strong>MASCULINO-FEMININO-NEUTRO</strong>, seu caminho de evolução exige que você desenvolva o foco e a profundidade; use seu carisma para construir algo que tenha substância e não apenas brilho momentâneo.</p>`,
-
-    4: `<h3>Intolerância e Rigidez - Inclinação Oculta 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Intolerância e Rigidez - Inclinação Oculta 4</h3>
         <p>A organização meticulosa e a preparação para imprevistos são seus pilares de sobrevivência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Porém, essa estrutura pode facilmente se transformar em uma prisão de rigidez mental, onde você se torna escravo(a) das próprias convicções. Você tende a exercer um autoritarismo técnico que pode sufocar a criatividade e a liberdade das pessoas que convivem com você.</p>
         <p>O seu perfeccionismo exagerado gera uma insatisfação crônica, onde nada — nem o seu trabalho, nem o dos outros — parece atingir o nível "ideal". Essa obsessão pelo controle total e a teimosia em não aceitar perspectivas diferentes criam um ambiente de tensão constante. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o aprendizado é soltar as rédeas e permitir que a vida flua com suas imperfeições naturais. Entenda que o caos, às vezes, é o fertilizante necessário para o crescimento que a rigidez impede.</p>`,
-
-    5: `<h3>Abusos e Desmotivação - Inclinação Oculta 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Abusos e Desmotivação - Inclinação Oculta 5</h3>
         <p>Sua curiosidade é insaciável e seu desejo de vivenciar o mundo em sua plenitude é um motor poderoso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Todavia, essa busca incessante pode conduzir a comportamentos impulsivos, onde você acaba explorando as fraquezas alheias para obter vantagens rápidas ou satisfação momentânea, agindo sem medir as consequências futuras das suas ações.</p>
         <p>A necessidade constante de adrenalina e estímulos inéditos frequentemente resulta em uma desmotivação profunda assim que a novidade passa, dificultando o estabelecimento de vínculos duradouros. Essa sede de sensações pode levar a excessos que mascaram um vazio interno persistente. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua lição é encontrar a aventura dentro da estabilidade. Aprenda que a verdadeira liberdade não vem de fugir das responsabilidades, mas de ter o domínio sobre seus próprios desejos e impulsos.</p>`,
-
-    6: `<h3>Controlador e Autoritário - Inclinação Oculta 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo:`<h3>Controlador e Autoritário - Inclinação Oculta 6</h3>
         <p>Embora você nutra um cuidado genuíno e quase protetor pelas pessoas ao seu redor, essa atenção pode facilmente cruzar a linha e se tornar uma interferência controladora e invasiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua visão idealista da vida faz com que você exija uma perfeição absoluta de quem você ama, gerando cobranças desmedidas que sufocam o afeto.</p>
         <p>O apego rígido a padrões sociais, morais e familiares pode torná-lo(a) uma pessoa teimosa e, por vezes, ingrata quando as coisas não saem exatamente como você planejou. Quando suas expectativas não são atendidas, você tende ao julgamento severo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu desafio de alma é aceitar as imperfeições humanas como parte da beleza da vida. Aprenda a amar as pessoas pelo que elas são, e não pelo papel que você gostaria que elas desempenhassem no seu roteiro ideal.</p>`,
-
-    7: `<h3>Insatisfação e Melancolia - Inclinação Oculta 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7: {
+     conteudo:`<h3>Insatisfação e Melancolia - Inclinação Oculta 7</h3>
         <p>Como um(a) intelectual nato(a), você habita um mundo complexo de ideias e análises profundas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Entretanto, essa mente brilhante pode se tornar excessivamente crítica e cética, especialmente com o que não pode ser provado pela lógica fria. Isso acaba gerando um isolamento defensivo, onde você se afasta do mundo para não ser "contaminado(a)" pela mediocridade.</p>
         <p>A dificuldade em processar e expressar emoções de forma aberta pode resultar em sentimentos de melancolia e incompreensão. Há uma inclinação à frustração persistente, onde nenhuma conquista material parece ser suficiente para preencher seu padrão de exigência. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua cura está em equilibrar a razão com a intuição e o sentimento. Não se perca em mundos imaginários ou dependências escapistas; aprenda a encontrar o sagrado e o belo na simplicidade do cotidiano.</p>`,
-
-    8: `<h3>Ganância e Obstinação - Inclinação Oculta 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8: {
+     conteudo:`<h3>Ganância e Obstinação - Inclinação Oculta 8</h3>
         <p>Sua ambição é uma força da natureza voltada para o sucesso, o poder e o prestígio material, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você acredita, com razão, no seu direito de ter o melhor, mas essa determinação pode se degenerar em um apego materialista cego e em uma sede insaciável de controle sobre tudo e todos ao seu redor.</p>
         <p>O medo inconsciente da escassez pode corromper sua conduta, levando a comportamentos avarentos ou à participação em situações eticamente cinzentas para garantir sua segurança financeira. Sua obstinação pelo poder, se não for temperada pela generosidade real, pode torná-lo(a) escravo(a) das suas próprias posses. <strong>MASCULINO-FEMININO-NEUTRO</strong>, entenda que o dinheiro é um fluxo: quanto mais você o usa para elevar o mundo, mais ele retorna para você de forma limpa e multiplicada.</p>`,
-
-    9: `<h3>Carência de Afeto - Inclinação Oculta 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Carência de Afeto - Inclinação Oculta 9</h3>
         <p>Sua natureza é profundamente empática e voltada ao serviço humanitário, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Porém, essa dedicação heróica ao próximo muitas vezes esconde uma negligência severa com as suas próprias dores e carências. Você tende a "salvar" os outros como uma estratégia inconsciente para evitar olhar para o seu próprio espelho interior.</p>
-        <p>Essa inclinação revela uma carência afetiva latente, que se manifesta na busca incessante por aprovação e reconhecimento através da utilidade. O desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é equilibrar a doação ao mundo com o autorespeito radical. Não se torne um(a) mártir das necessidades alheias apenas para se sentir amado(a). A verdadeira compaixão começa em casa: aprenda a nutrir a si mesmo(a) com a mesma intensidade que dedica aos outros.</p>`
+        <p>Essa inclinação revela uma carência afetiva latente, que se manifesta na busca incessante por aprovação e reconhecimento através da utilidade. O desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é equilibrar a doação ao mundo com o autorespeito radical. Não se torne um(a) mártir das necessidades alheias apenas para se sentir amado(a). A verdadeira compaixão começa em casa: aprenda a nutrir a si mesmo(a) com a mesma intensidade que dedica aos outros.</p>`,
+      videoID: "F8bg1CTQ9HI"
+    } 
+    
     },
         
 subconsciente: {
-       1: `<h3>Reação Fraca e Dispersa - Subconsciente 1</h3>
+       1: {
+     conteudo:`<h3>Reação Fraca e Dispersa - Subconsciente 1</h3>
         <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui certa dificuldade em antecipar crises inesperadas, e sua percepção instintiva pode falhar ao identificar a real gravidade de eventos imprevistos. Isso resulta em uma reação inicial dispersa e em uma nítida falta de iniciativa, deixando-o(a) momentaneamente impotente, confuso(a) e sem uma direção clara para onde seguir.</p>
         <p>Embora possua uma resistência vital impressionante, você tem um limite crítico de tolerância. Quando este ponto é atingido, sua postura muda drasticamente para um estado combativo e autoritário. Nesse estágio, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna defensivo(a) e excessivamente crítico(a), passando a enxergar ameaças em todos os lugares, o que dificulta o recebimento de ajuda externa e retarda severamente sua recuperação emocional. Sua lição é aprender a agir com prontidão sem entrar em modo de guerra.</p>`,
-
-    2: `<h3>Controlador e Individualista - Subconsciente 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2: {
+     conteudo:`<h3>Controlador e Individualista - Subconsciente 2</h3>
         <p>Apesar de sua flexibilidade habitual no dia a dia, momentos de crise profunda despertam em você um comportamento arredio e cauteloso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Em situações de alta tensão, sua tendência instintiva é evitar o confronto direto a todo custo, mas isso pode dar lugar a uma postura arrogante ou dissimulada, utilizada como um mecanismo de defesa para proteger sua fragilidade interna.</p>
         <p>Se você sente que a derrota é inevitável, pode se abater rapidamente, tornando-se emocionalmente vulnerável e exigindo atenção excessiva dos que o(a) cercam. Sob pressão extrema, <strong>MASCULINO-FEMININO-NEUTRO</strong>, surge um forte impulso para tentar controlar o ambiente através da comoção ou do drama, podendo agir de forma fria ou até vingativa contra aqueles que você considera responsáveis pelo seu mal-estar momentâneo. O equilíbrio virá quando você aprender a enfrentar a realidade sem máscaras.</p>`,
-
-    3: `<h3>Impetuoso e Descontrolado - Subconsciente 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Impetuoso e Descontrolado - Subconsciente 3</h3>
         <p>Você transita muito bem na rotina comum, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas diante de desafios severos ou perdas súbitas, sua falta de firmeza interna se torna evidente. Sua abordagem nessas horas tende a ser indisciplinada e incoerente, o que dificulta uma leitura precisa da realidade e acaba gerando um pessimismo paralisante que drena sua força de ação.</p>
         <p>Em emergências, sua reação é frequentemente explosiva, teatral e desproporcional ao fato ocorrido. A confusão mental e a falta de foco podem levá-lo(a) a atitudes grosseiras ou a estados depressivos súbitos que bloqueiam sua criatividade. Para não sucumbir totalmente às dificuldades, você acaba dependendo crucialmente do apoio de figuras externas que lhe transmitam segurança e proteção emocional, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua evolução depende de encontrar essa segurança dentro de si mesmo(a), e não nos outros.</p>`,
-
-    4: `<h3>Hesitação e Rigidez - Subconsciente 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Hesitação e Rigidez - Subconsciente 4</h3>
         <p>Sua natureza é estável e sólida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas seu apego excessivo a métodos, regras e sistemas conhecidos pode torná-lo(a) perigosamente lento(a) na resposta a eventos inesperados. Sob pressão, você corre o risco de se tornar uma pessoa inflexível, perdendo-se em detalhes irrelevantes e burocráticos enquanto a realidade exige decisões rápidas e práticas.</p>
         <p>A insegurança profunda o(a) torna teimoso(a) e resistente a qualquer mudança que não tenha sido planejada com antecedência. Se sentir que seu terreno seguro está ameaçado, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você pode se tornar um(a) contestador(a) implacável e excessivamente rigoroso(a), utilizando a crítica ácida como um escudo contra o desconhecido. O desafio é entender que a vida não pode ser totalmente controlada e que a verdadeira estabilidade vem da capacidade de se adaptar ao novo sem medo.</p>`,
-
-    5: `<h3>Tensão e Impulsividade - Subconsciente 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Tensão e Impulsividade - Subconsciente 5</h3>
         <p>Você se adapta bem ao dinamismo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas o caos absoluto tende a desestabilizar sua sensatez. Em crises agudas, sua reação instintiva costuma ser confusa e inconveniente, deixando-se guiar por instintos básicos de "luta ou fuga" e perdendo a capacidade de tomar decisões assertivas e lógicas.</p>
         <p>Há uma inclinação perigosa a dispersar energia em várias direções apenas para fugir do problema central que causa dor. Se a pressão se torna insuportável, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o desejo de gratificação instantânea pode levá-lo(a) a comportamentos de risco ou ao refúgio em vícios como forma de escape da realidade. Nestes momentos críticos, a intervenção de terceiros equilibrados é essencial para recuperar seu eixo, mas sua meta deve ser desenvolver o autocontrole para navegar nessas tormentas sozinho(a).</p>`,
-
-    6: `<h3>Sensibilidade e Controle - Subconsciente 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo:`<h3>Sensibilidade e Controle - Subconsciente 6</h3>
         <p>Em situações críticas, sua prioridade absoluta e quase obsessiva é o bem-estar alheio, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você demonstra uma calma aparente e um desejo genuíno de confortar a todos, muitas vezes assumindo responsabilidades pesadas que não lhe pertencem e negligenciando totalmente suas próprias necessidades básicas de saúde e descanso.</p>
         <p>Contudo, esse zelo excessivo pode se transformar em um comportamento intrusivo, sufocante e controlador. Ao tentar "salvar" a todos, você pode começar a ditar ordens autoritárias e ignorar completamente a autonomia das outras pessoas. Se não houver o reconhecimento ou a gratidão que você espera, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você pode oscilar para uma postura presunçosa ou mágoa profunda. Aprenda que ajudar é diferente de controlar, e que sua primeira responsabilidade em uma crise é estar bem para poder ser útil.</p>`,
-
-    7: `<h3>Arredio e Evasivo - Subconsciente 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7: {
+     conteudo:`<h3>Arredio e Evasivo - Subconsciente 7</h3>
         <p>Sua reação instintiva diante do inesperado ou do choque emocional é o retraimento absoluto, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você tende a analisar as crises de forma fria, distante e calculista, reprimindo suas emoções sob uma camada de gelo e buscando se afastar fisicamente ou emocionalmente do problema para evitar qualquer envolvimento direto.</p>
         <p>Se for forçado(a) ao confronto sem ter para onde fugir, você pode utilizar a ironia mordaz e a manipulação intelectual como ferramentas de defesa. Existe uma tendência latente em você de buscar culpados externos em vez de soluções práticas e, em estados de isolamento profundo, buscar consolo em hábitos solitários e destrutivos. <strong>MASCULINO-FEMININO-NEUTRO</strong>, fechar-se para o mundo não resolve a crise; sua evolução pede que você aprenda a compartilhar sua vulnerabilidade para encontrar a saída.</p>`,
-
-    8: `<h3>Eficiente e Autoritário - Subconsciente 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8: {
+     conteudo:`<h3>Eficiente e Autoritário - Subconsciente 8</h3>
         <p>Você costuma ser a figura máxima de estabilidade em qualquer emergência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua reação é focada, organizada e extremamente honesta, assumindo o comando com uma objetividade e eficiência que impressionam. Você é, sem dúvida, a pessoa em quem todos confiam cegamente quando o sistema falha ou o caos se instala.</p>
         <p>No entanto, essa força descomunal pode se tornar esmagadora para os outros. Se for desafiado(a) em sua autoridade durante uma crise, você pode tentar se impor pela força bruta mental ou pela arrogância. Sua dificuldade em lidar com derrotas ou perdas materiais pode gerar explosões de raiva avassaladoras. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o desafio é liderar com humanidade: entenda que em momentos de dor, as pessoas precisam de um guia forte, mas também de alguém que saiba acolher sem esmagar.</p>`,
-
-    9: `<h3>Apático e Distante - Subconsciente 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Apático e Distante - Subconsciente 9</h3>
         <p>Embora você seja um(a) grande estrategista na teoria, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você enfrenta dificuldades monumentais em administrar crises emocionais imediatas. Sua primeira reação automática tende a ser a apatia ou o afastamento egoísta, agindo com uma indiferença que pode ser dolorosa para quem espera seu apoio em momentos críticos.</p>
-        <p>Ao se sentir ameaçado(a) ou injustiçado(a) em meio ao caos, seu lado mais sombrio emerge: você pode se tornar implacável e malicioso(a). Dificilmente perdoa ofensas reais ou imaginárias e pode dedicar uma energia preciosa a planos de retaliação em vez de focar na resolução do problema. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua tendência a se fechar em seu próprio mundo interno o(a) torna uma figura pouco confiável para o grupo em emergências. Sua meta é transformar essa apatia em compaixão ativa, agindo pelo bem comum mesmo quando sua alma quer fugir.</p>`
+        <p>Ao se sentir ameaçado(a) ou injustiçado(a) em meio ao caos, seu lado mais sombrio emerge: você pode se tornar implacável e malicioso(a). Dificilmente perdoa ofensas reais ou imaginárias e pode dedicar uma energia preciosa a planos de retaliação em vez de focar na resolução do problema. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua tendência a se fechar em seu próprio mundo interno o(a) torna uma figura pouco confiável para o grupo em emergências. Sua meta é transformar essa apatia em compaixão ativa, agindo pelo bem comum mesmo quando sua alma quer fugir.</p>`,
+       videoID: "F8bg1CTQ9HI"
+    }
 },
 talento: {     
     
-     1: `<h3>Liderança Pioneira e Iniciativa Independente - Talento 1</h3>
+     1: {
+     conteudo:`<h3>Liderança Pioneira e Iniciativa Independente - Talento 1</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, reside na capacidade inata de abrir caminhos onde outros veem apenas obstáculos intransponíveis. Existe uma facilidade natural para tomar decisões rápidas sob pressão e assumir o comando de situações complexas sem qualquer hesitação. Você possui a habilidade rara de criar soluções originais e agir com um pioneirismo que inspira confiança imediata, transformando ideias abstratas em ações concretas com uma coragem que muitas vezes ocorre de forma silenciosa e instintiva em seu cotidiano.</p>
     <p>Este dom indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é um(a) iniciador(a) por excelência. Seu sucesso flui quando você confia no seu "feeling" para novos negócios ou projetos, pois sua mente está programada para detectar tendências antes de todo mundo. Use essa força para liderar movimentos e não tenha medo de ser a primeira pessoa a dar o passo; sua independência é sua maior riqueza.</p>`,
-
-    2: `<h3>Mediação Diplomática e Percepção de Detalhes - Talento 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2: {
+     conteudo:`<h3>Mediação Diplomática e Percepção de Detalhes - Talento 2</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui o talento extraordinário de perceber as nuances, tons de voz e sentimentos sutis que passam completamente despercebidos pela maioria das pessoas. Essa sensibilidade apurada permite que você atue como o ponto de equilíbrio perfeito em qualquer ambiente, resolvendo conflitos antes mesmo que eles estourem através de uma diplomacia impecável e de uma cooperação genuína.</p>
     <p>O seu talento flui com maestria na arte de unir pessoas e na execução de tarefas que exigem minúcia, paciência extrema e um tato social refinado. <strong>MASCULINO-FEMININO-NEUTRO</strong>, você é a "cola" que mantém as equipes unidas. No mundo profissional, sua habilidade para parcerias e suporte estratégico é um diferencial que atrai pessoas influentes e oportunidades que dependem da confiança e do bom relacionamento de longo prazo.</p>`,
-
-    3: `<h3>Comunicação Criativa e Expressão Cativante - Talento 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Comunicação Criativa e Expressão Cativante - Talento 3</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a facilidade quase mágica de transformar ideias brutas em mensagens envolventes, lúdicas e inspiradoras. Existe em você um dom natural para a comunicação — seja ela falada, escrita ou artística — que magnetiza a atenção de forma espontânea e contagiante. Você consegue injetar leveza e entusiasmo nos projetos mais sérios, utilizando seu carisma para motivar grupos inteiros.</p>
     <p>Essa energia indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem um poder de convencimento único. Seu sucesso está ligado à sua capacidade de dar cor a conceitos que pareciam monótonos ou sem vida. Use essa habilidade para o marketing, para o ensino ou para qualquer área onde a expressão da verdade com criatividade seja necessária. O mundo ouve quando você decide falar, então use sua voz para espalhar brilho e clareza.</p>`,
-
-    4: `<h3>Organização Estrutural e Eficiência Prática - Talento 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Organização Estrutural e Eficiência Prática - Talento 4</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem o talento admirável de trazer ordem ao caos absoluto com uma facilidade impressionante. Essa habilidade se manifesta na sua capacidade superior de planejar, estruturar e executar tarefas com uma precisão técnica que beira a perfeição. Seu talento reside na construção de bases sólidas e na gestão de processos complexos que garantem segurança e resultados duradouros.</p>
     <p>Essa força indica que você é o pilar de qualquer estrutura, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Enquanto outros se perdem na teoria, você foca no que funciona. Sua disciplina parece natural e sem esforço, o que o(a) torna a pessoa ideal para projetos de longo prazo e alta responsabilidade. O seu caminho para a prosperidade está na sua reputação de seriedade e na entrega constante de um trabalho feito para durar gerações.</p>`,
-
-    5: `<h3>Adaptabilidade Veloz e Inovação Dinâmica - Talento 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Adaptabilidade Veloz e Inovação Dinâmica - Talento 5</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a versatilidade absoluta e a coragem diante das mudanças drásticas. Existe em você uma facilidade incomum para aprender novas habilidades em tempo recorde e se adaptar a diferentes cenários, tecnologias ou culturas sem perder a essência. Você possui o dom da inovação radical, conseguindo promover transformações rápidas que mantêm os projetos em constante evolução.</p>
     <p>Este talento indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é um(a) agente de mudança nato(a). Onde as pessoas veem medo no novo, você vê uma aventura lucrativa. Sua mente é progressista e detesta o estagnação. No mercado atual, sua agilidade mental e facilidade em vender ideias modernas fazem de você uma peça-chave em qualquer setor que precise de renovação e movimento constante.</p>`,
-
-    6: `<h3>Harmonização de Ambientes e Cuidado Educativo - Talento 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo:`<h3>Harmonização de Ambientes e Cuidado Educativo - Talento 6</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui o talento natural de criar uma atmosfera de harmonia, beleza e bem-estar onde quer que esteja presente. Essa habilidade se traduz em uma capacidade superior de aconselhar, cuidar e organizar espaços ou grupos de forma que todos se sintam acolhidos, valorizados e seguros sob sua supervisão. O seu talento flui na responsabilidade afetiva e na busca incessante pela justiça.</p>
     <p>Você atua como um pilar de equilíbrio ético e estético na vida das pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu dom para a mediação familiar e comunitária é poderoso e traz uma autoridade baseada no amor e no respeito. Profissionalmente, você brilha em áreas que lidam com o público, com o ensino ou com a criação de produtos que visam melhorar a qualidade de vida e a harmonia dos lares e das relações humanas.</p>`,
-
-    7: `<h3>Análise Profunda e Especialização Técnica - Talento 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7: {
+     conteudo:`<h3>Análise Profunda e Especialização Técnica - Talento 7</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, reside em uma mente analítica de elite e na busca incansável pela perfeição intelectual. Existe em você uma facilidade nata para investigar a fundo qualquer tema, detectando falhas lógicas ou verdades ocultas que a maioria ignora. Você possui o dom da observação silenciosa e do estudo especializado, atingindo níveis de compreensão técnica que o(a) tornam uma autoridade natural.</p>
     <p>Sua sabedoria não é superficial, <strong>MASCULINO-FEMININO-NEUTRO</strong>; ela é fruto de uma conexão profunda com o conhecimento. Esse talento indica que você se destaca em qualquer campo que exija pesquisa, tecnologia, perícia ou espiritualidade aplicada. Sua opinião é respeitada porque todos sabem que, se você disse algo, é porque estudou e validou cada detalhe com rigor e inteligência superior.</p>`,
-
-    8: `<h3>Visão Estratégica e Gestão de Resultados - Talento 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8: {
+     conteudo:`<h3>Visão Estratégica e Gestão de Resultados - Talento 8</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem um talento nato para lidar com o poder, as grandes finanças e a administração de recursos em larga escala. Essa habilidade se manifesta em uma visão estratégica privilegiada que permite identificar oportunidades reais de crescimento onde ninguém mais consegue enxergar. O seu talento flui na organização de sistemas produtivos eficientes e na liderança executiva de alto nível.</p>
     <p>Este dom revela uma capacidade de realização material extraordinária, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você sabe como transformar esforços isolados em prosperidade tangível e duradoura. Use esse talento para empreender e gerir negócios, pois você possui a autoridade necessária para comandar grandes equipes e garantir que a justiça e a eficiência caminhem juntas na construção de um legado financeiro sólido.</p>`,
-
-    9: `<h3>Visão Humanitária e Compreensão Universal - Talento 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Visão Humanitária e Compreensão Universal - Talento 9</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a capacidade profunda de compreender as necessidades humanas em uma escala global e empática. Existe em você um dom especial para inspirar o altruísmo, o perdão e a generosidade, transcendendo interesses mesquinhos ou individuais. Você possui a habilidade rara de concluir ciclos complexos com sabedoria e servir como um guia para a transformação positiva do mundo.</p>
     <p>Sua ética abraça toda a existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o que faz de você uma referência espiritual e humanitária. Seu talento brilha em causas sociais, em artes que tocam o coração ou em lideranças que buscam o bem coletivo. Você tem a visão do todo e consegue ensinar aos outros o valor do desapego e do amor universal, transformando qualquer ambiente em um lugar mais consciente e evoluído.</p>`,
-
-11: `<h3>Intuição Visionária e Inspiração Elevada - Talento 11</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+11: {
+     conteudo:`<h3>Intuição Visionária e Inspiração Elevada - Talento 11</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, reside em uma sensibilidade psíquica e intuitiva que ultrapassa a lógica comum. Existe em você uma capacidade inata de receber lampejos de genialidade e "enxergar" soluções através de uma percepção espiritual ou idealista muito aguçada. Você possui o dom de servir como um canal de luz e inspiração, sendo capaz de elevar a consciência das pessoas ao seu redor apenas com a sua presença ou com suas ideias inovadoras.</p>
     <p>Este dom revela que você é um(a) mestre(a) da inspiração, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu sucesso acontece quando você aprende a confiar na sua voz interior acima do barulho do mundo. Embora esse talento exija maturidade para ser controlado, ele confere a você um carisma magnético e a habilidade de guiar outros em direção a novos ideais. Use essa força para iluminar caminhos, seja nas artes, no ensino ou na liderança de movimentos que buscam um propósito maior.</p>`,
-
-    22: `<h3>Maestria na Construção e Realização de Grandes Ideais - Talento 22</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    22: {
+     conteudo:`<h3>Maestria na Construção e Realização de Grandes Ideais - Talento 22</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui o talento extraordinário de transformar sonhos utópicos em realidades concretas e monumentais. Esse é o dom do "Arquiteto Mestre", que combina uma visão espiritual profunda com uma capacidade prática e pragmática sem paralelos. Seu talento reside na habilidade de planejar e executar projetos que beneficiam grandes grupos de pessoas, estruturando sistemas que promovem o progresso da humanidade.</p>
     <p>Esta força indica uma capacidade de trabalho em larga escala, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Enquanto outros ficam apenas no plano das ideias, você tem a estrutura interna para lidar com as complexidades do mundo material e erguer bases sólidas. O seu caminho para a prosperidade está ligado a grandes empreendimentos, obras sociais ou sistemas de gestão que deixem um legado duradouro de eficiência e bem-estar coletivo.</p>`,
-
-    33: `<h3>Orientação Compassiva e Maestria do Amor Universal - Talento 33</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    33: {
+     conteudo:`<h3>Orientação Compassiva e Maestria do Amor Universal - Talento 33</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a expressão máxima da entrega e do sacrifício em prol da evolução alheia. Existe em você um dom quase magnético para o aconselhamento e para a proteção dos mais fracos, agindo como um(a) "Mestre(a) da Cura" através da palavra e do exemplo. Você possui a habilidade rara de harmonizar conflitos de alta complexidade utilizando uma compaixão que não julga, mas transforma profundamente quem recebe seu cuidado.</p>
     <p>Essa energia indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é um(a) guia para o coração da humanidade. Seu sucesso está intrinsecamente ligado ao serviço altruísta e à responsabilidade de cuidar do equilíbrio ético de sua comunidade ou área de atuação. Use essa habilidade para educar, curar ou liderar através do amor incondicional. O mundo encontra conforto e direção sob sua tutela, tornando você uma referência de integridade e proteção espiritual.</p>`,
-
- 44: `<h3>Estabilidade Absoluta e Eficiência em Larga Escala - Talento 44</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+ 44: {
+     conteudo:`<h3>Estabilidade Absoluta e Eficiência em Larga Escala - Talento 44</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, reside na capacidade de manifestar estabilidade material em níveis extraordinários. Existe em você uma disciplina inabalável para construir impérios ou gerir infraestruturas complexas com uma resistência que poucos possuem. Você tem o dom de aterrar as visões mais elevadas, transformando-as em resultados práticos e tangíveis que oferecem segurança real e duradoura para centenas ou milhares de pessoas.</p>
     <p>Este dom indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o(a) construtor(a) do mundo físico por excelência. Seu sucesso flui na gestão de grandes recursos e na implementação de métodos rigorosos que garantem a ordem absoluta. Use essa força para consolidar projetos de escala global; sua capacidade de trabalho e sua autoridade prática são as bases sobre as quais grandes instituições são erguidas.</p>`,
-
-    55: `<h3>Liberdade Progressista e Liderança em Transformação - Talento 55</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    55: {
+     conteudo:`<h3>Liberdade Progressista e Liderança em Transformação - Talento 55</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui o talento raro de canalizar mudanças revolucionárias com uma velocidade impressionante. Essa habilidade se manifesta na quebra de padrões obsoletos e na promoção de uma liberdade que impulsiona o progresso coletivo. Seu talento reside na comunicação direta e na coragem de explorar territórios desconhecidos, agindo como um farol de inovação que guia a sociedade para fora da estagnação.</p>
     <p>Essa energia indica que você é um(a) catalisador(a) de expansão, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Enquanto outros temem a instabilidade, você a utiliza como combustível para o crescimento. O seu caminho para a prosperidade está em setores de tecnologia, viagens, comunicação ou qualquer área que exija uma mente sem fronteiras e uma capacidade de adaptação que beira o impossível.</p>`,
-
-    66: `<h3>Responsabilidade Universal e Harmonização Global - Talento 66</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    66: {
+     conteudo:`<h3>Responsabilidade Universal e Harmonização Global - Talento 66</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a expressão máxima do cuidado e da justiça aplicados à coletividade. Existe em você um dom magnético para restaurar a harmonia em sistemas sociais desequilibrados, agindo com uma integridade ética que serve de exemplo para todos. Você possui a habilidade de nutrir ideais de beleza e ordem em larga escala, tornando-se o(a) guardião(ã) do bem-estar social.</p>
     <p>Sua força reside no equilíbrio entre o dever e a compaixão, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu sucesso está ligado a projetos que visam a cura de comunidades, a educação em massa ou o design de soluções que tragam paz aos lares do mundo todo. Use seu senso estético e ético para elevar os padrões da humanidade; você nasceu para ser o pilar de uma nova consciência familiar e comunitária.</p>`,
-
-    77: `<h3>Introspecção Reveladora e Maestria da Verdade - Talento 77</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    77: {
+     conteudo:`<h3>Introspecção Reveladora e Maestria da Verdade - Talento 77</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui uma mente analítica de vibração superior, capaz de decifrar os mistérios mais profundos da existência e da tecnologia. Este talento se traduz em uma percepção aguçada que detecta padrões invisíveis e verdades universais com uma clareza absoluta. Sua habilidade para a especialização intelectual e espiritual faz de você uma autoridade em campos que exigem profunda introspecção e rigor científico.</p>
     <p>Este dom revela uma conexão direta com a sabedoria ancestral e tecnológica, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu sucesso acontece no silêncio da pesquisa e na entrega de diagnósticos infalíveis. Use sua mente de elite para desvendar o que está oculto; o mundo recorre a você quando precisa de respostas que a lógica comum não consegue alcançar, tornando sua voz um sinônimo de verdade absoluta.</p>`,
-
-    88: `<h3>Autoridade Executiva e Maestria Material - Talento 88</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    88: {
+     conteudo:`<h3>Autoridade Executiva e Maestria Material - Talento 88</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a capacidade colossal de gerir o poder e o capital para a criação de um legado imperecível. Existe em você uma visão estratégica de "olho de águia" que antecipa crises e identifica o potencial máximo de lucros e resultados em sistemas globais. Você possui a força necessária para liderar corporações ou movimentos financeiros com uma mão firme e uma justiça impecável.</p>
     <p>Essa energia indica que você nasceu para o topo das estruturas de poder, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu sucesso está na capacidade de multiplicar recursos de forma ética e eficiente. Use sua disciplina executiva para transformar visões ambiciosas em realidades prósperas; sua habilidade em equilibrar o mundo espiritual com a abundância material é o seu maior diferencial competitivo.</p>`,
-
-    99: `<h3>Consciência Crística e Encerramento de Eras - Talento 99</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    99: {
+     conteudo:`<h3>Consciência Crística e Encerramento de Eras - Talento 99</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui o talento extraordinário de servir como um canal de amor incondicional e sabedoria universal para toda a humanidade. Essa habilidade se manifesta na facilidade de concluir grandes ciclos cármicos e sociais, preparando o terreno para o novo. O seu talento reside no desapego total e na capacidade de inspirar multidões através do exemplo de dedicação altruísta e compreensão global.</p>
-    <p>Sua visão ultrapassa fronteiras e línguas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é o(a) guia que ensina o mundo a se curar através da generosidade e da visão holística. Seu sucesso está ligado a causas de impacto planetário, artes que elevam o espírito ou lideranças humanitárias. Onde houver necessidade de transformação profunda e redenção, sua presença será a luz que orienta o caminho final.</p>`
+    <p>Sua visão ultrapassa fronteiras e línguas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é o(a) guia que ensina o mundo a se curar através da generosidade e da visão holística. Seu sucesso está ligado a causas de impacto planetário, artes que elevam o espírito ou lideranças humanitárias. Onde houver necessidade de transformação profunda e redenção, sua presença será a luz que orienta o caminho final.</p>`,
+       videoID: "F8bg1CTQ9HI"
+    }
  
 
     
     },
 
 essencia: {
-    1: `<h3>Reação de Liderança e Controle - Essência 1</h3>
+    1: {
+     conteudo:`<h3>Reação de Liderança e Controle - Essência 1</h3>
     <p>A sua reação interna primária, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é marcada por um impulso avassalador de autonomia, coragem e autoconfiança. Diante do inesperado, o desejo de assumir as rédeas do destino surge de forma quase instantânea em seu íntimo, impulsionando ações rápidas, decididas e originais para solucionar qualquer impasse com total independência e vigor.</p>
     <p>O grande desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está em não permitir que essa força bruta se transforme em uma postura autoritária ou impaciente no calor do momento. A verdadeira maestria da sua alma acontece quando você equilibra o entusiasmo do começo com uma escuta atenta aos detalhes. Ao fazer isso, você transforma a impulsividade inicial em uma autoridade natural, respeitada e estrategicamente eficiente, capaz de fundar novos impérios.</p>`,
-
-    2: `<h3>Reação de Diplomacia e Sensibilidade - Essência 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2: {
+     conteudo:`<h3>Reação de Diplomacia e Sensibilidade - Essência 2</h3>
     <p>A sua resposta interna, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma natureza profundamente diplomática, receptiva e cooperativa. Ao enfrentar qualquer dificuldade, sua primeira tendência de alma é buscar o equilíbrio e considerar cuidadosamente os sentimentos de todos os envolvidos, evitando ao máximo qualquer tipo de ruptura brusca ou confronto direto que possa ferir a harmonia do ambiente.</p>
     <p>A maturidade espiritual ensina você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a não transformar essa busca por paz em uma anulação dos seus próprios desejos. O equilíbrio real ocorre quando você utiliza sua sensibilidade aguçada para mediar a situação com firmeza gentil, sem permitir que a indecisão ou a dependência da aprovação alheia paralisem sua capacidade de agir. Sua alma brilha através da união e da força silenciosa da parceria.</p>`,
-
-    3: `<h3>Reação de Criatividade e Otimismo - Essência 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Reação de Criatividade e Otimismo - Essência 3</h3>
     <p>A reação imediata da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é pautada por uma criatividade efervescente e por uma comunicação que flui naturalmente. Existe em você um otimismo nato que busca encontrar saídas alegres e originais para os problemas, utilizando seu pensamento rápido e carismático para desarmar tensões e transformar crises em oportunidades brilhantes de expressão e brilho pessoal.</p>
     <p>O cuidado vital para você é evitar que essa agitação mental constante gere dispersão de energia. Quando a sua criatividade inicial é canalizada com foco e disciplina, os resultados são nada menos que extraordinários; do contrário, a tendência de você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode ser a de gastar seu precioso potencial com superficialidades ou distrações que não resolvem o cerne da questão. Sua alma quer criar; ensine-a a concluir.</p>`,
-
-    4: `<h3>Reação de Pragmatismo e Estrutura - Essência 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Reação de Pragmatismo e Estrutura - Essência 4</h3>
     <p>Internamente, a sua resposta, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é sempre pragmática e fundamentada em uma busca inegociável por segurança e ordem. Diante de imprevistos, sua alma busca se ancorar imediatamente em métodos comprovados e na organização meticulosa, preferindo a estabilidade duradoura do "passo a passo" à inovação arriscada ou sem fundamentos sólidos.</p>
     <p>A rigidez mental pode ser o maior obstáculo interno para você em momentos de mudança global. O seu desenvolvimento pessoal auxilia você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a manter a estrutura necessária, mas injetando a flexibilidade suficiente para aceitar o imprevisto como parte do plano. Sua eficiência máxima surge da união entre o seu método impecável e uma nova capacidade de adaptação, tornando-o(a) o alicerce de qualquer projeto de sucesso.</p>`,
-
-    5: `<h3>Reação de Agilidade e Adaptabilidade - Essência 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Reação de Agilidade e Adaptabilidade - Essência 5</h3>
     <p>A sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, vibra na frequência da rapidez e da versatilidade absoluta. Sua resposta interna a qualquer desafio é a curiosidade renovada e o movimento dinâmico, buscando soluções fora do comum e agindo com uma agilidade mental que costuma surpreender e até desorientar os ritmos mais lentos ao seu redor.</p>
     <p>A impulsividade, contudo, pode levar você a escolhas precipitadas das quais pode se arrepender. O segredo do seu equilíbrio reside em usar essa versatilidade de forma estratégica, aprendendo a dar uma pausa consciente antes de agir. Assim, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua liberdade de escolha será sempre produtiva e direcionada ao progresso real, permitindo que você mude o mundo sem se perder no caminho.</p>`,
-
-    6: `<h3>Reação de Proteção e Responsabilidade - Essência 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo:`<h3>Reação de Proteção e Responsabilidade - Essência 6</h3>
     <p>Diante de conflitos ou dores, a sua reação interna, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de proteção paternal/maternal e cuidado imediato. O seu instinto de preservar as pessoas estimadas e o ambiente doméstico ou profissional sobressai a qualquer interesse egoísta, fazendo com que você tome as responsabilidades coletivas como se fossem estritamente próprias, buscando restaurar a paz social.</p>
     <p>É preciso um cuidado especial para que esse seu zelo profundo não se torne um controle excessivo ou uma interferência intrusiva na vida alheia. A verdadeira eficácia da sua essência aparece quando você apoia o próximo sem anular a autonomia dele, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Mantenha seu equilíbrio emocional e entenda que servir com amor também significa saber a hora de soltar as mãos dos outros para que eles cresçam sozinhos.</p>`,
-
-    7: `<h3>Reação de Análise e Introspecção - Essência 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7: {
+     conteudo:`<h3>Reação de Análise e Introspecção - Essência 7</h3>
     <p>A primeira resposta da sua alma diante do mundo é o recolhimento analítico e o processamento interno silencioso. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tende a se afastar do ruído externo para avaliar os fatos sob a ótica da razão e da intuição técnica, buscando uma compreensão profunda e absoluta antes de manifestar qualquer opinião ou ação definitiva.</p>
     <p>O seu desafio é não permitir que esse afastamento necessário se torne um isolamento frio, sarcástico ou melancólico. Ao decidir compartilhar suas conclusões de forma clara e acessível, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, transforma seu vasto conhecimento em uma ferramenta poderosa para resolver problemas complexos com uma precisão cirúrgica que poucos possuem. Sua essência busca a verdade; deixe que essa luz também ilumine os outros.</p>`,
-
-    8: `<h3>Reação de Autoridade e Objetividade - Essência 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8: {
+     conteudo:`<h3>Reação de Autoridade e Objetividade - Essência 8</h3>
     <p>A sua reação interna, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de autoridade natural, ambição elevada e um foco prático implacável. Diante de qualquer obstáculo, sua mente processa imediatamente a melhor estratégia executiva para vencer, agindo com uma objetividade que prioriza resultados materiais, justiça e eficiência de alto nível.</p>
     <p>No calor do momento, sua sede de controle e comando pode gerar tensões desnecessárias com quem possui um ritmo diferente. O autodesenvolvimento permite que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, lidere com ética e generosidade, garantindo que o sucesso financeiro e o prestígio sejam alcançados sem ferir a integridade das pessoas. Sua alma nasceu para realizar grandes feitos; faça isso com a mão de ferro de um líder e o coração de um sábio.</p>`,
-
-    9: `<h3>Reação de Humanitarismo e Sabedoria - Essência 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Reação de Humanitarismo e Sabedoria - Essência 9</h3>
     <p>A sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, responde aos desafios da vida com uma visão ampla, generosa e profundamente humanitária. Existe em você uma tendência natural ao desprendimento e à compreensão de que tudo faz parte de um ciclo universal maior, o que lhe confere uma sabedoria instintiva e uma calma admirável mesmo diante de crises profundas.</p>
     <p>O risco para você é cair em um idealismo excessivamente abstrato quando a realidade material se mostra dura ou injusta. A maturidade ensina você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a usar essa compaixão universal de forma prática, transformando sua sabedoria interna em ações concretas que beneficiam tanto o seu crescimento pessoal quanto o coletivo. Sua alma é o fim de um ciclo; brilhe com a luz de quem já compreendeu o valor do desapego e do amor incondicional.</p>`,
-
-    11: `<h3>Reação de Intuição Visionária - Essência 11</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    11: {
+     conteudo:`<h3>Reação de Intuição Visionária - Essência 11</h3>
     <p>A Essência 11 indica que o cerne da sua individualidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é puramente intuitivo, vibrante e sutil. Diante de qualquer estímulo externo, você emite uma vibração de sabedoria nata e originalidade radical, agindo como um farol de ideias revolucionárias que transcendem completamente a lógica comum e o senso médio.</p>
     <p>Sua reação interna busca sempre o significado espiritual, ético ou elevado por trás de cada fato cotidiano. O seu grande desafio é aterrar essa percepção aguçada no mundo material, transformando o seu idealismo visionário em uma força inspiradora real. <strong>MASCULINO-FEMININO-NEUTRO</strong>, quando você confia no seu canal intuitivo, você guia os outros não por palavras, mas pelo exemplo de uma integridade superior e de uma percepção que enxerga além do tempo presente.</p>`,
-
-    22: `<h3>Reação de Maestria Realizadora - Essência 22</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    22: {
+     conteudo:`<h3>Reação de Maestria Realizadora - Essência 22</h3>
     <p>A Essência 22 revela um núcleo de imenso poder realizador e um pragmatismo operando em larga escala dentro de você. A base da sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é voltada para a construção de algo sólido, grandioso e transformador; você possui a semente de um "mestre construtor" operando em cada resposta interna que dá ao mundo.</p>
-    <p>Ao enfrentar desafios, sua mente organiza recursos, pessoas e projeta estruturas duradouras de forma quase automática e genial. O objetivo central da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é materializar sonhos elevados em realidades concretas que beneficiem a humanidade, unindo uma visão de longo alcance à competência técnica absoluta. Você não nasceu para o pequeno; sua alma exige que você construa legados que permaneçam muito depois de você.</p>`
-}
+    <p>Ao enfrentar desafios, sua mente organiza recursos, pessoas e projeta estruturas duradouras de forma quase automática e genial. O objetivo central da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é materializar sonhos elevados em realidades concretas que beneficiem a humanidade, unindo uma visão de longo alcance à competência técnica absoluta. Você não nasceu para o pequeno; sua alma exige que você construa legados que permaneçam muito depois de você.</p>`,
+  videoID: "F8bg1CTQ9HI"
+    }
+    
+    }
 };
 
 let bancoEquilibrioUnificado = {
