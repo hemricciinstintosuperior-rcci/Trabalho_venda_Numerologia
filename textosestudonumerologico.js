@@ -4434,7 +4434,7 @@ essencia: {
     <p>A Essência 22 revela um núcleo de imenso poder realizador e um pragmatismo operando em larga escala dentro de você. A base da sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é voltada para a construção de algo sólido, grandioso e transformador; você possui a semente de um "mestre construtor" operando em cada resposta interna que dá ao mundo.</p>
     <p>Ao enfrentar desafios, sua mente organiza recursos, pessoas e projeta estruturas duradouras de forma quase automática e genial. O objetivo central da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é materializar sonhos elevados em realidades concretas que beneficiem a humanidade, unindo uma visão de longo alcance à competência técnica absoluta. Você não nasceu para o pequeno; sua alma exige que você construa legados que permaneçam muito depois de você.</p>`,
   videoID: "F8bg1CTQ9HI"
-    }
+    },
     
   }
  };
@@ -5154,14 +5154,14 @@ let bancoEquilibrioUnificado = {
  
   }
  }
-},
+};
 
 
 // =================================================================
 // ESTRUTURA DE TEXTOS DO PLANO DE EXPRESSÃO (FORMATADO PARA FILTRO)
 // =================================================================
 
-textosPlanos = {
+let textosPlanos = {
   fisico: {
     forte: {
       1: `<p>Existe em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um impulso natural de ação, iniciativa e realização prática no mundo material, o que favorece a conquista de metas tangíveis de forma acelerada. Sua energia física manifesta-se com intensidade constante, definindo sua capacidade de tirar projetos audaciosos do papel e tomar decisões rápidas sob pressão. Há uma tendência inata à autonomia e à liderança na execução de tarefas, sendo uma necessidade vital da sua essência abrir caminhos próprios e construir uma independência sólida em cada etapa da sua jornada profissional. Esta força motriz é o que permite a você superar a estagnação e operar sempre em um nível superior de eficiência.</p>
@@ -5866,10 +5866,10 @@ fraco: {
 <p>Para otimizar essa vibração, envolva-se em causas que exijam desprendimento, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao agir com ética universal, o universo passa a conspirar a seu favor, trazendo sincronicidades que sua mente egoica não atrairia sozinha. O seu sucesso vem da transformação da sua visão limitada em uma sabedoria generosa, consolidando uma trajetória marcada pelo perdão e por um legado de luz que traz paz para o seu coração.</p>`
 }
 }
-},
+};
 
 
-textosPlanosMomento = {
+let textosPlanosMomento = {
   fisico: {
     forte: {
       1: `<p>Este ciclo traz um lampejo de força e proatividade que impulsiona a sua execução material, <strong>MASCULINO-FEMININO-NEUTRO</strong>. É um momento de iniciativa acentuada, ideal para você tirar projetos do papel e liderar processos que exigem decisões rápidas. Se o seu plano natural for mais contido, aproveite esta vitalidade extra para desbravar caminhos que antes pareciam difíceis; se já for uma característica inata, sua potência realizadora agora atinge o ápice de eficiência técnica.</p>
@@ -6274,7 +6274,7 @@ window.TextosTransito = {
 `,   videoID: " "
     
  }
-},
+};
 
 
 let textosSinteseExpressao = {
