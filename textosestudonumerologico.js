@@ -2175,7 +2175,8 @@ Maturidade: {
     <p>A maturidade reserva para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o papel de guardião(ã) da harmonia em escala coletiva. Nesta fase, seu senso de responsabilidade atinge um patamar místico, transformando sua influência em um bálsamo que pacifica comunidades inteiras e restaura o equilíbrio onde havia injustiça ou desordem emocional.</p>
     <p>Você encontrará realização absoluta ao atuar como o centro de uma rede de cuidado e proteção que ultrapassa os limites da família biológica, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O mundo vê em você a autoridade do amor incondicional aplicado à gestão social. O sucesso nesta etapa é ver a justiça e a beleza prevalecerem nos ambientes que você administra com tanta sabedoria e doação.</p>
     <p>Seu legado será um rastro de dignidade restaurada, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se consolida como a alma nobre que provou que o afeto estruturado é a ferramenta política mais poderosa que existe. Você encerrará este ciclo como a personificação da paz, sendo amado(a) e respeitado(a) como o coração de sua era.</p>`,
-
+videoID: " "
+    },
     77: {
      conteudo:`<h3>Maturidade 77 - O Legado da Maestria Analítica e Revelação da Verdade</h3>
     <p>Na maturidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge uma estatura intelectual e espiritual que o(a) isola da superficialidade do mundo, colocando-o(a) em um plano de profunda lucidez. Esta fase é marcada pela revelação final de conhecimentos que você buscou por toda a vida, consolidando-se como uma autoridade técnica e intuitiva inatacável.</p>
@@ -3206,7 +3207,7 @@ desafios: {
     <p>Problemas de estômago e sistema nervoso, os pontos mais sensíveis, no entanto são: os joelhos, dentes, ossos e ligamentos.</p>
     <p>Podem ocorrer doenças sanguíneas, tendência a se submeter a tratamento médico inadequado, problemas de fígado e baço; distúrbios no digestivo e intestino, estados de desânimo profundo, dores de cabeça frequentes, derrames, hérnia de disco, desmaios, hipertensão, apendicite, problemas na próstata, cirurgias frequentes e obesidade.</p>
         `,  videoID: " "
-    },
+    }
   },
         
 // --- DESAFIO 2 (FASE ADULTA / REALIZAÇÃO) ---
@@ -3359,7 +3360,7 @@ desafios: {
     <p>Podem ocorrer doenças sanguíneas, tendência a se submeter a tratamento médico inadequado, problemas de fígado e baço; distúrbios no digestivo e intestino, estados de desânimo profundo, dores de cabeça frequentes, derrames, hérnia de disco, desmaios, hipertensão, apendicite, problemas na próstata, cirurgias frequentes e obesidade.</p>
   
   `,  videoID: " "
-    },
+    }
 },
 // --- DESAFIO 3 (DESAFIO PRINCIPAL / LIÇÃO DE VIDA) ---
 3: {
@@ -3542,7 +3543,8 @@ anoPessoal: {
      conteudo:`<h3>Ano Pessoal 3 - Expansão Criativa e Magnetismo Social</h3>
     <p>Prepare-se, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois este é o seu ano de expansão social e da plena expressão dos seus talentos comunicativos para o mundo. Você sentirá uma necessidade vital de se comunicar, de aparecer e de circular em novos e influentes ambientes. A energia é de fertilidade e brilho solar, o que atrai para perto de você amizades poderosas e convites inesperados baseados puramente no seu magnetismo pessoal e na sua alegria de viver.</p>
     <p>O desafio central para você será manter o foco em meio a tanta estimulação e opções atraentes, evitando que sua energia preciosa se disperse em mil projetos inacabados ou conversas superficiais. Você deve usar este otimismo contagiante para abrir portas trancadas, mas precisa canalizar essa vitalidade para objetivos que tenham um significado real para o seu futuro. Aproveite para investir em sua imagem pública e em qualquer forma de arte ou oratória, pois o mundo está pronto para ouvir o que você tem a dizer. Ao final deste ano, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você terá expandido significativamente seu círculo de influência e descoberto facetas do seu gênio criativo que estavam adormecidas sob o peso das obrigações.</p>`,
-
+ videoID: "z1nW3rmNeEI"
+    },
     4: {
      conteudo:`<h3>Ano Pessoal 4 - Estrutura, Trabalho e Fundamentos</h3>
     <p>Após a expansão e o brilho do ano anterior, a vida agora exige que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, coloque os pés firmemente no chão e foque intensamente na organização e na disciplina prática. Este é o seu ano de construir a estrutura de concreto que sustentará todos os seus sonhos a longo prazo, exigindo atenção aos detalhes técnicos, às finanças e à saúde física com um rigor quase militar.</p>
@@ -3578,7 +3580,7 @@ anoPessoal: {
     <p>Este é o ano da conclusão solene e do desapego sábio de absolutamente tudo o que não serve mais para o seu crescimento futuro, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você está encerrando um ciclo inteiro de nove anos e a vida agora exige que você finalize projetos pendentes, perdoe mágoas antigas e limpe os armários da alma. É um período de balanço emocional intenso, onde sua sensibilidade humanitária estará à flor da pele.</p>
     <p>O foco total deve ser a purificação interna para que o seu próximo ciclo comece com a leveza necessária, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você poderá enfrentar despedidas ou finalizações de ciclos que parecem desafiadoras no momento, mas entenda que são libertações necessárias para o seu novo "eu" que nascerá no ano que vem. O segredo para você é soltar o passado com gratidão, sem resistência, entendendo que o vazio que se cria agora é o espaço para as bênçãos gigantescas que virão. Dedique-se também a causas maiores e à ajuda ao próximo, pois a generosidade é o combustível que transmuta o carma neste período. Ao final deste ano, você se sentirá em um estado de plenitude e purificação, com a alma pronta para o glorioso renascimento que o aguarda.</p>`,
       videoID: " "
-    }, 
+    } 
 },
 
  
