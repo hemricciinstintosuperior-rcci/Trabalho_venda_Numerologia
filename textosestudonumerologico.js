@@ -4436,10 +4436,10 @@ essencia: {
   videoID: "F8bg1CTQ9HI"
     }
     
-  },
+  }
+ };
 
-
-bancoEquilibrioUnificado = {
+let bancoEquilibrioUnificado = {
     inicio: {
         // --- NÚMERO 1 (Liderança, Início, Independência) ---
         
@@ -6146,7 +6146,7 @@ intuitivo: {
     9: `<p>Existe uma dificuldade atual em você perceber as dimensões universais e as conexões humanas mais profundas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua visão do agora tende a ficar focada apenas no interesse imediato, ignorando que o ambiente ao redor precisa da sua contribuição ética e de uma visão mais ampla neste período de transição.</p>`
   } 
 }
-},
+};
 
 
 
@@ -6277,7 +6277,7 @@ window.TextosTransito = {
 },
 
 
-textosSinteseExpressao = {
+let textosSinteseExpressao = {
     // 1. DUAS POTÊNCIAS E DOIS EQUILÍBRIOS (Caso do Carlos)
     "FFMM": {
      conteudo:"O perfil apresenta uma **Dualidade de Potência**. Existem dois motores principais que operam em alta frequência, garantindo força de realização e intensidade. Os outros dois planos atuam como estabilizadores, operando no nível médio (equilíbrio). O desafio é não deixar que as duas potências dominantes abafem a voz dos planos equilibrados, mantendo a fluidez entre a ação e a moderação.",
@@ -6319,5 +6319,5 @@ textosSinteseExpressao = {
   videoID: " "
     }
 
-}
+
 };
