@@ -5152,7 +5152,7 @@ bancoEquilibrioUnificado = {
             <p>Sua realização acontece através de uma presença que aceita a finalidade de todas as coisas. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que transmite tolerância e sabedoria. Sua capacidade de entrega é sutil; você finaliza o necessário com a certeza de quem cumpriu sua missão espiritual com integridade.</p>`
   
  
- 
+  }
  }
 },
 
