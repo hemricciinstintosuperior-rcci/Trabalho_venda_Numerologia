@@ -4437,7 +4437,7 @@ essencia: {
     },
     
   }
- }
+ };
 
 let bancoEquilibrioUnificado = {
     inicio: {
@@ -5153,7 +5153,7 @@ let bancoEquilibrioUnificado = {
   
  
   }
- }
+ 
 };
 
 
