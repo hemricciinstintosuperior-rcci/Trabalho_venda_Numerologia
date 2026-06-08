@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numerologia Cabalística</title>
+    <title>Estudo Numerológico</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 
@@ -3271,10 +3271,17 @@ function verificarGêneroEGerar() {
 
 
 
-   // Exemplo de como deve estar o seu "Dicionário de Vídeos"
 const bibliotecaVideos = {
-    CaminhodeVida: { "11": "Ls5Ryzh6iRg", "2": "ID_VIDEO_2" },
-    Propósito: { "1": "z1nW3rmNeEI" }
+    masculino: {
+        CaminhodeVida: { "1": "ID_AQUI", "2": "ID_AQUI", "3": "ID_AQUI", "4": "ID_AQUI", "5": "ID_AQUI", "6": "ID_AQUI", "7": "ID_AQUI", "8": "ID_AQUI", "9": "ID_AQUI", "11": "Ls5Ryzh6iRg", "22": "ID_AQUI", "33": "ID_AQUI", "44": "ID_AQUI", "55": "ID_AQUI", "66": "ID_AQUI", "77": "ID_AQUI", "88": "ID_AQUI", "99": "ID_AQUI" },
+        Propósito: { "1": "k375lfJCLcA", "2": "ID_AQUI", "3": "ID_AQUI", "4": "ID_AQUI", "5": "ID_AQUI", "6": "ID_AQUI", "7": "ID_AQUI", "8": "ID_AQUI", "9": "ID_AQUI", "11": "ID_AQUI", "22": "ID_AQUI", "33": "ID_AQUI", "44": "ID_AQUI", "55": "ID_AQUI", "66": "ID_AQUI", "77": "ID_AQUI", "88": "ID_AQUI", "99": "ID_AQUI" },
+        Personalidade: { "1": "ID_AQUI", "2": "ID_AQUI", "3": "ID_AQUI", "4": "ID_AQUI", "5": "ID_AQUI", "6": "ID_AQUI", "7": "ID_AQUI", "8": "ID_AQUI", "9": "ID_AQUI", "11": "ID_AQUI", "22": "ID_AQUI", "33": "ID_AQUI", "44": "ID_AQUI", "55": "ID_AQUI", "66": "ID_AQUI", "77": "ID_AQUI", "88": "ID_AQUI", "99": "ID_AQUI" }
+    },
+    feminino: {
+        CaminhodeVida: { "1": "ID_AQUI", "2": "ID_AQUI", "3": "ID_AQUI", "4": "ID_AQUI", "5": "ID_AQUI", "6": "ID_AQUI", "7": "ID_AQUI", "8": "ID_AQUI", "9": "ID_AQUI", "11": "F8bg1CTQ9HI", "22": "ID_AQUI", "33": "ID_AQUI", "44": "ID_AQUI", "55": "ID_AQUI", "66": "ID_AQUI", "77": "ID_AQUI", "88": "ID_AQUI", "99": "ID_AQUI" },
+        Propósito: { "1": "F8bg1CTQ9HI", "2": "ID_AQUI", "3": "ID_AQUI", "4": "ID_AQUI", "5": "ID_AQUI", "6": "ID_AQUI", "7": "ID_AQUI", "8": "ID_AQUI", "9": "ID_AQUI", "11": "ID_AQUI", "22": "ID_AQUI", "33": "ID_AQUI", "44": "ID_AQUI", "55": "ID_AQUI", "66": "ID_AQUI", "77": "ID_AQUI", "88": "ID_AQUI", "99": "ID_AQUI" },
+        Personalidade: { "1": "ID_AQUI", "2": "ID_AQUI", "3": "ID_AQUI", "4": "ID_AQUI", "5": "ID_AQUI", "6": "ID_AQUI", "7": "ID_AQUI", "8": "ID_AQUI", "9": "ID_AQUI", "11": "ID_AQUI", "22": "ID_AQUI", "33": "ID_AQUI", "44": "ID_AQUI", "55": "ID_AQUI", "66": "ID_AQUI", "77": "ID_AQUI", "88": "ID_AQUI", "99": "ID_AQUI" }
+    }
 };
 
 
@@ -3340,27 +3347,21 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
 
        
 
-function buscarVideoID(categoria, valor) {
-    // 1. Verifica se 'textos' existe e se a categoria existe nele
-    if (typeof textos === 'undefined' || !textos[categoria]) return null;
+// Certifique-se de que sua 'bibliotecaVideos' esteja definida antes disso!
+function buscarVideoID(categoria, valor, genero) {
+    // 1. TENTA BUSCAR NA BIBLIOTECA (Se o gênero foi informado)
+    if (genero && typeof bibliotecaVideos !== 'undefined' && bibliotecaVideos[genero]) {
+        const videoBiblioteca = bibliotecaVideos[genero][categoria] ? bibliotecaVideos[genero][categoria][valor] : null;
+        if (videoBiblioteca) return videoBiblioteca;
+    }
 
-    const categoriaDados = textos[categoria];
-    const item = categoriaDados[valor];
+    // 2. SE NÃO ACHOU NA BIBLIOTECA, TENTA BUSCAR DENTRO DO OBJETO 'textos' (Caso você tenha colocado o videoID lá dentro)
+    if (typeof textos !== 'undefined' && textos[categoria] && textos[categoria][valor]) {
+        const item = textos[categoria][valor];
+        if (item.videoID) return item.videoID;
+    }
 
-    // 2. Se o item não existe, retorna null
-    if (!item) return null;
-
-    // 3. SE O SEU OBJETO TIVER A PROPRIEDADE 'videoID' DENTRO:
-    if (item.videoID) {
-        return item.videoID;
-    } 
-    
-    // 4. SE O SEU OBJETO FOR APENAS O TEXTO (COMO NO LOG):
-    // Se o seu textos.js está estruturado como '1': '<h3>Texto...</h3>',
-    // a busca vai falhar porque não existe 'videoID' ali dentro.
-    // NESTE CASO, você deve usar a biblioteca externa (Opção 2 que conversamos).
-    
-    console.warn(`DEBUG: O item ${categoria}[${valor}] não possui campo videoID.`);
+    console.warn(`DEBUG: Nenhum vídeo encontrado para ${categoria}[${valor}] no gênero ${genero}.`);
     return null;
 }
         
