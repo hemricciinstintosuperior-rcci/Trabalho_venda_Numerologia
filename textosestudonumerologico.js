@@ -5154,14 +5154,14 @@ bancoEquilibrioUnificado = {
  
  
  }
-};
+},
 
 
 // =================================================================
 // ESTRUTURA DE TEXTOS DO PLANO DE EXPRESSÃO (FORMATADO PARA FILTRO)
 // =================================================================
 
-let textosPlanos = {
+textosPlanos = {
   fisico: {
     forte: {
       1: `<p>Existe em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um impulso natural de ação, iniciativa e realização prática no mundo material, o que favorece a conquista de metas tangíveis de forma acelerada. Sua energia física manifesta-se com intensidade constante, definindo sua capacidade de tirar projetos audaciosos do papel e tomar decisões rápidas sob pressão. Há uma tendência inata à autonomia e à liderança na execução de tarefas, sendo uma necessidade vital da sua essência abrir caminhos próprios e construir uma independência sólida em cada etapa da sua jornada profissional. Esta força motriz é o que permite a você superar a estagnação e operar sempre em um nível superior de eficiência.</p>
@@ -5866,10 +5866,10 @@ fraco: {
 <p>Para otimizar essa vibração, envolva-se em causas que exijam desprendimento, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao agir com ética universal, o universo passa a conspirar a seu favor, trazendo sincronicidades que sua mente egoica não atrairia sozinha. O seu sucesso vem da transformação da sua visão limitada em uma sabedoria generosa, consolidando uma trajetória marcada pelo perdão e por um legado de luz que traz paz para o seu coração.</p>`
 }
 }
-};
+},
 
 
-let textosPlanosMomento = {
+textosPlanosMomento = {
   fisico: {
     forte: {
       1: `<p>Este ciclo traz um lampejo de força e proatividade que impulsiona a sua execução material, <strong>MASCULINO-FEMININO-NEUTRO</strong>. É um momento de iniciativa acentuada, ideal para você tirar projetos do papel e liderar processos que exigem decisões rápidas. Se o seu plano natural for mais contido, aproveite esta vitalidade extra para desbravar caminhos que antes pareciam difíceis; se já for uma característica inata, sua potência realizadora agora atinge o ápice de eficiência técnica.</p>
@@ -6146,7 +6146,7 @@ intuitivo: {
     9: `<p>Existe uma dificuldade atual em você perceber as dimensões universais e as conexões humanas mais profundas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua visão do agora tende a ficar focada apenas no interesse imediato, ignorando que o ambiente ao redor precisa da sua contribuição ética e de uma visão mais ampla neste período de transição.</p>`
   } 
 }
-};
+},
 
 
 
@@ -6274,10 +6274,10 @@ window.TextosTransito = {
 `,   videoID: " "
     
  }
-};
+},
 
 
-let textosSinteseExpressao = {
+textosSinteseExpressao = {
     // 1. DUAS POTÊNCIAS E DOIS EQUILÍBRIOS (Caso do Carlos)
     "FFMM": {
      conteudo:"O perfil apresenta uma **Dualidade de Potência**. Existem dois motores principais que operam em alta frequência, garantindo força de realização e intensidade. Os outros dois planos atuam como estabilizadores, operando no nível médio (equilíbrio). O desafio é não deixar que as duas potências dominantes abafem a voz dos planos equilibrados, mantendo a fluidez entre a ação e a moderação.",
@@ -6319,4 +6319,5 @@ let textosSinteseExpressao = {
   videoID: " "
     }
 
+}
 };
