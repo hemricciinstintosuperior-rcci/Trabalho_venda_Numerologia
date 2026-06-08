@@ -1067,526 +1067,724 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
  // --- DIA DE NASCIMENTO (TALENTOS NATURAIS 1 AO 10) ---
 // --- DIA DE NASCIMENTO (TALENTOS NATURAIS 1 AO 31) ---
 dia: {
-    1: ` <h3>Desbravadora - Dia 1</h3>
+    1: {
+     conteudo:` <h3>Desbravadora - Dia 1</h3>
     <p>O seu dia de nascimento traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma das vibrações mais potentes de liderança e originalidade de toda a numerologia. Você é uma mulher que carrega consigo a capacidade intrínseca de abrir caminhos onde os outros enxergam apenas obstáculos, agindo com uma força que impulsiona a inovação em cada passo da sua jornada pessoal.</p>
     <p>Sua mente funciona de forma independente e eu sei que você sente uma necessidade vital de manter o controle sobre a própria trajetória. Seu talento natural é a iniciativa pura; você é aquela mulher que não nasceu para seguir fórmulas prontas ou ordens que não façam sentido para a sua lógica, buscando sempre a sua verdade interna acima de qualquer opinião alheia, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>Na vida prática, você possui uma coragem que beira o pioneirismo, sendo aquela mulher que dá o primeiro passo em projetos e ideias que outras pessoas temem encarar. Você tem a marca da individualidade e um desejo legítimo de ser o destaque e a força motriz em tudo o que faz.</p>
     <p>O seu grande desafio como mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é equilibrar essa força monumental de vontade para que ela seja uma fonte de inspiração e acolhimento, e não apenas de autoridade. Ao liderar pelo exemplo com a sua energia realizadora, você demonstra ao mundo o poder da autoconfiança feminina.</p>`,
-
-    2: ` <h3>Pacificadora - Dia 2</h3>
+ videoID: " "
+    },
+    2: {
+     conteudo:` <h3>Pacificadora - Dia 2</h3>
     <p>O seu dia de nascimento confere a você uma natureza extremamente diplomática, sensível e voltada para a união, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher que possui o dom raro de perceber nuances e sentimentos nos relacionamentos que a maioria das pessoas ignora, o que faz de você uma figura de mediação e acolhimento essencial em qualquer ambiente.</p>
     <p>A sua verdadeira força não reside na agressividade, mas na persuasão suave, no afeto e na capacidade linda de unir pessoas em torno de um objetivo comum. Como mulher, você produz resultados brilhantes quando atua em parceria, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e seu talento brilha intensamente quando existe harmonia ao seu redor para que sua forte intuição seja ouvida.</p>
     <p>Você acaba se tornando o suporte emocional e o porto seguro de muitos, possuindo uma empatia quase maternal que acolhe e traz segurança para quem caminha ao seu lado. Existe em seu interior um apreço profundo pela beleza, pela arte e pelo equilíbrio, refletindo uma alma feminina que busca a paz em cada detalhe do cotidiano.</p>
     <p>O seu aprendizado, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é fortalecer a autoconfiança para não depender tanto da aprovação ou do reconhecimento dos outros. Quando você une sua sensibilidade com a firmeza nas suas decisões, você se torna uma peça fundamental e indispensável onde quer que esteja.</p>`,
-
-    3: ` <h3>Carismática - Dia 3</h3>
+ videoID: " "
+    },
+    3: {
+     conteudo:` <h3>Carismática - Dia 3</h3>
     <p>O seu dia de nascimento entrega em suas mãos, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o dom precioso da comunicação e de um carisma social fascinante. Você é uma mulher que tem luz própria e uma facilidade imensa em transmitir sentimentos e ideias, atraindo a atenção e o carinho de todos com uma naturalidade que desarma qualquer resistência.</p>
     <p>O otimismo é a sua marca registrada, e você tem o talento de elevar o espírito de qualquer amiga ou familiar que esteja por perto. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a vida precisa de expressão; sua mente criativa está sempre gerando conexões e descobrindo formas lindas de tornar o dia a dia mais vibrante, leve e interessante.</p>
     <p>Você possui uma alma jovem e cheia de vivacidade que detesta o tédio. Sua presença costuma ser o ponto alto de qualquer encontro social, pois você traz uma vibração de encanto e uma inteligência rápida que cativa as pessoas em apenas alguns minutos de conversa.</p>
     <p>O cuidado que você deve ter como mulher é com a dispersão de energia; por ser tão multifacetada e cheia de dons, você pode sentir dificuldade em concluir o que começa. Ao focar sua expressão em objetivos claros, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você ganha o poder de influenciar e inspirar muitas vidas por onde passar.</p>`,
-
-    4: ` <h3>Disciplinada - Dia 4</h3>
+ videoID: " "
+    },
+    4: {
+     conteudo:` <h3>Disciplinada - Dia 4</h3>
     <p>O seu dia de nascimento revela que você possui um talento nato para a organização e para a construção de bases sólidas na vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é a mulher que traz ordem ao caos, agindo com uma responsabilidade e dedicação que se tornam o alicerce fundamental de qualquer projeto ou lar que você assume.</p>
     <p>Sua abordagem da vida é prática, realista e muito madura. Você valoriza o trabalho bem feito e entende que a estabilidade verdadeira é construída tijolo por tijolo. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a segurança da sua família, o bem-estar dos seus e a tranquilidade material são prioridades que você defende com unhas e dentes.</p>
     <p>Você é aquela mulher em quem as pessoas confiam de olhos fechados, pois sua palavra tem valor de ouro e sua lealdade é inabalável. Existe um prazer íntimo em saber que cada esforço que você faz hoje está garantindo uma colheita segura, tranquila e próspera para o seu futuro.</p>
     <p>O desafio para você é não permitir que sua mente se torne rígida ou severa demais consigo mesma. Ao unir sua incrível persistência com um pouco mais de flexibilidade e doçura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você torna suas conquistas absolutamente grandiosas e ganha a admiração de todos que buscam refúgio em você.</p>`,
-
-    5: ` <h3>Independente - Dia 5</h3>
+ videoID: " "
+    },
+    5: {
+     conteudo:` <h3>Independente - Dia 5</h3>
     <p>O seu dia de nascimento traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma alma totalmente livre, versátil e apaixonada por novas experiências. Você é uma mulher que possui um talento natural para se adaptar a qualquer situação e uma curiosidade corajosa que te move a explorar horizontes que outras pessoas têm medo de conhecer.</p>
     <p>Sua energia feminina é magnética, livre de amarras e você aprende as coisas com uma rapidez impressionante, vivendo a vida com muita intensidade. Você tem verdadeira aversão à rotina pesada e sufocante, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois sua mente precisa de estímulos constantes e de liberdade total para descobrir o que o mundo tem a oferecer.</p>
     <p>Você é uma mulher de pensamento progressista e moderno, sempre buscando inovação e formas eficientes de viver. Sua versatilidade permite que você transite entre mundos, culturas e círculos sociais completamente diferentes com um charme e uma facilidade que encantam a todos.</p>
     <p>O seu aprendizado é desenvolver o foco interno, para que sua busca por liberdade não se transforme em instabilidade emocional. Quando você canaliza essa inteligência rápida para um propósito maior, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma mulher brilhante e capaz de realizar transformações profundas ao seu redor.</p>`,
-
-    6: ` <h3>Zelosa - Dia 6</h3>
+ videoID: " "
+    },
+    6: {
+     conteudo:` <h3>Zelosa - Dia 6</h3>
     <p>O seu dia de nascimento confere a você um talento profundo para cuidar, aconselhar e criar harmonia onde quer que você coloque os pés, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher movida pelo amor universal, pela compaixão e por um senso de dever muito forte, tornando-se naturalmente a conselheira e o porto seguro para amigos e familiares.</p>
     <p>Sua sensibilidade estética e artística é marcante; você tem o dom nato de tornar tudo mais belo, acolhedor e cheio de vida. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a realização pessoal está intimamente ligada à sua capacidade de estender a mão, acolher e resolver conflitos através da compreensão e de um carinho genuíno.</p>
     <p>Você possui uma natureza protetora rara, quase matriarcal. Existe um compromisso interno com a ética e com o bem-estar alheio que guia cada um dos seus passos, fazendo com que sua presença transmita uma paz imediata para quem atravessa momentos de dor ou dificuldade.</p>
     <p>O seu grande desafio como mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é não se sobrecarregar carregando os problemas do mundo nas costas. Ao aprender a cuidar de si mesma, dos seus desejos e da sua beleza com a mesma dedicação que oferece ao próximo, você atinge uma plenitude emocional que irradia luz para o mundo inteiro.</p>`,
-
-    7: ` <h3>Perfeccionista - Dia 7</h3>
+ videoID: " "
+    },
+    7: {
+     conteudo:` <h3>Perfeccionista - Dia 7</h3>
     <p>O seu dia de nascimento indica que você possui uma mente analítica, misteriosa e altamente intuitiva, totalmente voltada para a busca da verdade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher de investigação nata, que sente a necessidade profunda de entender os mistérios da existência, da alma humana ou da sua área profissional.</p>
     <p>Sua natureza é mais reservada e você valoriza a solitude e o silêncio como ferramentas essenciais para recarregar suas energias femininas. Você possui um "radar" intuitivo natural para detectar falsidade ou segundas intenções, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e raramente aceita explicações superficiais sobre o que realmente importa para você.</p>
     <p>Você busca a perfeição e a excelência em tudo o que executa, tornando-se uma autoridade inquestionável no que faz. Existe uma elegância, uma postura discreta e uma sabedoria no seu comportamento que impõe respeito e desperta a curiosidade de quem deseja decifrar a sua mente brilhante.</p>
     <p>O desafio para você como mulher é não se isolar excessivamente em seu próprio mundo por medo de se ferir. Ao compartilhar a sua rica sabedoria e as suas descobertas com as pessoas que merecem, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma figura de orientação e um guia de grande profundidade.</p>`,
-
-    8: ` <h3>Original - Dia 8</h3>
+ videoID: " "
+    },
+    8: {
+     conteudo:` <h3>Original - Dia 8</h3>
     <p>O seu dia de nascimento traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um talento natural extraordinário para a gestão, para os grandes negócios e para a realização material. Você é uma mulher que possui uma visão executiva invejável e sabe exatamente como liderar e organizar recursos para atingir metas que outras pessoas consideram impossíveis.</p>
     <p>Sua determinação é impressionante e você encara os desafios da carreira com uma seriedade que impõe autoridade e respeito imediato, sem perder a elegância. Para você, o sucesso é o resultado direto do seu esforço disciplinado e da sua capacidade de manter o foco inabalável nos resultados práticos, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>Como mulher realizadora, você tem a habilidade única de transformar ideias abstratas em prosperidade e estruturas sólidas. Existe em você um desejo de abundância que vai além do ganho individual; você busca construir segurança, conforto e um legado firme para todos que estão sob sua proteção e cuidado.</p>
     <p>O seu aprendizado, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é entender que o poder e a influência são ferramentas sagradas para o bem. Quando você une sua ambição de vencer com a sua intuição, ética e generosidade, você constrói um império de sucesso que beneficia a sua vida e a de todos ao seu redor.</p>`,
-
-    9: ` <h3>Universalista - Dia 9</h3>
+ videoID: " "
+    },
+    9: {
+     conteudo:` <h3>Universalista - Dia 9</h3>
     <p>O seu dia de nascimento confere a você uma alma profundamente humanitária, generosa e dotada de uma visão de mundo extremamente ampla e acolhedora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher que possui o talento de compreender as dores do próximo na alma e sente um desejo profundo de deixar um legado positivo de cura para a humanidade.</p>
     <p>Sua intuição é fortíssima e você carrega uma sabedoria ancestral que parece vir de muito tempo atrás. Como mulher, você é capaz de grandes gestos por causas nobres, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e possui um carisma universal que atrai pessoas de todas as origens, pois todos sentem que podem confiar na sua integridade e compaixão.</p>
     <p>Você vive em uma vibração de compreensão total e perdão. Sua mente não se prende a detalhes pequenos, fofocas ou mesquinharias; você enxerga o quadro geral e busca a evolução da consciência e o auxílio ao próximo como as metas principais da sua existência.</p>
     <p>O grande desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é aprender a se desapegar do passado e das dores que já viveu. Ao focar sua imensa energia no serviço generoso e no momento presente, você atinge um estado de paz interior que é a verdadeira recompensa da sua linda história de vida.</p>`,
-
-    10: ` <h3>Ambiciosa - Dia 10</h3>
+ videoID: " "
+    },
+    10: {
+     conteudo:` <h3>Ambiciosa - Dia 10</h3>
     <p>O seu dia de nascimento traz para você a energia vibrante do recomeço com uma potência redobrada e cheia de brilho, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher que possui um talento nato para a liderança e uma capacidade única e admirável de se reinventar, não importa quantas vezes a vida exija que você comece algo do zero.</p>
     <p>Sua autoconfiança é o seu maior trunfo e sua armadura. Você possui uma coragem pioneira que te leva a explorar campos onde poucas mulheres se atreveriam a pisar. Você é uma realizadora por excelência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e sua presença firme transmite uma vibração de independência, força e sucesso imediato.</p>
     <p>Você possui a força do número 1 potencializada, o que indica um destino de grande destaque individual. Sua mente é rápida para identificar oportunidades de crescimento e você não hesita em agir com coragem quando percebe que o caminho está livre para a sua ascensão pessoal.</p>
     <p>O cuidado que você deve ter como mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é com o excesso de impulsividade. Ao aprender a ouvir sua voz interior e planejar cada passo com sabedoria estratégica, você se torna uma força imparável, capaz de construir uma história de vida absolutamente brilhante e inspiradora.</p>`,
-   
-    11: ` <h3>Idealista - Dia 11</h3>
+    videoID: " "
+    },
+    11: {
+     conteudo:` <h3>Idealista - Dia 11</h3>
     <p>O seu dia de nascimento traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a vibração sagrada de um Número Mestre. Isso confere a você uma intuição extraordinária e uma sensibilidade espiritual que está muito acima da média. Você funciona como um verdadeiro canal de inspiração para o mundo, sendo uma mulher de ideais elevados e com uma capacidade única de enxergar além das aparências materiais.</p>
     <p>Sua presença feminina é magnética, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e você tem o dom de iluminar a vida das pessoas com palavras doces e profundas que tocam a alma. No entanto, por ser uma vibração de alta voltagem, você pode sentir uma tensão interna constante ou uma autocobrança muito forte para realizar algo grandioso, o que exige que você aprenda a ter momentos de pausa, autocuidado e recolhimento.</p>
     <p>Você possui uma mente visionária que capta verdades antes de todos os outros. Existe um compromisso no seu espírito com a evolução e com a cura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tornando sua trajetória uma referência de sabedoria para amigas, familiares e para quem busca orientação em tempos difíceis.</p>
     <p>O seu desafio é manter os pés no chão e confiar na sua imensa voz interior sem se deixar levar pela ansiedade. Quando você equilibra essa mente brilhante com a ação prática, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma liderança espiritual e humana capaz de transformar profundamente a realidade ao seu redor.</p>`,
-
-    12: ` <h3>Comunicadora - Dia 12</h3>
+ videoID: " "
+    },
+    12: {
+     conteudo:` <h3>Comunicadora - Dia 12</h3>
     <p>O seu dia de nascimento confere a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma personalidade rica em criatividade, com uma habilidade de comunicação que une a lógica à sensibilidade feminina de forma magistral. Você possui um talento natural para expressar seus sentimentos e ideias de forma clara, equilibrada e altamente encantadora para qualquer público que te escute.</p>
     <p>Sua mente é fértil, artística e você tem a capacidade de analisar problemas sob diversos ângulos ao mesmo tempo, o que faz de você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma mulher cujo conselho é sempre muito requisitado por todos. Você valoriza as conexões sociais verdadeiras e possui um magnetismo que atrai pessoas interessadas na sua inteligência e no seu modo refinado de observar a vida.</p>
     <p>Existe em você um desejo profundo de ser útil, acolher e trazer harmonia para onde quer que vá. Sua natureza é diplomática e você sabe usar seu charme pessoal e sua simpatia para abrir portas que outras pessoas considerariam trancadas. Sua versatilidade é sua maior ferramenta de sucesso, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O cuidado que você deve ter como mulher é para não se sacrificar demais pelos desejos e caprichos dos outros, acabando por esquecer os seus próprios sonhos. Ao aprender a colocar limites saudáveis com amor, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você floresce como uma mulher multifacetada e profundamente admirada.</p>`,
-
-    13: ` <h3>Prática - Dia 13</h3>
+ videoID: " "
+    },
+    13: {
+     conteudo:` <h3>Prática - Dia 13</h3>
     <p>O seu dia de nascimento traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma energia de transformação profunda e construção sólida. Embora este número seja muitas vezes mal compreendido, ele confere a você uma capacidade de dedicação, resiliência e uma determinação que pouquíssimas mulheres possuem, permitindo que você realize grandes feitos através do esforço contínuo.</p>
     <p>Você é uma mulher que não teme o trabalho árduo e possui um talento natural para organizar estratégias, administrar o cotidiano e colocar ordem em situações caóticas. Sua vida é marcada por ciclos de renovação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, onde você aprende a deixar com coragem o que é velho para trás para construir algo muito mais forte e duradouro no lugar.</p>
     <p>Sua força de vontade é inabalável e existe um senso de dever e proteção que guia cada passo seu. Você busca a eficiência prática, sendo a fundação sólida sobre a qual sua família e seus projetos ambiciosos podem se apoiar com total segurança, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua persistência impecável é a chave mestra do seu sucesso.</p>
     <p>O seu desafio como mulher é aprender a expressar seus sentimentos de forma mais aberta e fluida, evitando a rigidez mental ou o isolamento. Quando você aceita as mudanças da vida com naturalidade e doçura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma força realizadora imparável, capaz de alcançar o topo através da sua disciplina fora do comum.</p>`,
-
-    14: ` <h3>Aventureira - Dia 14</h3>
+ videoID: " "
+    },
+    14: {
+     conteudo:` <h3>Aventureira - Dia 14</h3>
     <p>O seu dia de nascimento confere a você um talento nato para lidar com o público, com as relações humanas e com o dinamismo do mundo moderno, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher que possui uma mente rápida, versátil e uma curiosidade viva que te leva a querer experimentar tudo o que a existência oferece, agindo sempre com uma agilidade que desperta a admiração de todos.</p>
     <p>Sua natureza é inquieta, livre e você se adapta com extrema facilidade a novos ambientes, viagens e situações imprevistas. Você detém o dom da persuasão e do charme, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e consegue transmitir conceitos com uma clareza impressionante, pois as pessoas confiam naturalmente na sua energia vibrante e na sua visão de mundo progressista.</p>
     <p>Você busca a liberdade e a independência acima de tudo, mas possui a inteligência para entender que a verdadeira autonomia vem da autodisciplina. Como mulher, você tem a habilidade latente de transformar contatos sociais em oportunidades valiosas de crescimento pessoal e profissional, sempre agindo com muito tato e simpatia, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O grande aprendizado para você é buscar o equilíbrio interno, evitando a impulsividade quando a rotina parecer entediante. Ao canalizar essa energia vibrante para objetivos claros, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma profissional de imenso destaque e uma mulher que vive experiências ricas, repletas de significado.</p>`,
-
-    15: ` <h3>Sedutora - Dia 15</h3>
+ videoID: " "
+    },
+    15: {
+     conteudo:` <h3>Sedutora - Dia 15</h3>
     <p>O seu dia de nascimento traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um magnetismo pessoal fortíssimo e avassalador, aliado a um talento nato para ensinar, acolher e ajudar o próximo. Você é uma mulher que possui uma natureza calorosa e se sente plena quando pode prover bem-estar, conforto e alegria para sua família ou comunidade, agindo como a figura central de apoio.</p>
     <p>Sua sensibilidade artística e o seu gosto pelo que é belo são muito aguçados, e você possui o dom natural de atrair os recursos necessários para viver com conforto, abundância e harmonia. Você é uma presença extremamente carismática, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e as pessoas buscam sua companhia simplesmente por se sentirem seguras, aquecidas e ouvidas ao seu lado.</p>
     <p>Existe em você uma forte ligação com o cuidado com o lar e com os laços de afeto, mas sua mente é ampla o suficiente para entender e acompanhar as mudanças do mundo. Sua verdadeira força vem do amor, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e você tem a capacidade de curar ambientes tensos ou corações partidos apenas com sua presença tranquila e sabedoria emocional.</p>
     <p>O grande desafio para você é não se deixar levar pelo desejo de controlar excessivamente a vida alheia por excesso de zelo ou instinto de proteção. Ao usar seu magnetismo para elevar as pessoas e dar liberdade a elas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge um nível de prosperidade que é fruto direto da nobreza do seu coração.</p>`,
-
-    16: ` <h3>Extremista - Dia 16</h3>
+ videoID: " "
+    },
+    16: {
+     conteudo:` <h3>Extremista - Dia 16</h3>
     <p>O seu dia de nascimento indica que você possui uma mente analítica brilhante e uma intuição profunda, totalmente voltada para a descoberta da essência real das coisas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua jornada é pontuada por experiências marcantes que te levam a questionar os valores puramente materiais, desenvolvendo em você uma sabedoria espiritual e uma força que poucas mulheres conseguem alcançar.</p>
     <p>Você tem o talento sagrado de enxergar através das máscaras sociais e possui um discernimento infalível para detectar qualquer falsidade ou hipocrisia. Embora você possa parecer uma mulher mais reservada ou misteriosa à primeira vista, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua profundidade de pensamento é o que te torna excelente em estratégia, planejamento ou orientação em temas complexos.</p>
     <p>Sua caminhada é de constante aperfeiçoamento da alma. Você busca respostas para os grandes mistérios e não descansa enquanto não encontra a verdade por trás dos fatos. Essa busca interna faz com que você desenvolva uma resiliência única, sendo uma mulher capaz de se reconstruir com ainda mais beleza após qualquer desafio, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O desafio para você é acolher as mudanças bruscas da vida como chances de evoluir, sem se fechar em um isolamento defensivo ou amargo. Quando você entende que o desapego é o caminho para o verdadeiro poder espiritual, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma mulher inabalável e detentora de um conhecimento que ilumina a todos.</p>`,
-
-    17: ` <h3>Orgulhosa - Dia 17</h3>
+ videoID: " "
+    },
+    17: {
+     conteudo:` <h3>Orgulhosa - Dia 17</h3>
     <p>O seu dia de nascimento confere a você uma vibração de grande sucesso, liderança e brilho pessoal intenso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher que possui o talento raro de unir a espiritualidade e a intuição aguçada com uma capacidade executiva de altíssimo nível, o que te permite alcançar posições de grande destaque mantendo seus valores éticos elevados.</p>
     <p>Sua mente é extremamente organizada e você possui uma visão de longo alcance para os negócios, para as finanças e para a estruturação da sua vida. Você impõe respeito em qualquer sala que entre pela sua competência inegável e pela forma justa como conduz seus projetos, agindo com uma autoridade natural que emana do seu conhecimento, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>Existe um magnetismo de estrela em você, atraindo oportunidades de crescimento material e reconhecimento que parecem surgir no momento exato. Como mulher de visão, você sabe planejar com precisão, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e sua ambição é perfeitamente equilibrada por um senso de responsabilidade que garante conquistas sólidas, respeitadas e duradouras.</p>
     <p>O aprendizado para você é manter a conexão com seu propósito interior e com a sua sensibilidade enquanto sobe os degraus do sucesso, evitando a frieza emocional ou o orgulho excessivo. Quando você usa sua influência para o bem comum e para apoiar outras mulheres, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você brilha como uma das forças mais vitoriosas da numerologia.</p>`,
-
-    18: ` <h3>Contestadora - Dia 18</h3>
+ videoID: " "
+    },
+    18: {
+     conteudo:` <h3>Contestadora - Dia 18</h3>
     <p>O seu dia de nascimento traz para você uma natureza profundamente humanitária, combativa e dotada de uma imensa força emocional, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher que se sente viva e realizada quando pode lutar por justiça, igualdade e proteção, possuindo um talento natural para liderar causas que pedem transformação coletiva.</p>
     <p>Sua intuição é de uma potência absurda e você possui uma capacidade de superação impressionante, conseguindo transformar crises profundas em vitórias pessoais magníficas. Você entende como ninguém os processos de encerramento, o que permite a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, finalizar ciclos com dignidade e iniciar novas etapas com coragem de cabeça erguida.</p>
     <p>Você é uma mulher de mente aberta para o mundo e não tolera injustiças ou preconceitos ao seu redor. Existe em você um magnetismo forte que atrai pessoas que buscam força, consolo e direção em momentos de caos. Sua presença exige respeito, pois você age com a autoridade de quem conhece as dores e a profundidade da vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O seu desafio como mulher é controlar as oscilações emocionais e evitar acumular mágoas ou ressentimentos no coração. Ao focar toda essa sua energia intensa na cura do ambiente ao seu redor e no auxílio ao próximo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você encontra uma paz profunda e o reconhecimento que vem do impacto real que você gera na sociedade.</p>`,
-
-    19: ` <h3>Individualista - Dia 19</h3>
+ videoID: " "
+    },
+    19: {
+     conteudo:` <h3>Individualista - Dia 19</h3>
     <p>O seu dia de nascimento confere a você uma energia de independência total, altivez e brilho pessoal intenso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma liderança nata, uma mulher que possui a capacidade de realizar seus desejos mais ambiciosos através da pura força de vontade e foco, mas a vida sempre te convidará a aprender a importância de colaborar e ouvir o próximo.</p>
     <p>Sua personalidade é vibrante, solar e você tem o talento de iniciar novos empreendimentos, negócios ou projetos com muito entusiasmo e coragem. Você nasceu para ser a protagonista absoluta da sua própria história, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e possui todas as ferramentas mentais para chegar ao topo por mérito próprio.</p>
     <p>Existe em você uma luz que atrai a atenção de todos de forma inevitável. Sua capacidade de resistência é enorme e você tem a coragem de ser quem realmente é, sem se importar com julgamentos alheios. Quando você decide focar em uma meta, você move montanhas, demonstrando uma autossuficiência que serve de inspiração para outras mulheres, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O seu aprendizado central é superar o orgulho rígido e entender que o verdadeiro poder feminino também cresce na união e na partilha. Quando você brilha sem apagar a luz alheia e compartilha suas vitórias com generosidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge a realização plena da sua alma.</p>`,
-
-    20: ` <h3>Consciente - Dia 20</h3>
+ videoID: " "
+    },
+    20: {
+     conteudo:` <h3>Consciente - Dia 20</h3>
     <p>O seu dia de nascimento traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a vibração da cooperação, do acolhimento e da diplomacia em sua forma mais refinada e linda. Você é uma mulher que possui o dom sagrado da escuta atenta e da empatia profunda, sendo aquela presença pacífica que consegue resolver conflitos e criar pontes de entendimento onde parecia impossível haver acordo.</p>
     <p>Sua verdadeira força reside na suavidade, no tato social e na paciência sábia para aguardar o momento certo de agir. Como mulher, você produz resultados excepcionais quando trabalha em parceria ou em equipe, <strong>MASCULINO-FEMININO-NEUTRO</strong>, revelando-se uma companheira leal, confiável e que valoriza a harmonia acima de qualquer disputa boba de ego.</p>
     <p>Sua intuição feminina é um guia constante e certeiro que te ajuda a tomar decisões equilibradas, justas e humanas. Você tem um senso artístico e estético apurado, apreciando a beleza e o aconchego como formas de manter sua paz interior. As pessoas buscam a sua companhia para encontrar conforto, colo e uma visão mais mansa e acolhedora da realidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O desafio para você como mulher é não se deixar levar pela insegurança ou pela timidez diante de personalidades mais agressivas ou rudes. Ao confiar no seu valor imenso como mediadora e fortalecer a sua própria voz, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna a peça essencial que mantém qualquer família ou estrutura unida e em perfeita paz.</p>`,
-
-    21: ` <h3>Dispersa - Dia 21</h3>
+ videoID: " "
+    },
+    21: {
+     conteudo:` <h3>Dispersa - Dia 21</h3>
     <p>O seu dia de nascimento traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma vibração maravilhosa de expansão, sorte e uma capacidade de comunicação social totalmente fora do comum. Você é uma mulher de magnetismo natural e contagiante que atrai grandes oportunidades e figuras influentes, agindo com uma alegria de viver que ilumina qualquer ambiente.</p>
     <p>Sua mente é artisticamente criativa, versátil e cheia de charme, <strong>MASCULINO-FEMININO-NEUTRO</strong>, permitindo que você se destaque com muita facilidade em tudo o que envolva o público, as artes, a escrita ou a fala. Você tem o dom de transformar palavras em pontes para o sucesso, possuindo a habilidade única de expressar seus desejos de forma encantadora.</p>
     <p>Você é alguém que busca a realização pessoal e o crescimento, mas sabe que a vida deve ser saboreada e desfrutada no processo. Existe um equilíbrio lindo em você entre a ambição de crescer e o prazer de viver bem. Sua presença, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é sinônimo de leveza, boas energias e de uma visão otimista que abre portas valiosas na sua caminhada.</p>
     <p>O seu desafio como mulher é evitar a dispersão dos seus inúmeros talentos por querer abraçar o mundo e fazer tudo ao mesmo tempo. Quando você foca sua preciosa energia em um objetivo central e mantém a persistência firme, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge uma colheita de reconhecimento, brilho e prosperidade que flui de forma totalmente natural.</p>`,
-
-    22: ` <h3>Sonhadora - Dia 22</h3>
+ videoID: " "
+    },
+    22: {
+     conteudo:` <h3>Sonhadora - Dia 22</h3>
     <p>O seu dia de nascimento traz a vibração máxima do "Mestre Construtor", o que confere a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o potencial magnífico de realizar projetos e sonhos em escala monumental. Você é uma mulher que possui uma intuição elevadíssima combinada com uma capacidade prática rara e realizadora, transformando o que parece impossível em realidade concreta.</p>
     <p>Sua visão de mundo é ampla, generosa e eu sei que no fundo da sua alma você sente que nasceu para deixar um legado duradouro e positivo para a humanidade. Você tem um talento natural para organizar grandes sistemas, negócios ou movimentos de ajuda, <strong>MASCULINO-FEMININO-NEUTRO</strong>, agindo com uma responsabilidade e ética que inspiram confiança absoluta em todos.</p>
     <p>Como mulher, você possui uma força de trabalho inesgotável e uma mente brilhante capaz de coordenar detalhes complexos sem perder o alvo final de vista. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a realização material e o sucesso financeiro são meios para servir ao bem comum, proteger os seus e estruturar um futuro mais seguro para as próximas gerações.</p>
     <p>O grande aprendizado para você é aprender a lidar com a imensa pressão e cobrança que essa capacidade monumental de realização gera na sua vida pessoal. Ao manter o seu equilíbrio emocional e reservar um tempo para si mesma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma força inigualável, capaz de mudar o mundo ao seu redor para muito melhor.</p>`,
-
-    23: ` <h3>Versátil - Dia 23</h3>
+ videoID: " "
+    },
+    23: {
+     conteudo:` <h3>Versátil - Dia 23</h3>
     <p>O seu dia de nascimento confere a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma inteligência brilhante, curiosa e uma facilidade incrível para aprender qualquer assunto com profundidade. Você é uma mulher de mente ágil que possui um talento especial para a persuasão, conseguindo convencer as pessoas através de uma lógica rápida e de um charme pessoal que é só seu.</p>
     <p>Sua natureza é profundamente livre, independente e amante das novidades. Você se adapta a mudanças e reviravoltas na vida com uma agilidade que impressiona a todos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você brilha intensamente em ambientes dinâmicos onde pode usar sua criatividade para resolver problemas de forma inovadora, buscando sempre expandir seus horizontes.</p>
     <p>Existe em você um magnetismo fascinante que atrai viagens, novas amizades, conexões intelectuais e experiências diversificadas. Você detesta a estagnação e o tédio, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e sua mente está sempre um passo à frente, antecipando tendências. Sua versatilidade como mulher é, sem dúvida, sua maior aliada para o sucesso em múltiplas áreas.</p>
     <p>O cuidado que você deve ter é para não perder a paciência com quem possui um ritmo de pensamento ou de vida mais lento que o seu. Ao cultivar a persistência amorosa em projetos de longo prazo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você transforma sua agilidade mental em uma carreira de sucesso sólido e conquistas memoráveis.</p>`,
-
-    24: ` <h3>Prestativa - Dia 24</h3>
+ videoID: " "
+    },
+    24: {
+     conteudo:` <h3>Prestativa - Dia 24</h3>
     <p>O seu dia de nascimento indica que você possui um talento nato para a diplomacia, para o cuidado e para a promoção da harmonia através da sua simples presença, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você costuma ser a "âncora" emocional, a conselheira e o pilar do seu círculo social e familiar, possuindo um senso de dever que faz de você a figura mais procurada por todos nas horas difíceis.</p>
     <p>Sua energia é totalmente voltada para a criação de equilíbrio, paz e aconchego. Como mulher, você se sente em plena realização quando pode zelar com amor pelo bem-estar e segurança de quem ama, <strong>MASCULINO-FEMININO-NEUTRO</strong>, agindo sempre com uma doçura acolhedora que esconde uma força interior imensa e uma determinação inabalável.</p>
     <p>Você valoriza a integridade, a verdade e a família acima de tudo na vida. Existe um compromisso profundo com a retidão nas suas responsabilidades, o que te torna a pessoa ideal para gerir vidas, lares ou projetos que exijam confiança total. Sua jornada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é pautada pelo afeto sincero e pela construção de laços indestrutíveis.</p>
     <p>O grande desafio para você como mulher é aprender a dizer 'não' para não se anular ou se sobrecarregar tentando carregar as dores de todo mundo nas costas. Ao aprender a cuidar de você mesma com a mesma dedicação e amor que oferece aos outros, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você alcança a verdadeira estabilidade emocional.</p>`,
-
-    25: ` <h3>Inconformada - Dia 25</h3>
+ videoID: " "
+    },
+    25: {
+     conteudo:` <h3>Inconformada - Dia 25</h3>
     <p>O seu dia de nascimento traz para você uma mente profundamente investigativa, sábia e dotada de uma intuição técnica e analítica muito aguçada, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher que possui o talento de observar e analisar comportamentos, mistérios ou dados com uma profundidade que pouquíssimas pessoas atingem, buscando sempre a excelência.</p>
     <p>Sua natureza é mais reservada, elegante e você valoriza o conhecimento profundo como a base indispensável para cada decisão tomada na sua vida. Você tem o dom sagrado da observação silenciosa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e seu radar raramente se engana sobre o real caráter das pessoas, agindo com uma cautela que te protege de erros impulsivos.</p>
     <p>Existe em seu interior um desejo de perfeição e refinamento que te leva a ser uma especialista respeitada na sua área de atuação. Você prefere sempre a qualidade das relações à quantidade, e busca momentos de solitude para processar seus pensamentos. Sua sabedoria como mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é admirável, tornando sua opinião de um peso enorme.</p>
     <p>O grande aprendizado para você é confiar ainda mais na sua intuição feminina e na sabedoria do coração, sem se prender apenas à lógica fria dos fatos. Quando você une sua capacidade analítica com a sensibilidade da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você conquista uma profunda paz interior e o respeito do mundo.</p>`,
-
-    26: ` <h3>Controladora - Dia 26</h3>
+ videoID: " "
+    },
+    26: {
+     conteudo:` <h3>Controladora - Dia 26</h3>
     <p>O seu dia de nascimento confere a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um talento excepcional e admirável para os negócios, para as finanças e para uma liderança executiva pautada pelo equilíbrio e pela justiça. Você é uma mulher de visão prática, ambiciosa e firme, mas que não abre mão da diplomacia, do respeito e do tato com as pessoas envolvidas nas suas metas.</p>
     <p>Sua grande capacidade de organização é brilhantemente aliada a um forte senso de justiça e equidade. Você sabe exatamente como atrair a prosperidade e gerir recursos com eficiência, sendo frequentemente o pilar econômico ou de sustentação para quem está ao seu redor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua autoridade é natural e respeitada porque nasce da sua competência real.</p>
     <p>Você compreende perfeitamente as leis do mundo material e sabe que o verdadeiro sucesso exige cooperação e liderança humanizada. Sua postura como mulher de comando é firme, porém profundamente justa. Existe em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um talento raro para transformar crises e perdas em oportunidades de estabilidade.</p>
     <p>O seu grande desafio é equilibrar essa busca constante pelo sucesso material com as necessidades delicadas da sua vida emocional e familiar. Ao manter o foco no propósito elevado e no afeto, e não apenas nos números, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você constrói uma trajetória de imenso prestígio e um legado de abundância duradouro.</p>`,
-
-    27: ` <h3>Política - Dia 27</h3>
+ videoID: " "
+    },
+    27: {
+     conteudo:` <h3>Política - Dia 27</h3>
     <p>O seu dia de nascimento traz para você uma vibração humanitária elevadíssima, aliada a uma mente intelectualmente poderosa e cheia de magnetismo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher que possui o talento de compreender conceitos complexos, filosofias ou mistérios da alma e aplicá-los para o benefício e evolução de muitas pessoas, agindo como uma mentora natural.</p>
     <p>Sua visão de mundo é espiritualizada, ampla e você sente a necessidade vital de se envolver em causas ou projetos que tragam progresso real para a vida das pessoas. Você é uma mulher de carisma, inspiração e sensibilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, cuja integridade e sabedoria atraem a admiração sincera de pessoas de todas as origens.</p>
     <p>Existe em você uma conexão profunda com o conhecimento universal e com a intuição. Você é capaz de grandes e nobres atos de desapego em nome de um ideal, possuindo uma visão superior que te ajuda a enxergar soluções amorosas onde outros veem apenas becos sem saída, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua jornada é marcada pelo serviço de elevar o mundo.</p>
     <p>O aprendizado para você como mulher é acolher a sua imensa sensibilidade sem deixar que os problemas e as dores do mundo te abatam ou suguem sua energia. Ao focar na sua capacidade de ensinar, acolher e auxiliar, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você encontra a realização plena da sua alma e deixa um rastro de luz por onde passa.</p>`,
-
-    28: ` <h3>Obstinada - Dia 28</h3>
+ videoID: " "
+    },
+    28: {
+     conteudo:` <h3>Obstinada - Dia 28</h3>
     <p>O seu dia de nascimento indica que você possui uma força de liderança extraordinária, mas que se manifesta de forma muito estratégica, inteligente e diplomática, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher que tem o talento de iniciar grandes projetos, negócios ou movimentos contando com o apoio fiel de parceiros que confiam cegamente na sua visão e na sua garra para vencer.</p>
     <p>Sua determinação inabalável é mesclada com uma intuição aguçada sobre o potencial e o talento das outras pessoas. Você é uma mulher de realização que nasceu para buscar o topo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas compreende perfeitamente que a união de forças e o respeito mútuo são o caminho mais seguro para o sucesso duradouro.</p>
     <p>Você possui a força do pioneirismo temperada com um excelente tato social e elegância feminina. Existe um magnetismo claro de vitória na sua trajetória, pois você sabe exatamente como motivar as pessoas a darem o melhor de si em prol de um objetivo comum, mantendo o comando com muita classe, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O desafio para você como mulher é não cair na teimosia rígida de querer que tudo seja feito exclusivamente do seu jeito. Ao usar o seu imenso poder para empoderar sua equipe, seus filhos ou sua família, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma liderança inesquecível e alcança uma prosperidade sólida e muito merecida.</p>`,
-
-    29: ` <h3>Instintiva - Dia 29</h3>
+ videoID: " "
+    },
+    29: {
+     conteudo:` <h3>Instintiva - Dia 29</h3>
     <p>O seu dia de nascimento confere a você uma sensibilidade espiritual, psíquica e intuitiva altíssima, sendo uma das energias mais místicas da numerologia, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher de mente visionária e com uma capacidade de percepção que ultrapassa os limites do óbvio, agindo como um verdadeiro farol de consciência e cura para quem cruza o seu caminho.</p>
     <p>Sua vida é marcada por uma intensidade emocional profunda e você tem o dom lindo de inspirar e transformar a vida das pessoas através da sua fé, das suas palavras ou das suas ideias inovadoras. Você atrai situações intensas para a sua jornada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e seu caminho é aprender a navegar entre sua rica e sagrada vida interior e as exigências do mundo material.</p>
     <p>Existe em seu interior uma força monumental de transformação que talvez você mesma ainda esteja descobrindo a cada dia. Sua simples presença é capaz de alterar a vibração de um ambiente e sua palavra mansa tem o poder de despertar potencias adormecidos e curar corações partidos em quem te escuta, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O grande aprendizado para você como mulher é a busca constante pela sua estabilidade e proteção emocional, não absorvendo a energia alheia. Ao ancorar sua forte intuição feminina em ações concretas e manter a confiança na sua própria força divina, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma figura de imenso impacto positivo na sociedade.</p>`,
-
-    30: ` <h3>Teimosa - Dia 30</h3>
+ videoID: " "
+    },
+    30: {
+     conteudo:` <h3>Teimosa - Dia 30</h3>
     <p>O seu dia de nascimento traz para você o poder maravilhoso da autoexpressão, do otimismo radiante e de uma alegria criativa contagiante, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher que possui o talento natural de enxergar o lado bom da vida e de comunicar essa vibração positiva através do seu sorriso, da fala ou de qualquer interação social que participe.</p>
     <p>Sua mente é artisticamente brilhante e você possui um charme e um magnetismo que fazem com que as pessoas queiram estar perto de você para absorver sua energia solar, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você tem o dom lindo de tornar leves as situações pesadas e de encontrar saídas criativas e cheias de imaginação onde os outros veem apenas becos sem saída.</p>
     <p>Você é uma figura social e cativante por excelência, que compreende que a felicidade e o entusiasmo são ingredientes essenciais para o sucesso real. Sua comunicação charmosa é sua maior ferramenta de realização pessoal, permitindo que você conquiste amigas, aliados e portas abertas através do seu carisma, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O grande desafio para você como mulher é evitar a dispersão da sua preciosa energia em coisas ou conversas superficiais que não agregam valor à sua alma. Ao usar sua comunicação para elevar, motivar e trazer alegria para o próximo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge uma realização imensa e se torna a figura central e amada em qualquer grupo.</p>`,
-
-    31: ` <h3>Tradicionalista - Dia 31</h3>
+ videoID: " "
+    },
+    31: {
+     conteudo:` <h3>Tradicionalista - Dia 31</h3>
     <p>O seu dia de nascimento indica que você possui uma mente altamente prática, organizada e disciplinada, mas com uma pitada de originalidade e bom gosto que te diferencia inteiramente das demais, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é uma mulher de construção que não tem medo de inovar, agindo com uma responsabilidade que garante o sucesso do seu futuro.</p>
     <p>Sua natureza é persistente, firme e você valoriza a honestidade e a lealdade acima de tudo, estando sempre com a mente aberta para ideias modernas que melhorem sua eficiência e qualidade de vida. Como mulher, você possui um talento natural para estruturar bases familiares e profissionais sólidas, acolhedoras e muito prósperas, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>Você sabe que o sucesso verdadeiro vem do mérito e do esforço diário, valorizando cada conquista da sua caminhada. Existe em seu interior uma força silenciosa e imponente que transmite total segurança a todos ao seu redor. Sua capacidade de planejar o amanhã é admirável, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tornando você a mulher ideal para liderar grandes projetos com os pés no chão.</p>
-    <p>O grande aprendizado para você é se permitir relaxar, soltar um pouco o controle e aproveitar os frutos do seu trabalho com mais leveza, prazer e diversão. Ao equilibrar sua disciplina impecável com momentos de autocuidado e lazer, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você constrói uma vida cheia de prestígio, estabilidade e profunda satisfação pessoal.</p>`
+    <p>O grande aprendizado para você é se permitir relaxar, soltar um pouco o controle e aproveitar os frutos do seu trabalho com mais leveza, prazer e diversão. Ao equilibrar sua disciplina impecável com momentos de autocuidado e lazer, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você constrói uma vida cheia de prestígio, estabilidade e profunda satisfação pessoal.</p>`,
+ videoID: " "
+    },
+     
 },
 // --- COMPORTAMENTO (NÚMERO PSÍQUICO) ---
 // --- COMPORTAMENTO (NÚMERO PSÍQUICO) ---
 comportamento: {
-    1: ` <h3>Determinada e Convicta - Comportamento 1</h3>
+    1: {
+     conteudo:` <h3>Determinada e Convicta - Comportamento 1</h3>
     <p>Você é uma mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, que carrega uma autoconfiança impressionante e uma postura decidida diante da vida. Existe em você uma força feminina que prefere tomar a iniciativa e abrir os próprios caminhos em vez de ficar esperando pelos outros, demonstrando uma independência mental que impõe respeito logo de cara.</p>
     <p>Sua mente processa o mundo de forma muito direta e intuitiva: você analisa os fatos rapidamente e toma decisões seguras, sem dar espaço para aquelas dúvidas que costumam paralisar as pessoas ao seu redor. Essa sua determinação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que você seja vista como uma liderança nata, aquela mulher forte e plenamente capaz de guiar os outros em momentos de crise, onde a maioria costuma vacilar.</p>
     <p>Por outro lado, eu sei bem que carregar essa postura de comando exige muito da sua energia, <strong>MASCULINO-FEMININO-NEUTRO</strong>, até porque, por ser tão forte, você raramente se permite mostrar vulnerabilidade ou pedir ajuda. Seu instinto acolhedor é sempre o de proteger, cuidar e guiar, agindo como uma verdadeira fortaleza para os seus ideais e para as pessoas que você ama.</p>
     <p>O seu grande talento está na coragem de ser quem você é, com toda a sua autenticidade. Ao longo da sua jornada, esse seu jeito firme de agir vai atrair a admiração de pessoas influentes e abrir portas para cargos de grande responsabilidade, confirmando que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é uma referência de autonomia, poder e sucesso.</p>`,
-
-    2: ` <h3>Romântica e Emotiva - Comportamento 2</h3>
+ videoID: " "
+    },
+    2: {
+     conteudo:` <h3>Romântica e Emotiva - Comportamento 2</h3>
     <p>Você é aquela mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, que possui uma alma profundamente diplomática, gentil e voltada para a harmonia. Sua sensibilidade feminina é tão apurada e aflorada que você consegue captar o que as pessoas estão sentindo no coração muito antes de qualquer palavra ser dita, agindo sempre com um cuidado, uma empatia e um tato acolhedor que encantam a todos.</p>
     <p>Como uma pacifista nata, você evita o confronto direto, preferindo resolver qualquer impasse com o poder da sua fala suave e de uma escuta atenta, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua mente busca sempre o ponto de equilíbrio e união, o que faz de você uma conselheira maravilhosa para mediar conflitos. Para você, a verdadeira força não está em impor vontades, mas sim na doçura, na compreensão e no afeto.</p>
     <p>As pessoas sentem uma confiança imediata em você, porque a sua presença transmite o calor de um abraço e o sossego de um porto seguro. Existe uma preocupação real e maternal em ver quem você ama bem, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o que te torna a parceira e companheira ideal. Sua intuição é a sua bússola mais sagrada; é ela quem guia seus passos em direção a relações sinceras.</p>
     <p>O seu maior aprendizado é entender que você não precisa absorver as dores do mundo e nem se anular para ver os outros felizes. Quando você reconhece o valor sagrado da sua sensibilidade e aprende a dizer 'não' quando necessário, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma fonte inesgotável de paz e equilíbrio para todos os que têm o privilégio de caminhar ao seu lado.</p>`,
-
-    3: ` <h3>Otimista e Despreocupada - Comportamento 3</h3>
+ videoID: " "
+    },
+    3: {
+     conteudo:` <h3>Otimista e Despreocupada - Comportamento 3</h3>
     <p>Sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é vibrante, profundamente criativa e movida por uma vontade linda de se expressar, comunicar e espalhar luz. Existe um otimismo contagiante no seu jeito de ser mulher que ilumina qualquer ambiente onde você chega, atraindo as pessoas como um imã para perto dessa sua energia solar e cheia de carisma.</p>
     <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a vida é uma tela em branco para criar e compartilhar histórias e sorrisos. Você tem a alma curiosa de quem ama participar ativamente da vida social e celebrar os momentos bons. Você domina a arte da palavra com uma leveza única, sabendo como motivar uma amiga, um familiar ou sua equipe de trabalho de um jeito alegre, transformando problemas pesados em soluções criativas.</p>
     <p>Sua inteligência é rápida, charmosa e você consegue transitar por conversas e círculos diferentes com muita naturalidade. Eu sei que no fundo o desejo do seu coração é ser fonte de inspiração e alegria para as pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Por isso, quando o desânimo bate na sua família, é você quem traz o entusiasmo de volta.</p>
     <p>Apenas preste atenção para não espalhar sua mente em mil projetos ao mesmo tempo e acabar sobrecarregada. Quando você foca toda essa sua força criativa e esse seu dinamismo em um objetivo central, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua capacidade de realização floresce e seus talentos passam a ser aplaudidos e reconhecidos por onde você passar.</p>`,
-
-    4: ` <h3>Teimosa e Observadora - Comportamento 4</h3>
+ videoID: " "
+    },
+    4: {
+     conteudo:` <h3>Teimosa e Observadora - Comportamento 4</h3>
     <p>Você é uma mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, cujo comportamento é pautado pela lógica, pela disciplina e por um senso de responsabilidade e dedicação muito acima da média. Você valoriza a ordem, a verdade e a integridade em tudo, agindo com uma seriedade e uma postura firme que transmitem total segurança para quem convive com você.</p>
     <p>Sua mente busca bases sólidas para construir o futuro. Por isso, você planeja cada passo da sua vida com cuidado e prefere caminhos estruturados a aventuras incertas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você acaba exercendo o papel de alicerce e porto seguro na vida dos outros, sendo aquela mulher reconhecida pela lealdade inabalável aos seus princípios, à sua palavra e à sua família.</p>
     <p>Você gosta de ver a engrenagem da vida funcionando com eficiência e encontra uma paz profunda na sensação de dever cumprido com perfeição, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Esse seu jeito focado faz com que você se destaque brilhantemente em posições de organização e gestão, onde sua persistência impecável garante que nenhum detalhe seja esquecido.</p>
     <p>O seu grande desafio como mulher é permitir que um pouco de leveza e flexibilidade entrem na sua rotina, deixando as coisas fluírem mais. Ao unir essa sua capacidade fantástica de construção com uma mente aberta para o novo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma mulher invencível, capaz de conquistar as metas mais grandiosas da sua vida.</p>`,
-
-    5: ` <h3>Impulsiva e Imediatista - Comportamento 5</h3>
+ videoID: " "
+    },
+    5: {
+     conteudo:` <h3>Impulsiva e Imediatista - Comportamento 5</h3>
     <p>Você é aquela mulher magnética, <strong>MASCULINO-FEMININO-NEUTRO</strong>, marcada por uma versatilidade incrível, raciocínio rápido e uma necessidade vital de liberdade. Sua mente é inquieta, cheia de vivacidade e se entedia facilmente com a rotina pesada, o que te impulsiona a agir com uma curiosidade corajosa para explorar o mundo e conhecer pessoas novas sem medo do desconhecido.</p>
     <p>Você se adapta a qualquer reviravolta com uma facilidade linda, atraindo transformações para a sua jornada de forma muito natural, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu pensamento é moderno, livre de preconceitos e está sempre à frente do seu tempo, buscando formas autênticas de viver e de se expressar. Esse seu jeito dinâmico te torna uma figura de grande influência quando o assunto é inovação.</p>
     <p>A liberdade é o oxigênio da sua alma feminina, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você valoriza demais o aprendizado que vem da pele, da experiência prática e da troca com culturas e mentes diferentes. Seu comportamento social é fascinante, porque você sempre tem uma visão inovadora ou uma história inspiradora para contar, tirando qualquer um da zona de conforto.</p>
     <p>O seu grande aprendizado é acolher a mente e aprender a lidar com a impaciência ou com a ansiedade pelo amanhã. Quando você canaliza toda essa energia vibrante e apaixonada para um propósito claro, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma força de transformação avassaladora e uma referência de vitalidade para todos.</p>`,
-
-    6: ` <h3>Protecionista e Sentimental - Comportamento 6</h3>
+ videoID: " "
+    },
+    6: {
+     conteudo:` <h3>Protecionista e Sentimental - Comportamento 6</h3>
     <p>Você é o coração pulsante do seu círculo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu comportamento como mulher é focado quase que inteiramente no cuidado, no amparo e na proteção de quem você ama. Existe um senso de justiça, afeto e dever muito profundo no seu peito, fazendo com que você aja sempre para criar harmonia, acolhimento e beleza em cada canto onde coloca os pés.</p>
     <p>Você sente uma necessidade real e muito bonita de ser útil, estendendo a mão e oferecendo colo ou conselhos sábios para quem está passando por momentos difíceis, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu jeito é acolhedor e profundamente ligado ao feminino; você valoriza o aconchego do lar, os laços familiares e a estabilidade do amor. As pessoas buscam naturalmente o equilíbrio que só a sua presença consegue transmitir.</p>
     <p>Sua dedicação é um exemplo de amor puro. Você assume responsabilidades de cabeça erguida e com prazer quando sabe que isso trará paz para quem você estima, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Para você, o sucesso não faz sentido se for uma conquista solitária; ele só tem valor se a sua mesa estiver cheia e todos os seus estiverem protegidos e felizes.</p>
     <p>Seu desafio é dosar esse amor para não acabar se tornando excessivamente controladora ou zelosa demais com o destino alheio, esquecendo-se de si mesma. Ao entender que cada pessoa tem o próprio aprendizado, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se eleva como uma figura matriarcal inspiradora, um exemplo vivo de sabedoria e amor universal.</p>`,
-
-    7: ` <h3>Temperamental e Questionadora - Comportamento 7</h3>
+ videoID: " "
+    },
+    7: {
+     conteudo:` <h3>Temperamental e Questionadora - Comportamento 7</h3>
     <p>Você é uma mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, de comportamento introspectivo, mente analítica e voltada para desvendar os mistérios que existem por trás das aparências. Você possui uma inteligência profunda que não aceita respostas rasas; você quer entender a essência de tudo, agindo com uma cautela observadora que valoriza imensamente a privacidade, o silêncio e a reflexão.</p>
     <p>Para você, o autoconhecimento, o estudo e a busca pela verdade são as grandes riquezas da vida. Esse seu jeito revela uma mulher sábia que sabe aproveitar a própria companhia para crescer internamente e evoluir, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua intuição feminina funciona como um radar natural para detectar mentiras ou falsidades, o que torna praticamente impossível alguém te enganar.</p>
     <p>A profundidade do seu pensamento impõe um respeito silencioso. Você prefere selecionar poucas e verdadeiras amizades para partilhar a vida do que se perder na futilidade de conversas vazias, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Esse seu lado mais reservado protege um universo interno riquíssimo e sagrado, que você só revela para quem ganha sua total confiança.</p>
     <p>O cuidado que você deve ter é para não se isolar em demasia no seu mundo ou se tornar exigente demais com as imperfeições humanas. Ao compartilhar suas percepções e sua sabedoria de forma generosa com o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna um farol de luz e discernimento para quem busca compreender o real sentido da vida.</p>`,
-
-    8: ` <h3>Determinada e Competitiva - Comportamento 8</h3>
+ videoID: " "
+    },
+    8: {
+     conteudo:` <h3>Determinada e Competitiva - Comportamento 8</h3>
     <p>Você é uma mulher forte, <strong>MASCULINO-FEMININO-NEUTRO</strong>, marcada por uma visão estratégica e muito prática da realidade. Você compreende como ninguém a engrenagem do mundo material e dos negócios, agindo sempre com uma determinação impecável para conquistar sua independência financeira, seu prestígio e a prosperidade para você e para os seus familiares.</p>
     <p>Você não recua diante de desafios gigantescos e o seu jeito seguro de se posicionar impõe um respeito natural em qualquer ambiente, sem que você precise fazer o menor esforço para isso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua mente é brilhante para gerir recursos, tempo e metas. Para você, a vida é uma colheita justa: quem planta dedicação e disciplina tem o direito de vencer e prosperar.</p>
     <p>O mundo percebe a sua liderança pela sua competência inabalável e pela firmeza das suas escolhas. Como uma mulher realizadora, você quer construir um legado duradouro, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e por isso investe tanta energia nos seus projetos profissionais. Essa eficiência te torna a figura perfeita para comandar grandes negócios ou reestruturar situações complexas.</p>
     <p>O seu caminho de evolução é equilibrar todo esse magnetismo de poder com momentos de afeto, sensibilidade e compaixão. Quando você usa a sua força monumental para erguer os outros e ajudar o coletivo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a abundância flui de forma inesgotável e você se torna uma líder profundamente amada e admirada.</p>`,
-
-    9: ` <h3>Inquieta e Inconformada - Comportamento 9</h3>
+ videoID: " "
+    },
+    9: {
+     conteudo:` <h3>Inquieta e Inconformada - Comportamento 9</h3>
     <p>Você é uma mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, de espírito humanitário, generoso e dotada de uma sensibilidade emocionante que abraça as dores do mundo inteiro. Você carrega em si uma sabedoria ancestral que parece vir de vidas passadas, agindo sempre com uma bondade genuína que não espera nada em troca e uma capacidade de compreensão profunda da alma humana.</p>
     <p>Sua jornada é conectada a causas maiores, ao idealismo e à evolução espiritual, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu jeito acolhedor é o de quem está sempre pronta para perdoar, acolher e buscar a expansão da consciência acima de qualquer vaidade ou ganho puramente material. Existe um carisma universal em você que atrai pessoas de todos os caminhos para perto da sua luz protetora.</p>
     <p>Sua mente é ampla, livre de preconceitos e cheia de tolerância. Você atua como uma verdadeira curadora e fonte de inspiração para as mulheres e pessoas que estão atravessando transições difíceis na vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Para você, o sucesso só faz sentido se você estiver transformando o mundo em um lugar melhor.</p>
-    <p>O seu grande desafio é proteger sua própria energia para que o sofrimento alheio não apague a sua alegria de viver ou te perca em utopias. Ao manter o pé no chão e o foco na sua missão prática de educar, acolher e guiar, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você conquista uma paz de espírito inabalável e se torna um exemplo vivo de amor incondicional.</p>`
+    <p>O seu grande desafio é proteger sua própria energia para que o sofrimento alheio não apague a sua alegria de viver ou te perca em utopias. Ao manter o pé no chão e o foco na sua missão prática de educar, acolher e guiar, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você conquista uma paz de espírito inabalável e se torna um exemplo vivo de amor incondicional.</p>`,
+ videoID: " "
+    },
+     
 },
  
 // --- MOTIVAÇÃO (O DESEJO ÍNTIMO DA ALMA) ---
 motivacao: {
-    1: `<h3>Ter o controle sobre seu destino - Motivação 1</h3>
+    1: {
+     conteudo:`<h3>Ter o controle sobre seu destino - Motivação 1</h3>
     <p>A sua motivação mais profunda, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a busca incessante pela autonomia total e pelo reconhecimento da sua individualidade. O que realmente faz o seu coração vibrar é a sensação de ser mestre do próprio destino, uma mulher forte, sem amarras ou dependências que não condigam com a sua verdade interior.</p>
     <p>Existe uma urgência dentro de você por destaque e liderança, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Como uma líder nata, você sente um desconforto profundo diante da mediocridade; qualquer cenário que limite a sua liberdade de ação gera uma inquietação que só passa quando você entra em movimento e conquista o seu espaço.</p>
     <p>O seu desejo íntimo é ser uma figura pioneira, a referência máxima em tudo o que se propõe a fazer. O sucesso para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, só tem um significado real se tiver a sua assinatura e for fruto da sua coragem de desafiar o comum para abrir novos caminhos.</p>`,
-
-    2: `<h3>Estar em paz e em harmonia - Motivação 2</h3>
+ videoID: " "
+    },
+    2: {
+     conteudo:`<h3>Estar em paz e em harmonia - Motivação 2</h3>
     <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, você é uma mulher de motivação interna sensível, sempre em busca constante pela paz e pela conexão profunda com as pessoas ao seu redor. O que o seu coração mais deseja é viver em uma realidade onde o afeto, a gentileza e a compreensão valham muito mais do que qualquer disputa de ego ou conflito bobo.</p>
     <p>Você sente uma satisfação imensa ao colaborar e ao ser a peça fundamental que une as pessoas em prol de um objetivo comum, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo secreto é ser valorizada pela sua capacidade única de ouvir, acolher e nutrir relacionamentos. Você não busca o palco por vaidade, mas sim pela segurança de construir vínculos sólidos e afetivos.</p>
     <p>A realização da sua alma acontece quando existe união. Ao sentir que o seu jeito cuidadoso e acolhedor trouxe conforto para alguém, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge uma plenitude interior que justifica todo o seu esforço na busca pelo entendimento entre os seres.</p>`,
-
-    3: `<h3>Se divertir e expressar a criatividade - Motivação 3</h3>
+ videoID: " "
+    },
+    3: {
+     conteudo:`<h3>Se divertir e expressar a criatividade - Motivação 3</h3>
     <p>A motivação mais profunda da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a necessidade vital de se expressar e brilhar através do seu carisma. O que realmente impulsiona o seu coração é a oportunidade de transmitir suas ideias e uma alegria contagiante, agindo como uma verdadeira fonte de luz e inspiração para quem está por perto.</p>
     <p>Eu sei que você deseja ser reconhecida pela sua inteligência brilhante e pelo seu bom humor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A repressão da sua criatividade sufoca a sua essência, que precisa de movimento, de arte e de trocas que valorizem o seu talento natural para a comunicação.</p>
     <p>Quando você consegue canalizar esse potencial para projetos que trazem felicidade aos outros, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma atinge o ápice da satisfação. O seu sucesso como mulher está diretamente ligado à sua capacidade de transformar o cotidiano em algo extraordinário através do seu riso e da beleza que emana de você.</p>`,
-
-    4: `<h3>Ter uma vida estável e organizada - Motivação 4</h3>
+ videoID: " "
+    },
+    4: {
+     conteudo:`<h3>Ter uma vida estável e organizada - Motivação 4</h3>
     <p>A sua motivação íntima, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a busca pela segurança absoluta e pela construção de algo que dure para sempre. O que realmente impulsiona a sua alma é o desejo de manter os pés no chão e saber que, como uma mulher precavida, construiu uma base sólida, tanto material quanto familiar, que nada pode abalar.</p>
     <p>Você sente uma satisfação profunda no trabalho bem feito e no cumprimento rigoroso dos seus deveres, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo secreto é ser alguém de honra, palavra e eficiência total. Você valoriza a estabilidade e sente que a sua missão é trazer estrutura ao mundo e proteger com unhas e dentes quem depende de você.</p>
     <p>A sua alma atinge a paz quando percebe que todos os pilares da sua vida estão no lugar certo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ver a sua família protegida sob o seu cuidado e o seu patrimônio crescendo de forma honesta é o que dá sentido real à sua existência.</p>`,
-
-    5: `<h3>Ter novas e intensas experiências - Motivação 5</h3>
+ videoID: " "
+    },
+    5: {
+     conteudo:`<h3>Ter novas e intensas experiências - Motivação 5</h3>
     <p>A motivação mais profunda que guia você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a liberdade absoluta. O que realmente faz a sua alma vibrar é a possibilidade constante de mudança, de explorar novos horizontes e de se permitir contato com experiências que desafiem os seus sentidos e o seu intelecto.</p>
     <p>Você deseja viver intensamente, <strong>MASCULINO-FEMININO-NEUTRO</strong>, desafiando os seus próprios limites. O seu desejo íntimo é ser uma mulher moderna, independente e desimpedida, capaz de se adaptar a qualquer imprevisto com muita jogo de cintura. A monotonia é o seu maior temor; você está sempre pronta para a próxima grande descoberta.</p>
     <p>Ao conseguir conciliar essa sede de aventura com um propósito maior, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge o seu potencial máximo. O seu sucesso é medido pela quantidade de histórias fascinantes que você acumulou e pela sua incrível capacidade de manter o espírito sempre jovem e vibrante.</p>`,
-
-    6: `<h3>Ajudar e cuidar daqueles que estima - Motivação 6</h3>
+ videoID: " "
+    },
+    6: {
+     conteudo:`<h3>Ajudar e cuidar daqueles que estima - Motivação 6</h3>
     <p>A sua motivação íntima, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o desejo sincero de amar, cuidar e ser a grande figura protetora e matriarcal da sua família e comunidade. O que realmente impulsiona o seu coração é a busca pelo bem-estar alheio e a criação de um lar ou ambiente onde reine a harmonia e o conforto emocional.</p>
     <p>Você sente uma plenitude enorme quando assume responsabilidades em favor de quem você estima, <strong>MASCULINO-FEMININO-NEUTRO</strong>, agindo como um porto seguro inabalável. O seu desejo secreto é ser o pilar de sustentação afetiva, aquela mulher sábia em quem todos podem confiar de olhos fechados.</p>
     <p>Quando você percebe que a sua intervenção carinhosa trouxe equilíbrio para uma situação difícil, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a sua alma atinge um estado de satisfação plena. Ser a presença pacificadora que embeleza a vida das pessoas é a sua grande missão de dedicação.</p>`,
-
-    7: `<h3>Se destacar pelo conhecimento e verdade - Motivação 7</h3>
+ videoID: " "
+    },
+    7: {
+     conteudo:`<h3>Se destacar pelo conhecimento e verdade - Motivação 7</h3>
     <p>A motivação mais profunda da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a busca pelo conhecimento oculto e pela perfeição técnica. O que realmente te impulsiona é o desejo de compreender as causas fundamentais da vida e atingir um nível de sabedoria que te coloque acima das futilidades cotidianas.</p>
     <p>Como uma pensadora nata, você deseja silêncio, privacidade e tempo para refletir sobre os mistérios do mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo íntimo é ser uma autoridade respeitada no que faz, reconhecida pela profundidade da sua análise e mente analítica. Você tem um radar apurado para o que é falso e busca a autenticidade pura.</p>
     <p>A sua satisfação total ocorre quando uma peça difícil de um quebra-cabeça mental finalmente se encaixa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao atingir esses patamares de compreensão, você consolida uma jornada de paz interior e integridade intelectual absoluta.</p>`,
-
-    8: `<h3>Ser reconhecido por realizações e poder - Motivação 8</h3>
+ videoID: " "
+    },
+    8: {
+     conteudo:`<h3>Ser reconhecido por realizações e poder - Motivação 8</h3>
     <p>A sua motivação íntima, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a conquista do sucesso em grande escala e da autoridade executiva. O que realmente impulsiona o seu coração é o desejo de gerir recursos, liderar pessoas com justiça e se posicionar como uma mulher de influência, comando e vitória reconhecida no mundo prático.</p>
     <p>Você sente uma satisfação profunda ao ver o seu esforço se transformar em prosperidade tangível, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo secreto é ter controle total sobre a sua realidade financeira e colher o reconhecimento social da sua força de comando. Você é determinada e não tem medo do trabalho duro, desde que ele te leve direto ao topo.</p>
     <p>A plenitude da sua alma acontece quando você usa esse sucesso com responsabilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao usar a sua força realizadora para estruturar vidas e promover o crescimento de todos, você se torna uma figura de sucesso amplamente admirada e respeitada por toda a comunidade.</p>`,
-
-    9: `<h3>Ser útil e servir à humanidade - Motivação 9</h3>
+ videoID: " "
+    },
+    9: {
+     conteudo:`<h3>Ser útil e servir à humanidade - Motivação 9</h3>
     <p>A motivação mais profunda que move você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o desejo sincero de servir à humanidade e deixar um mundo melhor. O que realmente impulsiona a sua alma é a busca pela compaixão e pelo perdão universal, compreendendo as dores humanas com a sensibilidade de quem enxerga além das aparências.</p>
     <p>Você deseja viver uma vida com um propósito humanitário marcante, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo íntimo é ser uma fonte de inspiração, acolhimento e cura, sentindo que a sua jornada só faz sentido se você puder aliviar o fardo de alguém. Você busca concluir seus ciclos com dignidade e amor incondicional.</p>
     <p>Ao ver o impacto positivo das suas ações na vida das pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a sua alma se expande. A sensação de dever cumprido perante o coletivo traz a você a verdadeira paz, consolidando uma trajetória de luz e desprendimento admiráveis.</p>`,
-
-    11: `<h3>Compreender os mistérios da Vida - Motivação 11</h3>
+ videoID: " "
+    },
+    11: {
+     conteudo:`<h3>Compreender os mistérios da Vida - Motivação 11</h3>
     <p>A sua motivação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, indica uma alma espiritualizada que busca a iluminação e a transcendência. O desejo interno do seu coração é compreender os grandes mistérios da existência e servir como um farol para os outros. Como uma mulher extremamente intuitiva, você busca a harmonia espiritual acima de tudo.</p>
     <p>Você anseia por revelar verdades ocultas e por elevar a consciência de quem está ao seu redor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sua realização vem de viver totalmente alinhada com princípios éticos superiores, atuando como uma ponte sagrada entre o mundo físico e o espiritual no despertar coletivo.</p>`,
-
-    22: `<h3>Materialização de desejos internos - Motivação 22</h3>
+ videoID: " "
+    },
+    22: {
+     conteudo:`<h3>Materialização de desejos internos - Motivação 22</h3>
     <p>Ter o 22 na Motivação significa que a sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, anseia por construir algo grandioso e que dure por gerações. Você se sente impulsionada a realizar projetos de larga escala que tragam benefícios reais para a humanidade, unindo uma visão idealista marcante com uma capacidade prática formidável.</p>
     <p>A sua alma se sente plena ao ver grandes ideias saindo do papel e se tornando realidade palpável, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu sucesso íntimo é a maestria sobre o mundo físico, unindo a sabedoria da sua alma à eficiência de uma mulher realizadora que veio para erguer obras que desafiam o próprio tempo.</p>`,
-
-    33: `<h3>Amor incondicional e Guia Espiritual - Motivação 33</h3>
+ videoID: " "
+    },
+    33: {
+     conteudo:`<h3>Amor incondicional e Guia Espiritual - Motivação 33</h3>
     <p>A sua Motivação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, representa a maestria na compaixão. Sua alma deseja proteger, curar e ensinar em um nível universal. Existe um chamado profundo dentro de você para o amor incondicional, agindo como uma verdadeira guia espiritual e conselheira para todos que cruzam o seu caminho.</p>
     <p>O seu desejo íntimo é elevar o nível de paz no mundo através da sua entrega generosa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Como uma cuidadora de almas, você sente realização ao nutrir o coração dos outros e ao atuar como um pilar espiritual, transformando a dor em cura e o desequilíbrio em harmonia suprema.</p>`,
-
-    44: `<h3>Arquitetar o Progresso da Humanidade - Motivação 44</h3>
+ videoID: " "
+    },
+    44: {
+     conteudo:`<h3>Arquitetar o Progresso da Humanidade - Motivação 44</h3>
     <p>A sua motivação mais profunda, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma mestra construtora em escala global. O que realmente impulsiona sua alma é o desejo de manifestar estruturas tão sólidas e eficientes que elas se tornem o alicerce para o progresso de toda uma comunidade ou sociedade.</p>
     <p>Você sente uma urgência interna por disciplina e ética absoluta, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo secreto não é apenas o sucesso material, mas o controle total e focado sobre grandes processos que tragam ordem e estabilidade ao mundo. Como uma mulher de visão clara, a mediocridade e a desorganização são suas maiores inimigas internas.</p>
     <p>Sua plenitude acontece quando você vê uma obra monumental concluída sob sua gestão firme, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Saber que sua capacidade incrível de trabalho e visão prática criaram algo inabalável é o que traz a paz definitiva à sua alma de realizadora implacável.</p>`,
-
-    55: `<h3>Ser o Catalisador de Grandes Mudanças - Motivação 55</h3>
+ videoID: " "
+    },
+    55: {
+     conteudo:`<h3>Ser o Catalisador de Grandes Mudanças - Motivação 55</h3>
     <p>A motivação íntima que guia você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a liberdade em sua potência máxima e transformadora. Sua alma anseia por quebrar velhos paradigmas e liderar transições que tragam um novo fôlego de vida e modernidade para o coletivo.</p>
     <p>Você sente um impulso elétrico por novas experiências que desafiem o "impossível", <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo secreto é ser a voz feminina que anuncia o futuro, vivendo com uma intensidade magnética que poucos conseguem acompanhar. Para você, a estagnação é como uma prisão espiritual.</p>
     <p>Ao conseguir canalizar essa energia vibrante para motivar outras pessoas a também buscarem sua liberdade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge o seu ápice. Seu sucesso é medido pela coragem de ter sido a primeira a saltar destemida em direção ao novo.</p>
     <p><em>Nota: Por ser uma vibração de altíssima intensidade, o desafio da sua alma é manter o foco em meio a tantas possibilidades de mudança.</em></p>`,
-
-    66: `<h3>O Sacrifício e o Amor em Escala Universal - Motivação 66</h3>
+ videoID: " "
+    },
+    66: {
+     conteudo:`<h3>O Sacrifício e o Amor em Escala Universal - Motivação 66</h3>
     <p>A sua motivação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, representa o desejo de ser o coração do mundo. Sua alma anseia por criar um ambiente de harmonia tão profundo que seja capaz de curar as feridas emocionais de grupos inteiros, indo muito além do círculo familiar.</p>
     <p>Como uma doadora universal, você sente uma responsabilidade imensa pelo bem-estar alheio, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e seu desejo íntimo é ser o porto seguro absoluto. Existe um chamado para o serviço abnegado, onde sua satisfação vem de nutrir e proteger a vida com uma entrega mística e acolhedora.</p>
     <p>A realização da sua alma acontece quando o amor que você emana consegue pacificar conflitos antigos e restaurar a beleza onde havia caos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ser essa grande mãe e pilar de sustentação afetiva da humanidade é a sua grande e pesada missão de luz.</p>`,
-
-    77: `<h3>A Revelação da Verdade Suprema - Motivação 77</h3>
+ videoID: " "
+    },
+    77: {
+     conteudo:`<h3>A Revelação da Verdade Suprema - Motivação 77</h3>
     <p>A motivação mais profunda da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o mergulho nos mistérios mais inacessíveis da criação. O que te impulsiona é a busca pela verdade nua e crua, unindo uma mente científica implacável a uma intuição espiritual feminina de altíssima frequência.</p>
     <p>Você deseja o isolamento sagrado para refletir e decodificar as leis do universo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo íntimo é ser uma autoridade espiritual e intelectual cuja sabedoria não vem de livros, mas da sua experiência direta com o Divino e com a lógica pura da natureza.</p>
     <p>Sua satisfação total ocorre quando você atinge um nível de clareza que dissipa todas as ilusões do mundo material, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao se tornar uma mestra da introspecção, você consolida uma jornada de integridade e sabedoria que poucos conseguem alcançar.</p>`,
-
-    88: `<h3>O Poder Executivo Alinhado à Justiça Divina - Motivação 88</h3>
+ videoID: " "
+    },
+    88: {
+     conteudo:`<h3>O Poder Executivo Alinhado à Justiça Divina - Motivação 88</h3>
     <p>A sua motivação íntima, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a conquista do poder absoluto, mas sob o rigor da lei espiritual. O que realmente impulsiona o seu coração é o desejo de gerir grandes fortunas ou organizações de forma que a abundância flua com justiça e equilíbrio para todos ao seu redor.</p>
     <p>Você sente um impulso por realizações que deixem um legado de prosperidade inquestionável, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo secreto é o reconhecimento da sua força inabalável e da sua capacidade de transformar o mundo material através de uma visão estratégica refinada e ética superior.</p>
     <p>A plenitude da sua alma acontece quando você percebe que sua autoridade é usada para estruturar o progresso coletivo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Como uma gestora magnânima, ao equilibrar o ganhar e o prover, você se torna uma figura de comando respeitada por sua sabedoria e eficiência monumental.</p>`,
-
-    99: `<h3>O Encerramento Crístico e a Entrega Total - Motivação 99</h3>
+ videoID: " "
+    },
+    99: {
+     conteudo:`<h3>O Encerramento Crístico e a Entrega Total - Motivação 99</h3>
     <p>A motivação mais profunda que move você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o ápice da jornada da alma. O que realmente impulsiona você é o desejo de conclusão de todos os carmas e a entrega total ao serviço desinteressado, amando a humanidade de forma visceral e pura.</p>
     <p>Você deseja viver uma vida de desapego e compaixão absoluta, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu desejo íntimo é ser uma fonte de inspiração final, sentindo que sua alma está pronta para transcender as necessidades do ego feminino em favor da evolução de todos os seres vivos.</p>
-    <p>Ao sentir que sua presença no mundo foi um ato de amor puro e que você auxiliou diretamente no despertar de milhares de almas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua essência atinge o êxtase. A sensação de missão totalmente cumprida perante o Criador é o que te traz a paz suprema e inabalável.</p>`
+    <p>Ao sentir que sua presença no mundo foi um ato de amor puro e que você auxiliou diretamente no despertar de milhares de almas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua essência atinge o êxtase. A sensação de missão totalmente cumprida perante o Criador é o que te traz a paz suprema e inabalável.</p>`,
+ videoID: " "
+    },
+     
 },
 
 // --- INFLUÊNCIA (IMPRESSÃO / IMAGEM PESSOAL / APARÊNCIA) ---
 influencia: {
-    1: `<h3>Influência 1 - Liderança, Autonomia e Vigor</h3>
+    1: {
+     conteudo:`<h3>Influência 1 - Liderança, Autonomia e Vigor</h3>
     <p>A primeira impressão que você transmite ao mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma mulher com uma independência absoluta e uma força de vontade fora do comum. Ao entrar em um ambiente, as pessoas percebem em você uma aura de pioneirismo, vendo uma figura feminina que não fica esperando ordens para agir.</p>
     <p>Essa sua autoconfiança natural acaba atraindo oportunidades que exigem iniciativa e comando, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você é vista como uma força de inovação capaz de desbravar novos caminhos. O mundo enxerga em você a verdadeira protagonista, alguém que tem a fibra necessária para tomar decisões difíceis com firmeza e elegância.</p>
     <p>Você influencia os outros através dessa postura decidida, mostrando que a autonomia é a chave do sucesso. Essa sua imagem de arranque marcante, <strong>MASCULINO-FEMININO-NEUTRO</strong>, motiva grupos inteiros a saírem da estagnação apenas pela sua presença vigorosa e inspiradora.</p>`,
-
-    2: `<h3>Influência 2 - Diplomacia, Tato e Cooperação</h3>
+ videoID: " "
+    },
+    2: {
+     conteudo:`<h3>Influência 2 - Diplomacia, Tato e Cooperação</h3>
     <p>A imagem que você projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma suavidade e um equilíbrio admiráveis. As pessoas te veem como uma presença pacífica, charmosa e acolhedora, uma mulher que realmente sabe ouvir e mediar qualquer situação com muita elegância e educação.</p>
     <p>Essa sua aparência diplomática atrai parcerias estratégicas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque você transmite a segurança de quem sabe trabalhar em equipe e valoriza a harmonia. Você influencia os ambientes através de uma persuasão gentil, sendo o elo forte que une diferentes peças em uma estrutura sólida.</p>
     <p>O mundo confia na sua capacidade de resolver impasses sem precisar elevar o tom de voz. Essa sua aura de paciência e discrição feminina, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que você seja aquela figura indispensável para manter qualquer engrenagem social funcionando sem atritos.</p>`,
-
-    3: `<h3>Influência 3 - Criatividade, Brilho e Entusiasmo</h3>
+ videoID: " "
+    },
+    3: {
+     conteudo:`<h3>Influência 3 - Criatividade, Brilho e Entusiasmo</h3>
     <p>A sua aparência para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é vibrante, solar e profundamente comunicativa. As pessoas veem em você um verdadeiro farol de alegria, uma mulher magnética que traz leveza e uma inspiração imediata para qualquer círculo social onde você esteja presente.</p>
     <p>Esse seu magnetismo natural atrai oportunidades ligadas à expressão e ao público, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você é vista como uma figura central que sabe encantar, envolver e motivar as pessoas com total naturalidade. Você influencia através de um entusiasmo que é simplesmente contagiante.</p>
     <p>O mundo enxerga em você a centelha criativa que transforma o tédio em dinamismo. Essa sua aura de otimismo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que as pessoas busquem a sua companhia para se sentirem revigoradas, reconhecendo em você o talento único de dar vida e cor a qualquer ideia.</p>`,
-
-    4: `<h3>Influência 4 - Estabilidade, Ordem e Confiança</h3>
+ videoID: " "
+    },
+    4: {
+     conteudo:`<h3>Influência 4 - Estabilidade, Ordem e Confiança</h3>
     <p>A imagem que você transmite, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma seriedade, disciplina e integridade impecáveis. O mundo te vê como uma rocha firme, uma mulher pautada pela ética, pelo trabalho sério e pelo respeito absoluto às regras e compromissos assumidos.</p>
     <p>Essa sua aparência de solidez atrai grandes responsabilidades, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque você passa a confiança de que, sob a sua postura focada, nada sairá dos trilhos. Você influencia pelo exemplo de constância; as pessoas buscam em você um porto seguro em tempos de incerteza.</p>
     <p>Sua palavra é vista como lei, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Esse seu profissionalismo exemplar faz com que você seja respeitada como a força construtora essencial para manter a ordem e garantir que o progresso tangível aconteça de verdade ao seu redor.</p>`,
-
-    5: `<h3>Influência 5 - Liberdade, Versatilidade e Modernidade</h3>
+ videoID: " "
+    },
+    5: {
+     conteudo:`<h3>Influência 5 - Liberdade, Versatilidade e Modernidade</h3>
     <p>A primeira impressão que você causa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de alguém extremamente magnética, rápida e totalmente aberta às novidades do mundo. As pessoas veem em você uma mulher de espírito livre e cosmopolita, capaz de se adaptar a qualquer situação com charme, inteligência e muito jogo de cintura.</p>
     <p>Essa sua imagem versátil atrai trocas intelectuais e inovações, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você é vista como o agente de mudança que desafia o tédio e a rotina. Você influencia através da quebra de padrões antigos, agindo como um radar de tendências que detecta o futuro antes de todos.</p>
     <p>Sua agilidade mental e curiosidade fazem com que você seja procurada para trazer um "ar fresco" a ambientes conservadores. Você é a figura feminina, <strong>MASCULINO-FEMININO-NEUTRO</strong>, que impulsiona a evolução e mantém tudo em movimento constante.</p>`,
-
-    6: `<h3>Influência 6 - Equilíbrio, Justiça e Acolhimento</h3>
+ videoID: " "
+    },
+    6: {
+     conteudo:`<h3>Influência 6 - Equilíbrio, Justiça e Acolhimento</h3>
     <p>A imagem que você projeta, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de pura harmonia, responsabilidade e um cuidado profundo com o próximo. O mundo vê em você uma autoridade acolhedora e benevolente, uma mulher que valoriza profundamente a família, a beleza, a estética e o bem-estar de todos ao seu redor.</p>
     <p>Essa sua aparência de integridade atrai confiança imediata, <strong>MASCULINO-FEMININO-NEUTRO</strong>, abrindo portas em áreas de aconselhamento e orientação pessoal. Você influencia através do afeto e de um senso de dever muito claro; as pessoas sentem que estão totalmente seguras sob a sua supervisão cuidadosa.</p>
     <p>Você é o ponto de equilíbrio que pacifica tensões, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Essa sua aura de bondade faz com que você construa uma reputação sólida, baseada na lealdade e na sua capacidade única de harmonizar e embelezar tudo o que você toca.</p>`,
-
-    7: `<h3>Influência 7 - Sabedoria, Mistério e Distinção</h3>
+ videoID: " "
+    },
+    7: {
+     conteudo:`<h3>Influência 7 - Sabedoria, Mistério e Distinção</h3>
     <p>A sua aparência para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de alguém profunda, intelectual e mais reservada. As pessoas percebem em você uma aura de mistério e uma classe silenciosa, vendo uma mulher de autoridade técnica que não se deixa levar por conversas superficiais ou modismos.</p>
     <p>Essa sua imagem de seriedade atrai oportunidades de alta especialização, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você transmite a competência de quem detém conhecimentos complexos e profundos. Você influencia pelo discernimento refinado e pela lógica impecável que demonstra em cada fala.</p>
     <p>O mundo respeita o seu silêncio, sabendo que quando você se manifesta, é fruto de muita reflexão. Essa sua aura de dignidade e busca pela verdade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz de você um farol de lucidez para quem precisa enxergar além das aparências materiais.</p>`,
-
-    8: `<h3>Influência 8 - Poder, Sucesso e Autoridade Executiva</h3>
+ videoID: " "
+    },
+    8: {
+     conteudo:`<h3>Influência 8 - Poder, Sucesso e Autoridade Executiva</h3>
     <p>A primeira impressão que você causa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de força, comando marcante e grande capacidade de realização material. O mundo vê em você uma liderança nata, uma mulher de negócios que exala autoconfiança e visão estratégica para lidar com grandes metas.</p>
     <p>Essa sua imagem imponente atrai cargos de direção e grandes projetos, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque você transmite a segurança de quem nasceu para vencer, prosperar e organizar a realidade. Você influencia pelo pragmatismo; as pessoas confiam na sua firmeza para tomar decisões difíceis sob pressão.</p>
     <p>Sua postura decidida é o motor que gera progresso e abundância. Essa sua aura de autoridade legítima, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que você seja respeitada como uma força vitoriosa, capaz de transformar grandes visões em retornos reais e estruturas que duram.</p>`,
-
-    9: `<h3>Influência 9 - Humanitarismo, Sabedoria e Desapego</h3>
+ videoID: " "
+    },
+    9: {
+     conteudo:`<h3>Influência 9 - Humanitarismo, Sabedoria e Desapego</h3>
     <p>A imagem que você projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é universal, generosa e profundamente inspiradora. As pessoas veem em você uma mulher sem fronteiras, com uma visão de mundo humanitária que vai muito além de interesses puramente pessoais ou egoístas.</p>
     <p>Essa sua aparência de sabedoria e compaixão atrai oportunidades em áreas culturais, artísticas e filantrópicas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você é vista como um exemplo real de amor incondicional. Você influencia através de um carisma altruísta, agindo como quem sabe encerrar ciclos com extrema dignidade.</p>
     <p>O mundo enxerga em você uma guia sensível que aponta caminhos de esperança. Essa sua tolerância e compreensão profunda, <strong>MASCULINO-FEMININO-NEUTRO</strong>, atraem o respeito de todos, consolidando a sua imagem como alguém que vive para deixar um impacto positivo e duradouro na humanidade.</p>`,
-
-    11: `<h3>Influência 11 - Inspiração Visionária e Magnetismo Sutil</h3>
+ videoID: " "
+    },
+    11: {
+     conteudo:`<h3>Influência 11 - Inspiração Visionária e Magnetismo Sutil</h3>
     <p>A sua imagem, <strong>MASCULINO-FEMININO-NEUTRO</strong>, transmite uma aura fascinante de magnetismo intuitivo e sensibilidade superior. O mundo te vê como uma mulher "fora da curva", uma figura inspiradora que parece captar verdades, tendências e ideias que a maioria das pessoas ignora completamente.</p>
     <p>Essa sua aparência visionária atrai quem busca um propósito mais elevado para a vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você passa a impressão de ser um canal de ideias inovadoras e de um idealismo estético e espiritual superior. Você influencia através do despertar da consciência dos outros.</p>
     <p>As pessoas sentem em você uma sabedoria que vai além do intelecto comum. Essa sua aura de percepção aguçada e integridade ética, <strong>MASCULINO-FEMININO-NEUTRO</strong>, torna você uma grande referência de progresso mental e espiritual para todos ao seu redor.</p>`,
-
-    22: `<h3>Influência 22 - Maestria Realizadora e Poder Construtor</h3>
+ videoID: " "
+    },
+    22: {
+     conteudo:`<h3>Influência 22 - Maestria Realizadora e Poder Construtor</h3>
     <p>A primeira impressão que você causa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma competência extrema e uma potência de realização gigante. O mundo vê em você uma verdadeira mente construtora, uma mulher de grande impacto que une grandes sonhos à capacidade prática de executá-los com perfeição.</p>
     <p>Essa sua imagem de poder material atrai oportunidades monumentais, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque você transmite a segurança absoluta de que até o impossível pode ser estruturado e construído sob sua guarda firme. Você influencia organizando recursos em prol do bem comum.</p>
     <p>As pessoas veem em você a autoridade máxima para edificar bases sólidas para o futuro. Essa sua aura de eficiência e visão humanitária, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz de você uma figura altamente respeitada que materializa as mais altas aspirações da sociedade.</p>`,
-
-    33: `<h3>Influência 33 - Autoridade Moral e Amor Universal</h3>
+ videoID: " "
+    },
+    33: {
+     conteudo:`<h3>Influência 33 - Autoridade Moral e Amor Universal</h3>
     <p>A sua imagem, <strong>MASCULINO-FEMININO-NEUTRO</strong>, irradia uma energia magnífica de paz, acolhimento e proteção absoluta. O mundo vê em você uma guia amorosa, uma mulher que exala sabedoria compassiva e uma bondade genuína que parece não ter limites.</p>
     <p>Essa sua aparência de autoridade moral atrai quem busca amparo, conselho e direção, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você transmite a segurança de um porto seguro emocional inabalável. Você influencia através da sua dedicação integral ao bem-estar e acolhimento das pessoas.</p>
     <p>Todos se sentem protegidos na sua presença, vendo em você uma âncora que estabiliza qualquer ambiente em crise. Essa sua aura de amor altruísta, <strong>MASCULINO-FEMININO-NEUTRO</strong>, te torna uma personalidade profundamente amada e respeitada pela sua entrega generosa ao próximo.</p>`,
-
-   44: `<h3>Influência 44 - Autoridade Monumental e Estrutura Inabalável</h3>
+ videoID: " "
+    },
+   44: {
+     conteudo:`<h3>Influência 44 - Autoridade Monumental e Estrutura Inabalável</h3>
     <p>A primeira impressão que você transmite ao mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma solidez absoluta, como se você fosse uma coluna forte que sustenta todo o ambiente. As pessoas percebem em você uma eficiência tão acima da média que sua simples presença traz uma sensação imediata de ordem, seriedade e segurança organizacional.</p>
     <p>Essa sua imagem de líder das estruturas atrai responsabilidades de grande escala, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você exala a competência de uma mulher capaz de gerir grandes processos ou corporações com foco implacável e ética. O mundo enxerga em você a figura de uma arquiteta do progresso material.</p>
     <p>Você influencia através de uma seriedade que impõe respeito instantâneo. Essa sua aura de estabilidade total, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que as pessoas confiem a você o controle de situações críticas, reconhecendo sua capacidade de materializar resultados que durarão por gerações.</p>`,
-
-    55: `<h3>Influência 55 - Magnetismo Revolucionário e Energia de Vanguarda</h3>
+ videoID: " "
+    },
+    55: {
+     conteudo:`<h3>Influência 55 - Magnetismo Revolucionário e Energia de Vanguarda</h3>
     <p>A imagem que você projeta para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma eletricidade constante e uma inteligência veloz que parece estar sempre muito à frente do seu tempo. As pessoas veem em você uma mulher de vanguarda, uma figura magnética e independente que desafia as tradições apenas com o olhar.</p>
     <p>Essa sua aparência versátil e futurista atrai mentes inovadoras, audaciosas e curiosas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você transmite a vibração de quem não teme o desconhecido. Você influencia através de um carisma que quebra padrões antigos, agindo como um catalisador que obriga o ambiente a evoluir.</p>
     <p>O mundo enxerga em você a liberdade em sua forma mais pura e intensa. Essa sua aura de modernidade absoluta, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que você seja a grande referência para quem deseja romper barreiras e explorar novos horizontes de pensamento.</p>`,
-
-    66: `<h3>Influência 66 - Proteção Universal e Harmonização Magnética</h3>
+ videoID: " "
+    },
+    66: {
+     conteudo:`<h3>Influência 66 - Proteção Universal e Harmonização Magnética</h3>
     <p>A sua aparência para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma benevolência tão profunda que chega a ser encantadora. As pessoas veem em você a personificação do cuidado, da justiça e do acolhimento, como se sua presença feminina fosse capaz de acalmar e pacificar qualquer desequilíbrio social ou familiar imediatamente.</p>
     <p>Esse seu magnetismo acolhedor atrai quem busca justiça e amparo verdadeiro, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você projeta a imagem de um pilar moral inquestionável. Você influencia através de uma elegância afetiva que desarma conflitos; o mundo sente que está diante de uma grande protetora das causas humanas.</p>
     <p>As pessoas buscam em você a harmonia que falta no cotidiano. Essa sua aura de responsabilidade e amor universal, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que você seja respeitada como uma autoridade que une beleza, estética, ética e dedicação absoluta ao próximo.</p>`,
-
-    77: `<h3>Influência 77 - Distinção Intelectual e Mistério Sagrado</h3>
+ videoID: " "
+    },
+    77: {
+     conteudo:`<h3>Influência 77 - Distinção Intelectual e Mistério Sagrado</h3>
     <p>A primeira impressão que você causa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma profundidade intelectual e espiritual que impressiona a todos. O mundo te vê como uma pensadora silenciosa, uma mulher de classe impecável e postura reservada que parece ter acesso a segredos e verdades analíticas que poucos conseguem decifrar.</p>
     <p>Essa sua imagem de seriedade absoluta e análise refinada atrai oportunidades de alta consultoria, mentoria e pesquisa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você transmite a segurança de quem nunca erra no julgamento. Você influencia pelo peso da sua lógica e pelo mistério fascinante que envolve sua vida reservada.</p>
     <p>Sua postura é a de quem busca a perfeição em tudo. Essa sua aura de integridade e busca pela verdade suprema, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz de você uma figura admirada pela sua autonomia mental e por sua capacidade única de enxergar o que está oculto para a maioria.</p>`,
-
-    88: `<h3>Influência 88 - Comando Supremo e Prosperidade Ética</h3>
+ videoID: " "
+    },
+    88: {
+     conteudo:`<h3>Influência 88 - Comando Supremo e Prosperidade Ética</h3>
     <p>A imagem que você transmite, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de um poder de realização monumental. Você projeta a figura de uma grande executiva da vida, uma mulher que lida com o sucesso material, finanças e autoridade com uma naturalidade impressionante, nunca perdendo o senso de justiça.</p>
     <p>Essa sua aparência imponente atrai o reconhecimento das altas esferas de liderança, <strong>MASCULINO-FEMININO-NEUTRO</strong>, porque você exala a vibração de quem sabe multiplicar recursos e organizar a realidade de forma estratégica. Você influencia pela eficácia; as pessoas confiam na sua visão para criar abundância de forma honesta.</p>
     <p>Você é vista como o verdadeiro motor do sucesso tangível. Essa sua aura de liderança vitoriosa, equilibrada e firme, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que você seja respeitada como a autoridade máxima capaz de transformar visões abstratas em patrimônio e estruturas sólidas.</p>`,
-
-    99: `<h3>Influência 99 - Aura Crística e Inspiração Universal</h3>
+ videoID: " "
+    },
+    99: {
+     conteudo:`<h3>Influência 99 - Aura Crística e Inspiração Universal</h3>
     <p>A sua imagem para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de um desapego e de uma compaixão que transcendem o comum. As pessoas veem em você um exemplo vivo de amor incondicional, uma mulher que parece estar no mundo, mas cuja essência pertence a uma esfera de consciência e sensibilidade muito mais elevada.</p>
     <p>Essa sua aparência de sabedoria profunda e entrega total atrai todos os que buscam luz, acolhimento e direção, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você transmite a paz de quem compreende todas as lições da vida. Você influencia através de um carisma que é puro serviço e inspiração humanitária.</p>
-    <p>Todos sentem uma elevação sutil apenas por estarem perto de você. Essa sua aura de tolerância infinita e desprendimento, <strong>MASCULINO-FEMININO-NEUTRO</strong>, consolida sua imagem como uma guia universal, pronta para auxiliar de braços abertos no despertar de todos ao seu redor.</p>`
-},
+    <p>Todos sentem uma elevação sutil apenas por estarem perto de você. Essa sua aura de tolerância infinita e desprendimento, <strong>MASCULINO-FEMININO-NEUTRO</strong>, consolida sua imagem como uma guia universal, pronta para auxiliar de braços abertos no despertar de todos ao seu redor.</p>`,
+     
+ videoID: " "
+    }
+    
+    },
 
 // --- PERSONALIDADE (A EXPRESSÃO REAL / O CONJUNTO DA OBRA) ---
 Personalidade: {
-    1: `<h3>Personalidade 1 - A Realizadora Independente e Resolutiva</h3>
+    1: {
+     conteudo:`<h3>Personalidade 1 - A Realizadora Independente e Resolutiva</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é marcada por uma atitude pioneira e uma capacidade de ação imediata. Você funciona através da autonomia, sendo uma mulher que não espera as circunstâncias mudarem para agir; você cria o seu próprio movimento e assume a responsabilidade total pelas suas escolhas.</p>
     <p>Na prática, você se comporta de maneira direta and assertiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua conduta é a de quem encara os desafios como oportunidades de provar sua competência. Você possui uma natureza resolutiva, focando sempre em soluções rápidas e eficientes, mantendo uma postura firme de comando sobre a própria vida.</p>
     <p>Sua expressão real é sinônimo de progresso, elegância e vigor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você opera com uma resiliência que sustenta grandes metas, agindo com a convicção de uma líder que nasceu para abrir caminhos e estabelecer novos padrões de excelência em tudo o que se propõe a realizar.</p>`,
-
-    2: `<h3>Personalidade 2 - A Mediadora Equilibrada e Cooperativa</h3>
+ videoID: " "
+    },
+    2: {
+     conteudo:`<h3>Personalidade 2 - A Mediadora Equilibrada e Cooperativa</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa-se através de um comportamento diplomático, gentil e extremamente cuidadoso. Você funciona melhor quando atua em parceria, sendo uma mulher que utiliza o tato, o charme e a sensibilidade refinada para navegar pelas situações da vida com elegância e equilíbrio.</p>
     <p>Sua atitude prática é a de quem busca a harmonia acima de tudo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com paciência e possui uma habilidade natural para ouvir e entender as nuances que os outros ignoram. Sua conduta é o elo forte que une pessoas e ideias, preferindo a eficácia da colaboração ao conflito do ego.</p>
     <p>Na vida cotidiana, você se posiciona de forma receptiva e acolhedora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua expressão real é baseada na confiança e na lealdade, provando que a verdadeira força feminina reside na capacidade de mediar, nutrir relacionamentos e manter a paz em qualquer ambiente.</p>`,
-
-    3: `<h3>Personalidade 3 - A Comunicadora Criativa e Expressiva</h3>
+ videoID: " "
+    },
+    3: {
+     conteudo:`<h3>Personalidade 3 - A Comunicadora Criativa e Expressiva</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é uma explosão de criatividade, magnetismo e dinamismo social. Você funciona através da expressão, sendo uma mulher que possui um talento natural para transformar ideias em comunicação envolvente e o cotidiano em algo vibrante, belo e cheio de vida.</p>
     <p>Na prática, sua conduta é entusiasmada e otimista, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com uma inteligência rápida, adaptando-se a diferentes cenários com charme, presença e bom humor. Sua atitude funciona como um catalisador de boas energias, facilitando trocas intelectuais e motivando todos ao seu redor de forma espontânea.</p>
     <p>Sua expressão real é marcada pela sociabilidade e pelo brilho pessoal único, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você encara os desafios com leveza e criatividade, agindo como uma fonte de inspiração constante que prova que a alegria e a boa comunicação são as chaves femininas para o êxito em qualquer projeto.</p>`,
-
-    4: `<h3>Personalidade 4 - A Construtora Ética e Disciplinada</h3>
+ videoID: " "
+    },
+    4: {
+     conteudo:`<h3>Personalidade 4 - A Construtora Ética e Disciplinada</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de uma conduta sólida, disciplinada e profundamente pautada pela ética. Você funciona com base na ordem e no planejamento, sendo uma mulher que valoriza o trabalho bem feito e a construção de alicerces totalmente seguros para o futuro.</p>
     <p>Na prática, sua atitude é de total responsabilidade e persistence, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com os pés no chão, focando no que é concreto, seguro e duradouro. Sua palavra é um compromisso de honra e sua conduta é marcada por uma seriedade exemplar que garante que nada saia dos trilhos sob sua supervisão focada.</p>
     <p>Sua expressão real é a de uma rocha firme, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você atinge resultados através da dedicação honesta e da organização impecável, agindo como a força estabilizadora e protetora que traz estrutura para a família, para o trabalho e para a sociedade como um todo.</p>`,
-
-    5: `<h3>Personalidade 5 - A Agente de Mudança e Versatilidade</h3>
+  videoID: " "
+    },
+    5: {
+     conteudo:`<h3>Personalidade 5 - A Agente de Mudança e Versatilidade</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é caracterizada por um comportamento livre, moderno e em constante evolução. Você funciona através do movimento, sendo uma mulher independente que possui uma sede inesgotável por novas experiências e uma incrível agilidade para se adaptar a imprevistos com inteligência.</p>
     <p>Na prática, sua atitude é progressista e desimpedida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com coragem para romper padrões estagnados, utilizando sua inteligência versátil para explorar novos caminhos. Sua conduta desafia o óbvio e traz um frescor irresistível para qualquer situação, agindo como um verdadeiro radar de tendências.</p>
     <p>Sua expressão real é o elo perfeito entre o presente e o futuro, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você vive intensamente e ensina, através do seu exemplo ousado, que a liberdade com responsabilidade e a coragem de mudar são as maiores ferramentas de crescimento humano.</p>`,
-
-    6: `<h3>Personalidade 6 - A Protetora Justa e Harmonizadora</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    6: {
+     conteudo:`<h3>Personalidade 6 - A Protetora Justa e Harmonizadora</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa-se através de uma conduta responsável, calorosa e inteiramente voltada para o equilíbrio. Você funciona como um centro de harmonia, sendo uma mulher que valoriza a família, o lar, a estética e o bem-estar coletivo acima de tudo.</p>
     <p>Na prática, sua atitude é de cuidado, acolhimento e orientação, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com uma integridade moral admirável, servindo como a grande conselheira e o ponto de apoio seguro em momentos de crisis. Sua conduta busca embelezar a vida e resolver conflitos através do afeto genuíno.</p>
     <p>Sua expressão real é o exemplo perfeito da bondade ativa e matriarcal, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se posiciona como a guardiã dos valores éticos e afetivos, provando que uma vida bem-sucedida é aquela construída sobre a base do serviço carinhoso ao próximo e da dedicação aos que você ama.</p>`,
-
-    7: `<h3>Personalidade 7 - A Analista Intelectual e Profunda</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    7: {
+     conteudo:`<h3>Personalidade 7 - A Analista Intelectual e Profunda</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é marcada por uma conduta reflexiva, culta e de grande profundidade mental. Você funciona através da observação, da intuição e do estudo, sendo uma mulher de classe que prefere a busca pela verdade e o silêncio produtivo às interações superficiais do dia a dia.</p>
     <p>Na prática, sua atitude é reservada, elegante e digna, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com um discernimento aguçado, analisando as causas fundamentais de tudo o que acontece ao seu redor. Sua conduta é pautada pela perfeição técnica e pela fidelidade absoluta aos seus próprios princípios e descobertas.</p>
     <p>Sua expressão real é a de uma especialista da vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você atrai um respeito profundo pela sua autoridade intelectual e pelo mistério fascinante que envolve sua sabedoria, provando que o autoconhecimento e a integridade são os pilares de uma alma verdadeiramente livre.</p>`,
-
-    8: `<h3>Personalidade 8 - A Gestora Poderosa e Pragmática</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    8: {
+     conteudo:`<h3>Personalidade 8 - A Gestora Poderosa e Pragmática</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de uma conduta poderosa, eficiente e focada em resultados de grande escala. Você funciona através da liderança executiva, sendo uma mulher de negócios que possui uma habilidade natural fantástica para gerir recursos e transformar grandes visões em prosperidade tangível.</p>
     <p>Na prática, sua atitude é de autoconfiança, comando e elegância imponente, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com um pragmatismo extraordinário, tomando decisões difíceis sob pressão com firmeza e justiça. Sua conduta decidida é o motor que gera progresso material e organização em estruturas complexas.</p>
     <p>Sua expressão real é a de uma vencedora ética, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você opera com uma força realizadora que garante a estabilidade financeira e social, provando que o poder, quando exercido por uma mulher de visão, disciplina e responsabilidade, é a maior ferramenta de transformação da realidade.</p>`,
-
-    9: `<h3>Personalidade 9 - A Humanitária Generosa e Universal</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    9: {
+     conteudo:`<h3>Personalidade 9 - A Humanitária Generosa e Universal</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é caracterizada por uma conduta altruísta, sábia e desapegada. Você funciona através da compreensão universal, sendo uma mulher de sensibilidade profunda que possui uma visão que transcende o próprio ego e busca o bem de toda a humanidade.</p>
     <p>Na prática, sua atitude é inspiradora, carismática e compassiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com uma tolerância infinita, tratando todos com a mesma dignidade e carinho. Sua conduta é inteiramente voltada para o encerramento nobre de ciclos e para a cura social, agindo como uma guia sensível que aponta caminhos de esperança.</p>
     <p>Sua expressão real é o exemplo vivo do amor incondicional, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você vive para deixar um impacto positivo no mundo, provando que a verdadeira grandeza humana reside na generosidade absoluta e no serviço desinteressado ao coletivo.</p>`,
-
-    11: `<h3>Personalidade 11 - A Visionária Intuitiva e Inspiradora</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    11: {
+     conteudo:`<h3>Personalidade 11 - A Visionária Intuitiva e Inspiradora</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, funciona como uma antena de altíssima sensibilidade. Você expressa uma conduta magnética, intuitiva e mística, sendo uma mulher que age guiada por percepções que vão muito além da lógica comum, buscando sempre elevar a consciência de todos ao seu redor.</p>
     <p>Na prática, sua atitude é persuasiva, encantadora e idealista, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se comporta como um canal límpido de ideias inovadoras, agindo com uma ética superior que busca trazer luz às situações. Sua conduta desperta o melhor nas pessoas, servindo como uma grande referência de progresso mental e espiritual.</p>
     <p>Sua expressão real é a luz sutil que dissipa a obscuridade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você opera com um magnetismo feminino único que atrai oportunidades de transformação profunda, provando que a intuição aliada à sabedoria é a força mais poderosa do universo.</p>`,
-
-    22: `<h3>Personalidade 22 - A Mestra Construtora e Estrategista</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    22: {
+     conteudo:`<h3>Personalidade 22 - A Mestra Construtora e Estrategista</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de uma competência monumental e de uma visão estratégica em escala global. Você funciona unindo o grande sonho à prática realista, sendo uma mulher de forte impacto, capaz de organizar recursos e pessoas para realizar obras gigantescas que beneficiam comunidades inteiras.</p>
     <p>Na prática, sua atitude é de maestria realizadora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com uma resiliência inabalável, executando projetos complexos com uma precisão cirúrgica que beira a perfeição. Sua conduta focada é voltada para o progresso coletivo, transformando ideais humanitários em estruturas sólidas e duradouras.</p>
     <p>Sua expressão real é o ápice do poder construtivo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você constrói uma trajetória de prestígio inquestionável baseada na magnitude dos seus resultados, provando que a grande missão da vida é materializar o bem comum através do trabalho inteligente e de uma visão feminina de vanguarda.</p>`,
-
-    33: `<h3>Personalidade 33 - A Guia Compassiva e Mestra do Amor</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    33: {
+     conteudo:`<h3>Personalidade 33 - A Guia Compassiva e Mestra do Amor</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa-se através de uma conduta de amor incondicional e proteção absoluta. Você funciona como um pilar de sustentação espiritual e acolhimento, sendo uma mulher que age movida por um senso de dever sagrado de curar, aconselhar e harmonizar a vida de todos ao redor.</p>
     <p>Na prática, sua atitude é de entrega generosa, doação e abraço caloroso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se comporta como uma verdadeira mestra do afeto, educando através do exemplo sensível e trazendo conforto onde há dor. Sua conduta é marcada por uma integridade moral inquestionável e dedicação total ao próximo.</p>
     <p>Sua expressão real é a prova viva da evolução espiritual, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você traz paz, doçura e equilíbrio para a humanidade apenas com o seu modo de ser, provando que o serviço desinteressado e o amor puro são os caminhos mais elevados para a realização plena.</p>`,
-
-    44: `<h3>Personalidade 44 - A Arquiteta do Sistema e Poder Executivo Superior</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    44: {
+     conteudo:`<h3>Personalidade 44 - A Arquiteta do Sistema e Poder Executivo Superior</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se com uma intensidade vibracional de altíssima voltagem. Você funciona através de uma autoridade monumental e de uma disciplina férrea, sendo uma mulher de poder que possui a capacidade única de estruturar sistemas complexos e gerir o progresso material com uma ética inabalável.</p>
     <p>Na prática, sua atitude é de uma eficiência absoluta, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age como a mestra soberana das fundações, garantindo que cada detalhe da realidade esteja sob controle estrito e alinhado ao progresso duradouro. Sua conduta firme impõe respeito instantâneo pela solidez e seriedade que você conduz seus empreendimentos.</p>
     <p>Sua expressão real é a força que sustenta e organiza o mundo material, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você opera em uma escala onde o trabalho duro e a justiça se fundem, provando que a maestria sobre a matéria é uma responsabilidade sagrada que exige força, ordem e uma visão feminina de longo alcance extraordinária.</p>`,
-
-    55: `<h3>Personalidade 55 - A Revolucionária Magnética e Liderança de Vanguarda</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    55: {
+     conteudo:`<h3>Personalidade 55 - A Revolucionária Magnética e Liderança de Vanguarda</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa uma conduta eletrizante, independente e inovadora. Você funciona como um catalisador de grandes transições, sendo uma mulher de inteligência veloz e coragem indomável para quebrar velhos paradigmas e liderar as pessoas em direção ao futuro com ousadia.</p>
     <p>Na prática, sua atitude é de total liberdade e quebra de padrões antigos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com um magnetismo avassalador que desafia o tédio e a estagnação, movendo-se com agilidade impecável entre as possibilidades mais modernas. Sua conduta é o motor da evolução, inspirando todos ao seu redor a abandonarem o velho.</p>
     <p>Sua expressão real é a de uma pioneira absoluta da nova era, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você ensina, através do seu ritmo acelerado e da sua mente brilhante, que a vida é uma descoberta constante e que a verdadeira liderança reside na habilidade magistral de transmutar o caos em novas realidades.</p>`,
-
-    66: `<h3>Personalidade 66 - A Harmonizadora Planetária e Amor em Ação</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    66: {
+     conteudo:`<h3>Personalidade 66 - A Harmonizadora Planetária e Amor em Ação</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de um comportamento de proteção, afeto e justiça em escala universal. Você funciona como o coração vibrante do seu meio, sendo uma mulher que assume a responsabilidade de equilibrar, acolher e curar as relações sociais e familiares com uma entrega mística.</p>
     <p>Na prática, sua atitude é de uma benevolência inquestionável e acolhedora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age como um pilar moral e matriarcal que pacifica conflitos antigos e restaura a beleza onde havia desordem. Sua conduta é pautada pela dedicação consciente em prol do bem comum, nutrindo a alma de todos.</p>
     <p>Sua expressão real é a força da harmonia divina na terra, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você opera através do afeto que organiza e da ética que protege, provando que o amor, quando elevado à sua potência máxima, é a única ferramenta capaz de regenerar e embelezar o tecido social e espiritual do mundo.</p>`,
-
-    77: `<h3>Personalidade 77 - A Sábia Iluminada e Mestra da Introspecção</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    77: {
+     conteudo:`<h3>Personalidade 77 - A Sábia Iluminada e Mestra da Introspecção</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa uma conduta de distinção profunda, elegância reservada e mistério sagrado. Você funciona através de uma inteligência técnica e espiritual de altíssima frequência, sendo uma mulher culta que prefere o mergulho nas leis universais à participação nas futilidades do cotidiano.</p>
     <p>Na prática, sua atitude é de uma integridade e classe impecáveis, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com um discernimento refinado que beira o infalível, buscando a perfeição in cada pensamento e ação. Sua conduta é a de uma mística analítica, que decodifica os segredos da existência através do isolamento produtivo e da análise fria da verdade.</p>
     <p>Sua expressão real é a lucidez absoluta, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se posiciona como uma autoridade mental e espiritual cujas palavras carregam o peso da sabedoria eterna, provando que a busca solitária pela verdade culmina em uma luz magnífica que guia todos os que buscam a real compreensão da vida.</p>`,
-
-    88: `<h3>Personalidade 88 - A Comandante da Abundância e Justiça Superior</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    88: {
+     conteudo:`<h3>Personalidade 88 - A Comandante da Abundância e Justiça Superior</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta-se através de uma conduta de poder monumental, finanças sólidas e prosperidade ética. Você funciona através do domínio sobre os grandes fluxos de recursos, sendo uma mulher de comando que lidera com uma visão estratégica brilhante, voltada para o enriquecimento coletivo e para a justiça justa.</p>
     <p>Na prática, sua atitude é de uma autoridade executiva inabalável, focada e segura, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você age com um pragmatismo extraordinário que multiplica o progresso material sem nunca perder de vista a lei moral. Sua conduta garante a estabilidade de grandes estruturas, agindo como o motor vitorioso que transforma realidades.</p>
     <p>Sua expressão real é o equilíbrio perfeito entre o ter e o ser, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você opera como a força executiva que materializa a abundância no mundo, provando que o verdadeiro sucesso é aquele que gera crescimento para todos e sustenta o prestígio através de uma trajetória de vitórias inatacáveis.</p>`,
-
-    99: `<h3>Personalidade 99 - A Guia Crístico e Amor Universal Final</h3>
+  videoID: "z1nW3rmNeEI"
+    },
+    99: {
+     conteudo:`<h3>Personalidade 99 - A Guia Crístico e Amor Universal Final</h3>
     <p>A sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, expressa a conduta mais elevada da jornada humana. Você funciona através da compaixão absoluta e do desapego total, sendo uma mulher de luz que age como um canal de cura e amor incondicional para todos os seres, de braços abertos, sem qualquer distinção ou barreira.</p>
     <p>Na prática, sua atitude é de entrega, acolhimento e inspiração constante, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se comporta como alguém que compreende as lições da matéria, agindo com uma sabedoria profunda que acalma as dores e aponta o caminho da evolução espiritual. Sua conduta é puro serviço, transformando cada gesto em um ato de luz e auxílio humanitário.</p>
-    <p>Sua expressão real é a conclusão triunfante da alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você vive in um estado de tolerância infinita, provando que o amor desinteressado e o desprendimento total do ego são as forças finais que libertam o ser humano e conectam a essência feminina definitivamente ao propósito sagrado da criação.</p>`
-},
+    <p>Sua expressão real é a conclusão triunfante da alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você vive in um estado de tolerância infinita, provando que o amor desinteressado e o desprendimento total do ego são as forças finais que libertam o ser humano e conectam a essência feminina definitivamente ao propósito sagrado da criação.</p>`,
+  videoID: "z1nW3rmNeEI"
+    }
+    },
 // --- CAMINHO DE VIDA (DESTINO / ESTRADA DA VIDA / ROTA OPERACIONAL) ---
 CaminhodeVida: {
     1: {
