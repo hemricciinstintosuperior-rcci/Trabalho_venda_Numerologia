@@ -978,7 +978,11 @@ const gruposPlanos = {
 };
 
 const coresPlanos = { fisico: "#ff4d4d", mental: "#4da6ff", emocional: "#33cc66", intuitivo: "#ffd633" };
+        
+let generoAtual = "masculino"; // Valor padrão
 
+
+        
 function calcularValorLetra(letra) {
     const base = letra.normalize("NFD")[0].toUpperCase();
     const valorBase = tabela[base] || 0;
@@ -3239,7 +3243,7 @@ function verificarGêneroEGerar() {
     
     const campoGênero = document.getElementById("generoTexto");
     const formatoGênero = campoGênero ? campoGênero.value : "masculino";
-const generoAtual = document.querySelector('input[name="genero"]:checked')?.value || 'masculino';
+ generoAtual = campGenero ? campGenero.value : "masculino"; // Atualiza a variável global
     let arquivoAlvo = (formatoGênero === "feminino") ? "textosfeminino.js" : "textosestudonumerologico.js";
 
     // Aqui a gente só remove o elemento de script antigo do HTML para não acumular sujeira na página
@@ -3379,6 +3383,9 @@ function obterVideosParaItem(item) {
     let listaVideos = [];
     let valoresParaBuscar = [];
 
+    // Garante que o gênero sempre tenha um valor
+    const gen = (typeof generoAtual !== 'undefined') ? generoAtual : 'masculino';
+
     if (Array.isArray(item.valor)) {
         valoresParaBuscar = item.valor;
     } else if (typeof item.valor === 'object') {
@@ -3388,8 +3395,8 @@ function obterVideosParaItem(item) {
     }
 
     valoresParaBuscar.forEach(val => {
-        // Garantimos que estamos buscando o ID corretamente
-        const id = buscarVideoID(item.categoria, val.toString().split(' ')[0], generoAtual);
+        // Usa 'gen' que capturamos do escopo global
+        const id = buscarVideoID(item.categoria, val.toString().split(' ')[0], gen);
         if (id) listaVideos.push({ id: id, label: val });
     });
 
