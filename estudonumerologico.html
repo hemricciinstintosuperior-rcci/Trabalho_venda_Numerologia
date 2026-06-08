@@ -5558,47 +5558,28 @@ html += `
 `;
     
             // 5. CICLOS, MOMENTOS E DESAFIOS
-// 5. CICLOS, MOMENTOS E DESAFIOS
 ["ciclos", "momentos", "desafios"].forEach(sec => {
-
-    // --- TRADUÇÃO AUTOMÁTICA DO TÍTULO ---
-    // Esta linha garante que o "tituloBonito" mude em cada volta do loop
     tituloBonito = sec === "ciclos" ? "Ciclos da Vida" : 
                    sec === "momentos" ? "Momentos de decisão" : "Desafios de Jornada";    
 
-
-
-
-
-// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>
-`;
-
-    
     html += `
-        <div class="page">
-            <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">${sec}</h2>
-            <div class="intro-texto">${textos.introducoes[sec] || ""}</div>
-    `;
+    <div class="separador-luxo">
+        <div class="caixa-interna"><h2>${tituloBonito}</h2></div>
+    </div>
+    <div class="page">
+        <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+        <div class="intro-texto">${textos.introducoes[sec] || ""}</div>`;
+
     for(let i in res[sec]) {
-        // Pula o desafio 3 aqui, pois ele já foi mostrado no Pilar 03
         if (sec === "desafios" && i == 3) continue;
 
         const info = datasFases[sec][i];
-        let labelFase = ``;
-        if(sec === "desafios") {
-            labelFase = i == 1 ? "Primeiro Desafio" : "Segundo Desafio";
-        }
+        const estaTravado = !acessoPremiumLiberado;
 
-                // --- A LÓGICA DE TRAVA ---
-        // Se acessoPremiumLiberado for false, estaTravado vira true
-        const estaTravado = !acessoPremiumLiberado; 
-
+        // --- EXTRAÇÃO DO CONTEÚDO E VÍDEO ---
+        const dados = textos[sec][i][res[sec][i]];
+        const conteudo = (typeof dados === 'object' && dados !== null) ? dados.conteudo : dados;
+        const videoID = (typeof dados === 'object' && dados !== null) ? dados.videoID : null;
 
         html += ` 
             <div class="evitar-corte" style="margin-bottom: 30px;">
@@ -5607,50 +5588,40 @@ html += `
                 </span><br>
                 
                 ${estaTravado ? `
-                   
                     <div class="aviso-trava" style="text-align: center; padding: 20px; border: 1px dashed #d97a1e;">
                         🔒 CONTEÚDO PREMIUM LIBERADO NO 8º DIA
                     </div>
                 ` : `
-                   
-                    
-                        <div class="evitar-corte" class="texto-res">
-                            ${aplicarFiltroTexto(textos[sec][i][res[sec][i]])}
-                      
+                    <div class="texto-res">
+                        ${aplicarFiltroTexto(conteudo)}
+                        ${videoID ? gerarPlayerYouTube(videoID) : ""}
                     </div>
                 `}
-                  <hr style="border:0; border-top:1px solid #ffffff; margin-top: 15px;">
-                 
-  
-           </div>`;
-        
-    }       
+                <hr style="border:0; border-top:1px solid #ffffff; margin-top: 15px;">
+            </div>`;
+    }
+    html += `</div>`; // Fecha a div class="page"
 });
-
- html += `</div>`;
 // ... (depois de terminar os Desafios)
 
 
-      // 2. INSERIR A MATURIDADE AQUI (Como você pediu)
-const tituloMat = nomesExibicao["Maturidade"] || "Fase de Maturidade";
-   // Crie esta linha logo ACIMA do código da ondinha:
- tituloBonito = "FASE DE MATURIDADE";  
-// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
+tituloBonito = "FASE DE MATURIDADE";  
 html += `
 <div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
+    <div class="caixa-interna"><h2>${tituloBonito}</h2></div>
 </div>
-`;
-
-  html += `
-    <div class="page">
-        <h2 class="titulo-topico" style="border-bottom: 1px solid var(--gold);">${tituloMat}</h2>
-        <div class="intro-texto">${textos.introducoes.Maturidade || ""}</div>
-        <div class="texto-res">${aplicarFiltroTexto(textos.Maturidade[res.Maturidade])}</div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 1px solid var(--gold);">${tituloMat}</h2>
+    <div class="intro-texto">${textos.introducoes.Maturidade || ""}</div>
+    <div class="texto-res">
+        ${(() => {
+            const dadosM = textos.Maturidade[res.Maturidade];
+            const contM = (typeof dadosM === 'object' && dadosM !== null) ? dadosM.conteudo : dadosM;
+            const vidM = (typeof dadosM === 'object' && dadosM !== null) ? dadosM.videoID : null;
+            return aplicarFiltroTexto(contM) + (vidM ? gerarPlayerYouTube(vidM) : "");
+        })()}
     </div>
-`;  
+</div>`;
       
 
             
