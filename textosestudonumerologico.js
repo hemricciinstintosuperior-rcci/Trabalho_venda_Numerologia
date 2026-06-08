@@ -4436,7 +4436,7 @@ essencia: {
   videoID: "F8bg1CTQ9HI"
     }
     
-    }
+  },
 };
 
 let bancoEquilibrioUnificado = {
