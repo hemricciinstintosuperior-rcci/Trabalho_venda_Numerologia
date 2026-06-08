@@ -3239,7 +3239,7 @@ function verificarGêneroEGerar() {
     
     const campoGênero = document.getElementById("generoTexto");
     const formatoGênero = campoGênero ? campoGênero.value : "masculino";
-
+const generoAtual = document.querySelector('input[name="genero"]:checked')?.value || 'masculino';
     let arquivoAlvo = (formatoGênero === "feminino") ? "textosfeminino.js" : "textosestudonumerologico.js";
 
     // Aqui a gente só remove o elemento de script antigo do HTML para não acumular sujeira na página
