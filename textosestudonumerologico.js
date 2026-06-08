@@ -3988,7 +3988,7 @@ talentosEspeciais: {
     <p>A deficiência, contudo, pode levá-lo(a) a um papel de sacrifício excessivo e perigoso, onde você acaba esquecendo das suas próprias necessidades básicas para carregar a dor do mundo nas costas. Existe uma tendência a se envolver em dramas alheios de forma desproporcional, o que gera um desgaste emocional e físico que acaba impedindo a manifestação do seu potencial de forma saudável. <strong>MASCULINO-FEMININO-NEUTRO</strong>, lembre-se de que para ajudar o mundo, você precisa estar inteiro(a). Aprenda a ser generoso(a) consigo mesmo(a) na mesma medida em que é com os outros, transformando seu altruísmo em uma força sustentável e equilibrada.</p>`,
      
   videoID: "F8bg1CTQ9HI"
-    },
+    }
     },
  
  planosExpressao: {
@@ -4076,7 +4076,7 @@ desejoOculto: {
     <p>A vibração da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é movida pela compaixão universal e por um altruísmo que não conhece fronteiras. Existe em você um desejo sincero e emocionante de ajudar o mundo e de se dedicar a causas que tragam evolução à humanidade, buscando a finalização de ciclos com sabedoria, perdão e desprendimento.</p>
     <p>A deficiência aqui surge quando você se perde em idealismos impraticáveis ou assume, sem perceber, o papel de mártir. O padrão negativo é o esquecimento total das suas próprias necessidades fundamentais e financeiras em favor de um "salvacionismo" irreal, o que acaba gerando esgotamento profundo e uma amarga sensação de falta de valorização. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma quer salvar o mundo, mas lembre-se que você faz parte dele: para que sua luz ajude os outros, sua própria lâmpada precisa estar abastecida e cuidada.</p>`,
   videoID: "F8bg1CTQ9HI"
-    },
+    }
 },
  
 deficits: {
@@ -4429,12 +4429,10 @@ essencia: {
     <p>Sua reação interna busca sempre o significado espiritual, ético ou elevado por trás de cada fato cotidiano. O seu grande desafio é aterrar essa percepção aguçada no mundo material, transformando o seu idealismo visionário em uma força inspiradora real. <strong>MASCULINO-FEMININO-NEUTRO</strong>, quando você confia no seu canal intuitivo, você guia os outros não por palavras, mas pelo exemplo de uma integridade superior e de uma percepção que enxerga além do tempo presente.</p>`,
   videoID: "F8bg1CTQ9HI"
     },
-    22: {
-     conteudo:`<h3>Reação de Maestria Realizadora - Essência 22</h3>
+    22: `<h3>Reação de Maestria Realizadora - Essência 22</h3>
     <p>A Essência 22 revela um núcleo de imenso poder realizador e um pragmatismo operando em larga escala dentro de você. A base da sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é voltada para a construção de algo sólido, grandioso e transformador; você possui a semente de um "mestre construtor" operando em cada resposta interna que dá ao mundo.</p>
-    <p>Ao enfrentar desafios, sua mente organiza recursos, pessoas e projeta estruturas duradouras de forma quase automática e genial. O objetivo central da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é materializar sonhos elevados em realidades concretas que beneficiem a humanidade, unindo uma visão de longo alcance à competência técnica absoluta. Você não nasceu para o pequeno; sua alma exige que você construa legados que permaneçam muito depois de você.</p>`,
-  videoID: "F8bg1CTQ9HI"
-    },
+    <p>Ao enfrentar desafios, sua mente organiza recursos, pessoas e projeta estruturas duradouras de forma quase automática e genial. O objetivo central da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é materializar sonhos elevados em realidades concretas que beneficiem a humanidade, unindo uma visão de longo alcance à competência técnica absoluta. Você não nasceu para o pequeno; sua alma exige que você construa legados que permaneçam muito depois de você.</p>`
+
     
   }
  };
