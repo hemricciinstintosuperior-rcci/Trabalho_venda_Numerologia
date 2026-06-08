@@ -5570,35 +5570,48 @@ html += `
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
         <div class="intro-texto">${textos.introducoes[sec] || ""}</div>`;
 
-    for(let i in res[sec]) {
-        if (sec === "desafios" && i == 3) continue;
+// --- SUBSTITUA A PARTIR DAQUI ---
+for(let i in res[sec]) {
+    // Pula o desafio 3 aqui, pois ele já foi mostrado no Pilar 03
+    if (sec === "desafios" && i == 3) continue;
 
-        const info = datasFases[sec][i];
-        const estaTravado = !acessoPremiumLiberado;
+    const info = datasFases[sec][i];
+    const estaTravado = !acessoPremiumLiberado;
 
-        // --- EXTRAÇÃO DO CONTEÚDO E VÍDEO ---
-        const dados = textos[sec][i][res[sec][i]];
-        const conteudo = (typeof dados === 'object' && dados !== null) ? dados.conteudo : dados;
-        const videoID = (typeof dados === 'object' && dados !== null) ? dados.videoID : null;
+    // Acessa o item de forma segura
+    let itemTexto = textos[sec][i][res[sec][i]];
+    
+    // Retrocompatibilidade (Se tiver vídeo, extrai. Se não, usa o texto puro)
+    let conteudo = "";
+    let videoID = null;
 
-        html += ` 
-            <div class="evitar-corte" style="margin-bottom: 30px;">
-                <span style="color: #d97a1e; font-weight: bold; font-size: 20px; text-transform: uppercase;">
-                   Idade ${info.idade} - Data ${info.anos}
-                </span><br>
-                
-                ${estaTravado ? `
-                    <div class="aviso-trava" style="text-align: center; padding: 20px; border: 1px dashed #d97a1e;">
-                        🔒 CONTEÚDO PREMIUM LIBERADO NO 8º DIA
-                    </div>
-                ` : `
-                    <div class="texto-res">
-                        ${aplicarFiltroTexto(conteudo)}
-                        ${videoID ? gerarPlayerYouTube(videoID) : ""}
-                    </div>
-                `}
-                <hr style="border:0; border-top:1px solid #ffffff; margin-top: 15px;">
-            </div>`;
+    if (typeof itemTexto === 'object' && itemTexto !== null) {
+        conteudo = itemTexto.conteudo;
+        videoID = itemTexto.videoID;
+    } else {
+        conteudo = itemTexto;
+    }
+
+    html += ` 
+        <div class="evitar-corte" style="margin-bottom: 30px;">
+            <span style="color: #d97a1e; font-weight: bold; font-size: 20px; text-transform: uppercase;">
+               Idade ${info.idade} - Data ${info.anos}
+            </span><br>
+            
+            ${estaTravado ? `
+                <div class="aviso-trava" style="text-align: center; padding: 20px; border: 1px dashed #d97a1e;">
+                    🔒 CONTEÚDO PREMIUM LIBERADO NO 8º DIA
+                </div>
+            ` : `
+                <div class="texto-res">
+                    ${aplicarFiltroTexto(conteudo)}
+                    ${(videoID && videoID.trim() !== "") ? gerarPlayerYouTube(videoID) : ""}
+                </div>
+            `}
+            <hr style="border:0; border-top:1px solid #ffffff; margin-top: 15px;">
+        </div>`;
+}
+// --- ATÉ AQUI ---
     }
     html += `</div>`; // Fecha a div class="page"
 });
