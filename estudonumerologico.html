@@ -3373,6 +3373,29 @@ function buscarVideoID(categoria, valor, genero) {
     console.warn(`DEBUG: Nenhum vídeo encontrado para ${categoria}[${valor}]`);
     return null;
 }
+
+
+function obterVideosParaItem(item) {
+    let listaVideos = [];
+    let valoresParaBuscar = [];
+
+    if (Array.isArray(item.valor)) {
+        valoresParaBuscar = item.valor;
+    } else if (typeof item.valor === 'object') {
+        valoresParaBuscar = Object.values(item.valor);
+    } else {
+        valoresParaBuscar = [item.valor];
+    }
+
+    valoresParaBuscar.forEach(val => {
+        // Garantimos que estamos buscando o ID corretamente
+        const id = buscarVideoID(item.categoria, val.toString().split(' ')[0], generoAtual);
+        if (id) listaVideos.push({ id: id, label: val });
+    });
+
+    return listaVideos;
+}
+        
         
 function gerarMapaCompleto() {
     const nomeRaw = document.getElementById("nome").value.trim();
@@ -4456,46 +4479,35 @@ html += `
         flex-grow: 1;
     ">
 ${listaItensSintese.map(item => {
-    // 1. Definição das travas (Verifique se 'acessoPremiumLiberado' existe)
+    // Definição das travas
     const itensPremium = ["Caminho de Vida", "Ciclos da Vida", "Desafios", "Momentos de Decisão"];
     const estaTravado = itensPremium.includes(item.label) && !acessoPremiumLiberado;
 
-    // 2. CORREÇÃO DO [object Object]:
-    // Se o valor for um objeto (como nos ciclos/desafios), vamos formatar para texto legível
-    let exibicaoValor = "";
-    if (estaTravado) {
-        exibicaoValor = "🔒 CONTEÚDO PREMIUM";
-    } else if (typeof item.valor === 'object') {
-        // Pega os valores do objeto e transforma em texto
-        exibicaoValor = Object.values(item.valor).join(' · ');
-    } else {
-        exibicaoValor = item.valor;
-    }
+    // Formatação do texto
+    let exibicaoValor = estaTravado ? "🔒 CONTEÚDO PREMIUM" : (typeof item.valor === 'object' ? Object.values(item.valor).join(' · ') : item.valor);
 
-    // 3. BUSCA O VÍDEO (Forçada)
-    // Se o campo categoria não estiver preenchido na lista, vamos tentar adivinhar pelo Label
-const chaveParaBusca = item.valor.toString().split(' ')[0]; // Tenta pegar apenas o número inicial
-const videoID = buscarVideoID(item.categoria, chaveParaBusca);
+    // Gera a lista de vídeos/PDFs
+    const listaVideos = !estaTravado ? obterVideosParaItem(item) : [];
 
-    // 4. HTML (O botão aparecerá se videoID existir e não estiver travado)
     return `
-<div style="border: 1px solid #ccc; padding: 10px; margin: 5px;">
-    <div style="font-weight: bold;">${item.label}</div>
-    <div>${exibicaoValor}</div>
-    
-${(videoID && !estaTravado) ? `
-    <button onclick="abrirVideoNovaAba('${videoID}')" class="btn-sintese" style="margin-top: 5px; background: #d97a1e; color: white; cursor: pointer;">
-        🎥 Assistir Vídeo
-    </button>
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 5px;">
+        <div style="font-weight: bold;">${item.label}</div>
+        <div>${exibicaoValor}</div>
+        
+        ${listaVideos.map(v => `
+            <div style="margin-top: 10px;">
+                <button onclick="abrirVideoNovaAba('${v.id}')" class="btn-sintese" style="width: 100%; background: #d97a1e; color: white; cursor: pointer; padding: 5px;">
+                    🎥Vídeo (${v.label})
+                </button>
 
-    <div class="link-pdf-apenas" style="display: none; margin-top: 10px; text-align: center;">
-        <a href="https://www.youtube.com/watch?v=${videoID}" target="_blank" style="color: var(--gold); font-weight: bold; text-decoration: underline;">
-            ▶ vídeo 
-        </a>
-    </div>
-` : ""}
-</div>
-`;
+                <div class="link-pdf-apenas" style="display: none; margin-top: 5px; text-align: center;">
+                    <a href="http://googleusercontent.com/youtube.com/${v.id}" target="_blank" style="color: var(--gold); font-weight: bold; text-decoration: underline; font-size: 12px;">
+                        ▶ Ver vídeo 
+                    </a>
+                </div>
+            </div>
+        `).join('')}
+    </div>`;
 }).join('')}
     </div>
 
