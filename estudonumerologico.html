@@ -4475,30 +4475,27 @@ html += `
         flex-grow: 1;
     ">
 ${listaItensSintese.map(item => {
+    // 1. Log de diagnóstico (abra o console do navegador e veja o que aparece)
+    console.log("Processando síntese para:", item.label, "Valor:", item.valor);
+
     const itensPremium = ["Caminho de Vida", "Ciclos da Vida", "Desafios", "Momentos de Decisão"];
     const estaTravado = itensPremium.includes(item.label) && !acessoPremiumLiberado;
 
-    // Lógica segura: se for objeto, pega o conteúdo, senão usa o valor direto
+    // 2. Extração de texto sem erro
     let exibicaoValor = "";
     if (estaTravado) {
         exibicaoValor = "🔒 CONTEÚDO PREMIUM";
-    } else if (typeof item.valor === 'object' && item.valor !== null) {
-        // Extrai o conteúdo sem usar substring (evita o erro que você mencionou)
-        const valores = Object.values(item.valor);
-        exibicaoValor = valores.map(v => (typeof v === 'object' && v.conteudo) ? v.conteudo : v).join(' · ');
+    } else if (item.valor) {
+        exibicaoValor = typeof item.valor === 'object' ? "OBJETO DETECTADO" : String(item.valor);
     } else {
-        exibicaoValor = String(item.valor || "");
+        exibicaoValor = "SEM DADOS";
     }
 
-    // Filtro de texto (mantido como você usa no relatório)
-    let textoFinal = aplicarFiltroTexto(exibicaoValor);
-
-    const listaVideos = !estaTravado ? obterVideosParaItem(item) : [];
-
     return `
-    <div style="border: 1px solid #ccc; padding: 10px; margin: 5px; height: 130px; display: flex; flex-direction: column;">
-        <div style="font-weight: bold; font-size: 13px; margin-bottom: 5px; flex-shrink: 0;">${item.label}</div>
-        <div style="font-size: 11px; color: #333; overflow-y: auto; flex-grow: 1;">${textoFinal}</div>
+    <div style="border: 2px solid blue; padding: 10px; margin: 5px; height: 100px;">
+        <div style="font-weight: bold; font-size: 12px;">${item.label}</div>
+        <div style="font-size: 10px; color: black;">${exibicaoValor}</div>
+    </div>`;
         
         ${listaVideos.map(v => `
             <div style="margin-top: 5px; flex-shrink: 0;">
