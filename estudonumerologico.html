@@ -3368,27 +3368,28 @@ function buscarVideoID(categoria, valor, genero) {
 
 
 function obterVideosParaItem(item) {
-    let listaVideos = [];
-    let valoresParaBuscar = [];
+    if (!item.categoria) return [];
 
-    // Garante que o gênero sempre tenha um valor
-    const gen = (typeof generoAtual !== 'undefined') ? generoAtual : 'masculino';
-
-    if (Array.isArray(item.valor)) {
-        valoresParaBuscar = item.valor;
-    } else if (typeof item.valor === 'object') {
-        valoresParaBuscar = Object.values(item.valor);
-    } else {
-        valoresParaBuscar = [item.valor];
-    }
-
-    valoresParaBuscar.forEach(val => {
-        // Usa 'gen' que capturamos do escopo global
-        const id = buscarVideoID(item.categoria, val.toString().split(' ')[0], gen);
-        if (id) listaVideos.push({ id: id, label: val });
-    });
-
-    return listaVideos;
+    // Se for Ciclo, Momento ou Desafio, precisamos buscar dentro da fase (ex: 1, 2, 3...)
+    if (["ciclos", "momentos", "desafios"].includes(item.categoria)) {
+        let lista = [];
+        let dadosCategoria = textos[item.categoria]; // ex: textos.ciclos
+        
+        // Percorre cada fase que existe dentro desse objeto (1, 2, 3...)
+        for (let fase in dadosCategoria) {
+            let valorFase = res[item.categoria][fase]; // O valor calculado para essa fase
+            let dado = dadosCategoria[fase][valorFase]; // O texto/video daquela fase
+            
+            if (dado && dado.videoID && dado.videoID.trim() !== "") {
+                lista.push({ id: dado.videoID, label: item.label + " (Fase " + fase + ")" });
+            }
+        }
+        return lista;
+    } 
+    
+    // Se for uma categoria simples (como Inclinações), mantém o funcionamento antigo
+    return buscarVideoID(item.categoria, item.valor, generoAtual) ? 
+           [{ id: buscarVideoID(item.categoria, item.valor, generoAtual), label: item.label }] : [];
 }
         
         
@@ -4495,13 +4496,13 @@ ${listaItensSintese.map(item => {
     const listaVideos = !estaTravado ? obterVideosParaItem(item) : [];
 
     return `
-    <div style="border: 1px solid #ccc; padding: 10px; margin: 5px; height: 100px; display: flex; flex-direction: column;">
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 5px; height: 130px; display: flex; flex-direction: column;">
         <div style="font-weight: bold; font-size: 13px; margin-bottom: 5px; flex-shrink: 0;">${item.label}</div>
         <div style="font-size: 11px; color: #333; overflow-y: auto; flex-grow: 1;">${textoFinal}</div>
         
         ${listaVideos.map(v => `
             <div style="margin-top: 5px; flex-shrink: 0;">
-                <button onclick="abrirVideoNovaAba('${v.id}')" style="width: 100%; background: #d97a1e; color: white; cursor: pointer; padding: 2px; font-size: 10px;">
+                <button onclick="abrirVideoNovaAba('${v.id}')" style="width: 50%; background: #d97a1e; color: white; cursor: pointer; padding: 2px; font-size: 8px;">
                     🎥 Vídeo (${v.label})
                 </button>
                 <div class="link-pdf-apenas" style="display: none; margin-top: 5px; text-align: center;">
