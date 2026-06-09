@@ -5615,25 +5615,30 @@ for(let i in res[sec]) {
 });
 // ... (depois de terminar os Desafios)
 
+// --- COPIE A PARTIR DAQUI ---
+const tituloMat = (typeof nomesExibicao !== 'undefined' && nomesExibicao["Maturidade"]) ? nomesExibicao["Maturidade"] : "Fase de Maturidade";
+const tituloBonito = "FASE DE MATURIDADE";
 
-tituloBonito = "FASE DE MATURIDADE";  
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna"><h2>${tituloBonito}</h2></div>
 </div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 1px solid var(--gold);">${tituloMat}</h2>
-    <div class="intro-texto">${textos.introducoes.Maturidade || ""}</div>
+    <div class="intro-texto">${(textos.introducoes && textos.introducoes.Maturidade) ? textos.introducoes.Maturidade : ""}</div>
     <div class="texto-res">
         ${(() => {
-            const dadosM = textos.Maturidade[res.Maturidade];
+            const dadosM = (textos.Maturidade && res.Maturidade) ? textos.Maturidade[res.Maturidade] : null;
+            if (!dadosM) return "Conteúdo de maturidade não encontrado.";
+            
             const contM = (typeof dadosM === 'object' && dadosM !== null) ? dadosM.conteudo : dadosM;
             const vidM = (typeof dadosM === 'object' && dadosM !== null) ? dadosM.videoID : null;
-            return aplicarFiltroTexto(contM) + (vidM ? gerarPlayerYouTube(vidM) : "");
+            
+            return aplicarFiltroTexto(contM) + (vidM && typeof vidM === 'string' && vidM.trim() !== "" ? gerarPlayerYouTube(vidM) : "");
         })()}
     </div>
 </div>`;
-      
+// --- ATÉ AQUI ---
 
             
 
