@@ -2510,7 +2510,7 @@ ciclos: {
     <p style="margin-bottom: 20px;">A lição central para você neste ciclo é o domínio total sobre a matéria através do trabalho coordenado e da ética inabalável, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você aprenderá que o verdadeiro poder do mestre construtor reside em servir ao futuro através do presente. Ao final deste ciclo monumental, você terá consolidado um legado de progresso que servirá de alicerce para as futuras gerações, sendo reconhecido(a) como uma das forças realizadoras mais importantes da sua época, deixando um rastro de solidez, honra e prosperidade por onde passar.</p>`,
   videoID: " "
     }
-     
+       
 },
 
 // --- 3º CICLO (TERCEIRA IDADE / SABEDORIA) ---
@@ -2541,7 +2541,8 @@ ciclos: {
     <p style="margin-bottom: 20px;">O terceiro ciclo de vida representa para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a consolidação definitiva das bases construídas com tanto esforço ao longo do tempo. Nesta fase, você passa a desfrutar da clareza absoluta sobre os resultados obtidos através da sua disciplina e responsabilidade. É o momento de organizar o patrimônio, os valores morais e a estrutura familiar para que tudo o que você edificou continue gerando frutos e segurança para as gerações futuras.</p>
     <p style="margin-bottom: 20px;">A experiência acumulada permite que você valorize o planejamento e a continuidade das conquistas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua postura transmite uma segurança inabalável para seus descendentes e amigos, agindo como o alicerce sólido sobre o qual os outros podem se apoiar. Você se torna a autoridade prática, alguém que sabe exatamente como manter a ordem e a eficiência mesmo diante das mudanças do tempo. O respeito que você impõe nasce da sua coerência e da integridade que você demonstrou em cada tijolo colocado em sua trajetória de vida.</p>
     <p style="margin-bottom: 20px;">A satisfação de você neste período está na tranquilidade proporcionada pela consciência do dever cumprido e da estabilidade garantida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição principal deste ciclo é compreender que a persistência e a organização são as chaves para a imortalidade do seu legado. Você emerge desta fase como uma figura de respeito universal, levando consigo a honra de ter sido o(a) guardião(ã) da estrutura e o(a) arquiteto(a) de uma segurança que resistirá a qualquer tempestade.</p>`,
-
+  videoID: " "
+    },
     5: {
      conteudo:`<h3>3º Ciclo 5 - Liberdade Intelectual e Novos Horizontes</h3><br>
     <p style="margin-bottom: 20px;">O terceiro ciclo de vida traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma liberdade intelectual refrescante e uma curiosidade que desafia a passagem dos anos. Nesta etapa, você tende a manter um interesse ativo pelo mundo, explorando novas culturas, tecnologias ou filosofias que ampliam sua compreensão da realidade. A rotina não tem lugar aqui; você busca o movimento, a troca de informações e a possibilidade de continuar se sentindo parte integrante de um mundo em constante evolução.</p>
@@ -2591,7 +2592,7 @@ ciclos: {
     <p style="margin-bottom: 20px;">A lição fundamental para você neste ciclo é a maestria sobre a existência material guiada por propósitos humanitários elevados, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você aprende que o verdadeiro poder do Mestre Construtor é criar fundações que permitam aos outros voar. Ao final desta fase, você terá consolidado um legado de solidez e honra, sendo lembrado(a) como uma força realizadora inigualável que transformou o mundo através da disciplina, da visão e de um compromisso sagrado com a utilidade e a prosperidade universal.</p>`,
   videoID: " "
     }
-     
+   
 }
 
 },  
