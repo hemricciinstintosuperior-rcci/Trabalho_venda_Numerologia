@@ -5572,25 +5572,23 @@ html += `
 
 // --- SUBSTITUA A PARTIR DAQUI ---
 for(let i in res[sec]) {
-    // Pula o desafio 3 aqui, pois ele já foi mostrado no Pilar 03
     if (sec === "desafios" && i == 3) continue;
 
     const info = datasFases[sec][i];
+    const valorChave = res[sec][i];
     const estaTravado = !acessoPremiumLiberado;
 
-    // Acessa o item de forma segura
-    let itemTexto = textos[sec][i][res[sec][i]];
+    // PROTEÇÃO: Verifica se o texto existe antes de tentar carregar
+    let itemTexto = (textos[sec] && textos[sec][i]) ? textos[sec][i][valorChave] : null;
     
-    // Retrocompatibilidade (Se tiver vídeo, extrai. Se não, usa o texto puro)
-    let conteudo = "";
-    let videoID = null;
-
-    if (typeof itemTexto === 'object' && itemTexto !== null) {
-        conteudo = itemTexto.conteudo;
-        videoID = itemTexto.videoID;
-    } else {
-        conteudo = itemTexto;
+    // Se não encontrar o texto, escreve um aviso no log e pula esse item para não travar
+    if (!itemTexto) {
+        console.warn(`Aviso: Conteúdo faltando em ${sec} | Fase: ${i} | Valor: ${valorChave}`);
+        continue;
     }
+
+    let conteudo = (typeof itemTexto === 'object' && itemTexto !== null) ? itemTexto.conteudo : itemTexto;
+    let videoID = (typeof itemTexto === 'object' && itemTexto !== null) ? itemTexto.videoID : null;
 
     html += ` 
         <div class="evitar-corte" style="margin-bottom: 30px;">
@@ -5605,7 +5603,7 @@ for(let i in res[sec]) {
             ` : `
                 <div class="texto-res">
                     ${aplicarFiltroTexto(conteudo)}
-                    ${(videoID && videoID.trim() !== "") ? gerarPlayerYouTube(videoID) : ""}
+                    ${(videoID && typeof videoID === 'string' && videoID.trim() !== "") ? gerarPlayerYouTube(videoID) : ""}
                 </div>
             `}
             <hr style="border:0; border-top:1px solid #ffffff; margin-top: 15px;">
