@@ -1637,7 +1637,7 @@ influencia: {
     <p>Essa sua aparência de sabedoria final e entrega total atrai todos os que buscam luz e direção, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois você transmite a paz de quem já concluiu todas as lições da vida. Você influencia através de um carisma que é puro serviço e inspiração humanitária.</p>
     <p>Todos sentem uma elevação espiritual apenas por estarem perto de você. Essa sua aura de tolerância infinita e desprendimento, <strong>MASCULINO-FEMININO-NEUTRO</strong>, consolida sua imagem como um guia universal, pronto para auxiliar no despertar de todos ao seu redor.</p>`,
    videoID: " "
-    },
+    }
      
 },
 
@@ -1769,7 +1769,7 @@ Personalidade: {
     <p>Sua expressão real é a conclusão triunfante da alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você vive em um estado de tolerância infinita, provando que o amor desinteressado e o desprendimento do ego são as forças finais que libertam o ser humano e o conectam definitivamente ao propósito sagrado da criação.</p>`,
      
     videoID: " "
-    },
+    }
     },
 // --- CAMINHO DE VIDA (DESTINO / ESTRADA DA VIDA / ROTA OPERACIONAL) ---
 CaminhodeVida: {
