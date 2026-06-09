@@ -4475,35 +4475,39 @@ html += `
         flex-grow: 1;
     ">
 ${listaItensSintese.map(item => {
-    // 1. Log de diagnóstico (abra o console do navegador e veja o que aparece)
-    console.log("Processando síntese para:", item.label, "Valor:", item.valor);
-
     const itensPremium = ["Caminho de Vida", "Ciclos da Vida", "Desafios", "Momentos de Decisão"];
     const estaTravado = itensPremium.includes(item.label) && !acessoPremiumLiberado;
 
-    // 2. Extração de texto sem erro
+    // Lógica segura: se for objeto, pega o conteúdo, senão usa o valor direto
     let exibicaoValor = "";
     if (estaTravado) {
         exibicaoValor = "🔒 CONTEÚDO PREMIUM";
-    } else if (item.valor) {
-        exibicaoValor = typeof item.valor === 'object' ? "OBJETO DETECTADO" : String(item.valor);
+    } else if (typeof item.valor === 'object' && item.valor !== null) {
+        // Extrai o conteúdo sem usar substring (evita o erro que você mencionou)
+        const valores = Object.values(item.valor);
+        exibicaoValor = valores.map(v => (typeof v === 'object' && v.conteudo) ? v.conteudo : v).join(' · ');
     } else {
-        exibicaoValor = "SEM DADOS";
+        exibicaoValor = String(item.valor || "");
     }
 
+    // Filtro de texto (mantido como você usa no relatório)
+    let textoFinal = aplicarFiltroTexto(exibicaoValor);
+
+    const listaVideos = !estaTravado ? obterVideosParaItem(item) : [];
+
     return `
-    <div style="border: 2px solid blue; padding: 10px; margin: 5px; height: 100px;">
-        <div style="font-weight: bold; font-size: 12px;">${item.label}</div>
-        <div style="font-size: 10px; color: black;">${exibicaoValor}</div>
-    </div>
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 5px; height: 130px; display: flex; flex-direction: column;">
+        <div style="font-weight: bold; font-size: 13px; margin-bottom: 5px; flex-shrink: 0;">${item.label}</div>
+        <div style="font-size: 11px; color: #333; overflow-y: auto; flex-grow: 1;">${textoFinal}</div>
+        
         ${listaVideos.map(v => `
             <div style="margin-top: 5px; flex-shrink: 0;">
-                <button onclick="abrirVideoNovaAba('${v.id}')" style="width: 50%; background: #d97a1e; color: white; cursor: pointer; padding: 2px; font-size: 8px;">
-                    🎥 Vídeo (${v.label})
+                <button onclick="abrirVideoNovaAba('${v.id}')" style="width: 50%; background: #d97a1e; color: white; cursor: pointer; padding: 2px; font-size: 10px;">
+                    🎥 Vídeo ${v.id}
                 </button>
                 <div class="link-pdf-apenas" style="display: none; margin-top: 5px; text-align: center;">
                     <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" style="color: #d97a1e; font-weight: bold; font-size: 10px;">
-                        ▶ Vídeo (${v.label})
+                       🎥 Vídeo ${v.id}
                     </a>
                 </div>
             </div>
