@@ -4134,7 +4134,7 @@ deficits: {
      conteudo:`<h3>Vaidade - Déficit de Comportamento 9</h3>
         <p>Em algum momento, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a arrogância de se sentir superior aos demais levou você a ofender ou humilhar aqueles que considerava "inferiores". Esse idealismo distorcido e a dureza de coração podem ter gerado um comportamento vingativo contra quem ousasse desafiar sua vontade. Este déficit é uma convocação direta para a prática da humildade e do altruísmo universal.</p>
         <p><strong>Influência:</strong> Prepare-se para enfrentar perdas afetivas ou materiais que parecerão injustas, mas que servem para esvaziar seu ego e preencher sua alma com humanidade. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o sentimento de vazio interior só será curado quando você começar a compartilhar suas conquistas e a beneficiar genuinamente quem cruza seu caminho. Seja solidário(a), compreensivo(a) e aja com uma justiça que acolhe. Ao transformar a vaidade em serviço humanitário, você transmuta sua dívida em luz e se torna um canal de sabedoria e paz para o mundo inteiro.</p>`,
-       videoID: "F8bg1CTQ9HI"
+       videoID: "tLrR4tsM4as"
     }
 
     
