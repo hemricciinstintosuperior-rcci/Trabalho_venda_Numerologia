@@ -2354,7 +2354,7 @@ ciclos: {
       <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida foi marcado por uma necessidade visceral de autoafirmação e o despertar de uma independência precoce, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Desde os primeiros anos, você sentiu um impulso de trilhar o próprio caminho em situações onde a coragem foi exigida antes mesmo do esperado para a sua idade.</p>
       <p style="margin-bottom: 20px;">Durante este estágio fundamental, você aprendeu que a iniciativa é a ferramenta mais poderosa para abrir portas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este período exigiu que você aprendesse a confiar plenamente nos próprios instintos e a tomar decisões sob pressão, agindo como o(a) próprio(a) arquiteto(a) de uma realidade nascente e original.</p>
       <p style="margin-bottom: 20px;">A lição central para você foi a superação do medo da solidão em favor da liberdade de ser autêntico(a), <strong>MASCULINO-FEMININO-NEUTRO</strong>. Cada obstáculo enfrentado serviu para polir sua identidade única. Você emergiu deste ciclo com a autoridade de quem sabe exatamente do que é capaz, consolidando um espírito vencedor que não se curva diante das dificuldades.</p>`,
-  videoID: " "
+  videoID: ""
     },
       2: {
      conteudo:`<h3>1º Ciclo 2 - O Aprendizado da Cooperação e Sensibilidade</h3>
@@ -2362,7 +2362,7 @@ ciclos: {
       <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida foi vivido sob a influência profunda da sensibilidade e da cooperação, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Na juventude, você se destacou como uma pessoa atenta às necessidades alheias, agindo com uma diplomacia natural e um tato social raro que visava manter a harmonia e o equilíbrio nos ambientes.</p>
       <p style="margin-bottom: 20px;">Este período ensinou a você o valor inestimável da paciência e da escuta ativa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você pode ter sentido mais conforto atuando nos bastidores ou em parcerias estratégicas, onde sua capacidade de apoiar projetos fortaleceu sua base de segurança. O foco aqui foi a compreensão de que a união é uma ferramenta de crescimento eficaz.</p>
       <p>Ao navegar por este ciclo, você aprendeu a valorizar os detalhes sutis que a maioria ignora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição foi a de que a cooperação não é passividade, mas uma escolha consciente. Você emergiu desta fase com uma capacidade única de harmonizar ambientes, levando consigo a sabedoria de que as parcerias certas são o combustível para o sucesso.</p>`,
-  videoID: " "
+  videoID: ""
     },
       3: {
      conteudo:`<h3>1º Ciclo 3 - A Eclosão da Criatividade e Comunicação</h3><br>
@@ -2482,7 +2482,8 @@ ciclos: {
     <p style="margin-bottom: 20px;">A lição fundamental para você neste ciclo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está ligada ao valor do conhecimento profundo e da integridade mental. Você aprenderá que a sabedoria é o seu maior escudo e que a especialização traz um tipo de poder que ninguém pode tirar. Ao longo deste período, a experiência adquirida fortalecerá sua visão estratégica, permitindo contribuições significativas que mudarão a forma como as pessoas enxergam a sua área. Você concluirá este ciclo como um(a) mestre(a) respeitado(a) pela profundidade de sua alma e intelecto.</p>`,
   videoID: " "
     },
-    8: `<h3>2º Ciclo 8 - Realização Material e Gestão de Poder</h3><br>
+    8: {
+     conteudo:`<h3>2º Ciclo 8 - Realização Material e Gestão de Poder</h3><br>
     <p style="margin-bottom: 20px;">O seu segundo ciclo de vida destaca temas cruciais relacionados à realização material, organização de grandes recursos e desenvolvimento de uma liderança executiva poderosa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este período o(a) incentiva a assumir responsabilidades de grande escala em projetos, negócios ou estruturas organizacionais. A vida exige que você lide com o mundo material de forma direta, pragmática e eficiente, buscando a prosperidade não apenas como um desejo, mas como um resultado natural da sua competência administrativa.</p>
     <p style="margin-bottom: 20px;">Nesta fase de produção, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua capacidade de tomar decisões estratégicas e gerir recursos com precisão cirúrgica será testada e recompensada. Você encontrará oportunidades significativas em ambientes que exigem visão de mercado, planejamento financeiro e autoridade para comandar equipes rumo a objetivos ambiciosos. É o tempo de expandir seu patrimônio e consolidar seu status social, agindo com a firmeza de quem compreende as leis do dinheiro e do sucesso, sem nunca abrir mão da ética e da justiça que sustentam o verdadeiro poder duradouro.</p>
     <p style="margin-bottom: 20px;">A lição deste ciclo para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, envolve compreender que a prosperidade sustentável depende do equilíbrio entre ambição e responsabilidade social. Você aprenderá a julgar situações com clareza e a agir com a força necessária para realizar transformações de impacto. Ao final desta etapa, os resultados concretos — tanto financeiros quanto de influência — refletirão seu esforço consistente e sua habilidade magistral em transformar planejamento em realidade tangível e poderosa para você e para o mundo.</p>`,
