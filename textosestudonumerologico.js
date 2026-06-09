@@ -4158,19 +4158,19 @@ inclinacoes: {
      conteudo:`<h3>Exibicionismo e Superficialidade - Inclinação Oculta 3</h3>
         <p>Você possui o dom divino de motivar e encantar as pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas frequentemente sofre com uma dispersão mental que drena sua energia vital. O desejo por entretenimento, prazer imediato e gratificação social pode acabar se sobrepondo às suas responsabilidades reais, levando a uma vida de muitos começos e poucas conclusões concretas.</p>
         <p>A preocupação excessiva com as aparências e o julgamento baseado na superfície das coisas são marcas fortes desta inclinação. Essa vaidade, somada a um estado de agitação constante, pode resultar em um grande desperdício do seu tempo em questões fúteis ou puramente estéticas que não alimentam sua alma a longo prazo. <strong>MASCULINO-FEMININO-NEUTRO</strong>, seu caminho de evolução exige que você desenvolva o foco e a profundidade; use seu carisma para construir algo que tenha substância e não apenas brilho momentâneo.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "tLrR4tsM4as"
     },
     4: {
      conteudo:`<h3>Intolerância e Rigidez - Inclinação Oculta 4</h3>
         <p>A organização meticulosa e a preparação para imprevistos são seus pilares de sobrevivência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Porém, essa estrutura pode facilmente se transformar em uma prisão de rigidez mental, onde você se torna escravo(a) das próprias convicções. Você tende a exercer um autoritarismo técnico que pode sufocar a criatividade e a liberdade das pessoas que convivem com você.</p>
         <p>O seu perfeccionismo exagerado gera uma insatisfação crônica, onde nada — nem o seu trabalho, nem o dos outros — parece atingir o nível "ideal". Essa obsessão pelo controle total e a teimosia em não aceitar perspectivas diferentes criam um ambiente de tensão constante. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o aprendizado é soltar as rédeas e permitir que a vida flua com suas imperfeições naturais. Entenda que o caos, às vezes, é o fertilizante necessário para o crescimento que a rigidez impede.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "k375lfJCLcA"
     },
     5: {
      conteudo:`<h3>Abusos e Desmotivação - Inclinação Oculta 5</h3>
         <p>Sua curiosidade é insaciável e seu desejo de vivenciar o mundo em sua plenitude é um motor poderoso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Todavia, essa busca incessante pode conduzir a comportamentos impulsivos, onde você acaba explorando as fraquezas alheias para obter vantagens rápidas ou satisfação momentânea, agindo sem medir as consequências futuras das suas ações.</p>
         <p>A necessidade constante de adrenalina e estímulos inéditos frequentemente resulta em uma desmotivação profunda assim que a novidade passa, dificultando o estabelecimento de vínculos duradouros. Essa sede de sensações pode levar a excessos que mascaram um vazio interno persistente. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua lição é encontrar a aventura dentro da estabilidade. Aprenda que a verdadeira liberdade não vem de fugir das responsabilidades, mas de ter o domínio sobre seus próprios desejos e impulsos.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "z1nW3rmNeEI"
     },
     6: {
      conteudo:`<h3>Controlador e Autoritário - Inclinação Oculta 6</h3>
