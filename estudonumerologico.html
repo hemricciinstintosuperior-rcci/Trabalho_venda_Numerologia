@@ -4477,36 +4477,32 @@ ${listaItensSintese.map(item => {
     const itensPremium = ["Caminho de Vida", "Ciclos da Vida", "Desafios", "Momentos de Decisão"];
     const estaTravado = itensPremium.includes(item.label) && !acessoPremiumLiberado;
 
-    // --- CORREÇÃO AQUI: Extração inteligente do texto ---
     let exibicaoValor = "";
     if (estaTravado) {
         exibicaoValor = "🔒 CONTEÚDO PREMIUM";
     } else if (typeof item.valor === 'object' && item.valor !== null) {
-        // Se for um objeto com fases (como Ciclos, Momentos), pegamos o conteúdo de cada fase
-        // Se for um objeto único, pegamos apenas .conteudo
         const valores = Object.values(item.valor);
         exibicaoValor = valores.map(v => (typeof v === 'object' && v.conteudo) ? v.conteudo : v).join(' · ');
     } else {
         exibicaoValor = item.valor;
     }
 
+    // --- CORREÇÃO: Forçamos converter para string antes de usar substring ---
+    let textoFinal = String(exibicaoValor || ""); 
+    let textoResumido = textoFinal.substring(0, 150) + (textoFinal.length > 150 ? '...' : '');
+
     const listaVideos = !estaTravado ? obterVideosParaItem(item) : [];
 
     return `
     <div style="border: 1px solid #ccc; padding: 10px; margin: 5px;">
         <div style="font-weight: bold;">${item.label}</div>
-        <div style="font-size: 14px;">${aplicarFiltroTexto(exibicaoValor.substring(0, 150) + (exibicaoValor.length > 150 ? '...' : ''))}</div>
+        <div style="font-size: 14px;">${aplicarFiltroTexto(textoResumido)}</div>
         
         ${listaVideos.map(v => `
             <div style="margin-top: 10px;">
                 <button onclick="abrirVideoNovaAba('${v.id}')" class="btn-sintese" style="width: 100%; background: #d97a1e; color: white; cursor: pointer; padding: 5px;">
                     🎥 Vídeo (${v.label})
                 </button>
-                <div class="link-pdf-apenas" style="display: none; margin-top: 5px; text-align: center;">
-                    <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" style="color: #d97a1e; font-weight: bold; text-decoration: underline; font-size: 12px;">
-                        ▶ Ver vídeo
-                    </a>
-                </div>
             </div>
         `).join('')}
     </div>`;
