@@ -4477,34 +4477,48 @@ ${listaItensSintese.map(item => {
     const itensPremium = ["Caminho de Vida", "Ciclos da Vida", "Desafios", "Momentos de Decisão"];
     const estaTravado = itensPremium.includes(item.label) && !acessoPremiumLiberado;
 
+    // --- LÓGICA DE EXTRAÇÃO PARA CICLOS, MOMENTOS E DESAFIOS ---
     let exibicaoValor = "";
     if (estaTravado) {
         exibicaoValor = "🔒 CONTEÚDO PREMIUM";
     } else if (typeof item.valor === 'object' && item.valor !== null) {
-        const valores = Object.values(item.valor);
-        exibicaoValor = valores.map(v => (typeof v === 'object' && v.conteudo) ? v.conteudo : v).join(' · ');
+        // Se for um objeto (Ciclos/Momentos/Desafios), extraímos o conteúdo de cada fase
+        exibicaoValor = Object.values(item.valor)
+            .map(fase => (typeof fase === 'object' && fase.conteudo) ? fase.conteudo.replace(/<[^>]*>/g, '') : fase)
+            .join(' · ');
     } else {
         exibicaoValor = item.valor;
     }
 
-    // --- CORREÇÃO: Forçamos converter para string antes de usar substring ---
-    let textoFinal = String(exibicaoValor || ""); 
-    let textoResumido = textoFinal.substring(0, 150) + (textoFinal.length > 150 ? '...' : '');
-
-    const listaVideos = !estaTravado ? obterVideosParaItem(item) : [];
+    // --- GARANTIA DOS VÍDEOS ---
+    // Em vez de depender de funções complexas, verificamos se o objeto tem videoID
+    const listaVideos = [];
+    if (!estaTravado && typeof item.valor === 'object' && item.valor !== null) {
+        Object.values(item.valor).forEach(fase => {
+            if (fase.videoID && fase.videoID.trim() !== "" && fase.videoID.length > 5) {
+                listaVideos.push({ id: fase.videoID, label: item.label });
+            }
+        });
+    }
 
     return `
-    <div style="border: 1px solid #ccc; padding: 10px; margin: 5px;">
-        <div style="font-weight: bold;">${item.label}</div>
-        <div style="font-size: 14px;">${aplicarFiltroTexto(textoResumido)}</div>
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 5px; height: 160px; overflow: hidden; display: flex; flex-direction: column;">
+        <div style="font-weight: bold; font-size: 13px; margin-bottom: 5px;">${item.label}</div>
+        <div style="font-size: 11px; color: #333; flex-grow: 1;">${aplicarFiltroTexto(exibicaoValor.substring(0, 100) + '...')}</div>
         
-        ${listaVideos.map(v => `
-            <div style="margin-top: 10px;">
-                <button onclick="abrirVideoNovaAba('${v.id}')" class="btn-sintese" style="width: 100%; background: #d97a1e; color: white; cursor: pointer; padding: 5px;">
-                    🎥 Vídeo (${v.label})
-                </button>
-            </div>
-        `).join('')}
+${listaVideos.map(v => `
+    <div style="margin-top: 5px;">
+        <button onclick="abrirVideoNovaAba('${v.id}')" class="btn-sintese" style="width: 100%; background: #d97a1e; color: white; cursor: pointer; padding: 2px; font-size: 10px;">
+            🎥 Assistir Vídeo
+        </button>
+
+        <div class="link-pdf-apenas" style="display: none; margin-top: 5px; text-align: center;">
+            <a href="https://www.youtube.com/embed/${v.id}" target="_blank" style="color: #d97a1e; font-weight: bold; text-decoration: underline; font-size: 10px;">
+                ▶ Vídeo ${v.id}
+            </a>
+        </div>
+    </div>
+`).join('')}
     </div>`;
 }).join('')}
     </div>
