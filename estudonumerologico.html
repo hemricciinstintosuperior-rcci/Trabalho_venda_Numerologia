@@ -4502,11 +4502,11 @@ ${listaItensSintese.map(item => {
         ${listaVideos.map(v => `
             <div style="margin-top: 5px; flex-shrink: 0;">
                 <button onclick="abrirVideoNovaAba('${v.id}')" style="width: 100%; background: #d97a1e; color: white; cursor: pointer; padding: 2px; font-size: 10px;">
-                    🎥 Vídeo
+                    🎥 Vídeo (${v.label})
                 </button>
                 <div class="link-pdf-apenas" style="display: none; margin-top: 5px; text-align: center;">
                     <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" style="color: #d97a1e; font-weight: bold; font-size: 10px;">
-                        ▶ Vídeo ${v.id} 
+                        ▶ Vídeo (${v.label})
                     </a>
                 </div>
             </div>
