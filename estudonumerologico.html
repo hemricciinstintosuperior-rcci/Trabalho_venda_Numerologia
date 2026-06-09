@@ -4496,7 +4496,7 @@ ${listaItensSintese.map(item => {
         <div style="font-weight: bold; font-size: 12px;">${item.label}</div>
         <div style="font-size: 10px; color: black;">${exibicaoValor}</div>
     </div>`;
-        
+        }).join('')}
         ${listaVideos.map(v => `
             <div style="margin-top: 5px; flex-shrink: 0;">
                 <button onclick="abrirVideoNovaAba('${v.id}')" style="width: 50%; background: #d97a1e; color: white; cursor: pointer; padding: 2px; font-size: 8px;">
