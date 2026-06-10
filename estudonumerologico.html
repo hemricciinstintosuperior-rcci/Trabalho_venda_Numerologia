@@ -3368,28 +3368,41 @@ function buscarVideoID(categoria, valor, genero) {
 
 
 function obterVideosParaItem(item) {
-    if (!item.categoria) return [];
+    // PROTEÇÃO: Se a variável global 'res' não existir, aborta a busca
+    if (typeof res === 'undefined') {
+        console.warn("Aviso: Tentativa de buscar vídeos antes de 'res' ser definido.");
+        return [];
+    }
 
-    // Se for Ciclo, Momento ou Desafio, precisamos buscar dentro da fase (ex: 1, 2, 3...)
+    // Se o item não tiver categoria, não buscamos vídeo
+    if (!item || !item.categoria) return [];
+
+    // Lógica para categorias complexas (Ciclos, Momentos, Desafios)
     if (["ciclos", "momentos", "desafios"].includes(item.categoria)) {
         let lista = [];
-        let dadosCategoria = textos[item.categoria]; // ex: textos.ciclos
+        let dadosCategoria = textos[item.categoria];
         
-        // Percorre cada fase que existe dentro desse objeto (1, 2, 3...)
-        for (let fase in dadosCategoria) {
-            let valorFase = res[item.categoria][fase]; // O valor calculado para essa fase
-            let dado = dadosCategoria[fase][valorFase]; // O texto/video daquela fase
-            
-            if (dado && dado.videoID && dado.videoID.trim() !== "") {
-                lista.push({ id: dado.videoID, label: item.label + " (Fase " + fase + ")" });
+        if (dadosCategoria && res[item.categoria]) {
+            for (let fase in res[item.categoria]) {
+                let valorFase = res[item.categoria][fase];
+                if (dadosCategoria[fase] && dadosCategoria[fase][valorFase]) {
+                    let dado = dadosCategoria[fase][valorFase];
+                    if (dado.videoID && dado.videoID.trim() !== "") {
+                        lista.push({ id: dado.videoID, label: item.label });
+                    }
+                }
             }
         }
         return lista;
     } 
-    
-    // Se for uma categoria simples (como Inclinações), mantém o funcionamento antigo
-    return buscarVideoID(item.categoria, item.valor, generoAtual) ? 
-           [{ id: buscarVideoID(item.categoria, item.valor, generoAtual), label: item.label }] : [];
+
+    // Lógica padrão para categorias simples
+    try {
+        let videoID = buscarVideoID(item.categoria, item.valor, generoAtual);
+        return (videoID && videoID.trim() !== "") ? [{ id: videoID, label: item.label }] : [];
+    } catch (e) {
+        return [];
+    }
 }
         
         
