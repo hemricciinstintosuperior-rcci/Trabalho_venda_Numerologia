@@ -4841,9 +4841,7 @@ if (res.inclinacoes && res.inclinacoes.length > 0) {
         // Busca o vídeo para cada número da inclinação
         const idVideoInc = buscarVideoID("inclinacoes", num, generoAtual);
         
-            console.log("--- DEBUG INCLINAÇÃO ---");
-    console.log("Número atual:", num);
-    console.log("Texto raw:", textos.inclinacoes[num]);
+
 
         
 conteudoInclinacoes += `
@@ -5344,6 +5342,9 @@ html += `
 // ==========================================
 // BLOCO INDIVIDUAL: RELACIONAMENTO
 // ==========================================
+
+ // Extração segura dos dados
+const dadosRelacionamento = textos.Relacionamento[res.Relacionamento];   
 tituloBonito = "Relacionamento"; 
 html += `
 <div class="separador-luxo">
@@ -5354,7 +5355,10 @@ html += `
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
     <div class="intro-texto">${textos.introducoes.Relacionamento || ""}</div>
-    <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.Relacionamento[res.Relacionamento])}</div>
+    <div class="evitar-corte texto-res">
+        ${dadosRelacionamento ? aplicarFiltroTexto(dadosRelacionamento.conteudo) : "<p>Dados não encontrados.</p>"}
+        ${(dadosRelacionamento && dadosRelacionamento.videoID) ? gerarPlayerYouTube(dadosRelacionamento.videoID) : ""}
+    </div>
 </div>
 `;
 
@@ -5362,7 +5366,7 @@ html += `
 // Bloco dos Números Harmônicos
 const numHarmonicosRaw = obterNumerosHarmonicos(res.dia);
 const listaNums = numHarmonicosRaw.replace(' e ', ', ').split(',').map(n => n.trim());
-
+const idVideoHarmonicos = buscarVideoID("numerosHarmonicos", res.dia, generoAtual); 
 tituloBonito = "Números Harmônicos";
 html += `
 <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
@@ -5380,9 +5384,12 @@ html += `
                         background: rgba(218, 165, 32, 0.1); box-shadow: 0 0 15px rgba(218, 165, 32, 0.4);">
                 ${n}
             </div>
-        `).join('')}
+        `).join('')}</div>
+     <div class="evitar-corte texto-res" style="margin-top: 20px;">
+        ${idVideoHarmonicos ? gerarPlayerYouTube(idVideoHarmonicos) : ""}
     </div>
-    
+</div>
+         
     <p style="text-align: center; margin-top: 30px; font-style: italic; color: #888;">
         "A sorte é o encontro da preparação com a frequência numérica correta."
     </p>
@@ -5466,6 +5473,7 @@ html += `
 
 // --- BLOCO: DIAS DE PODER E VIBRAÇÃO SEMANAL ---
 const diasPoder = obterDiasFavoraveisRessonancia(res.dia);
+
 const diaSemanaVib = obterDiaSemanaVibracional(res.dia);
 const legendaVib = obterLegendaVibração(res.dia); // Chamada da nova função
 tituloBonito = "Dias de Poder e Fluxo Vital";
