@@ -5763,9 +5763,11 @@ html += `
         <h3 class="vigencia-texto" style="color: #666; font-weight: bold; margin-bottom: 15px;">
             Vigência: ${vigenciaCiclo1}
         </h3>
-        <div class="texto-res">${aplicarFiltroTexto(textos.anoPessoal[res.anoPessoal])}</div>
+    <div class="texto-res">
+        ${dadosAnoAtual ? aplicarFiltroTexto(dadosAnoAtual.conteudo) : ""}
+        ${(dadosAnoAtual && dadosAnoAtual.videoID) ? gerarPlayerYouTube(dadosAnoAtual.videoID) : ""}
     </div>
-</div>`; // Removi a vírgula errada que estava aqui
+</div>`;
 
 // Título Meses do Ano Atual
 const cronogramaAtualHTML = gerarCronogramaMensal(anoAtualParaCronograma, mesParaCronograma);
@@ -5796,7 +5798,10 @@ html += `
         <h3 class="vigencia-texto" style="color: #666; font-weight: bold; margin-bottom: 15px;">
             Vigência: ${vigenciaCiclo2}
         </h3>
-        <div class="texto-res">${aplicarFiltroTexto(textos.anoPessoal[proximoAnoPessoal])}</div>
+        <div class="texto-res">
+            ${dadosProximoAno ? aplicarFiltroTexto(dadosProximoAno.conteudo) : ""}
+            ${(dadosProximoAno && dadosProximoAno.videoID) ? gerarPlayerYouTube(dadosProximoAno.videoID) : ""}
+        </div>
     </div>
 </div>`;
 
