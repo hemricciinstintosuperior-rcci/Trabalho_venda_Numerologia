@@ -4793,13 +4793,14 @@ if (nomeCasadoInput !== "") {
     
 
 // --- INCLUSÃO: DESEJO OCULTO E TALENTOS ESPECIAIS ---
-const dadosDesejo = calcularDesejoOculto(nomeRaw);
-const primeiroNome = nomeRaw.split(' ')[0];
-const talentoNum = calcularTalentoEspecial(primeiroNome);
+const idVideoDesejo = buscarVideoID("desejoOculto", dadosDesejo.numero, generoAtual);
+const textoDesejo = textos.desejoOculto && textos.desejoOculto[dadosDesejo.numero] ? textos.desejoOculto[dadosDesejo.numero] : null;
+
+// DEBUG: Veja no console se isso aparece como null ou string
+console.log("Texto do Desejo para número", dadosDesejo.numero, ":", textoDesejo);
     // Crie esta linha logo ACIMA do código da ondinha:
 
-// --- DESEJO OCULTO ---
-const idVideoDesejo = buscarVideoID("desejoOculto", dadosDesejo.numero, generoAtual);    
+
  tituloBonito = "SEU DESEJO OCULTO"; 
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
 html += `
@@ -4822,8 +4823,8 @@ html += `
             <span style="font-size: 1.2rem; color: var(--gold);"> </span>
             <span class="numero-destaque" style="font-size: 2.5rem; font-weight: bold;"></span>
         </div>
-        <div class="texto-res">
-        ${aplicarFiltroTexto(textos.desejoOculto[dadosDesejo.numero])}
+    <div class="texto-res">
+        ${textoDesejo ? aplicarFiltroTexto(textoDesejo) : "<p>Texto não encontrado para este número.</p>"}
         ${idVideoDesejo ? gerarPlayerYouTube(idVideoDesejo) : ""}
     </div>
 </div>`;
@@ -4833,16 +4834,17 @@ html += `
 // ==========================================
 tituloBonito = "Inclinações"; 
 // --- INCLINAÇÕES ---
+// --- INCLINAÇÕES CORRIGIDAS ---
 let conteudoInclinacoes = "";
 
 if (res.inclinacoes && res.inclinacoes.length > 0) {
     res.inclinacoes.forEach(num => {
-        // Busca o vídeo para cada número da inclinação
         const idVideoInc = buscarVideoID("inclinacoes", num, generoAtual);
-        
+        const textoInclinacao = textos.inclinacoes ? textos.inclinacoes[num] : null;
+
         conteudoInclinacoes += `
             <div class="evitar-corte texto-res">
-                ${aplicarFiltroTexto(textos.inclinacoes[num])}
+                ${textoInclinacao ? aplicarFiltroTexto(textoInclinacao) : "<p>Texto não encontrado para a inclinação " + num + "</p>"}
                 ${idVideoInc ? gerarPlayerYouTube(idVideoInc) : ""}
                 <hr style="border:0; border-top:1px dotted #ffffff; margin: 15px 0;">
             </div>`;
