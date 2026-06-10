@@ -4793,14 +4793,14 @@ if (nomeCasadoInput !== "") {
     
 
 // --- INCLUSÃO: DESEJO OCULTO E TALENTOS ESPECIAIS ---
+// --- INCLUSÃO: DESEJO OCULTO E TALENTOS ESPECIAIS ---
+const dadosDesejo = calcularDesejoOculto(nomeRaw);
+const primeiroNome = nomeRaw.split(' ')[0];
+const talentoNum = calcularTalentoEspecial(primeiroNome);
+// --- DESEJO OCULTO ---
 const idVideoDesejo = buscarVideoID("desejoOculto", dadosDesejo.numero, generoAtual);
-const textoDesejo = textos.desejoOculto && textos.desejoOculto[dadosDesejo.numero] ? textos.desejoOculto[dadosDesejo.numero] : null;
-
-// DEBUG: Veja no console se isso aparece como null ou string
-console.log("Texto do Desejo para número", dadosDesejo.numero, ":", textoDesejo);
+    
     // Crie esta linha logo ACIMA do código da ondinha:
-
-
  tituloBonito = "SEU DESEJO OCULTO"; 
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
 html += `
@@ -4823,8 +4823,8 @@ html += `
             <span style="font-size: 1.2rem; color: var(--gold);"> </span>
             <span class="numero-destaque" style="font-size: 2.5rem; font-weight: bold;"></span>
         </div>
-    <div class="texto-res">
-        ${textoDesejo ? aplicarFiltroTexto(textoDesejo) : "<p>Texto não encontrado para este número.</p>"}
+      <div class="texto-res">
+        ${aplicarFiltroTexto(textos.desejoOculto[dadosDesejo.numero])}
         ${idVideoDesejo ? gerarPlayerYouTube(idVideoDesejo) : ""}
     </div>
 </div>`;
@@ -4833,18 +4833,16 @@ html += `
 // BLOCO INDIVIDUAL: INCLINAÇÕES (inclinacoes)
 // ==========================================
 tituloBonito = "Inclinações"; 
-// --- INCLINAÇÕES ---
-// --- INCLINAÇÕES CORRIGIDAS ---
 let conteudoInclinacoes = "";
 
 if (res.inclinacoes && res.inclinacoes.length > 0) {
     res.inclinacoes.forEach(num => {
+        // Busca o vídeo para cada número da inclinação
         const idVideoInc = buscarVideoID("inclinacoes", num, generoAtual);
-        const textoInclinacao = textos.inclinacoes ? textos.inclinacoes[num] : null;
-
+        
         conteudoInclinacoes += `
             <div class="evitar-corte texto-res">
-                ${textoInclinacao ? aplicarFiltroTexto(textoInclinacao) : "<p>Texto não encontrado para a inclinação " + num + "</p>"}
+                ${aplicarFiltroTexto(textos.inclinacoes[num])}
                 ${idVideoInc ? gerarPlayerYouTube(idVideoInc) : ""}
                 <hr style="border:0; border-top:1px dotted #ffffff; margin: 15px 0;">
             </div>`;
@@ -4854,13 +4852,17 @@ if (res.inclinacoes && res.inclinacoes.length > 0) {
 }
 
 html += `
-<div class="separador-luxo"><div class="caixa-interna"><h2>Inclinações</h2></div></div>
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
 <div class="page">
-    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Inclinações</h2>
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
     <div class="intro-texto">${textos.introducoes.inclinacoes || ""}</div>
     ${conteudoInclinacoes}
-</div>`;
-
+</div>
+`;
 // ==========================================
 
 
