@@ -5124,7 +5124,8 @@ if (res.deficitsOcultos.length > 0) {
 }
 html += `</div>`;
 
-        
+  // Primeiro, garantimos que temos os dados
+const dadosDesafio3 = textos.desafios[3][res.desafios[3]];      
 // Crie esta linha logo ACIMA do código da ondinha:
  tituloBonito = "O seu DESAFIO PRINCIPAL"; 
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
@@ -5153,10 +5154,12 @@ html += `
 <p>Ao dominar esta lição central, você deixa de ser refém das circunstâncias para se tornar o arquiteto consciente do seu destino. A integração bem-sucedida desta energia é o que garante que sua caminhada seja leve e produtiva, transformando fraquezas em diferenciais de caráter. Este é o convite final da numerologia: converter o seu maior desafio na sua maior realização, vivendo em total harmonia com as leis que regem o seu universo pessoal.</p>
     </div>
         
-         <div class="evitar-corte texto-res">${aplicarFiltroTexto(textos.desafios[3][res.desafios[3]])}</div>
-      
+        <div class="evitar-corte texto-res">
+            ${dadosDesafio3 ? aplicarFiltroTexto(dadosDesafio3.conteudo) : ""}
+            ${(dadosDesafio3 && dadosDesafio3.videoID) ? gerarPlayerYouTube(dadosDesafio3.videoID) : ""}
+        </div>
     </div>
-`;    
+`; 
 
     
     
