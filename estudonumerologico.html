@@ -4811,6 +4811,10 @@ html += `
 </div>
 `;
 
+console.log("--- DEBUG DESEJO OCULTO ---");
+console.log("Número calculado:", dadosDesejo.numero);
+console.log("Texto encontrado:", textos.desejoOculto[dadosDesejo.numero]);
+console.log("Resultado do filtro:", aplicarFiltroTexto(textos.desejoOculto[dadosDesejo.numero]));
     
 html += `
     <div class="page">
@@ -4839,6 +4843,11 @@ if (res.inclinacoes && res.inclinacoes.length > 0) {
     res.inclinacoes.forEach(num => {
         // Busca o vídeo para cada número da inclinação
         const idVideoInc = buscarVideoID("inclinacoes", num, generoAtual);
+        
+            console.log("--- DEBUG INCLINAÇÃO ---");
+    console.log("Número atual:", num);
+    console.log("Texto raw:", textos.inclinacoes[num]);
+
         
         conteudoInclinacoes += `
             <div class="evitar-corte texto-res">
