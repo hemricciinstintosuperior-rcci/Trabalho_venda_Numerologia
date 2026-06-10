@@ -5730,7 +5730,8 @@ if (proximoAnoPessoal > 9) proximoAnoPessoal = 1;
 
 const mesParaCronograma = res.mesNascimento; 
 const anoAtualParaCronograma = res.anoPessoal;
-
+const dadosAnoAtual = textos.anoPessoal[res.anoPessoal] || { conteudo: "Conteúdo não disponível", videoID: null };
+const dadosProximoAno = textos.anoPessoal[proximoAnoPessoal] || { conteudo: "Conteúdo não disponível", videoID: null };
 // =========================================================
 // BLOCO 1: ANO PESSOAL ATUAL + SEUS MESES
 // =========================================================
