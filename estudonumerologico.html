@@ -3389,41 +3389,27 @@ function buscarVideoID(categoria, valor, genero) {
 
 
 function obterVideosParaItem(item) {
-    // PROTEÇÃO: Se a variável global 'res' não existir, aborta a busca
-    if (typeof res === 'undefined') {
-        console.warn("Aviso: Tentativa de buscar vídeos antes de 'res' ser definido.");
-        return [];
+    let listaVideos = [];
+    let valoresParaBuscar = [];
+
+    // Garante que o gênero sempre tenha um valor
+    const gen = (typeof generoAtual !== 'undefined') ? generoAtual : 'masculino';
+
+    if (Array.isArray(item.valor)) {
+        valoresParaBuscar = item.valor;
+    } else if (typeof item.valor === 'object') {
+        valoresParaBuscar = Object.values(item.valor);
+    } else {
+        valoresParaBuscar = [item.valor];
     }
 
-    // Se o item não tiver categoria, não buscamos vídeo
-    if (!item || !item.categoria) return [];
+    valoresParaBuscar.forEach(val => {
+        // Usa 'gen' que capturamos do escopo global
+        const id = buscarVideoID(item.categoria, val.toString().split(' ')[0], gen);
+        if (id) listaVideos.push({ id: id, label: val });
+    });
 
-    // Lógica para categorias complexas (Ciclos, Momentos, Desafios)
-    if (["ciclos", "momentos", "desafios"].includes(item.categoria)) {
-        let lista = [];
-        let dadosCategoria = textos[item.categoria];
-        
-        if (dadosCategoria && res[item.categoria]) {
-            for (let fase in res[item.categoria]) {
-                let valorFase = res[item.categoria][fase];
-                if (dadosCategoria[fase] && dadosCategoria[fase][valorFase]) {
-                    let dado = dadosCategoria[fase][valorFase];
-                    if (dado.videoID && dado.videoID.trim() !== "") {
-                        lista.push({ id: dado.videoID, label: item.label });
-                    }
-                }
-            }
-        }
-        return lista;
-    } 
-
-    // Lógica padrão para categorias simples
-    try {
-        let videoID = buscarVideoID(item.categoria, item.valor, generoAtual);
-        return (videoID && videoID.trim() !== "") ? [{ id: videoID, label: item.label }] : [];
-    } catch (e) {
-        return [];
-    }
+    return listaVideos;
 }
         
         
