@@ -3324,24 +3324,45 @@ function abrirVideoNovaAba(videoID) {
         
 
 function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
-    // 1. Pega os dados brutos do seu objeto textos
-    const dados = textos[chaveNoTexto][resObjeto];
-    
-    // 2. Aplica a mesma lógica de verificação que você já usa no Caminho de Vida
-    const conteudo = (typeof dados === 'object') ? dados.conteudo : dados;
-    const video = (typeof dados === 'object') ? dados.videoID : null;
+    const categoriaDados = textos[chaveNoTexto]; // ex: textos.ciclos
+    if (!categoriaDados) return '';
 
-    // 3. Retorna o HTML pronto
+    let htmlInterno = "";
+
+    // SE FOR OBJETO (Ciclos, Momentos, Desafios)
+    if (typeof resObjeto === 'object') {
+        for (let fase in resObjeto) {
+            let valorFase = resObjeto[fase]; // ex: 3
+            let dadosFase = categoriaDados[fase] ? categoriaDados[fase][valorFase] : null;
+
+            if (dadosFase) {
+                htmlInterno += `
+                <div style="margin-bottom: 20px;">
+                    <h3 style="color: #d97a1e;">Fase ${fase}:</h3>
+                    ${aplicarFiltroTexto(dadosFase.conteudo)}
+                    ${(dadosFase.videoID && dadosFase.videoID.trim() !== "") ? gerarPlayerYouTube(dadosFase.videoID) : ""}
+                </div>`;
+            }
+        }
+    } else {
+        // SE FOR TEXTO SIMPLES (Caminho de Vida, Essência, etc)
+        const dados = categoriaDados[resObjeto];
+        const conteudo = (typeof dados === 'object') ? dados.conteudo : dados;
+        const video = (typeof dados === 'object') ? dados.videoID : null;
+        
+        htmlInterno = `
+            ${aplicarFiltroTexto(conteudo)}
+            ${video ? gerarPlayerYouTube(video) : ""}`;
+    }
+
     return `
     <div class="page">
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${titulo}</h2>
         <div class="evitar-corte texto-res">
-            ${aplicarFiltroTexto(conteudo)}
-            ${video ? gerarPlayerYouTube(video) : ""}
+            ${htmlInterno}
         </div>
     </div>`;
 }
-
 
        
 
