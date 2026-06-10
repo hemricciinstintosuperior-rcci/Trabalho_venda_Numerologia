@@ -3312,15 +3312,7 @@ function gerarPlayerYouTube(videoID) {
     return playerHTML + linkPDF;
 }
 
-function abrirVideoNovaAba(videoID) {
-    if (!videoID) {
-        console.error("ID não encontrado!");
-        return;
-    }
-    // Abre o vídeo do YouTube em uma nova aba
-    const urlYouTube = `https://www.youtube.com/watch?v=${videoID}`;
-    window.open(urlYouTube, '_blank');
-}
+
         
 
 function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
@@ -3388,29 +3380,7 @@ function buscarVideoID(categoria, valor, genero) {
 }
 
 
-function obterVideosParaItem(item) {
-    let listaVideos = [];
-    let valoresParaBuscar = [];
 
-    // Garante que o gênero sempre tenha um valor
-    const gen = (typeof generoAtual !== 'undefined') ? generoAtual : 'masculino';
-
-    if (Array.isArray(item.valor)) {
-        valoresParaBuscar = item.valor;
-    } else if (typeof item.valor === 'object') {
-        valoresParaBuscar = Object.values(item.valor);
-    } else {
-        valoresParaBuscar = [item.valor];
-    }
-
-    valoresParaBuscar.forEach(val => {
-        // Usa 'gen' que capturamos do escopo global
-        const id = buscarVideoID(item.categoria, val.toString().split(' ')[0], gen);
-        if (id) listaVideos.push({ id: id, label: val });
-    });
-
-    return listaVideos;
-}
         
         
 function gerarMapaCompleto(generoAtual) {
@@ -4499,40 +4469,24 @@ ${listaItensSintese.map(item => {
     const itensPremium = ["Caminho de Vida", "Ciclos da Vida", "Desafios", "Momentos de Decisão"];
     const estaTravado = itensPremium.includes(item.label) && !acessoPremiumLiberado;
 
-    // 2. Extração segura do conteúdo (evita erro de substring/objeto)
+    // 2. Extração de texto de forma simples e segura
     let exibicaoValor = "";
     if (estaTravado) {
         exibicaoValor = "🔒 CONTEÚDO PREMIUM";
     } else if (typeof item.valor === 'object' && item.valor !== null) {
-        // Extrai o conteúdo de cada sub-item (fases)
-        exibicaoValor = Object.values(item.valor)
-            .map(v => (typeof v === 'object' && v.conteudo) ? v.conteudo : v)
-            .join(' · ');
+        // Se for objeto (como Ciclos/Momentos), pega apenas o valor bruto, sem tentar processar fases
+        exibicaoValor = Object.values(item.valor).join(' · ');
     } else {
-        exibicaoValor = String(item.valor || "");
+        exibicaoValor = String(item.valor || "--");
     }
 
-    // 3. Busca de vídeos (agora lida corretamente com objetos)
-    const listaVideos = !estaTravado ? obterVideosParaItem(item) : [];
-
-    // 4. Retorno do HTML
+    // 3. Montagem do HTML limpo (sem lógica de vídeos)
     return `
-    <div style="border: 1px solid #ccc; padding: 10px; margin: 5px; height: 180px; display: flex; flex-direction: column; overflow: hidden;">
+    <div style="border: 1px solid #ccc; padding: 10px; margin: 5px; height: 120px; overflow: hidden; display: flex; flex-direction: column;">
         <div style="font-weight: bold; font-size: 13px; margin-bottom: 5px;">${item.label}</div>
-        <div style="font-size: 11px; color: #333; overflow-y: auto; flex-grow: 1;">${aplicarFiltroTexto(exibicaoValor)}</div>
-        
-        ${listaVideos.map(v => `
-            <div style="margin-top: 5px;">
-                <button onclick="abrirVideoNovaAba('${v.id}')" style="width: 100%; background: #d97a1e; color: white; cursor: pointer; padding: 2px; font-size: 10px;">
-                    🎥 Vídeo
-                </button>
-                <div class="link-pdf-apenas" style="display: none; margin-top: 5px; text-align: center;">
-                    <a href="https://www.youtube.com/embed/$5{v.id}" target="_blank" style="color: #d97a1e; font-weight: bold; font-size: 10px;">
-                        ▶ Ver Vídeo (PDF)
-                    </a>
-                </div>
-            </div>
-        `).join('')}
+        <div style="font-size: 12px; color: #333; overflow-y: auto;">
+            ${aplicarFiltroTexto(exibicaoValor)}
+        </div>
     </div>`;
 }).join('')}
     </div>
