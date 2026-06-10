@@ -5401,7 +5401,7 @@ html += `
 const textoCoresRaw = obterCoresFavoraveis(res.Personalidade);
 // Divide pelas vírgulas
 const itensCores = textoCoresRaw.replace('.', '').split(',').map(c => c.trim());
-
+const idVideoCores = buscarVideoID("coresFavoraveis", res.Personalidade, generoAtual);
 const mapaCoresHex = {
     "Vermelho": "#e74c3c", "Laranja": "#e67e22", "Amarelo": "#f1c40f", "Verde": "#27ae60", 
     "Azul": "#3498db", "Rosa": "#fd79a8", "Branco": "#ffffff", "Preto": "#2d3436", 
@@ -5467,13 +5467,15 @@ html += `
             `;
         }).join('')}
     </div>
+    <div class="evitar-corte texto-res" style="margin-top: 30px; text-align: center;">
+        ${idVideoCores ? gerarPlayerYouTube(idVideoCores) : ""}
+    </div>
 </div>
 `;
-    
 
 // --- BLOCO: DIAS DE PODER E VIBRAÇÃO SEMANAL ---
 const diasPoder = obterDiasFavoraveisRessonancia(res.dia);
-
+const idVideoPoder = buscarVideoID("diasPoder", res.dia, generoAtual); // Busca do vídeo
 const diaSemanaVib = obterDiaSemanaVibracional(res.dia);
 const legendaVib = obterLegendaVibração(res.dia); // Chamada da nova função
 tituloBonito = "Dias de Poder e Fluxo Vital";
@@ -5497,6 +5499,8 @@ html += `
                     </div>
                 `).join('')}
             </div>
+
+
             
             <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(218, 165, 32, 0.3);">
                 <p style="margin: 0; color: #333; font-weight: bold;">Sua Vibração Semanal Regente:</p>
@@ -5513,7 +5517,12 @@ html += `
         * Sempre que um dia de poder cair em uma ${diaSemanaVib}, você terá um "Dia de Ouro".
     </p>
 </div>
-`;
+
+  
+    <div class="evitar-corte texto-res" style="margin-top: 20px;">
+        ${idVideoPoder ? gerarPlayerYouTube(idVideoPoder) : ""}
+    </div>
+</div>`,
 
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
