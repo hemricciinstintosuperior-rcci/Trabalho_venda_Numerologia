@@ -2939,44 +2939,26 @@ function obterDiasFavoraveisRessonancia(diaNascimento) {
 function obterDiaSemanaVibracional(diaNascimento) {
     const radical = reduzirPuro(diaNascimento);
     const tabelaVibracional = {
-        1:{
-     conteudo: "Domingo",
-              videoID: "F8bg1CTQ9HI"
-    },
-            
-        2: {
-     conteudo:"Segunda-feira",
-              videoID: "F8bg1CTQ9HI"
-    },
-        3: {
-     conteudo:"Quinta-feira",
-              videoID: "F8bg1CTQ9HI"
-    },
-        4: {
-     conteudo:"Domingo",
-              videoID: "F8bg1CTQ9HI"
-    },
-        5: {
-     conteudo:"Quarta-feira",
-              videoID: "F8bg1CTQ9HI"
-    },
-        6: {
-     conteudo:"Sexta-feira",
-              videoID: "F8bg1CTQ9HI"
-    },
-        7: {
-     conteudo:"Segunda-feira",
-              videoID: "F8bg1CTQ9HI"
-    },
-        8: {
-     conteudo:"Sábado",
-              videoID: "F8bg1CTQ9HI"
-    },
-        9: {
-     conteudo:"Terça-feira",
-              videoID: "F8bg1CTQ9HI"
-    }
+        1: "Domingo",
+                  
+        2: "Segunda-feira",
+         
+        3: "Quinta-feira",
+        
+        4: "Domingo",
+    
+        5: "Quarta-feira",
+      
+        6: "Sexta-feira",
+        
+        7: "Segunda-feira",
+        
+        8: "Sábado",
+      
+        9: "Terça-feira"
+        
     };
+    
     return tabelaVibracional[radical] || "Não identificado";
 }  
 
@@ -4584,64 +4566,6 @@ ${listaItensSintese.map(item => {
 
 </div> `;
 
-const nomeSocialValor = document.getElementById("nomeSocial").value.trim();
-// --- PÁGINA 2: NOME SOCIAL (COMPACTADA PARA NÃO PULAR) ---
-if (nomeSocialValor !== "") {
-    if (!res.social) { res.social = calcularNumerosSocial(nomeSocialValor); }
-    const tMot = textos.nomeSocial.motivacao[res.social.motivacao];
-    const tImp = textos.nomeSocial.impressao[res.social.influencia];
-    const tPer = textos.nomeSocial.personalidade[res.social.personalidade];
-
-    html += `
-    <div class="page" style="height: 100vh; max-height: 1120px; padding: 20px; box-sizing: border-box; overflow: hidden; page-break-before: always; display: flex; flex-direction: column;">
-        <div class="separador-luxo" style="margin-bottom: 10px;">
-            <div class="caixa-interna">
-                <h2 style="font-size: 1.5rem;">Seu nome social: ${nomeSocialValor}</h2>
-            </div>
-        </div>
-        
-        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-            <div style="text-align: center;">
-                <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 5px; font-size: 20px;">Análise da Frequência Social</h2>
-                      <p>O nome pelo qual escolhemos ser chamados atua como uma "assinatura vibracional". Enquanto o nome de registro contém o projeto original da sua alma, o nome <strong>${nomeSocialValor}</strong> funciona como a interface com a qual você se apresenta ao mundo.</p>
-                <p>Esta análise revela como esse apelido ou nome social ajusta sua personalidade, motivação e a impressão que você causa nos outros.</p>
-            </div>
-
-       <div style="display: flex; justify-content: center; gap: 15px; margin: 10px 0;">
-    <div style="text-align: center; background: #fdfaf0; padding: 5px 10px; border-radius: 6px; border: 1px solid #e0d5a8; min-width: 80px;">
-        <p style="font-size: 0.55rem; font-weight: bold; color: #827108; margin: 0; text-transform: uppercase;">Motivação</p>
-        <span style="font-size: 1.2rem; font-weight: bold; display: block; line-height: 1;">${res.social.motivacao}</span>
-    </div>
-    
-    <div style="text-align: center; background: #fffcf5; padding: 5px 10px; border-radius: 6px; border: 1.5px solid var(--gold); min-width: 90px;">
-        <p style="font-size: 0.55rem; font-weight: bold; color: #827108; margin: 0; text-transform: uppercase;">Personalidade</p>
-        <span style="font-size: 1.4rem; font-weight: bold; display: block; line-height: 1;">${res.social.personalidade}</span>
-    </div>
-
-    <div style="text-align: center; background: #fdfaf0; padding: 5px 10px; border-radius: 6px; border: 1px solid #e0d5a8; min-width: 80px;">
-        <p style="font-size: 0.55rem; font-weight: bold; color: #827108; margin: 0; text-transform: uppercase;">Impressão</p>
-        <span style="font-size: 1.2rem; font-weight: bold; display: block; line-height: 1;">${res.social.influencia}</span>
-    </div>
-</div>
-
-<div style="background: #f9f9f9; padding: 12px; border-radius: 8px; border-left: 4px solid var(--gold); font-size: 18px; margin-top: 5px;">
-    <p style="margin-bottom: 5px;"><strong>Vontade Interna:</strong> ${aplicarFiltroTexto(tMot)}</p><br>
-    <p style="margin: 0;"><strong>Imagem Externa:</strong> ${aplicarFiltroTexto(tImp)}</p>
-</div>
-            
-
-            <div style="margin-top: 15px;">
-                <h3 style="text-align: center; color: #827108; font-size: 1.1rem; margin-bottom: 10px;">A Síntese da sua Expressão: ${res.social.personalidade}</h3>
-                <div style="font-size: 18px; line-height: 1; text-align: justify;">
-                    ${aplicarFiltroTexto(tPer)}
-                
-              
-            </div>
-            </div>
-        </div>
-    </div>
-    `;
-}
 
 
 
@@ -5578,6 +5502,68 @@ html += `
         ${idVideoPoder ? gerarPlayerYouTube(idVideoPoder) : ""}
     </div>
 </div>`,
+
+
+const nomeSocialValor = document.getElementById("nomeSocial").value.trim();
+// --- PÁGINA 2: NOME SOCIAL (COMPACTADA PARA NÃO PULAR) ---
+if (nomeSocialValor !== "") {
+    if (!res.social) { res.social = calcularNumerosSocial(nomeSocialValor); }
+    const tMot = textos.nomeSocial.motivacao[res.social.motivacao];
+    const tImp = textos.nomeSocial.impressao[res.social.influencia];
+    const tPer = textos.nomeSocial.personalidade[res.social.personalidade];
+
+    html += `
+    <div class="page" style="height: 100vh; max-height: 1120px; padding: 20px; box-sizing: border-box; overflow: hidden; page-break-before: always; display: flex; flex-direction: column;">
+        <div class="separador-luxo" style="margin-bottom: 10px;">
+            <div class="caixa-interna">
+                <h2 style="font-size: 1.5rem;">Seu nome social: ${nomeSocialValor}</h2>
+            </div>
+        </div>
+        
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div style="text-align: center;">
+                <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 5px; font-size: 20px;">Análise da Frequência Social</h2>
+                      <p>O nome pelo qual escolhemos ser chamados atua como uma "assinatura vibracional". Enquanto o nome de registro contém o projeto original da sua alma, o nome <strong>${nomeSocialValor}</strong> funciona como a interface com a qual você se apresenta ao mundo.</p>
+                <p>Esta análise revela como esse apelido ou nome social ajusta sua personalidade, motivação e a impressão que você causa nos outros.</p>
+            </div>
+
+       <div style="display: flex; justify-content: center; gap: 15px; margin: 10px 0;">
+    <div style="text-align: center; background: #fdfaf0; padding: 5px 10px; border-radius: 6px; border: 1px solid #e0d5a8; min-width: 80px;">
+        <p style="font-size: 0.55rem; font-weight: bold; color: #827108; margin: 0; text-transform: uppercase;">Motivação</p>
+        <span style="font-size: 1.2rem; font-weight: bold; display: block; line-height: 1;">${res.social.motivacao}</span>
+    </div>
+    
+    <div style="text-align: center; background: #fffcf5; padding: 5px 10px; border-radius: 6px; border: 1.5px solid var(--gold); min-width: 90px;">
+        <p style="font-size: 0.55rem; font-weight: bold; color: #827108; margin: 0; text-transform: uppercase;">Personalidade</p>
+        <span style="font-size: 1.4rem; font-weight: bold; display: block; line-height: 1;">${res.social.personalidade}</span>
+    </div>
+
+    <div style="text-align: center; background: #fdfaf0; padding: 5px 10px; border-radius: 6px; border: 1px solid #e0d5a8; min-width: 80px;">
+        <p style="font-size: 0.55rem; font-weight: bold; color: #827108; margin: 0; text-transform: uppercase;">Impressão</p>
+        <span style="font-size: 1.2rem; font-weight: bold; display: block; line-height: 1;">${res.social.influencia}</span>
+    </div>
+</div>
+
+<div style="background: #f9f9f9; padding: 12px; border-radius: 8px; border-left: 4px solid var(--gold); font-size: 18px; margin-top: 5px;">
+    <p style="margin-bottom: 5px;"><strong>Vontade Interna:</strong> ${aplicarFiltroTexto(tMot)}</p><br>
+    <p style="margin: 0;"><strong>Imagem Externa:</strong> ${aplicarFiltroTexto(tImp)}</p>
+</div>
+            
+
+            <div style="margin-top: 15px;">
+                <h3 style="text-align: center; color: #827108; font-size: 1.1rem; margin-bottom: 10px;">A Síntese da sua Expressão: ${res.social.personalidade}</h3>
+                <div style="font-size: 18px; line-height: 1; text-align: justify;">
+                    ${aplicarFiltroTexto(tPer)}
+                
+              
+            </div>
+            </div>
+        </div>
+    </div>
+    `;
+}
+
+    
 
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
