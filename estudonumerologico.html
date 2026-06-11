@@ -2939,15 +2939,43 @@ function obterDiasFavoraveisRessonancia(diaNascimento) {
 function obterDiaSemanaVibracional(diaNascimento) {
     const radical = reduzirPuro(diaNascimento);
     const tabelaVibracional = {
-        1: "Domingo",
-        2: "Segunda-feira",
-        3: "Quinta-feira",
-        4: "Domingo",
-        5: "Quarta-feira",
-        6: "Sexta-feira",
-        7: "Segunda-feira",
-        8: "Sábado",
-        9: "Terça-feira"
+        1:{
+     conteudo: "Domingo",
+              videoID: "F8bg1CTQ9HI"
+    },
+            
+        2: {
+     conteudo:"Segunda-feira",
+              videoID: "F8bg1CTQ9HI"
+    },
+        3: {
+     conteudo:"Quinta-feira",
+              videoID: "F8bg1CTQ9HI"
+    },
+        4: {
+     conteudo:"Domingo",
+              videoID: "F8bg1CTQ9HI"
+    },
+        5: {
+     conteudo:"Quarta-feira",
+              videoID: "F8bg1CTQ9HI"
+    },
+        6: {
+     conteudo:"Sexta-feira",
+              videoID: "F8bg1CTQ9HI"
+    },
+        7: {
+     conteudo:"Segunda-feira",
+              videoID: "F8bg1CTQ9HI"
+    },
+        8: {
+     conteudo:"Sábado",
+              videoID: "F8bg1CTQ9HI"
+    },
+        9: {
+     conteudo:"Terça-feira",
+              videoID: "F8bg1CTQ9HI"
+    }
     };
     return tabelaVibracional[radical] || "Não identificado";
 }  
