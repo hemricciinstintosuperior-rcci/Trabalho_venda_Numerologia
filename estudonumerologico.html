@@ -3745,7 +3745,7 @@ const datasFases = {
 const piramideVida = gerarPiramide(nomeRaw);
 const regenteVida = piramideVida.at(-1)[0];
 const dadosNegativas = detectarNegativas(piramideVida);
-
+const nomeSocialValor = document.getElementById("nomeSocial").value.trim();
 
 
 
@@ -5504,7 +5504,7 @@ html += `
 </div>`,
 
 
-const nomeSocialValor = document.getElementById("nomeSocial").value.trim();
+
 // --- PÁGINA 2: NOME SOCIAL (COMPACTADA PARA NÃO PULAR) ---
 if (nomeSocialValor !== "") {
     if (!res.social) { res.social = calcularNumerosSocial(nomeSocialValor); }
