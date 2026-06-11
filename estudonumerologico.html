@@ -2304,7 +2304,8 @@ h += `
         // 3. SEÇÃO DE TRÂNSITO (Alinhado com Letras de Passagem)
 let letrasAno = timelines.map(t => t[indiceAno % t.length]);
 let vTransitoCalculado = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValorLetra(l), 0));
-const idVideoTransito = buscarVideoID("transito", vTransitoCalculado, "masculino");
+// Acessa o seu objeto diretamente (sem buscar fora)
+const dadosTransito = window.TextosTransito ? window.TextosTransito[vTransitoCalculado] : null;
 // ... (seção de Trânsito)
 
 h += `
@@ -2323,22 +2324,20 @@ h += `
 
    <p style="margin-bottom: 20px;">Este ciclo funciona como uma bússola de autoconhecimento aplicado, mostrando exatamente onde você deve focar sua energia para que o seu desenvolvimento não seja apenas teórico, mas manifestado na prática cotidiana. O domínio sobre esta vibração permite que você transforme potenciais abstratos em realizações tangíveis, aproveitando a força combinada dos seus planos de expressão. Portanto, encare este período como uma oportunidade única de observar como sua estrutura interna molda o seu destino, ajustando suas velas de acordo com a poderosa corrente energética que o Ciclo de Trânsito propicia para a sua evolução pessoal e material.</p>
             </div>
+
 <div class="grupo-respostas-bloco pula-pagina">
      <div style="text-align:left; margin-bottom:15px;">
         <div class="resultado-bloco">
-
-        
             <h3>Seu Ciclo Trânsitório: <span style="color: var(--gold);">${vTransitoCalculado}</span></h3>
             <h3> IDADE: <span style="color: var(--gold);">${indiceAno} ANOS | PERÍODO: ${periodoVigente}</span></h3>
         </div>
 
         ${travado ? '<div class="conteudo-travado">' : '<div>'}
             <div class="texto-res">
-                ${aplicarFiltroTexto(window.TextosTransito ? window.TextosTransito[vTransitoCalculado] : "")}
+                ${(dadosTransito && dadosTransito.conteudo) ? aplicarFiltroTexto(dadosTransito.conteudo) : "<p>Conteúdo não disponível.</p>"}
             </div> 
             
-            <!-- VÍDEO TRÂNSITO -->
-            ${idVideoTransito ? `<div style="margin-top:20px;">${gerarPlayerYouTube(idVideoTransito)}</div>` : ""}
+            ${(dadosTransito && dadosTransito.videoID && dadosTransito.videoID.trim() !== "") ? `<div style="margin-top:20px;">${gerarPlayerYouTube(dadosTransito.videoID)}</div>` : ""}
             
         </div> ${travado ? '<div class="aviso-trava">🔒 CONTEÚDO LIBERADO NO PDF</div>' : ''} 
     </div>
