@@ -368,6 +368,42 @@ Se o número do Momento Decisivo coincide com o número de uma de suas Fraquezas
 },
 
 
+// Este é o seu depósito de vídeos. 
+// Coloque este código no seu textosestudonumerologico.js
+
+    "numerosHarmonicos": {
+        "1": "z1nW3rmNeEI",
+        "2": "z1nW3rmNeEI",
+        "3": "z1nW3rmNeEI",
+        "4": "z1nW3rmNeEI",
+        "5": "z1nW3rmNeEI",
+        "6": "ID_VIDEO_6",
+        "7": "ID_VIDEO_7",
+        "8": "ID_VIDEO_8",
+        "9": "z1nW3rmNeEI"
+    },
+    "coresFavoraveis": {
+        "1": "ID_VIDEO_1",
+        "2": "ID_VIDEO_2",
+        "3": "ID_VIDEO_3",
+        "4": "ID_VIDEO_4",
+        "5": "ID_VIDEO_5",
+        "6": "ID_VIDEO_6",
+        "7": "ID_VIDEO_7",
+        "8": "z1nW3rmNeEI",
+        "9": "ID_VIDEO_9"
+    },
+    "diasPoder": {
+        "1": "ID_VIDEO_1",
+        "2": "ID_VIDEO_2",
+        "3": "ID_VIDEO_3",
+        "4": "ID_VIDEO_4",
+        "5": "ID_VIDEO_5",
+        "6": "ID_VIDEO_6",
+        "7": "ID_VIDEO_7",
+        "8": "ID_VIDEO_8",
+        "9": "z1nW3rmNeEI"
+    },
 
 
  TransicoesCasamento : {
@@ -6321,41 +6357,5 @@ let textosSinteseExpressao = {
   videoID: "z1nW3rmNeEI"
     }
 };
-// Este é o seu depósito de vídeos. 
-// Coloque este código no seu textosestudonumerologico.js
-const bibliotecaVideos = {
-    "numerosHarmonicos": {
-        "1": "z1nW3rmNeEI",
-        "2": "z1nW3rmNeEI",
-        "3": "z1nW3rmNeEI",
-        "4": "z1nW3rmNeEI",
-        "5": "z1nW3rmNeEI",
-        "6": "ID_VIDEO_6",
-        "7": "ID_VIDEO_7",
-        "8": "ID_VIDEO_8",
-        "9": "z1nW3rmNeEI"
-    },
-    "coresFavoraveis": {
-        "1": "ID_VIDEO_1",
-        "2": "ID_VIDEO_2",
-        "3": "ID_VIDEO_3",
-        "4": "ID_VIDEO_4",
-        "5": "ID_VIDEO_5",
-        "6": "ID_VIDEO_6",
-        "7": "ID_VIDEO_7",
-        "8": "z1nW3rmNeEI",
-        "9": "ID_VIDEO_9"
-    },
-    "diasPoder": {
-        "1": "ID_VIDEO_1",
-        "2": "ID_VIDEO_2",
-        "3": "ID_VIDEO_3",
-        "4": "ID_VIDEO_4",
-        "5": "ID_VIDEO_5",
-        "6": "ID_VIDEO_6",
-        "7": "ID_VIDEO_7",
-        "8": "ID_VIDEO_8",
-        "9": "z1nW3rmNeEI"
-    }
-};
+
 
