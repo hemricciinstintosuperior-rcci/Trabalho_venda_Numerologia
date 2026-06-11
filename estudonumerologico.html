@@ -2166,7 +2166,8 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
             ((planosOrdenados[1].valor / ref > 0.75) ? "F" : (planosOrdenados[1].valor / ref >= 0.50) ? "M" : "f") +
             ((planosOrdenados[2].valor / ref > 0.75) ? "F" : (planosOrdenados[2].valor / ref >= 0.50) ? "M" : "f") +
             ((planosOrdenados[3].valor / ref > 0.75) ? "F" : (planosOrdenados[3].valor / ref >= 0.50) ? "M" : "f");
-
+// 1. BUSCA DOS VÍDEOS
+const idVideoSinteseMomento = buscarVideoID("sinteseMomento", siglaMomento, "masculino"); 
         const descricoesPerfilMomento = {
             criativo: `<p>"Sua energia de ação este ano está em fase de expansão e Criatividade"</p><p>Neste ciclo, sua forma de agir está mais arrojada. Você sentirá uma facilidade maior para encontrar saídas rápidas e originais para problemas que antes pareciam travados.</p>`,
             indeciso: `<p>"Sua forma de agir este ano está sob o filtro da sensibilidade e da Indecisão"</p><p>Este ciclo pede que você tenha mais cautela antes de tomar grandes decisões. É um ano para agir com diplomacia, evitando confrontos diretos.</p>`,
@@ -2268,9 +2269,8 @@ h += `</div>`;
 // 1. BUSCA DOS VÍDEOS
 // ... (dentro da função processarUmCiclo, após calcular siglaMomento e vTransitoCalculado)
 
-// 1. BUSCA DOS VÍDEOS
-const idVideoSinteseMomento = buscarVideoID("sinteseMomento", siglaMomento, "masculino"); 
-const idVideoTransito = buscarVideoID("transito", vTransitoCalculado, "masculino");
+
+
 
 // ... (seção de Síntese)
 
@@ -2305,7 +2305,7 @@ h += `
         // 3. SEÇÃO DE TRÂNSITO (Alinhado com Letras de Passagem)
 let letrasAno = timelines.map(t => t[indiceAno % t.length]);
 let vTransitoCalculado = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValorLetra(l), 0));
-
+const idVideoTransito = buscarVideoID("transito", vTransitoCalculado, "masculino");
 // ... (seção de Trânsito)
 
 h += `
