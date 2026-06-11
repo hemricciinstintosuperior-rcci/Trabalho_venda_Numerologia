@@ -6167,7 +6167,7 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito predominar por 3 anos ou mais, isso pode indicar um período tumultuado onde será necessário lidar com muitas mudanças. Independentemente disso, qualquer que seja o evento ocorrido, será benéfico para sua evolução a longo prazo.</p>
 <p>2. Os efeitos de um Trânsito 1 junto a um Ano Pessoal 1 são potencializados e exigem escolhas cuidadosas. Prepare-se para agir com visão de futuro e não resultados imediatos, garantindo que cada passo consolide sua nova liderança.</p>
-`,   videoID: " "
+`,   videoID: "z1nW3rmNeEI"
     },
 
  2:{
@@ -6181,7 +6181,7 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito predominar por 3 anos ou mais, é possível experimentar períodos de pressão psicológica. O segredo é transformar essa sensibilidade em diplomacia, evitando que as tensões externas afetem seu equilíbrio interior.</p>
 <p>2. Quando ocorre junto a um Ano Pessoal 2, os conflitos emocionais podem aumentar. Desenvolver o autocontrole e a disciplina ajudará você a manter o equilíbrio, transformando a vulnerabilidade em uma ferramenta de conexão humana e poder pessoal.</p>
-`,   videoID: " "
+`,   videoID: "z1nW3rmNeEI"
     },
 
  3:{
@@ -6195,7 +6195,7 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito predominar por 3 anos ou mais, pode representar uma grande virada positiva na sua vida. Você poderá alcançar recompensas e até fama mediante um trabalho bem feito e uma comunicação impecável.</p>
 <p>2. Junto a um Ano Pessoal 3, pode haver dificuldade em manter a autodisciplina. Evite a inquietação e o exibicionismo; mantenha o foco no futuro para que o sucesso de agora se transforme em prosperidade permanente nos próximos ciclos.</p>
-`,   videoID: " "
+`,   videoID: "z1nW3rmNeEI"
     },
 
  4:{
@@ -6221,7 +6221,7 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito durar 3 ou mais anos, pode refletir instabilidade se não houver controle. O segredo é abraçar a mudança com estratégia, evitando fugir das responsabilidades e usando a versatilidade a seu favor.</p>
 <p>2. Junto a um Ano Pessoal 5, pode surgir uma falsa sensação de falta de limites. Mantenha o equilíbrio e o senso ético, controlando a impulsividade. Use essa energia para inovar em seus projetos sem perder a base sólida que você já construiu.</p>
-`,   videoID: " "
+`,   videoID: "z1nW3rmNeEI"
     },
 
  6:{
@@ -6234,7 +6234,7 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito durar 3 anos ou mais, pode indicar a necessidade de lidar com muitos problemas familiares. Encare isso como uma missão de pacificação; ao organizar a vida dos outros, você aprenderá a maestria de organizar sua própria felicidade.</p>
 <p>2. Junto a um Ano Pessoal 6, as responsabilidades podem parecer pesadas. No entanto, se cumpridas com dedicação, as recompensas serão compensadoras. Evite se intrometer em questões alheias; foque em ser o exemplo de equilíbrio e justiça que todos esperam de você.</p>
-`,   videoID: " "
+`,   videoID: "z1nW3rmNeEI"
     },
 
  7:{
@@ -6247,7 +6247,7 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se o Trânsito 7 durar 3 anos ou mais, evite o isolamento excessivo ou o apego a detalhes sem benefício prático. Use esse tempo para se tornar um especialista em sua área, transformando o conhecimento em poder real.</p>
 <p>2. Junto com um Ano Pessoal 7, pode haver insatisfação ou retraimento. Não se feche para o mundo; use a meditação e o estudo para encontrar as respostas que procura, garantindo que essa fase de busca interior resulte em uma paz profunda e duradoura.</p>
-`,   videoID: " "
+`,   videoID: "z1nW3rmNeEI"
     },
 
  8:{
@@ -6260,7 +6260,7 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se o Trânsito 8 durar 3 anos ou mais, indica um desenvolvimento material extraordinário, favorecendo o reconhecimento, o poder e o status social em grau elevado. Prepare-se para assumir grandes responsabilidades e colher grandes lucros.</p>
 <p>2. Junto com um Ano Pessoal 8, o período pode ser estressante pelo excesso de dedicação à profissão. Use sua inteligência para delegar tarefas e mantenha o equilíbrio; assim, você desfrutará do poder e do status sem comprometer sua paz e sua harmonia pessoal.</p>
-`,   videoID: " "
+`,   videoID: "z1nW3rmNeEI"
     },
 
  9:{
@@ -6273,7 +6273,7 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se o Trânsito 9 durar 3 anos ou mais, evite se deixar iludir por crenças excessivas ou fanatismos. Mantenha sua visão humanitária, mas com os pés no chão, garantindo que seu idealismo resulte em benefícios práticos para você e para o mundo.</p>
 <p>2. Junto com um Ano Pessoal 9, o período pode ser emocionalmente desgastante. Mantenha a clareza de pensamentos e não tome decisões impulsivas de encerramento; deixe que o que deve ir embora saia naturalmente, preparando o terreno para a sua renovação total.</p>
-`,   videoID: " "
+`,   videoID: "z1nW3rmNeEI"
     
  }
 };
@@ -6288,37 +6288,37 @@ let textosSinteseExpressao = {
     // 2. TODOS EM EQUILÍBRIO (O que seria o antigo Alinhamento)
     "FMMM": {
      conteudo:"Este é o estado de **Platô de Estabilidade**. Não há um plano que tente atropelar os outros; todos operam na frequência do equilíbrio (Médio). É o melhor estado para quem busca uma vida ponderada, sem grandes picos de estresse ou quedas de energia. A conquista aqui vem da constância e da clareza, pois a mente, o corpo e a alma caminham em passos iguais.",
-  videoID: " "
+  videoID: "z1nW3rmNeEI"
     },
     // 3. TRÊS POTÊNCIAS E UM EQUILÍBRIO
     "FFFM": {
      conteudo:"O perfil de **Tripé de Sustentação Ampla**. Quase todos os seus canais de expressão operam em potência máxima. Isso indica uma personalidade multifacetada e com grande energia vital. O único plano em estado médio funciona como o seu 'porto seguro', o ponto onde você recarrega as energias quando o excesso de força dos outros três planos começa a exaurir seu sistema.",
-  videoID: " "
+  videoID: "z1nW3rmNeEI"
     },
     // 4. UMA POTÊNCIA ISOLADA (O MONOLITO)
     "Ffff": {
      conteudo:"Estamos diante de uma **POTÊNCIA ISOLADA **. Existe uma força avassaladora em apenas um plano, enquanto os outros três encontram-se em estado de retração (Fracos). Isso indica um especialista nato, alguém que foca toda sua existência em um único canal. O risco aqui é a negligência com as outras áreas da vida, exigindo um esforço consciente para 'resgatar' os planos que estão na sombra.",
-  videoID: " "
+  videoID: "z1nW3rmNeEI"
     },
     // 5. DOIS FORTES E DOIS FRACOS (SEM MEIO TERMO)
     "FFff": {
      conteudo:"Um perfil de **Perfil de Extremos opostos**. Você opera no sistema 'tudo ou nada'. Quando está engajado nos seus dois planos fortes, nada o detém. Porém, os planos fracos podem representar 'buracos negros' por onde sua energia escapa. É necessário usar a potência dos planos líderes para construir pontes de socorro para as áreas que estão desassistidas.",
-  videoID: " "
+  videoID: "z1nW3rmNeEI"
     },
     // 6. EQUILÍBRIO COM UM PONTO CEGO
     "FMMf": {
      conteudo:"Perfil de **Equilíbrio com Ponto de Resgate**. Você possui uma vida muito estável e equilibrada na maioria dos sentidos, porém existe um canal específico que está operando abaixo do mínimo necessário. Esse plano 'fraco' pode estar drenando sua paz silenciosamente. O foco deve ser estabilizar esse ponto de fuga para que o seu equilíbrio (médio) não seja comprometido.",
-  videoID: " "
+  videoID: "z1nW3rmNeEI"
     },
     // 7. PICO DE TRANSIÇÃO (UM FORTE, UM MÉDIO, DOIS FRACOS)
     "FMff": {
      conteudo:"Este é o **Pico de Transição Dinâmica**. Você tem um líder (Forte) e um braço direito (Médio), mas a sua base de sustentação ainda é frágil. É o perfil de quem está começando a expandir sua consciência ou suas capacidades, mas ainda sente o peso das limitações passadas nos planos que permanecem fracos.",
-  videoID: " "
+  videoID: "z1nW3rmNeEI"
     },
     // TEXTO DE SEGURANÇA
     "padrao": {
      conteudo:"Seu Plano de Expressão apresenta uma configuração única de intensidade dinâmica. A interação entre seus planos fortes, médios e fracos cria uma assinatura energética singular, exigindo que você utilize sempre o seu canal de maior pontuação como guia para equilibrar os demais.",
-  videoID: " "
+  videoID: "z1nW3rmNeEI"
     }
 
 
