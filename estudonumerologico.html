@@ -2077,33 +2077,36 @@ function montarHtmlPlanosNatural(nome) {
    
 // ... (seu código anterior até a parte da Síntese)
 
-// Acessa o objeto diretamente no seu array de textos
+// ... (dentro de montarHtmlPlanosNatural)
+
+// 1. Acessa o objeto diretamente
 const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"];
 
+// 2. Monta o HTML
 html += `
-<div class="evitar-corte" style="margin-top:40px; border:0px #ffffff; padding:25px; border-radius:12px; background:#fff;">
-    <div style="text-align:center; margin-bottom:20px;">
-        <span style="background:var(--gold); color:white; padding:4px 12px; border-radius:20px; font-size:11px; font-weight:bold;">
-            ${titulosEstrutura[sigla] || "SÍNTESE"}
-        </span>
-        <h3 style="margin-top:10px; text-transform:uppercase;">Síntese de Expressão Natural</h3>
-    </div>
-    
-    <div class="texto-res">${aplicarFiltroTexto(dadosSintese.conteudo)}</div>
-    
-    <!-- AQUI A MÁGICA: Verifica se tem ID e se não é apenas um espaço vazio -->
-    ${(dadosSintese.videoID && dadosSintese.videoID.trim() !== "") ? `<div style="margin-top:20px;">${gerarPlayerYouTube(dadosSintese.videoID)}</div>` : ""}
+    <div class="evitar-corte" style="margin-top:40px; border:0px #ffffff; padding:25px; border-radius:12px; background:#fff;">
+        <div style="text-align:center; margin-bottom:20px;">
+            <span style="background:var(--gold); color:white; padding:4px 12px; border-radius:20px; font-size:11px; font-weight:bold;">
+                ${titulosEstrutura[sigla] || "SÍNTESE"}
+            </span>
+            <h3 style="margin-top:10px; text-transform:uppercase;">Síntese de Expressão Natural</h3>
+        </div>
+        
+        <div class="texto-res">${aplicarFiltroTexto(dadosSintese.conteudo)}</div>
+        
+        <!-- AQUI: Ele lê o ID direto do seu objeto, sem buscar em outro lugar -->
+        ${(dadosSintese.videoID && dadosSintese.videoID.trim() !== "") ? `<div style="margin-top:20px;">${gerarPlayerYouTube(dadosSintese.videoID)}</div>` : ""}
 
-    <div style="margin-top:25px; background:var(--dark); color:var(--gold); padding:20px; border-radius:8px; text-align:center;">
-        <strong style="text-transform: uppercase;"> Diretriz de Equilíbrio: </strong><br>
-        <span style="font-size: 15px; color: #fff; opacity: 0.9;">
-            Utilize a energia do plano <strong>${nomesAmigaveis[_p1.chave]}</strong> para sustentar o plano <strong>${nomesAmigaveis[_p4.chave]}</strong>.
-        </span>
+        <div style="margin-top:25px; background:var(--dark); color:var(--gold); padding:20px; border-radius:8px; text-align:center;">
+            <strong style="text-transform: uppercase;"> Diretriz de Equilíbrio: </strong><br>
+            <span style="font-size: 15px; color: #fff; opacity: 0.9;">
+                Utilize a energia do plano <strong>${nomesAmigaveis[_p1.chave]}</strong> para sustentar o plano <strong>${nomesAmigaveis[_p4.chave]}</strong>.
+            </span>
+        </div>
     </div>
 </div>`;
 
 return html;
-}     
 
 // ============================================
 // FUNÇÃO: PLANO DE EXPRESSÃO DO MOMENTO (AUTOMÁTICO)
