@@ -5460,7 +5460,7 @@ html += `
             </div>
         `).join('')}</div>
      <div class="evitar-corte texto-res" style="margin-top: 20px;">
-        ${idVideoHarmonicos ? gerarPlayerYouTube(idVideoHarmonicos) : "z1nW3rmNeEI"}
+        ${idVideoHarmonicos ? gerarPlayerYouTube(idVideoHarmonicos) : ""}
     </div>
 </div>
          
@@ -5469,7 +5469,7 @@ html += `
     </p>
 </div>
 `;
-
+  videoID: "z1nW3rmNeEI",
 
 // Bloco das Cores Favoráveis
 const textoCoresRaw = obterCoresFavoraveis(res.Personalidade);
@@ -5542,12 +5542,12 @@ html += `
         }).join('')}
     </div>
     <div class="evitar-corte texto-res" style="margin-top: 30px; text-align: center;">
-        ${idVideoCores ? gerarPlayerYouTube(idVideoCores) : "z1nW3rmNeEI"}
+        ${idVideoCores ? gerarPlayerYouTube(idVideoCores) : ""}
     </div>
 </div>
 `;
 
-
+  videoID: "z1nW3rmNeEI",
 
 // --- BLOCO: DIAS DE PODER E VIBRAÇÃO SEMANAL ---
 const diasPoder = obterDiasFavoraveisRessonancia(res.dia);
@@ -5596,11 +5596,12 @@ html += `
 
   
     <div class="evitar-corte texto-res" style="margin-top: 20px;">
-        ${idVideoPoder ? gerarPlayerYouTube(idVideoPoder) : "z1nW3rmNeEI"}
+        ${idVideoPoder ? gerarPlayerYouTube(idVideoPoder) : ""}
     </div>
 </div>`,
 
-
+  videoID: "z1nW3rmNeEI",
+    
 
 
 
