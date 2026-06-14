@@ -3889,8 +3889,9 @@ html += `
             { t: "Parte 5: Complementares", c: " Número de Relacionamento ✶ Cores Favoráveis ✶ Dias de Poder do Mês ✶ Números harmonicos"}, 
             { t: "Parte 6: Ciclos", c: "Ciclos de Vida ✶ Momento de Decisão ✶ Desafios de Jornada"},
             { t: "Parte 7:  Tendências do Momento", c: "Status no Momento do Ciclo Atual ✶ Status no Momento do Segundo Ciclo ✶ Ciclos Trânsitórios ✶ Potenciais do Momento ✶ Ano Pessoal ✶ Mês Pessoal"},
-            { t: "Parte 8: A Grande Matriz", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Potências até 100 anos de idade"},
-            { t: "Parte 9: Filosofia e Ciência", c: "Contexto Histórico ✶ Conclusão Evolutiva ✶ Agradecimento"}
+            { t: "Parte 9: A Grande Matriz", c: "Ano Pessoal ✶ Mês Pessoal"},
+            { t: "Parte 9: A Grande Matriz", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Potências até 100 anos de idade"},
+            { t: "Parte 10: Filosofia e Ciência", c: "Contexto Histórico ✶ Conclusão Evolutiva ✶ Agradecimento"}
         ].map(item => `
             <div style="text-align: center;">
                 <h3 style="color: var(--gold); font-size: 1.6rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; font-weight: 600;">${item.t}</h3>
@@ -6175,6 +6176,45 @@ html += resultadoMomentoCompleto.html;
 
 // --- FIM DO BLOCO INTEGRADO ---
 
+
+html += `
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+              Parte 8 <br><br>Ano & Mês Pessoal
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudotransicao.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">A sua Realização</span>
+            <audio controls controlsList="nodownload" oncontextmenu="return false;" style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/caminho.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/caminho.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">A sua Realização</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 1.2; padding: 0 20px; box-sizing: border-box; margin: 0;">
+           Dois ciclos de Ano Pessoal e seus 24 meses.
+        </p>
+    </div>
+`;
+
+    
     
 // 1. CAPTURA SEGURA DA DATA (Evita o erro de 'null')
 const campoDataElemento = document.getElementById('dataNascimento');
@@ -6312,7 +6352,7 @@ html += `
         
         <div style="margin-top: 60px; z-index: 10; width: 100%;">
             <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-              Parte 8 <br><br>Matriz, Regente, Sequências Numéricas & Potências 
+              Parte 9 <br><br>Matriz, Regente, Sequências Numéricas & Potências 
             </h2>
         </div>
 
@@ -6805,7 +6845,7 @@ html += `
         
         <div style="margin-top: 60px; z-index: 10; width: 100%;">
             <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-               Parte 9 <br><br>FILOSOFIA, CIÊNCIA  & NUMEROLOGIA
+               Parte 10 <br><br>FILOSOFIA, CIÊNCIA  & NUMEROLOGIA
             </h2>
         </div>
 
