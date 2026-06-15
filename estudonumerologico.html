@@ -2173,12 +2173,19 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         const _p4 = planosOrdenados[3];
         const ref = _p1.valor || 1;
 
-        const siglaMomento = "F" + 
-            ((planosOrdenados[1].valor / ref > 0.75) ? "F" : (planosOrdenados[1].valor / ref >= 0.50) ? "M" : "f") +
-            ((planosOrdenados[2].valor / ref > 0.75) ? "F" : (planosOrdenados[2].valor / ref >= 0.50) ? "M" : "f") +
-            ((planosOrdenados[3].valor / ref > 0.75) ? "F" : (planosOrdenados[3].valor / ref >= 0.50) ? "M" : "f");
-// Dentro da Seção 2 de Síntese do Momento:
-const dadosSinteseMomento = textosSinteseExpressao[siglaMomento] || textosSinteseExpressao["padrao"];
+// Substitua o bloco antigo da siglaMomento por este:
+const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
+
+const siglaMomento = planosOrdenados.map(p => {
+    let r = p.valor / ref;
+    let intKey = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
+    return `${p.chave.toUpperCase()}(${mapSigla[intKey]})`;
+}).join("-");
+
+// Busca segura no seu objeto de textos
+const dadosSinteseMomento = textosSinteseExpressao[siglaMomento] || textosSinteseExpressao["padrao"] || { conteudo: "Conteúdo não disponível.", videoID: "" };
+
+       
         const descricoesPerfilMomento = {
             criativo: `<p>"Sua energia de ação este ano está em fase de expansão e Criatividade"</p><p>Neste ciclo, sua forma de agir está mais arrojada. Você sentirá uma facilidade maior para encontrar saídas rápidas e originais para problemas que antes pareciam travados.</p>`,
             indeciso: `<p>"Sua forma de agir este ano está sob o filtro da sensibilidade e da Indecisão"</p><p>Este ciclo pede que você tenha mais cautela antes de tomar grandes decisões. É um ano para agir com diplomacia, evitando confrontos diretos.</p>`,
