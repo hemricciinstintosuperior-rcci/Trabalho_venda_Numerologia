@@ -2010,9 +2010,17 @@ function montarHtmlPlanosNatural(nome) {
     const _p4 = planosOrdenados[3];
     const ref = _p1.valor || 1;
 
-// Cole este novo bloco no lugar:
-const sigla = planosOrdenados.map(p => p.chave.toUpperCase()).join("-");
-const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"];    
+// Mapeamento das siglas conforme sua regra
+const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
+
+// Monta a chave concatenando Nome(Sigla)
+const sigla = planosOrdenados.map(p => {
+    let r = p.valor / ref;
+    let intKey = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
+    return `${p.chave.toUpperCase()}(${mapSigla[intKey]})`;
+}).join("-");
+
+const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"];
 
     let html = `
         <div class="secao-card quebra-pagina">
