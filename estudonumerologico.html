@@ -2013,15 +2013,25 @@ function montarHtmlPlanosNatural(nome) {
 // Mapeamento das siglas conforme sua regra
 const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
 
-// Monta a chave concatenando Nome(Sigla)
-const sigla = planosOrdenados.map(p => {
-    let r = p.valor / ref;
-    let intKey = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
-    return `${p.chave.toUpperCase()}(${mapSigla[intKey]})`;
+// 1. Definimos o peso para cada intensidade
+const pesos = { forte: 3, medio: 2, fraco: 1 };
+
+// 2. Ordenamos os planos por intensidade antes de criar a sigla
+const planosOrdenadosPorIntensidade = [...planosOrdenados].sort((a, b) => {
+    // Calculamos a intensidade de cada um
+    const getInt = (valor) => (valor / ref > 0.75) ? "forte" : (valor / ref >= 0.50) ? "medio" : "fraco";
+    return pesos[getInt(b.valor)] - pesos[getInt(a.valor)];
+});
+
+// 3. Agora geramos a sigla com base nessa nova ordem
+const sigla = planosOrdenadosPorIntensidade.map(p => {
+    const r = p.valor / ref;
+    const intKey = (r > 0.75) ? "F" : (r >= 0.50) ? "M" : "FR";
+    return `${p.chave.toUpperCase()}(${intKey})`;
 }).join("-");
 
-// Substitua a linha atual por esta que evita o erro:
-const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"] || { conteudo: "Conteúdo não disponível para esta combinação.", videoID: "" };
+// 4. Busca no objeto
+const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"];
 
     let html = `
         <div class="secao-card quebra-pagina">
@@ -2176,13 +2186,24 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
 // Substitua o bloco antigo da siglaMomento por este:
 const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
 
-const siglaMomento = planosOrdenados.map(p => {
-    let r = p.valor / ref;
-    let intKey = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
+// 1. Definimos o peso para garantir a ordem: Forte > Médio > Fraco
+const pesos = { forte: 3, medio: 2, fraco: 1 };
+
+// 2. Criamos uma versão ordenada dos planos antes de montar a sigla
+const planosOrdenadosMomento = [...planosOrdenados].sort((a, b) => {
+    const getInt = (valor) => (valor / ref > 0.75) ? "forte" : (valor / ref >= 0.50) ? "medio" : "fraco";
+    return pesos[getInt(b.valor)] - pesos[getInt(a.valor)];
+});
+
+// 3. Montamos a sigla com base nessa ordem estrita
+const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
+const siglaMomento = planosOrdenadosMomento.map(p => {
+    const r = p.valor / ref;
+    const intKey = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
     return `${p.chave.toUpperCase()}(${mapSigla[intKey]})`;
 }).join("-");
 
-// Busca segura no seu objeto de textos
+// 4. Busca segura no seu objeto
 const dadosSinteseMomento = textosSinteseExpressao[siglaMomento] || textosSinteseExpressao["padrao"] || { conteudo: "Conteúdo não disponível.", videoID: "" };
 
        
