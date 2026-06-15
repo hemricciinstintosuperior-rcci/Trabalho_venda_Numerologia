@@ -6279,48 +6279,128 @@ window.TextosTransito = {
 };
 
 
-textosSinteseExpressao = {
-    // 1. DUAS POTÊNCIAS E DOIS EQUILÍBRIOS (Caso do Carlos)
-    "FFMM": {
-     conteudo:"O perfil apresenta uma **Dualidade de Potência**. Existem dois motores principais que operam em alta frequência, garantindo força de realização e intensidade. Os outros dois planos atuam como estabilizadores, operando no nível médio (equilíbrio). O desafio é não deixar que as duas potências dominantes abafem a voz dos planos equilibrados, mantendo a fluidez entre a ação e a moderação.",
-  videoID: "z1nW3rmNeEI"
-    },
-    // 2. TODOS EM EQUILÍBRIO (O que seria o antigo Alinhamento)
-    "FMMM": {
-     conteudo:"Este é o estado de **Platô de Estabilidade**. Não há um plano que tente atropelar os outros; todos operam na frequência do equilíbrio (Médio). É o melhor estado para quem busca uma vida ponderada, sem grandes picos de estresse ou quedas de energia. A conquista aqui vem da constância e da clareza, pois a mente, o corpo e a alma caminham em passos iguais.",
-  videoID: "z1nW3rmNeEI"
-    },
-    // 3. TRÊS POTÊNCIAS E UM EQUILÍBRIO
-    "FFFM": {
-     conteudo:"O perfil de **Tripé de Sustentação Ampla**. Quase todos os seus canais de expressão operam em potência máxima. Isso indica uma personalidade multifacetada e com grande energia vital. O único plano em estado médio funciona como o seu 'porto seguro', o ponto onde você recarrega as energias quando o excesso de força dos outros três planos começa a exaurir seu sistema.",
-  videoID: "z1nW3rmNeEI"
-    },
-    // 4. UMA POTÊNCIA ISOLADA (O MONOLITO)
-    "Ffff": {
-     conteudo:"Estamos diante de uma **POTÊNCIA ISOLADA **. Existe uma força avassaladora em apenas um plano, enquanto os outros três encontram-se em estado de retração (Fracos). Isso indica um especialista nato, alguém que foca toda sua existência em um único canal. O risco aqui é a negligência com as outras áreas da vida, exigindo um esforço consciente para 'resgatar' os planos que estão na sombra.",
-  videoID: "z1nW3rmNeEI"
-    },
-    // 5. DOIS FORTES E DOIS FRACOS (SEM MEIO TERMO)
-    "FFff": {
-     conteudo:"Um perfil de **Perfil de Extremos opostos**. Você opera no sistema 'tudo ou nada'. Quando está engajado nos seus dois planos fortes, nada o detém. Porém, os planos fracos podem representar 'buracos negros' por onde sua energia escapa. É necessário usar a potência dos planos líderes para construir pontes de socorro para as áreas que estão desassistidas.",
-  videoID: "z1nW3rmNeEI"
-    },
-    // 6. EQUILÍBRIO COM UM PONTO CEGO
-    "FMMf": {
-     conteudo:"Perfil de **Equilíbrio com Ponto de Resgate**. Você possui uma vida muito estável e equilibrada na maioria dos sentidos, porém existe um canal específico que está operando abaixo do mínimo necessário. Esse plano 'fraco' pode estar drenando sua paz silenciosamente. O foco deve ser estabilizar esse ponto de fuga para que o seu equilíbrio (médio) não seja comprometido.",
-  videoID: "z1nW3rmNeEI"
-    },
-    // 7. PICO DE TRANSIÇÃO (UM FORTE, UM MÉDIO, DOIS FRACOS)
-    "FMff": {
-     conteudo:"Este é o **Pico de Transição Dinâmica**. Você tem um líder (Forte) e um braço direito (Médio), mas a sua base de sustentação ainda é frágil. É o perfil de quem está começando a expandir sua consciência ou suas capacidades, mas ainda sente o peso das limitações passadas nos planos que permanecem fracos.",
-  videoID: "z1nW3rmNeEI"
-    },
-    // TEXTO DE SEGURANÇA
-    "padrao": {
-     conteudo:"Seu Plano de Expressão apresenta uma configuração única de intensidade dinâmica. A interação entre seus planos fortes, médios e fracos cria uma assinatura energética singular, exigindo que você utilize sempre o seu canal de maior pontuação como guia para equilibrar os demais.",
-  videoID: "z1nW3rmNeEI"
-    }
-};
+const textosSinteseExpressao = {
+    // FÍSICO(F) como P1 - Todas as combinações com Mental, Emocional e Intuitivo
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(F)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(M)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(Fr)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(Fr)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(M)-EMOCIONAL(F)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(M)-EMOCIONAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(M)-EMOCIONAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(M)-EMOCIONAL(M)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(M)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(M)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(M)-EMOCIONAL(Fr)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(M)-EMOCIONAL(Fr)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(M)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(F)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(M)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(Fr)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(Fr)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
 
+// MENTAL(F) como P1 - Todas as combinações com Físico, Emocional e Intuitivo
+"MENTAL(F)-FISICO(F)-EMOCIONAL(F)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(M)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(Fr)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(Fr)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
 
+"MENTAL(F)-FISICO(M)-EMOCIONAL(F)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(M)-EMOCIONAL(F)-INTUITIVO(M)": { conteudo: "aaaaaaaaaaaaaaaaaaaaaddddddddd", videoID: "z1nW3rmNeEI" },
+"MENTAL(F)-FISICO(M)-EMOCIONAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(M)-EMOCIONAL(M)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(M)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(M)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(M)-EMOCIONAL(Fr)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(M)-EMOCIONAL(Fr)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(M)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+
+"MENTAL(F)-FISICO(Fr)-EMOCIONAL(F)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(Fr)-EMOCIONAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(Fr)-EMOCIONAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(Fr)-EMOCIONAL(M)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(Fr)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(Fr)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(Fr)-EMOCIONAL(Fr)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(Fr)-EMOCIONAL(Fr)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"MENTAL(F)-FISICO(Fr)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+
+// EMOCIONAL(F) como P1 - Todas as combinações com Físico, Mental e Intuitivo
+"EMOCIONAL(F)-FISICO(F)-MENTAL(F)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(M)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(Fr)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(Fr)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+
+"EMOCIONAL(F)-FISICO(M)-MENTAL(F)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(M)-MENTAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(M)-MENTAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(M)-MENTAL(M)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(M)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(M)-MENTAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(M)-MENTAL(Fr)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(M)-MENTAL(Fr)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(M)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+
+"EMOCIONAL(F)-FISICO(Fr)-MENTAL(F)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(Fr)-MENTAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(Fr)-MENTAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(Fr)-MENTAL(M)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(Fr)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(Fr)-MENTAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(Fr)-MENTAL(Fr)-INTUITIVO(F)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(Fr)-MENTAL(Fr)-INTUITIVO(M)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-FISICO(Fr)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
+
+// INTUITIVO(F) como P1 - Todas as combinações com Físico, Mental e Emocional
+"INTUITIVO(F)-FISICO(F)-MENTAL(F)-EMOCIONAL(F)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(F)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(F)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(M)-EMOCIONAL(F)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(Fr)-EMOCIONAL(F)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(Fr)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
+
+"INTUITIVO(F)-FISICO(M)-MENTAL(F)-EMOCIONAL(F)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(M)-MENTAL(F)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(M)-MENTAL(F)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(M)-MENTAL(M)-EMOCIONAL(F)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(M)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(M)-MENTAL(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(M)-MENTAL(Fr)-EMOCIONAL(F)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(M)-MENTAL(Fr)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(M)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
+
+"INTUITIVO(F)-FISICO(Fr)-MENTAL(F)-EMOCIONAL(F)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(Fr)-MENTAL(F)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(Fr)-MENTAL(F)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(Fr)-MENTAL(M)-EMOCIONAL(F)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(Fr)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(Fr)-MENTAL(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(Fr)-MENTAL(Fr)-EMOCIONAL(F)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(Fr)-MENTAL(Fr)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-FISICO(Fr)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" }
+
+ };
 
