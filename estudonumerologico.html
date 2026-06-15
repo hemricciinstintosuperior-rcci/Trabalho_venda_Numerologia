@@ -2010,8 +2010,7 @@ function montarHtmlPlanosNatural(nome) {
     const _p4 = planosOrdenados[3];
     const ref = _p1.valor || 1;
 
-// Mapeamento das siglas conforme sua regra
-const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
+
 
 // 1. Definimos o peso para cada intensidade
 const pesos = { forte: 3, medio: 2, fraco: 1 };
@@ -2183,8 +2182,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         const _p4 = planosOrdenados[3];
         const ref = _p1.valor || 1;
 
-// Substitua o bloco antigo da siglaMomento por este:
-const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
+
 
 // 1. Definimos o peso para garantir a ordem: Forte > Médio > Fraco
 const pesos = { forte: 3, medio: 2, fraco: 1 };
