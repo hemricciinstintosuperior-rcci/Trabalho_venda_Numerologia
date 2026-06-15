@@ -2023,11 +2023,23 @@ const planosOrdenadosPorIntensidade = [...planosOrdenados].sort((a, b) => {
 });
 
 // 3. Agora geramos a sigla com base nessa nova ordem
-const sigla = planosOrdenadosPorIntensidade.map(p => {
-    const r = p.valor / ref;
-    const intKey = (r > 0.75) ? "F" : (r >= 0.50) ? "M" : "FR";
-    return `${p.chave.toUpperCase()}(${intKey})`;
+// A ordem dos planos no seu objeto é sempre: FISICO, MENTAL, EMOCIONAL, INTUITIVO
+const ordemFixa = ["FISICO", "MENTAL", "EMOCIONAL", "INTUITIVO"];
+
+// Montamos a sigla exatamente na ordem que você cadastrou
+const sigla = ordemFixa.map(nome => {
+    // Busca o plano correspondente no seu array 'planosOrdenados'
+    const plano = planosOrdenados.find(p => p.chave.toUpperCase() === nome);
+    const r = plano.valor / ref;
+    
+    // Define a letra de intensidade
+    const intKey = (r > 0.75) ? "F" : (r >= 0.50) ? "M" : "Fr";
+    
+    return `${nome}(${intKey})`;
 }).join("-");
+
+// Agora a 'sigla' gerada será, por exemplo: "FISICO(F)-MENTAL(M)-EMOCIONAL(F)-INTUITIVO(Fr)"
+// Isso baterá 100% com o formato das chaves que você cadastrou!
 
 // 4. Busca no objeto
 const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"];
@@ -2195,15 +2207,31 @@ const planosOrdenadosMomento = [...planosOrdenados].sort((a, b) => {
 
 // 3. Montamos a sigla com base nessa ordem estrita
 const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
-const siglaMomento = planosOrdenadosMomento.map(p => {
-    const r = p.valor / ref;
-    const intKey = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
-    return `${p.chave.toUpperCase()}(${mapSigla[intKey]})`;
+
+// 3. Montamos a sigla com base nessa ordem estrita
+// A ordem dos planos no seu objeto é sempre: FISICO, MENTAL, EMOCIONAL, INTUITIVO
+const ordemFixa = ["FISICO", "MENTAL", "EMOCIONAL", "INTUITIVO"];
+
+const siglaMomento = ordemFixa.map(nome => {
+    const plano = planosOrdenados.find(p => p.chave.toUpperCase() === nome);
+    
+    // Verificação de segurança: se o plano não existir, assume valor 0 ou um padrão
+    const valor = plano ? plano.valor : 0; 
+    const r = valor / ref;
+    
+    const intKey = (r > 0.75) ? "F" : (r >= 0.50) ? "M" : "Fr";
+    
+    return `${nome}(${intKey})`;
 }).join("-");
+
+// Agora a 'sigla' gerada será, por exemplo: "FISICO(F)-MENTAL(M)-EMOCIONAL(F)-INTUITIVO(Fr)"
+// Isso baterá 100% com o formato das chaves que você cadastrou!
 
 // 4. Busca segura no seu objeto
 const dadosSinteseMomento = textosSinteseExpressao[siglaMomento] || textosSinteseExpressao["padrao"] || { conteudo: "Conteúdo não disponível.", videoID: "" };
 console.log("Sigla Momento gerada:", siglaMomento); 
+
+
        
         const descricoesPerfilMomento = {
             criativo: `<p>"Sua energia de ação este ano está em fase de expansão e Criatividade"</p><p>Neste ciclo, sua forma de agir está mais arrojada. Você sentirá uma facilidade maior para encontrar saídas rápidas e originais para problemas que antes pareciam travados.</p>`,
