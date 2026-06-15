@@ -2020,7 +2020,8 @@ const sigla = planosOrdenados.map(p => {
     return `${p.chave.toUpperCase()}(${mapSigla[intKey]})`;
 }).join("-");
 
-const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"];
+// Substitua a linha atual por esta que evita o erro:
+const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"] || { conteudo: "Conteúdo não disponível para esta combinação.", videoID: "" };
 
     let html = `
         <div class="secao-card quebra-pagina">
