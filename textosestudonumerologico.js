@@ -6328,9 +6328,9 @@ textosSinteseExpressao = {
     "FISICO(F)-MENTAL(Fr)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
     "FISICO(F)-INTUITIVO(Fr)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "Existem dois motores principais que operam em alta frequência, garantindo força de realização e intensidade.", videoID: "z1nW3rmNeEI" },
     "FISICO(F)-INTUITIVO(Fr)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "Existem dois motores principais que operam em alta frequência, garantindo força de realização e intensidade.", videoID: "z1nW3rmNeEI" },
-    "FISICO(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(Fr)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(Fr)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
+    "FISICO(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
+    "FISICO(F)-EMOCIONAL(Fr)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
+    "FISICO(F)-MENTAL(Fr)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
 // MENTAL(F) como P1 - Todas as combinações com Físico, Emocional e Intuitivo
 // MENTAL(F) como P1 - Todas as combinações com Físico, Emocional e Intuitivo
 "MENTAL(M)-FISICO(M)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
