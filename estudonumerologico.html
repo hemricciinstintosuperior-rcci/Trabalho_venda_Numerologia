@@ -2014,7 +2014,7 @@ function montarHtmlPlanosNatural(nome) {
 
 
 // Mapeamento das siglas conforme sua regra
-const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
+const mapSigla = { forte: "F", medio: "M", fraco: "Fr" };
 
 // Monta a chave concatenando Nome(Sigla)
 const sigla = planosOrdenados.map(p => {
@@ -2181,7 +2181,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
 
 
 // Substitua o bloco antigo da siglaMomento por este:
-const mapSiglaMomento = { forte: "F", medio: "M", fraco: "FR" };
+const mapSiglaMomento = { forte: "F", medio: "M", fraco: "Fr" };
 
 const siglaMomento = planosOrdenados.map(p => {
     let r = p.valor / ref;
