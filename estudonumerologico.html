@@ -2011,16 +2011,7 @@ function montarHtmlPlanosNatural(nome) {
     const ref = _p1.valor || 1;
 
 
-const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
-// 1. Definimos o peso para cada intensidade
-const pesos = { forte: 3, medio: 2, fraco: 1 };
 
-// 2. Ordenamos os planos por intensidade antes de criar a sigla
-const planosOrdenadosPorIntensidade = [...planosOrdenados].sort((a, b) => {
-    // Calculamos a intensidade de cada um
-    const getInt = (valor) => (valor / ref > 0.75) ? "forte" : (valor / ref >= 0.50) ? "medio" : "fraco";
-    return pesos[getInt(b.valor)] - pesos[getInt(a.valor)];
-});
 
 // Mapeamento das siglas conforme sua regra
 const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
