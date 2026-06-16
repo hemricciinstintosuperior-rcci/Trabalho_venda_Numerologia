@@ -2186,7 +2186,7 @@ const mapSiglaMomento = { forte: "F", medio: "M", fraco: "FR" };
 const siglaMomento = planosOrdenados.map(p => {
     let r = p.valor / ref;
     let intKey = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
-    return `${p.chave.toUpperCase()}(${mapSigla[intKey]})`;
+    return `${p.chave.toUpperCase()}(${mapSiglaMomento[intKey]})`;
 }).join("-");
 
 // Busca segura no seu objeto de textos
