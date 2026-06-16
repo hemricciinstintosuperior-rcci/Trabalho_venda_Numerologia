@@ -2022,27 +2022,18 @@ const planosOrdenadosPorIntensidade = [...planosOrdenados].sort((a, b) => {
     return pesos[getInt(b.valor)] - pesos[getInt(a.valor)];
 });
 
-// 3. Agora geramos a sigla com base nessa nova ordem
-// A ordem dos planos no seu objeto é sempre: FISICO, MENTAL, EMOCIONAL, INTUITIVO
-const ordemFixa = ["FISICO", "MENTAL", "EMOCIONAL", "INTUITIVO"];
+// Mapeamento das siglas conforme sua regra
+const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
 
-// Montamos a sigla exatamente na ordem que você cadastrou
-const sigla = ordemFixa.map(nome => {
-    // Busca o plano correspondente no seu array 'planosOrdenados'
-    const plano = planosOrdenados.find(p => p.chave.toUpperCase() === nome);
-    const r = plano.valor / ref;
-    
-    // Define a letra de intensidade
-    const intKey = (r > 0.75) ? "F" : (r >= 0.50) ? "M" : "Fr";
-    
-    return `${nome}(${intKey})`;
+// Monta a chave concatenando Nome(Sigla)
+const sigla = planosOrdenados.map(p => {
+    let r = p.valor / ref;
+    let intKey = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
+    return `${p.chave.toUpperCase()}(${mapSigla[intKey]})`;
 }).join("-");
 
-// Agora a 'sigla' gerada será, por exemplo: "FISICO(F)-MENTAL(M)-EMOCIONAL(F)-INTUITIVO(Fr)"
-// Isso baterá 100% com o formato das chaves que você cadastrou!
-
-// 4. Busca no objeto
-const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"];
+// Substitua a linha atual por esta que evita o erro:
+const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"] || { conteudo: "Conteúdo não disponível para esta combinação.", videoID: "" };
 console.log("Sigla gerada:", sigla);
     let html = `
         <div class="secao-card quebra-pagina">
@@ -2205,31 +2196,20 @@ const planosOrdenadosMomento = [...planosOrdenados].sort((a, b) => {
     return pesos[getInt(b.valor)] - pesos[getInt(a.valor)];
 });
 
-// 3. Montamos a sigla com base nessa ordem estrita
+
+
+// Substitua o bloco antigo da siglaMomento por este:
 const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
 
-// 3. Montamos a sigla com base nessa ordem estrita
-// A ordem dos planos no seu objeto é sempre: FISICO, MENTAL, EMOCIONAL, INTUITIVO
-const ordemFixa = ["FISICO", "MENTAL", "EMOCIONAL", "INTUITIVO"];
-
-const siglaMomento = ordemFixa.map(nome => {
-    const plano = planosOrdenados.find(p => p.chave.toUpperCase() === nome);
-    
-    // Verificação de segurança: se o plano não existir, assume valor 0 ou um padrão
-    const valor = plano ? plano.valor : 0; 
-    const r = valor / ref;
-    
-    const intKey = (r > 0.75) ? "F" : (r >= 0.50) ? "M" : "Fr";
-    
-    return `${nome}(${intKey})`;
+const siglaMomento = planosOrdenados.map(p => {
+    let r = p.valor / ref;
+    let intKey = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
+    return `${p.chave.toUpperCase()}(${mapSigla[intKey]})`;
 }).join("-");
 
-// Agora a 'sigla' gerada será, por exemplo: "FISICO(F)-MENTAL(M)-EMOCIONAL(F)-INTUITIVO(Fr)"
-// Isso baterá 100% com o formato das chaves que você cadastrou!
-
-// 4. Busca segura no seu objeto
+// Busca segura no seu objeto de textos
 const dadosSinteseMomento = textosSinteseExpressao[siglaMomento] || textosSinteseExpressao["padrao"] || { conteudo: "Conteúdo não disponível.", videoID: "" };
-console.log("Sigla Momento gerada:", siglaMomento); 
+
 
 
        
