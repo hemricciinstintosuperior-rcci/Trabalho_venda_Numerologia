@@ -2178,19 +2178,10 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
 
 
 
-// 1. Definimos o peso para garantir a ordem: Forte > Médio > Fraco
-const pesos = { forte: 3, medio: 2, fraco: 1 };
-
-// 2. Criamos uma versão ordenada dos planos antes de montar a sigla
-const planosOrdenadosMomento = [...planosOrdenados].sort((a, b) => {
-    const getInt = (valor) => (valor / ref > 0.75) ? "forte" : (valor / ref >= 0.50) ? "medio" : "fraco";
-    return pesos[getInt(b.valor)] - pesos[getInt(a.valor)];
-});
-
 
 
 // Substitua o bloco antigo da siglaMomento por este:
-const mapSiglaMomento = { forte: "F", medio: "M", fraco: "FR" };
+const mapSigla = { forte: "F", medio: "M", fraco: "FR" };
 
 const siglaMomento = planosOrdenados.map(p => {
     let r = p.valor / ref;
