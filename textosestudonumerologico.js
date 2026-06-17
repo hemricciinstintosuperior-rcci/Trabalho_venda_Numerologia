@@ -6326,7 +6326,7 @@ textosSinteseExpressao = {
     "FISICO(F)-INTUITIVO(M)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
     "FISICO(F)-INTUITIVO(M)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
     "FISICO(F)-MENTAL(Fr)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(Fr)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "Existem dois motores principais que operam em alta frequência, garantindo força de realização e intensidade.", videoID: "z1nW3rmNeEI" },
+    "FISICO(F)-INTUITIVO(Fr)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
     "FISICO(F)-INTUITIVO(Fr)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
     "FISICO(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
     "FISICO(F)-EMOCIONAL(Fr)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
@@ -6347,7 +6347,7 @@ textosSinteseExpressao = {
 
 "MENTAL(F)-EMOCIONAL(F)-INTUITIVO(F)-FISICO(M)": { conteudo: "", videoID: "" },
 "MENTAL(F)-EMOCIONAL(F)-FISICO(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(M)-FISICO(M)": { conteudo: "O perfil apresenta uma **Dualidade de Potência**. Existem dois motores principais que operam em alta frequência, garantindo força de realização e intensidade. Os outros dois planos atuam como estabilizadores, operando no nível médio (equilíbrio). O desafio é não deixar que as duas potências dominantes abafem a voz dos planos equilibrados, mantendo a fluidez entre a ação e a moderação.", videoID: "z1nW3rmNeEI" },
+"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(M)-FISICO(M)": { conteudo: "", videoID: "z1nW3rmNeEI" },
 "MENTAL(F)-EMOCIONAL(F)-FISICO(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
 "MENTAL(F)-INTUITIVO(F)-FISICO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
 "MENTAL(F)-INTUITIVO(F)-EMOCIONAL(M)-FISICO(M)": { conteudo: "", videoID: "" },
