@@ -6427,7 +6427,7 @@ tituloBonito = "O Regente da sua Matriz 🔱";
 
 // BUSCA DO VÍDEO DO REGENTE
 const idVideoRegente = buscarVideoID("RegenteVida", regenteVida, generoAtual);
-
+console.log("DEBUG REGENTE:", regenteVida, textos.RegenteVida[regenteVida]);
 htmlPiramide += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -6492,7 +6492,7 @@ if(dadosNegativas.detalhes.length > 0){
         }
 
         const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
-
+console.log("DEBUG BLOQUEIO:", neg.numero, textos.SeqNegVida[neg.numero]);
     // BUSCA DO VÍDEO
     const idVideoNeg = buscarVideoID("SeqNegVida", neg.numero, generoAtual);
 
