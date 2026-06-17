@@ -6440,10 +6440,11 @@ htmlPiramide += `
 </div>
 
 <div class="bloco-regente evitar-corte" style="margin-top: 50px; padding-top: 20px; border-top: 1px inset #fff;">
-    <div class="texto-res" style="font-size: 20px; color: #222;">
-        ${aplicarFiltroTexto(textos.RegenteVida[regenteVida])}
-        ${idVideoRegente ? gerarPlayerYouTube(idVideoRegente) : ""}
-    </div>
+
+<div class="texto-res" style="font-size: 20px; color: #222;">
+    ${aplicarFiltroTexto(textos.RegenteVida[regenteVida].conteudo)}
+    ${gerarPlayerYouTube(textos.RegenteVida[regenteVida].videoID)}
+</div>
 </div>`;
 
 if(dadosNegativas.detalhes.length > 0){
@@ -6506,12 +6507,12 @@ console.log("DEBUG BLOQUEIO:", neg.numero, textos.SeqNegVida[neg.numero]);
             Tempo: ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)
         </span>
 
-        <div class="conteudo-travado" style="text-align: left; font-size: 18px; line-height: 1.7; color: #222;">
-            <p style="margin-top: 8px;">
-                ${aplicarFiltroTexto(textos.SeqNegVida[neg.numero])}
-            </p>
-            ${idVideoNeg ? gerarPlayerYouTube(idVideoNeg) : ""}
-        </div>
+<div class="conteudo-travado" style="text-align: left; font-size: 18px; line-height: 1.7; color: #222;">
+    <p style="margin-top: 8px;">
+        ${aplicarFiltroTexto(textos.SeqNegVida[neg.numero].conteudo)}
+    </p>
+    ${gerarPlayerYouTube(textos.SeqNegVida[neg.numero].videoID)}
+</div>
 
         <div class="aviso-trava" style="margin-top: 20px; font-weight: bold; color: #666;">
             🔒 CONTEÚDO LIBERADO NO PDF
