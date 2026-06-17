@@ -879,99 +879,140 @@ personalidade: {
 },
     
 RegenteVida: {
- 1:`<h3>🔱 Regente N° 1</h3> 
+ 1:{
+     conteudo:`<h3>🔱 Regente N° 1</h3> 
 <h3>Iniciativa, Autonomia e Caminho Individual</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 1 representa a vibração primordial que impulsiona a construção da sua identidade do nascimento ao fim da jornada. Esta é uma energia de dentro para fora, funcionando como o motor central que exige a afirmação do seu "Eu" diante do mundo. Ter o 1 como regente da vida inteira significa que você nunca se sentirá plenamente realizado seguindo caminhos já trilhados por outros; sua alma clama pela originalidade e pelo pioneirismo. Esta frequência instiga uma necessidade constante de superar obstáculos através da coragem e da autoconfiança, tornando-o um líder nato em seu próprio destino. Ao longo dos anos, você será testado em sua capacidade de agir sozinho e de manter o foco em seus objetivos, mesmo quando não houver apoio externo.</p> 
 <p>A força deste regente molda uma personalidade que não teme o novo, vendo em cada desafio uma oportunidade de exercer sua vontade e criatividade. No aspecto positivo, você manifesta uma liderança inspiradora, audácia para empreender e uma resiliência inquebrável que o permite recomeçar quantas vezes for necessário. No entanto, deve vigiar o aspecto negativo para não cair no autoritarismo, na impulsividade cega ou em um individualismo que o isole das parcerias necessárias. O grande aprendizado desta regência vitalícia é dominar o ego e transformar a força bruta da iniciativa em uma liderança consciente que ilumina o caminho para si e para os que o cercam. Viver sob a égide do número 1 é aceitar o chamado para ser o capitão da sua própria alma, agindo com integridade e transformando sua visão em realidade concreta através de uma determinação inabalável e um espírito eternamente jovem e inovador.</p>`,
-
- 2:`<h3>🔱 Regente N° 2</h3> 
+  videoID: " "
+    },
+ 2:{
+     conteudo:`<h3>🔱 Regente N° 2</h3> 
 <h3>Sensibilidade, Dualidade e Consciência das Relações</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 2 traz a vibração da diplomacia, da cooperação e do refinamento emocional como a nota tônica de toda a sua vida. Esta energia atua silenciosamente de dentro para fora, sensibilizando sua percepção para os detalhes sutis que outros costumam ignorar. Sua jornada é pautada pela busca constante do equilíbrio e pela compreensão de que a força real muitas vezes reside na suavidade e na paciência. Ao longo da existência, você atuará como o mediador e o pacificador, desenvolvendo uma intuição aguçada que o permite ler ambientes e pessoas com uma precisão quase espiritual. Esta regência indica que seu sucesso e paz interior estão diretamente ligados à sua capacidade de colaborar e de nutrir relacionamentos saudáveis, aprendendo a arte de ouvir e de acolher as dualidades da vida.</p> 
 <p>Manifestando-se de forma positiva, o Regente 2 confere uma natureza gentil, empática e extremamente intuitiva, capaz de unir opostos e criar harmonia onde antes havia conflito. Por outro lado, o desafio constante sob esta vibração é evitar a dependência emocional, a indecisão crônica ou a tendência de se anular em favor dos desejos alheios. O aprendizado central para a vida inteira é fortalecer o seu centro emocional para que sua sensibilidade seja uma ferramenta de poder, e não uma vulnerabilidade. Você aprenderá que a cooperação não é fraqueza, mas sim uma estratégia mestre de evolução. Ao dominar a energia do 2, você se torna o porto seguro para si e para os outros, vivendo uma existência rica em conexões profundas, onde a sabedoria do coração guia cada passo, transformando a convivência humana em uma verdadeira obra de arte baseada na compreensão mútua.</p>`,
-
- 3:`<h3>🔱 Regente N° 3</h3> 
+  videoID: "F8bg1CTQ9HI"
+    },
+ 3:{
+     conteudo:`<h3>🔱 Regente N° 3</h3> 
 <h3>Criatividade, Expressão e Expansão da Consciência</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 3 é a centelha da alegria, da comunicação e da expansão que iluminará todos os dias da sua história. Esta vibração de dentro para fora exige que você coloque seus talentos no mundo, pois sua alma se alimenta da interação, da beleza e da troca de ideias. Sua vida é um convite eterno à expressão; seja através das palavras, das artes ou da simples presença social, você carrega a missão de irradiar entusiasmo e otimismo. A regência do 3 indica uma trajetória marcada pela versatilidade e pela curiosidade intelectual, onde a rotina rígida é sua maior inimiga. Você possui um magnetismo natural que atrai oportunidades através do seu brilho pessoal, aprendendo que a felicidade é uma escolha diária e uma ferramenta poderosa de transformação social e pessoal.</p> 
 <p>No aspecto positivo, você é a personificação da criatividade, da sociabilidade e da eloquência, possuindo a capacidade única de motivar pessoas e tornar a vida mais leve para todos ao seu redor. Entretanto, a sombra desta regência pode trazer dispersão de energia, tendência ao exagero ou dificuldades em lidar com críticas e frustrações. O grande aprendizado para a vida inteira é canalizar sua vasta imaginação em projetos concretos, evitando que seu potencial se perca em superficialidades ou promessas vazias. Ao longo dos anos, você descobrirá que sua voz é sua maior força e que, ao expressar sua verdade com autenticidade, você abre portas para a abundância. Viver sob o número 3 é abraçar a criança interior, mantendo a capacidade de se encantar com o mundo enquanto desenvolve a disciplina necessária para que sua luz brilhe de forma sustentável e impactante em todos os seus ciclos.</p>`,
-
- 4:`<h3>🔱 Regente N° 4</h3> 
+  videoID: " "
+    },
+ 4:{
+     conteudo:`<h3>🔱 Regente N° 4</h3> 
 <h3>Estrutura, Disciplina e Construção da Vida</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 4 representa a força da estabilidade, do método e da segurança que fundamenta toda a sua existência. Esta energia de dentro para fora molda uma personalidade que encontra propósito no trabalho bem feito e na construção de bases sólidas que resistam ao tempo. Sua jornada não é sobre ganhos fáceis, mas sobre a glória da persistência e a satisfação de ver seus esforços transformados em resultados tangíveis. Ter o 4 como regente vitalício significa que você possui uma capacidade de organização e uma lealdade acima da média, sendo frequentemente o "pilar" de confiança para sua família e em sua carreira. A vida o convidará constantemente a lidar com a matéria, com a ordem e com o planejamento minucioso de cada etapa do seu caminho.</p> 
 <p>No brilho desta regência, você manifesta uma disciplina exemplar, senso prático e uma honestidade inabalável que atrai o respeito de todos. No entanto, deve ter cuidado para que essa busca por segurança não o torne rígido, teimoso ou excessivamente apegado às tradições e ao trabalho braçal. O desafio desta frequência é aprender a ser flexível sem perder a estrutura, compreendendo que a mudança também faz parte do processo de construção. O aprendizado central é equilibrar a exigência interna por perfeição com a aceitação das imperfeições da vida. Ao longo da vida, você descobrirá que sua verdadeira segurança não vem apenas do que você possui, mas da integridade do seu caráter e da sua capacidade de estruturar o caos. Viver sob o número 4 é a jornada do mestre construtor, que com paciência e dedicação, ergue um legado duradouro e digno de orgulho.</p>`,
-
- 5:`<h3>🔱 Regente N° 5</h3> 
+  videoID: " "
+    },
+ 5:{
+     conteudo:`<h3>🔱 Regente N° 5</h3> 
 <h3>Movimento, Experiência e Liberdade</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 5 é a vibração da liberdade, da aventura e da mudança constante que dita o ritmo de toda a sua vida. Esta energia de dentro para fora faz com que sua alma sinta uma sede insaciável por novas experiências, viagens e conhecimentos que desafiem o status quo. Sua trajetória é marcada pela versatilidade e pela rapidez de raciocínio, permitindo que você se adapte a qualquer situação com uma facilidade surpreendente. Ter o 5 como regente vitalício significa que sua vida será tudo, menos monótona; você é o agente de mudança e o explorador de novos horizontes, sempre pronto para quebrar barreiras e experimentar o que o mundo tem a oferecer de mais dinâmico e diversificado.</p> 
 <p>No seu aspecto positivo, você manifesta uma inteligência brilhante, um espírito progressista e um magnetismo que contagia as pessoas com sua vontade de viver. Contudo, a sombra desta regência pode levar à instabilidade, ao vício pela novidade ou à dificuldade de criar raízes e concluir o que começou. O grande aprendizado para a vida inteira sob a influência do 5 é descobrir que a verdadeira liberdade vem da autodisciplina e que o movimento só tem valor quando tem um propósito claro. Você será desafiado a transformar sua inquietação em sabedoria, aprendendo a focar sua energia para não se perder em excessos. Ao longo dos anos, sua capacidade de adaptação será sua maior vantagem competitiva, permitindo que você prospere em tempos de crise e inovação. Viver sob o número 5 é aceitar que a única constante é a mudança, tornando-se um mestre na arte de se reinventar e de inspirar o mundo com sua coragem e flexibilidade.</p>`,
-
- 6:`<h3>🔱 Regente N° 6</h3> 
+  videoID: " "
+    },
+ 6:{
+     conteudo:`<h3>🔱 Regente N° 6</h3> 
 <h3>Amor, Harmonia e Responsabilidade Afetiva</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 6 traz a vibração do serviço, da beleza e do equilíbrio familiar como o guia central de sua existência. Esta energia flui de dentro para fora, manifestando uma necessidade profunda de cuidar, proteger e harmonizar os ambientes por onde passa. Sua vida é orientada pelo idealismo e pelo senso de justiça social, tornando o amor e a responsabilidade com o próximo os pilares de sua identidade. Ter o 6 como regente vitalício significa que seu senso de dever e sua dedicação às pessoas que ama são as fontes de sua maior satisfação, mas também de seus maiores aprendizados emocionais. Você possui um dom natural para criar beleza e conforto, sendo frequentemente procurado como conselheiro e mediador.</p> 
 <p>No aspecto positivo, você exala generosidade, senso estético apurado e uma lealdade que não conhece limites. No entanto, o desafio desta regência é evitar o perfeccionismo excessivo com os outros, o ciúme ou a tendência de assumir fardos que não lhe pertencem na tentativa de "salvar" as pessoas. O aprendizado central para toda a vida é praticar o autoamor na mesma intensidade com que cuida do mundo, estabelecendo limites saudáveis para não se esgotar emocionalmente. Ao longo dos anos, você aprenderá que a verdadeira harmonia começa dentro de si mesmo e que nem todos os conflitos podem ser resolvidos por você. Viver sob a regência do 6 é a missão de ser o coração do seu grupo social, transformando a responsabilidade em um ato de prazer e a convivência humana em um espaço de paz, suporte e crescimento mútuo baseado na aceitação e no afeto verdadeiro.</p>`,
-
- 7:`<h3>🔱 Regente N° 7</h3> 
+  videoID: " "
+    },
+ 7:{
+     conteudo:`<h3>🔱 Regente N° 7</h3> 
 <h3>Busca de Conhecimento e Evolução Interior</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 7 representa o caminho da sabedoria profunda, da análise e do desenvolvimento espiritual como o foco absoluto de sua jornada. Esta energia de dentro para fora inclina sua alma para o estudo, para a introspecção e para a busca das verdades que residem além da superfície das coisas. Sua vida é uma busca constante pelo "porquê" de tudo, tornando-o um investigador nato, seja no campo científico, técnico ou místico. Ter o 7 como regente vitalício significa que você valoriza a solidão produtiva e o silêncio como ferramentas de crescimento, possuindo uma mente analítica capaz de decifrar mistérios que escapam à maioria das pessoas. Sua trajetória é marcada por um refinamento intelectual e por uma necessidade de excelência em tudo o que se propõe a fazer.</p> 
 <p>Quando esta vibração está equilibrada, você manifesta uma intuição poderosa, uma dignidade silenciosa e uma sabedoria que impõe respeito natural. Entretanto, a sombra do 7 pode trazer isolamento excessivo, melancolia, cinismo ou uma postura excessivamente crítica em relação a si e aos outros. O grande aprendizado para a vida inteira é aprender a equilibrar o mundo das ideias com a realidade prática, compartilhando seu vasto conhecimento sem se fechar em uma "torre de marfim". Você será desafiado a confiar na sua intuição tanto quanto na sua lógica, unindo ciência e espírito em uma visão única da vida. Ao longo dos anos, sua fé será testada e fortalecida, transformando sua busca intelectual em uma profunda conexão com o divino. Viver sob o número 7 é a jornada do sábio contemporâneo, que encontra na profundidade do ser a chave para iluminar a própria vida e o mundo ao seu redor.</p>`,
-
- 8:`<h3>🔱 Regente N° 8</h3> 
+  videoID: " "
+    },
+ 8:{
+     conteudo:`<h3>🔱 Regente N° 8</h3> 
 <h3>Poder, Justiça e Responsabilidade Material</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 8 é a vibração da autoridade, da eficiência e do retorno kármico que comanda toda a sua trajetória. Esta energia de dentro para fora o impulsiona a conquistar sucesso material e reconhecimento através do poder de organização e do senso de justiça inabalável. Sua vida é um campo de treinamento para a liderança em alta escala, onde você é convidado a lidar com grandes responsabilidades, finanças e a gestão de recursos. Ter o 8 como regente vitalício significa que você compreende, mesmo que inconscientemente, a lei de causa e efeito: você colhe exatamente o que planta com disciplina e ética. Sua jornada exige ambição equilibrada com valores morais sólidos, tornando-o capaz de realizar grandes feitos no mundo físico e empresarial.</p> 
 <p>No brilho desta regência, você manifesta uma capacidade executiva brilhante, resiliência diante de crises financeiras e um espírito de comando justo e protetor. Por outro lado, deve vigiar constantemente a tendência ao materialismo excessivo, à arrogância ou ao uso do poder para manipular situações em benefício próprio. O aprendizado central desta regência para a vida inteira é o domínio sobre a matéria sem se deixar escravizar por ela, entendendo que o verdadeiro poder serve para construir e prover. Você será testado em sua integridade e em sua capacidade de se reerguer após perdas, descobrindo que sua força real é interna. Ao longo dos anos, você aprenderá a equilibrar o mundo dos negócios com a espiritualidade, usando sua influência para gerar prosperidade para si e para a sociedade. Viver sob o número 8 é aceitar o desafio de ser um mestre da manifestação, transformando visão estratégica em um império de realizações éticas e duradouras.</p>`,
-
- 9:`<h3>🔱 Regente N° 9</h3> 
+  videoID: " "
+    },
+ 9:{
+     conteudo:`<h3>🔱 Regente N° 9</h3> 
 <h3>Sabedoria, Conclusões e Consciência Universal</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 9 representa a vibração da compaixão universal, do desapego e da finalização de ciclos como a essência de sua jornada. Esta energia de dentro para fora faz de você uma alma velha, dotada de uma compreensão profunda sobre a natureza humana e o sofrimento alheio. Sua vida é pautada pelo humanitarismo e pelo desejo de deixar o mundo um pouco melhor do que o encontrou. Ter o 9 como regente vitalício significa que sua trajetória é marcada por grandes conclusões e pela necessidade de abrir mão do pessoal em favor do coletivo. Você possui um magnetismo espiritual que atrai pessoas em busca de cura e orientação, atuando como o conselheiro sábio que enxerga o panorama geral da existência e não se perde em detalhes pequenos.</p> 
-<p>No aspecto positivo, você manifesta uma generosidade sem limites, tolerância e uma sabedoria transcedental que inspira confiança imediata. Contudo, o desafio desta regência é evitar o pessimismo, a melancolia por um passado que já se foi ou a tendência de se sacrificar excessivamente por causas ou pessoas que não querem ser ajudadas. O grande aprendizado para a vida inteira sob o 9 é a arte do desapego consciente: entender que para o novo entrar, o velho precisa ir com amor e gratidão. Ao longo dos anos, você aprenderá a perdoar incondicionalmente e a viver com uma consciência global, sentindo-se parte de algo muito maior. Você é o encerramento de um ciclo vibracional, o que lhe confere acesso a todos os talentos dos números anteriores. Viver sob a regência do 9 é a missão de ser um farol de luz e sabedoria, transformando suas experiências pessoais em um legado de amor universal e evolução espiritual para toda a humanidade.</p>`
+<p>No aspecto positivo, você manifesta uma generosidade sem limites, tolerância e uma sabedoria transcedental que inspira confiança imediata. Contudo, o desafio desta regência é evitar o pessimismo, a melancolia por um passado que já se foi ou a tendência de se sacrificar excessivamente por causas ou pessoas que não querem ser ajudadas. O grande aprendizado para a vida inteira sob o 9 é a arte do desapego consciente: entender que para o novo entrar, o velho precisa ir com amor e gratidão. Ao longo dos anos, você aprenderá a perdoar incondicionalmente e a viver com uma consciência global, sentindo-se parte de algo muito maior. Você é o encerramento de um ciclo vibracional, o que lhe confere acesso a todos os talentos dos números anteriores. Viver sob a regência do 9 é a missão de ser um farol de luz e sabedoria, transformando suas experiências pessoais em um legado de amor universal e evolução espiritual para toda a humanidade.</p>`,
+   videoID: " "
+    }, 
   },    
 
 SeqNegVida: {
 
-  1: `<p><strong>SEQUÊNCIA 111 – O DESAFIO DA INICIATIVA</strong></p>
+  1: {
+     conteudo:`<p><strong>SEQUÊNCIA 111 – O DESAFIO DA INICIATIVA</strong></p>
 <p style="margin-bottom: 20px;">Esta sequência negativa não é apenas um evento passageiro, mas uma tendência vibracional que acompanha você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, ao longo de toda a sua jornada. Ela representa um obstáculo interno que exige vigilância constante: a tendência de ter sua chama de motivação abafada. Embora se manifeste com maior intensidade em ciclos específicos de sua pirâmide, esse desafio de superar a inatividade e a paralisia diante da vida é algo que você precisará trabalhar continuamente.</p>
 <p style="margin-bottom: 20px;">A sensação de que sua coragem dá lugar à impotência pode surgir repetidamente. O seu grande aprendizado de vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é entender que esses bloqueios profissionais ou desânimos profundos são reflexos de uma energia que você mesmo precisa transmutar. Sem o seu esforço consciente para reacender a determinação interna, essa estagnação pode se tornar um padrão recorrente.</p>
 <p style="margin-bottom: 20px;">Fisicamente, essa pressão interna exige cuidado redobrado com o centro do peito e o sistema cardíaco. A chave para a sua evolução, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está em reconhecer que o cenário externo só mudará quando você vencer a batalha contra a própria inércia, transformando essa vibração negativa em combustível para novas conquistas.</p>`,
-
-  2: `<p><strong>SEQUÊNCIA 222 – O DESAFIO DA AUTONOMIA</strong></p>
+  videoID: "F8bg1CTQ9HI"
+    },
+  2: {
+     conteudo:`<p><strong>SEQUÊNCIA 222 – O DESAFIO DA AUTONOMIA</strong></p>
 <p style="margin-bottom: 20px;">A vibração 222 atua como uma marca persistente em sua estrutura emocional, <strong>MASCULINO-FEMININO-NEUTRO</strong>, afetando seu senso de valor próprio. Por ser uma influência que faz parte da sua pirâmide vital, ela indica que a vulnerabilidade à opinião alheia e a indecisão são lições que você enfrentará por toda a vida, intensificando-se em períodos de maior pressão vibracional.</p>
 <p style="margin-bottom: 20px;">O risco de anular sua identidade para agradar aos outros ou se tornar dependente emocionalmente é um padrão que você deve observar com atenção constante. Não se trata de uma fase que passará sozinha; é você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, quem deve assumir o comando e fortalecer seu "eu" interno para não se perder nas expectativas de terceiros.</p>
 <p style="margin-bottom: 20px;">Essa fragilidade pode impactar sua saúde através de dependências ou somatizações emocionais. O seu desafio mestre nesta existência é recuperar a autonomia e aprender a caminhar com as próprias pernas. Ao trabalhar ativamente sua autoconfiança, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você começa a neutralizar essa influência e a construir uma trajetória de independência real.</p>`,
-
-  3: `<p><strong>SEQUÊNCIA 333 – O DESAFIO DA COMUNICAÇÃO</strong></p>
+  videoID: "F8bg1CTQ9HI"
+    },
+  3: {
+     conteudo:`<p><strong>SEQUÊNCIA 333 – O DESAFIO DA COMUNICAÇÃO</strong></p>
 <p style="margin-bottom: 20px;">Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a comunicação não é apenas uma ferramenta, mas o seu grande campo de prova. Esta sequência negativa indica uma tendência vitalícia a mal-entendidos e dificuldades de expressão. Embora haja momentos em que esse bloqueio pareça mais severo, a necessidade de refinar sua forma de falar e ser ouvido é um trabalho contínuo em sua evolução.</p>
 <p style="margin-bottom: 20px;">A frustração de não ser compreendido pode gerar um retraimento social recorrente, fazendo você se sentir invisível. É fundamental entender que essa barreira é interna; cabe a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, desenvolver a clareza e a paciência necessárias para atravessar o isolamento que essa vibração tenta impor.</p>
 <p style="margin-bottom: 20px;">No corpo, o estresse de se sentir "travado" na expressão costuma afetar as articulações ou o sistema respiratório. A lição permanente aqui é não se calar diante das dificuldades. Ao se esforçar para melhorar sua ponte com o mundo, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, transforma o isolamento em uma poderosa capacidade de articulação e influência.</p>`,
-
-  4: `<p><strong>SEQUÊNCIA 444 – O DESAFIO DA ESTABILIDADE</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  4: {
+     conteudo:`<p><strong>SEQUÊNCIA 444 – O DESAFIO DA ESTABILIDADE</strong></p>
 <p style="margin-bottom: 20px;">Esta configuração aponta para uma prova de resistência que acompanha sua vida profissional e material, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Obstáculos que bloqueiam o reconhecimento ou a estabilidade financeira não são meros acasos, mas sim a manifestação de uma sequência negativa que exige de você uma construção sólida e persistente de resiliência.</p>
 <p style="margin-bottom: 20px;">Você poderá sentir que o sucesso exige um esforço dobrado e que a segurança material está sempre sob teste. Essa pressão não termina com um ciclo; ela é um convite para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, nunca se acomodar e sempre buscar a maestria em suas habilidades. A ansiedade gerada por essa vibração deve ser combatida com foco e disciplina constantes.</p>
 <p style="margin-bottom: 20px;">Fisicamente, a tensão acumulada pode sobrecarregar o sistema circulatório ou causar dores reumáticas. O segredo para vencer essa influência vitalícia, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é manter a ética e a fé na sua capacidade produtiva, transformando as provações em alicerces para uma prosperidade que venha do seu próprio mérito.</p>`,
-
-  5: `<p><strong>SEQUÊNCIA 555 – O DESAFIO DA INSTABILIDADE</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  5: {
+     conteudo:`<p><strong>SEQUÊNCIA 555 – O DESAFIO DA INSTABILIDADE</strong></p>
 <p style="margin-bottom: 20px;">A marca desta sequência na sua vida é a volatilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Por estar gravada em sua pirâmide, a tendência a mudanças drásticas e instabilidade de valores ou residência é algo que você enfrentará repetidamente. O desafio maior não é evitar as mudanças, mas aprender a não ser destruído emocionalmente por elas.</p>
 <p style="margin-bottom: 20px;">Viver nesses altos e baixos gera um desgaste mental que pode levar ao desejo de isolamento radical. Você precisa compreender, <strong>MASCULINO-FEMININO-NEUTRO</strong>, que a paz que você procura não está em um lugar seguro lá fora, mas na sua capacidade de encontrar equilíbrio no centro do furacão. Essa busca por satisfação é um motor interno que você deve aprender a direcionar.</p>
 <p style="margin-bottom: 20px;">O corpo pode refletir essa instabilidade através da pele ou de falta de foco que gera incidentes. A lição vitalícia para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o domínio sobre a própria inquietude. Ao trabalhar a sua base interna, as mudanças externas deixam de ser ameaças e passam a ser oportunidades de renovação.</p>`,
-
-  6: `<p><strong>SEQUÊNCIA 666 – O DESAFIO DOS AFETOS</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  6: {
+     conteudo:`<p><strong>SEQUÊNCIA 666 – O DESAFIO DOS AFETOS</strong></p>
 <p style="margin-bottom: 20px;">A decepção e o peso das expectativas familiares ou amorosas são temas centrais em sua jornada, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Esta sequência negativa indica que, ao longo de toda a vida, você será testado em sua capacidade de lidar com a incompreensão e a falha de confiança daqueles que ama. A dor desses processos ganha força em certos ciclos, mas a raiz é uma lição de alma permanente.</p>
 <p style="margin-bottom: 20px;">O sentimento de estar só, mesmo acompanhado, é um sinal dessa influência tentando minar sua alegria. Você deve entender que essas frustrações servem para que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pare de buscar a validação total no outro. O amargor só será vencido quando você priorizar o seu próprio valor e lealdade a si mesmo.</p>
 <p style="margin-bottom: 20px;">Fisicamente, essa carga emocional afeta diretamente o coração e o sistema vascular. A cura para essa influência vitalícia, <strong>MASCULINO-FEMININO-NEUTRO</strong>, reside no amor-próprio. Ao fortalecer seu centro emocional, as falhas alheias perdem o poder de desestruturar sua vida.</p>`,
-
-  7: `<p><strong>SEQUÊNCIA 777 – O DESAFIO DO AUTOCONHECIMENTO</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  7: {
+     conteudo:`<p><strong>SEQUÊNCIA 777 – O DESAFIO DO AUTOCONHECIMENTO</strong></p>
 <p style="margin-bottom: 20px;">Sob esta vibração, você carrega uma tendência intrínseca ao medo e à intolerância, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O isolamento que você busca como proteção é, na verdade, um reflexo desta sequência negativa que durará toda a sua existência se não for trabalhada. O afastamento do mundo pode gerar um vazio profundo que nenhuma máscara de arrogância consegue esconder.</p>
 <p style="bottom-margin: 20px;">A dificuldade em aceitar as falhas dos outros e de si mesmo é o seu grande campo de batalha. Em períodos de maior intensidade, esse medo do futuro pode se tornar paralisante, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você corre o risco de se tornar refém de pensamentos negativos e excessos que servem apenas como fuga da realidade.</p>
 <p style="margin-bottom: 20px;">O sistema nervoso é o que mais sofre com esse padrão de estresse e isolamento. O seu caminho de superação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, exige uma mente aberta e a coragem de olhar para a própria escuridão. Ao transformar o medo em sabedoria, você neutraliza essa influência e encontra a verdadeira conexão com o todo.</p>`,
-
-  8: `<p><strong>SEQUÊNCIA 888 – O DESAFIO DO EQUILÍBRIO</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  8: {
+     conteudo:`<p><strong>SEQUÊNCIA 888 – O DESAFIO DO EQUILÍBRIO</strong></p>
 <p style="margin-bottom: 20px;">Esta sequência impõe a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um teste constante sobre sua capacidade de manter a calma e a justiça. Os desafios financeiros e as perdas repentinas não são acasos, mas manifestações de uma vibração negativa que acompanhará sua trajetória, exigindo um controle férreo sobre as emoções e o patrimônio.</p>
 <p style="margin-bottom: 20px;">A agressividade e a impulsividade são as armadilhas que essa influência coloca em seu caminho para afastar aliados e nublar seu julgamento. O sentimento de injustiça pode ser uma sombra constante, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas é você quem deve trabalhar para que essa dor não se transforme em autodestruição ou decisões precipitadas.</p>
 <p style="margin-bottom: 20px;">Esse estresse contínuo é altamente prejudicial ao sistema nervoso. A superação desta sequência vitalícia depende da sua integridade ética e do equilíbrio emocional diante das crises. Ao dominar a si mesmo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você garante que nada nem ninguém possa destruir o que você construiu com esforço.</p>`,
-
-  9: `<p><strong>SEQUÊNCIA 999 – O DESAFIO DA REALIDADE</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+ 
+  9: {
+     conteudo:`<p><strong>SEQUÊNCIA 999 – O DESAFIO DA REALIDADE</strong></p>
 <p style="margin-bottom: 20px;">Aqui, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a lição é sobre clareza e desapego. Esta sequência indica uma tendência vitalícia a ciclos de estagnação onde os resultados parecem fugir de suas mãos. A dificuldade de entender as situações da vida e a visão distorcida da realidade são obstáculos internos que você precisará enfrentar repetidamente ao longo dos anos.</p>
 <p style="margin-bottom: 20px;">Fracassos ou perdas de bens podem ocorrer como reflexo dessa vibração, especialmente em períodos de maior intensidade. O peso mental de se sentir "travado" é o grande teste para o seu ânimo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. É necessário um esforço consciente para não sucumbir ao desânimo e para compreender que cada fim é a preparação para um novo começo.</p>
-<p style="margin-bottom: 20px;">O sistema nervoso e o coração são os pontos de alerta físico para esse estresse de falta de resultados. A sua evolução, <strong>MASCULINO-FEMININO-NEUTRO</strong>, depende de aprender a soltar o que não serve mais e buscar novas formas de enxergar seu próprio valor, independentemente das circunstâncias externas.</p>`
-},
+<p style="margin-bottom: 20px;">O sistema nervoso e o coração são os pontos de alerta físico para esse estresse de falta de resultados. A sua evolução, <strong>MASCULINO-FEMININO-NEUTRO</strong>, depende de aprender a soltar o que não serve mais e buscar novas formas de enxergar seu próprio valor, independentemente das circunstâncias externas.</p>`,
+   
+  videoID: "F8bg1CTQ9HI "
+    }
+  
+  },
 
 // --- BANCOS FINANCEIROS SEPARADOS ---
 SeqFinanceira :{ 999: `` },
