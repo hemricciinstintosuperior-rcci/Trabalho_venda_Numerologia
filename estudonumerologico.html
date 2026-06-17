@@ -3384,28 +3384,32 @@ function verificarGêneroEGerar() {
 function gerarPlayerYouTube(videoID) {
     if (!videoID) return '';
     
-    // CORREÇÃO: Adicionei o $ antes das chaves para o ID ser lido corretamente
-    const srcURL = `https://www.youtube.com/embed/${videoID}?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=1&iv_load_policy=3&disablekb=1`;
+    // Links originais
+    const srcURL = `https://www.youtube.com/embed/${videoID}?rel=0&modestbranding=1`;
     const linkURL = `https://www.youtube.com/watch?v=${videoID}`;
 
-    // O player que aparece na tela (agora com HTTPS e o ID correto)
+    // URL de uma imagem de placeholder genérica e bonita (exemplo do YouTube ou do seu repositório)
+    // Você pode substituir por uma imagem hospedada no seu GitHub
+    const imagemPadrao = `https://img.youtube.com/vi/${videoID}/maxresdefault.jpg`;
+
+    // O player para o relatório HTML (mantido)
     let playerHTML = `
-    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; border: 2px solid var(--gold); margin: 20px 0;">
-        <iframe 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-            src="${srcURL}" 
-            frameborder="0" 
-            allow="autoplay; encrypted-media" 
-            allowfullscreen>
-        </iframe>
+    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; border: 2px solid #d4af37; margin: 20px 0;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="${srcURL}" frameborder="0" allowfullscreen></iframe>
     </div>`;
 
-    // O link para o PDF (também corrigido com $)
+    // O link para o PDF: Agora com uma imagem grande e visual de "Play"
     let linkPDF = `
-    <div class="link-pdf-apenas" style="display: none; margin-top: 10px; text-align: center;">
-         <a href="${linkURL}" target="_blank" style="color: var(--gold); font-weight: bold; text-decoration: underline;">
-           Click aqui ☞ 📺</a>
-        
+    <div class="link-pdf-apenas" style="display: block; margin: 30px auto; text-align: center;">
+         <a href="${linkURL}" target="_blank" style="text-decoration: none;">
+            <div style="position: relative; max-width: 600px; margin: 0 auto; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); border: 3px solid #d4af37;">
+                <img src="${imagemPadrao}" style="width: 100%; display: block;">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center;">
+                    <div style="font-size: 60px; color: white; background: rgba(0,0,0,0.6); padding: 10px 25px; border-radius: 50px;">▶</div>
+                </div>
+            </div>
+            <p style="color: #d4af37; font-weight: bold; margin-top: 15px; font-size: 16px;">Clique na imagem para assistir ao vídeo</p>
+         </a>
     </div>`;
 
     return playerHTML + linkPDF;
