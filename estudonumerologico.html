@@ -5312,8 +5312,8 @@ const chaveInic = obterChaveMestra(letraInicio);
 const chaveConc = obterChaveMestra(letraFim);
 
 // Acessamos o banco unificado de forma segura
-const dadosIniciais = (typeof window.BancoEquilibrioUnificado !== 'undefined') ? window.BancoEquilibrioUnificado.inicio[chaveInic] : null;
-const dadosConclusao = (typeof window.BancoEquilibrioUnificado !== 'undefined') ? window.BancoEquilibrioUnificado.conclusao[chaveConc] : null;
+const dadosIniciais = (typeof window.bancoEquilibrioUnificado !== 'undefined') ? window.bancoEquilibrioUnificado.inicio[chaveInic] : null;
+const dadosConclusao = (typeof window.bancoEquilibrioUnificado !== 'undefined') ? window.bancoEquilibrioUnificado.conclusao[chaveConc] : null;
 
 // 3. EXTRAÇÃO INTELIGENTE (Trata se é objeto com vídeo ou texto puro)
 const p1 = extrairDadosEquilibrio(dadosIniciais); // Usando a função que criamos antes
