@@ -4413,22 +4413,18 @@ talentosEspeciais: {
 
 
 modosAcao: {
-    criativo: {
-     conteudo:`<h4>Modo de Expressão: Criativo (Inovação e Originalidade)</h4>
+    criativo: `<h4>Modo de Expressão: Criativo (Inovação e Originalidade)</h4>
                <p>Sua forma de lidar com a vida é marcada pela inventividade e pela busca por soluções fora do comum. Você possui a habilidade de enxergar a realidade por ângulos que a maioria ignora, agindo com espontaneidade e otimismo para transformar imprevistos em oportunidades. Sua mente não se prende ao tradicionalismo, preferindo sempre criar caminhos novos e originais para resolver qualquer desafio cotidiano.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-    oscilantes: {
-     conteudo:`<h4>Modo de Expressão: Oscilante (Sensibilidade e Adaptação)</h4>
-                <p>Seu comportamento é guiado por uma alta sensibilidade emocional, o que faz com que suas reações variem de acordo com o ambiente e as pessoas ao redor. Essa característica indica uma habilidade para captar nuances sutis, mas pode gerar indecisão em momentos de pressão. No dia a dia, você pode alternar entre grandes picos de energia e momentos de recolhimento, agindo muitas vezes movido pelo impulso ou pela necessidade de acolhimento.</p>`,
- videoID: "F8bg1CTQ9HI"
-    },
-    neutro:{
-     conteudo: `<h4>Modo de Expressão: Neutro (Equilíbrio e Observação)</h4>
-             <p>Você opera através da imparcialidade e da prudência, preferindo observar todos os lados de uma situação antes de se posicionar. Sua grande habilidade é manter o controle em meio ao caos, evitando conflitos desnecessários e agindo com um alto nível de confiança interna. Como alguém fácil de conviver e adaptar-se, você prioriza a harmonia e a segurança, raramente perdendo o equilíbrio ou saindo de sua zona de estabilidade.</p>`,
 
- videoID: "F8bg1CTQ9HI"
-    },
+   
+    oscilantes: `<h4>Modo de Expressão: Oscilante (Sensibilidade e Adaptação)</h4>
+                <p>Seu comportamento é guiado por uma alta sensibilidade emocional, o que faz com que suas reações variem de acordo com o ambiente e as pessoas ao redor. Essa característica indica uma habilidade para captar nuances sutis, mas pode gerar indecisão em momentos de pressão. No dia a dia, você pode alternar entre grandes picos de energia e momentos de recolhimento, agindo muitas vezes movido pelo impulso ou pela necessidade de acolhimento.</p>`,
+
+  
+    neutro: `<h4>Modo de Expressão: Neutro (Equilíbrio e Observação)</h4>
+             <p>Você opera através da imparcialidade e da prudência, preferindo observar todos os lados de uma situação antes de se posicionar. Sua grande habilidade é manter o controle em meio ao caos, evitando conflitos desnecessários e agindo com um alto nível de confiança interna. Como alguém fácil de conviver e adaptar-se, você prioriza a harmonia e a segurança, raramente perdendo o equilíbrio ou saindo de sua zona de estabilidade.</p>`
+
+
 },
 
 desejoOculto: {
