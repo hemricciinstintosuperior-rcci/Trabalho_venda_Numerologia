@@ -5396,7 +5396,7 @@ html += `
      ${dadosHabilidade ? `
             <div class="resultado-talento" style="margin-top: 25px;">
                 <div class="evitar-corte texto-res">
-                    ${aplicarFiltroTexto(textos.talentosEspeciais[dadosHabilidade.numero])}
+                    ${aplicarFiltroTexto(textos.talentosEspeciais[dadosHabilidade.numero].conteudo)}
                     ${idVideoTalento ? gerarPlayerYouTube(idVideoTalento) : ""}
                 </div>
             </div>
