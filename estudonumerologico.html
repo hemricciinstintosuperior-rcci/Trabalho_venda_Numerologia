@@ -3462,6 +3462,7 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
        
 
 function buscarVideoID(categoria, valor, genero) {
+     if (categoria === "equilibrio") return null; 
     // 1. TENTA NA BIBLIOTECA (Se o gênero foi passado e a biblioteca existir)
     if (genero && typeof bibliotecaVideos !== 'undefined' && bibliotecaVideos[genero]) {
         if (bibliotecaVideos[genero][categoria] && bibliotecaVideos[genero][categoria][valor]) {
@@ -5281,16 +5282,18 @@ html += `
 
 // --- INÍCIO DO BLOCO DO EQUILÍBRIO ADAPTADO ---
 
-// --- NO BLOCO DO HTML DO RELATÓRIO ---
-const nInicio = res.numEquilibrioInicio;
-const nFim = res.numEquilibrioFim;
+const chaveInicio = `${nInicio}_${planoChaveDominante}_${perfilChave}`;
+const chaveConclusao = `${nFim}_${planoChaveDominante}_${perfilChave}`;
 
-// Pega os textos que salvamos no passo anterior
-const txtP1 = res.equilibrio.txtFinalInic || "";
-const txtP2 = res.equilibrio.txtFinalConc || "";
+const dadosInicio = BancoEquilibrioUnificado.inicio[chaveInicio];
+const dadosConclusao = BancoEquilibrioUnificado.conclusao[chaveConclusao];
 
-const idVideoInicio = buscarVideoID("equilibrio", nInicio, generoAtual);
-const idVideoFim = buscarVideoID("equilibrio", nFim, generoAtual);
+// 2. Extração segura (garante que, se o dado for string ou objeto, ele extrai o conteúdo)
+const p1Conteudo = (typeof dadosInicio === 'object') ? dadosInicio.conteudo : dadosInicio;
+const p1Video = (typeof dadosInicio === 'object') ? dadosInicio.videoID : null;
+
+const p2Conteudo = (typeof dadosConclusao === 'object') ? dadosConclusao.conteudo : dadosConclusao;
+const p2Video = (typeof dadosConclusao === 'object') ? dadosConclusao.videoID : null;
 // 2. Introdução Corrigida (Ajustada para Primeira do Primeiro e Última do Último)
 const txtIntroEquil = `
 <p>O Universo rege-se pelo princípio da harmonia, e o mesmo se aplica aos seus números pessoais. O seu <strong>Número de Equilíbrio</strong> atua como um guia estratégico, orientando sobre a melhor postura a ser adotada em situações desafiadoras ou de alta pressão.</p>
@@ -5304,17 +5307,16 @@ const txtIntroEquil = `
 // Nota: O 'res.equilibrio.texto' já contém o txtP1 e txtP2 que buscamos com a Chave Mestra
 let htmlEquil = `
     ${txtIntroEquil}
-    <br><br>
     <div class="grupo-respostas-bloco pula-pagina">
         <div class="secao-resultado">
-            <h3 style="color: #000; text-align: center;">SUA INCLINAÇÃO (INÍCIO: ${nInicio})</h3>
-            ${txtP1}
-            ${idVideoInicio ? gerarPlayerYouTube(idVideoInicio) : ""}
+            <h3 style="color: #000; text-align: center;">INCLINAÇÃO (INÍCIO: ${nInicio})</h3>
+            ${aplicarFiltroTexto(p1Conteudo)}
+            ${p1Video ? gerarPlayerYouTube(p1Video) : ""}
         </div>
         <div class="secao-resultado">
-            <h3 style="color: #000; text-align: center;">SUA CAPACIDADE DE REALIZAÇÃO (CONCLUSÃO: ${nFim})</h3>
-            ${txtP2}
-            ${idVideoFim ? gerarPlayerYouTube(idVideoFim) : ""}
+            <h3 style="color: #000; text-align: center;">REALIZAÇÃO (CONCLUSÃO: ${nFim})</h3>
+            ${aplicarFiltroTexto(p2Conteudo)}
+            ${p2Video ? gerarPlayerYouTube(p2Video) : ""}
         </div>
     </div>
 `;
