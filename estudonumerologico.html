@@ -5300,14 +5300,23 @@ const nInicio = res.equilibrio.inicio; // Verifique se é 'res.equilibrio.inicio
 const nFim = res.equilibrio.fim;    
 
 
-// --- COMO USAR ISSO NO SEU CÓDIGO ---
-const chaveInicio = `${nInicio}_${planoChaveDominante}_${perfilChave}`;
-const chaveConclusao = `${nFim}_${planoChaveDominante}_${perfilChave}`;
+const letraInicio = nomesArray[0][0]; 
+const letraFim = nomesArray[nomesArray.length - 1].slice(-1); 
 
-const dadosInicio = window.bancoEquilibrioUnificado.inicio[chaveInicio];
-const dadosConclusao = window.bancoEquilibrioUnificado.conclusao[chaveConclusao];
+const numInicio = calcularValorCabalisticoCompleto(letraInicio);
+const numFim = calcularValorCabalisticoCompleto(letraFim);
 
-const p1 = extrairDadosEquilibrio(dadosInicio);
+// 2. BUSCANDO OS DADOS NO BANCO (Com proteção para o objeto)
+// Usamos a chave mestra que você definiu: "3_intuitivo_neutro"
+const chaveInic = obterChaveMestra(letraInicio); 
+const chaveConc = obterChaveMestra(letraFim);
+
+// Acessamos o banco unificado de forma segura
+const dadosIniciais = (typeof window.BancoEquilibrioUnificado !== 'undefined') ? window.BancoEquilibrioUnificado.inicio[chaveInic] : null;
+const dadosConclusao = (typeof window.BancoEquilibrioUnificado !== 'undefined') ? window.BancoEquilibrioUnificado.conclusao[chaveConc] : null;
+
+// 3. EXTRAÇÃO INTELIGENTE (Trata se é objeto com vídeo ou texto puro)
+const p1 = extrairDadosEquilibrio(dadosIniciais); // Usando a função que criamos antes
 const p2 = extrairDadosEquilibrio(dadosConclusao);
 
 
@@ -5323,16 +5332,17 @@ const txtIntroEquil = `
 // 3. Montagem do HTML (Usando os novos títulos e o conteúdo processado)
 // Nota: O 'res.equilibrio.texto' já contém o txtP1 e txtP2 que buscamos com a Chave Mestra
 // --- AGORA MONTE O HTML ---
+// 4. MONTANDO O HTML FINAL (Unificado)
 htmlEquil = `
     ${txtIntroEquil}
     <div class="grupo-respostas-bloco pula-pagina">
         <div class="secao-resultado">
-            <h3 style="color: #000; text-align: center;">INCLINAÇÃO (INÍCIO: ${nInicio})</h3>
+            <h3 style="text-align: center;">INCLINAÇÃO (INÍCIO: ${numInicio})</h3>
             ${aplicarFiltroTexto(p1.texto)}
             ${p1.video ? gerarPlayerYouTube(p1.video) : ""}
         </div>
         <div class="secao-resultado">
-            <h3 style="color: #000; text-align: center;">REALIZAÇÃO (CONCLUSÃO: ${nFim})</h3>
+            <h3 style="text-align: center;">REALIZAÇÃO (CONCLUSÃO: ${numFim})</h3>
             ${aplicarFiltroTexto(p2.texto)}
             ${p2.video ? gerarPlayerYouTube(p2.video) : ""}
         </div>
