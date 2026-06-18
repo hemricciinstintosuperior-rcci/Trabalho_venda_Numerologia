@@ -5289,7 +5289,8 @@ const nFim = res.numEquilibrioFim;
 const txtP1 = res.equilibrio.txtFinalInic || "";
 const txtP2 = res.equilibrio.txtFinalConc || "";
 
-
+const idVideoInicio = buscarVideoID("equilibrio", nInicio, generoAtual);
+const idVideoFim = buscarVideoID("equilibrio", nFim, generoAtual);
 // 2. Introdução Corrigida (Ajustada para Primeira do Primeiro e Última do Último)
 const txtIntroEquil = `
 <p>O Universo rege-se pelo princípio da harmonia, e o mesmo se aplica aos seus números pessoais. O seu <strong>Número de Equilíbrio</strong> atua como um guia estratégico, orientando sobre a melhor postura a ser adotada em situações desafiadoras ou de alta pressão.</p>
@@ -5308,14 +5309,15 @@ let htmlEquil = `
         <div class="secao-resultado">
             <h3 style="color: #000; text-align: center;">SUA INCLINAÇÃO (INÍCIO: ${nInicio})</h3>
             ${txtP1}
+            ${idVideoInicio ? gerarPlayerYouTube(idVideoInicio) : ""}
         </div>
         <div class="secao-resultado">
             <h3 style="color: #000; text-align: center;">SUA CAPACIDADE DE REALIZAÇÃO (CONCLUSÃO: ${nFim})</h3>
             ${txtP2}
+            ${idVideoFim ? gerarPlayerYouTube(idVideoFim) : ""}
         </div>
     </div>
 `;
-
 // 4. Aplica seu filtro de gênero/nome
 const textoFormatado = aplicarFiltroTexto(htmlEquil);
 
@@ -5336,7 +5338,7 @@ html += `
 
 // 1. PRIMEIRO: Calcule os dados científicos (use o nomeCompleto do seu formulário)
 const dadosHabilidade = calcularHabilidadeEspecialCientifica(nomeRaw);
-
+const idVideoTalento = dadosHabilidade ? buscarVideoID("talentosEspeciais", dadosHabilidade.numero, generoAtual) : null;
 // 2. SEGUNDO: Declare o título (isso resolve o erro de ReferenceError)
 tituloBonito = "Habilidades Especiais e Deficiências"; 
 
@@ -5361,10 +5363,11 @@ html += `
             `}
         </div>
 
-        ${dadosHabilidade ? `
+     ${dadosHabilidade ? `
             <div class="resultado-talento" style="margin-top: 25px;">
                 <div class="evitar-corte texto-res">
                     ${aplicarFiltroTexto(textos.talentosEspeciais[dadosHabilidade.numero])}
+                    ${idVideoTalento ? gerarPlayerYouTube(idVideoTalento) : ""}
                 </div>
             </div>
 
