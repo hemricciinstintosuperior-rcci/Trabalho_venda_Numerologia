@@ -5286,8 +5286,8 @@ const nFim = res.equilibrio.fim;
 const chaveInicio = `${nInicio}_${planoChaveDominante}_${perfilChave}`;
 const chaveConclusao = `${nFim}_${planoChaveDominante}_${perfilChave}`;
 
-const dadosInicio = bancoEquilibrioUnificado.inicio[chaveInicio];
-const dadosConclusao = bancoEquilibrioUnificado.conclusao[chaveConclusao];
+const dadosInicio = window.bancoEquilibrioUnificado.inicio[chaveInicio];
+const dadosConclusao = window.bancoEquilibrioUnificado.conclusao[chaveConclusao];
 
 // 2. Extração segura (garante que, se o dado for string ou objeto, ele extrai o conteúdo)
 const p1Conteudo = (typeof dadosInicio === 'object') ? dadosInicio.conteudo : dadosInicio;
