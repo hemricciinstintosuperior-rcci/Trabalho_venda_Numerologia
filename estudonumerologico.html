@@ -5281,7 +5281,8 @@ html += `
 
 
 // --- INÍCIO DO BLOCO DO EQUILÍBRIO ADAPTADO ---
-
+const nInicio = res.equilibrio.inicio; // Verifique se é 'res.equilibrio.inicio' ou 'res.numEquilibrioInicio'
+const nFim = res.equilibrio.fim;    
 const chaveInicio = `${nInicio}_${planoChaveDominante}_${perfilChave}`;
 const chaveConclusao = `${nFim}_${planoChaveDominante}_${perfilChave}`;
 
