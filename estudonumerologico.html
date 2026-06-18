@@ -6628,57 +6628,51 @@ let indiceLoop = 0;
 
 // O loop continua enquanto a idade acumulada não atingir 100 anos
 while (idadeAcumulada < 100) {
-        const p = potenciasTopo[indiceLoop % potenciasTopo.length];
-        const duracaoAnos = parseInt(p.toString()[0]) || 1; 
-        
-        const idadeInicio = idadeAcumulada;
-        const idadeFim = idadeAcumulada + duracaoAnos;
-
-        // AQUI É A ÚNICA MUDANÇA: O ALINHAMENTO VISUAL
-        const potenciaAtivaAgora = (idadeCronologica >= idadeInicio && idadeCronologica < idadeFim);
-
-        // Datas baseadas no nascimento (mantendo o seu padrão)
-        const dataIniPot = new Date(dtNasci.getFullYear() + idadeInicio, dtNasci.getMonth(), dtNasci.getDate());
-        const dataFimPot = new Date(dtNasci.getFullYear() + idadeFim, dtNasci.getMonth(), dtNasci.getDate());
-
-        htmlPotenciasCalculadas += `
-            <div class="bloco-potencia" style="${potenciaAtivaAgora ? 'border: 2px solid var(--gold); background: #fffcf0; padding: 15px; border-radius: 8px;' : 'border-bottom: 1px solid #eee; padding: 10px; opacity: 1.3;'}">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <h2 style="color: #827108; font-size: 24px; margin: 0;">Potência ${p} ✡︎</h2>
-                    ${potenciaAtivaAgora ? '<span style="background:var(--gold); color:black; font-size:10px; padding:2px 14px; border-radius:10px; font-weight:bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">ATIVO NESTE CICLO</span>' : ''}
-                </div>
-
-                <div style="font-size: 20px; color: #827108; margin-top: 10px; font-weight: bold;">
-    ⏳ Ciclo: dos ${idadeInicio} aos ${idadeFim} anos
-</div>
-
-                <div style="font-size: 20px; color: #827108; margin: 8px 0; font-weight: bold; letter-spacing: 0.5px;">
-                    📅 VIGÊNCIA: ${dataIniPot.toLocaleDateString('pt-BR')} até ${dataFimPot.toLocaleDateString('pt-BR')}
-                </div>
-
-               <div class="conteudo-travado">
-                <div class="texto-res" style="${potenciaAtivaAgora ? 'color:#000; font-weight:500;' : 'color:#222;'}">
-                    ${aplicarFiltroTexto(textos.Potencias[p] || "Vibração em análise.")}
-                         </div>     </div> 
-                  <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO NO PDF
-         </div>
-      
-        
-            </div>`;
-        
-        idadeAcumulada = idadeFim;
-        indiceLoop++;
-    }     
-// --- TRECHO DAS CAIXINHAS DOURADAS (VITRINE) ---
-let htmlCaixinhas = `<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 25px;border: 1px solid #ffffff;">`;
-potenciasTopo.forEach(p => {
-    htmlCaixinhas += `<span style="background: #827108; color: #fff; padding: 6px 14px; border-radius: 1px; font-weight: bold; font-size: 18px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">${p}</span>`;
+    const p = potenciasTopo[indiceLoop % potenciasTopo.length];
+    const duracaoAnos = parseInt(p.toString()[0]) || 1; 
     
-});
+    const idadeInicio = idadeAcumulada;
+    const idadeFim = idadeAcumulada + duracaoAnos;
 
-            
-htmlCaixinhas += `</div>`;
+    const potenciaAtivaAgora = (idadeCronologica >= idadeInicio && idadeCronologica < idadeFim);
+    const dataIniPot = new Date(dtNasci.getFullYear() + idadeInicio, dtNasci.getMonth(), dtNasci.getDate());
+    const dataFimPot = new Date(dtNasci.getFullYear() + idadeFim, dtNasci.getMonth(), dtNasci.getDate());
+
+    // --- NOVA LÓGICA DE EXTRAÇÃO ---
+    // Verificamos se textos.Potencias[p] é um objeto (para pegar conteudo/video) ou texto simples
+    const dadoPotencia = textos.Potencias[p];
+    const textoParaExibir = (typeof dadoPotencia === 'object') ? dadoPotencia.conteudo : (dadoPotencia || "Vibração em análise.");
+    const videoParaExibir = (typeof dadoPotencia === 'object') ? dadoPotencia.videoID : null;
+
+    htmlPotenciasCalculadas += `
+        <div class="bloco-potencia" style="${potenciaAtivaAgora ? 'border: 2px solid var(--gold); background: #fffcf0; padding: 15px; border-radius: 8px;' : 'border-bottom: 1px solid #eee; padding: 10px; opacity: 1.3;'}">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h2 style="color: #827108; font-size: 24px; margin: 0;">Potência ${p} ✡︎</h2>
+                ${potenciaAtivaAgora ? '<span style="background:var(--gold); color:black; font-size:10px; padding:2px 14px; border-radius:10px; font-weight:bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">ATIVO NESTE CICLO</span>' : ''}
+            </div>
+
+            <div style="font-size: 20px; color: #827108; margin-top: 10px; font-weight: bold;">
+                ⏳ Ciclo: dos ${idadeInicio} aos ${idadeFim} anos
+            </div>
+
+            <div style="font-size: 20px; color: #827108; margin: 8px 0; font-weight: bold; letter-spacing: 0.5px;">
+                📅 VIGÊNCIA: ${dataIniPot.toLocaleDateString('pt-BR')} até ${dataFimPot.toLocaleDateString('pt-BR')}
+            </div>
+
+            <div class="conteudo-travado">
+                <div class="texto-res" style="${potenciaAtivaAgora ? 'color:#000; font-weight:500;' : 'color:#222;'}">
+                    ${aplicarFiltroTexto(textoParaExibir)}
+                    ${videoParaExibir ? gerarPlayerYouTube(videoParaExibir) : ""}
+                </div>     
+            </div> 
+            <div class="aviso-trava">
+                🔒 CONTEÚDO LIBERADO NO PDF
+            </div>
+        </div>`;
+    
+    idadeAcumulada = idadeFim;
+    indiceLoop++;
+}
 // ----------------------------------------------
 
     // --- 2. SEPARADOR LUXO DAS POTÊNCIAS ---
