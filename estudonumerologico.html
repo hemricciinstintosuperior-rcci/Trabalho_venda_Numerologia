@@ -3484,7 +3484,22 @@ function buscarVideoID(categoria, valor, genero) {
 }
 
 
-
+// --- EXTRAÇÃO INTELIGENTE DO CONTEÚDO E VÍDEO ---
+// Esta lógica funciona para QUALQUER item do seu BancoEquilibrioUnificado
+function extrairDadosEquilibrio(dados) {
+    if (typeof dados === 'object' && dados !== null && 'conteudo' in dados) {
+        return {
+            texto: dados.conteudo,
+            video: dados.videoID || null
+        };
+    } else {
+        // Se for string pura, não tem vídeo
+        return {
+            texto: dados || "Conteúdo não disponível.",
+            video: null
+        };
+    }
+}
         
         
 function gerarMapaCompleto(generoAtual) {
@@ -5283,18 +5298,19 @@ html += `
 // --- INÍCIO DO BLOCO DO EQUILÍBRIO ADAPTADO ---
 const nInicio = res.equilibrio.inicio; // Verifique se é 'res.equilibrio.inicio' ou 'res.numEquilibrioInicio'
 const nFim = res.equilibrio.fim;    
+
+
+// --- COMO USAR ISSO NO SEU CÓDIGO ---
 const chaveInicio = `${nInicio}_${planoChaveDominante}_${perfilChave}`;
 const chaveConclusao = `${nFim}_${planoChaveDominante}_${perfilChave}`;
 
-const dadosInicio = window.bancoEquilibrioUnificado.inicio[chaveInicio];
-const dadosConclusao = window.bancoEquilibrioUnificado.conclusao[chaveConclusao];
+const dadosInicio = window.BancoEquilibrioUnificado.inicio[chaveInicio];
+const dadosConclusao = window.BancoEquilibrioUnificado.conclusao[chaveConclusao];
 
-// 2. Extração segura (garante que, se o dado for string ou objeto, ele extrai o conteúdo)
-const p1Conteudo = (typeof dadosInicio === 'object') ? dadosInicio.conteudo : dadosInicio;
-const p1Video = (typeof dadosInicio === 'object') ? dadosInicio.videoID : null;
+const p1 = extrairDadosEquilibrio(dadosInicio);
+const p2 = extrairDadosEquilibrio(dadosConclusao);
 
-const p2Conteudo = (typeof dadosConclusao === 'object') ? dadosConclusao.conteudo : dadosConclusao;
-const p2Video = (typeof dadosConclusao === 'object') ? dadosConclusao.videoID : null;
+
 // 2. Introdução Corrigida (Ajustada para Primeira do Primeiro e Última do Último)
 const txtIntroEquil = `
 <p>O Universo rege-se pelo princípio da harmonia, e o mesmo se aplica aos seus números pessoais. O seu <strong>Número de Equilíbrio</strong> atua como um guia estratégico, orientando sobre a melhor postura a ser adotada em situações desafiadoras ou de alta pressão.</p>
@@ -5306,18 +5322,19 @@ const txtIntroEquil = `
 
 // 3. Montagem do HTML (Usando os novos títulos e o conteúdo processado)
 // Nota: O 'res.equilibrio.texto' já contém o txtP1 e txtP2 que buscamos com a Chave Mestra
-let htmlEquil = `
+// --- AGORA MONTE O HTML ---
+htmlEquil = `
     ${txtIntroEquil}
     <div class="grupo-respostas-bloco pula-pagina">
         <div class="secao-resultado">
             <h3 style="color: #000; text-align: center;">INCLINAÇÃO (INÍCIO: ${nInicio})</h3>
-            ${aplicarFiltroTexto(p1Conteudo)}
-            ${p1Video ? gerarPlayerYouTube(p1Video) : ""}
+            ${aplicarFiltroTexto(p1.texto)}
+            ${p1.video ? gerarPlayerYouTube(p1.video) : ""}
         </div>
         <div class="secao-resultado">
             <h3 style="color: #000; text-align: center;">REALIZAÇÃO (CONCLUSÃO: ${nFim})</h3>
-            ${aplicarFiltroTexto(p2Conteudo)}
-            ${p2Video ? gerarPlayerYouTube(p2Video) : ""}
+            ${aplicarFiltroTexto(p2.texto)}
+            ${p2.video ? gerarPlayerYouTube(p2.video) : ""}
         </div>
     </div>
 `;
