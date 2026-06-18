@@ -4204,7 +4204,7 @@ essencia: {
 }
 };
 
-bancoEquilibrioUnificado = {
+window.bancoEquilibrioUnificado = {
     inicio: {
         // --- NÚMERO 1 (Liderança, Início, Independência) ---
         
