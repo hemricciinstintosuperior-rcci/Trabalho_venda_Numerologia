@@ -6674,7 +6674,15 @@ while (idadeAcumulada < 100) {
     indiceLoop++;
 }
 // ----------------------------------------------
+// --- TRECHO DAS CAIXINHAS DOURADAS (VITRINE) ---
+let htmlCaixinhas = `<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 25px;border: 1px solid #ffffff;">`;
+potenciasTopo.forEach(p => {
+    htmlCaixinhas += `<span style="background: #827108; color: #fff; padding: 6px 14px; border-radius: 1px; font-weight: bold; font-size: 18px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">${p}</span>`;
+    
+});
 
+            
+htmlCaixinhas += `</div>`;
     // --- 2. SEPARADOR LUXO DAS POTÊNCIAS ---
 tituloBonito = "Ciclos de Potências Numéricas ✡︎ ";
 htmlPiramide += `
