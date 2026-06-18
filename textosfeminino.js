@@ -894,99 +894,138 @@ personalidade: {
 },
     
 RegenteVida: {
- 1:`<h3>🔱 Regente N° 1</h3> 
+ 1:{
+     conteudo:`<h3>🔱 Regente N° 1</h3> 
 <h3>A Iniciativa, a Autonomia e o Caminho Individual</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 1 representa a vibração primordial que impulsiona a construção da sua identidade do nascimento ao fim da jornada. Esta é uma energia de dentro para fora, funcionando como o motor central que exige a afirmação do seu "Eu" diante do mundo. Ter o 1 como regente da vida inteira significa que você nunca se sentirá plenamente realizada seguindo caminhos já trilhados por outros; sua alma clama pela originalidade e pelo pioneirismo. Esta frequência instiga uma necessidade constante de superar obstáculos através da coragem e da autoconfiança, tornando-a uma líder nata em seu próprio destino. Ao longo dos anos, você será testada em sua capacidade de agir sozinha e de manter o foco em seus objetivos, mesmo quando não houver apoio externo.</p> 
 <p>A força deste regente molda uma personalidade que não teme o novo, vendo em cada desafio uma oportunidade de exercer sua vontade e criatividade. No aspecto positivo, você manifesta uma liderança inspiradora, audácia para empreender e uma resiliência inquebrável que a permite recomeçar quantas vezes for necessário. No entanto, deve vigiar o aspecto negativo para não cair no autoritarismo, na impulsividade cega ou em um individualismo que a isole das parcerias necessárias. O grande aprendizado desta regência vitalícia é dominar o ego e transformar a força bruta da iniciativa em uma liderança consciente que ilumina o caminho para si e para os que a cercam. Viver sob a égide do número 1 é aceitar o chamado para ser a capitã da sua própria alma, agindo com integridade e transformando sua visão em realidade concreta através de uma determinação inabalável e um espírito eternamente jovem e inovador.</p>`,
-
- 2:`<h3>🔱 Regente N° 2</h3> 
+  videoID: "F8bg1CTQ9HI "
+    },
+ 2:{
+     conteudo:`<h3>🔱 Regente N° 2</h3> 
 <h3>A Sensibilidade, a Dualidade e a Consciência das Relações</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 2 brings a vibração da diplomacia, da cooperação e do refinamento emocional como a nota tônica de toda a sua vida. Esta energia atua silenciosamente de dentro para fora, sensibilizando sua percepção para os detalhes sutis que outros costumam ignorar. Sua jornada é pautada pela busca constante do equilíbrio e pela compreensão de que a força real muitas vezes reside na suavidade e na paciência. Ao longo da existência, você atuará como a mediadora e a pacificadora, desenvolvendo uma intuição aguçada que a permite ler ambientes e pessoas com uma precisão quase espiritual. Esta regência indica que seu sucesso e paz interior estão diretamente ligados à sua capacidade de colaborar e de nutrir relacionamentos saudáveis, aprendendo a arte de ouvir e de acolher as dualidades da vida.</p> 
 <p>Manifestando-se de forma positiva, o Regente 2 confere uma natureza gentil, empática e extremamente intuitiva, capaz de unir opostos e criar harmonia onde antes havia conflito. Por outro lado, o desafio constante sob esta vibração é evitar a dependência emocional, a indecisão crônica ou a tendência de se anular em favor dos desejos alheios. O aprendizado central para a vida inteira é fortalecer o seu centro emocional para que sua sensibilidade seja uma ferramenta de poder, e não uma vulnerabilidade. Você aprenderá que a cooperação não é fraqueza, mas sim uma estratégia mestre de evolução. Ao dominar a energia do 2, você se torna o porto seguro para si e para os outros, vivendo uma existência rica em conexões profundas, onde a sabedoria do coração guia cada passo, transformando a convivência humana em uma verdadeira obra de arte baseada na compreensão mútua.</p>`,
-
- 3:`<h3>🔱 Regente N° 3</h3> 
+  videoID: "F8bg1CTQ9HI "
+    },
+ 3:{
+     conteudo:`<h3>🔱 Regente N° 3</h3> 
 <h3>A Criatividade, a Expressão e a Expansão da Consciência</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 3 é a centelha da alegria, da comunicação e da expansão que iluminará todos os dias da sua história. Esta vibração de dentro para fora exige que você coloque seus talentos no mundo, pois sua alma se alimenta da interação, da beleza e da troca de ideias. Sua vida é um convite eterno à expressão; seja através das palavras, das artes ou da simples presença social, você carrega a missão de irradiar entusiasmo e otimismo. A regência do 3 indica uma trajetória marcada pela versatilidade e pela curiosidade intelectual, onde a rotina rígida é sua maior inimiga. Você possui um magnetismo natural que atrai oportunidades através do seu brilho pessoal, aprendendo que a felicidade é uma escolha diária e uma ferramenta poderosa de transformação social e pessoal.</p> 
 <p>No aspecto positivo, você é a personificação da criatividade, da sociabilidade e da eloquência, possuindo a capacidade única de motivar pessoas e tornar a vida mais leve para todos ao seu redor. Entretanto, a sombra desta regência pode trazer dispersão de energia, tendência ao exagero ou dificuldades em lidar com críticas e frustrações. O grande aprendizado para a vida inteira é canalizar sua vasta imaginação em projetos concretos, evitando que seu potencial se perca em superficialidades ou promessas vazias. Ao longo dos anos, você descobrirá que sua voz é sua maior força e que, ao expressar sua verdade com autenticidade, você abre portas para a abundância. Viver sob o número 3 é abraçar a criança interior, mantendo a capacidade de se encantar com o mundo enquanto desenvolve a disciplina necessária para que sua luz brilhe de forma sustentável e impactante em todos os seus ciclos.</p>`,
-
- 4:`<h3>🔱 Regente N° 4</h3> 
+  videoID: "F8bg1CTQ9HI "
+    },
+ 4:{
+     conteudo:`<h3>🔱 Regente N° 4</h3> 
 <h3>A Estrutura, a Disciplina e a Construção da Vida</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 4 representa a força da estabilidade, do método e da segurança que fundamenta toda a sua existência. Esta energia de dentro para fora molda uma personalidade que encontra propósito no trabalho bem feito e na construção de bases sólidas que resistam ao tempo. Sua jornada não é sobre ganhos fáceis, mas sobre a glória da persistência e a satisfação de ver seus esforços transformados em resultados tangíveis. Ter o 4 como regente vitalício significa que você possui uma capacidade de organização e uma lealdade acima da média, sendo frequentemente o "pilar" de confiança para sua família e em sua carreira. A vida a convidará constantemente a lidar com a matéria, com a ordem e com o planejamento minucioso de cada etapa do seu caminho.</p> 
 <p>No brilho desta regência, você manifesta uma disciplina exemplar, senso prático e uma honestidade inabalável que atrai o respeito de todos. No entanto, deve ter cuidado para que essa busca por segurança não a torne rígida, teimosa ou excessivamente apegada às tradições e ao trabalho braçal. O desafio desta frequência é aprender a ser flexível sem perder a estrutura, compreendendo que a mudança também faz parte do processo de construção. O aprendizado central é equilibrar a exigência interna por perfeição com a aceitação das imperfeições da vida. Ao longo da vida, você descobrirá que sua verdadeira segurança não vem apenas do que você possui, mas da integridade do seu caráter e da sua capacidade de estruturar o caos. Viver sob o número 4 é a jornada da mestra construtora, que com paciência e dedicação, ergue um legado duradouro e digno de orgulho.</p>`,
-
- 5:`<h3>🔱 Regente N° 5</h3> 
+  videoID: "F8bg1CTQ9HI "
+    },
+ 5:{
+     conteudo:`<h3>🔱 Regente N° 5</h3> 
 <h3>O Movimento, a Experiência e a Liberdade</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 5 é a vibração da liberdade, da aventura e da mudança constante que dita o ritmo de toda a sua vida. Esta energia de dentro para fora faz com que sua alma sinta uma sede insaciável por novas experiências, viagens e conhecimentos que desafiem o status quo. Sua trajetória é marcada pela versatilidade e pela rapidez de raciocínio, permitindo que você se adapte a qualquer situação com uma facilidade surpreendente. Ter o 5 como regente vitalício significa que sua vida será tudo, menos monótona; você é a agente de mudança e a exploradora de novos horizontes, sempre pronto para quebrar barreiras e experimentar o que o mundo tem a oferecer de mais dinâmico e diversificado.</p> 
 <p>No seu aspect positivo, você manifesta uma inteligência brilhante, um espírito progressista e um magnetismo que contagia as pessoas com sua vontade de viver. Contudo, a sombra desta regência pode levar à instabilidade, ao vício pela novidade ou à dificuldade de criar raízes e concluir o que começou. O grande aprendizado para a vida inteira sob a influência do 5 é descobrir que a verdadeira liberdade vem da autodisciplina e que o movimento só tem valor quando tem um propósito claro. Você será desafiada a transformar sua inquietação em sabedoria, aprendendo a focar sua energia para não se perder em excessos. Ao longo dos anos, sua capacidade de adaptação será sua maior vantagem competitiva, permitindo que você prospere em tempos de crise e inovação. Viver sob o número 5 é aceitar que a única constante é a mudança, tornando-se uma mestra na arte de se reinventar e de inspirar o mundo com sua coragem e flexibilidade.</p>`,
-
- 6:`<h3>🔱 Regente N° 6</h3> 
+  videoID: "F8bg1CTQ9HI "
+    },
+ 6:{
+     conteudo:`<h3>🔱 Regente N° 6</h3> 
 <h3>O Amor, a Harmonia e a Responsabilidade Afetiva</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 6 traz a vibração do serviço, da beleza e do equilíbrio familiar como o guia central de sua existência. Esta energia flui de dentro para fora, manifestando uma necessidade profunda de cuidar, proteger e harmonizar os ambientes por onde passa. Sua vida é orientada pelo idealismo e pelo senso de justiça social, tornando o amor e a responsabilidade com o próximo os pilares de sua identidade. Ter o 6 como regente vitalício significa que seu senso de dever e sua dedicação às pessoas que ama são as fontes de sua maior satisfação, mas também de seus maiores aprendizados emocionais. Você possui um dom natural para criar beleza e conforto, sendo frequentemente procurada como conselheira e mediadora.</p> 
 <p>No aspecto positivo, você exala generosidade, senso estético apurado e uma lealdade que não conhece limites. No entanto, o desafio desta regência é evitar o perfeccionismo excessivo com os outros, o ciúme ou a tendência de assumir fardos que não lhe pertencem na tentativa de "salvar" as pessoas. O aprendizado central para toda a vida é praticar o autoamor na mesma intensidade com que cuida do mundo, estabelecendo limites saudáveis para não se esgotar emocionalmente. Ao longo dos anos, você aprenderá que a verdadeira harmonia começa dentro de si mesma e que nem todos os conflitos podem ser resolvidos por você. Viver sob a regência do 6 é a missão de ser o coração do seu grupo social, transformando a responsabilidade em um ato de prazer e a convivência humana em um espaço de paz, suporte e crescimento mútuo baseado na aceitação e no afeto verdadeiro.</p>`,
-
- 7:`<h3>🔱 Regente N° 7</h3> 
+  videoID: "F8bg1CTQ9HI "
+    },
+ 7:{
+     conteudo:`<h3>🔱 Regente N° 7</h3> 
 <h3>A Busca de Conhecimento e a Evolução Interior</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 7 representa o caminho da sabedoria profunda, da análise e do desenvolvimento espiritual como o foco absoluto de sua jornada. Esta energia de dentro para fora inclina sua alma para o estudo, para a introspecção e para a busca das verdades que residem além da superfície das coisas. Sua vida é uma busca constante pelo "porquê" de tudo, tornando-a uma investigadora nata, seja no campo científico, técnico ou místico. Ter o 7 como regente vitalício significa que você valoriza a solitude produtiva e o silêncio como ferramentas de crescimento, possuindo uma mente analítica capaz de decifrar mistérios que escapam à maioria das pessoas. Sua trajetória é marcada por um refinamento intelectual e por uma necessidade de excelência em tudo o que se propõe a fazer.</p> 
 <p>Quando esta vibração está equilibrada, você manifesta uma intuição poderosa, uma dignidade silenciosa e uma sabedoria que impõe respeito natural. Entretanto, a sombra do 7 pode trazer isolamento excessivo, melancolia, cinismo ou uma postura excessivamente crítica em relação a si e aos outros. O grande aprendizado para a vida inteira é aprender a equilibrar o mundo das ideias com a realidade prática, compartilhando seu vasto conhecimento sem se fechar em uma "torre de marfim". Você será desafiada a confiar na sua intuição tanto quanto na sua lógica, unindo ciência e espírito em uma visão única da vida. Ao longo dos anos, sua fé será testada e fortalecida, transformando sua busca intelectual em uma profunda conexão com o divino. Viver sob o número 7 é a jornada da sábia contemporânea, que encontra na profundidade do ser a chave para iluminar a própria vida e o mundo ao seu redor.</p>`,
-
- 8:`<h3>🔱 Regente N° 8</h3> 
+  videoID: "F8bg1CTQ9HI "
+    },
+ 8:{
+     conteudo:`<h3>🔱 Regente N° 8</h3> 
 <h3>O Poder, a Justiça e a Responsabilidade Material</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 8 é a vibração da autoridade, da eficiência e do retorno kármico que comanda toda a sua trajetória. Esta energia de dentro para fora a impulsiona a conquistar sucesso material e reconhecimento através do poder de organização e do senso de justiça inabalável. Sua vida é um campo de treinamento para a liderança em alta escala, onde você é convidada a lidar com grandes responsabilidades, finanças e a gestão de recursos. Ter o 8 como regente vitalício significa que você compreende, mesmo que inconscientemente, a lei de causa e efeito: você colhe exatamente o que planta com disciplina e ética. Sua jornada exige ambição equilibrada com valores morais sólidos, tornando-a capaz de realizar grandes feitos no mundo físico e empresarial.</p> 
 <p>No brilho desta regência, você manifesta uma capacidade executiva brilhante, resiliência diante de crises financeiras e um espírito de comando justo e protetor. Por outro lado, deve vigiar constantemente a tendência ao materialismo excessivo, à arrogância ou ao uso do poder para manipular situações em benefício próprio. O aprendizado central desta regência para a vida inteira é o domínio sobre a matéria sem se deixar escravizar por ela, entendendo que o verdadeiro poder serve para construir e prover. Você será testada em sua integridade e em sua capacidade de se reerguer após perdas, descobrindo que sua força real é interna. Ao longo dos anos, você aprenderá a equilibrar o mundo dos negócios com a espiritualidade, usando sua influência para gerar prosperidade para si e para a sociedade. Viver sob o número 8 é aceitar o desafio de ser uma mestra da manifestação, transformando visão estratégica em um império de realizações éticas e duradouras.</p>`,
-
- 9:`<h3>🔱 Regente N° 9</h3> 
+  videoID: "F8bg1CTQ9HI "
+    },
+ 9:{
+     conteudo:`<h3>🔱 Regente N° 9</h3> 
 <h3>A Sabedoria, as Conclusões e a Consciência Universal</h3> 
 <p>Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o Regente 9 representa a vibração da compaixão universal, do desapego e da finalização de ciclos como a essência de sua jornada. Esta energia de dentro para fora faz de você uma alma velha, dotada de uma compreensão profunda sobre a natureza humana e o sofrimento alheio. Sua vida é pautada pelo humanitarismo e pelo desejo de deixar o mundo um pouco melhor do que o encontrou. Ter o 9 como regente vitalício significa que sua trajetória é marcada por grandes conclusões e pela necessidade de abrir mão do pessoal em favor do coletivo. Você possui um magnetismo espiritual que atrai pessoas em busca de cura e orientação, atuando como a conselheira sábia que enxerga o panorama geral da existência e não se perde em detalhes pequenos.</p> 
-<p>No aspecto positivo, você manifesta uma generosidade sem limites, tolerância e uma sabedoria transcendental que inspira confiança imediata. Contudo, o desafio desta regência é evitar o pessimismo, a melancolia por um passado que já se foi ou a tendência de se sacrificar excessivamente por causas ou pessoas que não querem ser ajudadas. O grande aprendizado para a vida inteira sob o 9 é a arte do desapego consciente: entender que para o novo entrar, o velho precisa ir com amor e gratidão. Ao longo dos anos, você aprenderá a perdoar incondicionalmente e a viver com uma consciência global, sentindo-se parte de algo muito maior. Você é o encerramento de um ciclo vibracional, o que lhe confere acesso a todos os talentos dos números anteriores. Viver sob a regência do 9 é a missão de ser um farol de luz e sabedoria, transformando suas experiências pessoais em um legado de amor universal e evolução espiritual para toda a humanidade.</p>`
+<p>No aspecto positivo, você manifesta uma generosidade sem limites, tolerância e uma sabedoria transcendental que inspira confiança imediata. Contudo, o desafio desta regência é evitar o pessimismo, a melancolia por um passado que já se foi ou a tendência de se sacrificar excessivamente por causas ou pessoas que não querem ser ajudadas. O grande aprendizado para a vida inteira sob o 9 é a arte do desapego consciente: entender que para o novo entrar, o velho precisa ir com amor e gratidão. Ao longo dos anos, você aprenderá a perdoar incondicionalmente e a viver com uma consciência global, sentindo-se parte de algo muito maior. Você é o encerramento de um ciclo vibracional, o que lhe confere acesso a todos os talentos dos números anteriores. Viver sob a regência do 9 é a missão de ser um farol de luz e sabedoria, transformando suas experiências pessoais em um legado de amor universal e evolução espiritual para toda a humanidade.</p>`,
+  videoID: "F8bg1CTQ9HI "
+    },  
 }, 
 
 SeqNegVida: {
 
-  1: `<p><strong>SEQUÊNCIA 111 – O DESAFIO DA INICIATIVA</strong></p>
+  1: {
+     conteudo:`<p><strong>SEQUÊNCIA 111 – O DESAFIO DA INICIATIVA</strong></p>
 <p style="margin-bottom: 20px;">Esta sequência negativa não é apenas um evento passageiro, mas uma tendência vibracional que acompanha você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, ao longo de toda a sua jornada. Ela representa um obstáculo interno que exige vigilância constante: a tendência de ter sua chama de motivação abafada. Embora se manifeste com maior intensidade em ciclos específicos de sua pirâmide, esse desafio de superar a inatividade e a paralisia diante da vida é algo que você precisará trabalhar continuamente.</p>
 <p style="margin-bottom: 20px;">A sensação de que sua coragem dá lugar à impotência pode surgir repetidamente. O seu grande aprendizado de vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é entender que esses bloqueios profissionais ou desânimos profundos são reflexos de uma energia que você mesma precisa transmutar. Sem o seu esforço consciente para reacender a determinação interna, essa estagnação pode se tornar um padrão recorrente.</p>
 <p style="margin-bottom: 20px;">Fisicamente, essa pressão interna exige cuidado redobrado com o centro do peito e o sistema cardíaco. A chave para a sua evolução, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está em reconhecer que o cenário externo só mudará quando você vencer a batalha contra a própria inércia, transformando essa vibração negativa em combustível para novas conquistas.</p>`,
-
-  2: `<p><strong>SEQUÊNCIA 222 – O DESAFIO DA AUTONOMIA</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  2: {
+     conteudo:`<p><strong>SEQUÊNCIA 222 – O DESAFIO DA AUTONOMIA</strong></p>
 <p style="margin-bottom: 20px;">A vibração 222 atua como uma mark persistente em sua estrutura emocional, <strong>MASCULINO-FEMININO-NEUTRO</strong>, afetando seu senso de valor próprio. Por ser uma influência que faz parte da sua pirâmide vital, ela indica que a vulnerabilidade à opinião alheia e a indecisão são lições que você enfrentará por toda a vida, intensificando-se em períodos de maior pressão vibracional.</p>
 <p style="margin-bottom: 20px;">O risco de anular sua identidade para agradar aos outros ou se tornar dependente emocionalmente é um padrão que você deve observar com atenção constante. Não se trata de uma fase que passará sozinha; é você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, quem deve assumir o comando e fortalecer seu "eu" interno para não se perder nas expectativas de terceiros.</p>
 <p style="margin-bottom: 20px;">Essa fragilidade pode impactar sua saúde através de dependências ou somatizações emocionais. O seu desafio mestre nesta existência é recuperar a autonomia e aprender a caminhar com as próprias pernas. Ao trabalhar ativamente sua autoconfiança, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você começa a neutralizar essa influência e a construir uma trajetória de independência real.</p>`,
-
-  3: `<p><strong>SEQUÊNCIA 333 – O DESAFIO DA COMUNICAÇÃO</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  3: {
+     conteudo:`<p><strong>SEQUÊNCIA 333 – O DESAFIO DA COMUNICAÇÃO</strong></p>
 <p style="margin-bottom: 20px;">Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a comunicação não é apenas uma ferramenta, mas o seu grande campo de prova. Esta sequência negativa indica uma tendência vitalícia a mal-entendidos e dificuldades de expressão. Embora haja momentos em que esse bloqueio pareça mais severo, a necessidade de refinar sua forma de falar e ser ouvida é um trabalho contínuo em sua evolução.</p>
 <p style="margin-bottom: 20px;">A frustração de não ser compreendida pode gerar um retraimento social recorrente, fazendo você se sentir invisível. É fundamental entender que essa barreira é interna; cabe a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, desenvolver a clareza e a paciência necessárias para atravessar o isolamento que essa vibração tenta impor.</p>
 <p style="margin-bottom: 20px;">No corpo, o estresse de se sentir "travada" na expressão costuma afetar as articulações ou o sistema respiratório. A lição permanente aqui é não se calar diante das dificuldades. Ao se esforçar para melhorar sua ponte com o mundo, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, transforma o isolamento em uma poderosa capacidade de articulação e influência.</p>`,
-
-  4: `<p><strong>SEQUÊNCIA 444 – O DESAFIO DA ESTABILIDADE</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  4: {
+     conteudo:`<p><strong>SEQUÊNCIA 444 – O DESAFIO DA ESTABILIDADE</strong></p>
 <p style="margin-bottom: 20px;">Esta configuração aponta para uma prova de resistência que acompanha sua vida profissional e material, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Obstáculos que bloqueiam o reconhecimento ou a estabilidade financeira não são meros acasos, mas sim a manifestação de uma sequência negativa que exige de você uma construção sólida e persistente de resiliência.</p>
 <p style="margin-bottom: 20px;">Você poderá sentir que o sucesso exige um esforço dobrado e que a segurança material está sempre sob teste. Essa pressão não termina com um ciclo; ela é um convite para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, nunca se acomodar e sempre buscar a maestria em suas habilidades. A ansiedade gerada por essa vibração deve ser combatida com foco e disciplina constantes.</p>
 <p style="margin-bottom: 20px;">Fisicamente, a tensão acumulada pode sobrecarregar o sistema circulatório ou causar dores reumáticas. O segredo para vencer essa influência vitalícia, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é manter a ética e a fé na sua capacidade produtiva, transformando as provações em alicerces para uma prosperidade que venha do seu próprio mérito.</p>`,
-
-  5: `<p><strong>SEQUÊNCIA 555 – O DESAFIO DA INSTABILIDADE</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  5: {
+     conteudo:`<p><strong>SEQUÊNCIA 555 – O DESAFIO DA INSTABILIDADE</strong></p>
 <p style="margin-bottom: 20px;">A marca desta sequência na sua vida é a volatilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Por estar gravada em sua pirâmide, a tendência a mudanças drásticas e instabilidade de valores ou residência é algo que você enfrentará repetidamente. O desafio maior não é evitar as mudanças, mas aprender a não ser destruída emocionalmente por elas.</p>
 <p style="margin-bottom: 20px;">Viver nesses altos e baixos gera um desgaste mental que pode levar ao desejo de isolamento radical. Você precisa compreender, <strong>MASCULINO-FEMININO-NEUTRO</strong>, que a paz que você procura não está em um lugar seguro lá fora, mas na sua capacidade de encontrar equilíbrio no centro do furacão. Essa busca por satisfação é um motor interno que você deve aprender a direcionar.</p>
 <p style="margin-bottom: 20px;">O corpo pode refletir essa instabilidade através da pele ou de falta de foco que gera incidentes. A lição vitalícia para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o domínio sobre a própria inquietude. Ao trabalhar a sua base interna, as mudanças externas deixam de ser ameaças e passam a ser oportunidades de renovação.</p>`,
-
-  6: `<p><strong>SEQUÊNCIA 666 – O DESAFIO DOS AFETOS</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  6: {
+     conteudo:`<p><strong>SEQUÊNCIA 666 – O DESAFIO DOS AFETOS</strong></p>
 <p style="margin-bottom: 20px;">A decepção e o peso das expectativas familiares ou amorosas são temas centrais em sua jornada, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Esta sequência negativa indica que, ao longo de toda a vida, você será testada em sua capacidade de lidar com a incompreensão e a falha de confiança daqueles que ama. A dor desses processos ganha força em certos ciclos, mas a raiz é uma lição de alma permanente.</p>
 <p style="margin-bottom: 20px;">O sentimento de estar só, mesmo acompanhada, é um sinal dessa influência tentando minar sua alegria. Você deve entender que essas frustrações servem para que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pare de buscar a validação total no outro. O amargor só será vencido quando você priorizar o seu próprio valor e lealdade a si mesma.</p>
 <p style="margin-bottom: 20px;">Fisicamente, essa carga emocional afeta diretamente o coração e o sistema vascular. A cura para essa influência vitalícia, <strong>MASCULINO-FEMININO-NEUTRO</strong>, reside no amor-próprio. Ao fortalecer seu centro emocional, as falhas alheias perdem o poder de desestruturar sua vida.</p>`,
-
-  7: `<p><strong>SEQUÊNCIA 777 – O DESAFIO DO AUTOCONHECIMENTO</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  7: {
+     conteudo:`<p><strong>SEQUÊNCIA 777 – O DESAFIO DO AUTOCONHECIMENTO</strong></p>
 <p style="margin-bottom: 20px;">Sob esta vibração, você carrega uma tendência intrínseca ao medo e à intolerância, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O isolamento que você busca como proteção é, na verdade, um reflexo desta sequência negativa que durará toda a sua existência se não for trabalhada. O afastamento do mundo pode gerar um vazio profundo que nenhuma máscara de arrogância consegue esconder.</p>
 <p style="margin-bottom: 20px;">A dificuldade em aceitar as falhas dos outros e de si mesma é o seu grande campo de batalha. Em períodos de maior intensity, esse medo do futuro pode se tornar paralisante, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você corre o risco de se tornar refém de pensamentos negativos e excessos que servem apenas como fuga da realidade.</p>
 <p style="margin-bottom: 20px;">O sistema nervoso é o que mais sofre com esse padrão de estresse e isolamento. O seu caminho de superação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, exige uma mente aberta e a coragem de olhar para a própria escuridão. Ao transformar o medo em sabedoria, você neutraliza essa influência e encontra a verdadeira conexão com o todo.</p>`,
-
-  8: `<p><strong>SEQUÊNCIA 888 – O DESAFIO DO EQUILÍBRIO</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  8: {
+     conteudo:`<p><strong>SEQUÊNCIA 888 – O DESAFIO DO EQUILÍBRIO</strong></p>
 <p style="margin-bottom: 20px;">Esta sequência impõe a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um teste constante sobre sua capacidade de manter a calma e a justiça. Os desafios financeiros e as perdas repentinas não são acasos, mas manifestações de uma vibração negativa que acompanhará sua trajetória, exigindo um controle férreo sobre as emoções e o patrimônio.</p>
 <p style="margin-bottom: 20px;">A agressividade e a impulsividade são as armadilhas que essa influência coloca em seu caminho para afastar aliados e nublar seu julgamento. O sentimento de injustiça pode ser uma sombra constante, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas é você quem deve trabalhar para que essa dor não se transforme em autodestruição ou decisões precipitadas.</p>
 <p style="margin-bottom: 20px;">Esse estresse contínuo é altamente prejudicial ao sistema nervoso. A superação desta sequência vitalícia depende da sua integridade ética e do equilíbrio emocional diante das crises. Ao dominar a si mesma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você garante que nada nem ninguém possa destruir o que você construiu com esforço.</p>`,
-
-  9: `<p><strong>SEQUÊNCIA 999 – O DESAFIO DA REALIDADE</strong></p>
+  videoID: "F8bg1CTQ9HI "
+    },
+  9: {
+     conteudo:`<p><strong>SEQUÊNCIA 999 – O DESAFIO DA REALIDADE</strong></p>
 <p style="margin-bottom: 20px;">Aqui, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a lição é sobre clareza e desapego. Esta sequência indica uma tendência vitalícia a ciclos de estagnação onde os resultados parecem fugir de suas mãos. A dificuldade de entender as situações da vida e a visão distorcida da realidade são obstáculos internos que você precisará enfrentar repetidamente ao longo dos anos.</p>
 <p style="margin-bottom: 20px;">Fracassos ou perdas de bens podem ocorrer como reflexo dessa vibração, especialmente em períodos de maior intensidade. O peso mental de se sentir "travada" é o grande teste para o seu ânimo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. É necessário um esforço consciente para não sucumbir ao desânimo e para compreender que cada fim é a preparação para um novo começo.</p>
-<p style="margin-bottom: 20px;">O sistema nervoso e o coração são os pontos de alerta físico para esse estresse de falta de resultados. A sua evolução, <strong>MASCULINO-FEMININO-NEUTRO</strong>, depende de aprender a soltar o que não serve mais e buscar novas formas de enxergar seu próprio valor, independentemente das circunstâncias externas.</p>`
-},
+<p style="margin-bottom: 20px;">O sistema nervoso e o coração são os pontos de alerta físico para esse estresse de falta de resultados. A sua evolução, <strong>MASCULINO-FEMININO-NEUTRO</strong>, depende de aprender a soltar o que não serve mais e buscar novas formas de enxergar seu próprio valor, independentemente das circunstâncias externas.</p>`,
+   videoID: "F8bg1CTQ9HI "
+    },  
+
+  },
 
 // --- BANCOS FINANCEIROS SEPARADOS ---
 SeqFinanceira :{ 999: `` },
@@ -1937,192 +1976,270 @@ CaminhodeVida: {
 
 // --- PROPÓSITO (MISSÃO DE VIDA) ---
 Propósito: {
-    1: `<h3>Propósito 1 - A Manifestação da Liderança e da Autonomia</h3>
+    1: {
+     conteudo:`<h3>Propósito 1 - A Manifestação da Liderança e da Autonomia</h3>
     <p>O seu propósito nesta existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o desenvolvimento de uma autoconfiança inabalável e a manifestação da liderança consciente. Você veio ao mundo para aprender a usar o seu imenso poder pessoal com a missão sagrada de nunca mais permitir que sua voz seja silenciada ou que sua vontade seja subjugada por terceiros.</p>
     <p>Sua missão envolve ser um exemplo vivo de coragem e originalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você deve aprender a equilibrar o forte impulso de independência com a sabedoria de que a liderança se torna magnífica quando beneficia o coletivo. Realizar este propósito significa chegar ao final da jornada com a certeza de que você foi a protagonista de cada capítulo escrito.</p>
     <p>Você veio para ser o motor de arranque de grandes ideias, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao longo da vida, você descobrirá que os desafios que exigem solitude são oportunidades para fortalecer sua identidade única. O cumprimento desta missão traz a você a verdadeira liberdade de ser quem se é, deixando um legado de bravura e conquistas inquestionáveis.</p>`,
-
-    2: `<h3>Propósito 2 - A Maestria da Diplomacia e da União</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    2: {
+     conteudo:`<h3>Propósito 2 - A Maestria da Diplomacia e da União</h3>
     <p>O seu propósito de vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é tornar-se uma maestria viva da diplomacia e da cooperação. Você veio com a missão de curar divisões, unir pessoas e mostrar que a verdadeira força reside na suavidade e na empatia profunda aplicada à resolução de conflitos humanos.</p>
     <p>Você realiza seu propósito quando consegue criar harmonia onde antes havia caos, <strong>MASCULINO-FEMININO-NEUTRO</strong>, agindo muitas vezes nos bastidores com uma eficácia silenciosa. Cumprir esta missão significa ensinar que o amor e a sensibilidade não são sinais de fraqueza, mas os únicos caminhos reais para a construção de uma sociedade mais justa.</p>
     <p>Ao abraçar este propósito, você descobre que sua capacidade de unir é um talento raro, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua missão é ser a ponte que conecta diferentes visões. No final da trajetória, sua satisfação virá da serenidade que semeou nos corações alheios. Você é o bálsamo para o mundo, manifestando a unidade através da gentileza.</p>`,
-
-    3: `<h3>Propósito 3 - A Expansão da Alegria e da Criatividade</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    3: {
+     conteudo:`<h3>Propósito 3 - A Expansão da Alegria e da Criatividade</h3>
     <p>O seu propósito nesta vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a expansion da alegria e da expressão criativa da alma. Você veio para ser um canal de luz, utilizando suas palavras e seu carisma para elevar a vibração de todos ao seu redor. Sua missão é combater o pessimismo através do entusiasmo e da imaginação fértil.</p>
     <p>Você deve aprender a comunicar a verdade de forma que inspire esperança, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você realiza seu propósito quando se permite brilhar sem medo, usando o dom da palavra para motivar grupos. Cumprir a missão significa provar que a expressão autêntica é a chave para a liberdade interior e para o sucesso pleno.</p>
     <p>Você veio para ser a voz que motiva e o sorriso que acolhe, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao longo da jornada, você descobrirá que sua criatividade é uma ferramenta poderosa de transformação social. O seu propósito é deixar um legado de otimismo e inspiração, ajudando a humanidade a ver o mundo sob uma perspectiva muito mais brilhante.</p>`,
-
-    4: `<h3>Propósito 4 - A Construção de Bases Sólidas e Éticas</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    4: {
+     conteudo:`<h3>Propósito 4 - A Construção de Bases Sólidas e Éticas</h3>
     <p>O seu propósito de vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a manifestação da ordem e da segurança estrutural. Você veio com a missão de trazer estrutura para o caos, agindo com uma integridade e disciplina que servem de exemplo inquestionável. Sua missão envolve o trabalho dedicado e a responsabilidade prática sobre a matéria.</p>
     <p>Você realiza seu propósito quando constrói algo duradouro, <strong>MASCULINO-FEMININO-NEUTRO</strong>, seja uma família estruturada ou uma carreira baseada em valores inabaláveis. Cumprir a missão significa ser a rocha firme onde os outros podem apoiar as esperanças, provando que a liberdade real é fruto de uma fundação bem feita e de um caráter honesto.</p>
     <p>Nesta existência, você é a figura construtora por excelência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O propósito traz a satisfação do dever cumprido e o respeito universal. Ao final da jornada, seu legado será a estrutura inabalável que deixará para as futuras gerações, sendo reconhecida como quem trouxe estabilidade e progresso real para o mundo.</p>`,
-
-    5: `<h3>Propósito 5 - A Exploradora da Liberdade e da Renovação</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    5: {
+     conteudo:`<h3>Propósito 5 - A Exploradora da Liberdade e da Renovação</h3>
     <p>O seu propósito nesta existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a exploração profunda da liberdade e do progresso através da renovação constante. Você veio para ser uma agente de mudança, desafiando tradições obsoletas e mostrando que a evolução depende da capacidade de adaptação e curiosidade.</p>
     <p>Você deve aprender a viver sem amarras que impeçam seu crescimento, inspirando os outros a buscarem a própria autonomia, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Realizar este propósito significa ser o movimento em meio à estagnação. Você veio para ensinar que a vida é uma aventura e que a verdadeira segurança reside na sua habilidade de se reinventar.</p>
     <p>Ao longo da vida, você descobrirá que seu propósito é trazer frescor para tudo o que toca, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O cumprimento desta missão exige coragem para seguir caminhos não convencionais. Ao final, você terá libertado mentes e aberto horizontes, deixando um legado de liberdade de pensamento e uma trajetória marcada pela plenitude.</p>`,
-
-    6: `<h3>Propósito 6 - A Proteção do Equilíbrio e a Cura do Lar</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    6:{
+     conteudo: `<h3>Propósito 6 - A Proteção do Equilíbrio e a Cura do Lar</h3>
     <p>O seu propósito de vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o exercício do amor incondicional e da cura emocional através da harmonia. Você veio com a missão sagrada de ser a proteção e o equilíbrio, criando espaços de beleza e justiça onde as pessoas possam se sentir seguras, amadas e valorizadas.</p>
     <p>Você realiza seu propósito quando transforma um ambiente comum em um verdadeiro lar espiritual, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Cumprir a missão significa ser o pilar afetivo do seu círculo social, ensinando que a compaixão e a responsabilidade mútua são as forças que mantêm a humanidade unida contra a indiferença.</p>
     <p>Ao abraçar este propósito, você encontra satisfação na gratidão de quem ajudou a proteger, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua missão é ser a personificação da ética aplicada ao amor. No final da trajetória, você será celebrada como a figura que trouxe harmonia e justiça, deixando um legado de afeto e sabedoria emocional inquestionável.</p>`,
-
-    7: `<h3>Propósito 7 - A Busca da Verdade e a Maestria Mental</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    7: {
+     conteudo:`<h3>Propósito 7 - A Busca da Verdade e a Maestria Mental</h3>
     <p>O seu propósito nesta existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a busca incansável pela verdade absoluta e pelo autoconhecimento profundo. Você veio para ser uma investigadora da alma ou dos mistérios ocultos, desenvolvendo uma sabedoria que serve de guia para quem busca respostas além do óbvio material.</p>
     <p>Você realiza seu propósito quando atinge a maestria intelectual ou espiritual em seu campo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tornando-se uma autoridade respeitada pela profundidade do seu pensamento. Você veio para ensinar que o silêncio e a reflexão são portais necessários para o poder real e para o discernimento elevado.</p>
     <p>Sua missão é ser mestre da verdade, enxergando o que está oculto e revelando o caminho da sabedoria, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao longo da jornada, você descobrirá que seu propósito traz uma paz que não depende de aplausos. Seu legado será a clareza que trouxe para mentes confusas e a profundidade que adicionou ao saber humano.</p>`,
-
-    8: `<h3>Propósito 8 - O Gerenciamento do Poder e da Abundância Ética</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    8: {
+     conteudo:`<h3>Propósito 8 - O Gerenciamento do Poder e da Abundância Ética</h3>
     <p>O seu propósito de vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a manifestação da abundância e do poder executivo equilibrado. Você veio com a missão de gerir grandes recursos e liderar organizações com uma autoridade que promova o progresso material e a estabilidade de todos os envolvidos.</p>
     <p>Você realiza seu propósito quando cria riqueza e sucesso que beneficiam uma rede inteira de pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Cumprir a missão significa ser o motor da prosperidade, ensinando que o poder, quando usado com disciplina, é uma ferramenta sagrada de transformação da realidade física e social.</p>
     <p>Nesta jornada, você descobrirá que o propósito exige resiliência para lidar com as responsabilidades do topo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu legado será a prosperidade que semeou e a justiça que aplicou na gestão da vida, sendo reconhecida como uma figura vitoriosa que soube equilibrar o ter com o ser.</p>`,
-
-    9: `<h3>Propósito 9 - O Humanitarismo e a Conclusão de Ciclos</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    9: {
+     conteudo:`<h3>Propósito 9 - O Humanitarismo e a Conclusão de Ciclos</h3>
     <p>O seu propósito nesta existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a conclusão de um ciclo evolutivo através do humanitarismo e do amor universal. Você veio com a missão de servir à humanidade, oferecendo sua sabedoria e compaixão para aliviar o fardo alheio e elevar a consciência ética do planeta.</p>
     <p>Você realiza seu propósito quando se torna um exemplo vivo de generosidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, inspirando multidões a buscarem um sentido espiritual para a vida. Você veio para mostrar que a verdadeira grandeza reside na entrega aos ideais superiores e que o amor incondicional é a única força capaz de gerar paz.</p>
     <p>Sua missão é ser a luz no fim do caminho, apontando para um novo recomeço através da conclusão digna de velhos paradigmas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao final da trajetória, seu legado será a transformação operada nos corações e a consciência de que você deixou o mundo significativamente melhor e mais iluminado.</p>`,
-
-    11: `<h3>Propósito 11 - A Inspiração Visionária e o Despertar da Alma</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    11: {
+     conteudo:`<h3>Propósito 11 - A Inspiração Visionária e o Despertar da Alma</h3>
     <p>O seu propósito nesta vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é ser um canal de inspiração e despertar. Você não veio para seguir caminhos comuns, mas para elevar a consciência das pessoas através de uma intuição que supera a lógica, atuando como ponte entre o cotidiano e o extraordinário.</p>
     <p>Você realiza este propósito quando assume seu papel de guia visionária, <strong>MASCULINO-FEMININO-NEUTRO</strong>, agindo com uma integridade que não se dobra a pressões materiais. Cumprir a missão significa transformar sua sensibilidade em liderança, ensinando que o invisível governa o visível.</p>
     <p>Ao final da jornada, você será reconhecida como a alma que trouxe luz à obscuridade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu rastro de sabedoria ajudará a humanidade a encontrar seu verdadeiro propósito cósmico através da diplomacia, da intuição e da iluminação espiritual.</p>`,
-
-    22: `<h3>Propósito 22 - A Realização Mestra de Sistemas Universais</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    22: {
+     conteudo:`<h3>Propósito 22 - A Realização Mestra de Sistemas Universais</h3>
     <p>O seu propósito nesta existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é ser uma maestria realizadora em larga escala. Sua missão é transformar ideais abstratos em estruturas físicas ou sociais que durem por gerações, organizando detalhes técnicos para construir algo que beneficie nações inteiras.</p>
     <p>Você realiza seu propósito quando constrói sistemas que resolvem problemas fundamentais, <strong>MASCULINO-FEMININO-NEUTRO</strong>, deixando um legado concreto de progresso. Cumprir a missão significa ser o pilar de grandes empreendimentos, unindo a visão altruísta ao pragmatismo absoluto da realização física.</p>
     <p>Ao final da trajetória, você será celebrada como a arquitetura central de uma nova era de prosperidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você prova que é possível manifestar o paraíso na terra através do trabalho organizado, da inteligência estratégica e de uma força de vontade inabalável.</p>`,
-
-    33: `<h3>Propósito 33 - A Guardiã do Amor e do Serviço Universal</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    33: {
+     conteudo:`<h3>Propósito 33 - A Guardiã do Amor e do Serviço Universal</h3>
     <p>O seu propósito nesta vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a expressão máxima do amor incondicional elevado à maestria. Você veio para ser o amparo e a referência de cura para a alma humana, guiando os outros através da compaixão e da verdade inata que emana do seu coração.</p>
     <p>Você realiza seu propósito quando se torna o porto seguro para quem sofre e a voz da justiça amorosa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua missão é atuar como mestra da harmonia, protegendo a família humana com uma dedicação que transcende qualquer interesse pessoal ou egoísta.</p>
     <p>No final da estrada, sua satisfação virá do reconhecimento de ser a presença que trouxe paz real e redenção, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você deixa um legado de cura e afeto universal que servirá como um hino de esperança para toda a eternidade e progresso espiritual da humanidade.</p>`,
-
-    44: `<h3>Propósito 44 - A Maestria da Governança e da Sustentação Sistêmica</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    44: {
+     conteudo:`<h3>Propósito 44 - A Maestria da Governança e da Sustentação Sistêmica</h3>
     <p>O seu propósito nesta existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a manifestação da autoridade máxima sobre a matéria a serviço da ordem coletiva. Você veio com a missão de ser a "Arquiteta do System", alguém capaz de criar, gerir e sustentar estruturas de altíssima complexidade que garantam a segurança e o progresso de grandes grupos ou instituições.</p>
     <p>Você realiza seu propósito quando utiliza sua disciplina inquebrantável para estabelecer bases éticas em ambientes de poder, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua missão exige que você seja o exemplo vivo de eficiência e justiça administrativa. Cumprir este propósito significa transformar o potencial de realização em um legado de estabilidade que sobreviva ao tempo, provando que a verdadeira força está na capacidade de sustentar a ordem com integridade.</p>
     <p>Nesta jornada, você descobrirá que seu propósito é ser o alicerce onde o futuro é construído com segurança, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao final da trajetória, seu legado será a solidez das instituições que ajudou a erguer e a retidão do caráter que demonstrou no exercício da autoridade, sendo reconhecida como uma mestre da realização prática superior.</p>`,
-
-    55: `<h3>Propósito 55 - A Maestria da Transmutação e da Liderança Futurista</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    55: {
+     conteudo:`<h3>Propósito 55 - A Maestria da Transmutação e da Liderança Futurista</h3>
     <p>O seu propósito de vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é atuar como um motor de aceleração evolutiva para a humanidade. Você veio com a missão de ser a "Agente da Transmutação", utilizando sua mente veloz e seu magnetismo para romper barreiras mentais e sociais, abrindo caminho para novas formas de viver, pensar e se conectar.</p>
     <p>Você realiza seu propósito quando lidera processos de mudança radical que libertam as pessoas de padrões obsoletos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua missão envolve ser o elo entre o presente e as possibilidades do futuro, agindo com uma coragem que inspira outros a abraçarem o desconhecido. Cumprir este propósito significa provar que a liberdade com propósito é o combustível da alma e que a evolução é o único estado natural do ser.</p>
     <p>Ao abraçar esta missão, você se torna o farol da inovação em tempos de crise, <strong>MASCULINO-FEMININO-NEUTRO</strong>. No final da estrada, sua satisfação virá da consciência de que você foi a catalisadora que permitiu à sociedade dar um salto de consciência. Seu legado é a renovação constante e a coragem de ter sido a pioneira das novas eras.</p>`,
-
-    66: `<h3>Propósito 66 - A Maestria do Amor Planetário e da Justiça Afetiva</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    66: {
+     conteudo:`<h3>Propósito 66 - A Maestria do Amor Planetário e da Justiça Afetiva</h3>
     <p>O seu propósito nesta existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a manifestação do amor em sua oitava superior: a proteção e a cura da "Grande Família Humana". Você veio com a missão sagrada de ser uma harmonizadora universal, utilizando sua autoridade moral e afetiva para restaurar a dignidade e o equilíbrio onde o tecido social foi rompido.</p>
     <p>Você realiza seu propósito quando assume a responsabilidade de guiar e proteger comunidades, agindo com uma benevolência que pacifica conflitos e educa através do exemplo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua missão é elevar o conceito de dever a um nível místico, ensinando que o serviço desinteressado é a forma mais alta de poder. Cumprir este propósito significa ser o coração pulsante que sustenta a esperança coletiva através da justiça amorosa.</p>
     <p>Ao longo da vida, você descobrirá que sua missão é transformar o world em um lar seguro para todos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao final, você será celebrada como a guardiã da harmonia planetária, deixando um rastro de cura e equilíbrio que servirá de alicerce para as gerações futuras viverem em paz.</p>`,
-
-    77: `<h3>Propósito 77 - A Maestria da Revelação e da Sabedoria Tecnológico-Espiritual</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    77: {
+     conteudo:`<h3>Propósito 77 - A Maestria da Revelação e da Sabedoria Tecnológico-Espiritual</h3>
     <p>O seu propósito de vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a decodificação das leis supremas que regem a existência e a transmissão dessa verdade à humanidade. Você veio com a missão de ser a "Mestre da Revelação", unindo o rigor da análise técnica à profundidade da intuição espiritual para dissipar as sombras da ignorância e do dogma.</p>
     <p>Você realiza seu propósito quando atinge insights que transformam a compreensão da realidade, tornando-se uma autoridade silenciosa mas poderosa em seu campo de atuação, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua missão exige que você mantenha uma integridade absoluta, agindo como um canal de lucidez pura. Cumprir este propósito significa oferecer ao mundo um novo nível de discernimento, onde a ciência e o espírito se fundem em uma única verdade libertadora.</p>
     <p>Sua trajetória é a de uma pesquisadora da luz, <strong>MASCULINO-FEMININO-NEUTRO</strong>. No final da jornada, seu legado será a clareza intelectual e espiritual que você deixou para trás, sendo reconhecida como a alma que teve a coragem de mergulhar no abismo do desconhecido para trazer as chaves da real compreensão humana.</p>`,
-
-    88: `<h3>Propósito 88 - A Maestria da Abundância Ética e do Comando Visionário</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    88: {
+     conteudo:`<h3>Propósito 88 - A Maestria da Abundância Ética e do Comando Visionário</h3>
     <p>O seu propósito nesta existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o gerenciamento magistral do poder material a serviço do espírito. Você veio com a missão de ser a "Regente da Abundância", demonstrando que é possível conquistar e liderar impérios financeiros ou sociais mantendo uma justiça implacável e uma visão de progresso universal.</p>
     <p>Você realiza seu propósito quando transmuta grandes somas de recursos em benefícios reais para a evolução coletiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua missão envolve provar que o poder, quando exercido com disciplina sagrada de causa e efeito, é a ferramenta que constrói o bem comum. Cumprir este propósito significa chegar ao topo da montanha material sem perder a conexão com a lei moral, agindo como o motor de prosperidade da civilização.</p>
     <p>Nesta missão, você é a executora da providência divina na terra, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao final da trajetória, sua satisfação será a magnitude das obras realizadas e a retidão da sua liderança, deixando um legado de vitórias éticas e de abundância compartilhada que ecoará por eras.</p>`,
-
-    99: `<h3>Propósito 99 - A Maestria da Transcendência e da Conclusão Crística</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    99: {
+     conteudo:`<h3>Propósito 99 - A Maestria da Transcendência e da Conclusão Crística</h3>
     <p>O seu propósito de vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, representa o fechamento de um imenso ciclo de experiências e a entrega total ao Amor Crístico Universal. Você veio com a missão suprema de ser a "Guia da Transcendência", agindo como um canal de compaixão final que auxilia a humanidade a encerrar velhos carmas e a transitar para um novo estado de ser.</p>
     <p>Você realiza seu propósito quando se desprende de toda ambição pessoal em favor do serviço absoluto à luz, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua missão é ser a presença que cura através da simples aceitação e da sabedoria que não julga. Cumprir este propósito significa ser o exemplo vivo do perdão e da generosidade sem limites, inspirando cada alma a reconhecer sua própria divindade e o fim de seu sofrimento.</p>
-    <p>Você é a voz que sussurra a esperança final no coração do mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao final da estrada, seu legado não será medido em formas ou posses, mas na imensa paz que você semeou e no salto evolutivo que ajudou a humanidade a dar, sendo eternizada como uma mestre do amor incondicional.</p>`
+    <p>Você é a voz que sussurra a esperança final no coração do mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao final da estrada, seu legado não será medido em formas ou posses, mas na imensa paz que você semeou e no salto evolutivo que ajudou a humanidade a dar, sendo eternizada como uma mestre do amor incondicional.</p>`,
+      videoID: "F8bg1CTQ9HI "
+    }, 
+
 },
 
 // --- MATURIDADE (O SEGUNDO FÔLEGO / O LEGADO DA VIDA) ---
 Maturidade: {
-    1: `<h3>Maturidade 1 - O Legado da Autonomia e da Liderança</h3>
+    1: {
+     conteudo:`<h3>Maturidade 1 - O Legado da Autonomia e da Liderança</h3>
     <p>A maturidade reserva para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um período de renovado vigor e força interna. É uma fase, desenhada especialmente a partir dos seus 30 a 35 anos, onde a independência conquistada se transforma em uma autoridade feminina natural, serena e imponente. Nesta etapa da vida, você não sente mais a necessidade de provar o seu valor para o mundo ou para os outros, pois sua própria trajetória de superação fala por si mesma.</p>
     <p>O seu foco principal, <strong>MASCULINO-FEMININO-NEUTRO</strong>, se volta totalmente para a consolidação da sua identidade como uma mulher líder. A vida trará oportunidades maduras para que você atue como mentora ou consultora, usando sua firmeza moral para guiar sua família e abrir caminhos para outras pessoas. A maturidade para você não significa de forma alguma desacelerar, mas sim entrar em um novo tipo de movimento: muito mais sábio, focado e imensamente produtivo.</p>
     <p>Você colherá o respeito universal por ter tido a coragem de ser original e autêntica, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu legado nessa fase é o de uma mulher que se tornou senhora absoluta do próprio destino, encerrando os ciclos com a satisfação íntima de quem deixou uma marca inconfundível na história e construiu seus objetivos com total protagonismo.</p>`,
-
-    2: `<h3>Maturidade 2 - O Legado do Acolhimento e da União</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    2: {
+     conteudo:`<h3>Maturidade 2 - O Legado do Acolhimento e da União</h3>
     <p>Na maturidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você colhe os frutos de uma vida semeada com gentileza, afeto e ética, encontrando-se no centro de uma linda rede de respeito mútuo. Essa fase, que ganha força após os seus 30 a 35 anos, traz uma compreensão profunda e aguçada das relações humanas, conferindo a você a posição de figura central de equilíbrio e harmonia no seu círculo familiar e social.</p>
     <p>Você descobrirá que sua maior força como mulher reside na cooperação e que o sucesso nesta etapa vem das parcerias afetivas e estratégicas que você constrói e nutre, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O mundo passa a ver em você uma alma sábia que entende que a verdadeira paz é construída na paciência e nos detalhes do cuidado cotidiano. Seu legado será a prova viva de que a suavidade e o amor são capazes de vencer qualquer dureza.</p>
     <p>Ao final, você sentirá o conforto profundo de uma vida bem vivida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, cercada pela gratidão de todos que encontraram no seu abraço e nos seus conselhos um porto seguro. A maturidade para você é um período de imensa riqueza emocional, onde sua sensibilidade feminina se torna a ferramenta mais poderosa para manter todos unidos e protegidos.</p>`,
-
-    3: `<h3>Maturidade 3 - O Legado da Expressão e da Vitalidade</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    3: {
+     conteudo:`<h3>Maturidade 3 - O Legado da Expressão e da Vitalidade</h3>
     <p>A maturidade será marcada para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, por uma linda explosão de criatividade, leveza e um brilho social que parece rejuvenescer a sua alma. Nessa fase da vida, que floresce intensamente a partir dos 30 a 35 anos, você se sentirá plenamente livre e à vontade para expressar seus talentos e sua verdade sem o peso do julgamento alheio, tornando-se uma referência de comunicação, arte ou dinamismo social.</p>
     <p>Você encontrará um prazer imenso em compartilhar sua sabedoria de forma envolvendo e lúdica, <strong>MASCULINO-FEMININO-NEUTRO</strong>, agindo como um farol de otimismo para sua família, amigas e ambiente de trabalho. Sua vida será rica em conexões, servindo como prova de que a vitalidade mental e o entusiasmo feminino não têm idade. O seu sucesso nesta etapa é medido diretamente pela quantidade de vidas que você consegue alegrar e inspirar.</p>
     <p>Seu legado será uma trajetória de pura luz, onde a sua comunicação autêntica serviu de ponte para a felicidade coletiva e para a realização dos seus sonhos mais vibrantes, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você viverá esse ciclo como uma personalidade inesquecível, celebrada pela capacidade infinita de celebrar a existência e de tornar o mundo ao seu redor um lugar muito mais luminoso.</p>`,
-
-    4: `<h3>Maturidade 4 - O Legado da Estrutura e da Segurança Familiar</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    4: {
+     conteudo:`<h3>Maturidade 4 - O Legado da Estrutura e da Segurança Familiar</h3>
     <p>A maturidade traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a consagração de uma vida dedica ao trabalho honesto, à retidão e à construção de bases absolutamente inabaláveis. Ao entrar na fase dos 30 aos 35 anos, sua mente se volta fortemente para a estabilidade, para a proteção do seu lar e para a garantia de um futuro próspero. O seu legado é a solidez, a organização e a eficiência inquestionável.</p>
     <p>Você sentirá um profundo e legítimo orgulho da sua trajetória de integridade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sendo a grande referência de porto seguro e autoridade moral para os seus familiares e parceiros de negócios. O seu papel agora é garantir que tudo o que foi construído com o seu suor permaneça e prospere, agindo com a sabedoria de quem conhece cada engrenagem da realidade prática e do sucesso duradouro.</p>
     <p>O mundo manifesta um respeito profundo por você como o exemplo máximo de dignidade e persistência feminina, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu legado será a prova concreta de que o esforço contínuo e o amor planejado geram resultados eternos. Você consolida essa jornada como a referência de segurança e honra que todos ao seu redor buscam espelhar.</p>`,
-
-    5: `<h3>Maturidade 5 - O Legado da Versatilidade e Expansão</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    5: {
+     conteudo:`<h3>Maturidade 5 - O Legado da Versatilidade e Expansão</h3>
     <p>Na maturidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você experimentará uma liberdade sem precedentes e uma sede de renovação que a manterá em total conexão com o que há de mais moderno e evolutivo. Essa fase, que ganha um impulso dinâmico a partir dos 30 a 35 anos, não é um período de estagnação, mas sim de uma linda reinvenção pessoal; você sentirá o desejo e a coragem de mudar de rumo, viajar ou empreender com a agilidade de quem nunca parou de aprender.</p>
     <p>Como uma mulher experiente, você descobrirá que sua bagagem de vida se tornou uma ferramenta de consultoria e orientação extremamente valiosa para processos de mudança e inovação, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A maturidade traz o prazer de ser uma alma livre, dona de uma inteligência rápida que recusa rotinas sufocantes ou preconceitos ultrapassados.</p>
     <p>Seu legado será uma história inspiradora de coragem e movimento, provando que a vida feminina é um campo infinito de possibilidades para quem ousa evoluir, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você conquistará o reconhecimento como uma mente visionária, cuja trajetória motiva outras mulheres a buscarem a própria independência e a nunca temerem o novo.</p>`,
-
-    6: `<h3>Maturidade 6 - O Legado do Matriarcado e da Harmonia</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    6: {
+     conteudo:`<h3>Maturidade 6 - O Legado do Matriarcado e da Harmonia</h3>
     <p>A maturidade reserva para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o papel sagrado de guia, protetora e conselheira, sendo a figura central de acolhimento para todos ao seu redor. Ao cruzar a linha dos 30 a 35 anos, seus instintos de cuidado florescem intensamente, transformando o seu lar, sua família e sua comunidade em verdadeiros centros de harmonia, amor e bem-estar.</p>
     <p>Você encontrará sua realização mais plena em atividades que envolvam o ensino, o aconselhamento ou a gestão harmoniosa e justa de pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O mundo vê em você a autoridade amorosa que traz equilíbrio e beleza para a vida. O seu sucesso nesta etapa de vida é medido diretamente pela estabilidade, união e felicidade daqueles que você ama e protege com tanto zelo.</p>
     <p>Seu legado será um rastro inconfundível de paz, dignidade e afeto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, provando que a responsabilidade familiar e o amor estruturado são os verdadeiros pilares de uma vida bem-sucedida. Você viverá esse ciclo colhendo admiração profunda, sendo a personificação do acolhimento em sua forma mais pura.</p>`,
-
-    7: `<h3>Maturidade 7 - O Legado da Sabedoria e do Autoconhecimento</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    7: {
+     conteudo:`<h3>Maturidade 7 - O Legado da Sabedoria e do Autoconhecimento</h3>
     <p>Na maturidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge um nível de maestria intelectual e intuitiva que a coloca em um pedestal de respeito silencioso e admiração. Essa fase, que se desenha com muita clareza a partir dos seus 30 a 35 anos, é profundamente marcada pelo aprofundamento dos estudos, pela busca espiritual e pela consolidação da sua sabedoria interior, tornando-se a autoridade máxima no seu campo de atuação.</p>
     <p>Você encontrará um prazer refinado no aconselhamento profundo, compartilhando suas percepções certeiras apenas com quem está realmente pronto para ouvir e evoluir, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O mundo respeita a sua disposição mais reservada e o seu espaço, sabendo que cada palavra sua é uma pérola de lucidez e verdade. O seu sucesso aqui é a conquista da paz de espírito e da clareza mental absoluta.</p>
     <p>Seu legado será a luz que você lançou sobre os mistérios da mente e da alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se consolida como uma mulher de integridade inatacável, cujo impacto na evolução e na orientação daqueles que a cercam será sentido por gerações, deixando uma marca de profunda conexão com as leis da existência.</p>`,
-
-    8: `<h3>Maturidade 8 - O Legado da Prosperidade e do Poder Realizador</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    8: {
+     conteudo:`<h3>Maturidade 8 - O Legado da Prosperidade e do Poder Realizador</h3>
     <p>A maturidade traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a plenitude do poder, do prestígio e da realização material em larga escala. Ao entrar na fase dos 30 aos 35 anos, sua ambição estratégica se alinha perfeitamente com a sua maturidade, fazendo com que você assuma o controle total da sua influência financeira e social, agindo como uma liderança executiva brilhante que organiza o progresso para si e para os seus.</p>
     <p>Você sentirá a imensa satisfação de ter dominado as leis do mundo material e conquistado sua independência financeira sem perder sua ética ou sua intuição feminina, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O mundo a vê como uma mulher poderosa, firme e resiliente, perfeitamente capaz de gerir grandes responsabilidades e crises com total autoconfiança. O sucesso aqui é a colheita justa de uma vida de disciplina.</p>
     <p>Seu legado será a prova incontestável de que a competência e o comando, quando exercidos com justiça e visão, são capazes de erguer impérios e garantir a segurança de toda uma linhagem, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se torna uma figura icônica de vitória, deixando um patrimônio moral e financeiro sólido para o futuro.</p>`,
-
-    9: `<h3>Maturidade 9 - O Legado do Humanitarismo e da Transcendência</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    9: {
+     conteudo:`<h3>Maturidade 9 - O Legado do Humanitarismo e da Transcendência</h3>
     <p>A maturidade reserva para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um período de profunda transcendência e generosidade, onde o seu amor pelo próximo e sua empatia se manifestam em ações de grande impacto emocional e social. A partir dos 30 a 35 anos, os objetivos puramente egoístas perdem o sentido, abrindo espaço para o seu desejo sincero de curar, ensinar e deixar um mundo significativamente melhor.</p>
     <p>Você encontrará sua maior alegria em servir a causas nobres, na espiritualidade aplicada ou na mentoria generosa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O mundo vê na sua figura uma luz guia, alguém cuja integridade serve de bússola para quem está perdido. O seu sucesso nesta etapa não é medido por posses frias, mas sim pelo número de corações que você conseguiu tocar, acolher e elevar.</p>
     <p>Seu legado será uma trajetória impecável de amor incondicional e sabedoria altruísta, <strong>MASCULINO-FEMININO-NEUTRO</strong>, provando que a verdadeira grandeza de uma mulher reside na sua capacidade de entrega e cura. Você viverá essa jornada com a alma em paz, sendo celebrada por ter cumprido a missão de iluminar a existência ao seu redor.</p>`,
-
-    11: `<h3>Maturidade 11 - O Legado da Intuição e da Mentoria Espiritual</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    11: {
+     conteudo:`<h3>Maturidade 11 - O Legado da Intuição e da Mentoria Espiritual</h3>
     <p>A maturidade reserva para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um despertar ainda mais profundo e poderoso dos seus dons intuitivos e da sua sensibilidade. Ao entrar na fase dos 30 a 35 anos, você deixa de apenas buscar respostas externas e passa a se conectar com a sua própria fonte interior, atuando como uma mentora visionária e inspiradora para todos que cruzam o seu caminho.</p>
     <p>Você descobrirá que sua verdadeira paz de espírito vem de aceitar de braços abertos esse papel de farol de consciência para a sua família e comunidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O sucesso nesta etapa de vida reside na qualidade da conexão espiritual alcançada e na sua capacidade única de inspirar transformações profundas através da empatia, do afeto e de uma diplomacia extremamente elevada.</p>
     <p>O mundo passa a enxergar em você uma alma feminina que transcendeu as preocupações triviais do ego, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu legado é o de despertar a consciência e trazer clareza para os momentos de incerteza alheia. Ao final, você sentirá a plenitude de ter sido um elo sagrado de luz, inspirando todos por toda a eternidade.</p>`,
-
-    22: `<h3>Maturidade 22 - O Legado da Grande Construção Universal</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    22: {
+     conteudo:`<h3>Maturidade 22 - O Legado da Grande Construção Universal</h3>
     <p>Na maturidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge o ápice absoluto do seu poder realizador, consolidando obras, projetos ou estruturas que servirão à sua família e à sociedade por gerações. A partir dos 30 a 35 anos, os seus grandes ideais de estabilidade tomam forma definitiva, transformando-se em um legado concreto de progresso material, ordem e segurança duradoura.</p>
     <p>Você sentirá a profunda satisfação de ver os seus empreendimentos ou bases familiares prosperarem de forma sólida e autônoma, garantindo o amparo e o bem-estar de muitas pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O mundo manifesta admiração sincera pela sua capacidade executiva inabalável e pela integridade demonstrada na gestão de grandes responsabilidades.</p>
     <p>Seu legado será a prova viva de que é perfeitamente possível manifestar a segurança e a abundância na terra através de um trabalho feminino organizado, ético e focado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você encerra sua trajetória como uma figura vitoriosa que moldou o futuro com sabedoria, força construtora e compromisso com a evolução.</p>`,
-
-    33: `<h3>Maturidade 33 - O Legado do Amor Crístico e da Cura Coletiva</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    33: {
+     conteudo:`<h3>Maturidade 33 - O Legado do Amor Crístico e da Cura Coletiva</h3>
     <p>A maturidade traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a expressão máxima e mais bela do serviço altruísta e do amor universal. Nesta fase da vida, potencializada após os seus 30 a 35 anos, você se torna a grande referência de proteção, amparo e compaixão, dedicando a sua existência a elevar o padrão moral, emocional e espiritual de toda a comunidade através do seu exemplo puro de bondade.</p>
     <p>Você encontrará sua realização mais sagrada ao atuar como uma verdadeira mestra da harmonia, protegendo os mais vulneráveis, acolhendo as dores da sua linhagem e guiando os outros para o caminho do afeto e da justiça amorosa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu sucesso aqui não se mede por troféus materiais, mas pela luz que você acende nos corações endurecidos pelo mundo.</p>
     <p>Seu legado será um hino eterno de esperança, acolhimento e redenção, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao final, você será reconhecida como a personificação do amor puro na terra, encerrando este ciclo com a alma em perfeita paz e deixando uma história de pura doação que continuará a curar e inspirar o mundo por muito tempo.</p>`,
-
-    44: `<h3>Maturidade 44 - O Legado da Governança e Estabilidade Soberana</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    44: {
+     conteudo:`<h3>Maturidade 44 - O Legado da Governança e Estabilidade Soberana</h3>
     <p>A maturidade reserva para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a consagração como uma das figuras mais resilientes, estruturadas e admiráveis da sua geração. Nesta fase de vida, que ganha contornos firmes a partir dos 30 a 35 anos, a disciplina rigorosa que você cultivou ao longo das décadas se transforma em uma autoridade soberana, onde sua capacidade de gerir realidades complexas e finanças atinge o ápice absoluto.</p>
     <p>O seu foco estratégico se volta inteiramente para a sustentação de grandes pilares familiares, sociais ou corporativos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A vida trará o reconhecimento merecido como uma verdadeira arquiteta da ordem, alguém cuja simples presença e comando garantem a viabilidade de grandes projetos materiais. A maturidade para você é o período de maior poder realizador, onde você desfruta da segurança absoluta que construiu com integridade inabalável.</p>
     <p>Seu legado será a solidez de uma estrutura que nunca falha e que protege todos os seus com unhas e dentes, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você viverá essa etapa como a referência máxima de dignidade, liderança e governança feminina, provando que a gestão ética da matéria é a base para o progresso seguro de toda a sua linhagem.</p>`,
-
-    55: `<h3>Maturidade 55 - O Legado da Inovação e Liberdade Visionária</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    55: {
+     conteudo:`<h3>Maturidade 55 - O Legado da Inovação e Liberdade Visionária</h3>
     <p>Na maturidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você experimentará uma aceleração intelectual e intuitiva que a manterá sempre décadas à frente do seu tempo. Essa fase é marcada por uma liberdade dinâmica e revigorante que começa a se manifestar fortemente entre os seus 30 e 35 anos, onde você utiliza sua vasta experiência para liderar quebras de paradigmas e transformações, agindo como uma mentora estratégica brilhante.</p>
     <p>Você descobrirá que o seu segundo fôlego é, na verdade, uma explosão de vitalidade inovadora e jovialidade de espírito, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A vida na maturidade traz viagens, novos conhecimentos e projetos arrojados que renovam o seu propósito constantemente. O sucesso nesta etapa é medido pela sua capacidade de se desapegar do passado para criar um futuro mais livre, inteligente e humanizado.</p>
     <p>Seu legado será uma trajetória fascinante marcada pela coragem da reinvenção feminina, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você terá o reconhecimento como uma personalidade disruptiva que nunca envelheceu em espírito, deixando um rastro de evolução que inspira o mundo ao seu redor a abandonar a estagnação e a abraçar a mudança como fonte de vida.</p>`,
-
-    66: `<h3>Maturidade 66 - O Legado da Justiça Afetiva e do Cuidado Coletivo</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    66: {
+     conteudo:`<h3>Maturidade 66 - O Legado da Justiça Afetiva e do Cuidado Coletivo</h3>
     <p>A maturidade reserva para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o papel de guardiã máxima da harmonia e do equilíbrio em escala coletiva. Nesta fase de vida, que ganha um contorno lindo e profundo a partir dos 30 a 35 anos, o seu senso de responsabilidade atinge um patamar místico e acolhedor, transformando a sua influência em um bálsamo que pacifica ambientes e restaura o equilíbrio onde havia desordem emocional.</p>
     <p>Você encontrará sua realização absoluta ao atuar como o coração de uma grande rede de cuidado, afeto e proteção que ultrapassa os limites da família de sangue, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O mundo enxerga na sua figura a autoridade do amor incondicional aplicado à gestão da vida. O sucesso aqui é ver a harmonia, a justiça e a beleza prevalecerem nos lares e caminhos que você administra com tanta sabedoria.</p>
     <p>Seu legado será um rastro inestimável de dignidade restaurada e corações acolhidos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se consolida como a alma nobre que provou que o afeto estruturado e o cuidado feminino são as forças transformadoras mais poderosas que existem, sendo amada e respeitada como o verdadeiro coração da sua era.</p>`,
-
-    77: `<h3>Maturidade 77 - O Legado da Maestria Analítica e Verdade Interna</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    77: {
+     conteudo:`<h3>Maturidade 77 - O Legado da Maestria Analítica e Verdade Interna</h3>
     <p>Na maturidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge uma estatura intelectual, intuitiva e espiritual que a eleva inteiramente acima da superficialidade do mundo, colocando-a em um plano de profunda lucidez. Essa fase, que se consolida fortemente a partir dos seus 30 a 35 anos, é marcada pela revelação final de conhecimentos profundos que você buscou por toda a vida, consolidando-se como uma autoridade analítica inata.</p>
     <p>Você encontrará seu prazer no silêncio produtivo, nos estudos elevados e no aconselhamento de alto nível, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O mundo passa a respeitar o seu recolhimento e o seu espaço sagrado, sabendo que você é detentora das leis que regem o invisível e o visível. O sucesso nesta etapa é a conquista da independência mental absoluta e a clareza total sobre o sentido da existência.</p>
     <p>Seu legado será a luz do conhecimento puro e da verdade que você deixou como herança preciosa para a humanidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se consolida como a mestra da verdade, cuja integridade e profundidade de pensamento serviram de farol para que outros pudessem navegar com segurança em direção à própria evolução.</p>`,
-
-    88: `<h3>Maturidade 88 - O Legado do Comando Firme e Prosperidade Ética</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    88: {
+     conteudo:`<h3>Maturidade 88 - O Legado do Comando Firme e Prosperidade Ética</h3>
     <p>A maturidade traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a colheita monumental e justa de uma vida dedicada à eficiência, ao trabalho estratégico e ao comando de alto nível. Nessa fase, que ganha proporções gigantescas a partir dos 30 a 35 anos, você desfruta de um prestígio executivo inigualável, agindo como a regente da abundância que organiza recursos para sustentar o progresso duradouro da sua família ou de grandes causas.</p>
     <p>Você sentirá a satisfação profunda de possuir uma influência e um poder financeiro que não corrompem, mas que constroem, blindam e protegem quem você ama, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O mundo a vê como uma figura de sucesso absoluto, cuja resiliência em face dos grandes desafios da carreira se tornou sinônimo de competência. O sucesso aqui é a prova material de que você dominou o mundo físico com honra.</p>
     <p>Seu legado será um patrimônio sólido de realizações vitoriosas que beneficiará e protegerá a sua linhagem por gerações, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se torna o exemplo icônico de que o poder realizador feminino, quando aliado à justiça e ao foco, é a força que manifesta a dignidade e a abundância na terra.</p>`,
-
-    99: `<h3>Maturidade 99 - O Legado da Transcendência e Sabedoria Suprema</h3>
+  videoID: "F8bg1CTQ9HI "
+    },
+    99: {
+     conteudo:`<h3>Maturidade 99 - O Legado da Transcendência e Sabedoria Suprema</h3>
     <p>A maturidade traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o estágio mais elevado da sabedoria humana, um período de desapego iluminado, amor universal e serviço generoso. Ao entrar na fase dos 30 a 35 anos, você se torna o canal por onde flui a cura e a compaixão, agindo como uma mentora global que auxilia as pessoas a encerrarem ciclos de sofrimento e a despertarem para uma nova consciência.</p>
     <p>Você encontrará a sua maior alegria em se doar para o bem comum e para a evolução espiritual, sem esperar qualquer reconhecimento externo, embora ele venha de forma natural em forma de admiração silenciosa por parte de todos que a cercam, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O sucesso nesta etapa é a paz profunda de quem compreende a alma humana. Você é a presença que pacifica qualquer ambiente apenas por existir.</p>
-    <p>Seu legado será a belíssima transformação espiritual e humana que você operou no coração daqueles que cruzaram o seu caminho, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você viverá essa jornada com a certeza de que sua vida foi uma ponte para o sagrado. Sua história será lembrada como um hino à generosidade absoluta, deixando o mundo muito mais iluminado.</p>`
+    <p>Seu legado será a belíssima transformação espiritual e humana que você operou no coração daqueles que cruzaram o seu caminho, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você viverá essa jornada com a certeza de que sua vida foi uma ponte para o sagrado. Sua história será lembrada como um hino à generosidade absoluta, deixando o mundo muito mais iluminado.</p>`,
+  videoID: "F8bg1CTQ9HI "
+    },
+    
+
 },
 // --- RELACIONAMENTO (COMO VOCÊ É E SE COMPORTA NO AMOR) ---
 Relacionamento: {
-    1: `<h3>Relacionamento 1 - Autonomia e Conquista no Amor</h3>
+    1: {
+     conteudo:`<h3>Relacionamento 1 - Autonomia e Conquista no Amor</h3>
     <p>Esta energia traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a necessidade constante de preservar a individualidade dentro de qualquer união afetiva. Essa força de liderança garante que você não se anule em nome de um par, mantendo seu brilho original em todas as circunstâncias da convivência.</p>
     <p>O grande desafio é exercer o amor com independência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe um impulso natural para tomar decisões solitárias, o que exige um diálogo claro para que a parceria não se sinta excluída. A lição fundamental para você é entender que um relacionamento sólido é composto por dois seres inteiros.</p>
     <p>Ao cultivar a própria força, você atrai conexões que respeitam sua liberdade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A construção de um vínculo duradouro depende da admiração mútua e da coragem de sempre renovar a rotina, mantendo o frescor da conquista vivo em cada gesto de carinho e presença real.</p>
@@ -2132,8 +2249,10 @@ Relacionamento: {
 <p>Você encontra o seu <strong>oposto</strong> nos números <strong>6 e 7</strong>, onde sua independência pode colidir com o excesso de zelo ou o isolamento do outro.</p>
 <p>Sua convivência é <strong>passiva</strong> com os números <strong>2, 3 e 5</strong>, permitindo que as relações fluam sem grandes desgastes ou cobranças.</p> 
     `,
-
-    2: `<h3>Relacionamento 2 - A Harmonia e a Sensibilidade na União</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    2: {
+     conteudo:`<h3>Relacionamento 2 - A Harmonia e a Sensibilidade na União</h3>
     <p>A marca da sua energia, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a diplomacia e a busca por uma harmonia profunda nas relações. Sua sensibilidade permite perceber as necessidades da outra pessoa antes mesmo da verbalização, criando um elo de compreensão mútua e apoio constante no dia a dia.</p>
     <p>É preciso atenção com a hipersensibilidade para não absorver tensões alheias, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O aprendizado essencial para você é que a verdadeira paz nasce da verdade dita com doçura. Sua natureza é de entrega e valorização dos detalhes que fortalecem o convívio e a segurança do par.</p>
     <p>Existe uma grande oportunidade de promover curas internas através de uma convivência baseada na paciência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao desenvolver o equilíbrio entre o dar e o receber, você consolida uma união estável, onde o afeto flui sem barreiras e o respeito se torna o alicerce da felicidade.</p>
@@ -2143,8 +2262,10 @@ Relacionamento: {
 <p>O seu <strong>oposto</strong> é o número <strong>5</strong>, já que sua necessidade de união constante pode sofrer com a impulsividade e sede de liberdade deste número.</p>
 <p>Você mantém uma relação <strong>passiva</strong> com os números <strong>1, 3, 4 e 6</strong>, o que gera parcerias estáveis e baseadas no respeito mútuo.</p>
     `,
-
-    3: `<h3>Relacionamento 3 - A Alegria e a Expressão Afetiva</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    3: {
+     conteudo:`<h3>Relacionamento 3 - A Alegria e a Expressão Afetiva</h3>
     <p>Sua vibração favorece a alegria e a expressão dos sentimentos de forma aberta e vibrante, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Essa energia de expansão torna você uma presença magnética e encantadora, capaz de atrair parcerias através do entusiasmo, do bom humor e de uma comunicação impecável.</p>
     <p>O risco reside na dispersão, <strong>MASCULINO-FEMININO-NEUTRO</strong>, que pode dificultar o aprofundamento dos laços ao preferir o brilho das novidades. A lição de vida para você é usar sua criatividade para manter o relacionamento dinâmico, impedindo que o tédio ou a monotonia se instalem na vida a dois.</p>
     <p>Você brilha ao lado de quem ama, celebrando cada conquista com leveza, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao superar a inconstância, você descobre que a felicidade reside na capacidade de ser quem você é, sem máscaras, dentro de uma relation que estimula o seu crescimento intelectual e social.</p>
@@ -2154,8 +2275,10 @@ Relacionamento: {
 <p>Seus <strong>opostos</strong> são os números <strong>4 e 8</strong>, pois sua leveza e improviso muitas vezes chocam-se com o pragmatismo e o rigor desses perfis.</p>
 <p>Sua dinâmica é <strong>passiva</strong> com os números <strong>1 e 2</strong>, permitindo trocas sociais e afetivas tranquilas e sem conflitos diretos.</p>
     `,
-
-    4: `<h3>Relacionamento 4 - A Estabilidade e a Construção Segura</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    4: {
+     conteudo:`<h3>Relacionamento 4 - A Estabilidade e a Construção Segura</h3>
     <p>Sua natureza foca na construção de bases sólidas, onde o amor se manifesta através da presença constante e do apoio prático, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua segurança emocional está ligada à fidelidade, exigindo o cultivo da paciência e do respeito às regras da convivência harmônica.</p>
     <p>É necessário evitar a rigidez ou o excesso de cobranças, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desafio para você é encontrar beleza na construção diária e entender que o trabalho em equipe é o que garante a durabilidade do vínculo. O amor, para você, ganha forma através de atitudes concretas e leais.</p>
     <p>Existe um desejo natural de planejar o futuro com detalhes, investindo em um lar seguro, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao superar a necessidade de controle, você constrói um relacionamento que é uma verdadeira rocha, servindo de exemplo de integridade e união inabalável para todos ao seu redor.</p>
@@ -2166,8 +2289,10 @@ Relacionamento: {
 <p>Sua convivência é <strong>passiva</strong> com os números <strong>2, 7 e 9</strong>, resultando em laços duradouros, discretos e de muita confiança.</p>
     
     `,
-
-    5: `<h3>Relacionamento 5 - A Liberdade e a Aventura Compartilhada</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    5: {
+     conteudo:`<h3>Relacionamento 5 - A Liberdade e a Aventura Compartilhada</h3>
     <p>Sua energia é voltada para a aventura e a necessidade de renovação constante dentro da vida amorosa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma inquietude que busca parcerias cúmplices em mudanças e novas experiências sensoriais, fugindo sempre do tédio e do convencionalismo.</p>
     <p>É preciso atenção para que a instabilidade não leve ao rompimento de laços valiosos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O aprendizado para você é entender que a autonomia pode ser vivida dentro de uma relação, desde que haja espaço para a individualidade e para a novidade constante que sua alma exige.</p>
     <p>Seu magnetismo atrai situações que testam sua capacidade de adaptação, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O segredo é manter o canal da comunicação sempre aberto, sendo uma companhia estimulante e corajosa que encara cada transformação da vida com um espírito de exploração mútua e paixão.</p>
@@ -2177,8 +2302,10 @@ Relacionamento: {
 <p>Seus <strong>opostos</strong> são os números <strong>2, 4 e 6</strong>, onde sua sede de mudanças pode ferir a necessidade de segurança e rotina desses perfis.</p>
 <p>Você é <strong>passiva</strong> com os números <strong>1, 7 e 8</strong>, permitindo que cada um viva sua liberdade sem grandes interferências mútuas.</p>
     `,
-
-    6: `<h3>Relacionamento 6 - O Cuidado e a Harmonia Familiar</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    6: {
+     conteudo:`<h3>Relacionamento 6 - O Cuidado e a Harmonia Familiar</h3>
     <p>Sua vibração é voltada para o amor familiar e o serviço dedicado ao bem-estar das pessoas queridas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Essa energia pede que as responsabilidades afetivas sejam assumidas com maturidade, agindo como a figura que traz harmonia e justiça para o convívio íntimo.</p>
     <p>O risco para você é o perfeccionismo ou a tendência a cobrar um ideal inatingível da parceria, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição de vida é o acolhimento incondicional, entendendo que o amor real aceita as imperfeições. Sua natureza pede um ambiente doméstico confortável e repleto de afeto.</p>
     <p>Existe uma necessidade profunda de fortalecer os laços com quem ama, pois seu instinto protetor é nato, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao equilibrar o desejo de cuidar com o respeito à autonomia alheia, você se torna um porto seguro inabalável e uma referência de sabedoria e acolhimento afetuoso.</p>
@@ -2188,8 +2315,10 @@ Relacionamento: {
 <p>Seus <strong>opostos</strong> são os números <strong>1, 8 e 5</strong>, pois seu desejo de cuidar e estar perto pode ser interpretado como controle por esses perfis mais independentes.</p>
 <p>Sua relação é <strong>passiva</strong> com o número <strong>2</strong>, criando um ambiente de mútua aceitação e cooperação afetiva profunda.</p>
     `,
-
-    7: `<h3>Relacionamento 7 - A Profundidade e a Sintonia de Almas</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    7: {
+     conteudo:`<h3>Relacionamento 7 - A Profundidade e a Sintonia de Almas</h3>
     <p>A vida afetiva sob esta influência exige profundidade e respeito ao silêncio, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você busca uma união de almas, onde a sintonia intelectual e espiritual são os pilares principais, valorizando imensamente a qualidade do tempo compartilhado em vez da quantidade.</p>
     <p>É preciso evitar o isolamento excessivo, que pode fazer com que o outro se sinta excluído, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desafio para você é aprender a compartilhar seus sentimentos mais profundos, permitindo que o par conheça sua essência real e sem as defesas que você costuma erguer.</p>
     <p>Sua intuição aguçada permite perceber as verdades ocultas na relação, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao superar o medo da vulnerabilidade, você desenvolve um vínculo de integridade absoluta, onde a cumplicidade nasce do entendimento silencioso e de uma admiração mútua que transcende o físico.</p>
@@ -2199,8 +2328,10 @@ Relacionamento: {
 <p>Seus <strong>opostos</strong> são os números <strong>1 e 9</strong>, onde sua necessidade de solitude e estudo pode parecer frieza para quem busca ação ou doação total.</p>
 <p>Você mantém uma dinâmica <strong>passiva</strong> com os números <strong>4, 5 e 8</strong>, garantindo o respeito mútuo ao espaço e à individualidade.</p>
     `,
-
-    8: `<h3>Relacionamento 8 - O Poder e a Realização em Conjunto</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    8: {
+     conteudo:`<h3>Relacionamento 8 - O Poder e a Realização em Conjunto</h3>
     <p>Sua energia brings o desafio de equilibrar o sucesso material com a entrega afetiva sincera, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você valoriza parcerias ambiciosas que respeitem sua autoridade e colaborem ativamente na construção de um patrimônio sólido e de um futuro próspero em comum.</p>
     <p>É fundamental evitar o autoritarismo no amor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição para você é que a verdadeira liderança na relação nasce do respeito mútuo, e não do domínio. Existe um desejo genuíno de proteger e prover segurança para quem ama, fruto das grandes conquistas que você alcança.</p>
     <p>Ao superar a obsessão por controle, você consolida uma relação de grande influência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A força da sua união impulsiona ambos ao topo. O sucesso afetivo aqui é medido pela lealdade e pela capacidade de transformar a paixão em um império de estabilidade e honra.</p>
@@ -2210,8 +2341,10 @@ Relacionamento: {
 <p>Seus <strong>opostos</strong> são os números <strong>3 e 6</strong>, onde sua objetividade pode ser vista como dureza por quem busca mais leveza e emoção.</p>
 <p>Sua convivência é <strong>passiva</strong> com os números <strong>5, 7 e 9</strong>, permitindo que a vida siga sem grandes atritos de autoridade.</p>
     `,
-
-    9: `<h3>Relacionamento 9 - O Amor Universal e a Entrega Generosa</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    9: {
+     conteudo:`<h3>Relacionamento 9 - O Amor Universal e a Entrega Generosa</h3>
     <p>Sua natureza é marcada pelo amor universal e pela compreensão ampla dentro das relações, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Essa energia favorece a resolução de mágoas e a abertura do coração para uma aceitação generosa das falhas humanas, agindo sempre com desprendimento e sabedoria.</p>
     <p>É preciso evitar a dramatização emocional ou a dificuldade em encerrar ciclos que não trazem mais crescimento, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição de vida para você é a entrega: amar com liberdade e entender que o afeto deve circular sem os pesos sufocantes do sentimento de posse ou ciúme.</p>
     <p>Sua sensibilidade busca auxiliar o par no crescimento espiritual, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao superar o apego ao ego, você se torna uma presença inspiradora, capaz de viver um amor que transcende as barreiras comuns, sentindo a plenitude de quem ama com a alma e para o bem maior.</p>
@@ -2220,217 +2353,289 @@ Relacionamento: {
 <p>Sua generosidade <strong>atrai</strong> os números <strong>2, 3, 5 e 6</strong>, que buscam em você inspiração e suporte emocional.</p>
 <p>Seu oposto é o número <strong>7</strong>, pois sua entrega total e expansiva pode assustar a natureza reservada e analítica deste número.</p>
 <p>Você mantém uma relação <strong>passiva</strong> com os números <strong>4 e 8</strong>, baseada no respeito ao tempo de cada um e na cooperação silenciosa.</p>
-    `
+    `,
+videoID: "F8bg1CTQ9HI "
+    },
+     
 },
 
 
 // --- 1º CICLO (FORMAÇÃO / JUVENTUDE) ---
 ciclos: {
     1: {
-      1: `<h3>1º Ciclo 1 - O Despertar da sua Individualidade e Coragem</h3>
+      1: {
+     conteudo:`<h3>1º Ciclo 1 - O Despertar da sua Individualidade e Coragem</h3>
       <br>
       <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida foi marcado por uma necessidade visceral de autoafirmação e pelo despertar de uma independência precoce, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Desde os seus primeiros anos, você sentiu um forte impulso de trilhar o próprio caminho, enfrentando situações onde a coragem e a autoconfiança foram exigidas de você muito antes do esperado para a sua idade.</p>
       <p style="margin-bottom: 20px;">Durante este estágio fundamental da sua juventude, você aprendeu que a sua iniciativa era a ferramenta mais poderosa para abrir portas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este período exigiu que você confiasse plenamente nos seus próprios instintos e tomasse decisões sob pressão, agindo desde cedo como a única arquiteta de uma realidade que nascia de forma original e autônoma.</p>
       <p style="margin-bottom: 20px;">A sua grande lição central foi a superação do medo do isolamento em favor da liberdade de ser você mesma, autêntica e forte, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Cada obstáculo que você enfrentou serviu para lapidar a sua identidade única. Você emergiu deste ciclo com a autoridade de uma mulher que sabe exatamente do que é capaz, consolidando um espírito vencedor que não se curva diante das dificuldades.</p>`,
-
-      2: `<h3>1º Ciclo 2 - O Seu Aprendizado em Cooperação e Sensibilidade Feminina</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+      2: {
+     conteudo:`<h3>1º Ciclo 2 - O Seu Aprendizado em Cooperação e Sensibilidade Feminina</h3>
       <br>
       <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida foi vivido sob a influência profunda da sua sensibilidade e da sua capacidade de cooperação, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Na sua juventude, você se destacou como uma menina e jovem atenta às necessidades alheias, agindo com uma diplomacia natural e um tato social raro, sempre buscando manter a harmonia e o equilíbrio nos seus ambientes.</p>
       <p style="margin-bottom: 20px;">Este período ensinou a você o valor inestimável da paciência e da escuta ativa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você aprendeu a encontrar força atuando com maestria nos bastidores ou em parcerias estratégicas, onde sua capacidade de apoiar e nutrir projetos fortaleceu a sua própria base de segurança. O seu foco aqui foi entender que a união inteligente é o melhor caminho para o crescimento.</p>
       <p style="margin-bottom: 20px;">Ao navegar por este ciclo, você desenvolveu a habilidade de valorizar os detalhes sutis que a maioria das pessoas ignora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sua grande lição foi perceber que cooperar não significa ser passiva, mas sim fazer uma escolha consciente de poder. Você emergiu desta fase sabendo harmonizar qualquer ambiente, levando consigo a certeza de que as alianças certas guiam você ao sucesso.</p>`,
-
-      3: `<h3>1º Ciclo 3 - A Eclosão da sua Criatividade e Magnetismo</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+      3: {
+     conteudo:`<h3>1º Ciclo 3 - A Eclosão da sua Criatividade e Magnetismo</h3>
       <br>
      <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida foi uma jornada vibrante, alegre e intensamente voltada para a sua autoexpressão, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Durante a sua juventude, você sentiu uma necessidade pulsante de compartilhar suas ideias e talentos, sendo logo reconhecida como uma presença carismática, dotada de uma imaginação fértil que coloria a realidade ao seu redor.</p>
       <p style="margin-bottom: 20px;">Este período foi um solo extremamente fértil para as suas descobertas, onde você aprendeu a usar o magnetismo da sua fala e o seu charme natural para abrir caminhos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você vivenciou este ciclo com entusiasmo, entendendo que o seu brilho pessoal tinha o poder inerente de desarmar situações tensas e inspirar as pessoas.</p>
       <p style="margin-bottom: 20px;">Ao abraçar a sua natureza expansiva e comunicativa, você descobriu que a expressão autêntica é o seu maior trunfo social, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A estrada da juventude ensinou a você que a sua verdade é valiosa. Você concluiu este ciclo com uma mente cheia de ideias inovadoras, provando que a sua vida ganha sentido quando você se permite brilhar com voz e alegria.</p>`,
-
-      4: `<h3>1º Ciclo 4 - A Construção das suas Bases Sólidas e Disciplina</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+      4: {
+     conteudo:`<h3>1º Ciclo 4 - A Construção das suas Bases Sólidas e Disciplina</h3>
       <br>
       <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida foi pautado por uma autodisciplina admirável e um senso de dever muito claro, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Desde cedo, você demonstrou uma maturidade que surpreendia a todos, agindo com uma responsabilidade prática que trazia estabilidade e segurança para a sua família e para o seu círculo de convivência.</p>
       <p style="margin-bottom: 20px;">Este período foi a sua grande escola de resiliência, onde você aprendeu que nada de valor duradouro se conquista sem foco, organização e trabalho consistente, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você descobriu cedo que a ordem é a base do progresso, compreendendo que a sua segurança futura seria o fruto de um planejamento inteligente executado por você com total integridade.</p>
       <p style="margin-bottom: 20px;">Ao consolidar essa base de esforço estruturado, você desenvolveu um caráter inabalável, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sua lição fundamental foi entender que a estabilidade não depende da sorte, mas sim da sua determinação aplicada diariamente. Você emergiu deste ciclo como uma mulher de palavra e de autoridade prática, pronta para edificar grandes projetos.</p>`,
-
-      5: `<h3>1º Ciclo 5 - A sua Jornada de Liberdade, Mudança e Versatilidade</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+      5: {
+     conteudo:`<h3>1º Ciclo 5 - A sua Jornada de Liberdade, Mudança e Versatilidade</h3>
       <br>
       <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida foi marcado por uma versatilidade fascinante e uma curiosidade insaciável, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Durante a sua juventude, você sentiu um desejo magnético de explorar o mundo, conhecer o novo e experimentar diferentes facetas da existência, demonstrando uma recusa natural a qualquer tipo de rotina que tentasse te sufocar.</p>
       <p style="margin-bottom: 20px;">Este período desenvolveu em você uma agilidade mental invejável e um espírito intensamente livre, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você aprendeu a se comunicar com facilidade em qualquer ambiente, agindo com uma adaptabilidade camaleônica. O seu foco central foi o desenvolvimento da sua independência, questionando padrões antigos e tendo a audácia de abraçar o imprevisto.</p>
       <p style="margin-bottom: 20px;">Ao navegar por essa estrada cheia de novidades, você acumulou vivências que a tornaram uma mulher à frente do seu tempo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A grande lição foi entender que a sua sabedoria vem da experimentação direta. Você concluiu este ciclo com uma visão ampla, pronta para lidar com as mudanças da vida com a calma de quem ama a liberdade.</p>`,
-
-      6: `<h3>1º Ciclo 6 - O Seu Despertar para a Responsabilidade e a Força do Cuidado</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+      6: {
+     conteudo:`<h3>1º Ciclo 6 - O Seu Despertar para a Responsabilidade e a Força do Cuidado</h3>
       <br>
       <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida foi profundamente voltado para as responsabilidades afetivas, o ambiente familiar e o cuidado zeloso com o próximo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Desde cedo, você se viu assumindo papéis de proteção, apoio ou mediação, agindo com um senso de justiça e um afeto generoso que a transformaram no centro equilibrador do seu grupo.</p>
       <p style="margin-bottom: 20px;">Este período ensinou a você o valor inestimável do acolhimento e do serviço amoroso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você refinou um olhar sensível para o bem-estar coletivo, buscando criar harmonia para aplacar as tensões do mundo exterior. O seu aprendizado central foi compreender que a sua realização pessoal está intimamente conectada à sua habilidade de transformar ambientes em espaços de paz.</p>
       <p style="margin-bottom: 20px;">Ao abraçar esse papel de guardiã e protetora, você construiu uma base de respeito que se tornou o seu maior patrimônio moral, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sua lição fundamental foi a de que o amor é uma escolha ativa e realizadora. Você emergiu deste ciclo com uma maturidade emocional admirável, pronta para liderar através do afeto e da retidão.</p>`,
-
-      7: `<h3>1º Ciclo 7 - O Seu Mergulho no Conhecimento, Intuição e Reflexão</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+      7: {
+     conteudo:`<h3>1º Ciclo 7 - O Seu Mergulho no Conhecimento, Intuição e Reflexão</h3>
       <br>
       <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida foi marcado por uma natureza introspectiva, seletiva e inteiramente voltada para a busca de respostas profundas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Durante a sua juventude, você frequentemente preferiu o silêncio da reflexão, os livros e o prazer do estudo à agitação superficial, descobrindo que a sua mente analítica era capaz de ler as pessoas e perceber verdades ocultas.</p>
       <p style="margin-bottom: 20px;">Este período desenvolveu em você uma intuição poderosíssima e uma capacidade de observação extremamente aguçada, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você aprendeu cedo a valorizar a qualidade dos seus pensamentos, agindo com uma cautela sábia. O foco deste ciclo foi o seu autoconhecimento e a descoberta de que o seu saber especializado é a sua maior ferramenta de poder pessoal.</p>
       <p style="margin-bottom: 20px;">Ao cultivar esse refinamento mental, você preparou o terreno para se tornar uma especialista e referência naquilo que faz, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição foi entender que as grandes verdades exigem tempo e quietude. Você concluiu este ciclo com uma integridade intelectual inatacável, sabendo que o conhecimento é o seu caminho para o topo.</p>`,
-
-      8: `<h3>1º Ciclo 8 - A Lapidação da sua Liderança e Visão de Sucesso</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+      8: {
+     conteudo:`<h3>1º Ciclo 8 - A Lapidação da sua Liderança e Visão de Sucesso</h3>
       <br>
       <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida trouxe para você desafios e estímulos precoces relacionados ao mundo da realização material, do poder e da gestão estratégica, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Desde jovem, você demonstrou uma ambição saudável, uma mente prática e uma determinação incomum para conquistar o seu próprio espaço e ser reconhecida pela sua competência.</p>
       <p style="margin-bottom: 20px;">Este período ensinou a você que a sua força de vontade, quando unida à disciplina, é plenamente capaz de transformar seus objetivos em conquistas tangíveis, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você descobriu um talento nato para administrar situações complexas e assumir responsabilidades. O aprendizado central foi equilibrar a busca pela independência financeira com a sua integridade ética.</p>
       <p style="margin-bottom: 20px;">Ao consolidar essa mentalidade realizadora e forte, você desenvolveu uma resiliência impressionante, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição foi perceber que a sua capacidade de realização é uma ferramenta de transformação. Você emergiu deste ciclo pronta para comandar grandes destinos, consciente de que nasceu para concretizar obras de valor.</p>`,
-
-      9: `<h3>1º Ciclo 9 - A Descoberta da sua Sabedoria Generosa e Humanitária</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+      9: {
+     conteudo:`<h3>1º Ciclo 9 - A Descoberta da sua Sabedoria Generosa e Humanitária</h3>
       <br>
       <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida foi marcado por uma sensibilidade extraordinária, idealismo e uma generosidade que chamava a atenção, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Durante a sua juventude, você demonstrou uma compreensão das dores e necessidades humanas que transcendia a sua idade, agindo com uma compaixão natural que a fazia se importar sinceramente com o bem-estar coletivo.</p>
       <p style="margin-bottom: 20px;">Este período trouxe para você lições profundas sobre desapego, tolerância e a arte do perdão, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você aprendeu a enxergar a vida a partir de uma perspectiva ampla e universal, desenvolvendo uma consciência ética refinada e compreendendo que você veio ao mundo para atuar como um canal de sabedoria e luz.</p>
       <p style="margin-bottom: 20px;">Ao abraçar essa natureza acolhedora e sábia, você conquistou o respeito e a admiração de pessoas de todas as origens, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição foi entender que o seu verdadeiro sucesso está ligado ao impacto positivo que você causa na vida alheia. Você concluiu este ciclo com uma alma madura, pronta para liderar pelo exemplo e pela generosidade.</p>`,
-
-      11: `<h3>1º Ciclo 11 - O Despertar da sua Intuição Visionária e Inspiração</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+      11: {
+     conteudo:`<h3>1º Ciclo 11 - O Despertar da sua Intuição Visionária e Inspiração</h3>
       <br>
     <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida foi marcado por uma intensidade emocional profunda e uma sensibilidade intuitiva totalmente fora do comum, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Desde muito cedo, você percebeu que a sua conexão com a realidade não se limitava ao óbvio, vivenciando percepções aguçadas que a colocavam em uma posição de destaque intelectual e místico entre as pessoas ao seu redor.</p>
       <p style="margin-bottom: 20px;">Durante a sua juventude, você descobriu que a sua jornada envolvia atuar como uma inspiração, clareando o entendimento daqueles que estavam perdidos ou confusos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este período ensinou a você que a sua sensibilidade refinada é um radar infalível para identificar a verdade, plantando em você a semente de uma liderança baseada em ideais elevados.</p>
       <p style="margin-bottom: 20px;">A sua lição central foi aprender a canalizar esse potencial vibrante para fins construtivos, protegendo a sua energia enquanto se fortalecia, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você emergiu deste ciclo como uma presença magnética e visionária, com o legado de uma juventude que provou que a sua luz e a sua verdade são forças reais de transformação.</p>`,
-
-      22: `<h3>1º Ciclo 22 - A Formação da sua Mentalidade Construtora e de Grande Escala</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+      22: {
+     conteudo:`<h3>1º Ciclo 22 - A Formação da sua Mentalidade Construtora e de Grande Escala</h3>
       <br>
       <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida trouxe para você a semente de uma ambição monumental e uma capacidade impressionante de visualizar grandes realizações, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Desde cedo, você demonstrou um talento natural para organizar o caos, agindo com um pragmatismo mestre e buscando transformar sonhos grandiosos em estruturas tangíveis, seguras e úteis.</p>
      <p style="margin-bottom: 20px;">Este período ensinou a você a importância da paciência construtora e da atenção meticulosa aos detalhes práticos da vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você descobriu que possui uma força interna fora de série para coordenar esforços complexos. O foco deste ciclo foi o desenvolvimento da sua competência executiva, aliando a sua inteligência prática a um forte desejo de criar estabilidade duradoura.</p>
-     <p style="margin-bottom: 20px;">A sua lição fundamental foi perceber que o seu verdadeiro poder está em criar ordem e progresso para o coletivo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você concluiu esta fase de juventude com a estrutura de uma mulher que nasceu para edificar projetos de grande valor, provando que a sua determinação organizada é capaz de moldar o futuro.</p>`
+     <p style="margin-bottom: 20px;">A sua lição fundamental foi perceber que o seu verdadeiro poder está em criar ordem e progresso para o coletivo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você concluiu esta fase de juventude com a estrutura de uma mulher que nasceu para edificar projetos de grande valor, provando que a sua determinação organizada é capaz de moldar o futuro.</p>`,
+       videoID: "F8bg1CTQ9HI "
+    },
     },
 
 
 // --- 2º CICLO (MATURIDADE / PRODUÇÃO) ---
 2: {
-    1: `<h3>2º Ciclo 1 - Sua Liderança Soberana e Independência Absoluta</h3>
+    1: {
+     conteudo:`<h3>2º Ciclo 1 - Sua Liderança Soberana e Independência Absoluta</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu segundo ciclo de vida — a fase de maior produção, colheita e impacto da sua jornada — exige que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, assuma de forma soberana o comando total e absoluto das suas ambições. Este é o momento em que a vida a convoca para liderar processos, inovar no seu campo profissional e colocar em prática projetos autorais que reflitam a sua essência, sem depender da aprovação ou do aplauso externo. Esta fase representa um chamado à sua independência radical, onde a sua voz deve soar clara, firme e decidida, atuando como o motor principal de todas as vitórias que você deseja manifestar na sua realidade.</p>
     <p style="margin-bottom: 20px;">Nesta etapa de plena maturidade produtiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você não deve ter medo de arriscar, de empreender ou de romper com velhos padrões que bloqueavam o seu crescimento. A energia vibrante deste ciclo favorece intensamente o seu sucesso financeiro e profissional através do seu mérito pessoal e da sua coragem de ser original. Você sentirá uma motivação profunda para consolidar uma autonomia que se tornará a sua maior fonte de poder e prestígio. É o tempo de fincar a sua própria bandeira e mostrar ao mundo a sua capacidade de abrir caminhos onde outros viam barreiras, estabelecendo um padrão de excelência que fará de você uma referência respeitada.</p>
     <p style="margin-bottom: 20px;">O cumprimento deste ciclo exige que você cultive uma autoconfiança inabalável diante dos desafios, transformando cada obstáculo em um degrau para o topo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sua grande lição agora é compreender que a liderança consciente é um ato diário de coragem e que a sua capacidade de inovação é o seu maior diferencial competitivo. Ao concluir este período de alta produção, você colherá o reconhecimento público pela sua bravura e pela maestria com que transformou suas ideias em realizações concretas e prósperas.</p>`,
-
-    2: `<h3>2º Ciclo 2 - Sua Diplomacia Estratégica e Alianças de Sucesso</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    2: {
+     conteudo:`<h3>2º Ciclo 2 - Sua Diplomacia Estratégica e Alianças de Sucesso</h3>
     <br>
   <p style="margin-bottom: 20px;">O seu segundo ciclo de vida, representando o auge da sua fase de produção e estabilidade, é um período profundamente voltado para a consolidação das suas conquistas através da cooperação, da empatia e de uma diplomacia refinada, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este é o momento de colher resultados extraordinários agindo com tato, paciência e um senso de equilíbrio aguçado. A vida agora a convida a compreender que a sua verdadeira força também se manifesta na sua habilidade feminina de unir pessoas, mediar conflitos e criar ambientes de sinergia onde o sucesso coletivo impulsiona diretamente o seu próprio crescimento.</p>
     <p style="margin-bottom: 20px;">Nesta fase de maturidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você alcançará a prosperidade e a estabilidade financeira ao agir com inteligência emocional e escuta atenta. As oportunidades mais valiosas e lucrativas da sua vida surgirão através de associações sólidas, parcerias de confiança e sociedades bem estruturadas. Cultive a sua atenção natural aos detalhes e a sua sensibilidade para perceber as intenções nas relações, garantindo ética e harmonia em cada iniciativa. Sua capacidade de ser a ponte de concórdia será o seu grande trunfo, permitindo que você navegue por qualquer crise com a elegância de quem domina a arte das conexões estratégicas.</p>
     <p style="margin-bottom: 20px;">A lição deste ciclo para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é compreender que a diplomacia é uma forma elevadíssima de poder e que a paciência estratégica é a semente de realizações gigantescas e duradouras. Você perceberá que agir no momento exato produz resultados muito mais consistentes do que a força bruta. Ao final deste ciclo produtivo, você terá construído uma rede indestrutível de apoio e respeito mútuo, consolidando a sua imagem como uma figura central e indispensável em todo o seu meio profissional e familiar.</p>`,
-
-    3: `<h3>2º Ciclo 3 - Sua Expansão Criativa, Brilho e Comunicação Ativa</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    3: {
+     conteudo:`<h3>2º Ciclo 3 - Sua Expansão Criativa, Brilho e Comunicação Ativa</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu segundo ciclo de vida representa uma fase de expansão criativa absolutamente intensa, marcada por uma comunicação ativa, magnetismo pessoal e uma forte capacidade de transmitir suas ideias para o mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este é o momento ideal para colocar os seus talentos em evidência de forma estratégica, expressando os seus projetos com um entusiasmo contagiante que desperta o interesse, o desejo e a admiração de todos ao seu redor. A energia deste período favorece as suas atividades ligadas à inteligência social, vendas, networking e à sua capacidade de inspirar públicos diversos com a sua visão vibrante.</p>
    <p style="margin-bottom: 20px;">Nesta etapa de alta produção, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a vida a incentiva a manter uma participação ativa nos ambientes, ampliando os seus contatos e multiplicando as suas trocas de conhecimento. O seu progresso financeiro e pessoal surge através da sua facilidade em construir narrativas envolventes e despertar motivação nas pessoas. Valorize a alegria de realizar e a leveza nas trocas, permitindo que a sua imaginação encontre soluções geniais para os desafios cotidianos. A sua versatilidade será a chave de ouro para abrir portas em múltiplos setores, tornando a sua presença sinônimo de inovação, simpatia e sucesso comercial.</p>
     <p style="margin-bottom: 20px;">A lição fundamental para você neste ciclo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é compreender que a sua comunicação autêntica é a chave mestra para a sua prosperidade. Você aprenderá a equilibrar o seu entusiasmo natural com o foco necessário para transformar o seu brilho criativo em projetos altamente lucrativos e sustentáveis. Ao final desta fase produtiva, você receberá o reconhecimento merecido pela sua capacidade de iluminar caminhos, comunicar verdades e prosperar fazendo o que ama.</p>`,
-
-    4: `<h3>2º Ciclo 4 - Sua Organização Estruturada, Eficiência e Segurança Fincada</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    4: {
+     conteudo:`<h3>2º Ciclo 4 - Sua Organização Estruturada, Eficiência e Segurança Fincada</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu segundo ciclo de vida concentra uma força imensa na construção de bases sólidas, na segurança financeira e na organização meticulosa da sua realidade prática, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este é o momento em que você sente uma necessidade firme de estabelecer ordem, disciplina e estabilidade em todas as áreas da sua jornada. A sua total dedicação ao trabalho consistente, à retidão e ao planejamento cuidadoso torna-se o seu maior diferencial para garantir um patrimônio seguro e duradouro para você e para as pessoas que dependem do seu sucesso.</p>
    <p style="margin-bottom: 20px;">Nesta etapa de maturidade produtiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o seu progresso se desenvolve passo a passo, através da persistência e da sua capacidade de estruturar o futuro com uma visão de longo prazo. Você será frequentemente convocada a liderar grandes responsabilidades e a manter a firmeza diante de desafios que exigem comprometimento absoluto. O seu foco principal passa a ser a construção gradual e segura de resultados concretos, valorizando a eficiência técnica e o respeito aos processos. A sua reputação será erguida sobre a rocha da confiança e da entrega impecável.</p>
     <p style="margin-bottom: 20px;">A grande lição deste ciclo para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é compreender que a ordem e a disciplina não limitam você, mas sim criam a fundação indestrutível para o seu crescimento sustentável. Com a sua dedicação, torna-se possível estabelecer conquistas que resistirão ao tempo. Ao final deste período de produção, você desfrutará de uma estrutura sólida e do respeito universal pela sua integridade e pela sua impressionante capacidade de manifestar estabilidade e sucesso através do esforço honrado e inteligente.</p>`,
-
-    5: `<h3>2º Ciclo 5 - Seu Dinamismo Inovador, Liberdade e Adaptabilidade</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    5: {
+     conteudo:`<h3>2º Ciclo 5 - Seu Dinamismo Inovador, Liberdade e Adaptabilidade</h3>
     <br>
    <p style="margin-bottom: 20px;">O seu segundo ciclo de vida apresenta um dinamismo intenso, mudanças frequentes, expansão de horizontes e uma imensa abertura para novas experiências, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este é o período em que você percebe um forte impulso interno para explorar caminhos diferentes, diversificar os seus negócios e ampliar a sua área de atuação. A rotina engessada é a sua maior inimiga aqui; por isso, a vida a convida a abraçar o movimento, a versatilidade e a ousadia como suas principais ferramentas de progresso e enriquecimento.</p>
   <p style="margin-bottom: 20px;">Nesta fase de produção, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o seu sucesso surge através da sua adaptabilidade e da sua disposição para aprender continuamente. Você encontrará oportunidades valiosas em contextos variados, especialmente onde houver liberdade de ação, contato com o público e diversidade de estímulos. A sua capacidade de se reinventar e de surfar nas ondas do imprevisto será o seu grande trunfo competitivo. Viagens, conexões comerciais e o interesse por inovação e novas tecnologias servirão como combustível para manter a sua mente ágil, jovem e altamente lucrativa.</p>
     <p style="margin-bottom: 20px;">A lição fundamental para você neste ciclo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é compreender que a flexibilidade inteligente permite o crescimento sem limites. Ao longo desta etapa, as experiências acumuladas expandirão a sua visão de mundo. Você aprenderá que a sua verdadeira segurança não está em controlar tudo ao seu redor, mas sim na certeza absoluta de que você possui a inteligência necessária para prosperar em qualquer cenário. Ao final deste ciclo, você será uma autoridade em inovação, com uma independência conquistada com total ousadia.</p>`,
-
-    6: `<h3>2º Ciclo 6 - Sua Responsabilidade Harmonizadora e Sucesso pelo Afeto</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    6: {
+     conteudo:`<h3>2º Ciclo 6 - Sua Responsabilidade Harmonizadora e Sucesso pelo Afeto</h3>
     <br>
    <p style="margin-bottom: 20px;">O seu segundo ciclo de vida está profundamente conectado às responsabilidades familiares, ao cuidado amoroso com as pessoas próximas e ao desenvolvimento de relações e negócios baseados na harmonia e na estética, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este período convida você a dedicar uma atenção especial às suas conexões afetivas e ao bem-estar do seu grupo social. É o tempo de assumir com orgulho o papel de pilar emocional e porto seguro, agindo com justiça, generosidade e compaixão.</p>
     <p style="margin-bottom: 20px;">Nesta fase de produção, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o seu sucesso material e pessoal se manifesta plenamente quando você equilibra as suas ambições com a sua capacidade de servir e harmonizar. Projetos que envolvem orientação, ensino, gestão justa de pessoas ou a criação de ambientes acolhedores e belos ganham uma relevância enorme. Você será vista como uma autoridade benevolente e sábia, capaz de resolver impasses com facilidade e de investir no crescimento dos outros. Sob a sua gestão cuidadosa, o seu lar e o seu trabalho se tornam centros de prosperidade, ética e estabilidade.</p>
     <p style="margin-bottom: 20px;">A lição deste ciclo para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está em compreender o valor da responsabilidade afetiva e da construção de um legado de cuidado. Você aprenderá que o seu verdadeiro poder reside na capacidade de proteger e nutrir o que é valioso. Ao final deste período, você desfrutará de laços familiares indestrutíveis e de um reconhecimento profissional profundo, provando que o sucesso financeiro e a estabilidade emocional caminham de mãos dadas quando o amor e a retidão guiam os seus passos.</p>`,
-
-    7: `<h3>2º Ciclo 7 - Seu Refinamento Intelectual, Maestria e Especialização</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    7: {
+     conteudo:`<h3>2º Ciclo 7 - Seu Refinamento Intelectual, Maestria e Especialização</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu segundo ciclo de vida convida você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a aprofundar a sua mente, buscar o autoconhecimento e alcançar uma compreensão técnica e cirúrgica da sua realidade profissional. Este é um período intensamente voltado ao estudo de alto nível, à investigação e ao refinamento da sua análise crítica. A vida solicita que você saia da superfície e se especialize profundamente, tornando-se uma autoridade incontestável e altamente respeitada no seu campo de atuação, valorizando o silêncio produtivo e a precisão.</p>
    <p style="margin-bottom: 20px;">Nesta fase de produção, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o seu progresso ocorre através do planejamento estratégico e da sua capacidade de refletir com sabedoria antes de dar qualquer passo. Você sentirá a necessidade de momentos de introspecção preciosa, nos quais suas ideias se organizam com clareza longe do barulho do mundo. É hora de investir em mentorias, cursos técnicos e projetos que exijam rigor e excelência. A sua intuição estará extremamente aguçada, permitindo que você identifique falhas e soluções que os outros ignoram, transformando o seu trabalho em uma obra de arte impecável.</p>
     <p style="margin-bottom: 20px;">A lição fundamental para você neste ciclo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está ligada ao valor do conhecimento especializado e da integridade mental. Você aprenderá que a sabedoria é o seu maior escudo e que a especialização traz um poder e uma estabilidade financeira que ninguém jamais poderá tirar de você. Ao longo deste período, a sua visão estratégica guiará os outros, e você concluirá este ciclo consagrada como uma mestra respeitada pela profundidade da sua alma e do seu intelecto.</p>`,
-
-    8: `<h3>2º Ciclo 8 - Sua Realização Material Soberana e Gestão de Poder</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    8: {
+     conteudo:`<h3>2º Ciclo 8 - Sua Realização Material Soberana e Gestão de Poder</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu segundo ciclo de vida coloca em total destaque os temas mais cruciais da realização material, da organização de grandes recursos e do desenvolvimento da sua liderança executiva poderosa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este período a impulsiona a assumir responsabilidades de larga escala nos seus negócios, projetos e finanças. A vida exige que você lide com o mundo material de forma direta, pragmática, ambiciosa e eficiente, buscando a riqueza e a prosperidade como os resultados óbvios da sua competência administrativa e da sua força de vontade.</p>
     <p style="margin-bottom: 20px;">Nesta fase de alta produção, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a sua capacidade de tomar decisões firmes e gerir recursos com precisão cirúrgica será amplamente recompensada. Você encontrará oportunidades extraordinárias em ambientes que exigem visão de mercado, faro comercial, planejamento financeiro rigoroso e autoridade para comandar processos rumo a metas audaciosas. É o tempo ideal de expandir o seu patrimônio financeiro e consolidar o seu status social, agindo com a segurança de quem domina as leis do dinheiro e do sucesso sustentável, sem nunca abrir mão da ética e da justiça.</p>
     <p style="margin-bottom: 20px;">A lição deste ciclo para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, envolve compreender que a prosperidade duradoura depende do perfeito equilíbrio entre a sua ambição realizadora e a responsabilidade social. Você aprenderá a julgar situações com clareza inabalável e a agir com a firmeza necessária para construir o seu império pessoal. Ao final desta etapa, os seus resultados concretos — tanto financeiros quanto de influência — refletirão o seu esforço impecável em transformar metas em realidade poderosa.</p>`,
-
-    9: `<h3>2º Ciclo 9 - Sua Visão Humanitária Ampla, Mentoria e Expansão de Consciência</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    9: {
+     conteudo:`<h3>2º Ciclo 9 - Sua Visão Humanitária Ampla, Mentoria e Expansão de Consciência</h3>
     <br>
    <p style="margin-bottom: 20px;">O seu segundo ciclo de vida direciona a sua atenção e os seus talentos para valores elevados, participação em causas de grande impacto e iniciativas que beneficiam um número imenso de pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este período a incentiva a compartilhar a sua vasta experiência, os seus conhecimentos e a sua sensibilidade, agindo como uma verdadeira mentora, conselheira ou guia para aqueles que buscam evolução. O seu sucesso agora está conectado à sua generosidade e à sua habilidade de enxergar além dos interesses imediatos.</p>
     <p style="margin-bottom: 20px;">Nesta fase de produção, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o seu impacto positivo e o seu retorno financeiro surgem de atividades ligadas à educação, à orientação, à espiritualidade ou ao desenvolvimento de projetos que transformam a vida das pessoas. Sua empatia profunda e sua capacidade de compreender a alma humana serão os motores de grandes realizações. Você pode se sentir fortemente atraída por projetos artísticos, filantrópicos ou de consultoria humanitária. É um tempo de finalizações bem-sucedidas e de colheita cármica positiva, onde você se torna o exemplo máximo de integridade e doação.</p>
     <p style="margin-bottom: 20px;">A lição fundamental para você neste ciclo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o valor do desprendimento inteligente e da visão universal sobre a vida. Você aprenderá que, ao servir ao bem comum com amor e sabedoria, suas próprias necessidades materiais e emocionais são supridas pelo universo de forma abundante e mágica. Ao final desse período, os seus aprendizados consolidados deixarão um legado de luz para as próximas gerações, coroando você como uma mulher realizada e de alma verdadeiramente nobre.</p>`,
-
-    11: `<h3>2º Ciclo 11 - Sua Inspiração Visionária e Maestria da sua Intuição</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    11: {
+     conteudo:`<h3>2º Ciclo 11 - Sua Inspiração Visionária e Maestria da sua Intuição</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu segundo ciclo de vida convoca você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a atuar como um verdadeiro canal de inspiração, despertar e transformação para o mundo ao seu redor. Nesta fase de produção, o seu sucesso real e duradouro virá da sua capacidade extraordinária de elevar a consciência das pessoas através de suas ideias inovadoras e de uma intuição aguçada e certeira. Você se tornará uma fonte de orientação mística, técnica e moral em ambientes que buscam novos caminhos e soluções que fujam do óbvio.</p>
    <p style="margin-bottom: 20px;">A vida solicita que você utilize a altíssima voltagem emocional e o magnetismo deste ciclo para motivar mudanças profundas na sociedade ou no seu campo profissional, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Suas percepções estarão tão afiadas que você será perfeitamente capaz de antecipar tendências e captar verdades que os outros deixam passar. Assuma com orgulho o seu papel de mentora e líder inspiradora, unindo o seu lado intuitivo à realidade prática com ética e clareza. Sua presença será magnética, atraindo pessoas que buscam a luz da sua sabedoria.</p>
     <p style="margin-bottom: 20px;">A lição para você neste ciclo é aprender a confiar cegamente na sua percepção e na sua voz interior como bússolas infalíveis para tomar decisões práticas e financeiras, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao equilibrar os seus ideais elevados com as ações necessárias no mundo material, você alcançará realizações que transcendem o ego. Ao final desta fase, você terá deixado uma marca de iluminação na vida de muitos, provando que o seu poder intuitivo é a sua ferramenta de maior sucesso.</p>`,
-
-    22: `<h3>2º Ciclo 22 - Sua Grande Obra, Construção de Legados e Poder Realizador</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    22: {
+     conteudo:`<h3>2º Ciclo 22 - Sua Grande Obra, Construção de Legados e Poder Realizador</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu segundo ciclo de vida coloca você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, na posição estratégica de arquiteta de grandes realidades. Este é o seu período de maior potência realizadora e força de trabalho, onde a sua capacidade de organizar estruturas complexas, gerir finanças em larga escala e manifestar sonhos monumentais atinge o ápice absoluto. Você é chamada pela vida a construir algo sólido que dure para além do seu próprio tempo, beneficiando a coletividade e estabelecendo novos padrões de estabilidade e progresso.</p>
    <p style="margin-bottom: 20px;">Nesta etapa, o seu foco deve estar totalmente voltado para a aplicação prática e massiva de ideais elevados, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você possui a energia necessária para coordenar equipes, gerir grandes investimentos ou fundar projetos e empresas que transformem o seu entorno material e social. Nada é pequeno demais para a sua visão neste ciclo; sua inteligência está em perfeita sintonia com as leis da construção, permitindo criar ordem onde havia caos. A sua disciplina inabalável será o seu pilar de sustentação.</p>
-    <p style="margin-bottom: 20px;">A lição central para você neste ciclo é o domínio total sobre o mundo material através de um trabalho focado, ético e estrategicamente planejado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você aprenderá que o verdadeiro poder do mestre construtor reside em servir ao futuro através das ações do presente. Ao final deste ciclo monumental, você terá consolidado um legado de progresso e solidez que servirá de alicerce para as próximas gerações, sendo consagrada como uma das forças realizadoras mais importantes da sua era.</p>`
+    <p style="margin-bottom: 20px;">A lição central para você neste ciclo é o domínio total sobre o mundo material através de um trabalho focado, ético e estrategicamente planejado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você aprenderá que o verdadeiro poder do mestre construtor reside em servir ao futuro através das ações do presente. Ao final deste ciclo monumental, você terá consolidado um legado de progresso e solidez que servirá de alicerce para as próximas gerações, sendo consagrada como uma das forças realizadoras mais importantes da sua era.</p>`,
+   videoID: "F8bg1CTQ9HI "
+    },  
 },
 
 // --- 3º CICLO (TERCEIRA IDADE / SABEDORIA) ---
 3: {
-    1: `<h3>3º Ciclo 1 - Sua Independência Plena e Reinvenção na Maturidade</h3>
+    1: {
+     conteudo:`<h3>3º Ciclo 1 - Sua Independência Plena e Reinvenção na Maturidade</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu terceiro ciclo de vida — o tempo bendito da sabedoria colhida — traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma surpreendente renovação de energia, acompanhada por um desejo vibrante de reinvenção pessoal. Longe de representar um repouso passivo ou estagnado, você sentirá uma vontade constante de iniciar novos projetos autorais que expressem plenamente a sua autonomia. Esta fase se caracteriza por uma vitalidade mental invejável, provando que a sua chama interna permanece acesa e pronta para desbravar o mundo.</p>
    <p style="margin-bottom: 20px;">Nesta etapa dourada da sua jornada, você desfrutará de uma independência interior absoluta, totalmente livre de pressões sociais ou da necessidade de provar o seu valor para quem quer que seja, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sua liderança agora se manifesta de forma serena, elegante e fundamentada na vasta experiência que acumulou ao longo das décadas. A sua vivência permite que você compartilhe conselhos que inspiram coragem e autenticidade em outras mulheres, tornando-se o exemplo vivo de que a jovialidade é um estado de espírito alimentado pelo aprendizado.</p>
     <p style="margin-bottom: 20px;">A sua maior realização nesta fase surge da liberdade de agir em total coerência com os seus valores mais íntimos e com a sua verdade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você descobrirá que a maturidade lhe deu o direito sagrado de dizer "não" ao que é banal e um "sim" orgulhoso ao que faz a sua alma vibrar. A lição principal deste período está em compreender que a sua autossuficiência emocional é o maior troféu de uma vida bem construída, permitindo que você caminhe como dona absoluta do seu destino.</p>`,
-
-    2: `<h3>3º Ciclo 2 - Sua Serenidade Sagrada, Equilíbrio e Diplomacia Feminina</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    2: {
+     conteudo:`<h3>3º Ciclo 2 - Sua Serenidade Sagrada, Equilíbrio e Diplomacia Feminina</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu terceiro ciclo de vida representa para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, un período de profunda serenidade, equilíbrio emocional e valorização máxima de todos os vínculos afetivos que você construiu ao longo da sua existência. Nesta fase de colheita espiritual e bem-estar, você assume naturalmente um papel acolhedor e conciliador dentro da sua família e do seu círculo social, atuando como o ponto de paz que acalma as tensões e traz uma perspectiva de afeto onde antes havia pressa.</p>
     <p style="margin-bottom: 20px;">A sua sensibilidade natural, <strong>MASCULINO-FEMININO-NEUTRO</strong>, torna-se o elemento fundamental para a sustentação de um legado de união duradoura. Conversas profundas, abraços sinceros e relações baseadas no respeito mútuo passam a ter o significado mais valioso nesta etapa. A sua experiência favorece atitudes diplomáticas, permitindo que você enxergue as motivações dos outros com uma compaixão que só o tempo traz. Você se torna a grande matriarca ou porto seguro da sua linhagem, transmitindo segurança e amor através da sua presença.</p>
     <p style="margin-bottom: 20px;">A sua felicidade e o seu preenchimento neste ciclo estão na harmonia cultivada com zelo e na beleza das trocas verdadeiras, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A principal lição desta fase é compreender que a cooperação e a empatia são as forças silenciosas que mantêm o mundo em equilíbrio. Ao final desta linda jornada, você perceberá que o seu maior sucesso foi o amor e a estabilidade que você semeou no coração daqueles que a cercam, garantindo uma maturidade preenchida por paz interior.</p>`,
-
-    3: `<h3>3º Ciclo 3 - Sua Alegria de Viver, Entusiasmo e Comunicação Inspiradora</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    3: {
+     conteudo:`<h3>3º Ciclo 3 - Sua Alegria de Viver, Entusiasmo e Comunicação Inspiradora</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu terceiro ciclo de vida é marcado por uma expressão intensamente vibrante, pela alegria de viver e pela celebração das experiências valiosas que você acumulou na sua trajetória, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Nesta fase, você mantém um espírito extremamente comunicativo, expansivo e um interesse genuíno em compartilhar suas histórias e aprendizados. Sua mente permanece jovem e ativa, conectando as memórias do passado com as novidades do presente, fazendo de você uma presença fascinante.</p>
    <p style="margin-bottom: 20px;">Atividades criativas, lazer, escrita e eventos sociais trazem uma satisfação imensa para o seu coração neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você sentirá o impulso de falar, ensinar, rir ou simplesmente alegrar as pessoas ao seu redor através da sua sabedoria transmitida de forma leve e envolvente. Essa facilidade de comunicação fortalece os laços entre as gerações da sua família, provando que a maturidade pode e deve ser a fase mais colorida, comunicativa e expressiva da existência humana.</p>
     <p style="margin-bottom: 20px;">O seu contentamento neste ciclo está na oportunidade maravilhosa de ser a voz que motiva e o coração que acolhe através das palavras e do otimismo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição principal deste período consiste em compreender que a felicidade é uma escolha diária e consciente. Você conclui a sua jornada como um farol de entusiasmo, deixando um legado de leveza e mostrando para todos que a vida merece ser vivida com brilho, cor e generosidade.</p>`,
-
-    4: `<h3>3º Ciclo 4 - Sua Segurança Inabalável, Estabilidade e Consolidação do Legado</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    4: {
+     conteudo:`<h3>3º Ciclo 4 - Sua Segurança Inabalável, Estabilidade e Consolidação do Legado</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu terceiro ciclo de vida representa para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a consolidação definitiva e honrada de todas as bases que você edificou com tanto esforço e dedicação ao longo do tempo. Nesta fase, você passa a desfrutar da clareza absoluta sobre os frutos colhidos através da sua disciplina, organização e responsabilidade prática. É o momento de estruturar o seu patrimônio material, seus valores morais e a base familiar para que o seu legado continue protegendo os seus sucessores.</p>
     <p style="margin-bottom: 20px;">A sua vasta experiência acumulada permite que você valorize a solidez, o planejamento e a continuidade das suas conquistas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sua postura transmite uma segurança inabalável para os seus filhos, netos ou pessoas queridas, agindo como o alicerce firme sobre o qual os outros podem se apoiar em momentos de dúvida. Você se torna a autoridade moral prática da sua linhagem, respeitada pela sua coerência e pela integridade impecável demonstrada em cada passo da sua vida.</p>
     <p style="margin-bottom: 20px;">A sua paz espiritual e tranquilidade neste período estão ancoradas na certeza do dever cumprido e da estabilidade financeira e familiar garantida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição principal deste ciclo é compreender que a persistência organizada é a chave para a imortalidade da sua história. Você emerge desta fase coberta de respeito universal, levando consigo a honra de ter sido a guardiã da estrutura e a arquiteta de uma segurança que resistirá ao tempo.</p>`,
-
-    5: `<h3>3º Ciclo 5 - Sua Liberdade Intelectual Refrescante e Novos Horizontes</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    5: {
+     conteudo:`<h3>3º Ciclo 5 - Sua Liberdade Intelectual Refrescante e Novos Horizontes</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu terceiro ciclo de vida traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma liberdade intelectual profundamente refrescante e uma curiosidade vibrante que desafia completamente a passagem dos anos. Nesta etapa, você mantém um interesse fascinante pelo mundo, buscando explorar novas culturas, leituras, viagens ou conhecimentos que expandam a sua mente. A rotina pesada não tem espaço aqui; você busca o movimento, o dinamismo e a troca de informações inovadoras.</p>
     <p style="margin-bottom: 20px;">A sua adaptabilidade continua sendo uma das suas maiores forças, permitindo que você acompanhe as transformações da modernidade com naturalidade e uma juventude espiritual invejável, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Iniciar novos aprendizados ou planejar roteiros diferentes traz o estímulo exato para manter a sua mente ágil e independente. Você é a prova viva de que a maturidade não é o fim da linha, mas sim um novo e eletrizante ponto de partida para quem tem a audácia de permanecer curiosa.</p>
     <p style="margin-bottom: 20px;">O seu preenchimento neste ciclo está na diversidade das suas experiências cotidianas e na sua recusa absoluta em estagnar em velhos hábitos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição principal desta fase é compreender que a flexibilidade mental é o segredo para se manter relevante e viva. Você conclui este período como uma alma intensamente livre, deixando o exemplo de que a vida é uma sucessão de descobertas e que a mente não tem idade.</p>`,
-
-    6: `<h3>3º Ciclo 6 - Sua Sabedoria do Cuidado, Harmonia e Matriarcado Amoroso</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    6: {
+     conteudo:`<h3>3º Ciclo 6 - Sua Sabedoria do Cuidado, Harmonia e Matriarcado Amoroso</h3>
     <br>
    <p style="margin-bottom: 20px;">O seu terceiro ciclo de vida consagra e fortalece o seu papel como a grande guia emocional, protetora e conselheira de todo o seu círculo de amor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Nesta fase de sabedoria, você dedica a sua atenção ao cuidado com as pessoas queridas, tornando-se o centro gravitacional de harmonia e justiça na sua família e comunidade. O seu lar se transforma em um santuário de equilíbrio, onde todos buscam o seu conselho sincero e o seu acolhimento.</p>
     <p style="margin-bottom: 20px;">A maturidade que você adquiriu permite oferecer uma escuta profunda, acolhendo as dores alheias com doçura e orientando os caminhos com retidão, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você encontra a sua realização mais plena ao ver a união, a estabilidade e a felicidade daqueles que ama, investindo o seu tempo em garantir que a paz prevaleça sobre qualquer desentendimento. A sua autoridade é exercida unicamente através do afeto e do respeito, tornando você a referência máxima de nobreza e amor incondicional.</p>
    <p style="margin-bottom: 20px;">A sua felicidade neste período está na construção de uma posteridade baseada no afeto mútuo e no apoio constante que você estruturou, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição principal deste ciclo é que a responsabilidade afetiva e o cuidado são os maiores tesouros que se pode deixar na terra. Ao final desta jornada, você sentirá a plenitude de quem nutriu a vida com bondade, colhendo a gratidão eterna de todos que carregam o seu sangue e os seus valores.</p>`,
-
-    7: `<h3>3º Ciclo 7 - Sua Introspecção Sagrada, Espiritualidade e Verdade Interior</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    7: {
+     conteudo:`<h3>3º Ciclo 7 - Sua Introspecção Sagrada, Espiritualidade e Verdade Interior</h3>
     <br>
    <p style="margin-bottom: 20px;">O seu terceiro ciclo de vida convida você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a um mergulho definitivo nas águas calmas da reflexão profunda, do autoconhecimento e do desenvolvimento espiritual. Nesta fase, você passa a valorizar imensamente os momentos de introspecção, estudo e silêncio produtivo, buscando compreender o sentido maior de tudo o que viveu. O mundo externo perde a pressa em comparação com a imensa riqueza do seu universo interior, onde a sua sabedoria se torna cristalina.</p>
     <p style="margin-bottom: 20px;">O interesse por temas transcendentais, meditação, filosofias ou estudos altamente especializados passa a ser o foco principal da sua jornada diária, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A observação cuidadosa da sua própria história permite identificar os padrões do universo que regeram a sua vida, trazendo uma paz de espírito que a blinda contra qualquer ansiedade. Você se torna uma sábia silenciosa, cuja opinião é procurada pela profundidade e precisão analítica, encarando o futuro com total serenidade.</p>
     <p style="margin-bottom: 20px;">A sua satisfação neste ciclo está na quietude consciente e na compreensão de que a expansão da consciência é o destino final de toda alma evoluída, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição principal desta fase é que o entendimento interno é a única liberdade real que possuímos. Você conclui este ciclo com uma integridade absoluta, deixando para o mundo o exemplo de uma mente brilhante e de um espírito que encontrou o seu lugar na luz da verdade.</p>`,
-
-    8: `<h3>3º Ciclo 8 - Seu Reconhecimento Financeiro, Gestão Justa e Autoridade Serena</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    8: {
+     conteudo:`<h3>3º Ciclo 8 - Seu Reconhecimento Financeiro, Gestão Justa e Autoridade Serena</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu terceiro ciclo de vida representa para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a consagração definitiva das suas conquistas materiais e o reconhecimento universal da sua autoridade executiva e competência. Nesta fase de colheita, você administra os seus recursos, investimentos e responsabilidades com uma visão estratégica ainda mais apurada, garantindo que tudo o que você conquistou com o seu suor seja blindado e continue gerando segurança para você e para os seus herdeiros.</p>
     <p style="margin-bottom: 20px;">A vivência prática que você acumulou permite que você atue como uma conselheira financeira ou mentora de alto nível para grandes projetos e decisões familiares, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua postura firme e pragmática favorece a estabilidade financeira e o progresso social ao seu redor. Você é vista como a guardiã do patrimônio e dos bens materiais e morais, agindo com uma justiça que inspira total confiança. O seu poder agora é exercido com serenidade, sustentado pelo peso da sua reputação impecável.</p>
     <p style="margin-bottom: 20px;">A sua alegria neste período está na segurança absoluta de ver que as suas obras são sólidas, prósperas e dignas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição principal deste ciclo consiste em compreender a importância de uma liderança consciente para manter o progresso ativo através do tempo. Você emerge desta fase como uma figura de poder estabilizador, provando que a ambição unida à ética gera uma abundância eterna.</p>`,
-
-    9: `<h3>3º Ciclo 9 - Sua Sabedoria Universal, Generosidade e Desprendimento Iluminado</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    9: {
+     conteudo:`<h3>3º Ciclo 9 - Sua Sabedoria Universal, Generosidade e Desprendimento Iluminado</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu terceiro ciclo de vida simboliza para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a sabedoria humana em sua forma mais pura e a visão humanitária em sua escala mais ampla e bela. Nesta fase da existência, você se despoja de pequenos apegos materiais ou egoísmos, valorizando profundamente as atitudes altruístas, a espiritualidade prática e as iniciativas que beneficiam o coletivo. Sua compreensão da alma humana torna-se tão profunda que você é capaz de perdoar, acolher e inspirar pessoas de todas as origens.</p>
     <p style="margin-bottom: 20px;">A rica experiência acumulada permite que você compartilhe ensinamentos, orientações e palavras de conforto que servem como cura para os corações alheios, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você atua como uma verdadeira cidadã do mundo e conselheira espiritual, enxergando a vida como um ciclo sagrado de aprendizado e doação. Sua postura abre portas para a cooperação mútua, onde você age como a guia visionária que prepara o terreno para um futuro mais justo, amoroso e consciente.</p>
     <p style="margin-bottom: 20px;">A sua maior realização neste ciclo está na percepção clara de ter sido um canal de impacto imensamente positivo na vida de muitas pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A lição principal desta fase é reconhecer que a compaixão e o amor compartilhado são as únicas heranças que realmente importam. Você conclui a sua jornada com uma alma nobre, pacificada e com a certeza de que a sua sabedoria agora pertence à eternidade.</p>`,
-
-    11: `<h3>3º Ciclo 11 - Sua Iluminação Espiritual e Inspiração para as Novas Gerações</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    11: {
+     conteudo:`<h3>3º Ciclo 11 - Sua Iluminação Espiritual e Inspiração para as Novas Gerações</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu terceiro ciclo de vida, sob a influência da vibração mestre 11, traz para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma aura de misticismo, intuição e iluminação espiritual raríssima. Você se torna uma referência viva de sabedoria interior, atuando como um verdadeiro farol de luz para as novas gerações que buscam rumo em um mundo confuso. O seu foco principal nesta fase está na transmissão de verdades elevadas, ideais morais e ensinamentos que transcendem o tempo.</p>
     <p style="margin-bottom: 20px;">A sua sensibilidade psíquica atinge o ápice absoluto, permitindo oferecer conselhos e orientações certeiras que parecem jorrar de uma fonte superior, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você inspira o despertar da consciência em todos que têm o privilégio de ouvi-la, usando suas próprias superações passadas como lições de integridade e fé. A sua satisfação vem de perceber que cada desafio poliu o seu espírito para que você pudesse, agora, guiar os outros com amor e autoridade.</p>
     <p style="margin-bottom: 20px;">A lição para você neste período é assumir e confiar plenamente no seu papel de guia inspiradora e orientadora de almas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você compreende que a verdadeira sabedoria atinge a plenitude quando é compartilhada com generosidade e desprendimento. Ao final desta jornada terrena, você terá cumprido a sua missão de elevar a frequência ao seu redor, deixando para o mundo um legado inestimável de iluminação.</p>`,
-
-    22: `<h3>3º Ciclo 22 - Sua Consagração como Mestra das Realizações e Legado Eterno</h3>
+videoID: "F8bg1CTQ9HI "
+    },
+    22: {
+     conteudo:`<h3>3º Ciclo 22 - Sua Consagração como Mestra das Realizações e Legado Eterno</h3>
     <br>
     <p style="margin-bottom: 20px;">O seu terceiro ciclo de vida, sob a vibração mestre 22, representa para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a consagração final de grandes obras e a maestria absoluta sobre a realidade material e estrutural. Você utiliza a sua imensa sabedoria prática para garantir que os legados e patrimônios construídos ao longo de décadas permaneçam sólidos, funcionais e altamente benéficos para a sua família e sociedade, agindo como a conselheira master que assegura a ordem.</p>
     <p style="margin-bottom: 20px;">Nesta etapa de sabedoria realizadora, você é a autoridade máxima que une grandes ideais humanos à execução concreta e de longo prazo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua visão altamente estratégica permite orientar instituições, empresas familiares ou comunidades com uma precisão cirúrgica e perfeita. Sinta o orgulho legítimo ao contemplar as estruturas de progresso que você ajudou a edificar e que agora sustentam o crescimento e o bem-estar de tantas pessoas.</p>
-    <p style="margin-bottom: 20px;">A lição fundamental para você neste ciclo é a maestria sobre o mundo físico guiada por propósitos elevados e generosos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você compreende que o verdadeiro poder do mestre construtor é deixar fundações firmes na terra para que os outros possam voar com segurança. Ao final desta fase dourada, você terá consolidado uma história de solidez, honra e prosperidade universal que resistirá a gerações.</p>`
+    <p style="margin-bottom: 20px;">A lição fundamental para você neste ciclo é a maestria sobre o mundo físico guiada por propósitos elevados e generosos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você compreende que o verdadeiro poder do mestre construtor é deixar fundações firmes na terra para que os outros possam voar com segurança. Ao final desta fase dourada, você terá consolidado uma história de solidez, honra e prosperidade universal que resistirá a gerações.</p>`,
+     videoID: "F8bg1CTQ9HI "
+    },
 }
 
 },
