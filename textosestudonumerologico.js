@@ -4835,10 +4835,13 @@ essencia: {
     <p>Sua reação interna busca sempre o significado espiritual, ético ou elevado por trás de cada fato cotidiano. O seu grande desafio é aterrar essa percepção aguçada no mundo material, transformando o seu idealismo visionário em uma força inspiradora real. <strong>MASCULINO-FEMININO-NEUTRO</strong>, quando você confia no seu canal intuitivo, você guia os outros não por palavras, mas pelo exemplo de uma integridade superior e de uma percepção que enxerga além do tempo presente.</p>`,
   videoID: "F8bg1CTQ9HI"
     },
-    22: `<h3>Reação de Maestria Realizadora - Essência 22</h3>
+    22: {
+     conteudo:`<h3>Reação de Maestria Realizadora - Essência 22</h3>
     <p>A Essência 22 revela um núcleo de imenso poder realizador e um pragmatismo operando em larga escala dentro de você. A base da sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é voltada para a construção de algo sólido, grandioso e transformador; você possui a semente de um "mestre construtor" operando em cada resposta interna que dá ao mundo.</p>
-    <p>Ao enfrentar desafios, sua mente organiza recursos, pessoas e projeta estruturas duradouras de forma quase automática e genial. O objetivo central da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é materializar sonhos elevados em realidades concretas que beneficiem a humanidade, unindo uma visão de longo alcance à competência técnica absoluta. Você não nasceu para o pequeno; sua alma exige que você construa legados que permaneçam muito depois de você.</p>`
-
+    <p>Ao enfrentar desafios, sua mente organiza recursos, pessoas e projeta estruturas duradouras de forma quase automática e genial. O objetivo central da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é materializar sonhos elevados em realidades concretas que beneficiem a humanidade, unindo uma visão de longo alcance à competência técnica absoluta. Você não nasceu para o pequeno; sua alma exige que você construa legados que permaneçam muito depois de você.</p>`,
+     
+ videoID: "F8bg1CTQ9HI"
+    },
     
   }
  };
@@ -4848,9 +4851,11 @@ bancoEquilibrioUnificado = {
         // --- NÚMERO 1 (Liderança, Início, Independência) ---
         
         // FÍSICO (Ação, Corpo, Prática)
-        "1_fisico_criativo": `<h3>Liderança Prática e Criativa</h3>
+        "1_fisico_criativo":  {
+     conteudo:`<h3>Liderança Prática e Criativa</h3>
             <p>Sua primeira inclinação é marcada por uma autonomia voltada para a ação imediata. Por ser uma expressão <strong>Física e Criativa</strong>, você não espera ordens; você visualiza a solução e coloca as mãos na massa com uma originalidade impressionante. Sua atitude é de quem constrói o caminho enquanto caminha, liderando pelo exemplo prático.</p>`,
-        
+        videoID: "F8bg1CTQ9HI"
+    },
         "1_fisico_indeciso": `<h3>Iniciativa Física sob Cautela</h3>
             <p>Você possui o instinto de liderança do número 1, mas sua expressão <strong>Física e Indecisa</strong> faz com que você sinta uma hesitação corporal antes de agir. Você deseja assumir as rédeas, mas prefere testar o terreno fisicamente antes de se lançar totalmente, buscando segurança na execução para não perder o controle do projeto.</p>`,
         
@@ -4936,9 +4941,11 @@ bancoEquilibrioUnificado = {
             <p>Sua abordagem inicial é a de uma expansão controlada e realista. No plano <strong>Físico Neutro</strong>, você usa sua criatividade para organizar e apresentar o que é prático. Sua atitude é a de quem comunica através de resultados concretos, garantindo que o início do projeto seja tão funcional quanto atraente.</p>`,
 
         // MENTAL (Estratégia, Lógica, Pensamento)
-        "3_mental_criativo": `<h3>Criatividade Intelectual e Eloquência</h3>
+        "3_mental_criativo":  {
+     conteudo:`<h3>Criatividade Intelectual e Eloquência</h3>
             <p>Sua inclinação inicial é o brilho das ideias. No plano <strong>Mental Criativo</strong>, você é uma fonte inesgotável de conceitos originais. Sua atitude é a de quem convence pela inteligência e pela oratória. Você inicia ciclos propondo visões inovadoras que encantam a mente dos outros, sendo o grande estrategista da comunicação.</p>`,
-        
+             videoID: "F8bg1CTQ9HI"
+    },
         "3_mental_indeciso": `<h3>Expansão Mental e Reflexiva</h3>
             <p>Sua necessidade de se expressar (3) é filtrada por uma mente que busca a palavra perfeita. Por ser <strong>Mental e Indecisa</strong>, você pode hesitar antes de falar ou apresentar uma ideia, com medo de não ser claro o suficiente. No entanto, sua inclinação é de quem busca a perfeição lógica para que seu brilho inicial seja inquestionável.</p>`,
         
@@ -4956,9 +4963,11 @@ bancoEquilibrioUnificado = {
         "3_intuitivo_criativo": `<h3>Inspiração Visionária e Espontânea</h3>
             <p>Sua atitude inicial é captar a "cor" do momento de forma mística. No plano <strong>Intuitivo Criativo</strong>, você se expressa através de lampejos de genialidade. Sua inclinação é de quem traz mensagens ou ideias que parecem vir de outra dimensão, iluminando o início do projeto com uma criatividade espiritualizada e única.</p>`,
         
-        "3_intuitivo_indeciso": `<h3>Percepção Criativa sob Dúvida</h3>
+        "3_intuitivo_indeciso": {
+     conteudo:`<h3>Percepção Criativa sob Dúvida</h3>
             <p>Você sente o impulso de criar e falar (3) através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma insegurança sobre se deve ou não compartilhar seu "insight". Sua atitude inicial é a de quem tateia o ambiente em busca de uma confirmação espiritual para liberar seu brilho interno.</p>`,
-        
+             videoID: "F8bg1CTQ9HI"
+    },
         "3_intuitivo_neutro": `<h3>Expansão Silenciosa e Perceptiva</h3>
             <p>Sua abordagem inicial é a do brilho que não precisa de alarde. No plano <strong>Intuitivo Neutro</strong>, você comunica sua criatividade através da sua presença e do seu olhar. Sua atitude é a de quem harmoniza o ambiente apenas existindo, trazendo uma expansão serena e uma sabedoria intuitiva que acalma e motiva o início de qualquer jornada.</p>`,
 
@@ -5221,9 +5230,11 @@ bancoEquilibrioUnificado = {
             <p>Você realiza seus objetivos através da clareza e da ordem. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na verdade dos fatos. Você encerra processos de forma fria e eficiente, entregando resultados que falam por si só devido à sua estrutura lógica impecável e autoridade intelectual.</p>`,
 
         // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "1_emocional_criativo": `<h3>Realização Apaixonada e Única</h3>
+        "1_emocional_criativo": {
+     conteudo:`<h3>Realização Apaixonada e Única</h3>
             <p>Você conclui suas metas colocando toda a sua alma no resultado. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é magnética e inspiradora. Você realiza grandes feitos motivado pelo prazer de vencer, entregando resultados que brilham e emocionam aqueles que os recebem.</p>`,
-        
+                   videoID: "F8bg1CTQ9HI"
+    },
         "1_emocional_indeciso": `<h3>Entrega Sensível e Reativa</h3>
             <p>Sua capacidade de finalizar tarefas está ligada ao seu estado de ânimo final. Sendo <strong>Emocional e Indeciso</strong>, você pode hesitar em entregar o resultado por medo da crítica. Sua realização é potente, mas você precisa se sentir seguro emocionalmente para "assinar" sua obra e mostrar sua independência ao mundo.</p>`,
 
