@@ -4968,9 +4968,11 @@ bancoEquilibrioUnificado = {
             <p>Você sente o impulso de criar e falar (3) através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma insegurança sobre se deve ou não compartilhar seu "insight". Sua atitude inicial é a de quem tateia o ambiente em busca de uma confirmação espiritual para liberar seu brilho interno.</p>`,
              videoID: "F8bg1CTQ9HI"
     },
-        "3_intuitivo_neutro": `<h3>Expansão Silenciosa e Perceptiva</h3>
+        "3_intuitivo_neutro": {
+     conteudo:`<h3>Expansão Silenciosa e Perceptiva</h3>
             <p>Sua abordagem inicial é a do brilho que não precisa de alarde. No plano <strong>Intuitivo Neutro</strong>, você comunica sua criatividade através da sua presença e do seu olhar. Sua atitude é a de quem harmoniza o ambiente apenas existindo, trazendo uma expansão serena e uma sabedoria intuitiva que acalma e motiva o início de qualquer jornada.</p>`,
-
+     videoID: "F8bg1CTQ9HI"
+    },
      // --- NÚMERO 4 (Estabilidade, Trabalho, Organização) ---
         
         // FÍSICO (Ação, Corpo, Prática)
