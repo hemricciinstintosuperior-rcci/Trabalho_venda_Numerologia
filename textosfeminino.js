@@ -3402,497 +3402,695 @@ deficiencias: {
 
  
 Potencias: {
-11: `<h4>Potência 11 - O Domínio do Seu Vigor Feminino e da Estratégia</h4>
+11: {
+     conteudo:`<h4>Potência 11 - O Domínio do Seu Vigor Feminino e da Estratégia</h4>
 <p>Querida <strong>MASCULINO-FEMININO-NEUTRO</strong>, neste período em que a Potência 11 atua no topo da sua pirâmide, ela se manifesta como um pilar absoluto de força e autodomínio. Este ciclo é movido por uma energia vital intensamente magnética, que exige direção consciente e inteligência estratégica para que você não se disperse no caos do dia a dia. É o período para exercitar o controle soberano sobre os seus instintos em favor de objetivos grandiosos, mostrando que a sua real realização nestes anos depende da sua capacidade de canalizar esse vigor feminino para construções sólidas.</p>
 <p>No aspecto positivo deste período, esta influência traz para você uma capacidade única de liderança, resiliência e visão de futuro, permitindo que supere os piores obstáculos com uma disciplina exemplar e uma coragem inabalável. Você se torna uma mulher influente, respeitada e inspiradora, capaz de transmitir segurança para todas ao redor através da autoconfiança e do domínio firme que exerce sobre suas próprias reações e decisões estratégicas.</p>
 <p>No entanto, o aspecto negativo alerta para o risco do orgulho, do autoritarismo e de uma postura rígida demais durante este tempo. Sem o devido equilíbrio emocional, essa força monumental pode se transformar em impulsividade, gerando conflitos desnecessários. A Potência 11 ensina que, durante este período, a sua verdadeira soberania e o seu sucesso surgem apenas quando você conquista o domínio total, consciente e amoroso de si mesma.</p>`,
-
-12: `<h4>Potência 12 - A Alquimia da Transformação e Sabedoria Silenciosa</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+12: {
+     conteudo:`<h4>Potência 12 - A Alquimia da Transformação e Sabedoria Silenciosa</h4>
 <p>Entenda, <strong>MASCULINO-FEMININO-NEUTRO</strong>, que neste período em que a Potência 12 rege a sua vida, ela atua como um ciclo sagrado e necessário de renúncia consciente, maturação e profunda transformação interior. Este momento marca uma fase decisiva onde a realidade exige de você uma pausa estratégica para reflexão, indicando claramente que o seu crescimento real virá do abandono definitivo de padrões obsoletos e comportamentos que já não servem mais à evolução da mulher que você está se tornando.</p>
 <p>Quando você vivencia esta influência de forma positiva durante este período, ela manifesta uma maravilhosa humildade, resiliência e paciência, permitindo que você extraia aprendizados de altíssimo valor mesmo através das aparentes dificuldades do caminho. É um tempo de gestação silenciosa da sua personalidade, onde o desapego sábio de desejos imediatos prepara o terreno para que você conquiste algo muito mais sólido, significativo e próspero no seu futuro.</p>
 <p>Pelo lado negativo, o perigo reside na armadilha da vitimização, da estagnação e daquele sentimento paralisante de impotência durante esta fase. Você pode se ver presa em indecisões crônicas ou aceitar sacrifícios desnecessários por medo de avançar e mudar o rumo das coisas. A Potência 12 ensina a você que toda renúncia feita com consciência, neste período, não é uma perda, mas sim a preparação espiritual e técnica indispensável para um renascimento magnífico.</p>`,
-
-13: `<h4>Potência 13 - A Renovação Radical e o Florescer de Novos Caminhos</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+13: {
+     conteudo:`<h4>Potência 13 - A Renovação Radical e o Florescer de Novos Caminhos</h4>
 <p>Para a sua jornada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, neste período regido pela Potência 13, ocorre uma morte simbólica e uma renovação totalmente radical em sua trajetória. Ela atua neste ciclo como um agente cirúrgico de limpeza profunda, forçando o encerramento definitivo de situações ou projetos que já perderam o propósito de existir, promovendo uma ruptura necessária com estruturas que travam o seu progresso. É o exato momento em que este período exige de você um desapego total para que uma nova identidade e oportunidades fantásticas possam finalmente florescer.</p>
 <p>No aspecto positivo deste ciclo, essa vibrante influência gera uma libertação poderosa e uma reconstrução autêntica de todos os seus caminhos. Ao se permitir abrir mão do que já passou, você descobrirá fontes inesperadas de força interna, passando a viver e empreender de forma muito mais leve e alinhada com a sua verdade atual, livre dos fardos que limitavam o seu sucesso.</p>
 <p>Já no aspecto negativo, pode surgir um medo paralisante do desconhecido e um apego a situações que já deveriam ter sido deixadas para trás. Essa resistência ao fim natural das coisas durante este período pode atrair desgastes. A Potência 13 ensina à sua alma que, na mecânica inteligente do universo, todo fim é apenas o prelúdio obrigatório para um recomeço cheio de vigor, poder e novas possibilidades que este período traz.</p>`,
-
-14: `<h4>Potência 14 - A Arte da Harmonia e do Equilíbrio Produtivo</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+14: {
+     conteudo:`<h4>Potência 14 - A Arte da Harmonia e do Equilíbrio Produtivo</h4>
 <p>A Potência 14 manifesta-se neste período da sua vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, como a busca contínua e recompensadora pelo equilíbrio ideal e pela harmonia entre as diferentes forças do seu dia a dia. Ela indica um ciclo de vida onde a moderação, a paciência estratégica e a conciliação inteligente são as suas grandes chaves mestras para alcançar o topo. É a habilidade divina de integrar perfeitamente a sua razão e a sua intuição feminina de maneira produtiva ao longo desta fase.</p>
 <p>No seu aspecto positivo, durante este período, você demonstra uma diplomacia nata e uma serenidade contagiante, que ajuda a pacificar ambientes, fechar grandes negócios e resolver conflitos complexos com extrema facilidade. A cooperação mútua e as parcerias certas tornam-se suas ferramentas mais potentes de crescimento, permitindo que você erga bases sólidas para os seus projetos, sempre fundamentadas no respeito, na tolerância e na justiça.</p>
 <p>No aspecto negativo, essa busca constante por harmonia pode se degenerar em indecisão ou acomodação durante este tempo. A tentativa de evitar tensões a qualquer custo pode criar uma estagnação perigosa e fazer você perder excelentes oportunidades financeiras. A Potência 14 ensina que o seu verdadeiro poder de realização, nesta etapa, reside na manutenção do seu equilíbrio interior, que deve ser inabalável.</p>`,
-
-15: `<h4>Potência 15 - O Magnetismo Realizador e a Maestria dos Desejos</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+15:{
+     conteudo: `<h4>Potência 15 - O Magnetismo Realizador e a Maestria dos Desejos</h4>
 <p>A Potência 15 simboliza para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, durante este período, o intenso confronto entre as suas ambições materiais legítimas e a sua consciência superior. Ela traz para esta fase uma energia transbordante de magnetismo pessoal, ambição, liderança e paixão, que pode ser direcionada tanto para criações magníficas e enriquecimento quanto para a autossabotagem. É uma potência de enorme força realizadora, mas que exige de você uma vigilância ética e moral impecável em cada ação ao longo deste ciclo.</p>
 <p>No aspecto positivo, ela se manifesta como um carisma avassalador e uma criatividade brilhante que abre portas que antes pareciam trancadas durante este período. Você encontrará em si uma energia incomparável para buscar o que deseja e transformar a sua realidade financeira com vigor absoluto, usando a sua força instintiva e o seu faro de liderança feminina como o combustível principal para conquistar os seus sonhos mais ousados.</p>
 <p>Contudo, no aspecto negativo, essa mesma intensidade pode levar a obsessões, sobrecarga mental ou ao aprisionamento pelo ego, onde o desejo por controle imediato sabota os seus planos de longo prazo durante esta fase. A Potência 15 ensina a você uma lição valiosa: a ambição e o desejo material são mestres cruéis quando dominam você, mas tornam-se servos extraordinários e altamente lucrativos quando guiados pela sua vontade firme e consciência plena neste período.</p>`,
-
-16: `<h4>Potência 16 - A Queda das Ilusões e a Reconstrução sobre a Verdade</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+16: {
+     conteudo:`<h4>Potência 16 - A Queda das Ilusões e a Reconstrução sobre a Verdade</h4>
 <p>A Potência 16 atua em sua vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, neste período específico, através de rupturas inesperadas e despertares intensos que forçam a queda imediata de qualquer ilusão. Ela funciona no seu mapa como um evento catalisador necessário, projetado para desabar estruturas falsas, parcerias enganosas ou conceitos equivocados que você possa ter alimentado. Embora o impacto inicial desses despertares pareça desconfortável durante este tempo, o objetivo final do universo é sempre libertar você de bases frágeis que não sustentariam o peso do seu sucesso futuro.</p>
 <p>No aspecto positivo, essa potência promove uma clareza mental instantânea e a oportunidade de ouro de reconstruir os pilares da sua existência sobre alicerces verdadeiros, técnicos e absolutamente inabaláveis ao longo deste ciclo. Após a queda das barreiras que limitavam o seu progresso, você ganha o poder de recomeçar com muito mais integridade, maturidade e visão real, tornando-se uma mulher infinitamente mais forte do que jamais foi.</p>
 <p>No aspecto negativo, uma resistência desesperada em aceitar as mudanças pode causar colapsos emocionais e perdas evitáveis durante este período. O medo de perder o que já era conhecido, mesmo quando aquilo era limitante, gera negação e impede você de prosperar. A Potência 16 ensina que certas quebras, durante este tempo, são atos de pura faxina divina, necessários para que a sua verdade e a sua luz possam finalmente prevalecer.</p>`,
-
-17: `<h4>Potência 17 - A Estrela da Inspiração e o Caminho do Propósito</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+17: {
+     conteudo:`<h4>Potência 17 - A Estrela da Inspiração e o Caminho do Propósito</h4>
 <p>Na estrutura principal do seu ser, <strong>MASCULINO-FEMININO-NEUTRO</strong>, neste período regido pela Potência 17, ela representa o surgimento radiante da esperança, da fé renovada e da inspiração superior. Em sua vida, ela atua exatamente como uma estrela guia, conectando todas as suas ações práticas e profissionais a ideais elevados, trazendo a certeza absoluta de que prosperar com integridade é o seu destino nesta fase. É a energia sutil que cura feridas passadas e aponta para um futuro onde o sucesso e o propósito caminham juntos durante este tempo.</p>
 <p>No seu aspecto positivo, ela se manifesta durante este período através de uma criatividade brilhante e de um forte desejo de agir com generosidade. Você experimenta uma renovação espiritual e mental que a impulsiona a acreditar fortemente no seu próprio potencial, tornando-se uma fonte natural de inspiração para as clientes e parceiras ao seu redor. É um ciclo extraordinariamente próspero para lançar projetos que expressem a sua essência mais pura.</p>
 <p>No aspecto negativo, pode haver uma tendência perigosa a se perder em expectativas irreais ou fantasias que não encontram base sólida no mundo prático durante este período. A fuga da realidade para um mundo idealizado pode paralisar as suas ações de execução diária. A Potência 17 ensina que a esperança é a ponte ativa, luminosa e inteligente que une o aprendizado do passado à glória da realização prática nesta etapa da sua vida.</p>`,
-
-18: `<h4>Potência 18 - O Mergulho na Intuição e o Domínio das Emoções Ocultas</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+18: {
+     conteudo:`<h4>Potência 18 - O Mergulho na Intuição e o Domínio das Emoções Ocultas</h4>
 <p>Saiba, <strong>MASCULINO-FEMININO-NEUTRO</strong>, que neste período em que a Potência 18 rege a sua pirâmide, ela traz um contato direto e profundo com o seu subconsciente, suas intuições poderosas e as águas da sua própria mente. Ela indica momentos em que a sua realidade externa será fortemente influenciada pela sua sensibilidade, mas também por medos invisíveis que precisam ser encarados de frente. Trata-se de um chamado imperativo para mergulhar no autoconhecimento e pacificar as suas sombras durante este ciclo.</p>
 <p>Vivida de forma positiva, esta potência desperta em você durante este tempo uma intuição aguçada e uma imaginação fértil que pode ser genial para encontrar soluções criativas em seus negócios e demonstrar uma empatia profunda nas suas relações. Você se torna perfeitamente capaz de captar o que não foi dito, usando essa percepção extra para navegar pela vida com extrema sabedoria, proteção e discernimento.</p>
 <p>Pelo lado negativo, a confusão emocional ou a insegurança podem se manifestar se você não estiver centrada durante este período, criando um cenário de instabilidade. O medo injustificado do futuro pode gerar ansiedade, levando você a escolhas erradas. A Potência 18 ensina que a maior batalha ocorre dentro da mente, e que iluminar os próprios medos, nesta fase, é o único caminho para a paz e a liderança real.</p>`,
-
-19: `<h4>Potência 19 - O Triunfo Absoluto, a Luz do Sucesso e a Realização Plena</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+19: {
+     conteudo:`<h4>Potência 19 - O Triunfo Absoluto, a Luz do Sucesso e a Realização Plena</h4>
 <p>A Potência 19 representa o triunfo absoluto, a clareza total e a plena realização em sua jornada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, durante este período. Ela simboliza o momento de máxima luz na sua pirâmide da vida, onde as recompensas por todos os seus esforços passados e sua dedicação finalmente se manifestam de forma visível, concreta e altamente próspera. É a energia pura da expansão e do sucesso que dissipa qualquer sombra de dúvida ao longo deste ciclo.</p>
 <p>No aspecto positivo, você experimenta durante esta fase uma autoconfiança contagiante e um reconhecimento amplamente merecido por suas conquistas. A prosperidade financeira flui com naturalidade e você se sente em perfeita sintonia com as engrenagens do mundo. É um período de felicidade autêntica, onde a sua luz pessoal brilha intensamente, trazendo clareza, autoridade e muito sucesso para todos os seus empreendimentos presentes.</p>
 <p>No aspecto negativo, o excesso de brilho e as vitórias rápidas podem fazer surgir a armadilha da vaidade cega ou de um egocentrismo que isola você durante este tempo. Perder a conexão com a realidade pode fragilizar as suas bases. A Potência 19 ensina que a luz do sucesso, nesta etapa, só atinge o seu ápice dourado quando é compartilhada com generosidade, iluminando o caminho de outras mulheres.</p>`,
-
-20: `<h4>Potência 20 - O Despertar da Consciência e a Nova Chance de Vitória</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+20:{
+     conteudo: `<h4>Potência 20 - O Despertar da Consciência e a Nova Chance de Vitória</h4>
 <p>A Potência 20 representa um verdadeiro divisor de águas, o despertar da sua consciência e o julgamento estratégico das suas ações, <strong>MASCULINO-FEMININO-NEUTRO</strong>, durante este período. Ela indica um chamado inadiável para uma nova fase de vida, onde você é convidada a avaliar sua trajetória com maturidade, colher os frutos certos e assumir uma nova postura no mundo. É o símbolo máximo da renovação de propósitos e da libertação de antigos fardos do passado ao longo deste ciclo.</p>
 <p>No aspecto positivo, esta influência derrama sobre você durante este tempo uma clareza espiritual, mental e estratégica brilhante, permitindo tomar decisões definitivas, assertivas e profundamente libertadoras. Você sentirá que recebeu do universo uma valiosa "segunda chance" para estruturar a sua vida de forma perfeitamente alinhada com o seu destino de sucesso, resultando em paz interior e na resolução rápida de pendências durante esta etapa.</p>
 <p>No entanto, no aspecto negativo, pode surgir uma resistência interna em ouvir esse chamado para evoluir, o que pode gerar arrependimentos ou o medo de encarar as consequências de escolhas antigas nesta fase. A Potência 20 ensina a você que o despertar da consciência, neste período, é um processo de libertação glorioso, que exige apenas honestidade total com a própria história.</p>`,
 
-
+videoID: "F8bg1CTQ9HI"
+    },
  
 
-21: `<h4>Potência 21 - A Colheita de Ouro e a Integração Plena</h4>
+21: {
+     conteudo:`<h4>Potência 21 - A Colheita de Ouro e a Integração Plena</h4>
 <p>Neste período da sua vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 21 representa a conclusão de um grande ciclo e a integração harmoniosa de todos os seus aprendizados. Ela indica que você atingiu um estado de plenitude onde o sucesso não é apenas uma conquista isolada, mas a manifestação de um equilíbrio global entre seus desejos, suas ações e o meio em que você vive. É o símbolo da expansão consciente e do triunfo que nasce da sua totalidade como mulher.</p>
 <p>No aspecto positivo desta fase, esta influência manifesta uma realização completa, viagens significativas e o merecido reconhecimento público de seus talentos. Você experimenta uma sensação deliciosa de liberdade e pertencimento, sentindo que o mundo colabora com seus planos. É um tempo de colheitas abundantes, onde a sua presença irradia uma segurança que atrai novas oportunidades e consolida sua posição de destaque em qualquer área que você escolher atuar.</p>
 <p>Pelo lado negativo, pode surgir a dificuldade em lidar com o sucesso, gerando um medo paralisante de novos começos ou uma arrogância que a isola da realidade. A sensação de que "já alcançou tudo" pode levar à estagnação. A Potência 21 ensina que a perfeição é um movimento contínuo e que cada chegada vitoriosa é, na verdade, o ponto de partida para um nível de consciência e realização ainda mais elevado.</p>`,
-
-22: `<h4>Potência 22 - A Mestra Construtora de Legados</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+22: {
+     conteudo:`<h4>Potência 22 - A Mestra Construtora de Legados</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 22 atua neste período como a energia da mestre construtora, indicando uma capacidade extraordinária de materializar seus sonhos em larga escala. Ela rege a sua vida por meio de uma visão de longo prazo e um pragmatismo aguçado, mostrando que você possui o vigor necessário para erguer estruturas que beneficiam não apenas a si mesma, mas toda a sua comunidade. É o símbolo da ambição elevada unida à disciplina rigorosa durante esta fase.</p>
 <p>Vivida positivamente, esta potência manifesta um progresso material sólido e a construção de um legado duradouro. Você demonstra uma habilidade ímpar para organizar recursos e liderar projetos complexos, conquistando uma estabilidade financeira invejável. É um ciclo de grande poder realizador, onde a sua persistência transforma obstáculos em degraus para uma ascensão segura e respeitada por todos ao seu redor.</p>
 <p>No aspecto negativo, o foco excessivo no mundo material pode levar à frieza emocional, ao autoritarismo ou a uma obsessão pelo poder que ignora os seus valores humanos. O medo do fracasso pode gerar uma tensão constante. A Potência 22 ensina que a verdadeira grandeza de uma construção, durante este período, reside na ética de seus fundamentos e na capacidade de servir ao crescimento de todos.</p>`,
-
-23: `<h4>Potência 23 - A Fluidez na Comunicação e o Dinamismo Mental</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+23: {
+     conteudo:`<h4>Potência 23 - A Fluidez na Comunicação e o Dinamismo Mental</h4>
 <p>Para a sua jornada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 23 representa, neste período, a força da comunicação, do aprendizado e da troca intelectual como motores de progresso. Ela indica que sua trajetória é marcada pela necessidade de expressar suas ideias e de buscar conhecimento constante para refinar sua atuação no mundo. É o símbolo do dinamismo mental que abre portas através da diplomacia, dos estudos e da sua habilidade em articular parcerias estratégicas.</p>
 <p>No aspecto positivo, esta influência manifesta uma inteligência versátil e uma grande facilidade em se adaptar a novos ambientes e tecnologias durante este tempo. Você atrai oportunidades através do seu magnetismo pessoal e da sua capacidade de convencer e inspirar os outros. É um período de expansão de horizontes, onde viagens e novos conhecimentos trazem retornos financeiros rápidos e fortalecem sua autoridade profissional de maneira dinâmica e moderna.</p>
 <p>Pelo lado negativo, a dispersão de energia e a superficialidade podem comprometer seus resultados. Querer saber de tudo um pouco sem se aprofundar em nada pode gerar instabilidade. A Potência 23 ensina que o conhecimento é uma ferramenta de poder, mas que ele só produz frutos sólidos neste ciclo quando é aplicado com foco, disciplina e um propósito feminino claro.</p>`,
-
-24: `<h4>Potência 24 - O Zelo pela Segurança e a Harmonia do Lar</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+24: {
+     conteudo:`<h4>Potência 24 - O Zelo pela Segurança e a Harmonia do Lar</h4>
 <p>A Potência 24 manifesta-se neste período da sua vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, através da busca por segurança, estabilidade e harmonia. Ela rege a sua experiência pela necessidade de construir bases sólidas e afetuosas, indicando que sua realização está intimamente ligada ao bem-estar daqueles que você ama. É o símbolo do seu zelo e da sua responsabilidade, onde o sucesso material é visto como um meio de garantir proteção e conforto para o seu círculo mais íntimo.</p>
 <p>Quando vivida positivamente, esta potência manifesta uma prosperidade equilibrada e um ambiente doméstico que serve como refúgio e fonte de energia vital. Você demonstra uma grande capacidade de nutrir seus projetos e suas relações, atraindo sorte através da sua postura íntegra e generosa. É uma fase de consolidação de patrimônio e de fortalecimento de vínculos que trazem uma profunda satisfação emocional.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo do apego excessivo ou de uma preocupação paralisante com a segurança material. O medo de perdas pode tornar você alguém resistente a mudanças necessárias para a sua própria evolução. A Potência 24 ensina que a verdadeira segurança nasce da sua confiança interna durante este período.</p>`,
-
-25: `<h4>Potência 25 - A Estrategista do Aperfeiçoamento Contínuo</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+25: {
+     conteudo:`<h4>Potência 25 - A Estrategista do Aperfeiçoamento Contínuo</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 25 simboliza, neste período, o progresso através da análise, do discernimento e do aperfeiçoamento constante. Ela indica que sua jornada exige momentos de retiro para reflexão, permitindo que você reorganize suas estratégias antes de agir no mundo material. É a energia da estrategista feminina que entende que o silêncio e a observação são fundamentais para garantir que cada passo seja dado com precisão e eficiência.</p>
 <p>Vivida positivamente, esta potência manifesta um amadurecimento mental que a torna imune a influências externas superficiais. Você desenvolve uma visão clara sobre seus objetivos, agindo com uma prudência que evita desperdícios de tempo e recursos. É um ciclo de conquistas inteligentes, onde a sua autoridade é reconhecida pela profundidade do seu conhecimento e pela segurança das suas decisões, resultando em um crescimento sólido e respeitado.</p>
 <p>Pelo lado negativo, o excesso de análise pode levar à indecisão ou a um perfeccionismo que impede a ação prática durante esta fase. O medo de errar pode mantê-la estagnada, perdendo janelas de oportunidade. A Potência 25 ensina que a reflexão deve ser o combustível para uma ação consciente, e que a sabedoria só se torna poder quando é colocada em movimento.</p>`,
-
-26: `<h4>Potência 26 - A Resiliência Feminina e a Superação de Desafios</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+26: {
+     conteudo:`<h4>Potência 26 - A Resiliência Feminina e a Superação de Desafios</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 26 atua neste período através da força de vontade, da resiliência e da superação de grandes desafios materiais. Ela representa o momento em que sua determinação é testada pela realidade, exigindo que você assuma o comando total da sua vida com coragem e disciplina. É o símbolo da sua vitória sobre a matéria, onde o seu esforço pessoal é o caminho para a conquista da independência e do sucesso.</p>
 <p>No aspecto positivo, esta influência manifesta um fortalecimento notável do seu caráter e a obtenção de resultados concretos através do seu trabalho. Você experimenta a satisfação de vencer obstáculos que pareciam intransponíveis, conquistando um lugar de honra e estabilidade pelo seu próprio mérito. É uma fase de grande vigor mental, onde a sua capacidade de persistir garante que você alcance seus objetivos mais ambiciosos com dignidade.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da agressividade, do estresse crônico ou do endurecimento do seu coração em nome do sucesso durante esta fase. A luta constante pode gerar um esgotamento. A Potência 26 ensina que a verdadeira força não é bruta, mas uma firmeza serena que sabe ser resiliente sem perder a sensibilidade.</p>`,
-
-27: `<h4>Potência 27 - A Diplomacia e o Equilíbrio nas Relações</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+27: {
+     conteudo:`<h4>Potência 27 - A Diplomacia e o Equilíbrio nas Relações</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 27 representa, neste período, a sabedoria aplicada à diplomacia e ao equilíbrio social. Ela indica que seu sucesso está ligado à sua habilidade em mediar interesses e em construir pontes entre diferentes realidades. É o símbolo da justiça e da elegância nas suas ações, mostrando que a sua trajetória é fortalecida quando você age com retidão, transparência e uma visão humanitária das situações materiais.</p>
 <p>Quando vivida positivamente, esta potência manifesta reconhecimento público, parcerias prósperas e uma facilidade natural em circular por diversos ambientes com respeito e autoridade. Você atrai apoio porque as pessoas confiam no seu julgamento e na sua integridade. É um ciclo de expansão social e material, onde a sua capacidade de ser justa garante uma prosperidade sustentada pela admiração e pela lealdade alheia.</p>
 <p>Pelo lado negativo, a preocupação excessiva com a imagem social ou a indecisão diante de conflitos pode gerar uma postura superficial. Fugir de escolhas difíceis para manter uma paz aparente pode levar a crises de identidade. A Potência 27 ensina que o equilíbrio real nasce da fidelidade aos seus princípios internos, independentemente das pressões externas.</p>`,
-
-28: `<h4>Potência 28 - A Renovação por meio das Parcerias</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+28: {
+     conteudo:`<h4>Potência 28 - A Renovação por meio das Parcerias</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 28 simboliza, neste período, a renovação das parcerias e o despertar de novas oportunidades através da colaboração. Ela rege a sua vida pela dinâmica das trocas, indicando que este é um momento de abrir mão do isolamento para unir forças com quem compartilha dos seus ideais. É a energia da reciprocidade, onde o seu crescimento individual é potencializado pela força dos vínculos que você decide fortalecer ou iniciar durante este ciclo.</p>
 <p>Vivida positivamente, esta potência manifesta contratos vantajosos, reconciliações produtivas e um novo fôlego em sua vida profissional e afetiva. Você sente que a sorte volta a sorrir através de encontros providenciais e ideias compartilhadas que geram lucro e bem-estar. É uma fase de otimismo e movimento, onde a sua disposição para cooperar abre caminhos que antes estavam bloqueados.</p>
 <p>Contudo, no aspecto negativo, pode surgir uma dependência excessiva do julgamento alheio ou uma tendência a entrar em sociedades desequilibradas por medo de agir sozinha. A falta de critérios na escolha de parceiros pode levar a decepções. A Potência 28 ensina que a união faz a força, mas que toda parceria duradoura exige clareza de papéis e respeito mútuo.</p>`,
-
-29: `<h4>Potência 29 - A Intuição Prática e a Sabedoria Espiritual</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+29: {
+     conteudo:`<h4>Potência 29 - A Intuição Prática e a Sabedoria Espiritual</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 29 representa, neste período, a força da sua intuição e da sua sensibilidade transformadas em resultados práticos. Ela indica que sua jornada é guiada por uma percepção profunda que vai além do óbvio, permitindo que você antecipe tendências e proteja seus interesses com uma sabedoria quase instintiva. É o símbolo da luz interior que ilumina as suas decisões materiais mais complexas.</p>
 <p>No aspecto positivo, esta influência manifesta um magnetismo pessoal poderoso e um sucesso que parece vir de fontes invisíveis de sorte. Você toma decisões acertadas em momentos críticos porque confia na sua voz interna, atraindo abundância e reconhecimento através da sua originalidade. É um ciclo de cura e prosperidade, onde a sua conexão com o seu propósito traz um brilho único para todas as suas realizações.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo das ilusões ou da fuga da realidade prática para um mundo de fantasias. A instabilidade emocional pode gerar confusão em seus negócios, dificultando a concretização dos seus planos. A Potência 29 ensina que a intuição é um guia sagrado, mas que ela deve ser aterrada pela razão para transformar seu potencial em conquistas sólidas.</p>`,
-
-30: `<h4>Potência 30 - A Realização por meio da Justiça e da Verdade</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+30: {
+     conteudo:`<h4>Potência 30 - A Realização por meio da Justiça e da Verdade</h4>
 <p>Na estrutura principal do seu ser, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 30 simboliza, neste período, a realização através da ordem, da lei e do compromisso com a verdade. Ela indica que você atingiu um patamar onde suas ações são pesadas pelo critério da justiça, exigindo que você assuma a responsabilidade total pelo seu destino. É o símbolo da colheita merecida, onde a estrutura da sua vida se estabiliza de acordo com a retidão e a disciplina aplicadas até aqui.</p>
 <p>Quando vivida positivamente, esta potência manifesta segurança material, resolução de pendências e um sólido reconhecimento profissional. Você experimenta a paz de quem construiu sobre bases honestas, sentindo que a vida se organiza de forma eficiente ao seu redor. É uma fase de consolidação de poder e prestígio, onde a sua palavra tem peso e a sua integridade é o escudo que garante a continuidade do seu sucesso.</p>
 <p>Pelo lado negativo, o rigor excessivo, a teimosia ou a dificuldade em perdoar falhas próprias podem gerar um ambiente de tensão. Se houve negligência no passado, esta potência pode trazer cobranças. A Potência 30 ensina que agir com equilíbrio e honestidade é a única forma de garantir uma estabilidade que seja verdadeiramente duradoura.</p>`,
-
-31: `<h4>Potência 31 - O Recolhimento Estratégico e a Prudência</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+31: {
+     conteudo:`<h4>Potência 31 - O Recolhimento Estratégico e a Prudência</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 31 representa, neste período, a necessidade de recolhimento estratégico para a reorganização da sua força vital e dos seus planos. Ela indica que sua jornada atingiu um ponto onde o movimento contínuo deve dar lugar ao silêncio para que a clareza retorne. É o símbolo da prudência necessária, onde você se afasta das pressões externas para ouvir sua própria sabedoria e fortalecer seus alicerces antes de um novo ciclo de expansão.</p>
 <p>No aspecto positivo, esta influência manifesta um profundo autoconhecimento e um amadurecimento que evita erros por impulsividade. Você utiliza este tempo para planejar com precisão, agindo com uma segurança que inspira respeito. É uma fase de cura e fortalecimento interno, onde o descanso e a análise cuidadosa dos fatos garantem que seus próximos passos sejam certeiros, sólidos e extremamente produtivos.</p>
 <p>No entanto, o aspecto negativo alerta para o risco do isolamento por medo do enfrentamento social ou da procrastinação. A falta de iniciativa pode levar à perda de oportunidades valiosas. A Potência 31 ensina que o retiro deve ser uma ferramenta de poder e não um lugar de fuga; saber quando parar é tão importante quanto saber quando avançar.</p>`,
-
-32: `<h4>Potência 32 - A Virada da Sorte e a Dinâmica do Destino</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+32:{
+     conteudo: `<h4>Potência 32 - A Virada da Sorte e a Dinâmica do Destino</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 32 simboliza, neste período, a virada da sorte e o movimento favorável das circunstâncias externas em direção aos seus objetivos. Ela representa a ciclicidade da vida, indicando que, após períodos de esforço, a roda do destino volta a girar, trazendo novas oportunidades, viagens e encontros providenciais. É a energia do dinamismo que recompensa a sua flexibilidade e a sua prontidão para agir no momento certo.</p>
 <p>Vivida positivamente, esta potência manifesta uma sucessão de eventos afortunados e uma expansão rápida em diversas áreas. Você se sente no lugar certo e na hora certa, atraindo recursos e parcerias que impulsionam sua carreira e seu bem-estar. É um ciclo de renovação e otimismo, onde a sua capacidade de se adaptar às mudanças garante que você suba de nível social e material com uma fluidez surpreendente.</p>
 <p>Pelo lado negativo, o excesso de mudanças ou a dependência exclusiva da sorte pode gerar instabilidade e falta de foco. Confiar apenas no acaso sem manter uma estratégia sólida pode levar a ganhos rápidos que desaparecem. A Potência 32 ensina que o destino oferece as chances, mas é a sua vontade estratégica que deve dar a direção para que a prosperidade seja permanente.</p>`,
-
-33: `<h4>Potência 33 - A Resiliência e o Domínio das Situações</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+33:{
+     conteudo: `<h4>Potência 33 - A Resiliência e o Domínio das Situações</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 33 representa, neste período, a força da resiliência e a capacidade de dominar situações complexas através da determinação. Ela indica que sua jornada é marcada por uma vitalidade que permite superar qualquer resistência externa sem precisar recorrer à força bruta. É o símbolo do seu autodomínio, onde você aprende que a inteligência emocional é a sua ferramenta mais poderosa para conquistar o seu espaço no mundo.</p>
 <p>No aspecto positivo, esta influência manifesta uma coragem inabalável e um magnetismo pessoal que atrai sucesso e colaboração. Você enfrenta desafios com serenidade, transformando conflitos em oportunidades de crescimento através da sua firmeza de caráter. É um ciclo de grandes vitórias pessoais, onde a sua disposição está em alta, permitindo que você lidere projetos e pessoas com uma autoridade natural e respeitada.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da impaciência, do desejo de controle excessivo ou do uso da manipulação. A força mal canalizada pode gerar desgaste e tensões desnecessárias. A Potência 33 ensina que a verdadeira soberania nasce da harmonia interna; quanto mais calmo é o seu centro, maior é o seu poder de influência sobre a realidade externa.</p>`,
-
-34: `<h4>Potência 34 - O Sacrifício Consciente e a Visão Renovada</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+34: {
+     conteudo:`<h4>Potência 34 - O Sacrifício Consciente e a Visão Renovada</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 34 atua neste período como um ciclo de reavaliação profunda e sacrifício consciente em favor de um propósito maior. Ela indica que certas pausas na ação externa são fundamentais para que ocorra uma mudança de perspectiva necessária para o seu progresso. É o símbolo da visão renovada, onde você percebe que abrir mão de algo agora é o que garantirá uma conquista muito mais valiosa no futuro próximo.</p>
 <p>Vivida positivamente, esta potência manifesta uma paciência extraordinária e uma sabedoria que nasce da aceitação dos tempos naturais da vida. Você utiliza este período para se libertar de velhos vícios de comportamento e para fortalecer sua resiliência espiritual. É uma fase de maturação onde a sua força interior cresce silenciosamente, preparando você para assumir responsabilidades maiores com uma base ética muito mais firme.</p>
 <p>Pelo lado negativo, pode surgir um sentimento de vitimização por não entender o sentido do momento. A resistência em soltar padrões antigos pode gerar uma sensação de estar "presa" às circunstâncias. A Potência 34 ensina que parar voluntariamente para observar e mudar a rota é um ato de suprema inteligência.</p>`,
-
-35: `<h4>Potência 35 - A Transmutação e o Renascimento Autêntico</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+35: {
+     conteudo:`<h4>Potência 35 - A Transmutação e o Renascimento Autêntico</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 35 representa, neste período, a transformação radical e o encerramento definitivo de ciclos que já não possuem energia vital. Ela atua como uma força de renovação que remove o que é obsoleto para que o novo possa emergir com vigor. É o símbolo da transmutação, indicando que a sua realidade está sendo limpa de estruturas frágeis para dar lugar a uma existência mais autêntica, potente e alinhada com seu propósito atual.</p>
 <p>No aspecto positivo, esta influência manifesta uma libertação profunda e a coragem necessária para recomeçar com uma visão muito mais clara. Você experimenta o alívio de soltar fardos que bloqueavam sua prosperidade, ganhando uma força renovada para reconstruir sua vida sobre bases honestas. É um ciclo de renascimento onde as perdas aparentes revelam-se como grandes livramentos estratégicos.</p>
 <p>No entanto, o aspecto negativo alerta para o medo paralisante do fim e para a dor gerada pela resistência à mudança inevitável. O apego ao que está morrendo pode causar angústia. A Potência 35 ensina que a morte de uma fase é o útero da próxima; aceitar o fim com dignidade é a garantia de um recomeço glorioso e cheio de luz.</p>`,
-
-36: `<h4>Potência 36 - O Equilíbrio Sagrado e a Temperança</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+36: {
+     conteudo:`<h4>Potência 36 - O Equilíbrio Sagrado e a Temperança</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 36 manifesta-se neste período através da busca pelo equilíbrio sagrado, pela temperança e pela cura das suas estruturas. Ela rege sua trajetória pela moderação, indicando que o sucesso sustentável nasce da sua habilidade em evitar extremos e em agir com paciência. É o símbolo da alquimia prática, onde você aprende a combinar seus recursos com inteligência para criar uma vida estável, pacífica e próspera.</p>
 <p>Quando vivida positivamente, esta potência manifesta serenidade, saúde equilibrada e uma diplomacia que resolve impasses de forma suave e eficiente. Você se torna um ponto de equilíbrio para os outros, atraindo confiança e parcerias duradouras baseadas na cooperação. É uma fase de regeneração, onde a constância e a moderação garantem que você avance sem as turbulências causadas pela pressa ou pelo excesso de ambição.</p>
 <p>No aspecto negativo, a busca por harmonia pode se transformar em passividade ou em uma tendência a aceitar situações medíocres. A falta de firmeza em decisões cruciais pode gerar uma lentidão que atrasa seus resultados. A Potência 36 ensina que o verdadeiro equilíbrio exige uma vontade ativa; é a arte de fluir com as circunstâncias sem nunca perder o foco na direção escolhida.</p>`,
-
-37: `<h4>Potência 37 - O Magnetismo Realizador e a Maestria Pessoal</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+37: {
+     conteudo:`<h4>Potência 37 - O Magnetismo Realizador e a Maestria Pessoal</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 37 simboliza, neste período, o magnetismo realizador e o confronto necessário com as ambições e desejos. Ela traz para a sua realidade uma energia de poder e influência muito forte, indicando que você possui o carisma e a astúcia necessários para conquistar grandes espaços sociais e financeiros. É a força primordial que exige ser guiada por uma consciência desperta para não gerar aprisionamentos desnecessários.</p>
 <p>Vivida positivamente, esta potência manifesta um sucesso impressionante e uma capacidade de liderança estratégica que atrai recursos abundantes. Você encontra a coragem para romper tabus e limitações, agindo com uma audácia que a coloca em posições de destaque. É um ciclo de grande vigor, onde a sua inteligência prática e seu magnetismo pessoal trabalham juntos para materializar seus projetos mais ousados com eficiência absoluta.</p>
 <p>Pelo lado negativo, o foco exclusivo no ganho pessoal e no controle sobre os outros pode levar a comportamentos manipuladores ou a um vazio existencial profundo. A obsessão pelo poder pode criar prisões emocionais. A Potência 37 ensina que o poder só é uma ferramenta de evolução real quando está a serviço de um propósito que respeita a liberdade de todos.</p>`,
-
-38: `<h4>Potência 38 - O Despertar da Verdade por meio das Rupturas</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+38: {
+     conteudo:`<h4>Potência 38 - O Despertar da Verdade por meio das Rupturas</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 38 representa, neste período, a quebra brusca de ilusões e a necessidade imperativa de reconstrução sobre bases verdadeiras. Ela atua como um despertador que derruba o que foi construído com orgulho, falsidade ou negligência, forçando você a encarar os fatos como eles são. Embora o choque inicial possa ser intenso, ele é o ponto de partida para a libertação de uma estrutura que já estava prestes a ruir, permitindo que você foque no que é real.</p>
 <p>No aspecto positivo, esta influência manifesta uma clareza mental súbita e a oportunidade de edificar um futuro inabalável sobre a rocha da verdade. Ao se ver livre das máscaras, você ganha a chance de recomeçar com muito mais força e honestidade. É o momento de despertar da consciência, onde a destruição do supérfluo permite que o essencial finalmente floresça e que sua vida ganhe um sentido muito mais profundo.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da revolta diante de perdas imprevistas. A resistência em aceitar a falha pode gerar amargura e impedir o aprendizado. A Potência 38 ensina que certas quedas são, na verdade, livramentos; é preciso ter humildade para aprender com os escombros e coragem para construir algo infinitamente melhor.</p>`,
-
-39: `<h4>Potência 39 - A Estrela da Esperança e da Inspiração</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+39:{
+     conteudo: `<h4>Potência 39 - A Estrela da Esperança e da Inspiração</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 39 simboliza, neste período, o surgimento da esperança, da inspiração e da renovação espiritual que guia suas ações. Ela indica que, após períodos de desafio, a luz do seu propósito volta a brilhar com força, trazendo clareza e novas metas. É o símbolo da harmonia recuperada, sugerindo que o seu sucesso será um reflexo direto da paz e da fé que você cultiva em seu interior ao longo desta etapa da sua vida.</p>
 <p>Vivida positivamente, esta potência manifesta uma criatividade vibrante e uma sorte que atrai as pessoas certas no momento exato. Você experimenta uma fase de grande otimismo, onde a sua presença transmite calma e inspiração, abrindo portas para parcerias generosas. É um ciclo de beleza e fluidez, onde a vida sorri para quem age com transparência e acredita na abundância infinita do destino.</p>
 <p>Pelo lado negativo, pode haver uma tendência ao idealismo ingênuo ou ao escapismo, esperando que a sorte resolva questões que exigem esforço prático. Perder-se em sonhos sem aterrizá-los pode levar a frustrações. A Potência 39 ensina que a esperança é a luz que ilumina o caminho, mas é o seu passo firme que transforma a visão em realidade tangível.</p>`,
-
-40: `<h4>Potência 40 - O Mergulho nas Profundezas da Alma</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+40:{
+     conteudo: `<h4>Potência 40 - O Mergulho nas Profundezas da Alma</h4>
 <p>Na estrutura principal do seu ser, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 40 representa, neste período, o mergulho nas profundezas das emoções e o enfrentamento de medos ancestrais para alcançar a verdadeira segurança interna. Ela rege a fase de maior sensibilidade e intuição, indicando que a sua realidade está sendo moldada por forças subconscientes que precisam ser compreendidas. É o símbolo do mistério que precede a clareza, exigindo coragem para olhar além das aparências.</p>
 <p>No aspecto positivo, esta influência manifesta uma intuição poderosa e uma capacidade de percepção que protege você de enganos. Você se torna capaz de ler as entrelinhas das situações, agindo com uma cautela sábia que garante sua estabilidade. É um ciclo de profunda cura emocional, onde o entendimento da sua própria sombra permite que você se torne alguém muito mais íntegro, empático e preparado para o sucesso.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da confusão mental ou da instabilidade emocional que gera insegurança em suas decisões práticas. Deixar-se levar por ilusões pode travar seu progresso. A Potência 40 ensina que a sensibilidade é um dom, desde que seja iluminada pela razão e pela coragem de encarar a verdade sem filtros.</p>`,
  
- 
+ videoID: "F8bg1CTQ9HI"
+    },
 
-41: `<h4>Potência 41 - O Triunfo da Clareza e da Vitalidade</h4>
+41:{
+     conteudo: `<h4>Potência 41 - O Triunfo da Clareza e da Vitalidade</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 41 representa o triunfo da clareza, da verdade e da vitalidade plena em sua jornada física. Ela simboliza o momento em que a luz do entendimento dissipa todas as dúvidas, permitindo que você enxergue o caminho para o sucesso com absoluta nitidez. É o símbolo da alegria realizadora, indicando que suas ações estão em total sintonia com o seu propósito, o que atrai reconhecimento e prosperidade de forma natural.</p>
 <p>No aspecto positivo, esta potência manifesta um sucesso radiante, saúde vigorosa e a concretização de projetos que trazem felicidade e bem-estar. Você experimenta um ciclo de grande magnetismo pessoal, onde sua presença inspira confiança e clareza nas outras pessoas. É uma fase de colheitas abundantes e celebração, onde a verdade atua como sua maior proteção e guia para uma expansão material e social segura.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da arrogância, da vaidade cega ou da superexposição desnecessária. O brilho excessivo do ego pode ocultar detalhes práticos importantes e gerar inveja ou conflitos de poder. A Potência 41 ensina que a verdadeira luz é aquela que aquece e ilumina sem queimar, exigindo humildade para que o sucesso seja compartilhado e mantido por bases éticas e humanas sólidas.</p>`,
-
-42: `<h4>Potência 42 - O Despertar da Consciência e a Nova Responsabilidade</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+42:{
+     conteudo: `<h4>Potência 42 - O Despertar da Consciência e a Nova Responsabilidade</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 42 representa o chamado para o despertar da consciência e a avaliação profunda de suas escolhas de vida. Ela indica um momento de transição onde você é convidada a deixar para trás velhos julgamentos e culpas para assumir uma nova responsabilidade sobre seu destino físico. É o símbolo da ressurreição em vida, sinalizando que você possui a maturidade necessária para transformar sua realidade através de uma percepção mais elevada.</p>
 <p>Vivida positivamente, esta potência manifesta a libertação de padrões limitantes e a resolução de questões do passado que impediam seu progresso. Você experimenta uma renovação de propósitos, agindo com uma integridade que atrai respeito e abre portas para uma vida muito mais autêntica e próspera. É um ciclo de cura e clareza mental, onde o perdão — a si mesma e aos outros — atua como a chave para uma nova e brilhante etapa de realizações.</p>
 <p>Pelo lado negativo, pode surgir a resistência em enfrentar a própria verdade, levando à autocondenação ou à repetição de erros antigos por medo da mudança. O julgamento severo das circunstâncias pode gerar amargura e estagnação. A Potência 42 ensina que o despertar exige coragem para olhar para trás com justiça e para frente com esperança, permitindo que a vida se renove de forma consciente e poderosa.</p>`,
-
-43: `<h4>Potência 43 - A Integração e a Plenitude do Ser</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+43: {
+     conteudo:`<h4>Potência 43 - A Integração e a Plenitude do Ser</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 43 simboliza a integração final de todos os seus aprendizados e a conquista de um sucesso que reflete a totalidade do seu ser. Ela representa a conclusão de etapas complexas e a harmonia entre suas ambições materiais e sua evolução pessoal. É o símbolo da plenitude, indicando que você atingiu um estado de equilíbrio onde o mundo físico responde positivamente à sua clareza interna e ao seu esforço persistente.</p>
 <p>No aspecto positivo, esta influência manifesta realizações globais, reconhecimento público e uma sensação de liberdade e pertencimento. Você se sente "em casa" no mundo, atraindo viagens, parcerias internacionais e novas oportunidades de expansão que consolidam sua autoridade. É um ciclo de triunfo merecido, onde a sua visão estratégica e sua integridade garantem uma prosperidade que é estável, vasta e profundamente recompensadora.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da inércia após a conquista ou do isolamento em uma zona de conforto dourada. O medo de que o ciclo termine pode gerar ansiedade ou um apego excessivo ao status conquistado. A Potência 43 ensina que a perfeição é dinâmica; cada grande conquista é o alicerce para um novo nível de evolução, exigindo que você continue em movimento para que a abundância continue fluindo.</p>`,
-
-44: `<h4>Potência 44 - A Mestra Construtora de Legados</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+44: {
+     conteudo:`<h4>Potência 44 - A Mestra Construtora de Legados</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 44 representa a energia da mestra construtora aplicada à criação de um legado material e social inabalável. Ela indica que você possui uma capacidade extraordinária de organizar recursos e pessoas para manifestar visões de grande escala no plano físico. É o símbolo do pragmatismo elevado, onde a sua disciplina e sua vontade firme transformam grandes sonhos em estruturas concretas e duradouras.</p>
 <p>Vivida positivamente, esta potência manifesta um progresso financeiro sólido, autoridade respeitada e a construção de projetos que beneficiam o coletivo. Você demonstra uma resiliência exemplar, lidando com responsabilidades complexas com uma calma que transmite segurança a todos. É uma fase de conquistas institucionais e estabilidade de longo prazo, onde seu trabalho árduo é validado pelo sucesso tangível e pela admiração de seus pares e subordinados.</p>
 <p>Pelo lado negativo, o foco absoluto no poder e nos resultados materiais pode endurecer sua personalidade, gerando frieza emocional ou uma postura controladora e autoritária. O excesso de ambição pode cegá-la para as necessidades humanas básicas ao seu redor. A Potência 44 ensina que a verdadeira grandeza de um legado físico não se mede apenas pela sua altura, mas pela justiça de seus fundamentos e pela humanidade de quem o construiu.</p>`,
-
-45: `<h4>Potência 45 - A Estrategista da Comunicação e do Conhecimento</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+45:{
+     conteudo: `<h4>Potência 45 - A Estrategista da Comunicação e do Conhecimento</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 45 simboliza a força da comunicação e do conhecimento como ferramentas supremas de evolução e influência. Ela indica que sua jornada física é potencializada pela sua habilidade em articular ideias, negociar parcerias e buscar um aprendizado contínuo que refina sua atuação no mundo. É o símbolo do dinamismo intelectual, mostrando que o seu sucesso depende da sua capacidade de ser uma eterna estudante da vida.</p>
 <p>No aspecto positivo, esta influência manifesta uma inteligência estratégica brilhante, versatilidade e uma facilidade natural em circular por diferentes esferas sociais e profissionais. Você atrai abundância através da diplomacia e do uso inteligente da informação, conquistando o seu espaço através do diálogo e da inovação. É um ciclo de expansão mental e material, onde novas ideias geram resultados rápidos e fortalecem sua autoridade de forma moderna e fluida.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da superficialidade, da fofoca ou do uso da inteligência para manipular os outros em benefício próprio. A dispersão de energia em muitos projetos ao mesmo tempo pode comprometer a solidez das suas realizações. A Potência 45 ensina que a comunicação é um poder sagrado; quando usada com ética e foco, ela é capaz de transformar qualquer realidade e abrir as portas mais difíceis do destino.</p>`,
-
-46: `<h4>Potência 46 - O Zelo pela Segurança e a Harmonia</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+46: {
+     conteudo:`<h4>Potência 46 - O Zelo pela Segurança e a Harmonia</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 46 manifesta-se através da busca pela estabilidade afetiva e financeira como base para a sua segurança física. Ela rege a trajetória pela necessidade de harmonia e proteção, indicando que a sua realização material está conectada ao equilíbrio do seu ambiente doméstico e das suas relações mais próximas. É o símbolo da nutrição e do zelo, onde o sucesso é construído com afeto e responsabilidade.</p>
 <p>Quando vivida positivamente, esta potência manifesta uma prosperidade equilibrada, conforto e uma sorte que parece proteger seus interesses e os de sua família. Você demonstra uma grande capacidade de gestão emocional e financeira, criando um refúgio seguro onde a vida pode florescer com paz e abundância. É um ciclo de consolidação de vínculos e patrimônio, onde a sua postura íntegra atrai colaboração e reconhecimento sincero das pessoas ao seu redor.</p>
 <p>Pelo lado negativo, pode surgir uma tendência à possessividade, ao ciúme ou a uma preocupação excessiva com a segurança que impede o crescimento e a aventura. O medo de perder o que conquistou pode torná-la alguém conservadora demais ou resistente a mudanças necessárias. A Potência 46 ensina que a verdadeira estabilidade é um estado interno; quando você está em paz consigo mesma, a segurança externa torna-se uma consequência natural e fluida.</p>`,
-
-47: `<h4>Potência 47 - A Mestra da Análise e da Estratégia</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+47: {
+     conteudo:`<h4>Potência 47 - A Mestra da Análise e da Estratégia</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 47 simboliza o poder do discernimento e da análise profunda aplicados à estratégia de vida. Ela indica que sua jornada exige momentos de retiro e observação cuidadosa para que você não desperdice sua força em batalhas inúteis ou projetos superficiais. É a energia da sábia estrategista, que entende que a verdadeira eficiência no mundo material nasce de um planejamento mental silencioso e rigoroso.</p>
 <p>Vivida positivamente, esta potência manifesta um amadurecimento intelectual que a torna imune a manipulações externas e enganos sociais. Você age com uma prudência que garante resultados certeiros, sendo capaz de resolver problemas complexos com uma visão que ninguém mais possui. É um ciclo de conquistas de alta qualidade, onde a sua autoridade é construída sobre o conhecimento real e a segurança das suas escolhas, gerando um progresso respeitado e duradouro.</p>
 <p>No entanto, o aspecto negativo alerta para o risco do perfeccionismo paralisante, do isolamento melancólico ou de uma postura fria e excessivamente crítica que afasta as pessoas. O medo de errar pode impedir que você coloque suas ideias em prática, mantendo-as apenas no campo teórico. A Potência 47 ensina que a análise deve servir à ação; a sabedoria só atinge seu propósito quando é usada para transformar o mundo físico e melhorar a experiência de vida.</p>`,
-
-48: `<h4>Potência 48 - A Vontade Indomável e a Superação</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+48: {
+     conteudo:`<h4>Potência 48 - A Vontade Indomável e a Superação</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 48 atua através da força de vontade, da resiliência física e da determinação em vencer as limitações do ambiente. Ela representa o momento em que sua coragem é convocada para assumir o controle total da sua realidade material, exigindo que você dome suas fraquezas internas para conquistar o sucesso externo. É o símbolo da vitória pelo esforço pessoal, onde o seu caráter é forjado na superação de desafios concretos.</p>
 <p>No aspecto positivo, esta influência manifesta um fortalecimento notável da sua autoconfiança e a obtenção de vitórias expressivas através da persistência. Você experimenta a satisfação de conquistar sua independência e seu espaço no mundo pelo seu próprio mérito, ganhando o respeito de todos pela sua firmeza e disciplina. É uma fase de grande vigor e realização material, onde a sua capacidade de não desistir garante que você atinja metas que outros considerariam impossíveis.</p>
 <p>Pelo lado negativo, a luta constante pode levar a um estado de estresse crônico, agressividade ou a um endurecimento emocional que prejudica sua saúde e suas relações interpessoais. O desejo de vencer a qualquer custo pode cegá-la para o valor da cooperação e do descanso. A Potência 48 ensina que a verdadeira força é resiliente e serena; ela não precisa gritar para ser ouvida, nem usar de violência para se impor e conquistar o que deseja no mundo físico.</p>`,
-
-49: `<h4>Potência 49 - A Justiça como Base da Prosperidade</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+49: {
+     conteudo:`<h4>Potência 49 - A Justiça como Base da Prosperidade</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 49 representa o equilíbrio sagrado entre a diplomacia social e a justiça material. Ela indica que sua trajetória é fortalecida pela sua habilidade em agir com ética, transparência e respeito às leis — tanto humanas quanto universais. É o símbolo da retidão, mostrando que o seu sucesso duradouro depende da sua capacidade de ser justa em todas as suas parcerias e transações no plano físico.</p>
 <p>Vivida positivamente, esta potência manifesta reconhecimento público, resoluções favoráveis em questões burocráticas ou legais e uma estabilidade baseada na confiança mútua. Você atrai oportunidades e aliados de valor porque sua conduta é impecável e suas decisões são pautadas no equilíbrio e na verdade. É um ciclo de consolidação de prestígio, onde a sua integridade atua como um escudo que protege suas conquistas e garante um progresso seguro e respeitado.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da indecisão, da preocupação excessiva com as aparências sociais ou de uma postura hipócrita para manter uma paz superficial. Se houve falta de ética no passado, este período pode trazer cobranças severas da realidade. A Potência 49 ensina que a justiça é a base de toda construção real; agir com equilíbrio e honestidade é a única forma de garantir uma prosperidade que resista ao teste do tempo e da consciência.</p>`,
-
-50: `<h4>Potência 50 - A Força da Reciprocidade e das Alianças</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+50: {
+     conteudo:`<h4>Potência 50 - A Força da Reciprocidade e das Alianças</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na estrutura principal de você, a Potência 50 simboliza a renovação das alianças e o despertar de novas perspectivas através da troca e da colaboração. Ela rege a vida pelo princípio da reciprocidade, indicando que este é um momento de expandir seus horizontes unindo sua força à de outras pessoas que vibram na mesma sintonia. É a energia do movimento coletivo, onde o seu crescimento pessoal é acelerado pela qualidade dos seus vínculos e contratos.</p>
 <p>Quando vivida positivamente, esta potência manifesta sorte em parcerias, reconciliações produtivas e um novo fôlego em sua vida profissional e afetiva. Você sente que a vida flui melhor quando você compartilha ideias e recursos, atraindo encontros providenciais que abrem caminhos antes bloqueados. É uma fase de otimismo e progresso social, onde a sua disposição para cooperar gera um ambiente de sucesso compartilhado e bem-estar mútuo.</p>
 <p>Pelo lado negativo, pode surgir uma dependência excessiva da aprovação alheia ou uma tendência a entrar em acordos desequilibrados por medo da solidão ou da autonomia. A falta de critérios na escolha de seus aliados pode gerar decepções e perdas financeiras. A Potência 50 ensina que a união só é uma potência real quando ocorre entre seres inteiros e independentes, onde a soma das partes cria uma realidade muito maior, mais justa e próspera para todos.</p>`,
-
-51: `<h4>Potência 51 - O Despertar da Intuição Prática</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+51:{
+     conteudo: `<h4>Potência 51 - O Despertar da Intuição Prática</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 51 representa a força da intuição e da percepção profunda aplicadas à jornada da vida. Ela indica que você possui uma sensibilidade aguçada para identificar oportunidades e perigos antes que eles se materializem, agindo com uma sabedoria que vai além da lógica comum. É o símbolo da luz interior, mostrando que o seu sucesso depende da sua coragem em confiar na sua voz interna para tomar decisões cruciais.</p>
 <p>No aspecto positivo, esta influência manifesta um magnetismo pessoal poderoso e uma sorte que parece guiada por uma proteção invisível. Você toma decisões acertadas em momentos de incerteza, atraindo abundância e reconhecimento através da sua originalidade. É um ciclo de cura e prosperidade, onde a sua conexão com a verdade da sua alma traz um brilho único e resultados concretos para todas as suas realizações mundanas.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo das ilusões, do fanatismo ou de uma fuga da realidade prática. A instabilidade emocional pode gerar confusão em seus negócios e relações, dificultando a materialização dos seus planos. A Potência 51 ensina que a intuição é um guia sagrado, mas que ela deve ser equilibrada pela razão para que o seu potencial se transforme em conquistas reais e duradouras.</p>`,
-
-52: `<h4>Potência 52 - A Colheita e a Estabilidade Final</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+52:{
+     conteudo: `<h4>Potência 52 - A Colheita e a Estabilidade Final</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 52 simboliza a colheita merecida e a estabilidade alcançada através da retidão e da disciplina na jornada da vida. Ela indica que você atingiu um patamar onde suas ações passadas são pesadas pela justiça, trazendo a organização necessária para o seu progresso. É o símbolo da ordem e da lei, sugerindo que a sua realidade se estabiliza de acordo com a integridade que você aplicou em sua caminhada.</p>
 <p>Vivida positivamente, esta potência manifesta segurança material, resolução de pendências burocráticas e um sólido reconhecimento profissional. Você experimenta a paz de quem construiu sobre bases honestas, sentindo que a vida se organiza de forma eficiente ao seu redor. É uma fase de consolidação de prestígio, onde a sua palavra tem peso e a sua conduta ética é o escudo que garante a continuidade e a expansão do seu sucesso.</p>
 <p>Pelo lado negativo, o rigor excessivo, a teimosia ou a dificuldade em perdoar falhas podem gerar um ambiente de tensão e isolamento social. Se houve negligência ética no passado, este período pode trazer cobranças severas da realidade. A Potência 52 ensina que a justiça é o equilíbrio dinâmico da vida; agir com honestidade e transparência é a única forma de garantir uma estabilidade que seja verdadeiramente recompensadora.</p>`,
-
-53: `<h4>Potência 53 - O Poder do Recolhimento e do Planejamento</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+53: {
+     conteudo:`<h4>Potência 53 - O Poder do Recolhimento e do Planejamento</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 53 representa a necessidade de retiro estratégico e recuperação de energias na jornada da vida. Ela indica que sua trajetória atingiu um ponto onde o movimento contínuo deve dar lugar ao silêncio para que a clareza retorne. É o símbolo do recolhimento consciente, onde você se afasta das pressões externas para processar emoções, organizar pensamentos e fortalecer sua estrutura antes do próximo avanço.</p>
 <p>No aspecto positivo, esta influência manifesta um profundo autoconhecimento e um equilíbrio emocional que traz uma visão nítida da realidade. Você utiliza este período para se curar de desgastes passados e planejar seu futuro com inteligência. É uma fase de fortalecimento, onde o descanso não é fuga, mas uma ferramenta estratégica que garante que suas próximas ações no mundo físico sejam precisas, vigorosas e bem fundamentadas.</p>
 <p>No entanto, o aspecto negativo alerta para o risco do isolamento excessivo por medo de enfrentar o mundo ou de uma inércia paralisante. Se o retiro não for usado para a renovação, ele pode se transformar em uma prisão mental de medos alimentados. A Potência 53 ensina que o recolhimento consciente é o que dá suporte para a manifestação do verdadeiro poder, pois a força real nasce no silêncio e na organização da alma.</p>`,
-
-54: `<h4>Potência 54 - A Sorte e o Dinamismo da Mudança</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+54: {
+     conteudo:`<h4>Potência 54 - A Sorte e o Dinamismo da Mudança</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 54 simboliza o movimento da sorte e as mudanças rápidas que impulsionam a jornada da vida. Ela representa a ciclicidade da existência, indicando que após um tempo de esforço ou estagnação, as circunstâncias voltam a girar a seu favor, trazendo novas oportunidades e encontros providenciais. É a energia da renovação, onde a sua flexibilidade e prontidão para agir são as chaves para aproveitar o fluxo da abundância.</p>
 <p>Vivida positivamente, esta potência manifesta uma sucessão de eventos afortunados e um progresso rápido em diversas áreas. Você se sente no lugar certo e na hora certa, atraindo recursos e parcerias que parecem cair do céu para favorecer seus projetos. É um ciclo de expansão e otimismo, onde a sua capacidade de se adaptar garante que você suba de nível social e material, desfrutando de uma vitalidade que renova seu prazer de viver.</p>
 <p>Pelo lado negativo, a instabilidade gerada pelo excesso de mudanças ou a falta de controle sobre o destino pode causar ansiedade. Confiar apenas na sorte sem manter bases sólidas pode levar a ganhos voláteis que não se sustentam. A Potência 54 ensina que o destino oferece as oportunidades, mas é a sua vontade consciente e estratégica que deve dar a direção final para que o sucesso conquistado se torne permanente.</p>`,
-
-55: `<h4>Potência 55 - A Resiliência e o Domínio de Si</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+55: {
+     conteudo:`<h4>Potência 55 - A Resiliência e o Domínio de Si</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 55 representa a coragem da resiliência e o autodomínio necessário na jornada da vida. Ela indica que sua trajetória é movida por uma força vital intensa que permite superar obstáculos sem o uso da agressividade. É o símbolo da determinação suave, onde você aprende que a verdadeira potência nasce da harmonia entre a sua vontade e a sua capacidade de agir com mansidão e inteligência emocional.</p>
 <p>No aspecto positivo, esta influência manifesta uma coragem inabalável e um magnetismo pessoal que atrai sucesso e admiração. Você enfrenta desafios complexos com serenidade, usando sua energia interna para construir uma realidade próspera e influente. É um ciclo de grandes vitórias pessoais, onde sua autoconfiança atua como um escudo protetor, permitindo que você lidere situações com uma autoridade natural baseada no equilíbrio.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da impaciência, do desejo de controle absoluto ou do uso abusivo da força. A energia mal canalizada pode se transformar em desgaste físico ou em conflitos desnecessários que atrasam seus resultados. A Potência 55 ensina que o seu sucesso duradouro depende da sua capacidade de manter a paz no coração mesmo diante das maiores batalhas, garantindo que sua força seja sempre construtiva. É hora de finalizar uma ideia, um período ou uma situação que se esgotou.</p>`,
-
-56: `<h4>Potência 56 - O Sacrifício Estratégico e a Visão de Futuro</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+56: {
+     conteudo:`<h4>Potência 56 - O Sacrifício Estratégico e a Visão de Futuro</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 56 atua como um ciclo de maturação profunda e mudança de perspectiva na jornada da vida. Ela rege a trajetória indicando que certas pausas na ação externa são fundamentais para que ocorra um fortalecimento interior e estratégico. É o símbolo da visão renovada, sugerindo que o que parece um atraso é, na verdade, um preparo essencial para uma vitória muito mais sólida e significativa no futuro.</p>
 <p>Vivida positivamente, esta potência manifesta uma paciência extraordinária e uma sabedoria que nasce do entendimento dos ciclos naturais. Você utiliza este tempo para se libertar de velhos hábitos e para organizar suas metas sob um novo ângulo, ganhando uma clareza que a torna imune às pressões do ego. É uma fase de crescimento silencioso, onde sua força interior se consolida para que você possa assumir responsabilidades maiores com total segurança.</p>
 <p>Pelo lado negativo, pode surgir um sentimento de vitimização ou uma paralisia por medo de tomar decisões difíceis. A estagnação pode se tornar amarga se você não compreender o propósito do momento, levando a um estado de inércia que consome sua energia. A Potência 56 ensina que saber esperar o momento certo é uma das formas mais elevadas de inteligência, e que o sacrifício de urgências fúteis é o que garante a colheita dos grandes frutos.</p>`,
-
-57: `<h4>Potência 57 - A Transmutação e o Renascimento Autêntico</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+57: {
+     conteudo:`<h4>Potência 57 - A Transmutação e o Renascimento Autêntico</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 57 representa a transformação profunda e o encerramento de ciclos obsoletos na jornada da vida. Ela atua como um agente de renovação radical, indicando que para o novo florescer, as estruturas antigas e sem vida devem ser deixadas para trás com dignidade. É o símbolo da transmutação, onde você abandona fardos do passado para assumir uma nova identidade, mais potente e alinhada com seu destino.</p>
 <p>No aspecto positivo, esta influência manifesta uma libertação extraordinária e a reconstrução de sua realidade sobre alicerces muito mais puros e eficientes. Você sente o alívio de soltar situações que bloqueavam sua evolução, ganhando um vigor renovado para recomeçar com clareza e determinação. É um ciclo de renascimento onde as mudanças forçadas revelam-se como livramentos necessários que permitem que você construa um sucesso muito mais autêntico.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo do apego desesperado ao que está findando, gerando sofrimento e uma sensação de ruína iminente. A resistência à mudança inevitável pode causar traumas e impedir que você perceba as novas oportunidades que já estão surgindo. A Potência 57 ensina que a renovação é a lei da vida; aceitar o fim de uma etapa é o ato de coragem que garante que você jamais fique estagnada ou presa ao que não lhe serve mais.</p>`,
-
-58: `<h4>Potência 58 - O Equilíbrio Sagrado e a Temperança</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+58:{
+     conteudo: `<h4>Potência 58 - O Equilíbrio Sagrado e a Temperança</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 58 manifesta-se através da temperança e da busca pelo equilíbrio sagrado na jornada da vida. Ela rege sua trajetória pela moderação, indicando que o sucesso sustentável nasce da sua capacidade de harmonizar opostos e evitar excessos que desgastam sua vitalidade física e emocional. É o símbolo da regeneração, onde você aprende a conduzir seus recursos com paciência, serenidade e inteligência prática.</p>
 <p>Quando vivida positivamente, esta potência manifesta uma saúde equilibrada, paz de espírito e uma diplomacia que resolve conflitos de forma suave. Você se torna uma mediadora eficiente, atraindo parcerias duradouras baseadas na confiança e na cooperação. É uma fase de estabilidade financeira e pessoal, onde a constância e a capacidade de se adaptar com doçura às circunstâncias garantem um progresso constante e livre das turbulências dos extremos.</p>
 <p>No aspecto negativo, a busca por harmonia pode se transformar em passividade, indecisão ou uma tendência a se anular para evitar confrontos necessários. Tentar manter uma paz superficial pode gerar estagnação e a perda da sua própria identidade. A Potência 58 ensina que a verdadeira temperança exige firmeza interior; é o equilíbrio entre saber quando fluir com os outros e quando manter a solidez da sua própria verdade e propósito material.</p>`,
-
-59: `<h4>Potência 59 - O Magnetismo Realizador e a Ambição</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+59:{
+     conteudo: `<h4>Potência 59 - O Magnetismo Realizador e a Ambição</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 59 simboliza o magnetismo realizador e o confronto com as grandes ambições na jornada da vida. Ela traz para o plano concreto uma energia de poder imensa, indicando que você possui as ferramentas necessárias para conquistar riqueza material e influência social, mas que isso exige uma vigilância ética rigorosa. É o símbolo da força primordial que move o mundo, revelando que suas paixões podem ser o combustível para o topo.</p>
 <p>Vivida positivamente, esta potência manifesta um carisma avassalador, inteligência estratégica e um sucesso material que muitos considerariam impossível. Você encontra coragem para romper limitações e agir com uma audácia que a coloca em posições de liderança e impacto. É um ciclo de grande vigor, onde sua vontade de vencer se materializa em conquistas tangíveis, permitindo que você exerça poder com eficiência e conquiste o respeito do seu meio social.</p>
 <p>Pelo lado negativo, o foco exclusivo no ganho material e no controle pode levar a comportamentos manipuladores ou a um vazio emocional apesar do sucesso externo. O egoísmo desmedido pode criar conflitos destrutivos e prisões de desejo que comprometem sua liberdade. A Potência 59 ensina que o poder é uma ferramenta neutra; ele só se torna um aliado da sua evolução quando é guiado por uma consciência que valoriza a integridade acima da conveniência.</p>`,
-
-60: `<h4>Potência 60 - O Despertar para a Realidade</h4>
+videoID: "F8bg1CTQ9HI"
+    },
+60:{
+     conteudo: `<h4>Potência 60 - O Despertar para a Realidade</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, na estrutura principal de você, a Potência 60 representa a quebra de ilusões e o despertar para a realidade nua e crua na jornada da vida. Ela atua como um raio que atinge as estruturas construídas sobre bases frágeis ou orgulho excessivo, forçando uma reconstrução total sobre o que é verdadeiramente sólido. Embora o impacto inicial pareça desestabilizador, ele tem o propósito de libertar você de prisões de aparências e de situações opressivas.</p>
 <p>No aspecto positivo, esta influência manifesta uma libertação súbita e a oportunidade de recomeçar com uma visão limpa e renovada. A queda das velhas barreiras em sua vida permite que você enxergue o horizonte de forma plena, sem as amarras que sua própria mente ou a sociedade haviam imposto. É o momento do despertar da consciência, onde a verdade prevalece e você ganha a chance de edificar um futuro inabalável, baseado na integridade absoluta dos fatos.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo do colapso emocional ou da revolta contra o destino por não aceitar a própria responsabilidade na ruína de certos projetos. A dor da perda pode cegá-la para o aprendizado necessário. A Potência 60 ensina que certas destruições são atos de misericórdia da vida para que você não continue investindo em algo falso; é preciso ter humildade para aprender com os escombros e coragem para construir algo infinitamente melhor.</p>`,
 
- 
-61: `<h3>61 - O Surgimento da Inspiração</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+61: {
+     conteudo:`<h4>61 - O Surgimento da Inspiração</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 61 representa o surgimento da esperança e da inspiração renovada que guia suas ações na jornada da vida. Ela indica que, após períodos de grandes desafios ou mudanças drásticas, a luz do seu propósito volta a brilhar, trazendo clareza sobre suas metas futuras. É o símbolo da harmonia recuperada, sugerindo que o seu sucesso material será um reflexo direto da fé e do otimismo que você cultiva em seu interior.</p>
 <p>Vivida positivamente, esta potência manifesta uma criatividade vibrante e uma sorte que parece atrair as pessoas e os recursos certos no momento exato. Você experimenta uma fase de grande leveza, onde a sua presença transmite calma e inspiração, abrindo portas para parcerias generosas. É um ciclo de beleza e fluidez, onde a vida sorri para quem age com transparência e acredita na abundância infinita do destino e do seu próprio potencial.</p>
 <p>Pelo lado negativo, pode haver uma tendência ao idealismo ingênuo ou ao escapismo, esperando que a sorte resolva questões que exigem esforço prático. Perder-se em sonhos sem aterrizá-los pode levar a frustrações e ao desperdício de energia. A Potência 61 ensina que a esperança é a luz que ilumina o caminho, mas que é o seu passo firme e consciente que percorre a estrada e transforma a visão em realidade tangível e duradoura.</p>`,
-
-62: `<h3>62 - O Mergulho nas Emoções</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+62: {
+     conteudo:`<h4>62 - O Mergulho nas Emoções</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 62 representa o mergulho nas profundezas das emoções e o enfrentamento de medos internos na jornada da vida. Ela rege a fase de maior sensibilidade e intuição, indicando que sua realidade física está sendo influenciada por correntes subconscientes que precisam ser compreendidas. É o símbolo do mistério que precede a clareza, exigindo coragem para olhar além das aparências e descobrir as verdades ocultas.</p>
 <p>No aspecto positivo, esta influência manifesta uma intuição poderosa e uma capacidade de percepção que protege você de enganos e perigos invisíveis. Você se torna capaz de ler as entrelinhas das situações sociais e profissionais, agindo com uma cautela sábia que garante sua estabilidade. É um ciclo de profunda cura, onde o entendimento da sua própria sombra permite que você se torne alguém muito mais íntegro, empático e preparada para o sucesso real.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da confusão mental ou da instabilidade emocional que gera insegurança em suas decisões. Deixar-se levar por medos infundados ou ilusões pode travar seu progresso e causar conflitos em suas relações. A Potência 62 ensina que a sensibilidade é um dom de proteção, desde que seja iluminada pela razão e pela coragem de encarar a verdade sobre si mesma sem filtros.</p>`,
-
-63: `<h3>63 - O Triunfo da Clareza</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+63: {
+     conteudo:`<h4>63 - O Triunfo da Clareza</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 63 simboliza o triunfo da clareza, da verdade e da vitalidade plena na jornada da vida. Ela representa o momento em que a luz do entendimento dissipa as nuvens da dúvida, permitindo que você enxergue o caminho para o sucesso com absoluta nitidez. É o símbolo da alegria realizadora, indicando que suas ações estão em total sintonia com o seu propósito, o que atrai reconhecimento e prosperidade.</p>
 <p>Vivida positivamente, esta potência manifesta um sucesso radiante, saúde vigorosa e a concretização de projetos que trazem felicidade e bem-estar coletivo. Você experimenta um ciclo de grande magnetismo pessoal, onde sua presença inspira confiança e clareza nas outras pessoas. É uma fase de colheitas abundantes, onde a verdade atua como sua maior proteção e guia para uma expansão material e social segura, sólida e muito brilhante.</p>
 <p>Pelo lado negativo, o excesso de brilho pode gerar arrogância, vaidade ou uma exposição desnecessária que atrai inveja. O orgulho pelo sucesso conquistado pode ocultar detalhes práticos importantes e gerar conflitos de poder. A Potência 63 ensina que a verdadeira luz é aquela que aquece e ilumina sem queimar, exigindo humildade para que o sucesso seja mantido sobre bases éticas e humanas duradouras.</p>`,
-
-64: `<h3>64 - O Despertar da Consciência</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+64: {
+     conteudo:`<h4>64 - O Despertar da Consciência</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 64 representa o chamado para o despertar da consciência e a avaliação profunda de suas escolhas na jornada da vida. Ela indica um momento de transição onde você é convidada a deixar para trás velhos padrões e culpas para assumir uma nova responsabilidade sobre seu destino. É o símbolo da renovação em vida, sinalizando que você possui a maturidade necessária para transformar sua realidade através de uma visão superior.</p>
 <p>No aspecto positivo, esta influência manifesta a libertação de limitações passadas e a resolução de questões que impediam seu progresso material e emocional. Você experimenta uma renovação de propósitos, agindo com uma integridade que atrai respeito e abre portas para uma vida muito mais autêntica. É um ciclo de clareza mental, onde o perdão — a si mesma e aos outros — atua como a chave para uma nova e bem-sucedida etapa de realizações.</p>
 <p>No entanto, o aspecto negativo alerta para a resistência em enfrentar a própria verdade, o que pode levar à autocondenação ou à repetição de erros por medo da mudança. O julgamento severo das circunstâncias pode gerar amargura e estagnação. A Potência 64 ensina que o despertar exige coragem para avaliar o passado com justiça e olhar para o futuro com esperança, permitindo que a vida se renove de forma consciente e potente.</p>`,
-
-65: `<h3>65 - A Integração e a Plenitude</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+65:{
+     conteudo: `<h4>65 - A Integração e a Plenitude</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 65 simboliza a integração final de seus aprendizados e a conquista da plenitude na jornada da vida. Ela representa a conclusão de etapas complexas e a harmonia entre suas ambições e sua evolução pessoal. É o símbolo da realização global, indicando que você atingiu um estado de equilíbrio onde o mundo responde positivamente à sua clareza interna e ao seu esforço persistente e dedicado.</p>
 <p>Vivida positivamente, esta potência manifesta sucessos expressivos, reconhecimento público e uma profunda sensação de liberdade. Você se sente em harmonia com o mundo, atraindo viagens, novas parcerias e oportunidades de expansão que consolidam sua autoridade social e material. É um ciclo de triunfo merecido, onde a sua visão estratégica e sua integridade garantem uma prosperidade que é estável, vasta e profundamente satisfatória.</p>
 <p>Pelo lado negativo, pode surgir o perigo da inércia após a conquista ou do apego excessivo ao status conquistado por medo de que o ciclo termine. A sensação de que "já alcançou tudo" pode gerar desmotivação ou arrogância. A Potência 65 ensina que a perfeição é dinâmica; cada grande chegada vitoriosa é, na verdade, o alicerce para um novo nível de evolução, exigindo que você continue em movimento para que a abundância continue fluindo.</p>`,
-
-66: `<h3>66 - A Mestra Construtora</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+66: {
+     conteudo:`<h4>66 - A Mestra Construtora</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 66 representa a energia da mestre construtora aplicada à criação de um legado sólido na jornada da vida. Ela indica que você possui uma capacidade extraordinária de organizar recursos e liderar pessoas para materializar visões de grande escala. É o símbolo do pragmatismo elevado, onde a sua disciplina e sua vontade firme transformam grandes ideais em estruturas concretas, seguras e duradouras.</p>
 <p>No aspecto positivo, esta influência manifesta um progresso financeiro sólido, autoridade respeitada e a construção de projetos que beneficiam o seu meio. Você demonstra uma resiliência exemplar, lidando com responsabilidades complexas com uma calma que transmite segurança. É uma fase de conquistas institucionais e estabilidade de longo prazo, onde seu trabalho é validado pelo sucesso tangível e pela admiração genuína de seus pares.</p>
 <p>No entanto, o aspecto negativo alerta para o risco de o foco absoluto nos resultados endurecer sua personalidade, gerando frieza ou uma postura excessivamente controladora. A ambição desmedida pode cegar você para as necessidades humanas básicas ao seu redor. A Potência 66 ensina que a verdadeira grandeza de um legado não se mede apenas pela sua solidez material, mas pela justiça de seus fundamentos e pela humanidade de quem o ergueu.</p>`,
-
-67: `<h3>67 - A Força da Comunicação</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+67: {
+     conteudo:`<h4>67 - A Força da Comunicação</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 67 simboliza a força da comunicação e do conhecimento como ferramentas de evolução na jornada da vida. Ela indica que sua trajetória é potencializada pela sua habilidade em articular ideias e buscar um aprendizado contínuo que refina sua atuação no mundo. É o símbolo do dinamismo intelectual, mostrando que o seu sucesso depende da sua capacidade de ser uma eterna estudante e uma diplomata nata.</p>
 <p>Vivida positivamente, esta potência manifesta uma inteligência estratégica brilhante e uma facilidade natural em circular por diferentes esferas sociais. Você atrai abundância através do uso inteligente da informação e da negociação ética, conquistando seu espaço através do diálogo e da inovação. É um ciclo de expansão mental e material, onde novas ideias geram resultados rápidos e fortalecem sua autoridade de forma moderna e fluida.</p>
 <p>Pelo lado negativo, pode haver o risco da superficialidade ou do uso da inteligência para manipular situações em benefício próprio, ignorando a ética. A dispersão em muitos projetos ao mesmo tempo pode comprometer a solidez das suas realizações finais. A Potência 67 ensina que a comunicação é um poder sagrado; quando usada com foco e verdade, ela é capaz de transformar a realidade e abrir as portas mais difíceis do seu destino.</p>`,
-
-68: `<h3>68 - Estabilidade e Harmonia</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+68: {
+     conteudo:`<h4>68 - Estabilidade e Harmonia</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 68 manifesta-se através da busca pela estabilidade e harmonia como base para a segurança na jornada da vida. Ela rege a trajetória pela necessidade de proteção e zelo, indicando que a sua realização material está conectada ao equilíbrio do seu ambiente e das suas relações próximas. É o símbolo da nutrição, onde o sucesso é construído com responsabilidade, afeto e uma visão prática de cuidado.</p>
 <p>Quando vivida positivamente, esta potência manifesta uma prosperidade equilibrada e uma sorte que parece proteger seus interesses e os de sua família. Você demonstra uma grande capacidade de gestão, criando um ambiente seguro onde a vida e os negócios podem florescer com paz. É um ciclo de consolidação de patrimônio e fortalecimento de vínculos, onde a sua postura íntegra atrai colaboração e reconhecimento sincero das pessoas.</p>
 <p>No entanto, o aspecto negativo alerta para a tendência à possessividade ou a uma preocupação excessiva com a segurança que impede o crescimento e a inovação. O medo de perder o que conquistou pode torná-la alguém resistente a mudanças necessárias para a sua evolução. A Potência 68 ensina que a verdadeira estabilidade nasce da confiança interna; quando você está em paz, a segurança externa torna-se uma consequência natural.</p>`,
-
-69: `<h3>69 - O Poder do Discernimento</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+69: {
+     conteudo:`<h4>69 - O Poder do Discernimento </h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 69 simboliza o poder do discernimento e da análise profunda aplicados à estratégia na jornada da vida. Ela indica que sua trajetória exige momentos de observação cuidadosa para que você não desperdice sua força em ações superficiais. É a energia da estrategista sábia, que compreende que a verdadeira eficiência no mundo material nasce de um planejamento mental silencioso, rigoroso e bem fundamentado.</p>
 <p>Vivida positivamente, esta potência manifesta um amadurecimento intelectual que a torna imune a enganos e pressões externas. Você age com uma prudência que garante resultados certeiros, sendo capaz de resolver problemas complexos com uma visão única. É um ciclo de conquistas de alta qualidade, onde a sua autoridade é construída sobre o conhecimento real e a segurança das suas escolhas, gerando um progresso respeitado e duradouro.</p>
 <p>Pelo lado negativo, o excesso de análise pode levar ao perfeccionismo paralisante ou a uma postura fria que afasta as pessoas. O medo de errar pode impedir que você coloque suas ideias em prática, mantendo-as apenas no campo teórico e perdendo o tempo da ação. A Potência 69 ensina que a análise deve servir à realização; a sabedoria só atinge seu propósito pleno quando é usada para transformar o mundo e melhorar a sua experiência física.</p>`,
-
-70: `<h3>70 - Determinação e Superação</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+70:{
+     conteudo: `<h4>70 - Determinação e Superação</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 70 atua através da força de vontade, da resiliência e da determinação em vencer limitações na jornada da vida. Ela representa o momento em que sua coragem é convocada para assumir o controle total da sua realidade, exigindo que você dome suas fraquezas internas para conquistar o sucesso externo. É o símbolo da vitória pelo mérito e pelo esforço pessoal, onde seu caráter é forjado na superação.</p>
 <p>No aspecto positivo, esta influência manifesta um fortalecimento notável da sua autoconfiança e a obtenção de vitórias expressivas através da persistência. Você experimenta a satisfação de conquistar sua independência pelo seu próprio mérito, ganhando o respeito de todos pela sua firmeza. É uma fase de grande vigor e realização material, onde a sua capacidade de não desistir garante que você atinja metas que outros considerariam impossíveis.</p>
 <p>No entanto, o aspecto negativo alerta para o risco de o estresse crônico ou a agressividade prejudicarem sua saúde e suas relações. O desejo de vencer a qualquer custo pode cegar você para o valor da cooperação. A Potência 70 ensina que a verdadeira força é resiliente e serena; ela não precisa de violência para se impor, mas sim de uma constância inabalável que gradualmente molda a realidade de acordo com a sua vontade soberana.</p>`,
-
-71: `<h3>71 - Equilíbrio entre Diplomacia e Justiça</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+71:{
+     conteudo: `<h4>71 - Equilíbrio entre Diplomacia e Justiça</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 71 representa o equilíbrio sagrado entre a diplomacia e a justiça na jornada da vida. Ela indica que sua trajetória é fortalecida pela sua habilidade em agir com ética, transparência e respeito às leis universais. É o símbolo da retidão, mostrando que o seu sucesso duradouro depende da sua capacidade de ser justa em todas as suas transações e parcerias no plano concreto.</p>
 <p>Vivida positivamente, esta potência manifesta reconhecimento público, resoluções favoráveis em questões burocráticas e uma estabilidade baseada na confiança. Você atrai aliados de valor porque sua conduta é impecável e suas decisões são pautadas na verdade. É um ciclo de consolidação de prestígio, onde a sua integridade atua como um escudo que protege suas conquistas e garante um progresso seguro e respeitado por todos.</p>
 <p>Pelo lado negativo, a indecisão ou a preocupação excessiva com as aparências podem gerar uma postura superficial. Se houve falta de ética no passado, este período pode trazer cobranças da realidade para que o equilíbrio seja restaurado. A Potência 71 ensina que a justiça é a base de toda construção real; agir com honestidade é a única forma de garantir uma prosperidade que resista ao teste do tempo e da consciência.</p>`,
-
-72: `<h3>72 - Renovação e Parcerias</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+72:{
+     conteudo: `<h4>72 - Renovação e Parcerias</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 72 simboliza a renovação das parcerias e o despertar de novas perspectivas através da colaboração na jornada da vida. Ela rege a vida pelo princípio da reciprocidade, indicando que este é um momento de expandir seus horizontes unindo sua força à de outras pessoas que vibram na mesma sintonia. É a energia do movimento coletivo, onde o seu crescimento é acelerado pela qualidade dos seus vínculos.</p>
 <p>Quando vivida positivamente, esta potência manifesta sorte em parcerias, reconciliações produtivas e um novo fôlego em sua trajetória profissional. Você sente que a vida flui melhor quando compartilha ideias e recursos, atraindo encontros providenciais que abrem caminhos antes bloqueados. É uma fase de otimismo e progresso social, onde a sua disposição para cooperar gera um ambiente de sucesso compartilhado e bem-estar mútuo.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da dependência excessiva da aprovação alheia ou de acordos desequilibrados por medo da autonomia. A falta de critérios na escolha de aliados pode gerar decepções. A Potência 72 ensina que a união só é uma potência real quando ocorre entre indivíduos inteiros, onde a soma das partes cria uma realidade muito maior, mais justa e próspera para todas as envolvidas.</p>`,
-
-73: `<h3>73 - Intuição e Percepção Profunda</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+73:{
+     conteudo: `<h4>73 - Intuição e Percepção Profunda</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 73 representa a força da intuição e da percepção profunda aplicadas à jornada da vida. Ela indica que você possui uma sensibilidade aguçada para identificar oportunidades antes que elas se tornem óbvias para os outros, agindo com uma sabedoria que transcende a lógica fria. É o símbolo da luz interior, mostrando que o seu sucesso depende da coragem em confiar na sua voz interna para tomar decisões.</p>
 <p>Vivida positivamente, esta potência manifesta um magnetismo pessoal poderoso e uma sorte que parece guiada por uma proteção especial. Você toma decisões acertadas em momentos de incerteza, atraindo abundância e reconhecimento através da sua originalidade. É um ciclo de cura e prosperidade, onde a sua conexão com a verdade da sua alma traz um brilho único e resultados sólidos para todas as suas realizações no mundo.</p>
 <p>Pelo lado negativo, o risco das ilusões ou de uma fuga da realidade prática pode comprometer seus resultados. A instabilidade emocional pode gerar confusão nos negócios, dificultando a materialização dos planos. A Potência 73 ensina que a intuição é um guia sagrado, mas que ela deve ser aterrada pela razão para que o seu potencial espiritual se transforme em conquistas físicas tangíveis, seguras e duradouras.</p>`,
-
-74: `<h3>74 - Colheita e Disciplina</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+74:{
+     conteudo: `<h4>74 - Colheita e Disciplina</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 74 simboliza a colheita merecida e a estabilidade alcançada através da disciplina na jornada da vida. Ela indica que você atingiu um patamar onde suas ações são pesadas pelo critério da justiça, trazendo a organização necessária para o seu progresso material. É o símbolo da ordem, sugerindo que a sua realidade se estabiliza de acordo com a integridade que você aplicou em sua caminhada até aqui.</p>
 <p>No aspecto positivo, esta influência manifesta segurança financeira, resolução de pendências e um sólido reconhecimento profissional. Você experimenta a paz de quem construiu sobre bases honestas, sentindo que a vida se organiza de forma eficiente ao seu redor. É uma fase de consolidação de prestígio, onde a sua palavra tem peso e a sua conduta ética é o escudo que garante a continuidade e a expansão legítima do seu sucesso.</p>
 <p>No entanto, o aspecto negativo alerta para o rigor excessivo ou para a teimosia que pode gerar um ambiente de tensão. Se houve negligência no passado, este período pode trazer ajustes necessários da realidade. A Potência 74 ensina que a justiça é o equilíbrio dinâmico da existência; agir com honestidade e transparência é a única forma de garantir uma estabilidade que seja verdadeiramente duradoura e recompensadora.</p>`,
-
-75: `<h3>75 - Recolhimento Estratégico</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+75:{
+     conteudo: `<h4>75 - Recolhimento Estratégico</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 75 representa a necessidade de recolhimento estratégico e a reorganização da sua força na jornada da vida. Ela indica que sua trajetória atingiu um ponto onde o movimento externo deve dar lugar ao silêncio para que a clareza retorne. É o símbolo da prudência, onde você se afasta das pressões para ouvir sua própria sabedoria e fortalecer seus alicerces antes de um novo ciclo de expansão.</p>
 <p>Vivida positivamente, esta potência manifesta um profundo autoconhecimento e um amadurecimento que evita erros por impulsividade. Você utiliza este tempo para planejar com precisão, agindo com uma segurança que inspira respeito. É uma fase de cura e fortalecimento interno, onde o descanso e a análise cuidadosa garantem que seus próximos passos sejam certeiros, sólidos e extremamente produtivos na realidade prática.</p>
 <p>Pelo lado negativo, o risco do isolamento por medo ou da procrastinação pode levar à perda de oportunidades valiosas. A falta de iniciativa pode estagnar o progresso se o retiro for usado como fuga. A Potência 75 ensina que o recolhimento deve ser uma ferramenta de poder; saber quando parar para afiar o pensamento é tão importante quanto saber quando avançar para garantir o sucesso duradouro no mundo.</p>`,
-
-76: `<h3>76 - A Virada da Sorte</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+76: {
+     conteudo:`<h4>76 - A Virada da Sorte</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 76 simboliza a virada da sorte e o movimento favorável das circunstâncias na jornada da vida. Ela representa a ciclicidade da existência, indicando que após períodos de esforço, a roda do destino volta a girar a seu favor, trazendo novas oportunidades e encontros providenciais. É a energia do dinamismo que recompensa a sua flexibilidade e a sua prontidão para agir no momento certo.</p>
 <p>No aspecto positivo, esta influência manifesta uma sucessão de eventos afortunados e uma expansão rápida em diversas áreas. Você se sente no lugar certo e na hora certa, atraindo recursos que impulsionam sua carreira e seu bem-estar. É um ciclo de renovação e otimismo, onde a sua capacidade de se adaptar às mudanças garante que você suba de nível social e material com uma fluidez surpreendente e revigorante.</p>
 <p>No entanto, o aspecto negativo alerta que o excesso de mudanças ou a confiança cega na sorte pode gerar instabilidade. Confiar apenas no acaso sem manter uma estratégia sólida pode levar a ganhos voláteis. A Potência 76 ensina que o destino oferece as chances, mas é a sua vontade consciente que deve dar a direção final para que a prosperidade conquistada se torne uma base sólida e permanente.</p>`,
-
-77: `<h3>77 - Autodomínio e Resiliência</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+77: {
+     conteudo:`<h4>77 - Autodomínio e Resiliência</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 77 representa a força da resiliência e a capacidade de dominar situações complexas na jornada da vida. Ela indica que sua trajetória é marcada por uma vitalidade que permite superar resistências externas através da determinação persistente. É o símbolo do autodomínio, onde você aprende que a inteligência emocional é a sua ferramenta mais poderosa para conquistar e manter o seu espaço.</p>
 <p>Vivida positivamente, esta potência manifesta uma coragem inabalável e um magnetismo que atrai sucesso e colaboração. Você enfrenta desafios com serenidade, transformando conflitos em oportunidades de crescimento através da sua firmeza de caráter. É um ciclo de grandes vitórias pessoais, onde a sua disposição física e mental está em alta, permitindo que você lidere projetos com uma autoridade natural e amplamente respeitada.</p>
 <p>Pelo lado negativo, o risco da impaciência ou do desejo de controle excessivo pode gerar desgaste e tensões desnecessárias. A força mal canalizada pode atrasar seus resultados. A Potência 77 ensina que a verdadeira soberania sobre a matéria nasce da harmonia interna; quanto mais calma é o seu centro, maior é o seu poder de influência sobre a realidade externa para construir um destino próspero.</p>`,
-
-78: `<h3>78 - Amadurecimento Estratégico</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+78: {
+     conteudo:`<h4>78 - Amadurecimento Estratégico</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 78 atua como um ciclo de reavaliação e sacrifício consciente em favor de um bem maior na jornada da vida. Ela indica que certas pausas na ação externa são fundamentais para que ocorra um amadurecimento estratégico. É o símbolo da visão renovada, sugerindo que o que parecia um atraso é, na verdade, um preparo essencial para uma vitória muito mais sólida e recompensadora no futuro.</p>
 <p>No aspecto positivo, esta influência manifesta uma paciência extraordinária e uma sabedoria que nasce da aceitação dos processos naturais. Você utiliza este período para se libertar de velhos hábitos e fortalecer sua resiliência, ganhando uma clareza que a torna imune às pressões imediatas. É uma fase de maturação onde sua força interior cresce silenciosamente, preparando você para assumir responsabilidades maiores com total segurança.</p>
 <p>No entanto, o aspecto negativo alerta para o sentimento de vitimização ou para a inércia por medo de decidir. A estagnação pode se tornar pesada se você não compreender o propósito do momento. A Potência 78 ensina que parar voluntariamente para observar é um ato de inteligência superior, permitindo que o sucesso futuro seja construído sobre uma verdade interna incontestável e muito mais potente.</p>`,
-
-79: `<h3>79 - Transformação Radical</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+79: {
+     conteudo:`<h4>79 - Transformação Radical</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 79 representa a transformação radical e o encerramento de ciclos obsoletos na jornada da vida. Ela atua como um agente de renovação profunda, indicando que para o novo florescer, o velho deve ser deixado para trás com dignidade. É o símbolo da transmutação, onde você abandona fardos para assumir uma nova identidade, mais potente e alinhada com as verdades que descobriu.</p>
 <p>Vivida positivamente, esta potência manifesta uma libertação extraordinária e a reconstrução de sua realidade sobre alicerces muito mais puros. Você sente o alívio de soltar situações que bloqueavam sua evolução, ganhando um vigor renovado para recomeçar com clareza. É um ciclo de renascimento onde as perdas aparentes revelam-se como livramentos necessários, permitindo que você construa um sucesso baseado na sua essência real.</p>
 <p>Pelo lado negativo, o apego ao que está findando pode causar angústia e impedir que você perceba as novas portas que se abrem. A resistência à mudança inevitável pode gerar estagnação dolorosa. A Potência 79 ensina que na natureza nada se perde, tudo se transforma; aceitar o fim de um ciclo é o ato de coragem que garante que você jamais fique presa ao passado e possa sempre evoluir para o próximo nível.</p>`,
-
-80: `<h3>80 - Temperança e Equilíbrio</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+80: {
+     conteudo:`<h4>80 - Temperança e Equilíbrio</h4>
 <p>Na estrutura principal de você, a Potência 80 manifesta-se através da temperança e da busca pelo equilíbrio na jornada da vida. Ela rege sua trajetória pela moderação, indicando que o sucesso sustentável nasce da sua capacidade de harmonizar opostos e evitar excessos que desgastam sua vitalidade. É o símbolo da alquimia prática, onde você aprende a conduzir seus recursos com paciência, serenidade e inteligência.</p>
 <p>No aspecto positivo, esta influência manifesta saúde equilibrada, paz de espírito e uma diplomacia que resolve impasses de forma suave. Você se torna um ponto de equilíbrio para os outros, atraindo confiança e parcerias duradouras. É uma fase de estabilidade onde a constância e a capacidade de se adaptar com doçura às circunstâncias garantem um progresso constante e livre das turbulências geradas pela pressa ou ambição.</p>
 <p>No entanto, o aspecto negativo alerta que a busca por harmonia pode se transformar em passividade ou na tendência de se anular para evitar confrontos necessários. Tentar manter uma paz superficial pode gerar estagnação. A Potência 80 ensina que a verdadeira temperança exige firmeza interior; é o equilíbrio entre saber quando fluir com a vida e quando manter a solidez da sua própria verdade e propósito para vencer.</p>`,
 
- 
-81: `<h3>81 - O Magnetismo Realizador</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+81:{
+     conteudo: `<h4>81 - O Magnetismo Realizador</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 81 simboliza o magnetismo realizador e o confronto com as grandes ambições na jornada da vida. Ela traz para o plano físico uma energia de poder imensa, indicando que você possui o carisma e a astúcia necessários para conquistar riqueza e influência, mas que isso exige uma vigilância ética constante. É o símbolo da força primordial que move a matéria, revelando que suas paixões são o combustível para o seu sucesso.</p>
 <p>Vivida positivamente, esta potência manifesta um carisma avassalador e um sucesso material que muitos considerariam impossível. Você encontra coragem para romper limitações e agir com uma audácia que a coloca em posições de liderança e impacto. É um ciclo de grande vigor, onde sua vontade de vencer se materializa em conquistas tangíveis, garantindo que você exerça seu poder com eficiência e conquiste o respeito do seu meio.</p>
 <p>Pelo lado negativo, o foco exclusivo no ganho pessoal pode levar a comportamentos manipuladores ou a um vazio emocional. O egoísmo desmedido pode criar prisões de desejo que comprometem sua liberdade. A Potência 81 ensina que o poder é uma ferramenta neutra; ele só se torna um aliado da sua evolução quando é guiado por uma consciência que valoriza a integridade acima da mera conveniência material.</p>`,
-
-82: `<h3>82 - A Reconstrução da Verdade</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+82: {
+     conteudo:`<h4>82 - A Reconstrução da Verdade</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 82 representa a quebra de ilusões e a necessidade de reconstrução sobre bases verdadeiras na jornada da vida. Ela atua como um despertador que derruba o que foi construído com orgulho ou negligência, forçando você a encarar os fatos como eles são. Embora o choque inicial possa ser intenso, ele tem o propósito de libertar você de estruturas falsas que impediam seu crescimento real.</p>
 <p>No aspecto positivo, esta influência manifesta uma clareza mental súbita e a oportunidade de edificar um futuro inabalável sobre a rocha da verdade. Ao se ver livre de situações opressivas, você ganha a chance de recomeçar com muito mais força e honestidade. É o momento do despertar, onde a destruição do supérfluo permite que o essencial floresça e que sua vida ganhe um sentido muito mais profundo, resiliente e autêntico.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da revolta diante de mudanças imprevistas. A resistência em aceitar a falha de um projeto antigo pode gerar amargura e impedir o aprendizado. A Potência 82 ensina que certas quedas são livramentos estratégicos da vida; é preciso ter humildade para aprender com os escombros e coragem para construir algo infinitamente melhor e mais seguro para o seu destino.</p>`,
-
-83: `<h3>83 - O Surgimento da Inspiração</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+83:{
+     conteudo: `<h4>83 - O Surgimento da Inspiração</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 83 representa o surgimento da esperança e da inspiração renovada na jornada da vida. Ela indica que, após períodos de desafio, a luz do seu propósito volta a brilhar com força, trazendo clareza sobre suas metas. É o símbolo da harmonia recuperada, sugerindo que o seu sucesso no mundo será um reflexo direto da paz e da fé que você cultiva em seu interior.</p>
 <p>Vivida positivamente, esta potência manifesta uma criatividade vibrante e uma sorte que parece atrair as pessoas e os recursos certos no momento exato. Você experimenta uma fase de otimismo, onde a sua presença transmite calma e inspiração, abrindo portas para parcerias generosas e projetos inovadores. É um ciclo de fluidez, onde a vida sorri para quem age com transparência e acredita na abundância infinita do seu próprio potencial.</p>
 <p>Pelo lado negativo, pode haver uma tendência ao idealismo ingênuo, esperando que a sorte resolva questões que exigem esforço prático. Perder-se em sonhos sem aterrizá-los pode levar a frustrações. A Potência 83 ensina que a esperança é a luz que ilumina o caminho, mas que é o seu passo firme e disciplinado que percorre a estrada e transforma a visão em uma realidade tangível, sólida e duradoura.</p>`,
-
-84: `<h3>84 - O Mergulho na Intuição</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+84: {
+     conteudo:`<h4>84 - O Mergulho na Intuição</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 84 representa o mergulho na intuição e o enfrentamento de medos internos na jornada da vida. Ela rege a fase de maior sensibilidade, indicando que a realidade física está sendo moldada por forças subconscientes que precisam ser compreendidas. É o símbolo do mistério que precede a clareza, exigindo coragem para olhar além das aparências e descobrir o que realmente move os seus caminhos.</p>
 <p>No aspecto positivo, esta influência manifesta uma percepção poderosa que protege você de enganos invisíveis. Você se torna capaz de ler as entrelinhas das situações sociais e profissionais, agindo com uma cautela sábia que garante sua estabilidade. É um ciclo de cura profunda, onde o entendimento da sua própria sombra permite que você se torne alguém muito mais íntegro, empático e preparada para alcançar o sucesso real e duradouro.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da confusão mental ou da insegurança emocional. Deixar-se levar por medos infundados pode travar seu progresso e causar conflitos desnecessários. A Potência 84 ensina que a sensibilidade é um dom de proteção, desde que seja iluminada pela razão e pela coragem de encarar a verdade sobre si mesma sem filtros, garantindo uma caminhada segura e consciente.</p>`,
-
-85: `<h3>85 - O Triunfo da Clareza</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+85:{
+     conteudo: `<h4>85 - O Triunfo da Clareza</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 85 simboliza o triunfo da clareza e da vitalidade plena na jornada da vida. Ela representa o momento em que a luz do entendimento dissipa todas as dúvidas, permitindo que você enxergue o caminho para o sucesso com absoluta nitidez. É o símbolo da alegria realizadora, indicando que suas ações estão em total sintonia com o seu propósito, o que atrai reconhecimento e prosperidade natural.</p>
 <p>Vivida positivamente, esta potência manifesta um sucesso radiante, saúde vigorosa e a concretização de projetos que trazem felicidade e bem-estar. Você experimenta um ciclo de grande magnetismo pessoal, onde sua presença inspira confiança. É uma fase de colheitas abundantes, onde a verdade atua como sua maior proteção e guia para uma expansão material e social que é, ao mesmo tempo, segura, ética e extremamente brilhante.</p>
 <p>Pelo lado negativo, o excesso de brilho pode gerar arrogância ou uma vaidade que cega para detalhes práticos. O orgulho pelo sucesso pode atrair inveja ou conflitos de poder se não for gerido com sabedoria. A Potência 85 ensina que a verdadeira luz é aquela que aquece e ilumina sem queimar, exigindo humildade para que o sucesso conquistado seja mantido e respeitado por todos ao seu redor.</p>`,
-
-86: `<h3>86 - O Despertar da Consciência</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+86:{
+     conteudo: `<h4>86 - O Despertar da Consciência</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 86 representa o chamado para o despertar e a avaliação profunda das suas escolhas na jornada da vida. Ela indica um momento de transição onde você é convidada a deixar para trás velhas culpas para assumir uma nova responsabilidade sobre seu destino. É o símbolo da renovação em vida, sinalizando que você possui a maturidade necessária para transformar sua realidade através de uma visão superior.</p>
 <p>No aspecto positivo, esta influência manifesta a libertação de padrões limitantes e a resolução de questões passadas que impediam seu progresso. Você experimenta uma renovação de propósitos, agindo com uma integridade que atrai respeito e abre portas para uma vida muito mais autêntica e próspera. É um ciclo de clareza mental, onde o perdão atua como a chave mestra para uma nova e bem-sucedida etapa de realizações concretas.</p>
 <p>No entanto, o aspecto negativo alerta para a resistência em enfrentar a própria verdade, o que pode levar à estagnação por medo da mudança. O julgamento severo das circunstâncias pode gerar amargura. A Potência 86 ensina que o despertar exige coragem para olhar o passado com justiça e o futuro com esperança, permitindo que a sua vida se renove de forma consciente, potente e totalmente alinhada com seu propósito real.</p>`,
-
-87: `<h3>87 - A Integração e Plenitude</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+87: {
+     conteudo:`<h4>87 - A Integração e Plenitude</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 87 simboliza a integração final de aprendizados e a conquista da plenitude na jornada da vida. Ela representa a conclusão de etapas complexas e a harmonia entre suas ambições materiais e sua evolução pessoal. É o símbolo da realização global, indicando que você atingiu um estado de equilíbrio onde o mundo responde positivamente à sua clareza interna e ao seu esforço persistente.</p>
 <p>Vivida positivamente, esta potência manifesta sucessos expressivos, reconhecimento público e uma profunda sensação de liberdade e pertencimento. Você se sente em harmonia com o mundo, atraindo viagens e oportunidades de expansão que consolidam sua autoridade social. É um ciclo de triunfo merecido, onde a sua visão estratégica e sua integridade garantem uma prosperidade que é estável, vasta e profundamente recompensadora para o seu ser.</p>
 <p>Pelo lado negativo, pode surgir o perigo da inércia após a conquista ou do apego excessivo ao status por medo de que o ciclo termine. A sensação de que "já alcançou tudo" pode gerar desmotivação ou arrogância. A Potência 87 ensina que a perfeição é dinâmica; cada grande chegada vitoriosa é o alicerce para um novo nível de evolução, exigindo que você continue em movimento para que a abundância e o sucesso continuem fluindo.</p>`,
-
-88: `<h3>88 - A Mestra Construtora</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+88: {
+     conteudo:`<h4>88 - A Mestra Construtora</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 88 representa a energia da mestra construtora aplicada à criação de um legado duradouro na jornada da vida. Ela indica que você possui uma capacidade extraordinária de organizar recursos e liderar pessoas para materializar visões de grande escala. É o símbolo do pragmatismo elevado, onde a sua disciplina e sua vontade firme transformam grandes ideais em estruturas concretas e seguras.</p>
 <p>No aspecto positivo, esta influência manifesta um progresso financeiro sólido, autoridade respeitada e a construção de projetos que beneficiam o coletivo. Você demonstra uma resiliência exemplar, lidando com responsabilidades complexas com uma calma que transmite segurança. É uma fase de conquistas institucionais e estabilidade de longo prazo, onde seu trabalho é validado pelo sucesso tangível e pela admiração genuína de seus pares.</p>
 <p>No entanto, o aspecto negativo alerta para o risco de o foco absoluto nos resultados endurecer sua personalidade, gerando frieza ou uma postura controladora. A ambição desmedida pode cegar você para as necessidades humanas básicas ao seu redor. A Potência 88 ensina que a verdadeira grandeza de um legado não se mede apenas pela sua solidez, mas pela justiça de seus fundamentos e pela humanidade de quem o ergueu e liderou.</p>`,
-
-89: `<h3>89 - A Força da Comunicação</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+89: {
+     conteudo:`<h4>89 - A Força da Comunicação</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 89 simboliza a força da comunicação e do conhecimento como ferramentas de influência na jornada da vida. Ela indica que sua trajetória é potencializada pela sua habilidade em articular ideias e buscar aprendizado contínuo para refinar sua atuação. É o símbolo do dinamismo intelectual, mostrando que o seu sucesso depende da sua capacidade de ser uma eterna estudante e uma diplomata estratégica.</p>
 <p>Vivida positivamente, esta potência manifesta uma inteligência brilhante e uma facilidade natural em circular por diferentes esferas sociais. Você atrai abundância através do uso inteligente da informação e da negociação ética, conquistando seu espaço através do diálogo e da inovação constante. É um ciclo de expansão mental e material, onde novas ideias geram resultados rápidos e fortalecem sua autoridade de forma moderna, fluida e respeitada.</p>
 <p>Pelo lado negativo, pode haver o risco da superficialidade ou do uso da inteligência de forma manipuladora em benefício próprio. A dispersão em muitos projetos ao mesmo tempo pode comprometer a solidez das suas realizações finais. A Potência 89 ensina que a comunicação é um poder sagrado; quando usada com foco e verdade, ela é capaz de transformar qualquer realidade e abrir as portas mais difíceis do seu destino e sucesso.</p>`,
-
-90: `<h3>90 - Estabilidade e Harmonia</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+90: { 
+     conteudo:`
 <p>Na estrutura principal de você, a Potência 90 manifesta-se através da busca pela estabilidade e harmonia na jornada da vida. Ela rege a trajetória pela necessidade de proteção, indicando que a sua realização material está conectada ao equilíbrio do seu ambiente e das suas relações. É o símbolo da nutrição e do zelo, onde o sucesso é construído com responsabilidade, afeto e uma visão prática de cuidado com o que é seu.</p>
 <p>Quando vivida positivamente, esta potência manifesta uma prosperidade equilibrada e uma sorte que parece proteger seus interesses. Você demonstra uma grande capacidade de gestão, criando um ambiente seguro onde a vida e os projetos podem florescer com paz. É um ciclo de consolidação de patrimônio e fortalecimento de vínculos, onde a sua postura íntegra atrai colaboração e reconhecimento sincero das pessoas ao seu redor.</p>
 <p>No entanto, o aspecto negativo alerta para a tendência à possessividade ou a uma preocupação excessiva com a segurança que impede o crescimento. O medo de perder o que conquistou pode torná-la alguém resistente a mudanças necessárias. A Potência 90 ensina que a verdadeira estabilidade nasce da confiança interna; quando você está em paz consigo mesma, a segurança externa torna-se uma consequência natural, fluida e inabalável.</p>`,
-
-91: `<h3>91 - A Maestria sobre os Ciclos</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+91: {
+     conteudo:`<h4>91 - A Maestria sobre os Ciclos</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 91 representa a maestria sobre os ciclos e a compreensão das leis de causa e efeito na jornada da vida. Ela indica que sua trajetória atingiu um ponto de integração total, onde você compreende o porquê de cada conquista. É o símbolo da arquiteta consciente, que usa a experiência acumulada para projetar um futuro de estabilidade absoluta, agindo com uma prudência fruto de sabedoria.</p>
 <p>No aspecto positivo, esta influência manifesta um sucesso sólido e uma autoridade natural que emana de sua integridade. Você experimenta uma fase de grandes realizações onde a sua mente estratégica trabalha em perfeita sintonia com a sua intuição, permitindo que você consolide seu patrimônio de forma inquestionável. É um ciclo de plenitude, onde você se torna um ponto de referência para os outros, oferecendo segurança e direção.</p>
 <p>No entanto, o aspecto negativo alerta para o risco da rigidez dogmática e do medo de novas transformações por estar muito apegada à estrutura que construiu. A crença de que sua forma de ver o mundo é a única correta pode gerar isolamento. A Potência 91 ensina que a verdadeira maestria reside na capacidade de manter a solidez das suas bases enquanto permanece aberta ao fluxo contínuo de renovação que a vida exige para não estagnar.</p>`,
-
-92: `<h3>92 - Expansão e Propósito</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+92: {
+     conteudo:`<h4>92 - Expansão e Propósito</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 92 atua como uma força de expansão altruísta e a realização de propósitos elevados na jornada da vida. Ela rege sua trajetória indicando que sua prosperidade está ligada à sua capacidade de contribuir para a evolução do meio em que vive. É o símbolo da abundância compartilhada, onde o sucesso pessoal ganha um significado maior quando se torna uma ferramenta de apoio e crescimento para o todo.</p>
 <p>Vivida positivamente, esta potência manifesta uma sorte excepcional e uma fluidez nos negócios que parece ser guiada por uma força superior. Você atrai recursos e parcerias valiosas porque sua intenção é pura e seus objetivos são éticos, gerando um ciclo de retorno positivo constante. É uma fase de grande brilho social, onde a sua liderança é celebrada e sua presença traz harmonia e progresso, consolidando uma trajetória de sucesso e generosidade.</p>
 <p>Pelo lado negativo, pode surgir uma tendência à autossuficiência orgulhosa ou a uma generosidade mal direcionada que gera dependência alheia. O desejo de reconhecimento pode alimentar a vaidade. A Potência 92 ensina que a verdadeira prosperidade é um fluxo que deve circular; quanto mais você se torna um canal para o bem no plano físico, mais a vida garante que nunca falte abundância em seus próprios caminhos e projetos.</p>`,
-
-93: `<h3>93 - A Inovação Constante</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+93: {
+     conteudo:`<h4>93 - A Inovação Constante</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 93 representa a energia da inovação constante e a necessidade de manter o espírito curioso na jornada da vida. Ela atua como um sopro de criatividade que impede que suas conquistas se tornem áridas. É o símbolo da renovação mental, indicando que o seu sucesso contínuo depende da sua habilidade de reinventar seus métodos e de abraçar novos conceitos sem medo de perder a sua essência.</p>
 <p>No aspecto positivo, esta influência manifesta uma vitalidade intelectual contagiante e uma capacidade de adaptação que a mantém à frente do seu tempo. Você experimenta um crescimento renovado em sua carreira, atraindo oportunidades que exigem visão de futuro e originalidade. É um ciclo de descobertas onde a sua mente aberta atua como uma chave mestra que abre portas em mercados e círculos sociais antes inexplorados, trazendo frescor à vida.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da dispersão e da inconstância por estar sempre em busca da "próxima novidade". A instabilidade gerada pela impaciência pode comprometer as bases sólidas que você levou anos para construir. A Potência 93 ensina que a inovação só é verdadeiramente poderosa quando está a serviço de uma estrutura sólida; é a união entre sabedoria e audácia que gera a realização perene e respeitada.</p>`,
-
-94: `<h3>94 - A Organização Suprema</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+94:{
+     conteudo: `<h4>94 - A Organização Suprema</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 94 manifesta-se como a força da organização suprema e a consolidação de legados na jornada da vida. Ela rege sua trajetória através da responsabilidade, indicando que este é o momento de pensar em como suas ações e conquistas impactarão o futuro a longo prazo. É o símbolo da construção de monumentos que possuem a solidez necessária para resistir ao tempo e às crises com integridade.</p>
 <p>Quando vivida positivamente, esta potência manifesta um senso de dever cumprido e uma autoridade que é respeitada como um pilar de estabilidade na sociedade. Você experimenta a segurança de quem construiu sobre rocha, colhendo o respeito de todos pela sua integridade e visão. É uma fase de colheitas institucionais, onde sua palavra tem força e sua capacidade de gerir grandes estruturas garante a prosperidade de todos sob sua liderança.</p>
 <p>No aspecto negativo, o foco obsessivo na ordem pode levar a um autoritarismo asfixiante ou a um medo paralisante de qualquer erro que possa "manchar" a sua imagem. A rigidez pode afastar as pessoas e transformar sua vida em uma estrutura fria. A Potência 94 ensina que um verdadeiro legado não é feito apenas de posses, mas da memória viva da justiça e do amor que você semeou em sua caminhada física através da integridade.</p>`,
-
-95: `<h3>95 - A Maestria da Transição</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+95: {
+     conteudo:`<h4>95 - A Maestria da Transição</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 95 simboliza a coragem de enfrentar as grandes transições e a sabedoria de conduzir sua jornada da vida. Ela indica que você atingiu um nível de maturidade onde as mudanças não são temidas, mas compreendidas como veículos de expansão. É a energia da pilotagem consciente, onde você assume o leme da sua vida com total confiança, sabendo navegar em qualquer circunstância com a mesma eficiência.</p>
 <p>Vivida positivamente, esta potência manifesta uma adaptabilidade magistral e um sucesso que surge da sua habilidade em ler os sinais do tempo. Você experimenta uma transição suave para novas fases, onde antigos problemas são resolvidos e novas oportunidades são agarradas com precisão. É um ciclo de evolução guiada, onde a sua segurança interna permite explorar novos horizontes, atraindo progresso e reconhecimento pela sua resiliência e visão.</p>
 <p>Pelo lado negativo, a autoconfiança excessiva pode levar à imprudência ou a uma arrogância que ignora riscos reais. O desejo de controlar o incontrolável pode gerar estresse se as coisas não seguirem o seu cronograma exato. A Potência 95 ensina que o segredo da mestria não é ter controle total sobre os eventos externos, mas possuir o domínio total sobre a sua própria vontade e direção, permitindo que você flua com o destino sem perder seu centro.</p>`,
-
-96: `<h3>96 - A Síntese do Amor Universal</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+96:{
+     conteudo: `<h4>96 - A Síntese do Amor Universal</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 96 representa a síntese do amor universal aplicada à harmonia da sua base na jornada da vida. Ela indica que a verdadeira potência nasce da qualidade dos seus vínculos e da paz que você cultiva em seu ambiente. É o símbolo da cura das relações, onde a maturidade emocional permite transformar conflitos antigos em cooperação profunda e transformar sua realidade em um centro de bem-estar.</p>
 <p>No aspecto positivo, esta influência manifesta uma felicidade social plena, onde a sua generosidade retorna em forma de proteção e apoio. Você experimenta uma fase de grande estabilidade afetiva que serve de alicerce para seus sucessos materiais, sentindo-se em paz com seu papel no mundo. É um ciclo de concórdia, onde a sua capacidade de unir as pessoas em torno de propósitos nobres garante uma prosperidade celebrada por todas que a cercam.</p>
 <p>No entanto, o aspecto negativo alerta para o perigo da superproteção ou de um sacrifício excessivo que gera anulação pessoal. O medo de quebrar a harmonia aparente pode levar à negação de problemas reais, acumulando tensões. A Potência 96 ensina que o amor só é uma potência realizadora quando é livre e honesto; a verdadeira harmonia não é a ausência de divergências, mas a presença constante do respeito e da verdade entre seres inteiros.</p>`,
-
-97: `<h3>97 - O Triunfo da Independência</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+97:{
+     conteudo: `<h4>97 - O Triunfo da Independência</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 97 simboliza o triunfo da inteligência intuitiva e a independência mental absoluta na jornada da vida. Ela rege a vida pela clareza de pensamento que não se deixa contaminar por opiniões alheias, indicando que você atingiu o estágio de autonomia intelectual. É a energia da originalidade estratégica, onde você desenha seus caminhos baseado em uma lógica que une observação e percepção aguda.</p>
 <p>Vivida positivamente, esta potência manifesta sucessos brilhantes em áreas que exigem inovação ou liderança intelectual. Você experimenta o reconhecimento por ideias que transformam o seu meio, atraindo admiradores devido à sua mente visionária. É uma fase de grande lucidez, onde a sua capacidade de enxergar além do óbvio permite tomar decisões que antecipam tendências e protegem seus interesses, garantindo uma vida de destaque e propósito.</p>
 <p>Pelo lado negativo, a agudeza mental pode se transformar em frieza ou um isolamento em uma torre de superioridade que desdenha das necessidades emocionais básicas. O excesso de racionalização pode secar a alegria da vida e transformar relações em meras transações lógicas. A Potência 97 ensina que a inteligência superior é um dom que deve servir à evolução, e que a maior prova de sabedoria é a capacidade de manter a simplicidade e a conexão.</p>`,
-
-98: `<h3>98 - A Justiça Manifestada</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+98: {
+     conteudo:`<h4>98 - A Justiça Manifestada</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 98 representa a justiça manifestada na realidade e o recebimento das recompensas por uma jornada da vida de retidão. Ela atua como o grande fiel da balança, indicando que este é o momento de colher os resultados legais, materiais e morais de suas ações passadas. É o símbolo da integridade coroada, onde a verdade prevalece e sua reputação torna-se o seu maior e mais lucrativo ativo no mundo.</p>
 <p>No aspecto positivo, esta influência manifesta a resolução favorável de litígios e uma prosperidade baseada inteiramente no mérito real. Você experimenta a tranquilidade de quem está em paz com as leis, colhendo o respeito de todos pela sua conduta exemplar. É um ciclo de ordem e equilíbrio, onde a sua vida se organiza de forma harmoniosa, permitindo desfrutar da abundância com a certeza de que cada conquista foi honestamente obtida e sustentada.</p>
 <p>No entanto, o aspecto negativo alerta que qualquer desvio ético do passado será cobrado com rigor durante este período. A sensação de severidade pode surgir se houver resistência em enfrentar as consequências de atos antigos. A Potência 98 ensina que a justiça não é uma punição, mas um ajuste necessário para que a vida flua corretamente; agir com transparência é o único caminho para que este poder atue como seu maior aliado e protetor definitivo.</p>`,
-
-99: `<h3>99 - A Conclusão do Ciclo</h3>
+videoID: "F8bg1CTQ9HI"
+    },
+99:{
+     conteudo: `<h4>99 - A Conclusão do Ciclo</h4>
 <p><strong>MASCULINO-FEMININO-NEUTRO</strong>, a Potência 99 representa o encerramento do grande ciclo de experiência e a preparação para uma transição sem precedentes na jornada da vida. Ela simboliza a totalidade e o acúmulo de toda a sabedoria anterior. É o símbolo da mestra que concluiu sua obra, indicando que você atingiu o ápice da sua evolução e que sua presença agora serve como um farol de luz e guia para as gerações futuras.</p>
 <p>Vivida positivamente, esta potência manifesta uma paz absoluta e uma conexão profunda com o sentido da existência. Você experimenta a glória de ver seus projetos consolidados, sentindo-se em harmonia com o tempo e com o destino. É um ciclo de plenitude onde a riqueza material é o cenário para uma riqueza espiritual transbordante, permitindo que você viva com uma dignidade e sabedoria que inspiram todos ao seu redor a buscarem sua própria evolução.</p>
-<p>Pelo lado negativo, a proximidade do fim de um ciclo pode gerar melancolia ou um desejo desesperado de se apegar ao poder por medo da perda de relevância. O sentimento de que "tudo acabou" pode levar ao desânimo se não houver a percepção de que todo fim é o portal para uma realidade ainda maior. A Potência 99 ensina que a conclusão de uma grande obra é a maior das vitórias; é o momento de entregar os frutos ao mundo com gratidão e honra.</p>`
+<p>Pelo lado negativo, a proximidade do fim de um ciclo pode gerar melancolia ou um desejo desesperado de se apegar ao poder por medo da perda de relevância. O sentimento de que "tudo acabou" pode levar ao desânimo se não houver a percepção de que todo fim é o portal para uma realidade ainda maior. A Potência 99 ensina que a conclusão de uma grande obra é a maior das vitórias; é o momento de entregar os frutos ao mundo com gratidão e honra.</p>`,
+ videoID: "F8bg1CTQ9HI"
+    },
 
 },      
         
 // --- POTENCIAL E DESAFIO (TALENTOS ESPECIAIS / EXCESSOS) ---
 talentosEspeciais: {
-    1: `<h3>Potencial de Firmeza e Desafio da Obstinação - 1</h3>
+    1: {
+     conteudo:`<h3>Potencial de Firmeza e Desafio da Obstinação - 1</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, demonstra uma independência e uma ambição que estão muito acima da média comum. Seu potencial natural reside em uma determinação férrea e na capacidade invejável de manter a firmeza absoluta sob pressão, agindo com um brilhantismo singular em momentos de grandes crises ou desafios estratégicos onde outras recuariam.</p>
     <p>Entretanto, essa força monumental pode se tornar uma deficiência perigosa quando se transmuta em uma obstinação rígida e cega. O risco surge quando você se fecha excessivamente em seu ponto de vista, ignorando sugestões valiosas ao redor e gerando traços de possessividade ou autoritarismo que podem afastar aliadas importantes. <strong>MASCULINO-FEMININO-NEUTRO</strong>, seu desafio é entender que a verdadeira liderança sabe a hora de avançar com força e a hora de ouvir com sabedoria, integrando a visão alheia para fortalecer o seu próprio império sem perder sua essência pioneira.</p>`,
-
-    2: `<h3>Potencial de Diplomacia e Desafio da Insegurança - 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2: {
+     conteudo:`<h3>Potencial de Diplomacia e Desafio da Insegurança - 2</h3>
     <p>Existe em você um dom nato para a organização harmoniosa e para a pacificação de ambientes, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua natureza gentil, detalhista e profundamente cooperativa faz de você alguém excelente na mediação de conflitos, capaz de desarmar as situações mais tensas sem recorrer a ofensas, sendo aquela presença magnética que as pessoas procuram naturalmente quando precisam de equilíbrio e bom senso.</p>
     <p>A deficiência desta vibração em excesso, porém, pode se manifestar como uma insegurança que paralisa sua tomada de decisão no momento em que você mais precisa agir. Essa receptividade constante pode, às vezes, permitir que pessoas mal-intencionadas se aproveitem da sua bondade, fazendo com que seus objetivos, <strong>MASCULINO-FEMININO-NEUTRO</strong>, se percam em favor de um desejo quase desesperado de manter a paz a qualquer custo. O aprendizado aqui é entender que dizer "não" e estabelecer limites claros é, na verdade, a forma mais alta de diplomacia que você pode exercer para proteger sua própria energia e seus projetos.</p>`,
-
-    3: `<h3>Potencial de Criatividade e Desafio da Impaciência - 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Potencial de Criatividade e Desafio da Impaciência - 3</h3>
     <p>Sua mente, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é uma verdadeira usina de lógica própria e criatividade efervescente. Seu potencial especial reside em uma imaginação extraordinária e na capacidade rara de surpreender a todas com soluções concebidas de forma única, comunicando conceitos complexos com uma clareza e um entusiasmo que são simplesmente contagiantes para quem a ouve.</p>
     <p>A deficiência desse brilho em excesso é uma impaciência crônica com o ritmo de raciocínio alheio, que muitas vezes parece lento demais para a sua velocidade mental. Por estar sempre vários passos à frente, você pode demonstrar certa imprudência, negligenciando o "aterramento" das suas ideias e esquecendo-se de lidar com as responsabilidades práticas e burocráticas que sustentam o sucesso real. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua grande lição é aprender a dar tempo ao tempo e a valorizar os processos estruturais, garantindo que suas ideias geniais não sejam apenas fogos de artifício, mas construções que permanecem no tempo.</p>`,
-
-    4: `<h3>Potencial de Estabilidade e Desafio da Resistência - 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Potencial de Estabilidade e Desafio da Resistência - 4</h3>
     <p>Você tem o potencial extraordinário de construir bases sólidas, seguras e duradouras em tudo o que toca, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu perfil é o de alguém estável, metódico e extremamente confiável, que sabe respeitar limites e oferece uma segurança inabalável para quem convive ao seu redor, mantendo sempre uma postura de alta competência técnica e ética profissional.</p>
     <p>Todavia, a deficiência dessa vibração revela um tradicionalismo que pode acabar travando sua própria evolução pessoal e financeira. Uma desconfiança excessiva com o novo e uma teimosia em aceitar o que foge do "protocolo normal" podem tornar você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, alguém de difícil convencimento, que reluta em arriscar mesmo quando a mudança é necessária para o progresso. O desafio é aprender a abraçar a inovação como uma ferramenta de melhoria para suas próprias estruturas, entendendo que a flexibilidade, longe de ser uma fraqueza, é o que impede que as bases sólidas se tornem rígidas demais e acabem quebrando sob o peso do tempo.</p>`,
-
-    5: `<h3>Potencial de Ajuste e Desafio da Impulsividade - 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5:{
+     conteudo: `<h3>Potencial de Ajuste e Desafio da Impulsividade - 5</h3>
     <p>Seu potencial brilha com uma intensidade máxima justamente no meio do caos, da pressão e da imprevisibilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você possui uma capacidade incrível de ajuste a situações estressantes, conseguindo enxergar vantagens e agir de forma dinâmica onde a maioria das pessoas entraria em colapso emocional ou paralisia completa.</p>
     <p>Contudo, esse excesso de energia vital gera uma deficiência perigosa na forma de uma impulsividade nervosa e, por vezes, cortante. A falta de filtros em momentos de tensão pode fazer com que você reaja de forma direta demais a críticas, parecendo alguém distante, impaciente ou excessivamente ríspida. <strong>MASCULINO-FEMININO-NEUTRO</strong>, é vital que você aprenda a domar essa eletricidade interna, garantindo que sua sede de movimento e mudança não acabe rompendo conexões humanas e profissionais valiosas por puro impulso momentâneo. Use sua rapidez para criar soluções, não para criar conflitos desnecessários.</p>`,
-
-    6: `<h3>Potencial de Proteção e Desafio do Detalhismo - 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo:`<h3>Potencial de Proteção e Desafio do Detalhismo - 6</h3>
     <p>Você atua como um pilar de apoio indispensável e de responsabilidade coletiva por onde passa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu potencial especial é o protecionismo sábio e uma atenção minuciosa aos detalhes humanos, mantendo-se sempre em prontidão para defender causas justas e cuidar do seu ambiente com um senso de ética e estética muito apurado.</p>
     <p>A deficiência surge quando o seu envolvimento em tudo e com todas gera preocupações pouco práticas, fazendo com que pequenos problemas do dia a dia pareçam tragédias gregas. Essa dificuldade em esquecer as falhas alheias ou o excesso de cobrança por perfeição nas relações pode custar muito caro para sua própria paz de espírito, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O aprendizado aqui é entender que o amor e a proteção são mais eficazes quando acompanhados de aceitação. Aprenda a soltar as rédeas do controle emocional sobre as outras e foque em harmonizar a si mesma primeiro, permitindo que a perfeição seja uma meta, e não uma obsessão paralisante.</p>`,
-
-    7: `<h3>Potencial de Análise e Desafio do Isolamento - 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7: {
+     conteudo:`<h3>Potencial de Análise e Desafio do Isolamento - 7</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui uma mente analítica, perfeccionista e investigativa de altíssimo nível. Seu potencial reside na disciplina intelectual e na busca incansável pela verdade e pela qualidade técnica, o que faz com que suas conclusões sejam precisas, profundas e extremamente respeitadas por quem busca um trabalho de excelência superior.</p>
     <p>Por outro lado, o excesso dessa energia cria um perfil contestador que dificilmente aceita perder discussões ou admitir lacunas no próprio conhecimento. A irritação com falhas alheias e a dificuldade em dar segundas chances podem acabar isolando você em uma torre de marfim intelectual, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Para que seu potencial seja plenamente realizado, você precisa aprender a integrar a compaixão e a tolerância ao seu rigor analítico, entendendo que a imperfeição faz parte da experiência humana. Ao se abrir para o mundo com menos julgamento, sua sabedoria se tornará uma luz que atrai, e não uma espada que afasta.</p>`,
-
-    8: `<h3>Potencial de Comando e Desafio do Controle - 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8: {
+     conteudo:`<h3>Potencial de Comando e Desafio do Controle - 8</h3>
     <p>O seu potencial especial é o poder de comando nato e uma visão estratégica de longo alcance que poucas possuem, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe em você uma habilidade quase instintiva de organizar o caos e transformá-lo em estruturas de sucesso material, mantendo uma iniciativa que surpreende a todas pela eficiência, autoridade e capacidade de realização concreta.</p>
     <p>A sombra dessa força toda é o risco real da prepotência e do autoritarismo excessivo. Quando essa vibração está em desequilíbrio, você pode demonstrar um perfil controlador ao extremo, perdendo completamente a paciência com quem não consegue acompanhar seu ritmo acelerado de produção ou sua visão ambiciosa. <strong>MASCULINO-FEMININO-NEUTRO</strong>, seu grande desafio de mestra é aprender a equilibrar essa liderança poderosa com uma empatia real, entendendo que grandes impérios são construídos com braços fortes, mas mantidos por corações leais. Lidere inspirando, e não apenas mandando.</p>`,
-
-    9: `<h3>Potencial de Compaixão e Desafio do Desgaste - 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Potencial de Compaixão e Desafio do Desgaste - 9</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui um potencial magnífico para a compaixão e para a compreensão profunda das leis universais que regem a vida. Sua visão é generosa, ampla e humanitária, capaz de entender as necessidades do coletivo com uma sabedoria que transcende o ego, atuando como um farol de esperança e auxílio para muitas.</p>
-    <p>A deficiência, contudo, pode levá-la a um papel de sacrifício excessivo e perigoso, onde você acaba esquecendo das suas próprias necessidades básicas para carregar a dor do mundo nas costas. Existe uma tendência a se envolver em dramas alheios de forma desproporcional, o que gera um desgaste emocional e físico que acaba impedindo a manifestação do seu potencial de forma saudável. <strong>MASCULINO-FEMININO-NEUTRO</strong>, lembre-se de que para ajudar o mundo, você precisa estar inteira. Aprenda a ser generosa consigo mesma na mesma medida em que é com as outras, transformando seu altruísmo em uma força sustentável e equilibrada.</p>`
+    <p>A deficiência, contudo, pode levá-la a um papel de sacrifício excessivo e perigoso, onde você acaba esquecendo das suas próprias necessidades básicas para carregar a dor do mundo nas costas. Existe uma tendência a se envolver em dramas alheios de forma desproporcional, o que gera um desgaste emocional e físico que acaba impedindo a manifestação do seu potencial de forma saudável. <strong>MASCULINO-FEMININO-NEUTRO</strong>, lembre-se de que para ajudar o mundo, você precisa estar inteira. Aprenda a ser generosa consigo mesma na mesma medida em que é com as outras, transformando seu altruísmo em uma força sustentável e equilibrada.</p>`,
+       videoID: "F8bg1CTQ9HI"
+    },
 },
  
 planosExpressao: {
@@ -3927,281 +4125,421 @@ modosAcao: {
  
 desejoOculto: {
  
-    1: `<h3>Impulso de Liderança e Desafio do Egocentrismo - 1</h3>
+    1: {
+     conteudo:`<h3>Impulso de Liderança e Desafio do Egocentrismo - 1</h3>
     <p>No âmago do seu ser, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, carrega uma vibração que impulsiona fortemente para a liderança absoluta e para o pioneirismo radical. Esse acúmulo numérico gera em sua alma um desejo ardente de ser a primeira em tudo e de alcançar o topo por mérito próprio, buscando incessantemente o reconhecimento pela sua individualidade única e por sua capacidade inquestionável de comando.</p>
     <p>Entretanto, esse excesso de força motriz pode tornar você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, alguém autoritária ou excessivamente egocêntrica se não houver vigilância. O padrão a ser quebrado é a necessidade constante de estar sempre em evidência, o que pode gerar comportamentos cíclicos de arrogância ou uma busca desenfreada pelo poder que acaba isolando as pessoas que deveriam ser suas aliadas. Sua alma clama por originalidade, mas o seu desafio é entender que a verdadeira líder brilha mais quando ilumina o caminho das outras, e não apenas o seu próprio pedestal.</p>`,
-
-    2: `<h3>Impulso de Harmonia e Desafio da Dependência - 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2: {
+     conteudo:`<h3>Impulso de Harmonia e Desafio da Dependência - 2</h3>
     <p>O desejo mais profundo da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é pela harmonia perfeita, pela cooperação e pelo equilíbrio absoluto em todas as suas relações. Por possuir essa frequência em abundância, existe dentro de você uma busca constante pela paz e por ambientes onde a diplomacia prevaleça sobre o conflito, fazendo com que você aja sempre como o ponto de união e o bálsamo entre as pessoas.</p>
     <p>Por outro lado, essa carga excessiva de sensibilidade pode levar você a uma dependência emocional prejudicial e silenciosa. O padrão recorrente aqui, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a dificuldade extrema em tomar decisões importantes sem a aprovação ou o suporte alheio, permitindo que sua própria vontade seja anulada apenas para evitar qualquer tipo de confronto. Sua alma deseja a união, mas a lição é aprender que você precisa estar inteira e segura de si para que suas parcerias sejam saudáveis e não se tornem muletas emocionais que paralisam seu crescimento pessoal.</p>`,
-
-    3: `<h3>Impulso de Expressão e Desafio da Dispersão - 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Impulso de Expressão e Desafio da Dispersão - 3</h3>
     <p>Existe em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma necessidade vital de expressão, comunicação e criatividade que transborda. Esta vibração elevada indica um talento nato para encantar, motivar e alegrar qualquer ambiente, buscando sempre o brilho social e a manifestação das suas ideias de forma extraordinária, leve e comunicativa.</p>
     <p>O alerta para você reside na dispersão perigosa desse potencial criativo imenso. O excesso de energia pode resultar em comportamentos superficiais, onde você se perde em distrações fúteis ou inicia múltiplos projetos fascinantes que nunca chegam ao fim, transformando o seu dom sagrado da palavra em uma falta de compromisso com a verdade prática e com a entrega de resultados. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma deseja criar e ser vista, mas o sucesso real virá quando você aprender a canalizar esse rio de criatividade em canais sólidos, dando profundidade e foco ao seu carisma natural.</p>`,
-
-    4: `<h3>Impulso de Segurança e Desafio da Rigidez - 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Impulso de Segurança e Desafio da Rigidez - 4</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, busca incessantemente por segurança, ordem e estabilidade através do trabalho estruturado e do método. Essa concentração numérica cria em seu íntimo um desejo poderoso de construir bases indestrutíveis para sua vida e de manter tudo sob um controle rigoroso, valorizando a tradição, a honra e a eficiência acima de qualquer aventura passageira.</p>
     <p>A deficiência desse excesso se manifesta como uma teimosia crônica e um conservadorismo que pode impedir seu progresso em tempos de mudança. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, corre o risco de se tornar alguém excessivamente rígida, que bloqueia a inovação e o fluxo natural da vida por medo de perder o controle ou por se apegar a métodos ultrapassados que já não funcionam mais no mundo atual. Sua alma quer segurança, mas entenda que a estrutura mais forte é aquela que possui flexibilidade para balançar com o vento sem quebrar; aprenda a confiar um pouco mais na vida e menos nas rédeas.</p>`,
-
-    5: `<h3>Impulso de Liberdade e Desafio da Instabilidade - 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Impulso de Liberdade e Desafio da Instabilidade - 5</h3>
     <p>Sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, anseia por liberdade total, por mudanças constantes e por novas e eletrizantes experiências sensoriais. Essa forte presença vibracional indica alguém que detesta a rotina como se fosse uma prisão e busca no movimento dinâmico a própria razão de sua existência, adaptando-se com uma facilidade assustadora a qualquer cenário desafiador ou desconhecido.</p>
     <p>Contudo, essa vibração em excesso gera uma instabilidade crônica e uma impaciência que pode sabotar suas conquistas. O vício de comportamento a ser observado por você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a tendência irresistível a abandonar tudo o que exige persistência ou que se torna "comum", agindo de forma inconsequente e impedindo a construção de algo duradouro. Sua alma quer o novo, mas o segredo da sua evolução é aprender que a verdadeira liberdade nasce da disciplina de saber onde se quer chegar, transformando a inquietude em inovação focada.</p>`,
-
-    6: `<h3>Impulso de Serviço e Desafio do Perfeccionismo - 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo:`<h3>Impulso de Serviço e Desafio do Perfeccionismo - 6</h3>
     <p>O foco da sua existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está totalmente voltado para o lar, para o bem-estar da família e para o serviço amoroso ao próximo. É um desejo profundo de ser o porto seguro e a conselheira de todas, assumindo responsabilidades pesadas e buscando uma perfeição estética e emocional em cada detalhe do ambiente ao seu redor.</p>
     <p>A armadilha desse excesso de cuidado é o perfeccionismo sufocante e a tendência a se sobrecarregar com problemas que não são seus. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode acabar se tornando uma pessoa polêmica ou intrometida, tentando controlar a vida de terceiras sob o pretexto benevolente de ajudar, o que inevitavelmente gera conflitos e um cansaço emocional desnecessário. Sua alma deseja a harmonia coletiva, mas o seu aprendizado é entender que cada uma tem o direito de caminhar com as próprias pernas e que sua felicidade não pode depender da perfeição das outras.</p>`,
-
-    7: `<h3>Impulso de Introspecção e Desafio do Isolamento - 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7:{
+     conteudo: `<h3>Impulso de Introspecção e Desafio do Isolamento - 7</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui uma inclinação natural e poderosa para o estudo profundo, para o silêncio e para a decifração dos grandes mistérios da vida. É o desejo ardente de encontrar a verdade absoluta, a resposta técnica perfeita e a excelência intelectual em tudo o que se propõe a analisar ou realizar.</p>
     <p>O lado sombrio desse excesso é o isolamento gélido e o uso do sarcasmo como defesa. Seu padrão cíclico, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode ser o de se afastar do mundo por julgar — mesmo que inconscientemente — que ninguém compartilha do seu nível de sabedoria ou refinamento, tornando-se alguém fria e excessivamente crítica. Sua alma quer o conhecimento, mas a lição definitiva é integrar essa sabedoria com a compaixão humana, reconhecendo que a inteligência sem a conexão emocional é apenas um castelo de gelo vazio.</p>`,
-
-    8: `<h3>Impulso de Realização e Desafio do Materialismo - 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8: {
+     conteudo:`<h3>Impulso de Realização e Desafio do Materialismo - 8</h3>
     <p>Existe um desejo voraz em você por realização material, poder executivo e justiça prática no mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Essa abundância numérica gera uma ambição legítima e necessária de organizar grandes estruturas e alcançar a prosperidade financeira de alto nível, utilizando a lógica e a autoridade para manifestar resultados concretos e duradouros.</p>
     <p>Porém, o excesso dessa vibração pode transformar você em alguém excessivamente fria, calculista e pragmática. O comportamento recorrente a ser evitado é o de colocar os interesses materiais e o status acima dos sentimentos humanos básicos, agindo de forma controladora para manter a autoridade a qualquer custo. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma quer o sucesso, mas entenda que o poder real é aquele que serve a um propósito maior; quando a riqueza é usada com ética e generosidade, ela se torna inesgotável e verdadeiramente respeitada.</p>`,
-
-    9: `<h3>Impulso de Humanitarismo e Desafio da Mártir - 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Impulso de Humanitarismo e Desafio da Mártir - 9</h3>
     <p>A vibração da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é movida pela compaixão universal e por um altruísmo que não conhece fronteiras. Existe em você um desejo sincero e emocionante de ajudar o mundo e de se dedicar a causas que tragam evolução à humanidade, buscando a finalização de ciclos com sabedoria, perdão e desprendimento.</p>
-    <p>A deficiência aqui surge quando você se perde em idealismos impraticáveis ou assume, sem perceber, o papel de mártir. O padrão negativo é o esquecimento total das suas próprias necessidades fundamentais e financeiras em favor de um "salvacionismo" irreal, o que acaba gerando esgotamento profundo e uma amarga sensação de falta de valorização. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma quer salvar o mundo, mas lembre-se que você faz parte dele: para que sua luz ajude as outras, sua própria lâmpada precisa estar abastecida e cuidada.</p>`
+    <p>A deficiência aqui surge quando você se perde em idealismos impraticáveis ou assume, sem perceber, o papel de mártir. O padrão negativo é o esquecimento total das suas próprias necessidades fundamentais e financeiras em favor de um "salvacionismo" irreal, o que acaba gerando esgotamento profundo e uma amarga sensação de falta de valorização. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma quer salvar o mundo, mas lembre-se que você faz parte dele: para que sua luz ajude as outras, sua própria lâmpada precisa estar abastecida e cuidada.</p>`,
+   videoID: "F8bg1CTQ9HI"
+    },    
 },
  
 deficits: {
-    1: `<h3>Egoísmo - Déficit de Comportamento 1</h3>
+    1: {
+     conteudo:`<h3>Egoísmo - Déficit de Comportamento 1</h3>
         <p>Este déficit, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está profundamente ligado ao princípio universal de causa e efeito: tudo o que se manifesta hoje em sua jornada é o eco de escolhas passadas. Em algum ponto da sua trajetória de alma, você pode ter agido com intolerância, tentando impor sua vontade a qualquer custo para benefício próprio. É vital compreender que a vida é um espelho reativo; se houve injustiça no passado, o presente exigirá que você confronte essas sombras e assuma sua responsabilidade.</p>
         <p><strong>Influência:</strong> Você poderá ser exposta a situações de grande desgaste emocional, onde sua autoconfiança será testada ao limite. <strong>MASCULINO-FEMININO-NEUTRO</strong>, prepare-se para lidar com pessoas falsas ou injustas, pois elas são o reflexo da energia que você precisa transmutar. Para evitar sofrimentos inúteis, seja a primeira a praticar a justiça e a tolerância absoluta. O segredo da sua cura é a construção de uma imagem verdadeira e transparente, banindo qualquer artifício de falsidade do seu caminho profissional ou pessoal. Ao dominar seus impulsos e agir com retidão, você limpa esse registro e abre as portas para uma prosperidade legítima e duradoura.</p>`,
-
-    2: `<h3>Crueldade - Déficit de Comportamento 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2:{
+     conteudo: `<h3>Crueldade - Déficit de Comportamento 2</h3>
         <p>Em algum momento da sua existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, houve um uso equivocado do poder pessoal, que pode ter se manifestado como vingança, crueldade ou abusos emocionais contra outras. Esta lição atual vem para ensinar que a compaixão não é fraqueza, mas a tecnologia mais avançada da alma para cooperar e unir. Ser compassiva permitirá que você ocupe um lugar de honra no coração das pessoas, trazendo um senso de equilíbrio que talvez tenha faltado em seus ciclos anteriores.</p>
         <p><strong>Influência:</strong> Sob esta vibração, você poderá se sentir explorada ou submetida a situações onde seu valor não é reconhecido, gerando uma baixa autoestima e um medo paralisante da solidão. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o pessimismo pode tentar nublar sua visão, tornando as decisões difíceis. Sua grande virada de chave reside em apoiar sua criatividade na ética mais rigorosa possível. Busque sempre o resultado onde todas ganham; ao se tornar uma agente da harmonia e do respeito mútuo, você dissolve as amarras desse déficit e resgata sua verdadeira dignidade.</p>`,
-
-    3: `<h3>Exibicionismo - Déficit de Comportamento 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Exibicionismo - Déficit de Comportamento 3</h3>
         <p>Esta energia indica que, em algum momento, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode ter se deixado levar por uma necessidade narcisista de ser o centro das atenções, agindo de forma oportunista ou superficial. O foco excessivo nas próprias prioridades, ignorando o impacto de suas ações nas outras, criou um padrão de ciúme e insensibilidade que agora precisa ser equilibrado com urgência através da lealdade e do compromisso real.</p>
         <p><strong>Influência:</strong> Você enfrentará desafios que testarão sua persistência e foco, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Procrastinar e deixar projetos pela metade será sua maior tentação, e a sensação de que nada se conclui pode gerar dramas desnecessários em seus relacionamentos. Para encontrar a felicidade plena, você deve abraçar a disciplina como um mantra diário. Desenvolva a concentração e a habilidade de seguir em frente mesmo diante das críticas. Quando você troca o palco do ego pela construção sólida de resultados úteis ao coletivo, seu magnetismo se torna real e seu sucesso deixa de ser uma aparência para se tornar um legado inabalável.</p>`,
-
-    4: `<h3>Irresponsabilidade - Déficit de Comportamento 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Irresponsabilidade - Déficit de Comportamento 4</h3>
         <p>Este déficit revela que, em ciclos passados, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode ter negligenciado responsabilidades fundamentais em troca de prazeres imediatos ou por pura preguiça. A omissão e a indiferença diante do dever podem ter causado danos a você ou a terceiras, criando uma dívida com a ordem e a estrutura do mundo material. Agora, a vida convoca você para o resgate da sua utilidade e produtividade.</p>
         <p><strong>Influência:</strong> Você poderá sentir limitações físicas ou financeiras que parecem surgir do nada, acompanhadas de uma insatisfação constante e falta de disposição. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o caminho para a sua libertação é a organização meticulosa do seu trabalho e da sua vida pessoal. Enfrente seus medos de frente e aprenda a administrar o estresse com tolerância. Ao se tornar a pessoa em quem todas podem confiar, você transmuta a antiga irresponsabilidade em uma reputação de ouro. A vitória virá através do suor honesto e do prazer de construir algo com método e persistência.</p>`,
-
-    5: `<h3>Impulsividade - Déficit de Comportamento 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Impulsividade - Déficit de Comportamento 5</h3>
         <p>A vida é feita de mudanças, mas o seu déficit, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sugere que em algum momento você buscou a liberdade de forma inconsequente, correndo riscos desnecessários e se entregando a excessos ligados aos sentidos ou vícios. Esse desperdício de energia vital resultou em uma perda de controle sobre o próprio destino, algo que você está aqui para aprender a gerir com inteligência e limites claros agora.</p>
         <p><strong>Influência:</strong> Você será testada em sua integridade moral com frequência. Situações de frustração extrema podem levar ao desequilíbrio emocional, fazendo com que você se sinta incompreendida pelo mundo. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua personalidade pode tender a comportamentos viciantes se você não vigiar seus impulsos. A grande lição é a paciência: reconheça seus limites e respeite as restrições impostas pela realidade. Quando você domina seus sentidos em vez de ser escravizada por eles, sua sede de liberdade se transforma em sabedoria nômade e poder de adaptação extraordinário.</p>`,
-
-    6: `<h3>Avarenta - Déficit de Comportamento 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6:{
+     conteudo: `<h3>Avarenta - Déficit de Comportamento 6</h3>
         <p>Em algum ponto da sua jornada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a arrogância e o desejo de levar vantagem sobre as outras falaram mais alto. Pode ter havido uma intromissão excessiva na vida alheia com o intuito de controlar ou impor seus próprios valores, agindo com mesquinhez emocional ou material. Este déficit pede que você saia da zona de conforto do ego e aprenda a olhar para o próximo com um olhar de igualdade e serviço desinteressado.</p>
         <p><strong>Influência:</strong> Prepare-se para situações onde será necessário sacrificar seu próprio conforto em benefício de terceiras, enfrentando muitas vezes a ingratidão como prova de fogo. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, poderá ter dificuldade em avaliar quem realmente merece sua confiança, atraindo oportunistas que espelham sua antiga vibração. A cura reside em interagir com as pessoas sem presunção e sem tentar controlar suas vidas. Ao oferecer suporte sem exigir nada em troca, você dissolve a avareza da alma e atrai relacionamentos profundos, honestos e genuinamente prósperos.</p>`,
-
-    7: `<h3>Preconceitos - Déficit de Comportamento 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7:{
+     conteudo: `<h3>Preconceitos - Déficit de Comportamento 7</h3>
         <p>A indiferença e a intolerância foram sombras em sua trajetória, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você pode ter agido de forma fria e cínica, dando um valor exagerado às aparências e futilidades enquanto ignorava a dor ou os interesses alheios. A desonestidade intelectual, escolhendo verdades "convenientes", pode ter causado sofrimento a pessoas próximas apenas para satisfazer sua vaidade intelectual ou estética.</p>
         <p><strong>Influência:</strong> Esta energia atrairá situações que ferirão diretamente seu orgulho, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Decepções com amizades desleais serão frequentes até que você aprenda a enxergar além da superfície. Você poderá se sentir vazia ou dependente da aprovação de quem você nem respeita. O antídoto é a humildade radical: seja livre de preconceitos e aja com uma justiça que não busca aplausos. Quando você troca a vaidade pela busca da verdade real e da conexão espiritual profunda, sua baixa autoestima dá lugar a uma autoconfiança inabalável baseada na sabedoria divina.</p>`,
-
-    8: `<h3>Ganância - Déficit de Comportamento 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8:{
+     conteudo: `<h3>Ganância - Déficit de Comportamento 8</h3>
         <p>Este déficit indica que a raiva, a agressividade e a ganância descontrolada podem ter guiado suas decisões no passado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desejo de possuir tudo sem nunca desfrutar de nada criou um ciclo de insatisfação crônica. Você pode ter usado seu poder para oprimir em vez de realizar, focando apenas no acúmulo material sem considerar o fator humano ou espiritual envolvido nas suas conquistas.</p>
         <p><strong>Influência:</strong> Você poderá passar por períodos de privação financeira ou limitações materiais severas que testarão sua força de vontade. <strong>MASCULINO-FEMININO-NEUTRO</strong>, a sensação de não conseguir se realizar profissionalmente pode ser frustrante. A lição de ouro é o equilíbrio e a moderação: aprenda a controlar seus impulsos e entenda que o dinheiro é uma energia de troca, não um fim em si mesmo. Quando você compreende que as pessoas confiam no que você é, e não no que você tem, o fluxo da abundância volta a correr em sua direção de forma limpa, justa e duradoura.</p>`,
-
-    9: `<h3>Vaidade - Déficit de Comportamento 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Vaidade - Déficit de Comportamento 9</h3>
         <p>Em algum momento, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a arrogância de se sentir superior às demais levou você a ofender ou humilhar aquelas que considerava "inferiores". Esse idealismo distorcido e a dureza de coração podem ter gerado um comportamento vingativo contra quem ousasse desafiar sua vontade. Este déficit é uma convocação direta para a prática da humildade e do altruísmo universal.</p>
-        <p><strong>Influência:</strong> Prepare-se para enfrentar perdas afetivas ou materiais que parecerão injustas, mas que servem para esvaziar seu ego e preencher sua alma com humanidade. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o sentimento de vazio interior só será curado quando você começar a compartilhar suas conquistas e a beneficiar genuinamente quem cruza seu caminho. Seja solidária, compreensiva e aja com uma justiça que acolhe. Ao transformar a vaidade em serviço humanitário, você transmuta sua dívida em luz e se torna um canal de sabedoria e paz para o mundo inteiro.</p>`
+        <p><strong>Influência:</strong> Prepare-se para enfrentar perdas afetivas ou materiais que parecerão injustas, mas que servem para esvaziar seu ego e preencher sua alma com humanidade. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o sentimento de vazio interior só será curado quando você começar a compartilhar suas conquistas e a beneficiar genuinamente quem cruza seu caminho. Seja solidária, compreensiva e aja com uma justiça que acolhe. Ao transformar a vaidade em serviço humanitário, você transmuta sua dívida em luz e se torna um canal de sabedoria e paz para o mundo inteiro.</p>`,
+     videoID: "F8bg1CTQ9HI"
+    },  
 },
 
 
  
 inclinacoes: {
-    1: `<h3>Controladora e Individualista - Inclinação Oculta 1</h3>
+    1:  {
+     conteudo:`<h3>Controladora e Individualista - Inclinação Oculta 1</h3>
         <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, manifesta uma autoconfiança inabalável e uma busca incessante pela perfeição, alimentada por um espírito competitivo que a impele a liderar em todas as esferas. Essa força motriz, contudo, é uma faca de dois gumes: se não for vigiada, pode transparecer como uma tendência à manipulação sutil para atingir objetivos específicos, colocando seus interesses acima do bem-estar coletivo.</p>
         <p>Há um risco latente de você se inclinar ao individualismo radical e ao egocentrismo, permitindo que atitudes prepotentes ou autoritárias dominem suas relações profissionais e pessoais. Quando essa energia entra em desequilíbrio, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode parecer arrogante e pouco permeável a novas ideias, dificultando a colaboração e a empatia necessárias para grandes feitos. Seu desafio é entender que a verdadeira líder não precisa sufocar as outras para brilhar; aprenda a delegar e a valorizar o gênio alheio tanto quanto o seu.</p>`,
-
-    2: `<h3>Dependente e Indecisa - Inclinação Oculta 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2:  {
+     conteudo:`<h3>Dependente e Indecisa - Inclinação Oculta 2</h3>
         <p>Sua natureza fundamental, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a de uma mediadora nata, capaz de harmonizar os conflitos mais ásperos e buscar o ponto de equilíbrio entre partes divergentes. No entanto, essa busca quase obsessiva por agradar a todas ao seu redor pode mascarar uma insegurança profunda, manifestando-se como uma timidez excessiva ou uma falta de iniciativa que trava seu progresso.</p>
         <p>Existe uma inclinação perigosa à indecisão e à dependência emocional de terceiras, o que abre margem para comportamentos dissimulados ou atitudes mesquinhas por medo de ser rejeitada. O grande desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é não permitir que o desânimo ou a passividade tomem conta diante dos obstáculos. Aprenda a sustentar sua própria opinião mesmo que ela cause desconforto inicial, pois sua voz é essencial para que o equilíbrio que você tanto busca seja real e não apenas uma fachada de conveniência.</p>`,
-
-    3: `<h3>Exibicionismo e Superficialidade - Inclinação Oculta 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3:  {
+     conteudo:`<h3>Exibicionismo e Superficialidade - Inclinação Oculta 3</h3>
         <p>Você possui o dom divino de motivar e encantar as pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas frequentemente sofre com uma dispersão mental que drena sua energia vital. O desejo por entretenimento, prazer imediato e gratificação social pode acabar se sobrepondo às suas responsabilidades reais, levando a uma vida de muitos começos e poucas conclusões concretas.</p>
         <p>A preocupação excessiva com as aparências e o julgamento baseado na superfície das coisas são marcas fortes desta inclinação. Essa vaidade, somada a um estado de agitação constante, pode resultar em um grande desperdício do seu tempo em questões fúteis ou puramente estéticas que não alimentam sua alma a longo prazo. <strong>MASCULINO-FEMININO-NEUTRO</strong>, seu caminho de evolução exige que você desenvolva o foco e a profundidade; use seu carisma para construir algo que tenha substância e não apenas brilho momentâneo.</p>`,
-
-    4: `<h3>Intolerância e Rigidez - Inclinação Oculta 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4:  {
+     conteudo:`<h3>Intolerância e Rigidez - Inclinação Oculta 4</h3>
         <p>A organização meticulosa e a preparação para imprevistos são seus pilares de sobrevivência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Porém, essa estrutura pode facilmente se transformar em uma prisão de rigidez mental, onde você se torna escrava das próprias convicções. Você tende a exercer um autoritarismo técnico que pode sufocar a criatividade e a liberdade das pessoas que convivem com você.</p>
         <p>O seu perfeccionismo exagerado gera uma insatisfação crônica, onde nada — nem o seu trabalho, nem o das outras — parece atingir o nível "ideal". Essa obsessão pelo controle total e a teimosia em não aceitar perspectivas diferentes criam um ambiente de tensão constante. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o aprendizado é soltar as rédeas e permitir que a vida flua com suas imperfeições naturais. Entenda que o caos, às vezes, é o fertilizante necessário para o crescimento que a rigidez impede.</p>`,
-
-    5: `<h3>Abusos e Desmotivação - Inclinação Oculta 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5:  {
+     conteudo:`<h3>Abusos e Desmotivação - Inclinação Oculta 5</h3>
         <p>Sua curiosidade é insaciável e seu desejo de vivenciar o mundo em sua plenitude é um motor poderoso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Todavia, essa busca incessante pode conduzir a comportamentos impulsivos, onde você acaba explorando as fraquezas alheias para obter vantagens rápidas ou satisfação momentânea, agindo sem medir as consequências futuras das suas ações.</p>
         <p>A necessidade constante de adrenalina e estímulos inéditos frequentemente resulta em uma desmotivação profunda assim que a novidade passa, dificultando o estabelecimento de vínculos duradouros. Essa sede de sensações pode levar a excessos que mascaram um vazio interno persistente. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua lição é encontrar a aventura dentro da estabilidade. Aprenda que a verdadeira liberdade não vem de fugir das responsabilidades, mas de ter o domínio sobre seus próprios desejos e impulsos.</p>`,
-
-    6: `<h3>Controladora e Autoritária - Inclinação Oculta 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo: `<h3>Controladora e Autoritária - Inclinação Oculta 6</h3>
         <p>Embora você nutra um cuidado genuíno e quase protetor pelas pessoas ao seu redor, essa atenção pode facilmente cruzar a linha e se tornar uma interferência controladora e invasiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua visão idealista da vida faz com que você exija uma perfeição absoluta de quem você ama, gerando cobranças desmedidas que sufocam o afeto.</p>
         <p>O apego rígido a padrões sociais, morais e familiares pode torná-la uma pessoa teimosa e, por vezes, ingrata quando as coisas não saem exatamente como você planejou. Quando suas expectativas não são atendidas, você tende ao julgamento severo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu desafio de alma é aceitar as imperfeições humanas como parte da beleza da vida. Aprenda a amar as pessoas pelo que elas são, e não pelo papel que você gostaria que elas desempenhassem no seu roteiro ideal.</p>`,
-
-    7: `<h3>Insatisfação e Melancolia - Inclinação Oculta 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7:  {
+     conteudo:`<h3>Insatisfação e Melancolia - Inclinação Oculta 7</h3>
         <p>Como uma intelectual nata, você habita um mundo complexo de ideias e análises profundas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Entretanto, essa mente brilhante pode se tornar excessivamente crítica e cética, especialmente com o que não pode ser provado pela lógica fria. Isso acaba gerando um isolamento defensivo, onde você se afasta do mundo para não ser "contaminada" pela mediocridade.</p>
         <p>A dificuldade em processar e expressar emoções de forma aberta pode resultar em sentimentos de melancolia e incompreensão. Há uma inclinação à frustração persistente, onde nenhuma conquista material parece ser suficiente para preencher seu padrão de exigência. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua cura está em equilibrar a razão com a intuição e o sentimento. Não se perca em mundos imaginários ou dependências escapistas; aprenda a encontrar o sagrado e o belo na simplicidade do cotidiano.</p>`,
-
-    8: `<h3>Ganância e Obstinação - Inclinação Oculta 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8:  {
+     conteudo:`<h3>Ganância e Obstinação - Inclinação Oculta 8</h3>
         <p>Sua ambição é uma força da natureza voltada para o sucesso, o poder e o prestígio material, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você acredita, com razão, no seu direito de ter o melhor, mas essa determinação pode se degenerar em um apego materialista cego e em uma sede insaciável de controle sobre tudo e todas ao seu redor.</p>
         <p>O medo inconsciente da escassez pode corromper sua conduta, levando a comportamentos avarentos ou à participação em situações eticamente cinzentas para garantir sua segurança financeira. Sua obstinação pelo poder, se não for temperada pela generosidade real, pode torná-la escrava das suas próprias posses. <strong>MASCULINO-FEMININO-NEUTRO</strong>, entenda que o dinheiro é um fluxo: quanto mais você o usa para elevar o mundo, mais ele retorna para você de forma limpa e multiplicada.</p>`,
-
-    9: `<h3>Carência de Afeto - Inclinação Oculta 9</h3>
-        <p>Sua natureza é profundamente empática e voltada ao serviço humanitário, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Porém, essa dedicação heroica ao próximo muitas vezes esconde uma negligência severa com as suas próprias dores e carências. Você tende a "salvar" as outras como uma estratégia inconsciente para evitar olhar para o seu próprio espelho interior.</p>
-        <p>Essa inclinação revela uma carência afetiva latente, que se manifesta na busca incessante por aprovação e reconhecimento através da utilidade. O desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é equilibrar a doação ao mundo com o autorespeito radical. Não se torne uma mártir das necessidades alheias apenas para se sentir amada. A verdadeira compaixão começa em casa: aprenda a nutrir a si mesma com a mesma intensidade que dedica às outras.</p>`
+  videoID: "F8bg1CTQ9HI"
     },
+    9:  {
+     conteudo:`<h3>Carência de Afeto - Inclinação Oculta 9</h3>
+        <p>Sua natureza é profundamente empática e voltada ao serviço humanitário, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Porém, essa dedicação heroica ao próximo muitas vezes esconde uma negligência severa com as suas próprias dores e carências. Você tende a "salvar" as outras como uma estratégia inconsciente para evitar olhar para o seu próprio espelho interior.</p>
+        <p>Essa inclinação revela uma carência afetiva latente, que se manifesta na busca incessante por aprovação e reconhecimento através da utilidade. O desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é equilibrar a doação ao mundo com o autorespeito radical. Não se torne uma mártir das necessidades alheias apenas para se sentir amada. A verdadeira compaixão começa em casa: aprenda a nutrir a si mesma com a mesma intensidade que dedica às outras.</p>`,
+     
+      videoID: "F8bg1CTQ9HI"
+    },
+     
+     },
         
 subconsciente: {
-    1: `<h3>Reação Fraca e Dispersa - Subconsciente 1</h3>
+    1:  {
+     conteudo:`<h3>Reação Fraca e Dispersa - Subconsciente 1</h3>
         <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui certa dificuldade em antecipar crises inesperadas, e sua percepção instintiva pode falhar ao identificar a real gravidade de eventos imprevistos. Isso resulta em uma reação inicial dispersa e em uma nítida falta de iniciativa, deixando-a momentaneamente impotente, confusa e sem uma direção clara para onde seguir.</p>
         <p>Embora possua uma resistência vital impressionante, você tem um limite crítico de tolerância. Quando este ponto é atingido, sua postura muda drasticamente para um estado combativo e autoritário. Nesse estágio, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna defensiva e excessivamente crítica, passando a enxergar ameaças em todos os lugares, o que dificulta o recebimento de ajuda externa e retarda severamente sua recuperação emocional. Sua lição é aprender a agir com prontidão sem entrar em modo de guerra.</p>`,
-
-    2: `<h3>Controladora e Individualista - Subconsciente 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2:  {
+     conteudo:`<h3>Controladora e Individualista - Subconsciente 2</h3>
         <p>Apesar de sua flexibilidade habitual no dia a dia, momentos de crise profunda despertam em você um comportamento arredio e cauteloso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Em situações de alta tensão, sua tendência instintiva é evitar o confronto direto a todo custo, mas isso pode dar lugar a uma postura arrogante ou dissimulada, utilizada como um mecanismo de defesa para proteger sua fragilidade interna.</p>
         <p>Se você sente que a derrota é inevitável, pode se abater rapidamente, tornando-se emocionalmente vulnerável e exigindo atenção excessiva das que a cercam. Sob pressão extrema, <strong>MASCULINO-FEMININO-NEUTRO</strong>, surge um forte impulso para tentar controlar o ambiente através da comoção ou do drama, podendo agir de forma fria ou até vingativa contra aquelas que você considera responsáveis pelo seu mal-estar momentâneo. O equilíbrio virá quando você aprender a enfrentar a realidade sem máscaras.</p>`,
-
-    3: `<h3>Impetuosa e Descontrolada - Subconsciente 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3:  {
+     conteudo:`<h3>Impetuosa e Descontrolada - Subconsciente 3</h3>
         <p>Você transita muito bem na rotina comum, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas diante de desafios severos ou perdas súbitas, sua falta de firmeza interna se torna evidente. Sua abordagem nessas horas tende a ser indisciplinada e incoerente, o que dificulta uma leitura precisa da realidade e acaba gerando um pessimismo paralisante que drena sua força de ação.</p>
         <p>Em emergências, sua reação é frequentemente explosiva, teatral e desproporcional ao fato ocorrido. A confusão mental e a falta de foco podem levá-la a atitudes grosseiras ou a estados depressivos súbitos que bloqueiam sua criatividade. Para não sucumbir totalmente às dificuldades, você acaba dependendo crucialmente do apoio de figuras externas que lhe transmitam segurança e proteção emocional, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua evolução depende de encontrar essa segurança dentro de si mesma, e não nas outras.</p>`,
-
-    4: `<h3>Hesitação e Rigidez - Subconsciente 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4:  {
+     conteudo:`<h3>Hesitação e Rigidez - Subconsciente 4</h3>
         <p>Sua natureza é estável e sólida, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas seu apego excessivo a métodos, regras e sistemas conhecidos pode torná-la perigosamente lenta na resposta a eventos inesperados. Sob pressão, você corre o risco de se tornar uma pessoa inflexível, perdendo-se em detalhes irrelevantes e burocráticos enquanto a realidade exige decisões rápidas e práticas.</p>
         <p>A insegurança profunda a torna teimosa e resistente a qualquer mudança que não tenha sido planejada com antecedência. Se sentir que seu terreno seguro está ameaçado, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você pode se tornar uma contestadora implacável e excessivamente rigorosa, utilizando a crítica ácida como um escudo contra o desconhecido. O desafio é entender que a vida não pode ser totalmente controlada e que a verdadeira estabilidade vem da capacidade de se adaptar ao novo sem medo.</p>`,
-
-    5: `<h3>Tensão e Impulsividade - Subconsciente 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5:  {
+     conteudo:`<h3>Tensão e Impulsividade - Subconsciente 5</h3>
         <p>Você se adapta bem ao dinamismo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas o caos absoluto tende a desestabilizar sua sensatez. Em crises agudas, sua reação instintiva costuma ser confusa e inconveniente, deixando-se guiar por instintos básicos de "luta ou fuga" e perdendo a capacidade de tomar decisões assertivas e lógicas.</p>
         <p>Há uma inclinação perigosa a dispersar energia em várias direções apenas para fugir do problema central que causa dor. Se a pressão se torna insuportável, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o desejo de gratificação instantânea pode levá-la a comportamentos de risco ou ao refúgio em vícios como forma de escape da realidade. Nestes momentos críticos, a intervenção de terceiras equilibradas é essencial para recuperar seu eixo, mas sua meta deve ser desenvolver o autocontrole para navegar nessas tormentas sozinha.</p>`,
-
-    6: `<h3>Sensibilidade e Controle - Subconsciente 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6:  {
+     conteudo:`<h3>Sensibilidade e Controle - Subconsciente 6</h3>
         <p>Em situações críticas, sua prioridade absoluta e quase obsessiva é o bem-estar alheio, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você demonstra uma calma aparente e um desejo genuíno de confortar a todas, muitas vezes assumindo responsabilidades pesadas que não lhe pertencem e negligenciando totalmente suas próprias necessidades básicas de saúde e descanso.</p>
         <p>Contudo, esse zelo excessivo pode se transformar em um comportamento intrusivo, sufocante e controlador. Ao tentar "salvar" a todas, você pode começar a ditar ordens autoritárias e ignorar completamente a autonomia das outras pessoas. Se não houver o reconhecimento ou a gratidão que você espera, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você pode oscilar para uma postura presunçosa ou mágoa profunda. Aprenda que ajudar é diferente de controlar, e que sua primeira responsabilidade em uma crise é estar bem para poder ser útil.</p>`,
-
-    7: `<h3>Arredia e Evasiva - Subconsciente 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7:  {
+     conteudo:`<h3>Arredia e Evasiva - Subconsciente 7</h3>
         <p>Sua reação instintiva diante do inesperado ou do choque emocional é o retraimento absoluto, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você tende a analisar as crises de forma fria, distante e calculista, reprimindo suas emoções sob uma camada de gelo e buscando se afastar fisicamente ou emocionalmente do problema para evitar qualquer envolvimento direto.</p>
         <p>Se for forçada ao confronto sem ter para onde fugir, você pode utilizar a ironia mordaz e a manipulação intelectual como ferramentas de defesa. Existe uma tendência latente em você de buscar culpadas externas em vez de soluções práticas e, em estados de isolamento profundo, buscar consolo em hábitos solitários e destrutivos. <strong>MASCULINO-FEMININO-NEUTRO</strong>, fechar-se para o mundo não resolve a crise; sua evolução pede que você aprenda a compartilhar sua vulnerabilidade para encontrar a saída.</p>`,
-
-    8: `<h3>Eficiente e Autoritária - Subconsciente 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8:  {
+     conteudo:`<h3>Eficiente e Autoritária - Subconsciente 8</h3>
         <p>Você costuma ser a figura máxima de estabilidade em qualquer emergência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua reação é focada, organizada e extremamente honesta, assumindo o comando com uma objetividade e eficiência que impressionam. Você é, sem dúvida, a pessoa em quem todas confiam cegamente quando o sistema falha ou o caos se instala.</p>
         <p>No entanto, essa força descomunal pode se tornar esmagadora para as outras. Se for desafiada em sua autoridade durante uma crise, você pode tentar se impor pela força bruta mental ou pela arrogância. Sua dificuldade em lidar com derrotas ou perdas materiais pode gerar explosões de raiva avassaladoras. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o desafio é liderar com humanidade: entenda que em momentos de dor, as pessoas precisam de uma guia forte, mas também de alguém que saiba acolher sem esmagar.</p>`,
-
-    9: `<h3>Apática e Distante - Subconsciente 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9:  {
+     conteudo:`<h3>Apática e Distante - Subconsciente 9</h3>
         <p>Embora você seja uma grande estrategista na teoria, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você enfrenta dificuldades monumentais em administrar crises emocionais imediatas. Sua primeira reação automática tende a ser a apatia ou o afastamento egoísta, agindo com uma indiferença que pode ser dolorosa para quem espera seu apoio em momentos críticos.</p>
-        <p>Ao se sentir ameaçada ou injustiçada em meio ao caos, seu lado mais sombrio emerge: você pode se tornar implacável e maliciosa. Dificilmente perdoa ofensas reais ou imaginárias e pode dedicar uma energia preciosa a planos de retaliação em vez de focar na resolução do problema. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua tendência a se fechar em seu próprio mundo interno a torna uma figura pouco confiável para o grupo em emergências. Sua meta é transformar essa apatia em compaixão ativa, agindo pelo bem comum mesmo quando sua alma quer fugir.</p>`
-},
+        <p>Ao se sentir ameaçada ou injustiçada em meio ao caos, seu lado mais sombrio emerge: você pode se tornar implacável e maliciosa. Dificilmente perdoa ofensas reais ou imaginárias e pode dedicar uma energia preciosa a planos de retaliação em vez de focar na resolução do problema. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua tendência a se fechar em seu próprio mundo interno a torna uma figura pouco confiável para o grupo em emergências. Sua meta é transformar essa apatia em compaixão ativa, agindo pelo bem comum mesmo quando sua alma quer fugir.</p>`,
+       videoID: "F8bg1CTQ9HI"
+    },
+
+    },
 
 
  
 talento: {     
     
-     1: `<h3>Liderança Pioneira e Iniciativa Independente - Talento 1</h3>
+     1:  {
+     conteudo:`<h3>Liderança Pioneira e Iniciativa Independente - Talento 1</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, reside na capacidade inata de abrir caminhos onde outras veem apenas obstáculos intransponíveis. Existe uma facilidade natural para tomar decisões rápidas sob pressão e assumir o comando de situações complexas sem qualquer hesitação. Você possui a habilidade rara de criar soluções originais e agir com um pioneirismo que inspira confiança imediata, transformando ideias abstratas em ações concretas com uma coragem que muitas vezes ocorre de forma silenciosa e instintiva em seu cotidiano.</p>
     <p>Este dom indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é uma iniciadora por excelência. Seu sucesso flui quando você confia no seu "feeling" para novos negócios ou projetos, pois sua mente está programada para detectar tendências antes de todo mundo. Use essa força para liderar movimentos e não tenha medo de ser a primeira a dar o passo; sua independência é sua maior riqueza.</p>`,
-
-    2: `<h3>Mediação Diplomática e Percepção de Detalhes - Talento 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2:  {
+     conteudo:`<h3>Mediação Diplomática e Percepção de Detalhes - Talento 2</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui o talento extraordinário de perceber as nuances, tons de voz e sentimentos sutis que passam completamente despercebidos pela maioria das pessoas. Essa sensibilidade apurada permite que você atue como o ponto de equilíbrio perfeito em qualquer ambiente, resolvendo conflitos antes mesmo que eles estourem através de uma diplomacia impecável e de uma cooperação genuína.</p>
     <p>O seu talento flui com maestria na arte de unir pessoas e na execução de tarefas que exigem minúcia, paciência extrema e um tato social refinado. <strong>MASCULINO-FEMININO-NEUTRO</strong>, você é a "cola" que mantém as equipes unidas. No mundo profissional, sua habilidade para parcerias e suporte estratégico é um diferencial que atrai pessoas influentes e oportunidades que dependem da confiança e do bom relacionamento de longo prazo.</p>`,
-
-    3: `<h3>Comunicação Criativa e Expressão Cativante - Talento 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3:  {
+     conteudo:`<h3>Comunicação Criativa e Expressão Cativante - Talento 3</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a facilidade quase mágica de transformar ideias brutas em mensagens envolventes, lúdicas e inspiradoras. Existe em você um dom natural para a comunicação — seja ela falada, escrita ou artística — que magnetiza a atenção de forma espontânea e contagiante. Você consegue injetar leveza e entusiasmo nos projetos mais sérios, utilizando seu carisma para motivar grupos inteiros.</p>
     <p>Essa energia indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem um poder de convencimento único. Seu sucesso está ligado à sua capacidade de dar cor a conceitos que pareciam monótonos ou sem vida. Use essa habilidade para o marketing, para o ensino ou para qualquer área onde a expressão da verdade com criatividade seja necessária. O mundo ouve quando você decide falar, então use sua voz para espalhar brilho e clareza.</p>`,
-
-    4: `<h3>Organização Estrutural e Eficiência Prática - Talento 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4:  {
+     conteudo:`<h3>Organização Estrutural e Eficiência Prática - Talento 4</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem o talento admirável de trazer ordem ao caos absoluto com uma facilidade impressionante. Essa habilidade se manifesta na sua capacidade superior de planejar, estruturar e executar tarefas com uma precisão técnica que beira a perfeição. Seu talento reside na construção de bases sólidas e na gestão de processos complexos que garantem segurança e resultados duradouros.</p>
     <p>Essa força indica que você é o pilar de qualquer estrutura, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Enquanto outras se perdem na teoria, você foca no que funciona. Sua disciplina parece natural e sem esforço, o que a torna a pessoa ideal para projetos de longo prazo e alta responsabilidade. O seu caminho para a prosperidade está na sua reputação de seriedade e na entrega constante de um trabalho feito para durar gerações.</p>`,
-
-    5: `<h3>Adaptabilidade Veloz e Inovação Dinâmica - Talento 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5:  {
+     conteudo:`<h3>Adaptabilidade Veloz e Inovação Dinâmica - Talento 5</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a versatilidade absoluta e a coragem diante das mudanças drásticas. Existe em você uma facilidade incomum para aprender novas habilidades em tempo recorde e se adaptar a diferentes cenários, tecnologias ou culturas sem perder a essência. Você possui o dom da inovação radical, conseguindo promover transformações rápidas que mantêm os projetos em constante evolução.</p>
     <p>Este talento indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é uma agente de mudança nata. Onde as pessoas veem medo no novo, você vê uma aventura lucrativa. Sua mente é progressista e detesta a estagnação. No mercado atual, sua agilidade mental e facilidade em vender ideias modernas fazem de você uma peça-chave em qualquer setor que precise de renovação e movimento constante.</p>`,
-
-    6: `<h3>Harmonização de Ambientes e Cuidado Educativo - Talento 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6:  {
+     conteudo:`<h3>Harmonização de Ambientes e Cuidado Educativo - Talento 6</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui o talento natural de criar uma atmosfera de harmonia, beleza e bem-estar onde quer que esteja presente. Essa habilidade se traduz em uma capacidade superior de aconselhar, cuidar e organizar espaços ou grupos de forma que todos se sintam acolhidos, valorizados e seguros sob sua supervisão. O seu talento flui na responsabilidade afetiva e na busca incessante pela justiça.</p>
     <p>Você atua como um pilar de equilíbrio ético e estético na vida das pessoas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu dom para a mediação familiar e comunitária é poderoso e traz uma autoridade baseada no amor e no respeito. Profissionalmente, você brilha em áreas que lidam com o público, com o ensino ou com a criação de produtos que visam melhorar a qualidade de vida e a harmonia dos lares e das relações humanas.</p>`,
-
-    7: `<h3>Análise Profunda e Especialização Técnica - Talento 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7:  {
+     conteudo:`<h3>Análise Profunda e Especialização Técnica - Talento 7</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, reside em uma mente analítica de elite e na busca incansável pela perfeição intelectual. Existe em você uma facilidade nata para investigar a fundo qualquer tema, detectando falhas lógicas ou verdades ocultas que a maioria ignora. Você possui o dom da observação silenciosa e do estudo especializado, atingindo níveis de compreensão técnica que a tornam uma autoridade natural.</p>
     <p>Sua sabedoria não é superficial, <strong>MASCULINO-FEMININO-NEUTRO</strong>; ela é fruto de uma conexão profunda com o conhecimento. Esse talento indica que você se destaca em qualquer campo que exija pesquisa, tecnologia, perícia ou espiritualidade aplicada. Sua opinião é respeitada porque todos sabem que, se você disse algo, é porque estudou e validou cada detalhe com rigor e inteligência superior.</p>`,
-
-    8: `<h3>Visão Estratégica e Gestão de Resultados - Talento 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8:  {
+     conteudo:`<h3>Visão Estratégica e Gestão de Resultados - Talento 8</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tem um talento nato para lidar com o poder, as grandes finanças e a administração de recursos em larga escala. Essa habilidade se manifesta em uma visão estratégica privilegiada que permite identificar oportunidades reais de crescimento onde ninguém mais consegue enxergar. O seu talento flui na organização de sistemas produtivos eficientes e na liderança executiva de alto nível.</p>
     <p>Este dom revela uma capacidade de realização material extraordinária, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você sabe como transformar esforços isolados em prosperidade tangível e duradoura. Use esse talento para empreender e gerir negócios, pois você possui a autoridade necessária para comandar grandes equipes e garantir que a justiça e a eficiência caminhem juntas na construção de um legado financeiro sólido.</p>`,
-
-    9: `<h3>Visão Humanitária e Compreensão Universal - Talento 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9:  {
+     conteudo:`<h3>Visão Humanitária e Compreensão Universal - Talento 9</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a capacidade profunda de compreender as necessidades humanas em uma escala global e empática. Existe em você um dom especial para inspirar o altruísmo, o perdão e a generosidade, transcendendo interesses mesquinhos ou individuais. Você possui a habilidade rara de concluir ciclos complexos com sabedoria e servir como uma guia para a transformação positiva do mundo.</p>
     <p>Sua ética abraça toda a existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o que faz de você uma referência espiritual e humanitária. Seu talento brilha em causas sociais, em artes que tocam o coração ou em lideranças que buscam o bem coletivo. Você tem a visão do todo e consegue ensinar aos outros o valor do desapego e do amor universal, transformando qualquer ambiente em um lugar mais consciente e evoluído.</p>`,
-
-11: `<h3>Intuição Visionária e Inspiração Elevada - Talento 11</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+11:  {
+     conteudo:`<h3>Intuição Visionária e Inspiração Elevada - Talento 11</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, reside em uma sensibilidade psíquica e intuitiva que ultrapassa a lógica comum. Existe em você uma capacidade inata de receber lampejos de genialidade e "enxergar" soluções através de uma percepção espiritual ou idealista muito aguçada. Você possui o dom de servir como um canal de luz e inspiração, sendo capaz de elevar a consciência das pessoas ao seu redor apenas com a sua presença ou com suas ideias inovadoras.</p>
     <p>Este dom revela que você é uma mestra da inspiração, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu sucesso acontece quando você aprende a confiar na sua voz interior acima do barulho do mundo. Embora esse talento exija maturidade para ser controlado, ele confere a você um carisma magnético e a habilidade de guiar outras em direção a novos ideais. Use essa força para iluminar caminhos, seja nas artes, no ensino ou na liderança de movimentos que buscam um propósito maior.</p>`,
-
-    22: `<h3>Maestria na Construção e Realização de Grandes Ideais - Talento 22</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    22: {
+     conteudo: `<h3>Maestria na Construção e Realização de Grandes Ideais - Talento 22</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui o talento extraordinário de transformar sonhos utópicos em realidades concretas e monumentais. Esse é o dom da "Arquiteta Mestra", que combina uma visão espiritual profunda com uma capacidade prática e pragmática sem paralelos. Seu talento reside na habilidade de planejar e executar projetos que beneficiam grandes grupos de pessoas, estruturando sistemas que promovem o progresso da humanidade.</p>
     <p>Esta força indica uma capacidade de trabalho em larga escala, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Enquanto outras ficam apenas no plano das ideias, você tem a estrutura interna para lidar com as complexidades do mundo material e erguer bases sólidas. O seu caminho para a prosperidade está ligado a grandes empreendimentos, obras sociais ou sistemas de gestão que deixem um legado duradouro de eficiência e bem-estar coletivo.</p>`,
-
-    33: `<h3>Orientação Compassiva e Maestria do Amor Universal - Talento 33</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    33: {
+     conteudo:`<h3>Orientação Compassiva e Maestria do Amor Universal - Talento 33</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a expressão máxima da entrega e do sacrifício em prol da evolução alheia. Existe em você um dom quase magnético para o aconselhamento e para a proteção dos mais fracos, agindo como uma "Mestra da Cura" através da palavra e do exemplo. Você possui a habilidade rara de harmonizar conflitos de alta complexidade utilizando uma compaixão que não julga, mas transforma profundamente quem recebe seu cuidado.</p>
     <p>Essa energia indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é uma guia para o coração da humanidade. Seu sucesso está intrinsecamente ligado ao serviço altruísta e à responsabilidade de cuidar do equilíbrio ético de sua comunidade ou área de atuação. Use essa habilidade para educar, curar ou liderar através do amor incondicional. O mundo encontra conforto e direção sob sua tutela, tornando você uma referência de integridade e proteção espiritual.</p>`,
-
- 44: `<h3>Estabilidade Absoluta e Eficiência em Larga Escala - Talento 44</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+ 44:  {
+     conteudo:`<h3>Estabilidade Absoluta e Eficiência em Larga Escala - Talento 44</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, reside na capacidade de manifestar estabilidade material em níveis extraordinários. Existe em você uma disciplina inabalável para construir impérios ou gerir infraestruturas complexas com uma resistência que poucas possuem. Você tem o dom de aterrar as visões mais elevadas, transformando-as em resultados práticos e tangíveis que oferecem segurança real e duradoura para centenas ou milhares de pessoas.</p>
     <p>Este dom indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a construtora do mundo físico por excelência. Seu sucesso flui na gestão de grandes recursos e na implementação de métodos rigorosos que garantem a ordem absoluta. Use essa força para consolidar projetos de escala global; sua capacidade de trabalho e sua autoridade prática são as bases sobre as quais grandes instituições são erguidas.</p>`,
-
-    55: `<h3>Liberdade Progressista e Liderança em Transformação - Talento 55</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    55:  {
+     conteudo:`<h3>Liberdade Progressista e Liderança em Transformação - Talento 55</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui o talento raro de canalizar mudanças revolucionárias com uma velocidade impressionante. Essa habilidade se manifesta na quebra de padrões obsoletos e na promoção de uma liberdade que impulsiona o progresso coletivo. Seu talento reside na comunicação direta e na coragem de explorar territórios desconhecidos, agindo como um farol de inovação que guia a sociedade para fora da estagnação.</p>
     <p>Essa energia indica que você é uma catalisadora de expansão, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Enquanto outras temem a instabilidade, você a utiliza como combustível para o crescimento. O seu caminho para a prosperidade está em setores de tecnologia, viagens, comunicação ou qualquer área que exija uma mente sem fronteiras e uma capacidade de adaptação que beira o impossível.</p>`,
-
-    66: `<h3>Responsabilidade Universal e Harmonização Global - Talento 66</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    66:  {
+     conteudo:`<h3>Responsabilidade Universal e Harmonização Global - Talento 66</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a expressão máxima do cuidado e da justiça aplicados à coletividade. Existe em você um dom magnético para restaurar a harmonia em sistemas sociais desequilibrados, agindo com uma integridade ética que serve de exemplo para todos. Você possui a habilidade de nutrir ideais de beleza e ordem em larga escala, tornando-se a guardiã do bem-estar social.</p>
     <p>Sua força reside no equilíbrio entre o dever e a compaixão, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu sucesso está ligado a projetos que visam a cura de comunidades, a educação em massa ou o design de soluções que tragam paz aos lares do mundo todo. Use seu senso estético e ético para elevar os padrões da humanidade; você nasceu para ser o pilar de uma nova consciência familiar e comunitária.</p>`,
-
-    77: `<h3>Introspecção Reveladora e Maestria da Verdade - Talento 77</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    77: {
+     conteudo: `<h3>Introspecção Reveladora e Maestria da Verdade - Talento 77</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui uma mente analítica de vibração superior, capaz de decifrar os mistérios mais profundos da existência e da tecnologia. Este talento se traduz em uma percepção aguçada que detecta padrões invisíveis e verdades universais com uma clareza absoluta. Sua habilidade para a especialização intelectual e espiritual faz de você uma autoridade em campos que exigem profunda introspecção e rigor científico.</p>
     <p>Este dom revela uma conexão direta com a sabedoria ancestral e tecnológica, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu sucesso acontece no silêncio da pesquisa e na entrega de diagnósticos infalíveis. Use sua mente de elite para desvendar o que está oculto; o mundo recorre a você quando precisa de respostas que a lógica comum não consegue alcançar, tornando sua voz um sinônimo de verdade absoluta.</p>`,
-
-    88: `<h3>Autoridade Executiva e Maestria Material - Talento 88</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    88: {
+     conteudo: `<h3>Autoridade Executiva e Maestria Material - Talento 88</h3>
     <p>O seu talento oculto, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a capacidade colossal de gerir o poder e o capital para a criação de um legado imperecível. Existe em você uma visão estratégica de "olho de águia" que antecipa crises e identifica o potencial máximo de lucros e resultados em sistemas globais. Você possui a força necessária para liderar corporações ou movimentos financeiros com uma mão firme e uma justiça impecável.</p>
     <p>Essa energia indica que você nasceu para o topo das estruturas de poder, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu sucesso está na capacidade de multiplicar recursos de forma ética e eficiente. Use sua disciplina executiva para transformar visões ambiciosas em realidades prósperas; sua habilidade em equilibrar o mundo espiritual com a abundância material é o seu maior diferencial competitivo.</p>`,
-
-    99: `<h3>Consciência Crística e Encerramento de Eras - Talento 99</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    99:  {
+     conteudo:`<h3>Consciência Crística e Encerramento de Eras - Talento 99</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui o talento extraordinário de servir como um canal de amor incondicional e sabedoria universal para toda a humanidade. Essa habilidade se manifesta na facilidade de concluir grandes ciclos cármicos e sociais, preparando o terreno para o novo. O seu talento reside no desapego total e na capacidade de inspirar multidões através do exemplo de dedicação altruísta e compreensão global.</p>
-    <p>Sua visão ultrapassa fronteiras e línguas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é a guia que ensina o mundo a se curar através da generosidade e da visão holística. Seu sucesso está ligado a causas de impacto planetário, artes que elevam o espírito ou lideranças humanitárias. Onde houver necessidade de transformação profunda e redenção, sua presença será a luz que orienta o caminho final.</p>`
+    <p>Sua visão ultrapassa fronteiras e línguas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você é a guia que ensina o mundo a se curar através da generosidade e da visão holística. Seu sucesso está ligado a causas de impacto planetário, artes que elevam o espírito ou lideranças humanitárias. Onde houver necessidade de transformação profunda e redenção, sua presença será a luz que orienta o caminho final.</p>`,
+       videoID: "F8bg1CTQ9HI"
+    },
     },
 
 essencia: {
-    1: `<h3>Reação de Liderança e Controle - Essência 1</h3>
+    1: {
+     conteudo:`<h3>Reação de Liderança e Controle - Essência 1</h3>
     <p>A sua reação interna primária, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é marcada por um impulso avassalador de autonomia, coragem e autoconfiança. Diante do inesperado, o desejo de assumir as rédeas do destino surge de forma quase instantânea em seu íntimo, impulsionando ações rápidas, decididas e originais para solucionar qualquer impasse com total independência e vigor.</p>
     <p>O grande desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está em não permitir que essa força bruta se transforme em uma postura autoritária ou impaciente no calor do momento. A verdadeira maestria da sua alma acontece quando você equilibra o entusiasmo do começo com uma escuta atenta aos detalhes. Ao fazer isso, você transforma a impulsividade inicial em uma autoridade natural, respeitada e estrategicamente eficiente, capaz de fundar novos impérios.</p>`,
-
-    2: `<h3>Reação de Diplomacia e Sensibilidade - Essência 2</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    2: {
+     conteudo:`<h3>Reação de Diplomacia e Sensibilidade - Essência 2</h3>
     <p>A sua resposta interna, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de uma natureza profundamente diplomática, receptiva e cooperativa. Ao enfrentar qualquer dificuldade, sua primeira tendência de alma é buscar o equilíbrio e considerar cuidadosamente os sentimentos de todas as envolvidas, evitando ao máximo qualquer tipo de ruptura brusca ou confronto direto que possa ferir a harmonia do ambiente.</p>
     <p>A maturidade espiritual ensina você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a não transformar essa busca por paz em uma anulação dos seus próprios desejos. O equilíbrio real ocorre quando você utiliza sua sensibilidade aguçada para mediar a situação com firmeza gentil, sem permitir que a indecisão ou a dependência da aprovação alheia paralisem sua capacidade de agir. Sua alma brilha através da união e da força silenciosa da parceria.</p>`,
-
-    3: `<h3>Reação de Criatividade e Otimismo - Essência 3</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Reação de Criatividade e Otimismo - Essência 3</h3>
     <p>A reação imediata da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é pautada por uma criatividade efervescente e por uma comunicação que flui naturalmente. Existe em você um otimismo nato que busca encontrar saídas alegres e originais para os problemas, utilizando seu pensamento rápido e carismático para desarmar tensões e transformar crises em oportunidades brilhantes de expressão e brilho pessoal.</p>
     <p>O cuidado vital para você é evitar que essa agitação mental constante gere dispersão de energia. Quando a sua criatividade inicial é canalizada com foco e disciplina, os resultados são nada menos que extraordinários; do contrário, a tendência de você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode ser a de gastar seu precioso potencial com superficialidades ou distrações que não resolvem o cerne da questão. Sua alma quer criar; ensine-a a concluir.</p>`,
-
-    4: `<h3>Reação de Pragmatismo e Estrutura - Essência 4</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Reação de Pragmatismo e Estrutura - Essência 4</h3>
     <p>Internamente, a sua resposta, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é sempre pragmática e fundamentada em uma busca inegociável por segurança e ordem. Diante de imprevistos, sua alma busca se ancorar imediatamente em métodos comprovados e na organização meticulosa, preferindo a estabilidade duradoura do "passo a passo" à inovação arriscada ou sem fundamentos sólidos.</p>
     <p>A rigidez mental pode ser o maior obstáculo interno para você em momentos de mudança global. O seu desenvolvimento pessoal auxilia você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a manter a estrutura necessária, mas injetando a flexibilidade suficiente para aceitar o imprevisto como parte do plano. Sua eficiência máxima surge da união entre o seu método impecável e uma nova capacidade de adaptação, tornando-a o alicerce de qualquer projeto de sucesso.</p>`,
-
-    5: `<h3>Reação de Agilidade e Adaptabilidade - Essência 5</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Reação de Agilidade e Adaptabilidade - Essência 5</h3>
     <p>A sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, vibra na frequência da rapidez e da versatilidade absoluta. Sua resposta interna a qualquer desafio é a curiosidade renovada e o movimento dinâmico, buscando soluções fora do comum e agindo com uma agilidade mental que costuma surpreender e até desorientar os ritmos mais lentos ao seu redor.</p>
     <p>A impulsividade, contudo, pode levar você a escolhas precipitadas das quais pode se arrepender. O segredo do seu equilíbrio reside em usar essa versatilidade de forma estratégica, aprendendo a dar uma pausa consciente antes de agir. Assim, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua liberdade de escolha será sempre produtiva e direcionada ao progresso real, permitindo que você mude o mundo sem se perder no caminho.</p>`,
-
-    6: `<h3>Reação de Proteção e Responsabilidade - Essência 6</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    6:{
+     conteudo: `<h3>Reação de Proteção e Responsabilidade - Essência 6</h3>
     <p>Diante de conflitos ou dores, a sua reação interna, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de proteção e cuidado imediato. O seu instinto de preservar as pessoas estimadas e o ambiente doméstico ou profissional sobressai a qualquer interesse egoísta, fazendo com que você tome as responsabilidades coletivas como se fossem estritamente próprias, buscando restaurar a paz social.</p>
     <p>É preciso um cuidado especial para que esse seu zelo profundo não se torne um controle excessivo ou uma interferência intrusiva na vida alheia. A verdadeira eficácia da sua essência aparece quando você apoia o próximo sem anular a autonomia dele, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Mantenha seu equilíbrio emocional e entenda que servir com amor também significa saber a hora de soltar as mãos dos outros para que cresçam sozinhos.</p>`,
-
-    7: `<h3>Reação de Análise e Introspecção - Essência 7</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    7: {
+     conteudo:`<h3>Reação de Análise e Introspecção - Essência 7</h3>
     <p>A primeira resposta da sua alma diante do mundo é o recolhimento analítico e o processamento interno silencioso. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tende a se afastar do ruído externo para avaliar os fatos sob a ótica da razão e da intuição técnica, buscando uma compreensão profunda e absoluta antes de manifestar qualquer opinião ou ação definitiva.</p>
     <p>O seu desafio é não permitir que esse afastamento necessário se torne um isolamento frio, sarcástico ou melancólico. Ao decidir compartilhar suas conclusões de forma clara e acessível, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, transforma seu vasto conhecimento em uma ferramenta poderosa para resolver problemas complexos com uma precisão cirúrgica que poucas possuem. Sua essência busca a verdade; deixe que essa luz também ilumine os outros.</p>`,
-
-    8: `<h3>Reação de Autoridade e Objetividade - Essência 8</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    8: {
+     conteudo:`<h3>Reação de Autoridade e Objetividade - Essência 8</h3>
     <p>A sua reação interna, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é de autoridade natural, ambição elevada e um foco prático implacável. Diante de qualquer obstáculo, sua mente processa imediatamente a melhor estratégia executiva para vencer, agindo com uma objetividade que prioriza resultados materiais, justiça e eficiência de alto nível.</p>
     <p>No calor do momento, sua sede de controle e comando pode gerar tensões desnecessárias com quem possui um ritmo diferente. O autodesenvolvimento permite que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, lidere com ética e generosidade, garantindo que o sucesso financeiro e o prestígio sejam alcançados sem ferir a integridade das pessoas. Sua alma nasceu para realizar grandes feitos; faça isso com a mão de ferro de uma líder e o coração de uma sábia.</p>`,
-
-    9: `<h3>Reação de Humanitarismo e Sabedoria - Essência 9</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Reação de Humanitarismo e Sabedoria - Essência 9</h3>
     <p>A sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, responde aos desafios da vida com uma visão ampla, generosa e profundamente humanitária. Existe em você uma tendência natural ao desprendimento e à compreensão de que tudo faz parte de um ciclo universal maior, o que lhe confere uma sabedoria instintiva e uma calma admirável mesmo diante de crises profundas.</p>
     <p>O risco para você é cair em um idealismo excessivamente abstrato quando a realidade material se mostra dura ou injusta. A maturidade ensina você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a usar essa compaixão universal de forma prática, transformando sua sabedoria interna em ações concretas que beneficiam tanto o seu crescimento pessoal quanto o coletivo. Sua alma é o fim de um ciclo; brilhe com a luz de quem já compreendeu o valor do desapego e do amor incondicional.</p>`,
-
-    11: `<h3>Reação de Intuição Visionária - Essência 11</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    11: {
+     conteudo:`<h3>Reação de Intuição Visionária - Essência 11</h3>
     <p>A Essência 11 indica que o cerne da sua individualidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é puramente intuitivo, vibrante e sutil. Diante de qualquer estímulo externo, você emite uma vibração de sabedoria nata e originalidade radical, agindo como um farol de ideias revolucionárias que transcendem completamente a lógica comum e o senso médio.</p>
     <p>Sua reação interna busca sempre o significado espiritual, ético ou elevado por trás de cada fato cotidiano. O seu grande desafio é aterrar essa percepção aguçada no mundo material, transformando o seu idealismo visionário em uma força inspiradora real. <strong>MASCULINO-FEMININO-NEUTRO</strong>, quando você confia no seu canal intuitivo, você guia os outros não por palavras, mas pelo exemplo de uma integridade superior e de uma percepção que enxerga além do tempo presente.</p>`,
-
-    22: `<h3>Reação de Maestria Realizadora - Essência 22</h3>
+  videoID: "F8bg1CTQ9HI"
+    },
+    22: {
+     conteudo:`<h3>Reação de Maestria Realizadora - Essência 22</h3>
     <p>A Essência 22 revela um núcleo de imenso poder realizador e um pragmatismo operando em larga escala dentro de você. A base da sua personalidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é voltada para a construção de algo sólido, grandioso e transformador; você possui a semente de uma "mestra construtora" operando em cada resposta interna que dá ao mundo.</p>
-    <p>Ao enfrentar desafios, sua mente organiza recursos, pessoas e projeta estruturas duradouras de forma quase automática e genial. O objetivo central da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é materializar sonhos elevados em realidades concretas que beneficiem a humanidade, unindo uma visão de longo alcance à competência técnica absoluta. Você não nasceu para o pequeno; sua alma exige que você construa legados que permaneçam muito depois de você.</p>`
-}
+    <p>Ao enfrentar desafios, sua mente organiza recursos, pessoas e projeta estruturas duradouras de forma quase automática e genial. O objetivo central da sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é materializar sonhos elevados em realidades concretas que beneficiem a humanidade, unindo uma visão de longo alcance à competência técnica absoluta. Você não nasceu para o pequeno; sua alma exige que você construa legados que permaneçam muito depois de você.</p>`,
+     
+  videoID: "F8bg1CTQ9HI"
+    },
+     }
 };
 
 window.bancoEquilibrioUnificado = {
@@ -4209,714 +4547,1109 @@ window.bancoEquilibrioUnificado = {
         // --- NÚMERO 1 (Liderança, Início, Independência) ---
         
         // FÍSICO (Ação, Corpo, Prática)
-        "1_fisico_criativo": `<h3>Liderança Prática e Criativa</h3>
+        "1_fisico_criativo": {
+     conteudo:`<h3>Liderança Prática e Criativa</h3>
             <p>Sua primeira inclinação é marcada por uma autonomia voltada para a ação imediata. Por ser uma expressão <strong>Física e Criativa</strong>, você não espera ordens; você visualiza a solução e coloca as mãos na massa com uma originalidade impressionante. Sua atitude é de quem constrói o caminho enquanto caminha, liderando pelo exemplo prático.</p>`,
-        
-        "1_fisico_indeciso": `<h3>Iniciativa Física sob Cautela</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_fisico_indeciso": {
+     conteudo:`<h3>Iniciativa Física sob Cautela</h3>
             <p>Você possui o instinto de liderança do número 1, mas sua expressão <strong>Física e Indecisa</strong> faz com que você sinta uma hesitação corporal antes de agir. Você deseja assumir as rédeas, mas prefere testar o terreno fisicamente antes de se lançar totalmente, buscando segurança na execução para não perder o controle do projeto.</p>`,
-        
-        "1_fisico_neutro": `<h3>Autonomia Estável e Direta</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_fisico_neutro": {
+     conteudo:`<h3>Autonomia Estável e Direta</h3>
             <p>Sua atitude inicial é de um pioneirismo sólido e constante. No plano <strong>Físico Neutro</strong>, você aborda oportunidades com uma seriedade prática, sem grandes oscilações emocionais. Você assume o comando de forma natural e mantém o ritmo de trabalho estável até que as bases do início estejam bem fixadas.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Estratégia, Lógica, Pensamento)
-        "1_mental_criativo": `<h3>Pioneirismo Intelectual e Inovador</h3>
+        "1_mental_criativo": {
+     conteudo:`<h3>Pioneirismo Intelectual e Inovador</h3>
             <p>Sua inclinação inicial é a de um arquiteto de ideias. No plano <strong>Mental Criativo</strong>, você lidera através de conceitos novos e visões estratégicas. Antes mesmo de agir, sua mente já criou o mapa completo. Você rompe obstáculos usando a inteligência e convence os outros através da lógica brilhante de seus projetos.</p>`,
-        
-        "1_mental_indeciso": `<h3>Liderança Analítica e Reflexiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_mental_indeciso": {
+     conteudo:`<h3>Liderança Analítica e Reflexiva</h3>
             <p>Sua força de vontade (1) é filtrada por uma mente que processa todas as variáveis possíveis. Por ser <strong>Mental e Indecisa</strong>, sua atitude inicial é de cautela intelectual. Você assume o controle, mas pode demorar a dar o primeiro passo por estar analisando riscos. Uma vez decidido, sua liderança é extremamente fundamentada.</p>`,
-        
-        "1_mental_neutro": `<h3>Comando Lógico e Objetivo</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_mental_neutro": {
+     conteudo:`<h3>Comando Lógico e Objetivo</h3>
             <p>Você aborda o novo com uma clareza mental absoluta. No plano <strong>Mental Neutro</strong>, sua liderança inicial é desprovida de impulsividade. Você analisa a oportunidade friamente e define a estratégia com autoridade. É a inclinação de quem governa através da razão e da organização impecável.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "1_emocional_criativo": `<h3>Liderança Inspirada e Magnética</h3>
+        "1_emocional_criativo": {
+     conteudo:`<h3>Liderança Inspirada e Magnética</h3>
             <p>Sua primeira atitude é carregar os outros através do entusiasmo. No plano <strong>Emocional Criativo</strong>, sua liderança (1) é vibrante e apaixonada. Você inicia ciclos criando conexões fortes e usando seu magnetismo pessoal para abrir portas. Sua coragem vem do que você sente e acredita.</p>`,
-        
-        "1_emocional_indeciso": `<h3>Iniciativa Sensível e Reativa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_emocional_indeciso":{
+     conteudo: `<h3>Iniciativa Sensível e Reativa</h3>
             <p>Sua inclinação para o comando é influenciada pelas suas flutuações sentimentais. Sendo <strong>Emocional e Indeciso</strong>, você pode começar um projeto com muita força em um dia e hesitar no outro por causa do ambiente. Você lidera melhor quando se sente emocionalmente seguro e acolhido no início da jornada.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "1_intuitivo_criativo": `<h3>Visão Visionária e Instintiva</h3>
+        "1_intuitivo_criativo":{
+     conteudo: `<h3>Visão Visionária e Instintiva</h3>
             <p>Sua atitude inicial transcende a lógica; você "sente" o caminho. No plano <strong>Intuitivo Criativo</strong>, você assume a liderança baseando-se em lampejos de inspiração. Sua inclinação é pioneira e espiritualizada, agindo como um canal para soluções que outros ainda não conseguem enxergar.</p>`,
-        
-        "1_intuitivo_indeciso": `<h3>Percepção Pioneira sob Dúvida</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_intuitivo_indeciso": {
+     conteudo:`<h3>Percepção Pioneira sob Dúvida</h3>
             <p>Você capta a necessidade de agir (1) através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> cria uma névoa de dúvida sobre seus pressentimentos. Sua inclinação inicial é a de quem busca um sinal ou uma confirmação interna antes de exercer sua autoridade total sobre a situação.</p>`,
-        
-        "1_intuitivo_neutro": `<h3>Liderança Silenciosa e Perceptiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_intuitivo_neutro":{
+     conteudo: `<h3>Liderança Silenciosa e Perceptiva</h3>
             <p>Sua abordagem inicial é calma e profundamente conectada com o ambiente. No plano <strong>Intuitivo Neutro</strong>, você assume as rédeas sem precisar de barulho. Você simplesmente sabe o que deve ser feito e inicia o movimento com uma confiança silenciosa que transmite segurança a todos.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
      // --- NÚMERO 2 (Diplomacia, Cooperação, Sensibilidade) ---
         
         // FÍSICO (Ação, Corpo, Prática)
-        "2_fisico_criativo": `<h3>Cooperação Prática e Inventiva</h3>
+        "2_fisico_criativo": {
+     conteudo:`<h3>Cooperação Prática e Inventiva</h3>
             <p>Sua inclinação inicial (2) é a de quem busca harmonia através da ação. Por ser <strong>Física e Criativa</strong>, sua atitude inicial é ajudar a construir as bases de forma colaborativa, trazendo soluções manuais ou práticas para que o grupo avance. Você inicia projetos sendo o braço direito que todos desejam ter.</p>`,
-        
-        "2_fisico_indeciso": `<h3>Apoio Físico sob Hesitação</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_fisico_indeciso": {
+     conteudo:`<h3>Apoio Físico sob Hesitação</h3>
             <p>Você tem o desejo natural de cooperar, mas sua expressão <strong>Física e Indecisa</strong> faz com que você espere o movimento do outro antes de agir. Sua inclinação é de suporte, mas você pode se sentir "travado" corporalmente se o ambiente não for seguro o suficiente para sua primeira ação prática.</p>`,
-        
-        "2_fisico_neutro": `<h3>Auxílio Estável e Concreto</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_fisico_neutro": {
+     conteudo:`<h3>Auxílio Estável e Concreto</h3>
             <p>Sua abordagem é a da paciência física. No plano <strong>Físico Neutro</strong>, você se coloca à disposição de forma constante e silenciosa. Sua atitude inicial é de quem organiza o espaço e as ferramentas, garantindo que a parceria comece com bases sólidas e sem sobressaltos.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Estratégia, Lógica, Pensamento)
-        "2_mental_criativo": `<h3>Diplomacia Estratégica e Brilhante</h3>
+        "2_mental_criativo":{
+     conteudo: `<h3>Diplomacia Estratégica e Brilhante</h3>
             <p>Sua inclinação inicial é a mediação intelectual. No plano <strong>Mental Criativo</strong>, você usa sua inteligência para unir ideias opostas e criar pontes. Sua atitude é a de quem ouve todos os lados e propõe uma saída lógica e inovadora que beneficie a todos no início do processo.</p>`,
-        
-        "2_mental_indeciso": `<h3>Análise Dual e Reflexiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_mental_indeciso": {
+     conteudo:`<h3>Análise Dual e Reflexiva</h3>
             <p>Sua sensibilidade (2) é filtrada por uma mente que vê os dois lados de tudo simultaneamente. Por ser <strong>Mental e Indecisa</strong>, sua atitude inicial pode ser de muita dúvida; você pensa tanto nas consequências para os outros que acaba demorando a se posicionar, buscando a perfeição no trato interpessoal.</p>`,
-        
-        "2_mental_neutro": `<h3>Mediação Objetiva e Lógica</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_mental_neutro": {
+     conteudo:`<h3>Mediação Objetiva e Lógica</h3>
             <p>Você aborda o novo com um olhar de equilíbrio racional. No plano <strong>Mental Neutro</strong>, sua inclinação é observar as regras e os contratos sociais com clareza. Você inicia parcerias definindo termos justos e mantendo uma comunicação impessoal, porém extremamente eficiente e harmoniosa.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "2_emocional_criativo": `<h3>Empatia Magnética e Acolhedora</h3>
+        "2_emocional_criativo":{
+     conteudo: `<h3>Empatia Magnética e Acolhedora</h3>
             <p>Sua primeira atitude é criar um laço afetivo. No plano <strong>Emocional Criativo</strong>, sua inclinação é envolver as pessoas com doçura e imaginação. Você inicia ciclos através da conquista pelo coração, tornando o ambiente leve e inspirador para que todos se sintam parte de algo maior.</p>`,
-        
-        "2_emocional_indeciso": `<h3>Sensibilidade Reativa e Cuidada</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_emocional_indeciso":{
+     conteudo: `<h3>Sensibilidade Reativa e Cuidada</h3>
             <p>Sua inclinação para a parceria é totalmente guiada pelo clima emocional. Sendo <strong>Emocional e Indeciso</strong>, você é como uma "esponja" que absorve o humor dos outros no início. Sua atitude depende muito do acolhimento que recebe; se houver tensão, você tende a se retrair antes de colaborar.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "2_intuitivo_criativo": `<h3>Conexão Visionária e Sutil</h3>
+        "2_intuitivo_criativo":{
+     conteudo: `<h3>Conexão Visionária e Sutil</h3>
             <p>Sua atitude inicial é captar o que não foi dito. No plano <strong>Intuitivo Criativo</strong>, você se une aos outros através de uma percepção espiritualizada. Sua inclinação é de quem antecipa conflitos antes que eles ocorram, agindo como um pacificador que usa a intuição para harmonizar o começo de tudo.</p>`,
-        
-        "2_intuitivo_indeciso": `<h3>Percepção Sutil sob Incerteza</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_intuitivo_indeciso": {
+     conteudo:`<h3>Percepção Sutil sob Incerteza</h3>
             <p>Você sente a necessidade de colaborar através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma insegurança sobre seus próprios pressentimentos. Sua inclinação inicial é a de quem busca aprovação externa ou um sinal espiritual para ter certeza de que está se unindo à pessoa certa.</p>`,
-        
-        "2_intuitivo_neutro": `<h3>Parceria Silenciosa e Perceptiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_intuitivo_neutro": {
+     conteudo:`<h3>Parceria Silenciosa e Perceptiva</h3>
             <p>Sua abordagem inicial é a do silêncio que observa. No plano <strong>Intuitivo Neutro</strong>, você se torna o observador equilibrado que entende a dinâmica do grupo sem precisar falar. Sua presença é harmonizadora por natureza, transmitindo uma paz que estabiliza o início de qualquer projeto coletivo.</p>`,
-     
+      videoID: "F8bg1CTQ9HI"
+    },
   // --- NÚMERO 3 (Comunicação, Expansão, Criatividade) ---
         
         // FÍSICO (Ação, Corpo, Prática)
-        "3_fisico_criativo": `<h3>Expressão Prática e Vibrante</h3>
+        "3_fisico_criativo": {
+     conteudo:`<h3>Expressão Prática e Vibrante</h3>
             <p>Sua inclinação inicial (3) é marcada por uma vitalidade contagiante que se traduz em movimento. Por ser <strong>Física e Criativa</strong>, sua atitude inicial é de "dar show" através da ação. Você inicia projetos trazendo soluções visíveis e estéticas, usando sua habilidade manual ou presença física para atrair recursos e atenção logo de cara.</p>`,
-        
-        "3_fisico_indeciso": `<h3>Entusiasmo Prático com Hesitação</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_fisico_indeciso": {
+     conteudo:`<h3>Entusiasmo Prático com Hesitação</h3>
             <p>Você possui o desejo de se expressar e expandir, mas sua expressão <strong>Física e Indecisa</strong> faz com que você sinta uma certa timidez corporal no início. Sua atitude é de quem quer brilhar e interagir, mas espera um convite ou um ambiente seguro para soltar sua energia prática e mostrar seu valor.</p>`,
-        
-        "3_fisico_neutro": `<h3>Comunicação Objetiva e Concreta</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_fisico_neutro": {
+     conteudo:`<h3>Comunicação Objetiva e Concreta</h3>
             <p>Sua abordagem inicial é a de uma expansão controlada e realista. No plano <strong>Físico Neutro</strong>, você usa sua criatividade para organizar e apresentar o que é prático. Sua atitude é a de quem comunica através de resultados concretos, garantindo que o início do projeto seja tão funcional quanto atraente.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Estratégia, Lógica, Pensamento)
-        "3_mental_criativo": `<h3>Criatividade Intelectual e Eloquência</h3>
+        "3_mental_criativo": {
+     conteudo:`<h3>Criatividade Intelectual e Eloquência</h3>
             <p>Sua inclinação inicial é o brilho das ideias. No plano <strong>Mental Criativo</strong>, você é uma fonte inesgotável de conceitos originais. Sua atitude é a de quem convence pela inteligência e pela oratória. Você inicia ciclos propondo visões inovadoras que encantam a mente dos outros, sendo o grande estrategista da comunicação.</p>`,
-        
-        "3_mental_indeciso": `<h3>Expansão Mental e Reflexiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_mental_indeciso": {
+     conteudo:`<h3>Expansão Mental e Reflexiva</h3>
             <p>Sua necessidade de se expressar (3) é filtrada por uma mente que busca a palavra perfeita. Por ser <strong>Mental e Indecisa</strong>, você pode hesitar antes de falar ou apresentar uma ideia, com medo de não ser claro o suficiente. No entanto, sua inclinação é de quem busca a perfeição lógica para que seu brilho inicial seja inquestionável.</p>`,
-        
-        "3_mental_neutro": `<h3>Comunicação Lógica e Estruturada</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_mental_neutro":{
+     conteudo: `<h3>Comunicação Lógica e Estruturada</h3>
             <p>Você aborda o novo com uma clareza de pensamento que organiza o caos. No plano <strong>Mental Neutro</strong>, sua criatividade é direcionada para a síntese. Sua atitude inicial é a de quem explica, ensina e estrutura as ideias de forma que todos compreendam, liderando pelo intelecto equilibrado e comunicativo.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "3_emocional_criativo": `<h3>Magnetismo Afetivo e Inspirador</h3>
+        "3_emocional_criativo":{
+     conteudo: `<h3>Magnetismo Afetivo e Inspirador</h3>
             <p>Sua primeira atitude é envolver a todos com o seu carisma. No plano <strong>Emocional Criativo</strong>, sua inclinação (3) é pura alegria e imaginação. Você inicia ciclos criando uma atmosfera de festa e acolhimento, onde as pessoas se sentem inspiradas a colaborar. Sua força inicial vem do coração e da sua capacidade de encantar.</p>`,
-        
-        "3_emocional_indeciso": `<h3>Autoexpressão Sensível e Reativa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_emocional_indeciso":{
+     conteudo: `<h3>Autoexpressão Sensível e Reativa</h3>
             <p>Sua inclinação para a expansão depende inteiramente do seu estado emocional. Sendo <strong>Emocional e Indeciso</strong>, você brilha intensamente quando se sente amado, mas pode se calar se sentir desaprovação no ar. Sua atitude inicial é de quem busca conexão emocional antes de soltar sua criatividade plena.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "3_intuitivo_criativo": `<h3>Inspiração Visionária e Espontânea</h3>
+        "3_intuitivo_criativo": {
+     conteudo:`<h3>Inspiração Visionária e Espontânea</h3>
             <p>Sua atitude inicial é captar a "cor" do momento de forma mística. No plano <strong>Intuitivo Criativo</strong>, você se expressa através de lampejos de genialidade. Sua inclinação é de quem traz mensagens ou ideias que parecem vir de outra dimensão, iluminando o início do projeto com uma criatividade espiritualizada e única.</p>`,
-        
-        "3_intuitivo_indeciso": `<h3>Percepção Criativa sob Dúvida</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_intuitivo_indeciso":{
+     conteudo: `<h3>Percepção Criativa sob Dúvida</h3>
             <p>Você sente o impulso de criar e falar (3) através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma insegurança sobre se deve ou não compartilhar seu "insight". Sua atitude inicial é a de quem tateia o ambiente em busca de uma confirmação espiritual para liberar seu brilho interno.</p>`,
-        
-        "3_intuitivo_neutro": `<h3>Expansão Silenciosa e Perceptiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_intuitivo_neutro": {
+     conteudo:`<h3>Expansão Silenciosa e Perceptiva</h3>
             <p>Sua abordagem inicial é a do brilho que não precisa de alarde. No plano <strong>Intuitivo Neutro</strong>, você comunica sua criatividade através da sua presença e do seu olhar. Sua atitude é a de quem harmoniza o ambiente apenas existindo, trazendo uma expansão serena e uma sabedoria intuitiva que acalma e motiva o início de qualquer jornada.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
      // --- NÚMERO 4 (Estabilidade, Trabalho, Organização) ---
         
         // FÍSICO (Ação, Corpo, Prática)
-        "4_fisico_criativo": `<h3>Estrutura Prática e Eficiente</h3>
+        "4_fisico_criativo":{
+     conteudo: `<h3>Estrutura Prática e Eficiente</h3>
             <p>Sua inclinação inicial (4) é fundamentar os projetos com as próprias mãos. Por ser uma expressão <strong>Física e Criativa</strong>, você não apenas organiza, mas inventa métodos práticos para que o trabalho flua melhor. Sua atitude é a de quem constrói o alicerce de forma inovadora, garantindo que o início tenha uma solidez inabalável.</p>`,
-        
-        "4_fisico_indeciso": `<h3>Construção Cautelosa e Lenta</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_fisico_indeciso": {
+     conteudo:`<h3>Construção Cautelosa e Lenta</h3>
             <p>Você busca a segurança do número 4, mas sua expressão <strong>Física e Indecisa</strong> faz com que você demore a agir fisicamente. Sua inclinação inicial é a de quem revisa as ferramentas e o terreno repetidamente. Você só começa o trabalho quando tem certeza absoluta de que não haverá erros na execução manual.</p>`,
-        
-        "4_fisico_neutro": `<h3>Ordem Prática e Resiliente</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_fisico_neutro": {
+     conteudo:`<h3>Ordem Prática e Resiliente</h3>
             <p>Sua abordagem inicial é a do trabalhador incansável. No plano <strong>Físico Neutro</strong>, você estabelece uma rotina clara desde o primeiro minuto. Sua atitude é pragmática e desprovida de excessos; você organiza o espaço de forma lógica para garantir que a produtividade seja a prioridade absoluta deste começo.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Estratégia, Lógica, Pensamento)
-        "4_mental_criativo": `<h3>Organização Intelectual e Planejamento</h3>
+        "4_mental_criativo": {
+     conteudo:`<h3>Organização Intelectual e Planejamento</h3>
             <p>Sua inclinação inicial é a do estrategista de processos. No plano <strong>Mental Criativo</strong>, você desenha sistemas e cronogramas com uma clareza impressionante. Sua atitude é a de quem organiza o pensamento antes de qualquer ação, criando métodos mentais inovadores para que o início do projeto seja livre de falhas.</p>`,
-        
-        "4_mental_indeciso": `<h3>Análise Sistêmica e Prevenção</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_mental_indeciso": {
+     conteudo:`<h3>Análise Sistêmica e Prevenção</h3>
             <p>Sua necessidade de ordem (4) é filtrada por uma mente que prevê todos os problemas possíveis. Sendo <strong>Mental e Indecisa</strong>, sua atitude inicial é de extrema cautela intelectual. Você pode se perder nos detalhes do planejamento por medo de perder a segurança, buscando uma perfeição que garanta o controle total.</p>`,
-        
-        "4_mental_neutro": `<h3>Lógica Estrutural e Objetiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_mental_neutro": {
+     conteudo:`<h3>Lógica Estrutural e Objetiva</h3>
             <p>Você aborda o novo com uma mente disciplinada e focada. No plano <strong>Mental Neutro</strong>, sua inclinação é aplicar as regras com precisão. Você inicia ciclos definindo limites e responsabilidades com objetividade, garantindo que a estrutura mental do projeto seja o pilar de sustentação para todos.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "4_emocional_criativo": `<h3>Segurança Afetiva e Lealdade</h3>
+        "4_emocional_criativo": {
+     conteudo:`<h3>Segurança Afetiva e Lealdade</h3>
             <p>Sua primeira atitude é estabelecer laços de confiança e proteção. No plano <strong>Emocional Criativo</strong>, sua inclinação (4) é criar uma "família" ou um ambiente acolhedor e seguro. Você inicia projetos cuidando do bem-estar emocional do grupo, acreditando que a base do sucesso é o compromisso mútuo e a lealdade.</p>`,
-        
-        "4_emocional_indeciso": `<h3>Estabilidade Sensível e Reativa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_emocional_indeciso": {
+     conteudo:`<h3>Estabilidade Sensível e Reativa</h3>
             <p>Sua busca por segurança depende do quanto você se sente emocionalmente estável. Sendo <strong>Emocional e Indeciso</strong>, qualquer instabilidade no ambiente pode travar seu início. Você precisa de rotina e previsibilidade emocional para conseguir exercer sua capacidade de organização e trabalho.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "4_intuitivo_criativo": `<h3>Fundamentação Intuitiva e Ética</h3>
+        "4_intuitivo_criativo": {
+     conteudo:`<h3>Fundamentação Intuitiva e Ética</h3>
             <p>Sua atitude inicial é baseada em valores morais e instintivos profundos. No plano <strong>Intuitivo Criativo</strong>, você constrói a estrutura (4) seguindo sua bússola interna. Sua inclinação é pioneira e ética, iniciando o projeto com uma base espiritual que garante que tudo o que for construído tenha um propósito maior e duradouro.</p>`,
-        
-        "4_intuitivo_indeciso": `<h3>Percepção Estrutural sob Cautela</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_intuitivo_indeciso": {
+     conteudo:`<h3>Percepção Estrutural sob Cautela</h3>
             <p>Você sente a necessidade de organizar e fundamentar através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre qual pilar levantar primeiro. Sua atitude inicial é a de quem busca uma confirmação interior ou um sinal de que a fundação espiritual do projeto está correta.</p>`,
-        
-        "4_intuitivo_neutro": `<h3>Ordem Silenciosa e Presença</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_intuitivo_neutro": {
+     conteudo:`<h3>Ordem Silenciosa e Presença</h3>
             <p>Sua abordagem inicial é a da disciplina que não precisa ser dita. No plano <strong>Intuitivo Neutro</strong>, você estabelece a ordem através da sua simples presença e exemplo. Sua atitude é de quem harmoniza o caos inicial apenas estando presente, trazendo uma estabilidade serena que ancora o início de tudo.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
      // --- NÚMERO 5 (Liberdade, Mudança, Versatilidade, Magnetismo) ---
         
         // FÍSICO (Ação, Corpo, Prática)
-        "5_fisico_criativo": `<h3>Agilidade Prática e Renovadora</h3>
+        "5_fisico_criativo": {
+     conteudo:`<h3>Agilidade Prática e Renovadora</h3>
             <p>Sua inclinação inicial (5) é marcada por um dinamismo físico constante. Por ser <strong>Física e Criativa</strong>, sua primeira atitude é de movimento e experimentação. Você não aguenta processos lentos; sua mente quer ver a mudança acontecer agora. Você inicia projetos trazendo soluções rápidas, adaptando-se a qualquer terreno com uma habilidade manual invejável.</p>`,
-        
-        "5_fisico_indeciso": `<h3>Desejo de Mudança com Hesitação Prática</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_fisico_indeciso": {
+     conteudo:`<h3>Desejo de Mudança com Hesitação Prática</h3>
             <p>Você sente o impulso renovador do número 5, mas sua expressão <strong>Física e Indecisa</strong> cria uma inquietude corporal. Você quer mudar e agir, mas hesita no momento do primeiro passo físico, como se estivesse testando o vento antes de saltar. Sua atitude inicial é de quem busca liberdade, mas precisa de um empurrão externo para começar o movimento.</p>`,
-        
-        "5_fisico_neutro": `<h3>Versatilidade Direta e Adaptável</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_fisico_neutro": {
+     conteudo:`<h3>Versatilidade Direta e Adaptável</h3>
             <p>Sua abordagem inicial é a da adaptação inteligente. No plano <strong>Físico Neutro</strong>, você entra em novas situações com uma presença física equilibrada e pronta para o que der e vier. Sua atitude é pragmática: se algo não funciona, você muda o curso sem drama. Você inicia ciclos com uma agilidade focada em resultados práticos e imediatos.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Estratégia, Lógica, Pensamento)
-        "5_mental_criativo": `<h3>Curiosidade Intelectual e Inovação</h3>
+        "5_mental_criativo": {
+     conteudo:`<h3>Curiosidade Intelectual e Inovação</h3>
             <p>Sua inclinação inicial é a de um explorador mental. No plano <strong>Mental Criativo</strong>, você aborda o novo com uma sede insaciável de conhecimento. Sua atitude é a de quem questiona o status quo e propõe ideias revolucionárias. Você inicia ciclos desbravando novos conceitos e convencendo os outros através de uma lógica rápida e brilhante.</p>`,
-        
-        "5_mental_indeciso": `<h3>Análise Multidirecional e Curiosidade</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_mental_indeciso":{
+     conteudo: `<h3>Análise Multidirecional e Curiosidade</h3>
             <p>Sua necessidade de mudança (5) é filtrada por uma mente que vê mil possibilidades ao mesmo tempo. Sendo <strong>Mental e Indecisa</strong>, sua atitude inicial é marcada por uma ansiedade intelectual. Você quer experimentar tudo, mas a dúvida sobre qual caminho mental é o mais eficiente pode gerar bloqueios temporários no início da jornada.</p>`,
-        
-        "5_mental_neutro": `<h3>Estratégia Ágil e Objetiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_mental_neutro":{
+     conteudo: `<h3>Estratégia Ágil e Objetiva</h3>
             <p>Você aborda o novo com uma mente veloz, porém estável. No plano <strong>Mental Neutro</strong>, sua inclinação é buscar a eficiência através da mudança lógica. Você inicia ciclos cortando o que é desnecessário e focando na inovação que realmente funciona. Sua comunicação inicial é clara, direta e voltada para a expansão inteligente.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "5_emocional_criativo": `<h3>Magnetismo Social e Aventura</h3>
+        "5_emocional_criativo": {
+     conteudo:`<h3>Magnetismo Social e Aventura</h3>
             <p>Sua primeira atitude é envolver as pessoas através da sua energia contagiante. No plano <strong>Emocional Criativo</strong>, sua inclinação (5) é de puro magnetismo e busca por prazer. Você inicia projetos criando conexões estimulantes e trazendo um ar de novidade que encanta a todos. Sua coragem vem da emoção de viver algo novo.</p>`,
-        
-        "5_emocional_indeciso": `<h3>Inquietude Sensível e Reativa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_emocional_indeciso":{
+     conteudo: `<h3>Inquietude Sensível e Reativa</h3>
             <p>Sua inclinação para a mudança depende do quanto você se sente emocionalmente livre. Sendo <strong>Emocional e Indeciso</strong>, você pode ser instável no início: empolgado num momento e retraído no outro. Você busca a liberdade (5), mas precisa que o ambiente emocional seja flexível para que sua criatividade floresça.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "5_intuitivo_criativo": `<h3>Percepção Progressista e Instinto</h3>
+        "5_intuitivo_criativo":{
+     conteudo: `<h3>Percepção Progressista e Instinto</h3>
             <p>Sua atitude inicial é baseada em lampejos de visão sobre o futuro. No plano <strong>Intuitivo Criativo</strong>, você capta as tendências antes de todos. Sua inclinação é pioneira e quase profética, iniciando o projeto com uma base espiritual que desafia o tradicional. Você segue seu instinto para romper barreiras e buscar novos horizontes.</p>`,
-        
-        "5_intuitivo_indeciso": `<h3>Intuição Veloz sob Incerteza</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_intuitivo_indeciso": {
+     conteudo:`<h3>Intuição Veloz sob Incerteza</h3>
             <p>Você sente a urgência da mudança através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre se deve confiar nessa pressa interna. Sua atitude inicial é a de quem capta sinais de transformação, mas busca uma validação espiritual antes de mergulhar de cabeça no desconhecido.</p>`,
-        
-        "5_intuitivo_neutro": `<h3>Adaptabilidade Silenciosa e Perceptiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_intuitivo_neutro": {
+     conteudo:`<h3>Adaptabilidade Silenciosa e Perceptiva</h3>
             <p>Sua abordagem inicial é a da mudança que acontece de dentro para fora. No plano <strong>Intuitivo Neutro</strong>, você se adapta ao novo sem esforço aparente. Sua atitude é de quem harmoniza o ambiente através de uma percepção sutil das correntes de mudança, trazendo uma liberdade serena que inspira o início de qualquer ciclo.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
      // --- NÚMERO 6 (Responsabilidade, Harmonia, Família, Equilíbrio) ---
         
         // FÍSICO (Ação, Corpo, Prática)
-        "6_fisico_criativo": `<h3>Cuidado Prático e Estético</h3>
+        "6_fisico_criativo": {
+     conteudo:`<h3>Cuidado Prático e Estético</h3>
             <p>Sua inclinação inicial (6) é marcada pelo desejo de servir e harmonizar o ambiente físico. Por ser <strong>Física e Criativa</strong>, sua primeira atitude é organizar o espaço de forma bela e funcional. Você inicia projetos cuidando dos detalhes práticos que trazem conforto aos outros, unindo eficiência com um senso estético apurado.</p>`,
-        
-        "6_fisico_indeciso": `<h3>Serviço Físico sob Hesitação</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_fisico_indeciso":{
+     conteudo: `<h3>Serviço Físico sob Hesitação</h3>
             <p>Você sente o chamado da responsabilidade do número 6, mas sua expressão <strong>Física e Indecisa</strong> gera uma preocupação excessiva com o julgamento alheio. Sua atitude inicial é de quem quer ajudar e colocar a mão na massa, mas hesita por medo de não fazer "perfeito" ou de não agradar a todos os envolvidos no início.</p>`,
-        
-        "6_fisico_neutro": `<h3>Responsabilidade Sólida e Estável</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_fisico_neutro": {
+     conteudo:`<h3>Responsabilidade Sólida e Estável</h3>
             <p>Sua abordagem inicial é a do suporte inabalável. No plano <strong>Físico Neutro</strong>, você assume suas obrigações com uma presença física constante e serena. Sua atitude é pragmática: você garante que as necessidades básicas do projeto e das pessoas sejam atendidas sem alarde, estabelecendo uma base de confiança imediata.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Estratégia, Lógica, Pensamento)
-        "6_mental_criativo": `<h3>Idealismo Intelectual e Ajuste</h3>
+        "6_mental_criativo": {
+     conteudo:`<h3>Idealismo Intelectual e Ajuste</h3>
             <p>Sua inclinação inicial é a de buscar soluções justas e equilibradas para todos. No plano <strong>Mental Criativo</strong>, você usa sua inteligência para planejar um início que seja harmonioso. Sua atitude é a de quem aconselha e projeta caminhos onde a ética e a lógica caminham juntas, resolvendo impasses mentais com criatividade.</p>`,
-        
-        "6_mental_indeciso": `<h3>Análise Conciliadora e Dúvida</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_mental_indeciso": {
+     conteudo:`<h3>Análise Conciliadora e Dúvida</h3>
             <p>Sua necessidade de harmonia (6) é filtrada por uma mente que busca a perfeição nas decisões. Sendo <strong>Mental e Indecisa</strong>, sua atitude inicial pode ser marcada por um conflito interno entre várias opções "certas". Você quer ser justo, e essa busca pela escolha ideal para o grupo pode atrasar sua tomada de posição inicial.</p>`,
-        
-        "6_mental_neutro": `<h3>Lógica Equilibrada e Protetora</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_mental_neutro": {
+     conteudo:`<h3>Lógica Equilibrada e Protetora</h3>
             <p>Você aborda o novo com uma mente voltada para o dever e para a ordem social. No plano <strong>Mental Neutro</strong>, sua inclinação é aplicar a justiça de forma objetiva. Você inicia ciclos definindo regras claras que protejam o coletivo, comunicando-se de forma equilibrada e transmitindo uma segurança intelectual necessária.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "6_emocional_criativo": `<h3>Acolhimento Afetivo e Artístico</h3>
+        "6_emocional_criativo": {
+     conteudo:`<h3>Acolhimento Afetivo e Artístico</h3>
             <p>Sua primeira atitude é envolver as pessoas em uma atmosfera de carinho e beleza. No plano <strong>Emocional Criativo</strong>, sua inclinação (6) é de puro amor ao próximo e busca pelo belo. Você inicia projetos cuidando dos laços afetivos e trazendo uma visão artística que sensibiliza e une todos ao seu redor.</p>`,
-        
-        "6_emocional_indeciso": `<h3>Sensibilidade Protetora e Reativa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_emocional_indeciso": {
+     conteudo:`<h3>Sensibilidade Protetora e Reativa</h3>
             <p>Sua inclinação para cuidar depende do equilíbrio emocional do ambiente. Sendo <strong>Emocional e Indeciso</strong>, você pode se sentir sobrecarregado pelas necessidades dos outros no início. Sua atitude é de entrega, mas você precisa se sentir amado e seguro para não se perder na indecisão de quem quer agradar demais.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "6_intuitivo_criativo": `<h3>Percepção Harmônica e Instinto</h3>
+        "6_intuitivo_criativo": {
+     conteudo:`<h3>Percepção Harmônica e Instinto</h3>
             <p>Sua atitude inicial é baseada em um senso de justiça espiritual e intuitivo. No plano <strong>Intuitivo Criativo</strong>, você capta as necessidades da alma das pessoas ao seu redor. Sua inclinação é de um conselheiro nato, iniciando o projeto com uma base ética profunda que visa curar ou equilibrar situações de forma instintiva.</p>`,
-        
-        "6_intuitivo_indeciso": `<h3>Intuição Protetora sob Cautela</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_intuitivo_indeciso":{
+     conteudo: `<h3>Intuição Protetora sob Cautela</h3>
             <p>Você sente a necessidade de harmonizar e cuidar através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre se o seu conselho é o melhor. Sua atitude inicial é a de quem percebe as tensões sutis, mas busca uma confirmação interior antes de intervir para equilibrar o ambiente.</p>`,
-        
-        "6_intuitivo_neutro": `<h3>Equilíbrio Silencioso e Presença</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_intuitivo_neutro": {
+     conteudo:`<h3>Equilíbrio Silencioso e Presença</h3>
             <p>Sua abordagem inicial é a da paz que emana da sua presença. No plano <strong>Intuitivo Neutro</strong>, você harmoniza o início de qualquer ciclo sem precisar de palavras. Sua atitude é de quem estabiliza o caos através de uma percepção sutil do que é justo, trazendo uma segurança espiritual que acalma a todos.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
      // --- NÚMERO 7 (Análise, Especialização, Introspecção, Sabedoria) ---
         
         // FÍSICO (Ação, Corpo, Prática)
-        "7_fisico_criativo": `<h3>Perfeccionismo Prático e Técnico</h3>
+        "7_fisico_criativo":{
+     conteudo: `<h3>Perfeccionismo Prático e Técnico</h3>
             <p>Sua inclinação inicial (7) é marcada por uma exigência técnica muito alta sobre a execução. Por ser <strong>Física e Criativa</strong>, sua primeira atitude é observar o funcionamento de tudo para tentar aprimorar o processo. Você inicia projetos buscando a excelência manual, preferindo fazer pouco, mas com uma qualidade e originalidade que beiram a perfeição.</p>`,
-        
-        "7_fisico_indeciso": `<h3>Ação Cautelosa e Observadora</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_fisico_indeciso": {
+     conteudo:`<h3>Ação Cautelosa e Observadora</h3>
             <p>Você sente a necessidade de entender profundamente o que está fazendo, mas sua expressão <strong>Física e Indecisa</strong> gera uma lentidão no início. Sua atitude inicial é de quem estuda as ferramentas e o ambiente repetidamente; você quer agir, mas o medo de falhar tecnicamente faz com que você tateie o terreno com extrema prudência.</p>`,
-        
-        "7_fisico_neutro": `<h3>Especialização Prática e Silenciosa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_fisico_neutro": {
+     conteudo:`<h3>Especialização Prática e Silenciosa</h3>
             <p>Sua abordagem inicial é a do observador técnico. No plano <strong>Físico Neutro</strong>, você entra em novas situações de forma discreta, focando apenas no que é essencial e funcional. Sua atitude é pragmática e solitária: você prefere organizar suas tarefas sozinho, garantindo que a base física do projeto seja executada com um rigor quase científico.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Estratégia, Lógica, Pensamento)
-        "7_mental_criativo": `<h3>Análise Intelectual e Genialidade</h3>
+        "7_mental_criativo": {
+     conteudo:`<h3>Análise Intelectual e Genialidade</h3>
             <p>Sua inclinação inicial é a busca por respostas profundas. No plano <strong>Mental Criativo</strong>, você é o estrategista que enxerga o que ninguém mais vê. Sua atitude é a de quem questiona, investiga e propõe soluções mentais brilhantes. Você inicia ciclos com um silêncio reflexivo que precede ideias capazes de revolucionar o projeto.</p>`,
-        
-        "7_mental_indeciso": `<h3>Reflexão Profunda e Ceticismo</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_mental_indeciso": {
+     conteudo:`<h3>Reflexão Profunda e Ceticismo</h3>
             <p>Sua necessidade de verdade (7) é filtrada por uma mente que duvida de tudo até provar por si mesma. Sendo <strong>Mental e Indecisa</strong>, sua atitude inicial é marcada por uma análise exaustiva. Você pode demorar a começar porque está tentando eliminar todas as incertezas lógicas, buscando uma segurança intelectual absoluta.</p>`,
-        
-        "7_mental_neutro": `<h3>Lógica Analítica e Objetiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_mental_neutro": {
+     conteudo:`<h3>Lógica Analítica e Objetiva</h3>
             <p>Você aborda o novo com uma mente altamente especializada e fria. No plano <strong>Mental Neutro</strong>, sua inclinação é o estudo sistemático das regras e dados. Você inicia ciclos definindo estratégias baseadas em fatos, comunicando-se de forma breve e precisa, transmitindo uma autoridade intelectual que não aceita superficialidades.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "7_emocional_criativo": `<h3>Sensibilidade Introspectiva e Intuição</h3>
+        "7_emocional_criativo": {
+     conteudo:`<h3>Sensibilidade Introspectiva e Intuição</h3>
             <p>Sua primeira atitude é de reserva emocional. No plano <strong>Emocional Criativo</strong>, sua inclinação (7) é buscar uma conexão profunda e espiritual com o que faz. Você inicia projetos de forma silenciosa, filtrando suas emoções através da análise, e só se abre quando sente que há uma sintonia verdadeira e significativa no ambiente.</p>`,
-        
-        "7_emocional_indeciso": `<h3>Reserva Sensível e Reatividade</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_emocional_indeciso":{
+     conteudo: `<h3>Reserva Sensível e Reatividade</h3>
             <p>Sua inclinação para a análise depende de quão confortável você se sente emocionalmente. Sendo <strong>Emocional e Indeciso</strong>, você pode parecer distante ou frio no início, mas é apenas uma defesa. Você busca a perfeição (7), mas a insegurança sentimental pode fazer com que você se retraia antes de mostrar sua sabedoria.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "7_intuitivo_criativo": `<h3>Sabedoria Mística e Percepção</h3>
+        "7_intuitivo_criativo":{
+     conteudo: `<h3>Sabedoria Mística e Percepção</h3>
             <p>Sua atitude inicial é puramente intuitiva e voltada para o mistério. No plano <strong>Intuitivo Criativo</strong>, você capta as energias sutis antes de qualquer lógica. Sua inclinação é de um buscador espiritual, iniciando o projeto com uma base de "certeza interna" que dispensa explicações, guiando-se por um instinto refinado e profético.</p>`,
-        
-        "7_intuitivo_indeciso": `<h3>Percepção Sutil sob Dúvida</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_intuitivo_indeciso": {
+     conteudo:`<h3>Percepção Sutil sob Dúvida</h3>
             <p>Você sente a profundidade das situações através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma desconfiança sobre seus próprios "insights". Sua atitude inicial é de quem percebe o invisível, mas busca isolamento para meditar e ter certeza de que sua intuição não é apenas um desejo mental.</p>`,
-        
-        "7_intuitivo_neutro": `<h3>Silêncio Perceptivo e Presença</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_intuitivo_neutro": {
+     conteudo:`<h3>Silêncio Perceptivo e Presença</h3>
             <p>Sua abordagem inicial é a do sábio silencioso. No plano <strong>Intuitivo Neutro</strong>, você estabelece sua autoridade apenas observando. Sua atitude é de quem harmoniza o início do projeto através de uma percepção clara e estável das leis ocultas, trazendo uma serenidade espiritual que impõe respeito sem esforço.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
 
      // --- NÚMERO 8 (Poder, Autoridade, Execução, Justiça Material) ---
         
         // FÍSICO (Ação, Corpo, Prática)
-        "8_fisico_criativo": `<h3>Liderança Executiva e Realização</h3>
+        "8_fisico_criativo": {
+     conteudo:`<h3>Liderança Executiva e Realização</h3>
             <p>Sua inclinação inicial (8) é marcada por uma força realizadora impressionante. Por ser <strong>Física e Criativa</strong>, sua primeira atitude é assumir o controle dos recursos e ferramentas para garantir a eficiência. Você inicia projetos com uma postura de comando, usando sua habilidade prática para construir resultados rápidos e inovadores que geram valor imediato.</p>`,
-        
-        "8_fisico_indeciso": `<h3>Gestão Prática sob Cautela</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_fisico_indeciso": {
+     conteudo:`<h3>Gestão Prática sob Cautela</h3>
             <p>Você sente o impulso de autoridade do número 8, mas sua expressão <strong>Física e Indecisa</strong> faz com que você avalie os riscos financeiros e materiais exaustivamente antes de agir. Sua atitude inicial é a de um gestor prudente: você quer o sucesso, mas só coloca a mão na massa quando sente que o investimento de energia é seguro.</p>`,
-        
-        "8_fisico_neutro": `<h3>Autoridade Sólida e Estável</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_fisico_neutro": {
+     conteudo:`<h3>Autoridade Sólida e Estável</h3>
             <p>Sua abordagem inicial é a do administrador nato. No plano <strong>Físico Neutro</strong>, você entra em novas situações com uma presença imponente e pragmática. Sua atitude é de quem organiza a estrutura e os processos sem hesitar, estabelecendo uma hierarquia clara e garantindo que o início do ciclo seja pautado pela produtividade.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Estratégia, Lógica, Pensamento)
-        "8_mental_criativo": `<h3>Estratégia de Poder e Visão</h3>
+        "8_mental_criativo": {
+     conteudo:`<h3>Estratégia de Poder e Visão</h3>
             <p>Sua inclinação inicial é o planejamento de grande escala. No plano <strong>Mental Criativo</strong>, você visualiza o topo da montanha antes de dar o primeiro passo. Sua atitude é a de quem desenha planos de negócios e estratégias complexas com facilidade, iniciando o projeto com uma lógica de expansão e conquista intelectualmente brilhante.</p>`,
-        
-        "8_mental_indeciso": `<h3>Análise Executiva e Ponderação</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_mental_indeciso": {
+     conteudo:`<h3>Análise Executiva e Ponderação</h3>
             <p>Sua necessidade de controle (8) é filtrada por uma mente que busca a justiça perfeita. Sendo <strong>Mental e Indecisa</strong>, sua atitude inicial pode ser de muita deliberação. Você analisa todos os prós e contras financeiros e éticos, buscando uma estratégia que não tenha falhas lógicas antes de exercer sua autoridade total.</p>`,
-        
-        "8_mental_neutro": `<h3>Lógica Administrativa e Foco</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_mental_neutro": {
+     conteudo:`<h3>Lógica Administrativa e Foco</h3>
             <p>Você aborda o novo com uma mente focada em resultados e eficiência. No plano <strong>Mental Neutro</strong>, sua inclinação é a aplicação rigorosa da competência. Você inicia ciclos definindo metas e metas objetivas, comunicando-se com autoridade técnica e garantindo que a mente de todos esteja alinhada com o sucesso material.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "8_emocional_criativo": `<h3>Magnetismo de Poder e Paixão</h3>
+        "8_emocional_criativo": {
+     conteudo:`<h3>Magnetismo de Poder e Paixão</h3>
             <p>Sua primeira atitude é liderar através da força da sua personalidade. No plano <strong>Emocional Criativo</strong>, sua inclinação (8) é de quem inspira confiança e ambição nos outros. Você inicia projetos com um entusiasmo realizador, usando seu carisma para atrair apoio e investimentos, movido por uma fé emocional no sucesso.</p>`,
-        
-        "8_emocional_indeciso": `<h3>Autoridade Sensível e Reativa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_emocional_indeciso": {
+     conteudo:`<h3>Autoridade Sensível e Reativa</h3>
             <p>Sua inclinação para o comando depende de quão seguro você se sente emocionalmente. Sendo <strong>Emocional e Indeciso</strong>, você pode oscilar entre a dureza e a vulnerabilidade no início. Você busca o poder (8), mas precisa de um ambiente que respeite sua sensibilidade para que sua capacidade de gestão floresça plenamente.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "8_intuitivo_criativo": `<h3>Visão Executiva e Instinto</h3>
+        "8_intuitivo_criativo": {
+     conteudo:`<h3>Visão Executiva e Instinto</h3>
             <p>Sua atitude inicial é baseada em uma percepção aguçada das oportunidades de mercado. No plano <strong>Intuitivo Criativo</strong>, você "sente" onde está o dinheiro ou o poder. Sua inclinação é de um visionário pragmático, iniciando o projeto com uma base instintiva que antecipa lucros e parcerias estratégicas de sucesso.</p>`,
-        
-        "8_intuitivo_indeciso": `<h3>Percepção de Valor sob Dúvida</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_intuitivo_indeciso": {
+     conteudo:`<h3>Percepção de Valor sob Dúvida</h3>
             <p>Você capta a necessidade de exercer autoridade através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma incerteza sobre se o momento é o certo para investir. Sua atitude inicial é a de quem percebe o potencial de grandeza, mas busca uma confirmação espiritual antes de assinar os contratos.</p>`,
-        
-        "8_intuitivo_neutro": `<h3>Comando Silencioso e Perceptivo</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_intuitivo_neutro": {
+     conteudo:`<h3>Comando Silencioso e Perceptivo</h3>
             <p>Sua abordagem inicial é a da autoridade que não precisa de palavras para ser sentida. No plano <strong>Intuitivo Neutro</strong>, você estabelece a ordem através de uma percepção estável da justiça e do mérito. Sua presença é respeitada imediatamente, trazendo uma segurança espiritual que ancora o sucesso material deste começo.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
      // --- NÚMERO 9 (Humanitarismo, Universalismo, Sabedoria, Finalização) ---
         
         // FÍSICO (Ação, Corpo, Prática)
-        "9_fisico_criativo": `<h3>Ação Humanitária e Criativa</h3>
+        "9_fisico_criativo": {
+     conteudo:`<h3>Ação Humanitária e Criativa</h3>
             <p>Sua inclinação inicial (9) é marcada por uma vontade prática de ajudar e transformar o meio. Por ser <strong>Física e Criativa</strong>, sua primeira atitude é colocar as mãos na massa em projetos que tenham um propósito maior. Você inicia ciclos com uma energia realizadora que busca soluções originais para o bem comum, agindo com generosidade e agilidade física.</p>`,
-        
-        "9_fisico_indeciso": `<h3>Serviço Prático sob Reflexão</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_fisico_indeciso": {
+     conteudo:`<h3>Serviço Prático sob Reflexão</h3>
             <p>Você sente o chamado do número 9 para servir, mas sua expressão <strong>Física e Indecisa</strong> gera uma cautela no movimento inicial. Sua atitude é a de quem quer se entregar a uma causa, mas hesita fisicamente por medo de não ser útil o suficiente ou de se desgastar demais. Você busca um sinal prático de que sua ação será realmente transformadora.</p>`,
-        
-        "9_fisico_neutro": `<h3>Comprometimento Sólido e Compassivo</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_fisico_neutro": {
+     conteudo:`<h3>Comprometimento Sólido e Compassivo</h3>
             <p>Sua abordagem inicial é a da doação constante e silenciosa. No plano <strong>Físico Neutro</strong>, você assume suas tarefas com uma presença física estável e desprovida de ego. Sua atitude é pragmática: você garante que o básico seja feito para todos, estabelecendo uma base de confiança baseada na sua integridade e persistência física.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Estratégia, Lógica, Pensamento)
         "9_mental_criativo": `<h3>Sabedoria Intelectual e Idealismo</h3>
             <p>Sua inclinação inicial é a busca por conceitos que elevem a consciência. No plano <strong>Mental Criativo</strong>, você é o pensador que projeta soluções globais. Sua atitude é a de quem compartilha conhecimento de forma generosa, iniciando ciclos com ideias brilhantes que visam a evolução coletiva e o entendimento mútuo.</p>`,
-        
-        "9_mental_indeciso": `<h3>Análise Universal e Ponderação</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_mental_indeciso": {
+     conteudo:`<h3>Análise Universal e Ponderação</h3>
             <p>Sua necessidade de ajudar (9) é filtrada por uma mente que tenta abraçar o mundo todo de uma vez. Sendo <strong>Mental e Indecisa</strong>, sua atitude inicial pode ser marcada por uma sobrecarga mental. Você pensa tanto nas consequências globais das suas escolhas que pode demorar a definir o primeiro passo lógico da jornada.</p>`,
-        
-        "9_mental_neutro": `<h3>Lógica Compreensiva e Objetiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_mental_neutro": {
+     conteudo:`<h3>Lógica Compreensiva e Objetiva</h3>
             <p>Você aborda o novo com uma mente sábia e focada no essencial. No plano <strong>Mental Neutro</strong>, sua inclinação é a aplicação da verdade de forma impessoal. Você inicia ciclos com uma comunicação clara e tolerante, transmitindo uma autoridade intelectual que acalma os outros e foca no que é realmente importante para o todo.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Sentimento, Adaptação, Empatia)
-        "9_emocional_criativo": `<h3>Empatia Magnética e Inspiração</h3>
+        "9_emocional_criativo":{
+     conteudo: `<h3>Empatia Magnética e Inspiração</h3>
             <p>Sua primeira atitude é envolver as pessoas através de uma grande afeição universal. No plano <strong>Emocional Criativo</strong>, sua inclinação (9) é de pura entrega e carisma. Você inicia projetos criando uma atmosfera de inspiração e sonho, usando sua sensibilidade artística para tocar o coração dos outros e motivar a união.</p>`,
-        
-        "9_emocional_indeciso": `<h3>Sensibilidade Profunda e Reativa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_emocional_indeciso": {
+     conteudo:`<h3>Sensibilidade Profunda e Reativa</h3>
             <p>Sua inclinação para o desprendimento depende da harmonia emocional ao seu redor. Sendo <strong>Emocional e Indeciso</strong>, você pode se sentir vulnerável às dores do mundo no início. Sua atitude é de entrega, mas você precisa se sentir emocionalmente compreendido para que sua sabedoria e compaixão fluam sem medo.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Instinto, Espiritualidade, Percepção)
-        "9_intuitivo_criativo": `<h3>Percepção Espiritual e Profecia</h3>
+        "9_intuitivo_criativo": {
+     conteudo:`<h3>Percepção Espiritual e Profecia</h3>
             <p>Sua atitude inicial é baseada em lampejos de sabedoria ancestral. No plano <strong>Intuitivo Criativo</strong>, você capta o propósito espiritual de cada início. Sua inclinação é de um guia nato, iniciando o projeto com uma base de intuição pura que antecipa o fim antes mesmo do começo, guiando-se por uma luz interna generosa.</p>`,
-        
-        "9_intuitivo_indeciso": `<h3>Intuição Universal sob Dúvida</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_intuitivo_indeciso": {
+     conteudo:`<h3>Intuição Universal sob Dúvida</h3>
             <p>Você sente a necessidade de se doar através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma incerteza sobre se a sua percepção é real ou apenas um desejo de ajudar. Sua atitude inicial é de quem capta sinais do universo, mas busca um momento de isolamento para ter certeza da sua missão.</p>`,
-        
-        "9_intuitivo_neutro": `<h3>Presença Sábia e Silenciosa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_intuitivo_neutro": {
+     conteudo:`<h3>Presença Sábia e Silenciosa</h3>
             <p>Sua abordagem inicial é a da paz que emana de quem já viveu muito. No plano <strong>Intuitivo Neutro</strong>, você harmoniza o início de qualquer ciclo apenas observando com tolerância. Sua presença é curadora por natureza, trazendo uma segurança espiritual que permite que todos ao seu redor cresçam com liberdade.</p>`
  },
  conclusao: {
         // --- NÚMERO 1 (Finalização com Autonomia, Vitória e Originalidade) ---
         
         // FÍSICO (Entrega prática, tangível)
-        "1_fisico_criativo": `<h3>Realização Independente e Prática</h3>
+        "1_fisico_criativo": {
+     conteudo:`<h3>Realização Independente e Prática</h3>
             <p>Sua capacidade de entrega final é marcada por uma execução impecável e solitária. Sendo uma expressão <strong>Física e Criativa</strong>, você conclui seus projetos de forma inovadora, deixando sua marca pessoal em cada detalhe. Você realiza entregando resultados concretos que demonstram sua total autonomia e competência técnica.</p>`,
-        
-        "1_fisico_indeciso": `<h3>Conclusão Prática sob Validação</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_fisico_indeciso": {
+     conteudo:`<h3>Conclusão Prática sob Validação</h3>
             <p>Você realiza suas tarefas com foco na perfeição, mas sua expressão <strong>Física e Indecisa</strong> faz com que você revise o resultado final diversas vezes antes de dar por encerrado. Sua capacidade de entrega é alta, porém você busca uma confirmação externa de que sua execução física atingiu o padrão de excelência esperado.</p>`,
-        
-        "1_fisico_neutro": `<h3>Entrega Sólida e Eficiente</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_fisico_neutro": {
+     conteudo:`<h3>Entrega Sólida e Eficiente</h3>
             <p>Sua realização é direta e sem rodeios. No plano <strong>Físico Neutro</strong>, você encerra ciclos de forma pragmática e funcional. Sua capacidade de entrega é constante: você finaliza o que começou com uma estabilidade física impressionante, garantindo que o resultado seja útil, resistente e organizado.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Entrega estratégica, intelectual)
-        "1_mental_criativo": `<h3>Finalização Estratégica e Brilhante</h3>
+        "1_mental_criativo":{
+     conteudo: `<h3>Finalização Estratégica e Brilhante</h3>
             <p>Você conclui seus projetos apresentando soluções intelectuais que ninguém previu. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em relatórios, estratégias ou conceitos originais. Você entrega um desfecho que prova sua superioridade lógica e sua visão pioneira sobre o tema.</p>`,
-        
-        "1_mental_indeciso": `<h3>Realização Intelectual Analítica</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_mental_indeciso": {
+     conteudo:`<h3>Realização Intelectual Analítica</h3>
             <p>Sua entrega final é fruto de um longo processo de refinamento mental. Sendo <strong>Mental e Indecisa</strong>, sua capacidade de realização é profunda, mas você pode sentir que "sempre falta algo" para concluir. Quando finalmente entrega, o resultado é uma peça de lógica extremamente detalhada e blindada contra falhas.</p>`,
-        
-        "1_mental_neutro": `<h3>Conclusão Lógica e Objetiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_mental_neutro": {
+     conteudo:`<h3>Conclusão Lógica e Objetiva</h3>
             <p>Você realiza seus objetivos através da clareza e da ordem. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na verdade dos fatos. Você encerra processos de forma fria e eficiente, entregando resultados que falam por si só devido à sua estrutura lógica impecável e autoridade intelectual.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "1_emocional_criativo": `<h3>Realização Apaixonada e Única</h3>
+        "1_emocional_criativo":{
+     conteudo: `<h3>Realização Apaixonada e Única</h3>
             <p>Você conclui suas metas colocando toda a sua alma no resultado. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é magnética e inspiradora. Você realiza grandes feitos motivado pelo prazer de vencer, entregando resultados que brilham e emocionam aqueles que os recebem.</p>`,
-        
-        "1_emocional_indeciso": `<h3>Entrega Sensível e Reativa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_emocional_indeciso": {
+     conteudo:`<h3>Entrega Sensível e Reativa</h3>
             <p>Sua capacidade de finalizar tarefas está ligada ao seu estado de ânimo final. Sendo <strong>Emocional e Indeciso</strong>, você pode hesitar em entregar o resultado por medo da crítica. Sua realização é potente, mas você precisa se sentir seguro emocionalmente para "assinar" sua obra e mostrar sua independência ao mundo.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "1_intuitivo_criativo": `<h3>Realização Visionária e Instintiva</h3>
+        "1_intuitivo_criativo":{
+     conteudo: `<h3>Realização Visionária e Instintiva</h3>
             <p>Você entrega resultados que parecem estar à frente do seu tempo. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por uma certeza interna. Você conclui ciclos manifestando algo que começou como um pressentimento e se tornou uma vitória concreta e inovadora.</p>`,
-        
-        "1_intuitivo_indeciso": `<h3>Conclusão Intuitiva sob Ponderação</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_intuitivo_indeciso":{
+     conteudo: `<h3>Conclusão Intuitiva sob Ponderação</h3>
             <p>Você realiza seus objetivos seguindo sua bússola interna, mas sua expressão <strong>Intuitiva e Indecisa</strong> faz com que você busque sinais antes de dar o passo final. Sua capacidade de entrega é profunda, manifestando uma independência que foi amadurecida no silêncio e na observação dos pressentimentos.</p>`,
-        
-        "1_intuitivo_neutro": `<h3>Entrega Silenciosa e Plena</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "1_intuitivo_neutro":{
+     conteudo: `<h3>Entrega Silenciosa e Plena</h3>
             <p>Sua realização acontece de forma natural e sem alarde. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma paz de espírito que transmite autoridade. Sua capacidade de entrega é sutil, mas absoluta; você finaliza o que é necessário com uma sabedoria instintiva que não precisa de explicações.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
 
   // --- NÚMERO 2 (Finalização com Diplomacia, Detalhe e Apoio) ---
         
         // FÍSICO (Entrega prática, tangível)
-        "2_fisico_criativo": `<h3>Realização Cooperativa e Eficiente</h3>
+        "2_fisico_criativo": {
+     conteudo:`<h3>Realização Cooperativa e Eficiente</h3>
             <p>Sua capacidade de entrega final é marcada por um suporte prático impecável. Sendo <strong>Física e Criativa</strong>, você conclui tarefas trazendo soluções que facilitam a vida de todos. Você realiza seus objetivos garantindo que a execução técnica seja feita com suavidade e uma inventividade que resolve problemas de forma discreta.</p>`,
-        
-        "2_fisico_indeciso": `<h3>Conclusão Detalhada sob Apoio</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_fisico_indeciso": {
+     conteudo:`<h3>Conclusão Detalhada sob Apoio</h3>
             <p>Você realiza suas tarefas com um cuidado extremo nos detalhes, mas sua expressão <strong>Física e Indecisa</strong> faz com que você prefira entregar o resultado final em parceria. Sua capacidade de realização é alta, mas você se sente mais seguro quando alguém valida o acabamento físico do que você produziu.</p>`,
-        
-        "2_fisico_neutro": `<h3>Entrega Estável e Auxiliadora</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_fisico_neutro":{
+     conteudo: `<h3>Entrega Estável e Auxiliadora</h3>
             <p>Sua realização é constante e confiável. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que todas as engrenagens estejam lubrificadas. Sua capacidade de entrega é silenciosa: você finaliza o que começou de forma útil e paciente, sendo o alicerce que permite que o resultado final seja duradouro.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Entrega estratégica, intelectual)
-        "2_mental_criativo": `<h3>Finalização Mediadora e Inteligente</h3>
+        "2_mental_criativo":{
+     conteudo: `<h3>Finalização Mediadora e Inteligente</h3>
             <p>Você conclui seus projetos apresentando sínteses que unem diferentes pontos de vista. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em acordos, revisões ou planejamentos equilibrados. Você entrega um desfecho que prova sua habilidade de ajustar ideias para que o resultado seja justo para todos.</p>`,
-        
-        "2_mental_indeciso": `<h3>Realização Intelectual Ponderada</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_mental_indeciso": {
+     conteudo:`<h3>Realização Intelectual Ponderada</h3>
             <p>Sua entrega final é fruto de uma análise minuciosa de todas as partes envolvidas. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com uma profundidade que evita conflitos. No entanto, pode demorar a fechar o ciclo por estar pesando cada palavra ou dado, buscando um equilíbrio mental perfeito.</p>`,
-        
-        "2_mental_neutro": `<h3>Conclusão Lógica e Harmoniosa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_mental_neutro": {
+     conteudo:`<h3>Conclusão Lógica e Harmoniosa</h3>
             <p>Você realiza seus objetivos através da organização dos fatos e das relações. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é pautada pela imparcialidade. Você encerra processos entregando resultados claros, objetivos e que respeitam as normas, garantindo uma finalização intelectualmente coerente.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "2_emocional_criativo": `<h3>Realização Sensível e Encantadora</h3>
+        "2_emocional_criativo": {
+     conteudo:`<h3>Realização Sensível e Encantadora</h3>
             <p>Você conclui suas metas através do toque pessoal e da empatia. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é suave e acolhedora. Você realiza seus feitos motivado pela harmonia do ambiente, entregando resultados que geram bem-estar e que são apreciados pela beleza e pelo sentimento aplicado.</p>`,
-        
-        "2_emocional_indeciso": `<h3>Entrega Reativa e Cuidadosa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_emocional_indeciso":{
+     conteudo: `<h3>Entrega Reativa e Cuidadosa</h3>
             <p>Sua capacidade de finalizar tarefas depende diretamente do clima emocional ao seu redor. Sendo <strong>Emocional e Indeciso</strong>, você realiza com excelência se houver incentivo. Sua conclusão é marcada por uma sensibilidade que busca não ferir ninguém, entregando o resultado com uma cautela afetiva admirável.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "2_intuitivo_creativo": `<h3>Realização Intuitiva e Pacificadora</h3>
+        "2_intuitivo_creativo":{
+     conteudo: `<h3>Realização Intuitiva e Pacificadora</h3>
             <p>Você entrega resultados que captam as necessidades ocultas das pessoas. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por uma percepção sutil. Você conclui ciclos manifestando soluções que trazem paz e equilíbrio espiritual para o grupo ou projeto.</p>`,
-        
-        "2_intuitivo_indeciso": `<h3>Conclusão Perceptiva sob Sintonização</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_intuitivo_indeciso": {
+     conteudo:`<h3>Conclusão Perceptiva sob Sintonização</h3>
             <p>Você realiza seus objetivos sentindo o "timing" das situações, mas sua expressão <strong>Intuitiva e Indecisa</strong> faz com que você espere por um sinal de harmonia antes de concluir. Sua capacidade de entrega é profunda, manifestando uma cooperação que foi gestada na sua sensibilidade intuitiva.</p>`,
-        
-        "2_intuitivo_neutro": `<h3>Entrega Silenciosa e Equilibrada</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "2_intuitivo_neutro": {
+     conteudo:`<h3>Entrega Silenciosa e Equilibrada</h3>
             <p>Sua realização acontece através da sua presença harmonizadora. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que acalma os outros. Sua capacidade de entrega é discreta; você finaliza o necessário com uma sabedoria que sabe exatamente como equilibrar as forças no final de um ciclo.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
   // --- NÚMERO 3 (Finalização com Expressão, Criatividade e Entusiasmo) ---
         
         // FÍSICO (Entrega prática, tangível)
-        "3_fisico_criativo": `<h3>Realização Criativa e Visível</h3>
+        "3_fisico_criativo": {
+     conteudo:`<h3>Realização Criativa e Visível</h3>
             <p>Sua capacidade de entrega final é marcada pela estética e pelo impacto visual. Sendo <strong>Física e Criativa</strong>, você conclui tarefas de forma que elas sejam notadas por todos. Você realiza seus objetivos trazendo soluções práticas que são, ao mesmo tempo, belas e funcionais, garantindo que o resultado final tenha uma "assinatura" vibrante.</p>`,
-        
-        "3_fisico_indeciso": `<h3>Conclusão Prática com Toque Social</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_fisico_indeciso": {
+     conteudo:`<h3>Conclusão Prática com Toque Social</h3>
             <p>Você realiza suas tarefas com o desejo de agradar e comunicar, mas sua expressão <strong>Física e Indecisa</strong> faz com que você busque aprovação sobre a aparência do resultado final. Sua capacidade de realização é alta, especialmente quando você sente que seu esforço físico será reconhecido e elogiado pelo grupo.</p>`,
-        
-        "3_fisico_neutro": `<h3>Entrega Funcional e Comunicativa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_fisico_neutro": {
+     conteudo:`<h3>Entrega Funcional e Comunicativa</h3>
             <p>Sua realização é direta, mas sempre acompanhada de uma boa explicação. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que o resultado seja compreensível para todos. Sua capacidade de entrega é constante: você finaliza o que começou de forma organizada, mas com um toque de leveza que torna o trabalho final agradável.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Entrega estratégica, intelectual)
-        "3_mental_criativo": `<h3>Finalização Eloquente e Brilhante</h3>
+        "3_mental_criativo": {
+     conteudo:`<h3>Finalização Eloquente e Brilhante</h3>
             <p>Você conclui seus projetos através da força da sua oratória ou escrita. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em ideias que se espalham rapidamente. Você entrega um desfecho que prova sua inteligência comunicativa, criando argumentos que encantam e convencem a mente alheia.</p>`,
-        
-        "3_mental_indeciso": `<h3>Realização Intelectual e Expressiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_mental_indeciso": {
+     conteudo:`<h3>Realização Intelectual e Expressiva</h3>
             <p>Sua entrega final é fruto de um desejo de ser perfeitamente entendido. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos polindo sua comunicação até o último segundo. Quando finalmente conclui, o resultado é uma peça de lógica apresentada de forma criativa, buscando evitar qualquer mal-entendido intelectual.</p>`,
-        
-        "3_mental_neutro": `<h3>Conclusão Lógica e Didática</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_mental_neutro":{
+     conteudo: `<h3>Conclusão Lógica e Didática</h3>
             <p>Você realiza seus objetivos organizando a informação para o público. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na clareza. Você encerra processos entregando resultados que educam e informam, garantindo que a finalização intelectual seja estruturada, mas muito fácil de ser absorvida.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "3_emocional_criativo": `<h3>Realização Magnética e Festiva</h3>
+        "3_emocional_criativo":{
+     conteudo: `<h3>Realização Magnética e Festiva</h3>
             <p>Você conclui suas metas celebrando o resultado com entusiasmo. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é pura inspiração. Você realiza seus feitos motivado pela alegria do compartilhamento, entregando resultados que elevam o moral das pessoas e trazem um ar de renovação e felicidade.</p>`,
-        
-        "3_emocional_indeciso": `<h3>Entrega Sensível e Comunicativa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_emocional_indeciso": {
+     conteudo:`<h3>Entrega Sensível e Comunicativa</h3>
             <p>Sua capacidade de finalizar tarefas está ligada à resposta emocional que você espera receber. Sendo <strong>Emocional e Indeciso</strong>, você realiza com brilho, mas pode hesitar em concluir se sentir que o clima não está propício para sua expressão. Sua conclusão busca sempre criar um vínculo de simpatia e aprovação.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "3_intuitivo_criativo": `<h3>Realização Inspirada e Visionária</h3>
+        "3_intuitivo_criativo":{
+     conteudo: `<h3>Realização Inspirada e Visionária</h3>
             <p>Você entrega resultados que trazem uma mensagem espiritual ou intuitiva. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por lampejos de alegria interna. Você conclui ciclos manifestando algo que inspira os outros a verem o lado luminoso da vida, unindo intuição e expressão criativa.</p>`,
-        
-        "3_intuitivo_indeciso": `<h3>Conclusão Perceptiva e Espontânea</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_intuitivo_indeciso": {
+     conteudo:`<h3>Conclusão Perceptiva e Espontânea</h3>
             <p>Você realiza seus objetivos seguindo o que sua intuição diz ser "divertido" ou "correto", mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre o momento certo de falar. Sua capacidade de entrega amadurece quando você confia no seu "feeling" para encerrar as situações com leveza.</p>`,
-        
-        "3_intuitivo_neutro": `<h3>Entrega Silenciosa e Harmônica</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "3_intuitivo_neutro": {
+     conteudo:`<h3>Entrega Silenciosa e Harmônica</h3>
             <p>Sua realização acontece de forma que a sua simples presença comunica o sucesso. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma paz que irradia otimismo. Sua capacidade de entrega é sutil; você finaliza o necessário com uma sabedoria que sabe que a alegria é o melhor desfecho para qualquer esforço.</p>`,
 
-  
+   videoID: "F8bg1CTQ9HI"
+    },
    // --- NÚMERO 4 (Finalização com Disciplina, Método e Estabilidade) ---
         
         // FÍSICO (Entrega prática, tangível)
-        "4_fisico_criativo": `<h3>Realização Sólida e Inovadora</h3>
+        "4_fisico_criativo": {
+     conteudo:`<h3>Realização Sólida e Inovadora</h3>
             <p>Sua capacidade de entrega final é marcada pela construção de bases inabaláveis. Sendo <strong>Física e Criativa</strong>, você conclui tarefas criando métodos que tornam o trabalho futuro mais fácil para todos. Você realiza seus objetivos entregando algo concreto, duradouro e com um toque de engenhosidade técnica que resolve problemas estruturais.</p>`,
-        
-        "4_fisico_indeciso": `<h3>Conclusão Prática sob Revisão</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_fisico_indeciso": {
+     conteudo:`<h3>Conclusão Prática sob Revisão</h3>
             <p>Você realiza suas tarefas com um rigoroso padrão de qualidade, mas sua expressão <strong>Física e Indecisa</strong> faz com que você verifique o resultado final obsessivamente. Sua capacidade de realização é altíssima, porém o medo de uma falha estrutural faz com que você demore a entregar, buscando a perfeição absoluta na execução.</p>`,
-        
-        "4_fisico_neutro": `<h3>Entrega Pragmática e Resistente</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_fisico_neutro": {
+     conteudo:`<h3>Entrega Pragmática e Resistente</h3>
             <p>Sua realização é a definição de confiabilidade. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que nada saia do lugar. Sua capacidade de entrega é silenciosa e poderosa: você finaliza o que começou com uma disciplina exemplar, entregando resultados que suportam qualquer pressão e tempo.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Entrega estratégica, intelectual)
-        "4_mental_criativo": `<h3>Finalização Estruturada e Lógica</h3>
+        "4_mental_criativo": {
+     conteudo:`<h3>Finalização Estruturada e Lógica</h3>
             <p>Você conclui seus projetos apresentando sistemas e normas impecáveis. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em planejamentos que funcionam como um relógio. Você entrega um desfecho que prova sua competência em organizar o caos e transformar ideias em processos mentais sólidos.</p>`,
-        
-        "4_mental_indeciso": `<h3>Realização Intelectual e Detalhista</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_mental_indeciso": {
+     conteudo:`<h3>Realização Intelectual e Detalhista</h3>
             <p>Sua entrega final é fruto de uma análise profunda de riscos e normas. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com um cuidado extremo para não cometer erros de julgamento. Sua conclusão é uma peça de lógica blindada, onde cada detalhe foi pesado para garantir a segurança intelectual do projeto.</p>`,
-        
-        "4_mental_neutro": `<h3>Conclusão Objetiva e Disciplinada</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_mental_neutro":{
+     conteudo: `<h3>Conclusão Objetiva e Disciplinada</h3>
             <p>Você realiza seus objetivos através da aplicação rigorosa da ordem. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na eficiência e no dever. Você encerra processos entregando resultados limpos, diretos e extremamente organizados, onde a lógica e a utilidade são as prioridades finais.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "4_emocional_criativo": `<h3>Realização Leal e Protetora</h3>
+        "4_emocional_criativo": {
+     conteudo:`<h3>Realização Leal e Protetora</h3>
             <p>Você conclui suas metas garantindo a segurança e o bem-estar de quem está ao seu redor. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é movida pela dedicação. Você realiza seus feitos entregando resultados que trazem estabilidade emocional e conforto, consolidando laços de confiança através do seu trabalho duro.</p>`,
-        
-        "4_emocional_indeciso": `<h3>Entrega Sensível sob Rotina</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_emocional_indeciso": {
+     conteudo:`<h3>Entrega Sensível sob Rotina</h3>
             <p>Sua capacidade de finalizar tarefas depende da previsibilidade do ambiente. Sendo <strong>Emocional e Indeciso</strong>, você realiza com excelência quando se sente seguro. Sua conclusão busca sempre evitar conflitos, entregando um resultado que é, antes de tudo, um porto seguro para as emoções de todos os envolvidos.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "4_intuitivo_criativo": `<h3>Realização Ética e Inspirada</h3>
+        "4_intuitivo_criativo":{
+     conteudo: `<h3>Realização Ética e Inspirada</h3>
             <p>Você entrega resultados que possuem um forte alicerce moral e espiritual. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por valores profundos. Você conclui ciclos manifestando algo que não apenas funciona na prática, mas que é o reflexo de uma integridade espiritual inegociável.</p>`,
-        
-        "4_intuitivo_indeciso": `<h3>Conclusão Perceptiva sob Prudência</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_intuitivo_indeciso": {
+     conteudo:`<h3>Conclusão Perceptiva sob Prudência</h3>
             <p>Você realiza seus objetivos sentindo a necessidade de ser justo e correto, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre a solidez dos seus pressentimentos. Sua capacidade de entrega amadurece quando você aceita que sua intuição é o pilar que sustenta sua realização material.</p>`,
-        
-        "4_intuitivo_neutro": `<h3>Entrega Silenciosa e Firme</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "4_intuitivo_neutro":{
+     conteudo: `<h3>Entrega Silenciosa e Firme</h3>
             <p>Sua realização acontece através de uma presença que impõe ordem sem precisar de esforço. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que ancora os outros. Sua capacidade de entrega é discreta; você finaliza o necessário com uma sabedoria que sabe que o silêncio é a base de toda construção real.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
   
  // --- NÚMERO 5 (Finalização com Versatilidade, Agilidade e Inovação) ---
         
         // FÍSICO (Entrega prática, tangível)
-        "5_fisico_criativo": `<h3>Realização Dinâmica e Adaptável</h3>
+        "5_fisico_criativo": {
+     conteudo:`<h3>Realização Dinâmica e Adaptável</h3>
             <p>Sua capacidade de entrega final é marcada pela rapidez e pela originalidade técnica. Sendo <strong>Física e Criativa</strong>, você conclui tarefas encontrando atalhos inteligentes e soluções inovadoras. Você realiza seus objetivos entregando resultados que surpreendem pela versatilidade e pela capacidade de funcionar bem em diferentes cenários.</p>`,
-        
-        "5_fisico_indeciso": `<h3>Conclusão Ágil sob Ajuste</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_fisico_indeciso": {
+     conteudo:`<h3>Conclusão Ágil sob Ajuste</h3>
             <p>Você realiza suas tarefas com uma energia intensa, mas sua expressão <strong>Física e Indecisa</strong> faz com que você queira mudar o resultado final até o último segundo. Sua capacidade de entrega é alta, mas a vontade de experimentar "só mais uma opção" pode gerar uma inquietação física antes de dar o projeto por encerrado.</p>`,
-        
-        "5_fisico_neutro": `<h3>Entrega Pragmática e Veloz</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_fisico_neutro": {
+     conteudo:`<h3>Entrega Pragmática e Veloz</h3>
             <p>Sua realização é direta e extremamente funcional. No plano <strong>Físico Neutro</strong>, você encerra processos focando na eficiência do agora. Sua capacidade de entrega é marcada pela descomplicação: você finaliza o que começou de forma prática, garantindo que o resultado seja adaptável e responda rapidamente às necessidades do momento.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Entrega estratégica, intelectual)
-        "5_mental_criativo": `<h3>Finalização Inventiva e Visionária</h3>
+        "5_mental_criativo": {
+     conteudo:`<h3>Finalização Inventiva e Visionária</h3>
             <p>Você conclui seus projetos apresentando ideias que expandem horizontes. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em estratégias ousadas e pensamentos fora da caixa. Você entrega um desfecho que prova sua inteligência rápida, convencendo os outros através de uma lógica moderna e renovadora.</p>`,
-        
-        "5_mental_indeciso": `<h3>Realização Intelectual Curiosa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_mental_indeciso": {
+     conteudo:`<h3>Realização Intelectual Curiosa</h3>
             <p>Sua entrega final é fruto de uma mente que explorou todas as possibilidades. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com uma riqueza de informações, mas pode sentir dúvida sobre qual das mil ideias é a melhor para concluir. Quando entrega, o resultado é uma síntese brilhante de tudo o que foi pesquisado.</p>`,
-        
-        "5_mental_neutro": `<h3>Conclusão Lógica e Objetiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_mental_neutro":{
+     conteudo: `<h3>Conclusão Lógica e Objetiva</h3>
             <p>Você realiza seus objetivos através da clareza e da comunicação direta. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada em resolver o problema sem perda de tempo. Você encerra processos entregando resultados que removem burocracias e focam na inovação útil, transmitindo uma autoridade mental ágil.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "5_emocional_criativo": `<h3>Realização Magnética e Inspiradora</h3>
+        "5_emocional_criativo": {
+     conteudo:`<h3>Realização Magnética e Inspiradora</h3>
             <p>Você conclui suas metas injetando uma dose de entusiasmo e aventura no resultado. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é vibrante. Você realiza seus feitos motivado pelo prazer da novidade, entregando resultados que atraem o interesse das pessoas e trazem uma sensação de liberdade e progresso.</p>`,
-        
-        "5_emocional_indeciso": `<h3>Entrega Sensível e Inquieta</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_emocional_indeciso": {
+     conteudo:`<h3>Entrega Sensível e Inquieta</h3>
             <p>Sua capacidade de finalizar tarefas depende do estímulo emocional que o projeto oferece. Sendo <strong>Emocional e Indeciso</strong>, você realiza com brilho quando se sente desafiado. Sua conclusão busca sempre o reconhecimento pela sua versatilidade, entregando um resultado que reflete sua natureza adaptável e sensível.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "5_intuitivo_criativo": `<h3>Realização Instintiva e Progressista</h3>
+        "5_intuitivo_criativo": {
+     conteudo:`<h3>Realização Instintiva e Progressista</h3>
             <p>Você entrega resultados que captam as tendências do futuro. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por lampejos de genialidade. Você conclui ciclos manifestando algo que quebra padrões antigos, unindo uma intuição veloz a uma vontade profunda de transformar a realidade.</p>`,
-        
-        "5_intuitivo_indeciso": `<h3>Conclusão Perceptiva sob Movimento</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_intuitivo_indeciso": {
+     conteudo:`<h3>Conclusão Perceptiva sob Movimento</h3>
             <p>Você realiza seus objetivos sentindo as mudanças de direção antes que elas ocorram, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre o "timing" da entrega. Sua capacidade de realização amadurece quando você confia no seu instinto para soltar o projeto no momento exato da transformação.</p>`,
-        
-        "5_intuitivo_neutro": `<h3>Entrega Silenciosa e Versátil</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "5_intuitivo_neutro": {
+     conteudo:`<h3>Entrega Silenciosa e Versátil</h3>
             <p>Sua realização acontece através de uma presença que aceita o fluxo da vida sem resistência. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que se adapta a qualquer imprevisto. Sua capacidade de entrega é sutil; você finaliza o necessário com uma sabedoria que sabe que nada é estático.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
 
   // --- NÚMERO 6 (Finalização com Harmonia, Responsabilidade e Equilíbrio) ---
         
         // FÍSICO (Entrega prática, tangível)
-        "6_fisico_criativo": `<h3>Realização Harmoniosa e Funcional</h3>
+        "6_fisico_criativo": {
+     conteudo:`<h3>Realização Harmoniosa e Funcional</h3>
             <p>Sua capacidade de entrega final é marcada por um cuidado estético e prático. Sendo <strong>Física e Criativa</strong>, você conclui tarefas garantindo que o resultado seja não apenas útil, mas visualmente agradável. Você realiza seus objetivos entregando algo que traz conforto e beleza, unindo eficiência com um senso de serviço impecável.</p>`,
-        
-        "6_fisico_indeciso": `<h3>Conclusão Prática sob Cuidado</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_fisico_indeciso":{
+     conteudo: `<h3>Conclusão Prática sob Cuidado</h3>
             <p>Você realiza suas tarefas com uma grande preocupação em agradar a todos, mas sua expressão <strong>Física e Indecisa</strong> faz com que você revise o acabamento diversas vezes por medo de ser criticado. Sua capacidade de realização é alta, mas você busca uma validação afetiva de que seu trabalho realmente ajudou o grupo.</p>`,
-        
-        "6_fisico_neutro": `<h3>Entrega Estável e Responsável</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_fisico_neutro": {
+     conteudo:`<h3>Entrega Estável e Responsável</h3>
             <p>Sua realização é constante e focada no dever. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que as necessidades básicas de todos sejam atendidas. Sua capacidade de entrega é silenciosa e confiável: você finaliza o que começou com uma disciplina voltada para a preservação do equilíbrio e da ordem prática.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Entrega estratégica, intelectual)
-        "6_mental_criativo": `<h3>Finalização Idealista e Conciliadora</h3>
+        "6_mental_criativo":{
+     conteudo: `<h3>Finalização Idealista e Conciliadora</h3>
             <p>Você conclui seus projetos apresentando soluções que buscam a justiça e o entendimento. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em planos que beneficiam o coletivo. Você entrega um desfecho que prova sua inteligência para mediar conflitos e organizar ideias de forma ética e harmoniosa.</p>`,
-        
-        "6_mental_indeciso": `<h3>Realização Intelectual Ponderada</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_mental_indeciso":{
+     conteudo: `<h3>Realização Intelectual Ponderada</h3>
             <p>Sua entrega final é fruto de uma análise sobre o que é "certo" para todos. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com um cuidado extremo para não cometer injustiças. Sua conclusão busca a perfeição no trato interpessoal, entregando um resultado que foi pesado para manter a paz intelectual do projeto.</p>`,
-        
-        "6_mental_neutro": `<h3>Conclusão Lógica e Protetora</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_mental_neutro": {
+     conteudo:`<h3>Conclusão Lógica e Protetora</h3>
             <p>Você realiza seus objetivos através da aplicação de normas que protegem o grupo. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na clareza e na responsabilidade social. Você encerra processos entregando resultados objetivos que organizam a vida coletiva, transmitindo uma segurança baseada em princípios éticos.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "6_emocional_criativo": `<h3>Realização Afetiva e Artística</h3>
+        "6_emocional_criativo": {
+     conteudo:`<h3>Realização Afetiva e Artística</h3>
             <p>Você conclui suas metas colocando amor e sensibilidade no que faz. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é envolvente. Você realiza seus feitos motivado pela harmonia familiar ou social, entregando resultados que sensibilizam as pessoas e trazem um senso de união e beleza ao ambiente.</p>`,
-        
-        "6_emocional_indeciso": `<h3>Entrega Sensível e Mediadora</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_emocional_indeciso": {
+     conteudo:`<h3>Entrega Sensível e Mediadora</h3>
             <p>Sua capacidade de finalizar tarefas depende do clima de paz ao seu redor. Sendo <strong>Emocional e Indeciso</strong>, você realiza com excelência quando se sente útil e amado. Sua conclusão busca sempre o ajuste emocional, entregando um resultado que reflete sua natureza cuidadosa e sua vontade de ser um ponto de equilíbrio.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "6_intuitivo_criativo": `<h3>Realização Intuitiva e Pacificadora</h3>
+        "6_intuitivo_criativo": {
+     conteudo:`<h3>Realização Intuitiva e Pacificadora</h3>
             <p>Você entrega resultados que captam a necessidade de cura ou ajuste do ambiente. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por uma percepção ética profunda. Você conclui ciclos manifestando soluções que trazem uma harmonia espiritual que vai além da simples organização física.</p>`,
-        
-        "6_intuitivo_indeciso": `<h3>Conclusão Perceptiva sob Sintonização</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_intuitivo_indeciso": {
+     conteudo:`<h3>Conclusão Perceptiva sob Sintonização</h3>
             <p>Você realiza seus objetivos sentindo as tensões dos outros, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre como intervir sem causar conflito. Sua capacidade de realização amadurece quando você confia no seu instinto para entregar o ajuste final que o ambiente tanto precisa.</p>`,
-        
-        "6_intuitivo_neutro": `<h3>Entrega Silenciosa e Estável</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "6_intuitivo_neutro": {
+     conteudo:`<h3>Entrega Silenciosa e Estável</h3>
             <p>Sua realização acontece através de uma presença que acalma e organiza o caos. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que transmite proteção. Sua capacidade de entrega é sutil; você finaliza o necessário com uma sabedoria que sabe que o equilíbrio é a maior conquista de qualquer ciclo.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
 
   // --- NÚMERO 7 (Finalização com Perfeccionismo, Especialização e Sabedoria) ---
         
         // FÍSICO (Entrega prática, tangível)
-        "7_fisico_criativo": `<h3>Realização Técnica e Refinada</h3>
+        "7_fisico_criativo": {
+     conteudo:`<h3>Realização Técnica e Refinada</h3>
             <p>Sua capacidade de entrega final é marcada por um rigoroso padrão de qualidade. Sendo <strong>Física e Criativa</strong>, você conclui tarefas de forma meticulosa, buscando sempre o aprimoramento técnico. Você realiza seus objetivos entregando resultados que impressionam pela precisão e pela originalidade de quem estudou profundamente o processo manual.</p>`,
-        
-        "7_fisico_indeciso": `<h3>Conclusão Prática sob Análise</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_fisico_indeciso": {
+     conteudo:`<h3>Conclusão Prática sob Análise</h3>
             <p>Você realiza suas tarefas com um perfeccionismo que beira a exaustão. Sua expressão <strong>Física e Indecisa</strong> faz com que você revise o resultado final inúmeras vezes, temendo que algo tenha passado despercebido. Sua capacidade de realização é de altíssimo nível, mas você só entrega quando sente que eliminou toda e qualquer falha física possível.</p>`,
-        
-        "7_fisico_neutro": `<h3>Entrega Especializada e Discreta</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_fisico_neutro": {
+     conteudo:`<h3>Entrega Especializada e Discreta</h3>
             <p>Sua realização é focada e solitária. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que a execução seja impecável e sem excessos. Sua capacidade de entrega é silenciosa: você finaliza o que começou com uma disciplina técnica admirável, entregando resultados que são referências de eficiência e organização prática.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Entrega estratégica, intelectual)
-        "7_mental_criativo": `<h3>Finalização Analítica e Brilhante</h3>
+        "7_mental_criativo": {
+     conteudo:`<h3>Finalização Analítica e Brilhante</h3>
             <p>Você conclui seus projetos apresentando conclusões profundas e inovadoras. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em pesquisas ou estratégias que revelam verdades ocultas. Você entrega um desfecho que prova sua superioridade intelectual e sua capacidade de síntese sobre temas complexos.</p>`,
-        
-        "7_mental_indeciso": `<h3>Realização Intelectual e Cética</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_mental_indeciso": {
+     conteudo:`<h3>Realização Intelectual e Cética</h3>
             <p>Sua entrega final é fruto de uma investigação mental exaustiva. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com uma profundidade que não aceita superficialidades. No entanto, pode demorar a concluir por estar testando cada hipótese, buscando uma segurança lógica que seja absolutamente inquestionável.</p>`,
-        
-        "7_mental_neutro": `<h3>Conclusão Lógica e Especializada</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_mental_neutro": {
+     conteudo:`<h3>Conclusão Lógica e Especializada</h3>
             <p>Você realiza seus objetivos através da clareza absoluta e do conhecimento de causa. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na precisão dos dados. Você encerra processos entregando resultados objetivos e técnicos, transmitindo uma autoridade intelectual que vem da especialização e do estudo constante.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "7_emocional_criativo": `<h3>Realização Introspectiva e Significativa</h3>
+        "7_emocional_criativo": {
+     conteudo:`<h3>Realização Introspectiva e Significativa</h3>
             <p>Você conclui suas metas buscando um sentido espiritual ou emocional profundo no resultado. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é reservada, mas poderosa. Você realiza seus feitos entregando resultados que possuem uma alma e uma mensagem, valorizando a qualidade do vínculo em vez da quantidade de aplausos.</p>`,
-        
-        "7_emocional_indeciso": `<h3>Entrega Sensível e Reservada</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_emocional_indeciso": {
+     conteudo:`<h3>Entrega Sensível e Reservada</h3>
             <p>Sua capacidade de finalizar tarefas depende da sua conexão interna com o projeto. Sendo <strong>Emocional e Indeciso</strong>, você pode hesitar em mostrar sua realização por medo de ser incompreendido. Sua conclusão busca sempre a perfeição emocional, entregando um resultado que reflete sua natureza introspectiva e sua busca por verdade.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "7_intuitivo_criativo": `<h3>Realização Visionária e Mística</h3>
+        "7_intuitivo_criativo":{
+     conteudo: `<h3>Realização Visionária e Mística</h3>
             <p>Você entrega resultados que captam o invisível. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por uma sabedoria que parece vir de outra fonte. Você conclui ciclos manifestando algo que inspira respeito e reflexão, unindo uma intuição aguçada a uma execução que beira o sagrado.</p>`,
-        
-        "7_intuitivo_indeciso": `<h3>Conclusão Perceptiva sob Meditação</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_intuitivo_indeciso": {
+     conteudo:`<h3>Conclusão Perceptiva sob Meditação</h3>
             <p>Você realiza seus objetivos sentindo a profundidade das coisas, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre se a sua percepção é final. Sua capacidade de entrega amadurece quando você aceita o isolamento necessário para ouvir sua própria voz e concluir com a certeza de quem encontrou a sabedoria.</p>`,
-        
-        "7_intuitivo_neutro": `<h3>Entrega Silenciosa e Plena</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "7_intuitivo_neutro": {
+     conteudo:`<h3>Entrega Silenciosa e Plena</h3>
             <p>Sua realização acontece através de uma presença que observa e entende tudo sem precisar falar. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que transmite profundidade. Sua capacidade de entrega é sutil; você finaliza o necessário com uma sabedoria instintiva que sabe exatamente onde termina o mistério e começa a realidade.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
   // --- NÚMERO 8 (Finalização com Poder, Autoridade e Eficiência Material) ---
         
         // FÍSICO (Entrega prática, tangível)
-        "8_fisico_criativo": `<h3>Realização Executiva e Realizadora</h3>
+        "8_fisico_criativo": {
+     conteudo:`<h3>Realização Executiva e Realizadora</h3>
             <p>Sua capacidade de entrega final é marcada por uma força de construção impressionante. Sendo <strong>Física e Criativa</strong>, você conclui tarefas de forma a maximizar resultados e produtividade. Você realiza seus objetivos entregando produtos ou projetos robustos, unindo uma habilidade manual vigorosa com soluções inovadoras que geram valor imediato e tangível.</p>`,
-        
-        "8_fisico_indeciso": `<h3>Conclusão Prática sob Avaliação de Risco</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_fisico_indeciso": {
+     conteudo:`<h3>Conclusão Prática sob Avaliação de Risco</h3>
             <p>Você realiza suas tarefas com um foco obstinado no sucesso, mas sua expressão <strong>Física e Indecisa</strong> faz com que você revise os custos e a durabilidade do resultado final exaustivamente. Sua capacidade de realização é potente, mas você só dá o trabalho por encerrado quando tem certeza absoluta de que o investimento de energia trará o retorno esperado.</p>`,
-        
-        "8_fisico_neutro": `<h3>Entrega Administrativa e Sólida</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_fisico_neutro": {
+     conteudo:`<h3>Entrega Administrativa e Sólida</h3>
             <p>Sua realização é a definição de competência executiva. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que a estrutura física seja impecável e funcional. Sua capacidade de entrega é constante e autoritária: você finaliza o que começou com uma disciplina pragmática, entregando resultados que servem como padrão de qualidade e organização para os outros.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Entrega estratégica, intelectual)
-        "8_mental_criativo": `<h3>Finalização Estratégica e Visionária</h3>
+        "8_mental_criativo": {
+     conteudo:`<h3>Finalização Estratégica e Visionária</h3>
             <p>Você conclui seus projetos apresentando planejamentos de grande impacto e visão de mercado. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em sistemas de gestão ou ideias de expansão brilhantes. Você entrega um desfecho que prova sua autoridade intelectual e sua capacidade de transformar conceitos em lucros reais.</p>`,
-        
-        "8_mental_indeciso": `<h3>Realização Intelectual e Ponderada</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_mental_indeciso": {
+     conteudo:`<h3>Realização Intelectual e Ponderada</h3>
             <p>Sua entrega final é fruto de uma análise profunda sobre justiça material e eficiência. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com um cuidado extremo para que o resultado seja eticamente inquestionável e lucrativo. Sua conclusão é uma peça de lógica estratégica onde cada detalhe foi pesado para garantir o controle total da situação.</p>`,
-        
-        "8_mental_neutro": `<h3>Conclusão Objetiva e Meritocrática</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_mental_neutro": {
+     conteudo:`<h3>Conclusão Objetiva e Meritocrática</h3>
             <p>Você realiza seus objetivos através da aplicação rigorosa da competência técnica. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada em metas e resultados claros. Você encerra processos entregando dados precisos e diretrizes diretas, transmitindo uma autoridade mental que foca no que é produtivo e essencial para o sucesso.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "8_emocional_criativo": `<h3>Realização Magnética e Ambiciosa</h3>
+        "8_emocional_criativo": {
+     conteudo:`<h3>Realização Magnética e Ambiciosa</h3>
             <p>Você conclui suas metas injetando uma dose de poder e autoconfiança no ambiente. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é apaixonada e motivadora. Você realiza seus feitos motivado pelo prazer da conquista, entregando resultados que elevam o padrão de todos ao redor e celebram o sucesso com intensidade emocional.</p>`,
-        
-        "8_emocional_indeciso": `<h3>Entrega Sensível sob Comando</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_emocional_indeciso": {
+     conteudo:`<h3>Entrega Sensível sob Comando</h3>
             <p>Sua capacidade de finalizar tarefas está ligada ao reconhecimento do seu valor e da sua autoridade. Sendo <strong>Emocional e Indeciso</strong>, você realiza com excelência se sentir que está no controle. Sua conclusão busca sempre a segurança material e emocional, entregando um resultado que reflete sua força de caráter e sua busca por estabilidade.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "8_intuitivo_criativo": `<h3>Realização Visionária e Justiceira</h3>
+        "8_intuitivo_criativo": {
+     conteudo:`<h3>Realização Visionária e Justiceira</h3>
             <p>Você entrega resultados que captam o fluxo da abundância e da justiça. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por uma percepção aguçada das leis de causa e efeito. Você conclui ciclos manifestando algo que traz equilíbrio material e propósito, unindo uma intuição estratégica a uma execução imponente.</p>`,
-        
-        "8_intuitivo_indeciso": `<h3>Conclusão Perceptiva sob Prudência</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_intuitivo_indeciso": {
+     conteudo:`<h3>Conclusão Perceptiva sob Prudência</h3>
             <p>Você realiza seus objetivos sentindo o peso das responsabilidades através da sua intuição, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre o momento exato de exercer seu poder total. Sua capacidade de entrega amadurece quando você aceita que sua percepção espiritual é o que dá autoridade real às suas conquistas materiais.</p>`,
-        
-        "8_intuitivo_neutro": `<h3>Entrega Silenciosa e Respeitosa</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "8_intuitivo_neutro": {
+     conteudo:`<h3>Entrega Silenciosa e Respeitosa</h3>
             <p>Sua realização acontece através de uma presença que impõe respeito sem precisar de alarde. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que transmite segurança e justiça. Sua capacidade de entrega é sutil; você finaliza o necessário com uma sabedoria instintiva que garante que o sucesso seja sustentável e ético.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
 
   // --- NÚMERO 9 (Finalização com Humanitarismo, Sabedoria e Desprendimento) ---
         
         // FÍSICO (Entrega prática, tangível)
-        "9_fisico_criativo": `<h3>Realização Generosa e Transformadora</h3>
+        "9_fisico_criativo": {
+     conteudo:`<h3>Realização Generosa e Transformadora</h3>
             <p>Sua capacidade de entrega final é marcada por uma ação que visa o bem comum. Sendo <strong>Física e Criativa</strong>, você conclui tarefas de forma a beneficiar o maior número possível de pessoas. Você realiza seus objetivos entregando soluções práticas e originais que resolvem problemas reais, unindo uma execução vigorosa a um profundo senso de utilidade social.</p>`,
-        
-        "9_fisico_indeciso": `<h3>Conclusão Prática sob Reflexão Ética</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_fisico_indeciso": {
+     conteudo:`<h3>Conclusão Prática sob Reflexão Ética</h3>
             <p>Você realiza suas tarefas com um desejo genuíno de ajudar, mas sua expressão <strong>Física e Indecisa</strong> faz com que você questione se sua entrega é suficiente para causar o impacto desejado. Sua capacidade de realização é elevada, mas você só finaliza o trabalho quando sente que sua ação física está em total harmonia com seus valores humanitários.</p>`,
-        
-        "9_fisico_neutro": `<h3>Entrega Constante e Desinteressada</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_fisico_neutro": {
+     conteudo:`<h3>Entrega Constante e Desinteressada</h3>
             <p>Sua realização é a definição de serviço altruísta. No plano <strong>Físico Neutro</strong>, você encerra processos garantindo que o resultado seja acessível e benéfico para todos. Sua capacidade de entrega é silenciosa e persistente: você finaliza o que começou com uma disciplina exemplar, focando na integridade e na durabilidade do que foi construído para o coletivo.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // MENTAL (Entrega estratégica, intelectual)
-        "9_mental_criativo": `<h3>Finalização Sábia e Idealista</h3>
+        "9_mental_criativo": {
+     conteudo:`<h3>Finalização Sábia e Idealista</h3>
             <p>Você conclui seus projetos apresentando conclusões que promovem a evolução intelectual. No plano <strong>Mental Criativo</strong>, sua capacidade de realização se manifesta em ideias universais e conceitos inspiradores. Você entrega um desfecho que prova sua inteligência compreensiva, oferecendo visões que unem as pessoas e trazem clareza sobre o propósito do trabalho.</p>`,
-        
-        "9_mental_indeciso": `<h3>Realização Intelectual Abrangente</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_mental_indeciso": {
+     conteudo:`<h3>Realização Intelectual Abrangente</h3>
             <p>Sua entrega final é fruto de uma análise sobre o impacto global das suas ideias. Sendo <strong>Mental e Indecisa</strong>, você realiza seus objetivos com um cuidado extremo para não ser excludente ou injusto. Sua conclusão é uma peça de lógica tolerante e profunda, onde cada detalhe foi pensado para respeitar a diversidade e a verdade universal.</p>`,
-        
-        "9_mental_neutro": `<h3>Conclusão Lógica e Esclarecedora</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_mental_neutro": {
+     conteudo:`<h3>Conclusão Lógica e Esclarecedora</h3>
             <p>Você realiza seus objetivos através da comunicação de verdades essenciais. No plano <strong>Mental Neutro</strong>, sua capacidade de entrega é focada na objetividade e na justiça. Você encerra processos entregando resultados que educam e simplificam a vida alheia, transmitindo uma autoridade mental que é, acima de tudo, acolhedora e imparcial.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // EMOCIONAL (Entrega por satisfação, impacto emocional)
-        "9_emocional_criativo": `<h3>Realização Inspiradora e Carismática</h3>
+        "9_emocional_criativo": {
+     conteudo:`<h3>Realização Inspiradora e Carismática</h3>
             <p>Você conclui suas metas injetando uma dose de amor universal e entusiasmo no resultado. No plano <strong>Emocional Criativo</strong>, sua capacidade de entrega é magnética. Você realiza seus feitos motivado pelo impacto emocional positivo que pode causar, entregando resultados que sensibilizam e motivam as pessoas a serem melhores.</p>`,
-        
-        "9_emocional_indeciso": `<h3>Entrega Sensível e Compassiva</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_emocional_indeciso": {
+     conteudo:`<h3>Entrega Sensível e Compassiva</h3>
             <p>Sua capacidade de finalizar tarefas está ligada à sintonia emocional que você estabelece com o projeto. Sendo <strong>Emocional e Indeciso</strong>, você realiza com brilho quando sente que seu trabalho é uma forma de doação. Sua conclusão busca sempre o acolhimento, entregando um resultado que reflete sua natureza sensível e seu desejo de harmonia global.</p>`,
-
+ videoID: "F8bg1CTQ9HI"
+    },
         // INTUITIVO (Entrega por propósito, percepção espiritual)
-        "9_intuitivo_criativo": `<h3>Realização Visionária e Espiritual</h3>
+        "9_intuitivo_criativo": {
+     conteudo:`<h3>Realização Visionária e Espiritual</h3>
             <p>Você entrega resultados que captam o encerramento de um ciclo com sabedoria. No plano <strong>Intuitivo Criativo</strong>, sua capacidade de realização é guiada por uma conexão espiritual profunda. Você conclui ciclos manifestando algo que serve como um guia para os outros, unindo uma intuição profética a uma entrega cheia de significado e propósito.</p>`,
-        
-        "9_intuitivo_indeciso": `<h3>Conclusão Perceptiva sob Entrega</h3>
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_intuitivo_indeciso": {
+     conteudo:`<h3>Conclusão Perceptiva sob Entrega</h3>
             <p>Você realiza seus objetivos sentindo o "fim" das situações antes que elas ocorram, mas sua expressão <strong>Intuitiva e Indecisa</strong> gera uma dúvida sobre como soltar o projeto. Sua capacidade de entrega amadurece quando você aceita que sua percepção interna já completou a obra, permitindo que você finalize com desprendimento e paz.</p>`,
-        
-        "9_intuitivo_neutro": `<h3>Entrega Silenciosa e Plena</h3>
-            <p>Sua realização acontece através de uma presença que aceita a finalidade de todas as coisas. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que transmite tolerância e sabedoria. Sua capacidade de entrega é sutil; você finaliza o necessário com a certeza de quem cumpriu sua missão espiritual com integridade.</p>`
+         videoID: "F8bg1CTQ9HI"
+    },
+        "9_intuitivo_neutro": {
+     conteudo:`<h3>Entrega Silenciosa e Plena</h3>
+            <p>Sua realização acontece através de uma presença que aceita a finalidade de todas as coisas. No plano <strong>Intuitivo Neutro</strong>, você conclui suas metas com uma serenidade que transmite tolerância e sabedoria. Sua capacidade de entrega é sutil; você finaliza o necessário com a certeza de quem cumpriu sua missão espiritual com integridade.</p>`,
+         
   
- 
+  videoID: "F8bg1CTQ9HI"
+    },
  
  }
 };
@@ -5918,7 +6651,8 @@ intuitivo: {
 
 window.TextosTransito = {
 
-1:`
+1:{
+     conteudo:`
 <h3> Início de um Novo Ciclo e Independência</h3>
 <p>Uma fase inteiramente nova da vida começa agora e o limiar de um novo começo se apresenta para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Não só novas ideias entrarão em cena, mas haverá aceitação e empenho em desenvolvê-las. É uma fase de mudanças e a hora de avançar em direção a novos objetivos, abandonando o passado. Deve-se eliminar da vida tudo o que esteja ultrapassado, que não tenha mais utilidade ou que não traga mais benefícios, abrindo espaço para a sua nova potência.</p>
 <p>Descarte hábitos, vícios e responsabilidades de apego anterior, assim como valores e relacionamentos que não tenham mais serventia para o futuro. Uma nova identidade está surgindo para você, mais eficiente, inovadora, altamente criativa e corajosa. Suas qualidades de liderança e controle estarão mais presentes e as situações que se apresentarão exigirão enfrentamento de desafios, moldando sua autoridade diante do mundo.</p>
@@ -5928,9 +6662,11 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito predominar por 3 anos ou mais, isso pode indicar um período tumultuado onde será necessário lidar com muitas mudanças. Independentemente disso, qualquer que seja o evento ocorrido, será benéfico para sua evolução a longo prazo.</p>
 <p>2. Os efeitos de um Trânsito 1 junto a um Ano Pessoal 1 são potencializados e exigem escolhas cuidadosas. Prepare-se para agir com visão de futuro e não resultados imediatos, garantindo que cada passo consolide sua nova liderança.</p>
-`,
+`,  videoID: "F8bg1CTQ9HI"
+    },
 
- 2:`
+ 2:{
+     conteudo:`
 <h3>Cooperação, Diplomacia e Sensibilidade</h3>
 <p>Durante este trânsito, o aprendizado para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é cooperar com as outras pessoas para realizar um bem maior. É um momento para seguir e não para liderar, devendo-se procurar orientação e se guiar pelo ambiente e por quem tenha maior conhecimento. Será necessário manter o foco em ideais, mas sem se deixar levar pela arrogância ou rigidez, permitindo que sua sabedoria floresça na paciência e na escuta ativa.</p>
 <p>Este é um período de parcerias, onde o seu sucesso dependerá da capacidade de trabalhar em conjunto e aceitar opiniões. Sua sensibilidade e intuição estarão mais afloradas, permitindo maior compreensão dos acontecimentos e percepção de mudanças sutis em pessoas e situações. Haverá maior capacidade de adaptação, transformando sua flexibilidade em uma vantagem estratégica silenciosa que abre portas onde a força bruta falharia.</p>
@@ -5940,9 +6676,11 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito predominar por 3 anos ou mais, é possível experimentar períodos de pressão psicológica. O segredo é transformar essa sensibilidade em diplomacia, evitando que as tensões externas afetem seu equilíbrio interior.</p>
 <p>2. Quando ocorre junto a um Ano Pessoal 2, os conflitos emocionais podem aumentar. Desenvolver o autocontrole e a disciplina ajudará você a manter o equilíbrio, transformando a vulnerabilidade em uma ferramenta de conexão humana e poder pessoal.</p>
-`,
+`,  videoID: "F8bg1CTQ9HI"
+    },
 
- 3:`
+ 3:{
+     conteudo:`
 <h3> Criatividade, Expressão e Vida Social</h3>
 <p>Sua capacidade em se expressar aumentará substancialmente neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>, assim como qualquer talento para se comunicar e interagir. Este pode ser um período de muita inspiração e sucesso através da sua criatividade pessoal. Muitas oportunidades para progredir surgirão, especialmente na sua carreira, por meio do seu magnetismo, talento criativo e da forma brilhante como você apresenta suas ideias ao mundo.</p>
 <p>É um momento social, de muita diversão e amizades, com uma visão mais alegre diante da vida; a sensação será de maior leveza. Como se a vida aliviasse um fardo, permitindo que as coisas fluam naturalmente. As pessoas serão atraídas por você, pois sentem sua alegria de viver e seu espírito jovial, o que coloca você no centro das atenções e facilita a abertura de novos e lucrativos caminhos profissionais.</p>
@@ -5952,9 +6690,11 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito predominar por 3 anos ou mais, pode representar uma grande virada positiva na sua vida. Você poderá alcançar recompensas e até fama mediante um trabalho bem feito e uma comunicação impecável.</p>
 <p>2. Junto a um Ano Pessoal 3, pode haver dificuldade em manter a autodisciplina. Evite a inquietação e o exibicionismo; mantenha o foco no futuro para que o sucesso de agora se transforme em prosperidade permanente nos próximos ciclos.</p>
-`,
+`,  videoID: "F8bg1CTQ9HI"
+    },
 
- 4:`
+ 4:{
+     conteudo:`
 <h3>Trabalho, Organização e Bases Sólidas</h3>
 <p>Este é um período de muito trabalho para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, onde as recompensas serão diretamente proporcionais ao seu esforço. Muito será exigido, mas existe a oportunidade de estabelecer uma base inabalável para seus objetivos. Seja alguém organizado e disciplinado, valorizando cada pequena conquista e mantendo a atenção aos detalhes técnicos, pois é na precisão que o seu sucesso se consolidará agora.</p>
 <p>Aja com praticidade absoluta. Saiba gerenciar seus recursos e seu tempo para empenhar energias corretamente e obter os lucros desejados. Seja paciente para enxergar a realidade exatamente como ela é, facilitando o encontro do caminho correto para o êxito. Mantenha a economia e certifique-se de que o lado financeiro está equilibrado, transformando sua prudência em um escudo contra as incertezas externas.</p>
@@ -5963,9 +6703,11 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito estiver predominante por 3 anos ou mais, a vida pode parecer uma batalha constante. Mas se houver aprendizado em tirar proveito das restrições, ao final do ciclo ocorrerá um triunfo pessoal e uma conquista profissional de grande prestígio.</p>
 <p>2. Junto com um Ano Pessoal 4, tudo pode parecer mais monótono e difícil. Aja com praticidade extrema e não se deixe abater pela rotina; a consistência que você aplicar agora será o diferencial que o levará ao topo no momento certo.</p>
-`,
+`,  videoID: "F8bg1CTQ9HI"
+    },
 
- 5:`
+ 5:{
+     conteudo:`
 <h3>Liberdade, Mudanças e Novas Experiências</h3>
 <p>Este é um momento crucial para o seu progresso, <strong>MASCULINO-FEMININO-NEUTRO</strong>, trazendo uma sensação de alívio e liberdade renovada. Sua capacidade para se relacionar e interagir estará muito favorecida, facilitando negociações e novas parcerias. Os negócios fluirão rapidamente e oportunidades de expansão surgirão inesperadamente; seu magnetismo pessoal será a ferramenta principal para promover suas ideias e abrir portas até então fechadas.</p>
 <p>Este é um período movimentado de grande aprendizado. Poderão surgir oportunidades que você jamais imaginou, levando-o a conhecer novas pessoas e lugares. Muitos velhos hábitos e valores ultrapassados desaparecerão sem que você perceba, marcando sua transição para uma nova fase de desenvolvimento pessoal muito mais ágil, versátil e conectada com as tendências modernas de mercado.</p>
@@ -5974,9 +6716,11 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito durar 3 ou mais anos, pode refletir instabilidade se não houver controle. O segredo é abraçar a mudança com estratégia, evitando fugir das responsabilidades e usando a versatilidade a seu favor.</p>
 <p>2. Junto a um Ano Pessoal 5, pode surgir uma falsa sensação de falta de limites. Mantenha o equilíbrio e o senso ético, controlando a impulsividade. Use essa energia para inovar em seus projetos sem perder a base sólida que você já construiu.</p>
-`,
+`,  videoID: "F8bg1CTQ9HI"
+    },
 
- 6:`
+ 6:{
+     conteudo:`
 <h3>Responsabilidades Familiares e Harmonia</h3>
 <p>Este é um período para você assumir responsabilidades e deveres importantes, <strong>MASCULINO-FEMININO-NEUTRO</strong>, especialmente ligados ao lar e à família. Haverá o impulso de apoiar quem está ao seu redor, mas é vital manter o foco nas próprias necessidades para não se anular. As pessoas verão em você alguém que inspira confiança e orienta, tornando-o o pilar central de equilíbrio e harmonia no seu ambiente atual.</p>
 <p>Avanços na carreira e melhorias financeiras são muito prováveis agora. O seu progresso pessoal virá através de novas oportunidades que exigirão mais responsabilidade e compromisso. Será um período emotivo, onde seu instinto protetor estará forte; use essa energia para fortalecer laços e construir um ambiente de trabalho e convívio muito mais acolhedor, justo e produtivo para todos.</p>
@@ -5985,9 +6729,11 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito durar 3 anos ou mais, pode indicar a necessidade de lidar com muitos problemas familiares. Encare isso como uma missão de pacificação; ao organizar a vida dos outros, você aprenderá a maestria de organizar sua própria felicidade.</p>
 <p>2. Junto a um Ano Pessoal 6, as responsabilidades podem parecer pesadas. No entanto, se cumpridas com dedicação, as recompensas serão compensadoras. Evite se intrometer em questões alheias; foque em ser o exemplo de equilíbrio e justiça que todos esperam de você.</p>
-`,
+`,  videoID: "F8bg1CTQ9HI"
+    },
 
- 7:`
+ 7:{
+     conteudo:`
 <h3>Autoconhecimento, Estudo e Reflexão</h3>
 <p>Este é um período sagrado para sua autorreflexão, análise e crescimento interior, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A introspecção estará mais presente, trazendo a necessidade de você passar tempo a sós para apreciar a vida e entender seus processos ocultos. Questões existenciais ocuparão seus pensamentos, levando você a uma descoberta profunda de questões importantes que direcionaram sua vida até este momento.</p>
 <p>Para lidar com as pessoas ao redor, será necessário você refinar sua expressão e agir com diplomacia. Não force situações nem tente apressar o tempo; este não é o momento para agressividade, mas para o seu desenvolvimento pessoal através do estudo e do silêncio. Pense cuidadosamente antes de cada decisão e seja cauteloso com grandes mudanças, priorizando a qualidade do seu entendimento sobre a velocidade da ação.</p>
@@ -5996,9 +6742,11 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se o Trânsito 7 durar 3 anos ou mais, evite o isolamento excessivo ou o apego a detalhes sem benefício prático. Use esse tempo para se tornar um especialista em sua área, transformando o conhecimento em poder real.</p>
 <p>2. Junto com um Ano Pessoal 7, pode haver insatisfação ou retraimento. Não se feche para o mundo; use a meditação e o estudo para encontrar as respostas que procura, garantindo que essa fase de busca interior resulte em uma paz profunda e duradoura.</p>
-`,
+`,  videoID: "F8bg1CTQ9HI"
+    },
 
- 8:`
+ 8:{
+     conteudo:`
 <h3>Eficiência, Poder e Conquistas Materiais</h3>
 <p>Este é um período de grande foco material, progresso e poder pessoal para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desenvolvimento da sua carreira e a consolidação financeira serão as prioridades absolutas. É um excelente momento para você colocar todas as finanças em ordem e buscar um crescimento agressivo, porém planejado, exigindo dedicação total à organização e à estratégia de longo alcance.</p>
 <p>É época de ser alguém justo e cauteloso com o poder, usando sua sabedoria executiva em todas as ações. Manter o equilíbrio entre o trabalho e a vida pessoal será o seu maior desafio e a chave para o sucesso real. Este período refletirá exatamente como você conduziu sua vida até aqui; resolva questões antigas com pragmatismo para que elas não atrasem sua ascensão triunfal ao topo do seu mercado.</p>
@@ -6007,9 +6755,11 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se o Trânsito 8 durar 3 anos ou mais, indica um desenvolvimento material extraordinário, favorecendo o reconhecimento, o poder e o status social em grau elevado. Prepare-se para assumir grandes responsabilidades e colher grandes lucros.</p>
 <p>2. Junto com um Ano Pessoal 8, o período pode ser estressante pelo excesso de dedicação à profissão. Use sua inteligência para delegar tarefas e mantenha o equilíbrio; assim, você desfrutará do poder e do status sem comprometer sua paz e sua harmonia pessoal.</p>
-`,
+`,  videoID: "F8bg1CTQ9HI"
+    },
 
- 9:`
+ 9:{
+     conteudo:`
 <h3> Humanitarismo, Conclusões e Transformação</h3>
 <p>Este é um período em que seus ideais serão testados e forjados para um propósito maior, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Haverá uma expansão psicológica e espiritual marcante na sua vida. Relacionamentos e hábitos que não servem mais ao seu novo eu serão abandonados naturalmente. É tempo de você se desapegar de mágoas passadas, permitindo que a vida siga um fluxo de renovação total e necessária.</p>
 <p>Manter o apego a sentimentos negativos trará apenas atrasos ao seu progresso. Existe agora em você a capacidade de entender profundamente as necessidades alheias, o que pode exigir serviço ao próximo e generosidade. Sua sensibilidade aumentará, gerando o desejo de melhorar o ambiente ao seu redor. Aproveite para ensinar, orientar e retribuir, pois o que você plantar em bondade agora voltará como bênçãos em seu próximo ciclo.</p>
@@ -6018,226 +6768,227 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se o Trânsito 9 durar 3 anos ou mais, evite se deixar iludir por crenças excessivas ou fanatismos. Mantenha sua visão humanitária, mas com os pés no chão, garantindo que seu idealismo resulte em benefícios práticos para você e para o mundo.</p>
 <p>2. Junto com um Ano Pessoal 9, o período pode ser emocionalmente desgastante. Mantenha a clareza de pensamentos e não tome decisões impulsivas de encerramento; deixe que o que deve ir embora saia naturalmente, preparando o terreno para a sua renovação total.</p>
-`
+`,  videoID: "F8bg1CTQ9HI"
+    },
 };
 
 
 textosSinteseExpressao = {
     // FÍSICO(F) como P1 - Todas as combinações com Mental, Emocional e Intuitivo
-    "FISICO(M)-MENTAL(M)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(F)-EMOCIONAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(F)-EMOCIONAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(F)-INTUITIVO(F)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(F)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(F)-INTUITIVO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" }, 
-    "FISICO(F)-MENTAL(F)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(F)-INTUITIVO(F)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(F)-INTUITIVO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(F)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(F)-INTUITIVO(F)-MENTAL(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(F)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(F)-INTUITIVO(M)-MENTAL(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(F)-MENTAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(F)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(F)-EMOCIONAL(M)-MENTAL(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(M)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(M)-INTUITIVO(M)-MENTAL(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(M)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(M)-EMOCIONAL(M)-MENTAL(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(M)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(M)-INTUITIVO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(M)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(M)-MENTAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(F)-MENTAL(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(M)-INTUITIVO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(M)-MENTAL(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(M)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(M)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(F)-INTUITIVO(F)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(F)-EMOCIONAL(F)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(F)-INTUITIVO(M)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(F)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(F)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(F)-EMOCIONAL(M)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(M)-INTUITIVO(M)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(M)-EMOCIONAL(M)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(M)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-EMOCIONAL(M)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(F)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(F)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(M)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(M)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-    "FISICO(F)-INTUITIVO(Fr)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "Existem dois motores principais que operam em alta frequência, garantindo força de realização e intensidade.", videoID: "z1nW3rmNeEI" },
+    "FISICO(M)-MENTAL(M)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(F)-INTUITIVO(F)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(F)-INTUITIVO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" }, 
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(F)-INTUITIVO(F)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(F)-INTUITIVO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(F)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(F)-INTUITIVO(F)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(F)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(F)-INTUITIVO(M)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(F)-MENTAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(F)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(F)-EMOCIONAL(M)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(M)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(M)-INTUITIVO(M)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(M)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(M)-EMOCIONAL(M)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(M)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(M)-INTUITIVO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(M)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(M)-MENTAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(F)-MENTAL(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(M)-INTUITIVO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(M)-MENTAL(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(M)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(M)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(F)-INTUITIVO(F)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(F)-EMOCIONAL(F)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(F)-INTUITIVO(M)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(F)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(F)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(F)-EMOCIONAL(M)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(M)-INTUITIVO(M)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(M)-EMOCIONAL(M)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(M)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-EMOCIONAL(M)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(F)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(F)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(M)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(M)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+    "FISICO(F)-INTUITIVO(Fr)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
     "FISICO(F)-INTUITIVO(Fr)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
     "FISICO(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
     "FISICO(F)-EMOCIONAL(Fr)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
     "FISICO(F)-MENTAL(Fr)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
 // MENTAL(F) como P1 - Todas as combinações com Físico, Emocional e Intuitivo
 // MENTAL(F) como P1 - Todas as combinações com Físico, Emocional e Intuitivo
-"MENTAL(M)-FISICO(M)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(F)-EMOCIONAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(F)-EMOCIONAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(F)-INTUITIVO(F)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(F)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(F)-INTUITIVO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(F)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(F)-INTUITIVO(F)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(F)-INTUITIVO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(F)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
+"MENTAL(M)-FISICO(M)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(F)-INTUITIVO(F)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(F)-INTUITIVO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(F)-INTUITIVO(F)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(F)-INTUITIVO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(F)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
 
-"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(F)-FISICO(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(F)-FISICO(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(M)-FISICO(M)": { conteudo: "O perfil apresenta uma **Dualidade de Potência**. Existem dois motores principais que operam em alta frequência, garantindo força de realização e intensidade. Os outros dois planos atuam como estabilizadores, operando no nível médio (equilíbrio). O desafio é não deixar que as duas potências dominantes abafem a voz dos planos equilibrados, mantendo a fluidez entre a ação e a moderação.", videoID: "z1nW3rmNeEI" },
-"MENTAL(F)-EMOCIONAL(F)-FISICO(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(F)-FISICO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(F)-EMOCIONAL(M)-FISICO(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(M)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(M)-INTUITIVO(M)-FISICO(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(M)-FISICO(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(M)-EMOCIONAL(M)-FISICO(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(M)-FISICO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(M)-INTUITIVO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(M)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(M)-FISICO(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(F)-FISICO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(M)-INTUITIVO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(M)-FISICO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(M)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(M)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
+"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(F)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(F)-FISICO(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(M)-FISICO(M)": { conteudo: "", videoID: "z1nW3rmNeEI" },
+"MENTAL(F)-EMOCIONAL(F)-FISICO(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(F)-FISICO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(F)-EMOCIONAL(M)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(M)-EMOCIONAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(M)-INTUITIVO(M)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(M)-FISICO(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(M)-EMOCIONAL(M)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(M)-FISICO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(M)-INTUITIVO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(M)-EMOCIONAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(M)-FISICO(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(F)-FISICO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(M)-INTUITIVO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(M)-FISICO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(M)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(M)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
 
-"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(F)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(F)-EMOCIONAL(F)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(M)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(F)-FISICO(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(F)-EMOCIONAL(M)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(M)-INTUITIVO(M)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(M)-EMOCIONAL(M)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(M)-FISICO(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(M)-INTUITIVO(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(F)-FISICO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(F)-EMOCIONAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(M)-FISICO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(M)-EMOCIONAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(Fr)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(Fr)-FISICO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-INTUITIVO(Fr)-EMOCIONAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-EMOCIONAL(Fr)-FISICO(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"MENTAL(F)-FISICO(Fr)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
+"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(F)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(F)-EMOCIONAL(F)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(M)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(F)-FISICO(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(F)-EMOCIONAL(M)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(M)-INTUITIVO(M)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(M)-EMOCIONAL(M)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(M)-FISICO(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(M)-INTUITIVO(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(F)-FISICO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(F)-EMOCIONAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(M)-FISICO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(M)-EMOCIONAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(Fr)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(Fr)-FISICO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-INTUITIVO(Fr)-EMOCIONAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-EMOCIONAL(Fr)-FISICO(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"MENTAL(F)-FISICO(Fr)-INTUITIVO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
 
 // EMOCIONAL(F) como P1 - Todas as combinações com Físico, Mental e Intuitivo
 // EMOCIONAL(F) como P1 - Todas as combinações com Físico, Mental e Intuitivo
-"EMOCIONAL(M)-FISICO(M)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(F)-MENTAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(F)-MENTAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(F)-INTUITIVO(F)-MENTAL(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(F)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(F)-INTUITIVO(M)-MENTAL(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(F)-MENTAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(F)-INTUITIVO(F)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(F)-INTUITIVO(M)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(F)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(F)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
+"EMOCIONAL(M)-FISICO(M)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(F)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(F)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(F)-INTUITIVO(F)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(F)-INTUITIVO(M)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(F)-INTUITIVO(F)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(F)-INTUITIVO(M)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(F)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(F)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
 
-"EMOCIONAL(F)-MENTAL(F)-INTUITIVO(F)-FISICO(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(F)-FISICO(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(F)-INTUITIVO(M)-FISICO(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(F)-FISICO(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(F)-FISICO(M)-MENTAL(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(F)-MENTAL(M)-FISICO(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(M)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(M)-INTUITIVO(M)-FISICO(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(M)-FISICO(M)-INTUITIVO(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(M)-MENTAL(M)-FISICO(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(M)-FISICO(M)-MENTAL(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(M)-INTUITIVO(M)-MENTAL(M)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(M)-MENTAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(M)-FISICO(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(F)-FISICO(M)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(M)-INTUITIVO(M)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(M)-FISICO(M)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(M)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(M)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-MENTAL(F)-INTUITIVO(F)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(F)-FISICO(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(F)-INTUITIVO(M)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(F)-FISICO(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(F)-FISICO(M)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(F)-MENTAL(M)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(M)-MENTAL(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(M)-INTUITIVO(M)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(M)-FISICO(M)-INTUITIVO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(M)-MENTAL(M)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(M)-FISICO(M)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(M)-INTUITIVO(M)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(M)-MENTAL(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(M)-FISICO(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(F)-FISICO(M)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(M)-INTUITIVO(M)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(M)-FISICO(M)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(M)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(M)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
 
-"EMOCIONAL(F)-MENTAL(F)-INTUITIVO(F)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(F)-MENTAL(F)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(F)-INTUITIVO(M)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(F)-FISICO(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(F)-INTUITIVO(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(F)-MENTAL(M)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(M)-INTUITIVO(M)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(M)-MENTAL(M)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(M)-FISICO(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(M)-INTUITIVO(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(F)-FISICO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(F)-MENTAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(M)-FISICO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(M)-MENTAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(Fr)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(Fr)-FISICO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-INTUITIVO(Fr)-MENTAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(Fr)-INTUITIVO(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-MENTAL(Fr)-FISICO(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "" },
-"EMOCIONAL(F)-FISICO(Fr)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
+"EMOCIONAL(F)-MENTAL(F)-INTUITIVO(F)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(F)-MENTAL(F)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(F)-INTUITIVO(M)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(F)-FISICO(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(F)-INTUITIVO(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(F)-MENTAL(M)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(M)-INTUITIVO(M)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(M)-MENTAL(M)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(M)-FISICO(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(M)-INTUITIVO(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(F)-FISICO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(F)-MENTAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(M)-FISICO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(M)-MENTAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(Fr)-MENTAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(Fr)-FISICO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-INTUITIVO(Fr)-MENTAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(Fr)-INTUITIVO(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-MENTAL(Fr)-FISICO(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"EMOCIONAL(F)-FISICO(Fr)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
 
 // INTUITIVO(F) como P1 - Todas as combinações com Físico, Mental e Emocional
 // INTUITIVO(F) como P1 - Todas as combinações com Físico, Mental e Emocional
-"INTUITIVO(M)-FISICO(M)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(F)-MENTAL(F)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(F)-MENTAL(F)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(F)-EMOCIONAL(F)-MENTAL(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(F)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(F)-EMOCIONAL(M)-MENTAL(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(F)-MENTAL(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(F)-EMOCIONAL(F)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(F)-EMOCIONAL(M)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(F)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(F)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
+"INTUITIVO(M)-FISICO(M)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(F)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(F)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(F)-EMOCIONAL(F)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(F)-EMOCIONAL(M)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(F)-EMOCIONAL(F)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(F)-EMOCIONAL(M)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(F)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(F)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
 
-"INTUITIVO(F)-MENTAL(F)-EMOCIONAL(F)-FISICO(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(F)-FISICO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(F)-EMOCIONAL(M)-FISICO(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(F)-FISICO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(F)-FISICO(M)-MENTAL(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(F)-MENTAL(M)-FISICO(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(M)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(M)-EMOCIONAL(M)-FISICO(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(M)-FISICO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(M)-MENTAL(M)-FISICO(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(M)-FISICO(M)-MENTAL(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(M)-EMOCIONAL(M)-MENTAL(M)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(M)-MENTAL(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(M)-FISICO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(F)-FISICO(M)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(M)-EMOCIONAL(M)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(M)-FISICO(M)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(M)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(M)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
+"INTUITIVO(F)-MENTAL(F)-EMOCIONAL(F)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(F)-FISICO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(F)-EMOCIONAL(M)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(F)-FISICO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(F)-FISICO(M)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(F)-MENTAL(M)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(M)-MENTAL(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(M)-EMOCIONAL(M)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(M)-FISICO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(M)-MENTAL(M)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(M)-FISICO(M)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(M)-EMOCIONAL(M)-MENTAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(M)-MENTAL(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(M)-FISICO(M)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(F)-FISICO(M)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(M)-EMOCIONAL(M)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(M)-FISICO(M)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(M)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(M)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
 
-"INTUITIVO(F)-MENTAL(F)-EMOCIONAL(F)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(F)-MENTAL(F)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(F)-EMOCIONAL(M)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(F)-FISICO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(F)-EMOCIONAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(F)-MENTAL(M)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(M)-EMOCIONAL(M)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(M)-MENTAL(M)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(M)-FISICO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(M)-EMOCIONAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(F)-FISICO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(F)-MENTAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(M)-FISICO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(M)-MENTAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(Fr)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(Fr)-FISICO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-EMOCIONAL(Fr)-MENTAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(Fr)-EMOCIONAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-MENTAL(Fr)-FISICO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "" },
-"INTUITIVO(F)-FISICO(Fr)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "" }
+"INTUITIVO(F)-MENTAL(F)-EMOCIONAL(F)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(F)-MENTAL(F)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(F)-EMOCIONAL(M)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(F)-FISICO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(F)-EMOCIONAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(F)-MENTAL(M)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(M)-EMOCIONAL(M)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(M)-MENTAL(M)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(M)-FISICO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(M)-EMOCIONAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(F)-FISICO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(F)-MENTAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(M)-FISICO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(M)-MENTAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(Fr)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(Fr)-FISICO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-EMOCIONAL(Fr)-MENTAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(Fr)-EMOCIONAL(Fr)-FISICO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-MENTAL(Fr)-FISICO(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
+"INTUITIVO(F)-FISICO(Fr)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" }
 
  };
 
