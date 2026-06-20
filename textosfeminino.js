@@ -5052,7 +5052,8 @@ window.bancoEquilibrioUnificado = {
  videoID: "F8bg1CTQ9HI"
     },
         // MENTAL (Estratégia, Lógica, Pensamento)
-        "9_mental_criativo": `<h3>Sabedoria Intelectual e Idealismo</h3>
+        "9_mental_criativo": {
+     conteudo:`<h3>Sabedoria Intelectual e Idealismo</h3>
             <p>Sua inclinação inicial é a busca por conceitos que elevem a consciência. No plano <strong>Mental Criativo</strong>, você é o pensador que projeta soluções globais. Sua atitude é a de quem compartilha conhecimento de forma generosa, iniciando ciclos com ideias brilhantes que visam a evolução coletiva e o entendimento mútuo.</p>`,
          videoID: "F8bg1CTQ9HI"
     },
@@ -5091,7 +5092,7 @@ window.bancoEquilibrioUnificado = {
         "9_intuitivo_neutro": {
      conteudo:`<h3>Presença Sábia e Silenciosa</h3>
             <p>Sua abordagem inicial é a da paz que emana de quem já viveu muito. No plano <strong>Intuitivo Neutro</strong>, você harmoniza o início de qualquer ciclo apenas observando com tolerância. Sua presença é curadora por natureza, trazendo uma segurança espiritual que permite que todos ao seu redor cresçam com liberdade.</p>`
- },
+ },},
  conclusao: {
         // --- NÚMERO 1 (Finalização com Autonomia, Vitória e Originalidade) ---
         
