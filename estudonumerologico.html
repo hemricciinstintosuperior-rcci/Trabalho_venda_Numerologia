@@ -3426,16 +3426,25 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
        
 
 function buscarVideoID(categoria, valor, genero) {
-     if (categoria === "equilibrio") return null; 
-    // 1. TENTA NA BIBLIOTECA (Se o gênero foi passado e a biblioteca existir)
-    if (genero && typeof bibliotecaVideos !== 'undefined' && bibliotecaVideos[genero]) {
-        if (bibliotecaVideos[genero][categoria] && bibliotecaVideos[genero][categoria][valor]) {
-            return bibliotecaVideos[genero][categoria][valor];
+    if (categoria === "equilibrio") return null; 
+
+    // A variável 'BibliotecaVideos' está global ou dentro de 'textos'? 
+    // Como você me mostrou, ela parece ser global no arquivo de textos.
+    // Vamos verificar ambos os locais:
+    
+    // 1. TENTA NA BIBLIOTECA GLOBAL
+    if (typeof BibliotecaVideos !== 'undefined' && BibliotecaVideos[categoria]) {
+        if (BibliotecaVideos[categoria][valor]) {
+            return BibliotecaVideos[categoria][valor];
         }
     }
 
-    // 2. BACKUP: TENTA NO ARQUIVO DE TEXTOS (Lógica que já funcionava antes!)
-    // Se o objeto no textos.js tiver a propriedade 'videoID', ele pega.
+    // 2. BACKUP: TENTA NO OBJETO 'textos' (caso esteja lá dentro)
+    if (typeof textos !== 'undefined' && textos.BibliotecaVideos && textos.BibliotecaVideos[categoria]) {
+        return textos.BibliotecaVideos[categoria][valor] || null;
+    }
+
+    // 3. BACKUP ANTIGO: Tenta buscar no formato antigo dos textos
     if (typeof textos !== 'undefined' && textos[categoria] && textos[categoria][valor]) {
         const item = textos[categoria][valor];
         if (typeof item === 'object' && item.videoID) {
@@ -5810,7 +5819,7 @@ html += `
 // Bloco dos Números Harmônicos
 const numHarmonicosRaw = obterNumerosHarmonicos(res.dia);
 const listaNums = numHarmonicosRaw.replace(' e ', ', ').split(',').map(n => n.trim());
-const idVideoHarmonicos = buscarVideoID("numerosHarmonicos", res.dia, generoAtual); 
+const idVideoHarmonicos = buscarVideoID("numerosHarmonicos", res.dia);
 tituloBonito = "Números Harmônicos";
 html += `
 <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
@@ -5845,7 +5854,7 @@ html += `
 const textoCoresRaw = obterCoresFavoraveis(res.Personalidade);
 // Divide pelas vírgulas
 const itensCores = textoCoresRaw.replace('.', '').split(',').map(c => c.trim());
-const idVideoCores = buscarVideoID("coresFavoraveis", res.Personalidade, generoAtual);
+const idVideoCores = buscarVideoID("coresFavoraveis", res.Personalidade);
 const mapaCoresHex = {
     "Vermelho": "#e74c3c", "Laranja": "#e67e22", "Amarelo": "#f1c40f", "Verde": "#27ae60", 
     "Azul": "#3498db", "Rosa": "#fd79a8", "Branco": "#ffffff", "Preto": "#2d3436", 
@@ -5922,7 +5931,7 @@ html += `
 
 // --- BLOCO: DIAS DE PODER E VIBRAÇÃO SEMANAL ---
 const diasPoder = obterDiasFavoraveisRessonancia(res.dia);
-const idVideoPoder = buscarVideoID("diasPoder", res.dia, generoAtual); // Busca do vídeo
+const idVideoPoder = buscarVideoID("diasPoder", res.dia); // Busca do vídeo
 const diaSemanaVib = obterDiaSemanaVibracional(res.dia);
 const legendaVib = obterLegendaVibração(res.dia); // Chamada da nova função
 tituloBonito = "Dias de Poder e Fluxo Vital";
@@ -5964,7 +5973,9 @@ html += `
         * Sempre que um dia de poder cair em uma ${diaSemanaVib}, você terá um "Dia de Ouro".
     </p>
 
- 
+     <div class="evitar-corte texto-res" style="margin-top: 20px; text-align: center;">
+        ${idVideoPoder ? gerarPlayerYouTube(idVideoPoder) : ""}
+    </div>
 </div>`,
 
 
