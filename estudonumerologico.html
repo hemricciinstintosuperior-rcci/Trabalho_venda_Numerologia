@@ -5369,6 +5369,7 @@ html += `
 // 1. PRIMEIRO: Calcule os dados científicos (use o nomeCompleto do seu formulário)
 const dadosHabilidade = calcularHabilidadeEspecialCientifica(nomeRaw);
 const idVideoTalento = dadosHabilidade ? buscarVideoID("talentosEspeciais", dadosHabilidade.numero, generoAtual) : null;
+const idVideoHabilidade = dadosHabilidade ? buscarVideoID("planosExpressao", dadosHabilidade.plano, generoAtual) : null;    
 // 2. SEGUNDO: Declare o título (isso resolve o erro de ReferenceError)
 tituloBonito = "Habilidades Especiais e Deficiências"; 
 
@@ -5411,7 +5412,9 @@ html += `
                     Campo de Atuação: Plano ${dadosHabilidade.plano.toUpperCase()} (Letra ${dadosHabilidade.letraOriginal})
                 </h3>
                 <div class="evitar-corte texto-res">
-                    ${textos.planosExpressao[dadosHabilidade.plano].forte}
+                  
+${textos.planosExpressao[dadosHabilidade.plano]?.forte?.conteudo || "Conteúdo não disponível."}
+                    ${idVideoHabilidade ? gerarPlayerYouTube(idVideoHabilidade) : ""}
                 </div>
             </div>
 
@@ -5420,7 +5423,8 @@ html += `
                     Modo de Expressão: ${dadosHabilidade.modo.toUpperCase()}
                 </h3>
                 <div class="evitar-corte texto-res">
-                    ${dadosHabilidade.modo === 'indeciso' ? textos.modosAcao.oscilantes : textos.modosAcao[dadosHabilidade.modo]}
+                    
+${textos.modosAcao[dadosHabilidade.modo] || "Modo de ação não definido."}
                 </div>
             </div>
         ` : `
