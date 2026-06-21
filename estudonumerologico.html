@@ -5818,16 +5818,11 @@ html += `
 // Bloco dos Números Harmônicos
 const numHarmonicosRaw = obterNumerosHarmonicos(res.dia);
 const listaNums = numHarmonicosRaw.replace(' e ', ', ').split(',').map(n => n.trim());
-const idVideoHarmonicos = buscarVideoID("numerosHarmonicos", res.dia);
+const idVideoHarmonicos = buscarVideoID("numerosHarmonicos", reduzirPuro(res.dia));
 
-
-let idVideoHarmonicos = null;
-if (typeof BibliotecaVideos !== 'undefined' && BibliotecaVideos.numerosHarmonicos) {
-    idVideoHarmonicos = BibliotecaVideos.numerosHarmonicos[reduzirPuro(res.dia)];
-    console.log("Teste Direto - ID encontrado:", idVideoHarmonicos);
-} else {
-    console.log("Teste Direto - BibliotecaVideos não carregou ou categoria errada.");
-}
+// Log de verificação (vai aparecer no console do navegador)
+console.log("DEBUG: Buscando numerosHarmonicos para o valor:", reduzirPuro(res.dia));
+console.log("DEBUG: Resultado da busca:", idVideoHarmonicos);
     
 tituloBonito = "Números Harmônicos";
 html += `
