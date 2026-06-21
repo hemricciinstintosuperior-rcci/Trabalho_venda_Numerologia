@@ -4865,7 +4865,8 @@ essencia: {
 
 
 bibliotecaVideos: {
-    "numerosHarmonicos": {
+ 
+    numerosHarmonicos: {
         "1": "z1nW3rmNeEI",
         "2": "z1nW3rmNeEI",
         "3": "z1nW3rmNeEI",
@@ -4876,7 +4877,8 @@ bibliotecaVideos: {
         "8": "z1nW3rmNeEI",
         "9": "z1nW3rmNeEI"
     },
-    "coresFavoraveis": {
+ 
+    coresFavoraveis: {
         "1": "z1nW3rmNeEI",
         "2": "z1nW3rmNeEI",
         "3": "z1nW3rmNeEI",
@@ -4887,7 +4889,8 @@ bibliotecaVideos: {
         "8": "z1nW3rmNeEI",
         "9": "z1nW3rmNeEI"
     },
-    "diasPoder": {
+ 
+    diasPoder: {
         "1": "z1nW3rmNeEI",
         "2": "z1nW3rmNeEI",
         "3": "z1nW3rmNeEI",
