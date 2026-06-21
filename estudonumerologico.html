@@ -3425,38 +3425,36 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
 
        
 
-function buscarVideoID(categoria, valor) {
-    if (categoria === "equilibrio") return null;
+function buscarVideoID(categoria, valor, genero) {
+    if (categoria === "equilibrio") return null; 
 
-    // Converte para string para garantir a comparação
-    const chave = valor.toString();
-
-    console.log(`--- DEBUG BUSCA ---`);
-    console.log(`Categoria: ${categoria}, Valor buscado: ${chave}`);
+    // A variável 'BibliotecaVideos' está global ou dentro de 'textos'? 
+    // Como você me mostrou, ela parece ser global no arquivo de textos.
+    // Vamos verificar ambos os locais:
     
-    // Verifica se BibliotecaVideos existe
-    if (typeof BibliotecaVideos === 'undefined') {
-        console.error("ERRO: O objeto BibliotecaVideos não foi encontrado no seu sistema!");
-        return null;
+    // 1. TENTA NA BIBLIOTECA GLOBAL
+    if (typeof BibliotecaVideos !== 'undefined' && BibliotecaVideos[categoria]) {
+        if (BibliotecaVideos[categoria][valor]) {
+            return BibliotecaVideos[categoria][valor];
+        }
     }
 
-    // Verifica se a categoria existe
-    if (!BibliotecaVideos[categoria]) {
-        console.warn(`ERRO: A categoria '${categoria}' não existe dentro de BibliotecaVideos.`);
-        return null;
+    // 2. BACKUP: TENTA NO OBJETO 'textos' (caso esteja lá dentro)
+    if (typeof textos !== 'undefined' && textos.BibliotecaVideos && textos.BibliotecaVideos[categoria]) {
+        return textos.BibliotecaVideos[categoria][valor] || null;
     }
 
-    // Verifica se o valor existe
-    const video = BibliotecaVideos[categoria][chave];
-    if (video) {
-        console.log(`SUCESSO: Vídeo encontrado: ${video}`);
-        return video;
-    } else {
-        console.warn(`ERRO: Não existe ID para a chave '${chave}' na categoria '${categoria}'.`);
-        return null;
+    // 3. BACKUP ANTIGO: Tenta buscar no formato antigo dos textos
+    if (typeof textos !== 'undefined' && textos[categoria] && textos[categoria][valor]) {
+        const item = textos[categoria][valor];
+        if (typeof item === 'object' && item.videoID) {
+            return item.videoID;
+        }
     }
+
+    console.warn(`DEBUG: Nenhum vídeo encontrado para ${categoria}[${valor}]`);
+    return null;
 }
-
 
 // --- EXTRAÇÃO INTELIGENTE DO CONTEÚDO E VÍDEO ---
 // Esta lógica funciona para QUALQUER item do seu BancoEquilibrioUnificado
