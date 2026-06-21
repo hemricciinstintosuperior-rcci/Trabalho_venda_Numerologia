@@ -5426,7 +5426,8 @@ ${textos.planosExpressao[dadosHabilidade.plano]?.forte?.conteudo || "Conteúdo n
                 </h3>
                 <div class="evitar-corte texto-res">
                     
-${textos.modosAcao[dadosHabilidade.modo] || "Modo de ação não definido."}
+       ${textos.modosAcao[dadosHabilidade.modo]?.conteudo || textos.modosAcao[dadosHabilidade.modo] || "Modo de ação não definido."}
+ ${idVideoModo ? gerarPlayerYouTube(idVideoModo) : ""}
                 </div>
             </div>
         ` : `
