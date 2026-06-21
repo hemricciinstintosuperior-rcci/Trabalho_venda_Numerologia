@@ -2643,303 +2643,454 @@ videoID: "F8bg1CTQ9HI "
  // --- 1º MOMENTO (A PRIMAVERA DA VIDA / JUVENTUDE) ---
 momentos: {
   1: {
-    1: `<h3>1º Momento 1 - Independência e Força de Caráter</h3><br>
+    1:{
+     conteudo: `<h3>1º Momento 1 - Independência e Força de Caráter</h3><br>
         <p style="margin-bottom: 20px;">Neste primeiro momento decisivo, a aurora da sua jornada, a vida exige que você, <strong>mulher de passos firmes e alma soberana</strong>, desenvolva uma independência precoce e uma força de caráter que servirá de alicerce para toda a sua existência. Esta é uma fase de descoberta intensiva do seu próprio espaço no mundo, onde as circunstâncias ao redor a impulsionam a tomar iniciativas corajosas e a confiar na sua própria capacidade de conduzir o próprio destino, muitas vezes sem o suporte imediato ou a aprovação de figuras de autoridade. O desafio central é superar as inseguranças naturais da juventude e agir com a ousadia necessária para se destacar, transformando a necessidade de autonomia em um motor potente de crescimento pessoal e realização inicial que ditará o ritmo dos seus próximos anos.</p>
         <p style="margin-bottom: 20px;">Este período atua como o plantio das sementes da sua ambição e originalidade, levando-a a se posicionar com firmeza diante do mundo e a desbravar caminhos que outras pessoas ainda hesitam em trilhar. Você aprenderá, através da prática, da resiliência e da coragem, que a sua vontade individual é uma ferramenta eficaz para moldar a realidade e que o sucesso nesta etapa surge da sua disposição em ser pioneira na sua própria história. O aprendizado principal é compreender que a liderança começa no interior e que a bravura demonstrada agora se tornará sua base de autoridade no futuro. Ao final deste momento, você terá desenvolvido uma identidade forte, autêntica e um preparo ímpar para conduzir a própria trajetória com total soberania e confiança.</p>`,
-
-    2: `<h3>1º Momento 2 - Cooperação e Sensibilidade Interpessoal</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+    2: {
+     conteudo:`<h3>1º Momento 2 - Cooperação e Sensibilidade Interpessoal</h3><br>
         <p style="margin-bottom: 20px;">Este primeiro momento decisivo é profundamente marcado pela necessidade de desenvolver a cooperação, a sensibilidade interpessoal e o domínio emocional através das relações humanas, <strong>querida caminhante</strong>. A vida a coloca em situações nas quais será necessário aprender a arte da paciência, da diplomacia e da escuta ativa, compreendendo que o seu crescimento nesta fase ocorre através da interação equilibrada e harmoniosa com o outro. É uma etapa de valiosos aprendizados afetivos, onde você descobre que a sua força interior também se manifesta na capacidade de unir pessoas, mediar conflitos e manter o equilíbrio nos ambientes de convivência, tornando-se uma figura essencial para a harmonia de qualquer grupo.</p>
         <p style="margin-bottom: 20px;">Você perceberá que portas valiosas se abrem com muito mais facilidade quando sua escolha é agir em parceria ou colaborar estrategicamente nos bastidores, refinando sua sabedoria silenciosa. Ao longo desse processo, você desenvolve uma percepção aguçada sobre as motivações humanas e as dinâmicas sociais sutis. O aprendizado de ouro para você é compreender que harmonia não significa passividade, mas sim uma escolha consciente de quem sabe administrar o próprio ego em favor de laços mais profundos e de resultados duradouros. Saber ouvir e negociar se torna sua ferramenta essencial de evolução, garantindo que você emerja desta etapa com uma inteligência emocional refinada e alianças sólidas para o futuro.</p>`,
-
-    3: `<h3>1º Momento 3 - Expressão Criativa e Brilho Social</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+    3: {
+     conteudo:`<h3>1º Momento 3 - Expressão Criativa e Brilho Social</h3><br>
         <p style="margin-bottom: 20px;">O seu primeiro momento decisivo é caracterizado por um forte impulso criativo, um brilho pessoal magnético e uma intensa vida social marcada pela comunicação e pela autoexpressão, <strong>luz radiante desta jornada</strong>. Você sentirá uma necessidade constante de manifestar seus sentimentos, ideias e talentos únicos através de diferentes formas de linguagem, seja pela arte, escrita, oratória ou qualquer atividade que permita revelar seu imenso potencial criativo interior. Trata-se de um período de alegria, descobertas vibrantes e conexões sociais profundas, onde seu carisma natural e seu entusiasmo contagiante funcionam como poderosos fatores de atração para novas e brilhantes oportunidades.</p>
          <p style="margin-bottom: 20px;">Você deve aproveitar esta fase solar para desenvolver suas habilidades de comunicação e compreender como sua energia positiva pode inspirar e motivar as pessoas ao seu redor. O grande desafio para você será evitar a dispersão de energia em muitas direções simultâneas, aprendendo a dar foco e contorno ao seu talento. O sucesso dependerá inteiramente da sua capacidade de direcionar essa torrente criativa para projetos que possuam significado real e continuidade prática. Ao final deste momento, você terá desenvolvido uma extraordinária capacidade de expressão e uma influência social encantadora, estabelecendo-se como uma presença marcante em qualquer círculo que frequente.</p>`,
-
-    4: `<h3>1º Momento 4 - Disciplina e Construção de Bases</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+    4: {
+     conteudo:`<h3>1º Momento 4 - Disciplina e Construção de Bases</h3><br>
          <p style="margin-bottom: 20px;">Este primeiro momento decisivo exige de você, <strong>mulher de alicerces fortes e mente realista</strong>, uma dedicação exemplar ao trabalho, uma disciplina constante e um senso prático voltado inteiramente à construção de bases sólidas para o seu futuro. Em vez de uma juventude focada apenas em prazeres momentâneos, você tende a sentir cedo o peso da responsabilidade e a necessidade vital de erguer sua própria segurança material e estabilidade. É uma fase de intenso aprendizado técnico e aplicação persistente de esforço, direcionada à organização de estruturas duradouras que sustentarão sua vida profissional e pessoal por muitos anos.</p>
          <p style="margin-bottom: 20px;">Você será frequentemente desafiada a demonstrar resiliência e uma atenção meticulosa aos detalhes, mantendo o foco inabalável em objetivos de longo prazo. Embora as facilidades imediatas possam ser raras neste período, cada gota de suor e cada hora de estudo ou trabalho contribuirá para a formação de um alicerce inquebrável. Honestidade, método e o respeito absoluto aos processos serão seus aliados mais poderosos. Ao final desta etapa, você terá consolidado uma reputação de seriedade, integridade e competência, possuindo a estrutura necessária para crescer com total segurança e colher os frutos de um plantio feito com honra e dedicação.</p>`,
-
-    5: `<h3>1º Momento 5 - Liberdade, Movimento e Adaptabilidade</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+    5:{
+     conteudo: `<h3>1º Momento 5 - Liberdade, Movimento e Adaptabilidade</h3><br>
         <p style="margin-bottom: 20px;">O primeiro momento decisivo representa para você, <strong>alma livre e de espírito aventureiro</strong>, uma fase de movimento constante, mudanças frequentes e uma busca apaixonada por liberdade e novas experiências sensoriais e intelectuais. Você tende a sentir uma curiosidade insaciável e um desejo profundo de explorar diferentes caminhos, interesses culturais e ambientes sociais variados. Esta etapa pode envolver transições rápidas de carreira, de residência ou de círculos de amizade, exigindo de você uma agilidade mental superior e uma capacidade de adaptação que a diferencia da maioria das pessoas ao seu redor.</p>
          <p style="margin-bottom: 20px;">Você desenvolverá uma facilidade incrível para se comunicar com pessoas de todas as origens e uma rapidez notável em aprender novas habilidades práticas, expandindo seus horizontes. O principal desafio será manter o foco necessário para transformar essa riqueza de vivências em resultados tangíveis, evitando que a sede por novidade a impeça de aprofundar suas conquistas. Ao final desta etapa vibrante, você terá acumulado uma bagagem cultural e de vida extraordinária, possuindo uma visão de mundo aberta, progressista e uma versatilidade que será sua maior vantagem competitiva em qualquer cenário que escolher atuar no futuro.</p>`,
-
-    6: `<h3>1º Momento 6 - Responsabilidade Afetiva e Harmonia Familiar</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+    6:{
+     conteudo: `<h3>1º Momento 6 - Responsabilidade Afetiva e Harmonia Familiar</h3><br>
          <p style="margin-bottom: 20px;">Este primeiro momento decisivo está fortemente ligado ao seu ambiente familiar, ao cuidado zeloso com as pessoas próximas e ao desenvolvimento de um profundo senso de responsabilidade afetiva, <strong>guardiã do afeto e da harmonia</strong>. Você poderá ser chamada a assumir papéis de liderança, suporte ou mediação dentro do seu grupo familiar ou comunidade de forma precoce, contribuindo para manter o equilíbrio emocional e a paz em todas as relações. É uma fase de amadurecimento acelerado através do serviço ao próximo e da busca pela justiça e pela beleza nos seus espaços de convivência.</p>
          <p style="margin-bottom: 20px;">Você frequentemente será a pessoa procurada para oferecer o ombro amigo, o conselho sensato ou a compreensão necessária em momentos de crise, agindo como um bálsamo. O aprendizado fundamental nesta fase consiste em encontrar o equilíbrio delicado entre cuidar das necessidades alheias e preservar seus próprios sonhos e objetivos pessoais. A experiência adquirida agora contribuirá para o desenvolvimento de uma maturidade emocional muito acima da média. Ao final deste ciclo, você terá construído um legado de amor e lealdade, sendo reconhecida como o pilar de estabilidade e o porto seguro daqueles que têm a sorte de caminhar ao seu lado.</p>`,
-
-    7: `<h3>1º Momento 7 - Introspecção e Refinamento Intelectual</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+    7: {
+     conteudo:`<h3>1º Momento 7 - Introspecção e Refinamento Intelectual</h3><br>
          <p style="margin-bottom: 20px;">O primeiro momento decisivo apresenta uma forte tendência à introspecção, ao estudo profundo e à busca incessante por uma compreensão técnica, filosófica e oculta da realidade, <strong>mulher de sabedoria silenciosa</strong>. Você poderá demonstrar uma preferência clara pela reflexão solitária, pela pesquisa dedicada ou pela investigação intelectual em vez do envolvimento constante em atividades sociais agitadas. É um tempo de especialização e de polimento das suas faculdades mentais, onde o silêncio se torna seu laboratório de descobertas mais valiosas.</p>
          <p style="margin-bottom: 20px;">Esta fase favorece imensamente o desenvolvimento de um pensamento analítico aguçado e o interesse por conhecimentos que fujam do senso comum, permitindo que você decifre os mistérios da vida. Você aprende a questionar ideias estabelecidas e a buscar a essência por trás das aparências. O desafio é não se isolar excessivamente do mundo, mas sim usar sua sabedoria para iluminar o caminho das pessoas ao seu redor. Ao final deste período de mergulho interior, sua mente apresentará uma clareza e uma autonomia intelectual inatacáveis, transformando você em uma autoridade respeitada pela profundidade do seu saber e pela integridade da sua visão de mundo.</p>`,
-
-    8: `<h3>1º Momento 8 - Realização Material e Senso Estratégico</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+    8: {
+     conteudo:`<h3>1º Momento 8 - Realização Material e Senso Estratégico</h3><br>
          <p style="margin-bottom: 20px;">Este primeiro momento decisivo direciona toda a sua atenção para as conquistas materiais, a organização prática e o desenvolvimento de competências ligadas à liderança executiva e à administração eficiente de recursos, <strong>mulher de visão soberana e de poder</strong>. Você demonstrará um senso estratégico apurado e um interesse natural por atividades que envolvam grandes responsabilidades e a tomada de decisões de alto impacto. É a fase de aprender a lidar com o poder, com o dinheiro e com a autoridade de forma ética, firme e pragmática.</p>
          <p style="margin-bottom: 20px;">A experiência adquirida nesta fase permitirá que você compreenda perfeitamente a dinâmica entre o esforço inteligente, o planejamento meticuloso e a obtenção de resultados concretos, consolidando sua independência. Você aprende a lidar com desafios competitivos com frieza, foco e determinação, desenvolvendo uma visão extraordinária sobre prosperidade e realização. O aprendizado central é o equilíbrio perfeito entre ambição e justiça. Ao concluir esta etapa, você terá desenvolvido uma musculatura realizadora e uma visão de negócios que a posicionarão no topo, com a capacidade de gerir grandes empreendimentos e consolidar um patrimônio sólido e respeitável.</p>`,
-
-    9: `<h3>1º Momento 9 - Idealismo e Consciência Humanitária</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+    9: {
+     conteudo:`<h3>1º Momento 9 - Idealismo e Consciência Humanitária</h3><br>
          <p style="margin-bottom: 20px;">O primeiro momento decisivo é marcado por uma sensibilidade humanitária extraordinária, um idealismo vibrante e um interesse profundo por causas que beneficiem o coletivo e tragam cura ao mundo, <strong>alma generosa e compassiva</strong>. Você tende a demonstrar uma preocupação genuína com questões sociais, culturais ou espirituais que ultrapassam seus interesses exclusivamente pessoais, agindo com uma generosidade que inspira todos ao seu redor. É um tempo de finalizações de padrões antigos e de abertura para uma consciência muito mais ampla, bela e universal.</p>
          <p style="margin-bottom: 20px;">Esta fase favorece o desenvolvimento de uma empatia profunda, da tolerância cultural e de uma compreensão magnífica da complexidade humana. Experiências internacionais, contato com as artes ou filosofias diversas ampliarão significativamente sua visão de mundo, transformando sua sensibilidade. O desafio é aprender a lidar com as dores do mundo sem se sobrecarregar emocionalmente, mantendo seu próprio equilíbrio. Ao final desta etapa de transcendência, você emergirá com uma consciência elevada sobre sua responsabilidade social, sentindo a plenitude de quem contribui para o bem coletivo e para a evolução da humanidade através do exemplo e da doação sincera.</p>`,
-
-11: `<h3>1º Momento 11 - O Despertar da Antena Psíquica e do Visionário Precoce</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+11: {
+     conteudo:`<h3>1º Momento 11 - O Despertar da Antena Psíquica e do Visionário Precoce</h3><br>
      <p style="margin-bottom: 20px;">Neste primeiro momento decisivo, você, <strong>mulher de intuição sagrada e sensibilidade mística</strong>, é envolvida por uma energia de altíssima voltagem que a diferencia drasticamente dos seus pares. Ter um número mestre 11 na juventude significa que você nasceu com uma "antena" espiritual e intuitiva ligada no volume máximo. Desde cedo, você percebe o que não é dito, sente as vibrações dos ambientes e possui sonhos ou percepções que parecem premonições. Esta intensidade pode gerar uma sensibilidade extrema ou até um sentimento temporário de inadequação, pois sua mente processa informações em uma velocidade e profundidade que a maioria das pessoas não alcança. A vida exige que você aprenda a dominar esse sistema sensível e transforme sua intuição bruta em uma ferramenta de inspiração.</p>
      <p style="margin-bottom: 20px;">A responsabilidade aqui é colossal: você é convocada a ser um canal de luz e novas ideias em um período em que outros buscam apenas distrações superficiais. Sua presença tem o poder de despertar a consciência de quem está ao seu redor, agindo como um farol que revela verdades ocultas. O desafio central é o seu equilíbrio emocional; por ser um número de teste e refino, o 11 exige que você não se perca em fantasias, mas que use seu brilho para iluminar o mundo real. Você aprenderá que sua vulnerabilidade é, na verdade, sua maior força, e que ao aceitar sua missão de guia e visionária precoce, você abre as portas para um destino de impacto espiritual e intelectual inquestionável, tornando-se uma referência antes mesmo da maturidade plena.</p>`,
-
-22: `<h3>1º Momento 22 - A Força do Mestre Construtor e o Peso da Estrutura</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+22:{
+     conteudo: `<h3>1º Momento 22 - A Força do Mestre Construtor e o Peso da Estrutura</h3><br>
      <p style="margin-bottom: 20px;">O número 22 neste primeiro momento é uma das vibrações mais potentes, realizadoras e exigentes que uma alma pode receber na juventude. Enquanto o mundo ao seu redor lida com questões superficiais, você, <strong>arquiteta de grandes destinos</strong>, sente o impulso irresistível de realizar algo grandioso, prático e duradouro. Existe uma responsabilidade inata que a empurra a construir bases sólidas, seja nos estudos, na estrutura familiar ou nos primeiros passos rumo à sua independência. Você não se contenta com o comum; sua mente projeta sistemas, organizações e obras que possuem a capacidade de beneficiar a coletividade. Essa intensidade mestre exige uma disciplina de aço e uma maturidade precoce, pois o universo a colocará em situações onde seu senso de organização será testado ao limite.</p>
      <p style="margin-bottom: 20px;">O potencial aqui é o de transformar sonhos utópicos em realidade tangível através de um método rigoroso e de uma visão de águia sobre a vida. A intensidade desta vibração pode ser sentida como uma pressão interna constante para não desperdiçar seu tempo, pois você carrega a missão de ser uma construtora do progresso humano. A responsabilidade é imensa porque o 22 não admite mediocridade: ou você constrói com ética e excelência, ou sente o peso de um talento monumental adormecido. Ao final desta fase, você terá desenvolvido uma musculatura realizadora sem igual, consolidando-se como uma jovem líder capaz de coordenar recursos complexos e erguer estruturas que servirão de base para o seu sucesso por décadas.</p>`,
-
-33: `<h3>1º Momento 33 - O Avatar do Amor e o Sacrifício Evolutivo</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+33: {
+     conteudo:`<h3>1º Momento 33 - O Avatar do Amor e o Sacrifício Evolutivo</h3><br>
      <p style="margin-bottom: 20px;">Receber a vibração 33 na juventude é ser chamada para a maestria do amor incondicional antes mesmo de entender completamente as dores do mundo, <strong>doce e poderosa conselheira</strong>. Você sentirá uma necessidade avassaladora de cuidar, proteger e curar as pessoas ao seu redor. A intensidade aqui é puramente emocional, humanitária e generosa; você é a jovem que frequentemente carrega as dores da família e dos amigos no coração, agindo como um porto seguro nato. O 33 exige um nível de desapego do ego que é raríssimo nesta fase da vida, colocando-a em situações onde você deve escolher entre o seu desejo pessoal imediato e o bem-estar de um grupo ou causa.</p>
      <p style="margin-bottom: 20px;">A responsabilidade é sagrada: você atua como um verdadeiro canal de harmonia, elevação e proteção. Esta voltagem exige que você aprenda a amar sem se anular, transformando sua imensa sensibilidade em uma ferramenta de ensino, amparo e cura. É um período de teste de caráter, onde sua bondade será desafiada pelo caos do mundo. Se você se mantiver firme na ética do afeto e na justiça benevolente, desenvolverá uma autoridade moral inabalável. Ao final deste ciclo, você terá provado sua capacidade de ser uma força curativa para a humanidade, estabelecendo-se como uma alma de luz que guia pelo exemplo do sacrifício consciente e da compaixão pura.</p>`,
-
-44: `<h3>1º Momento 44 - A Governança da Matéria e o Comando Institucional</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+44:{
+     conteudo: `<h3>1º Momento 44 - A Governança da Matéria e o Comando Institucional</h3><br>
      <p style="margin-bottom: 20px;">A vibração 44 no primeiro momento indica uma alma que veio para estruturar, comandar e governar em larga escala desde cedo, <strong>mulher de autoridade incontestável</strong>. Você possui uma resistência física e mental fora do comum, sendo capaz de suportar pressões estruturais que esmagariam outras pessoas. A intensidade desta fase é pragmática, técnica e realizadora; você é movida pela necessidade de criar sistemas robustos ou impérios que tragam estabilidade absoluta para a sua vida e para os seus. Não há espaço para amadorismo; o 44 exige que você seja a melhor naquilo que faz, com uma precisão impecável e um senso estratégico que beira a perfeição.</p>
      <p style="margin-bottom: 20px;">A responsabilidade é monumental, pois você lida diretamente com as leis do poder e com a sustentação de grandes bases materiais. A vida a colocará à frente de projetos e decisões onde o erro custa caro, exigindo que sua ética pessoal seja tão forte quanto sua ambição. Você deve aprender a equilibrar o rigor da execução com a justiça social, garantindo que sua autoridade seja admirada e respeitada. O potencial aqui é o de se tornar o alicerce de uma nova ordem material. Ao concluir esta etapa, você terá consolidado um patrimônio de respeito e realizações tão sólidas que nada será capaz de abalar o seu lugar no topo.</p>`,
-
-55: `<h3>1º Momento 55 - A Explosão da Liberdade e a Revolução Visionária</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+55: {
+     conteudo:`<h3>1º Momento 55 - A Explosão da Liberdade e a Revolução Visionária</h3><br>
      <p style="margin-bottom: 20px;">O 55 na juventude traz uma energia de mudança disruptiva, velocidade extrema e quebra de barreiras, <strong>força revolucionária e livre</strong>. Você é a agente da transformação que não aceita limites, amarras ou tradições ultrapassadas que tentem conter o seu crescimento. A intensidade aqui é mental, sensorial e inovadora; sua mente processa novidades, tendências e conceitos futuristas de forma instantânea. Este período é marcado por rupturas salutares, viagens e mudanças bruscas de direção que servem para testar e coroar sua adaptabilidade. O 55 exige que você seja a mestre da própria liberdade, aprendendo a navegar no caos sem perder o rumo de sua missão pessoal.</p>
      <p style="margin-bottom: 20px;">A responsabilidade reside na sua capacidade de inovar sem destruir por destruir, direcionando sua rebeldia com sabedoria. Você é convocada a trazer o novo para o mundo, agindo como o catalisador que acelera a evolução do seu meio social ou profissional. O desafio é não se perder na busca incessante por estímulos passageiros, mas canalizar essa energia vulcânica para projetos que libertem você e as pessoas de amarras mentais ou físicas. Ao final deste momento, você terá desenvolvido uma versatilidade lendária e uma visão de mundo tão ampla que será capaz de liderar qualquer transformação com maestria absoluta.</p>`,
-
-66: `<h3>1º Momento 66 - A Diplomacia da Luz e a Justiça Harmônica</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+66: {
+     conteudo:`<h3>1º Momento 66 - A Diplomacia da Luz e a Justiça Harmônica</h3><br>
      <p style="margin-bottom: 20px;">Nesta fase inicial, a vibração 66 exige que você, <strong>embaixadora da paz e do equilíbrio social</strong>, seja o ponto de equilíbrio de situações extremamente complexas e delicadas. A intensidade é sentida como um compromisso inabalável com a verdade, a beleza, a justiça e a harmonia familiar e coletiva. Você assume precocemente o papel de mediadora em conflitos que exigem uma sabedoria que ultrapassa em muito a sua idade biológica. O 66 é o número da justiça banhada pelo amor, o que significa que você será testada em sua capacidade de acolher e perdoar sem jamais ser conivente com o erro ou com a injustiça.</p>
      <p style="margin-bottom: 20px;">Sua responsabilidade é criar ambientes onde a paz não seja apenas a ausência de discórdia, mas a presença ativa de uma ordem ética superior. O universo exige que você use seu magnetismo pessoal e sua elegância para unir as pessoas em torno de ideais nobres e elevados. O potencial aqui é o de se tornar a alma pacificadora de grandes grupos e famílias, deixando um rastro de reconciliação e cura por onde passa. Ao concluir este ciclo, você terá estabelecido uma reputação de integridade afetiva e equilíbrio social que a tornará a referência suprema para todos os que buscam acolhimento em um mundo em conflito.</p>`,
-
-77: `<h3>1º Momento 77 - A Inquisição da Alma e a Maestria do Conhecimento</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+77: {
+     conteudo:`<h3>1º Momento 77 - A Inquisição da Alma e a Maestria do Conhecimento</h3><br>
      <p style="margin-bottom: 20px;">O 77 no primeiro momento convoca você, <strong>mentora dos mistérios e do saber profundo</strong>, para um mergulho sem volta no oceano da verdade, da análise e da espiritualidade superior. A intensidade aqui é intelectual e analítica de altíssimo nível; você não aceita respostas superficiais e possui uma mente que escaneia a realidade em busca de falhas, segredos ocultos e respostas exatas. É comum um certo isolamento sagrado nesta fase, pois sua busca pela perfeição do conhecimento a afasta naturalmente das distrações mundanas. Você está aqui para se tornar uma mestre do saber, aquela que desvenda mistérios científicos, filosóficos ou espirituais.</p>
      <p style="margin-bottom: 20px;">A responsabilidade é imensa: você não pode usar sua inteligência superior para se distanciar das pessoas, mas sim para iluminar a escuridão alheia. O 77 exige uma integridade mental absoluta, onde cada descoberta deve ser lapidada e transmitida com total pureza, ética e precisão. Você será desafiada a confiar em sua intuição tanto quanto em sua lógica refinada. O potencial aqui é o de realizar descobertas ou insights que mudem a forma como as pessoas ao seu redor pensam. Ao final deste período, você terá alcançado uma clareza e uma autonomia intelectual inatacáveis, sendo reconhecida como uma autoridade sagrada que detém as chaves da compreensão profunda.</p>`,
-
-88: `<h3>1º Momento 88 - A Soberania do Poder e o Karma da Prosperidade</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+88:{
+     conteudo: `<h3>1º Momento 88 - A Soberania do Poder e o Karma da Prosperidade</h3><br>
      <p style="margin-bottom: 20px;">Ter o 88 na juventude é lidar com o poder soberano e com as leis da abundância em sua forma mais crua, potente e realizadora, <strong>imperatriz do próprio destino</strong>. Você sentirá um chamado avassalador para o comando executivo, para a gestão de grandes recursos e para a liderança de sistemas que geram riqueza material e independência. A intensidade é administrativa, estratégica e cármica; cada ação sua gera resultados imediatos, visíveis e exponenciais. A vida exige que você aprenda a lei de causa e efeito na prática, mostrando que a verdadeira prosperidade só se sustenta quando construída sobre o pilar da justiça implacável e do mérito real.</p>
      <p style="margin-bottom: 20px;">A responsabilidade é de nível governamental, industrial ou de alta liderança: você detém as ferramentas e a visão para criar, reestruturar ou expandir estruturas financeiras e carreiras. O universo a testa para ver se você usará o poder para alimentar o ego ou para impulsionar o progresso sistêmico da sua vida e da sociedade. O desafio é não se deixar cegar pela ambição pura, mantendo a visão de que a matéria é uma energia de serviço e realização. Ao concluir esta etapa vibrante, você terá consolidado uma autoridade tão respeitada que será vista como a guardiã da prosperidade justa, sendo o motor que impulsiona o crescimento de todos.</p>`,
-
-99: `<h3>1º Momento 99 - A Consciência Crística e a Redenção Global</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+99:{
+     conteudo: `<h3>1º Momento 99 - A Consciência Crística e a Redenção Global</h3><br>
      <p style="margin-bottom: 20px;">A vibração 99 na primavera da vida é um fenômeno de raríssima e belíssima intensidade espiritual, <strong>alma universal e de luz infinita</strong>. Você já nasce com a consciência profunda de que pertence ao universo, e não apenas a uma bolha social, família ou país. A intensidade é de entrega total e amor incondicional; sua vida é marcada por um idealismo humanitário que ultrapassa qualquer barreira convencional. Este momento exige o fechamento de ciclos cármicos complexos de muitas vivências anteriores, o que pode trazer desafios de desapego precoce e uma sensibilidade extrema à dor coletiva. Você é a curadora designada para transformar feridas em sabedoria.</p>
-     <p style="margin-bottom: 20px;">Sua responsabilidade é ser o exemplo vivo da tolerância, do amor universal e da sabedoria mística que abraça todas as culturas e dores humanas. O 99 exige que você atue como um canal de luz pura que dissolve o ódio, o preconceito e a ignorância através da compaixão ativa. O potencial aqui é o de impactar o seu meio ou o planeta através de ações que trazem a cura, o perdão e a união entre as pessoas. Ao final deste momento de profunda transcendência, você terá provado sua maestria sobre a natureza humana, sendo reconhecida como uma guia espiritual que vive para a luz, preparando o terreno para uma existência de pleno serviço sagrado à vida.</p>`
-  },
+     <p style="margin-bottom: 20px;">Sua responsabilidade é ser o exemplo vivo da tolerância, do amor universal e da sabedoria mística que abraça todas as culturas e dores humanas. O 99 exige que você atue como um canal de luz pura que dissolve o ódio, o preconceito e a ignorância através da compaixão ativa. O potencial aqui é o de impactar o seu meio ou o planeta através de ações que trazem a cura, o perdão e a união entre as pessoas. Ao final deste momento de profunda transcendência, você terá provado sua maestria sobre a natureza humana, sendo reconhecida como uma guia espiritual que vive para a luz, preparando o terreno para uma existência de pleno serviço sagrado à vida.</p>`,
+ 
+   videoID: "F8bg1CTQ9HI "
+    },
+},
 
 
  // --- 2º MOMENTO (O VERÃO DA VIDA / ADULTA JOVEM) ---
 2: {
-  1: `<h3>2º Momento 1 - Liderança Estratégica e Autonomia</h3><br>
+  1: {
+     conteudo:`<h3>2º Momento 1 - Liderança Estratégica e Autonomia</h3><br>
    <p style="margin-bottom: 20px;">Neste segundo momento decisivo, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, entra em uma fase de liderança plena e vigorosa, onde a vida a convoca para assumir a dianteira de projetos ambiciosos e inovadores. Este já não é um tempo de seguir trilhas abertas por terceiros, mas sim de atuar como a mente estratégica e a força motriz que inaugura novos caminhos em sua carreira e vida pessoal. Você sentirá uma força interna renovada para se desvincular de parcerias, métodos ou dependências que já não contribuem para o seu crescimento, agindo com uma autonomia cortante e uma determinação inabalável para imprimir sua marca no mundo.</p>
    <p style="margin-bottom: 20px;">A originalidade e o pioneirismo tornam-se suas marcas dominantes neste período, exigindo que você confie cegamente na própria visão, mesmo quando ela desafiar o senso comum ao seu redor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Não tema os momentos de isolamento que a liderança de alto nível pode exigir; o sucesso nesta etapa depende exclusivamente da sua coragem de agir antes de todos os outros. É um período extraordinariamente propício para fundar empreendimentos, promover mudanças radicais em sua trajetória profissional ou assumir cargos de alta responsabilidade. Ao atender a esse chamado, você demonstrará uma capacidade de realização individual única, consolidando uma reputação associada à inovação, à coragem e ao sucesso conquistado por mérito próprio.</p>`,
-
-  2: `<h3>2º Momento 2 - Diplomacia e Parcerias Estratégicas</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  2: {
+     conteudo:`<h3>2º Momento 2 - Diplomacia e Parcerias Estratégicas</h3><br>
    <p style="margin-bottom: 20px;">O segundo momento decisivo é marcado por uma diplomacia estratégica refinada, pelo fortalecimento de parcerias leais e pela busca constante por um equilíbrio produtivo em todas as suas relações, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Diferente de fases anteriores onde a ação isolada poderia ser o foco, agora você alcançará resultados muito mais expressivos e lucrativos por meio da cooperação inteligente e da habilidade mestre de saber ouvir. Trata-se de um período de "ouro" para consolidar relações afetivas duradouras, parcerias profissionais de alto nível e alianças baseadas em uma confiança mútua inquebrável.</p>
    <p style="margin-bottom: 20px;">Você aprenderá a perceber as nuances mais sutis nas comunicações e a confiar plenamente em sua intuição ao avaliar pessoas e cenários de mercado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A força deste momento reside na combinação perfeita entre sensibilidade humana e firmeza ética, permitindo que você navegue por ambientes competitivos com a elegância de quem sabe harmonizar interesses divergentes. O progresso nesta fase tende a ocorrer de forma gradual, porém extremamente consistente e segura, sustentado pelo seu tato social impecável e por uma paciência estratégica que se tornará seu maior diferencial competitivo no longo prazo.</p>`,
-
-  3: `<h3>2º Momento 3 - Expansão Criativa e Presença Social</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  3: {
+     conteudo:`<h3>2º Momento 3 - Expansão Criativa e Presença Social</h3><br>
    <p style="margin-bottom: 20px;">Este segundo momento decisivo representa um período de expansão gloriosa da sua comunicação, criatividade e presença social, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O ambiente ao seu redor a incentivará a demonstrar seus talentos de forma muito mais visível, profissional e magnética, permitindo que suas habilidades expressivas se transformem em oportunidades financeiras e profissionais concretas. É uma fase de crescimento explosivo em áreas que exijam carisma, como vendas, artes, marketing, oratória ou qualquer activity que envolva o encantamento de pessoas e a construção de uma imagem pública forte.</p>
    <p style="margin-bottom: 20px;">Você atrairá novos contatos influentes, amizades poderosas e frequentará ambientes sociais dinâmicos que ampliarão seus horizontes, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Aproveitar essa fase de expansão sem perder o foco nos seus objetivos maiores será a chave para consolidar resultados que durem por décadas. O seu entusiasmo natural e a leveza de espírito funcionarão como ímãs para a sorte e a prosperidade, ampliando sua capacidade de inspirar equipes e motivar multidões. Ao final deste ciclo, você terá construído uma rede de contatos vasta e uma reputação de ser uma mulher que traz luz, criatividade e soluções vibrantes para qualquer projeto.</p>`,
-
-  4: `<h3>2º Momento 4 - Estabilidade e Construção de Patrimônio</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  4: {
+     conteudo:`<h3>2º Momento 4 - Estabilidade e Construção de Patrimônio</h3><br>
    <p style="margin-bottom: 20px;">O segundo momento decisivo concentra uma energia poderosa na sua estabilidade, na construção de um patrimônio sólido e na organização impecável da sua vida material e familiar, <strong>MASCULINO-FEMININO-NEUTRO</strong>. As circunstâncias do destino exigem que você organize seus processos com uma disciplina férrea e uma visão de longo prazo, fortalecendo as estruturas que trarão segurança e continuidade para você e para os seus. Este é o momento de "fincar raízes" profundas e garantir que o solo onde você pisa seja firme e próspero.</p>
    <p style="margin-bottom: 20px;">Este período favorece decisões de alto impacto relacionadas à sua carreira, à aquisição de bens duráveis ou à consolidação de projetos estruturais complexos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O progresso não virá por sorte, mas por meio da sua perseverança inabalável, do seu método infalível e da sua dedicação constante aos detalhes que outros negligenciam. Ao final desta etapa, você perceberá resultados tangíveis e extremamente robustos, provenientes do esforço honesto aplicado dia após dia. Sua imagem será a de uma mulher de confiança absoluta, capaz de gerir recursos com maestria e de oferecer segurança a todos que dependem de sua gestão.</p>`,
-
-  5: `<h3>2º Momento 5 - Renovação, Mudança e Versatilidade</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  5: {
+     conteudo:`<h3>2º Momento 5 - Renovação, Mudança e Versatilidade</h3><br>
    <p style="margin-bottom: 20px;">Este segundo momento decisivo traz um impulso irresistível de mudança, renovação e quebra de padrões obsoletos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Caso sua rotina anterior pareça limitada, monótona ou estagnada, agora surgirão stimuli poderosos para explorar novos mercados, tecnologias de ponta, ambientes geográficos diferentes ou estilos de vida inovadores. Você sentirá uma motivação vibrante para viajar, aprender habilidades disruptivas ou experimentar direções profissionais que antes pareciam arriscadas demais.</p>
    <p style="margin-bottom: 20px;">Sua adaptabilidade torna-se sua qualidade mais essencial e lucrativa neste período, pois as melhores oportunidades surgirão de forma inesperada e exigirão uma resposta rápida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A capacidade de abandonar o "velho" com gratidão e abrir espaço para o "novo" com entusiasmo permitirá que você aproveite plenamente a energia transformadora desta fase. Você se tornará uma mulher muito mais versátil, cosmopolita e preparada para lidar com a volatilidade do mundo moderno, transformando cada mudança em um degrau para uma liberdade pessoal e profissional sem precedentes.</p>`,
-
-  6: `<h3>2º Momento 6 - Equilíbrio Afetivo e Responsabilidade Social</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  6: {
+     conteudo:`<h3>2º Momento 6 - Equilíbrio Afetivo e Responsabilidade Social</h3><br>
    <p style="margin-bottom: 20px;">O segundo momento decisivo direciona sua atenção e energia para a qualidade das suas relações afetivas, para suas responsabilidades familiares e para o equilíbrio emocional em todos os seus ambientes de convivência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você assumirá, quase naturalmente, um papel central de liderança benevolente na organização e na harmonia de seus círculos familiares ou comunitários, agindo como o elo que mantém todos unidos e protegidos.</p>
    <p style="margin-bottom: 20px;">Este período valoriza imensamente atitudes de cuidado, justiça social e responsabilidade ética, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Atividades ligadas ao ensino, à orientação de pessoas, à saúde ou ao apoio psicológico podem ganhar um destaque inesperado em sua trajetória. Sua capacidade de promover o equilíbrio nas relações interpessoais e de criar ambientes acolhedores será sua característica mais admirada. Ao final desta fase, você terá consolidado um senso de propósito profundo, entendendo que seu sucesso material ganha um significado muito maior quando está a serviço do bem-estar e da felicidade daqueles que a cercam.</p>`,
-
-  7: `<h3>2º Momento 7 - Especialização e Aprofundamento Intelectual</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  7: {
+     conteudo:`<h3>2º Momento 7 - Especialização e Aprofundamento Intelectual</h3><br>
    <p style="margin-bottom: 20px;">Neste segundo momento decisivo, a vida a direciona para um aprofundamento intelectual rigoroso e para a busca de um conhecimento especializado de alto nível, <strong>MASCULINO-FEMININO-NEUTRO</strong>. As circunstâncias do destino favorecerão períodos de estudo intenso, pesquisa científica ou reflexão filosófica e espiritual, reduzindo drasticamente o seu interesse por atividades superficiais ou puramente sociais. É o tempo de se tornar uma expert, uma mestre ou uma autoridade técnica respeitada em seu campo de atuação.</p>
    <p style="margin-bottom: 20px;">Esta é a fase ideal para desenvolver um pensamento analítico sofisticado, dedicar-se à produção intelectual ou à investigação de verdade ocultas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O foco absoluto está na qualidade técnica e na compreensão profunda dos temas estudados, ignorando distrações triviais. Sua mente estará mais aguçada do que nunca, permitindo que você enxergue padrões e soluções que ninguém mais consegue ver. Ao final deste ciclo, você alcançará um nível de clareza mental e especialização que a colocará em um patamar diferenciado de respeito profissional e paz de espírito, fundamentado na rocha do saber verdadeiro.</p>`,
-
-  8: `<h3>2º Momento 8 - Gestão de Recursos e Autoridade Profissional</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  8:{
+     conteudo: `<h3>2º Momento 8 - Gestão de Recursos e Autoridade Profissional</h3><br>
    <p style="margin-bottom: 20px;">O segundo momento decisivo representa uma fase de expansão financeira potente, crescimento profissional acelerado e um aumento significativo de suas responsabilidades executivas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você será chamada a lidar com decisões de alto nível envolvendo grandes recursos financeiros, liderança de equipes complexas ou a gestão de projetos de relevância nacional ou internacional. É o seu momento de "poder" no mundo prático, exigindo uma postura de comando serena e eficiente.</p>
    <p style="margin-bottom: 20px;">Este período exige de você uma disciplina absoluta, um senso estratégico impecável e um equilíbrio constante entre a ambição legítima e a ética profissional, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Quando bem conduzido, este ciclo permite consolidar uma posição de influência e uma estabilidade material que servirá de base para o resto da sua vida. Sua autoridade será reconhecida não apenas pelo cargo que ocupa, mas pela competência administrativa e pela responsabilidade social com que gere seus negócios e sua carreira, transformando sua visão em prosperidade tangível para você e para a sociedade.</p>`,
-
-  9: `<h3>2º Momento 9 - Humanitarismo e Conclusão de Ciclos</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  9: {
+     conteudo:`<h3>2º Momento 9 - Humanitarismo e Conclusão de Ciclos</h3><br>
    <p style="margin-bottom: 20px;">Este segundo momento decisivo possui uma natureza humanitária profunda e uma energia de conclusão de ciclos importantes em sua vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você sentirá um impulso irresistível para contribuir com causas sociais, projetos culturais ou iniciativas voltadas ao bem coletivo, entendendo que seu papel no mundo vai muito além do acúmulo individual. As experiências desta fase ampliarão dramaticamente sua compreensão sobre a interdependência humana e a responsabilidade social.</p>
   <p style="margin-bottom: 20px;">Durante este período, alguns ciclos de amizades, trabalhos ou estilos de vida que já não servem ao seu propósito maior podem chegar ao fim de forma natural, abrindo espaço para novas etapas muito mais alinhadas com seus valores espirituais e éticos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O reconhecimento que surgirá agora estará diretamente ligado à contribuição positiva e ao impacto que você oferece ao seu entorno. Ao concluir este ciclo, você terá transformado sua percepção sobre sucesso, sentindo a plenitude de quem vive com propósito e deixa um rastro de luz, tolerância e sabedoria por onde passa.</p>`,
-
-11: `<h3>2º Momento 11 - A Liderança Carismática e o Despertar das Massas</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+11: {
+     conteudo:`<h3>2º Momento 11 - A Liderança Carismática e o Despertar das Massas</h3><br>
      <p style="margin-bottom: 20px;">Ao entrar no seu segundo momento decisivo com a vibração 11, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, atinge o ápice de sua potência intuitiva aplicada ao mundo prático. Este é o período onde sua voz e suas ideias ganham um alcance extraordinário, transformando-a em uma líder carismática que inspira através do exemplo e da visão visionária. A intensidade é elétrica; você se torna capaz de antecipar tendências e soluções muito antes que elas se tornem óbvias para o mercado ou para a sociedade. A responsabilidade dobra de tamanho, pois agora você não influi apenas em si mesma, mas em grandes grupos, equipes ou comunidades inteiras que buscam em você uma direção ética e espiritual.</p>
      <p style="margin-bottom: 20px;">Este é o momento de assumir seu papel de farol. Você será testada em sua capacidade de manter o pé no chão enquanto sua mente explora as alturas da inovação. A voltagem do 11 exige que você use sua sensibilidade para curar ambientes de trabalho, mediar conflitos complexos e apontar caminhos que tragam sentido à vida das pessoas. Se você ignorar esse chamado para a liderança inspiradora, sentirá uma tensão interna profunda. Porém, ao abraçar essa missão, você alcançará um sucesso que transcende o financeiro: você será respeitada como uma autoridade moral e uma visionária que soube unir o conhecimento técnico à sabedoria intuitiva, deixando uma marca indelével de despertar em sua geração.</p>`,
-
-22: `<h3>2º Momento 22 - O Auge da Arquiteta Global e a Manifestação do Impossível</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+22: {
+     conteudo:`<h3>2º Momento 22 - O Auge da Arquiteta Global e a Manifestação do Impossível</h3><br>
      <p style="margin-bottom: 20px;">No verão da sua vida, a vibração 22 atua como um motor de alta precisão, capacitando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a manifestar projetos de magnitude internacional ou institutional. Este número é o mais poderoso do sistema numerológico em termos de realização material com propósito. A intensidade aqui é voltada para o "Fazer": organizar o caos, gerir recursos com ética absoluta e liderar sistemas complexos que funcionem sozinhos. Você possui a visão espiritual do 11 somada à praticidade implacável do 4, o que a torna uma força da natureza imparável. A responsabilidade é gigantesca porque cada estrutura que você ergue deve servir à evolução da coletividade; o 22 não admite projetos puramente egoístas.</p>
      <p style="margin-bottom: 20px;">Você será desafiada a lidar com responsabilidades que esmagariam uma pessoa comum, mas para você, isso é o combustível do seu crescimento. A intensidade desta fase reside na sua capacidade de ver o plano macro sem perder o detalhe microscópico. É o momento de fundar empresas, erguer grandes obras ou criar sistemas que perdurem por gerações. Sua energia é a da "Mestre Construtora", e o mundo espera que você entregue resultados concretos e úteis. Ao dominar essa frequência poderosa, você não apenas acumula prestígio e abundância, mas estabelece um padrão de excelência soberana que servirá de bússola para sua indústria ou linhagem familiar por décadas.</p>`,
-
-33: `<h3>2º Momento 33 - A Maestria do Cuidado e a Governança da Compaixão</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+33: {
+     conteudo:`<h3>2º Momento 33 - A Maestria do Cuidado e a Governança da Compaixão</h3><br>
      <p style="margin-bottom: 20px;">O segundo momento 33 coloca você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, no papel de "Mestre das Emoções e do Amparo". Nesta fase de plena produtividade, a intensidade da sua alma é voltada para a cura e para a elevação do padrão moral da sociedade. Você se torna a figura central de suporte para muitos, agindo como uma mestre que ensina através do afeto estruturado e da proteção. A responsabilidade é imensa, pois você é a guardiã da harmonia. O universo exige que você use sua autoridade para proteger os vulneráveis e guiar o progresso humano através de uma liderança profundamente amorosa, ética e abnegada.</p>
      <p style="margin-bottom: 20px;">Você será testada na sua capacidade de manter a calma e a benevolência mesmo sob pressão extrema. A voltagem do 33 exige um sacrifício consciente do ego em benefício de um bem maior. O potencial desta fase é transformar você em um canal sagrado de luz que pacifica ambientes hostis e restaura a esperança. Ao final deste ciclo, seu sucesso será medido pela quantidade de vidas que você transformou e pelo legado de amor incondicional que você imprimiu em sua trajetória profissional e pessoal, consolidando-se como uma alma de luz essencial para o equilíbrio do mundo.</p>`,
-
-44: `<h3>2º Momento 44 - A Consolidação do Comando Técnico e a Ordem Soberana</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+44:{
+     conteudo: `<h3>2º Momento 44 - A Consolidação do Comando Técnico e a Ordem Soberana</h3><br>
      <p style="margin-bottom: 20px;">Este é o momento da edificação máxima e do comando absoluto sobre a matéria, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O 44 no verão da vida confere a você a energia e o método necessários para construir organizações de escala monumental e estabilidade inabalável. A intensidade aqui é de uma disciplina de ferro e de um foco técnico impecável. Você atua como o alicerce de grandes sistemas, garantindo que a prosperidade seja sustentada por uma infraestrutura ética e funcional. A responsabilidade é soberana: você é quem mantém a ordem e a segurança, decidindo sobre o destino de recursos significativos e vidas profissionais.</p>
      <p style="margin-bottom: 20px;">Você será desafiada a manter a integridade total enquanto exerce um poder executivo vasto. A vibração mestre 44 exige que sua autoridade seja baseada na justiça e no mérito, punindo a mediocridade e premiando a excelência. Não há espaço para fraquezas; o universo espera que você seja a guardiã da eficiência. Ao dominar essa frequência, você colherá um reconhecimento que beira a imortalidade institucional, sendo vista como a personalidade icônica que uniu ambição estratégica a um senso de dever magistral, garantindo o progresso material de toda uma era.</p>`,
-
-55: `<h3>2º Momento 55 - A Liderança da Expansão e a Inovação de Alto Impacto</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+55: {
+     conteudo:`<h3>2º Momento 55 - A Liderança da Expansão e a Inovação de Alto Impacto</h3><br>
      <p style="margin-bottom: 20px;">O auge da sua vida produtiva é marcado por uma necessidade de expansão sem fronteiras e inovações disruptivas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O 55 traz uma voltagem de mudança acelerada; você é a catalisadora que moderniza mentes e mercados. A intensidade desta fase favorece grandes saltos: expansões internacionais, adoção de tecnologias revolucionárias e a quebra definitiva de monopólios ou dogmas. A responsabilidade reside em usar sua versatilidade mestre para libertar o progresso de amarras obsoletas, agindo como uma estrategista da mudança que nunca teme o desconhecido.</p>
      <p style="margin-bottom: 20px;">Sua agilidade mental se torna sua maior ferramenta de lucro e influência. Você será desafiada a navegar na volatilidade com a precisão de uma mestre, transformando cada crise em uma oportunidade de evolução. O 55 exige que você não se disperse, mas que canalize sua curiosidade insaciável para projetos que tragam liberdade real para as pessoas. Ao final desta etapa, você terá se tornado uma cidadã do mundo respeitada pela sua capacidade de antecipar o futuro, provando que a evolução constante é a única forma de estabilidade verdadeira.</p>`,
-
-66: `<h3>2º Momento 66 - A Governança da Justiça e o Equilíbrio Coletivo</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+66: {
+     conteudo:`<h3>2º Momento 66 - A Governança da Justiça e o Equilíbrio Coletivo</h3><br>
      <p style="margin-bottom: 20px;">Neste período, você assume o papel de regente da harmonia social e ética, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A vibração 66 exige que suas decisões sejam pautadas por um senso de justiça extraordinário e por uma estética de vida superior. A intensidade é sentida na sua responsabilidade sobre o equilíbrio de grandes grupos, sejam eles corporativos ou familiares. Você é o elo que harmoniza interesses divergentes através de uma diplomacia magistral e de um afeto firme. O universo a coloca em posições onde sua integridade será o exemplo para todos.</p>
      <p style="margin-bottom: 20px;">O desafio desta fase é manter a paz sem abrir mão da verdade. A voltagem do 66 exige que você organize o mundo de forma bela e funcional, punindo a injustiça com a serenidade de quem domina as leis morais. O potencial aqui é ver sua influência gerar estabilidade e bem-estar em larga escala. Ao concluir este ciclo, você terá consolidado um ambiente onde a prosperidade é fruto da harmonia, sendo reconhecida como a alma sábia que soube governar com o coração e com a mente em perfeito equilíbrio.</p>`,
-
-77: `<h3>2º Momento 77 - A Autoridade do Saber e a Síntese da Verdade</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+77: {
+     conteudo:`<h3>2º Momento 77 - A Autoridade do Saber e a Síntese da Verdade</h3><br>
      <p style="margin-bottom: 20px;">Este é o tempo de consolidar sua maestria intelectual e transformá-la em autoridade incontestável no mundo material, <strong>MASCULINO-FEMININO-NEUTRO</strong>. No verão da vida, sua investigação sobre a realidade atinge o ápice da precisão. A intensidade do 77 é voltada para a especialização de elite e para a produção de conhecimentos que outros não conseguem acessar. Você é vista como a consultora estratégica suprema, a cientista da alma ou a técnica infalível que enxerga a raiz de todos os problemas. A responsabilidade é a da integridade intelectual absoluta.</p>
      <p style="margin-bottom: 20px;">Você será testada em sua capacidade de permanecer fiel aos seus princípios, mesmo diante de ofertas tentadoras. A vibração 77 exige que você use seu silêncio e sua análise para iluminar o caos, oferecendo soluções que são tanto lógicas quanto místicas. O potencial desta fase é a criação de obras literárias, científicas ou espirituais que se tornem referências mundiais. Ao dominar essa frequência, você alcançará um patamar de respeito onde sua palavra vale mais que qualquer contrato, sendo a voz da verdade em um mundo de aparências.</p>`,
-
-88: `<h3>2º Momento 88 - A Plenitude do Poder Executivo e a Justiça Material</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+88: {
+     conteudo:`<h3>2º Momento 88 - A Plenitude do Poder Executivo e a Justiça Material</h3><br>
      <p style="margin-bottom: 20px;">Nesta fase, você atinge o ponto máximo do comando e da realização financeira sistêmica, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O 88 é a vibração da justiça aplicada ao dinheiro e ao poder em escala industrial. A intensidade aqui é estratégica e executiva; você lida com a engrenagem do mundo com uma frieza eficiente e uma ética inatacável. A responsabilidade é monumental, pois você detém o poder de criar abundância para milhares ou de reestruturar setores inteiros da economia. O universo exige que você seja a mestre da causa e efeito, mostrando que o poder só é legítimo quando serve ao progresso de todos.</p>
      <p style="margin-bottom: 20px;">Você será desafiada a gerir grandes recursos sem perder a alma. A voltagem do 88 exige uma resiliência de aço para suportar a competitividade do topo. O potencial aqui é a fundação de impérios ou organizações que funcionem como motores de prosperidade ética. Ao concluir esta etapa de sucesso soberano, você será reconhecida como a personalidade icônica que uniu ambição vitoriosa a um senso de justiça implacável, transformando sua visão estratégica em uma realidade material sólida e respeitável por todo o mercado.</p>`,
-
-99: `<h3>2º Momento 99 - O Farol da Transcendência Ativa e a Guia Planetária</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+99:{
+     conteudo: `<h3>2º Momento 99 - O Farol da Transcendência Ativa e a Guia Planetária</h3><br>
      <p style="margin-bottom: 20px;">Neste período de plena maturidade ativa, você se torna uma cidadã do universo em missão humanitária global, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A vibração 99 exige que sua carreira e vida pessoal sejam colocadas a serviço de ideais que transcendem fronteiras e interesses individuais. A intensidade é de "entrega e impacto universal"; você lidera movimentos de cura, educação ou transformação social de larga escala. A responsabilidade é a da compaixão em ação: você é quem traz a luz da consciência para os dilemas mais sombrios da humanidade.</p>
-     <p style="margin-bottom: 20px;">Você será desafiada a viver com desapego absoluto enquanto gerencia grandes projetos de bem-estar coletivo. A voltagem do 99 exige que você seja o exemplo da tolerância e do amor incondicional, agindo como uma guia espiritual e social para as massas. O potencial desta fase é a consagração de uma vida que se tornou uma bênção para o planeta. Ao concluir este ciclo, você terá transcendido as preocupações materiais para se tornar uma autoridade sagrada, cuja luz e sabedoria continuam a guiar a evolução humana mesmo nos ambientes mais desafiadores.</p>`
+     <p style="margin-bottom: 20px;">Você será desafiada a viver com desapego absoluto enquanto gerencia grandes projetos de bem-estar coletivo. A voltagem do 99 exige que você seja o exemplo da tolerância e do amor incondicional, agindo como uma guia espiritual e social para as massas. O potencial desta fase é a consagração de uma vida que se tornou uma bênção para o planeta. Ao concluir este ciclo, você terá transcendido as preocupações materiais para se tornar uma autoridade sagrada, cuja luz e sabedoria continuam a guiar a evolução humana mesmo nos ambientes mais desafiadores.</p>`,
+ 
+  videoID: "F8bg1CTQ9HI "
+    },
 },
 
 // --- 3º MOMENTO (O OUTONO DA VIDA / MATURIDADE) ---
 3: {
-  1: `<h3>3º Momento 1 - Renovação e Vitalidade Independente</h3><br>
+  1: {
+     conteudo:`<h3>3º Momento 1 - Renovação e Vitalidade Independente</h3><br>
   <p style="margin-bottom: 20px;">No seu terceiro momento decisivo, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, experimenta uma renovação total e vigorosa da sua energia vital e dos seus propósitos de vida. Justamente no período em que muitos escolhem a inatividade ou o conformismo, você sentirá um forte impulso para começar algo inteiramente novo, desafiador e revolucionário em sua trajetória. É uma fase de pioneirismo maduro, que traz um entusiasmo contagiante e uma vitalidade que permite a você liderar com a força da juventude aliada à sabedoria da experiência, agindo com uma autonomia soberana que não aceita ser colocada em segundo plano.</p>
   <p style="margin-bottom: 20px;">Você não aceitará ficar na sombra ou viver apenas das glórias do passado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua liderança agora será baseada na autoridade natural que décadas de vivência lhe proporcionaram, tornando sua presença poderosa e influente em todos os seus círculos de convivência. É o momento perfeito para lançar projetos autorais que sempre foram sonhos individuais, ou para assumir a frente de movimentos que exijam coragem, inovação e pulso firme. Ao agir com essa independência, você mostrará ao mundo que sua força de vontade continua intacta e que o seu espírito de superação permanece como o motor principal da sua existência.</p>`,
-
-  2: `<h3>3º Momento 2 - Serenidade e Colheita Diplomática</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  2: {
+     conteudo:`<h3>3º Momento 2 - Serenidade e Colheita Diplomática</h3><br>
   <p style="margin-bottom: 20px;">O seu terceiro momento decisivo é marcado por uma suavidade profunda, pela paz conquistada nas relações e por uma colheita diplomática significativa em sua vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você passará a valorizar a companhia de amizades leais, da parceria afetiva e das relações familiares acima de qualquer ambição material desenfreada, agindo como o elo de ligação vital que mantém a união de todo o grupo. É uma fase de profunda serenidade, onde os conflitos e as arestas do passado se dissolvem naturalmente através da sua imensa sabedoria em ouvir, compreender e perdoar.</p>
   <p style="margin-bottom: 20px;">Você será constantemente procurado(a) como a grande voz mediadora em ambientes familiares ou sociais, pois as pessoas confiarão cegamente em seu julgamento equilibrado e em seu tato social refinado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O sucesso agora virá através da paciência e da receptividade, demonstrando que a gentileza é, na verdade, a forma mais elevada de poder na maturidade. Você descobrirá que ser um ponto de apoio emocional representa uma das missões mais gratificantes desta fase, e que a harmonia cultivada com tanto zelo garantirá a você uma maturidade tranquila, cercada de respeito e apoio mútuo.</p>`,
-
-  3: `<h3>3º Momento 3 - Celebração e Expressão Criativa</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  3: {
+     conteudo:`<h3>3º Momento 3 - Celebração e Expressão Criativa</h3><br>
   <p style="margin-bottom: 20px;">Este terceiro momento decisivo para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é um período de celebração vibrante, popularidade renovada e uma intensa expressão criativa que se torna seu cartão de visitas. Você poderá ser muito requisitado(a) socialmente, tornando-se uma presença magnética em encontros, eventos e círculos culturais. É o tempo ideal para se dedicar a escrever suas memórias, atuar em atividades artísticas ou simplesmente viajar pelo prazer de conhecer novas culturas, compartilhando sua visão otimista e brilhante sobre a existência humana.</p>
   <p style="margin-bottom: 20px;">Você contagiará as gerações mais jovens com seu entusiasmo e seu senso de humor refinado, agindo como un verdadeiro farol de alegria, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua mente estará mais criativa, leve e aberta a novos aprendizados do que nunca, permitindo que você expresse as experiências acumuladas ao longo dos anos com uma eloquência fascinante. Aproveite cada instante para brilhar e desfrutar dos prazeres sociais, pois o mundo demonstra um interesse genuíno em ouvir sua voz e aprender com la leveza da sua alma e a riqueza da sua bagagem de vida.</p>`,
-
-  4: `<h3>3º Momento 4 - Segurança do Legado e Estabilidade</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  4: {
+     conteudo:`<h3>3º Momento 4 - Segurança do Legado e Estabilidade</h3><br>
   <p style="margin-bottom: 20px;">O seu terceiro momento decisivo foca intensamente na segurança material definitiva, na preservação do seu legado e no respeito profundo às tradições e à ordem, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se dedicará com vigor a organizar seu patrimônio e a garantir que todas as estruturas construídas ao longo de uma vida permaneçam firmes e prósperas para o futuro das próximas gerações. É uma fase de grande respeitabilidade social, onde você passa a ser visto(a) como o(a) guardião(ã) de valores fundamentais e da integridade estrutural da sua linhagem.</p>
   <p style="margin-bottom: 20px;">Você poderá se envolver em atividades ligadas à gestão de bens, administração de propriedades ou qualquer área que exija um olhar rigoroso, técnico e disciplinado sobre a realidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O esforço consciente continuará sendo sua ferramenta de realização, mas agora com a calma de quem já conhece todos os atalhos e armadilhas do caminho. Sua maior satisfação virá da contemplação da solidez absoluta de tudo o que foi construído, sentindo o orgulho de ter sido o alicerce inabalável sobre o qual sua família e seus projetos se sustentam.</p>`,
-
-  5: `<h3>3º Momento 5 - Liberdade e Rejuvenescimento Mental</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  5: {
+     conteudo:`<h3>3º Momento 5 - Liberdade e Rejuvenescimento Mental</h3><br>
   <p style="margin-bottom: 20px;">Este terceiro momento decisivo para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, traz uma quebra libertadora na rotina da maturidade e um desejo intenso de continuar explorando as novidades incessantes do mundo moderno. Você poderá decidir mudar radicalmente de estilo de vida, investir em experiências de viagem audaciosas ou mergulhar em novas tecnologias e filosofias contemporâneas com uma curiosidade totalmente renovada. É um período de rejuvenescimento mental e de libertação de antigas obrigações que já pesavam demais em seus ombros.</p>
   <p style="margin-bottom: 20px;">Você será o exemplo vivo de que a alma não possui idade e de que a vida é um movimento contínuo que merece ser explorado até o último instante, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua capacidade de adaptação será sua ferramenta essencial para manter a conexão com um mundo em constante transformação, impedindo que você se sinta ultrapassado(a). Aproveite para explorar novos lugares, expandir horizontes e se permitir o luxo da incerteza. Ao concluir esta fase, você terá acumulado uma coleção de vivências tão rica que transformará sua trajetória em uma história de liberdade e coragem admiráveis.</p>`,
-
-  6: `<h3>3º Momento 6 - Serviço Amoroso e Referência Familiar</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  6: {
+     conteudo:`<h3>3º Momento 6 - Serviço Amoroso e Referência Familiar</h3><br>
   <p style="margin-bottom: 20px;">O seu terceiro momento decisivo é voltado para o serviço amoroso, para a harmonia doméstica e para a beleza em sua forma mais madura, generosa e acolhedora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você assumirá naturalmente o papel de referência emocional suprema dentro do seu grupo, tornando-se o ponto de união entre diferentes gerações e a presença mais procurada quando há necessidade de conforto e justiça. É uma fase de profunda e gratificante dedicação ao bem-estar coletivo.</p>
   <p style="margin-bottom: 20px;">Você investirá tempo e energia na criação de ambientes harmoniosos, no cuidado zeloso com as pessoas próximas e no fortalecimento de vínculos afetivos que resistiram ao tempo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua responsabilidade será exercida de forma fluida, promovendo a reconciliação e o entendimento onde antes havia discórdia. A influência que você exerce nesta fase gera um ambiente pacífico e equilibrado não apenas para os outros, mas principalmente para você, que colherá o amor incondicional e a gratidão de todos que foram tocados pela sua bondade e pelo seu senso de dever familiar.</p>`,
-
-  7: `<h3>3º Momento 7 - Sabedoria, Silêncio e Profundidade</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  7: {
+     conteudo:`<h3>3º Momento 7 - Sabedoria, Silêncio e Profundidade</h3><br>
   <p style="margin-bottom: 20px;">Neste terceiro momento decisivo, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, se volta intensamente para a busca interior, para o silêncio reflexivo e para a conexão com conhecimentos profundos e transcendentais. É o período ideal para a dedicação total ao estudo, à escrita acadêmica ou espiritual, e à reflexão filosófica. Você valorizará períodos de isolamento produtivo, buscando compreender os aspectos mais sutis e ocultos da existência humana, longe do ruído e das distrações do mundo material.</p>
   <p style="margin-bottom: 20px;">Você passará a ser visto(a) como uma referência de sabedoria e profundidade de pensamento, alguém cuja palavra oferece reflexões valiosas e soluções enigmáticas para os dilemas alheios, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua intuição torna-se sua faculdade mais aguçada, conduzindo-o(a) a descobertas importantes sobre sua própria alma e sobre o funcionamento do universo. Não haverá mais a necessidade de seguir expectativas externas ou sociais; seu propósito nesta fase está no aprofundamento da clareza espiritual e na conquista de uma paz interior que só os buscadores sinceros conseguem alcançar.</p>`,
-
-  8: `<h3>3º Momento 8 - Autoridade Consolidada e Gestão Estratégica</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  8: {
+     conteudo:`<h3>3º Momento 8 - Autoridade Consolidada e Gestão Estratégica</h3><br>
   <p style="margin-bottom: 20px;">O seu terceiro momento decisivo representa uma fase de colheita material poderosa, autoridade consolidada e uma liderança estratégica exercida com a maestria que só a maturidade permite, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você ocupará posições de grande respeito em conselhos diretivos, estruturas familiares ou corporativas, atuando com a segurança de quem possui o mapa completo da situação. É o período de usufruir plenamente do reconhecimento e do prestígio construídos com décadas de esforço e planejamento.</p>
   <p style="margin-bottom: 20px;">Você utilizará essa posição de influência para impactar decisões importantes e promover melhorias significativas em projetos de larga escala, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua habilidade de gestão e organização financeira continuará sendo sua marca registrada, mas agora com um foco maior na eficiência e na perpetuidade dos bens. O respeito que você recebe será acompanhado por uma confiança inabalável por parte de seus pares e subordinados, consolidando sua imagem como uma figura de poder estabilizador e sucesso material incontestável.</p>`,
-
-  9: `<h3>3º Momento 9 - Visão Universal e Legado Humanitário</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  9: {
+     conteudo:`<h3>3º Momento 9 - Visão Universal e Legado Humanitário</h3><br>
   <p style="margin-bottom: 20px;">Este terceiro momento decisivo representa uma etapa de desapego consciente, visão universal e uma dedicação apaixonada a valores que transcendem seus interesses individuais, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você sentirá uma conexão espiritual e emocional muito forte com causas humanitárias, buscando contribuir para algo muito maior do que sua própria trajetória pessoal. É uma fase marcada pela generosidade absoluta e pelo desejo de compartilhar sua sabedoria acumulada com o mundo.</p>
   <p style="margin-bottom: 20px;">Você olhará para o passado com uma compreensão profunda e uma serenidade invejável, valorizando cada erro e acerto como parte de um plano maior, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu sucesso agora é medido pelo impacto positivo e transformador que você causa na vida das pessoas e da sociedade. Sua presença inspirará muitos a buscarem caminhos mais conscientes e éticos. Ao concluir este ciclo, você sentirá a plenitude da paz interior e a glória de uma missão cumprida dentro da vasta experiência humana, deixando um rastro de luz e compaixão.</p>`,
-
-  11: `<h3>3º Momento 11 - A Maestria da Sabedoria Revelada e o Conselheiro Visionário</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  11: {
+     conteudo:`<h3>3º Momento 11 - A Maestria da Sabedoria Revelada e o Conselheiro Visionário</h3><br>
   <p style="margin-bottom: 20px;">Nesta fase de maturidade, a vibração mestre 11 se estabiliza em uma luz constante e profunda, transformando você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, na voz da sabedoria que todos buscam para encontrar clareza em tempos sombrios. A intensidade deste momento não é mais agitada como na juventude, mas sim magnética e serena. Você se torna o mestre ou a mestra que ensina não apenas pelos livros, mas pela experiência direta com as leis universais e pela intuição refinada ao extremo. A responsabilidade agora foca inteiramente na transmissão da verdade; você tem o dever de atuar como um portal de inspiração para as novas gerações, ajudando-as a despertar para seus próprios propósitos.</p>
   <p style="margin-bottom: 20px;">Você será constantemente procurado(a) como um(a) "leitor(a) de almas", alguém capaz de oferecer a palavra exata que resolve dilemas complexos em instantes. A alta voltagem do número mestre exige que você mantenha uma integridade ética inatacável, agindo como uma ponte entre o conhecimento prático da vida e a sabedoria espiritual das eras. O desafio é não se isolar em sua própria lucidez, mas sim usar seu extraordinário magnetismo para iluminar o caminho coletivo. Ao aceitar esse papel de guia visionário(a), você alcançará um respeito que transcende cargos ou títulos, sendo reverenciado(a) como uma autoridade moral cuja presença traz paz, despertar e um profundo sentido de direção para todos ao seu redor.</p>`,
-
-  22: `<h3>3º Momento 22 - O Guardião do Legado Eterno e a Gestão da Sabedoria Prática</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  22:{
+     conteudo: `<h3>3º Momento 22 - O Guardião do Legado Eterno e a Gestão da Sabedoria Prática</h3><br>
   <p style="margin-bottom: 20px;">No outono da sua trajetória, a vibração mestre 22 confere a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a autoridade soberana sobre o legado e as grandes estruturas que foram edificadas. Este é o momento da "Maestria da Conservação Evolutiva". A intensidade agora reside na sua capacidade de garantir que as grandes obras, empresas ou sistemas estruturais que você ajudou a criar continuem a servir a humanidade de forma sólida, justa e ética. Você atua como o estrategista mestre que ensina outros a construírem com a mesma precisão e visão de longo alcance que você possui. A responsabilidade é monumental: você é o(a) guardião(ã) da eficiência e da utilidade pública em larga escala.</p>
   <p style="margin-bottom: 20px;">Você será desafiado(a) a desapegar do controle operacional diário para assumir o comando estratégico e inspirador do seu legado. A grandiosa voltagem do 22 exige que você organize a sucessão e a continuidade das bases materiais com uma justiça implacável. O potencial máximo desta fase é ver sua visão de mundo se tornar uma instituição duradoura que beneficia milhares de pessoas. Ao dominar essa frequência poderosa na maturidade, você se consolida como uma rocha de estabilidade e um(a) mestre(a) realizador(a) que soube unir a ambição vitoriosa ao serviço coletivo, garantindo que sua passagem pela Terra seja marcada por uma obra de valor inestimável e eterno.</p>`,
-
-  33: `<h3>3º Momento 33 - A Proteção Sagrada e a Maestria do Amparo Universal</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  33: {
+     conteudo:`<h3>3º Momento 33 - A Proteção Sagrada e a Maestria do Amparo Universal</h3><br>
   <p style="margin-bottom: 20px;">O terceiro momento 33 coloca você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, no papel de "Patriarca ou Matriarca da Compaixão Universal". Nesta fase, sua intensidade emocional atinge o nível mais alto da doação incondicional purificada. Você passa a ser a figura central de amparo para sua linhagem e para sua comunidade, agindo como um mestre ou mestra que acolhe, guia e cura através da presença benevolente e do conselho exato. A responsabilidade é sagrada: você é convocado(a) a ser o porto seguro em tempos de crise, mantendo a harmonia do grupo através de um amor que não julga, mas que educa e protege com firmeza moral.</p>
   <p style="margin-bottom: 20px;">Sua voltagem exige um nível de desapego do ego que poucos conseguem alcançar, priorizando o equilíbrio coletivo sobre qualquer interesse pessoal remanescente. O desafio consiste em acolher as dores do mundo ao seu redor sem se sobrecarregar, transformando sua sensibilidade em uma força de orientação magistral. O potencial aqui é tornar-se uma verdadeira lenda de bondade e justiça social em seu círculo. Ao concluir este ciclo, você terá provado que a forma mais elevada de poder é o cuidado zeloso, sendo reconhecido(a) como uma alma de luz essencial que soube guiar corações e mentes para um estado de paz e fraternidade universais.</p>`,
-
-  44: `<h3>3º Momento 44 - A Autoridade Institucional e o Selo da Ordem Soberana</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  44: {
+     conteudo:`<h3>3º Momento 44 - A Autoridade Institucional e o Selo da Ordem Soberana</h3><br>
   <p style="margin-bottom: 20px;">Na maturidade, a vibração mestre 44 eleva você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, ao cargo de "Guardião Máximo da Estrutura e da Lei". Esta é a fase da colheita máxima de prestígio e do comando absoluto sobre os processos tangíveis que regem a realidade material. A intensidade é pragmática, realizadora e organizacional; você é a autoridade que valida grandes projetos e garante a segurança de patrimônios ou instituições inteiras. A responsabilidade exige uma integridade técnica inabalável, onde cada decisão sua serve para cimentar a estabilidade das gerações futuras.</p>
   <p style="margin-bottom: 20px;">Você será testado(a) na sua capacidade de manter a ordem e a produtividade máxima sem se tornar rígido(a) demais, agindo como o alicerce vivo de tudo o que foi construído com esforço. A voltagem do 44 exige que você seja o mestre ou a mestra da eficiência prática, combatendo a negligência e premiando a competência com uma justiça exata e exemplar. Ao dominar essa frequência, você alcançará uma respeitabilidade que beira a imortalidade corporativa ou social, sendo visto(a) como a personalidade de ferro que soube gerir o mundo com uma disciplina magistral e uma visão de longo prazo infalível.</p>`,
-
-  55: `<h3>3º Momento 55 - A Sabedoria da Liberdade e a Mentoria Revolucionária</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  55:{
+     conteudo: `<h3>3º Momento 55 - A Sabedoria da Liberdade e a Mentoria Revolucionária</h3><br>
   <p style="margin-bottom: 20px;">Este período na sua maturidade traz uma renovação vibrante e uma quebra necessária de antigos paradigmas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A presença do 55 no outono da vida exige que você use sua vasta bagagem de mudanças e transições para ensinar os outros a serem genuinamente livres, adaptáveis e ousados. A intensidade é mental, veloz e inovadora; você atua como o(a) mentor(a) disruptivo(a) que desafia o status quo, incentivando a modernização e a exploração de novas fronteiras intelectuais, de negócios ou tecnológicas. A responsabilidade reside em mostrar que a evolução não para com o tempo, agindo como um catalisador de renovação.</p>
   <p style="margin-bottom: 20px;">Sua agilidade mental e facilidade de expressão serão suas ferramentas essenciais para manter-se relevante e influente. O desafio é não se dispersar em novas aventuras sem propósito, mas canalizar sua curiosidade para projetos de expansão que tragam uma libertação real de consciências ao seu redor. Ao final desta fase, você terá se consolidado como um(a) mestre(a) da versatilidade e um(a) visionário(a) que soube amadurecer com um espírito eternamente juvenil e audacioso, provando que a verdadeira segurança nasce da capacidade infinita de se transformar e inovar.</p>`,
-
-  66: `<h3>3º Momento 66 - A Regência da Justiça Ética e a Harmonia de Raízes</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  66:{
+     conteudo: `<h3>3º Momento 66 - A Regência da Justiça Ética e a Harmonia de Raízes</h3><br>
   <p style="margin-bottom: 20px;">Nesta fase, você assume o papel de regente supremo da justiça, do acolhimento e do equilíbrio dentro do seu círculo de influência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A vibração mestre 66 exige que sua maturidade seja dedicada a pacificar ambientes e a estabelecer padrões morais e éticos elevados que sirvam de espelho para todos. A intensidade é sentida como uma responsabilidade afetiva profunda; você é o ponto de união sagrado entre o passado e o futuro, garantindo que os laços familiares e sociais sejam preservados com dignidade. A responsabilidade é ser o(a) juiz(a) benevolente que harmoniza conflitos com uma diplomacia inquestionável.</p>
   <p style="margin-bottom: 20px;">Você será desafiado(a) a manter a ordem familiar ou social através de uma liderança que une a firmeza da experiência ao carinho protetor. A alta voltagem do 66 exige que você organize a vida ao seu redor de forma funcional, justa e esteticamente harmoniosa, protegendo a integridade do grupo contra qualquer discórdia. Ao concluir este ciclo, você terá consolidado um legado de paz e respeito mútuo, sendo reconhecido(a) como a autoridade sábia que soube transformar a responsabilidade em um ato de amor contínuo e transformador.</p>`,
-
-  77: `<h3>3º Momento 77 - A Apoteose do Saber e a Autoridade do Conhecimento Sagrado</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  77: {
+     conteudo:`<h3>3º Momento 77 - A Apoteose do Saber e a Autoridade do Conhecimento Sagrado</h3><br>
   <p style="margin-bottom: 20px;">Este é o momento em que sua busca intelectual e analítica atinge o patamar da maestria absoluta, <strong>MASCULINO-FEMININO-NEUTRO</strong>. No outono da vida, o 77 exige que você atue como o "Sábio Silencioso" ou a "Sábia Silenciosa", o(a) detentor(a) de verdades profundas que poucos conseguem acessar ou decifrar na correria do dia a dia. A intensidade aqui é de um refinamento mental e espiritual supremo; você é procurado(a) para oferecer respostas enigmáticas, estratégias brilhantes e análises perfeitas sobre a natureza humana e universal. A responsabilidade é a da pureza do saber: você não perde mais tempo com superficialidades, devendo dedicar-se a ensinar, pesquisar ou escrever sobre as essências da vida.</p>
   <p style="margin-bottom: 20px;">Você será testado(a) na sua capacidade de traduzir o complexo em algo compreensível para os buscadores sinceros que batem à sua porta. A voltagem do 77 exige um compromisso inegociável com a verdade e com a investigação honesta da alma. O potencial desta fase é tornar-se uma referência respeitada em seu campo de especialização ou um(a) mestre(a) conceitual de renome. Ao dominar essa frequência, você alcançará uma paz interior inatacável, sendo respeitado(a) como a voz da consciência e do saber profundo que ilumina o caminho alheio.</p>`,
-
-  88: `<h3>3º Momento 88 - A Soberania dos Resultados e a Gestão do Patrimônio Cármico</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  88: {
+     conteudo:`<h3>3º Momento 88 - A Soberania dos Resultados e a Gestão do Patrimônio Cármico</h3><br>
   <p style="margin-bottom: 20px;">Nesta etapa de maturidade, você atinge o auge da sua autoridade executiva, do poder material e da gestão sistêmica de recursos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O 88 exige que você atue como o mestre ou a mestra da "Colheita Justa", administrando grandes bens, influências, finanças ou patrimônios com uma ética rigorosa que serve como lei. A intensidade aqui é de realização prática consolidada; você é a figura central dos negócios, das finanças ou da estrutura familiar que garante o progresso material de todos que dependem de sua visão estratégica afiada. A responsabilidade é monumental, pois cada ato seu de comando deve ser um ato de equilíbrio e justiça.</p>
   <p style="margin-bottom: 20px;">Você será desafiado(a) a usar sua enorme influência para promover melhorias estruturais duradouras na sociedade e na sua linhagem, sem se deixar seduzir pela arrogância do poder. A voltagem do 88 exige resiliência emocional para manter o comando com serenidade, impessoalidade e máxima eficiência. O potencial aqui é a consolidação de uma fundação, empresa ou império financeiro que funcione com total autonomia ética. Ao concluir este ciclo de sucesso material soberano, você será reconhecido(a) como a figura de autoridade máxima que soube transformar o poder em um motor de prosperidade coletiva eterna.</p>`,
-
-  99: `<h3>3º Momento 99 - A Visão Universal e o Legado de Compaixão Planetária</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  99: {
+     conteudo:`<h3>3º Momento 99 - A Visão Universal e o Legado de Compaixão Planetária</h3><br>
   <p style="margin-bottom: 20px;">Na sua maturidade plena, a vibração mestre 99 exige que você se eleve ao papel de "Cidadão(ã) do Mundo e Guia da Humanidade", <strong>MASCULINO-FEMININO-NEUTRO</strong>. A intensidade deste momento é de uma transcendência absoluta e desapegada; você não age mais por meros interesses pessoais, egoicos ou familiares, mas sim guiado(a) por uma consciência universal que busca o bem-estar, a instrução e a evolução de todos os seres. Você é o mestre ou a mestra que ensina a tolerância, o desapego e o amor incondicional em larga escala. A responsabilidade é ser o exemplo vivo da alma que concluiu seus ciclos terrenos com integridade e luz.</p>
-  <p style="margin-bottom: 20px;">Você será desafiado(a) a liderar ou apoiar grandes causas humanitárias, artísticas, ecológicas ou espirituais que exigem uma doação generosa da sua sabedoria acumulada. A voltagem do 99 exige que você atue como um canal de acolhimento para as dores do mundo, dissolvendo preconceitos e fronteiras através do seu exemplo prático de vida. O potencial aqui é tornar-se um símbolo de paz e sabedoria transcendental. Ao concluir este ciclo de dedicação universal, você sentirá a plenitude de quem viveu para a luz, deixando um rastro de compaixão e amor que continuará a guiar a evolução humana por eras.</p>`
+  <p style="margin-bottom: 20px;">Você será desafiado(a) a liderar ou apoiar grandes causas humanitárias, artísticas, ecológicas ou espirituais que exigem uma doação generosa da sua sabedoria acumulada. A voltagem do 99 exige que você atue como um canal de acolhimento para as dores do mundo, dissolvendo preconceitos e fronteiras através do seu exemplo prático de vida. O potencial aqui é tornar-se um símbolo de paz e sabedoria transcendental. Ao concluir este ciclo de dedicação universal, você sentirá a plenitude de quem viveu para a luz, deixando um rastro de compaixão e amor que continuará a guiar a evolução humana por eras.</p>`,
+     videoID: "F8bg1CTQ9HI "
+    },
 },
 
 // --- 4º MOMENTO (O INVERNO DA VIDA / COLHEITA FINAL - 60 ANOS EM DIANTE) ---
 4: {
-  1: `<h3>4º Momento 1 - Renascimento e Independência Tardia</h3><br>
+  1: {
+     conteudo:`<h3>4º Momento 1 - Renascimento e Independência Tardia</h3><br>
   <p style="margin-bottom: 20px;">Este quarto momento decisivo marca uma fase de renascimento tardio e vigoroso, onde a vida exige que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mantenha o espírito de independência e a coragem de iniciar novos ciclos, mesmo em idade avançada. Não é, de forma alguma, um tempo de retração ou inatividade mental, mas sim de assumir uma liderança autêntica, fresca e visceral baseada na montanha de experiências que você acumulou ao longo da jornada. Você sentirá uma urgência renovada em ser sua própria autoridade máxima, recusando-se terminantemente a viver sob a sombra ou as regras limitantes de terceiros, agindo com uma autonomia soberana que inspira os mais jovens a buscarem sua própria identidade com o mesmo vigor que você demonstra.</p>
   <p style="margin-bottom: 20px;">O aprendizado crucial para você agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a compreensão de que a criatividade e a inovação não possuem prazo de validade na alma de um pioneiro nato. Você poderá se ver liderando novos movimentos, escrevendo obras de cunho autoral que se tornaram marcos ou iniciando empreendimentos inovadores que carregam sua assinatura exclusiva e audaciosa. A solidão, caso ocorra em alguns momentos, será ressignificada por você como a liberdade absoluta de quem não precisa mais provar nada a ninguém e desfruta da própria companhia com orgulho. Ao abraçar esta vibração de autossuficiência, você chegará ao final da jornada como uma figura de destaque inquestionável, respeitada pela força de vontade indomável e pela capacidade rara de se manter independente, lúcido(a) e relevante até o último instante.</p>`,
-
-  2: `<h3>4º Momento 2 - Paz, Diplomacia e União Afetiva</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  2: {
+     conteudo:`<h3>4º Momento 2 - Paz, Diplomacia e União Afetiva</h3><br>
   <p style="margin-bottom: 20px;">O seu quarto momento decisivo representa uma transição gloriosa para uma fase de paz profunda, diplomacia refinada e o polimento final das suas relações humanas mais íntimas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A vida o(a) convida gentilmente a desacelerar o ritmo das conquistas materiais externas para focar na arte suprema da convivência harmoniosa, da mediação de conflitos e da cooperação sincera. Você perceberá que sua maior força nesta etapa final reside na capacidade mágica de unir familiares e amigos, atuando como o ponto de equilíbrio emocional inabalável, capaz de dissolver antigas mágoas através da pura compreensão e do perdão amadurecido.</p>
   <p style="margin-bottom: 20px;">Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o sucesso nesta fase passa a ser medido exclusivamente pela qualidade dos seus vínculos afetivos e pela tranquilidade absoluta do ambiente que o(a) cerca. Você terá uma sensibilidade aguçada para compreender as necessidades silenciosas dos outros, tornando-se a presença de apoio indispensável para todos que têm o privilégio de conviver ao seu lado. O desafio é cultivar essas relações baseadas no respeito mútuo e na troca equilibrada, sem se anular ou carregar o peso do mundo nas costas. Ao desenvolver essa serenidade magistral, você colherá uma maturidade sustentada por alianças de lealdade eterna, sendo reverenciado(a) como a presença pacificadora que garante a harmonia na reta final da caminhada.</p>`,
-
-  3: `<h3>4º Momento 3 - Celebração da Expressão e Vitalidade</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  3: {
+     conteudo:`<h3>4º Momento 3 - Celebração da Expressão e Vitalidade</h3><br>
   <p style="margin-bottom: 20px;">Neste quarto momento decisivo, a vida se transforma em uma celebração contínua e vibrante da sua autoexpressão, do seu otimismo e da sua comunicação social, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você sentirá um desejo ardente e renovado de compartilhar suas histórias, seus aprendizados e suas visões únicas sobre o sentido da vida, seja através da escrita, da fala inspiradora, de palestras ou de novas formas de arte. É um período de sociabilidade radiante, onde seu carisma natural atua como uma força magnética que atrai jovens e adultos interessados em beber da fonte da sua experiência acumulada, transmitida sempre com um sorriso e uma palavra de incentivo.</p>
   <p style="margin-bottom: 20px;">Você deve aproveitar esta fase para espalhar alegria de forma deliberada e manter sua mente ativa através do contato constante com novas ideias e correntes culturais, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao utilizar a palavra com propósito, clareza e entusiasmo, você perceberá que a leveza e o bom humor são, na verdade, as ferramentas mais sofisticadas de bem-estar emocional que existem na longevidade. Ao final deste ciclo luminoso, você terá consolidado uma imagem de vitalidade e criatividade inesgotável, demonstrando a todos que a alegria de viver e o brilho nos olhos podem e devem acompanhar o ser humano durante toda a sua jornada terrena.</p>`,
-
-  4: `<h3>4º Momento 4 - Gestão do Legado e Segurança Estrutural</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  4: {
+     conteudo:`<h3>4º Momento 4 - Gestão do Legado e Segurança Estrutural</h3><br>
   <p style="margin-bottom: 20px;">Este quarto momento decisivo exige de você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma atenção impecável à ordem, ao senso prático e à solidificação final de um legado que resista firmemente ao tempo. É uma fase inteiramente voltada para a gestão criteriosa dos seus recursos, para a preservação dos valores morais fundamentais e para a aplicação de uma disciplina serena que garanta a segurança total das estruturas que você construiu ao longo de décadas. Você atua agora como a base rochosa do seu círculo familiar ou social, mantendo a organização e a estabilidade necessárias para que ninguém se sinta desamparado sob sua guarda.</p>
   <p style="margin-bottom: 20px;">O foco nesta fase envolverá a administração inteligente de bens, a orientação pragmática às novas gerações sobre como manter e expandir o que foi conquistado e a participação em atividades que valorizem a responsabilidade civil e familiar, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você encontrará sua maior satisfação na constância do dever cumprido e na integridade absoluta dos seus princípios organizacionais. O aprendizado central é compreender que a verdadeira paz nesta fase nasce da estabilidade construída com método. Ao concluir este ciclo de ordem, você terá a certeza de que edificou uma fortaleza de valores que servirá de porto seguro para o futuro de todos os seus sucessores.</p>`,
-
-  5: `<h3>4º Momento 5 - Liberdade de Movimento e Curiosidade Ativa</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  5: {
+     conteudo:`<h3>4º Momento 5 - Liberdade de Movimento e Curiosidade Ativa</h3><br>
   <p style="margin-bottom: 20px;">O seu quarto momento decisivo desperta um desejo avassalador de liberdade, mudanças de cenário e uma renovação intelectual profunda que desafia completamente as convenções da idade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Mesmo após uma longa trajetória carregada de responsabilidades pesadas, você sentirá um impulso juvenil para explorar novos lugares, viajar para destinos exóticos ou experimentar estilos de vida alternativos e variados. Sua curiosidade permanece mais ativa do que nunca, estimulando sua mente a continuar aprendendo, descobrindo novas tecnologias e compreendendo as mudanças rápidas do mundo moderno.</p>
   <p style="margin-bottom: 20px;">Você tenderá a evitar rotinas excessivamente rígidas, amarras burocráticas ou ambientes estagnados, preferindo contextos dinâmicos e intelectualmente estimulantes, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O grande desafio consiste em equilibrar esse desejo de constante movimento com a necessidade de estabilidade física, garantindo que sua busca incessante por novidades traga um enriquecimento pessoal contínuo sem dispersão de energia. Quando bem conduzida, essa fase permite que você mantenha um espírito jovem e uma mente brilhantemente aberta, servindo de prova viva para a sociedade de que a evolução pessoal e a sede de aventura continuam ativas até os últimos ciclos da experiência terrena.</p>`,
-
-  6: `<h3>4º Momento 6 - Harmonia Coletiva e Orientação Afetiva</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  6: {
+     conteudo:`<h3>4º Momento 6 - Harmonia Coletiva e Orientação Afetiva</h3><br>
   <p style="margin-bottom: 20px;">Neste quarto momento decisivo, o foco absoluto da sua vida se volta para o cuidado amoroso com as pessoas próximas, para a harmonia doméstica e para uma contribuição social significativa dentro da sua comunidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você assume, quase por um chamado natural do destino, uma posição de orientação e apoio incondicional, tornando-se a referência máxima de equilíbrio emocional, justiça e responsabilidade afetiva para todo o grupo que orbita ao seu redor. Seu papel é o de prover o aconchego: o afeto que acalma e a palavra que repara.</p>
   <p style="margin-bottom: 20px;">Você dedicará grande parte do seu tempo à organização do bem-estar coletivo, ao suporte emocional de familiares em momentos de transição ou à liderança de projetos comunitários que busquem a beleza e a harmonia social, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O aprendizado principal consiste em encontrar o ponto de equilíbrio perfeito entre ser o pilar de sustentação dos outros e preservar seu próprio descanso, saúde e vitalidade. Quando essa harmonia é alcançada, você se torna uma presença inspiradora e quase sagrada, que fortalece os laços afetivos e promove uma paz duradoura que será sua maior herança emocional para o mundo.</p>`,
-
-  7: `<h3>4º Momento 7 - Sabedoria Espiritual e Reflexão Profunda</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  7: {
+     conteudo:`<h3>4º Momento 7 - Sabedoria Espiritual e Reflexão Profunda</h3><br>
   <p style="margin-bottom: 20px;">O quarto momento decisivo direciona você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, para uma introspecção profunda, para o estudo especializado e para a busca final por uma compreensão espiritual e conceitual absoluta. A vida o(a) convida ao silêncio produtivo, ao afastamento das futilidades sociais cotidianas e à reflexão magistral sobre cada experiência acumulada ao longo da sua jornada na Terra. Este é o tempo sagrado da síntese intelectual e espiritual, onde o conhecimento vira sabedoria e a sabedoria se transforma em uma inabalável luz interna.</p>
   <p style="margin-bottom: 20px;">Você poderá dedicar anos preciosos à leitura de textos profundos, à pesquisa de mistérios da vida, à escrita ou a práticas contemplativas que ampliem sua conexão com o Todo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A sabedoria adquirida nesta etapa permite que você oriente, com poucas, raras e certeiras palavras, as almas inquietas que buscam conhecimento e equilíbrio interior. Ao final desse ciclo de mergulho profundo na própria essência, você alcança um estado de serenidade, desapego e clareza mental inabaláveis, sustentado pela autoridade de quem investigou a verdade e encontrou a paz definitiva na compreensão do propósito da vida.</p>`,
-
-  8: `<h3>4º Momento 8 - Autoridade Consolidada e Gestão de Resultados</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  8: {
+     conteudo:`<h3>4º Momento 8 - Autoridade Consolidada e Gestão de Resultados</h3><br>
   <p style="margin-bottom: 20px;">Este quarto momento decisivo representa a consagração e a consolidação final de todas as suas conquistas materiais, patrimoniais e da autoridade administrativa que você construiu com tanto suor e foco, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Mesmo na fase de colheita final, você mantém uma capacidade de organização impressionante, uma visão estratégica afiada e uma habilidade única para administrar recursos, heranças ou influências com uma responsabilidade ética impecável. Você é o patriarca ou a matriarca respeitada dos negócios e da estrutura, zelando para que nada se perca ou se disperse por falta de método.</p>
   <p style="margin-bottom: 20px;">Você será constantemente procurado(a) para orientar decisões estruturais complexas, administrar grandes patrimônios familiares ou contribuir com sua experiência vasta em conselhos diretivos e projetos de relevância social e econômica, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desafio está em equilibrar o imenso prestígio alcançado com a generosidade, compreendendo que a liderança madura consiste em utilizar sua influência para promover a estabilidade coletiva. Ao final desta etapa de poder sereno, você terá consolidado uma reputação eterna associada à competência, à integridade e à capacidade de realizar obras que geram abundância duradoura.</p>`,
-
-  9: `<h3>4º Momento 9 - Consciência Universal e Contribuição Humanitária</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  9: {
+     conteudo:`<h3>4º Momento 9 - Consciência Universal e Contribuição Humanitária</h3><br>
   <p style="margin-bottom: 20px;">O quarto momento decisivo representa o ponto culminante e glorioso da sua maturidade espiritual, artística e humanitária, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você tende a desenvolver uma visão de águia sobre a vida, compreendendo perfeitamente o papel de cada experiência na construção de uma sociedade mais consciente, justa e solidária. Seu foco se desloca inteiramente para o desapego material e para a generosidade sem limites, agindo como um cidadão ou cidadã do universo que sente a dor e a alegria da humanidade como parte de si.</p>
   <p style="margin-bottom: 20px;">Nesta fase de pura transcendência, seu impulso para ajudar o próximo e compartilhar o que sabe torna-se sua principal razão de existir, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você poderá se envolver em atividades filantrópicas, artísticas, ambientais ou sociais que promovam uma transformação positiva e duradoura na vida do coletivo. O sucesso agora é medido exclusivamente pelo impacto humano e pela luz que você oferece ao mundo. Ao concluir esta jornada épica, você terá a satisfação indescritível de reconhecer que sua trajetória deixou marcas positivas e permanentes na Terra, encerrando seu ciclo terreno em estado de graça e completude.</p>`,
-
-  11: `<h3>4º Momento 11 - A Iluminação Consciente e a Transmissão da Luz Espiritual</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  11: {
+     conteudo:`<h3>4º Momento 11 - A Iluminação Consciente e a Transmissão da Luz Espiritual</h3><br>
   <p style="margin-bottom: 20px;">Nesta colheita final, a vibração mestre 11 transforma você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, em um canal direto de sabedoria universal e intuição pura. A alta voltagem energética que antes causava ansiedade ou incompreensão na juventude agora se estabiliza como uma luz serena e constante que emana naturalmente da sua presença. Você se torna o(a) "Ancião(ã) Visionário(a)", alguém que enxerga o passado, o presente e o futuro com clareza absoluta. Sua responsabilidade nesta fase terminal é a mentoria intuitiva; você é o farol que guia aqueles que ainda estão perdidos nas brumas da dúvida.</p>
   <p style="margin-bottom: 20px;">O potencial aqui é o de alcançar um estado de paz transcendental, onde sua imensa sensibilidade é sua maior ferramenta para confortar e despertar almas ao seu redor. Você será visto(a) como uma reserva moral e espiritual insubstituível para sua família e comunidade. Ao abraçar esta frequência mestre na fase final da vida, você garante que sua passagem deixe um rastro indelével de clareza, partindo como alguém que cumpriu com louvor a missão de ancorar a verdade na Terra, tornando-se uma memória viva de inspiração e integridade eterna.</p>`,
-
-  22: `<h3>4º Momento 22 - A Maestria da Realização Eterna e o Selo do Grande Construtor</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  22: {
+     conteudo:`<h3>4º Momento 22 - A Maestria da Realização Eterna e o Selo do Grande Construtor</h3><br>
   <p style="margin-bottom: 20px;">Ao atingir o quarto momento com a poderosa vibração mestre 22, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, contempla a obra de uma vida inteira com a profunda satisfação do dever cumprido. Esta é a fase em que suas grandes construções — sejam elas empresas, sistemas práticos, projetos comunitários ou uma linhagem familiar perfeitamente sólida — funcionam em plena harmonia. A intensidade agora é voltada para a preservação do propósito original. Você atua como o(a) "Arquiteto(a) Emérito(a)", cuja função principal é garantir que o legado permaneça ético, produtivo e útil para as futuras gerações.</p>
   <p style="margin-bottom: 20px;">Você será reverenciado(a) como o pilar máximo de sustentação de tudo o que existe ao seu redor. A voltagem do 22 exige que você use seus últimos grandes esforços estratégicos para consolidar instituições de bem-estar coletivo e organizar uma transição segura. O desafio é confiar plenamente no trabalho prático de seus sucessores enquanto você mantém a visão de longo prazo. Ao dominar essa vibração na colheita final, você se torna um símbolo vivo de realização monumental, provando que é possível unir o sucesso material ao mais nobre dos propósitos coletivos, perpetuando seu nome por gerações.</p>`,
-
-  33: `<h3>4º Momento 33 - A Apoteose do Amor Universal e o Legado de Cura Sagrada</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  33: {
+     conteudo:`<h3>4º Momento 33 - A Apoteose do Amor Universal e o Legado de Cura Sagrada</h3><br>
   <p style="margin-bottom: 20px;">O número mestre 33 na colheita final representa a alma que se tornou a personificação viva da compaixão e da fraternidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Nesta fase avançada da vida, sua mera presença serve como um bálsamo confortador para todos os que o(a) cercam. A intensidade aqui é inteiramente altruísta; você vive para abençoar, perdoar, aconselhar e unificar. Não há mais qualquer espaço para as demandas do ego; você é o(a) "Mestre(a) do Cuidado Infinito". Sua responsabilidade é manter acesa a chama da bondade em um mundo muitas vezes frio, agindo como o coração que bombeia esperança para as novas gerações.</p>
   <p style="margin-bottom: 20px;">A altíssima voltagem desta fase exige que você seja o exemplo prático de que o amor consciente é a única força real do universo. O potencial é o de deixar uma herança de paz e reconciliação profunda capaz de curar linhagens familiares inteiras. Ao concluir sua jornada sob esta vibração mestre, você será lembrado(a) como uma alma de luz essencial que caminhou entre os homens transformando cada dor em aprendizado e cada conflito em harmonia, partindo com a glória de quem amou o mundo sem medidas e sem condições.</p>`,
-
-  44: `<h3>4º Momento 44 - A Soberania da Ordem Perfeita e a Imortalidade do Método</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  44: {
+     conteudo:`<h3>4º Momento 44 - A Soberania da Ordem Perfeita e a Imortalidade do Método</h3><br>
   <p style="margin-bottom: 20px;">Neste último ciclo existencial, a vibração mestre 44 confere a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o status incontestável de "Guardião Supremo da Civilização e da Matéria". Você é a autoridade máxima e final que assegura que as leis, métodos e estruturas que você ajudou a erguer permaneçam totalmente inabaláveis frente ao tempo. A intensidade é de uma estabilidade absoluta; sua mente técnica e soberanamente organizada funciona agora como um repositório de soluções infalíveis para os problemas práticos do mundo. A responsabilidade é o selo final de qualidade: você garante que a prosperidade gerada seja protegida contra o caos.</p>
   <p style="margin-bottom: 20px;">Você será o(a) conselheiro(a) dos líderes e a referência máxima da família, aquele(a) que detém a palavra final sobre grandes questões organizacionais ou patrimoniais. O potencial desta fase é ver sua metodologia de trabalho e sua disciplina de vida serem adotadas como padrão de excelência permanente pelos seus sucessores. Ao dominar a frequência 44 no inverno da vida, você se consolida como uma figura de respeito quase lendário, partindo como o(a) mestre(a) que deu forma, segurança e direção indestrutível à realidade material.</p>`,
-
-  55: `<h3>4º Momento 55 - A Transcendência da Liberdade e o Legado de Evolução Constante</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  55: {
+     conteudo:`<h3>4º Momento 55 - A Transcendência da Liberdade e o Legado de Evolução Constante</h3><br>
   <p style="margin-bottom: 20px;">No quarto momento, o número mestre 55 leva você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a uma libertação definitiva e fascinante de todas as amarras e convenções mundanas. Esta é a fase do "Mestre Viajante das Eras", alguém que compreendeu perfeitamente que a única constante real do universo é a mudança. A intensidade é de uma renovação mental contínua que desafia o corpo físico; você ensina os outros a não terem medo do desconhecido e a abraçarem a evolução com coragem inabalável. Sua responsabilidade é impedir a estagnação das ideias ao seu redor, agindo como o(a) mentor(a) disruptivo(a) que inspira a juventude a quebrar fronteiras.</p>
   <p style="margin-bottom: 20px;">O potencial aqui é o de envelhecer com uma agilidade mental que assombra a idade cronológica, servindo de exemplo máximo de adaptabilidade e jovialidade de espírito. Você será visto(a) como o(a) visionário(a) que nunca parou no tempo, deixando um legado de coragem, expansão e inovação contínua. Ao concluir seu ciclo sob a energia do 55, você parte como o(a) pioneiro(a) que abriu caminhos audaciosos para o futuro, provando que a alma humana é infinita e que a liberdade é o prêmio final de quem ousou evoluir sempre.</p>`,
-
-  66: `<h3>4º Momento 66 - A Diplomacia da Luz Eterna e a Justiça da Bondade Plena</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  66: {
+     conteudo:`<h3>4º Momento 66 - A Diplomacia da Luz Eterna e a Justiça da Bondade Plena</h3><br>
   <p style="margin-bottom: 20px;">Nesta colheita final, a vibração mestre 66 transforma você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, no regente supremo da paz, do acolhimento e da beleza espiritual em seu meio. Sua maturidade atinge o ápice da justiça benevolente; você é o(a) "Pacificador(a) Supremo(a)". A intensidade agora é voltada inteiramente para a cura definitiva das relações humanas e para a beleza do viver ético. Sua responsabilidade é ser o elo final de harmonia que une diferentes gerações, ensinando através do exemplo que a verdade só é real quando acompanhada de amor, justiça social e equilíbrio. Você atua como o(a) juiz(a) que não condena, mas restaura a dignidade.</p>
   <p style="margin-bottom: 20px;">Sua mera presença traz uma ordem moral e estética que acalma os ambientes mais conturbados ou desunidos. O potencial desta fase é ver sua influência amorosa florescer em um ambiente de respeito mútuo e prosperidade harmônica para toda a sua linhagem. Ao dominar a alta voltagem do 66 no inverno da vida, você se torna uma autoridade profundamente amada e respeitada, partindo como a alma que soube transformar a responsabilidade em uma obra de arte viva, deixando o mundo muito mais justo, belo e equilibrado por causa de sua existência.</p>`,
-
-  77: `<h3>4º Momento 77 - A Apoteose do Sábio e o Retorno à Fonte do Saber</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  77: {
+     conteudo:`<h3>4º Momento 77 - A Apoteose do Sábio e o Retorno à Fonte do Saber</h3><br>
   <p style="margin-bottom: 20px;">O número mestre 77 na colheita final marca o momento exato em que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, se retira com honras para a câmara sagrada da compreensão existencial absoluta. Você se torna o "Sumo Sacerdote do Conhecimento" ou a "Suma Sacerdotisa do Saber", alguém que decifrou os códigos mais complexos da existência humana e agora vive na contemplação da verdade pura e desimpedida. A intensidade é de um silêncio eloquente; você ensina pela sua essência vibratória, não por discursos repetitivos. Sua responsabilidade é transmitir as chaves finais da sabedoria acumulada apenas àqueles que provaram ser buscadores honestos, garantindo que o conhecimento legítimo não se perca.</p>
   <p style="margin-bottom: 20px;">Você será visto(a) como uma autoridade mística e intelectual inatacável, cuja palavra silenciosa oferece um norte para o campo do saber profundo. O potencial máximo desta fase é a iluminação completa e a total autonomia da alma frente às ilusões do mundo material. Ao concluir sua jornada sob o comando do 77, você parte como o(a) mestre(a) que desvendou os mistérios da vida e da transição, deixando um legado de clareza mental e conceitual que servirá de bússola para todos os que buscam a verdade essencial nas eras que virão.</p>`,
-
-  88: `<h3>4º Momento 88 - A Glória da Justiça Sistêmica e o Legado da Prosperidade Justa</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  88: {
+     conteudo:`<h3>4º Momento 88 - A Glória da Justiça Sistêmica e o Legado da Prosperidade Justa</h3><br>
   <p style="margin-bottom: 20px;">No quarto momento existencial, a vibração mestre 88 coroa você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, com a soberania absoluta sobre os frutos reais da sua liderança e da sua conduta de vida. Esta é a fase da "Justiça Divina na Terra"; você observa com orgulho como suas ações passadas de poder, comando e gestão geraram uma abundância material e moral que agora se sustenta de forma totalmente independente. A intensidade é de uma autoridade serena, colossal e respeitada; você é o(a) "Patriarca/Matriarca da Colheita Final", garantindo que a riqueza seja distribuída com mérito, sabedoria e estratégia. Sua responsabilidade é a de tutorar o equilíbrio do poder para que ele sirva sempre como proteção.</p>
   <p style="margin-bottom: 20px;">Você será a referência máxima de sucesso ético no mundo, provando de uma vez por todas que a ambição vitoriosa e a integridade moral podem caminhar juntas em perfeita harmonia. O potencial aqui é a consolidação final de um legado patrimonial ou de uma fundação social que garante a segurança de sua linhagem e de grandes causas por muitas gerações. Ao dominar a voltagem do 88 na colheita, você parte como a figura icônica que uniu o comando prático à justiça espiritual, sendo reconhecido(a) como o(a) mestre(a) que transformou a matéria em um instrumento de evolução coletiva eterna.</p>`,
-
-  99: `<h3>4º Momento 99 - A Ascensão do Amor Universal e o Selo da Redenção Planetária</h3><br>
+  videoID: "F8bg1CTQ9HI "
+    },
+  99: {
+     conteudo:`<h3>4º Momento 99 - A Ascensão do Amor Universal e o Selo da Redenção Planetária</h3><br>
   <p style="margin-bottom: 20px;">Nesta colheita final, a vibração mestre 99 representa o topo absoluto da montanha espiritual para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você se torna o(a) "Mestre(a) de Luz Universal", alguém cuja identidade pessoal e egóica se fundiu por completo ao bem-estar e à elevação de toda a humanidade. A intensidade é de uma doação total, desapegada e transcendente; sua vida funciona como um verdadeiro altar de serviço, arte e sabedoria mística. Sua responsabilidade é o encerramento magistral de todos os seus ciclos terrenos, deixando um exemplo imaculado de desapego, tolerância e amor incondicional que brilha como um sol para os que ficam.</p>
-  <p style="margin-bottom: 20px;">Nesta fase avançada, você não pertence mais a um único lugar, mas sim a todos os cantos do mundo. Sua mera presença dissolve preconceitos, quebra fronteiras e cura corações através de uma compreensão que abrange todos os povos, culturas e eras. O potencial desta fase é a plenitude total da alma em sua conexão com o Divino. Ao concluir sua brilhante trajetória sob a regência do 99, você parte como um(a) guia planetário(a), deixando um legado de luz que transcende o próprio tempo, sendo imortalizado(a) como a alma sagrada que viveu para a redenção do mundo e para a glória do amor infinito.</p>`
+  <p style="margin-bottom: 20px;">Nesta fase avançada, você não pertence mais a um único lugar, mas sim a todos os cantos do mundo. Sua mera presença dissolve preconceitos, quebra fronteiras e cura corações através de uma compreensão que abrange todos os povos, culturas e eras. O potencial desta fase é a plenitude total da alma em sua conexão com o Divino. Ao concluir sua brilhante trajetória sob a regência do 99, você parte como um(a) guia planetário(a), deixando um legado de luz que transcende o próprio tempo, sendo imortalizado(a) como a alma sagrada que viveu para a redenção do mundo e para a glória do amor infinito.</p>`,
+   
+  videoID: "F8bg1CTQ9HI "
+    },
 }
  }, 
 
