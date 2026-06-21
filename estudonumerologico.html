@@ -4962,8 +4962,9 @@ if (nomeSocialValor !== "") {
     const tMot = textos.nomeSocial.motivacao[res.social.motivacao];
     const tImp = textos.nomeSocial.impressao[res.social.influencia];
     const tPer = textos.nomeSocial.personalidade[res.social.personalidade];
-
-    html += `
+    
+const idVideonome = "F8bg1CTQ9HI"; 
+    html += renderizarBlocoComVideo( `
     <div class="page" style="height: 100vh; max-height: 1120px; padding: 20px; box-sizing: border-box; overflow: hidden; page-break-before: always; display: flex; flex-direction: column;">
         <div class="separador-luxo" style="margin-bottom: 10px;">
             <div class="caixa-interna">
@@ -5011,7 +5012,7 @@ if (nomeSocialValor !== "") {
             </div>
         </div>
     </div>
-    `;
+    `,idVideonome); 
 }
 
 
