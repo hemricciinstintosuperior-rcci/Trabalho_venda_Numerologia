@@ -4859,11 +4859,12 @@ essencia: {
      
  videoID: "F8bg1CTQ9HI"
     },
-    
-  }
- };
+     },
 
-bibliotecaVideos : {
+
+
+
+bibliotecaVideos: {
     "numerosHarmonicos": {
         "1": "z1nW3rmNeEI",
         "2": "z1nW3rmNeEI",
@@ -4897,7 +4898,9 @@ bibliotecaVideos : {
         "8": "z1nW3rmNeEI",
         "9": "z1nW3rmNeEI"
     },
-  };    
+  },    
+
+};  
 
 window.bancoEquilibrioUnificado = {
     inicio: {
