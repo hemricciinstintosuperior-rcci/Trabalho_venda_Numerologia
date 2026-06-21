@@ -4123,7 +4123,7 @@ PlanosExpressao: {
       videoID: "F8bg1CTQ9HI"
     },
         
-},
+}, },
 
 modosAcao: {
     criativo: {
@@ -4142,7 +4142,7 @@ modosAcao: {
      videoID: "F8bg1CTQ9HI"
     },
 
-},
+
  },
 desejoOculto: {
  
