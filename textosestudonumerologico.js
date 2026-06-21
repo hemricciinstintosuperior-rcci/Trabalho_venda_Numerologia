@@ -1,3 +1,43 @@
+bibliotecaVideos= {
+ 
+    "numerosHarmonicos": {
+        "1": "z1nW3rmNeEI",
+        "2": "z1nW3rmNeEI",
+        "3": "z1nW3rmNeEI",
+        "4": "z1nW3rmNeEI",
+        "5": "z1nW3rmNeEI",
+        "6": "z1nW3rmNeEI",
+        "7": "z1nW3rmNeEI",
+        "8": "z1nW3rmNeEI",
+        "9": "z1nW3rmNeEI"
+    },
+ 
+    "coresFavoraveis": {
+        "1": "z1nW3rmNeEI",
+        "2": "z1nW3rmNeEI",
+        "3": "z1nW3rmNeEI",
+        "4": "z1nW3rmNeEI",
+        "5": "z1nW3rmNeEI",
+        "6": "z1nW3rmNeEI",
+        "7": "z1nW3rmNeEI",
+        "8": "z1nW3rmNeEI",
+        "9": "z1nW3rmNeEI"
+    },
+     
+    "diasPoder": {
+        "1": "z1nW3rmNeEI",
+        "2": "z1nW3rmNeEI",
+        "3": "z1nW3rmNeEI",
+        "4": "z1nW3rmNeEI",
+        "5": "z1nW3rmNeEI",
+        "6": "z1nW3rmNeEI",
+        "7": "z1nW3rmNeEI",
+        "8": "z1nW3rmNeEI",
+        "9": "z1nW3rmNeEI"
+    },
+  };    
+
+
 textos = {
  
 introducoes: {
@@ -4864,44 +4904,7 @@ essencia: {
 
 
 
-bibliotecaVideos: {
- 
-    numerosHarmonicos: {
-        "1": "z1nW3rmNeEI",
-        "2": "z1nW3rmNeEI",
-        "3": "z1nW3rmNeEI",
-        "4": "z1nW3rmNeEI",
-        "5": "z1nW3rmNeEI",
-        "6": "z1nW3rmNeEI",
-        "7": "z1nW3rmNeEI",
-        "8": "z1nW3rmNeEI",
-        "9": "z1nW3rmNeEI"
-    },
- 
-    coresFavoraveis: {
-        "1": "z1nW3rmNeEI",
-        "2": "z1nW3rmNeEI",
-        "3": "z1nW3rmNeEI",
-        "4": "z1nW3rmNeEI",
-        "5": "z1nW3rmNeEI",
-        "6": "z1nW3rmNeEI",
-        "7": "z1nW3rmNeEI",
-        "8": "z1nW3rmNeEI",
-        "9": "z1nW3rmNeEI"
-    },
- 
-    diasPoder: {
-        "1": "z1nW3rmNeEI",
-        "2": "z1nW3rmNeEI",
-        "3": "z1nW3rmNeEI",
-        "4": "z1nW3rmNeEI",
-        "5": "z1nW3rmNeEI",
-        "6": "z1nW3rmNeEI",
-        "7": "z1nW3rmNeEI",
-        "8": "z1nW3rmNeEI",
-        "9": "z1nW3rmNeEI"
-    },
-  },    
+
 
 };  
 
