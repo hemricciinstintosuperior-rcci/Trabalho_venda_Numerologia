@@ -2946,7 +2946,8 @@ momentos: {
 desafios: {
   // --- 1º DESAFIO (FASE INICIAL / JUVENTUDE) ---
   1: {
-    0: `<h3>O Desafio da Escolha na Juventude - 0</h3><br>
+    0:{
+     conteudo: `<h3>O Desafio da Escolha na Juventude - 0</h3><br>
      <p style="margin-bottom: 20px;">Nesta primeira fase da sua jornada, querida leitora, o chamado "desafio zero" indica que não existe um obstáculo externo fixo bloqueando seu caminho, mas sim a tarefa sagrada de aprender a navegar por um oceano de infinitas direções. Durante sua juventude e a transição para a maioridade, a sua maior prova será descobrir quem você é de verdade antes que o mundo tente lhe dizer quem ser. O risco aqui não é o erro, mas a paralisia diante de tantas descobertas e primeiras grandes escolhas que batem à sua porta.</p>
      <p style="margin-bottom: 20px;">O foco para você agora é o cultivo de uma força de vontade inabalável para moldar o próprio destino com as mãos. Para superar essa fase de indefinição, o seu aprendizado exige que você domine as bases de todos os pilares da vida, preparando o terreno para o sucesso que virá a seguir:</p>
    <br>
@@ -2958,8 +2959,10 @@ desafios: {
     <p>6. Dominar suas marés emocionais.</p>
     <p>7. Ser tolerante com as imperfeições e vencer seus medos internos.</p>
     <p>8. Buscar o equilíbrio justo em todas as suas ações.</p>`,
-
-    1: `<h3>Desafio da Individualidade e Independência Feminina - 1</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    1: {
+     conteudo:`<h3>Desafio da Individualidade e Independência Feminina - 1</h3>
      <p style="margin-bottom: 20px;">Logo cedo, a vida coloca você diante do desafio de conquistar sua própria pele. Este ciclo foca na superação das dependências e na coragem de ser quem você nasceu para ser. Prepare-se, pois você enfrentará situações onde sua vontade será testada por figuras de autoridade ou por ambientes que tentam ditar o seu passo. A sombra que tenta lhe perseguir é o medo de ser "a diferente" ou a tentação de se camuflar na multidão para não ter que carregar o peso de decidir por si só.</p>
      <p style="margin-bottom: 20px;">É natural que você sinta uma hesitação inicial em dar o primeiro passo sozinha, temendo o julgamento alheio ou um tropeço solitário. No entanto, o universo está provocando você a sair debaixo das asas de terceiros e construir uma autoconfiança que não precise de aplausos para existir. Superar este desafio significa converter sua insegurança em iniciativa pura, permitindo que você se posicione com autoridade diante do mundo e segure as rédeas da sua história com firmeza e brio.</p>
         
@@ -2971,8 +2974,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Cabeça, Coração e Sistema Respiratório</strong></p>
     <p>Região da cabeça, coração, sistema circulatório e respiratório, alergias, ferimentos nos olhos, rosto, orelhas e maxilar, problemas circulatórios e cardíacos.</p>
     <p>Especialmente em idades mais avançadas; anorexia, edema pulmonar, tosse, tuberculose. Na fase infantil: facilidade para urinar na cama.</p>`,
-
-    2: `<h3>Desafio da Sensibilidade e Autoafirmação Determinada - 2</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+    2: {
+     conteudo:`<h3>Desafio da Sensibilidade e Autoafirmação Determinada - 2</h3><br>
      <p style="margin-bottom: 20px;">Sua sensibilidade é um dom maravilhoso, mas neste primeiro ciclo de vida, ela se apresenta como um desafio que exige equilíbrio. Você poderá sentir uma timidez que beira o isolamento ou uma vulnerabilidade excessiva diante das opiniões externas, o que cria uma tendência perigosa de concordar com tudo apenas para manter uma paz que, no fundo, é falsa. O grande obstáculo aqui é a autoanulação em favor de uma harmonia que sufoca seus próprios desejos.</p>
     <p style="margin-bottom: 20px;">A vida espera que você desenvolva o tato social sem se tornar um eco das ideias dos outros. Entenda que ser cooperativa é bem diferente de ser submissa. Você precisará olhar de frente para o medo da rejeição e fortalecer sua musculatura emocional. O seu aprendizado central é unir a diplomacia à autovalorização, permitindo que você crie laços profundos e estáveis com as pessoas, mas sempre mantendo sua posição e seu valor inegociáveis.</p>
    
@@ -2984,8 +2989,10 @@ desafios: {
      <p><strong>Regiões Sensíveis: Sistema Renal e Nervoso</strong></p>
     <p>Região dos rims, estômago e sistema nervoso. Pode acarretar retenção de líquidos no corpo, afetar ainda o sistema linfático, estômago e intestino, manchas hepáticas, infecções urinárias, esclerose múltipla.</p>
     <p>Distúrbios nos seios, excesso de peso, incontinência urinária, envelhecimento precoce. Problemas femininos em especial na fase da menopausa, perda de cabelos, facilidade para queimaduras.</p>`,
-
-    3: `<h3>Desafio da Expressão e Foco Criativo - 3</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Desafio da Expressão e Foco Criativo - 3</h3><br>
      <p style="margin-bottom: 20px;">O desafio agora mexe com a sua voz e com a sua capacidade única de brilhar. Você tem muito a dizer, mas pode enfrentar uma dificuldade inicial em ser compreendida ou, por outro lado, acabar gastando seu precioso talento em conversas vazias e atividades que não levam a lugar nenhum. A sombra que tenta travar o seu progresso é o medo da exposição pública ou o receio do que vão pensar da sua arte e das suas ideias.</p>
      <p style="margin-bottom: 20px;">Pode ser que você sinta bloqueios criativos que escondem sua essência do mundo, mas não se deixe enganar. Seu entusiasmo e sua alegria precisam de canais de expressão que produzam resultados reais, e não apenas barulho. Superar esse obstáculo exige que você organize sua mente e dê foco ao seu brilho. Ao vencer a dispersão típica da juventude, você se tornará uma mulher capaz de comunicar verdades poderosas com uma clareza e uma influência que poucas possuem.</p>
        
@@ -2997,8 +3004,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Garganta, Fígado e Vesícula</strong></p>
     <p>Região da garganta, fígado, e vesícula são os mais críticos. Também podem ocorrer quadros de enxaquecas, problemas glandulares, em especial na tireóidea e na hipófise.</p>
     <p>Oscilações na pressão arterial, furúnculos, hematomas, problemas nos ombros e dores ciáticas causados por tensão nervosa; problemas nas coxas e nos pés.</p>`,
-
-    4: `<h3>Desafio da Disciplina e Estrutura Prática - 4</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Desafio da Disciplina e Estrutura Prática - 4</h3><br>
      <p style="margin-bottom: 20px;">Este primeiro grande desafio exige que você encare de frente a disciplina que a construção de um futuro sólido exige. Durante sua juventude, obrigações e rotinas podem parecer correntes pesadas, levando você a buscar atalhos perigosos ou a fugir de tarefas que exigem esforço contínuo. A armadilha aqui é a instabilidade; sem bases sólidas, qualquer construção desmorona, e a vida quer que você aprenda isso antes de dar passos maiores.</p>
      <p style="margin-bottom: 20px;">Desde cedo, você será testada na sua persistência e na sua capacidade de lidar com o que é repetitivo e árduo. O aprendizado consiste em transformar a resistência ao trabalho em uma competência amplamente reconhecida. Você precisa dominar seu tempo e seus recursos com método. Ao superar essa tendência à procrastinação ou à desorganização, você emerge como uma mulher de confiança inabalável, alguém que o mundo olha e sabe que pode contar para edificar projetos que duram para sempre.</p>
       
@@ -3010,8 +3019,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Estrutura Óssea e Psicossomática</strong></p>
     <p>O “4” pode indicar doenças incomuns e de difícil diagnóstico, acidentes inesperados e ferimentos inexplicáveis, além de problemas de circulação sanguínea, anemia, hipoglicemia.</p>
     <p>Problemas psicossomáticos, histeria, medos e fobias, perturbações mentais e emocionais; problemas ósseos em geral; nos dentes; espasmos e palpitações; úlceras, colites e distúrbios digestivos.</p>`,
-
-    5: `<h3>Desafio da Inquietude e Autocontrole Consciente - 5</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Desafio da Inquietude e Autocontrole Consciente - 5</h3><br>
      <p style="margin-bottom: 20px;">Liberdade é o seu oxigênio, mas neste ciclo, a busca desenfreada por ela pode se tornar sua maior inimiga. O desafio envolve lidar com uma inquietação interna que faz você querer mudar de direção toda vez que o entusiasmo inicial esfria. Seja em relacionamentos, estudos ou projetos, a sombra aqui é a superficialidade e a dificuldade de levar as coisas até o fim, criando uma trilha de começos sem conclusões.</p>
      <p style="margin-bottom: 20px;">Você será colocada em situações que exigem constância e profundidade. A lição de ouro para a sua jornada é compreender que a liberdade real não é fugir de compromissos, mas ter o autocontrole necessário para escolher seus próprios caminhos e transformá-los em grandes conquistas. Ao desenvolver essa disciplina interior, sua versatilidade natural deixará de ser dispersão e se tornará uma adaptabilidade genial, permitindo que você evolua constantemente sem nunca perder o chão.</p>
       
@@ -3023,8 +3034,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Pulmões e Sistema Nervoso Central</strong></p>
     <p>Problemas nos pulmões, aparelho respiratório, olhos e sistema nervoso. Ansiedade e alterações repentinas de humor, tensão nervosa, apneia.</p>
     <p>Exaustão mental ou estafa; insônia, amnésia, paralisia facial, gagueira, acidentes graves por imprudência, vícios em geral (álcool e drogas), distúrbio nos órgãos reprodutores e problemas na tireoide.</p>`,
-
-    6: `<h3>Desafio do Equilíbrio e Responsabilidade Afetiva - 6</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo:`<h3>Desafio do Equilíbrio e Responsabilidade Afetiva - 6</h3><br>
      <p style="margin-bottom: 20px;">Cuidado com a armadilha do perfeccionismo e com o peso de carregar o mundo nas costas. Neste desafio, você pode sentir uma pressão esmagadora para resolver a vida de todos ao seu redor, assumindo fardos familiares e encargos emocionais que não pertencem à sua fase de vida. A sombra aqui é a cobrança ácida, tanto consigo mesma quanto com aquelas pessoas que você ama, tentando moldar os outros à sua imagem e semelhança.</p>
      <p style="margin-bottom: 20px;">A vida está tentando lhe ensinar que o amor verdadeiro não controla, ele liberta. O seu desafio é aprender a oferecer suporte sem assumir a responsabilidade pelo destino alheio. Ao encontrar o equilíbrio perfeito entre o cuidado com o outro e o respeito à autonomia de cada um, você construirá relações sólidas e harmoniosas, baseadas em um afeto real que não sufoca, mas que nutre e fortalece todos os vínculos que você criar.</p>
     
@@ -3036,8 +3049,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Coluna, Coração e Região Lombar</strong></p>
     <p>Doenças renais, distúrbios pulmonares; irregularidades na circulação do sangue, hemofilia, palpitações cardíacas.</p>
     <p>Quistos e tumores nos seios, colites, problemas na coluna em geral e dores lombares, problemas de próstata, excesso de peso, incontinência urinária, problemas cardíacos e na região do pescoço.</p>`,
-
-    7: `<h3>Desafio da Introspecção e Conexão Humana - 7</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+    7: {
+     conteudo:`<h3>Desafio da Introspecção e Conexão Humana - 7</h3><br>
      <p style="margin-bottom: 20px;">Seu desafio inicial pode se manifestar como um muro de isolamento intelectual e uma dificuldade latente de deixar as pessoas entrarem no seu mundo emocional. Com uma tendência a analisar tudo friamente, você pode acabar se escondendo no silêncio, desconfiando das intenções alheias e evitando a vulnerabilidade das trocas sociais. A sombra aqui é o cinismo ou a distância emocional que a afasta da imensa riqueza das conexões humanas.</p>
      <p style="margin-bottom: 20px;">Neste ciclo, o convite é para equilibrar seu pensamento brilhante com a sua profunda sensibilidade feminina. O desafio é aprender a compartilhar suas descobertas e seus sentimentos sem o medo paralisante de parecer imperfeita. Ao derrubar esse muro de isolamento, sua sabedoria deixará de ser apenas teórica e se tornará humana e vibrante, permitindo que você se conecte com o mundo de uma forma profunda, técnica e, acima de tudo, real.</p>
          
@@ -3049,8 +3064,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Sistema Imunológico e Mental</strong></p>
     <p>Problemas glandulares, sistema nervoso, nos pés e o sistema linfático. Poderá haver certa vulnerabilidade à infecções, problemas de pele, como alergias em geral, coceiras.</p>
     <p>Arteriosclerose, derrame cerebral, problemas mentais e cerebrais em geral, medos e fobias, depressão, síndrome do pânico, problemas de varizes e vícios em geral, em especial o alcoolismo.</p>`,
-
-    8: `<h3>Desafio da Autoridade e Valores Materiais - 8</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+    8: {
+     conteudo:`<h3>Desafio da Autoridade e Valores Materiais - 8</h3><br>
      <p style="margin-bottom: 20px;">Poder e realização financeira são os temas que vão testar você neste ciclo. Podem surgir experiências que coloquem à prova sua relação com a ambição, o status e o reconhecimento social. A armadilha aqui é oscilar entre o medo do fracasso material e uma obsessão desgastante por controle, onde o fim justifica os meios. É um período de aprendizado intenso sobre o peso e a medida das suas conquistas no mundo físico.</p>
      <p style="margin-bottom: 20px;">A vida exige que você desenvolva um senso de justiça afiado e entenda que o sucesso sem ética é apenas uma ilusão passageira. Você aprenderá que a liderança que perdura é aquela que tem consciência do impacto social de cada decisão tomada. Ao superar este desafio de autoridade, você ganhará a maturidade necessária para administrar grandes recursos e altas responsabilidades com uma visão estratégica, equilibrada e, sobretudo, vitoriosa.</p>
       
@@ -3062,12 +3079,14 @@ desafios: {
     <p><strong>Regiões Sensíveis: Estômago, Articulações e Ossos</strong></p>
     <p>Problemas de estômago e sistema nervoso, os pontos mais sensíveis, no entanto são: os joelhos, dentes, ossos e ligamentos.</p>
     <p>Podem ocorrer doenças sanguíneas, tendência a se submeter a tratamento médico inadequado, problemas de fígado e baço; distúrbios no digestivo e intestino, estados de desânimo profundo, dores de cabeça frequentes, derrames, hérnia de disco, desmaios, hipertensão, apendicite, problemas na próstata, cirurgias frequentes e obesidade.</p>
-        `
+        `, videoID: "F8bg1CTQ9HI"
+    },
   },
         
 // --- DESAFIO 2 (FASE ADULTA / REALIZAÇÃO) ---
 2: {
-  0: `<h3>O Desafio da Escolha na Maturidade Plena - 0</h3><br>
+  0: {
+     conteudo:`<h3>O Desafio da Escolha na Maturidade Plena - 0</h3><br>
     <p>Ao atingir o auge da sua vida adulta, o desafio zero se manifesta como uma convocação para que você mantenha o domínio absoluto sobre todas as engrenagens da sua existência. Nesta fase de maturidade plena, a escolha deixa de ser apenas sobre "o que ser" no futuro e passa a ser sobre como manter sua integridade e seu foco enquanto o mundo lá fora ruge. O seu grande teste agora consiste em permanecer em sintonia com seus valores de alma enquanto faz a gestão profissional das complexas responsabilidades que o cotidiano impõe.</p>
     <p>Para atravessar este período com a vitória nas mãos, a vida exigirá que você demonstre uma maestria impecável em todas as frentes de ação, integrando com perfeição estes oito pilares fundamentais:</p>
    <br>
@@ -3079,8 +3098,10 @@ desafios: {
     <p>6. Exercer um controle absoluto sobre suas marés sentimentais.</p>
     <p>7. Ser tolerante com o processo humano e esmagar seus medos remanescentes.</p>
     <p>8. Zelar pelo equilíbrio e agir sempre sob a luz da justiça.</p>`,
-
-  1: `<h3>Desafio da Autoridade e Protagonismo Original - 1</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  1: {
+     conteudo:`<h3>Desafio da Autoridade e Protagonismo Original - 1</h3><br>
    <p style="margin-bottom: 20px;">Este seu segundo desafio foca na consolidação definitiva da sua autoridade pessoal. Chegou a hora de cortar qualquer fio invisível de dependência que ainda reste. Na fase adulta, você será colocada à prova: sua capacidade de se manter firme em suas convicções será testada justamente quando o seu círculo social ou profissional exigir conformidade e obediência. A sombra que tenta lhe travar é o receio profundo de assumir o leme total da própria vida, sem muletas ou botes de salvamento.</p>
    <p style="margin-bottom: 20px;">Você precisará, mais do que nunca, exercitar a bravura de ser a voz dissidente e a primeira a iniciar projetos disruptivos. Entenda que seu sucesso agora depende da sua disposição em agir de forma soberana e solitária se for preciso. O seu grande salto de evolução será desvincular seu valor pessoal da aprovação de quem detém o poder. Ao vencer essa insegurança, você conquistará o respeito inquestionável ao seu redor, não pelo que você tem, mas pela autenticidade do seu caráter e pela coragem de quem não teme desbravar o desconhecido.</p>
    
@@ -3092,8 +3113,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Cabeça, Coração e Sistema Respiratório</strong></p>
     <p>Região da cabeça, coração, sistema circulatório e respiratório, alergias, ferimentos nos olhos, rosto, orelhas e maxilar, problemas circulatórios e cardíacos.</p>
     <p>Especialmente em idades mais avançadas; anorexia, edema pulmonar, tosse, tuberculose. Na fase infantil: facilidade para urinar na cama.</p>`,
-
-  2: `<h3>Desafio da Diplomacia e Inteligência Emocional - 2</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  2: {
+     conteudo:`<h3>Desafio da Diplomacia e Inteligência Emocional - 2</h3><br>
    <p style="margin-bottom: 20px;">A vida agora sobe o tom e exige que você domine a diplomacia e a cooperação em um nível de inteligência emocional muito mais sofisticado. Durante esta fase de realização, a sombra da hipersensibilidade pode surgir como uma armadilha, fazendo você levar críticas profissionais para o lado pessoal ou recuar diante de tensões naturais do mercado. Você precisará aprender a arte suprema de negociar e ceder quando necessário, mas sem nunca, em hipótese alguma, anular a sua essência.</p>
    <p style="margin-bottom: 20px;">O risco real aqui para você é o desenvolvimento de uma passividade defensiva — aquele silêncio de quem prefere não opinar só para não gerar desconforto. O universo a convoca para ser o ponto de equilíbrio, a mestra da harmonia, mas sem se tornar submissa aos caprichos alheios. Ao superar essa fragilidade emocional, você se transforma na peça-chave de qualquer organização ou família, sendo admirada pela capacidade quase mágica de unir forças opostas e criar paz onde antes só existia o caos.</p>
 
@@ -3105,8 +3128,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Sistema Renal e Nervoso</strong></p>
     <p>Região dos rins, estômago e sistema nervoso. Pode acarretar retenção de líquidos no corpo, afetar ainda o sistema linfático, estômago e intestino, manchas hepáticas, infecções urinárias, esclerose múltipla.</p>
     <p>Distúrbios nos seios, excesso de peso, incontinência urinária, envelhecimento precoce. Problemas femininos em especial na fase da menopausa, perda de cabelos, facilidade para queimaduras.</p>`,
-
-  3: `<h3>Desafio do Foco Comunicativo e Expressão Real - 3</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  3: {
+     conteudo:`<h3>Desafio do Foco Comunicativo e Expressão Real - 3</h3><br>
    <p style="margin-bottom: 20px;">Neste segundo ciclo de desafios, a vida exige que você traga um foco cirúrgico e uma profundidade rara à sua comunicação. Não há mais espaço para amadorismo ou dispersão criativa. Você pode se sentir tentada a manter uma vida social vibrante, porém superficial, o que neste momento pode ser o veneno que compromete sua reputação profissional. A sombra aqui é o uso da sua palavra apenas como uma ferramenta de vaidade, sem um propósito real que sustente suas falas.</p>
    <p style="margin-bottom: 20px;">Chegou o momento de você se tornar a autoridade máxima naquilo que comunica. Isso exige a disciplina de mergulhar fundo nos temas antes de abrir a boca para o mundo. O seu desafio é vencer aquela autocrítica paralisante que impede sua autenticidade e, ao mesmo tempo, controlar o impulso de falar apenas por falar. Ao canalizar seu entusiasmo de forma produtiva e técnica, você transformará seu carisma natural em um motor de realização formidável, capaz de inspirar com uma clareza que só as grandes líderes possuem.</p>
  
@@ -3118,8 +3143,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Garganta, Fígado e Vesícula</strong></p>
     <p>Região da garganta, fígado, e vesícula são os mais críticos. Also podem ocorrer quadros de enxaquecas, problemas glandulares, em especial na tireóidea e na hipófise.</p>
     <p>Oscilações na pressão arterial, furúnculos, hematomas, problemas nos ombros e dores ciáticas causados por tensão nervosa; problemas nas coxas e nos pés.</p>`,
-
-  4: `<h3>Desafio da Constância e Estrutura Sólida - 4</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  4: {
+     conteudo:`<h3>Desafio da Constância e Estrutura Sólida - 4</h3><br>
    <p style="margin-bottom: 20px;">Focar na construção da sua estabilidade definitiva: esse é o seu lema agora. Você precisa superar qualquer resistência que ainda sinta em relação à ordem, ao método e à rotina. Na fase adulta, o universo avisa que você não pode mais contar apenas com a sorte ou com o talento bruto; a vida exige que você seja a própria estrutura que sustenta seus sonhos. A sombra aqui é a teimosia cega ou aquele cansaço mental que a leva a negligenciar detalhes técnicos que são cruciais para o seu progresso.</p>
    <p style="margin-bottom: 20px;">Você terá que aprender a olhar para a rotina não como uma prisão, mas como a maior aliada do seu sucesso estrondoso. O seu desafio é manter a mente flexível enquanto ergue paredes rígidas e seguras, evitando que o excesso de senso de dever afaste as pessoas que você ama. Ao superar essa tendência à desorganização ou ao desânimo diante do trabalho pesado, você se tornará uma rocha de confiança inabalável, erguendo sua vida sobre fundamentos tão sólidos que nada no mundo será capaz de derrubar.</p>
     
@@ -3132,8 +3159,10 @@ desafios: {
     <p>O “4” pode indicar doenças incomuns e de difícil diagnóstico, acidentes inesperados e ferimentos inexplicáveis, além de problemas de circulação sanguínea, anemia, hipoglicemia.</p>
     <p>Problemas psicossomáticos, histeria, medos e fobias, perturbações mentais e emocionais; problemas ósseos em geral; nos dentes; espasmos e palpitações; úlceras, colites e distúrbios digestivos.</p>
   `,
-
-  5: `<h3>Desafio do Autodomínio e Liberdade Consciente - 5</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  5: {
+     conteudo:`<h3>Desafio do Autodomínio e Liberdade Consciente - 5</h3><br>
    <p style="margin-bottom: 20px;">O seu desafio na maturidade é o controle absoluto daquela inquietude interna que sopra no seu ouvido pedindo mudanças drásticas sem motivo real. Você poderá sentir um desejo súbito de abandonar caminhos que levou anos para consolidar, apenas pelo prazer da adrenalina do novo. A sombra aqui é a falta de raízes e a dificuldade perigosa em aprofundar os compromissos que realmente importam para o seu futuro.</p>
    <p style="margin-bottom: 20px;">O teste para você é saber usar sua versatilidade genial para inovar dentro das estruturas que você já conquistou, em vez de destruí-las para começar do zero repetidamente. Cultive o autodomínio sobre seus impulsos e evite excessos que possam manchar sua credibilidade duramente conquistada. O grande aprendizado para você agora é entender que a verdadeira liberdade não é a ausência de laços, mas sim o estado de consciência de quem escolhe onde quer estar e permanece lá por decisão própria e poder de vontade.</p>
    
@@ -3145,9 +3174,11 @@ desafios: {
     <p><strong>Regiões Sensíveis: Pulmões e Sistema Nervoso Central</strong></p>
     <p>Problemas nos pulmões, aparelho respiratório, olhos e sistema nervoso. Ansiedade e alterações repentinas de humor, tensão nervosa, apneia.</p>
     <p>Exaustão mental ou estafa; insônia, amnésia, paralisia facial, gagueira, acidentes graves por imprudência, vícios em geral (álcool e drogas), distúrbio nos órgãos reprodutores e problemas na tireoide.</p>
-  `,
+  `, videoID: "F8bg1CTQ9HI"
+    },
 
-  6: `<h3>Desafio do Desprendimento e Apoio Equilibrado - 6</h3><br>
+  6: {
+     conteudo:`<h3>Desafio do Desprendimento e Apoio Equilibrado - 6</h3><br>
   <p style="margin-bottom: 20px;">Neste segundo ciclo, a vida a convoca para um nível superior de desprendimento: superar o perfeccionismo e o desejo quase obsessivo de controlar os passos de quem está sob sua proteção. Na fase adulta, o risco para você é se transformar em uma presença pesada e opressora, acreditando que só você detém a fórmula certa para a felicidade alheia. A sombra aqui é a cobrança ácida e a incapacidade de lidar com as falhas dos outros.</p>
    <p style="margin-bottom: 20px;">Você precisará, com urgência, aprender a oferecer suporte real sem impor condições ou "pedágios" emocionais. O seu desafio é encontrar o equilíbrio fino entre o seu idealismo elevado e a realidade imperfeita das pessoas, transformando sua crítica em um acolhimento que realmente cura. Ao superar essa tendência ao controle, você se tornará uma presença magnética e harmonizadora, alguém que todas buscam pela sensação de justiça, paz e equilíbrio que você emana de forma natural e poderosa.</p>
      
@@ -3159,8 +3190,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Coluna, Coração e Região Lombar</strong></p>
     <p>Doenças renais, distúrbios pulmonares; irregularidades na circulação do sangue, hemofilia, palpitações cardíacas.</p>
     <p>Quistos e tumores nos seios, colites, problemas na coluna em geral e dores lombares, problemas de próstata, excesso de peso, incontinência urinária, problemas cardíacos e na região do pescoço.</p>`,
-
-  7: `<h3>Desafio da Conexão e Integração da Sabedoria - 7</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  7: {
+     conteudo:`<h3>Desafio da Conexão e Integração da Sabedoria - 7</h3><br>
    <p style="margin-bottom: 20px;">Este seu segundo desafio foca na superação do isolamento mental e daquele ceticismo frio que pode endurecer sua alma durante os anos de luta e realização. Você poderá sentir uma tendência perigosa de se fechar em um casulo de especialização técnica, tratando as emoções e os mistérios da vida como distrações inúteis ou "fraquezas". A sombra aqui é o orgulho intelectual e o distanciamento gélido das relações humanas reais.</p>
    <p style="margin-bottom: 20px;">O universo a desafia a permitir-se ser vulnerável e a compartilhar suas descobertas intelectuais com o mundo de forma generosa. Você será chamada a integrar sua mente analítica brilhante com uma espiritualidade prática e vivida, reconhecendo que a razão sozinha não explica a magia da existência. Ao derrubar esse muro de isolamento, você transformará seu conhecimento técnico em uma sabedoria profunda, conectada e extremamente influente, que servirá de guia para muitas outras buscadoras.</p>
   
@@ -3172,8 +3205,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Sistema Imunológico e Mental</strong></p>
     <p>Problemas glandulares, system nervoso, nos pés e o sistema linfático. Poderá haver certa vulnerabilidade à infecções, problemas de pele, como alergias em geral, coceiras.</p>
     <p>Arteriosclerose, derrame cerebral, problemas mentais e cerebrais em geral, medos e fobias, depressão, síndrome do pânico, problemas de varizes e vícios em geral, em especial o alcoolismo.</p>`,
-
-  8: `<h3>Desafio da Liderança Ética e Poder Realizador - 8</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  8: {
+     conteudo:`<h3>Desafio da Liderança Ética e Poder Realizador - 8</h3><br>
    <p style="margin-bottom: 20px;">Chegou a hora de provar sua maestria sobre o poder, a autoridade e as leis sagradas da prosperidade material. Na maturidade, a vida exigirá que você lidere grandes frentes e administre recursos com uma eficiência executiva de alto nível. A sombra que a espreita é a ambição cega ou o medo paralisante de falhar financeiramente, o que pode levar você a agir com uma dureza excessiva ou com uma cautela que beira a estagnação.</p>
   <p style="margin-bottom: 20px;">Você precisará compreender, no fundo da alma, que o poder é apenas uma ferramenta de justiça e que seu sucesso material só será eterno se estiver alinhado com uma ética inabalável. Ao superar essa tensão constante entre o "ter" e o "ser", você desenvolverá uma capacidade de realização extraordinária. Você será capaz de transmutar grandes visões em realidades físicas palpáveis, criando uma riqueza que transborda e gera prosperidade não só para você, mas para todas que tiverem a honra de estar sob sua liderança.</p>
       
@@ -3185,11 +3220,13 @@ desafios: {
     <p><strong>Regiões Sensíveis: Estômago, Articulações e Ossos</strong></p>
     <p>Problemas de estômago e sistema nervoso, os pontos mais sensíveis, no entanto são: os joelhos, dentes, ossos e ligamentos.</p>
     <p>Podem ocorrer doenças sanguíneas, tendência a se submeter a tratamento médico inadequado, problemas de fígado e baço; distúrbios no digestivo e intestino, estados de desânimo profundo, dores de cabeça frequentes, derrames, hérnia de disco, desmaios, hipertensão, apendicite, problemas na próstata, cirurgias frequentes e obesidade.</p>
-  `
+  `, videoID: "F8bg1CTQ9HI"
+    },
 },
 // --- DESAFIO 3 (DESAFIO PRINCIPAL / LIÇÃO DE VIDA) ---
 3: {
-  0: `<h3>O Desafio da Escolha e Autoconhecimento - 0</h3><br>
+  0: {
+     conteudo:`<h3>O Desafio da Escolha e Autoconhecimento - 0</h3><br>
     <p>Ter o "Desafio Zero" como guia para a vida inteira significa que o seu embate principal não está em um obstáculo externo, mas na sua capacidade soberana de fazer escolhas conscientes em qualquer idade. Não há um trilho único predefinido para você; sua existência será um mar de possibilidades onde todos os desafios podem se manifestar simultaneamente, exigindo que você mantenha uma vigilância constante para não se perder das suas próprias verdades de alma.</p>
     <p>O seu objetivo maior é o desenvolvimento de um caráter inabalável. Você é a única responsável por vencer o desânimo e a indecisão através do domínio total sobre estes fundamentos da alma:</p>
      <p style="margin-top: 15px; background: #fff5f5; padding: 15px; border-radius: 8px; border: 1px solid #ffebeb; font-style: italic; font-size: 14px; color: #666;">    
@@ -3203,8 +3240,10 @@ desafios: {
     <p>6. Tornar-se a mestra absoluta das suas próprias emoções.</p>
     <p>7. Cultivar a tolerância e esmagar cada um de seus medos.</p>
     <p>8. Agir sempre como o fiel da balança, mantendo o equilíbrio e a justiça.</p>`,
- 
-  1: `<h3>O Desafio da Independência e Soberania Pessoal - 1</h3><br>
+  videoID: "F8bg1CTQ9HI"
+    },
+  1: {
+     conteudo:`<h3>O Desafio da Independência e Soberania Pessoal - 1</h3><br>
     <p>O seu desafio principal nesta jornada é a conquista de uma independência absoluta e a superação daquela tendência silenciosa de se anular para caber nos moldes dos outros. Você nasceu para ser uma força única e pioneira, mas a sombra que tentará acompanhar seus passos é a dúvida de si mesma e a tentação de buscar validação externa para cada decisão tomada.</p>
     <p>A grande lição de vida para você é construir um "eu" tão sólido que não tema a solidão que a liderança muitas vezes impõe. Você precisa integrar no seu íntimo que sua originalidade não é um defeito, mas seu maior trunfo estratégico. O seu embate principal é transformar a insegurança em uma coragem serena, agindo como a verdadeira arquiteta do seu próprio destino e provando ao mundo que o mérito individual é o único alicerce de um sucesso que realmente permanece.</p>
      <p style="margin-top: 15px; background: #fff5f5; padding: 15px; border-radius: 8px; border: 1px solid #ffebeb; font-style: italic; font-size: 14px; color: #666;">    
@@ -3217,8 +3256,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Cabeça, Coração e Sistema Respiratório</strong></p>
     <p>Região da cabeça, coração, sistema circulatório e respiratório, alergias, ferimentos nos olhos, rosto, orelhas e maxilar, problemas circulatórios e cardíacos.</p>
     <p>Especialmente em idades mais avançadas; anorexia, edema pulmonar, tosse, tuberculose. Na fase infantil: facilidade para urinar na cama.</p>`,
-
-  2: `<h3>O Desafio do Equilíbrio Emocional e Autorespeito - 2</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  2: {
+     conteudo:`<h3>O Desafio do Equilíbrio Emocional e Autorespeito - 2</h3><br>
     <p>Este é o seu grande mestre: a maestria sobre a sua sensibilidade e a cura definitiva da necessidade compulsiva de ser aceita por todos. Sua caminhada é desenhada por uma alma que capta as frequências do mundo com uma intensidade rara, e a sombra desse dom é a facilidade com que você se fere, tendendo a se fechar em silêncios defensivos e mágoas ocultas.</p>
     <p>O desafio que você deve vencer é o de estabelecer limites de aço, aprendendo a dizer "não" com uma firmeza que não permita abusos. A lição final é entender que a união verdadeira só acontece entre seres inteiros, e nunca na dependência. Ao superar essa fragilidade, você emergirá como uma presença mediadora extraordinária, alguém que todos respeitam pela capacidade de acolher sem se perder e de unir sem jamais aprisionar a alma alheia.</p>
        <p style="margin-top: 15px; background: #fff5f5; padding: 15px; border-radius: 8px; border: 1px solid #ffebeb; font-style: italic; font-size: 14px; color: #666;">    
@@ -3231,8 +3272,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Sistema Renal e Nervoso</strong></p>
     <p>Região dos rins, estômago e sistema nervoso. Pode acarretar retenção de líquidos no corpo, afetar ainda o sistema linfático, estômago e intestino, manchas hepáticas, infecções urinárias, esclerose múltipla.</p>
     <p>Distúrbios nos seios, excesso de peso, incontinência urinária, envelhecimento precoce. Problemas femininos em especial na fase da menopausa, perda de cabelos, facilidade para queimaduras.</p>`,
-
-  3: `<h3>O Desafio da Expressão Autêntica e Foco Vital - 3</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  3: {
+     conteudo:`<h3>O Desafio da Expressão Autêntica e Foco Vital - 3</h3><br>
     <p>O seu desafio principal é a superação da dispersão mental e o uso sagrado da sua comunicação para edificar e transformar, em vez de apenas distrair. Você recebeu o dom da palavra e do carisma, mas a sombra que tenta sabotar você é a superficialidade e o medo secreto de que sua verdade nua e crua não seja interessante o suficiente, o que a leva a usar máscaras sociais exaustivas.</p>
     <p>Entenda de uma vez por todas: sua autoexpressão é uma responsabilidade técnica e espiritual com o mundo. Você precisará aprender a rir das adversidades sem jamais perder de vista a seriedade dos seus objetivos, transformando seu brilho natural em um veículo de luz real para as pessoas. O seu desafio é encontrar sua voz autêntica no meio do barulho do ego, tornando-se uma fonte de alegria genuína e profunda para quem cruzar o seu caminho.</p>
   <p style="margin-top: 15px; background: #fff5f5; padding: 15px; border-radius: 8px; border: 1px solid #ffebeb; font-style: italic; font-size: 14px; color: #666;">    
@@ -3245,8 +3288,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Garganta, Fígado e Vesícula</strong></p>
     <p>Região da garganta, fígado, e vesícula são os mais críticos. Também podem ocorrer quadros de enxaquecas, problemas glandulares, em especial na tireóidea e na hipófise.</p>
     <p>Oscilações na pressão arterial, furúnculos, hematomas, problemas nos ombros e dores ciáticas causados por tensão nervosa; problemas nas coxas e nos pés.</p>`,
-
-  4: `<h3>O Desafio da Disciplina e Construção de Legado - 4</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  4: {
+     conteudo:`<h3>O Desafio da Disciplina e Construção de Legado - 4</h3><br>
     <p>Esta é a lição definitiva da sua alma: transmutar qualquer resistência ao esforço em um prazer profundo pela construção de algo sólido. Ao longo da vida, você enfrentará a tentação da desorganização ou do desânimo diante do método, o que pode criar a ilusão amarga de que o seu talento não é reconhecido como deveria.</p>
     <p>A sombra que você precisa vencer é a impaciência e a dificuldade em aceitar que os resultados grandiosos exigem tempo, dedicação e uma atenção cirúrgica aos detalhes. A vida vai cobrar de você o desenvolvimento de uma disciplina de ferro para lidar com a matéria. O seu desafio não é se tornar uma mulher rígida ou amargurada pelas obrigações, mas encontrar a verdadeira liberdade através da competência técnica, transformando seu trabalho diário em uma missão de honra que deixará marcas eternas.</p>
       <p style="margin-top: 15px; background: #fff5f5; padding: 15px; border-radius: 8px; border: 1px solid #ffebeb; font-style: italic; font-size: 14px; color: #666;">    
@@ -3259,8 +3304,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Estrutura Óssea e Psicossomática</strong></p>
     <p>O “4” pode indicar doenças incomuns e de difícil diagnóstico, acidentes inesperados e ferimentos inexplicáveis, além de problemas de circulação sanguínea, anemia, hipoglicemia.</p>
     <p>Problemas psicossomáticos, histeria, medos e fobias, perturbações mentais e emocionais; problemas ósseos em geral; nos dentes; espasmos e palpitações; úlceras, colites e distúrbios digestivos.</p>`,
-
-  5: `<h3>O Desafio do Autodomínio e Profundidade Interior - 5</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  5: {
+     conteudo:`<h3>O Desafio do Autodomínio e Profundidade Interior - 5</h3><br>
     <p>Seu desafio principal é conquistar o autodomínio sobre a inquietação de uma mente que busca a liberdade fora, sem perceber que ela só nasce do lado de dentro. Você sentirá impulsos frequentes de abandonar projetos sempre que a rotina bater à porta, o que pode transformar sua vida em uma colcha de retalhos de experiências inacabadas. A sombra aqui é a troca da profundidade por sensações passageiras.</p>
     <p>A vida espera que você desenvolva a perseverança de ficar e agir exatamente quando a vontade for de fugir. O seu grande aprendizado é que o compromisso não é uma gaiola, mas a pista de decolagem para voos muito mais altos e seguros. Use sua versatilidade para inovar e gerar progresso real, transformando essa sua inquietação natural em um motor potente de evolução constante que entrega valor real ao mundo.</p>
     <p style="margin-top: 15px; background: #fff5f5; padding: 15px; border-radius: 8px; border: 1px solid #ffebeb; font-style: italic; font-size: 14px; color: #666;">    
@@ -3273,8 +3320,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Pulmões e Sistema Nervoso Central</strong></p>
     <p>Problemas nos pulmões, aparelho respiratório, olhos e sistema nervoso. Ansiedade e alterações repentinas de humor, tension nervosa, apneia.</p>
     <p>Exaustão mental ou estafa; insônia, amnésia, paralisia facial, gagueira, acidentes graves por imprudência, vícios em geral (álcool e drogas), distúrbio nos órgãos reprodutores e problemas na tireoide.</p>`,
-
-  6: `<h3>O Desafio do Desapego e Aceitação Amorosa - 6</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  6: {
+     conteudo:`<h3>O Desafio do Desapego e Aceitação Amorosa - 6</h3><br>
     <p>Este é o seu desafio mestre: superar o idealismo crítico e conquistar um amor que acolhe a humanidade exatamente como ela é. A sombra que tenta desviar você do caminho é o desejo inconsciente de controlar o destino e as escolhas das pessoas que você ama para evitar que elas sofram — o que acaba gerando interferências e pesos que não são seus.</p>
     <p>Você precisa integrar a lição do desapego amoroso: aceitar que cada alma tem o direito sagrado às suas próprias falhas e aprendizados. O seu desafio é encontrar harmonia dentro do caos e beleza na imperfeição alheia, transmutando seu elevado senso de dever em uma compaixão que não julga. Ao vencer essa tendência ao controle, você se tornará um pilar de equilíbrio e suporte tão puro que as pessoas mudarão ao seu lado apenas pelo exemplo da sua paz.</p>
       <p style="margin-top: 15px; background: #fff5f5; padding: 15px; border-radius: 8px; border: 1px solid #ffebeb; font-style: italic; font-size: 14px; color: #666;">    
@@ -3287,8 +3336,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Coluna, Coração e Região Lombar</strong></p>
     <p>Doenças renais, distúrbios pulmonares; irregularidades na circulação do sangue, hemofilia, palpitações cardíacas.</p>
     <p>Quistos e tumores nos seios, colites, problemas na coluna em geral e dores lombares, problemas de próstata, excesso de peso, incontinência urinária, problemas cardíacos e na região do pescoço.</p>`,
-
-  7: `<h3>O Desafio da Entrega e Integração Humana - 7</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  7: {
+     conteudo:`<h3>O Desafio da Entrega e Integração Humana - 7</h3><br>
     <p>O seu desafio principal, a grande barreira desta existência para você, é o isolamento provocado por uma mente analítica e brilhante que teme a entrega emocional e os mistérios que a lógica não explica. Você sentirá o impulso constante de se refugiar na sua própria inteligência como se fosse um castelo fortificado contra as dores do mundo. A sombra aqui é o orgulho intelectual e a sensação de ser uma eterna estrangeira em qualquer lugar.</p>
     <p>O universo desafia você a derrubar essas pontes levadiças e permitir que as pessoas conheçam suas dúvidas e fragilidades. Somente ao se mostrar humana você encontrará o pertencimento que tanto busca. Ao superar essa barreira de vidro, você integrará seu intelecto poderoso com uma espiritualidade vívida, tornando-se uma mulher capaz de guiar e inspirar através de uma sabedoria que une, finalmente, a razão e o sentimento.</p>
       <p style="margin-top: 15px; background: #fff5f5; padding: 15px; border-radius: 8px; border: 1px solid #ffebeb; font-style: italic; font-size: 14px; color: #666;">    
@@ -3301,8 +3352,10 @@ desafios: {
     <p><strong>Regiões Sensíveis: Sistema Imunológico e Mental</strong></p>
     <p>Problemas glandulares, sistema nervoso, nos pés e o sistema linfático. Poderá haver certa vulnerabilidade à infecções, problemas de pele, como alergias em geral, coceiras.</p>
     <p>Arteriosclerose, derrame cerebral, problemas mentais e cerebrais em geral, medos e fobias, depressão, síndrome do pânico, problemas de varizes e vícios em geral, em especial o alcoolismo.</p>`,
-
-  8: `<h3>O Desafio da Justiça e Poder Realizador - 8</h3><br>
+ videoID: "F8bg1CTQ9HI"
+    },
+  8: {
+     conteudo:`<h3>O Desafio da Justiça e Poder Realizador - 8</h3><br>
     <p>Este é o seu desafio supremo: a maestria sobre o poder, a abundância e a justiça divina aplicada ao plano material. Ao longo da sua vida, você será colocada em situações de alta pressão que envolvem autoridade e gestão de grandes recursos. A sombra que a espreita é a disputa cega de ego ou o medo paralisante de perder o controle das situações, o que pode levá-la a atitudes de dureza excessiva.</p>
     <p>Você precisa entender, no âmago do seu ser, que o poder verdadeiro só permanece quando nasce da integridade e do serviço ao coletivo. O seu desafio é equilibrar sua ambição legítima com uma consciência espiritual aguçada, agindo sempre com uma honestidade brutal e um senso de justiça que não se dobra. Ao dominar essa frequência, você manifestará a prosperidade real em sua vida e se tornará a administradora exemplar da abundância no mundo, criando realizações que duram por gerações.</p>
       <p style="margin-top: 15px; background: #fff5f5; padding: 15px; border-radius: 8px; border: 1px solid #ffebeb; font-style: italic; font-size: 14px; color: #666;">    
@@ -3315,89 +3368,130 @@ desafios: {
     <p><strong>Regiões Sensíveis: Sistema Imunológico e Mental</strong></p>
     <p>Problemas glandulares, sistema nervoso, nos pés e o sistema linfático. Poderá haver certa vulnerabilidade à infecções, problemas de pele, como alergias em geral, coceiras.</p>
     <p>Arteriosclerose, derrame cerebral, problemas mentais e cerebrais em geral, medos e fobias, depressão, síndrome do pânico, problemas de varizes e vícios em geral, em especial o alcoolismo.</p>
-    `
+    `, videoID: "F8bg1CTQ9HI"
+    },
 }
   },
 
 
  
 anoPessoal: {
-    1: `<h3>Ano Pessoal 1 - O Plantio e a Nova Identidade</h3>
+    1:{
+     conteudo: `<h3>Ano Pessoal 1 - O Plantio e a Nova Identidade</h3>
     <p>Este é o marco zero de um novo ciclo de nove anos para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma fase de renascimento absoluto onde a energia do pioneirismo deve ser sua bússola principal. A vida exige que você deixe para trás, sem olhar para trás, tudo o que foi concluído no ciclo anterior e assuma uma postura de liderança ativa sobre o próprio destino, agindo com uma audácia que você talvez nunca tenha experimentado antes.</p>
     <p>É o momento ideal para lançar projetos autorais, mudar radicalmente de carreira ou iniciar hábitos que transformem sua saúde e mentalidade. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sentirá um impulso vibrante para tomar decisões solitárias; não se assuste com isso, pois é o custo necessário para abrir trilhas que ninguém mais ousou trilhar. O foco deve ser o desenvolvimento do seu "eu" e a plantação rigorosa das sementes que deseja ver florescer na próxima década. Além disso, a vibração do 1 exige que você combata a procrastinação com fúria, pois o que não foi iniciado agora poderá levar outros nove anos para encontrar nova janela de oportunidade. Ao final deste período, você terá consolidado uma nova identidade, muito mais forte, decidida e respeitada por sua iniciativa indomável.</p>`,
-
-    2: `<h3>Ano Pessoal 2 - A Cooperação e a Gestação Estratégica</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    2: {
+     conteudo:`<h3>Ano Pessoal 2 - A Cooperação e a Gestação Estratégica</h3>
     <p>Após a intensidade do início do ciclo, este é o ano para você cultivar a paciência de uma mestra e a diplomacia de uma embaixadora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A energia agora não é de ação direta ou força bruta, mas de fortalecimento dos bastidores, exigindo que você aprenda a trabalhar em parceria e a ouvir com atenção cirúrgica as necessidades alheias. As coisas podem parecer lentas na superfície, mas entenda que este é o seu tempo de germinação sagrada.</p>
     <p>É um período excelente para focar em relacionamentos, sociedades e no refinamento de detalhes que passaram despercebidos no ano anterior. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, será testada em sua capacidade de manter o equilíbrio emocional diante de atrasos burocráticos ou resistências alheias. Sua intuição estará aguçada como nunca, e o sucesso virá ao agir com sensibilidade e tato, evitando confrontos diretos que só desgastariam sua energia. Lembre-se que a suavidade é uma forma sofisticada de poder e que saber esperar o momento exato de agir é tão importante quanto a própria força. Ao final deste ciclo, sua rede de contatos e sua estabilidade emocional serão seus maiores ativos conquistados.</p>`,
-
-    3: `<h3>Ano Pessoal 3 - A Expansão Criativa e o Magnetismo Social</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Ano Pessoal 3 - A Expansão Criativa e o Magnetismo Social</h3>
     <p>Prepare-se, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois este é o seu ano de expansão social e da plena expressão dos seus talentos comunicativos para o mundo. Você sentirá uma necessidade vital de se comunicar, de aparecer e de circular em novos e influentes ambientes. A energia é de fertilidade e brilho solar, o que atrai para perto de você amizades poderosas e convites inesperados baseados puramente no seu magnetismo pessoal e na sua alegria de viver.</p>
     <p>O desafio central para você será manter o foco em meio a tanta estimulação e opções atraentes, evitando que sua energia preciosa se disperse em mil projetos inacabados ou conversas superficiais. Você deve usar este otimismo contagiante para abrir portas trancadas, mas precisa canalizar essa vitalidade para objetivos que tenham um significado real para o seu futuro. Aproveite para investir em sua imagem pública e em qualquer forma de arte ou oratória, pois o mundo está pronto para ouvir o que você tem a dizer. Ao final deste ano, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você terá expandido significativamente seu círculo de influência e descoberto facetas do seu gênio criativo que estavam adormecidas sob o peso das obrigações.</p>`,
-
-    4: `<h3>Ano Pessoal 4 - A Estrutura, o Trabalho e os Fundamentos</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    4:{
+     conteudo: `<h3>Ano Pessoal 4 - A Estrutura, o Trabalho e os Fundamentos</h3>
     <p>Após a expansão e o brilho do ano anterior, a vida agora exige que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, coloque os pés firmemente no chão e foque intensamente na organização e na disciplina prática. Este é o seu ano de construir a estrutura de concreto que sustentará todos os seus sonhos a longo prazo, exigindo atenção aos detalhes técnicos, às finanças e à saúde física com um rigor quase militar.</p>
     <p>Você sentirá o peso das responsabilidades aumentar, mas encare isso como um teste de resistência para provar sua capacidade de gestão. O sucesso para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, virá da constância e da honestidade de propósitos em cada pequena tarefa do cotidiano, por mais repetitiva que pareça. É o momento de regularizar documentos, reformar estruturas e solidificar sua reputação de pessoa confiável e trabalhadora. Não busque atalhos neste período, pois a vibração do 4 não tolera superficialidade; o que for construído com suor agora será inabalável por décadas. Ao concluir este período de esforço, você sentirá o orgulho profundo de ter erguido bases de aço para sua segurança e para o bem-estar da sua família.</p>`,
-
-    5: `<h3>Ano Pessoal 5 - A Transição, a Versatilidade e a Liberdade</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Ano Pessoal 5 - A Transição, a Versatilidade e a Liberdade</h3>
     <p>Prepare-se para uma montanha-russa de mudanças rápidas e uma sede de liberdade que impulsionará você para horizontes completamente novos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este é um período de transição intensidade, onde sua versatilidade será a melhor ferramenta para lidar com o inesperado que surgirá a cada esquina. Você poderá sentir uma inquietação quase elétrica, levando-a a querer mudar de casa, de emprego ou até de estilo de vida da noite para o dia.</p>
     <p>É o momento de viajar, aprender novas tecnologias e quebrar velhos dogmas que aprisionavam sua mente. O desafio central para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é não se perder na impulsividade ou em prazeres sensoriais que drenem sua energia sem construir nada. Aprenda a navegar na incerteza com inteligência estratégica, usando a curiosidade como o combustível para sua evolução pessoal e profissional. Este ano funciona como uma "limpeza de ventilação" na sua vida, jogando fora o que estagnou e trazendo ar fresco para seus pulmões. Ao final deste ciclo, você se sentirá uma pessoa muito mais desimpedida, moderna e pronta para abraçar as múltiplas e excitantes possibilidades do amanhã.</p>`,
-
-    6: `<h3>Ano Pessoal 6 - A Harmonia Familiar e a Responsabilidade Afetiva</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo:`<h3>Ano Pessoal 6 - A Harmonia Familiar e a Responsabilidade Afetiva</h3>
     <p>O foco central deste ano para você é o seu porto seguro: o lar, a família e as responsabilidades afetivas que exigem equilíbrio e uma dedicação genuína, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você será chamada a atuar como a peça fundamental de coesão, agindo com uma maturidade emocional que traz paz aos ambientes e resolve pendências que se arrastavam há anos. É um período de ajustes domésticos, casamentos, nascimentos ou reconciliações poderosas.</p>
     <p>A energia favorece intensamente o cuidado com a estética do seu ambiente e o bem-estar de quem você ama. No entanto, o desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é encontrar o ponto ideal entre o cuidado dedicado aos outros e a preservação da sua própria identidade, evitando se tornar uma "mártir" das necessidades alheias. Ofereça suporte, oriente e ame, mas não se anule emocionalmente no processo de salvar ninguém. Use esta vibração para embelezar sua vida e fortalecer seus laços comunitários. Ao concluir este período, você terá construído um legado de amor e respeito que consolidará sua posição como a figura essencial e respeitada para a harmonia do seu grupo social.</p>`,
-
-    7: `<h3>Ano Pessoal 7 - A Introspecção, a Sabedoria e o Refinamento</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    7:{
+     conteudo: `<h3>Ano Pessoal 7 - A Introspecção, a Sabedoria e o Refinamento</h3>
     <p>Este é um ano de profunda introspecção e refinamento intelectual, onde a vida faz um convite irrecusável para você se afastar do barulho social e buscar respostas nas camadas mais profundas do seu ser, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você sentirá uma necessidade natural de silêncio, estudo e recolhimento produtivo, focando na especialização técnica dos seus conhecimentos ou na investigação de verdades espirituais e ocultas.</p>
     <p>É o período de ouro para se dedicar a cursos complexos, meditação ou escrita. O universo pede que você refine a qualidade do seu caráter e da sua mente antes de buscar novos resultados no mundo externo. O desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é usar o tempo de solitude para se tornar uma autoridade na sua própria verdade, evitando que o isolamento se torne melancolia ou ceticismo exagerado. Trate este ano como um retiro espiritual necessário para o seu próximo grande salto. Ao final deste ciclo, você emergirá com uma clareza mental e uma sabedoria tão superiores que sua simples presença será capaz de impor distinção e respeito em qualquer lugar.</p>`,
-
-    8: `<h3>Ano Pessoal 8 - A Colheita Material e o Poder Executivo</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    8: {
+     conteudo:`<h3>Ano Pessoal 8 - A Colheita Material e o Poder Executivo</h3>
     <p>Este é o ano da sua grande colheita material e da manifestação plena do seu poder executivo na sociedade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A vida agora para de pedir reflexão e passa a exigir ação pragmática, ambição ética e um foco absoluto em resultados tangíveis e lucrativos. Você terá oportunidades reais e concretas de expansão financeira, promoção na carreira e de assumir cargos de liderança que antes pareciam distantes.</p>
     <p>Seu poder de manifestação estará no auge absoluto, e a colheita será rigorosamente proporcional ao trabalho que você semeou nos anos anteriores. Você deve agir com uma autoconfiança inabalável, <strong>MASCULINO-FEMININO-NEUTRO</strong>, garantindo que todo o seu sucesso esteja ancorado na justiça e na correção de caráter. O grande desafio é gerir essas enormes responsabilidades e o fluxo de dinheiro sem se deixar cegar pelo ego ou pela ganância. Use sua autoridade para estruturar não apenas sua riqueza, mas também o progresso de quem trabalha com você. Ao concluir esta etapa, você terá alcançado um patamar de segurança financeira e influência que consolidará definitivamente sua posição de destaque no mundo material.</p>`,
-
-    9: `<h3>Ano Pessoal 9 - A Finalização, a Limpeza e o Humanitarismo</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Ano Pessoal 9 - A Finalização, a Limpeza e o Humanitarismo</h3>
     <p>Este é o ano da conclusão solene e do desapego sábio de absolutamente tudo o que não serve mais para o seu crescimento futuro, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você está encerrando um ciclo inteiro de nove anos e a vida agora exige que você finalize projetos pendentes, perdoe mágoas antigas e limpe os armários da alma. É um período de balanço emocional intenso, onde sua sensibilidade humanitária estará à flor da pele.</p>
-    <p>O foco total deve ser a purificação interna para que o seu próximo ciclo comece com a leveza necessária, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você poderá enfrentar despedidas ou finalizações de ciclos que parecem desafiadoras no momento, mas entenda que são libertações necessárias para o seu novo "eu" que nascerá no ano que vem. O segredo para você é soltar o passado com gratidão, sem resistência, entendendo que o vazio que se cria agora é o espaço para as bênçãos gigantescas que virão. Dedique-se também a causas maiores e à ajuda ao próximo, pois a generosidade é o combustível que transmuta o carma neste período. Ao final deste ano, você se sentirá em um estado de plenitude e purificação, com a alma pronta para o glorioso renascimento que o aguarda.</p>`
-},
+    <p>O foco total deve ser a purificação interna para que o seu próximo ciclo comece com a leveza necessária, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você poderá enfrentar despedidas ou finalizações de ciclos que parecem desafiadoras no momento, mas entenda que são libertações necessárias para o seu novo "eu" que nascerá no ano que vem. O segredo para você é soltar o passado com gratidão, sem resistência, entendendo que o vazio que se cria agora é o espaço para as bênçãos gigantescas que virão. Dedique-se também a causas maiores e à ajuda ao próximo, pois a generosidade é o combustível que transmuta o carma neste período. Ao final deste ano, você se sentirá em um estado de plenitude e purificação, com a alma pronta para o glorioso renascimento que o aguarda.</p>`,
+     
+ videoID: "F8bg1CTQ9HI"
+    },
+    },
 
  
 deficiencias: {
     // --- DEFICIÊNCIAS / (O QUE FALTA APRENDER) ---
-    1: `<h3>Iniciativa e Independência - Lição 1</h3>
+    1: {
+     conteudo:`<h3>Iniciativa e Independência - Lição 1</h3>
     <p>A ausência desta vibração no seu mapa, querida <strong>MASCULINO-FEMININO-NEUTRO</strong>, é um aviso claro de que você precisa, mais do que nunca, despertar sua iniciativa própria e aprender a caminhar com uma determinação inabalável, daquelas que não aceitam um "não" como resposta final. Sua força de vontade precisa ser lapidada no fogo das suas experiências diárias. Em momentos decisivos da sua jornada, a vida vai exigir que você sustente uma independência absoluta e tenha a coragem de defender suas verdades, mesmo que se veja sozinha contra a maré.</p>
     <p>Esse percurso trará para perto de você pessoas de postura extremamente obstinada e até autoritárias, gerando embates que servirão como o treino perfeito para você aprender a se posicionar com firmeza. É fundamental que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pratique a autovalorização ética, construindo uma autoconfiança real que nasça de dentro para fora. Até que esta lição seja totalmente integrada, você poderá se pegar em estados de indecisão paralisante ou dependendo do aplauso alheio para dar passos simples. A sua virada de chave acontece quando você assume o comando absoluto da sua história, deixando de esperar a aprovação externa para alcançar os objetivos grandiosos que sua alma almeja. Lembre-se sempre: a líder que você tanto busca seguir deve ser, antes de tudo, você mesma.</p>`,
-
-    2: `<h3>Diplomacia e Cooperação - Lição 2</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    2:{
+     conteudo: `<h3>Diplomacia e Cooperação - Lição 2</h3>
     <p>Esta lição aponta que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, precisa aprender a exercer a diplomacia e a flexibilidade como uma verdadeira mestra, compreendendo o valor inestimável de atuar em parceria sem a necessidade de buscar holofotes ou alimentar vaidades. A energia do universo pede que você desenvolva uma postura de acolhimento e cooperação genuína, tornando-se aquela presença sensível, intuitiva e equilibrada que consegue ler o ambiente e perceber as nuances silenciosas das necessidades das pessoas ao seu redor.</p>
     <p>O seu grande trunfo aqui será a capacidade de observar o cenário com sabedoria e oferecer caminhos que unam ideias totalmente divergentes em torno de um propósito comum. Enquanto esta lição não for assimilada, você poderá enfrentar desafios incômodos em seus relacionamentos, buscando um isolamento defensivo por medo da rejeição ou de confrontos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao dominar essa deficiência, você descobrirá que cooperar não apaga o seu brilho, mas sim multiplica suas forças através da harmonia. O seu verdadeiro poder agora reside na habilidade de ser o elo forte que une as pessoas, transformando cada conexão em uma aliança estratégica, respeitosa e duradoura.</p>`,
-
-    3: `<h3>Autoexpressão e Leveza - Lição 3</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    3: {
+     conteudo:`<h3>Autoexpressão e Leveza - Lição 3</h3>
     <p>A falta desta energia revela uma autocrítica severa e, às vezes, esmagadora, onde você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, acaba impondo a si mesma padrões de perfeição que nenhuma mulher na Terra conseguiria atingir. Existe uma tendência velada de se achar inadequada em alguns aspectos, o que acaba travando a sua autoexpressão e sufocando a sua criatividade natural. Você precisará aprender a vencer as amarras da timidez e, acima de tudo, confiar na beleza única e na potência da sua própria voz.</p>
     <p>A vida está fazendo um convite amoroso para que você resgate uma postura muito mais alegre, fluida e leve, demonstrando maturidade para ouvir críticas sem se colocar imediatamente na defensiva ou se sentir diminuída. Até que essa qualidade seja totalmente integrada à sua alma, você poderá manter um comportamento arredio ou sério demais por medo do julgamento alheio, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Superar esse bloqueio significa abraçar a sua humanidade com todas as suas cores, acertos e imperfeições. Ao se libertar do peso de ter que ser perfeita, você se tornará uma presença magnética e encantadora, capaz de tocar o mundo apenas pela verdade de ser quem você é.</p>`,
-
-    4: `<h3>Disciplina e Método Prático - Lição 4</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    4: {
+     conteudo:`<h3>Disciplina e Método Prático - Lição 4</h3>
     <p>Esta lição exige que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, estabeleça uma abordagem metódica, disciplinada e realista diante da vida, criando a base de concreto que falta para que os seus projetos saiam de vez do plano das ideias. Sem essa estrutura mental e prática, você poderá experimentar uma sensação constante de desorientação, como se estivesse sempre correndo exausta sem sair do lugar. A vida pede que você traga um pragmatismo cirúrgico para cada pequena decisão do seu dia.</p>
     <p>Aprender a honrar métodos, organizar sua rotina e assumir responsabilidades com constância é o seu único caminho seguro para a estabilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Até que este aprendizado seja concluído, você estará vulnerável a imprevistos causados pela simples negligência com detalhes técnicos ou pela falta de um planejamento financeiro e temporal estratégico. A superação desta deficiência exige dedicação naquelas obrigações diárias que parecem monótonas, mas que são os tijolos do seu futuro. Ao integrar a disciplina, você para de apenas sonhar e passa a edificar resultados concretos, sólidos e blindados sobre rocha firme, tornando-se a única arquiteta da sua própria prosperidade.</p>`,
-
-    5: `<h3>Adaptabilidade e Ousadia - Lição 5</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    5: {
+     conteudo:`<h3>Adaptabilidade e Ousadia - Lição 5</h3>
     <p>O seu grande aprendizado aqui, <strong>MASCULINO-FEMININO-NEUTRO</strong>, foca na superação daquele medo miúdo que tenta travar os seus passos e na necessidade vital de ousar e arriscar mais. Você precisa combater com inteligência a tendência à rigidez mental ou o apego excessivo a zonas de conforto que já não oferecem espaço para o seu crescimento. Seu desenvolvimento pleno acontecerá quando você dominar a arte de ser maleável e adaptável às mudanças repentinas do destino, transformando cada imprevisto em uma oportunidade de ouro.</p>
     <p>É preciso compreender profundamente que a liberdade real caminha de mãos dadas com o autocontrole e a responsabilidade. Até que esta lição seja integrada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você poderá conviver com uma instabilidade profissional ou emocional que esvazia suas energias, tentando agradar a todos pelo receio de não ser aceita. A chave da sua virada é abraçar o movimento da vida com inteligência tática, dominando impulsos destrutivos e extraindo sabedoria de cada novidade. Ao fazer isso, você se torna capaz de navegar por qualquer reviravolta com a agilidade de uma mulher que sabe que o futuro pertence às que ousam evoluir.</p>`,
-
-    6: `<h3>Compromisso e Afeto Real - Lição 6</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    6: {
+     conteudo:`<h3>Compromisso e Afeto Real - Lição 6</h3>
     <p>Esta lição aponta para a necessidade sagrada de superar suas barreiras com o compromisso afetivo e a entrega emocional profunda, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O convite aqui é para baixar a guarda, permitir-se demonstrar sentimentos reais e estabelecer vínculos que não sejam baseados apenas na utilidade ou na lógica, mas no carinho sincero e na troca verdadeira. O seu grande desafio é pacificar suas instabilidades internas para conseguir oferecer proteção e acolhimento de forma compreensiva aos que cercam sua vida.</p>
     <p>É fundamental que você passe a enxergar as obrigações familiares e comunitárias não como um fardo pesado, mas como parte essencial para a evolução da sua alma. Até que este aprendizado se consolide, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você poderá enfrentar um sentimento incômodo de solidão, sem entender por que seus laços parecem superficiais ou não evoluem. A superação exige que você aprenda a aceitar as pessoas com todas as imperfeições que elas carregam, sem a necessidade de consertá-las. Ao integrar o afeto real, você descobrirá que sua maior força nasce da capacidade de cuidar e de se permitir ser cuidada, em um equilíbrio perfeito, amoroso e maduro.</p>`,
-
-    7: `<h3>Profundidade e Sabedoria - Lição 7</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    7:{
+     conteudo: `<h3>Profundidade e Sabedoria - Lição 7</h3>
     <p>A ausência desta vibração indica que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, precisa aprofundar seus conhecimentos com urgência, fugindo da armadilha perigosa de aceitar informações rasas ou respostas prontas como verdades absolutas. Uma visão superficial da realidade impedirá que você experimente o tamanho do seu gigantesco potencial intelectual e intuitivo. Você deve aprender a exercer uma autocrítica construtiva e buscar a raiz, o porquê de todas as coisas.</p>
     <p>Mas atenção: não permita que essa busca por respostas transforme sua introspecção em um muro de gelo que a afasta e isola do convívio humano, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Até que esta lição seja assimilada, você poderá sofrer com a falta de foco prático em suas realizações, fugindo das responsabilidades do mundo real ao se refugiar em distrações fúteis ou pensamentos vagos. O seu caminho exige que você busque a especialização técnica e a sociabilidade ao mesmo tempo. Ao transformar o mistério em clareza através do estudo analítico e da reflexão, você se tornará uma presença capaz de manifestar conquistas que serão profundamente respeitadas pela verdade e autoridade que carregam.</p>`,
-
-    8: `<h3>Prudência e Gestão da Matéria - Lição 8</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    8:{
+     conteudo: `<h3>Prudência e Gestão da Matéria - Lição 8</h3>
     <p>Este aprendizado foca na sua necessidade de desenvolver uma prudência impecável na gestão do poder material e dos seus recursos financeiros, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Embora você possua um talento magnético natural para atrair grandes oportunidades de negócios, poderá enfrentar altos e baixos financeiros exaustivos se não aplicar cautela, ética rigorosa e método no manuseio de cada centavo e de cada influência que conquistar.</p>
     <p>É vital que você reconheça o valor real da matéria e exerça sua autoridade com absoluta justiça, honestidade e equilíbrio. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é chamada a ser uma gestora altamente eficiente, utilizando sua inteligência estratégica para criar abundância sem desperdícios e sem cair na armadilha da ganância cega. Até que esta lição esteja perfeitamente integrada, sua capacidade de julgamento sobre parcerias e investimentos pode correr riscos. Ao dominar essa deficiência, você conquista a liderança definitiva sobre o plano material, garantindo que o seu sucesso financeiro seja o reflexo sólido da sua retidão de caráter e do seu poder de realização.</p>`,
-
-    9: `<h3>Altruísmo e Consciência Universal - Lição 9</h3>
+ videoID: "F8bg1CTQ9HI"
+    },
+    9: {
+     conteudo:`<h3>Altruísmo e Consciência Universal - Lição 9</h3>
     <p>Esta vibração representa uma convocação imensa da alma para que você amplie a sua visão sobre o significado maior da sua existência no mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A vida pede que você aprenda a agir com uma compaixão generosa, daquelas que ultrapassam as fronteiras do seu círculo íntimo, enxergando a dor e a necessidade do outro sob um prisma universal e desapegado, indo muito além de interesses egoicos ou imediatos.</p>
-    <p>Haverá momentos em que o universo pedirá que você abra mão de pequenas vantagens pessoais em benefício de um bem maior ou de uma causa que impacte vidas. Esta é a sua chamada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, para despertar sua sensibilidade mais pura e compartilhar solidariedade real com o próximo. A lição definitiva aqui é o exercício do perdão total e da entrega confiante ao fluxo da vida. Ao abraçar esse amor universal sem impor condições ou cobranças, você transmuta qualquer ferida do passado em sabedoria pura, alcançando a paz indescritível de quem compreendeu e vive o mais elevado de todos os sentimentos humanos.</p>`
-},
+    <p>Haverá momentos em que o universo pedirá que você abra mão de pequenas vantagens pessoais em benefício de um bem maior ou de uma causa que impacte vidas. Esta é a sua chamada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, para despertar sua sensibilidade mais pura e compartilhar solidariedade real com o próximo. A lição definitiva aqui é o exercício do perdão total e da entrega confiante ao fluxo da vida. Ao abraçar esse amor universal sem impor condições ou cobranças, você transmuta qualquer ferida do passado em sabedoria pura, alcançando a paz indescritível de quem compreendeu e vive o mais elevado de todos os sentimentos humanos.</p>`,
+     
+ videoID: "F8bg1CTQ9HI"
+    },
+    },
 
 
  
