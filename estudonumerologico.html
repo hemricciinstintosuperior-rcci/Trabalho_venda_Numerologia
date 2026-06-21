@@ -5372,6 +5372,10 @@ const idVideoTalento = dadosHabilidade ? buscarVideoID("talentosEspeciais", dado
 const idVideoHabilidade = (dadosHabilidade && textos.PlanosExpressao[dadosHabilidade.plano]) 
                           ? textos.PlanosExpressao[dadosHabilidade.plano].forte.videoID 
                           : null;
+// Captura o ID do vídeo para o Modo de Expressão
+const idVideoModo = (dadosHabilidade && textos.modosAcao && textos.modosAcao[dadosHabilidade.modo]) 
+                    ? textos.modosAcao[dadosHabilidade.modo].videoID 
+                    : null;    
 // 2. SEGUNDO: Declare o título (isso resolve o erro de ReferenceError)
 tituloBonito = "Habilidades Especiais e Deficiências"; 
 
