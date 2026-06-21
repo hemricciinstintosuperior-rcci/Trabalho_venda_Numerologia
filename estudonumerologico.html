@@ -3099,7 +3099,11 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, negativasOriginal) {
             ${diagnosticoHarmonia}
         </div>
 
-      `;
+      `;    html += renderizarBlocoComVideo(`
+        <div style="margin-top: 20px; text-align: center; color: #555; font-style: italic;">
+            <p>Assista ao vídeo explicativo sobre como a mudança de nome afeta sua energia:</p>
+        </div>
+    `, idVideoCasamento);
 
     // CORREÇÃO AQUI: Adicionado o "html +=" que faltava para abrir a pirâmide
     html += `
@@ -3136,16 +3140,12 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, negativasOriginal) {
             <h3 style="color: red; margin-bottom: 10px;">⚠️ Alerta de Bloqueios na adição de SobreNome</h3>
             ${negativasCasado.detalhes.map(neg => `
                 <div class="evitar-corte" style="margin-top: 20px; border-left: 4px solid red; padding-left: 15px;">
-                    <div class="texto-res">${aplicarFiltroTexto(textos.SeqNegVida[neg.numero])}</div>
+                    <div class="texto-res">${aplicarFiltroTexto(textos.SeqNegVidacasado[neg.numero])}</div>
                 </div>
             `).join('')}
         </div>`;
     }
-    html += renderizarBlocoComVideo(`
-        <div style="margin-top: 20px; text-align: center; color: #555; font-style: italic;">
-            <p>Assista ao vídeo explicativo sobre como a mudança de nome afeta sua energia:</p>
-        </div>
-    `, idVideoCasamento);
+
     html += `</div>`; // FECHA A PÁGINA
     return html;
 }
