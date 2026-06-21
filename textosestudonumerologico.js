@@ -4387,43 +4387,60 @@ talentosEspeciais: {
  
  planosExpressao: {
     fisico: {
-        forte:`<h4>Campo de Atuação: Físico (Execução e Realidade)</h4>
-                <p>Sua habilidade se manifesta primordialmente através da ação concreta e da praticidade. Você possui uma natureza voltada para o mundo material, onde o saber lidar com as situações cotidianas exige agilidade, esforço físico e a capacidade de transformar ideias em resultados visíveis e tangíveis.</p>`
-     },
+        forte:{
+     conteudo:`<h4>Campo de Atuação: Físico (Execução e Realidade)</h4>
+                <p>Sua habilidade se manifesta primordialmente através da ação concreta e da praticidade. Você possui uma natureza voltada para o mundo material, onde o saber lidar com as situações cotidianas exige agilidade, esforço físico e a capacidade de transformar ideias em resultados visíveis e tangíveis.</p>`,
+         videoID: "F8bg1CTQ9HI"
+    },
+    },
       
    
     mental: {
-        forte: `<h4>Campo de Atuação: Mental (Lógica e Estratégia)</h4>
-                <p>Sua habilidade opera no campo do raciocínio, onde a clareza de pensamento e a análise são suas principais ferramentas. Você lida com a vida de forma lógica, buscando compreender a estrutura dos problemas para encontrar soluções inteligentes, priorizando a organização das ideias antes de qualquer tomada de decisão.</p>`
-      
+        forte: {
+     conteudo:`<h4>Campo de Atuação: Mental (Lógica e Estratégia)</h4>
+                <p>Sua habilidade opera no campo do raciocínio, onde a clareza de pensamento e a análise são suas principais ferramentas. Você lida com a vida de forma lógica, buscando compreender a estrutura dos problemas para encontrar soluções inteligentes, priorizando a organização das ideias antes de qualquer tomada de decisão.</p>`,
+          videoID: "F8bg1CTQ9HI"
+    },
     },
    
     emocional: {
-        forte: `<h4>Campo de Atuação: Emocional (Sentimento e Interação)</h4>
-                <p>Sua atuação é guiada pela sensibilidade e pela capacidade de sentir o ambiente e as pessoas ao seu redor. Sua habilidade cotidiana reside na empatia e na inteligência emocional, permitindo que você navegue por situações da vida através dos vínculos, dos valores humanos e da harmonia nas relações.</p>`
+        forte: {
+     conteudo:`<h4>Campo de Atuação: Emocional (Sentimento e Interação)</h4>
+                <p>Sua atuação é guiada pela sensibilidade e pela capacidade de sentir o ambiente e as pessoas ao seu redor. Sua habilidade cotidiana reside na empatia e na inteligência emocional, permitindo que você navegue por situações da vida através dos vínculos, dos valores humanos e da harmonia nas relações.</p>`,
    
-    
+        videoID: "F8bg1CTQ9HI"
+    },
     },
     intuitivo: {
-        forte: `<h4>Campo de Atuação: Intuitivo (Instinto e Percepção)</h4>
-                <p>Sua habilidade de lidar com a vida vem de uma percepção aguçada que vai além do óbvio. Você atua através do instinto e de uma sabedoria interior silenciosa, sendo capaz de captar intenções e direções que não são explicadas pela lógica, confiando na sua conexão interna para se guiar no dia a dia.</p>`
-      },
+        forte:  {
+     conteudo:`<h4>Campo de Atuação: Intuitivo (Instinto e Percepção)</h4>
+                <p>Sua habilidade de lidar com a vida vem de uma percepção aguçada que vai além do óbvio. Você atua através do instinto e de uma sabedoria interior silenciosa, sendo capaz de captar intenções e direções que não são explicadas pela lógica, confiando na sua conexão interna para se guiar no dia a dia.</p>`,
+         
+         videoID: "F8bg1CTQ9HI"
+    },
+    },
            
     },
 
 
 modosAcao: {
-    criativo: `<h4>Modo de Expressão: Criativo (Inovação e Originalidade)</h4>
+    criativo: {
+     conteudo:`<h4>Modo de Expressão: Criativo (Inovação e Originalidade)</h4>
                <p>Sua forma de lidar com a vida é marcada pela inventividade e pela busca por soluções fora do comum. Você possui a habilidade de enxergar a realidade por ângulos que a maioria ignora, agindo com espontaneidade e otimismo para transformar imprevistos em oportunidades. Sua mente não se prende ao tradicionalismo, preferindo sempre criar caminhos novos e originais para resolver qualquer desafio cotidiano.</p>`,
-
+         videoID: "F8bg1CTQ9HI"
+    },
    
-    oscilantes: `<h4>Modo de Expressão: Oscilante (Sensibilidade e Adaptação)</h4>
+    oscilantes:{
+     conteudo: `<h4>Modo de Expressão: Oscilante (Sensibilidade e Adaptação)</h4>
                 <p>Seu comportamento é guiado por uma alta sensibilidade emocional, o que faz com que suas reações variem de acordo com o ambiente e as pessoas ao redor. Essa característica indica uma habilidade para captar nuances sutis, mas pode gerar indecisão em momentos de pressão. No dia a dia, você pode alternar entre grandes picos de energia e momentos de recolhimento, agindo muitas vezes movido pelo impulso ou pela necessidade de acolhimento.</p>`,
-
+         videoID: "F8bg1CTQ9HI"
+    },
   
-    neutro: `<h4>Modo de Expressão: Neutro (Equilíbrio e Observação)</h4>
-             <p>Você opera através da imparcialidade e da prudência, preferindo observar todos os lados de uma situação antes de se posicionar. Sua grande habilidade é manter o controle em meio ao caos, evitando conflitos desnecessários e agindo com um alto nível de confiança interna. Como alguém fácil de conviver e adaptar-se, você prioriza a harmonia e a segurança, raramente perdendo o equilíbrio ou saindo de sua zona de estabilidade.</p>`
-
+    neutro: {
+     conteudo:`<h4>Modo de Expressão: Neutro (Equilíbrio e Observação)</h4>
+             <p>Você opera através da imparcialidade e da prudência, preferindo observar todos os lados de uma situação antes de se posicionar. Sua grande habilidade é manter o controle em meio ao caos, evitando conflitos desnecessários e agindo com um alto nível de confiança interna. Como alguém fácil de conviver e adaptar-se, você prioriza a harmonia e a segurança, raramente perdendo o equilíbrio ou saindo de sua zona de estabilidade.</p>`,
+         videoID: "F8bg1CTQ9HI"
+    },
 
 },
 
