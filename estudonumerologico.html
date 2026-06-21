@@ -3073,6 +3073,7 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, negativasOriginal) {
         .replace(/\${expOriginal}/g, expOriginal)
         .replace(/\${expCasado}/g, expCasado);
     
+    const idVideoCasamento = "F8bg1CTQ9HI"; // Substitua pelo ID real
     // INÍCIO DO HTML
     let html = `
     <div class="page" style="page-break-before: always; padding: 20px;">
@@ -3140,7 +3141,11 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, negativasOriginal) {
             `).join('')}
         </div>`;
     }
-
+    html += renderizarBlocoComVideo(`
+        <div style="margin-top: 20px; text-align: center; color: #555; font-style: italic;">
+            <p>Assista ao vídeo explicativo sobre como a mudança de nome afeta sua energia:</p>
+        </div>
+    `, idVideoCasamento);
     html += `</div>`; // FECHA A PÁGINA
     return html;
 }
