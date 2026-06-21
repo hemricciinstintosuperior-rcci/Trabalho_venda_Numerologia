@@ -4093,7 +4093,7 @@ talentosEspeciais: {
     },
 },
  
-planosExpressao: {
+PlanosExpressao: {
     fisico: {
         forte: {
      conteudo:`<h4>Campo de Atuação: Físico (Execução e Realidade)</h4>
