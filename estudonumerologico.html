@@ -5819,6 +5819,16 @@ html += `
 const numHarmonicosRaw = obterNumerosHarmonicos(res.dia);
 const listaNums = numHarmonicosRaw.replace(' e ', ', ').split(',').map(n => n.trim());
 const idVideoHarmonicos = buscarVideoID("numerosHarmonicos", res.dia);
+
+
+let idVideoHarmonicos = null;
+if (typeof BibliotecaVideos !== 'undefined' && BibliotecaVideos.numerosHarmonicos) {
+    idVideoHarmonicos = BibliotecaVideos.numerosHarmonicos[reduzirPuro(res.dia)];
+    console.log("Teste Direto - ID encontrado:", idVideoHarmonicos);
+} else {
+    console.log("Teste Direto - BibliotecaVideos não carregou ou categoria errada.");
+}
+    
 tituloBonito = "Números Harmônicos";
 html += `
 <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
