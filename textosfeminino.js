@@ -934,7 +934,7 @@ personalidade: {
 },
 
 
-SeqNegVidaCasado: {
+SeqNegVidacasado: {
 
   1: `<p><strong>SEQUÊNCIA 111 – O DESAFIO DA INICIATIVA</strong></p>
 <p style="margin-bottom: 20px;">Esta sequência negativa não é apenas um evento passageiro, mas uma tendência vibracional que acompanha você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, ao longo de toda a sua jornada. Ela representa um obstáculo interno que exige vigilância constante: a tendência de ter sua chama de motivação abafada. Embora se manifeste com maior intensidade em ciclos específicos de sua pirâmide, esse desafio de superar a inatividade e a paralisia diante da vida é algo que você precisará trabalhar continuamente.</p>
