@@ -4863,7 +4863,7 @@ essencia: {
   }
  };
 
- window.bibliotecaVideos = {
+bibliotecaVideos : {
     "numerosHarmonicos": {
         "1": "z1nW3rmNeEI",
         "2": "z1nW3rmNeEI",
