@@ -3500,6 +3500,26 @@ function extrairDadosEquilibrio(dados) {
         };
     }
 }
+
+
+
+/**
+ * Renderiza um bloco de texto com um vídeo opcional abaixo.
+ * @param {string} htmlConteudo - O HTML do texto (parágrafos, títulos).
+ * @param {string|null} videoID - O ID do vídeo do YouTube (opcional).
+ */
+function renderizarBlocoComVideo(htmlConteudo, videoID = null) {
+    return `
+        <div class="bloco-conteudo-dinamico">
+            ${htmlConteudo}
+            ${videoID ? `<div class="container-video" style="margin-top: 20px;">${gerarPlayerYouTube(videoID)}</div>` : ""}
+        </div>
+    `;
+}
+
+
+
+
         
         
 function gerarMapaCompleto(generoAtual) {
@@ -4031,7 +4051,7 @@ html += `
 
 
 
-
+const idVideoEngenharia = "F8bg1CTQ9HI"; 
 
   tituloBonito = " A Engenharia da Vida";    
 html += `
@@ -4041,7 +4061,7 @@ html += `
     </div>
 </div>`;
     
-html += `
+html += renderizarBlocoComVideo( `
 <div class="estudo-numerologico-texto">
     <h3 style="text-align: center; color: #2c3e50; margin-bottom: 45px;">O Equilíbrio entre a Máquina e a Essência</h3>
 
@@ -4057,7 +4077,7 @@ html += `
 
     <p style="margin-bottom: 15px;">Ao entender que você é uma máquina magnífica, você para de agir por impulso e começa a operar com estratégia. A numerologia aponta os códigos e os melhores caminhos, mas é o conhecimento sobre sua própria anatomia — do sinal elétrico que move suas pernas à intuição que guia seus passos — que permite que você limpe as engrenagens, alimente o sistema e alcance o <strong>ápice da sua existência</strong>. É ciência, é lógica e é o seu projeto de vida funcionando em sua capacidade máxima.</p>
 </div>
-`;   
+`,idVideoEngenharia); 
 
 // --- PÁGINA 2: NOME SOCIAL (SE EXISTIR) ---
 // --- SEÇÃO: ORIGEM E CODIFICAÇÃO (COMPLETA E INTEGRADA) ---
