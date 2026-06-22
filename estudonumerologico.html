@@ -3500,115 +3500,68 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
     if (!novaAssinatura) return "";
 
     const assinaturaProc = tratarNomeParaCalculo(novaAssinatura);
-    let somaTotalAssinatura = 0;
+    
+    // Cálculos
+    let sV = 0, sC = 0;
     for (let l of assinaturaProc.toUpperCase()) {
-        somaTotalAssinatura += calcularValorLetra(l);
+        const val = calcularValorLetra(l);
+        if (vogais.includes(l)) sV += val; else sC += val;
     }
-    const expNova = calcularNumerologia(somaTotalAssinatura, true);
+    
+    const expNova = calcularNumerologia(sV + sC, true);
+    const motNova = calcularNumerologia(sV, true);
     const piramideNova = gerarPiramide(novaAssinatura);
     const negativasNova = detectarNegativas(piramideNova);
     
-    // Lógica de Comparação de Harmonia
     const qtdOriginal = negativasOriginal.detalhes ? negativasOriginal.detalhes.length : 0;
     const qtdNova = negativasNova.detalhes.length;
     
-    let diagnosticoHarmonia = "";
-    let estiloDiagnostico = "";
+    // Lógica visual de harmonia
+    let estiloDiagnostico = qtdNova <= qtdOriginal ? "border-color: #27ae60; background: #ebf9f1; color: #1e8449;" : "border-color: #e74c3c; background: #fdf2f2; color: #c0392b;";
+    let diagnostico = qtdNova <= qtdOriginal ? "Assinatura Harmônica" : "Assinatura com Atenção a Bloqueios";
 
-    if (qtdNova < qtdOriginal) {
-        estiloDiagnostico = "border-color: #27ae60; background: #ebf9f1; color: #1e8449;";
-        diagnosticoHarmonia = `
-            <strong>Assinatura Altamente Harmônica:</strong> Esta nova configuração está muito mais fluida que a original. 
-            A nova assinatura reduziu os bloqueios de ${qtdOriginal} para ${qtdNova}, favorecendo o fluxo de energia.`;
-    } else if (qtdNova > qtdOriginal) {
-        estiloDiagnostico = "border-color: #e74c3c; background: #fdf2f2; color: #c0392b;";
-        diagnosticoHarmonia = `
-            <strong>Atenção ao Fluxo:</strong> A nova assinatura apresenta um padrão mais denso. 
-            Houve um aumento de ${qtdOriginal} para ${qtdNova} sequências de bloqueio, o que exige cautela.`;
-    } else {
-        estiloDiagnostico = "border-color: #f1c40f; background: #fef9e7; color: #9a7d0a;";
-        diagnosticoHarmonia = `
-            <strong>Estabilidade de Frequência:</strong> A nova assinatura mantém o mesmo nível de complexidade (${qtdNova} sequências). 
-            É uma transição equilibrada, sem grandes alterações na carga de bloqueios.`;
-    }
+    // --- AQUI É O PULO DO GATO ---
+    // Como o seu script já carregou o arquivo, a variável 'textos' está disponível globalmente.
+    // Certifique-se de que seus arquivos JS (masc/fem) usem as mesmas chaves:
+    // textos.personalidade[num], textos.motivacao[num], textos.impressao[num], textos.SeqNegAssinatura[num]
 
-    // Você deverá ter um objeto de textos correspondente para novas assinaturas
-    const chave = `de_${expOriginal}_para_${expNova}`;
-    let textoTransicao = textos.TransicoesAssinatura[chave] || "Análise de ressonância da nova assinatura em processamento.";
-
-    textoTransicao = textoTransicao
-        .replace(/\${expOriginal}/g, expOriginal)
-        .replace(/\${expNova}/g, expNova);
-    
-    const idVideoAssinatura = "SEU_ID_DO_VIDEO_AQUI"; 
-
-    // Início do HTML
     let html = `
     <div class="page" style="page-break-before: always; padding: 20px;">
         <div class="separador-luxo">
             <div class="caixa-interna">
-                <h2>Análise de Nova Assinatura</h2>
+                <h2>Análise de Nova Assinatura: ${novaAssinatura}</h2>
             </div>
         </div>
 
-        <div class="intro-secao" style="margin-top: 20px; margin-bottom: 20px; text-align: justify; line-height: 1.4;">
-            <p>A assinatura é a marca que você imprime no mundo. Adotar uma nova grafia ou nome profissional é um gesto simbólico poderoso que altera sua vibração de expressão. Ao criar uma nova assinatura, você busca alinhar sua identidade pública com seus objetivos de vida, permitindo que a energia do seu nome vibre em ressonância com o que você deseja manifestar.</p>
-            <p>Esta análise avalia se a nova estrutura numérica da sua assinatura potencializa seus talentos ou se cria novos desafios de travamento na sua jornada.</p>
+        <div style="padding: 15px; border-left: 6px solid; margin-bottom: 25px; border-radius: 4px; ${estiloDiagnostico}">
+            <strong>${diagnostico}:</strong> Esta assinatura apresenta ${qtdNova} sequências de bloqueio.
         </div>
 
-        <div style="background: #fdfaf0; border-left: 5px solid #b8860b; padding: 20px; margin: 20px 0; border-radius: 4px;">
-            <h3 style="color: #827108; margin-top: 0;">Ressonância da Nova Identidade</h3>
-            <p style="line-height: 1.6; color: #333; font-size: 18px;">${aplicarFiltroTexto(textoTransicao)}</p>
-        </div>
-
-        <div style="padding: 15px; border-left: 6px solid; margin-bottom: 25px; border-radius: 4px; font-size: 16px; ${estiloDiagnostico}">
-            ${diagnosticoHarmonia}
+        <div>
+            ${textos.personalidade[expNova] || "Texto não disponível"}
+            <h4 style="margin-top: 20px;">Motivação Íntima:</h4>
+            <p>${textos.motivacao[motNova] || "Texto não disponível"}</p>
+            <h4 style="margin-top: 20px;">Impressão Externa:</h4>
+            <p>${textos.impressao[expNova] || "Texto não disponível"}</p>
         </div>
     `;
 
-    // Renderização da Pirâmide
-    html += `
-        <div class="container-piramide" style="margin-top: 30px; width: 100%; display: flex; flex-direction: column; align-items: center;">
-            <div class="piramide" style="display: table; margin: 0 auto; border-collapse: collapse;">`;
-
-    const letras = novaAssinatura.toUpperCase().replace(/\s+/g, '').split('');
-    html += `<div class="linha" style="display: flex; justify-content: center;">`;
-    letras.forEach(l => { 
-        html += `<div class="num-letra" style="color: #000E52; font-weight: 900; width: 16px; text-align: center; font-size: 16px;">${l}</div>`; 
-    });
-    html += `</div>`;
-
-    piramideNova.forEach((linha, i) => {
-        html += `<div class="linha" style="display: flex; justify-content: center;">`;
-        linha.forEach((n, j) => {
-            let classe = "num";
-            if (negativasNova.pos.some(p => p.l === i && p.c === j)) {
-                classe += " negativo"; 
-            }
-            html += `<div class="${classe}" style="width: 16px; text-align: center; font-size: 16px; display: inline-block;">${n}</div>`;
-        });
-        html += `</div>`;
-    });
-
-    html += `</div></div>`;
-
-    // Alertas de Bloqueio
+    // Renderização das Sequências Negativas (usando o seu dicionário de textos)
     if (negativasNova.detalhes.length > 0) {
         html += `
         <div style="margin-top: 30px; padding: 15px; border: 1px solid #ffcccc; background: #fff5f5; border-radius: 8px;">
-            <h3 style="color: red; margin-bottom: 10px;">⚠️ Observações sobre a Nova Assinatura</h3>
+            <h3 style="color: red; margin-bottom: 10px;">⚠️ Alerta de Bloqueios</h3>
             ${negativasNova.detalhes.map(neg => `
-                <div class="evitar-corte" style="margin-top: 20px; border-left: 4px solid red; padding-left: 15px;">
-                    <div class="texto-res">${aplicarFiltroTexto(textos.SeqNegAssinatura[neg.numero])}</div>
+                <div style="margin-top: 20px; border-left: 4px solid red; padding-left: 15px;">
+                    ${textos.SeqNegAssinatura[neg.numero] || "Alerta de sequência negativa específica."}
                 </div>
             `).join('')}
         </div>`;
     }
 
-    html += `</div>`; 
+    html += `</div>`;
     return html;
 }
-
         
         
 function gerarMapaCompleto(generoAtual) {
