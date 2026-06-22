@@ -3510,6 +3510,7 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
     
     const expNova = calcularNumerologia(sV + sC, true);
     const motNova = calcularNumerologia(sV, true);
+    const impNova = calcularNumerologia(sC, true),
     const piramideNova = gerarPiramide(novaAssinatura);
     const negativasNova = detectarNegativas(piramideNova);
     
@@ -3544,7 +3545,7 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
             <h4 style="margin-top: 20px;">Motivação Íntima:</h4>
             <p>${aplicarFiltroTexto(textos.motivacaoAssinatura[motNova] || "Texto não disponível")}</p>
             <h4 style="margin-top: 20px;">Impressão Externa:</h4>
-            <p>${aplicarFiltroTexto(textos.impressaoAssinatura[sCNova] || "Texto não disponível")}</p>
+            <p>${aplicarFiltroTexto(textos.impressaoAssinatura[impNova] || "Texto não disponível")}</p>
         </div>
     `;
 
