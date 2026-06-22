@@ -1225,11 +1225,8 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
         6: "<h3>Personalidade 6 - O Acolhimento e a Responsabilidade Técnica</h3><p>Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, ajusta sua vibração para o cuidado, a ética e a excelência. Você projeta a imagem de um profissional que se preocupa genuinamente com a qualidade e o resultado final.</p>",
         7: "<h3>Personalidade 7 - A Distinção da Sabedoria Técnica</h3><p>A assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> confere à sua carreira uma aura de especialização e autoridade. Você projeta um perfil criterioso, que prefere a precisão e a excelência técnica em detrimento de soluções rasas.</p>",
         8: "<h3>Personalidade 8 - A Autoridade da Realização Profissional</h3><p>Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta uma imagem poderosa de comando, sucesso corporativo e eficiência. Você é percebido como uma personalidade vencedora, focada em gerar prosperidade.</p>",
-        9: "<h3>Personalidade 9 - O Humanitarismo na Gestão</h3><p>A escolha desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta uma imagem de visão global, desprendimento e capacidade de liderança inspiradora, focada em metas de alto valor.</p>",
-        11: "<h3>Personalidade 11 - A Inspiração na Gestão Estratégica</h3><p>Ao utilizar <strong>MASCULINO-FEMININO-NEUTRO</strong>, você confere à sua carreira uma aura de magnetismo e intuição aguçada, sendo reconhecido como um líder visionário que antecipa tendências.</p>",
-        22: "<h3>Personalidade 22 - A Maestria da Concretização</h3><p>Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta uma imagem de competência técnica inquestionável e poder realizador, sinalizando um líder capaz de materializar grandes projetos.</p>",
-        33: "<h3>Personalidade 33 - O Mestre do Serviço e Evolução</h3><p>A assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> confere à sua carreira uma aura de alta maestria e propósito, destacando-o como o profissional que transforma desafios em soluções de excelência.</p>"
-    },
+        9: "<h3>Personalidade 9 - O Humanitarismo na Gestão</h3><p>A escolha desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta uma imagem de visão global, desprendimento e capacidade de liderança inspiradora, focada em metas de alto valor.</p>"
+},
 
     SeqNegAssinatura: {
         1: "<p><strong>SEQUÊNCIA 111 – O BLOQUEIO DA INICIATIVA</strong></p><p>Esta sequência sinaliza um obstáculo persistente na sua direção profissional: a tendência a ter seu impulso empreendedor abafado. Como uma marca na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong>, ela indica um risco de paralisia na tomada de decisões.</p>",
