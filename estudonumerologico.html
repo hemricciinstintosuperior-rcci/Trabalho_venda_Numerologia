@@ -3499,22 +3499,54 @@ function renderizarBlocoComVideo(htmlConteudo, videoID = null) {
 function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
     if (!novaAssinatura) return "";
 
-    const assinaturaProc = tratarNomeParaCalculo(novaAssinatura);
+    // 1. Usar a lógica robusta de cálculo cabalístico (igual a calcularNumerosSocial)
+    const tabelaBase = {
+        'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 8, 'G': 3, 'H': 5,
+        'I': 1, 'J': 1, 'K': 2, 'L': 3, 'M': 4, 'N': 5, 'O': 7, 'P': 8,
+        'Q': 1, 'R': 2, 'S': 3, 'T': 4, 'U': 6, 'V': 6, 'W': 6, 'X': 6,
+        'Y': 1, 'Z': 7
+    };
+    const vogais = "AEIOUYÁÉÍÓÚÂÊÎÔÛÃÕÀÈÌÒÙÄËÏÖÜ";
     
-    // Cálculos
-    let sV = 0, sC = 0;
-    for (let l of assinaturaProc.toUpperCase()) {
-        const val = calcularValorLetra(l);
-        if (vogais.includes(l)) sV += val; else sC += val;
+    let totalMotivacao = 0; // Soma das vogais cabalísticas
+    let totalInfluencia = 0; // Soma das consoantes cabalísticas
+    
+    for (let char of novaAssinatura.trim().toUpperCase()) {
+        if (char === " ") continue;
+        let base = char.normalize("NFD")[0];
+        if (tabelaBase[base]) {
+            let valorLetra = tabelaBase[base];
+            
+            // --- APLICAÇÃO DOS MODIFICADORES CABALÍSTICOS ---
+            if (/[ÁÉÍÓÚ]/.test(char)) valorLetra += 2;
+            if (/[ÃÕ]/.test(char)) valorLetra += 3;
+            if (/[ÂÊÎÔÛ]/.test(char)) valorLetra += 7;
+            if (char === "Ç") valorLetra += 3;
+            if (/[ÀÈÌÒÙÄËÏÖÜ]/.test(char)) valorLetra *= 2; 
+
+            if (vogais.includes(char)) totalMotivacao += valorLetra;
+            else totalInfluencia += valorLetra;
+        }
     }
-    
-    const expNova = calcularNumerologia(sV + sC, true);
-    const motNova = calcularNumerologia(sV, true);
-    const impNova = calcularNumerologia(sC, true);
+
+    // Função de redução (Mantendo Mestre 11/22)
+    const reduzir = (num) => {
+        while (num > 9 && num !== 11 && num !== 22) {
+            num = String(num).split('').reduce((a, b) => parseInt(a) + parseInt(b), 0);
+        }
+        return num;
+    };
+
+    const expNova = reduzir(totalMotivacao + totalInfluencia);
+    const motNova = reduzir(totalMotivacao);
+    const impNova = reduzir(totalInfluencia);
+
+    // --- RESTANTE DO CÓDIGO (Pirâmide e HTML) ---
     const piramideNova = gerarPiramide(novaAssinatura);
     const negativasNova = detectarNegativas(piramideNova);
-    
     const qtdNova = negativasNova.detalhes.length;
+    
+   
 
     // --- LOGICA DE CORES APERFEIÇOADA ---
     // Agora, se houver QUALQUER sequência negativa (qtdNova > 0), o box fica vermelho.
@@ -3708,7 +3740,7 @@ const res = {
     dia: dia,
      mesNascimento: mes, 
     motivacao: mot, // Já calculado com Mestre
-    influencia: calcularNumerologia(sC, false), // Influência aceita Mestre
+    influencia: calcularNumerologia(sC, true), // Influência aceita Mestre
     Personalidade: exp, // Já calculado com Mestre
     comportamento: calcularNumerologia(dia, false), // Comportamento reduz para 1-9
     CaminhodeVida: cvCalculado, // Já calculado com Mestre
