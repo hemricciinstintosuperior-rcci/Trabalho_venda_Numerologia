@@ -3513,18 +3513,20 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
     const piramideNova = gerarPiramide(novaAssinatura);
     const negativasNova = detectarNegativas(piramideNova);
     
-    const qtdOriginal = negativasOriginal.detalhes ? negativasOriginal.detalhes.length : 0;
     const qtdNova = negativasNova.detalhes.length;
+
+    // --- LOGICA DE CORES APERFEIÇOADA ---
+    // Agora, se houver QUALQUER sequência negativa (qtdNova > 0), o box fica vermelho.
+    // Se qtdNova for 0, fica verde (Harmônica).
+    let estiloDiagnostico = (qtdNova === 0) 
+        ? "border-color: #27ae60; background: #ebf9f1; color: #1e8449;" 
+        : "border-color: #e74c3c; background: #fdf2f2; color: #c0392b;";
     
-    // Lógica visual de harmonia
-    let estiloDiagnostico = qtdNova <= qtdOriginal ? "border-color: #27ae60; background: #ebf9f1; color: #1e8449;" : "border-color: #e74c3c; background: #fdf2f2; color: #c0392b;";
-    let diagnostico = qtdNova <= qtdOriginal ? "Assinatura Harmônica" : "Assinatura com Atenção a Bloqueios";
+    let diagnostico = (qtdNova === 0) 
+        ? "Assinatura Harmônica" 
+        : "Atenção: Assinatura com Bloqueios Detectados";
 
-    // --- AQUI É O PULO DO GATO ---
-    // Como o seu script já carregou o arquivo, a variável 'textos' está disponível globalmente.
-    // Certifique-se de que seus arquivos JS (masc/fem) usem as mesmas chaves:
-    // textos.personalidade[num], textos.motivacao[num], textos.impressao[num], textos.SeqNegAssinatura[num]
-
+    // --- MONTAGEM DO HTML COM FILTRO APLICADO ---
     let html = `
     <div class="page" style="page-break-before: always; padding: 20px;">
         <div class="separador-luxo">
@@ -3534,33 +3536,35 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
         </div>
 
         <div style="padding: 15px; border-left: 6px solid; margin-bottom: 25px; border-radius: 4px; ${estiloDiagnostico}">
-            <strong>${diagnostico}:</strong> Esta assinatura apresenta ${qtdNova} sequências de bloqueio.
+            <strong>${diagnostico}:</strong> Esta assinatura apresenta ${qtdNova} sequência(s) de bloqueio.
         </div>
 
         <div>
-            ${textos.personalidadeAssinatura[expNova] || "Texto não disponível"}
+            ${aplicarFiltroTexto(textos.personalidadeAssinatura[expNova] || "Texto não disponível")}
             <h4 style="margin-top: 20px;">Motivação Íntima:</h4>
-            <p>${textos.motivacaoAssinatura[motNova] || "Texto não disponível"}</p>
+            <p>${aplicarFiltroTexto(textos.motivacaoAssinatura[motNova] || "Texto não disponível")}</p>
             <h4 style="margin-top: 20px;">Impressão Externa:</h4>
-            <p>${textos.impressaoAssinatura[expNova] || "Texto não disponível"}</p>
+            <p>${aplicarFiltroTexto(textos.impressaoAssinatura[expNova] || "Texto não disponível")}</p>
         </div>
     `;
 
-    // Renderização das Sequências Negativas (usando o seu dicionário de textos)
+    // Renderização das Sequências Negativas
     if (negativasNova.detalhes.length > 0) {
         html += `
         <div style="margin-top: 30px; padding: 15px; border: 1px solid #ffcccc; background: #fff5f5; border-radius: 8px;">
             <h3 style="color: red; margin-bottom: 10px;">⚠️ Alerta de Bloqueios</h3>
             ${negativasNova.detalhes.map(neg => `
                 <div style="margin-top: 20px; border-left: 4px solid red; padding-left: 15px;">
-                    ${textos.SeqNegAssinatura[neg.numero] || "Alerta de sequência negativa específica."}
+                    ${aplicarFiltroTexto(textos.SeqNegAssinatura[neg.numero] || "Alerta de sequência negativa específica.")}
                 </div>
             `).join('')}
         </div>`;
     }
 
     html += `</div>`;
-    return html;
+    
+    // Retorna o HTML já filtrado globalmente
+    return html; 
 }
         
         
