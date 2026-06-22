@@ -3537,9 +3537,9 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
         return num;
     };
 
-    const expNova = reduzir(totalMotivacao + totalInfluencia);
-    const motNova = reduzir(totalMotivacao);
-    const impNova = reduzir(totalInfluencia);
+    const expNova = reduzirPuro(totalMotivacao + totalInfluencia);
+    const motNova = reduzirPuro(totalMotivacao);
+    const impNova = reduzirPuro(totalInfluencia);
 
     // --- RESTANTE DO CÓDIGO (Pirâmide e HTML) ---
     const piramideNova = gerarPiramide(novaAssinatura);
