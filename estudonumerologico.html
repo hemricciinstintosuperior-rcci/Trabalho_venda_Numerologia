@@ -3891,27 +3891,7 @@ const regenteVida = piramideVida.at(-1)[0];
 const dadosNegativas = detectarNegativas(piramideVida);
 // ... logo após o fechamento do objeto 'res' (linha 194 aproximadamente)
 
-// 1. Captura segura
-const campoAssinatura = document.getElementById("input_nova_assinatura");
-const novaAssinaturaInput = campoAssinatura ? campoAssinatura.value.trim() : "";
 
-let resNovaAssinatura = null;
-
-// 2. Usar a variável que você acabou de definir (novaAssinaturaInput)
-if (novaAssinaturaInput !== "") {
-    // Reutilizamos a lógica
-    resNovaAssinatura = {
-        nome: novaAssinaturaInput,
-        html: gerarNovaAssinatura(novaAssinaturaInput, res.Personalidade, detectarNegativas(gerarPiramide(nomeRaw)))
-    };
-}
-
-// 3. E para exibir no final (logo antes de dar o innerHTML no resultado):
-if (resNovaAssinatura) {
-    html += resNovaAssinatura.html;
-}
-
-// Agora você pode passar 'resNovaAssinatura' para a sua função de renderização final
 
 
 
@@ -5102,13 +5082,17 @@ const idVideonome = "F8bg1CTQ9HI";
     `,idVideonome); 
 }
 
-// Ajuste o ID para bater exatamente com o do seu HTML
-const novaAssinaturaInput = document.getElementById("input_nova_assinatura").value.trim(); 
 
-if (novaAssinaturaInput !== "") {
-    html += gerarNovaAssinatura(novaAssinaturaInput, exp, dadosNegativas);
+// --- BLOCO ÚNICO DE NOVA ASSINATURA ---
+// Apenas estas linhas bastam. Não repita nada disso em outro lugar.
+
+const campoAssinatura = document.getElementById("input_nova_assinatura");
+
+if (campoAssinatura && campoAssinatura.value.trim() !== "") {
+    // Chamamos a função e já concatenamos direto no seu 'html'
+    // Usamos 'exp' e 'dadosNegativas' que já estão calculados no seu mapa
+    html += gerarNovaAssinatura(campoAssinatura.value.trim(), exp, dadosNegativas);
 }
-    
 
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
