@@ -3891,16 +3891,24 @@ const regenteVida = piramideVida.at(-1)[0];
 const dadosNegativas = detectarNegativas(piramideVida);
 // ... logo após o fechamento do objeto 'res' (linha 194 aproximadamente)
 
-// Adicione esta lógica para Nova Assinatura
-const inputNovaAssinatura = document.getElementById("input_nova_assinatura") ? document.getElementById("input_nova_assinatura").value.trim() : "";
+// 1. Captura segura
+const campoAssinatura = document.getElementById("input_nova_assinatura");
+const novaAssinaturaInput = campoAssinatura ? campoAssinatura.value.trim() : "";
+
 let resNovaAssinatura = null;
 
-if (inputNovaAssinatura) {
-    // Reutilizamos a lógica que criamos na função anterior
+// 2. Usar a variável que você acabou de definir (novaAssinaturaInput)
+if (novaAssinaturaInput !== "") {
+    // Reutilizamos a lógica
     resNovaAssinatura = {
-        nome: inputNovaAssinatura,
-        html: gerarNovaAssinatura(inputNovaAssinatura, res.Personalidade, detectarNegativas(gerarPiramide(nomeRaw)))
+        nome: novaAssinaturaInput,
+        html: gerarNovaAssinatura(novaAssinaturaInput, res.Personalidade, detectarNegativas(gerarPiramide(nomeRaw)))
     };
+}
+
+// 3. E para exibir no final (logo antes de dar o innerHTML no resultado):
+if (resNovaAssinatura) {
+    html += resNovaAssinatura.html;
 }
 
 // Agora você pode passar 'resNovaAssinatura' para a sua função de renderização final
@@ -5094,11 +5102,10 @@ const idVideonome = "F8bg1CTQ9HI";
     `,idVideonome); 
 }
 
-// --- ADICIONE ESTE BLOCO PARA A NOVA ASSINATURA ---
-const novaAssinaturaInput = document.getElementById("novaAssinatura").value.trim(); // Ajuste o ID conforme o seu HTML
+// Ajuste o ID para bater exatamente com o do seu HTML
+const novaAssinaturaInput = document.getElementById("input_nova_assinatura").value.trim(); 
 
 if (novaAssinaturaInput !== "") {
-    // Aqui passamos a assinatura, a Expressão Original (exp) e o objeto de negativas originais
     html += gerarNovaAssinatura(novaAssinaturaInput, exp, dadosNegativas);
 }
     
