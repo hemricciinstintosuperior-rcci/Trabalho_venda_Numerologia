@@ -1185,135 +1185,64 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
 },
 
 
-motivacaoAssinatura: {
-        1: "A sua motivação fundamental com esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o impulso irrefreável pela autonomia e o desejo de assumir o comando de projetos, posicionando-se como um líder de vanguarda no mercado.",
-        2: "Com esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua motivação profissional é o estabelecimento de parcerias estratégicas, buscando a diplomacia e a cooperação para atingir objetivos de alta performance.",
-        3: "A motivação desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o desejo de expandir sua influência através da comunicação, utilizando sua criatividade e carisma como ferramentas essenciais para o destaque profissional.",
-        4: "A sua motivação com o nome <strong>MASCULINO-FEMININO-NEUTRO</strong> é a busca por solidez e resultados concretos, focando na construção de uma trajetória profissional pautada pela organização, método e segurança material.",
-        5: "A motivação desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a busca pela inovação e pela expansão de horizontes, exigindo um ambiente profissional dinâmico onde você possa exercer sua versatilidade e superar desafios constantes.",
-        6: "Sua motivação profissional com <strong>MASCULINO-FEMININO-NEUTRO</strong> é o compromisso com a excelência e o serviço, buscando atuar em funções onde possa ser a referência de qualidade e o pilar de sustentação do seu setor.",
-        7: "A motivação desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a especialização técnica e o domínio de conhecimentos profundos, buscando reconhecimento pela sua competência intelectual e precisão analítica.",
-        8: "Sua motivação com esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a conquista de metas de grande escala, focando na gestão de recursos, autoridade corporativa e na manifestação direta do sucesso e prosperidade.",
-        9: "A motivação maior desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o exercício de uma liderança inspiradora e humanizada, buscando carreiras que permitam causar um impacto positivo e significativo no seu campo de atuação.",
-        11: "A sua motivação com <strong>MASCULINO-FEMININO-NEUTRO</strong> revela uma mente visionária, que busca cargos estratégicos onde sua intuição e capacidade de antecipar tendências possam servir como guia para resultados grandiosos.",
-        22: "Sua assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> denota uma ambição monumental: construir legados duradouros, unindo a visão de um mestre estrategista com a capacidade de colocar grandes estruturas em pleno funcionamento.",
-        33: "A sua motivação nesta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, representa a maestria na resolução de conflitos e o chamado para carreiras de alto nível que exijam sabedoria, proteção e uma visão de serviço de grande escala."
+
+    motivacaoAssinatura: {
+        1: "A sua motivação fundamental com esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o impulso de assumir o comando e consolidar sua individualidade como um líder nato no mercado.",
+        2: "Ao utilizar esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua motivação é o estabelecimento de alianças estratégicas, buscando a diplomacia como forma de expandir sua influência profissional.",
+        3: "A motivação desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o desejo de expandir seu alcance profissional através de uma comunicação persuasiva e carismática.",
+        4: "Sua motivação com esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a construção de uma base sólida e inabalável para sua carreira, focando em métodos, disciplina e resultados concretos.",
+        5: "A motivação desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a busca pela inovação e pela liberdade de atuação, exigindo ambientes que desafiem sua versatilidade e capacidade de adaptação.",
+        6: "A motivação desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o compromisso com a excelência técnica e o serviço, buscando ser a referência de qualidade no seu campo de atuação.",
+        7: "Sua motivação com esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é o domínio profundo e especializado, buscando ser reconhecido pela sua precisão analítica e autoridade intelectual.",
+        8: "A motivação desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a conquista de metas de grande escala, focando na autoridade executiva e na prosperidade material.",
+        9: "Com esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua motivação é exercer uma liderança inspiradora, focada em deixar um legado profissional duradouro no mercado.",
+        11: "Sua motivação nesta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, revela um perfil visionário, voltado para cargos estratégicos que exigem antecipação de tendências e visão de longo prazo.",
+        22: "Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, impulsiona uma ambição monumental de construir estruturas grandiosas, unindo visão estratégica à capacidade prática de execução.",
+        33: "A motivação desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a maestria na resolução de problemas complexos, agindo como um mentor que eleva o padrão de todo o seu setor."
     },
+
     impressaoAssinatura: {
-        1: "O mercado percebe em você, ao assinar <strong>MASCULINO-FEMININO-NEUTRO</strong>, um profissional de iniciativa, que não aguarda diretrizes para tomar a frente e implementar soluções com vigor.",
-        2: "A imagem profissional projetada por <strong>MASCULINO-FEMININO-NEUTRO</strong> é a de um articulador estratégico, visto como um colaborador indispensável por sua capacidade de mediar e equilibrar interesses.",
-        3: "Sua presença profissional com <strong>MASCULINO-FEMININO-NEUTRO</strong> transmite entusiasmo e inteligência rápida, sendo reconhecido como o profissional que traz energia e renovação para qualquer equipe ou projeto.",
-        4: "A imagem que você transmite ao assinar <strong>MASCULINO-FEMININO-NEUTRO</strong> é de absoluta confiança e solidez. O mercado te vê como um profissional de ferro, pautado pela ética, pontualidade e execução impecável.",
-        5: "Sua primeira impressão com <strong>MASCULINO-FEMININO-NEUTRO</strong> é a de um profissional magnético e moderno, capaz de se adaptar a qualquer mudança de cenário com agilidade e destreza técnica.",
-        6: "Ao assinar <strong>MASCULINO-FEMININO-NEUTRO</strong>, você projeta a imagem de uma autoridade confiável, sendo visto como o profissional que assume a responsabilidade e zela pela qualidade final do trabalho.",
-        7: "Sua aparência profissional com <strong>MASCULINO-FEMININO-NEUTRO</strong> é a de um especialista. O mercado percebe alguém analítico, reservado e dono de uma competência técnica acima da média.",
-        8: "A assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> transmite força, controle e comando. O meio corporativo te enxerga como uma liderança de resultados, focada no crescimento e na prosperidade.",
-        9: "A imagem que você projeta com <strong>MASCULINO-FEMININO-NEUTRO</strong> é a de um profissional com visão de longo prazo, generoso em conhecimentos e capaz de liderar equipes com foco no objetivo comum.",
-        11: "Ao usar <strong>MASCULINO-FEMININO-NEUTRO</strong>, você transmite a imagem de um profissional visionário e inspirador, alguém que capta o que o mercado precisa antes que se torne óbvio.",
-        22: "A primeira impressão com <strong>MASCULINO-FEMININO-NEUTRO</strong> é a de um 'mestre construtor'. Você é visto como alguém capaz de realizar empreendimentos complexos com competência e escala.",
-        33: "Sua imagem com <strong>MASCULINO-FEMININO-NEUTRO</strong> transmite uma energia de sabedoria prática e acolhimento estratégico, sendo reconhecido como um guia profissional capaz de elevar o padrão de qualquer ambiente."
+        1: "Ao utilizar esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você projeta uma imagem de pioneirismo, vigor e prontidão para assumir qualquer desafio profissional.",
+        2: "Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta uma imagem de articulador estratégico, visto como um colaborador indispensável por sua capacidade de mediar e equilibrar interesses.",
+        3: "Com esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você transmite entusiasmo e inteligência rápida, sendo reconhecido como o profissional que traz energia para qualquer projeto.",
+        4: "Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta seriedade e disciplina absoluta, transmitindo confiança inabalável na entrega de resultados.",
+        5: "Ao usar esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você projeta a imagem de um profissional magnético e moderno, capaz de se adaptar com agilidade a qualquer cenário.",
+        6: "Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta uma autoridade confiável, sendo visto como o profissional que assume a responsabilidade final pela qualidade do trabalho.",
+        7: "Com esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você projeta uma imagem de especialista. O mercado enxerga alguém analítico e dono de um conhecimento técnico superior.",
+        8: "Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, transmite força e comando, posicionando você como uma liderança de resultados focada no crescimento e na prosperidade.",
+        9: "Ao assinar <strong>MASCULINO-FEMININO-NEUTRO</strong>, você projeta uma imagem de profissional com visão global, capaz de liderar equipes com foco em propósitos superiores.",
+        11: "Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta a imagem de um profissional visionário, alguém que percebe oportunidades antes do mercado.",
+        22: "Ao grafar <strong>MASCULINO-FEMININO-NEUTRO</strong>, você projeta a imagem de um 'mestre construtor', alguém capaz de tirar grandes empreendimentos do papel com competência.",
+        33: "Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, transmite uma energia de sabedoria prática e liderança estratégica, sendo visto como um guia para a excelência."
     },
-     
-personalidadeAssinatura: {
-    1: `<h3>Personalidade 1 - O Impacto do Pioneirismo Profissional</h3>
-    <p style="margin-bottom: 20px;">Ao adotar o nome <strong>MASCULINO-FEMININO-NEUTRO</strong>, você firma uma assinatura de autoridade e liderança. Este nome atua como um selo de comando, indicando ao mercado que você é um profissional de iniciativa, que não hesita em abrir novas frentes e possui a audácia necessária para liderar projetos desafiadores.</p>
-    <p style="margin-bottom: 20px;">A vibração desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta uma imagem de alguém resolutivo e direto. É um nome que inspira respeito em cargos de gestão e consolida sua reputação como alguém que encara os obstáculos do trabalho de frente, com total autonomia.</p>
-    <p style="margin-bottom: 20px;">O impacto desta escolha é o progresso acelerado. Através deste nome, você é reconhecido como uma força motriz, estabelecendo uma trajetória marcada pela independência e pela alta capacidade de entrega técnica.</p>`,
 
-    2: `<h3>Personalidade 2 - A Diplomacia da Eficiência Profissional</h3>
-    <p style="margin-bottom: 20px;">O nome <strong>MASCULINO-FEMININO-NEUTRO</strong> ajusta sua frequência para a articulação e a cooperação estratégica. Esta assinatura projeta a imagem de um profissional equilibrado, capaz de mediar conflitos e construir alianças, tornando você uma peça-chave na engrenagem de qualquer grande projeto.</p>
-    <p style="margin-bottom: 20px;">Através de <strong>MASCULINO-FEMININO-NEUTRO</strong>, o mercado te enxerga como o parceiro ideal para negociações e gestão de equipes. É uma vibração que facilita o fechamento de acordos e atrai a confiança pela sua discrição, tato e habilidade em manter a harmonia operacional.</p>
-    <p style="margin-bottom: 20px;">O reflexo desta escolha é a união de forças. Este nome é um convite à colaboração, construindo bases de trabalho sólidas fundamentadas no respeito mútuo e na eficácia coletiva.</p>`,
+    personalidadeAssinatura: {
+        1: "<h3>Personalidade 1 - O Impacto do Pioneirismo Profissional</h3><p>Ao utilizar esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você estabelece um padrão de autoridade e liderança. Esta rubrica atua como um selo de comando, sinalizando que você é um profissional de iniciativa, que não hesita em abrir novas frentes e possui audácia para liderar projetos desafiadores.</p>",
+        2: "<h3>Personalidade 2 - A Diplomacia da Eficiência Profissional</h3><p>Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta a imagem de um articulador estratégico. Você é visto como alguém capaz de mediar conflitos e construir alianças, tornando-se peça-chave em qualquer grande empreendimento.</p>",
+        3: "<h3>Personalidade 3 - O Brilho da Expressão no Trabalho</h3><p>Ao grafar <strong>MASCULINO-FEMININO-NEUTRO</strong>, você potencializa seu magnetismo profissional. Esta rubrica projeta uma imagem de vitalidade, atraindo oportunidades através de uma comunicação fluida, inovadora e contagiante.</p>",
+        4: "<h3>Personalidade 4 - A Segurança da Estrutura Profissional</h3><p>Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, confere à sua marca profissional uma aura de solidez, seriedade e competência absoluta. Você é visto como um pilar de sustentação, pautado pela disciplina e entrega rigorosa.</p>",
+        5: "<h3>Personalidade 5 - A Dinâmica da Evolução Profissional</h3><p>Adotar esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta uma imagem de modernidade, versatilidade e rápida adaptação. Você sinaliza ao mercado que está à frente do seu tempo e pronto para impulsionar inovações com agilidade.</p>",
+        6: "<h3>Personalidade 6 - O Acolhimento e a Responsabilidade Técnica</h3><p>Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, ajusta sua vibração para o cuidado, a ética e a excelência. Você projeta a imagem de um profissional que se preocupa genuinamente com a qualidade e o resultado final.</p>",
+        7: "<h3>Personalidade 7 - A Distinção da Sabedoria Técnica</h3><p>A assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> confere à sua carreira uma aura de especialização e autoridade. Você projeta um perfil criterioso, que prefere a precisão e a excelência técnica em detrimento de soluções rasas.</p>",
+        8: "<h3>Personalidade 8 - A Autoridade da Realização Profissional</h3><p>Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta uma imagem poderosa de comando, sucesso corporativo e eficiência. Você é percebido como uma personalidade vencedora, focada em gerar prosperidade.</p>",
+        9: "<h3>Personalidade 9 - O Humanitarismo na Gestão</h3><p>A escolha desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta uma imagem de visão global, desprendimento e capacidade de liderança inspiradora, focada em metas de alto valor.</p>",
+        11: "<h3>Personalidade 11 - A Inspiração na Gestão Estratégica</h3><p>Ao utilizar <strong>MASCULINO-FEMININO-NEUTRO</strong>, você confere à sua carreira uma aura de magnetismo e intuição aguçada, sendo reconhecido como um líder visionário que antecipa tendências.</p>",
+        22: "<h3>Personalidade 22 - A Maestria da Concretização</h3><p>Esta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, projeta uma imagem de competência técnica inquestionável e poder realizador, sinalizando um líder capaz de materializar grandes projetos.</p>",
+        33: "<h3>Personalidade 33 - O Mestre do Serviço e Evolução</h3><p>A assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> confere à sua carreira uma aura de alta maestria e propósito, destacando-o como o profissional que transforma desafios em soluções de excelência.</p>"
+    },
 
-    3: `<h3>Personalidade 3 - O Brilho da Expressão no Trabalho</h3>
-    <p style="margin-bottom: 20px;">A escolha do nome <strong>MASCULINO-FEMININO-NEUTRO</strong> potencializa seu carisma e magnetismo profissional. Esta assinatura projeta uma imagem de vitalidade, agindo como um farol que atrai oportunidades através de uma comunicação fluida, inovadora e contagiante.</p>
-    <p style="margin-bottom: 20px;">A vibração desta assinatura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, faz com que você seja visto como um profissional entusiasmado e criativo, capaz de vender ideias e liderar através da palavra, garantindo seu destaque em qualquer círculo corporativo.</p>
-    <p style="margin-bottom: 20px;">O impacto desta escolha é a expansão de carreira. Você transforma o ambiente profissional ao redor, provando que o entusiasmo e a inteligência rápida são ferramentas vitais para o sucesso e o alcance de metas ambiciosas.</p>`,
+    SeqNegAssinatura: {
+        1: "<p><strong>SEQUÊNCIA 111 – O BLOQUEIO DA INICIATIVA</strong></p><p>Esta sequência sinaliza um obstáculo persistente na sua direção profissional: a tendência a ter seu impulso empreendedor abafado. Como uma marca na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong>, ela indica um risco de paralisia na tomada de decisões.</p>",
+        2: "<p><strong>SEQUÊNCIA 222 – A VULNERABILIDADE NA CARREIRA</strong></p><p>Na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong>, esta sequência sugere uma tendência a se anular diante de hierarquias, perdendo a autonomia necessária para o crescimento profissional.</p>",
+        3: "<p><strong>SEQUÊNCIA 333 – O BLOQUEIO NA ARTICULAÇÃO</strong></p><p>Esta sequência na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> aponta um desafio na sua capacidade de ser valorizado por suas ideias, dificultando sua visibilidade no trabalho.</p>",
+        4: "<p><strong>SEQUÊNCIA 444 – A OBSTRUÇÃO DA ESTABILIDADE</strong></p><p>Esta configuração na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> indica obstáculos que testam sua resiliência, exigindo foco redobrado para evitar a estagnação produtiva.</p>",
+        5: "<p><strong>SEQUÊNCIA 555 – A INSTABILIDADE NA DIREÇÃO</strong></p><p>A marca desta sequência em <strong>MASCULINO-FEMININO-NEUTRO</strong> é a volatilidade. Mudanças inesperadas de função ou empresa podem atrapalhar seu crescimento contínuo.</p>",
+        6: "<p><strong>SEQUÊNCIA 666 – O BLOQUEIO NA GESTÃO DE RESPONSABILIDADES</strong></p><p>Esta sequência na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> indica que demandas externas podem tirar seu foco dos objetivos de carreira, travando sua ascensão.</p>",
+        7: "<p><strong>SEQUÊNCIA 777 – O ISOLAMENTO TÉCNICO</strong></p><p>Esta vibração em <strong>MASCULINO-FEMININO-NEUTRO</strong> gera um excesso de reserva que pode limitar sua visibilidade e fechar portas estratégicas no ambiente corporativo.</p>",
+        8: "<p><strong>SEQUÊNCIA 888 – O TESTE DA LIDERANÇA E PATRIMÔNIO</strong></p><p>Esta sequência na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> impõe um teste constante sobre sua capacidade de comando, exigindo controle férreo sobre decisões estratégicas.</p>",
+        9: "<p><strong>SEQUÊNCIA 999 – A ESTAGNAÇÃO PROFISSIONAL</strong></p><p>Na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong>, esta sequência indica ciclos onde o resultado parece fugir das mãos, travando sua ascensão profissional.</p>"
+    },
 
-    4: `<h3>Personalidade 4 - A Segurança da Estrutura Profissional</h3>
-    <p style="margin-bottom: 20px;">O nome <strong>MASCULINO-FEMININO-NEUTRO</strong> confere à sua marca profissional uma aura de solidez, seriedade e competência absoluta. Esta assinatura projeta alguém que valoriza a metodologia, a ética e o cumprimento de prazos, passando a segurança de que qualquer projeto sob sua tutela estará impecável.</p>
-    <p style="margin-bottom: 20px;">Ao usar este nome, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a empresa te enxerga como um pilar de sustentação. É uma vibração que impõe autoridade pela disciplina e pelo trabalho rigoroso, fazendo de você o profissional mais indicado para gerir processos que exigem precisão e responsabilidade.</p>
-    <p style="margin-bottom: 20px;">O reflexo desta escolha é a estabilidade de carreira. Este nome consolida uma reputação de integridade inatacável, onde sua palavra é garantia de execução e entrega de qualidade.</p>`,
-
-    5: `<h3>Personalidade 5 - A Dinâmica da Evolução Profissional</h3>
-    <p style="margin-bottom: 20px;">Adotar o nome <strong>MASCULINO-FEMININO-NEUTRO</strong> projeta uma imagem de modernidade, versatilidade e rápida adaptação. Esta assinatura sinaliza ao mercado que você é um profissional desimpedido, à frente do seu tempo e pronto para impulsionar mudanças e inovações com agilidade.</p>
-    <p style="margin-bottom: 20px;">A vibração de <strong>MASCULINO-FEMININO-NEUTRO</strong> atrai a atenção pela coragem de aplicar novas tecnologias e métodos. Você é visto como alguém magnético, que desafia processos obsoletos e traz frescor para setores que precisam de renovação estratégica.</p>
-    <p style="margin-bottom: 20px;">O impacto desta escolha é a evolução contínua. Este nome funciona como um motor de transformação, consolidando sua imagem como o profissional que conecta o presente às futuras possibilidades de lucro e sucesso.</p>`,
-
-    6: `<h3>Personalidade 6 - O Acolhimento e a Responsabilidade Técnica</h3>
-    <p style="margin-bottom: 20px;">O nome <strong>MASCULINO-FEMININO-NEUTRO</strong> ajusta sua vibração para o cuidado, a ética e a excelência. Esta assinatura projeta a imagem de um profissional que se preocupa genuinamente com a qualidade e com o resultado final, sendo o porto seguro para qualquer equipe.</p>
-    <p style="margin-bottom: 20px;">Através de <strong>MASCULINO-FEMININO-NEUTRO</strong>, a empresa encontra em você a segurança técnica e a responsabilidade. É uma vibração que embeleza a produção e atrai projetos que exigem alguém capaz de coordenar e harmonizar todos os processos com um olhar de mestre.</p>
-    <p style="margin-bottom: 20px;">O reflexo desta escolha é a reputação de alta qualidade. Este nome consolida sua marca como um profissional leal e dedicado, cuja presença é sinônimo de sucesso e ordem operacional.</p>`,
-
-    7: `<h3>Personalidade 7 - A Distinção da Sabedoria Técnica</h3>
-    <p style="margin-bottom: 20px;">A assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> confere à sua carreira uma aura de especialização, análise e autoridade. Este nome projeta um perfil culto e criterioso, que prefere a precisão, a observação detalhada e a excelência técnica em detrimento de soluções rasas.</p>
-    <p style="margin-bottom: 20px;">Ao assinar <strong>MASCULINO-FEMININO-NEUTRO</strong>, você emana a dignidade de quem domina profundamente sua área. O mercado te enxerga como um especialista sênior, alguém que detém o conhecimento necessário para resolver problemas complexos onde outros falham.</p>
-    <p style="margin-bottom: 20px;">O impacto desta escolha é o reconhecimento pela excelência. Este nome atrai demandas de alta complexidade, consolidando sua carreira através da autoridade pelo saber e da busca incessante pelo resultado impecável.</p>`,
-
-    8: `<h3>Personalidade 8 - A Autoridade da Realização Profissional</h3>
-    <p style="margin-bottom: 20px;">O nome <strong>MASCULINO-FEMININO-NEUTRO</strong> projeta uma imagem poderosa de comando, sucesso corporativo e eficiência. Esta assinatura atua como um símbolo de força, sinalizando que você possui visão estratégica e pragmatismo necessários para atingir metas de alto nível.</p>
-    <p style="margin-bottom: 20px;">Através de <strong>MASCULINO-FEMININO-NEUTRO</strong>, você é percebido como uma personalidade vencedora e extremamente focada. É uma vibração que atrai responsabilidades de diretoria e grandes negócios, transmitindo a confiança de quem nasceu para organizar a realidade e gerar lucros.</p>
-    <p style="margin-bottom: 20px;">O reflexo desta escolha é a vitória material. Este nome consolida sua trajetória como uma força realizadora, capaz de transformar grandes estratégias em resultados tangíveis, prósperos e duradouros.</p>`,
-
-    9: `<h3>Personalidade 9 - O Humanitarismo na Gestão</h3>
-    <p style="margin-bottom: 20px;">A escolha do nome <strong>MASCULINO-FEMININO-NEUTRO</strong> projeta uma imagem de visão global, desprendimento e capacidade de liderança inspiradora. Esta assinatura sinaliza alguém que possui a compreensão macro dos negócios e que atua com uma visão ética que transcende o ganho imediato.</p>
-    <p style="margin-bottom: 20px;">A vibração de <strong>MASCULINO-FEMININO-NEUTRO</strong> atrai clientes e liderados que buscam em sua experiência uma direção correta. Você é visto como uma mente sábia e carismática, capaz de conduzir projetos complexos com foco no benefício maior e na sustentabilidade do resultado.</p>
-    <p style="margin-bottom: 20px;">O impacto desta assinatura é a transformação do setor. Através deste nome, você deixa um legado de retidão e sucesso, consolidando uma carreira pautada pelo alto valor e pela autoridade inspiradora.</p>`,
-
-    11: `<h3>Personalidade 11 - A Inspiração na Gestão Estratégica</h3>
-    <p style="margin-bottom: 20px;">O nome <strong>MASCULINO-FEMININO-NEUTRO</strong> confere à sua carreira uma aura de magnetismo e intuição aguçada. Esta assinatura projeta o perfil do líder visionário, aquele que antecipa tendências e percebe oportunidades que passam despercebidas pela maioria.</p>
-    <p style="margin-bottom: 20px;">Através de <strong>MASCULINO-FEMININO-NEUTRO</strong>, você é percebido como uma inteligência disruptiva. É uma vibração que desperta o interesse de investidores e parceiros estratégicos, tornando sua atuação profissional um sinônimo de progresso e inovação constante.</p>
-    <p style="margin-bottom: 20px;">O impacto desta escolha é o despertar para o novo. Este nome consolida sua imagem como um canal de ideias inovadoras, agindo como uma referência de luz e percepção no ambiente de trabalho.</p>`,
-
-    22: `<h3>Personalidade 22 - A Maestria da Concretização</h3>
-    <p style="margin-bottom: 20px;">Adotar o nome <strong>MASCULINO-FEMININO-NEUTRO</strong> projeta uma imagem de competência técnica inquestionável e poder realizador. Esta assinatura sinaliza o "mestre construtor", capaz de unir grandes sonhos e visões ambiciosas à capacidade prática de executá-los com perfeição.</p>
-    <p style="margin-bottom: 20px;">Ao usar <strong>MASCULINO-FEMININO-NEUTRO</strong>, o mercado vê em você a força de vontade capaz de materializar projetos monumentais. É uma vibração que organiza grandes recursos, lidera operações complexas e transmite a segurança absoluta de que sob sua guarda o sucesso é inevitável.</p>
-    <p style="margin-bottom: 20px;">O reflexo desta escolha é a magnitude profissional. Este nome consolida uma reputação de prestígio baseada na grandiosidade e na eficácia real das estruturas que você edifica.</p>`,
-
-    33: `<h3>Personalidade 33 - A Maestria do Serviço e Evolução no Trabalho</h3>
-    <p style="margin-bottom: 20px;">O nome <strong>MASCULINO-FEMININO-NEUTRO</strong> confere à sua carreira uma aura de alta maestria e propósito superior. Esta assinatura projeta a imagem do líder que educa e protege, alguém que atua movido por um senso de responsabilidade em elevar o padrão de tudo o que toca.</p>
-    <p style="margin-bottom: 20px;">Ao adotar <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atrai responsabilidades de alto nível, pois sua presença transmite paz e sabedoria estratégica. É uma vibração que capacita pessoas e melhora processos, tornando você uma referência incontestável de integridade e inteligência.</p>
-    <p style="margin-bottom: 20px;">O impacto desta escolha é a elevação do ambiente de trabalho. Através deste nome, você é reconhecido como o profissional que transforma desafios em soluções e conduz o time rumo à excelência.</p>`
-},
-
-SeqNegAssinatura: {
-  1: `<p><strong>SEQUÊNCIA 111 – O BLOQUEIO DA INICIATIVA PROFISSIONAL</strong></p>
-<p>Esta sequência negativa sinaliza um obstáculo persistente na sua direção de carreira: a tendência a ter seu impulso empreendedor abafado. Como uma marca vitalícia na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong>, ela indica um risco de paralisia profissional ou desânimo recorrente diante das metas.</p>
-<p>A sensação de que sua coragem para liderar dá lugar à inércia pode sabotar suas oportunidades. O seu desafio é transmutar essa energia para evitar que bloqueios de autoridade se tornem padrões, e assim retomar o controle sobre a sua ascensão no trabalho.</p>`,
-
-  2: `<p><strong>SEQUÊNCIA 222 – A VULNERABILIDADE NA CARREIRA</strong></p>
-<p>A vibração 222 na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> atua como um fator que pode fragilizar sua posição no mercado. Ela sugere uma tendência a se anular diante de superiores ou a permitir que a opinião alheia dite o seu caminho profissional, perdendo a autonomia de suas decisões.</p>
-<p>Para não se tornar um profissional dependente emocionalmente das diretrizes de terceiros, é essencial fortalecer seu autovalor. O seu desafio é assumir o comando de sua jornada, blindando sua identidade contra as expectativas externas que tentam desviar o seu propósito.</p>`,
-
-  3: `<p><strong>SEQUÊNCIA 333 – O BLOQUEIO NA ARTICULAÇÃO E COMUNICAÇÃO</strong></p>
-<p>Na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong>, esta sequência aponta um desafio real em sua capacidade de ser ouvido ou valorizado. A frustração por mal-entendidos pode limitar sua visibilidade no trabalho, fazendo com que suas ideias fiquem presas e não cheguem a quem decide.</p>
-<p>É fundamental que você desenvolva clareza na exposição de seus projetos. Ao não se permitir silenciar, você rompe a barreira que essa vibração impõe, transformando o isolamento criativo em uma poderosa capacidade de influência e negociação.</p>`,
-
-  4: `<p><strong>SEQUÊNCIA 444 – A OBSTRUÇÃO DA ESTABILIDADE PROFISSIONAL</strong></p>
-<p>Esta configuração na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> indica obstáculos que testam sua resiliência na construção de resultados. O sucesso pode parecer custar dobrado, e a segurança financeira pode estar sob constante prova, o que exige foco redobrado na organização.</p>
-<p>Essa pressão profissional não é um mero azar, mas um chamado para a maestria. Combata a ansiedade com uma disciplina férrea. Ao manter a ética e a fé em seu valor produtivo, você transforma essas provações nos pilares de uma prosperidade que não poderá ser abalada.</p>`,
-
-  5: `<p><strong>SEQUÊNCIA 555 – A INSTABILIDADE NA DIREÇÃO DE CARREIRA</strong></p>
-<p>A marca desta sequência em <strong>MASCULINO-FEMININO-NEUTRO</strong> é a volatilidade. Mudanças inesperadas de função, setor ou empresa podem atrapalhar seu crescimento contínuo. O desafio maior é não permitir que essa instabilidade desgaste seu comprometimento profissional.</p>
-<p>Você precisa direcionar sua inquietude para a inovação, em vez de permitir que ela cause dispersão. Ao estabilizar sua base interna e seu foco, as mudanças externas deixam de ser uma ameaça e passam a ser oportunidades reais para o seu upgrade profissional.</p>`,
-
-  6: `<p><strong>SEQUÊNCIA 666 – O BLOQUEIO NA GESTÃO DOS AFETOS E RESPONSABILIDADES</strong></p>
-<p>Na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong>, esta sequência negativa aponta que o peso emocional e as expectativas frustradas podem tirar o seu foco dos objetivos de carreira. O sentimento de estar sobrecarregado por demandas que não são suas pode travar sua ascensão.</p>
-<p>É vital que você pare de buscar validação total no outro para se sentir profissionalmente apto. Ao fortalecer sua autoridade e priorizar o seu projeto de vida, você retira o poder que as falhas alheias têm de desestruturar sua rotina de trabalho.</p>`,
-
-  7: `<p><strong>SEQUÊNCIA 777 – O ISOLAMENTO TÉCNICO E O BLOQUEIO DE VISÃO</strong></p>
-<p>Sob esta vibração em <strong>MASCULINO-FEMININO-NEUTRO</strong>, você carrega uma tendência ao excesso de reserva que pode limitar sua ascensão. A necessidade de isolamento como forma de proteção pode ser mal interpretada no ambiente corporativo, fechando portas que deveriam estar abertas.</p>
-<p>O desafio é vencer o medo de se expor e a intolerância com os processos alheios. Ao abrir sua mente e compartilhar sua visão técnica com coragem, você neutraliza esse isolamento e encontra a verdadeira conexão que garante o seu sucesso e a sua liderança.</p>`,
-
-  8: `<p><strong>SEQUÊNCIA 888 – O TESTE DA LIDERANÇA E DO PATRIMÔNIO</strong></p>
-<p>Esta sequência na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong> impõe um teste constante sobre sua capacidade de comando. Perdas de oportunidades ou decisões precipitadas são manifestações dessa vibração que acompanham sua trajetória, exigindo um controle férreo sobre sua gestão financeira e estratégica.</p>
-<p>A impulsividade é a grande armadilha. Trabalhe para que a frustração por resultados imediatos não sabote suas decisões de longo prazo. Ao dominar a si mesmo e manter a integridade ética, você protege tudo o que constrói com seu esforço.</p>`,
-
-  9: `<p><strong>SEQUÊNCIA 999 – A ESTAGNAÇÃO NA REALIDADE PROFISSIONAL</strong></p>
-<p>Na assinatura <strong>MASCULINO-FEMININO-NEUTRO</strong>, esta sequência indica ciclos onde o resultado parece fugir das suas mãos. A visão distorcida do cenário atual pode travar sua direção, impedindo que você alcance o reconhecimento que o seu trabalho merece.</p>
-<p>Não sucumba ao desânimo diante de atrasos ou perdas. É necessário um esforço consciente para compreender o que deve ser deixado para trás e para ajustar sua mira para metas mais claras. Ao soltar o que trava sua evolução, você abre caminho para o sucesso que sua capacidade merece.</p>`
-},
- 
  
  // --- DIA DE NASCIMENTO (TALENTOS NATURAIS 1 AO 10) ---
  dia: {
