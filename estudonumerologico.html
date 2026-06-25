@@ -928,16 +928,18 @@ input[type="text"], select {
     
          <h1>Estudo Numerológico</h1>
     <select id="generoTexto">
+    <option value="feminino">FEMININO (TEXTOS PARA O FEMININO)</option>    
     <option value="masculino">MASCULINO (TEXTOS EM FORMATO PADRÃO)</option>
-    <option value="feminino">FEMININO (TEXTOS ADAPTADOS PARA O FEMININO)</option>
+    
 </select>
 
          <input type="text" id="nome" placeholder="NOME COMPLETO IGUAL CERTIDÃO" >
-         <input type="text" id="nomeSocial" placeholder="COMO PREFERE SER CHAMADO? (OPCIONAL)"> 
-         <input type="text" id="nomeCasado" placeholder="NOME COMPLETO DE CASADO(A) (SE HOUVER)">
-         <input type="text" id="input_nova_assinatura" placeholder="Digite sua nova assinatura...">
-    
          <input type="text" id="data" placeholder="DD/MM/AAAA" maxlength="10" onInput="this.value = this.value.replace(/\D/g, '').replace(/^(\d{2})(\d)/, '$1/$2').replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3');">  
+         <input type="text" id="nomeSocial" placeholder="COMO PREFERE SER CHAMADO? (OPCIONAL)"> 
+         <input type="text" id="nomeCasado" placeholder="NOME COMPLETO DE CASADO(A) (SE HOUVER ADIÇÃO DE SOBRENOME)">
+         <input type="text" id="input_nova_assinatura" placeholder="DIGITE SUA ASSINATURA OU FAÇA UMA NOVA">
+    
+    
     <!-- NOVO CAMPO DE SELEÇÃO DE TEXTO ADICIONADO AQUI -->
 
     
