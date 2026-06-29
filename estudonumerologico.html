@@ -7489,11 +7489,17 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     });
 </script>
 
-<div id="meu-menu-dinamico" style="position: fixed; top: 10%; right: 10px; z-index: 9999; background: rgba(0,0,0,0.85); padding: 15px; border-radius: 10px; max-height: 70vh; overflow-y: auto; color: white;">
+<div id="meu-menu-dinamico" style="position: fixed; top: 10%; right: 10px; z-index: 9999; background: rgba(0,0,0,0.85); padding: 15px; border-radius: 10px; max-height: 70vh; overflow-y: auto; color: white; width: 180px;">
     <h4 style="color: gold; margin-top:0; text-align: center;">Índice</h4>
     <div id="lista-botoes"></div>
 </div>
 
+<style>
+/* O menu não sai no PDF */
+@media print {
+    #meu-menu-dinamico { display: none !important; }
+}
+</style>
 
         
 </body>
