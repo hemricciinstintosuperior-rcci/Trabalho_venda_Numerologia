@@ -7246,42 +7246,31 @@ document.onselectstart=()=>false;
         
     </script>
 
-
-<script>
-// --- CONFIGURAÇÃO DE SEGURANÇA AVANÇADA INSTINTO SUPERIOR ---
+   <script>
+// --- CONFIGURAÇÃO DE SEGURANÇA E MOTOR DO LIVRO ---
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
 let sessionID = localStorage.getItem('minhaSessao');
+let dadosGlobais = null; 
+let paginaAtual = 0;
+
 if (!sessionID) {
     sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);
     localStorage.setItem('minhaSessao', sessionID);
-}  
-    
-// COLOQUE AQUI:
-let acessoPremiumLiberado = false; 
-let dadosGlobais = null; // Vamos salvar tudo aqui
-
-// 1. VALIDAÇÃO DE USUÁRIO E REDIRECIONAMENTO LIMPO
-if (!userEmail) {
-    alert("Acesso não autorizado.");
-    window.location.href = "index.html"; // Volta para a raiz se não houver e-mail
 }
 
+// 1. Inicialização Geral
+if (!userEmail) {
+    alert("Acesso não autorizado.");
+    window.location.href = "index.html";
+}
 
-
-const emailLimpo = userEmail;
-
-
-    
 async function inicializarSeguranca() {
     try {
         const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
-        // Dentro da inicializarSeguranca
-
         let dados = todasVendas[userEmail];
-        let emailLimpo = userEmail; 
 
         if (!dados) {
              alert("Acesso não encontrado.");
@@ -7289,188 +7278,35 @@ async function inicializarSeguranca() {
              return;
         }
 
-        // 1. CÁLCULO DA DATA (COM VARIÁVEL DECLARADA FORA DO IF)
-        let diffDiasTotal = 0;
-// 2. Verifica se o prazo de 30 dias venceu
-if (dados.data_inicio) {
-    const dataInicio = new Date(dados.data_inicio).getTime();
-    const agora = new Date().getTime();
-    const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
-    
-    // --- O CÁLCULO QUE VOCÊ QUER MOSTRAR ---
-    const diasRestantes = 30 - diffDiasTotal;
-    window.diasRestantesGlobais = 30 - diffDiasTotal; // O "window." torna a variável visível para todo o site
-    // --- AQUI NÓS ATUALIZAMOS O AVISO NO HTML ---
-    const aviso = document.getElementById("aviso-expiracao-total");
-    if (aviso) {
-        aviso.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
-    }
-    console.log("Dias restantes calculados e enviados para o HTML:", diasRestantes);
-    // ------------------------------------------
+        // Cálculo de dias
+        const dataInicio = new Date(dados.data_inicio).getTime();
+        const agora = new Date().getTime();
+        const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+        window.diasRestantesGlobais = 30 - diffDiasTotal;
 
-    if (diffDiasTotal > 30) {
-        alert("Seu período de acesso de 30 dias expirou.");
-        window.location.href = "index.html";
-        return;
-    }
-}
-
-        // 3. STATUS ATIVO
-        if (dados.status === 'usado' || dados.status !== 'ativo') {
-            alert("Este acesso expirou ou está inativo.");
+        if (diffDiasTotal > 30 || dados.status !== 'ativo') {
+            alert("Acesso expirado ou inativo.");
             window.location.href = "index.html";
             return;
         }
 
-        // 4. TRAVA DE SESSÃO (COMENTADA PARA EVITAR ERRO 401)
-        /*
-        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ sessao_ativa: sessionID })
-        });
-        */
-
-        // 5. CARREGAMENTO DO RELATÓRIO
         dadosGlobais = dados; 
-        const dataReferencia = dados.data_inicio ? new Date(dados.data_inicio) : new Date();
-        const dataExpiracaoPDF = new Date(dataReferencia);
-        dataExpiracaoPDF.setDate(dataReferencia.getDate() + 8); 
-
+        const dataExpiracaoPDF = new Date(dataInicio + (8 * 24 * 60 * 60 * 1000));
+        
         iniciarTimer(dataExpiracaoPDF);
-        verificarLiberacaoPDF(dados);
-
-    } catch (e) {
-        console.error("Erro na comunicação com Firebase:", e);
-    }
-}
-
-function iniciarTimer(dataAlvo) {
-    const intervalo = setInterval(() => {
-        const timerElement = document.getElementById("timer");
-        const labelElement = document.getElementById("label-tempo");
-
-        if (!timerElement || !labelElement) return;
-
-        const agora = new Date().getTime();
-        const distancia = dataAlvo - agora;
-
-if (distancia < 0) {
-    clearInterval(intervalo);
-    timerElement.innerHTML = "LIBERADO!";
-    labelElement.innerHTML = "Seu estudo já pode ser baixado!";
-    verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI (Passando o objeto todo)
-    return;
-}
-
-        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-
-        timerElement.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
-        labelElement.innerHTML = "Seu PDF Premium será liberado em:";
-    }, 1000);
-}
-
-function verificarLiberacaoPDF(dados) {
-    if (!dados || !dados.data_inicio) return;
-    
-    const btnPDF = document.getElementById("btn-pdf-premium");
-    const msgTrava = document.getElementById("msg-trava");
-    const labelTempo = document.getElementById("label-tempo");
-
-    const dataCompra = new Date(dados.data_inicio);
-    const agora = new Date();
-    const diffDias = (agora - dataCompra) / (1000 * 60 * 60 * 24);
-
-    // --- AQUI ESTÁ A SEPARAÇÃO DAS TRAVAS ---
-    
-    // 1. Relatório: Libera sempre que passar de 7 dias
-    acessoPremiumLiberado = (diffDias >= 8); 
-    
-    // 2. PDF: Libera se passou de 7 dias E não foi baixado
-    const podeBaixarPDF = (diffDias >= 8 && dados.pdf_baixado !== true);
-
-    // Lógica do Botão (PDF)
-    if (btnPDF) {
-        btnPDF.disabled = !podeBaixarPDF;
-        btnPDF.style.filter = podeBaixarPDF ? "none" : "grayscale(100%)";
-    }
-
-    // Mensagens de Status
-    if (dados.pdf_baixado === true) {
-        if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado.";
-    } else if (diffDias < 7) {
-        if (msgTrava) msgTrava.innerHTML = "🔒 Conteúdo liberado após 8 dias.";
-    } else {
-        if (msgTrava) msgTrava.innerHTML = "✅ Estudo pronto para acesso!";
-    }
-}
-    
-async function registrarDownloadRealizado() {
-    // Pega o ID da URL igual você já faz
-    const userId = new URLSearchParams(window.location.search).get('user');
-    
-    // Cola aqui a URL que o Make te deu no Passo 1
-    const webhookUrl = "https://hook.us2.make.com/k7af8f50o7wumvaw6wtuv348mfrgoaq3";
-    
-    // Envia o ID para o Make
-    await fetch(webhookUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ userId: userId })
-    });
-    
-    // Trava o botão visualmente para o usuário
-    const btnPDF = document.getElementById("btn-pdf-premium");
-    if (btnPDF) {
-        btnPDF.disabled = true;
-        btnPDF.style.filter = "grayscale(100%)";
-    }
-}
-    
-async function encerrarSessao() {
-    // Limpa a trava no Firebase antes de sair
-    await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-        method: 'PATCH',
-        body: JSON.stringify({ sessao_ativa: null })
-    });
-    // Manda de volta para o login
-    window.location.href = "index.html";
-}    
-
-function exibirRelatorio(htmlConteudo) {
-    const areaResultado = document.getElementById("resultado");
-    if (areaResultado) {
-        areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
-        
-        // --- FORÇA A ATIVAÇÃO APÓS UM PEQUENO ATRASO ---
-        // Isso garante que o navegador já tenha desenhado o HTML antes de tentar esconder as páginas
-        setTimeout(() => {
-            const paginas = areaResultado.querySelectorAll('.page, .capa-transicao');
-            if (paginas.length > 0) {
-                paginas[0].classList.add('active');
-                console.log("Sucesso: Primeira página ativada! Total:", paginas.length);
-            } else {
-                console.log("Erro: Nenhuma página encontrada com classe .page ou .capa-transicao");
-            }
-        }, 100);
-        
         verificarLiberacaoPDF(dadosGlobais);
+    } catch (e) {
+        console.error("Erro no Firebase:", e);
     }
 }
 
-
-
-// --- MOTOR DO LIVRO ---
-let paginaAtual = 0;
-
+// 2. Renderização (A ÚNICA VERSÃO)
 function exibirRelatorio(htmlConteudo) {
     const areaResultado = document.getElementById("resultado");
     if (areaResultado) {
         areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
         
-        // Ativa a primeira página (índice 0)
+        // Pequeno delay para garantir que o DOM foi criado
         setTimeout(() => {
             mostrarPagina(0);
             verificarLiberacaoPDF(dadosGlobais);
@@ -7478,16 +7314,11 @@ function exibirRelatorio(htmlConteudo) {
     }
 }
 
+// 3. Navegação
 function mostrarPagina(index) {
-    // Busca dentro da classe .relatorio-premium
     const paginas = document.querySelectorAll('.relatorio-premium .page, .relatorio-premium .capa-transicao');
-    
-    console.log("Páginas encontradas:", paginas.length);
-    
-    // Oculta todas
     paginas.forEach(p => p.classList.remove('active'));
     
-    // Mostra a escolhida
     if (paginas[index]) {
         paginas[index].classList.add('active');
         paginaAtual = index;
@@ -7497,14 +7328,50 @@ function mostrarPagina(index) {
 function mudarPagina(direcao) {
     const paginas = document.querySelectorAll('.relatorio-premium .page, .relatorio-premium .capa-transicao');
     let novaPagina = paginaAtual + direcao;
-    
     if (novaPagina >= 0 && novaPagina < paginas.length) {
         mostrarPagina(novaPagina);
     }
 }
-    
-</script>
 
+// 4. Utilitários (Timer e Ações)
+function iniciarTimer(dataAlvo) {
+    setInterval(() => {
+        const timerElement = document.getElementById("timer");
+        const labelElement = document.getElementById("label-tempo");
+        if (!timerElement) return;
+
+        const agora = new Date().getTime();
+        const distancia = dataAlvo - agora;
+
+        if (distancia < 0) {
+            timerElement.innerHTML = "LIBERADO!";
+            return;
+        }
+        
+        const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+        timerElement.innerHTML = `${dias}d...`; // simplificado
+    }, 1000);
+}
+
+function verificarLiberacaoPDF(dados) {
+    if (!dados) return;
+    const btnPDF = document.getElementById("btn-pdf-premium");
+    const diffDias = (new Date() - new Date(dados.data_inicio)) / (1000 * 60 * 60 * 24);
+    
+    if (btnPDF) {
+        const liberado = (diffDias >= 8);
+        btnPDF.disabled = !liberado || dados.pdf_baixado;
+        btnPDF.style.filter = (btnPDF.disabled) ? "grayscale(100%)" : "none";
+    }
+}
+
+// Eventos de Bloqueio
+document.oncontextmenu = () => false;
+document.onselectstart = () => false;
+
+// Inicializa tudo quando a página carregar
+window.onload = inicializarSeguranca;
+</script> 
 
    <script>
 document.getElementById('btnVideo').addEventListener('click', function() {
