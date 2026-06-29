@@ -4061,8 +4061,8 @@ html += `
 
     <div style="width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 25px;">
         ${[
-              { t: "Introdução", c: "Instinto Superior ✶ Resultado Numerológico ✶ Engenharia da Vida ✶ Nome Escolhido ✶ Origem e Numerologia Moderna ✶ Direcionamento de Jornada"},
-            { t: "Parte 1: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais"},
+              { t: "Introdução", c: "Instinto Superior ✶ Resultado Numerológico ✶ Engenharia da Vida ✶ Nome Escolhido ✶ Origem e Numerologia Moderna ✶ Direcionamento de Jornada", link:1},
+            { t: "Parte 1: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais", link: 2},
             { t: "Parte 2: Essência e Identidade", c: "Dia de Nascimento ✶ Essencia ✶ Talento ou Habilidade Oculta ✶ Motivação ✶ Aparência e Influência ✶ Personalidade ✶ Nome de casado(a) (se houver) ✶ Tendência de Comportamento ✶ Desejo Oculto ✶ Habilidades Especiais ✶  Inclinações Ocultas ✶  Pilar de Equilíbrio"},
             { t: "Parte 3: Alinhamento e Desafios",   c: "Fraquezas e Inibições ✶ Mecanismo do Subconsciente ✶ Déficit de Comportamento ✶ Desafio Principal"},
             { t: "Parte 4: Finalidade e Realização", c: " Caminho de Vida ✶ Propósito  ✶  Direcionamento Profissional"},
@@ -7439,9 +7439,12 @@ function exibirRelatorio(htmlConteudo) {
 window.onload = function() {
     inicializarSeguranca();
 
+
+
+    setTimeout(function() {
+        mostrarPagina(0); 
+    }, 500); 
 };
-
-
 
 let paginaAtual = 0;
 
