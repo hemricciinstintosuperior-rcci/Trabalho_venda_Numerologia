@@ -7539,7 +7539,16 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     });
 </script>
 
-
+<script>
+    // Força a primeira página a aparecer ao carregar
+    window.onload = function() {
+        const primeiraPagina = document.querySelector('.page');
+        if (primeiraPagina) {
+            primeiraPagina.classList.add('active');
+            console.log("Primeira página ativada forçadamente.");
+        }
+    };
+</script>
 
 
         
