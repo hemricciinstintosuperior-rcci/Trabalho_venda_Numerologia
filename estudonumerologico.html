@@ -901,46 +901,8 @@ input[type="text"], select {
         display: block !important;
     }
 }
-
-
-
-
-
-
-/* --- CONFIGURAÇÃO PARA A TELA (APP/LIVRO) --- */
-#resultado, .relatorio-premium {
-    width: 100% !important;
-    height: 100vh !important;
-    overflow: hidden !important;
-    position: relative !important;
-}
-
-.page, .capa-transicao {
-    display: none !important; /* Esconde tudo por padrão */
-    width: 100% !important;
-    height: 100% !important;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto !important;
-}
-
-.page.active, .capa-transicao.active {
-    display: flex !important;
-    flex-direction: column !important;
-}
-
-/* --- CONFIGURAÇÃO PARA IMPRESSÃO (PDF) --- */
-@media print {
-    #resultado, .page, .capa-transicao {
-        display: block !important; /* Mostra tudo na impressão */
-        width: 210mm !important;
-        height: 297mm !important;
-        position: static !important;
-        page-break-after: always;
-    }
-    .navegacao-livro { display: none !important; } /* Esconde botões no PDF */
-}
-</style>
+    
+    </style>
 
 
 
@@ -3639,11 +3601,6 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
     // Retorna o HTML já filtrado globalmente
     return html; 
 }
-
-
-
-
-
         
         
 function gerarMapaCompleto(generoAtual) {
@@ -4056,7 +4013,7 @@ let html = `
     <div id="conteudo-relatorio" style="background: #ffffff; width: 210mm; min-height: 297mm; box-sizing: border-box;">
 `;
 
-html += '<div class="page">';    
+    
 // --- PÁGINA 1: SUMÁRIO (AJUSTADA PARA CABER EM UMA FOLHA) ---
 html += `
 <div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; max-height: 1120px; padding: 30px; box-sizing: border-box; overflow: hidden; page-break-after: always; position: relative;">
@@ -4070,8 +4027,8 @@ html += `
 
     <div style="width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 25px;">
         ${[
-              { t: "Introdução", c: "Instinto Superior ✶ Resultado Numerológico ✶ Engenharia da Vida ✶ Nome Escolhido ✶ Origem e Numerologia Moderna ✶ Direcionamento de Jornada", link:1},
-            { t: "Parte 1: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais", link: 2},
+              { t: "Introdução", c: "Instinto Superior ✶ Resultado Numerológico ✶ Engenharia da Vida ✶ Nome Escolhido ✶ Origem e Numerologia Moderna ✶ Direcionamento de Jornada"},
+            { t: "Parte 1: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais"},
             { t: "Parte 2: Essência e Identidade", c: "Dia de Nascimento ✶ Essencia ✶ Talento ou Habilidade Oculta ✶ Motivação ✶ Aparência e Influência ✶ Personalidade ✶ Nome de casado(a) (se houver) ✶ Tendência de Comportamento ✶ Desejo Oculto ✶ Habilidades Especiais ✶  Inclinações Ocultas ✶  Pilar de Equilíbrio"},
             { t: "Parte 3: Alinhamento e Desafios",   c: "Fraquezas e Inibições ✶ Mecanismo do Subconsciente ✶ Déficit de Comportamento ✶ Desafio Principal"},
             { t: "Parte 4: Finalidade e Realização", c: " Caminho de Vida ✶ Propósito  ✶  Direcionamento Profissional"},
@@ -4097,9 +4054,9 @@ html += `
 </div>
 `;
 
-html += '</div>'; // Fecha
 
-    html += '<div class="page">';
+
+    
 
 html += `
     <div class="capa-transicao" style="
@@ -4175,8 +4132,8 @@ html += `
     </div>
 `;
 
-html += '</div>'; // Fecha
-html += '<div class="page">';
+
+
 const idVideoEngenharia = "F8bg1CTQ9HI"; 
 
   tituloBonito = " A Engenharia da Vida";    
@@ -4204,10 +4161,10 @@ html += renderizarBlocoComVideo( `
     <p style="margin-bottom: 15px;">Ao entender que você é uma máquina magnífica, você para de agir por impulso e começa a operar com estratégia. A numerologia aponta os códigos e os melhores caminhos, mas é o conhecimento sobre sua própria anatomia — do sinal elétrico que move suas pernas à intuição que guia seus passos — que permite que você limpe as engrenagens, alimente o sistema e alcance o <strong>ápice da sua existência</strong>. É ciência, é lógica e é o seu projeto de vida funcionando em sua capacidade máxima.</p>
 </div>
 `,idVideoEngenharia); 
-html += '</div>'; // Fecha
+
 // --- PÁGINA 2: NOME SOCIAL (SE EXISTIR) ---
 // --- SEÇÃO: ORIGEM E CODIFICAÇÃO (COMPLETA E INTEGRADA) ---
-html += '<div class="page">';
+
 const idVideoOrigem = "F8bg1CTQ9HI";     
 tituloBonito = "Origem e a Codificação da Numerologia Moderna"; 
 
@@ -4287,8 +4244,8 @@ html += renderizarBlocoComVideo(`
     </div>
 
 </div>`,idVideoOrigem); 
-html += '</div>'; // Fecha
-html += '<div class="page">';
+
+
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
 
@@ -4379,8 +4336,8 @@ html += `
     </div>
 
 </div>`;
-html += '</div>'; // Fecha
-html += '<div class="page">';
+
+
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
     <div style="text-align: center; border-bottom: 2px solid #827108; padding-bottom: 20px; margin-bottom: 30px;">
@@ -4409,9 +4366,7 @@ html += `
     </div>
 </div>`;
 
-html += '</div>'; // Fecha
-html += '<div class="page">';
-    
+
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
     <div style="text-align: center; border-bottom: 2px solid #827108; padding-bottom: 20px; margin-bottom: 30px;">
@@ -4442,9 +4397,9 @@ html += `
     </div>
 </div>`;
 
-html += '</div>'; // Fecha
+
     
-    html += '<div class="page">';
+    
 
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
@@ -4541,7 +4496,7 @@ html += `
     </div>
 
 </div>`;
-html += '</div>'; // Fecha
+
 
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
@@ -4660,7 +4615,7 @@ html += `
 </div>`;
 
 
-html += '</div>'; // Fecha
+
 
     
 
@@ -7230,15 +7185,8 @@ html += `
 </div>
 `;
 
-// --- AQUI VOCÊ COLA O CÓDIGO DOS BOTÕES (SÓ UMA VEZ!) ---
-html += `
-<div class="navegacao-livro" style="position: fixed; bottom: 20px; width: 100%; display: flex; justify-content: center; gap: 20px; z-index: 9999;">
-    <button onclick="mudarPagina(-1)">⬅️ Anterior</button>
-    <button onclick="mudarPagina(1)">Próximo ➡️</button>
-</div>
-`;
+
      document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
-    mostrarPagina(0); // Força o app a mostrar apenas a primeira página ao gerar
             } // FIM DA FUNÇÃO    
 
   document.oncontextmenu=()=>false;
@@ -7246,37 +7194,42 @@ document.onselectstart=()=>false;
         
     </script>
 
-   <script>
+
+<script>
 // --- CONFIGURAÇÃO DE SEGURANÇA AVANÇADA INSTINTO SUPERIOR ---
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
-
-// --- ESSAS VARIÁVEIS PRECISAM SER GLOBAIS (FORA DE QUALQUER FUNÇÃO) ---
-let acessoPremiumLiberado = false; 
-let dadosGlobais = null; 
-let paginaAtual = 0; 
-// ---------------------------------------------------------------------
-
 let sessionID = localStorage.getItem('minhaSessao');
-// ... resto do seu código ...
-
 if (!sessionID) {
     sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);
     localStorage.setItem('minhaSessao', sessionID);
-}
+}  
+    
+// COLOQUE AQUI:
+let acessoPremiumLiberado = false; 
+let dadosGlobais = null; // Vamos salvar tudo aqui
 
-// 1. Inicialização Geral
+// 1. VALIDAÇÃO DE USUÁRIO E REDIRECIONAMENTO LIMPO
 if (!userEmail) {
     alert("Acesso não autorizado.");
-    window.location.href = "index.html";
+    window.location.href = "index.html"; // Volta para a raiz se não houver e-mail
 }
 
+
+
+const emailLimpo = userEmail;
+
+
+    
 async function inicializarSeguranca() {
     try {
         const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
+        // Dentro da inicializarSeguranca
+
         let dados = todasVendas[userEmail];
+        let emailLimpo = userEmail; 
 
         if (!dados) {
              alert("Acesso não encontrado.");
@@ -7284,100 +7237,170 @@ async function inicializarSeguranca() {
              return;
         }
 
-        // Cálculo de dias
-        const dataInicio = new Date(dados.data_inicio).getTime();
-        const agora = new Date().getTime();
-        const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
-        window.diasRestantesGlobais = 30 - diffDiasTotal;
+        // 1. CÁLCULO DA DATA (COM VARIÁVEL DECLARADA FORA DO IF)
+        let diffDiasTotal = 0;
+// 2. Verifica se o prazo de 30 dias venceu
+if (dados.data_inicio) {
+    const dataInicio = new Date(dados.data_inicio).getTime();
+    const agora = new Date().getTime();
+    const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+    
+    // --- O CÁLCULO QUE VOCÊ QUER MOSTRAR ---
+    const diasRestantes = 30 - diffDiasTotal;
+    window.diasRestantesGlobais = 30 - diffDiasTotal; // O "window." torna a variável visível para todo o site
+    // --- AQUI NÓS ATUALIZAMOS O AVISO NO HTML ---
+    const aviso = document.getElementById("aviso-expiracao-total");
+    if (aviso) {
+        aviso.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
+    }
+    console.log("Dias restantes calculados e enviados para o HTML:", diasRestantes);
+    // ------------------------------------------
 
-        if (diffDiasTotal > 30 || dados.status !== 'ativo') {
-            alert("Acesso expirado ou inativo.");
+    if (diffDiasTotal > 30) {
+        alert("Seu período de acesso de 30 dias expirou.");
+        window.location.href = "index.html";
+        return;
+    }
+}
+
+        // 3. STATUS ATIVO
+        if (dados.status === 'usado' || dados.status !== 'ativo') {
+            alert("Este acesso expirou ou está inativo.");
             window.location.href = "index.html";
             return;
         }
 
+        // 4. TRAVA DE SESSÃO (COMENTADA PARA EVITAR ERRO 401)
+        /*
+        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+            method: 'PATCH',
+            body: JSON.stringify({ sessao_ativa: sessionID })
+        });
+        */
+
+        // 5. CARREGAMENTO DO RELATÓRIO
         dadosGlobais = dados; 
-        const dataExpiracaoPDF = new Date(dataInicio + (8 * 24 * 60 * 60 * 1000));
-        
+        const dataReferencia = dados.data_inicio ? new Date(dados.data_inicio) : new Date();
+        const dataExpiracaoPDF = new Date(dataReferencia);
+        dataExpiracaoPDF.setDate(dataReferencia.getDate() + 8); 
+
         iniciarTimer(dataExpiracaoPDF);
-        verificarLiberacaoPDF(dadosGlobais);
+        verificarLiberacaoPDF(dados);
+
     } catch (e) {
-        console.error("Erro no Firebase:", e);
+        console.error("Erro na comunicação com Firebase:", e);
     }
 }
 
-// 2. Renderização (A ÚNICA VERSÃO)
-function exibirRelatorio(htmlConteudo) {
-    const areaResultado = document.getElementById("resultado");
-    if (areaResultado) {
-        areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
-        
-        // Pequeno delay para garantir que o DOM foi criado
-        setTimeout(() => {
-            mostrarPagina(0);
-            verificarLiberacaoPDF(dadosGlobais);
-        }, 100);
-    }
-}
-
-// 3. Navegação
-function mostrarPagina(index) {
-    const paginas = document.querySelectorAll('.relatorio-premium .page, .relatorio-premium .capa-transicao');
-    paginas.forEach(p => p.classList.remove('active'));
-    
-    if (paginas[index]) {
-        paginas[index].classList.add('active');
-        paginaAtual = index;
-    }
-}
-
-function mudarPagina(direcao) {
-    const paginas = document.querySelectorAll('.relatorio-premium .page, .relatorio-premium .capa-transicao');
-    let novaPagina = paginaAtual + direcao;
-    if (novaPagina >= 0 && novaPagina < paginas.length) {
-        mostrarPagina(novaPagina);
-    }
-}
-
-// 4. Utilitários (Timer e Ações)
 function iniciarTimer(dataAlvo) {
-    setInterval(() => {
+    const intervalo = setInterval(() => {
         const timerElement = document.getElementById("timer");
         const labelElement = document.getElementById("label-tempo");
-        if (!timerElement) return;
+
+        if (!timerElement || !labelElement) return;
 
         const agora = new Date().getTime();
         const distancia = dataAlvo - agora;
 
-        if (distancia < 0) {
-            timerElement.innerHTML = "LIBERADO!";
-            return;
-        }
-        
+if (distancia < 0) {
+    clearInterval(intervalo);
+    timerElement.innerHTML = "LIBERADO!";
+    labelElement.innerHTML = "Seu estudo já pode ser baixado!";
+    verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI (Passando o objeto todo)
+    return;
+}
+
         const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-        timerElement.innerHTML = `${dias}d...`; // simplificado
+        const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+        timerElement.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+        labelElement.innerHTML = "Seu PDF Premium será liberado em:";
     }, 1000);
 }
 
 function verificarLiberacaoPDF(dados) {
-    if (!dados) return;
-    const btnPDF = document.getElementById("btn-pdf-premium");
-    const diffDias = (new Date() - new Date(dados.data_inicio)) / (1000 * 60 * 60 * 24);
+    if (!dados || !dados.data_inicio) return;
     
+    const btnPDF = document.getElementById("btn-pdf-premium");
+    const msgTrava = document.getElementById("msg-trava");
+    const labelTempo = document.getElementById("label-tempo");
+
+    const dataCompra = new Date(dados.data_inicio);
+    const agora = new Date();
+    const diffDias = (agora - dataCompra) / (1000 * 60 * 60 * 24);
+
+    // --- AQUI ESTÁ A SEPARAÇÃO DAS TRAVAS ---
+    
+    // 1. Relatório: Libera sempre que passar de 7 dias
+    acessoPremiumLiberado = (diffDias >= 8); 
+    
+    // 2. PDF: Libera se passou de 7 dias E não foi baixado
+    const podeBaixarPDF = (diffDias >= 8 && dados.pdf_baixado !== true);
+
+    // Lógica do Botão (PDF)
     if (btnPDF) {
-        const liberado = (diffDias >= 8);
-        btnPDF.disabled = !liberado || dados.pdf_baixado;
-        btnPDF.style.filter = (btnPDF.disabled) ? "grayscale(100%)" : "none";
+        btnPDF.disabled = !podeBaixarPDF;
+        btnPDF.style.filter = podeBaixarPDF ? "none" : "grayscale(100%)";
+    }
+
+    // Mensagens de Status
+    if (dados.pdf_baixado === true) {
+        if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado.";
+    } else if (diffDias < 7) {
+        if (msgTrava) msgTrava.innerHTML = "🔒 Conteúdo liberado após 8 dias.";
+    } else {
+        if (msgTrava) msgTrava.innerHTML = "✅ Estudo pronto para acesso!";
+    }
+}
+    
+async function registrarDownloadRealizado() {
+    // Pega o ID da URL igual você já faz
+    const userId = new URLSearchParams(window.location.search).get('user');
+    
+    // Cola aqui a URL que o Make te deu no Passo 1
+    const webhookUrl = "https://hook.us2.make.com/k7af8f50o7wumvaw6wtuv348mfrgoaq3";
+    
+    // Envia o ID para o Make
+    await fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId: userId })
+    });
+    
+    // Trava o botão visualmente para o usuário
+    const btnPDF = document.getElementById("btn-pdf-premium");
+    if (btnPDF) {
+        btnPDF.disabled = true;
+        btnPDF.style.filter = "grayscale(100%)";
+    }
+}
+    
+async function encerrarSessao() {
+    // Limpa a trava no Firebase antes de sair
+    await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
+        method: 'PATCH',
+        body: JSON.stringify({ sessao_ativa: null })
+    });
+    // Manda de volta para o login
+    window.location.href = "index.html";
+}    
+
+function exibirRelatorio(htmlConteudo) {
+    const areaResultado = document.getElementById("resultado");
+    if (areaResultado) {
+        areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
+        verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI
     }
 }
 
-// Eventos de Bloqueio
-document.oncontextmenu = () => false;
-document.onselectstart = () => false;
+window.onload = function() {
+    inicializarSeguranca();
 
-// Inicializa tudo quando a página carregar
-window.onload = inicializarSeguranca;
-</script> 
+};
+</script>
+
 
    <script>
 document.getElementById('btnVideo').addEventListener('click', function() {
@@ -7419,18 +7442,8 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     });
 </script>
 
-<script>
-    // Força a primeira página a aparecer ao carregar
-    window.onload = function() {
-        const primeiraPagina = document.querySelector('.page');
-        if (primeiraPagina) {
-            primeiraPagina.classList.add('active');
-            console.log("Primeira página ativada forçadamente.");
-        }
-    };
-</script>
 
-
-        
 </body>
+
+
 </html>
