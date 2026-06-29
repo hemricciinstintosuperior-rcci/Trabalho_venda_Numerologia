@@ -7416,27 +7416,35 @@ window.onload = function() {
 <script>
 function gerarMenuAutomatico() {
     const listaBotoes = document.getElementById("lista-botoes");
-    // Procura todos os seus separadores de luxo (que você já tem no código!)
+    if (!listaBotoes) return; 
+
+    // Limpa a lista antes de gerar novamente (importante!)
+    listaBotoes.innerHTML = ''; 
+
     const separadores = document.querySelectorAll('.separador-luxo');
     
     separadores.forEach((sep, index) => {
-        // Dá um ID único para cada separador se ele não tiver
-        if (!sep.id) sep.id = "secao-" + index;
+        // SEGURANÇA: Só tenta criar se existir um H2 dentro do separador
+        const h2 = sep.querySelector('h2');
         
-        // Pega o título que está dentro do separador
-        const titulo = sep.querySelector('h2').innerText;
-        
-        // Cria o botão e joga na lista
-        const btn = document.createElement('button');
-        btn.innerText = titulo;
-        btn.style.display = "block";
-        btn.style.marginBottom = "5px";
-        btn.style.cursor = "pointer";
-        btn.onclick = () => {
-            sep.scrollIntoView({ behavior: 'smooth' });
-        };
-        listaBotoes.appendChild(btn);
+        if (h2) {
+            if (!sep.id) sep.id = "secao-" + index;
+            
+            const titulo = h2.innerText;
+            const btn = document.createElement('button');
+            btn.innerText = titulo;
+            btn.style.display = "block";
+            btn.style.width = "100%";
+            btn.style.marginBottom = "5px";
+            btn.style.cursor = "pointer";
+            btn.onclick = () => {
+                sep.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            };
+            listaBotoes.appendChild(btn);
+        }
     });
+    
+    console.log("Menu gerado com sucesso! Total de botões:", listaBotoes.children.length);
 }
         
 </script> 
@@ -7486,12 +7494,7 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     <div id="lista-botoes"></div>
 </div>
 
-<style>
-/* Isso garante que o menu não apareça no seu PDF */
-@media print {
-    #meu-menu-dinamico { display: none !important; }
-}
-</style>
+
         
 </body>
 
