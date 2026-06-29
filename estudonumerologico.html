@@ -906,29 +906,39 @@ input[type="text"], select {
 
 
 
-/* Força o container pai a ocupar a tela toda */
-#resultado {
+
+/* --- CONFIGURAÇÃO PARA A TELA (APP/LIVRO) --- */
+#resultado, .relatorio-premium {
     width: 100% !important;
     height: 100vh !important;
-    position: relative !important;
     overflow: hidden !important;
-    background: #fff;
+    position: relative !important;
 }
 
-/* Oculta tudo que está dentro de .relatorio-premium */
-.relatorio-premium .page, 
-.relatorio-premium .capa-transicao {
-    display: none !important; 
+.page, .capa-transicao {
+    display: none !important; /* Esconde tudo por padrão */
     width: 100% !important;
     height: 100% !important;
+    padding: 20px;
+    box-sizing: border-box;
     overflow-y: auto !important;
 }
 
-/* Mostra apenas a página com a classe active */
-.relatorio-premium .page.active, 
-.relatorio-premium .capa-transicao.active {
+.page.active, .capa-transicao.active {
     display: flex !important;
     flex-direction: column !important;
+}
+
+/* --- CONFIGURAÇÃO PARA IMPRESSÃO (PDF) --- */
+@media print {
+    #resultado, .page, .capa-transicao {
+        display: block !important; /* Mostra tudo na impressão */
+        width: 210mm !important;
+        height: 297mm !important;
+        position: static !important;
+        page-break-after: always;
+    }
+    .navegacao-livro { display: none !important; } /* Esconde botões no PDF */
 }
 </style>
 
@@ -4046,7 +4056,7 @@ let html = `
     <div id="conteudo-relatorio" style="background: #ffffff; width: 210mm; min-height: 297mm; box-sizing: border-box;">
 `;
 
-    
+html += '<div class="page">';    
 // --- PÁGINA 1: SUMÁRIO (AJUSTADA PARA CABER EM UMA FOLHA) ---
 html += `
 <div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; max-height: 1120px; padding: 30px; box-sizing: border-box; overflow: hidden; page-break-after: always; position: relative;">
@@ -4087,9 +4097,9 @@ html += `
 </div>
 `;
 
+html += '</div>'; // Fecha
 
-
-    
+    html += '<div class="page">';
 
 html += `
     <div class="capa-transicao" style="
@@ -4165,8 +4175,8 @@ html += `
     </div>
 `;
 
-
-
+html += '</div>'; // Fecha
+html += '<div class="page">';
 const idVideoEngenharia = "F8bg1CTQ9HI"; 
 
   tituloBonito = " A Engenharia da Vida";    
@@ -4194,10 +4204,10 @@ html += renderizarBlocoComVideo( `
     <p style="margin-bottom: 15px;">Ao entender que você é uma máquina magnífica, você para de agir por impulso e começa a operar com estratégia. A numerologia aponta os códigos e os melhores caminhos, mas é o conhecimento sobre sua própria anatomia — do sinal elétrico que move suas pernas à intuição que guia seus passos — que permite que você limpe as engrenagens, alimente o sistema e alcance o <strong>ápice da sua existência</strong>. É ciência, é lógica e é o seu projeto de vida funcionando em sua capacidade máxima.</p>
 </div>
 `,idVideoEngenharia); 
-
+html += '</div>'; // Fecha
 // --- PÁGINA 2: NOME SOCIAL (SE EXISTIR) ---
 // --- SEÇÃO: ORIGEM E CODIFICAÇÃO (COMPLETA E INTEGRADA) ---
-
+html += '<div class="page">';
 const idVideoOrigem = "F8bg1CTQ9HI";     
 tituloBonito = "Origem e a Codificação da Numerologia Moderna"; 
 
@@ -4277,8 +4287,8 @@ html += renderizarBlocoComVideo(`
     </div>
 
 </div>`,idVideoOrigem); 
-
-
+html += '</div>'; // Fecha
+html += '<div class="page">';
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
 
@@ -4369,8 +4379,8 @@ html += `
     </div>
 
 </div>`;
-
-
+html += '</div>'; // Fecha
+html += '<div class="page">';
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
     <div style="text-align: center; border-bottom: 2px solid #827108; padding-bottom: 20px; margin-bottom: 30px;">
@@ -4399,7 +4409,9 @@ html += `
     </div>
 </div>`;
 
-
+html += '</div>'; // Fecha
+html += '<div class="page">';
+    
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
     <div style="text-align: center; border-bottom: 2px solid #827108; padding-bottom: 20px; margin-bottom: 30px;">
@@ -4430,9 +4442,9 @@ html += `
     </div>
 </div>`;
 
-
+html += '</div>'; // Fecha
     
-    
+    html += '<div class="page">';
 
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
@@ -4529,7 +4541,7 @@ html += `
     </div>
 
 </div>`;
-
+html += '</div>'; // Fecha
 
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
@@ -4648,7 +4660,7 @@ html += `
 </div>`;
 
 
-
+html += '</div>'; // Fecha
 
     
 
