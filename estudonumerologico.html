@@ -904,35 +904,31 @@ input[type="text"], select {
 
 
 
-    /* Container que vai abraçar o seu relatório */
+/* O container pai garante que a altura seja fixa e não gere scroll */
 #resultado {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    width: 100vw;
-    height: 100vh;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; /* Suavidade no mobile */
+    width: 100%;
+    height: 90vh; /* Ajuste conforme necessário */
+    position: relative;
+    overflow: hidden; /* Nada de barra de rolagem */
 }
 
-/* Cada página ocupando a tela toda */
-.page {
-    flex: 0 0 100vw; /* Força cada página a ter 100% da largura da tela */
-    scroll-snap-align: start;
-    overflow-y: auto;
+/* Todas as páginas ficam escondidas por padrão e empilhadas no mesmo lugar */
+.page, .capa-transicao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Esconde todas */
+    flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    background: #fff;
 }
 
-
-
-
-    @media print {
-    #resultado { display: block; overflow: visible; }
-    .page { flex: none; scroll-snap-align: none; }
-    .navegacao-livro { display: none; } /* Esconde os botões no PDF */
+/* Apenas a página ativa aparece */
+.page.active, .capa-transicao.active {
+    display: flex; /* Exibe a página atual */
 }
     
     </style>
@@ -7223,8 +7219,15 @@ html += `
 </div>
 `;
 
-
+// --- AQUI VOCÊ COLA O CÓDIGO DOS BOTÕES (SÓ UMA VEZ!) ---
+html += `
+<div class="navegacao-livro" style="position: fixed; bottom: 20px; width: 100%; display: flex; justify-content: center; gap: 20px; z-index: 9999;">
+    <button onclick="mudarPagina(-1)">⬅️ Anterior</button>
+    <button onclick="mudarPagina(1)">Próximo ➡️</button>
+</div>
+`;
      document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
+    mostrarPagina(0); // Força o app a mostrar apenas a primeira página ao gerar
             } // FIM DA FUNÇÃO    
 
   document.oncontextmenu=()=>false;
@@ -7440,14 +7443,29 @@ window.onload = function() {
 
 
 
+let paginaAtual = 0;
 
-            function mudarPagina(direcao) {
-    const container = document.getElementById('resultado');
-    const larguraPagina = container.offsetWidth;
-    container.scrollBy({
-        left: direcao * larguraPagina,
-        behavior: 'smooth'
-    });
+function mostrarPagina(index) {
+    // Pega todas as divs que são páginas
+    const paginas = document.querySelectorAll('.page, .capa-transicao');
+    
+    // Oculta todas
+    paginas.forEach(p => p.classList.remove('active'));
+    
+    // Mostra apenas a escolhida
+    if (paginas[index]) {
+        paginas[index].classList.add('active');
+        paginaAtual = index;
+    }
+}
+
+function mudarPagina(direcao) {
+    const paginas = document.querySelectorAll('.page, .capa-transicao');
+    let novaPagina = paginaAtual + direcao;
+    
+    if (novaPagina >= 0 && novaPagina < paginas.length) {
+        mostrarPagina(novaPagina);
+    }
 }
 </script>
 
@@ -7492,10 +7510,7 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     });
 </script>
 
-<div class="navegacao-livro" style="position: fixed; bottom: 20px; width: 100%; display: flex; justify-content: center; gap: 20px; z-index: 9999;">
-    <button onclick="mudarPagina(-1)" style="padding: 15px 30px; background: #827108; color: white; border: none; border-radius: 25px; cursor: pointer;">⬅️ Anterior</button>
-    <button onclick="mudarPagina(1)" style="padding: 15px 30px; background: #827108; color: white; border: none; border-radius: 25px; cursor: pointer;">Próximo ➡️</button>
-</div>
+
 
 
         
