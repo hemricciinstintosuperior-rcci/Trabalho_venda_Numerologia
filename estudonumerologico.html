@@ -905,32 +905,32 @@ input[type="text"], select {
 
 
 
-/* Força o container do mapa a ocupar toda a altura da tela do celular/PC */
+/* 1. O container pai força a altura da tela inteira */
 #resultado {
-    width: 100%;
-    height: 100vh; /* Isso força a ocupar 100% da altura da tela */
-    position: relative;
-    overflow: hidden; /* Corta o que sobrar */
-}
-
-/* Garante que cada página ocupe o espaço total do container */
-.page, .capa-transicao {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Força a página a ter a altura total */
-    display: none; /* Esconde todas */
-    flex-direction: column;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto; /* Se a página for muito longa, ela tem seu próprio scroll interno */
+    width: 100% !important;
+    height: 100vh !important;
+    position: relative !important;
+    overflow: hidden !important;
     background: #fff;
 }
 
-/* Mostra apenas a ativa */
+/* 2. Todas as páginas ficam escondidas e ocupam a tela toda */
+.page, .capa-transicao {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: none !important; /* ESCONDE TUDO */
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+    overflow-y: auto !important; /* Scroll interno se o texto for muito grande */
+    background: #fff;
+}
+
+/* 3. A classe 'active' que o JavaScript vai adicionar é a única que será visível */
 .page.active, .capa-transicao.active {
-    display: flex;
+    display: flex !important;
 }
 
     
@@ -7435,22 +7435,22 @@ function exibirRelatorio(htmlConteudo) {
     const areaResultado = document.getElementById("resultado");
     if (areaResultado) {
         areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
-
-   ativarPrimeiraPagina();
         
-        verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI
+        // --- FORÇA A ATIVAÇÃO APÓS UM PEQUENO ATRASO ---
+        // Isso garante que o navegador já tenha desenhado o HTML antes de tentar esconder as páginas
+        setTimeout(() => {
+            const paginas = areaResultado.querySelectorAll('.page, .capa-transicao');
+            if (paginas.length > 0) {
+                paginas[0].classList.add('active');
+                console.log("Sucesso: Primeira página ativada! Total:", paginas.length);
+            } else {
+                console.log("Erro: Nenhuma página encontrada com classe .page ou .capa-transicao");
+            }
+        }, 100);
+        
+        verificarLiberacaoPDF(dadosGlobais);
     }
 }
-
-window.onload = function() {
-    inicializarSeguranca();
-
-
-
-    setTimeout(function() {
-        mostrarPagina(0); 
-    }, 500); 
-};
 
 let paginaAtual = 0;
 
