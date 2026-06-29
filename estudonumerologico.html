@@ -905,7 +905,8 @@ input[type="text"], select {
 
 
 
-/* 1. O container pai força a altura da tela inteira */
+
+/* Força o container pai a ocupar a tela toda */
 #resultado {
     width: 100% !important;
     height: 100vh !important;
@@ -914,27 +915,22 @@ input[type="text"], select {
     background: #fff;
 }
 
-/* 2. Todas as páginas ficam escondidas e ocupam a tela toda */
-.page, .capa-transicao {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
+/* Oculta tudo que está dentro de .relatorio-premium */
+.relatorio-premium .page, 
+.relatorio-premium .capa-transicao {
+    display: none !important; 
     width: 100% !important;
     height: 100% !important;
-    display: none !important; /* ESCONDE TUDO */
-    flex-direction: column !important;
-    box-sizing: border-box !important;
-    overflow-y: auto !important; /* Scroll interno se o texto for muito grande */
-    background: #fff;
+    overflow-y: auto !important;
 }
 
-/* 3. A classe 'active' que o JavaScript vai adicionar é a única que será visível */
-.page.active, .capa-transicao.active {
+/* Mostra apenas a página com a classe active */
+.relatorio-premium .page.active, 
+.relatorio-premium .capa-transicao.active {
     display: flex !important;
+    flex-direction: column !important;
 }
-
-    
-    </style>
+</style>
 
 
 
@@ -7452,16 +7448,34 @@ function exibirRelatorio(htmlConteudo) {
     }
 }
 
+
+
+// --- MOTOR DO LIVRO ---
 let paginaAtual = 0;
 
+function exibirRelatorio(htmlConteudo) {
+    const areaResultado = document.getElementById("resultado");
+    if (areaResultado) {
+        areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
+        
+        // Ativa a primeira página (índice 0)
+        setTimeout(() => {
+            mostrarPagina(0);
+            verificarLiberacaoPDF(dadosGlobais);
+        }, 100);
+    }
+}
+
 function mostrarPagina(index) {
-    // Pega todas as divs que são páginas
-    const paginas = document.querySelectorAll('.page, .capa-transicao');
+    // Busca dentro da classe .relatorio-premium
+    const paginas = document.querySelectorAll('.relatorio-premium .page, .relatorio-premium .capa-transicao');
+    
+    console.log("Páginas encontradas:", paginas.length);
     
     // Oculta todas
     paginas.forEach(p => p.classList.remove('active'));
     
-    // Mostra apenas a escolhida
+    // Mostra a escolhida
     if (paginas[index]) {
         paginas[index].classList.add('active');
         paginaAtual = index;
@@ -7469,32 +7483,13 @@ function mostrarPagina(index) {
 }
 
 function mudarPagina(direcao) {
-    const paginas = document.querySelectorAll('.page, .capa-transicao');
+    const paginas = document.querySelectorAll('.relatorio-premium .page, .relatorio-premium .capa-transicao');
     let novaPagina = paginaAtual + direcao;
     
     if (novaPagina >= 0 && novaPagina < paginas.length) {
         mostrarPagina(novaPagina);
     }
 }
-
-
-function ativarPrimeiraPagina() {
-    // Pega o container onde o HTML foi injetado
-    const areaResultado = document.getElementById("resultado");
-    // Pega todas as páginas que foram criadas
-    const paginas = areaResultado.querySelectorAll('.page, .capa-transicao');
-       
-    console.log("Total de páginas encontradas:", paginas.length); // <--- ISSO VAI APARECER NO CONSOLE
-    
-    if (paginas.length > 0) {
-        paginas[0].classList.add('active');
-        console.log("Primeira página ativada!");
-    } else {
-        console.log("ERRO: Nenhuma página encontrada com a classe .page");
-    }
-}
-    // Se existir pelo menos uma página, a primeira (índice 0) ganha a classe 'active'
-
     
 </script>
 
