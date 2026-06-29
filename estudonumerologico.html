@@ -7483,13 +7483,18 @@ function ativarPrimeiraPagina() {
     const areaResultado = document.getElementById("resultado");
     // Pega todas as páginas que foram criadas
     const paginas = areaResultado.querySelectorAll('.page, .capa-transicao');
+       
+    console.log("Total de páginas encontradas:", paginas.length); // <--- ISSO VAI APARECER NO CONSOLE
     
-    // Se existir pelo menos uma página, a primeira (índice 0) ganha a classe 'active'
     if (paginas.length > 0) {
         paginas[0].classList.add('active');
-        console.log("Primeira página ativada com sucesso!");
+        console.log("Primeira página ativada!");
+    } else {
+        console.log("ERRO: Nenhuma página encontrada com a classe .page");
     }
 }
+    // Se existir pelo menos uma página, a primeira (índice 0) ganha a classe 'active'
+
     
 </script>
 
