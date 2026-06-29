@@ -901,6 +901,39 @@ input[type="text"], select {
         display: block !important;
     }
 }
+
+
+
+    /* Container que vai abraçar o seu relatório */
+#resultado {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Suavidade no mobile */
+}
+
+/* Cada página ocupando a tela toda */
+.page {
+    flex: 0 0 100vw; /* Força cada página a ter 100% da largura da tela */
+    scroll-snap-align: start;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+    @media print {
+    #resultado { display: block; overflow: visible; }
+    .page { flex: none; scroll-snap-align: none; }
+    .navegacao-livro { display: none; } /* Esconde os botões no PDF */
+}
     
     </style>
 
@@ -3601,6 +3634,11 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
     // Retorna o HTML já filtrado globalmente
     return html; 
 }
+
+
+
+
+
         
         
 function gerarMapaCompleto(generoAtual) {
@@ -7399,6 +7437,18 @@ window.onload = function() {
     inicializarSeguranca();
 
 };
+
+
+
+
+            function mudarPagina(direcao) {
+    const container = document.getElementById('resultado');
+    const larguraPagina = container.offsetWidth;
+    container.scrollBy({
+        left: direcao * larguraPagina,
+        behavior: 'smooth'
+    });
+}
 </script>
 
 
@@ -7442,8 +7492,11 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     });
 </script>
 
+<div class="navegacao-livro" style="position: fixed; bottom: 20px; width: 100%; display: flex; justify-content: center; gap: 20px; z-index: 9999;">
+    <button onclick="mudarPagina(-1)" style="padding: 15px 30px; background: #827108; color: white; border: none; border-radius: 25px; cursor: pointer;">⬅️ Anterior</button>
+    <button onclick="mudarPagina(1)" style="padding: 15px 30px; background: #827108; color: white; border: none; border-radius: 25px; cursor: pointer;">Próximo ➡️</button>
+</div>
 
-</body>
 
         
 </body>
