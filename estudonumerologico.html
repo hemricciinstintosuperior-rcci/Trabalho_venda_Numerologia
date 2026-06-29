@@ -7187,7 +7187,11 @@ html += `
 
 
      document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
+
+
             } // FIM DA FUNÇÃO    
+
+
 
   document.oncontextmenu=()=>false;
 document.onselectstart=()=>false; 
@@ -7391,16 +7395,51 @@ function exibirRelatorio(htmlConteudo) {
     const areaResultado = document.getElementById("resultado");
     if (areaResultado) {
         areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
-        verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI
+        
+        // --- CHAMA O GERADOR DE MENU ---
+        setTimeout(() => {
+            gerarMenuAutomatico(); 
+            verificarLiberacaoPDF(dadosGlobais);
+        }, 500); 
     }
 }
+
+
+    
 
 window.onload = function() {
     inicializarSeguranca();
 
 };
 </script>
-
+        
+<script>
+function gerarMenuAutomatico() {
+    const listaBotoes = document.getElementById("lista-botoes");
+    // Procura todos os seus separadores de luxo (que você já tem no código!)
+    const separadores = document.querySelectorAll('.separador-luxo');
+    
+    separadores.forEach((sep, index) => {
+        // Dá um ID único para cada separador se ele não tiver
+        if (!sep.id) sep.id = "secao-" + index;
+        
+        // Pega o título que está dentro do separador
+        const titulo = sep.querySelector('h2').innerText;
+        
+        // Cria o botão e joga na lista
+        const btn = document.createElement('button');
+        btn.innerText = titulo;
+        btn.style.display = "block";
+        btn.style.marginBottom = "5px";
+        btn.style.cursor = "pointer";
+        btn.onclick = () => {
+            sep.scrollIntoView({ behavior: 'smooth' });
+        };
+        listaBotoes.appendChild(btn);
+    });
+}
+        
+</script> 
 
    <script>
 document.getElementById('btnVideo').addEventListener('click', function() {
@@ -7442,7 +7481,18 @@ document.getElementById('btnVideo').addEventListener('click', function() {
     });
 </script>
 
+<div id="meu-menu-dinamico" style="position: fixed; top: 10%; right: 10px; z-index: 9999; background: rgba(0,0,0,0.85); padding: 15px; border-radius: 10px; max-height: 70vh; overflow-y: auto; color: white;">
+    <h4 style="color: gold; margin-top:0; text-align: center;">Índice</h4>
+    <div id="lista-botoes"></div>
+</div>
 
+<style>
+/* Isso garante que o menu não apareça no seu PDF */
+@media print {
+    #meu-menu-dinamico { display: none !important; }
+}
+</style>
+        
 </body>
 
 
