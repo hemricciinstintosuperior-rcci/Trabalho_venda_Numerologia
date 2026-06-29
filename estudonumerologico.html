@@ -7247,13 +7247,19 @@ document.onselectstart=()=>false;
     </script>
 
    <script>
-// --- CONFIGURAÇÃO DE SEGURANÇA E MOTOR DO LIVRO ---
+// --- CONFIGURAÇÃO DE SEGURANÇA AVANÇADA INSTINTO SUPERIOR ---
 const urlParams = new URLSearchParams(window.location.search);
 const userEmail = urlParams.get('user'); 
 const DB_URL = "https://vendas-numerologia-default-rtdb.firebaseio.com/";
-let sessionID = localStorage.getItem('minhaSessao');
+
+// --- ESSAS VARIÁVEIS PRECISAM SER GLOBAIS (FORA DE QUALQUER FUNÇÃO) ---
+let acessoPremiumLiberado = false; 
 let dadosGlobais = null; 
-let paginaAtual = 0;
+let paginaAtual = 0; 
+// ---------------------------------------------------------------------
+
+let sessionID = localStorage.getItem('minhaSessao');
+// ... resto do seu código ...
 
 if (!sessionID) {
     sessionID = Date.now().toString() + Math.random().toString(36).substr(2, 9);
