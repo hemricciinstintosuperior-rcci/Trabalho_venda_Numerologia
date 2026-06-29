@@ -904,32 +904,35 @@ input[type="text"], select {
 
 
 
-/* O container pai garante que a altura seja fixa e não gere scroll */
+
+/* Força o container do mapa a ocupar toda a altura da tela do celular/PC */
 #resultado {
     width: 100%;
-    height: 90vh; /* Ajuste conforme necessário */
+    height: 100vh; /* Isso força a ocupar 100% da altura da tela */
     position: relative;
-    overflow: hidden; /* Nada de barra de rolagem */
+    overflow: hidden; /* Corta o que sobrar */
 }
 
-/* Todas as páginas ficam escondidas por padrão e empilhadas no mesmo lugar */
+/* Garante que cada página ocupe o espaço total do container */
 .page, .capa-transicao {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; /* Força a página a ter a altura total */
     display: none; /* Esconde todas */
     flex-direction: column;
     padding: 20px;
     box-sizing: border-box;
+    overflow-y: auto; /* Se a página for muito longa, ela tem seu próprio scroll interno */
     background: #fff;
 }
 
-/* Apenas a página ativa aparece */
+/* Mostra apenas a ativa */
 .page.active, .capa-transicao.active {
-    display: flex; /* Exibe a página atual */
+    display: flex;
 }
+
     
     </style>
 
@@ -7432,6 +7435,9 @@ function exibirRelatorio(htmlConteudo) {
     const areaResultado = document.getElementById("resultado");
     if (areaResultado) {
         areaResultado.innerHTML = `<div class="relatorio-premium">${htmlConteudo}</div>`;
+
+   ativarPrimeiraPagina();
+        
         verificarLiberacaoPDF(dadosGlobais); // <--- MUDANÇA AQUI
     }
 }
@@ -7470,6 +7476,21 @@ function mudarPagina(direcao) {
         mostrarPagina(novaPagina);
     }
 }
+
+
+function ativarPrimeiraPagina() {
+    // Pega o container onde o HTML foi injetado
+    const areaResultado = document.getElementById("resultado");
+    // Pega todas as páginas que foram criadas
+    const paginas = areaResultado.querySelectorAll('.page, .capa-transicao');
+    
+    // Se existir pelo menos uma página, a primeira (índice 0) ganha a classe 'active'
+    if (paginas.length > 0) {
+        paginas[0].classList.add('active');
+        console.log("Primeira página ativada com sucesso!");
+    }
+}
+    
 </script>
 
 
