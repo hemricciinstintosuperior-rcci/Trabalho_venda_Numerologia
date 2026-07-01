@@ -7259,7 +7259,10 @@ html += `
     
      document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
 
-
+// --- O SEGREDO FINAL: FORÇAR A PRIMEIRA ABA A ABRIR ---
+setTimeout(() => {
+    abrirAba('tela-capa'); // Garante que a tela não fique em branco ao gerar
+}, 100);
             } // FIM DA FUNÇÃO    
 
 
