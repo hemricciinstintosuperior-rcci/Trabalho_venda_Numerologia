@@ -3979,7 +3979,7 @@ const dadosNegativas = detectarNegativas(piramideVida);
 let html = `<div class="menu-abas">
     <button onclick="abrirAba('tela-capa')" style="display:block; width:100%; margin-bottom:5px;">Capa</button>
     <button onclick="abrirAba('tela-sumario')" style="display:block; width:100%; margin-bottom:5px;">Sumario</button>
-    <button onclick="abrirAba('tela-capaTransicao')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
+    <button onclick="abrirAba('tela-capaTransicao1')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
     <button onclick="abrirAba('tela-intro1')" style="display:block; width:100%; margin-bottom:5px;">Intro1</button>
     <button onclick="abrirAba('tela-intro2')" style="display:block; width:100%; margin-bottom:5px;">Intro2</button>
     <button onclick="abrirAba('tela-intro3')" style="display:block; width:100%; margin-bottom:5px;">Intro3</button>
@@ -4301,8 +4301,8 @@ html += renderizarBlocoComVideo(`
     </div>
 
 </div>`,idVideoOrigem); 
-html += '</div>';
-html += '<div id="tela-intro3" class="conteudo-aba ativa">'; 
+
+
 
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
@@ -4394,7 +4394,7 @@ html += `
     </div>
 
 </div>`;
-html += '</div>';
+
 
 
 html += `
@@ -4673,11 +4673,11 @@ html += `
 
 </div>`;
 
-
+html += '</div>';
 
 
     
-
+html += '<div id="tela-intro3" class="conteudo-aba ativa">'; 
 TituloBonito = "Numerologia Moderna: O Tratado da Evolução Consciente";    
 html += `
 <div class="separador-luxo">
@@ -4752,7 +4752,7 @@ html += `
 </div>
 `;
 
-
+html += '</div>';
 
 
 
@@ -7523,18 +7523,25 @@ document.getElementById('btnVideo').addEventListener('click', function() {
 
         
 <script>
-        function abrirAba(idDaAba) {
-            const todasAsAbas = document.querySelectorAll('.conteudo-aba');
-            todasAsAbas.forEach(aba => aba.classList.remove('ativa'));
-            
-            const abaEscolhida = document.getElementById(idDaAba);
-            if (abaEscolhida) {
-                abaEscolhida.classList.add('ativa');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            } else {
-                alert("ALERTA: A div '" + idDaAba + "' não foi encontrada!");
-            }
+function abrirAba(idDaAba) {
+    const todasAsAbas = document.querySelectorAll('.conteudo-aba');
+    todasAsAbas.forEach(aba => aba.classList.remove('ativa'));
+    
+    const abaEscolhida = document.getElementById(idDaAba);
+    
+    if (abaEscolhida) {
+        // --- O SENSOR QUE DESCOBRE O ERRO NO SEU HTML ---
+        const abaPai = abaEscolhida.parentElement.closest('.conteudo-aba');
+        if (abaPai) {
+            alert("🚨 ERRO ACHADO: A aba '" + idDaAba + "' está presa DENTRO da aba '" + abaPai.id + "'. Você esqueceu de colocar o </div> para fechar a anterior!");
         }
+        
+        abaEscolhida.classList.add('ativa');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+        alert("ALERTA: A div '" + idDaAba + "' não foi encontrada!");
+    }
+}
     </script>
 </body>
 
