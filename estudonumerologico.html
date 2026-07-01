@@ -905,6 +905,42 @@ input[type="text"], select {
 @media print {
     #meu-menu-dinamico { display: none !important; }
 }   
+
+
+/* 1. Na tela do celular/PC: Esconde as seções e mostra só a ativa */
+.conteudo-aba {
+    display: none; 
+    width: 100%;
+}
+.conteudo-aba.ativa {
+    display: block; /* Mostra a seção clicada naturalmente, sem cortar */
+}
+
+/* 2. Menu de botões fixo no topo ou na lateral */
+.menu-abas {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    background: #000;
+    padding: 10px;
+    border-radius: 8px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+/* 3. A MÁGICA DO PDF: Na hora de baixar/imprimir, mostra TUDO de uma vez e esconde o menu */
+@media print {
+    .conteudo-aba {
+        display: block !important; 
+    }
+    .menu-abas {
+        display: none !important;
+    }
+}
+
+
+    
     </style>
 
 
@@ -3605,6 +3641,21 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
     // Retorna o HTML já filtrado globalmente
     return html; 
 }
+
+
+// Função definitiva para trocar as telas
+function abrirAba(idDaAba) {
+    // 1. Pega todas as divs com a classe 'conteudo-aba' e esconde
+    const todasAsAbas = document.querySelectorAll('.conteudo-aba');
+    todasAsAbas.forEach(aba => aba.classList.remove('ativa'));
+    
+    // 2. Acha a aba que você clicou e mostra ela
+    const abaEscolhida = document.getElementById(idDaAba);
+    if (abaEscolhida) {
+        abaEscolhida.classList.add('ativa');
+    }
+}
+        
         
         
 function gerarMapaCompleto(generoAtual) {
@@ -3937,11 +3988,9 @@ const dadosNegativas = detectarNegativas(piramideVida);
 
 
 
-
+html += '<div id="tela-capa" class="conteudo-aba ativa">'; 
 // 2. DEPOIS: COMEÇA A MONTAR O HTML DO RELATÓRIO
-let html = `  
-
-
+let html = `
 
 <div id="status-acesso"class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
     <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 5px;">Calculando seu tempo de acesso...</div>
@@ -4017,8 +4066,11 @@ let html = `
     <div id="conteudo-relatorio" style="background: #ffffff; width: 210mm; min-height: 297mm; box-sizing: border-box;">
 `;
 
-    
+  html += '</div>';
 // --- PÁGINA 1: SUMÁRIO (AJUSTADA PARA CABER EM UMA FOLHA) ---
+
+html += '<div id="tela-sumario" class="conteudo-aba ativa">'; 
+    
 html += `
 <div class="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; max-height: 1120px; padding: 30px; box-sizing: border-box; overflow: hidden; page-break-after: always; position: relative;">
     
@@ -4058,9 +4110,10 @@ html += `
 </div>
 `;
 
-
+html += '</div>';
 
     
+html += '<div id="tela-capaTransicao1" class="conteudo-aba ativa">'; 
 
 html += `
     <div class="capa-transicao" style="
@@ -4136,7 +4189,8 @@ html += `
     </div>
 `;
 
-
+html += '</div>';
+html += '<div id="tela-intro1" class="conteudo-aba ativa">'; 
 
 const idVideoEngenharia = "F8bg1CTQ9HI"; 
 
@@ -4165,9 +4219,10 @@ html += renderizarBlocoComVideo( `
     <p style="margin-bottom: 15px;">Ao entender que você é uma máquina magnífica, você para de agir por impulso e começa a operar com estratégia. A numerologia aponta os códigos e os melhores caminhos, mas é o conhecimento sobre sua própria anatomia — do sinal elétrico que move suas pernas à intuição que guia seus passos — que permite que você limpe as engrenagens, alimente o sistema e alcance o <strong>ápice da sua existência</strong>. É ciência, é lógica e é o seu projeto de vida funcionando em sua capacidade máxima.</p>
 </div>
 `,idVideoEngenharia); 
-
+html += '</div>';
 // --- PÁGINA 2: NOME SOCIAL (SE EXISTIR) ---
 // --- SEÇÃO: ORIGEM E CODIFICAÇÃO (COMPLETA E INTEGRADA) ---
+html += '<div id="tela-intro2" class="conteudo-aba ativa">'; 
 
 const idVideoOrigem = "F8bg1CTQ9HI";     
 tituloBonito = "Origem e a Codificação da Numerologia Moderna"; 
@@ -4248,7 +4303,8 @@ html += renderizarBlocoComVideo(`
     </div>
 
 </div>`,idVideoOrigem); 
-
+html += '</div>';
+html += '<div id="tela-intro3" class="conteudo-aba ativa">'; 
 
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
@@ -4340,7 +4396,8 @@ html += `
     </div>
 
 </div>`;
-
+html += '</div>';
+html += '<div id="tela-intro4" class="conteudo-aba ativa">'; 
 
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
@@ -7504,7 +7561,14 @@ document.getElementById('btnVideo').addEventListener('click', function() {
 </script>
 
 
-
+<div class="menu-abas">
+    <button onclick="abrirAba('tela-capa')" style="display:block; width:100%; margin-bottom:5px;">Capa</button>
+    <button onclick="abrirAba('tela-capaTransicao')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
+    <button onclick="abrirAba('tela-intro1')" style="display:block; width:100%; margin-bottom:5px;">Intro1</button>
+    <button onclick="abrirAba('tela-intro2')" style="display:block; width:100%; margin-bottom:5px;">Intro2</button>
+    <button onclick="abrirAba('tela-intro3')" style="display:block; width:100%; margin-bottom:5px;">Intro3</button>
+    
+    </div>
         
 </body>
 
