@@ -4027,14 +4027,7 @@ const dadosNegativas = detectarNegativas(piramideVida);
 
 
 
-let html = `<div class="menu-abas">
-    <button onclick="abrirAba('tela-capa')" style="display:block; width:100%; margin-bottom:5px;">Capa</button>
-    <button onclick="abrirAba('tela-sumario')" style="display:block; width:100%; margin-bottom:5px;">Sumario</button>
-    <button onclick="abrirAba('tela-capaTransicao1')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
-    <button onclick="abrirAba('tela-intro1')" style="display:block; width:100%; margin-bottom:5px;">Intro1</button>
-    <button onclick="abrirAba('tela-intro2')" style="display:block; width:100%; margin-bottom:5px;">Intro2</button>
-    <button onclick="abrirAba('tela-intro3')" style="display:block; width:100%; margin-bottom:5px;">Intro3</button>
-        </div>
+let html = `
 
 
 
@@ -7296,7 +7289,14 @@ html += `
 </div>
 `;
 
-
+html += `<div class="menu-abas">
+    <button onclick="abrirAba('tela-capa')" style="display:block; width:100%; margin-bottom:5px;">Capa</button>
+    <button onclick="abrirAba('tela-sumario')" style="display:block; width:100%; margin-bottom:5px;">Sumario</button>
+    <button onclick="abrirAba('tela-capaTransicao1')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
+    <button onclick="abrirAba('tela-intro1')" style="display:block; width:100%; margin-bottom:5px;">Intro1</button>
+    <button onclick="abrirAba('tela-intro2')" style="display:block; width:100%; margin-bottom:5px;">Intro2</button>
+    <button onclick="abrirAba('tela-intro3')" style="display:block; width:100%; margin-bottom:5px;">Intro3</button>
+        </div>`;
 
     
      document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
