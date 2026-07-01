@@ -3989,6 +3989,7 @@ const dadosNegativas = detectarNegativas(piramideVida);
 
 let html = `<div class="menu-abas">
     <button onclick="abrirAba('tela-capa')" style="display:block; width:100%; margin-bottom:5px;">Capa</button>
+    <button onclick="abrirAba('tela-sumario')" style="display:block; width:100%; margin-bottom:5px;">Sumario</button>
     <button onclick="abrirAba('tela-capaTransicao')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
     <button onclick="abrirAba('tela-intro1')" style="display:block; width:100%; margin-bottom:5px;">Intro1</button>
     <button onclick="abrirAba('tela-intro2')" style="display:block; width:100%; margin-bottom:5px;">Intro2</button>
@@ -4405,7 +4406,7 @@ html += `
 
 </div>`;
 html += '</div>';
-html += '<div id="tela-intro4" class="conteudo-aba ativa">'; 
+
 
 html += `
 <div class="page evitar-corte" style="padding: 40px; font-family: 'Segoe UI', sans-serif;">
