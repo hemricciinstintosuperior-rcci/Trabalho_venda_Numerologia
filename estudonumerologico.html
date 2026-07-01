@@ -1027,6 +1027,9 @@ body { font-family: sans-serif; background: #fff; color: #000; }
        <button class="btn-gerar" onclick="verificarGêneroEGerar()">GERAR O MAPA</button>
     </div>
 
+
+    
+
     <div id="resultado" style="width: 100%; max-width: 810px; margin: 0 auto;">
 
 
@@ -4029,7 +4032,7 @@ let html = `
         </div>
 
 
-<div id="status-acesso"class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 500px; text-align: center; color: white;">
+<div id="status-acesso"class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 810px; text-align: center; color: white;">
     <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 5px;">Calculando seu tempo de acesso...</div>
     <div id="timer" style="font-family: 'Courier New', monospace; font-size: 1.8rem; font-weight: bold; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);">00:00:00:00</div>
     <div id="msg-trava" style="font-size: 0.75rem; opacity: 0.7; margin-top: 5px;"></div>
@@ -4051,7 +4054,8 @@ let html = `
 
 
 html += `<div id="tela-capa" class="conteudo-aba ativa">`; 
-html += `<div class="container-master">
+    
+`<div class="container-master">
     <div id="capa-numerologica" style="
             width: 210mm; 
             height: 297.1mm; 
@@ -4101,10 +4105,10 @@ html += `<div class="container-master">
         </p>
     </div>
 
-    <div id="conteudo-relatorio" style="background: #ffffff; width: 210mm; min-height: 297mm; box-sizing: border-box;">
+    <div id="conteudo-relatorio" style="background: #ffffff; width: 210mm; min-height: 297mm; box-sizing: border-box;"></div>
 `;
 
-html += '</div>';
+
 html += '</div>';
 html += '</div>';
 // --- PÁGINA 1: SUMÁRIO (AJUSTADA PARA CABER EM UMA FOLHA) ---
