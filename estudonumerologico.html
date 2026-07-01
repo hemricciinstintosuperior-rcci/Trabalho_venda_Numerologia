@@ -3643,23 +3643,7 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
 }
 
 
-function abrirAba(idDaAba) {
-    // 1. Esconde todas as abas
-    const todasAsAbas = document.querySelectorAll('.conteudo-aba');
-    todasAsAbas.forEach(aba => aba.classList.remove('ativa'));
-    
-    // 2. Tenta encontrar a aba que você clicou
-    const abaEscolhida = document.getElementById(idDaAba);
-    
-    // 3. O MODO DETETIVE:
-    if (abaEscolhida) {
-        abaEscolhida.classList.add('ativa');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-        // Se der erro, ele vai jogar um aviso na sua tela!
-        alert("ALERTA: O botão tentou abrir '" + idDaAba + "', mas não existe nenhuma div com esse id exato no seu código.");
-    }
-}
+
         
         
         
@@ -7538,6 +7522,20 @@ document.getElementById('btnVideo').addEventListener('click', function() {
 
 
         
+<script>
+        function abrirAba(idDaAba) {
+            const todasAsAbas = document.querySelectorAll('.conteudo-aba');
+            todasAsAbas.forEach(aba => aba.classList.remove('ativa'));
+            
+            const abaEscolhida = document.getElementById(idDaAba);
+            if (abaEscolhida) {
+                abaEscolhida.classList.add('ativa');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                alert("ALERTA: A div '" + idDaAba + "' não foi encontrada!");
+            }
+        }
+    </script>
 </body>
 
 
