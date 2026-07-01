@@ -3643,16 +3643,21 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
 }
 
 
-// Função definitiva para trocar as telas
 function abrirAba(idDaAba) {
-    // 1. Pega todas as divs com a classe 'conteudo-aba' e esconde
+    // 1. Esconde todas as abas
     const todasAsAbas = document.querySelectorAll('.conteudo-aba');
     todasAsAbas.forEach(aba => aba.classList.remove('ativa'));
     
-    // 2. Acha a aba que você clicou e mostra ela
+    // 2. Tenta encontrar a aba que você clicou
     const abaEscolhida = document.getElementById(idDaAba);
+    
+    // 3. O MODO DETETIVE:
     if (abaEscolhida) {
         abaEscolhida.classList.add('ativa');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+        // Se der erro, ele vai jogar um aviso na sua tela!
+        alert("ALERTA: O botão tentou abrir '" + idDaAba + "', mas não existe nenhuma div com esse id exato no seu código.");
     }
 }
         
