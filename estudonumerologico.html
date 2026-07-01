@@ -939,7 +939,58 @@ input[type="text"], select {
     }
 }
 
+/* --- 2. A MÁGICA PARA O CELULAR (Telas menores que 768px) --- */
+@media (max-width: 768px) {
+    /* Força os elementos de tamanho fixo a usarem 100% da largura do celular */
+    #capa-numerologica, 
+    #conteudo-relatorio, 
+    .container-master,
+    .page,
+    .capa-transicao {
+        width: 100% !important; /* Ocupa toda a largura do celular */
+        max-width: 100vw !important;
+        height: auto !important; /* Deixa o conteúdo crescer para baixo naturalmente */
+        min-height: 100vh !important; /* Garante que ocupe pelo menos a tela cheia */
+        padding: 20px !important; /* Diminui o espaçamento para sobrar espaço pro texto */
+        box-sizing: border-box !important;
+    }
 
+    /* Ajusta as imagens grandes (como a logo) para não estourarem a tela */
+    .logo-capa, #capa-numerologica img {
+        width: 80% !important;
+        max-width: 250px !important;
+        height: auto !important;
+    }
+
+    /* Se o texto do título H1 ficar gigante no celular, o clamp ajuda, mas garantimos aqui */
+    #capa-numerologica h1 {
+        font-size: 24px !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Garante que o menu de botões flutuante não cubra o texto do relatório */
+    .menu-abas {
+        top: auto !important;
+        bottom: 10px !important; /* Joga o menu para o rodapé no celular */
+        right: 10px !important;
+        left: 10px !important;
+        max-height: 30vh !important; /* Limita o tamanho para não cobrir a tela toda */
+        display: flex !important;
+        flex-direction: row !important; /* Coloca os botões lado a lado com scroll horizontal */
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        gap: 8px !important;
+        background: rgba(0, 0, 0, 0.9) !important;
+    }
+
+    .menu-abas button {
+        display: inline-block !important;
+        width: auto !important;
+        white-space: nowrap !important; /* Não deixa o texto do botão quebrar linha */
+        margin-bottom: 0 !important;
+        padding: 8px 15px !important;
+    }
+}
     
     </style>
 
