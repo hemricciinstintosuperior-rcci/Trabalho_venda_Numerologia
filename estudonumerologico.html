@@ -7248,7 +7248,15 @@ html += `
 </div>
 `;
 
+html += `<div class="menu-abas">
+    <button onclick="abrirAba('tela-capa')" style="display:block; width:100%; margin-bottom:5px;">Capa</button>
+    <button onclick="abrirAba('tela-capaTransicao')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
+    <button onclick="abrirAba('tela-intro1')" style="display:block; width:100%; margin-bottom:5px;">Intro1</button>
+    <button onclick="abrirAba('tela-intro2')" style="display:block; width:100%; margin-bottom:5px;">Intro2</button>
+    <button onclick="abrirAba('tela-intro3')" style="display:block; width:100%; margin-bottom:5px;">Intro3</button>
+        </div>`;
 
+    
      document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
 
 
@@ -7529,14 +7537,7 @@ document.getElementById('btnVideo').addEventListener('click', function() {
 </script>
 
 
-<div class="menu-abas">
-    <button onclick="abrirAba('tela-capa')" style="display:block; width:100%; margin-bottom:5px;">Capa</button>
-    <button onclick="abrirAba('tela-capaTransicao')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
-    <button onclick="abrirAba('tela-intro1')" style="display:block; width:100%; margin-bottom:5px;">Intro1</button>
-    <button onclick="abrirAba('tela-intro2')" style="display:block; width:100%; margin-bottom:5px;">Intro2</button>
-    <button onclick="abrirAba('tela-intro3')" style="display:block; width:100%; margin-bottom:5px;">Intro3</button>
-    
-    </div>
+
         
 </body>
 
