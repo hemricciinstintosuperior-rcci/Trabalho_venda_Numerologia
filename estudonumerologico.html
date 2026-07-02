@@ -912,18 +912,7 @@ body { font-family: sans-serif; background: #fff; color: #000; }
 .conteudo-aba { display: none; width: 100%; }
 .conteudo-aba.ativa { display: block; }
 
-/* 3. MOBILE (O SEGREDO DO CELULAR) */
-@media (max-width: 768px) {
-    #capa-numerologica, #conteudo-relatorio, .page, .capa-transicao {
-        width: 100% !important;
-        height: auto !important; /* 🔥 ISSO EVITA O CORTE */
-        min-height: 100vh !important; /* Garante que preencha a tela */
-        padding: 10px !important;
-    }
-    
-    /* Ajuste de escala para imagens não quebrarem o layout */
-    .logo-capa { width: 90% !important; height: auto !important; }
-}
+
 
 /* 4. PDF (A4 FIXO) */
 @media print {
