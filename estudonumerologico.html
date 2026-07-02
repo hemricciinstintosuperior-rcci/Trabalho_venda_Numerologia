@@ -903,7 +903,79 @@ input[type="text"], select {
 }
 
 
+/* 2. Menu de botões fixo no topo ou na lateral */
+.menu-abas {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    background: #000;
+    padding: 10px;
+    border-radius: 8px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
 
+/* 3. A MÁGICA DO PDF: Na hora de baixar/imprimir, mostra TUDO de uma vez e esconde o menu */
+@media print {
+    .conteudo-aba {
+        display: block !important; 
+    }
+    .menu-abas {
+        display: none !important;
+    }
+}
+
+/* 1. RESET E BASE */
+* { box-sizing: border-box !important; margin: 0; padding: 0; }
+body { font-family: sans-serif; background: #fff; color: #000; }
+
+/* 2. SISTEMA DE ABAS */
+.conteudo-aba { display: none; width: 100%; }
+.conteudo-aba.ativa { display: block; }
+
+
+    /* 3. MOBILE (O SEGREDO DO CELULAR) */
+@media (max-width: 768px) {
+    #capa-numerologica, #conteudo-relatorio, .page, .capa-transicao {
+        width: 100% !important;
+        height: auto !important; /* 🔥 ISSO EVITA O CORTE */
+        min-height: 100vh !important; /* Garante que preencha a tela */
+        padding: 10px !important;
+    }
+    
+    /* Ajuste de escala para imagens não quebrarem o layout */
+    .logo-capa { width: 90% !important; height: auto !important; }
+}
+
+/* 4. PDF (A4 FIXO) */
+@media print {
+    /* Esconde o menu e botões */
+    .menu-abas, .no-print, .btn-pdf { display: none !important; }
+    
+    /* Força tamanho A4 */
+    #capa-numerologica, #conteudo-relatorio, .page {
+        width: 210mm !important;
+        height: 297mm !important;
+        margin: 0 !important;
+        page-break-after: always;
+    }
+    
+    /* Mostra todas as abas no PDF */
+    .conteudo-aba { display: block !important; }
+}
+
+/* 5. MENU DE NAVEGAÇÃO */
+.menu-abas {
+    position: fixed; top: 10px; right: 10px; z-index: 9999;
+    background: #000; padding: 10px; border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .menu-abas {
+        bottom: 10px; top: auto; right: 10px; left: 10px;
+        display: flex; overflow-x: auto;
+    }
+}
 
 
 
@@ -3947,7 +4019,14 @@ const dadosNegativas = detectarNegativas(piramideVida);
 
 let html = `
 
-
+<div class="menu-abas">
+    
+    <button onclick="abrirAba('tela-sumario')" style="display:block; width:100%; margin-bottom:5px;">Sumario</button>
+    <button onclick="abrirAba('tela-capaTransicao1')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
+    <button onclick="abrirAba('tela-intro1')" style="display:block; width:100%; margin-bottom:5px;">Intro1</button>
+    <button onclick="abrirAba('tela-intro2')" style="display:block; width:100%; margin-bottom:5px;">Intro2</button>
+    <button onclick="abrirAba('tela-intro3')" style="display:block; width:100%; margin-bottom:5px;">Intro3</button>
+        </div> 
 
 
 <div id="status-acesso"class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 810px; text-align: center; color: white;">
@@ -3968,18 +4047,11 @@ let html = `
 <div class="no-print" style="position: fixed; top: 10px; left: 10px; z-index: 9999; text-align: center;">
     <button onclick="window.location.href='index.html'" style="background: #d62600; color: white; border: 2px solid white; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; font-weight: bold; font-size: 18px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">X</button>
     <div style="color: white; font-size: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">⬅️ VOLTAR AO PORTAL</div>
-</div>`; 
+</div>`;
 
-html += `<div class="menu-abas">
-    <button onclick="abrirAba('tela-capa')" style="display:block; width:100%; margin-bottom:5px;">Capa</button>
-    <button onclick="abrirAba('tela-sumario')" style="display:block; width:100%; margin-bottom:5px;">Sumario</button>
-    <button onclick="abrirAba('tela-capaTransicao1')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
-    <button onclick="abrirAba('tela-intro1')" style="display:block; width:100%; margin-bottom:5px;">Intro1</button>
-    <button onclick="abrirAba('tela-intro2')" style="display:block; width:100%; margin-bottom:5px;">Intro2</button>
-    <button onclick="abrirAba('tela-intro3')" style="display:block; width:100%; margin-bottom:5px;">Intro3</button>
-        </div>`; 
+
     
-html += `<div id="tela-capa" class="conteudo-aba ativa">`; 
+
     
 html +=`<div class="container-master">
     <div id="capa-numerologica" style="
@@ -4031,12 +4103,11 @@ html +=`<div class="container-master">
         </p>
     </div>
 
-    <div id="conteudo-relatorio" style="background: #ffffff; width: 210mm; min-height: 297mm; box-sizing: border-box;">
+    <div id="conteudo-relatorio" style="background: #ffffff; width: 210mm; min-height: 297mm; box-sizing: border-box;"></div>
 `;
 
-html += '</div>';
-html += '</div>';
-html += '</div>';
+
+
 // --- PÁGINA 1: SUMÁRIO (AJUSTADA PARA CABER EM UMA FOLHA) ---
 
 html += '<div id="tela-sumario" class="conteudo-aba">'; 
