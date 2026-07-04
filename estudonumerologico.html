@@ -905,65 +905,51 @@ input[type="text"], select {
 
 
 
-/* 1. RESET E BASE (MANTÉM ISSO) */
+/* Reset */
 * { box-sizing: border-box !important; margin: 0; padding: 0; }
-body { width: 100%; overflow-x: hidden; }
+body { width: 100% !important; overflow-x: hidden !important; }
 
-/* 2. MENU DE ABAS (AJUSTE FINO) */
-.menu-abas {
-    position: fixed;
-    z-index: 9999;
-    background: #000;
-    padding: 5px;
-    border-radius: 8px;
-    /* Configuração de desktop (lado direito) */
-    top: 10px;
-    right: 10px;
-    max-height: 80vh;
-    overflow-y: auto;
-    width: 200px;
+/* 🔥 A LÓGICA DAS ABAS (FORÇADA) */
+.conteudo-aba {
+    display: none !important; /* Esconde TUDO por padrão */
+    width: 100% !important;
+    margin: 0 !important;
+}
+.conteudo-aba.ativa {
+    display: block !important; /* Mostra SÓ o que for ativo */
 }
 
-/* 🔥 MÁGICA PARA O CELULAR: MENU VIRA BARRA HORIZONTAL NO RODAPÉ */
+/* 🔥 CENTRALIZAÇÃO E TAMANHO NO CELULAR */
 @media (max-width: 768px) {
-    .menu-abas {
-        bottom: 0 !important; /* Cola no rodapé */
-        top: auto !important;
-        right: 0 !important;
-        left: 0 !important;
-        width: 100% !important; /* Ocupa a largura total */
-        border-radius: 0 !important;
-        display: flex !important;
-        flex-direction: row !important; /* Coloca os botões um ao lado do outro */
-        overflow-x: auto !important; /* Se tiver muito botão, o usuário desliza o dedo */
+    /* Força todas as divs de conteúdo a ignorar os 210mm e ocupar a tela */
+    .conteudo-aba, .container-master, #capa-numerologica, #conteudo-relatorio, .page {
+        width: 100% !important;
+        margin: 0 auto !important; /* Centraliza */
         padding: 5px !important;
-        box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
     }
     
-    .menu-abas button {
-        flex: 0 0 auto !important; /* Botão não estica */
-        width: auto !important; /* Largura automática conforme o texto */
-        padding: 8px 12px !important;
-        margin: 0 4px !important; /* Pequeno espaçamento entre botões */
-        font-size: 12px !important; /* Fonte menor para caber */
-    }
-
-    /* 🔥 FORÇA O RELATÓRIO A OCUPAR A TELA TODA */
-    .container-master, #capa-numerologica, #conteudo-relatorio, .page {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
+    /* Isso faz o seu conteúdo ignorar a largura fixa de 210mm no celular */
+    #capa-numerologica, #conteudo-relatorio {
+        width: 100vw !important;
+        max-width: 100vw !important;
     }
 }
 
-/* 3. PDF (A4 FIXO - NÃO MEXE NA TELA) */
+/* Menu de Abas (Fixado no rodapé no celular) */
+.menu-abas {
+    position: fixed; z-index: 9999; background: #000; padding: 5px; border-radius: 8px;
+    top: 10px; right: 10px; width: 200px;
+}
+@media (max-width: 768px) {
+    .menu-abas { bottom: 0; top: auto; right: 0; left: 0; width: 100%; display: flex; flex-direction: row; overflow-x: auto; border-radius: 0; }
+    .menu-abas button { flex: 0 0 auto; margin: 0 2px; }
+}
+
+/* PDF */
 @media print {
     .menu-abas { display: none !important; }
-    #capa-numerologica, #conteudo-relatorio {
-        width: 210mm !important;
-        height: 297mm !important;
-    }
+    .conteudo-aba { display: block !important; } /* Mostra tudo no PDF */
+    #capa-numerologica, #conteudo-relatorio { width: 210mm !important; }
 }
 
 
