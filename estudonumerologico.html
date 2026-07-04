@@ -4028,7 +4028,14 @@ let html = `
     <div style="color: white; font-size: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">⬅️ VOLTAR AO PORTAL</div>
 </div>`;
 
-
+html += `<div class="menu-abas">
+    <button onclick="abrirAba('tela-capa')" style="display:block; width:100%; margin-bottom:5px;">Capa</button>
+    <button onclick="abrirAba('tela-sumario')" style="display:block; width:100%; margin-bottom:5px;">Sumario</button>
+    <button onclick="abrirAba('tela-capaTransicao1')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
+    <button onclick="abrirAba('tela-intro1')" style="display:block; width:100%; margin-bottom:5px;">Intro1</button>
+    <button onclick="abrirAba('tela-intro2')" style="display:block; width:100%; margin-bottom:5px;">Intro2</button>
+    <button onclick="abrirAba('tela-intro3')" style="display:block; width:100%; margin-bottom:5px;">Intro3</button>
+        </div> `;
     
 html += '<div id="tela-capa" class="conteudo-aba">'; 
     
@@ -4087,14 +4094,7 @@ html += `<div class="container-master">
 
  html += '</div>';   
 
-html += `<div class="menu-abas">
-    <button onclick="abrirAba('tela-capa')" style="display:block; width:100%; margin-bottom:5px;">Sumario</button>
-    <button onclick="abrirAba('tela-sumario')" style="display:block; width:100%; margin-bottom:5px;">Sumario</button>
-    <button onclick="abrirAba('tela-capaTransicao1')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
-    <button onclick="abrirAba('tela-intro1')" style="display:block; width:100%; margin-bottom:5px;">Intro1</button>
-    <button onclick="abrirAba('tela-intro2')" style="display:block; width:100%; margin-bottom:5px;">Intro2</button>
-    <button onclick="abrirAba('tela-intro3')" style="display:block; width:100%; margin-bottom:5px;">Intro3</button>
-        </div> `;
+
 
 
 
