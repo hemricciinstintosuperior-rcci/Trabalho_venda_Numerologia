@@ -6323,7 +6323,7 @@ const resultadoMomentoCompleto = montarHtmlPlanosMomento(
 // 2. Como o gráfico já está embutido no HTML da função, basta somar o resultado
 html += resultadoMomentoCompleto.html;
 
-
+ html += `</div>`;  
 html += `</div>`;     
 
 html += '<div id="tela-parte8" class="conteudo-aba">';   
@@ -7081,7 +7081,10 @@ html += htmlPiramide;
         </p>
     </div>
 </div>
-`;      
+`;  
+
+
+  html += `</div>`;     
  html += `</div>`;  
 html += '<div id="tela-parte10" class="conteudo-aba">Conteúdo da Parte 10</div>';          
 html += `
