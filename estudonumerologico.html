@@ -4048,7 +4048,7 @@ html += `<div class="menu-abas">
 
     <button onclick="abrirAba('tela-parte9')" style="display:block; width:100%; margin-bottom:5px;">Parte 9: A Grande Matriz</button>
   
-    <button onclick="abrirAba('tela-potencias-piramide')" style="display:block; width:100%; margin-bottom:5px;">Potências da Pirâmide</button>
+  
 
     <button onclick="abrirAba('tela-parte10')" style="display:block; width:100%; margin-bottom:5px;">Parte 10: Filosofia e Ciência</button>
   
@@ -5035,6 +5035,7 @@ html += `
 `; 
 
 html += '</div>';
+    
 html += '<div id="tela-resultado" class="conteudo-aba">';
     
 const listaItensSintese = [
@@ -5243,8 +5244,8 @@ if (campoAssinatura && campoAssinatura.value.trim() !== "") {
     html += gerarNovaAssinatura(campoAssinatura.value.trim(), exp, dadosNegativas);
 }
 
-
 html += '</div>';
+    
 html += '<div id="tela-parte1" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
@@ -6329,6 +6330,8 @@ html += resultadoMomentoCompleto.html;
 html += `</div>`;  
 html += `</div>`;     
 html += `</div>`; 
+
+    
 html += '<div id="tela-parte8" class="conteudo-aba">';   
 
 html += `
@@ -6579,7 +6582,7 @@ html += `
 
 </div>`,
 
-
+ html += `</div>`;  
   html += `</div>`;    
     html += '<div id="tela-parte9" class="conteudo-aba">';
 html += `
@@ -6912,9 +6915,7 @@ if (listaFin.length > 0) {
 }
     
 htmlPiramide += `</div>`;
- html += `</div>`;  
 
-html += '<div id="tela-potencias-piramide" class="conteudo-aba">';
     
 // --- INSERÇÃO DAS POTÊNCIAS COM LOOP DE 100 ANOS ---
 const potenciasTopo = topo(piramideVida[0]); // As potências originais do nome
@@ -7089,6 +7090,9 @@ html += htmlPiramide;
 
   html += `</div>`;     
  html += `</div>`;  
+
+
+    
 html += '<div id="tela-parte10" class="conteudo-aba">Conteúdo da Parte 10</div>';          
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
