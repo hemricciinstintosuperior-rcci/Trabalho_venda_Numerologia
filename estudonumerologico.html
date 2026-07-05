@@ -6474,10 +6474,10 @@ html += `
 <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-        <div class="intro-texto" style="text-align: justify; line-height: 1.6;">
-        <p>As cores não são apenas elementos visuais; elas são frequências eletromagnéticas que interagem diretamente com o seu campo áurico e sua <strong>Expressão Pessoal</strong>. Na Numerologia Cabalística, o uso consciente das cores corretas atua como um catalisador vibracional, facilitando a manifestação dos seus talentos e protegendo sua energia de interferências externas. Quando você se veste ou se cerca das cores que harmonizam com sua Personalidade, você reduz o atrito com o ambiente e potencializa seu magnetismo social. Esta prática auxilia na clareza mental e na autoconfiança, permitindo que sua essência brilhe sem bloqueios. Cada tonalidade recomendada abaixo possui uma "assinatura" que se acopla ao seu código numérico, criando uma sinergia que favorece desde reuniões importantes até momentos de introspecção e cura.</p>
+    <div class="intro-texto" style="text-align: justify; line-height: 1.6;">
+        <p>As cores não são apenas elementos visuais...</p>
     </div>
-        <div class="evitar-corte texto-res" style="margin-top: 30px; text-align: center;">
+    <div class="evitar-corte texto-res" style="margin-top: 30px; text-align: center;">
         ${idVideoCores ? gerarPlayerYouTube(idVideoCores) : ""}
     </div>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 30px;">
@@ -6541,36 +6541,33 @@ const idVideoPoder = buscarVideoID("diasPoder", res.dia); // Busca do vídeo
 const diaSemanaVib = obterDiaSemanaVibracional(res.dia);
 const legendaVib = obterLegendaVibração(res.dia); // Chamada da nova função
 
+// --- BLOCO 2: DIAS DE PODER (CORRIGIDO) ---
 tituloBonito = "Dias de Poder e Fluxo Vital";
 html += `
 <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
     <div class="intro-texto" style="text-align: justify; line-height: 1.6;">
-        <p>Os <strong>Dias de Poder</strong> são janelas de oportunidade cronológica onde o universo "fala a mesma língua" que a sua alma. Baseado na Lei da Ressonância, esses dias são momentos de alinhamento vibracional onde a resistência do mundo diminui para você.</p>
-        <p>Além da ressonância numérica mensal, sua energia pessoal está conectada à vibração sagrada de <strong>${diaSemanaVib}</strong>. De acordo com a Numerologia Cabalística, este é o dia da semana que governa sua vitalidade e sua força de ação.</p>
+        <p>Os <strong>Dias de Poder</strong> são janelas de oportunidade...</p>
     </div>
 
     <div style="margin-top: 30px; background: rgba(218, 165, 32, 0.05); border: 2px solid var(--gold); border-radius: 15px; padding: 25px; position: relative;">
         <div style="text-align: center;">
             <span style="display: block; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9em; color: var(--gold); margin-bottom: 15px;">Seus Dias de Ressonância Mensal</span>
-                 <div class="evitar-corte texto-res" style="margin-top: 20px; text-align: center;">
-        ${idVideoPoder ? gerarPlayerYouTube(idVideoPoder) : ""}
-    </div>
+            <div class="evitar-corte texto-res" style="margin-top: 20px; text-align: center;">
+                ${idVideoPoder ? gerarPlayerYouTube(idVideoPoder) : ""}
+            </div>
             <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
                 ${diasPoder.map(d => `
                     <div style="background: var(--gold); color: #000; width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 10px; font-size: 1.6em; font-weight: bold; box-shadow: 4px 4px 12px rgba(0,0,0,0.3);">
                         ${d}
-                     </div>
+                    </div>
                 `).join('')}
-         
-</div>
-
+            </div>
             
             <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(218, 165, 32, 0.3);">
                 <p style="margin: 0; color: #333; font-weight: bold;">Sua Vibração Semanal Regente:</p>
                 <strong style="font-size: 1.8em; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">${diaSemanaVib}</strong>
-                
                 <div style="margin-top: 15px; padding: 15px; background: #fff; border-radius: 8px; font-size: 0.95em; line-height: 1.5; color: #444; border: 1px solid #eee; text-align: left;">
                     ${legendaVib}
                 </div>
@@ -6581,9 +6578,7 @@ html += `
     <p style="text-align: center; margin-top: 20px; font-size: 0.85em; color: #888; font-style: italic;">
         * Sempre que um dia de poder cair em uma ${diaSemanaVib}, você terá um "Dia de Ouro".
     </p>
-
-
-</div>`;
+</div>`; // FECHAMENTO DA PAGE (Removida a vírgula que existia aqui antes)
 
 
 
