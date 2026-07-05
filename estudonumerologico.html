@@ -4159,8 +4159,7 @@ html += `
 
 html += '</div>';
 
-    
-​html += '<div id="tela-introducao" class="conteudo-aba">Conteúdo da Introdução</div>';
+html += '<div id="tela-introducao" class="conteudo-aba">';
 
 html += `
     <div class="capa-transicao" style="
@@ -5036,7 +5035,6 @@ html += `
 `; 
 
 html += '</div>';
-
 html += '<div id="tela-resultado" class="conteudo-aba">';
     
 const listaItensSintese = [
@@ -5247,7 +5245,6 @@ if (campoAssinatura && campoAssinatura.value.trim() !== "") {
 
 
 html += '</div>';
-    
 html += '<div id="tela-parte1" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
@@ -5347,8 +5344,7 @@ html += `
 `;
  
  html += '</div>'; 
-    
-​html += '<div id="tela-parte2" class="conteudo-aba">';
+html += '<div id="tela-parte2" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -5677,8 +5673,7 @@ ${textos.PlanosExpressao[dadosHabilidade.plano]?.forte?.conteudo || "Conteúdo n
 `;
 
  html += '</div>'; 
-
-​html += '<div id="tela-parte3" class="conteudo-aba">';
+html += '<div id="tela-parte3" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -5852,8 +5847,7 @@ html += `
 `; 
 
    html += '</div>';   
-    
- ​html += '<div id="tela-parte4" class="conteudo-aba">';   
+    html += '<div id="tela-parte4" class="conteudo-aba">';   
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -5982,8 +5976,7 @@ html += `
     
 
 
-
-​html += '<div id="tela-parte5" class="conteudo-aba">';    
+html += '<div id="tela-parte5" class="conteudo-aba">';    
 
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
@@ -6109,7 +6102,7 @@ html += `</div>`;
 // --- COPIE A PARTIR DAQUI ---
 
 // --- ATÉ AQUI ---
-​html += '<div id="tela-parte6" class="conteudo-aba">';
+html += '<div id="tela-parte6" class="conteudo-aba">';
    html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -6275,8 +6268,8 @@ html += `
          </div>
          </div>
 </div>`;
-    html += `</div>`;     
-​html += '<div id="tela-parte7" class="conteudo-aba">';
+    html += `</div>`;    
+    html += '<div id="tela-parte7" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -6332,7 +6325,7 @@ html += resultadoMomentoCompleto.html;
 // --- FIM DO BLOCO INTEGRADO ---
 ​  html += `</div>`;     
 
- ​html += '<div id="tela-parte8" class="conteudo-aba">';   
+html += '<div id="tela-parte8" class="conteudo-aba">';   
 
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
@@ -6584,7 +6577,7 @@ html += `
 
 
   html += `</div>`;    
-​html += '<div id="tela-parte9" class="conteudo-aba">';
+    html += '<div id="tela-parte9" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -7023,7 +7016,7 @@ htmlPiramide += `
 // 4. FINALMENTE: JUNTA A PIRÂMIDE NO CORPO DO RELATÓRIO
 html += htmlPiramide;
  
- html += `</div>`;  
+
 
  html += `
 <div class="page-final" style="
@@ -7088,7 +7081,7 @@ html += htmlPiramide;
     </div>
 </div>
 `;      
-
+ html += `</div>`;  
  ​html += '<div id="tela-parte10" class="conteudo-aba">Conteúdo da Parte 10</div>';          
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
