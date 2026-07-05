@@ -6453,7 +6453,7 @@ html += `
 </div>
 `;
 
-
+tituloBonito = "Cores Favoráveis";
 // Bloco das Cores Favoráveis
 const textoCoresRaw = obterCoresFavoraveis(res.Personalidade);
 // Divide pelas vírgulas
@@ -6467,7 +6467,7 @@ const mapaCoresHex = {
     "Marrom": "#8b4513", "Anil": "#4b0082", "Bege": "#f5f5dc", "Violeta": "#ee82ee"
 };
 
-tituloBonito = "Cores Favoráveis";
+
 html += `
 <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
 <div class="page">
@@ -6532,14 +6532,14 @@ html += `
 </div>
 `;
 
-
+tituloBonito = "Dias de Poder e Fluxo Vital";
 
 // --- BLOCO: DIAS DE PODER E VIBRAÇÃO SEMANAL ---
 const diasPoder = obterDiasFavoraveisRessonancia(res.dia);
 const idVideoPoder = buscarVideoID("diasPoder", res.dia); // Busca do vídeo
 const diaSemanaVib = obterDiaSemanaVibracional(res.dia);
 const legendaVib = obterLegendaVibração(res.dia); // Chamada da nova função
-tituloBonito = "Dias de Poder e Fluxo Vital";
+
 
 html += `
 <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
@@ -7097,7 +7097,7 @@ html += htmlPiramide;
  html += `</div>`;  
 
     
-html += '<div id="tela-parte10" class="conteudo-aba">Conteúdo da Parte 10</div>';          
+html += '<div id="tela-parte10" class="conteudo-aba">';          
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
