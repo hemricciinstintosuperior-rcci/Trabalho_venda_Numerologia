@@ -6414,45 +6414,6 @@ html += `
 </div>
 `;
 
-
-// Bloco dos Números Harmônicos
-const numHarmonicosRaw = obterNumerosHarmonicos(res.dia);
-const listaNums = numHarmonicosRaw.replace(' e ', ', ').split(',').map(n => n.trim());
-const idVideoHarmonicos = buscarVideoID("numerosHarmonicos", reduzirPuro(res.dia));
-
-// Log de verificação (vai aparecer no console do navegador)
-console.log("DEBUG: Buscando numerosHarmonicos para o valor:", reduzirPuro(res.dia));
-console.log("DEBUG: Resultado da busca:", idVideoHarmonicos);
-    
-tituloBonito = "Números Harmônicos";
-html += `
-<div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
-<div class="page">
-    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto" style="text-align: justify; line-height: 1.6;">
-        <p>Os <strong>Números Harmônicos</strong> representam as chaves de acesso à sua sorte e fluidez no mundo material. Eles são calculados a partir da raiz do seu dia de nascimento e indicam quais frequências numéricas estão em "simbiose" com o seu destino. Você deve utilizar estes números como uma bússola para escolhas estratégicas: desde a numeração de uma casa ou apartamento, a escolha de placas de veículos, até datas para assinaturas de contratos importantes e gincanas de sorte. Ao alinhar seus documentos, senhas e até números de telefone com estas vibrações, você cria um escudo de proteção e um canal de menor resistência para a prosperidade. Estes números não são meras coincidências, mas sim o seu código de acesso pessoal para que o universo reconheça suas intenções e facilite a conquista de prêmios, reconhecimento e sucesso em suas empreitadas.</p>
-    </div>
-     <div class="evitar-corte texto-res" style="margin-top: 20px;">
-        ${idVideoHarmonicos ? gerarPlayerYouTube(idVideoHarmonicos) : ""}
-    </div>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px;">
-        ${listaNums.map(n => `
-            <div style="width: 70px; height: 70px; border: 3px solid var(--gold); border-radius: 50%; 
-                        display: flex; align-items: center; justify-content: center; 
-                        font-size: 2em; font-weight: bold; color: var(--gold); 
-                        background: rgba(218, 165, 32, 0.1); box-shadow: 0 0 15px rgba(218, 165, 32, 0.4);">
-                ${n}
-            </div>
-        `).join('')}</div>
-
-</div>
-         
-    <p style="text-align: center; margin-top: 30px; font-style: italic; color: #888;">
-        "A sorte é o encontro da preparação com a frequência numérica correta."
-    </p>
-</div>
-`;
-
 tituloBonito = "Cores Favoráveis";
 // Bloco das Cores Favoráveis
 const textoCoresRaw = obterCoresFavoraveis(res.Personalidade);
@@ -6583,6 +6544,45 @@ html += `
 
 
 </div>`,
+// Bloco dos Números Harmônicos
+const numHarmonicosRaw = obterNumerosHarmonicos(res.dia);
+const listaNums = numHarmonicosRaw.replace(' e ', ', ').split(',').map(n => n.trim());
+const idVideoHarmonicos = buscarVideoID("numerosHarmonicos", reduzirPuro(res.dia));
+
+// Log de verificação (vai aparecer no console do navegador)
+console.log("DEBUG: Buscando numerosHarmonicos para o valor:", reduzirPuro(res.dia));
+console.log("DEBUG: Resultado da busca:", idVideoHarmonicos);
+    
+tituloBonito = "Números Harmônicos";
+html += `
+<div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    <div class="intro-texto" style="text-align: justify; line-height: 1.6;">
+        <p>Os <strong>Números Harmônicos</strong> representam as chaves de acesso à sua sorte e fluidez no mundo material. Eles são calculados a partir da raiz do seu dia de nascimento e indicam quais frequências numéricas estão em "simbiose" com o seu destino. Você deve utilizar estes números como uma bússola para escolhas estratégicas: desde a numeração de uma casa ou apartamento, a escolha de placas de veículos, até datas para assinaturas de contratos importantes e gincanas de sorte. Ao alinhar seus documentos, senhas e até números de telefone com estas vibrações, você cria um escudo de proteção e um canal de menor resistência para a prosperidade. Estes números não são meras coincidências, mas sim o seu código de acesso pessoal para que o universo reconheça suas intenções e facilite a conquista de prêmios, reconhecimento e sucesso em suas empreitadas.</p>
+    </div>
+     <div class="evitar-corte texto-res" style="margin-top: 20px;">
+        ${idVideoHarmonicos ? gerarPlayerYouTube(idVideoHarmonicos) : ""}
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px;">
+        ${listaNums.map(n => `
+            <div style="width: 70px; height: 70px; border: 3px solid var(--gold); border-radius: 50%; 
+                        display: flex; align-items: center; justify-content: center; 
+                        font-size: 2em; font-weight: bold; color: var(--gold); 
+                        background: rgba(218, 165, 32, 0.1); box-shadow: 0 0 15px rgba(218, 165, 32, 0.4);">
+                ${n}
+            </div>
+        `).join('')}</div>
+
+</div>
+         
+    <p style="text-align: center; margin-top: 30px; font-style: italic; color: #888;">
+        "A sorte é o encontro da preparação com a frequência numérica correta."
+    </p>
+</div>
+`;
+
+
 
  html += `</div>`;  
   html += `</div>`; 
