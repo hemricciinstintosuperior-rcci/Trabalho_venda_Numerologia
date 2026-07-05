@@ -6269,6 +6269,7 @@ html += `
          </div>
 </div>`;
     html += `</div>`;    
+     html += `</div>`;   
     html += '<div id="tela-parte7" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
@@ -6322,7 +6323,7 @@ const resultadoMomentoCompleto = montarHtmlPlanosMomento(
 // 2. Como o gráfico já está embutido no HTML da função, basta somar o resultado
 html += resultadoMomentoCompleto.html;
 
-// --- FIM DO BLOCO INTEGRADO ---
+
 html += `</div>`;     
 
 html += '<div id="tela-parte8" class="conteudo-aba">';   
