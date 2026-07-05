@@ -4016,12 +4016,43 @@ let html = `
 
 html += `<div class="menu-abas">
     <button onclick="abrirAba('tela-Capa')" style="display:block; width:100%; margin-bottom:5px;">Capa</button>
-    <button onclick="abrirAba('tela-sumario')" style="display:block; width:100%; margin-bottom:5px;">Sumario</button>
-    <button onclick="abrirAba('tela-capaTransicao1')" style="display:block; width:100%; margin-bottom:5px;">Capa Transição</button>
-    <button onclick="abrirAba('tela-intro1')" style="display:block; width:100%; margin-bottom:5px;">Intro1</button>
-    <button onclick="abrirAba('tela-intro2')" style="display:block; width:100%; margin-bottom:5px;">Intro2</button>
-    <button onclick="abrirAba('tela-intro3')" style="display:block; width:100%; margin-bottom:5px;">Intro3</button>
-        </div> `;
+    <button onclick="abrirAba('tela-sumario')" style="display:block; width:100%; margin-bottom:5px;">Sumário</button>
+    
+    <button onclick="abrirAba('tela-introducao')" style="display:block; width:100%; margin-bottom:5px;">Introdução: Instinto e Numerologia</button>
+     <button onclick="abrirAba('tela-resultado')" style="display:block; width:100%; margin-bottom:5px;">Resultado Numerológico</button>
+     <button onclick="abrirAba('tela-social')" style="display:block; width:100%; margin-bottom:5px;">Nome Social</button>
+     <button onclick="abrirAba('tela-assinatura')" style="display:block; width:100%; margin-bottom:5px;">Assinatura</button>
+    <button onclick="abrirAba('tela-parte1')" style="display:block; width:100%; margin-bottom:5px;">Parte 1: Performance Natural</button>
+
+
+    <button onclick="abrirAba('tela-parte2')" style="display:block; width:100%; margin-bottom:5px;">Parte 2: Essência e Identidade</button>
+
+
+    <button onclick="abrirAba('tela-parte3')" style="display:block; width:100%; margin-bottom:5px;">Parte 3: Alinhamento e Desafios</button>
+
+
+    <button onclick="abrirAba('tela-parte4')" style="display:block; width:100%; margin-bottom:5px;">Parte 4: Finalidade e Realização</button>
+
+
+    <button onclick="abrirAba('tela-parte5')" style="display:block; width:100%; margin-bottom:5px;">Parte 5: Ciclos</button>
+
+
+    <button onclick="abrirAba('tela-parte6')" style="display:block; width:100%; margin-bottom:5px;">Parte 6: Ciclo Anual</button>
+
+
+    <button onclick="abrirAba('tela-parte7')" style="display:block; width:100%; margin-bottom:5px;">Parte 7: Tendências</button>
+
+
+    <button onclick="abrirAba('tela-parte8')" style="display:block; width:100%; margin-bottom:5px;">Parte 8: Complementos</button>
+
+
+    <button onclick="abrirAba('tela-parte9')" style="display:block; width:100%; margin-bottom:5px;">Parte 9: A Grande Matriz</button>
+  
+    <button onclick="abrirAba('tela-potencias-piramide')" style="display:block; width:100%; margin-bottom:5px;">Potências da Pirâmide</button>
+
+    <button onclick="abrirAba('tela-parte10')" style="display:block; width:100%; margin-bottom:5px;">Parte 10: Filosofia e Ciência</button>
+  
+</div>`;
     
 
     html += '<div id="tela-Capa" class="conteudo-aba ativa">'; 
@@ -4129,7 +4160,7 @@ html += `
 html += '</div>';
 
     
-html += '<div id="tela-capaTransicao1" class="conteudo-aba">'; 
+​html += '<div id="tela-introducao" class="conteudo-aba">Conteúdo da Introdução</div>';
 
 html += `
     <div class="capa-transicao" style="
@@ -4205,8 +4236,7 @@ html += `
     </div>
 `;
 
-html += '</div>';
-html += '<div id="tela-intro1" class="conteudo-aba">'; 
+
 
 const idVideoEngenharia = "F8bg1CTQ9HI"; 
 
@@ -4691,11 +4721,11 @@ html += `
 </div>
 </div>`;
 
-html += '</div>';
+
 
 
     
-html += '<div id="tela-intro3" class="conteudo-aba">'; 
+
 TituloBonito = "Numerologia Moderna: O Tratado da Evolução Consciente";    
 html += `
 <div class="separador-luxo">
@@ -4770,7 +4800,7 @@ html += `
 </div></div>
 `;
 
-html += '</div>';
+
 
 
 
@@ -5005,9 +5035,9 @@ html += `
 </div>
 `; 
 
+html += '</div>';
 
-
-
+html += '<div id="tela-resultado" class="conteudo-aba">';
     
 const listaItensSintese = [
     { label: "Dia Natalicio", valor: res.dia, categoria: "dia" },
@@ -5139,6 +5169,10 @@ ${listaItensSintese.map(item => {
 
 </div> `;
 
+
+html += '</div>';
+    
+html += '<div id="tela-social" class="conteudo-aba">';
 const nomeSocialValor = document.getElementById("nomeSocial").value.trim();
 // --- PÁGINA 2: NOME SOCIAL (COMPACTADA PARA NÃO PULAR) ---
 if (nomeSocialValor !== "") {
@@ -5199,10 +5233,10 @@ const idVideonome = "F8bg1CTQ9HI";
     `,idVideonome); 
 }
 
-
+html += '</div>';
 // --- BLOCO ÚNICO DE NOVA ASSINATURA ---
 // Apenas estas linhas bastam. Não repita nada disso em outro lugar.
-
+html += '<div id="tela-assinatura" class="conteudo-aba">';
 const campoAssinatura = document.getElementById("input_nova_assinatura");
 
 if (campoAssinatura && campoAssinatura.value.trim() !== "") {
@@ -5211,6 +5245,10 @@ if (campoAssinatura && campoAssinatura.value.trim() !== "") {
     html += gerarNovaAssinatura(campoAssinatura.value.trim(), exp, dadosNegativas);
 }
 
+
+html += '</div>';
+    
+html += '<div id="tela-parte1" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -5307,7 +5345,10 @@ html += `
         ${gerarTodosOsGraficos(res, res.deficiencias, nomeRaw, res.desafios[3], regenteVida, dadosNegativas.nums)}
     </div>
 `;
-
+ 
+ html += '</div>'; 
+    
+​html += '<div id="tela-parte2" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -5635,9 +5676,9 @@ ${textos.PlanosExpressao[dadosHabilidade.plano]?.forte?.conteudo || "Conteúdo n
     </div>
 `;
 
+ html += '</div>'; 
 
-
-
+​html += '<div id="tela-parte3" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -5810,9 +5851,9 @@ html += `
     </div>
 `; 
 
+   html += '</div>';   
     
-    
-    
+ ​html += '<div id="tela-parte4" class="conteudo-aba">';   
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -5931,7 +5972,7 @@ html += `
 
     
 
-
+   html += '</div>';   
 
 
 
@@ -5942,7 +5983,7 @@ html += `
 
 
 
-    
+​html += '<div id="tela-parte5" class="conteudo-aba">';    
 
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
@@ -6064,11 +6105,11 @@ for(let i in res[sec]) {
     html += `</div>`; // Fecha a div class="page"
 });
 // ... (depois de terminar os Desafios)
-
+html += `</div>`;
 // --- COPIE A PARTIR DAQUI ---
 
 // --- ATÉ AQUI ---
-
+​html += '<div id="tela-parte6" class="conteudo-aba">';
    html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -6234,8 +6275,8 @@ html += `
          </div>
          </div>
 </div>`;
-         
-
+    html += `</div>`;     
+​html += '<div id="tela-parte7" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -6289,7 +6330,9 @@ const resultadoMomentoCompleto = montarHtmlPlanosMomento(
 html += resultadoMomentoCompleto.html;
 
 // --- FIM DO BLOCO INTEGRADO ---
+​  html += `</div>`;     
 
+ ​html += '<div id="tela-parte8" class="conteudo-aba">';   
 
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
@@ -6540,8 +6583,8 @@ html += `
 </div>`,
 
 
-
-
+  html += `</div>`;    
+​html += '<div id="tela-parte9" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -6872,7 +6915,10 @@ if (listaFin.length > 0) {
 }
     
 htmlPiramide += `</div>`;
+ html += `</div>`;  
 
+html += '<div id="tela-potencias-piramide" class="conteudo-aba">';
+    
 // --- INSERÇÃO DAS POTÊNCIAS COM LOOP DE 100 ANOS ---
 const potenciasTopo = topo(piramideVida[0]); // As potências originais do nome
 const dataEntrada = document.getElementById("data").value;
@@ -6976,8 +7022,8 @@ htmlPiramide += `
 
 // 4. FINALMENTE: JUNTA A PIRÂMIDE NO CORPO DO RELATÓRIO
 html += htmlPiramide;
-
-
+ 
+ html += `</div>`;  
 
  html += `
 <div class="page-final" style="
@@ -7043,7 +7089,7 @@ html += htmlPiramide;
 </div>
 `;      
 
-           
+ ​html += '<div id="tela-parte10" class="conteudo-aba">Conteúdo da Parte 10</div>';          
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
         
@@ -7262,7 +7308,7 @@ html += `
 </div>
 `;
 
-
+ html += `</div>`;  
 
     
      document.getElementById("resultado").innerHTML = `<div class="relatorio-premium">${html}</div>`;
