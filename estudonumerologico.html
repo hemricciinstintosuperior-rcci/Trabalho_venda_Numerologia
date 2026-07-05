@@ -6459,7 +6459,7 @@ html += `
 
 
 
-tituloBonito = "Dias de Poder e Fluxo Vital";
+
 
 // --- BLOCO: DIAS DE PODER E VIBRAÇÃO SEMANAL ---
 const diasPoder = obterDiasFavoraveisRessonancia(res.dia);
@@ -6467,7 +6467,7 @@ const idVideoPoder = buscarVideoID("diasPoder", res.dia); // Busca do vídeo
 const diaSemanaVib = obterDiaSemanaVibracional(res.dia);
 const legendaVib = obterLegendaVibração(res.dia); // Chamada da nova função
 
-
+tituloBonito = "Dias de Poder e Fluxo Vital";
 html += `
 <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
 <div class="page">
@@ -6487,10 +6487,10 @@ html += `
                 ${diasPoder.map(d => `
                     <div style="background: var(--gold); color: #000; width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; border-radius: 10px; font-size: 1.6em; font-weight: bold; box-shadow: 4px 4px 12px rgba(0,0,0,0.3);">
                         ${d}
-                    </div>
+                    
                 `).join('')}
-            </div>
-
+         
+</div>
 
             
             <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(218, 165, 32, 0.3);">
@@ -6511,7 +6511,7 @@ html += `
 
 </div>`,
 
-tituloBonito = "Cores Favoráveis";
+
 // Bloco das Cores Favoráveis
 const textoCoresRaw = obterCoresFavoraveis(res.Personalidade);
 // Divide pelas vírgulas
@@ -6525,7 +6525,7 @@ const mapaCoresHex = {
     "Marrom": "#8b4513", "Anil": "#4b0082", "Bege": "#f5f5dc", "Violeta": "#ee82ee"
 };
 
-
+tituloBonito = "Cores Favoráveis";
 html += `
 <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
 <div class="page">
@@ -6587,7 +6587,7 @@ html += `
     </div>
 
    
-</div>
+
 `;
 
 
