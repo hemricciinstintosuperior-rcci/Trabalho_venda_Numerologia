@@ -905,52 +905,59 @@ input[type="text"], select {
 
 
 
-/* Reset */
-* { box-sizing: border-box !important; margin: 0; padding: 0; }
-body { width: 100% !important; overflow-x: hidden !important; }
+/* 1. RESET E BASE */
+* { box-sizing: border-box !important; }
+body { width: 100% !important; overflow-x: hidden !important; margin: 0 !important; }
 
-/* 🔥 A LÓGICA DAS ABAS (FORÇADA) */
-.conteudo-aba {
-    display: none !important; /* Esconde TUDO por padrão */
-    width: 100% !important;
-    margin: 0 !important;
-}
-.conteudo-aba.ativa {
-    display: block !important; /* Mostra SÓ o que for ativo */
-}
-
-/* 🔥 CENTRALIZAÇÃO E TAMANHO NO CELULAR */
-@media (max-width: 210%) {
-    /* Força todas as divs de conteúdo a ignorar os 210mm e ocupar a tela */
-    .conteudo-aba, .container-master, #capa-numerologica, #conteudo-relatorio, .page {
-        width: 100% !important;
-        margin: 0 auto !important; /* Centraliza */
-        padding: 5px !important;
-    }
-    
-    /* Isso faz o seu conteúdo ignorar a largura fixa de 210mm no celular */
-    #capa-numerologica, #conteudo-relatorio {
-        width: 100vw !important;
+/* 2. FORÇA TOTAL PARA O CELULAR */
+@media (max-width: 768px) {
+    /* Ignora os 210mm e força a largura total da tela */
+    .conteudo-aba, #capa-numerologica, #conteudo-relatorio, .page {
+        width: 100vw !important; /* Ocupa toda a largura da tela */
         max-width: 100vw !important;
+        margin: 0 !important;
+        padding: 10px !important; /* Margem de segurança para o texto não colar na borda */
+        display: block !important;
+        overflow-x: hidden !important;
+    }
+
+    /* Garante que o texto se ajuste sem quebrar o layout */
+    body, html {
+        width: 100% !important;
+        overflow-x: hidden !important;
     }
 }
 
-/* Menu de Abas (Fixado no rodapé no celular) */
-.menu-abas {
-    position: fixed; z-index: 9999; background: #000; padding: 5px; border-radius: 8px;
-    top: 10px; right: 10px; width: 200px;
-}
-@media (max-width: 210%) {
-    .menu-abas { bottom: 0; top: auto; right: 0; left: 0; width: 100%; display: flex; flex-direction: row; overflow-x: auto; border-radius: 0; }
-    .menu-abas button { flex: 0 0 auto; margin: 0 2px; }
-}
-
-/* PDF */
+/* 3. MANTÉM A ESTRUTURA PARA IMPRESSÃO (NÃO MEXA) */
 @media print {
     .menu-abas { display: none !important; }
-    .conteudo-aba { display: block !important; } /* Mostra tudo no PDF */
-    #capa-numerologica, #conteudo-relatorio { width: 210mm !important; }
+    .conteudo-aba { display: block !important; width: 210mm !important; }
 }
+
+ /* 1. Garante que qualquer div que contenha aba OCUPE O ESPAÇO TOTAL */
+.conteudo-aba {
+    width: 100% !important;     /* Força a largura máxima */
+    max-width: 100vw !important; /* Garante que não ultrapasse a tela */
+    display: none;              /* O padrão é escondido */
+    box-sizing: border-box;     /* Importante: para o padding não estourar a tela */
+    padding: 0;
+    margin: 0;
+}
+
+/* 2. Quando a aba estiver ativa, ela TEM que ser um bloco que ocupa a tela */
+.conteudo-aba.ativa {
+    display: block !important;
+}
+
+/* 3. O "Pulo do Gato": Forçar o reset de largura para o celular */
+@media (max-width: 768px) {
+    .container-master, .conteudo-aba {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        left: 0 !important;
+    }
+}   
 
 
     </style>
