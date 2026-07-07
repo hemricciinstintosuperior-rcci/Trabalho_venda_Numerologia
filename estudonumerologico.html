@@ -905,91 +905,33 @@ input[type="text"], select {
 
 
 
-/* 1. RESET E BASE */
-* { box-sizing: border-box !important; }
-body { width: 100% !important; overflow-x: hidden !important; margin: 0 !important; }
-
-/* 2. FORÇA TOTAL PARA O CELULAR */
-@media (max-width: 768px) {
-    /* Ignora os 210mm e força a largura total da tela */
-    .conteudo-aba, #capa-numerologica, #conteudo-relatorio, .page {
-        width: 100vw !important; /* Ocupa toda a largura da tela */
-        max-width: 100vw !important;
-        margin: 0 !important;
-        padding: 10px !important; /* Margem de segurança para o texto não colar na borda */
-        display: block !important;
-        overflow-x: hidden !important;
-    }
-
-    /* Garante que o texto se ajuste sem quebrar o layout */
-    body, html {
-        width: 100% !important;
-        overflow-x: hidden !important;
-    }
-}
-
-/* 3. MANTÉM A ESTRUTURA PARA IMPRESSÃO (NÃO MEXA) */
-@media print {
-    .menu-abas { display: none !important; }
-    .conteudo-aba { display: block !important; width: 210mm !important; }
-}
-
- /* 1. Garante que qualquer div que contenha aba OCUPE O ESPAÇO TOTAL */
-.conteudo-aba {
-    width: 100% !important;     /* Força a largura máxima */
-    max-width: 100vw !important; /* Garante que não ultrapasse a tela */
-    display: none;              /* O padrão é escondido */
-    box-sizing: border-box;     /* Importante: para o padding não estourar a tela */
-    padding: 0;
-    margin: 0;
-}
-
-/* 2. Quando a aba estiver ativa, ela TEM que ser um bloco que ocupa a tela */
-.conteudo-aba.ativa {
-    display: block !important;
-}
-
-/* 3. O "Pulo do Gato": Forçar o reset de largura para o celular */
-@media (max-width: 768px) {
-    .container-master, .conteudo-aba {
-        width: 100% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        left: 0 !important;
-    }
-}   
-
-/* --- CAMADA DE SOBRESCRITA RESPONSIVA (COLE ISSO NO FINAL DO ARQUIVO) --- */
+/* --- AJUSTE DE CONVIVÊNCIA: CONTAINER 210% E MENU --- */
 
 @media (max-width: 768px) {
-    /* Força todos os containers principais a respeitarem a tela do celular */
-    .container-master, 
-    .relatorio-premium, 
-    .conteudo-aba, 
-    .page, 
-    #capa-numerologica, 
-    #conteudo-relatorio {
-        width: 100vw !important;
-        max-width: 100vw !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        position: relative !important;
-        left: auto !important;
-        right: auto !important;
+    /* 1. Garantir que o corpo da página suporte o scroll do container de 210% */
+    body {
+        overflow-x: auto !important; /* Permite rolar para o lado para ver os 210% */
+        width: 100vw !important;     /* A tela do celular não estica além do necessário */
     }
 
-    /* O menu de abas precisa ser fixo no rodapé e não quebrar o layout */
+    /* 2. O seu container de 210% permanece como você quer */
+    .container, .container-master, #resultado {
+        width: 210% !important; 
+        margin: 0 auto !important;
+    }
+
+    /* 3. O Menu de Abas agora fica fixo na TELA do celular (viewport) 
+       e ignora a largura do container */
     .menu-abas {
-        width: 100vw !important;
+        position: fixed !important;
         bottom: 0 !important;
-        top: auto !important;
         left: 0 !important;
         right: 0 !important;
-        position: fixed !important;
+        width: 100% !important; /* O menu ocupa a tela toda do celular */
+        z-index: 99999 !important;
+        background: #000; /* Ajuste a cor se precisar */
         display: flex !important;
-        overflow-x: auto !important;
+        overflow-x: auto !important; /* Se tiver muitos botões, permite rolar o menu */
     }
 }
     </style>
