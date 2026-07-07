@@ -906,9 +906,8 @@ input[type="text"], select {
 .menu-abas-vertical {
     display: flex;
     flex-direction: column; /* Força o empilhamento vertical */
-    width: 210mm !important;     /* Força a largura máxima */
-    min-height: 297mm !important;
-    max-width: 210mm !important; /* Garante que não ultrapasse a tela */
+    width: 100% !important;     /* Força a largura máxima */
+    max-width: 100% !important; /* Garante que não ultrapasse a tela */
     background: #f4f4f4;    /* Cor de fundo para destacar */
     padding: 10px;
     margin-top: 20px;       /* Distância do relatório acima */
@@ -927,8 +926,8 @@ input[type="text"], select {
 
 /* 1. Garante que qualquer div que contenha aba OCUPE O ESPAÇO TOTAL */
 .conteudo-aba {
-    width: 100vw !important;     /* Força a largura máxima */
-    max-width: 100vw !important; /* Garante que não ultrapasse a tela */
+    width: 210mm !important;     /* Força a largura máxima */
+    max-width: 210mm !important; /* Garante que não ultrapasse a tela */
     display: none;              /* O padrão é escondido */
     box-sizing: border-box;     /* Importante: para o padding não estourar a tela */
     padding: 0;
