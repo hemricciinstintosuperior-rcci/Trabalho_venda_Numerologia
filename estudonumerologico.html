@@ -914,6 +914,12 @@ input[type="text"], select {
         width: 100vw !important;     /* A tela do celular não estica além do necessário */
     }
 
+
+   /* 2. Quando a aba estiver ativa, ela TEM que ser um bloco que ocupa a tela */
+.conteudo-aba.ativa {
+    display: block !important;
+} 
+
     /* 2. O seu container de 210% permanece como você quer */
     .container, .container-master, #resultado {
         width: 210% !important; 
