@@ -915,12 +915,21 @@ input[type="text"], select {
 }
 
 .menu-abas-vertical button {
+    /* Faz o botão ocupar toda a largura disponível do container pai */
+    width: 100%; 
+    
+    /* Define o tamanho da fonte (ex: 16px, 1.2rem, etc) */
+    font-size: 18px; 
+    
     padding: 15px;
-    margin: 5px 0;          /* Espaçamento entre botões */
-    text-align: left;       /* Alinha texto à esquerda */
+    margin: 5px 0;
+    text-align: center; /* Se quiser alinhar à esquerda, troque para 'left' */
     background: #fff;
     border: 1px solid #ddd;
     cursor: pointer;
+    
+    /* Importante para que o padding não faça o botão ultrapassar o limite do container */
+    box-sizing: border-box; 
 }
     
 
