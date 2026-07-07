@@ -949,6 +949,20 @@ input[type="text"], select {
 }
 
 
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-abas button {
+        width: 100% !important;        /* Força a largura total */
+        display: block !important;     /* Garante que ocupe a linha inteira */
+        box-sizing: border-box;        /* Garante que padding não quebre o layout */
+        padding: 15px !important;      /* Ajuste confortável para o toque do dedo */
+        margin: 5px 0 !important;      /* Espaçamento entre eles */
+        text-align: center;            /* Centraliza o texto */
+    }
+}
+    
+
+
     </style>
 
 
@@ -4009,9 +4023,9 @@ let html = `
     
 
 html += `<div class="menu-abas">
-    <button onclick="abrirAba('tela-tempo')" style="display:block; width:210%; margin-bottom:5px;">Tempo</button>
-    <button onclick="abrirAba('tela-Capa')" style="display:block; width:210%; margin-bottom:5px;">Capa</button>
-    <button onclick="abrirAba('tela-sumario')" style="display:block; width:210%; margin-bottom:5px;">Sumário</button>
+    <button onclick="abrirAba('tela-tempo')" style="display:block; width:100%; margin-bottom:5px;">Tempo</button>
+    <button onclick="abrirAba('tela-Capa')" style="display:block; width:100%; margin-bottom:5px;">Capa</button>
+    <button onclick="abrirAba('tela-sumario')" style="display:block; width:100%; margin-bottom:5px;">Sumário</button>
     
     <button onclick="abrirAba('tela-introducao')" style="display:block; width:100%; margin-bottom:5px;">Introdução: Instinto e Numerologia</button>
      <button onclick="abrirAba('tela-resultado')" style="display:block; width:100%; margin-bottom:5px;">Resultado Numerológico</button>
