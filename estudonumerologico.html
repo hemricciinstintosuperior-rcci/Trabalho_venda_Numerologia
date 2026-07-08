@@ -5110,7 +5110,7 @@ html += `
     background: #ffffff; 
     padding: 15mm; 
     box-sizing: border-box; 
-    border: 4px double #fff; 
+    border: 4px double #d97a1e; 
     margin: 0 auto; 
     position: relative;
     display: flex;
@@ -5151,8 +5151,8 @@ ${listaItensSintese.map(item => {
     // 3. Montagem do HTML limpo (sem lógica de vídeos)
     return `
     <div style="border: 1px solid #ccc; padding: 10px; margin: 5px; height: 100px; overflow: hidden;">
-        <div style="font-weight: bold; font-size: 12px; margin-bottom: 5px; text-align: center;">${item.label}</div>
-        <div style="font-size: 10px; color: #000; overflow-y: auto; text-align: center;">
+        <div style="font-weight: bold; font-size: 14px; color: #d97a1e; margin-bottom: 5px; text-align: center;">${item.label}</div>
+        <div style="font-size: 16px; color: #d97a1e; overflow-y: auto; text-align: center;">
             ${aplicarFiltroTexto(exibicaoValor)}
         </div>
     </div>`;
