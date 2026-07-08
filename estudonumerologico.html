@@ -964,8 +964,17 @@ input[type="text"], select {
     }
 }
     
-
-
+/* 3. MANTÉM A ESTRUTURA PARA IMPRESSÃO (NÃO MEXA) */
+@media print {
+    .menu-abas { display: none !important; }
+    .conteudo-aba { display: block !important; width: 210mm !important; }
+}
+/* PDF */
+@media print {
+    .menu-abas { display: none !important; }
+    .conteudo-aba { display: block !important; } /* Mostra tudo no PDF */
+    #capa-numerologica, #conteudo-relatorio { width: 210mm !important; }
+}
     </style>
 
 
