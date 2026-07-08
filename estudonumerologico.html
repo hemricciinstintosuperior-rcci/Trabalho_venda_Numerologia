@@ -908,7 +908,7 @@ input[type="text"], select {
     flex-direction: column; /* Força o empilhamento vertical */
     width: 210% !important;     /* Força a largura máxima */
     max-width: 100% !important; /* Garante que não ultrapasse a tela */
-    background: #f4f4f4;    /* Cor de fundo para destacar */
+    background: #d97a1e;    /* Cor de fundo para destacar */
     color: #000000;
     padding: 10px;
     margin-top: 20px;       /* Distância do relatório acima */
@@ -4032,8 +4032,7 @@ html += `<div class="menu-abas">
     
     <button onclick="abrirAba('tela-introducao')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Introdução: Instinto Superior e Numerologia</button>
      <button onclick="abrirAba('tela-resultado')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Resultado Numerológico</button>
-     <button onclick="abrirAba('tela-social')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Nome Social</button>
-     <button onclick="abrirAba('tela-assinatura')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Assinatura</button>
+
     <button onclick="abrirAba('tela-parte1')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Parte 1: Performance Natural</button>
 
 
@@ -4063,6 +4062,9 @@ html += `<div class="menu-abas">
   
 
     <button onclick="abrirAba('tela-parte10')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Parte 10: Filosofia e Ciência</button>
+         <button onclick="abrirAba('tela-social')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Nome Social</button>
+     <button onclick="abrirAba('tela-assinatura')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Assinatura</button>
+     <button onclick="abrirAba('tela-casado')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Nome de Casamento</button>
   
 </div>`;
 
@@ -5272,6 +5274,19 @@ if (campoAssinatura && campoAssinatura.value.trim() !== "") {
 }
 
 html += '</div>';
+
+    
+html += '<div id="tela-casado" class="conteudo-aba">';
+// Procure por essa parte no final do seu script principal:
+const nomeCasadoInput = document.getElementById("nomeCasado").value.trim();
+
+if (nomeCasadoInput !== "") {
+    // 1. 'exp' é a variável que você calculou lá no início para a Expressão Original
+    // 2. 'DadosNegativas' é o objeto que você usou no código acima (DadosNegativas.detalhes)
+    
+    html += gerarAbaNomeCasado(nomeCasadoInput, exp, dadosNegativas); 
+}
+ html += '</div>';   
     
 html += '<div id="tela-parte1" class="conteudo-aba">';
 html += `
@@ -5463,15 +5478,7 @@ listaPremium.forEach(chave => {
 });
 
 
-// Procure por essa parte no final do seu script principal:
-const nomeCasadoInput = document.getElementById("nomeCasado").value.trim();
 
-if (nomeCasadoInput !== "") {
-    // 1. 'exp' é a variável que você calculou lá no início para a Expressão Original
-    // 2. 'DadosNegativas' é o objeto que você usou no código acima (DadosNegativas.detalhes)
-    
-    html += gerarAbaNomeCasado(nomeCasadoInput, exp, dadosNegativas); 
-}
 
     
 
