@@ -7378,7 +7378,9 @@ if (dados.data_inicio) {
     const dataInicio = new Date(dados.data_inicio).getTime();
     const agora = new Date().getTime();
     const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+   setTimeout(() => {
     verificarLiberacaoMenu(diffDiasTotal);
+}, 500); 
     // --- O CÁLCULO QUE VOCÊ QUER MOSTRAR ---
     const diasRestantes = 30 - diffDiasTotal;
     window.diasRestantesGlobais = 30 - diffDiasTotal; // O "window." torna a variável visível para todo o site
