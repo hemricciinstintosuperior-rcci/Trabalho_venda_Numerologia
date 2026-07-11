@@ -4057,17 +4057,33 @@ html += `<div class="menu-abas">
 <div class="conteudo-travado">
 
     <button onclick="abrirAba('tela-parte5')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Parte 5: Ciclos</button>
-
-
+     </div>   <div class="aviso-trava">
+            🔒 CONTEÚDO LIBERADO NO PDF
+        
+         </div>
+<div class="conteudo-travado">
     <button onclick="abrirAba('tela-parte6')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Parte 6: Ciclo Anual</button>
 
+     </div>   <div class="aviso-trava">
+            🔒 CONTEÚDO LIBERADO NO PDF
+        
+         </div>
 
+         <div class="conteudo-travado">
     <button onclick="abrirAba('tela-parte7')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Parte 7: Tendências</button>
-
-
+     </div>   <div class="aviso-trava">
+            🔒 CONTEÚDO LIBERADO NO PDF
+        
+         </div>
+<div class="conteudo-travado">
     <button onclick="abrirAba('tela-parte8')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Parte 8: Complementos</button>
 
+     </div>   <div class="aviso-trava">
+            🔒 CONTEÚDO LIBERADO NO PDF
+        
+         </div>
 
+         <div class="conteudo-travado">
     <button onclick="abrirAba('tela-parte9')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Parte 9: A Grande Matriz</button>
   
        </div>   <div class="aviso-trava">
@@ -6129,10 +6145,9 @@ for(let i in res[sec]) {
                Idade ${info.idade} - Data ${info.anos}
             </span><br>
             
-            ${estaTravado ? `
-                <div class="aviso-trava" style="text-align: center; padding: 20px; border: 1px dashed #d97a1e;">
-                    🔒 CONTEÚDO PREMIUM LIBERADO NO 8º DIA
-                </div>
+         
+             
+              
             ` : `
                 <div class="texto-res">
                     ${aplicarFiltroTexto(conteudo)}
@@ -6822,16 +6837,14 @@ console.log("DEBUG BLOQUEIO:", neg.numero, textos.SeqNegVida[neg.numero]);
             Tempo: ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)
         </span>
 
-<div class="conteudo-travado" style="text-align: left; font-size: 18px; line-height: 1.7; color: #222;">
+<div class="texto-res" style="text-align: left; font-size: 18px; line-height: 1.7; color: #222;">
     <p style="margin-top: 8px;">
         ${aplicarFiltroTexto(textos.SeqNegVida[neg.numero].conteudo)}
     </p>
     ${gerarPlayerYouTube(textos.SeqNegVida[neg.numero].videoID)}
 </div>
 
-        <div class="aviso-trava" style="margin-top: 20px; font-weight: bold; color: #666;">
-            🔒 CONTEÚDO LIBERADO NO PDF
-        </div>
+
     </div>`;
 });
 }
@@ -6865,15 +6878,11 @@ if (listaEspeciais.length > 0) {
              <div class="evitar-corte" style="margin-bottom: 35px; text-align: center;">
                 <h2 style="color:#d97a1e; font-size: 22px;">Alinhamento Especial ${esp.numero}</h2>
                 <span style="color:#d97a1e; font-weight: bold; font-size: 20px;">📅 Período de maior influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
-               <div class="conteudo-travado">
+              
                 <div class="texto-res" style="text-align: justify; margin-top:15px;">
                     ${aplicarFiltroTexto(textos.SeqEspeciais[esp.numero])}
                           </div>
-         </div>
-                         <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO NO PDF
-        
-         </div>
+     
             </div>`;
     });
 }
@@ -6906,19 +6915,13 @@ if (listaFin.length > 0) {
                 <h2 style="color:#28a745; font-size: 22px;">Potencial de Prosperidade 99/9</h2>
 
                 
-               <div class="conteudo-travado">
+              
                 <span style="color:#28a745; font-weight: bold; font-size: 20px;">📅 Período de influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
                 
                 <div class="texto-res" style="text-align: justify; margin-top:15px;">
                     ${aplicarFiltroTexto(textos.SeqFinanceira[999])}
                     </div>
-                    </div>
-                          <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO NO PDF
-         
-                           
-         
-         </div>
+  
         
             </div>`;
     });
@@ -6969,15 +6972,12 @@ while (idadeAcumulada < 100) {
                 📅 VIGÊNCIA: ${dataIniPot.toLocaleDateString('pt-BR')} até ${dataFimPot.toLocaleDateString('pt-BR')}
             </div>
 
-            <div class="conteudo-travado">
+          
                 <div class="texto-res" style="${potenciaAtivaAgora ? 'color:#000; font-weight:500;' : 'color:#222;'}">
                     ${aplicarFiltroTexto(textoParaExibir)}
                     ${videoParaExibir ? gerarPlayerYouTube(videoParaExibir) : ""}
                 </div>     
-            </div> 
-            <div class="aviso-trava">
-                🔒 CONTEÚDO LIBERADO NO PDF
-            </div>
+ 
         </div>`;
     
     idadeAcumulada = idadeFim;
