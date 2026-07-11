@@ -7614,20 +7614,25 @@ function abrirAba(idDaAba) {
 <script>
 function verificarLiberacaoMenu(diasPassados) {
     const estaLiberado = diasPassados >= 7;
+    console.log("Processando liberação. Dias passados:", diasPassados);
 
     const travas = document.querySelectorAll('.conteudo-travado');
     const avisos = document.querySelectorAll('.aviso-trava');
 
     travas.forEach(div => {
-        // Usamos setProperty para garantir que o CSS ignore o que estiver no arquivo .css
-        div.style.setProperty('display', estaLiberado ? 'block' : 'none', 'important');
+        if (estaLiberado) {
+            div.style.setProperty('display', 'block', 'important');
+            div.style.backgroundColor = 'yellow'; // Pinta de amarelo para a gente achar
+            div.style.border = '5px solid red';   // Borda vermelha pra destacar
+            console.log("Travado desbloqueado: ", div);
+        } else {
+            div.style.setProperty('display', 'none', 'important');
+        }
     });
 
     avisos.forEach(div => {
         div.style.setProperty('display', estaLiberado ? 'none' : 'block', 'important');
     });
-    
-    console.log("Status da liberação aplicada via JS:", estaLiberado ? "LIBERADO" : "BLOQUEADO");
 }
  </script>
         
