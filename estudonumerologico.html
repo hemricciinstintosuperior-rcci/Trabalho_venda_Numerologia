@@ -4054,13 +4054,10 @@ html += `<div class="menu-abas">
 
 
     <button onclick="abrirAba('tela-parte4')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Parte 4: Finalidade e Realização</button>
-<div class="conteudo-travado">
+
 
     <button onclick="abrirAba('tela-parte5')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Parte 5: Ciclos</button>
-     </div>   <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO NO PDF
-        
-         </div>
+
 <div class="conteudo-travado">
     <button onclick="abrirAba('tela-parte6')" style="display:block; width:100%; margin-bottom:5px; font-size: 22px;">Parte 6: Ciclo Anual</button>
 
@@ -6148,7 +6145,7 @@ for(let i in res[sec]) {
          
              
               
-            ` : `
+      
                 <div class="texto-res">
                     ${aplicarFiltroTexto(conteudo)}
                     ${(videoID && typeof videoID === 'string' && videoID.trim() !== "") ? gerarPlayerYouTube(videoID) : ""}
