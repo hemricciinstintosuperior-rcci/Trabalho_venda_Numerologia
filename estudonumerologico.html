@@ -7616,22 +7616,32 @@ function abrirAba(idDaAba) {
 <script>
 function verificarLiberacaoMenu(diasPassados) {
     const estaLiberado = diasPassados >= 7;
-    const container = document.getElementById('container-travado');
-    const aviso = document.getElementById('aviso-trava-menu');
 
-    if (container && aviso) {
-        // Usamos setProperty com 'important' para garantir prioridade total
-        if (estaLiberado) {
-            container.style.setProperty('display', 'block', 'important');
-            aviso.style.setProperty('display', 'none', 'important');
-        } else {
-            container.style.setProperty('display', 'none', 'important');
-            aviso.style.setProperty('display', 'block', 'important');
+    // Criamos um vigia que vai olhar a página até o elemento aparecer
+    const observer = new MutationObserver((mutations, obs) => {
+        const container = document.getElementById('container-travado');
+        const aviso = document.getElementById('aviso-trava-menu');
+
+        if (container && aviso) {
+            // Se encontrou, aplica a lógica
+            if (estaLiberado) {
+                container.style.setProperty('display', 'block', 'important');
+                aviso.style.setProperty('display', 'none', 'important');
+            } else {
+                container.style.setProperty('display', 'none', 'important');
+                aviso.style.setProperty('display', 'block', 'important');
+            }
+            
+            console.log("Menu liberado/bloqueado com sucesso pelo vigia.");
+            obs.disconnect(); // Para de vigiar para não consumir processamento
         }
-        console.log("Status da liberação aplicada:", estaLiberado ? "LIBERADO" : "BLOQUEADO");
-    } else {
-        console.warn("Elementos de trava não encontrados no HTML.");
-    }
+    });
+
+    // Começa a vigiar o corpo da página inteira
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
 }
 </script>
         
