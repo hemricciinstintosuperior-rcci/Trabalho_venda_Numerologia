@@ -7614,25 +7614,24 @@ function abrirAba(idDaAba) {
 <script>
 function verificarLiberacaoMenu(diasPassados) {
     const estaLiberado = diasPassados >= 7;
-    console.log("Processando liberação. Dias passados:", diasPassados);
 
-    const travas = document.querySelectorAll('.conteudo-travado');
-    const avisos = document.querySelectorAll('.aviso-trava');
-
-    travas.forEach(div => {
-        if (estaLiberado) {
-            div.style.setProperty('display', 'block', 'important');
-            div.style.backgroundColor = 'yellow'; // Pinta de amarelo para a gente achar
-            div.style.border = '5px solid red';   // Borda vermelha pra destacar
-            console.log("Travado desbloqueado: ", div);
-        } else {
-            div.style.setProperty('display', 'none', 'important');
+    // 1. Esconde ou mostra os blocos dos botões (você precisa dar o ID para cada div lá no seu HTML)
+    const blocosParaLiberar = ['bloco-parte-6', 'bloco-parte-7', 'bloco-parte-8', 'bloco-parte-9'];
+    
+    blocosParaLiberar.forEach(id => {
+        const elemento = document.getElementById(id);
+        if (elemento) {
+            elemento.style.display = estaLiberado ? 'block' : 'none';
         }
     });
 
-    avisos.forEach(div => {
-        div.style.setProperty('display', estaLiberado ? 'none' : 'block', 'important');
-    });
+    // 2. Esconde o aviso de "PERÍODO DE GARANTIA" se já estiver liberado
+    const avisoBloqueio = document.querySelector('.aviso-trava');
+    if (avisoBloqueio) {
+        avisoBloqueio.style.display = estaLiberado ? 'none' : 'block';
+    }
+    
+    console.log("Menu atualizado. Status:", estaLiberado ? "LIBERADO" : "BLOQUEADO");
 }
  </script>
         
