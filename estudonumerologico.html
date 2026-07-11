@@ -7380,7 +7380,7 @@ if (dados.data_inicio) {
     const dataInicio = new Date(dados.data_inicio).getTime();
     const agora = new Date().getTime();
     const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
-    
+    verificarLiberacaoMenu(diffDiasTotal);
     // --- O CÁLCULO QUE VOCÊ QUER MOSTRAR ---
     const diasRestantes = 30 - diffDiasTotal;
     window.diasRestantesGlobais = 30 - diffDiasTotal; // O "window." torna a variável visível para todo o site
@@ -7610,6 +7610,28 @@ function abrirAba(idDaAba) {
         alert("ALERTA: A div '" + idDaAba + "' não foi encontrada!");
     }
 }
+
+
+function verificarLiberacaoMenu(diasPassados) {
+    // Se passaram 7 dias ou mais, libera. Caso contrário, mantém bloqueado.
+    const estaLiberado = diasPassados >= 7;
+
+    // Pega todas as áreas que você marcou no HTML
+    const travas = document.querySelectorAll('.conteudo-travado');
+    const avisos = document.querySelectorAll('.aviso-trava');
+
+    travas.forEach(div => {
+        div.style.display = estaLiberado ? 'block' : 'none';
+    });
+
+    avisos.forEach(div => {
+        div.style.display = estaLiberado ? 'none' : 'block';
+    });
+    
+    console.log("Sistema de liberação: " + (estaLiberado ? "Conteúdo Liberado" : "Conteúdo Bloqueado"));
+}
+
+    
     </script>
 </body>
 
