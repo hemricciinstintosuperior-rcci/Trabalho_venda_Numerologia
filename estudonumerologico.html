@@ -976,7 +976,8 @@ input[type="text"], select {
     #capa-numerologica, #conteudo-relatorio { width: 210mm !important; }
 }
 
-
+    /* Esconde o container travado por padrão, evita que ele apareça antes do tempo */
+    #container-travado { display: none; }
 
 
     
@@ -7613,21 +7614,24 @@ function abrirAba(idDaAba) {
 <script>
 function verificarLiberacaoMenu(diasPassados) {
     const estaLiberado = diasPassados >= 7;
-
     const container = document.getElementById('container-travado');
     const aviso = document.getElementById('aviso-trava-menu');
 
     if (container && aviso) {
+        // Usamos setProperty com 'important' para garantir prioridade total
         if (estaLiberado) {
-            container.style.display = 'block'; // Mostra todos os botões de uma vez
-            aviso.style.display = 'none';      // Esconde o aviso
+            container.style.setProperty('display', 'block', 'important');
+            aviso.style.setProperty('display', 'none', 'important');
         } else {
-            container.style.display = 'none';  // Esconde todos os botões
-            aviso.style.display = 'block';     // Mostra o aviso
+            container.style.setProperty('display', 'none', 'important');
+            aviso.style.setProperty('display', 'block', 'important');
         }
+        console.log("Status da liberação aplicada:", estaLiberado ? "LIBERADO" : "BLOQUEADO");
+    } else {
+        console.warn("Elementos de trava não encontrados no HTML.");
     }
 }
- </script>
+</script>
         
 </body>
 
