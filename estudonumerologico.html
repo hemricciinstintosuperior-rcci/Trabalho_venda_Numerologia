@@ -7613,24 +7613,22 @@ function abrirAba(idDaAba) {
 
 <script>
 function verificarLiberacaoMenu(diasPassados) {
-    // Se passaram 7 dias ou mais, libera. Caso contrário, mantém bloqueado.
     const estaLiberado = diasPassados >= 7;
 
-    // Pega todas as áreas que você marcou no HTML
     const travas = document.querySelectorAll('.conteudo-travado');
     const avisos = document.querySelectorAll('.aviso-trava');
 
     travas.forEach(div => {
-        div.style.display = estaLiberado ? 'block' : 'none';
+        // Usamos setProperty para garantir que o CSS ignore o que estiver no arquivo .css
+        div.style.setProperty('display', estaLiberado ? 'block' : 'none', 'important');
     });
 
     avisos.forEach(div => {
-        div.style.display = estaLiberado ? 'none' : 'block';
+        div.style.setProperty('display', estaLiberado ? 'none' : 'block', 'important');
     });
     
-    console.log("Sistema de liberação: " + (estaLiberado ? "Conteúdo Liberado" : "Conteúdo Bloqueado"));
+    console.log("Status da liberação aplicada via JS:", estaLiberado ? "LIBERADO" : "BLOQUEADO");
 }
-
  </script>
         
 </body>
