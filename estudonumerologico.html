@@ -4034,12 +4034,12 @@ let html = `
     <div style="color: white; font-size: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">⬅️ VOLTAR AO PORTAL</div>
 </div>`;
 
-
-
-
-    
 const idVideoInstinto = "CQ1bcGIcX_w"; 
-html += renderizarBlocoComVideo(`<div class="menu-abas">
+html += renderizarBlocoComVideo(
+idVideoInstinto); 
+    
+
+html += `<div class="menu-abas">
 
     <button onclick="abrirAba('tela-sumario')" style="width:100%; margin-bottom:5px; font-size: 22px;">Sumário</button>
     <button onclick="abrirAba('tela-tempo')" style="width:100%; margin-bottom:5px; font-size: 22px; ">Tempo restante</button>
@@ -4087,7 +4087,7 @@ html += renderizarBlocoComVideo(`<div class="menu-abas">
      <button onclick="abrirAba('tela-assinatura')" style="width:100%; margin-bottom:5px; font-size: 22px;">Assinatura</button>
      <button onclick="abrirAba('tela-casado')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome adicionado no Casamento(Cartório)</button>
   
-</div>`,idVideoInstinto); 
+</div>`;
 
 
     
