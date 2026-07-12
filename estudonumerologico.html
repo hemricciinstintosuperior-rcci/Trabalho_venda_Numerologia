@@ -5154,7 +5154,7 @@ html += `
     ">
 ${listaItensSintese.map(item => {
     // 1. Definição das travas de acesso
-    const itensPremium = ["Caminho de Vida", "Ciclos da Vida", "Desafios", "Momentos de Decisão"];
+    const itensPremium = ["Caminho de Vida", "Ciclos da Vida", "Desafios", "Momentos de Decisão", "Profissão"];
     const estaTravado = itensPremium.includes(item.label) && !acessoPremiumLiberado;
 
     // 2. Extração de texto de forma simples e segura
@@ -5996,8 +5996,8 @@ html += `
 </div>
 `;
 
-
-html += `
+const idVideoProfissao = "CQ1bcGIcX_w"; 
+html += renderizarBlocoComVideo(`
 <div class="separador-luxo">
     <div class="caixa-interna">
         <h2>Direcionamento Profissional</h2>
@@ -6008,9 +6008,10 @@ html += `
     <div class="texto-res">
         ${introProfissionalTexto}
         ${blocoProfissionalHTML}
+        
     </div>
 </div>
-`;
+`,idVideoProfissao); 
 
 
 
