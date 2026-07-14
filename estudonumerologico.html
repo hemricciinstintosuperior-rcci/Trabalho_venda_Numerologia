@@ -4039,16 +4039,16 @@ idVideoInstinto);
     
 
 html += `<div class="menu-abas">
-
+<button onclick="abrirAba('tela-tempo')" style="width:100%; margin-bottom:5px; font-size: 22px; ">Tempo restante</button>
     <button onclick="abrirAba('tela-sumario')" style="width:100%; margin-bottom:5px; font-size: 22px;">Sumário</button>
-    <button onclick="abrirAba('tela-tempo')" style="width:100%; margin-bottom:5px; font-size: 22px; ">Tempo restante</button>
+    
     <button onclick="abrirAba('tela-Capa')" style="width:100%; margin-bottom:5px; font-size: 22px;">Capa</button>
     
     
     <button onclick="abrirAba('tela-introducao')" style="width:100%; margin-bottom:5px; font-size: 22px;">Introdução: Instinto Superior e Numerologia</button>
      <button onclick="abrirAba('tela-resultado')" style="width:100%; margin-bottom:5px; font-size: 22px;">Resultado Numerológico</button>
 
-    <button onclick="abrirAba('tela-parte1')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 1: Performance Natural</button>
+    <button onclick="abrirAba('tela-parte1')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 1: Performance Natural dos Planos</button>
 
 
     <button onclick="abrirAba('tela-parte2')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 2: Essência e Identidade</button>
@@ -4063,29 +4063,35 @@ html += `<div class="menu-abas">
     <button onclick="abrirAba('tela-parte5')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 5: Ciclos</button>
 
 
-    <button onclick="abrirAba('tela-parte6')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 6: Ciclo Anual</button>
+    <button onclick="abrirAba('tela-parte6')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 6:  Ano Pessoal</button>
 
 
 
   
-    <button onclick="abrirAba('tela-parte7')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 7: Tendências</button>
+    <button onclick="abrirAba('tela-parte7')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 7: Tendências e Trânsitos do Momento dos Planos</button>
 
    
 
 
-    <button onclick="abrirAba('tela-parte9')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 9: A Grande Matriz</button>
+    <button onclick="abrirAba('tela-parte9')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 8: A Grande Matriz</button>
   
     </div>
 
     <div id="aviso-trava-menu" class="aviso-trava">
-        🔒 AS PARTES 5, 6, 7 E 9 SERÃO LIBERADAS APÓS O PERÍODO DE GARANTIA
+        🔒 AS PARTES 5, 6, 7 E 8 SERÃO LIBERADAS APÓS O PERÍODO DE GARANTIA
     </div>
-    <button onclick="abrirAba('tela-parte8')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 8: Complementos</button>
+    <button onclick="abrirAba('tela-parte8')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 9: Complementares</button>
     <button onclick="abrirAba('tela-parte10')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 10: Filosofia e Ciência</button>
-         <button onclick="abrirAba('tela-social')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome Social</button>
+    <button onclick="abrirAba('tela-social')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome Social (se houver)</button>
+     <div id="container-travado">
+         
      <button onclick="abrirAba('tela-assinatura')" style="width:100%; margin-bottom:5px; font-size: 22px;">Assinatura</button>
-     <button onclick="abrirAba('tela-casado')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome adicionado no Casamento(Cartório)</button>
-  
+     <button onclick="abrirAba('tela-casado')" style="width:100%; margin-bottom:5px; font-size: 22px;">SobreNome adicionado no Casamento(Cartório) (se houver)</button>
+      </div>
+
+    <div id="aviso-trava-menu" class="aviso-trava">
+        🔒 ASSINATURA E SOBRENOME DE CASADA(O) SERÃO LIBERADAS APÓS O PERÍODO DE GARANTIA
+    </div>
 </div>`;
 
 
@@ -4177,17 +4183,17 @@ html += `
 
     <div style="width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 25px;">
         ${[
-              { t: "Introdução", c: "Instinto Superior ✶ Resultado Numerológico ✶ Engenharia da Vida ✶ Nome Escolhido ✶ Origem e Numerologia Moderna ✶ Direcionamento de Jornada"},
+              { t: "Introdução", c: "Instinto Superior ✶ Resultado Numerológico ✶ Engenharia da Vida ✶ Origem e Numerologia Moderna ✶ Direcionamento da sua Jornada"},
             { t: "Parte 1: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais"},
             { t: "Parte 2: Essência e Identidade", c: "Dia de Nascimento ✶ Essencia ✶ Talento ou Habilidade Oculta ✶ Motivação ✶ Aparência e Influência ✶ Personalidade ✶ Nome de casado(a) (se houver) ✶ Tendência de Comportamento ✶ Desejo Oculto ✶ Habilidades Especiais ✶  Inclinações Ocultas ✶  Pilar de Equilíbrio"},
-            { t: "Parte 3: Alinhamento e Desafios",   c: "Fraquezas e Inibições ✶ Mecanismo do Subconsciente ✶ Déficit de Comportamento ✶ Desafio Principal"},
+            { t: "Parte 3: Alinhamento e Desafios Naturais",   c: "Fraquezas e Inibições ✶ Mecanismo do Subconsciente ✶ Déficit de Comportamento ✶ Desafio Principal"},
             { t: "Parte 4: Finalidade e Realização", c: " Caminho de Vida ✶ Propósito  ✶  Direcionamento Profissional"},
-            { t: "Parte 5: Ciclos", c: "Fase de Maturidade ✶ Ciclos de Vida ✶ Momento de Decisão ✶ Desafios de Jornada"},
-            { t: "Parte 6: Ciclo Anual", c: "Ano Pessoal ✶ Mês Pessoal"},
+            { t: "Parte 5: Fases da Vida", c: "Fase de Maturidade ✶ Ciclos de Vida ✶ Momento de Decisão ✶ Desafios de Jornada"},
+            { t: "Parte 6: Ciclo dos Anos", c: "Ano Pessoal ✶ Mês Pessoal"},
             { t: "Parte 7:  Tendências do Momento", c: "Status do Momento do Ciclo Atual ✶ Status do Momento do Segundo Ciclo ✶ Ciclos Trânsitórios ✶ Potenciais do Momento"},
-            { t: "Parte 8: Complementos", c: " Número de Relacionamento ✶ Cores Favoráveis ✶ Dias de Poder do Mês ✶ Números harmonicos"},  
-            { t: "Parte 9: A Grande Matriz", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Potências da Piramide Invertida Principal dos 0 ao 100 anos de idade"},
-            { t: "Parte 10: Filosofia e Ciência", c: "Conclusão Evolutiva ✶ Agradecimento"}
+            { t: "Parte 8: A Grande Matriz", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Potências da Matriz Principal de 0 a 100 anos de idade"},
+            { t: "Parte 9: Complementares", c: " Número de Relacionamento ✶ Cores Favoráveis ✶ Dias de Poder do Mês ✶ Números harmonicos"}, 
+            { t: "Parte 10: Filosofia e Numerologia", c: "Hermetismo ✶ Ciência & Numerologia ✶ Agradecimento"}
         ].map(item => `
             <div style="text-align: center;">
                 <h3 style="color: var(--gold); font-size: 1.6rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 5px; font-weight: 600;">${item.t}</h3>
@@ -4514,20 +4520,21 @@ html += `
             </p>
             
             <p style="margin-top: 10px;">
-                Iniciamos pela <strong>Parte 1 (Performance Natural)</strong>, onde analisamos seus Planos de Expressão e Gráficos de Potenciais. Na <strong>Parte 2 (Essência e Identidade)</strong>, mergulhamos no seu Dia de Nascimento, Motivação, Personalidade e Desejos Ocultos, revelando quem você é na sua forma mais pura. Já na <strong>Parte 3 (Finalidade e Realização)</strong>, definimos seu Caminho de Vida, Propósito e o Direcionamento Profissional ideal.
+                Iniciamos pela <strong>Parte 1 (Performance Natural)</strong>, onde analisamos seus Planos de Expressão e Gráficos de Potenciais. Na <strong>Parte 2 (Essência e Identidade)</strong>, mergulhamos no seu Dia de Nascimento, Motivação, Personalidade e Desejos Ocultos, revelando quem você é na sua forma mais pura. 
             </p>
 
             <p style="margin-top: 10px;">
-                Na <strong>Parte 4 (Alinhamento e Desafios)</strong>, enfrentaremos as Fraquezas, Inibições e o seu Desafio Principal para transformar obstáculos em força.  Ao chegarmos na <strong>Parte 5 Sua Maturidade, Ciclos de Vida, Momentos de decisão e Desafios</strong> e  a <strong>Parte 6 </strong>motra dois ciclos de Ano Pessoal e seus respectivos meses indicando a tendencia em cada momento para que você se prepare e adiante seus planejamentos. 
+                Na <strong>Parte 3 (Alinhamento e Desafios)</strong>, enfrentaremos as Fraquezas, Inibições e o seu Desafio Principal para transformar obstáculos em força. Já na <strong>Parte 4 (Finalidade e Realização)</strong>, definimos seu Caminho de Vida, Propósito e o Direcionamento Profissional ideal. Ao chegarmos na <strong>Parte 5 Sua Maturidade, Ciclos de Vida, Momentos de decisão e Desafios</strong> e  a <strong>Parte 6 </strong>motra dois ciclos de Ano Pessoal e seus respectivos meses indicando a tendencia em cada momento para que você se prepare e adiante seus planejamentos. 
             </p>
 
             <p style="margin-top: 10px;">
-              Parte 7 (Tendências do Momento)</strong>, você entenderá suas Fases de Maturidade e os Ciclos Transitórios que regem o seu agora. Para facilitar o seu dia a dia, a <strong>Parte 8 (Complementares)</strong> traz seus Números Harmônicos, Dias de Poder, Cores Favoráveis e Dinâmicas de Relacionamento.
-              A jornada atinge seu ápice na <strong>Parte 9 (A Grande Matriz)</strong>, com a Pirâmide Invertida e as potências numéricas mapeadas dos 0 até os seus 100 anos de idade.
+              Parte 7 (Tendências do Momento)</strong>, você entenderá suas Fases de Maturidade e os Ciclos Transitórios que regem o seu agora. A jornada atinge seu ápice na <strong>Parte 8 (A Grande Matriz)</strong>, com a Pirâmide Invertida e as potências numéricas mapeadas dos 0 até os seus 100 anos de idade.
+               Por fim, para facilitar o seu dia a dia, a <strong>Parte 9 (Complementares)</strong> traz seus Números Harmônicos, Dias de Poder, Cores Favoráveis e Dinâmicas de Relacionamento.
+              
             </p>
 
             <p style="margin-top: 10px;">
-                Por fim, a <strong>Parte 10 (Filosofia e Ciência)</strong> traz o Contexto Histórico e a Conclusão Evolutiva desta análise. Encare este conteúdo não como uma previsão, mas como um manual técnico de autogestão. Cada seção foi desenhada para que você entenda sua estrutura interna e utilize esse conhecimento para manifestar o seu legado no mundo.
+               Encare este conteúdo não como uma previsão, mas como um manual técnico de autogestão. Cada seção foi desenhada para que você entenda sua estrutura interna e utilize esse conhecimento para manifestar o seu legado no mundo.
             </p>
 
             <p style="margin-top: 15px; font-weight: 500; font-style: italic; color: #111; text-align: center;">
@@ -6393,7 +6400,7 @@ html += `
         
         <div style="margin-top: 60px; z-index: 10; width: 100%;">
             <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-               Parte 8 <br><br> Complementos & Relacionamento
+               Parte 9 <br><br> Complementares
             </h2>
         </div>
 
@@ -6606,7 +6613,7 @@ html += `
         
         <div style="margin-top: 60px; z-index: 10; width: 100%;">
             <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-              Parte 9 <br><br>Matriz, Regente, Sequências Numéricas & Potências 
+              Parte 8 <br><br>Matriz, Regente, Sequências Numéricas & Potências 
             </h2>
         </div>
 
