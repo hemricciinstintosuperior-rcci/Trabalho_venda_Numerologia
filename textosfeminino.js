@@ -1270,7 +1270,7 @@ dia: {
     <p>Sua mente funciona de forma independente e eu sei que você sente uma necessidade vital de manter o controle sobre a própria trajetória. Seu talento natural é a iniciativa pura; você é aquela mulher que não nasceu para seguir fórmulas prontas ou ordens que não façam sentido para a sua lógica, buscando sempre a sua verdade interna acima de qualquer opinião alheia, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>Na vida prática, você possui uma coragem que beira o pioneirismo, sendo aquela mulher que dá o primeiro passo em projetos e ideias que outras pessoas temem encarar. Você tem a marca da individualidade e um desejo legítimo de ser o destaque e a força motriz em tudo o que faz.</p>
     <p>O seu grande desafio como mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é equilibrar essa força monumental de vontade para que ela seja uma fonte de inspiração e acolhimento, e não apenas de autoridade. Ao liderar pelo exemplo com a sua energia realizadora, você demonstra ao mundo o poder da autoconfiança feminina.</p>`,
- videoID: "A9NTsk9yGL0"
+ videoID: "xKG2HAjUbKY"
     },
     2: {
      conteudo:` <h3>Pacificadora - Dia 2</h3>
