@@ -1278,7 +1278,7 @@ dia: {
     <p>A sua verdadeira força não reside na agressividade, mas na persuasão suave, no afeto e na capacidade linda de unir pessoas em torno de um objetivo comum. Como mulher, você produz resultados brilhantes quando atua em parceria, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e seu talento brilha intensamente quando existe harmonia ao seu redor para que sua forte intuição seja ouvida.</p>
     <p>Você acaba se tornando o suporte emocional e o porto seguro de muitos, possuindo uma empatia quase maternal que acolhe e traz segurança para quem caminha ao seu lado. Existe em seu interior um apreço profundo pela beleza, pela arte e pelo equilíbrio, refletindo uma alma feminina que busca a paz em cada detalhe do cotidiano.</p>
     <p>O seu aprendizado, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é fortalecer a autoconfiança para não depender tanto da aprovação ou do reconhecimento dos outros. Quando você une sua sensibilidade com a firmeza nas suas decisões, você se torna uma peça fundamental e indispensável onde quer que esteja.</p>`,
- videoID: " "
+ videoID: "kbdrX8k2ioQ"
     },
     3: {
      conteudo:` <h3>Carismática - Dia 3</h3>
