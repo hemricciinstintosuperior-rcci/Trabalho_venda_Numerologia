@@ -1286,7 +1286,7 @@ dia: {
     <p>O otimismo é a sua marca registrada, e você tem o talento de elevar o espírito de qualquer amiga ou familiar que esteja por perto. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a vida precisa de expressão; sua mente criativa está sempre gerando conexões e descobrindo formas lindas de tornar o dia a dia mais vibrante, leve e interessante.</p>
     <p>Você possui uma alma jovem e cheia de vivacidade que detesta o tédio. Sua presença costuma ser o ponto alto de qualquer encontro social, pois você traz uma vibração de encanto e uma inteligência rápida que cativa as pessoas em apenas alguns minutos de conversa.</p>
     <p>O cuidado que você deve ter como mulher é com a dispersão de energia; por ser tão multifacetada e cheia de dons, você pode sentir dificuldade em concluir o que começa. Ao focar sua expressão em objetivos claros, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você ganha o poder de influenciar e inspirar muitas vidas por onde passar.</p>`,
- videoID: " "
+ videoID: "P6eVg0nDlNI"
     },
     4: {
      conteudo:` <h3>Disciplinada - Dia 4</h3>
