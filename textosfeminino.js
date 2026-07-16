@@ -1302,7 +1302,7 @@ dia: {
     <p>Sua energia feminina é magnética, livre de amarras e você aprende as coisas com uma rapidez impressionante, vivendo a vida com muita intensidade. Você tem verdadeira aversão à rotina pesada e sufocante, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pois sua mente precisa de estímulos constantes e de liberdade total para descobrir o que o mundo tem a oferecer.</p>
     <p>Você é uma mulher de pensamento progressista e moderno, sempre buscando inovação e formas eficientes de viver. Sua versatilidade permite que você transite entre mundos, culturas e círculos sociais completamente diferentes com um charme e uma facilidade que encantam a todos.</p>
     <p>O seu aprendizado é desenvolver o foco interno, para que sua busca por liberdade não se transforme em instabilidade emocional. Quando você canaliza essa inteligência rápida para um propósito maior, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma mulher brilhante e capaz de realizar transformações profundas ao seu redor.</p>`,
- videoID: " "
+ videoID: "4F2x--KMHdU"
     },
     6: {
      conteudo:` <h3>Zelosa - Dia 6</h3>
