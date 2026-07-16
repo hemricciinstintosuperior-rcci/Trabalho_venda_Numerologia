@@ -1294,7 +1294,7 @@ dia: {
     <p>Sua abordagem da vida é prática, realista e muito madura. Você valoriza o trabalho bem feito e entende que a estabilidade verdadeira é construída tijolo por tijolo. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a segurança da sua família, o bem-estar dos seus e a tranquilidade material são prioridades que você defende com unhas e dentes.</p>
     <p>Você é aquela mulher em quem as pessoas confiam de olhos fechados, pois sua palavra tem valor de ouro e sua lealdade é inabalável. Existe um prazer íntimo em saber que cada esforço que você faz hoje está garantindo uma colheita segura, tranquila e próspera para o seu futuro.</p>
     <p>O desafio para você é não permitir que sua mente se torne rígida ou severa demais consigo mesma. Ao unir sua incrível persistência com um pouco mais de flexibilidade e doçura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você torna suas conquistas absolutamente grandiosas e ganha a admiração de todos que buscam refúgio em você.</p>`,
- videoID: " "
+ videoID: "f84HAaPtC0g"
     },
     5: {
      conteudo:` <h3>Independente - Dia 5</h3>
