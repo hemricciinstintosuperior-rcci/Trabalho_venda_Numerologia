@@ -4017,10 +4017,18 @@ const dadosNegativas = detectarNegativas(piramideVida);
 // ... logo após o fechamento do objeto 'res' (linha 194 aproximadamente)
 
 
-const idVideoInstinto = "CQ1bcGIcX_w"; 
-let html = renderizarBlocoComVideo(`
+
+let html = `
 
 
+  
+<div id="status-acesso"class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 810px; text-align: center; color: white;">
+    <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 5px;">Calculando seu tempo de acesso...</div>
+    <div id="timer" style="font-family: 'Courier New', monospace; font-size: 1.8rem; font-weight: bold; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);">00:00:00:00</div>
+    <div id="msg-trava" style="font-size: 0.75rem; opacity: 0.7; margin-top: 5px;"></div>
+<div id="aviso-expiracao-total" class="no-print" style="font-size: 0.75rem; color: #ffbc00; margin-top: 10px; opacity: 0.9;">   Verificando validade do acesso...</div>
+    
+</div>
 
 
 
@@ -4032,14 +4040,11 @@ let html = renderizarBlocoComVideo(`
 <div class="no-print" style="position: fixed; top: 10px; left: 10px; z-index: 9999; text-align: center;">
     <button onclick="window.location.href='index.html'" style="background: #d62600; color: white; border: 2px solid white; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; font-weight: bold; font-size: 18px; box-shadow: 0 0 10px rgba(0,0,0,0.5);">X</button>
     <div style="color: white; font-size: 10px; font-weight: bold; text-shadow: 1px 1px 2px black;">⬅️ VOLTAR AO PORTAL</div>
-</div>`,
-
-
-idVideoInstinto); 
+</div>`; 
     
 
 html += `<div class="menu-abas">
-<button onclick="abrirAba('tela-tempo')" style="width:100%; margin-bottom:5px; font-size: 22px; ">Tempo restante</button>
+
     <button onclick="abrirAba('tela-sumario')" style="width:100%; margin-bottom:5px; font-size: 22px;">Sumário</button>
     
     <button onclick="abrirAba('tela-Capa')" style="width:100%; margin-bottom:5px; font-size: 22px;">Capa</button>
@@ -4083,8 +4088,8 @@ html += `<div class="menu-abas">
     <button onclick="abrirAba('tela-parte8')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 9: Complementares</button>
     <button onclick="abrirAba('tela-parte10')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 10: Filosofia e Ciência</button>
     <button onclick="abrirAba('tela-social')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome Social (se houver)</button>
+    
      <div id="container-travado">
-         
      <button onclick="abrirAba('tela-assinatura')" style="width:100%; margin-bottom:5px; font-size: 22px;">Assinatura</button>
      <button onclick="abrirAba('tela-casado')" style="width:100%; margin-bottom:5px; font-size: 22px;">SobreNome adicionado no Casamento(Cartório) (se houver)</button>
       </div>
@@ -4096,20 +4101,13 @@ html += `<div class="menu-abas">
 
 
     
-   html += '<div id="tela-tempo" class="conteudo-aba ativa">';   
-html += `<div id="status-acesso"class="no-print" style="background: #161b22; border: 2px solid #d4af37; padding: 15px; border-radius: 12px; margin: 20px auto; max-width: 810px; text-align: center; color: white;">
-    <div id="label-tempo" style="color: #d4af37; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem; margin-bottom: 5px;">Calculando seu tempo de acesso...</div>
-    <div id="timer" style="font-family: 'Courier New', monospace; font-size: 1.8rem; font-weight: bold; text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);">00:00:00:00</div>
-    <div id="msg-trava" style="font-size: 0.75rem; opacity: 0.7; margin-top: 5px;"></div>
-<div id="aviso-expiracao-total" class="no-print" style="font-size: 0.75rem; color: #ffbc00; margin-top: 10px; opacity: 0.9;">   Verificando validade do acesso...</div>
-    
-</div>`; 
-html += '</div>';
+
 
 
     
     html += '<div id="tela-Capa" class="conteudo-aba">'; 
-html += `<div class="container-master">
+    const idVideocapa = "CQ1bcGIcX_w"; 
+html += renderizarBlocoComVideo(`<div class="container-master">
     <div id="capa-numerologica" style="
             width: 210mm; 
             height: 297.1mm; 
@@ -4160,7 +4158,7 @@ html += `<div class="container-master">
     </div>
 
     <div id="conteudo-relatorio" style="background: #ffffff; width: 210mm; min-height: 297mm; box-sizing: border-box;"></div></div>
-`;
+`,idVideocapa); 
 
  
 html += '</div>';
