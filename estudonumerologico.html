@@ -7383,8 +7383,8 @@ if (dados.data_inicio) {
     verificarLiberacaoMenu(diffDiasTotal);
 }, 500); 
     // --- O CÁLCULO QUE VOCÊ QUER MOSTRAR ---
-    const diasRestantes = 30 - diffDiasTotal;
-    window.diasRestantesGlobais = 30 - diffDiasTotal; // O "window." torna a variável visível para todo o site
+    const diasRestantes = 38 - diffDiasTotal;
+    window.diasRestantesGlobais = 38 - diffDiasTotal; // O "window." torna a variável visível para todo o site
     // --- AQUI NÓS ATUALIZAMOS O AVISO NO HTML ---
     const aviso = document.getElementById("aviso-expiracao-total");
     if (aviso) {
@@ -7393,7 +7393,7 @@ if (dados.data_inicio) {
     console.log("Dias restantes calculados e enviados para o HTML:", diasRestantes);
     // ------------------------------------------
 
-    if (diffDiasTotal > 30) {
+    if (diffDiasTotal > 38) {
         alert("Seu período de acesso de 30 dias expirou.");
         window.location.href = "index.html";
         return;
@@ -7485,7 +7485,7 @@ function verificarLiberacaoPDF(dados) {
     // Mensagens de Status
     if (dados.pdf_baixado === true) {
         if (msgTrava) msgTrava.innerHTML = "⚠️ O download já foi realizado.";
-    } else if (diffDias < 7) {
+    } else if (diffDias < 8) {
         if (msgTrava) msgTrava.innerHTML = "🔒 Conteúdo liberado após 8 dias.";
     } else {
         if (msgTrava) msgTrava.innerHTML = "✅ Estudo pronto para acesso!";
