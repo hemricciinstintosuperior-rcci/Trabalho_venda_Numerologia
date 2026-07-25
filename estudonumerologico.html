@@ -5134,105 +5134,7 @@ if (nomeCasadoInput !== "") {
 }
  html += '</div>';   
     
-html += '<div id="tela-parte1" class="conteudo-aba">';
-html += `
-    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
-        
-        <div style="margin-top: 60px; z-index: 10; width: 100%;">
-            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-               Parte 2<br><br> Os 4 Pilares do Instinto Natural
-            </h2>
-        </div>
 
-        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
-            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudotransicao.png" 
-                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
-        </div>
-
-       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
-            <audio controls controlsList="nodownload" oncontextmenu="return false;" style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/plano.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-
-      
-
-        <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
-            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
-                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
-                <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
-                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
-                </div>
-            </div>
-        </a>
-
-                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
-            <audio controls controlsList="nodownload" oncontextmenu="return false;" style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
-                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/potenciais.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-
-                <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
-            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
-                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
-                <div style="text-align: left;">
-                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
-                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
-                </div>
-            </div>
-        </a>
-
-        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
-           A decodificação das Energias e Potenciais nativas que definem sua personalidade.
-        </p>
-    </div>
-`;
-
-    
-
-
-
-
- tituloBonito = "Seus 4 Pilares do Instinto Natural";    
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>
-
-
-
-${montarHtmlPlanosNatural(nomeRaw)}
-
-
-`;
-  
-
-
-
-tituloBonito = "Seus Potenciais Naturais";  
-// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
-html += `
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
-    </div>
-</div>
-`;
-    
-html += `
-    <div class="page">
-        <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">Potenciais</h2>
-        <div class="intro-texto">${textos.introducoes.graficos}</div>
-        ${gerarTodosOsGraficos(res, res.deficiencias, nomeRaw, res.desafios[3], regenteVida, dadosNegativas.nums)}
-    </div>
-`;
- 
- html += '</div>'; 
 html += '<div id="tela-parte2" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
@@ -5554,6 +5456,112 @@ ${textos.PlanosExpressao[dadosHabilidade.plano]?.forte?.conteudo || "Conteúdo n
 `;
 
  html += '</div>'; 
+
+
+
+html += '<div id="tela-parte1" class="conteudo-aba">';
+html += `
+    <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
+        
+        <div style="margin-top: 60px; z-index: 10; width: 100%;">
+            <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
+               Parte 2<br><br> Os 4 Pilares do Instinto Natural
+            </h2>
+        </div>
+
+        <div style="margin: 100px 0 30px 0; width: 100%; display: flex; justify-content: center;">
+            <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/estudotransicao.png" 
+                 style="width: 80%; max-width: 380px; height: auto; display: block; border: none; outline: none;">
+        </div>
+
+       <div class="player-relatorio" style="margin-top: 50px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+            <audio controls controlsList="nodownload" oncontextmenu="return false;" style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/plano.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+      
+
+        <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/plano.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 20px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som dos Planos</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+                 <div class="player-relatorio" style="margin-top: 55px; z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 100%;">
+            <span style="font-size: 10px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+            <audio controls controlsList="nodownload" oncontextmenu="return false;" style="height: 35px; filter: sepia(100%) saturate(200%) brightness(100%) hue-rotate(330deg);">
+                <source src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/potenciais.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+                <a href="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/potenciais.mp3" target="_blank" class="botao-pdf-link" style="text-decoration: none; z-index: 20; margin-top: 25px;">
+            <div style="background: rgba(0, 0, 0, 0.7); border: 1px solid #d97a1e; padding: 12px 25px; border-radius: 50px; display: flex; align-items: center; gap: 12px;">
+                <div style="width: 30px; height: 30px; background: #d97a1e; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-size: 14px;">▶</div>
+                <div style="text-align: left;">
+                    <span style="display: block; font-size: 8px; color: #d97a1e; text-transform: uppercase; letter-spacing: 2px;">O som das Potências</span>
+                    <span style="display: block; font-size: 13px; color: #fff; font-family: 'Cinzel', serif;">CLIQUE PARA OUVIR NO CELULAR</span>
+                </div>
+            </div>
+        </a>
+
+        <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 0.8; padding: 0 20px; box-sizing: border-box; margin: 0;">
+           A decodificação das Energias e Potenciais nativas que definem sua personalidade.
+        </p>
+    </div>
+`;
+
+    
+
+
+
+
+ tituloBonito = "Seus 4 Pilares do Instinto Natural";    
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+
+
+
+${montarHtmlPlanosNatural(nomeRaw)}
+
+
+`;
+  
+
+
+
+tituloBonito = "Seus Potenciais Naturais";  
+// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
+html += `
+<div class="separador-luxo">
+    <div class="caixa-interna">
+        <h2>${tituloBonito}</h2>
+    </div>
+</div>
+`;
+    
+html += `
+    <div class="page">
+        <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">Potenciais</h2>
+        <div class="intro-texto">${textos.introducoes.graficos}</div>
+        ${gerarTodosOsGraficos(res, res.deficiencias, nomeRaw, res.desafios[3], regenteVida, dadosNegativas.nums)}
+    </div>
+`;
+ 
+ html += '</div>'; 
+
+
+
+    
 html += '<div id="tela-parte3" class="conteudo-aba">';
 html += `
     <div class="capa-transicao" style="height: 297mm; width: 100%; max-width: 210mm; display: flex; flex-direction: column; align-items: center; text-align: center; background-color: #0f2a36; position: relative; overflow: hidden; page-break-after: always; box-sizing: border-box; margin: 0 auto;">
