@@ -4061,9 +4061,16 @@ html += `<div class="menu-abas">
     <button onclick="abrirAba('tela-sumario')" style="width:100%; margin-bottom:5px; font-size: 22px;">Sumário</button>
     
     <button onclick="abrirAba('tela-Capa')" style="width:100%; margin-bottom:5px; font-size: 22px;">Capa</button>
+    
+    <div id="container-travado">
         <button onclick="abrirAba('tela-social')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome Social</button>
      <button onclick="abrirAba('tela-assinatura')" style="width:100%; margin-bottom:5px; font-size: 22px;">Assinatura</button>
      <button onclick="abrirAba('tela-casado')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome de Casamento(Cartório) (se houver)</button>
+        </div>
+
+    <div id="aviso-trava-menu" class="aviso-trava">
+        🔒 AS PARTES NOME SOCIAL, ASSINATURA E DE CASAMENTO SERÃO LIBERADAS APÓS O PERÍODO DE GARANTIA
+    </div>
     
     <button onclick="abrirAba('tela-introducao')" style="width:100%; margin-bottom:5px; font-size: 22px;">Introdução: Instinto Superior e Numerologia</button>
      <button onclick="abrirAba('tela-resultado')" style="width:100%; margin-bottom:5px; font-size: 22px;">Resultado Numerológico</button>
@@ -4071,28 +4078,16 @@ html += `<div class="menu-abas">
     <button onclick="abrirAba('tela-parte2')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 1: Essência e Identidade</button>
     <button onclick="abrirAba('tela-parte1')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 2: Performance Natural dos 4 Pilares do Instinto Humano</button>
 
-
-   
-
-
     <button onclick="abrirAba('tela-parte3')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 3: Alinhamento e Desafios</button>
-
 
     <button onclick="abrirAba('tela-parte4')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 4: Finalidade e Realização</button>
 
   <div id="container-travado">
     <button onclick="abrirAba('tela-parte5')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 5: Ciclos de Vida</button>
 
-
-    <button onclick="abrirAba('tela-parte6')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 6:  Ano Pessoal e Meses</button>
-
-
-
+    <button onclick="abrirAba('tela-parte6')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 6:  Ano Pessoal e seus 12 Mêses</button>
   
     <button onclick="abrirAba('tela-parte7')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 7: Performance  e Trânsitos do Momento dos 4 Pilares do Instinto </button>
-
-   
-
 
     <button onclick="abrirAba('tela-parte9')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 8: A Grande Matriz </button>
   
@@ -4101,6 +4096,7 @@ html += `<div class="menu-abas">
     <div id="aviso-trava-menu" class="aviso-trava">
         🔒 AS PARTES 5, 6, 7 E 8 SERÃO LIBERADAS APÓS O PERÍODO DE GARANTIA
     </div>
+    
     <button onclick="abrirAba('tela-parte8')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 9: Complementares</button>
     <button onclick="abrirAba('tela-parte10')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 10: Filosofia e Ciência</button>
 
@@ -4197,9 +4193,9 @@ html += `
             { t: "Parte 3: Alinhamento e Desafios Naturais",   c: "Fraquezas e Inibições ✶ Mecanismo do Subconsciente ✶ Déficit de Comportamento ✶ Desafio Principal"},
             { t: "Parte 4: Finalidade e Realização", c: " Caminho de Vida ✶ Propósito  ✶  Direcionamento Profissional"},
             { t: "Parte 5: Fases da Vida", c: "Fase de Maturidade ✶ Ciclos de Vida ✶ Momento de Decisão ✶ Desafios de Jornada"},
-            { t: "Parte 6: Ciclo dos Anos", c: "Ano Pessoal ✶ Mês Pessoal"},
-            { t: "Parte 7:  Tendências do Momento", c: "Status do Momento do Ciclo Atual ✶ Status do Momento do Segundo Ciclo ✶ Ciclos Trânsitórios ✶ Potenciais do Momento"},
-            { t: "Parte 8: A Grande Matriz", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Potências da Matriz Principal de 0 a 100 anos de idade"},
+            { t: "Parte 6: Ciclo de 2 Anos", c: "Ano Pessoal ✶ Mêses Pessoais"},
+            { t: "Parte 7:  2 anos de Tendências do Momento", c: "Status do Momento do Instinto no Ciclo Atual e o Próximo ✶ Ciclos Trânsitórios ✶ Potenciais do Momento"},
+            { t: "Parte 8: A Grande Matriz da Vida", c: "Pirâmide Invertida ✶ Sequências Numéricas ✶ Potências da Matriz Principal de 0 a 100 anos de idade"},
             { t: "Parte 9: Complementares", c: " Número de Relacionamento ✶ Cores Favoráveis ✶ Dias de Poder do Mês ✶ Números harmonicos"}, 
             { t: "Parte 10: Filosofia e Numerologia", c: "Hermetismo ✶ Ciência & Numerologia ✶ Agradecimento"}
         ].map(item => `
@@ -6024,7 +6020,7 @@ html += '<div id="tela-parte6" class="conteudo-aba">';
         </a>
 
         <p style="position: absolute; bottom: 50px; width: 100%; color: #fff; font-size: 14px; letter-spacing: 1px; opacity: 1.2; padding: 0 20px; box-sizing: border-box; margin: 0;">
-           Dois ciclos de Ano Pessoal e seus 24 meses.
+           Dois ciclos de Ano Pessoal e seus 12 meses.
         </p>
     </div>
 `;
@@ -6148,13 +6144,9 @@ html += `
     <div class="texto-res"> 
     <h3 style="text-align:center; margin-bottom:20px;">Planejamento Mensal: Ano Pessoal ${proximoAnoPessoal}</h3>
         <p style="text-align:center; margin-bottom:0px;">Projeção para o ciclo seguinte, iniciando no seu próximo aniversário.</p>
-        <div class="conteudo-travado">
-        ${cronogramaProximoHTML}
-        </div>
-        <div class="aviso-trava">
-            🔒 CONTEÚDO LIBERADO NO PDF
         
-         </div>
+        ${cronogramaProximoHTML}
+ 
          </div>
 </div>`;
 html += `</div>`;    
