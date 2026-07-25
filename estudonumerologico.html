@@ -2116,7 +2116,7 @@ console.log("Sigla gerada:", sigla);
         <div class="secao-card quebra-pagina">
             <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Plano de Expressão Natural</h2>
             <div class="intro-texto" style="margin-bottom: 25px; line-height: 1.6; color: #444;">
-                ${aplicarFiltroTexto(textos.introducoes.natural || `<p>O **Plano de Expressão Natural** revela como sua energia se distribui entre as quatro instâncias fundamentais da life — Físico, Mental, Emocional e Intuitivo — definindo seu temperamento e sua forma instintiva de reagir ao mundo.</p>`)}
+                ${aplicarFiltroTexto(textos.introducoes.natural || `<p>Os **4 Pilares do Instinto Natural** revela como sua energia se distribui entre as quatro instâncias fundamentais da life — Físico, Mental, Emocional e Intuitivo — definindo seu temperamento e sua forma instintiva de reagir ao mundo.</p>`)}
             </div>
             <div style="text-align: center; margin: 30px 0;">
                 <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/planoestudo.png" alt="Logo Plano de Expressão" style="max-width: 500px; height: auto; display: inline-block;">
@@ -2196,7 +2196,7 @@ html += `
         <div style="margin-top:25px; background:var(--dark); color:var(--gold); padding:20px; border-radius:8px; text-align:center;">
             <strong style="text-transform: uppercase;"> Diretriz de Equilíbrio: </strong><br>
             <span style="font-size: 15px; color: #fff; opacity: 0.9;">
-                Utilize a energia do plano <strong>${nomesAmigaveis[_p1.chave]}</strong> para sustentar o plano <strong>${nomesAmigaveis[_p4.chave]}</strong>.
+                Utilize a energia do pilar <strong>${nomesAmigaveis[_p1.chave]}</strong> para sustentar o pilar <strong>${nomesAmigaveis[_p4.chave]}</strong>.
             </span>
         </div>
     </div>
@@ -2304,7 +2304,7 @@ const dadosSinteseMomento = textosSinteseExpressao[siglaMomento] || textosSintes
             <h3 style="text-align:center; font-weight:bold; color:var(--gold); margin-top:-10px; margin-bottom:25px;"> PERÍODO: ${periodoVigente}</h3>
             
             <div class="intro-texto" style="margin-bottom: 25px; line-height: 1.6; color: #444;">
-                <p>O **Status de Expressão do Momento** revela como sua configuração de energia está operando *exatamente agora*. Diferente da sua natureza fixa, esta análise mostra quais planos (Físico, Mental, Emocional ou Intuitivo) estão recebendo mais carga vibracional neste ciclo de 12 meses e também classificando sua expressão em Criativa, Indecisa ou Neutra.. É o seu "clima interno" atual, indicando onde você tem mais facilidade de realizar e onde pode sentir sobrecarga ou lentidão.</p>
+                <p>O **Status de Expressão do Momento** revela como sua configuração de energia está operando *exatamente agora*. Diferente da sua natureza fixa, esta análise mostra quais Pilares (Físico, Mental, Emocional ou Intuitivo) estão recebendo mais carga vibracional neste ciclo de 12 meses e também classificando sua expressão em Criativa, Indecisa ou Neutra.. É o seu "clima interno" atual, indicando onde você tem mais facilidade de realizar e onde pode sentir sobrecarga ou lentidão.</p>
             </div>
    <div style="text-align: center; margin: 30px 0;">
                 <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/planoestudo.png" alt="Logo Plano de Expressão" style="max-width: 500px; height: auto; display: inline-block;">
@@ -2400,7 +2400,7 @@ h += `
         <div style="margin-top:25px; background:var(--dark); color:var(--gold); padding:20px; border-radius:8px; text-align:center;">
             <strong style="text-transform: uppercase;"> Diretriz de Equilíbrio: </strong><br>
             <span style="font-size: 15px; color: #fff; opacity: 0.9;">
-                Utilize a Energia do plano <strong>${nomesAmigaveis[_p1.chave]}</strong> para sustentar o plano <strong>${nomesAmigaveis[_p4.chave]}</strong>.
+                Utilize a Energia do Pilar <strong>${nomesAmigaveis[_p1.chave]}</strong> para sustentar o pilar <strong>${nomesAmigaveis[_p4.chave]}</strong>.
             </span>
         </div>
     </div>
@@ -2474,10 +2474,10 @@ h += `
    
 
     // Gera o Ciclo Atual
-    let htmlFinal = processarUmCiclo(anoBase, "Planos de Expressão do Momento");
+    let htmlFinal = processarUmCiclo(anoBase, "Os 4 Pilares do Instinto");
     
     // Gera o Próximo Ciclo (AnoBase + 1)
-    htmlFinal += processarUmCiclo(anoBase + 1, "Próximo Ciclo dos Planos");
+    htmlFinal += processarUmCiclo(anoBase + 1, "Próximo Ciclo dos 4 Pilares do Instinto");
 
     // Retorno para manter compatibilidade com o resto do seu script
     return { html: htmlFinal, dados: {} }; 
@@ -4056,7 +4056,7 @@ html += `<div class="menu-abas">
      <button onclick="abrirAba('tela-resultado')" style="width:100%; margin-bottom:5px; font-size: 22px;">Resultado Numerológico</button>
 
     <button onclick="abrirAba('tela-parte2')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 1: Essência e Identidade</button>
-    <button onclick="abrirAba('tela-parte1')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 2: Performance Natural dos Planos de Expressão</button>
+    <button onclick="abrirAba('tela-parte1')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 2: Performance Natural dos 4 Pilares do Instinto Humano</button>
 
 
    
@@ -4076,7 +4076,7 @@ html += `<div class="menu-abas">
 
 
   
-    <button onclick="abrirAba('tela-parte7')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 7: Performance  e Trânsitos do Momento nos Planos de Expressão</button>
+    <button onclick="abrirAba('tela-parte7')" style="width:100%; margin-bottom:5px; font-size: 22px;">Parte 7: Performance  e Trânsitos do Momento dos 4 Pilares do Instinto Superior</button>
 
    
 
@@ -4180,7 +4180,7 @@ html += `
         ${[
               { t: "Introdução", c: "Instinto Superior ✶ Resultado Numerológico ✶ Engenharia da Vida ✶ Origem e Numerologia Moderna ✶ Direcionamento da sua Jornada"},
             { t: "Parte 1: Essência e Identidade", c: "Dia de Nascimento ✶ Essencia ✶ Talento ou Habilidade Oculta ✶ Motivação ✶ Aparência e Influência ✶ Personalidade ✶ Nome de casado(a) (se houver) ✶ Tendência de Comportamento ✶ Desejo Oculto ✶ Habilidades Especiais ✶  Inclinações Ocultas ✶  Pilar de Equilíbrio"},
-            { t: "Parte 2: Performance Natural", c: "Planos de Expressão ✶ Gráficos de Potenciais"},
+            { t: "Parte 2: Performance Natural", c: "Os 4 Pilares do Instinto Superior ✶ Gráficos de Potenciais"},
             { t: "Parte 3: Alinhamento e Desafios Naturais",   c: "Fraquezas e Inibições ✶ Mecanismo do Subconsciente ✶ Déficit de Comportamento ✶ Desafio Principal"},
             { t: "Parte 4: Finalidade e Realização", c: " Caminho de Vida ✶ Propósito  ✶  Direcionamento Profissional"},
             { t: "Parte 5: Fases da Vida", c: "Fase de Maturidade ✶ Ciclos de Vida ✶ Momento de Decisão ✶ Desafios de Jornada"},
@@ -4519,7 +4519,7 @@ html += `
 </p>
 
 <p style="margin-top: 10px;">
-    Na <strong>Parte 2 – Performance Natural</strong>, serão analisados os seus <strong>Planos de Expressão</strong> e os seus <strong>Gráficos de Potenciais</strong>, revelando como a sua energia se manifesta naturalmente e quais capacidades possuem maior destaque na sua estrutura numerológica.
+    Na <strong>Parte 2 – Performance Natural</strong>, serão analisados os seus <strong>Pilares do Instinto Natural Humano</strong> e os seus <strong>Gráficos de Potenciais</strong>, revelando como a sua energia se manifesta naturalmente e quais capacidades possuem maior destaque na sua estrutura numerológica.
 </p>
 
 <p style="margin-top: 10px;">
@@ -5336,7 +5336,7 @@ html += `
         
         <div style="margin-top: 60px; z-index: 10; width: 100%;">
             <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-               Parte 1<br><br> Seus Graficos de Expressão Natural
+               Parte 2<br><br> Os 4 Pilares do Instinto Natural
             </h2>
         </div>
 
@@ -5392,7 +5392,7 @@ html += `
 
 
 
- tituloBonito = "Seu Plano de Expressão Natural";    
+ tituloBonito = "Seus 4 Pilares do Instinto Natural";    
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -5435,7 +5435,7 @@ html += `
         
         <div style="margin-top: 60px; z-index: 10; width: 100%;">
             <h2 style="font-family: 'Cinzel', serif; font-size: 28px; color: #fff; text-transform: uppercase; margin: 15px 20px;">
-               Parte 2 <br><br>Sua Essência & Identidade Numerológica
+               Parte 1 <br><br>Sua Essência & Identidade Numerológica
             </h2>
         </div>
 
