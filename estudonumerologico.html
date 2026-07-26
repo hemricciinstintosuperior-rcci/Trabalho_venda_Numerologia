@@ -4062,15 +4062,11 @@ html += `<div class="menu-abas">
     
     <button onclick="abrirAba('tela-Capa')" style="width:100%; margin-bottom:5px; font-size: 22px;">Capa</button>
     
-    <div id="container-travado">
+
         <button onclick="abrirAba('tela-social')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome Social</button>
      <button onclick="abrirAba('tela-assinatura')" style="width:100%; margin-bottom:5px; font-size: 22px;">Assinatura</button>
      <button onclick="abrirAba('tela-casado')" style="width:100%; margin-bottom:5px; font-size: 22px;">Nome de Casamento(Cartório) (se houver)</button>
-        </div>
 
-    <div id="aviso-trava-menu" class="aviso-trava">
-        🔒 AS PARTES NOME SOCIAL, ASSINATURA E DE CASAMENTO SERÃO LIBERADAS APÓS O PERÍODO DE GARANTIA
-    </div>
     
     <button onclick="abrirAba('tela-introducao')" style="width:100%; margin-bottom:5px; font-size: 22px;">Introdução: Instinto Superior e Numerologia</button>
      <button onclick="abrirAba('tela-resultado')" style="width:100%; margin-bottom:5px; font-size: 22px;">Resultado Numerológico</button>
@@ -7218,7 +7214,7 @@ if (dados.data_inicio) {
     console.log("Dias restantes calculados e enviados para o HTML:", diasRestantes);
     // ------------------------------------------
 
-    if (diffDiasTotal > 38) {
+    if (diffDiasTotal > 30) {
         alert("Seu período de acesso de 30 dias expirou.");
         window.location.href = "index.html";
         return;
