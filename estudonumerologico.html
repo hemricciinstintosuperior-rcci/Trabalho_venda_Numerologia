@@ -2406,26 +2406,58 @@ h += `</div>`;
 
 
        
-       // 1. LOOP DOS PLANOS INDIVIDUAIS (Físico, Mental, etc)
-        for(let p in somaMomento) {
-            let r = somaMomento[p] / ref;
-            let int = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
-            let vFinal = reduzirPuro(somaMomento[p]);
-            const textoIndiv = (textosPlanosMomento[p] && textosPlanosMomento[p][int]) ? textosPlanosMomento[p][int][vFinal] : "";
-            
-            if(textoIndiv) {
-                h += `
-                    <div class="evitar-corte" style="margin-bottom: 20px; border-left: none; padding-left: 15px;">
-                        <h4 style="margin:0; color:${coresPlanos[p] || 'var(--dark)'}; text-transform:uppercase; font-size:18px;">${nomesAmigaveis[p]} <small>(${int})</small></h4>
-                        
-                        
-                            <div class="texto-res">${aplicarFiltroTexto(textoIndiv)}</div>
-                        
-                    </div>`; // FECHA O BLOCO DO PLANO (margin-bottom: 20px)
-            }
-        }
+// 1. LOOP DOS PLANOS INDIVIDUAIS (Físico, Mental, etc)
+for(let p in somaMomento) {
+    let r = somaMomento[p] / ref;
+    let int = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
+    let vFinal = reduzirPuro(somaMomento[p]);
 
-        h += `</div>`; // FECHA O CARD PRINCIPAL DOS PLANOS (Aquele que abriu antes dos gráficos)
+    // Busca o objeto correspondente no textosPlanosMomento
+    const textoIndiv = (
+        textosPlanosMomento[p] &&
+        textosPlanosMomento[p][int] &&
+        textosPlanosMomento[p][int][vFinal]
+    )
+        ? textosPlanosMomento[p][int][vFinal]
+        : null;
+
+    if(textoIndiv) {
+
+        // Conteúdo textual individual
+        const conteudoTexto = textoIndiv.conteudo || "";
+
+        // ID do vídeo correspondente
+        const videoID = textoIndiv.videoID || "";
+
+        h += `
+            <div class="evitar-corte" style="margin-bottom: 20px; border-left: none; padding-left: 15px;">
+
+                <h4 style="margin:0; color:${coresPlanos[p] || 'var(--dark)'}; text-transform:uppercase; font-size:18px;">
+                    ${nomesAmigaveis[p]} <small>(${int})</small>
+                </h4>
+
+                <!-- TEXTO INDIVIDUAL -->
+                <div class="texto-res">
+                    ${aplicarFiltroTexto(conteudoTexto)}
+                </div>
+
+                <!-- VÍDEO INDIVIDUAL -->
+                ${
+                    (videoID && videoID.trim() !== "")
+                        ? `
+                            <div style="margin-top:20px;">
+                                ${gerarPlayerYouTube(videoID)}
+                            </div>
+                          `
+                        : ""
+                }
+
+            </div>
+        `;
+    }
+}
+
+h += `</div>`;// FECHA O CARD PRINCIPAL DOS PLANOS (Aquele que abriu antes dos gráficos)
 // 1. BUSCA DOS VÍDEOS
 // ... (dentro da função processarUmCiclo, após calcular siglaMomento e vTransitoCalculado)
 
