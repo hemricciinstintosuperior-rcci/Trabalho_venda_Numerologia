@@ -6143,12 +6143,14 @@ window.bancoEquilibrioUnificado = {
 textosPlanos = {
   fisico: {
     forte: {
-      1: `<p>Existe em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um impulso natural de ação, iniciativa e realização prática no mundo material, o que favorece a conquista de metas tangíveis de forma acelerada. Sua energia física manifesta-se com intensidade constante, definindo sua capacidade de tirar projetos audaciosos do papel e tomar decisões rápidas sob pressão. Há uma tendência inata à autonomia e à liderança na execução de tarefas, sendo uma necessidade vital da sua essência abrir caminhos próprios e construir uma independência sólida em cada etapa da sua jornada profissional. Esta força motriz é o que permite a você superar a estagnação e operar sempre em um nível superior de eficiência.</p>
+      1: {
+     conteudo:`<p>Existe em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um impulso natural de ação, iniciativa e realização prática no mundo material, o que favorece a conquista de metas tangíveis de forma acelerada. Sua energia física manifesta-se com intensidade constante, definindo sua capacidade de tirar projetos audaciosos do papel e tomar decisões rápidas sob pressão. Há uma tendência inata à autonomia e à liderança na execução de tarefas, sendo uma necessidade vital da sua essência abrir caminhos próprios e construir uma independência sólida em cada etapa da sua jornada profissional. Esta força motriz é o que permite a você superar a estagnação e operar sempre em um nível superior de eficiência.</p>
 
 <p>O seu aprendizado estrutural envolve desenvolver constância e paciência, garantindo que sua forte iniciativa produza resultados duradouros e não apenas faíscas de entusiasmo. A sua vitalidade é um motor incansável que o(a) empurra para a superação de obstáculos físicos e materiais. É uma característica fundamental da sua natureza canalizar esse vigor para alvos específicos, evitando o desperdício de potencial em atividades que não agreguem valor real ao seu crescimento. O sucesso é fruto do equilíbrio permanente entre a coragem de começar e a disciplina necessária para concluir com excelência tudo o que foi iniciado.</p>
 
 <p>Neste plano, a sua capacidade de se autoafirmar através do trabalho é um traço marcante, tornando a presença de você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, referência em qualquer ambiente produtivo. A disposição para enfrentar desafios físicos é um diferencial competitivo constante que atrai a admiração de pares e colaboradores. Sua estrutura pede foco na organização para que a pressa natural não comprometa a qualidade final das entregas. Ao dominar a arte de respeitar o tempo de maturação de cada colheita, sua satisfação material torna-se plena, consolidando uma trajetória de vitórias baseada na proatividade e na sua força de caráter inabalável.</p>`,
-
+    videoID: "F8bg1CTQ9HI"
+    },
       2: `<p>A sua energia física manifesta-se de forma cooperativa, constante e equilibrada, sendo este o seu estado natural de operação no dia a dia, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma capacidade notável em sua essência de trabalhar em equipe e sustentar projetos de longo prazo com um ritmo seguro e confiável. A ação prática ocorre com uma sensibilidade aguçada ao ambiente, característica que favorece a manutenção de relações harmoniosas e produtivas no campo profissional. É a força da diplomacia aplicada à execução, onde o seu entendimento mútuo é a base permanente para que grandes feitos sejam realizados com estabilidade.</p>
 
 <p>Sua estrutura pede o exercício constante da autonomia pessoal para que atitudes práticas sejam tomadas com firmeza sem dependência externa. A sua força física é sutil, agindo como a "cola" invisível que mantém os processos materiais funcionando com fluidez. É intrínseco à sua natureza cultivar a autossuficiência para que o seu progresso acompanhe sua própria vontade. Sua paciência é uma virtude natural que permite observar o cenário completo antes de agir, garantindo que cada movimento seu seja estratégico e bem fundamentado.</p>
@@ -6247,11 +6249,15 @@ textosPlanos = {
 
 <p>Neste plano, sua força de vontade impulsiona a conquista de espaços de prestígio. Sua gestão financeira é pautada no realismo, garantindo a solidez do seu patrimônio. A sua presença transmite seriedade, inspirando confiança em parceiros de negócios. Ao unir força física com estratégia mental, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, constrói uma trajetória de sucesso alcançada com ética e uma capacidade de realização inabalável.</p>`,
 
-      9: `<p>Sua energia física direciona-se naturalmente para projetos de impacto coletivo e propósitos elevados, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe em sua essência uma disposição para agir quando há conexão com causas que beneficiam a sociedade. Sua constância produtiva é alimentada por essa inspiração, transformando o esforço material em um ato de idealismo prático. É a sua vitalidade manifestando-se em nome de um bem maior.</p>
+      9: {
+     conteudo:`<p>Sua energia física direciona-se naturalmente para projetos de impacto coletivo e propósitos elevados, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe em sua essência uma disposição para agir quando há conexão com causas que beneficiam a sociedade. Sua constância produtiva é alimentada por essa inspiração, transformando o esforço material em um ato de idealismo prático. É a sua vitalidade manifestando-se em nome de um bem maior.</p>
 
 <p>Transformar sua visão ampla em passos cotidianos fortalece sua capacidade de realização técnica. Sua disposição física é potencializada quando você percebe a utilidade social da sua ação. Manter o foco no presente garante a base material necessária para a concretização dos seus ideais, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua generosidade atrai pessoas com o mesmo espírito, consolidando uma rede de cooperação eficiente e transformadora.</p>
 
 <p>Nesta vibração, sua saúde física reflete seu estado de ânimo e satisfação com o propósito do trabalho. Praticar a serenidade permite que sua produção flua com constância. Sua visão global permite encontrar soluções inovadoras para desafios materiais. Ao encerrar cada ciclo com o sentimento de dever cumprido, sua vitalidade se renova para novos desafios em prol da coletividade, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>`
+   videoID: "F8bg1CTQ9HI"
+    }  
+    
     },
 
     fraco: {
