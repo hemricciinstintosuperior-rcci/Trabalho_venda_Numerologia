@@ -2164,21 +2164,56 @@ Esses pilares fazem parte da sua estrutura natural e acompanham você durante to
     }
     html += `</div></div>`; 
     
-    for(let p in dados.soma) {
-        let r = dados.soma[p] / ref;
-        let int = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
-        let vFinalNatural = reduzirPuro(dados.soma[p]);
-        
-        const textoIndiv = (ativosPlanos[p] && ativosPlanos[p][int]) ? ativosPlanos[p][int][vFinalNatural] : "";
-        if(textoIndiv) {
-            html += `
-                <div class="evitar-corte" style="margin-bottom: 20px; border-left: none; padding-left: 15px;">
-                    <h4 style="margin:0; color:${coresPlanos[p]}; text-transform:uppercase; font-size:18px;">${nomesAmigaveis[p]} <small>(${int})</small></h4>
-                    <div class="texto-res">${aplicarFiltroTexto(textoIndiv)}</div>
+// TEXTOS INDIVIDUAIS DOS PLANOS
+for(let p in dados.soma) {
+    let r = dados.soma[p] / ref;
+    let int = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
+    let vFinalNatural = reduzirPuro(dados.soma[p]);
+
+    // Busca o objeto correspondente no textosPlanos
+    const textoIndiv = (
+        ativosPlanos[p] &&
+        ativosPlanos[p][int] &&
+        ativosPlanos[p][int][vFinalNatural]
+    )
+        ? ativosPlanos[p][int][vFinalNatural]
+        : null;
+
+    if(textoIndiv) {
+
+        // Conteúdo textual individual
+        const conteudoTexto = textoIndiv.conteudo || "";
+
+        // ID do vídeo correspondente a este texto
+        const videoID = textoIndiv.videoID || "";
+
+        html += `
+            <div class="evitar-corte" style="margin-bottom: 20px; border-left: none; padding-left: 15px;">
+
+                <h4 style="margin:0; color:${coresPlanos[p]}; text-transform:uppercase; font-size:18px;">
+                    ${nomesAmigaveis[p]} <small>(${int})</small>
+                </h4>
+
+                <!-- TEXTO INDIVIDUAL -->
+                <div class="texto-res">
+                    ${aplicarFiltroTexto(conteudoTexto)}
                 </div>
-            `;
-        }
+
+                <!-- VÍDEO INDIVIDUAL -->
+                ${
+                    (videoID && videoID.trim() !== "")
+                        ? `
+                            <div style="margin-top:20px;">
+                                ${gerarPlayerYouTube(videoID)}
+                            </div>
+                          `
+                        : ""
+                }
+
+            </div>
+        `;
     }
+}
    
 // ... (seu código anterior até a parte da Síntese)
 
