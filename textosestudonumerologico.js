@@ -84,19 +84,23 @@ introducoes: {
 <p>Compreender o próprio Dia Natalício permite reconhecer talentos naturais, compreender padrões de comportamento e identificar potenciais que muitas vezes permanecem adormecidos. Ao trazer consciência sobre essas características, a numerologia oferece um instrumento de autoconhecimento que pode auxiliar no desenvolvimento pessoal e na harmonização da própria trajetória de vida.</p>`,
        videoID: "z1nW3rmNeEI"
     },
-        comportamento: `O Número do Comportamento revela como são as qualidades psíquicas que influenciam nas escolhas pessoais. As pessoas experimentam diferentes respostas internas aos desafios da vida. Alguns se retiram de situações difíceis para pensar sobre elas; outros se afastam de suas emoções, para tentar evitar sentir as emoções. Outros se apegam aos seus sentimentos e sentem dificuldade em deixar as coisas irem.
+        comportamento: {
+     conteudo:`O Número do Comportamento revela como são as qualidades psíquicas que influenciam nas escolhas pessoais. As pessoas experimentam diferentes respostas internas aos desafios da vida. Alguns se retiram de situações difíceis para pensar sobre elas; outros se afastam de suas emoções, para tentar evitar sentir as emoções. Outros se apegam aos seus sentimentos e sentem dificuldade em deixar as coisas irem.
   
 Muitas vezes, essas são respostas condicionadas ou emocionais surgem sem pensamento ou análise. A maturidade e o autodesenvolvimento nos ajudam a aprender novos e mais eficazes métodos de lidar com nosso mundo e os problemas que enfrentamos. O número do comportamento fornece orientação 
 sobre a melhor forma de lidar com situações difíceis ou ameaçadoras, pois que reflete certos padrões interiores comuns a grupos de pessoas nascidas em dias comuns entre si.`,
-
+     videoID: "z1nW3rmNeEI"
+    },
 
         
-        essencia: `<p>Diante dos desafios da existência, cada indivíduo manifesta uma resposta interna singular. Existem pessoas que optam pelo distanciamento momentâneo das dificuldades para estruturar um plano de ação estratégico, enquanto outras buscam o recolhimento como uma forma de proteção contra emoções e sentimentos indesejados.</p>
+        essencia: {
+     conteudo:`<p>Diante dos desafios da existência, cada indivíduo manifesta uma resposta interna singular. Existem pessoas que optam pelo distanciamento momentâneo das dificuldades para estruturar um plano de ação estratégico, enquanto outras buscam o recolhimento como uma forma de proteção contra emoções e sentimentos indesejados.</p>
 
 <p>Em contrapartida, há quem reaja de maneira intensa e imediata, deixando-se levar pelo ímpeto do momento, mas permitindo que essa energia se dissipe com rapidez. Outros, no entanto, prolongam esses estados emocionais, mantendo o sentimento ativo por longos períodos. Essas reações costumam ser respostas condicionadas que surgem de forma impensada e automática.</p>
 
 <p>O caminho da maturidade e do autodesenvolvimento oferece a oportunidade de adotar posturas mais práticas e conscientes perante o inesperado. Ao compreender a própria essência, torna-se possível lidar com situações críticas de forma mais eficaz, alcançando resultados satisfatórios e reduzindo drasticamente os conflitos internos e externos.</p>`,
-
+     videoID: "z1nW3rmNeEI"
+    },
 
         
         equilibrio: `<p>O Universo rege-se pelo princípio da harmonia, e o mesmo se aplica aos seus números pessoais. Qualquer excesso identificado em sua estrutura numerológica merece uma análise criteriosa, pois essas intensidades podem revelar tanto talentos excepcionais quanto pontos que demandam superação e ajuste.</p>
@@ -111,21 +115,26 @@ sobre a melhor forma de lidar com situações difíceis ou ameaçadoras, pois qu
      
         
         
-        talento: `
+        talento: {
+     conteudo:`
     <p>O talento é frequentemente compreendido como a habilidade de realizar determinadas tarefas com excelência e o mínimo de esforço consciente. Muitas vezes, essas capacidades permanecem latentes na mente, operando de forma automática sem que haja uma percepção clara de sua existência. O Talento Oculto representa essas habilidades especiais que, quando identificadas e desenvolvidas, permitem que o indivíduo se sobressaia em atividades específicas, utilizando inclinações naturais a seu favor.</p>
     <p>Mesmo sem o conhecimento técnico dessas predisposições, é comum que a utilização ocorra de maneira inconsciente no cotidiano. A identificação desse número revela ferramentas internas que podem ser potencializadas para gerar resultados extraordinários com fluidez e naturalidade.</p>`,
-
+     videoID: "z1nW3rmNeEI"
+    },
 
         
-        motivacao: `A motivação mostra seus sonhos e desejo mais profundo. É um impulso natural que faz com que alguém aja para atingir seus objetivos e expressa a intenção que está por trás suas ações. Ele influencia as escolhas que você faz na vida, e é a principal característica responsável por iniciar, direcionar e manter comportamentos relacionados com o cumprimento de seus objetivos. 
+        motivacao: {
+     conteudo:`A motivação mostra seus sonhos e desejo mais profundo. É um impulso natural que faz com que alguém aja para atingir seus objetivos e expressa a intenção que está por trás suas ações. Ele influencia as escolhas que você faz na vida, e é a principal característica responsável por iniciar, direcionar e manter comportamentos relacionados com o cumprimento de seus objetivos. 
   
 Sua influência está em praticamente todas as suas escolhas; da de sua carreira a amizades, relacionamentos até seu modo de vida. É esta característica natural também que faz com que você dê o melhor de si e faça o possível para conquistar o que deseja. É ela também que muitas vezes, faz com que algumas pessoas acabem até mesmo “passando por cima” de outras para obter aquilo que desejam.
   
 Mostra seus impulsos ocultos, o que verdadeiramente lhe motiva, e como suas ações influenciam nas suas decisões; revela quais são suas ambições, seus gostos pessoais, suas aversões, necessidades e vontades. Os motivos que estão por trás de cada decisão que alguém toma em sua vida e mesmo não sendo normalmente aparente, é este número que informa suas decisões.
 A motivação é um elemento essencial para o desenvolvimento do ser humano. Sem ela seria muito mais difícil cumprir a maior parte de suas intenções; por isso é uma vibração muito importante na numerologia e deve ser muito bem compreendida.`,
-
+  videoID: "z1nW3rmNeEI"
+    },
         
-        influencia: `<p>O Número de Influência revela a forma como o mundo externo percebe sua presença; é a impressão imediata e a essência da imagem que você projeta. Ele define o impacto inicial que sua figura exerce sobre as pessoas e os julgamentos automáticos que elas formulam ao interagirem com você.</p>
+        influencia: {
+     conteudo:`<p>O Número de Influência revela a forma como o mundo externo percebe sua presença; é a impressão imediata e a essência da imagem que você projeta. Ele define o impacto inicial que sua figura exerce sobre as pessoas e os julgamentos automáticos que elas formulam ao interagirem com você.</p>
 
 <p>Este indicador fornece detalhes sobre a face que você deseja apresentar à sociedade e o nível de confiança empregado ao se comunicar. Ele delimita a acessibilidade em seus relacionamentos, funcionando como um termômetro de quão profundamente você permite que os outros se aproximem.</p>
 
@@ -134,15 +143,19 @@ A motivação é um elemento essencial para o desenvolvimento do ser humano. Sem
 <p>O Número de Influência também expõe as barreiras mentais, estereótipos ou resistências que podem dificultar a entrega de informações autênticas sobre si para o universo. É comum que até as pessoas mais próximas tenham dificuldade em descrever sua essência, pois, somente com o tempo e o estabelecimento de confiança, as camadas mais profundas da sua natureza são reveladas.</p>
 
 <p>Atuando como um dispositivo de censura, este número filtra tanto a imagem transmitida quanto os temas que você aceita abordar. Ele serve como um escudo que afasta situações indesejadas, ao mesmo tempo em que preserva os aspectos mais íntimos da sua personalidade. Essa primeira imagem é decisiva: ela pode tanto despertar uma curiosidade magnética quanto fazer com que o interesse alheio se dissipe rapidamente.</p>`,
-
+  videoID: "z1nW3rmNeEI"
+    },
         
-        Personalidade: `<p>O Número da Personalidade revela a maneira como você age, reage e se comporta diante da vida. Ele representa a expressão prática do seu ser, a forma como suas intenções se transformam em atitudes e como você se manifesta no mundo em diferentes circunstâncias.</p>
+        Personalidade: {
+     conteudo:`<p>O Número da Personalidade revela a maneira como você age, reage e se comporta diante da vida. Ele representa a expressão prática do seu ser, a forma como suas intenções se transformam em atitudes e como você se manifesta no mundo em diferentes circunstâncias.</p>
 <p>Este número descreve o padrão habitual do seu comportamento. Ele mostra suas reações repetidas, seus hábitos emocionais e mentais, e a forma como você tende a pensar, sentir e agir diante das experiências da vida. É através da personalidade que suas ideias, desejos e convicções ganham forma concreta.</p>
 <p>A personalidade representa o conjunto das características marcantes que moldam seus relacionamentos e sua forma de interagir com o ambiente. Ela define como você se posiciona socialmente, como responde aos desafios e como estabelece vínculos com as pessoas.</p>
 <p>O Número da Personalidade revela como você percebe a realidade e como reage a ela. Mostra suas tendências naturais de atração ou rejeição, suas convicções e a forma como expressa sentimentos e opiniões. Ele é um dos principais instrumentos para desenvolver uma forma eficiente, confortável e criativa de comunicação.</p>
 <p>Cada pessoa possui uma maneira única de agir e se expressar. Para aqueles que consideram a reencarnação como filosofia, a soma do nome completo representa a síntese de experiências, talentos e aprendizados acumulados ao longo de muitas existências.</p>
 <p>Compreender este número permite reconhecer talentos naturais, desafios comportamentais e padrões emocionais que influenciam diretamente a forma como sua vida se desenvolve.</p>`,
-        
+          videoID: "z1nW3rmNeEI"
+    },
+     
         Relacionamento: `<p>Cada indivíduo emite uma frequência energética única. Ao compreender a natureza da sua própria vibração, torna-se possível identificar quais perfis possuem maior afinidade com você, distinguindo entre atrações magnéticas, convivências passivas ou dinâmicas opostas. Esse mapeamento é a chave para antecipar a fluidez de vínculos conjugais, afetivos ou profissionais.</p>
 
 <p>É importante ressaltar que este estudo funciona como um indicador de harmonia potencial. Embora a numerologia aponte tendências de compatibilidade, o sucesso de uma união — seja ela uma amizade, sociedade ou relacionamento amoroso — depende do livre-arbítrio e da dedicação mútua. Contudo, as probabilidades de êxito e de uma convivência serena são significativamente maiores entre números que compartilham vibrações harmônicas.</p>
