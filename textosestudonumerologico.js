@@ -7031,7 +7031,8 @@ mental: {
       8: `<p>A gestão da sua vida prática e financeira pode parecer confusa ou desmotivadora neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma tendência a você evitar as grandes decisões de poder ou dinheiro. O momento pede cautela redobrada; não faça investimentos altos e use sua prudência para segurar as pontas até que sua autoridade mental se restabeleça e você sinta segurança para liderar novamente.</p>`,
       9: `<p>Este ciclo revela em você uma dificuldade em concluir processos ou perdoar erros do passado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua mente pode estar presa a detalhes inúteis, impedindo a visão do "todo" que você costuma ter. O desafio agora é praticar o desapego mental consciente, entendendo que esta fase de confusão serve para te mostrar o que realmente precisa ser deixado para trás para sua mente evoluir.</p>`
 
-  },
+  }
+},
   
 emocional: {
     forte: {
