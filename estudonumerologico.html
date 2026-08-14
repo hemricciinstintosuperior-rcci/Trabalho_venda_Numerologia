@@ -5309,9 +5309,8 @@ const primeiroNome = nomeRaw.split(' ')[0];
 
 // --- DESEJO OCULTO ---
 const idVideoDesejo = buscarVideoID("desejoOculto", dadosDesejo.numero, generoAtual);
-const idVideoIntroDesejo = (typeof introDesejoDados === 'object' && introDesejoDados !== null) 
-    ? introDesejoDados.videoID 
-    : "F8bg1CTQ9HI"; 
+
+const idVideoIntroDesejo = "z1nW3rmNeEI";
     // Crie esta linha logo ACIMA do código da ondinha:
  tituloBonito = "SEU DESEJO OCULTO"; 
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
@@ -5325,13 +5324,13 @@ html += `
 
 
     
-html += renderizarBlocoComVideo(`
+html += `
     <div class="page">
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Seu Desejo Oculto</h2>
         <div class="intro-texto">${aplicarFiltroTexto(textos.introducoes.desejoOculto) ||  `
     <p>A Vibração do Desejo Oculto possui um poder próprio para moldar a trajetória humana, gerando um impulso profundo para o desenvolvimento e a expressão de habilidades muito específicas. Esta força exige que a própria natureza seja experimentada em sua essência, permitindo que esse potencial guie a personalidade de forma autêntica.</p>
     <p>No Estudo Numerológico Quântico, esta é uma das vibrações mais significativas, pois representa comportamentos recorrentes que se manifestam de forma cíclica. É necessário manter a vigilância sobre esses padrões, que podem se tornar vícios de atitude se não houver a quebra do ciclo existente. O reconhecimento dessa energia permite escolher direções que evitem círculos viciosos, transformando tendências latentes em ferramentas de evolução.</p>
-`}</div>
+`}  ${idVideoIntroDesejo ? gerarPlayerYouTube(idVideoIntroDesejo) : ""} </div>
          <div class="evitar-corte resultado-bloco" style="text-align: center; margin-bottom: 20px;">
             <span style="font-size: 1.2rem; color: var(--gold);"> </span>
             <span class="numero-destaque" style="font-size: 2.5rem; font-weight: bold;"></span>
@@ -5340,7 +5339,7 @@ html += renderizarBlocoComVideo(`
         ${aplicarFiltroTexto(textos.desejoOculto[dadosDesejo.numero].conteudo)}
         ${idVideoDesejo ? gerarPlayerYouTube(idVideoDesejo) : ""}
     </div>
-</div>`,idVideoIntroDesejo);
+</div>`;
 
 // ==========================================
 // BLOCO INDIVIDUAL: INCLINAÇÕES (inclinacoes)
