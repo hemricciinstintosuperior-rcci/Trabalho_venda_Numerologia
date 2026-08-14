@@ -248,7 +248,8 @@ Mesmo que não esteja consciente, você constrói esse caminho ao longo da vida 
   
 Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização pessoal.`,
         
-        inclinacoes: `<p>Esta característica possui uma força intrínseca capaz de moldar sua trajetória, gerando um desejo profundo de desenvolver e manifestar essa habilidade específica em sua jornada. É um chamado da sua própria essência que busca expressão e reconhecimento.</p>
+        inclinacoes: {
+     conteudo:`<p>Esta característica possui uma força intrínseca capaz de moldar sua trajetória, gerando um desejo profundo de desenvolver e manifestar essa habilidade específica em sua jornada. É um chamado da sua própria essência que busca expressão e reconhecimento.</p>
 
 <p>A existência desse talento exige que ele seja exteriorizado. Vivenciar essa faceta é, em última análise, permitir-se viver em total harmonia com sua verdadeira natureza. Assim, a Inclinação Oculta atua como um guia silencioso, esculpindo sua personalidade e direcionando suas escolhas de maneira quase imperceptível, mas extremamente poderosa.</p>
 
@@ -257,7 +258,8 @@ Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização 
 <p>Esses "vícios de comportamento" são inclinações naturais que, quando não observadas, limitam a forma como experimentamos a realidade. Agravados pela impulsividade ou por reações automáticas, esses padrões podem criar a ilusão de que os eventos da vida estão fora de nosso controle ou que são causados por fatores externos.</p>
 
 <p>Compreender essas tendências é o primeiro passo para quebrar o círculo vicioso. Ao assumir a maestria sobre essas inclinações, você deixa de ser refém de comportamentos repetitivos e passa a conduzir sua vida com intenção, ética e clareza, transformando potenciais limitações em ferramentas de evolução.</p>`,
- 
+ videoID: "z1nW3rmNeEI"
+    },
         
         
         subconsciente: `<p style="margin-bottom: 8px;">Em nossa jornada cotidiana, somos constantemente bombardeados por estímulos que podem gerar irritação, frustração ou melancolia. Na maioria das vezes, operamos no "piloto automático", reagindo a esses eventos sem uma consciência real de nossas motivações internas.</p>
