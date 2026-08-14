@@ -5264,15 +5264,17 @@ const listaPremium = ["dia",  "essencia", "talento", "motivacao", "influencia", 
 listaPremium.forEach(chave => {
     const tituloBonito = nomesExibicao[chave] || chave;
 
-    
-    // 1. Busca o dado no arquivo de textos
-    const dados = textos[chave][res[chave]];
-
-    // 2. Extrai o conteúdo e o ID do vídeo (igual ao Caminho de Vida)
+    // 1. Busca os dados do RESULTADO
+    const dados = textos[chave] ? textos[chave][res[chave]] : null;
     const conteudo = (typeof dados === 'object' && dados !== null) ? dados.conteudo : dados;
     const video = (typeof dados === 'object' && dados !== null) ? dados.videoID : null;
 
-    // 3. Monta o HTML com o separador e o player, se existir
+    // 2. Busca os dados da INTRODUÇÃO (NOVO: aceita Objeto com videoID ou String)
+    const dadosIntro = textos.introducoes ? textos.introducoes[chave] : "";
+    const conteudoIntro = (typeof dadosIntro === 'object' && dadosIntro !== null) ? dadosIntro.conteudo : dadosIntro;
+    const videoIntro = (typeof dadosIntro === 'object' && dadosIntro !== null) ? dadosIntro.videoID : null;
+
+    // 3. Monta o HTML com o separador e os players (da intro e do resultado)
     html += `
     <div class="separador-luxo">
         <div class="caixa-interna">
@@ -5281,9 +5283,14 @@ listaPremium.forEach(chave => {
     </div>
     <div class="page">
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-        <div class="intro-texto">${textos.introducoes[chave] || ""}</div>
+        
+        <div class="intro-texto">
+            ${aplicarFiltroTexto(conteudoIntro || "")}
+            ${videoIntro ? gerarPlayerYouTube(videoIntro) : ""}
+        </div>
+        
         <div class="evitar-corte texto-res">
-            ${aplicarFiltroTexto(conteudo)}
+            ${aplicarFiltroTexto(conteudo || "")}
             ${video ? gerarPlayerYouTube(video) : ""}
         </div>
     </div>
