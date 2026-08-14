@@ -5366,6 +5366,12 @@ conteudoInclinacoes += `
     conteudoInclinacoes = "<p>Nenhuma inclinação específica detectada.</p>";
 }
 
+// --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
+const dadosIntroInc = textos.introducoes ? textos.introducoes.inclinacoes : "";
+const conteudoIntroInc = (typeof dadosIntroInc === 'object' && dadosIntroInc !== null) ? dadosIntroInc.conteudo : dadosIntroInc;
+const videoIntroInc = (typeof dadosIntroInc === 'object' && dadosIntroInc !== null) ? dadosIntroInc.videoID : null;
+    
+
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -5374,7 +5380,9 @@ html += `
 </div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto">${textos.introducoes.inclinacoes || ""}</div>
+    <div class="intro-texto">${aplicarFiltroTexto(conteudoIntroInc || "")}
+    ${videoIntroInc ? gerarPlayerYouTube(videoIntroInc) : ""}
+    </div>
     ${conteudoInclinacoes}
 </div>
 `;
@@ -5404,16 +5412,16 @@ const dadosConclusao = (typeof window.bancoEquilibrioUnificado !== 'undefined') 
 // 3. EXTRAÇÃO INTELIGENTE (Trata se é objeto com vídeo ou texto puro)
 const p1 = extrairDadosEquilibrio(dadosIniciais); // Usando a função que criamos antes
 const p2 = extrairDadosEquilibrio(dadosConclusao);
-
+const idVideoIntroequil = "z1nW3rmNeEI";
 
 // 2. Introdução Corrigida (Ajustada para Primeira do Primeiro e Última do Último)
-const txtIntroEquil = `
+const txtIntroEquil = renderizarBlocoComVideo(`
 <p>O Universo rege-se pelo princípio da harmonia, e o mesmo se aplica aos seus números pessoais. O seu <strong>Número de Equilíbrio</strong> atua como um guia estratégico, orientando sobre a melhor postura a ser adotada em situações desafiadoras ou de alta pressão.</p>
 
 <p>Nesta análise, decodificamos as "âncoras" do seu nome. A <strong>letra inicial do seu primeiro nome</strong> traduz suas inclinações primárias, revelando como você aborda oportunidades e obstáculos logo no primeiro contato. É a sua assinatura de atitude inicial perante o novo, o impulso que define como você entra em cena.</p>
 
 <p>Por outro lado, a <strong>última letra do seu último nome</strong> reflete a sua capacidade de sustentação e conclusão. Ela indica como você lida com o encerramento de ciclos e qual a sua força real de entrega. O equilíbrio entre essa primeira centelha de início e a disciplina da finalização é o que define a eficácia de suas realizações e a solidez do seu sucesso.</p>
-`;
+`,idVideoIntroequil);
 
 // 3. Montagem do HTML (Usando os novos títulos e o conteúdo processado)
 // Nota: O 'res.equilibrio.texto' já contém o txtP1 e txtP2 que buscamos com a Chave Mestra
