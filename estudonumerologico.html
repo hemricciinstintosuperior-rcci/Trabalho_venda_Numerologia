@@ -2067,25 +2067,41 @@ function montarHtmlPlanosNatural(nome) {
     const campoGênero = document.getElementById("generoTexto");
     const formatoGênero = campoGênero ? campoGênero.value : "masculino";
 
-    // 1. PRIMEIRISSIMA COISA: Criamos os textos para o navegador já deixar na memória
+    // 1. Dicionários de Perfil Nativo com textos e vídeo IDs integrados
     const descricoesPerfilMasculino = {
-        criativo: ` <p>"Sua mente possui mais Criatividade"</p><p>Naturalmente você apresenta ideias originais, enxerga a realidade de forma diferenciada e encara imprevistos com otimismo e espontaneidade. Ao analisar problemas complexos, você divide-os em partes menores, focando em soluções eficazes e na adaptação rápida a novas situações.</p><p>Movido por estímulos internos, você demonstra grande motivação pessoal, ignorando rotinas estabelecidas para explorar diversas alternatives. Pelo lado desafiador, você pode manifestar certa arrogância ou rebeldia contra regras, sofrendo com flutuações de humor e desconfiança. Nessa busca constante pelo novo, você corre o risco de perder a noção de tempo ou se deixar envolver por ilusões temporárias.</p>`,
-        indeciso:  ` <p>"A indecisão toma conta da sua expressão"</p><p>Com grande sensibilidade, você demonstra necessidade de atenção, podendo agir de forma dramática ou precipitada sob pressão emocional. Sendo influenciável pelo ambiente, você muda de opinião com frequência e encontra certa dificuldade em agir de forma solitária.</p><p>Revelando um lado sedutor, você pode ser interpretado com inconveniência devido ao excesso de dramatização em suas falas. Ao fortalecer seu caráter, você descobre sua verdadeira identidade, trocando a busca por aprovação externa por seus desejos internos. Em momentos de desequilíbrio, você torna-se inconstante ou impulsiva, especialmente quando é dominada por receios e emoções intensas.</p>`,
-        neutro: ` <p>"Sua essência possui equilíbrio nas decisões"</p> <p>Sendo alguém observador, você prefere analisar todos os pontos de vista antes de tomar partido em qualquer tipo de conflito. Agindo por interesses próprios, você raramente sai da zona de conforto, mantendo-se excessivamente cauteloso para evitar riscos inúteis.</p><p>Relacionando-se bem com todos, você constrói barreiras emocionais intencionais para evitar sofrimento, raramente expondo o que realmente sente. Com facilidade de adaptação, **você** mantém o autocontrole em situações difíceis, preferindo rotinas pacíficas. No aspect negativo, você pode demonstrar certa omissão ou medo de decidir, mantendo-se neutro e com baixa inclinação criativa.</p>`
+        criativo: {
+            conteudo: `<p>"Sua mente possui mais Criatividade"</p><p>Naturalmente você apresenta ideias originais, enxerga a realidade de forma diferenciada e encara imprevistos com otimismo e espontaneidade. Ao analisar problemas complexos, você divide-os em partes menores, focando em soluções eficazes e na adaptação rápida a novas situações.</p><p>Movido por estímulos internos, você demonstra grande motivação pessoal, ignorando rotinas estabelecidas para explorar diversas alternativas. Pelo lado desafiador, você pode manifestar certa arrogância ou rebeldia contra regras, sofrendo com flutuações de humor e desconfiança. Nessa busca constante pelo novo, você corre o risco de perder a noção de tempo ou se deixar envolver por ilusões temporárias.</p>`,
+            videoID: "ID_VIDEO_CRIATIVO_MASC" // Insira o ID do YouTube correspondente
+        },
+        indeciso: {
+            conteudo: `<p>"A indecisão toma conta da sua expressão"</p><p>Com grande sensibilidade, você demonstra necessidade de atenção, podendo agir de forma dramática ou precipitada sob pressão emocional. Sendo influenciável pelo ambiente, você muda de opinião com frequência e encontra certa dificuldade em agir de forma solitária.</p><p>Revelando um lado sedutor, você pode ser interpretado com inconveniência devido ao excesso de dramatização em suas falas. Ao fortalecer seu caráter, você descobre sua verdadeira identidade, trocando a busca por aprovação externa por seus desejos internos. Em momentos de desequilíbrio, você torna-se inconstante ou impulsivo, especialmente quando é dominado por receios e emoções intensas.</p>`,
+            videoID: "ID_VIDEO_INDECISO_MASC" // Insira o ID do YouTube correspondente
+        },
+        neutro: {
+            conteudo: `<p>"Sua essência possui equilíbrio nas decisões"</p><p>Sendo alguém observador, você prefere analisar todos os pontos de vista antes de tomar partido em qualquer tipo de conflito. Agindo por interesses próprios, você raramente sai da zona de conforto, mantendo-se excessivamente cauteloso para evitar riscos inúteis.</p><p>Relacionando-se bem com todos, você constrói barreiras emocionais intencionais para evitar sofrimento, raramente expondo o que realmente sente. Com facilidade de adaptação, você mantém o autocontrole em situações difíceis, preferindo rotinas pacíficas. No aspecto negativo, você pode demonstrar certa omissão ou medo de decidir, mantendo-se neutro e com baixa inclinação criativa.</p>`,
+            videoID: "ID_VIDEO_NEUTRO_MASC" // Insira o ID do YouTube correspondente
+        }
     };
 
     const descricoesPerfilFeminino = {
-        criativo: `<p>"Sua mente possui mais Criatividade"</p><p>Naturalmente você apresenta ideias originais, enxerga a realidade de forma diferenciada e encara imprevistos com otimismo e espontaneidade. Ao analisar problemas complexos, você divide-os em partes menores, focando em soluções eficazes e na adaptação rápida a novas situações.</p><p>Movida por estímulos internos, você demonstra grande motivação pessoal, ignorando rotinas estabelecidas para explorar diversas alternativas. Pelo lado desafiador, você pode manifestar certa arrogância ou rebeldia contra regras, sofrendo com flutuações de humor e desconfiança. Nessa busca constante pelo novo, você corre o risco de perder a noção de tempo ou se deixar envolver por ilusões temporárias.</p>`,
-        indeciso: `<p>"A indecisão toma conta da sua expressão"</p><p>Com grande sensibilidade, você demonstra necessidade de atenção, podendo agir de forma dramática ou precipitada sob pressão emocional. Sendo influenciável pelo ambiente, você muda de opinião com frequência e encontra certa dificuldade em agir de forma solitária.</p><p>Revelando um lado sedutor, você pode ser interpretada com inconveniência devido ao excesso de dramatização em suas falas. Ao fortalecer seu caráter, você descobre sua verdadeira identidade, trocando a busca por aprovação externa por seus desejos internos. Em momentos de desequilíbrio, você torna-se inconstante ou impulsiva, especialmente quando é dominada por receios e emoções intensas.</p>`,
-        neutro: `<p>"Sua essência possui equilíbrio nas decisões"</p><p>Sendo alguém observadora, você prefere analisar todos os pontos de vista antes de tomar partido em qualquer tipo de conflito. Agindo por interesses próprios, você raramente sai da zona de conforto, mantendo-se excessivamente cautelosa para evitar riscos inúteis.</p><p>Relacionando-se bem com todos, você constrói barreiras emocionais intencionais para evitar sofrimento, raramente expondo o que realmente sente. Com facilidade de adaptação, você mantém o autocontrole em situações difíceis, preferindo rotinas pacíficas. No aspecto negativo, você pode demonstrar certa omissão ou medo de decidir, mantendo-se neutra e com baixa inclinação criativa.</p>`
+        criativo: {
+            conteudo: `<p>"Sua mente possui mais Criatividade"</p><p>Naturalmente você apresenta ideias originais, enxerga a realidade de forma diferenciada e encara imprevistos com otimismo e espontaneidade. Ao analisar problemas complexos, você divide-os em partes menores, focando em soluções eficazes e na adaptação rápida a novas situações.</p><p>Movida por estímulos internos, você demonstra grande motivação pessoal, ignorando rotinas estabelecidas para explorar diversas alternativas. Pelo lado desafiador, você pode manifestar certa arrogância ou rebeldia contra regras, sofrendo com flutuações de humor e desconfiança. Nessa busca constante pelo novo, você corre o risco de perder a noção de tempo ou se deixar envolver por ilusões temporárias.</p>`,
+            videoID: "ID_VIDEO_CRIATIVO_FEM" // Insira o ID do YouTube correspondente
+        },
+        indeciso: {
+            conteudo: `<p>"A indecisão toma conta da sua expressão"</p><p>Com grande sensibilidade, você demonstra necessidade de atenção, podendo agir de forma dramática ou precipitada sob pressão emocional. Sendo influenciável pelo ambiente, você muda de opinião com frequência e encontra certa dificuldade em agir de forma solitária.</p><p>Revelando um lado sedutor, você pode ser interpretada com inconveniência devido ao excesso de dramatização em suas falas. Ao fortalecer seu caráter, você descobre sua verdadeira identidade, trocando a busca por aprovação externa por seus desejos internos. Em momentos de desequilíbrio, você torna-se inconstante ou impulsiva, especialmente quando é dominada por receios e emoções intensas.</p>`,
+            videoID: "ID_VIDEO_INDECISO_FEM" // Insira o ID do YouTube correspondente
+        },
+        neutro: {
+            conteudo: `<p>"Sua essência possui equilíbrio nas decisões"</p><p>Sendo alguém observadora, você prefere analisar todos os pontos de vista antes de tomar partido em qualquer tipo de conflito. Agindo por interesses próprios, você raramente sai da zona de conforto, mantendo-se excessivamente cautelosa para evitar riscos inúteis.</p><p>Relacionando-se bem com todos, você constrói barreiras emocionais intencionais para evitar sofrimento, raramente expondo o que realmente sente. Com facilidade de adaptação, você mantém o autocontrole em situações difíceis, preferindo rotinas pacíficas. No aspecto negativo, você pode demonstrar certa omissão ou medo de decidir, mantendo-se neutra e com baixa inclinação criativa.</p>`,
+            videoID: "ID_VIDEO_NEUTRO_FEM" // Insira o ID do YouTube correspondente
+        }
     };
 
-    // 2. AGORA SIM Escolhemos o perfil (o navegador já conhece as duas tabelas acima)
+    // 2. Seleção de perfil e variáveis iniciais
     const perfilEscolhido = (formatoGênero === "feminino") ? descricoesPerfilFeminino : descricoesPerfilMasculino;
-    
     const ativosPlanos = textosPlanos; 
 
-    // 3. DAQUI PARA BAIXO: Toda a sua matemática e montagem de HTML continua IGUALZINHA
     const dados = calcularDadosPlanos(nome);
     const nomesAmigaveis = { fisico: "Físico", mental: "Mental", emocional: "Emocional", intuitivo: "Intuitivo" };
     
@@ -2097,51 +2113,55 @@ function montarHtmlPlanosNatural(nome) {
     const _p4 = planosOrdenados[3];
     const ref = _p1.valor || 1;
 
+    // 3. Montagem da sigla para busca da síntese
+    const mapSigla = { forte: "F", medio: "M", fraco: "Fr" };
+    const sigla = planosOrdenados.map(p => {
+        let r = p.valor / ref;
+        let intKey = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
+        return `${p.chave.toUpperCase()}(${mapSigla[intKey]})`;
+    }).join("-");
 
+    const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"] || { conteudo: "Conteúdo não disponível para esta combinação.", videoID: "" };
+    console.log("Sigla gerada:", sigla);
 
+    const perfilNatInfo = perfilEscolhido[dados.dominantePerfil] || { conteudo: "", videoID: "" };
 
-// Mapeamento das siglas conforme sua regra
-const mapSigla = { forte: "F", medio: "M", fraco: "Fr" };
-
-// Monta a chave concatenando Nome(Sigla)
-const sigla = planosOrdenados.map(p => {
-    let r = p.valor / ref;
-    let intKey = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
-    return `${p.chave.toUpperCase()}(${mapSigla[intKey]})`;
-}).join("-");
-
-// Substitua a linha atual por esta que evita o erro:
-const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"] || { conteudo: "Conteúdo não disponível para esta combinação.", videoID: "" };
-console.log("Sigla gerada:", sigla);
+    // 4. Início da construção do HTML
     let html = `
         <div class="secao-card quebra-pagina">
             <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Plano de Expressão Natural</h2>
             <div class="intro-texto" style="margin-bottom: 25px; line-height: 1.6; color: #444;">
                 ${aplicarFiltroTexto(textos.introducoes.natural || `<p>
-Os <strong>4 Pilares do Instinto Natural</strong> revelam como sua energia está naturalmente distribuída entre as quatro dimensões fundamentais da sua natureza: <strong>Físico, Mental, Emocional e Intuitivo</strong>. Essa combinação influencia sua forma espontânea de pensar, sentir, agir e perceber o mundo ao seu redor.
+Os <strong>4 Pilares do Instinto Natural</strong> revelam como sua energia está naturally distribuída entre as quatro dimensões fundamentais da sua natureza: <strong>Físico, Mental, Emocional e Intuitivo</strong>. Essa combinação influencia sua forma espontânea de pensar, sentir, agir e perceber o mundo ao seu redor.
 </p>
 
 <p>
 Esses pilares fazem parte da sua estrutura natural e acompanham você durante toda a vida. Eles representam tendências da sua personalidade, seus pontos de maior potencial e os aspectos que podem exigir mais equilíbrio, servindo como uma das bases para compreender seu comportamento e a forma como você enfrenta os desafios da sua jornada.
 </p>`)}
             </div>
+
             <div style="text-align: center; margin: 30px 0;">
                 <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/planoestudo.png" alt="Logo Plano de Expressão" style="max-width: 500px; height: auto; display: inline-block;">
             </div>
-            <div class="evitar-corte" style="margin-bottom: 25px; padding: 20px; border: 2px solid #827108; border-radius: 12px; background: #fff; display: flex; align-items: center; gap: 20px;">
-                <div style="background: #827108; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; text-transform: uppercase; flex-shrink: 0;">
-                    ${dados.dominantePerfil[0]}
-                </div>
 
-                <div>
-                    <h4 style="margin: 0; color: #827108; text-transform: uppercase;">Perfil Nativo: ${dados.dominantePerfil}</h4>
-                    <p style="margin: 5px 0 0 0; font-size: 14px; color: #555;">${aplicarFiltroTexto(perfilEscolhido[dados.dominantePerfil])}</p>
+            <!-- CARD PERFIL NATIVO -->
+            <div class="evitar-corte" style="margin-bottom: 25px; padding: 20px; border: 2px solid #827108; border-radius: 12px; background: #fff;">
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <div style="background: #827108; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; text-transform: uppercase; flex-shrink: 0;">
+                        ${dados.dominantePerfil[0]}
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; color: #827108; text-transform: uppercase;">Perfil Nativo: ${dados.dominantePerfil}</h4>
+                        <div style="margin: 5px 0 0 0; font-size: 14px; color: #555;">${aplicarFiltroTexto(perfilNatInfo.conteudo)}</div>
+                    </div>
                 </div>
+                ${(perfilNatInfo.videoID && perfilNatInfo.videoID.trim() !== "") ? `<div style="margin-top: 20px;">${gerarPlayerYouTube(perfilNatInfo.videoID)}</div>` : ""}
             </div>
+
+            <!-- BARRAS DE PROGRESSO -->
             <div style="margin: 25px 0; background: #fff; padding: 20px; border-radius: 8px;">
-    `;
-    
-    html += `<div class="evitar-corte">`; 
+                <div class="evitar-corte">`;
+
     for(let p in dados.soma) {
         let porcentagem = (dados.soma[p] / ref) * 100;
         let valorReduzido = reduzirPuro(dados.soma[p]);
@@ -2154,114 +2174,126 @@ Esses pilares fazem parte da sua estrutura natural e acompanham você durante to
         const fundoBarra = degradês[p] || 'linear-gradient(to right, #ffffff, #ffffff)';
 
         html += `
-            <div style="margin: 0 auto 20px auto; width: 85%; height: 42px; position: relative; display: flex; align-items: center; justify-content: center; break-inside: avoid; page-break-inside: avoid; margin-top: 10px;">
-                <div style="width:${porcentagem}%; height:100%; background: ${fundoBarra}; position: absolute; left: 0; top: 0; transition: width 1s ease; z-index: 1; border-radius: 8px"></div>
-                <span style="color: #fff; font-weight: bold; font-size: 16px; text-transform: uppercase; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); letter-spacing: 1.5px; position: relative; z-index: 2; pointer-events: none;">
-                    ${nomesAmigaveis[p]} EXP ${valorReduzido}
-                </span>
-            </div>
+                    <div style="margin: 0 auto 20px auto; width: 85%; height: 42px; position: relative; display: flex; align-items: center; justify-content: center; break-inside: avoid; page-break-inside: avoid; margin-top: 10px;">
+                        <div style="width:${porcentagem}%; height:100%; background: ${fundoBarra}; position: absolute; left: 0; top: 0; transition: width 1s ease; z-index: 1; border-radius: 8px"></div>
+                        <span style="color: #fff; font-weight: bold; font-size: 16px; text-transform: uppercase; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); letter-spacing: 1.5px; position: relative; z-index: 2; pointer-events: none;">
+                            ${nomesAmigaveis[p]} EXP ${valorReduzido}
+                        </span>
+                    </div>
         `;
     }
-    html += `</div></div>`; 
-    
-// TEXTOS INDIVIDUAIS DOS PLANOS
-for(let p in dados.soma) {
-    let r = dados.soma[p] / ref;
-    let int = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
-    let vFinalNatural = reduzirPuro(dados.soma[p]);
+    html += `   </div>
+            </div>`; 
 
-    // Busca o objeto correspondente no textosPlanos
-    const textoIndiv = (
-        ativosPlanos[p] &&
-        ativosPlanos[p][int] &&
-        ativosPlanos[p][int][vFinalNatural]
-    )
-        ? ativosPlanos[p][int][vFinalNatural]
-        : null;
-
-    if(textoIndiv) {
-
-        // Conteúdo textual individual
-        const conteudoTexto = textoIndiv.conteudo || "";
-
-        // ID do vídeo correspondente a este texto
-        const videoID = textoIndiv.videoID || "";
-
-        html += `
-            <div class="evitar-corte" style="margin-bottom: 20px; border-left: none; padding-left: 15px;">
-
-                <h4 style="margin:0; color:${coresPlanos[p]}; text-transform:uppercase; font-size:18px;">
-                    ${nomesAmigaveis[p]} <small>(${int})</small>
-                </h4>
-
-                <!-- TEXTO INDIVIDUAL -->
-                <div class="texto-res">
-                    ${aplicarFiltroTexto(conteudoTexto)}
+    // 5. BLOCO DA SÍNTESE (INVERTIDO: AGORA FICA ANTES DOS PLANOS INDIVIDUAIS)
+    html += `
+            <div class="evitar-corte" style="margin-top:30px; margin-bottom:30px; border:0px #ffffff; padding:25px; border-radius:12px; background:#fff;">
+                <div style="text-align:center; margin-bottom:20px;">
+                    <span style="background:var(--gold); color:white; padding:4px 12px; border-radius:20px; font-size:11px; font-weight:bold;">
+                        ${titulosEstrutura[sigla] || "SÍNTESE"}
+                    </span>
+                    <h3 style="margin-top:10px; text-transform:uppercase;">Síntese Natural dos Pilares do Instinto<br><br> Assistir Vídeo abaixo</h3>
                 </div>
+                
+                <div class="texto-res">${aplicarFiltroTexto(dadosSintese.conteudo)}</div>
+                
+                ${(dadosSintese.videoID && dadosSintese.videoID.trim() !== "") ? `<div style="margin-top:20px;">${gerarPlayerYouTube(dadosSintese.videoID)}</div>` : ""}
 
-                <!-- VÍDEO INDIVIDUAL -->
-                ${
-                    (videoID && videoID.trim() !== "")
-                        ? `
-                            <div style="margin-top:20px;">
-                                ${gerarPlayerYouTube(videoID)}
-                            </div>
-                          `
-                        : ""
-                }
+                <div style="margin-top:25px; background:var(--dark); color:var(--gold); padding:20px; border-radius:8px; text-align:center;">
+                    <strong style="text-transform: uppercase;"> Diretriz de Equilíbrio: </strong><br>
+                    <span style="font-size: 15px; color: #fff; opacity: 0.9;">
+                        Utilize a energia do pilar <strong>${nomesAmigaveis[_p1.chave]}</strong> para sustentar o pilar <strong>${nomesAmigaveis[_p4.chave]}</strong>.
+                    </span>
+                </div>
+            </div>`;
 
-            </div>
-        `;
+    // 6. TEXTOS INDIVIDUAIS DOS PLANOS (AGORA RENDERIZADOS APÓS A SÍNTESE)
+    for(let p in dados.soma) {
+        let r = dados.soma[p] / ref;
+        let int = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
+        let vFinalNatural = reduzirPuro(dados.soma[p]);
+
+        const textoIndiv = (
+            ativosPlanos[p] &&
+            ativosPlanos[p][int] &&
+            ativosPlanos[p][int][vFinalNatural]
+        ) ? ativosPlanos[p][int][vFinalNatural] : null;
+
+        if(textoIndiv) {
+            const conteudoTexto = textoIndiv.conteudo || "";
+            const videoID = textoIndiv.videoID || "";
+
+            html += `
+                <div class="evitar-corte" style="margin-bottom: 20px; border-left: none; padding-left: 15px;">
+                    <h4 style="margin:0; color:${coresPlanos[p]}; text-transform:uppercase; font-size:18px;">
+                        ${nomesAmigaveis[p]} <small>(${int})</small>
+                    </h4>
+
+                    <div class="texto-res">
+                        ${aplicarFiltroTexto(conteudoTexto)}
+                    </div>
+
+                    ${(videoID && videoID.trim() !== "") ? `<div style="margin-top:20px;">${gerarPlayerYouTube(videoID)}</div>` : ""}
+                </div>
+            `;
+        }
     }
+
+    html += `</div>`;
+    return html;
 }
-   
-// ... (seu código anterior até a parte da Síntese)
-
-// ... (dentro de montarHtmlPlanosNatural)
-
-
-// 2. Monta o HTML
-html += `
-    <div class="evitar-corte" style="margin-top:40px; border:0px #ffffff; padding:25px; border-radius:12px; background:#fff;">
-        <div style="text-align:center; margin-bottom:20px;">
-            <span style="background:var(--gold); color:white; padding:4px 12px; border-radius:20px; font-size:11px; font-weight:bold;">
-                ${titulosEstrutura[sigla] || "SÍNTESE"}
-            </span>
-            <h3 style="margin-top:10px; text-transform:uppercase;">Síntese Natural dos Pilares do Instinto<br><br> Assistir Video abaixo</h3>
-        </div>
-        
-        <div class="texto-res">${aplicarFiltroTexto(dadosSintese.conteudo)}</div>
-        
-        <!-- AQUI: Ele lê o ID direto do seu objeto, sem buscar em outro lugar -->
-        ${(dadosSintese.videoID && dadosSintese.videoID.trim() !== "") ? `<div style="margin-top:20px;">${gerarPlayerYouTube(dadosSintese.videoID)}</div>` : ""}
-
-        <div style="margin-top:25px; background:var(--dark); color:var(--gold); padding:20px; border-radius:8px; text-align:center;">
-            <strong style="text-transform: uppercase;"> Diretriz de Equilíbrio: </strong><br>
-            <span style="font-size: 15px; color: #fff; opacity: 0.9;">
-                Utilize a energia do pilar <strong>${nomesAmigaveis[_p1.chave]}</strong> para sustentar o pilar <strong>${nomesAmigaveis[_p4.chave]}</strong>.
-            </span>
-        </div>
-    </div>
-</div>`;
-
-return html;
- }
 // ============================================
 // FUNÇÃO: PLANO DE EXPRESSÃO DO MOMENTO (AUTOMÁTICO)
 // ============================================
 // FUNÇÃO: PLANO DE EXPRESSÃO DO MOMENTO (CICLO ATUAL E PRÓXIMO)
 function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d3, regenteMatriz, negativasMatriz) {
+    const campoGênero = document.getElementById("generoTexto");
+    const formatoGênero = campoGênero ? campoGênero.value : "masculino";
+
     const nomeParaCalculo = tratarNomeParaCalculo(nomeCompleto);
     const agora = new Date();
     const anoBase = agora.getFullYear();
     const partesData = dataNascimento.split("/");
     const dtNasci = new Date(partesData[2], partesData[1] - 1, partesData[0]);
 
+    // DICIONÁRIOS DE PERFIL POR GÊNERO COM CONTEÚDO E VÍDEO
+    const descricoesPerfilMasculino = {
+        criativo: {
+            conteudo: `<p>"Sua energia de ação este ano está em fase de expansão e Criatividade"</p><p>Neste ciclo, sua forma de agir está mais arrojada. Você sentirá uma facilidade maior para encontrar saídas rápidas e originais para problemas que antes pareciam travados.</p>`,
+            videoID: "ID_VIDEO_MOMENTO_CRIATIVO_MASC"
+        },
+        indeciso: {
+            conteudo: `<p>"Sua forma de agir este ano está sob o filtro da sensibilidade e da Indecisão"</p><p>Este ciclo pede que você tenha mais cautela antes de tomar grandes decisões. É um ano para agir com diplomacia, evitando confrontos diretos.</p>`,
+            videoID: "ID_VIDEO_MOMENTO_INDECISO_MASC"
+        },
+        neutro: {
+            conteudo: `<p>"Este ano sua ação prioriza o equilíbrio, a observação e a Neutralidade"</p><p>Sua postura atual é de 'esperar para ver'. Você prefere analisar o terreno antes de dar qualquer passo importante, agindo com máxima prudência.</p>`,
+            videoID: "ID_VIDEO_MOMENTO_NEUTRO_MASC"
+        }
+    };
+
+    const descricoesPerfilFeminino = {
+        criativo: {
+            conteudo: `<p>"Sua energia de ação este ano está em fase de expansão e Criatividade"</p><p>Neste ciclo, sua forma de agir está mais arrojada. Você sentirá uma facilidade maior para encontrar saídas rápidas e originais para problemas que antes pareciam travados.</p>`,
+            videoID: "ID_VIDEO_MOMENTO_CRIATIVO_FEM"
+        },
+        indeciso: {
+            conteudo: `<p>"Sua forma de agir este ano está sob o filtro da sensibilidade e da Indecisão"</p><p>Este ciclo pede que você tenha mais cautela antes de tomar grandes decisões. É um ano para agir com diplomacia, evitando confrontos diretos.</p>`,
+            videoID: "ID_VIDEO_MOMENTO_INDECISO_FEM"
+        },
+        neutro: {
+            conteudo: `<p>"Este ano sua ação prioriza o equilíbrio, a observação e a Neutralidade"</p><p>Sua postura atual é de 'esperar para ver'. Você prefere analisar o terreno antes de dar qualquer passo importante, agindo com máxima prudência.</p>`,
+            videoID: "ID_VIDEO_MOMENTO_NEUTRO_FEM"
+        }
+    };
+
+    // Seleção dinâmica do dicionário conforme gênero
+    const descricoesPerfilMomento = (formatoGênero === "feminino") ? descricoesPerfilFeminino : descricoesPerfilMasculino;
+
     // Função interna para processar cada ciclo separadamente
     const processarUmCiclo = (anoReferencia, tituloSecao, travado = false) => {
         let inicioCiclo = new Date(anoReferencia, dtNasci.getMonth(), dtNasci.getDate());
         
-        // Ajuste para garantir que o "Atual" pegue o início correto do ano pessoal vigente
         if (agora < inicioCiclo && anoReferencia === anoBase) { 
             inicioCiclo.setFullYear(anoReferencia - 1); 
         }
@@ -2303,7 +2335,6 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         const _p4 = planosOrdenados[3];
         const ref = _p1.valor || 1;
 
-        // SIGLA DOS PILARES (Mantida para busca dos 4 pilares)
         const mapSiglaMomento = { forte: "F", medio: "M", fraco: "Fr" };
         const siglaMomento = planosOrdenados.map(p => {
             let r = p.valor / ref;
@@ -2311,25 +2342,9 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
             return `${p.chave.toUpperCase()}(${mapSiglaMomento[intKey]})`;
         }).join("-");
 
-        // Busca a Síntese dos Pilares no objeto textosSinteseExpressao
         const dadosSinteseMomento = textosSinteseExpressao[siglaMomento] || textosSinteseExpressao["padrao"] || { conteudo: "Conteúdo não disponível.", videoID: "" };
 
-        // OBJETOS DOS PERFIS COM TEXTO E VÍDEO PRÓPRIO (ECONOMIA DE VÍDEOS)
-        const descricoesPerfilMomento = {
-            criativo: {
-                conteudo: `<p>"Sua energia de ação este ano está em fase de expansão e Criatividade"</p><p>Neste ciclo, sua forma de agir está mais arrojada. Você sentirá uma facilidade maior para encontrar saídas rápidas e originais para problemas que antes pareciam travados.</p>`,
-                videoID: "z1nW3rmNeEI"
-            },
-            indeciso: {
-                conteudo: `<p>"Sua forma de agir este ano está sob o filtro da sensibilidade e da Indecisão"</p><p>Este ciclo pede que você tenha mais cautela antes de tomar grandes decisões. É um ano para agir com diplomacia, evitando confrontos diretos.</p>`,
-                videoID: "z1nW3rmNeEI"
-            },
-            neutro: {
-                conteudo: `<p>"Este ano sua ação prioriza o equilíbrio, a observação e a Neutralidade"</p><p>Sua postura atual é de 'esperar para ver'. Você prefere analisar o terreno antes de dar qualquer passo importante, agindo com máxima prudência.</p>`,
-                videoID: "z1nW3rmNeEI"
-            }
-        };
-
+        // Puxa texto e vídeo dinamicamente conforme o gênero e perfil dominante
         const perfilAtualObj = descricoesPerfilMomento[dominanteMomento] || {};
         const textoPerfilAtual = perfilAtualObj.conteudo || "";
         const videoPerfilAtual = perfilAtualObj.videoID || "";
@@ -2355,7 +2370,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
                 </p>
 
                 <p>
-                Além disso, este resultado classifica sua expressão atual como <strong>Criativa, Indecisa ou Neutra</strong>, mostrando como essa combinação tende a influenciar suas decisões, sua forma de agir e sua percepção da realidade durante este ciclo. Lembre-se de que essa configuração é temporária: ela representa o movimento do momento e interage constantemente com a sua estrutura natural, forming a maneira única como você vivencia cada fase da sua jornada.
+                Além disso, este resultado classifica sua expressão atual como <strong>Criativa, Indecisa ou Neutra</strong>, mostrando como essa combinação tende a influenciar suas decisões, sua forma de agir e sua percepção da realidade durante este ciclo. Lembre-se de que essa configuração é temporária: ela representa o movimento do momento e interage constantemente com a sua estrutura natural, formando a maneira única como você vivencia cada fase da sua jornada.
                 </p>
                 ${idVideoIntrooilaresmome ? gerarPlayerYouTube(idVideoIntrooilaresmome) : ""}
             </div>
@@ -2364,7 +2379,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
                 <img src="https://hemricciinstintosuperior-rcci.github.io/Trabalho_venda_Numerologia/planoestudo.png" alt="Logo Plano de Expressão" style="max-width: 500px; height: auto; display: inline-block;">
             </div>
 
-            <!-- 1. PERFIL DE AÇÃO ATUAL (CRIATIVO / INDECISO / NEUTRO) -->
+            <!-- 1. PERFIL DE AÇÃO ATUAL (CRIATIVO / INDECISO / NEUTRO - ADAPTADO POR GÊNERO) -->
             <div class="evitar-corte" style="margin-bottom: 25px; padding: 20px; border: 2px solid #827108; border-radius: 12px; background: #fff;">
                 <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 15px;">
                     <div style="background: #827108; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; text-transform: uppercase; flex-shrink: 0;">
@@ -2378,7 +2393,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
                 ${(videoPerfilAtual && videoPerfilAtual.trim() !== "") ? `<div style="margin-top:15px;">${gerarPlayerYouTube(videoPerfilAtual)}</div>` : ""}
             </div>
 
-            <!-- 2. SÍNTESE DOS PILARES (SUBIU PARA FICAR LOGO ABAIXO DO PERFIL DE AÇÃO) -->
+            <!-- 2. SÍNTESE DOS PILARES -->
             <div class="evitar-corte" style="margin-bottom:25px; border:2px solid #ffffff; padding:25px; border-radius:12px; background:#fff;">
                 <div style="text-align:center; margin-bottom:20px;">
                     <h3 style="margin-top:10px; text-transform:uppercase;">Síntese dos Pilares do Instinto no Momento</h3>
@@ -2422,7 +2437,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         }
         h += `</div></div>`; 
 
-        // 3. PLANOS INDIVIDUAIS (Físico, Mental, Emocional e Intuitivo)
+        // 3. PLANOS INDIVIDUAIS
         for(let p in somaMomento) {
             let r = somaMomento[p] / ref;
             let int = (r > 0.75) ? "forte" : (r >= 0.50) ? "medio" : "fraco";
@@ -2456,7 +2471,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
             }
         }
 
-        h += `</div>`; // Fecha secao-card dos Planos
+        h += `</div>`; 
 
         // 4. SEÇÃO DE TRÂNSITO
         let letrasAno = timelines.map(t => t[indiceAno % t.length]);
@@ -2514,10 +2529,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         return h; 
     };
 
-    // Gera o Ciclo Atual
     let htmlFinal = processarUmCiclo(anoBase, "Os 4 Pilares do Instinto");
-    
-    // Gera o Próximo Ciclo (AnoBase + 1)
     htmlFinal += processarUmCiclo(anoBase + 1, "Próximo Ciclo dos 4 Pilares do Instinto");
 
     return { html: htmlFinal, dados: {} }; 
