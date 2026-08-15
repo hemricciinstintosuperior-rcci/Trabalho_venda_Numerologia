@@ -5687,7 +5687,7 @@ html += `
 
 
 // --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
-const dadosIntrofra = textos.introducoes ? textos.introducoes.inclinacoes : "";
+const dadosIntrofra = textos.introducoes ? textos.introducoes.deficiencias : "";
 const conteudoIntrofra = (typeof dadosIntrofra === 'object' && dadosIntrofra !== null) ? dadosIntrofra.conteudo : dadosIntrofra;
 const videoIntrofra = (typeof dadosIntrofra === 'object' && dadosIntrofra !== null) ? dadosIntrofra.videoID : null;
     
@@ -5738,7 +5738,7 @@ const conteudoSub = (typeof dadosSub === 'object' && dadosSub !== null) ? dadosS
 const videoSub = (typeof dadosSub === 'object' && dadosSub !== null) ? dadosSub.videoID : null;
 // --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
 
-const dadosIntrosub = textos.introducoes ? textos.introducoes.inclinacoes : "";
+const dadosIntrosub = textos.introducoes ? textos.introducoes.subconsciente : "";
 const conteudoIntrosub = (typeof dadosIntrosub === 'object' && dadosIntrosub !== null) ? dadosIntrosub.conteudo : dadosIntrosub;
 const videoIntrosub = (typeof dadosIntrosub === 'object' && dadosIntrosub !== null) ? dadosIntrosub.videoID : null;
     
@@ -5758,9 +5758,9 @@ html += `
 
 // --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
 
-const dadosIntrodefitis = textos.introducoes ? textos.introducoes.inclinacoes : "";
-const conteudoIntrodefitis = (typeof dadosIntrodefitis === 'object' && dadosIntrodefitis !== null) ? dadosIntrodefitis.conteudo : dadosIntrodefitis;
-const videoIntrodefitis = (typeof dadosIntrodefitis === 'object' && dadosIntrodefitis !== null) ? dadosIntrodefitis.videoID : null;
+const dadosIntrodefitis = textos.introducoes ? textos.introducoes.deficits : "";
+const conteudoIntrodeficits = (typeof dadosIntrodeficits === 'object' && dadosIntrodeficits !== null) ? dadosIntrodeficits.conteudo : dadosIntrodeficits;
+const videoIntrodeficits = (typeof dadosIntrodeficits === 'object' && dadosIntrodeficits !== null) ? dadosIntrodeficits.videoID : null;
    tituloBonito = "Déficits de Comportamento";   
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
 html += `
@@ -5775,7 +5775,7 @@ html += `
     <div class="page">
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Déficits de Comportamento</h2>
         <div class="intro-texto">${textos.introducoes.deficits || ""}
-        ${videoIntrodefitis ? gerarPlayerYouTube(videoIntrodefitis) : ""}
+        ${videoIntrodeficits ? gerarPlayerYouTube(videoIntrodeficits) : ""}
         </div>
         
         
