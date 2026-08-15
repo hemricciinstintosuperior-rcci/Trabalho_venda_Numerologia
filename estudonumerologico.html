@@ -5685,6 +5685,12 @@ html += `
     </div>
 `;
 
+
+// --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
+const dadosIntrofra = textos.introducoes ? textos.introducoes.inclinacoes : "";
+const conteudoIntrofra = (typeof dadosIntrofra === 'object' && dadosIntrofra !== null) ? dadosIntrofra.conteudo : dadosIntrofra;
+const videoIntrofra = (typeof dadosIntrofra === 'object' && dadosIntrofra !== null) ? dadosIntrofra.videoID : null;
+    
  tituloBonito = "fraquezas e inibições";   
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
 html += `
@@ -5700,7 +5706,7 @@ html += `
 html += `
     <div class="page">
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Fraquezas e Inibições</h2>
-        <div class="intro-texto">${textos.introducoes.deficiencias}</div>
+        <div class="intro-texto">${textos.introducoes.deficiencias} ${videoIntrofra ? gerarPlayerYouTube(videoIntrofra) : ""}</div>
 `;
 if (res.deficiencias.length > 0) {
     html += `<div class="grupo-respostas-bloco pula-pagina">`;
@@ -5730,12 +5736,17 @@ const dadosSub = textos.subconsciente ? textos.subconsciente[valSub] : null;
 
 const conteudoSub = (typeof dadosSub === 'object' && dadosSub !== null) ? dadosSub.conteudo : dadosSub;
 const videoSub = (typeof dadosSub === 'object' && dadosSub !== null) ? dadosSub.videoID : null;
+// --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
 
+const dadosIntrosub = textos.introducoes ? textos.introducoes.inclinacoes : "";
+const conteudoIntrosub = (typeof dadosIntrosub === 'object' && dadosIntrosub !== null) ? dadosIntrosub.conteudo : dadosIntrosub;
+const videoIntrosub = (typeof dadosIntrosub === 'object' && dadosIntrosub !== null) ? dadosIntrosub.videoID : null;
+    
 html += `
 <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto">${textos.introducoes.subconsciente || ""}</div>
+    <div class="intro-texto">${textos.introducoes.subconsciente || ""}  ${videoIntrosub ? gerarPlayerYouTube(videoIntrosub) : ""}</div>
     <div class="evitar-corte texto-res">
         ${conteudoSub ? aplicarFiltroTexto(conteudoSub) : "<p>Dados não localizados.</p>"}
         ${videoSub ? gerarPlayerYouTube(videoSub) : ""}
@@ -5745,7 +5756,11 @@ html += `
    
 
 
+// --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
 
+const dadosIntrodefitis = textos.introducoes ? textos.introducoes.inclinacoes : "";
+const conteudoIntrodefitis = (typeof dadosIntrodefitis === 'object' && dadosIntrodefitis !== null) ? dadosIntrodefitis.conteudo : dadosIntrodefitis;
+const videoIntrodefitis = (typeof dadosIntrodefitis === 'object' && dadosIntrodefitis !== null) ? dadosIntrodefitis.videoID : null;
    tituloBonito = "Déficits de Comportamento";   
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
 html += `
@@ -5759,7 +5774,9 @@ html += `
 html += `
     <div class="page">
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Déficits de Comportamento</h2>
-        <div class="intro-texto">${textos.introducoes.deficits || ""}</div>
+        <div class="intro-texto">${textos.introducoes.deficits || ""}
+        ${videoIntrodefitis ? gerarPlayerYouTube(videoIntrodefitis) : ""}
+        </div>
         
         
         <div class="texto-res pula-pagina" style="margin-top: 20px;"> 
@@ -5785,6 +5802,11 @@ html += `</div>`;
 
   // Primeiro, garantimos que temos os dados
 const dadosDesafio3 = textos.desafios[3][res.desafios[3]];      
+
+
+
+const idVideoIntrodesafio = "z1nW3rmNeEI";
+    
 // Crie esta linha logo ACIMA do código da ondinha:
  tituloBonito = "O seu DESAFIO PRINCIPAL"; 
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
@@ -5811,7 +5833,7 @@ html += `
 <p>A jornada para vencer o Desafio Principal requer coragem para olhar para dentro e identificar as raízes de suas inibições mais profundas. Muitas vezes, ele se manifesta em situações recorrentes que testam sua paciência, ética ou capacidade de superação. No entanto, cada vitória sobre essa vibração fortalece sua essência e o aproxima da plenitude. Trata-se de uma lapidação contínua que refina sua expressão no mundo e traz um sentido maior às suas experiências diárias.</p>
 
 <p>Ao dominar esta lição central, você deixa de ser refém das circunstâncias para se tornar o arquiteto consciente do seu destino. A integração bem-sucedida desta energia é o que garante que sua caminhada seja leve e produtiva, transformando fraquezas em diferenciais de caráter. Este é o convite final da numerologia: converter o seu maior desafio na sua maior realização, vivendo em total harmonia com as leis que regem o seu universo pessoal.</p>
-    </div>
+   ${idVideoIntrodesafio ? gerarPlayerYouTube(idVideoIntrodesafio) : ""} </div>
         
         <div class="evitar-corte texto-res">
             ${dadosDesafio3 ? aplicarFiltroTexto(dadosDesafio3.conteudo) : ""}
