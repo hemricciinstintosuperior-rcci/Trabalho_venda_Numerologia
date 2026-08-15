@@ -6399,8 +6399,31 @@ html += `
 // BLOCO INDIVIDUAL: RELACIONAMENTO
 // ==========================================
 
- // Extração segura dos dados
-const dadosRelacionamento = textos.Relacionamento[res.Relacionamento];   
+// Extração segura dos dados do Relacionamento
+const dadosRelacionamento = textos.Relacionamento ? textos.Relacionamento[res.Relacionamento] : null;
+
+// Busca flexível da introdução (aceita 'relacionamento' ou 'Relacionamento')
+const dadosIntroRel = (textos.introducoes && (textos.introducoes.relacionamento || textos.introducoes.Relacionamento)) 
+    ? (textos.introducoes.relacionamento || textos.introducoes.Relacionamento) 
+    : "";
+
+const conteudoIntroRel = (typeof dadosIntroRel === 'object' && dadosIntroRel !== null) 
+    ? dadosIntroRel.conteudo 
+    : dadosIntroRel;
+
+const videoIntroRel = (typeof dadosIntroRel === 'object' && dadosIntroRel !== null) 
+    ? dadosIntroRel.videoID 
+    : null;
+
+// Extração do conteúdo e vídeo específicos do número calculado
+const conteudoRel = (typeof dadosRelacionamento === 'object' && dadosRelacionamento !== null) 
+    ? dadosRelacionamento.conteudo 
+    : dadosRelacionamento;
+
+const videoRel = (typeof dadosRelacionamento === 'object' && dadosRelacionamento !== null) 
+    ? dadosRelacionamento.videoID 
+    : null;
+
 tituloBonito = "Relacionamento"; 
 html += `
 <div class="separador-luxo">
@@ -6410,10 +6433,15 @@ html += `
 </div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto">${textos.introducoes.Relacionamento || ""}</div>
-    <div class="evitar-corte texto-res">
-        ${dadosRelacionamento ? aplicarFiltroTexto(dadosRelacionamento.conteudo) : "<p>Dados não encontrados.</p>"}
-        ${(dadosRelacionamento && dadosRelacionamento.videoID) ? gerarPlayerYouTube(dadosRelacionamento.videoID) : ""}
+    
+    <div class="intro-texto">
+        ${aplicarFiltroTexto(conteudoIntroRel || "")}
+        ${videoIntroRel ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntroRel)}</div>` : ""}
+    </div>
+
+    <div class="evitar-corte texto-res" style="margin-top: 20px;">
+        ${conteudoRel ? aplicarFiltroTexto(conteudoRel) : "<p>Dados não encontrados.</p>"}
+        ${videoRel ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoRel)}</div>` : ""}
     </div>
 </div>
 `;
@@ -6643,37 +6671,45 @@ html += `
     </div>
 `;
     
-// --- 1. PRIMEIRO: DETECTA TUDO (Isso resolve o erro de 'before initialization') ---
+// --- 1. PRIMEIRO: DETECTA TUDO ---
 const arcanosTopo = topo(piramideVida[0]);
-const listaEspeciais = detectarEspeciaisIndependentes(piramideVida); // Função que criamos antes
+const listaEspeciais = detectarEspeciaisIndependentes(piramideVida);
 const listaFin = detectarFinanceirasIndependentes(piramideVida);    
 
+// --- BUSCA FLEXÍVEL DA INTRODUÇÃO (TEXTO E VÍDEO) ---
+const dadosIntroPiramide = (textos.introducoes && (textos.introducoes.piramide || textos.introducoes.Piramide)) 
+    ? (textos.introducoes.piramide || textos.introducoes.Piramide) 
+    : "";
 
+const conteudoIntroPiramide = (typeof dadosIntroPiramide === 'object' && dadosIntroPiramide !== null) 
+    ? dadosIntroPiramide.conteudo 
+    : dadosIntroPiramide;
 
-    
-// Crie esta linha logo ACIMA do código da ondinha:
- tituloBonito = "A Matriz da Vida"; 
- // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
+const videoIntroPiramide = (typeof dadosIntroPiramide === 'object' && dadosIntroPiramide !== null) 
+    ? dadosIntroPiramide.videoID 
+    : null;
+
+// --- SEPARADOR LUXO ---
+tituloBonito = "A Matriz da Vida"; 
 html += `
 <div style="width: 100%; max-width: 100%; overflow: hidden; clear: both; page-break-inside: avoid;">
-<div class="separador-luxo">
-    <div class="caixa-interna">
-        <h2>${tituloBonito}</h2>
+    <div class="separador-luxo">
+        <div class="caixa-interna">
+            <h2>${tituloBonito}</h2>
+        </div>
     </div>
 </div>
-</div>
 `;
-   
-    
-            // --- MONTAGEM DO HTML DA PIRÂMIDE COM INTRODUÇÃO ---
 
-  
 // --- MONTAGEM DO HTML DA PIRÂMIDE COM INTRODUÇÃO ---
 let htmlPiramide = `
 <div class="page evitar-corte" style="width: 100%; page-break-after: always;"> 
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);"> Pirâmide da Vida</h2>
     
-    <div class="intro-texto">${textos.introducoes.piramide}</div>
+    <div class="intro-texto">
+        ${aplicarFiltroTexto(conteudoIntroPiramide || "")}
+        ${videoIntroPiramide ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntroPiramide)}</div>` : ""}
+    </div>
 
     <div class="container-piramide">
         <div class="piramide">`;
@@ -6747,7 +6783,9 @@ tituloBonito = "O Regente da sua Matriz 🔱";
 
 // BUSCA DO VÍDEO DO REGENTE
 const idVideoRegente = buscarVideoID("RegenteVida", regenteVida, generoAtual);
-console.log("DEBUG REGENTE:", regenteVida, textos.RegenteVida[regenteVida]);
+
+    const idVideoIntroMatriz = "z1nW3rmNeEI";
+
 htmlPiramide += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -6763,6 +6801,8 @@ htmlPiramide += `
 <p>Quando suas escolhas estão alinhadas com essa frequência central, as situações tendem a fluir com mais naturalidade. Os desafios continuam existindo, mas passam a ser enfrentados com maior clareza e equilíbrio. No entanto, quando você se distancia dessa vibração essencial, pode surgir uma sensação de desgaste, como se estivesse nadando contra a própria corrente da sua natureza.</p>
 
 <p>Compreender o seu Regente é compreender o fundamento da sua identidade energética. Ele revela talentos naturais, tendências comportamentais e a forma como a sua presença influencia o ambiente ao redor, sendo a base sobre a qual todo o restante da análise da Pirâmide da Vida se apoia.</p>`}
+${idVideoIntroMatriz ? gerarPlayerYouTube(idVideoIntroMatriz) : ""}
+
 </div>
 
 <div class="bloco-regente evitar-corte" style="margin-top: 50px; padding-top: 20px; border-top: 1px inset #fff;">
