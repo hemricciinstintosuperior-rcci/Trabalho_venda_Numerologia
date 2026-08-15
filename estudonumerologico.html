@@ -6174,7 +6174,7 @@ const dadosProximoAno = textos.anoPessoal[proximoAnoPessoal] || { conteudo: "Con
 // BLOCO 1: ANO PESSOAL ATUAL + SEUS MESES
 // =========================================================
     // 2. Busca os dados da INTRODUÇÃO (NOVO: aceita Objeto com videoID ou String)
-    const dadosIntroano = textos.introducoes ? textos.introducoes[chave] : "";
+    const dadosIntroano = textos.introducoes ? textos.introducoes : "";
     const conteudoIntroano = (typeof dadosIntroano === 'object' && dadosIntroano !== null) ? dadosIntroano.conteudo : dadosIntroano;
     const videoIntroano = (typeof dadosIntroano === 'object' && dadosIntroano !== null) ? dadosIntroano.videoID : null;
 // Título Ano Atual
