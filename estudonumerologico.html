@@ -5706,7 +5706,7 @@ html += `
 html += `
     <div class="page">
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Fraquezas e Inibições</h2>
-        <div class="intro-texto">${textos.introducoes.deficiencias} ${videoIntrofra ? gerarPlayerYouTube(videoIntrofra) : ""}</div>
+        <div class="intro-texto">${aplicarFiltroTexto(conteudoIntrofra || "")} ${videoIntrofra ? gerarPlayerYouTube(videoIntrofra) : ""}</div>
 `;
 if (res.deficiencias.length > 0) {
     html += `<div class="grupo-respostas-bloco pula-pagina">`;
@@ -5746,7 +5746,7 @@ html += `
 <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto">${textos.introducoes.subconsciente || ""}  ${videoIntrosub ? gerarPlayerYouTube(videoIntrosub) : ""}</div>
+    <div class="intro-texto">${aplicarFiltroTexto(conteudoIntrosub || "")}  ${videoIntrosub ? gerarPlayerYouTube(videoIntrosub) : ""}</div>
     <div class="evitar-corte texto-res">
         ${conteudoSub ? aplicarFiltroTexto(conteudoSub) : "<p>Dados não localizados.</p>"}
         ${videoSub ? gerarPlayerYouTube(videoSub) : ""}
@@ -5774,7 +5774,7 @@ html += `
 html += `
     <div class="page">
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Déficits de Comportamento</h2>
-        <div class="intro-texto">${textos.introducoes.deficits || ""}
+        <div class="intro-texto">${aplicarFiltroTexto(conteudoIntrodeficits || "")}
         ${videoIntrodeficits ? gerarPlayerYouTube(videoIntrodeficits) : ""}
         </div>
         
