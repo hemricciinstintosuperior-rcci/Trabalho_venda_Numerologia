@@ -3170,7 +3170,7 @@ momentos: {
      conteudo:`<h3>4º Momento 2 - Paz, Diplomacia e União Afetiva</h3><br>
    <p style="margin-bottom: 20px;">O seu quarto momento decisivo representa uma transição gloriosa para uma fase de paz profunda, diplomacia refinada e o polimento final das suas relações humanas mais íntimas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A vida o(a) convida gentilmente a desacelerar o ritmo das conquistas materiais externas para focar na arte suprema da convivência harmoniosa, da mediação de conflitos e da cooperação sincera. Você perceberá que sua maior força nesta etapa reside na capacidade mágica de unir familiares e amigos, atuando como o ponto de equilíbrio emocional inabalável, capaz de dissolver antigas mágoas através da pura compreensão e do perdão amadurecido.</p>
    <p style="margin-bottom: 20px;">Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o sucesso nesta fase passa a ser medido exclusivamente pela qualidade dos seus vínculos afetivos e pela tranquilidade absoluta do ambiente que o(a) cerca. Você terá uma sensibilidade quase mediúnica para compreender as necessidades silenciosas dos outros, tornando-se a presença de apoio indispensável para todos que têm o privilégio de conviver ao seu lado. O desafio é cultivar essas relações baseadas no respeito mútuo e na troca equilibrada, sem se anular. Ao desenvolver essa serenidade magistral, você colherá uma maturidade sustentada por alianças de lealdade eterna, sendo reverenciado(a) como a presença pacificadora que garante a harmonia e o entendimento na reta final da caminhada.</p>`,
-  videoID: " "
+  videoID: "z1nW3rmNeEI "
     },
   3: {
      conteudo:`<h3>4º Momento 3 - Celebração da Expressão e Vitalidade</h3><br>
