@@ -5593,7 +5593,10 @@ ${montarHtmlPlanosNatural(nomeRaw)}
 `;
   
 
-
+// --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
+const dadosIntrograficos = textos.introducoes ? textos.introducoes.inclinacoes : "";
+const conteudoIntrograficos = (typeof dadosIntrograficos === 'object' && dadosIntrograficos !== null) ? dadosIntrograficos.conteudo : dadosIntrograficos;
+const videoIntrograficos = (typeof dadosIntrograficos === 'object' && dadosIntrograficos !== null) ? dadosIntrograficos.videoID : null;
 
 tituloBonito = "Seus Potenciais Naturais";  
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
@@ -5608,7 +5611,7 @@ html += `
 html += `
     <div class="page">
         <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">Potenciais</h2>
-        <div class="intro-texto">${textos.introducoes.graficos}</div>
+        <div class="intro-texto">${aplicarFiltroTexto(textos.introducoes.graficos)}   ${videoIntrograficos ? gerarPlayerYouTube(videoIntrograficos) : ""}</div>
         ${gerarTodosOsGraficos(res, res.deficiencias, nomeRaw, res.desafios[3], regenteVida, dadosNegativas.nums)}
     </div>
 `;
