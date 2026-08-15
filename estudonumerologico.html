@@ -5865,7 +5865,12 @@ const resCaminho = textos.CaminhodeVida[res.CaminhodeVida];
 // Verifica se o resultado é um objeto (novo formato) ou apenas string (antigo)
 const textoCaminho = (typeof resCaminho === 'object') ? resCaminho.conteudo : resCaminho;
 const videoCaminho = (typeof resCaminho === 'object') ? resCaminho.videoID : null;
+    
+const dadosIntroCaminhodeVida = textos.introducoes ? textos.introducoes.CaminhodeVida : "";
+const conteudoIntroCaminhodeVida = (typeof dadosIntroCaminhodeVida === 'object' && dadosIntroCaminhodeVida !== null) ? dadosIntroCaminhodeVida.conteudo : dadosIntroCaminhodeVida;
+const videoIntroCaminhodeVida = (typeof dadosIntroCaminhodeVida === 'object' && dadosIntroCaminhodeVida !== null) ? dadosIntroCaminhodeVida.videoID : null;
 
+    
 tituloBonito = "Caminho de Vida"; 
 html += `
 <div class="separador-luxo">
@@ -5875,7 +5880,7 @@ html += `
 </div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto">${textos.introducoes.CaminhodeVida || ""}</div>
+    <div class="intro-texto">${aplicarFiltroTexto(textos.introducoes.CaminhodeVida) || ""}  ${videoIntroCaminhodeVida ? gerarPlayerYouTube(videoIntroCaminhodeVida) : ""}</div>
     <div class="evitar-corte texto-res">
         ${aplicarFiltroTexto(textoCaminho)}
         ${videoCaminho ? gerarPlayerYouTube(videoCaminho) : ""}
