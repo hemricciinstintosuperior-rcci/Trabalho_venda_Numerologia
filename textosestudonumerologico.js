@@ -275,7 +275,8 @@ Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização 
     },
         
         
-        subconsciente: `<p style="margin-bottom: 8px;">Em nossa jornada cotidiana, somos constantemente bombardeados por estímulos que podem gerar irritação, frustração ou melancolia. Na maioria das vezes, operamos no "piloto automático", reagindo a esses eventos sem uma consciência real de nossas motivações internas.</p>
+        subconsciente: {
+     conteudo:`<p style="margin-bottom: 8px;">Em nossa jornada cotidiana, somos constantemente bombardeados por estímulos que podem gerar irritação, frustração ou melancolia. Na maioria das vezes, operamos no "piloto automático", reagindo a esses eventos sem uma consciência real de nossas motivações internas.</p>
 
 <p style="margin-bottom: 8px;">Todos possuímos uma predisposição intrínseca para executar sequências de ações e comportamentos padronizados. Essas reações costumam se manifestar de forma intensa e predefinida, movidas por um forte impulso instintivo que muitas vezes desconhecemos. Por serem automáticas, essas respostas tornam-se mais evidentes apenas em situações extremas, inesperadas ou sob forte pressão.</p>
 
@@ -284,7 +285,8 @@ Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização 
 <p style="margin-bottom: 8px;">Este indicador revela qual é a sua primeira reação — instintiva e imediata — diante de imprevistos que exigem decisões instantâneas. Ele permite analisar como você processa suas emoções no exato momento em que elas emergem, oferecendo um mapa do seu comportamento sob estresse.</p>
 
 <p style="margin-bottom: 8px;">Esses impulsos podem durar apenas uma fração de segundo, mas seu impacto pode ser profundo. Se não forem compreendidos, esses padrões podem gerar estados de estresse prolongado ou até mesmo levar a quadros de exaustão emocional. Conhecer seu subconsciente é o primeiro passo para transformar reações reativas em ações conscientes e seguras.</p>`,
-   
+    videoID: "z1nW3rmNeEI"
+    },
         
         anoPessoal: `
  
@@ -294,7 +296,8 @@ Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização 
     <p> Prepare-se para colher os melhores resultados ao agir no tempo certo, respeitando a sabedoria dos números que desenham o seu caminho rumo à plenitude e ao sucesso duradouro.</p>`,
  
         
-        deficiencias: `As deficiências em nosso perfil representam os pontos de sombra e as inibições que aguardam por desenvolvimento e cura em nossa jornada pessoal. No contexto da análise vibracional, elas não devem ser vistas como punições, mas sim como lacunas em nossa "caixa de ferramentas" existencial, indicando habilidades que ainda não foram totalmente integradas à nossa personalidade. Cada letra de nosso nome de nascimento carrega uma energia específica e, quando certas frequências estão ausentes, deparamo-nos com desafios práticos e emocionais que exigem um esforço consciente para serem superados.
+        deficiencias: {
+     conteudo:`As deficiências em nosso perfil representam os pontos de sombra e as inibições que aguardam por desenvolvimento e cura em nossa jornada pessoal. No contexto da análise vibracional, elas não devem ser vistas como punições, mas sim como lacunas em nossa "caixa de ferramentas" existencial, indicando habilidades que ainda não foram totalmente integradas à nossa personalidade. Cada letra de nosso nome de nascimento carrega uma energia específica e, quando certas frequências estão ausentes, deparamo-nos com desafios práticos e emocionais que exigem um esforço consciente para serem superados.
 
 Essas ausências manifestam-se como hesitações, bloqueios ou dificuldades recorrentes em áreas específicas da vida, funcionando como um mapa exato do que precisamos aprender para evoluir. Ao identificarmos esses números faltantes, deixamos de agir por impulso cego e passamos a compreender por que certas situações parecem tão complexas para nós. O trabalho de correção e domínio sobre essas fraquezas é o que permite a transformação de um ser limitado em uma pessoa plena e capaz de transitar por qualquer circunstância.
 
@@ -305,10 +308,12 @@ Portanto, encarar as deficiências é o primeiro passo para uma vida mais prazer
 Quando abraçamos o desafio de integrar essas novas ferramentas, paramos de lutar contra as mesmas dificuldades e começamos a construir uma base sólida para o sucesso. A jornada de maestria sobre as próprias fraquezas é o que diferencia o indivíduo comum daquele que manifesta plenamente sua essência. Cada passo dado em direção à correção dessas inibições reflete uma maior clareza mental e uma capacidade renovada de lidar com as pressões externas. 
 
 A verdadeira evolução ocorre quando deixamos de esconder nossas faltas e passamos a tratá-las como oportunidades de expansão de consciência. Ao dominar cada ferramenta que antes faltava, você se torna o arquiteto de uma realidade muito mais rica e sem as amarras do passado. Esse processo de lapidação pessoal é contínuo e garante que a sua expressão no mundo seja autêntica, forte e livre de bloqueios inconscientes. Alcançar esse equilíbrio é o que permite que a vida flua com leveza, transformando o que era deficiência em um diferencial de sabedoria.`,
-
+ videoID: "z1nW3rmNeEI"
+    },
 
  
- deficits: `<p>No cenário ideal, todos compartilharíamos a mesma clareza e cumpriríamos nossas responsabilidades com precisão. Contudo, a realidade nos mostra que falhas de comportamento e atitudes impulsivas frequentemente surgem, tornando-se obstáculos que nos afastam dos resultados que tanto buscamos alcançar.</p>
+ deficits: {
+     conteudo:`<p>No cenário ideal, todos compartilharíamos a mesma clareza e cumpriríamos nossas responsabilidades com precisão. Contudo, a realidade nos mostra que falhas de comportamento e atitudes impulsivas frequentemente surgem, tornando-se obstáculos que nos afastam dos resultados que tanto buscamos alcançar.</p>
 
 <p>A Numerologia Moderna fundamenta-se no conceito de continuidade existencial. Sob essa perspectiva, embora atravessemos diversas experiências, mantemos uma identidade única ao longo do tempo. Nessa jornada, acumulamos sabedoria por meio de acertos, mas também carregamos as marcas de escolhas menos alinhadas ao nosso propósito.</p>
 
@@ -321,7 +326,8 @@ A verdadeira evolução ocorre quando deixamos de esconder nossas faltas e passa
 <p>Na visão da Numerologia Moderna, os aspectos cármicos atuam como alertas e motivadores. Eles indicam períodos onde efeitos inesperados podem surgir caso haja resistência em corrigir vícios de personalidade. A qualidade desse período — se será de expansão ou dificuldade — depende inteiramente da sua disposição em enfrentar e resolver essas questões pendentes.</p>
 
 <p>Para atingir o sucesso e a harmonia desejada, é indispensável alinhar seus valores e objetivos. Assumir o controle sobre a própria existência e comprometer-se verdadeiramente com o autodesenvolvimento é a única forma de transformar esses desafios em degraus para uma vida plena.</p>`,
-
+ videoID: "z1nW3rmNeEI"
+    },
 
         
         ciclos: `Os Ciclos de Vida mostram as transformações que cada um de nós passamos no caminho próprio e natural da vida. Normalmente vivemos uma ampla gama de ciclos e podemos experimentar uma infinidade de mudanças em nosso comportamento, pensamentos, em nossos valores e crenças. Tudo isso contribui no desenvolvimento continuo de nossa identidade, caráter e autoestima. 
