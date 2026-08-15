@@ -5902,6 +5902,10 @@ const resPropósito = textos.Propósito[res.Propósito];
 const textoPropósito = (typeof resPropósito === 'object') ? resPropósito.conteudo : resPropósito;
 const videoPropósito = (typeof resPropósito === 'object') ? resPropósito.videoID : null;
 
+const dadosIntroPropósito = textos.introducoes ? textos.introducoes.Propósito : "";
+const conteudoIntroPropósito = (typeof dadosIntroPropósito === 'object' && dadosIntroPropósito !== null) ? dadosIntroPropósito.conteudo : dadosIntroPropósito;
+const videoIntroPropósito = (typeof dadosIntroPropósito === 'object' && dadosIntroPropósito !== null) ? dadosIntroPropósito.videoID : null;
+    
 tituloBonito = "Propósito"; 
 html += `
 <div class="separador-luxo">
@@ -5911,7 +5915,7 @@ html += `
 </div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto">${textos.introducoes.Propósito || ""}</div>
+    <div class="intro-texto">${aplicarFiltroTexto(conteudoIntroPropósito) || ""}  ${videoIntroPropósito ? gerarPlayerYouTube(videoIntroPropósito) : ""}</div>
     <div class="evitar-corte texto-res">
     ${aplicarFiltroTexto(textoPropósito)} 
     ${videoPropósito ? gerarPlayerYouTube(videoPropósito) : ""}</div>
@@ -5994,6 +5998,11 @@ html += `
 `;
     
  const tituloMat = (typeof nomesExibicao !== 'undefined' && nomesExibicao["Maturidade"]) ? nomesExibicao["Maturidade"] : "Fase de Maturidade";
+
+const dadosIntroMaturidade = textos.introducoes ? textos.introducoes.Maturidade : "";
+const conteudoIntroMaturidade = (typeof dadosIntroMaturidade === 'object' && dadosIntroMaturidade !== null) ? dadosIntroMaturidade.conteudo : dadosIntroMaturidade;
+const videoIntroMaturidade = (typeof dadosIntroMaturidade === 'object' && dadosIntroMaturidade !== null) ? dadosIntroMaturidade.videoID : null;
+    
 tituloBonito = "FASE DE MATURIDADE";
 
 html += `
@@ -6002,7 +6011,7 @@ html += `
 </div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 1px solid var(--gold);">${tituloMat}</h2>
-    <div class="intro-texto">${(textos.introducoes && textos.introducoes.Maturidade) ? textos.introducoes.Maturidade : ""}</div>
+    <div class="intro-texto">${aplicarFiltroTexto(conteudoIntroMaturidade || "")}  ${videoIntroMaturidade ? gerarPlayerYouTube(videoIntroMaturidade) : ""}</div>
     <div class="texto-res">
         ${(() => {
             const dadosM = (textos.Maturidade && res.Maturidade) ? textos.Maturidade[res.Maturidade] : null;
@@ -6023,14 +6032,20 @@ html += `
 ["ciclos", "momentos", "desafios"].forEach(sec => {
     tituloBonito = sec === "ciclos" ? "Ciclos da Vida" : 
                    sec === "momentos" ? "Momentos de decisão" : "Desafios de Jornada";    
+    // 2. Busca os dados da INTRODUÇÃO (NOVO: aceita Objeto com videoID ou String)
+    const dadosIntroo = textos.introducoes ? textos.introducoes[chave] : "";
+    const conteudoIntroo = (typeof dadosIntroo === 'object' && dadosIntroo !== null) ? dadosIntroo.conteudo : dadosIntroo;
+    const videoIntroo = (typeof dadosIntroo === 'object' && dadosIntroo !== null) ? dadosIntroo.videoID : null;
 
+    
     html += `
     <div class="separador-luxo">
         <div class="caixa-interna"><h2>${tituloBonito}</h2></div>
     </div>
     <div class="page">
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-        <div class="intro-texto">${textos.introducoes[sec] || ""}</div>`;
+        <div class="intro-texto">${aplicarFiltroTexto(conteudoIntroo || "")}
+            ${videoIntroo ? gerarPlayerYouTube(videoIntroo) : ""}   </div>`;
 
 // --- SUBSTITUA A PARTIR DAQUI ---
 for(let i in res[sec]) {
@@ -6051,6 +6066,11 @@ for(let i in res[sec]) {
 
     let conteudo = (typeof itemTexto === 'object' && itemTexto !== null) ? itemTexto.conteudo : itemTexto;
     let videoID = (typeof itemTexto === 'object' && itemTexto !== null) ? itemTexto.videoID : null;
+
+
+
+
+    
 
     html += ` 
         <div class="evitar-corte" style="margin-bottom: 30px;">
@@ -6153,7 +6173,10 @@ const dadosProximoAno = textos.anoPessoal[proximoAnoPessoal] || { conteudo: "Con
 // =========================================================
 // BLOCO 1: ANO PESSOAL ATUAL + SEUS MESES
 // =========================================================
-
+    // 2. Busca os dados da INTRODUÇÃO (NOVO: aceita Objeto com videoID ou String)
+    const dadosIntroano = textos.introducoes ? textos.introducoes[chave] : "";
+    const conteudoIntroano = (typeof dadosIntroano === 'object' && dadosIntroano !== null) ? dadosIntroano.conteudo : dadosIntroano;
+    const videoIntroano = (typeof dadosIntroano === 'object' && dadosIntroano !== null) ? dadosIntroano.videoID : null;
 // Título Ano Atual
 tituloBonito = "Ano Pessoal";  
 html += `
@@ -6166,7 +6189,7 @@ html += `
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${nomesExibicao.anoPessoal} - Ciclo Atual</h2>
    
         <div class="intro-texto" style="margin-bottom: 1px; font-style:arial; color:#555;">
-            ${aplicarFiltroTexto(textos.introducoes.anoPessoal || "")}
+            ${aplicarFiltroTexto(conteudoIntroano || "")} ${videoIntroano ? gerarPlayerYouTube(videoIntroano) : ""} 
         </div>`;
 
         // Título Ano Atual
