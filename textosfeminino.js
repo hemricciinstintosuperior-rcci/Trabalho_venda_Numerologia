@@ -52,7 +52,8 @@ introducoes: {
     <p>Basicamente, quando este conhecimento é corretamente entendido e aplicado, ele se torna um sistema de suporte que trabalha a seu favor. Você só precisa absorver as informações e aplicar as orientações em sua rotina para observar a mudança imediata na fluidez dos seus caminhos. É importante ressaltar que nada acontece ao acaso: o sucesso exige atitude, empenho e dedicação. No entanto, ao caminhar alinhado com sua vibração numérica, o esforço deixa de ser um fardo e passa a ser o motor de resultados que irão, genuinamente, impressionar você.</p>`,
 
         
-        graficos: ` 
+        graficos: {
+     conteudo:` 
     <p style="margin-bottom: 20px;">A <b>Análise de Potenciais</b> é o coração estratégico do seu estudo, onde consolidamos as vibrações fundamentais do seu nascimento, como Influência, Dia de Nascimento, Comportamento, Essência, Personalidade, Motivação e Destino. Diferente dos ciclos temporais, estes gráficos revelam sua estrutura natural e permanente, mensurando sua real capacidade de entrega ao mundo através de ferramentas internas que definem como você processa a realidade para construir uma jornada de sucesso. Cada indicador reflete a união de suas forças nativas distribuídas nos quatro planos de ação, permitindo uma visão profunda de sua arquitetura humana.</p>
 
     <p style="margin-bottom: 20px;">No <b>Plano Mental</b>, os gráficos detalham sua <b>Estratégia e Visão de Futuro</b>, a <b>Lógica e Processamento</b> de dados, além de sua capacidade na <b>Tomada de Decisão</b>. Avaliamos aqui o seu potencial de <b>Aprendizado e Especialização</b>, bem como a agilidade na <b>Resolução de Problemas</b> complexos. Já no <b>Plano Emocional</b>, mergulhamos na sua <b>Conexão e Empatia</b>, na busca por <b>Alegria e Prazer</b>, e na manutenção do <b>Equilíbrio e Harmonia</b> interna. É neste campo que observamos a <b>Expressão da Essência</b> e a sua <b>Vitalidade Emocional</b>, que servem como combustível para todos os seus relacionamentos e bem-estar.</p>
@@ -60,43 +61,50 @@ introducoes: {
     <p style="margin-bottom: 20px;">O <b>Plano Físico</b> mensura o seu poder de realização prática, focando na <b>Execução e Força Bruta</b>, na sua capacidade de <b>Liderança e Território</b>, e no rigor da <b>Disciplina e Estrutura</b>. Analisamos também o seu <b>Dinamismo e Adaptação Física</b>, além da sua <b>Conexão com a Matéria</b>, fundamentais para manifestar seus projetos no mundo tangível. Complementando sua estrutura, o <b>Plano Intuitivo</b> revela sua <b>Sabedoria e Conhecimento Interno</b>, pautados por <b>Ética e Valores Morais</b> sólidos. Este plano rege a sua <b>Intuição e Condução</b> espiritual, permitindo a <b>Transcendência e Evolução</b> contínua através da <b>Resiliência da Alma</b> diante dos desafios.</p>
 
     <p style="margin-bottom: 20px;">Ao ler esses dados integrados, você compreende que não se trata apenas de números isolados, mas da harmonia total do seu propósito manifestado em cada detalhe de sua personalidade. Identificar onde sua energia flui com maestria e onde residem os pontos de superação é o que permite o ajuste fino de suas competências para alcançar a máxima performance. Este mapeamento serve como um guia definitivo para que você utilize cada uma dessas vinte facetas de forma consciente, transmutando resistências em habilidades latentes. Com esta clareza, você assume o comando total de seus potênciais, garantindo que sua trajetória seja marcada por uma presença autêntica, forte e plenamente alinhada com as leis vibracionais do seu ser.</p>`,
-
+    videoID: "z1nW3rmNeEI"
+    },
 
 
         
-        piramide: `<p style="margin-bottom: 20px;">A <b>Matriz da Vida</b> é o alicerce absoluto de todo o seu mapa numerológico, funcionando como o "DNA" vibracional da sua jornada e representando a estrutura macro da sua existência. Podemos compará-la a uma complexa partitura musical, onde cada letra do seu nome de batismo atua como uma nota específica que, ao ser tocada no tempo certo, determina o ritmo e a harmonia da sua história. Esta pirâmide invertida revela o caminho mestre e as fases evolutivas, servindo como o relógio biológico e espiritual que governa todas as outras influências e períodos cronológicos do seu relatório, refletindo sua essência imutável e a vibração única que você trouxe ao mundo para manifestar.</p>
+        piramide: {
+     conteudo:`<p style="margin-bottom: 20px;">A <b>Matriz da Vida</b> é o alicerce absoluto de todo o seu mapa numerológico, funcionando como o "DNA" vibracional da sua jornada e representando a estrutura macro da sua existência. Podemos compará-la a uma complexa partitura musical, onde cada letra do seu nome de batismo atua como uma nota específica que, ao ser tocada no tempo certo, determina o ritmo e a harmonia da sua história. Esta pirâmide invertida revela o caminho mestre e as fases evolutivas, servindo como o relógio biológico e espiritual que governa todas as outras influências e períodos cronológicos do seu relatório, refletindo sua essência imutável e a vibração única que você trouxe ao mundo para manifestar.</p>
 
     <p style="margin-bottom: 20px;">Dentro desta estrutura, identificamos o <b>Regente da Matriz</b>, a energia principal que coordena o fluxo dos acontecimentos, e analisamos as <b>Vulnerabilidades e Bloqueios</b> que podem surgir como desafios ao longo do percurso. A matriz também nos permite decifrar as <b>Sequências Especiais</b> e as configurações numéricas que sinalizam períodos de maior intensidade ou transição. É nela que encontramos o <b>Potencial de Prosperidade</b>, muitas vezes manifestado em combinações específicas como o fluxo nove que indica um alinhamento com a abundância financeira, revelando se a sua base está configurada para atrair e sustentar o crescimento material e o sucesso pleno.</p>
 
     <p style="margin-bottom: 20px;">Além disso, a Matriz da Vida mergulha nas <b>Potências Numéricas</b>, que representam forças arquetípicas profundas que antigamente eram conhecidas como arcanos, mas que aqui tratamos como motores de potencialidade pura. Essas potências descrevem o cenário exato e as lições que cada etapa da sua vida reserva, permitindo que você compreenda as engrenagens ocultas por trás dos seus sucessos e superações. Ao entender como essas notas são tocadas na sua partitura existencial, você deixa de ser um mero espectador dos eventos e passa a reger sua própria vida com consciência, transformando cada vibração em uma oportunidade de maestria e evolução contínua.</p>
 
     <p style="margin-bottom: 20px;">Portanto, a leitura desta matriz é fundamental para quem busca navegar com integridade e propósito, pois ela mostra onde residem os pontos de tensão e onde estão as chaves para destravar o seu fluxo de realização. Ao observar a integração total dessas forças, desde o topo da pirâmide até a base das suas potências, você ganha a clareza necessária para ajustar suas ações ao ritmo natural do seu destino. Esta é a ferramenta definitiva para alinhar sua vontade pessoal com a correnteza universal, garantindo que sua melodia de vida seja executada com força, sabedoria e total conexão com os recursos internos que você possui para vencer qualquer desafio e prosperar em todas as áreas.</p>
-`,
+`,    videoID: "z1nW3rmNeEI"
+    },
 
         
-        dia: {
-     conteudo:`<p>O Dia Natalício representa um dos elementos mais significativos dentro da análise numerológica, pois revela as qualidades naturais que acompanham o indivíduo desde o momento do nascimento. Ele simboliza a essência mais espontânea da personalidade, refletindo os talentos inatos, as inclinações comportamentais e as características que se manifestam de forma quase instintiva ao longo da vida.</p>
+        dia:{
+     conteudo: `<p>O Dia Natalício representa um dos elementos mais significativos dentro da análise numerológica, pois revela as qualidades naturais que acompanham o indivíduo desde o momento do nascimento. Ele simboliza a essência mais espontânea da personalidade, refletindo os talentos inatos, as inclinações comportamentais e as características que se manifestam de forma quase instintiva ao longo da vida.</p>
 <p>Na numerologia, compreende-se que cada ser humano nasce em uma data específica de acordo com suas necessidades evolutivas e com os aprendizados que sua alma precisa desenvolver durante a existência. Dessa forma, o dia exato do nascimento não é considerado um evento aleatório, mas sim um ponto de alinhamento entre a consciência individual e as forças simbólicas representadas pelos números.</p>
 <p>O Dia Natalício possui um papel particularmente importante dentro da estrutura numerológica, muitas vezes sendo considerado mais revelador do que o próprio mês ou o ano de nascimento. Isso ocorre porque ele expressa de maneira direta as tendências naturais da pessoa, mostrando como ela reage ao mundo, como expressa sua individualidade e quais são os dons que surgem com maior facilidade em sua vida.</p>
 <p>Pessoas nascidas em um mesmo dia do mês, independentemente do mês ou do ano, costumam apresentar traços psicológicos e comportamentais semelhantes. Isso não significa que suas vidas serão idênticas, mas indica a presença de padrões energéticos em comum que influenciam a maneira como cada indivíduo percebe, interpreta e vivencia a realidade.</p>
 <p>Essas características se manifestam principalmente nas atitudes espontâneas, nas escolhas naturais e na forma como a pessoa se posiciona diante das experiências cotidianas. O Dia Natalício revela aquilo que emerge com maior autenticidade, sem a necessidade de esforço ou adaptação consciente.</p>
 <p>Por essa razão, ele é frequentemente associado ao conceito do “Eu Sou” mais verdadeiro. Trata-se da parte mais genuína da identidade, aquela que permanece constante mesmo diante das mudanças externas, das circunstâncias da vida ou das influências sociais.</p>
 <p>Compreender o próprio Dia Natalício permite reconhecer talentos naturais, compreender padrões de comportamento e identificar potenciais que muitas vezes permanecem adormecidos. Ao trazer consciência sobre essas características, a numerologia oferece um instrumento de autoconhecimento que pode auxiliar no desenvolvimento pessoal e na harmonização da própria trajetória de vida.</p>`,
-             videoID: "z1nW3rmNeEI"
+       videoID: "z1nW3rmNeEI"
     },
-        comportamento: `O Número do Comportamento revela como são as qualidades psíquicas que influenciam nas escolhas pessoais. As pessoas experimentam diferentes respostas internas aos desafios da vida. Alguns se retiram de situações difíceis para pensar sobre elas; outros se afastam de suas emoções, para tentar evitar sentir as emoções. Outros se apegam aos seus sentimentos e sentem dificuldade em deixar as coisas irem.
+        comportamento: {
+     conteudo:`O Número do Comportamento revela como são as qualidades psíquicas que influenciam nas escolhas pessoais. As pessoas experimentam diferentes respostas internas aos desafios da vida. Alguns se retiram de situações difíceis para pensar sobre elas; outros se afastam de suas emoções, para tentar evitar sentir as emoções. Outros se apegam aos seus sentimentos e sentem dificuldade em deixar as coisas irem.
   
 Muitas vezes, essas são respostas condicionadas ou emocionais surgem sem pensamento ou análise. A maturidade e o autodesenvolvimento nos ajudam a aprender novos e mais eficazes métodos de lidar com nosso mundo e os problemas que enfrentamos. O número do comportamento fornece orientação 
 sobre a melhor forma de lidar com situações difíceis ou ameaçadoras, pois que reflete certos padrões interiores comuns a grupos de pessoas nascidas em dias comuns entre si.`,
-
+     videoID: "z1nW3rmNeEI"
+    },
 
         
-        essencia: `<p>Diante dos desafios da existência, cada indivíduo manifesta uma resposta interna singular. Existem pessoas que optam pelo distanciamento momentâneo das dificuldades para estruturar um plano de ação estratégico, enquanto outras buscam o recolhimento como uma forma de proteção contra emoções e sentimentos indesejados.</p>
+        essencia: {
+     conteudo:`<p>Diante dos desafios da existência, cada indivíduo manifesta uma resposta interna singular. Existem pessoas que optam pelo distanciamento momentâneo das dificuldades para estruturar um plano de ação estratégico, enquanto outras buscam o recolhimento como uma forma de proteção contra emoções e sentimentos indesejados.</p>
 
 <p>Em contrapartida, há quem reaja de maneira intensa e imediata, deixando-se levar pelo ímpeto do momento, mas permitindo que essa energia se dissipe com rapidez. Outros, no entanto, prolongam esses estados emocionais, mantendo o sentimento ativo por longos períodos. Essas reações costumam ser respostas condicionadas que surgem de forma impensada e automática.</p>
 
 <p>O caminho da maturidade e do autodesenvolvimento oferece a oportunidade de adotar posturas mais práticas e conscientes perante o inesperado. Ao compreender a própria essência, torna-se possível lidar com situações críticas de forma mais eficaz, alcançando resultados satisfatórios e reduzindo drasticamente os conflitos internos e externos.</p>`,
-
+     videoID: "z1nW3rmNeEI"
+    },
 
         
         equilibrio: `<p>O Universo rege-se pelo princípio da harmonia, e o mesmo se aplica aos seus números pessoais. Qualquer excesso identificado em sua estrutura numerológica merece uma análise criteriosa, pois essas intensidades podem revelar tanto talentos excepcionais quanto pontos que demandam superação e ajuste.</p>
@@ -111,21 +119,26 @@ sobre a melhor forma de lidar com situações difíceis ou ameaçadoras, pois qu
      
         
         
-        talento: `
+        talento: {
+     conteudo:`
     <p>O talento é frequentemente compreendido como a habilidade de realizar determinadas tarefas com excelência e o mínimo de esforço consciente. Muitas vezes, essas capacidades permanecem latentes na mente, operando de forma automática sem que haja uma percepção clara de sua existência. O Talento Oculto representa essas habilidades especiais que, quando identificadas e desenvolvidas, permitem que o indivíduo se sobressaia em atividades específicas, utilizando inclinações naturais a seu favor.</p>
     <p>Mesmo sem o conhecimento técnico dessas predisposições, é comum que a utilização ocorra de maneira inconsciente no cotidiano. A identificação desse número revela ferramentas internas que podem ser potencializadas para gerar resultados extraordinários com fluidez e naturalidade.</p>`,
-
+     videoID: "z1nW3rmNeEI"
+    },
 
         
-        motivacao: `A motivação mostra seus sonhos e desejo mais profundo. É um impulso natural que faz com que alguém aja para atingir seus objetivos e expressa a intenção que está por trás suas ações. Ele influencia as escolhas que você faz na vida, e é a principal característica responsável por iniciar, direcionar e manter comportamentos relacionados com o cumprimento de seus objetivos. 
+        motivacao: {
+     conteudo:`A motivação mostra seus sonhos e desejo mais profundo. É um impulso natural que faz com que alguém aja para atingir seus objetivos e expressa a intenção que está por trás suas ações. Ele influencia as escolhas que você faz na vida, e é a principal característica responsável por iniciar, direcionar e manter comportamentos relacionados com o cumprimento de seus objetivos. 
   
 Sua influência está em praticamente todas as suas escolhas; da de sua carreira a amizades, relacionamentos até seu modo de vida. É esta característica natural também que faz com que você dê o melhor de si e faça o possível para conquistar o que deseja. É ela também que muitas vezes, faz com que algumas pessoas acabem até mesmo “passando por cima” de outras para obter aquilo que desejam.
   
 Mostra seus impulsos ocultos, o que verdadeiramente lhe motiva, e como suas ações influenciam nas suas decisões; revela quais são suas ambições, seus gostos pessoais, suas aversões, necessidades e vontades. Os motivos que estão por trás de cada decisão que alguém toma em sua vida e mesmo não sendo normalmente aparente, é este número que informa suas decisões.
 A motivação é um elemento essencial para o desenvolvimento do ser humano. Sem ela seria muito mais difícil cumprir a maior parte de suas intenções; por isso é uma vibração muito importante na numerologia e deve ser muito bem compreendida.`,
-
+  videoID: "z1nW3rmNeEI"
+    },
         
-        influencia: `<p>O Número de Influência revela a forma como o mundo externo percebe sua presença; é a impressão imediata e a essência da imagem que você projeta. Ele define o impacto inicial que sua figura exerce sobre as pessoas e os julgamentos automáticos que elas formulam ao interagirem com você.</p>
+        influencia: {
+     conteudo:`<p>O Número de Influência revela a forma como o mundo externo percebe sua presença; é a impressão imediata e a essência da imagem que você projeta. Ele define o impacto inicial que sua figura exerce sobre as pessoas e os julgamentos automáticos que elas formulam ao interagirem com você.</p>
 
 <p>Este indicador fornece detalhes sobre a face que você deseja apresentar à sociedade e o nível de confiança empregado ao se comunicar. Ele delimita a acessibilidade em seus relacionamentos, funcionando como um termômetro de quão profundamente você permite que os outros se aproximem.</p>
 
@@ -134,16 +147,21 @@ A motivação é um elemento essencial para o desenvolvimento do ser humano. Sem
 <p>O Número de Influência também expõe as barreiras mentais, estereótipos ou resistências que podem dificultar a entrega de informações autênticas sobre si para o universo. É comum que até as pessoas mais próximas tenham dificuldade em descrever sua essência, pois, somente com o tempo e o estabelecimento de confiança, as camadas mais profundas da sua natureza são reveladas.</p>
 
 <p>Atuando como um dispositivo de censura, este número filtra tanto a imagem transmitida quanto os temas que você aceita abordar. Ele serve como um escudo que afasta situações indesejadas, ao mesmo tempo em que preserva os aspectos mais íntimos da sua personalidade. Essa primeira imagem é decisiva: ela pode tanto despertar uma curiosidade magnética quanto fazer com que o interesse alheio se dissipe rapidamente.</p>`,
-
+  videoID: "z1nW3rmNeEI"
+    },
         
-        Personalidade: `<p>O Número da Personalidade revela a maneira como você age, reage e se comporta diante da vida. Ele representa a expressão prática do seu ser, a forma como suas intenções se transformam em atitudes e como você se manifesta no mundo em diferentes circunstâncias.</p>
+        Personalidade: {
+     conteudo:`<p>O Número da Personalidade revela a maneira como você age, reage e se comporta diante da vida. Ele representa a expressão prática do seu ser, a forma como suas intenções se transformam em atitudes e como você se manifesta no mundo em diferentes circunstâncias.</p>
 <p>Este número descreve o padrão habitual do seu comportamento. Ele mostra suas reações repetidas, seus hábitos emocionais e mentais, e a forma como você tende a pensar, sentir e agir diante das experiências da vida. É através da personalidade que suas ideias, desejos e convicções ganham forma concreta.</p>
 <p>A personalidade representa o conjunto das características marcantes que moldam seus relacionamentos e sua forma de interagir com o ambiente. Ela define como você se posiciona socialmente, como responde aos desafios e como estabelece vínculos com as pessoas.</p>
 <p>O Número da Personalidade revela como você percebe a realidade e como reage a ela. Mostra suas tendências naturais de atração ou rejeição, suas convicções e a forma como expressa sentimentos e opiniões. Ele é um dos principais instrumentos para desenvolver uma forma eficiente, confortável e criativa de comunicação.</p>
 <p>Cada pessoa possui uma maneira única de agir e se expressar. Para aqueles que consideram a reencarnação como filosofia, a soma do nome completo representa a síntese de experiências, talentos e aprendizados acumulados ao longo de muitas existências.</p>
 <p>Compreender este número permite reconhecer talentos naturais, desafios comportamentais e padrões emocionais que influenciam diretamente a forma como sua vida se desenvolve.</p>`,
-        
-        Relacionamento: `<p>Cada indivíduo emite uma frequência energética única. Ao compreender a natureza da sua própria vibração, torna-se possível identificar quais perfis possuem maior afinidade com você, distinguindo entre atrações magnéticas, convivências passivas ou dinâmicas opostas. Esse mapeamento é a chave para antecipar a fluidez de vínculos conjugais, afetivos ou profissionais.</p>
+          videoID: "z1nW3rmNeEI"
+    },
+     
+        Relacionamento: {
+     conteudo:`<p>Cada indivíduo emite uma frequência energética única. Ao compreender a natureza da sua própria vibração, torna-se possível identificar quais perfis possuem maior afinidade com você, distinguindo entre atrações magnéticas, convivências passivas ou dinâmicas opostas. Esse mapeamento é a chave para antecipar a fluidez de vínculos conjugais, afetivos ou profissionais.</p>
 
 <p>É importante ressaltar que este estudo funciona como um indicador de harmonia potencial. Embora a numerologia aponte tendências de compatibilidade, o sucesso de uma união — seja ela uma amizade, sociedade ou relacionamento amoroso — depende do livre-arbítrio e da dedicação mútua. Contudo, as probabilidades de êxito e de uma convivência serena são significativamente maiores entre números que compartilham vibrações harmônicas.</p>
 
@@ -220,16 +238,20 @@ Some todos os números da data de nascimento (dia + mês + ano) e reduza também
 <p><strong>Passo 3: O Resultado Final</strong><br>
 Agora, some o <strong>resultado do Nome</strong> com o <strong>resultado da Data</strong>. Reduza novamente para chegar a um número de 1 a 9. Este é o número que você deve buscar na nossa tabela de harmonia para saber como será sua conexão com essa pessoa!</p>
 <p><em>Exemplo: Se a soma final deu 7, essa pessoa possui a energia do Número 7 em relacionamentos.</em></p>
-`,
+`,         videoID: "z1nW3rmNeEI"
+    },
         
-        CaminhodeVida: `<p>Viver de forma plena é um caminho contínuo que nos ensina a persistir diante dos desafios e das distrações para conquistar aquilo que escolhemos para nós. O destino não é um lugar fixo, mas uma forma de enxergar e compreender a vida.</p>
+        CaminhodeVida: {
+     conteudo:`<p>Viver de forma plena é um caminho contínuo que nos ensina a persistir diante dos desafios e das distrações para conquistar aquilo que escolhemos para nós. O destino não é um lugar fixo, mas uma forma de enxergar e compreender a vida.</p>
   Independentemente das circunstâncias ou dos erros cometidos, nossa trajetória é construída a cada instante pelas decisões que tomamos.
   <p>O Número do Caminho de Vida revela a melhor maneira de conduzir sua jornada para alcançar o “destino” que você escolheu. Trata-se de uma orientação constante, válida em qualquer fase da vida, ciclo ou momento, mesmo diante de mudanças de pensamentos e intenções.</p>
   <p>O Caminho de Vida aponta a direção mais adequada a seguir. Quando você compreende e aceita essa orientação, passa a decidir com mais segurança, utiliza seus talentos com maior eficiência e entende melhor as causas das suas conquistas e frustrações. Também identifica o que é necessário para superar desafios, evoluir como pessoa e alcançar seus objetivos.</p>
   <p>Sua função é estimular o desenvolvimento das suas habilidades e ampliar a consciência. Ele só se torna “predeterminado” quando você ignora suas orientações. Sem compreender o sentido da sua existência, torna-se difícil escolher bons caminhos e tomar decisões assertivas, fazendo com que a vida pareça desorganizada, aleatória e guiada apenas pelas circunstâncias.</p>`,
-
+         videoID: "z1nW3rmNeEI"
+    },
         
-        Propósito: `O propósito de vida não representa uma obrigação rígida nem uma tarefa imposta externamente, mas sim um impulso interno que surge de forma gradual e se torna mais claro à medida que a pessoa amadurece e amplia o autoconhecimento. Esse propósito, tradicionalmente chamado de missão, expressa a direção natural da existência e atua como uma afirmação profunda do sentido pessoal que orienta pensamentos, escolhas e atitudes ao longo da vida.
+        Propósito: {
+     conteudo:`O propósito de vida não representa uma obrigação rígida nem uma tarefa imposta externamente, mas sim um impulso interno que surge de forma gradual e se torna mais claro à medida que a pessoa amadurece e amplia o autoconhecimento. Esse propósito, tradicionalmente chamado de missão, expressa a direção natural da existência e atua como uma afirmação profunda do sentido pessoal que orienta pensamentos, escolhas e atitudes ao longo da vida.
   
 Por essa razão, na Numerologia Moderna essa orientação possui grande importância, pois revela aquilo que realmente dá significado às suas ações e aponta o caminho que você tende a seguir. Ele demonstra como suas decisões moldaram sua trajetória até o momento presente e oferece base para compreender quais metas futuras fazem sentido e quais atitudes devem ser consideradas para alcançá-las.
   
@@ -238,17 +260,21 @@ O propósito de vida também ajuda a compreender sua postura diante da família,
 Ao entender essa orientação, torna-se possível perceber com mais clareza como suas decisões afetam sua trajetória, explicando as causas de desafios, frustrações e obstáculos enfrentados ao longo do caminho.
   
 Desenvolver consciência sobre o propósito de vida permite tomar decisões mais alinhadas às necessidades reais da sua essência, facilitando a resolução de conflitos, o crescimento pessoal e a construção de uma vida mais coerente, produtiva e evolutiva.`,
-
+         videoID: "z1nW3rmNeEI"
+    },
         
-        Maturidade: `O Número de Maturidade revela desejos que surgem na juventude e se fortalecem com o tempo, tornando-se mais evidentes entre os 30 e 35 anos.
+        Maturidade: {
+     conteudo:`O Número de Maturidade revela desejos que surgem na juventude e se fortalecem com o tempo, tornando-se mais evidentes entre os 30 e 35 anos.
   
 Quanto mais você se conhece, mais percebe essa influência orientando seus objetivos e decisões. Ele indica o rumo dos últimos anos de vida e reflete diretamente o Propósito de Vida.
   
 Mesmo que não esteja consciente, você constrói esse caminho ao longo da vida através de suas escolhas e intenções. As características desse número já existem desde a infância, mas tornam-se mais claras com a maturidade.
   
-Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização pessoal.`,
+Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização pessoal.`,         videoID: "z1nW3rmNeEI"
+    },
         
-        inclinacoes: `<p>Esta característica possui uma força intrínseca capaz de moldar sua trajetória, gerando um desejo profundo de desenvolver e manifestar essa habilidade específica em sua jornada. É um chamado da sua própria essência que busca expressão e reconhecimento.</p>
+        inclinacoes: {
+     conteudo:`<p>Esta característica possui uma força intrínseca capaz de moldar sua trajetória, gerando um desejo profundo de desenvolver e manifestar essa habilidade específica em sua jornada. É um chamado da sua própria essência que busca expressão e reconhecimento.</p>
 
 <p>A existência desse talento exige que ele seja exteriorizado. Vivenciar essa faceta é, em última análise, permitir-se viver em total harmonia com sua verdadeira natureza. Assim, a Inclinação Oculta atua como um guia silencioso, esculpindo sua personalidade e direcionando suas escolhas de maneira quase imperceptível, mas extremamente poderosa.</p>
 
@@ -257,10 +283,12 @@ Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização 
 <p>Esses "vícios de comportamento" são inclinações naturais que, quando não observadas, limitam a forma como experimentamos a realidade. Agravados pela impulsividade ou por reações automáticas, esses padrões podem criar a ilusão de que os eventos da vida estão fora de nosso controle ou que são causados por fatores externos.</p>
 
 <p>Compreender essas tendências é o primeiro passo para quebrar o círculo vicioso. Ao assumir a maestria sobre essas inclinações, você deixa de ser refém de comportamentos repetitivos e passa a conduzir sua vida com intenção, ética e clareza, transformando potenciais limitações em ferramentas de evolução.</p>`,
- 
+ videoID: "z1nW3rmNeEI"
+    },
         
         
-        subconsciente: `<p style="margin-bottom: 8px;">Em nossa jornada cotidiana, somos constantemente bombardeados por estímulos que podem gerar irritação, frustração ou melancolia. Na maioria das vezes, operamos no "piloto automático", reagindo a esses eventos sem uma consciência real de nossas motivações internas.</p>
+        subconsciente: {
+     conteudo:`<p style="margin-bottom: 8px;">Em nossa jornada cotidiana, somos constantemente bombardeados por estímulos que podem gerar irritação, frustração ou melancolia. Na maioria das vezes, operamos no "piloto automático", reagindo a esses eventos sem uma consciência real de nossas motivações internas.</p>
 
 <p style="margin-bottom: 8px;">Todos possuímos uma predisposição intrínseca para executar sequências de ações e comportamentos padronizados. Essas reações costumam se manifestar de forma intensa e predefinida, movidas por um forte impulso instintivo que muitas vezes desconhecemos. Por serem automáticas, essas respostas tornam-se mais evidentes apenas em situações extremas, inesperadas ou sob forte pressão.</p>
 
@@ -269,17 +297,21 @@ Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização 
 <p style="margin-bottom: 8px;">Este indicador revela qual é a sua primeira reação — instintiva e imediata — diante de imprevistos que exigem decisões instantâneas. Ele permite analisar como você processa suas emoções no exato momento em que elas emergem, oferecendo um mapa do seu comportamento sob estresse.</p>
 
 <p style="margin-bottom: 8px;">Esses impulsos podem durar apenas uma fração de segundo, mas seu impacto pode ser profundo. Se não forem compreendidos, esses padrões podem gerar estados de estresse prolongado ou até mesmo levar a quadros de exaustão emocional. Conhecer seu subconsciente é o primeiro passo para transformar reações reativas em ações conscientes e seguras.</p>`,
-   
+    videoID: "z1nW3rmNeEI"
+    },
         
-        anoPessoal: `
+        anoPessoal: {
+     conteudo:`
  
    <p>O <b>Ano Pessoal</b> descreve a vibração específica que rege a vida de um indivíduo durante um período de doze meses, compreendido entre um aniversário e o próximo. Diferente do calendário civil, esta cronologia é estritamente pessoal e opera em ciclos ininterruptos de nove anos, onde cada etapa possui uma função vital para o seu desenvolvimento. Compreender em qual fase você se encontra permite alinhar suas ações com o fluxo natural das circunstâncias, evitando o desgaste desnecessário de nadar contra a correnteza energética do momento. É uma ferramenta de precisão que revela as tendências ocultas e as oportunidades que o universo reserva para cada ciclo de doze meses da sua existência.</p>
    <p> Cada etapa deste ciclo de nove anos possui uma identidade própria: desde o Ano 1, que representa a plantação e o início de novos projetos, passando pelos anos de crescimento e estabilização, até chegar ao Ano 9, que marca a colheita final e a necessária limpeza para o início de um novo ciclo. Ao identificar em qual dessas fases você se encontra agora, torna-se possível tomar decisões muito mais estratégicas sobre sua carreira, seus relacionamentos e sua saúde. Saber exatamente quando avançar com força total ou quando é o momento de recuar para refletir transforma o tempo em um aliado poderoso da sua evolução pessoal, garantindo que cada passo contribua para uma trajetória próspera.</p>
     <p>Viver em sintonia com o seu Ano Pessoal é como possuir um mapa meteorológico da sua própria vida, permitindo que você se prepare para as "estações" que virão. Quando você ignora essas vibrações, pode acabar tentando colher frutos em tempos de plantio ou iniciando negócios em períodos de encerramento, o que gera frustração e bloqueios. A consciência deste ritmo garante que você utilize sua energia de forma inteligente e produtiva, aproveitando os ventos favoráveis de cada ano para expandir sua consciência e solidificar suas conquistas. É um período de aprendizado contínuo onde você descobre que cada ano traz um desafio único desenhado para fortalecer o seu caráter e ampliar sua visão de mundo.</p>
-    <p> Prepare-se para colher os melhores resultados ao agir no tempo certo, respeitando a sabedoria dos números que desenham o seu caminho rumo à plenitude e ao sucesso duradouro.</p>`,
+    <p> Prepare-se para colher os melhores resultados ao agir no tempo certo, respeitando a sabedoria dos números que desenham o seu caminho rumo à plenitude e ao sucesso duradouro.</p>`,         videoID: "z1nW3rmNeEI"
+    },
  
         
-        deficiencias: `As deficiências em nosso perfil representam os pontos de sombra e as inibições que aguardam por desenvolvimento e cura em nossa jornada pessoal. No contexto da análise vibracional, elas não devem ser vistas como punições, mas sim como lacunas em nossa "caixa de ferramentas" existencial, indicando habilidades que ainda não foram totalmente integradas à nossa personalidade. Cada letra de nosso nome de nascimento carrega uma energia específica e, quando certas frequências estão ausentes, deparamo-nos com desafios práticos e emocionais que exigem um esforço consciente para serem superados.
+        deficiencias: {
+     conteudo:`As deficiências em nosso perfil representam os pontos de sombra e as inibições que aguardam por desenvolvimento e cura em nossa jornada pessoal. No contexto da análise vibracional, elas não devem ser vistas como punições, mas sim como lacunas em nossa "caixa de ferramentas" existencial, indicando habilidades que ainda não foram totalmente integradas à nossa personalidade. Cada letra de nosso nome de nascimento carrega uma energia específica e, quando certas frequências estão ausentes, deparamo-nos com desafios práticos e emocionais que exigem um esforço consciente para serem superados.
 
 Essas ausências manifestam-se como hesitações, bloqueios ou dificuldades recorrentes em áreas específicas da vida, funcionando como um mapa exato do que precisamos aprender para evoluir. Ao identificarmos esses números faltantes, deixamos de agir por impulso cego e passamos a compreender por que certas situações parecem tão complexas para nós. O trabalho de correção e domínio sobre essas fraquezas é o que permite a transformação de um ser limitado em uma pessoa plena e capaz de transitar por qualquer circunstância.
 
@@ -290,10 +322,12 @@ Portanto, encarar as deficiências é o primeiro passo para uma vida mais prazer
 Quando abraçamos o desafio de integrar essas novas ferramentas, paramos de lutar contra as mesmas dificuldades e começamos a construir uma base sólida para o sucesso. A jornada de maestria sobre as próprias fraquezas é o que diferencia o indivíduo comum daquele que manifesta plenamente sua essência. Cada passo dado em direção à correção dessas inibições reflete uma maior clareza mental e uma capacidade renovada de lidar com as pressões externas. 
 
 A verdadeira evolução ocorre quando deixamos de esconder nossas faltas e passamos a tratá-las como oportunidades de expansão de consciência. Ao dominar cada ferramenta que antes faltava, você se torna o arquiteto de uma realidade muito mais rica e sem as amarras do passado. Esse processo de lapidação pessoal é contínuo e garante que a sua expressão no mundo seja autêntica, forte e livre de bloqueios inconscientes. Alcançar esse equilíbrio é o que permite que a vida flua com leveza, transformando o que era deficiência em um diferencial de sabedoria.`,
-
+ videoID: "z1nW3rmNeEI"
+    },
 
  
- deficits: `<p>No cenário ideal, todos compartilharíamos a mesma clareza e cumpriríamos nossas responsabilidades com precisão. Contudo, a realidade nos mostra que falhas de comportamento e atitudes impulsivas frequentemente surgem, tornando-se obstáculos que nos afastam dos resultados que tanto buscamos alcançar.</p>
+ deficits: {
+     conteudo:`<p>No cenário ideal, todos compartilharíamos a mesma clareza e cumpriríamos nossas responsabilidades com precisão. Contudo, a realidade nos mostra que falhas de comportamento e atitudes impulsivas frequentemente surgem, tornando-se obstáculos que nos afastam dos resultados que tanto buscamos alcançar.</p>
 
 <p>A Numerologia Moderna fundamenta-se no conceito de continuidade existencial. Sob essa perspectiva, embora atravessemos diversas experiências, mantemos uma identidade única ao longo do tempo. Nessa jornada, acumulamos sabedoria por meio de acertos, mas também carregamos as marcas de escolhas menos alinhadas ao nosso propósito.</p>
 
@@ -306,10 +340,12 @@ A verdadeira evolução ocorre quando deixamos de esconder nossas faltas e passa
 <p>Na visão da Numerologia Moderna, os aspectos cármicos atuam como alertas e motivadores. Eles indicam períodos onde efeitos inesperados podem surgir caso haja resistência em corrigir vícios de personalidade. A qualidade desse período — se será de expansão ou dificuldade — depende inteiramente da sua disposição em enfrentar e resolver essas questões pendentes.</p>
 
 <p>Para atingir o sucesso e a harmonia desejada, é indispensável alinhar seus valores e objetivos. Assumir o controle sobre a própria existência e comprometer-se verdadeiramente com o autodesenvolvimento é a única forma de transformar esses desafios em degraus para uma vida plena.</p>`,
-
+ videoID: "z1nW3rmNeEI"
+    },
 
         
-        ciclos: `Os Ciclos de Vida mostram as transformações que cada um de nós passamos no caminho próprio e natural da vida. Normalmente vivemos uma ampla gama de ciclos e podemos experimentar uma infinidade de mudanças em nosso comportamento, pensamentos, em nossos valores e crenças. Tudo isso contribui no desenvolvimento continuo de nossa identidade, caráter e autoestima. 
+        ciclos: {
+     conteudo:`Os Ciclos de Vida mostram as transformações que cada um de nós passamos no caminho próprio e natural da vida. Normalmente vivemos uma ampla gama de ciclos e podemos experimentar uma infinidade de mudanças em nosso comportamento, pensamentos, em nossos valores e crenças. Tudo isso contribui no desenvolvimento continuo de nossa identidade, caráter e autoestima. 
     
 O ciclo da vida é um mapa natural de três fases de um processo para que nos permite começar a explorar a grande complexidade da vida ainda na infância e encontrar a transformação de que você precisa a cada momento de sua vida.
     
@@ -323,10 +359,12 @@ conforme orientadas pelo respectivo número de suas fraquezas e inibições.
     
 Note, porém, que isso não significa de forma alguma que o período será ruim, mas indica que você poderá enfrentar algumas dificuldades e adversidades muitas vezes desnecessárias e evitáveis causadas por essa deficiência em sua personalidade até que a mesma seja aperfeiçoada e dominada. 
     
-Perceba que quanto mais habilidades você tiver a sua disposição e quanto mais puder evitar suas fraquezas mais capaz você será de lidar com qualquer evento ou situação que se apresente em seu caminho e mais fácil será superá-las. `,
+Perceba que quanto mais habilidades você tiver a sua disposição e quanto mais puder evitar suas fraquezas mais capaz você será de lidar com qualquer evento ou situação que se apresente em seu caminho e mais fácil será superá-las. `,         videoID: "z1nW3rmNeEI"
+    },
  
         
-        momentos: `Os Momentos Decisivos representam períodos de virada, mudança e redefinição de direção na vida. Eles indicam fases em que decisões, oportunidades e acontecimentos tendem a provocar transformações
+        momentos: {
+     conteudo:`Os Momentos Decisivos representam períodos de virada, mudança e redefinição de direção na vida. Eles indicam fases em que decisões, oportunidades e acontecimentos tendem a provocar transformações
 importantes no caminho pessoal.
 
 Esses períodos funcionam como portais de crescimento e evolução.
@@ -343,10 +381,12 @@ Se o número do Momento Decisivo coincide com o número de Personalidade signifi
 Se o número do Momento Decisivo coincide com o número do Propósito de Vida poderá ser mais fácil durante o período perceber e aproveitar melhor as oportunidades que facilitarão a realização de seus sonhos e projetos pessoais.
   
 Se o número do Momento Decisivo coincide com o número de uma de suas Fraquezas e Inibições, você pode ter alguma dificuldade para lidar com questões relacionadas a essa necessidade específica até que aperfeiçoe suas habilidades ou supere alguma inibição.  `,
-
+         videoID: "z1nW3rmNeEI"
+    },
  
         
-        desafios: `<p>Os Desafios Temporários representam ciclos específicos de aprendizado que possuem um tempo determinado para acontecer em sua jornada. Diferente do desafio principal, que é uma constante vitalícia, estas vibrações surgem como etapas de treinamento intensivo, vinculadas aos seus ciclos de vida. O Primeiro Desafio geralmente acompanha a fase da juventude e do desenvolvimento inicial, enquanto o Segundo Desafio surge na maturidade para refinar aspectos mais profundos da sua personalidade e competências sociais.</p>
+        desafios: {
+     conteudo:`<p>Os Desafios Temporários representam ciclos específicos de aprendizado que possuem um tempo determinado para acontecer em sua jornada. Diferente do desafio principal, que é uma constante vitalícia, estas vibrações surgem como etapas de treinamento intensivo, vinculadas aos seus ciclos de vida. O Primeiro Desafio geralmente acompanha a fase da juventude e do desenvolvimento inicial, enquanto o Segundo Desafio surge na maturidade para refinar aspectos mais profundos da sua personalidade e competências sociais.</p>
 
 <p>Cada um desses desafios atua como uma barreira necessária que, uma vez superada, libera uma nova camada de potencial e maturidade. Eles são dinâmicos e possuem um prazo de validade em seu mapa; ou seja, eles têm um início, um meio e um fim bem definidos pela cronologia numerológica. Durante o período em que estão ativos, você sentirá uma pressão maior em áreas específicas, sendo convidado a desenvolver ferramentas que antes estavam adormecidas ou que eram desconhecidas por você.</p>
 
@@ -355,7 +395,8 @@ Se o número do Momento Decisivo coincide com o número de uma de suas Fraquezas
 <p>Enfrentar essas fases com clareza permite que você não se sinta sobrecarregado pelas dificuldades do momento, sabendo que elas são passageiras e funcionais. Eles funcionam como "portais de competência" que precisam ser atravessados para que a vida flua com a naturalidade desejada. Ao identificar em qual ciclo de desafio você se encontra atualmente, torna-se muito mais fácil direcionar sua energia para resolver as pendências emocionais ou práticas que aquela frequência específica está exigindo de você no agora.</p>
 
 <p>Portanto, os Desafios Temporários são convites para uma transformação rápida e focada, garantindo que você não estagne em sua evolução pessoal. Ao dominar as lições de cada período, você constrói uma base sólida de resiliência que servirá de apoio para enfrentar o desafio principal de forma muito mais íntegra. Esta dinâmica de tempo e aprendizado é o que traz movimento à vida, transformando cada ciclo de anos em uma oportunidade única de se tornar uma versão mais completa, preparada e consciente de si mesmo.</p>`,
-        
+             videoID: "z1nW3rmNeEI"
+    },    
         // Nova chave para os Gráficos do Ano
     statusAnual: "O Status do Momento revela a configuração do seu plano de Expressão para o ano vigente. Diferente do seu Plano Natural, esta análise identifica quais áreas da sua vida estão recebendo carga extra de energia e quais exigem maior cautela estratégica no ciclo atual.",
 
@@ -408,6 +449,9 @@ Se o número do Momento Decisivo coincide com o número de uma de suas Fraquezas
     <h3>7. Gênero (Sintropia e Dinâmica de Sistemas)</h3>
     <p>Tudo na criação exige a união dos princípios ativo (masculino) e receptivo (feminino), uma dinâmica observada na física como a interação entre carga e potencial. Na Numerologia, isso se reflete no equilíbrio entre números ímpares (ação) e pares (acolhimento). A criação de qualquer resultado real na sua vida depende da harmonia entre a sua vontade de realizar e a sua sabedoria em gestar. Esta lei ensina que o excesso de um princípio sem o outro gera esterilidade nos projetos. Através do seu mapa, você aprende a equilibrar essas forças internas, integrando a lógica analítica com a intuição profunda. É a união sagrada da semente numérica com o solo da consciência que permite a manifestação plena de todos os seus objetivos e sonhos.</p>`
 },
+
+
+
 
 
 
