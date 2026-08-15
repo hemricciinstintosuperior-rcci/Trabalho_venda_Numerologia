@@ -5880,7 +5880,7 @@ html += `
 </div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto">${aplicarFiltroTexto(textos.introducoes.CaminhodeVida) || ""}  ${videoIntroCaminhodeVida ? gerarPlayerYouTube(videoIntroCaminhodeVida) : ""}</div>
+    <div class="intro-texto">${aplicarFiltroTexto(conteudoIntroCaminhodeVida) || ""}  ${videoIntroCaminhodeVida ? gerarPlayerYouTube(videoIntroCaminhodeVida) : ""}</div>
     <div class="evitar-corte texto-res">
         ${aplicarFiltroTexto(textoCaminho)}
         ${videoCaminho ? gerarPlayerYouTube(videoCaminho) : ""}
