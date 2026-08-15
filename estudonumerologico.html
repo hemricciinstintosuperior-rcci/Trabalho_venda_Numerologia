@@ -2495,7 +2495,7 @@ let vTransitoCalculado = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValo
 // Acessa o seu objeto diretamente (sem buscar fora)
 const dadosTransito = window.TextosTransito ? window.TextosTransito[vTransitoCalculado] : null;
 // ... (seção de Trânsito)
-
+const idVideoIntrotransito = "CQ1bcGIcX_w"; 
 h += `
         <div class="separador-luxo">
             <div class="caixa-interna"><h2>CICLOS DE TRÂNSITO</h2></div>
@@ -2511,7 +2511,7 @@ h += `
     <p style="margin-bottom: 20px;">Entender o Ciclo de Trânsito é compreender a engrenagem interna que move a sua expressão no mundo, pois ele não é uma influência externa passageira, mas sim o reflexo de como você está processando a vida em todos os níveis. Enquanto esta influência estiver vigente em sua jornada, ela ditará o tom das suas experiências e a melhor forma de aplicar seus talentos para obter resultados concretos. É um período de colheita e ajuste, onde a harmonia entre o sentir, o pensar e o agir se torna a chave para o sucesso. Ao respeitar essa frequência, você flui com as marés da vida em vez de lutar contra elas, utilizando cada pilar do seu ser para construir uma realidade mais sólida, consciente e alinhada com seu verdadeiro propósito.</p>
 
    <p style="margin-bottom: 20px;">Este ciclo funciona como uma bússola de autoconhecimento aplicado, mostrando exatamente onde você deve focar sua energia para que o seu desenvolvimento não seja apenas teórico, mas manifestado na prática cotidiana. O domínio sobre esta vibração permite que você transforme potenciais abstratos em realizações tangíveis, aproveitando a força combinada dos seus planos de expressão. Portanto, encare este período como uma oportunidade única de observar como sua estrutura interna molda o seu destino, ajustando suas velas de acordo com a poderosa corrente energética que o Ciclo de Trânsito propicia para a sua evolução pessoal e material.</p>
-            </div>
+        ${idVideoIntrotransito ? gerarPlayerYouTube(idVideoIntrotransito) : ""} </div> 
 
 <div class="grupo-respostas-bloco pula-pagina">
      <div style="text-align:left; margin-bottom:15px;">
