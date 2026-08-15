@@ -1912,7 +1912,7 @@ function gerarTodosOsGraficosMomento(res, faltantes, nomeRaw, d3, regenteMatriz,
                 <div style="margin-top: 20px; margin-bottom: 30px; break-inside: avoid; border: 1px solid #ffffff; padding: 25px; border-radius: 12px; background: #fff; border-top: 5px solid ${cor};">
                 
             `;
-
+const idVideoIntrograficosMom = "z1nW3rmNeEI"; 
             // SE FOR O PRIMEIRO ITEM (FÍSICO), INJETA O TÍTULO E INTRODUÇÃO AQUI DENTRO
             if (index === 0) {
                 html += `
@@ -1926,7 +1926,7 @@ function gerarTodosOsGraficosMomento(res, faltantes, nomeRaw, d3, regenteMatriz,
                         </div>
                         <div style="font-size: 18px; line-height: 1.6; color: #333; text-align: justify; max-width: 95%; margin: 0 auto;">
                             <p style="margin:0;">Os <b>Potenciais do Momento</b> revelam como suas habilidades naturais estão sendo filtradas pelo ciclo atual. Esta análise indica quais talentos estão mais vibrantes e quais exigem mais atenção agora, servindo como um guia prático para este período específico.</p>
-                        </div>
+                       ${idVideoIntrograficosMom ? gerarPlayerYouTube(idVideoIntrograficosMom) : ""} </div>
                     </div>
                 `;
             }
@@ -2125,7 +2125,7 @@ function montarHtmlPlanosNatural(nome) {
     console.log("Sigla gerada:", sigla);
 
     const perfilNatInfo = perfilEscolhido[dados.dominantePerfil] || { conteudo: "", videoID: "" };
-
+   const idVideoIntropilares = "z1nW3rmNeEI"; 
     // 4. Início da construção do HTML
     let html = `
         <div class="secao-card quebra-pagina">
@@ -2137,7 +2137,7 @@ Os <strong>4 Pilares do Instinto Natural</strong> revelam como sua energia está
 
 <p>
 Esses pilares fazem parte da sua estrutura natural e acompanham você durante toda a vida. Eles representam tendências da sua personalidade, seus pontos de maior potencial e os aspectos que podem exigir mais equilíbrio, servindo como uma das bases para compreender seu comportamento e a forma como você enfrenta os desafios da sua jornada.
-</p>`)}
+</p>`)}    ${idVideoIntropilares ? gerarPlayerYouTube(idVideoIntropilares) : ""}
             </div>
 
             <div style="text-align: center; margin: 30px 0;">
