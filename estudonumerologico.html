@@ -6174,9 +6174,18 @@ const dadosProximoAno = textos.anoPessoal[proximoAnoPessoal] || { conteudo: "Con
 // BLOCO 1: ANO PESSOAL ATUAL + SEUS MESES
 // =========================================================
     // 2. Busca os dados da INTRODUÇÃO (NOVO: aceita Objeto com videoID ou String)
-    const dadosIntroano = textos.introducoes ? textos.introducoes : "";
-    const conteudoIntroano = (typeof dadosIntroano === 'object' && dadosIntroano !== null) ? dadosIntroano.conteudo : dadosIntroano;
-    const videoIntroano = (typeof dadosIntroano === 'object' && dadosIntroano !== null) ? dadosIntroano.videoID : null;
+// 2. Busca os dados da INTRODUÇÃO ESPECÍFICA de Ano Pessoal (aceita Objeto com videoID ou String)
+const dadosIntroano = (textos.introducoes && (textos.introducoes.anoPessoal || textos.introducoes.ano)) 
+    ? (textos.introducoes.anoPessoal || textos.introducoes.ano) 
+    : "";
+
+const conteudoIntroano = (typeof dadosIntroano === 'object' && dadosIntroano !== null) 
+    ? dadosIntroano.conteudo 
+    : dadosIntroano;
+
+const videoIntroano = (typeof dadosIntroano === 'object' && dadosIntroano !== null) 
+    ? dadosIntroano.videoID 
+    : null;
 // Título Ano Atual
 tituloBonito = "Ano Pessoal";  
 html += `
@@ -6189,7 +6198,8 @@ html += `
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${nomesExibicao.anoPessoal} - Ciclo Atual</h2>
    
         <div class="intro-texto" style="margin-bottom: 1px; font-style:arial; color:#555;">
-            ${aplicarFiltroTexto(conteudoIntroano || "")} ${videoIntroano ? gerarPlayerYouTube(videoIntroano) : ""} 
+           ${aplicarFiltroTexto(conteudoIntroano || "")}
+        ${videoIntroano ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntroano)}</div>` : ""}
         </div>`;
 
         // Título Ano Atual
