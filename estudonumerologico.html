@@ -6033,7 +6033,7 @@ html += `
     tituloBonito = sec === "ciclos" ? "Ciclos da Vida" : 
                    sec === "momentos" ? "Momentos de decisão" : "Desafios de Jornada";    
     // 2. Busca os dados da INTRODUÇÃO (NOVO: aceita Objeto com videoID ou String)
-    const dadosIntroo = textos.introducoes ? textos.introducoes[chave] : "";
+   const dadosIntroo = (textos.introducoes && textos.introducoes[sec]) ? textos.introducoes[sec] : "";
     const conteudoIntroo = (typeof dadosIntroo === 'object' && dadosIntroo !== null) ? dadosIntroo.conteudo : dadosIntroo;
     const videoIntroo = (typeof dadosIntroo === 'object' && dadosIntroo !== null) ? dadosIntroo.videoID : null;
 
