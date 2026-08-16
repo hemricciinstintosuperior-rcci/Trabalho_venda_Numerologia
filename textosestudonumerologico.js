@@ -7090,7 +7090,7 @@ videoID: "z1nW3rmNeEI"
 <p>Existe uma resistência a ideais humanitários, por uma incapacidade momentânea de perceber o todo de forma integrada, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Seu aprendizado envolve abrir-se para a percepção de que você faz parte de um organismo vivo, permitindo que sua intuição guie suas escolhas para caminhos de benefício coletivo. A felicidade duradoura nasce da compreensão de que o bem do outro é o seu próprio bem refletido.</p>
 
 <p>Para otimizar essa vibração, envolva-se em causas que exijam desprendimento, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao agir com ética universal, o universo passa a conspirar a seu favor, trazendo sincronicidades que sua mente egoica não atrairia sozinha. O seu sucesso vem da transformação da sua visão limitada em uma sabedoria generosa, consolidando uma trajetória marcada pelo perdão e por um legado de luz que traz paz para o seu coração.</p>`,
-videoID: "z1nW3rmNeEI"
+videoID: "m9WVZqdmrr4"
     },     
 }
 }
@@ -7103,121 +7103,154 @@ videoID: "z1nW3rmNeEI"
       1: {
      conteudo:`<p>Este ciclo traz um lampejo de força e proatividade que impulsiona a sua execução material, <strong>MASCULINO-FEMININO-NEUTRO</strong>. É um momento de iniciativa acentuada, ideal para você tirar projetos do papel e liderar processos que exigem decisões rápidas. Se o seu plano natural for mais contido, aproveite esta vitalidade extra para desbravar caminhos que antes pareciam difíceis; se já for uma característica inata, sua potência realizadora agora atinge o ápice de eficiência técnica.</p>
 <p>A energia atual favorece a conquista de metas tangíveis e a superação de qualquer inércia que estivesse travando seus passos. O aprendizado do período é canalizar esse vigor com disciplina para que seu entusiasmo não se disperse em faíscas momentâneas. É hora de usar essa autonomia para construir uma independência sólida, equilibrando a coragem de começar com a persistência necessária para concluir cada tarefa com excelência e domínio sobre a matéria.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       2: {
      conteudo:`<p>A fase atual destaca uma energia física voltada para a cooperação e o equilíbrio rítmico nas suas ações, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Há uma facilidade maior em sustentar projetos de longo prazo através da diplomacia e do trabalho em equipe. Caso sua natureza original seja de muita pressa, este momento convida você a desacelerar e observar o cenário com estratégia; se a base natural já for cooperativa, sua habilidade em mediar conflitos se torna o seu grande diferencial agora.</p>
 <p>O desafio do momento é não depender excessivamente do suporte externo para agir, mantendo o seu próprio motor interno ligado. Sua vitalidade flui melhor em ambientes organizados e parcerias saudáveis. Cultivar a autossuficiência garantirá que seu progresso não fique condicionado ao ritmo alheio, permitindo que sua sensibilidade técnica se transforme em resultados minuciosos, seguros e amplamente reconhecidos por sua qualidade superior.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       3: {
      conteudo:`<p>Este período é marcado por uma vitalidade versátil e contagiante em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, facilitando sua adaptação a múltiplas funções. Sua produtividade ganha um tom mais leve e criativo, ideal para quem precisa expandir contatos ou inovar na forma de trabalhar. Se o seu plano natural for rígido, aproveite este frescor para flexibilizar sua rotina; se já for dinâmico, tome cuidado para que a dispersão não impeça a finalização dos seus compromissos.</p>
 <p>A ação agora caminha junto com a sua capacidade de autoexpressão. O segredo para aproveitar este fluxo é direcionar o entusiasmo para alvos específicos, evitando abraçar o mundo de uma só vez. Ao somar o brilho da inovação com uma base mínima de organização, sua imagem pública ganha carisma e sua trajetória material se torna muito mais estimulante, permitindo que você monetize seus talentos de forma muito mais rápida e eficiente.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       4: {
      conteudo:`<p>O momento exige de você foco em estrutura, disciplina e construção de bases sólidas na matéria, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua energia física agora favorece o método e a perseverança em tarefas que exigem planejamento detalhado. Se o seu plano natural for instável, use esta fase para colocar sua vida em ordem; se já for alguém metódico, sua capacidade de entrega atinge níveis de confiabilidade exemplares, consolidando um legado duradouro para o futuro.</p>
 <p>Sua resistência física está em alta para suportar pressões externas, mas é fundamental não se tornar refém de uma rigidez excessiva. Valorizar os processos e as normas garantirá que você colha resultados tangíveis e seguros. O aprendizado atual é unir a tradição com a eficiência máxima, transformando seu esforço contínuo em autoridade sobre os frutos colhidos, garantindo que cada hora trabalhada se transforme em patrimônio real e estabilidade.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       5:{
      conteudo: `<p>Esta é uma fase de movimento acelerado e grande adaptabilidade material para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua energia física busca liberdade, sendo um excelente momento para viagens, mudanças ou experimentação de novos métodos de trabalho. Se sua base natural for estática, use este lampejo de ousadia para romper com a monotonia; se já for alguém inquieto, o desafio será não abandonar projetos pela metade na busca por novidades.</p>
 <p>Mudanças repentinas funcionam como combustível para o seu sucesso agora. Para extrair o melhor deste ciclo, é preciso foco para transformar sua agilidade em realização estável. Seu magnetismo pessoal facilita conexões rápidas e vendas, mas a atenção à saúde física é vital para evitar o esgotamento por excesso de estímulos. Aproveite a coragem do momento para se reinventar profissionalmente e descobrir novas fontes de renda através da sua versatilidade.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       6: {
      conteudo:`<p>O ciclo atual direciona seu vigor físico para as responsabilidades familiares e a harmonia do seu ambiente de trabalho, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma disposição maior para você cuidar, organizar e servir, tornando-se um pilar de sustentação prática para quem está ao redor. Se o seu plano natural for individualista, este momento ensina o valor da cooperação; se já for alguém cuidador, o aprendizado é estabelecer limites para não se sobrecarregar.</p>
 <p>Sua produtividade agora está ligada ao seu senso de ética e ao zelo pelos mínimos detalhes. O trabalho ganha um ar de missão, transformando seus espaços e rotinas em algo muito mais funcional e acolhedor. Buscar o equilíbrio entre o dever e o autocuidado é essencial para que sua generosidade não resulte em fadiga, permitindo que sua trajetória material seja fonte de satisfação e que você seja admirado pela utilidade e perfeccionismo das suas ações.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       7: {
      conteudo:`<p>Sua energia física agora se torna mais seletiva e estratégica, <strong>MASCULINO-FEMININO-NEUTRO</strong>, focando na eficiência técnica e no seu aperfeiçoamento. Não há espaço para desperdício de vigor; a ação só ocorre quando há um propósito claro por trás de cada movimento. Se sua natureza original for impulsiva, aproveite este silêncio para planejar melhor; se já for alguém introspectivo, sua especialização atingirá níveis de expertise raros neste período.</p>
 <p>O seu progresso material acontece de forma elegante, silenciosa e extremamente precisa. Ambientes calmos potencializam sua entrega agora. O desafio é não permitir que o excesso de análise gere paralisia física ou procrastinação. Ao confiar na sua sabedoria prática e respeitar o seu próprio ritmo biológico, soluções complexas surgem com naturalidade, consolidando uma trajetória de profundo respeito e uma sofisticação técnica que poucos conseguem alcançar.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       8: {
      conteudo:`<p>Este é um ciclo de grande potência executiva e foco total em resultados financeiros e autoridade para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua energia física favorece a liderança e o gerenciamento de recursos complexos com determinação férrea. Se o seu plano natural for desapegado, aproveite este impulso para estruturar sua vida financeira; se já for alguém ambicioso, o momento é de expansão máxima e conquista de prestígio.</p>
 <p>Sua determinação atual permite superar limites físicos em prol de metas grandiosas e lucros expressivos. É fundamental equilibrar essa busca pelo sucesso com períodos de recuperação para manter a longevidade do seu motor produtivo. A competência demonstrada por você atrai investimentos e parcerias sólidas. Ao dominar a estratégia material agora, o topo da montanha se torna um destino certo, alcançado com ética, visão de futuro e uma força realizadora imparável.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       9:    {
     conteudo:`<p>O momento atual pede que seu esforço físico seja colocado a serviço de causas maiores ou propósitos coletivos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua vitalidade é alimentada pela inspiração e pelo desejo de deixar um legado social através do que você faz. Se sua base natural for puramente prática, este ciclo traz uma visão mais humana ao trabalho; se já for um idealista, o desafio é manter os pés no chão para que os sonhos não se percam.</p>
 <p>A sua satisfação material agora vem do sentimento de utilidade global e do impacto positivo que você gera. A generosidade na execução das suas tarefas atrai colaboradores que compartilham da mesma visão que a sua. É vital cuidar da sua energia física através do contato com a natureza, evitando a carga emocional excessiva. Ao finalizar cada etapa com entrega total, sua trajetória ganha um sentido profundo, transformando a realidade ao redor e atraindo abundância por merecimento.</p>`,
        
+       
        videoID: "F8bg1CTQ9HI"
-}, },
+}, 
+    
+    },
 
     medio: {
       1: {
      conteudo:`<p>Há uma boa capacidade de iniciativa neste período para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, especialmente quando o objetivo é claro e estimulante. Sua energia física responde bem ao estabelecimento de metas, permitindo que novas frentes de trabalho sejam abertas com segurança. Se o seu plano natural for mais passivo, aproveite este fôlego para começar algo; se já for proativo, use esta fase para refinar sua constância.</p>
 <p>O equilíbrio entre seu impulso inicial e a disciplina será o diferencial para que o potencial se transforme em resultados visíveis na matéria. Sua autonomia está presente, mas o reconhecimento externo ainda funciona como um combustível importante para sua motivação. Ao cultivar a paciência para os tempos de maturação dos seus projetos, sua trajetória material flui com mais integridade, garantindo que o sucesso acumulado seja sustentável e duradouro.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       2: {
      conteudo:`<p>Sua ação prática agora se manifesta de forma discreta e cooperativa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, priorizando a harmonia nas suas relações profissionais. A iniciativa surge naturalmente em climas de ajuda mútua, onde o esforço conjunto dilui a pressão individual. Se sua natureza for competitiva, este ciclo ensina a força da diplomacia; se já for alguém mediador, sua habilidade em cuidar dos detalhes tornará a entrega final impecável.</p>
 <p>Fortalecer sua independência nas decisões é o passo necessário para não sobrecarregar seu rendimento com demandas alheias. Seu ritmo é constante e seguro, preferindo o passo a passo aos riscos impensados. Ao manter seus ambientes organizados e confiar na sua capacidade de realizar sem precisar de validação constante, o seu progresso material ocorre de maneira suave, respeitosa e com uma base de apoio sólida ao seu redor.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       3: {
      conteudo:`<p>Este momento traz uma energia dinâmica e versátil em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, ideal para movimentar projetos parados e injetar ânimo na sua rotina. Sua disposição física aumenta quando a tarefa permite interação social ou criatividade. Se o seu plano natural for monótono, use este ciclo para diversificar suas atividades; se já for comunicativo, organize as prioridades para que sua energia não se disperse em muitas direções.</p>
 <p>O segredo agora é concluir o que foi iniciado com o mesmo entusiasmo que você teve na abertura do projeto. Intercalar suas obrigações com momentos de descontração mantém seu corpo ativo e evita o tédio improdutivo. Ao focar na qualidade técnica da execução, sua trajetória ganha um colorido especial, unindo a competência a uma alegria de realizar que inspira todos ao redor e abre portas para novas parcerias comerciais.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       4: {
      conteudo:`<p>O seu foco atual reside na organização e na construção material através do planejamento detalhado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua energia física responde bem a rotinas estruturadas e indicadores de desempenho claros. Se sua base natural for desorganizada, este é o momento ideal para você criar hábitos sólidos; se já for alguém disciplinado, sua produtividade cresce ao refinar os métodos de trabalho.</p>
 <p>A ordem externa reflete sua clareza interna, facilitando a execução de tarefas complexas que antes pareciam pesadas. É importante equilibrar sua rigidez com pausas para relaxamento, garantindo que o motor da sua produtividade não sofra desgaste. Ao consolidar cada etapa com paciência e respeitar os processos naturais do tempo, seu sucesso material se torna uma construção inabalável perante qualquer crise externa, gerando respeito e segurança financeira.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       5: {
      conteudo:`<p>Sua fase atual é de pura adaptabilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, respondendo prontamente a mudanças e novos estímulos no ambiente. O dinamismo marca sua atuação material, sendo o momento ideal para agir sob pressão ou aproveitar oportunidades de última hora. Se sua natureza for rígida, este lampejo de agilidade ajudará na renovação; se já for versátil, o desafio será manter a continuidade nas metas principais para gerar lucro real.</p>
 <p>Sua liberdade de ação é fundamental para manter a vitalidade e evitar o estresse causado pelo tédio ou pela repetição. Canalizar sua inquietude para a criatividade prática trará resultados surpreendentes para o seu bolso. Ao aprender a pausar e avaliar a direção do vento antes de agir, o seu progresso nunca para, transformando sua coragem de experimentar em uma ferramenta poderosa de crescimento econômico e expansão de horizontes.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       6:{
      conteudo: `<p>Existe em você uma disposição equilibrada para assumir responsabilidades e cuidar da harmonia coletiva agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua produtividade cresce quando o trabalho contribui para a estabilidade do seu lar e da comunidade. Se o seu plano natural for focado apenas em si, este ciclo desperta o senso de serviço; se já for alguém dedicado, o aprendizado é aprender a delegar para preservar sua própria vitalidade.</p>
 <p>O esforço feito por você com zelo e ética gera frutos sólidos e reconhecimento imediato. É essencial reservar momentos para o seu próprio lazer, garantindo que sua generosidade não se transforme em sobrecarga física. Ao cultivar o autocuidado na mesma medida em que organiza o mundo ao redor, sua trajetória material se torna uma fonte de satisfação profunda e um legado inestimável que traz paz de espírito e conforto material para você e os seus.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       7: {
      conteudo:`<p>Sua ação prática agora é seletiva e direcionada a áreas de interesse técnico ou pesquisa profunda, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua vitalidade oscila entre picos de foco intenso e a necessidade de recolhimento para sua recuperação energética. Se sua base natural for agitada, este momento convida você à precisão; se já for alguém analítico, o refinamento dos seus métodos fará com que sua entrega seja diferenciada e respeitada.</p>
 <p>Ambientes calmos são essenciais para que sua mente comande seu corpo com eficácia máxima. O desafio é manter uma comunicação clara com o mundo externo enquanto você mergulha na busca pela excelência técnica. Ao confiar na sabedoria adquirida ao longo do tempo, problemas complexos são resolvidos com facilidade, consolidando uma imagem de competência, seriedade e expertise única que coloca você em uma posição de destaque no mercado.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       8: {
      conteudo:`<p>O momento traz para você uma capacidade sólida de realização material com foco em objetivos concretos e estabilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua energia física responde bem a desafios competitivos e metas ambiciosas. Se sua natureza for pouco ambiciosa, aproveite este ciclo para estruturar seu patrimônio; se já for alguém focado no poder, use esta fase para gerir seu tempo de forma mais inteligente.</p>
 <p>Sua determinação atual ajuda você a superar o cansaço em prol de benefícios maiores e conquistas duradouras. É importante não deixar que a busca pelo sucesso se torne uma obsessão, valorizando também as pequenas vitórias do caminho. Ao unir sua força física à estratégia mental com ética, o reconhecimento da sua competência atrai novas oportunidades de liderança e investimentos lucrativos que consolidam sua autoridade material.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       9: {
      conteudo:`<p>Sua energia física agora se volta para projetos com impacto coletivo e propósito humanitário, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua disposição é maior quando há uma conexão emocional com o trabalho realizado. Se o seu plano natural for puramente técnico, este ciclo traz inspiração extra; se já for um idealista, transforme sua visão ampla em passos práticos para evitar a frustração com a lentidão dos resultados.</p>
-<p>Sua vitalidade se renova ao perceber que sua ação contribui para o bem comum de alguma forma. Praticar o desapego de resultados imediatos permite que seu trabalho flua com serenidade e menos pressão. Ao agir como um agente de mudança no plano material e encerrar ciclos com gratidão, sua trajetória ganha um sentido profundo, preparando o terreno para desafios ainda maiores e uma realização que transcende o simples ganho financeiro.</p>`
-   },
+<p>Sua vitalidade se renova ao perceber que sua ação contribui para o bem comum de alguma forma. Praticar o desapego de resultados imediatos permite que seu trabalho flua com serenidade e menos pressão. Ao agir como um agente de mudança no plano material e encerrar ciclos com gratidão, sua trajetória ganha um sentido profundo, preparando o terreno para desafios ainda maiores e uma realização que transcende o simples ganho financeiro.</p>`,
+       
+  videoID: "m9WVZqdmrr4"
+    }, 
+      },
 
     fraco: {
       0: {
      conteudo:`<p>Sua energia física manifesta-se de forma pouco consistente agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>, dificultando a concretização de metas imediatas. Sua ação prática depende muito de estímulos externos ou cobranças para acontecer de fato. Se sua natureza for forte, este é um período de repouso forçado; se já for uma característica inata, o desafio é vencer a inércia criando uma estrutura mínima de compromissos diários.</p>
 <p>O seu aprendizado atual é dividir tarefas em etapas minúsculas para diminuir o peso da responsabilidade sobre seus ombros. Buscar pequenas motivações internas ajudará você a vencer a barreira do desânimo físico ou da procrastinação. Ao reconhecer esses limites e trabalhar neles com calma, seu corpo aos poucos recupera o motor da ação, transformando a contemplação em passos pequenos, mas constantes e produtivos, que evitam a estagnação completa.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       1: {
      conteudo:`<p>Neste ciclo, suas ideias e intenções tendem a sobressair à sua ação concreta, <strong>MASCULINO-FEMININO-NEUTRO</strong>, o que pode gerar frustração por não ver resultados palpáveis. Sua vitalidade oscila, dificultando a sustentação de projetos que exigem regularidade. Se o seu plano natural for realizador, use sua base estática para forçar o início das tarefas; se já for alguém sonhador, este momento pede um esforço redobrado para colocar o primeiro tijolo no chão.</p>
 <p>Seu desafio é não se perder em um perfeccionismo mental que adia o necessário por medo de não ser perfeito. Desenvolver hábitos inegociáveis ajudará você a manifestar seu potencial de iniciativa de forma realista. Ao focar na finalização de pequenas obrigações diárias, sua confiança física cresce, provando que sua capacidade de realização está presente e apenas aguarda um comando firme da sua vontade para transformar planos em realidade material.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       2: {
      conteudo:`<p>A fase atual traz a você uma tendência a evitar confrontos materiais e esforços físicos exaustivos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua iniciativa pode hesitar diante de grandes responsabilidades financeiras ou decisões que envolvam riscos. Se sua natureza for ousada, este momento pede cautela e apoio de terceiros; se já for alguém sensível, o aprendizado é não transformar a cooperação em uma muleta que impeça sua autonomia.</p>
 <p>Respeitar os limites do seu organismo é vital para evitar o esgotamento precoce ou o estresse acumulado. Construir sua autoconfiança de forma gradual permitirá uma atuação mais segura e independente no futuro próximo. Ao cercar-se de ambientes equilibrados e aprender a ser assertivo na defesa dos próprios interesses, sua energia física se estabiliza, transformando sua sensibilidade em uma estratégia inteligente para alcançar metas cuidadosas e seguras.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       3: {
      conteudo:`<p>Sua energia física agora tende a se dispersar facilmente, <strong>MASCULINO-FEMININO-NEUTRO</strong>, dificultando o encerramento de ciclos e projetos iniciados. Sua motivação inicial é alta, mas sua força de execução diminui quando a novidade passa. Se o seu plano natural for disciplinado, use essa base para manter o foco; se já for alguém versátil, o desafio é não abandonar projetos no meio do caminho por resistência à rotina ou burocracia.</p>
 <p>O seu aprendizado atual é entender que a persistência é o que separa o seu talento da realização de fato. Usar metas diárias que tragam satisfação imediata pode ajudar você a combater a dispersão e o tédio. Ao canalizar seu entusiasmo para um único objetivo por vez, sua produtividade atinge novos patamares, unindo sua criatividade natural à eficiência de uma entrega bem acabada, lucrativa e que realmente faça a diferença no seu plano material.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       4:{
      conteudo: `<p>A manutenção de rotinas e métodos pode exigir de você um esforço consciente e cansativo neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma resistência interna a controles rígidos ou tarefas que demandam persistência extrema. Se sua natureza for metódica, este é um momento de fadiga que pede simplificação; se já for alguém avesso a regras, o desafio é transformar a obrigação em hábito para não prejudicar sua segurança material.</p>
 <p>Sua estabilidade agora não vem da sorte, mas da repetição estratégica de atos simples e constantes. Criar um espaço de trabalho funcional e livre de distrações é o primeiro passo para você vencer a procrastinação. Ao encarar os desafios materiais como degraus necessários para sua independência, seu corpo passa a entender a finalidade do esforço e sua disposição física tende a aumentar gradualmente, trazendo mais segurança e ordem para sua vida.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       5: {
      conteudo:`<p>Neste ciclo, sua vitalidade física pode oscilar drasticamente, <strong>MASCULINO-FEMININO-NEUTRO</strong>, dificultando a constância em hábitos de saúde e rotinas de trabalho. A falta de um fio condutor pode gerar instabilidade profissional se você não tiver cuidado. Se sua base natural for estável, use-a como âncora; se já for alguém instável, o aprendizado é encontrar o equilíbrio entre o seu desejo de liberdade e a necessidade de bases sólidas.</p>
 <p>Adotar práticas que tragam foco e presença ajudará você a mitigar a impaciência atual e a ansiedade por resultados. É essencial aprender a concluir seus compromissos atuais antes de buscar novas aventuras ou mudanças de rota. Ao dominar sua própria inquietude, sua trajetória ganha força real, permitindo que as mudanças sejam degraus para o seu progresso, e não apenas fugas de uma monotonia que incomoda sua mente e desgasta seu corpo.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       6: {
      conteudo:`<p>As demandas práticas e familiares podem ser sentidas como um fardo pesado por você agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>, gerando sobrecarga física. Existe uma tendência a negligenciar detalhes burocráticos ou de manutenção básica. Se sua natureza for protetora, este é um alerta para você cuidar de si primeiro; se já for alguém com dificuldade em assumir deveres, o aprendizado é entender que a harmonia depende da execução das tarefas.</p>
 <p>Simplificar sua rotina e aprender a delegar responsabilidades são estratégias inteligentes para preservar sua saúde neste momento. O reconhecimento externo virá quando sua entrega for mais constante e menos pautada pelo seu estado de ânimo momentâneo. Ao transformar seu cuidado em ação organizada, sua vitalidade se renova, permitindo que você viva suas obrigações com mais leveza, eficiência e menos queixas, melhorando o clima ao seu redor.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       7: {
      conteudo:`<p>Sua energia física está voltada para o interno, <strong>MASCULINO-FEMININO-NEUTRO</strong>, preferindo a reflexão à execução ativa no mundo exterior. Isso pode gerar um distanciamento da realidade material e certa negligência com os cuidados do corpo. Se o seu plano natural for dinâmico, aproveite para planejar, mas não pare de se mover; se já for introspectivo, o desafio é não se tornar meramente teórico e manter a conexão com a prática.</p>
 <p>Integrar movimentos conscientes no seu dia a dia é fundamental para o seu equilíbrio entre mente e matéria agora. Seu corpo precisa de circulação e ação para não estagnar sob o peso do seu intelecto ou das suas preocupações. Ao dar comandos claros para que seu organismo execute o que sua mente decide, sua trajetória ganha sofisticação e sua sabedoria acumulada se transforma em soluções úteis, palpáveis e que trazem resultados reais para sua vida.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       8: {
      conteudo:`<p>A competitividade e a busca por grandes lucros podem não ser suas prioridades naturais agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>, fazendo com que resultados concretos surjam de forma lenta. Pode haver dificuldade em lidar com pressões por produtividade imediata. Se sua natureza for ambiciosa, use seu plano original para retomar o comando; se já for alguém desapegado, o aprendizado é entender que o poder material é uma ferramenta para sua segurança.</p>
 <p>Evitar suas responsabilidades financeiras só adia a conquista da sua liberdade real. Buscar mentores ou métodos claros de ação ajudará você a fortalecer a confiança na sua própria capacidade de execução estratégica. Quando você percebe que seu esforço traz um retorno justo e mensurável, sua produtividade cresce naturalmente e sua liderança surge como consequência da sua coragem em encarar os desafios de frente, sem medo do sucesso.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       9: {
      conteudo:`<p>Neste período, seu idealismo pode dispersar sua energia física, <strong>MASCULINO-FEMININO-NEUTRO</strong>, dificultando a conclusão de tarefas práticas e cotidianas. Sua motivação surge em picos de inspiração, mas sua rotina pode parecer automática ou desatenta. Se o seu plano natural for pragmático, use essa força para ancorar seus sonhos; se já for um visionário, o aprendizado é entender que o "fazer" é o palco onde sua verdade se manifesta.</p>
-<p>Transformar suas grandes causas em metas menores com prazos definidos fortalecerá sua capacidade realizadora agora. Cuidar do seu corpo como o templo de uma missão evita o desânimo e mantém seu vigor em alta para as batalhas diárias. Ao unir sua visão ampla aos pés fincados no chão, sua trajetória material ganha um sentido profundo, permitindo que suas intenções gerem mudanças concretas, duradouras e inspiradoras para todo o seu ambiente.</p>`
-   
+<p>Transformar suas grandes causas em metas menores com prazos definidos fortalecerá sua capacidade realizadora agora. Cuidar do seu corpo como o templo de uma missão evita o desânimo e mantém seu vigor em alta para as batalhas diárias. Ao unir sua visão ampla aos pés fincados no chão, sua trajetória material ganha um sentido profundo, permitindo que suas intenções gerem mudanças concretas, duradouras e inspiradoras para todo o seu ambiente.</p>`,
+       
+   videoID: "m9WVZqdmrr4"
+    },  
   }
 },
 
@@ -7226,62 +7259,90 @@ mental: {
       1: {
      conteudo:`<p>Neste ciclo, sua mente é invadida por uma clareza cortante e uma necessidade de comando intelectual, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Mesmo que sua base natural seja mais reservada, a vibração atual exige que você tome decisões rápidas e use sua racionalidade de forma pioneira agora. É um momento de "estalo" mental, onde as soluções surgem antes mesmo dos problemas se consolidarem no cotidiano.</p>
       <p>A força mental deste período serve como um motor para você tirar projetos do papel com autoridade. Se você sente que naturalmente falta foco, aproveite este ciclo para estruturar sua vida, pois sua capacidade de síntese e liderança intelectual está no ápice. O sucesso agora depende da sua coragem em sustentar suas ideias, mesmo que elas pareçam ousadas demais para o seu padrão habitual, garantindo seu lugar de destaque.</p>`,
-      
+      videoID: "m9WVZqdmrr4"
+    },  
       2: {
      conteudo:`<p>O momento atual coloca sua mente em um estado de observação refinada e diplomacia intelectual, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este ciclo traz a paciência necessária para você analisar todos os lados de uma questão antes de concluir qualquer negócio. Se sua base natural for impulsiva, sinta como este período atual "acalma" seus pensamentos, permitindo uma estratégia muito mais inteligente e detalhada agora.</p>
       <p>A vibração deste período favorece suas parcerias mentais e a troca de informações técnicas. É um ciclo excelente para estudos que exijam detalhamento e para negociações onde sua escuta valerá mais que a fala. Use esta energia de agora para ajustar os detalhes que passaram despercebidos no passado, construindo uma base de conhecimento sólida, harmoniosa e extremamente respeitada no seu meio profissional.</p>`,
-      
+      videoID: "m9WVZqdmrr4"
+    },  
       3: {
      conteudo:`<p>Sua agilidade mental e criatividade intelectual estão em plena expansão neste ciclo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento pede comunicação e troca de ideias; você sentirá que seus pensamentos estão mais coloridos e velozes agora. Se o seu natural é ser uma pessoa mais rígida, este período vem para quebrar essa dureza, trazendo insights brilhantes e uma forma mais leve de resolver conflitos.</p>
       <p>Aproveite este ciclo para você vender suas ideias e expandir seus contatos de forma magnética. Sua mente está brilhante e consegue convencer os outros pelo entusiasmo genuíno. O desafio atual é não dispersar essa energia em muitas direções; escolha as melhores ideias que surgirem agora e dê a elas a expressão que sua natureza talvez tenha dificuldade de dar em outros tempos, colhendo frutos através da sua popularidade.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       4: {
      conteudo:`<p>O foco mental deste período é a estruturação e a disciplina lógica implacável para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este ciclo traz uma capacidade de concentração extraordinária, ideal para organizar métodos, fluxos de trabalho e planejamentos de longo prazo agora. Se você possui uma base natural mais dispersa, sinta como o momento atual "ancora" seus pensamentos, trazendo a seriedade necessária para concluir tudo.</p>
       <p>É uma fase de construção intelectual sobre rocha firme. O momento não favorece improvisos, mas sim a técnica apurada e o esforço mental contínuo que você aplicar. Use esta energia atual para colocar ordem no caos da sua rotina; a clareza que você ganha agora servirá de alicerce inabalável para todos os seus próximos passos, garantindo que sua produtividade seja reconhecida pela precisão e segurança.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       5: {
      conteudo:`<p>Sua mente atravessa um ciclo de rápida renovação e inquietude produtiva agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento exige versatilidade e a quebra de paradigmas intelectuais; você sentirá uma necessidade quase física de aprender algo novo e mudar sua forma de pensar. Se o seu natural é buscar rotina, este ciclo vem para te libertar, mostrando que sua inteligência se fortalece na adaptação constante.</p>
       <p>A vibração atual é ideal para você lidar com tecnologia, viagens e novos mercados que exijam rapidez. Sua velocidade de raciocínio está acima da média, permitindo que você aprenda em dias o que antes levaria meses. O sucesso neste ciclo vem da sua capacidade de fluir com os imprevistos, usando a mente como uma ferramenta de navegação veloz e astuta no mar das mudanças, abrindo portas para lucros inesperados.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       6: {
      conteudo:`<p>O ciclo atual direciona sua inteligência para o equilíbrio, a ética e a resolução de problemas coletivos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua mente está operando sob um filtro de responsabilidade e cuidado social agora. Se sua base natural for mais individualista, sinta como este momento expande sua visão, tornando sua lógica muito mais humana, conciliadora e voltada para o bem-estar de quem você estima.</p>
       <p>É um excelente período para decisões que envolvam o lar, bem-estar e justiça. Sua capacidade de organizar o ambiente através do pensamento harmônico está em destaque. Use a força mental deste ciclo para curar desentendimentos antigos através de uma lógica amorosa, mas firme em seus princípios éticos, consolidando uma imagem de autoridade justa e conselheira que atrai a confiança de todos.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       7: {
      conteudo:`<p>Este é um ciclo de profunda especialização intelectual e análise criteriosa para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua mente busca agora o que está oculto, a raiz dos problemas e o conhecimento técnico ou espiritual profundo. Se sua natureza é mais agitada, o momento atual "convoca" você para o silêncio e para o estudo sério, trazendo uma sabedoria que não depende de validações externas.</p>
       <p>A vibração atual favorece o seu planejamento estratégico e a pesquisa de alto nível. Você não se contentará com respostas fáceis agora, buscando a perfeição no que analisa. Use este período para se tornar autoridade máxima em um assunto ou para organizar sua filosofia de vida; a clareza interior que você conquista neste ciclo será seu maior diferencial competitivo, permitindo que você enxergue o que ninguém mais vê.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       8: {
      conteudo:`<p>Sua mentalidade está operando com um foco absoluto em resultados, autoridade e progresso material agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O ciclo traz uma visão estratégica de "tabuleiro", onde você consegue enxergar as jogadas futuras com precisão executiva. Se sua base natural tem dificuldades com finanças, este momento vem para te dar a força necessária para liderar e gerir grandes recursos.</p>
       <p>Aproveite esta energia para você reestruturar seus negócios ou sua carreira com mãos de ferro. Sua lógica está pragmática e voltada para a eficiência total. O desafio do momento é não ser excessivamente frio nas decisões; use a potência mental deste ciclo para criar prosperidade real, transformando seus pensamentos em ativos concretos, respeitados e altamente lucrativos que garantam seu poder.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       9:{
      conteudo: `<p>Este ciclo traz uma mente ampla, humanitária e voltada para as conclusões de grandes etapas para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua lógica agora está conectada com o "todo", permitindo uma compreensão profunda dos ciclos da vida e das necessidades alheias. Se o seu natural é o apego aos detalhes pequenos, este momento vem para expandir seu horizonte, trazendo uma sabedoria transcendental e generosa.</p>
       <p>É um período de síntese intelectual absoluta. Use esta energia atual para finalizar projetos pendentes e para ensinar o que você aprendeu com maestria. Sua mente está em uma fase de "limpeza", descartando pensamentos obsoletos para abrir espaço para o novo ciclo. A clareza que você ganha agora é o fechamento de ouro para sua história, permitindo que você transite para a próxima fase com total desapego e lucidez.</p>`,
-
+       
+videoID: "m9WVZqdmrr4"
+    },  
 
       },
 
     medio: {
       1: {
      conteudo:`<p>Nesta fase, sua iniciativa mental aparece de forma equilibrada, permitindo que você tome decisões com autonomia sem perder o senso de realidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento favorece o início de pequenos projetos onde sua identidade precise aparecer, mas sem a pressão de grandes riscos. É um ciclo de "aquecimento" intelectual necessário para você preparar o terreno de conquistas futuras.</p>`,
-      2: {
+     videoID: "m9WVZqdmrr4"
+    },  
+       2: {
      conteudo:`<p>O ciclo atual favorece a análise ponderada e a cooperação mental para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você consegue entender o ponto de vista alheio sem anular seus próprios pensamentos. É um momento de paz intelectual, ideal para você organizar acordos e manter a rotina fluindo através de uma comunicação gentil, eficiente e mediadora que evita desgastes desnecessários.</p>`,
-      3: {
+     videoID: "m9WVZqdmrr4"
+    },   
+     3: {
      conteudo:`<p>Sua mente está sociável e aberta a novidades neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento traz uma criatividade leve, ideal para você resolver problemas do dia a dia com um toque de originalidade e humor. Não há pressa intelectual, mas sim um desejo de tornar o aprendizado algo prazeroso e compartilhado, facilitando a absorção de novas habilidades sem o peso da cobrança excessiva.</p>`,
-      4: {
+     videoID: "m9WVZqdmrr4"
+    },  
+     4: {
      conteudo:`<p>A vibração atual traz uma organização mental satisfatória para suas tarefas rotineiras, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você sente que consegue manter a ordem sem grande esforço, focando no que é prático e necessário agora. É um ciclo de manutenção, onde sua mente busca segurança no que já conhece, garantindo que nenhum projeto saia dos trilhos por falta de atenção aos processos básicos.</p>`,
+      videoID: "m9WVZqdmrr4"
+    },  
       5: {
      conteudo:`<p>Nesta etapa, sua mente busca estímulos moderados e novas informações constantes, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento permite que você se adapte às mudanças do cotidiano com facilidade, sem a ansiedade dos ciclos mais fortes. É uma fase de aprendizado contínuo, onde sua curiosidade mental mantém você atualizado e pronto para aproveitar janelas de oportunidade que surgirem inesperadamente.</p>`,
-      6: {
+     videoID: "m9WVZqdmrr4"
+    },  
+       6: {
      conteudo:`<p>O foco mental do momento está no equilíbrio das suas responsabilidades diárias, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você lida com as questões lógicas com um senso de dever justo, buscando soluções que agradem ao grupo ou à família. É um ciclo de estabilidade intelectual voltado para o bem-estar do seu ambiente, onde sua clareza serve para harmonizar o convívio e organizar as necessidades comuns.</p>`,
-      7: {
+     videoID: "m9WVZqdmrr4"
+    },  
+        7: {
      conteudo:`<p>Observa-se agora uma inclinação para a reflexão e o estudo moderado em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento pede que você reserve pequenos períodos de solitude para organizar suas ideias, mas sem se isolar totalmente do mundo. É uma fase de "limpeza mental", onde você separa o que é útil do que é excesso de informação, ganhando uma clareza técnica muito mais apurada para agir.</p>`,
-      8: {
+    videoID: "m9WVZqdmrr4"
+    },  
+         8: {
      conteudo:`<p>Sua mente lida com a eficiência e a organização financeira de forma equilibrada neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O ciclo favorece o bom senso nas suas decisões materiais, permitindo que você gerencie seus recursos com maturidade. É o momento de você focar na estabilidade do seu progresso atual, agindo de forma pragmática para garantir que seus ganhos sejam preservados e bem administrados.</p>`,
-      9: {
+    videoID: "m9WVZqdmrr4"
+    },  
+          9: {
      conteudo:`<p>Este ciclo traz uma mente compreensiva e focada na finalização de tarefas para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você lida com o encerramento de processos de forma tranquila, entendendo que o momento pede desapego de ideias antigas. É uma fase de transição intelectual suave, onde você prepara o terreno mental para novos pensamentos e projetos que começarão a florescer em breve.</p>`,
-  },
+ videoID: "m9WVZqdmrr4"
+    },  
+          },
 
     fraco: {
       0: {
@@ -7290,23 +7351,41 @@ mental: {
 },
        1: {
      conteudo:`<p>O momento atual revela uma dificuldade em você tomar a iniciativa ou decidir sozinho, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma tendência a hesitar e buscar aprovação externa para cada pensamento simples. O desafio deste ciclo é você resgatar sua autoconfiança intelectual, lembrando que mesmo nas fases de "baixa", sua base natural de autonomia ainda existe e deve ser consultada em silêncio antes de agir.</p>`,
-      2: {
+     videoID: "m9WVZqdmrr4"
+    },  
+        2: {
      conteudo:`<p>A vibração atual dificulta sua percepção dos detalhes e sua paciência com o outro, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você pode se sentir mentalmente impaciente ou confuso diante de acordos e conversas triviais. O momento pede que você não force decisões importantes agora; prefira o silêncio e a observação básica até que sua clareza mental retorne gradualmente e você recupere o controle da situação.</p>`,
-      3: {
+     videoID: "m9WVZqdmrr4"
+    },  
+         3: {
      conteudo:`<p>Este ciclo traz um bloqueio na sua expressão criativa e na alegria de pensar, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua mente pode parecer "cinza" ou excessivamente técnica, perdendo o brilho da comunicação magnética. O desafio agora é não se cobrar tanto por ideias brilhantes; aceite que o momento é de poupar energia mental e foque apenas no que for estritamente funcional, sem forçar uma criatividade que pede repouso.</p>`,
-      4: {
+     videoID: "m9WVZqdmrr4"
+    },  
+          4: {
      conteudo:`<p>A organização mental pode parecer uma tarefa pesada neste período para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma tendência à dispersão ou ao tédio profundo com as responsabilidades práticas do cotidiano. O momento pede que você simplifique sua rotina o máximo possível, evitando assumir novos compromissos lógicos complexos até que este ciclo de baixa energia se encerre e sua disciplina retorne.</p>`,
-      5: {
+   videoID: "m9WVZqdmrr4"
+    },  
+           5: {
      conteudo:`<p>O momento atual traz para você uma dificuldade em aceitar mudanças ou aprender coisas novas rapidamente, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua mente pode estar operando de forma lenta e rígida, resistindo ao fluxo natural das circunstâncias atuais. O desafio do ciclo é você não lutar contra o novo; tente se adaptar aos poucos, respeitando o seu ritmo atual que está mais devagar por necessidade de equilíbrio.</p>`,
-      6: {
+    videoID: "m9WVZqdmrr4"
+    },  
+            6: {
      conteudo:`<p>A capacidade de organizar seu ambiente e lidar com responsabilidades familiares está em baixa nesta etapa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento pode trazer uma sensação de negligência mental com o grupo ao seu redor. Não se culpe agora; reconheça que sua bateria intelectual precisa de recarga e peça ajuda para manter as ordens básicas da vida enquanto este ciclo de cansaço mental passa.</p>`,
-      7: {
+     videoID: "m9WVZqdmrr4"
+    },  
+             7: {
      conteudo:`<p>Observa-se agora em você uma mente que foge da profundidade, preferindo a distração superficial, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento dificulta o estudo sério ou a reflexão que você normalmente faria. O desafio deste ciclo é não se perder em informações inúteis; tente manter o mínimo de foco em sua verdade interior para não se desconectar totalmente de si mesmo e das suas metas agora.</p>`,
-      8: {
+     videoID: "m9WVZqdmrr4"
+    },  
+              8: {
      conteudo:`<p>A gestão da sua vida prática e financeira pode parecer confusa ou desmotivadora neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma tendência a você evitar as grandes decisões de poder ou dinheiro. O momento pede cautela redobrada; não faça investimentos altos e use sua prudência para segurar as pontas até que sua autoridade mental se restabeleça e você sinta segurança para liderar novamente.</p>`,
-      9: {
-     conteudo:`<p>Este ciclo revela em você uma dificuldade em concluir processos ou perdoar erros do passado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua mente pode estar presa a detalhes inúteis, impedindo a visão do "todo" que você costuma ter. O desafio agora é praticar o desapego mental consciente, entendendo que esta fase de confusão serve para te mostrar o que realmente precisa ser deixado para trás para sua mente evoluir.</p>`
-
+    videoID: "m9WVZqdmrr4"
+    },  
+               9: {
+     conteudo:`<p>Este ciclo revela em você uma dificuldade em concluir processos ou perdoar erros do passado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua mente pode estar presa a detalhes inúteis, impedindo a visão do "todo" que você costuma ter. O desafio agora é praticar o desapego mental consciente, entendendo que esta fase de confusão serve para te mostrar o que realmente precisa ser deixado para trás para sua mente evoluir.</p>`,
+                
+videoID: "m9WVZqdmrr4"
+    },  
   }
 },
   
@@ -7315,86 +7394,134 @@ emocional: {
       1: {
      conteudo:`<p>Neste ciclo, sua sensibilidade é tomada por um ímpeto de coragem e autonomia afetiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento pede que você lidere suas relações com autenticidade, agindo com o coração de forma pioneira. É uma fase de "mergulho" emocional, onde a passividade não tem lugar; sinta a força de tomar as rédeas dos seus afetos agora.</p>
       <p>A energia atual favorece a cura de dependências emocionais através da autoafirmação. Se você costuma se anular pelos outros, aproveite este ciclo para estabelecer seus limites com firmeza e clareza. O sucesso afetivo agora depende da sua disposição em ser quem você realmente é, atraindo admiração pela sua honestidade emocional e pela coragem de seguir seu próprio coração sem medo do julgamento.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       2:{
      conteudo: `<p>A vibração atual coloca você em um estado de profunda empatia e necessidade de harmonia, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este momento favorece a mediação e o acolhimento, tornando você um ponto de paz para quem te rodeia. Use esta fase para fortalecer vínculos através da escuta e da cooperação, pois o ciclo pede união e suporte mútuo.</p>
       <p>O desafio do momento é manter sua paz interior mesmo em ambientes de conflito externo. Sua sensibilidade está aguçada para captar as necessidades silenciosas de quem você ama, o que torna suas parcerias muito mais sólidas. Ao exercitar a paciência e o acolhimento agora, você constrói uma reserva de gratidão e companheirismo que servirá de alicerce para todos os seus relacionamentos futuros.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       3: {
      conteudo:`<p>Suas emoções estão em um estágio de expansão solar e expressiva neste ciclo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento é ideal para você comunicar o que sente com leveza e criatividade. Sinta como este ciclo facilita o seu carisma e a alegria nas trocas afetivas, transformando a rotina em algo muito mais vibrante, inspirador e cheio de vida agora.</p>
       <p>Aproveite este magnetismo para estreitar laços sociais e reativar amizades que estavam esquecidas. Sua expressão emocional é contagiante e consegue desarmar qualquer resistência através do bom humor. Ao compartilhar sua alegria de forma generosa, você não apenas melhora o seu próprio bem-estar, mas cria uma rede de contatos afetivos que trará novas oportunidades de felicidade e prazer para o seu cotidiano.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       4: {
      conteudo:`<p>Nesta fase, sua energia emocional busca solo firme e segurança absoluta, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento atual exige que seus afetos sejam demonstrados através da lealdade e do suporte prático no dia a dia. É um ciclo de construção emocional lenta e sólida, onde sua confiança se torna o pilar para enfrentar qualquer tempestade externa com serenidade.</p>
       <p>Valorize a rotina e os pequenos rituais de cuidado que fortalecem o convívio familiar e amoroso. A seriedade com que você lida com os sentimentos agora transmite uma segurança inestimável para as pessoas ao seu redor. Ao demonstrar seu amor através da presença constante e da responsabilidade, você consolida um respeito profundo e uma estabilidade emocional que dificilmente será abalada por crises passageiras.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       5: {
      conteudo:`<p>Você atravessa um momento de inquietude e busca por liberdade sentimental agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este ciclo pede renovação e novas experiências afetivas, quebrando padrões antigos que estagnam o seu coração. Aproveite esta fase para se desapegar do que é rígido e permitir que o novo circule livremente em suas emoções e desejos.</p>
       <p>A adaptabilidade será sua maior aliada para lidar com as surpresas do coração neste período. É hora de você se abrir para conhecer novas pessoas ou para mudar a dinâmica de relacionamentos atuais, trazendo mais frescor e aventura para a vida. Ao permitir que a sua curiosidade guie seus afetos, você descobre novas facetas da sua própria personalidade e revitaliza sua capacidade de se apaixonar pela vida.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       6: {
      conteudo:`<p>O foco emocional do momento está no cuidado, na responsabilidade familiar e no bem-estar coletivo para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este ciclo ativa seu papel de protetor, trazendo uma satisfação profunda ao ver o equilíbrio no seu lar. É uma fase de doação consciente e de busca pela harmonia em todos os seus círculos afetivos.</p>
       <p>Sua capacidade de organizar a felicidade alheia está em destaque, mas lembre-se de também incluir suas próprias necessidades nesse planejamento. O momento é perfeito para embelezar seu ambiente e resolver pendências éticas com quem você ama. Ao agir com justiça e afeto, você se torna o centro de gravidade positivo da sua família, criando um porto seguro de amor e compreensão mútua.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       7: {
      conteudo:`<p>Este ciclo pede que você se volte para dentro e busque o significado espiritual de seus sentimentos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento favorece a introspecção e a seletividade emocional; você não quer superficialidade nas suas relações agora. É uma fase de conexão profunda de alma e de silêncios que revelam grandes verdades para o seu coração.</p>
       <p>A solitude não deve ser vista como solidão, mas como um espaço necessário para você depurar suas emoções. Ao buscar entender a raiz das suas reações afetivas, você ganha uma maturidade rara que impede que dramas externos te afetem. Essa clareza interior permite que você selecione com sabedoria quem merece habitar seu círculo íntimo, priorizando a qualidade e a profundidade dos vínculos sobre a quantidade.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       8: {
      conteudo:`<p>Sua energia emocional está operando sob um prisma de poder, proteção e justiça agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O ciclo pede maturidade para você lidar com crises e autoridade para defender quem você ama com mãos firmes. É um momento de resiliência e de transformar suas paixões em realizações concretas, seguras e protetoras para o seu futuro.</p>
       <p>Use sua força emocional para estruturar a vida de quem depende de você, agindo com equilíbrio entre o rigor e o afeto. Sua capacidade de liderança afetiva está em alta, permitindo que você resolva questões complexas com pragmatismo e eficiência. Ao dominar suas emoções com estratégia, você conquista o respeito daqueles que o rodeiam, garantindo uma convivência baseada na lealdade e na segurança material e emocional.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       9:{
      conteudo: `<p>Nesta fase, suas emoções se expandem para um nível de compaixão universal e altruísmo generoso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento pede desprendimento e visão humanitária; você sente as necessidades do mundo de forma mais aguda agora. É um ciclo de fechamento de processos afetivos e de prática do perdão incondicional para sua própria evolução.</p>
-      <p>Aproveite esta sensibilidade aflorada para concluir ciclos que já não fazem mais sentido em sua vida, deixando o passado para trás com gratidão. Sua capacidade de inspirar os outros através da compreensão é imensa neste período. Ao exercitar a entrega e a solidariedade, você limpa seu coração de mágoas antigas e se prepara para receber um novo fluxo de amor que será muito mais elevado e consciente.</p>`
-   },
+      <p>Aproveite esta sensibilidade aflorada para concluir ciclos que já não fazem mais sentido em sua vida, deixando o passado para trás com gratidão. Sua capacidade de inspirar os outros através da compreensão é imensa neste período. Ao exercitar a entrega e a solidariedade, você limpa seu coração de mágoas antigas e se prepara para receber um novo fluxo de amor que será muito mais elevado e consciente.</p>`,
+       
+ videoID: "m9WVZqdmrr4"
+    },  
+      },
 
     medio: {
       1:{
      conteudo: `<p>Nesta fase, você equilibra bem sua independência com a troca afetiva necessária, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento permite que você mantenha sua identidade preservada enquanto se relaciona, agindo com uma autoconfiança serena. É um período ideal para você cultivar o amor-próprio como base para encontros mais saudáveis e autênticos, sem a pressão de grandes dramas ou cobranças excessivas.</p>`,
-      2: {
+     videoID: "m9WVZqdmrr4"
+    },  
+       2: {
      conteudo:`<p>O ciclo atual favorece a diplomacia emocional em todas as suas interações, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você consegue compreender o outro sem se anular, buscando o equilíbrio justo entre dar e receber. É um momento de paz produtiva, ideal para você realizar ajustes sutis na rotina afetiva que tragam mais conforto e clareza para o convívio diário com as pessoas queridas.</p>`,
-      3: {
+    videoID: "m9WVZqdmrr4"
+    },  
+        3: {
      conteudo:`<p>Sua expressão emocional está fluida, comunicativa e muito leve neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento é de socialização tranquila e de compartilhar sentimentos sem grandes complicações. Sinta como a vida afetiva se torna mais direta sob esta vibração, permitindo que você resolva pequenos mal-entendidos com um sorriso e uma conversa sincera, restaurando a alegria ao seu redor.</p>`,
-      4: {
+  videoID: "m9WVZqdmrr4"
+    },  
+         4: {
      conteudo:`<p>Nesta etapa, o seu foco é a estabilidade prática e a constância nos afetos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você lida com as emoções de forma objetiva, preferindo a segurança do que já conhece. É um ciclo de manutenção afetiva, onde o compromisso e a organização do dia a dia trazem a paz que você busca agora para se sentir protegido e com o coração em ordem.</p>`,
-      5: {
+  videoID: "m9WVZqdmrr4"
+    },  
+          5: {
      conteudo:`<p>O momento traz uma flexibilidade emocional que ajuda você a lidar com mudanças sem estresse, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este ciclo permite que você experimente novidades sem perder o seu centro, adaptando seu coração ao ritmo das circunstâncias atuais. É uma fase de aprendizado afetivo, onde a curiosidade e o desapego tornam a vida muito mais interessante e livre de pesos desnecessários.</p>`,
-      6: {
+   videoID: "m9WVZqdmrr4"
+    },  
+           6: {
      conteudo:`<p>Sua vibração atual é voltada para a harmonia doméstica com os pés no chão, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento pede que você cuide de quem ama com dedicação equilibrada, sem se sobrecarregar. É um ciclo de bem-estar compartilhado, ideal para você organizar o lar e fortalecer as tradições familiares, garantindo que o afeto circule de forma justa e ética entre todos.</p>`,
-      7:{
+    videoID: "m9WVZqdmrr4"
+    },  
+            7:{
      conteudo: `<p>Observa-se agora em você uma inclinação para a reflexão emocional moderada, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este ciclo permite que você entenda seus sentimentos através da lógica e da observação cuidadosa. É uma fase de paz interior que você conquista ao não depender da aprovação constante dos outros, focando em conhecer melhor seus próprios desejos e necessidades mais íntimas.</p>`,
-      8: {
+    videoID: "m9WVZqdmrr4"
+    },  
+             8: {
      conteudo:`<p>Sua mente e seu coração operam com maturidade e pragmatismo neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O ciclo favorece decisões sensatas no amor e na família, garantindo que seu progresso material e emocional caminhem juntos. Você demonstra seu afeto através da segurança que provê, mantendo a calma nas crises e agindo como um porto seguro para aqueles que você ama.</p>`,
-      9: {
-     conteudo:`<p>Este ciclo traz para você uma sensibilidade generosa, acolhedora e compreensiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento pede que você exercite o perdão com quem te rodeia, focando na harmonia coletiva. É uma fase de superação de mágoas passadas de forma equilibrada, permitindo que você encerre questões pendentes com o coração leve e pronto para novas conexões.</p>`
-    },
+  videoID: "m9WVZqdmrr4"
+    },  
+              9: {
+     conteudo:`<p>Este ciclo traz para você uma sensibilidade generosa, acolhedora e compreensiva, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento pede que você exercite o perdão com quem te rodeia, focando na harmonia coletiva. É uma fase de superação de mágoas passadas de forma equilibrada, permitindo que você encerre questões pendentes com o coração leve e pronto para novas conexões.</p>`,
+               
+ videoID: "m9WVZqdmrr4"
+    },  
+              },
 
     fraco: {
       0: {
      conteudo:`<p>Este ciclo indica uma baixa ativação da sua energia emocional agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento favorece o pensamento lógico e técnico, deixando o "sentir" em segundo plano. Cuidado para não parecer distante ou frio demais; o momento pede que você faça um esforço consciente para não se desconectar das necessidades afetivas das pessoas ao seu redor.</p>`,
-     
+     videoID: "m9WVZqdmrr4"
+    },  
        1:  {
     conteudo:`<p>Nesta fase, há uma tendência em você a reprimir o que sente por medo de perder o controle, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento atual pode trazer dificuldades em demonstrar vulnerabilidade, criando uma barreira de autossuficiência excessiva. O desafio deste ciclo é você aprender que expressar afeto e pedir ajuda também são formas de força e inteligência emocional.</p>`,
          videoID: "F8bg1CTQ9HI"
 },
      2: {
      conteudo:`<p>Observa-se um distanciamento das nuances emocionais alheias neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este ciclo pode fazer com que você ignore apelos do coração em troca de soluções meramente práticas e frias. O momento pede que você exercite a escuta ativa e a empatia para não se isolar em sua própria lógica, perdendo a conexão vital com as pessoas que estima.</p>`,
+     videoID: "m9WVZqdmrr4"
+    },  
       3: {
      conteudo:`<p>O momento traz para você um bloqueio na alegria espontânea e no relaxamento, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Nesta fase, você pode sentir dificuldade em brincar com as emoções, tornando a convivência mais séria do que o habitual. O ciclo pede que você busque ativamente momentos de leveza e descontração para não se sobrecarregar com a rigidez do cotidiano atual.</p>`,
-      4: {
+     videoID: "m9WVZqdmrr4"
+    },  
+       4: {
      conteudo:`<p>A sua estabilidade emocional pode parecer um pouco frágil neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento atual gera certas incertezas sobre as suas próprias raízes afetivas, dificultando compromissos profundos. O desafio é você não fugir dos vínculos necessários quando o tédio ou a pressão surgirem, buscando entender o que realmente te traz segurança emocional agora.</p>`,
-      5: {
+    videoID: "m9WVZqdmrr4"
+    },  
+        5: {
      conteudo:`<p>Este ciclo revela em você uma dificuldade momentânea em aceitar mudanças e a liberdade alheia, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento pede que você aprenda a soltar o controle e a fluir com os imprevistos da vida. Evite que o medo de perder o que lhe é familiar gere sofrimento desnecessário; confie que o novo também pode trazer felicidades inesperadas se você se permitir.</p>`,
-      6: {
+    videoID: "m9WVZqdmrr4"
+    },  
+         6: {
      conteudo:`<p>Sua capacidade de cuidar e acolher o outro está em baixa nesta etapa, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento pode fazer com que você se sinta um pouco negligente com as necessidades afetivas de quem depende de você. O desafio do ciclo é você redescobrir, aos poucos, o prazer de ser útil e presente para o seu grupo, vencendo o cansaço emocional com pequenas atitudes de carinho.</p>`,
-      7: {
+    videoID: "m9WVZqdmrr4"
+    },  
+          7: {
      conteudo:`<p>Observa-se uma vivência mais superficial das emoções neste ciclo para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O momento foge de conversas profundas e prefere a conveniência de relações mais leves. O desafio agora é não permitir que essa falta de introspecção torne suas relações vazias de sentido real; tente manter um canal aberto com seus sentimentos mais profundos para não se perder de si mesmo.</p>`,
-      8: {
+    videoID: "m9WVZqdmrr4"
+    },  
+           8: {
      conteudo:`<p>Seu controle emocional está instável neste período, podendo oscilar entre o rigor e a passividade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O ciclo pede que você reencontre seu eixo de justiça e equilíbrio interno. Pare de reagir aos problemas de forma impulsiva ou excessivamente fria; busque a moderação para que suas decisões afetivas não causem arrependimentos futuros ou mágoas em quem você ama.</p>`,
-      9:{
-     conteudo: `<p>Este momento revela uma visão de mundo mais fechada nas suas próprias necessidades, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O ciclo dificulta o perdão e a compreensão de contextos maiores, prendendo você a mágoas pequenas e improdutivas. O desafio agora é você expandir seu horizonte emocional novamente e voltar a sentir compaixão e tolerância pelas falhas alheias e pelas suas próprias.</p>`
-     }
+   videoID: "m9WVZqdmrr4"
+    },  
+            9:{
+     conteudo: `<p>Este momento revela uma visão de mundo mais fechada nas suas próprias necessidades, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O ciclo dificulta o perdão e a compreensão de contextos maiores, prendendo você a mágoas pequenas e improdutivas. O desafio agora é você expandir seu horizonte emocional novamente e voltar a sentir compaixão e tolerância pelas falhas alheias e pelas suas próprias.</p>`,
+             
+   videoID: "m9WVZqdmrr4"
+    },  
+            }
   },
 
  
@@ -7403,85 +7530,135 @@ intuitivo: {
       1:{
      conteudo: `<p>Neste ciclo, você experimenta uma forte iniciativa intuitiva que se manifesta como uma certeza imediata sobre qual caminho seguir agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. É um momento de confiar no pressentimento atual, sem a necessidade de cálculos lógicos ou aprovação externa para validar o que o seu coração já sinaliza. As decisões fluem de forma rápida, guiadas por uma bússola interna que aponta para soluções originais e disruptivas neste período.</p>
       <p>Essa energia de momento permite que você antecipe tendências e perceba oportunidades de ouro antes que se tornem evidentes para os outros. O desafio atual é manter o equilíbrio para que essa rapidez não se torne impulsividade cega. O sucesso neste ciclo virá da sua coragem em agir conforme essa percepção sutil, transformando o "feeling" do agora em projetos concretos e lideranças inovadoras que marcarão sua trajetória.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       2: {
      conteudo:`<p>A vibração atual traz uma alta sensibilidade às energias sutis do ambiente, funcionando como um radar psíquico refinado para a sua navegação social agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma percepção aguçada de intenções ocultas e situações invisíveis que favorecem a prevenção de conflitos neste momento. É a sua inteligência sutil colocada a serviço da paz coletiva durante este ciclo.</p>
       <p>Nesta fase, a intuição serve como uma proteção constante para você e seu círculo de confiança, agindo como um guia diplomático. O desafio atual reside em não absorver as cargas emocionais pesadas ao redor, filtrando o que é do ambiente e o que é seu. Ao estabelecer esse limite, a sensibilidade deste período se transforma em uma ferramenta estratégica de prosperidade, permitindo que você se alie às pessoas certas no tempo certo.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       3: {
      conteudo:`<p>Neste período, a sua intuição está profundamente criativa, inspirada e vibrante, <strong>MASCULINO-FEMININO-NEUTRO</strong>. As melhores soluções surgem como flashes espontâneos durante o seu cotidiano atual. O guia principal deste ciclo é uma voz interior expressiva que traz imagens e sonhos que ajudam você a entender a realidade de forma muito mais rica, lúdica e multifacetada agora.</p>
       <p>Esta energia momentânea é comunicativa: você sente a necessidade de compartilhar visões que acabam se confirmando na prática logo em seguida. O desafio do agora é manter o foco para que a multiplicidade de ideias deste ciclo não gere dispersão de energia. Ao organizar suas percepções atuais, você transforma a inspiração pura em resultados visíveis e lucrativos, encantando as pessoas com sua visão de futuro.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       4: {
      conteudo:`<p>A energia do momento traz uma intuição prática e extremamente confiável para a sua gestão de riscos e organização agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma capacidade atual de prever as consequências estruturais de uma decisão, organizando cada passo com percepções que garantem segurança. É o momento de construir sobre rocha, percebendo a viabilidade real de planos através de um senso de ordem temporário.</p>
       <p>Nesta vibração, sua produtividade atinge níveis altos quando você utiliza esse "sexto sentido" para otimizar recursos técnicos agora. Recomenda-se confiar nos sinais de desconforto físico diante de propostas atuais; é o seu radar avisando sobre perigos ocultos neste ciclo. O sucesso virá da união entre sua experiência prática e a escuta atenta dos sinais materiais do momento, consolidando sua autoridade.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       5:{
      conteudo: `<p>O ciclo atual é dinâmico e focado na sua percepção imediata de mudanças e riscos iminentes, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma facilidade extraordinária neste momento para você perceber sinais de movimento muito antes que se tornem fatos consumados. O guia de agora é uma curiosidade instintiva que leva você a estar nos lugares certos e na hora exata para aproveitar as oportunidades.</p>
       <p>Esta energia avisa prontamente quando um ciclo está se fechando ou quando uma estratégia de mercado precisa de alteração radical agora. O desafio reside em controlar a ansiedade que essa percepção veloz do momento pode gerar em você. Sua adaptabilidade é a força atual, permitindo que você transforme imprevistos em degraus sólidos para sua evolução e para a conquista de novos territórios.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       6: {
      conteudo:`<p>A influência intuitiva do momento é profundamente protetora e voltada para o bem-estar das pessoas que você estima agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma forte capacidade atual de pressentir necessidades silenciosas, agindo de forma preventiva para manter a harmonia. Você sente agora quando alguém próximo precisa de apoio, sabendo exatamente qual gesto oferecer para trazer equilíbrio.</p>
       <p>Esta vibração atual funciona como um escudo que mantém o seu ambiente protegido de desequilíbrios externos e intrusões. O desafio deste ciclo é não se deixar sobrecarregar pela preocupação excessiva com o outro. Sua força no agora reside na doçura da percepção, que acolhe e orienta sem impor, criando um porto seguro e uma imagem de conselheiro sábio durante toda esta fase.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       7: {
      conteudo:`<p>Neste ciclo, sua intuição é vasta e dotada de uma conexão fortíssima com o mundo interior e a espiritualidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma capacidade singular agora de compreender as leis que regem a realidade para além das aparências materiais. É um momento de busca por verdades profundas, guiado por uma sabedoria que emana da sua quietude atual.</p>
       <p>Esta percepção do momento é silenciosa e introspectiva, favorecendo o processamento de insights reveladores sobre sua missão. O desafio reside em comunicar essas descobertas de forma prática agora, evitando o isolamento total. Ao se tornar um canal de sabedoria neste período, você atrai naturalmente quem busca entendimento real, marcando o ciclo por uma paz profunda e um reconhecimento técnico de alto nível.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       8: {
      conteudo:`<p>A energia intuitiva de você agora é estratégica e voltada para a percepção das forças de poder e economia, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma capacidade superior neste ciclo de prever cenários complexos e antecipar movimentações alheias. Você sente agora a viabilidade de um investimento ou projeto muito antes dos números confirmarem a tendência do momento.</p>
       <p>Essa força atual confere a você um magnetismo de liderança, pois as pessoas sentem que você sabe como vencer os obstáculos do agora com maestria. O desafio é não permitir que essa percepção estratégica do ciclo se torne fria ou calculista demais. Sua autoridade neste momento nasce da união entre competência técnica e essa visão de águia que enxerga muito além do óbvio hoje, gerando riqueza.</p>`,
-
+videoID: "m9WVZqdmrr4"
+    },  
       9: {
      conteudo:`<p>Neste momento, sua intuição é universal e dotada de uma sensibilidade ampliada para os propósitos maiores da existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma percepção aguçada do fluxo de energia agora, sentindo quais projetos trarão o maior benefício coletivo. É um ciclo de compreensão sábia sobre a impermanência, permitindo que você oriente os outros em transições atuais.</p>
-      <p>Esta visão de momento permite que você perceba o impacto de pequenas ações no futuro distante. O desafio atual é manter os pés no chão, garantindo que o seu idealismo deste ciclo tenha utilidade real no presente. Sua generosidade intuitiva agora é um bálsamo que acalma angústias ao seu redor e traz um sentido maior para a vida e para o trabalho neste período de encerramentos e colheitas.</p>`
-   },
+      <p>Esta visão de momento permite que você perceba o impacto de pequenas ações no futuro distante. O desafio atual é manter os pés no chão, garantindo que o seu idealismo deste ciclo tenha utilidade real no presente. Sua generosidade intuitiva agora é um bálsamo que acalma angústias ao seu redor e traz um sentido maior para a vida e para o trabalho neste período de encerramentos e colheitas.</p>`,
+       
+  videoID: "m9WVZqdmrr4"
+    },  
+      },
 
   medio: {
     1: {
      conteudo:`<p>Nesta fase, sua intuição surge de forma pontual em grandes decisões, servindo como um alerta necessário para novos caminhos agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma percepção que aparece quando a lógica se mostra insuficiente neste período, embora ainda ocorra uma alternância com a necessidade de dados concretos típicos deste momento de transição e busca por autonomia.</p>`,
-    2: {
+   videoID: "m9WVZqdmrr4"
+    },  
+     2: {
      conteudo:`<p>Você vivencia agora uma sensibilidade equilibrada, o que permite captar o humor das pessoas e intenções reais durante o seu cotidiano atual, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A percepção surge com mais força em vínculos afetivos neste ciclo, ajudando você a manter a harmonia básica e evitar mal-entendidos agora através de uma observação silenciosa e prudente.</p>`,
-    3: {
+    videoID: "m9WVZqdmrr4"
+    },  
+      3: {
      conteudo:`<p>Seus insights costumam surgir com mais brilho durante atividades criativas e lazer neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma facilidade atual para você perceber ideias novas, embora essa percepção possa não ser constante no agito do momento. É um ciclo que pede leveza para a intuição fluir agora, trazendo soluções divertidas para problemas antigos.</p>`,
-    4: {
+   videoID: "m9WVZqdmrr4"
+    },  
+       4: {
      conteudo:`<p>Observa-se agora uma capacidade precisa de você prever consequências práticas quando se dedica tempo ao planejamento detalhado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A intuição não é o guia constante deste ciclo, mas funciona como um sistema de revisão interna, fazendo você sentir se algo está fora do lugar neste momento e evitando erros técnicos evitáveis.</p>`,
-    5: {
+  videoID: "m9WVZqdmrr4"
+    },  
+        5: {
      conteudo:`<p>Sua percepção intuitiva aparece de forma intermitente diante de mudanças ou oportunidades de transformação agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Em períodos de muito movimento como este, a tendência é você confiar mais no instinto de adaptação rápida, o que garante o êxito em terrenos novos e situações inesperadas hoje com agilidade e astúcia.</p>`,
-    6:{
+   videoID: "m9WVZqdmrr4"
+    },  
+         6:{
      conteudo: `<p>Neste ciclo, a intuição está ligada ao cuidado e ao afeto, manifestando-se como uma sensibilidade para as necessidades alheias agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma facilidade atual para você perceber o clima do ambiente doméstico ou profissional, sinalizando atitudes que preservem o bem-estar de todos e evitem desgastes desnecessários neste momento.</p>`,
-    7: {
+   videoID: "m9WVZqdmrr4"
+    },  
+          7: {
      conteudo:`<p>Sua percepção interior se manifesta com clareza nos momentos de introspecção e silêncio deste ciclo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Quando há dedicação ao estudo ou à pesquisa agora, a intuição revela a essência de problemas que a lógica pura demoraria a decifrar neste período, conferindo a você uma vantagem intelectual e estratégica discreta, mas real.</p>`,
-    8: {
+    videoID: "m9WVZqdmrr4"
+    },  
+           8: {
      conteudo:`<p>Você demonstra agora uma capacidade de perceber tendências e intenções em situações profissionais importantes, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A intuição funciona neste ciclo como um suporte estratégico valioso, ajudando você a sentir onde estão os aliados e as ameaças ocultas durante este período de busca por eficiência e resultados materiais.</p>`,
-    9: {
-     conteudo:`<p>Sua sensibilidade agora é voltada para o coletivo, manifestando-se em momentos de empatia e reflexão profunda, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma percepção sutil neste ciclo de que tudo está interconectado, o que ajuda você em decisões éticas e humanitárias agora, permitindo que suas ações tenham um impacto positivo e amplo ao seu redor.</p>`
-  },
+    videoID: "m9WVZqdmrr4"
+    },  
+            9: {
+     conteudo:`<p>Sua sensibilidade agora é voltada para o coletivo, manifestando-se em momentos de empatia e reflexão profunda, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma percepção sutil neste ciclo de que tudo está interconectado, o que ajuda você em decisões éticas e humanitárias agora, permitindo que suas ações tenham um impacto positivo e amplo ao seu redor.</p>`,
+             
+  videoID: "m9WVZqdmrr4"
+    },  
+            },
 
   fraco: {
     0: {
      conteudo:`<p>Neste ciclo atual, observa-se uma baixa ativação da sua percepção intuitiva como guia principal, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua interpretação da realidade agora tende a ser estritamente literal e pragmática. É um momento de focar no que pode ser medido e provado, deixando o abstrato em segundo plano até que sua conexão sutil se regenere nesta fase.</p>`,
-    1: {
+  videoID: "m9WVZqdmrr4"
+    },  
+     1: {
      conteudo:`<p>Existe uma confiança reduzida na sua intuição agora, levando você a depender de regras externas ou da opinião alheia para validar seus passos neste momento, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O ciclo atual favorece a lógica fria, o que pode gerar certa desorientação quando a razão pura não oferece as respostas imediatas que você busca hoje.</p>`,
-    2: {
+ videoID: "m9WVZqdmrr4"
+    },  
+      2: {
      conteudo:`<p>Sua sensibilidade intuitiva nas relações apresenta-se reduzida agora, fazendo com que sinais energéticos passem despercebidos neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma dificuldade momentânea em você "ler as entrelinhas", o que pede mais atenção consciente e objetiva às interações do agora para evitar pequenos ruídos de comunicação.</p>`,
-    3:  {
+  videoID: "m9WVZqdmrr4"
+    },  v
+       3:  {
     conteudo:`<p>Nesta fase, a sua inspiração original depende muito de estímulos externos e dados prontos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Lampejos espontâneos são raros agora, e pode surgir um bloqueio criativo justamente quando se busca uma solução nova. O ciclo pede que você faça um esforço consciente para resgatar seu brilho psíquico através do descanso hoje.</p>`,
      videoID: "F8bg1CTQ9HI"
 },
-   4: {
+ 
+       4: {
      conteudo:`<p>Há um predomínio do controle e da busca por segurança material neste momento em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, deixando pouco espaço para a percepção inovadora agora. Mesmo que o seu instinto sinalize riscos, a tendência atual é seguir o plano rígido apenas por conformidade, ignorando os avisos sutis que o ciclo apresenta.</p>`,
-    5: {
+ videoID: "m9WVZqdmrr4"
+    },  
+        5: {
      conteudo:`<p>Observa-se agora uma dificuldade em você perceber sinais de mudança antes que se manifestem fisicamente, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua adaptação tende a ser mais lenta neste ciclo, ocorrendo apenas após os fatos estarem consumados. O momento pede que você redobre a atenção às sincronicidades e aos detalhes do agora para não ser pego de surpresa.</p>`,
-    6:{
+   videoID: "m9WVZqdmrr4"
+    },  
+         6:{
      conteudo: `<p>Sua sensibilidade intuitiva no cuidado é limitada neste período, dependendo de pedidos diretos de ajuda para que você perceba o outro agora, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Pode-se falhar em perceber angústias silenciosas ao redor durante esta fase, focando apenas no suporte prático e material imediato que o momento exige de você.</p>`,
-    7: {
+   videoID: "m9WVZqdmrr4"
+    },  
+          7: {
      conteudo:`<p>Neste ciclo, observa-se uma conexão reduzida de você com a sua própria interioridade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Momentos de silêncio podem ser evitados agora, pois existe uma incerteza sobre como lidar com as informações sutis da alma neste estágio. Sua visão atual é puramente técnica, o que pode ignorar propósitos maiores hoje.</p>`,
-    8: {
+ videoID: "m9WVZqdmrr4"
+    },  
+           8: {
      conteudo:`<p>Suas decisões estratégicas agora são baseadas exclusivamente em dados concretos, sem abertura para percepções sutis neste ciclo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Corre-se o risco de ignorar sinais de instabilidade apenas porque as aparências do momento parecem sedutoras agora; use sua lógica para compensar essa falta de percepção momentânea.</p>`,
-    9: {
-     conteudo:`<p>Existe uma dificuldade atual em você perceber as dimensões universais e as conexões humanas mais profundas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua visão do agora tende a ficar focada apenas no interesse imediato, ignorando que o ambiente ao redor precisa da sua contribuição ética e de uma visão mais ampla neste período de transição.</p>`
-  } 
+   videoID: "m9WVZqdmrr4"
+    },  
+            9: {
+     conteudo:`<p>Existe uma dificuldade atual em você perceber as dimensões universais e as conexões humanas mais profundas, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua visão do agora tende a ficar focada apenas no interesse imediato, ignorando que o ambiente ao redor precisa da sua contribuição ética e de uma visão mais ampla neste período de transição.</p>`,
+             
+ videoID: "m9WVZqdmrr4"
+    },  
+            } 
 }
 };
 
