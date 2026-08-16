@@ -5220,13 +5220,18 @@ const listaPremium = ["dia",  "essencia", "talento", "motivacao", "influencia", 
 
 
 
-listaPremium.forEach(chave => {
+// Usamos 'for...of' em vez de 'forEach' para o 'await' funcionar perfeitamente
+for (const chave of listaPremium) {
     const tituloBonito = nomesExibicao[chave] || chave;
 
     // 1. Busca os dados do RESULTADO
     const dados = textos[chave] ? textos[chave][res[chave]] : null;
     const conteudo = (typeof dados === 'object' && dados !== null) ? dados.conteudo : dados;
-    const video = (typeof dados === 'object' && dados !== null) ? dados.videoID : null;
+    // --- AQUI É A MÁGICA: Puxa o ID do vídeo do Firebase usando a mesma variável 'video' que você já tem ---
+    let video = null;
+    if (res[chave]) {
+        video = await buscarVideoID(chave, res[chave]);
+    }
 
     // 2. Busca os dados da INTRODUÇÃO (NOVO: aceita Objeto com videoID ou String)
     const dadosIntro = textos.introducoes ? textos.introducoes[chave] : "";
