@@ -8057,7 +8057,7 @@ textosSinteseExpressaomomento = {
     "FISICO(F)-INTUITIVO(F)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
     "FISICO(F)-INTUITIVO(M)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
     "FISICO(F)-INTUITIVO(M)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
-    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "m9WVZqdmrr4" },
+    "FISICO(F)-MENTAL(Fr)-EMOCIONAL(Fr)-INTUITIVO(Fr)": { conteudo: "", videoID: "naNvhAbhgpY" },
     "FISICO(F)-INTUITIVO(Fr)-MENTAL(Fr)-EMOCIONAL(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
     "FISICO(F)-INTUITIVO(Fr)-EMOCIONAL(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
     "FISICO(F)-EMOCIONAL(Fr)-INTUITIVO(Fr)-MENTAL(Fr)": { conteudo: "", videoID: "z1nW3rmNeEI" },
