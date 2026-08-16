@@ -2342,7 +2342,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
             return `${p.chave.toUpperCase()}(${mapSiglaMomento[intKey]})`;
         }).join("-");
 
-        const dadosSinteseMomento = textosSinteseExpressao[siglaMomento] || textosSinteseExpressao["padrao"] || { conteudo: "Conteúdo não disponível.", videoID: "" };
+        const dadosSinteseMomento = textosSinteseExpressaomomento[siglaMomento] || textosSinteseExpressaomomento["padrao"] || { conteudo: "Conteúdo não disponível.", videoID: "" };
 
         // Puxa texto e vídeo dinamicamente conforme o gênero e perfil dominante
         const perfilAtualObj = descricoesPerfilMomento[dominanteMomento] || {};
