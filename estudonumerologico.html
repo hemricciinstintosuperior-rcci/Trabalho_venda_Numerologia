@@ -3570,18 +3570,19 @@ async function buscarVideoID(categoria, valor, genero) {
     if (categoria === "equilibrio") return null;  
 
     try {
-        // Usa o fetch direto na sua URL do Realtime Database (mesmo método que você já usa nas vendas)
-        const resposta = await fetch(`${DB_URL}BibliotecaVideos/${categoria}/${valor}.json`);
+        // O link agora monta exatamente a rota que você desenhou:
+        // BibliotecaVideos / [categoria] / [genero] / [valor]
+        const url = `${DB_URL}BibliotecaVideos/${categoria}/${genero}/${valor}.json`;
+        const resposta = await fetch(url);
         const idYouTube = await resposta.json();
         
         if (idYouTube) {
-            return idYouTube; // Retorna o ID real do YouTube que está no Firebase
+            return idYouTube; // Retorna o ID do YouTube certinho
         }
     } catch (error) {
-        console.error("Erro ao buscar vídeo no Firebase via fetch:", error);
+        console.error("Erro ao buscar vídeo no Firebase:", error);
     }
 
-    console.warn(`DEBUG: Nenhum vídeo encontrado no Firebase para ${categoria}[${valor}]`);
     return null;
 }
 
@@ -5228,17 +5229,17 @@ for (const chave of listaPremium) {
     const dados = textos[chave] ? textos[chave][res[chave]] : null;
     const conteudo = (typeof dados === 'object' && dados !== null) ? dados.conteudo : dados;
     // --- AQUI É A MÁGICA: Puxa o ID do vídeo do Firebase usando a mesma variável 'video' que você já tem ---
-    let video = null;
-    if (res[chave]) {
-        video = await buscarVideoID(chave, res[chave]);
-    }
+let video = null;
+if (dados.videoRefCategoria && dados.videoRefValor) {
+    // Passa a categoria ("dia"), o valor ("1") e o gênero ("masculino")
+    video = await buscarVideoID(dados.videoRefCategoria, dados.videoRefValor, generoAtual);
+}
 
     // 2. Busca os dados da INTRODUÇÃO (NOVO: aceita Objeto com videoID ou String)
+// 3. Busca os dados da INTRODUÇÃO
     const dadosIntro = textos.introducoes ? textos.introducoes[chave] : "";
     const conteudoIntro = (typeof dadosIntro === 'object' && dadosIntro !== null) ? dadosIntro.conteudo : dadosIntro;
-   // --- AQUI ESTÁ A MÁGICA PARA A INTRODUÇÃO TAMBÉM VIR DO FIREBASE ---
-    // Ele vai buscar na pasta "introducoes" usando o nome da chave atual (ex: "dia", "essencia")
-    let videoIntro = await buscarVideoID("introducoes", chave);
+    let videoIntro = await buscarVideoID("introducoes", chave, generoAtual);
 
     // 3. Monta o HTML com o separador e os players (da intro e do resultado)
     html += `
