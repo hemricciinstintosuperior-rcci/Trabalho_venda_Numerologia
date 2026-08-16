@@ -7627,7 +7627,7 @@ videoID: "m9WVZqdmrr4"
       2: {
      conteudo:`<p>Sua sensibilidade intuitiva nas relações apresenta-se reduzida agora, fazendo com que sinais energéticos passem despercebidos neste período, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe uma dificuldade momentânea em você "ler as entrelinhas", o que pede mais atenção consciente e objetiva às interações do agora para evitar pequenos ruídos de comunicação.</p>`,
   videoID: "m9WVZqdmrr4"
-    },  v
+    },  
        3:  {
     conteudo:`<p>Nesta fase, a sua inspiração original depende muito de estímulos externos e dados prontos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Lampejos espontâneos são raros agora, e pode surgir um bloqueio criativo justamente quando se busca uma solução nova. O ciclo pede que você faça um esforço consciente para resgatar seu brilho psíquico através do descanso hoje.</p>`,
      videoID: "F8bg1CTQ9HI"
