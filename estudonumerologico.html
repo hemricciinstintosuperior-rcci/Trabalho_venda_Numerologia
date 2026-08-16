@@ -3570,15 +3570,15 @@ async function buscarVideoID(categoria, valor, genero) {
     if (categoria === "equilibrio") return null;  
 
     try {
-        // Vai buscar o ID real direto no cofre do Firebase que acabamos de criar
-        const dbRef = firebase.database().ref(`BibliotecaVideos/${categoria}/${valor}`);
-        const snapshot = await dbRef.once('value');
+        // Usa o fetch direto na sua URL do Realtime Database (mesmo método que você já usa nas vendas)
+        const resposta = await fetch(`${DB_URL}BibliotecaVideos/${categoria}/${valor}.json`);
+        const idYouTube = await resposta.json();
         
-        if (snapshot.exists()) {
-            return snapshot.val(); // Retorna "naNvhAbhgpY" para o player
+        if (idYouTube) {
+            return idYouTube; // Retorna o ID real do YouTube que está no Firebase
         }
     } catch (error) {
-        console.error("Erro ao buscar vídeo no Firebase:", error);
+        console.error("Erro ao buscar vídeo no Firebase via fetch:", error);
     }
 
     console.warn(`DEBUG: Nenhum vídeo encontrado no Firebase para ${categoria}[${valor}]`);
