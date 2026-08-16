@@ -78,7 +78,7 @@ introducoes: {
 <p>Essas características se manifestam principalmente nas atitudes espontâneas, nas escolhas naturais e na forma como a pessoa se posiciona diante das experiências cotidianas. O Dia Natalício revela aquilo que emerge com maior autenticidade, sem a necessidade de esforço ou adaptação consciente.</p>
 <p>Por essa razão, ele é frequentemente associado ao conceito do “Eu Sou” mais verdadeiro. Trata-se da parte mais genuína da identidade, aquela que permanece constante mesmo diante das mudanças externas, das circunstâncias da vida ou das influências sociais.</p>
 <p>Compreender o próprio Dia Natalício permite reconhecer talentos naturais, compreender padrões de comportamento e identificar potenciais que muitas vezes permanecem adormecidos. Ao trazer consciência sobre essas características, a numerologia oferece um instrumento de autoconhecimento que pode auxiliar no desenvolvimento pessoal e na harmonização da própria trajetória de vida.</p>`,
-       videoID: "z1nW3rmNeEI"
+       videoID: "dia"
     },
         comportamento: {
      conteudo:`O Número do Comportamento revela como são as qualidades psíquicas que influenciam nas escolhas pessoais. As pessoas experimentam diferentes respostas internas aos desafios da vida. Alguns se retiram de situações difíceis para pensar sobre elas; outros se afastam de suas emoções, para tentar evitar sentir as emoções. Outros se apegam aos seus sentimentos e sentem dificuldade em deixar as coisas irem.
