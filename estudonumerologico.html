@@ -5300,21 +5300,8 @@ html += `
     <div class="caixa-interna">
         <h2>${tituloBonito}</h2>
     </div>
-</div>
-<div class="page">
-    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    
-    <div class="intro-texto">
-        <!-- Player da introdução do desejo já desembaralhado -->
-        ${videoIntroDesejoFinal ? gerarPlayerYouTube(videoIntroDesejoFinal) : ""}
-    </div>
-    
-    <div class="evitar-corte texto-res">
-        <!-- Player do resultado do desejo já desembaralhado -->
-        ${videoDesejoFinal ? gerarPlayerYouTube(videoDesejoFinal) : ""}
-    </div>
-</div>
-`;
+</div>`,
+
 
     
 html += `
@@ -5323,14 +5310,14 @@ html += `
         <div class="intro-texto">${aplicarFiltroTexto(textos.introducoes.desejoOculto) ||  `
     <p>A Vibração do Desejo Oculto possui um poder próprio para moldar a trajetória humana, gerando um impulso profundo para o desenvolvimento e a expressão de habilidades muito específicas. Esta força exige que a própria natureza seja experimentada em sua essência, permitindo que esse potencial guie a personalidade de forma autêntica.</p>
     <p>No Estudo Numerológico Quântico, esta é uma das vibrações mais significativas, pois representa comportamentos recorrentes que se manifestam de forma cíclica. É necessário manter a vigilância sobre esses padrões, que podem se tornar vícios de atitude se não houver a quebra do ciclo existente. O reconhecimento dessa energia permite escolher direções que evitem círculos viciosos, transformando tendências latentes em ferramentas de evolução.</p>
-`}  ${idVideoIntroDesejo ? gerarPlayerYouTube(idVideoIntroDesejo) : ""} </div>
+`}  ${videoIntroDesejoFinal ? gerarPlayerYouTube(videoIntroDesejoFinal) : ""} </div>
          <div class="evitar-corte resultado-bloco" style="text-align: center; margin-bottom: 20px;">
             <span style="font-size: 1.2rem; color: var(--gold);"> </span>
             <span class="numero-destaque" style="font-size: 2.5rem; font-weight: bold;"></span>
         </div>
       <div class="texto-res">
         ${aplicarFiltroTexto(textos.desejoOculto[dadosDesejo.numero].conteudo)}
-        ${idVideoDesejo ? gerarPlayerYouTube(idVideoDesejo) : ""}
+        ${videoDesejoFinal ? gerarPlayerYouTube(videoDesejoFinal) : ""}
     </div>
 </div>`;
 
