@@ -5283,11 +5283,17 @@ const dadosDesejo = calcularDesejoOculto(nomeRaw);
 const primeiroNome = nomeRaw.split(' ')[0];
 
 // --- DESEJO OCULTO ---
-const idVideoDesejo = buscarVideoID("desejoOculto", dadosDesejo.numero, generoAtual);
+// (Se você estivesse usando o Firebase, seria buscarVideoID, mas como voltamos para o local, 
+// o ID do desejo oculto vem direto do seu objeto ou texto JS)
+const idVideoDesejoEmbaralhado = dadosDesejo.videoID; // ou de onde você puxa o vídeo do desejo
+const videoDesejoFinal = idVideoDesejoEmbaralhado ? atob(idVideoDesejoEmbaralhado) : null;
 
-const idVideoIntroDesejo = "bmFOdmhBYmhncFk";
-    // Crie esta linha logo ACIMA do código da ondinha:
- tituloBonito = "SEU DESEJO OCULTO"; 
+// Para a introdução que já está com o código embaralhado aí em cima:
+const idVideoIntroDesejoEmbaralhado = "bmFOdmhBYmhncFk";
+const videoIntroDesejoFinal = atob(idVideoIntroDesejoEmbaralhado); // Desembaralha a introdução
+
+tituloBonito = "SEU DESEJO OCULTO"; 
+
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
 html += `
 <div class="separador-luxo">
@@ -5295,8 +5301,20 @@ html += `
         <h2>${tituloBonito}</h2>
     </div>
 </div>
+<div class="page">
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    
+    <div class="intro-texto">
+        <!-- Player da introdução do desejo já desembaralhado -->
+        ${videoIntroDesejoFinal ? gerarPlayerYouTube(videoIntroDesejoFinal) : ""}
+    </div>
+    
+    <div class="evitar-corte texto-res">
+        <!-- Player do resultado do desejo já desembaralhado -->
+        ${videoDesejoFinal ? gerarPlayerYouTube(videoDesejoFinal) : ""}
+    </div>
+</div>
 `;
-
 
     
 html += `
