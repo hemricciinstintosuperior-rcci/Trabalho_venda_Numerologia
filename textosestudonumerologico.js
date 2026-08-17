@@ -4610,55 +4610,55 @@ desejoOculto: {
      conteudo:`<h3>Impulso de Liderança e Desafio do Egocentrismo - 1</h3>
     <p>No âmago do seu ser, você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, carrega uma vibração que impulsiona fortemente para a liderança absoluta e para o pioneirismo radical. Esse acúmulo numérico gera em sua alma um desejo ardente de ser a primeira pessoa em tudo e de alcançar o topo por mérito próprio, buscando incessantemente o reconhecimento pela sua individualidade única e por sua capacidade inquestionável de comando.</p>
     <p>Entretanto, esse excesso de força motriz pode tornar você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, alguém autoritário ou excessivamente egocêntrico se não houver vigilância. O padrão a ser quebrado é a necessidade constante de estar sempre em evidência, o que pode gerar comportamentos cíclicos de arrogância ou uma busca desenfreada pelo poder que acaba isolando as pessoas que deveriam ser seus aliados. Sua alma clama por originalidade, mas o seu desafio é entender que o verdadeiro líder brilha mais quando ilumina o caminho dos outros, e não apenas o seu próprio pedestal.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "bmFOdmhBYmhncFk"
     },
     2: {
      conteudo:`<h3>Impulso de Harmonia e Desafio da Dependência - 2</h3>
     <p>O desejo mais profundo da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é pela harmonia perfeita, pela cooperação e pelo equilíbrio absoluto em todas as suas relações. Por possuir essa frequência em abundância, existe dentro de você uma busca constante pela paz e por ambientes onde a diplomacia prevaleça sobre o conflito, fazendo com que você aja sempre como o ponto de união e o bálsamo entre as pessoas.</p>
     <p>Por outro lado, essa carga excessiva de sensibilidade pode levar você a uma dependência emocional prejudicial e silenciosa. O padrão recorrente aqui, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a dificuldade extrema em tomar decisões importantes sem a aprovação ou o suporte alheio, permitindo que sua própria vontade seja anulada apenas para evitar qualquer tipo de confronto. Sua alma deseja a união, mas a lição é aprender que você precisa estar inteiro(a) e seguro(a) de si para que suas parcerias sejam saudáveis e não se tornem muletas emocionais que paralisam seu crescimento pessoal.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "bmFOdmhBYmhncFk"
     },
     3: {
      conteudo:`<h3>Impulso de Expressão e Desafio da Dispersão - 3</h3>
     <p>Existe em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma necessidade vital de expressão, comunicação e criatividade que transborda. Esta vibração elevada indica um talento nato para encantar, motivar e alegrar qualquer ambiente, buscando sempre o brilho social e a manifestação das suas ideias de forma extraordinária, leve e comunicativa.</p>
     <p>O alerta para você reside na dispersão perigosa desse potencial criativo imenso. O excesso de energia pode resultar em comportamentos superficiais, onde você se perde em distrações fúteis ou inicia múltiplos projetos fascinantes que nunca chegam ao fim, transformando o seu dom sagrado da palavra em uma falta de compromisso com a verdade prática e com a entrega de resultados. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma deseja criar e ser vista, mas o sucesso real virá quando você aprender a canalizar esse rio de criatividade em canais sólidos, dando profundidade e foco ao seu carisma natural.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "bmFOdmhBYmhncFk"
     },
     4: {
      conteudo:`<h3>Impulso de Segurança e Desafio da Rigidez - 4</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, busca incessantemente por segurança, ordem e estabilidade através do trabalho estruturado e do método. Essa concentração numérica cria em seu íntimo um desejo poderoso de construir bases indestrutíveis para sua vida e de manter tudo sob um controle rigoroso, valorizando a tradição, a honra e a eficiência acima de qualquer aventura passageira.</p>
     <p>A deficiência desse excesso se manifesta como uma teimosia crônica e um conservadorismo que pode impedir seu progresso em tempos de mudança. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, corre o risco de se tornar alguém excessivamente rígido(a), que bloqueia a inovação e o fluxo natural da vida por medo de perder o controle ou por se apegar a métodos ultrapassados que já não funcionam mais no mundo atual. Sua alma quer segurança, mas entenda que a estrutura mais forte é aquela que possui flexibilidade para balançar com o vento sem quebrar; aprenda a confiar um pouco mais na vida e menos nas rédeas.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "bmFOdmhBYmhncFk"
     },
     5: {
      conteudo:`<h3>Impulso de Liberdade e Desafio da Instabilidade - 5</h3>
     <p>Sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, anseia por liberdade total, por mudanças constantes e por novas e eletrizantes experiências sensoriais. Essa forte presença vibracional indica alguém que detesta a rotina como se fosse uma prisão e busca no movimento dinâmico a própria razão de sua existência, adaptando-se com uma facilidade assustadora a qualquer cenário desafiador ou desconhecido.</p>
     <p>Contudo, essa vibração em excesso gera uma instabilidade crônica e uma impaciência que pode sabotar suas conquistas. O vício de comportamento a ser observado por você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é a tendência irresistível a abandonar tudo o que exige persistência ou que se torna "comum", agindo de forma inconsequente e impedindo a construção de algo duradouro. Sua alma quer o novo, mas o segredo da sua evolução é aprender que a verdadeira liberdade nasce da disciplina de saber onde se quer chegar, transformando a inquietude em inovação focada.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "bmFOdmhBYmhncFk"
     },
     6: {
      conteudo:`<h3>Impulso de Serviço e Desafio do Perfeccionismo - 6</h3>
     <p>O foco da sua existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, está totalmente voltado para o lar, para o bem-estar da família e para o serviço amoroso ao próximo. É um desejo profundo de ser o porto seguro e o conselheiro(a) de todos, assumindo responsabilidades pesadas e buscando uma perfeição estética e emocional em cada detalhe do ambiente ao seu redor.</p>
     <p>A armadilha desse excesso de cuidado é o perfeccionismo sufocante e a tendência a se sobrecarregar com problemas que não são seus. Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode acabar se tornando uma pessoa polêmica ou intrometida, tentando controlar a vida de terceiros sob o pretexto benevolente de ajudar, o que inevitavelmente gera conflitos e um cansaço emocional desnecessário. Sua alma deseja a harmonia coletiva, mas o seu aprendizado é entender que cada um tem o direito de caminhar com as próprias pernas e que sua felicidade não pode depender da perfeição dos outros.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "bmFOdmhBYmhncFk"
     },
     7: {
      conteudo:`<h3>Impulso de Introspecção e Desafio do Isolamento - 7</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, possui uma inclinação natural e poderosa para o estudo profundo, para o silêncio e para a decifração dos grandes mistérios da vida. É o desejo ardente de encontrar a verdade absoluta, a resposta técnica perfeita e a excelência intelectual em tudo o que se propõe a analisar ou realizar.</p>
     <p>O lado sombrio desse excesso é o isolamento gélido e o uso do sarcasmo como defesa. Seu padrão cíclico, <strong>MASCULINO-FEMININO-NEUTRO</strong>, pode ser o de se afastar do mundo por julgar — mesmo que inconscientemente — que ninguém compartilha do seu nível de sabedoria ou refinamento, tornando-se alguém frio e excessivamente crítico. Sua alma quer o conhecimento, mas a lição definitiva é integrar essa sabedoria com a compaixão humana, reconhecendo que a inteligência sem a conexão emocional é apenas um castelo de gelo vazio.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "bmFOdmhBYmhncFk"
     },
     8: {
      conteudo:`<h3>Impulso de Realização e Desafio do Materialismo - 8</h3>
     <p>Existe um desejo voraz em você por realização material, poder executivo e justiça prática no mundo, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Essa abundância numérica gera uma ambição legítima e necessária de organizar grandes estruturas e alcançar a prosperidade financeira de alto nível, utilizando a lógica e a autoridade para manifestar resultados concretos e duradouros.</p>
     <p>Porém, o excesso dessa vibração pode transformar você em alguém excessivamente frio, calculista e pragmático. O comportamento recorrente a ser evitado é o de colocar os interesses materiais e o status acima dos sentimentos humanos básicos, agindo de forma controladora para manter a autoridade a qualquer custo. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma quer o sucesso, mas entenda que o poder real é aquele que serve a um propósito maior; quando a riqueza é usada com ética e generosidade, ela se torna inesgotável e verdadeiramente respeitada.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "bmFOdmhBYmhncFk"
     },
     9: {
      conteudo:`<h3>Impulso de Humanitarismo e Desafio do Mártir - 9</h3>
     <p>A vibração da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é movida pela compaixão universal e por um altruísmo que não conhece fronteiras. Existe em você um desejo sincero e emocionante de ajudar o mundo e de se dedicar a causas que tragam evolução à humanidade, buscando a finalização de ciclos com sabedoria, perdão e desprendimento.</p>
     <p>A deficiência aqui surge quando você se perde em idealismos impraticáveis ou assume, sem perceber, o papel de mártir. O padrão negativo é o esquecimento total das suas próprias necessidades fundamentais e financeiras em favor de um "salvacionismo" irreal, o que acaba gerando esgotamento profundo e uma amarga sensação de falta de valorização. <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua alma quer salvar o mundo, mas lembre-se que você faz parte dele: para que sua luz ajude os outros, sua própria lâmpada precisa estar abastecida e cuidada.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "bmFOdmhBYmhncFk"
     }
 },
  
