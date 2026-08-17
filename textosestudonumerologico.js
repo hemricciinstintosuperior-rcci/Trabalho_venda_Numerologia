@@ -78,7 +78,7 @@ introducoes: {
 <p>Essas características se manifestam principalmente nas atitudes espontâneas, nas escolhas naturais e na forma como a pessoa se posiciona diante das experiências cotidianas. O Dia Natalício revela aquilo que emerge com maior autenticidade, sem a necessidade de esforço ou adaptação consciente.</p>
 <p>Por essa razão, ele é frequentemente associado ao conceito do “Eu Sou” mais verdadeiro. Trata-se da parte mais genuína da identidade, aquela que permanece constante mesmo diante das mudanças externas, das circunstâncias da vida ou das influências sociais.</p>
 <p>Compreender o próprio Dia Natalício permite reconhecer talentos naturais, compreender padrões de comportamento e identificar potenciais que muitas vezes permanecem adormecidos. Ao trazer consciência sobre essas características, a numerologia oferece um instrumento de autoconhecimento que pode auxiliar no desenvolvimento pessoal e na harmonização da própria trajetória de vida.</p>`,
-       videoID: "dia"
+       videoID: "bmFOdmhBYmhncFk"
     },
         comportamento: {
      conteudo:`O Número do Comportamento revela como são as qualidades psíquicas que influenciam nas escolhas pessoais. As pessoas experimentam diferentes respostas internas aos desafios da vida. Alguns se retiram de situações difíceis para pensar sobre elas; outros se afastam de suas emoções, para tentar evitar sentir as emoções. Outros se apegam aos seus sentimentos e sentem dificuldade em deixar as coisas irem.
@@ -1277,8 +1277,8 @@ Evite comentários desnecessários ou julgamentos para não alimentar fofocas qu
     <p>Sua mente funciona de forma independente e eu sei que você sente uma necessidade vital de manter o controle sobre a própria trajetória. Seu talento natural é a iniciativa pura; você não nasceu para seguir fórmulas prontas ou ordens que não façam sentido para a sua lógica, buscando sempre a sua verdade interna acima de qualquer opinião alheia, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>Na vida prática, você possui uma coragem que beira o pioneirismo, sendo aquela pessoa que dá o primeiro passo em projetos que outros temem encarar. Você tem a marca da individualidade e um desejo legítimo de ser destaque em tudo o que faz.</p>
     <p>O seu grande desafio, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é equilibrar essa força de vontade para que ela seja uma fonte de inspiração e não apenas de autoridade. Ao liderar pelo exemplo, você demonstra ao mundo que o sucesso é fruto da autoconfiança e da persistência que habitam o seu espírito realizador.</p>`,
-   videoRefCategoria: "dia",
-       videoRefValor: "1"
+   videoID: "bmFOdmhBYmhncFk"
+     
     },
     2: {
      conteudo:` <h3>Pacificador - Dia 2</h3>
