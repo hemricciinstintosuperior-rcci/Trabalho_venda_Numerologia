@@ -5226,21 +5226,33 @@ for (const chave of listaPremium) {
     const dados = textos[chave] ? textos[chave][res[chave]] : null;
     const conteudo = (typeof dados === 'object' && dados !== null) ? dados.conteudo : dados;
 
-// Ele tenta usar o generoAtual; se estiver vazio, tenta puxar do mapa (res.genero), se não, força "masculino"
-const generoParaBusca = typeof generoAtual !== 'undefined' && generoAtual ? generoAtual : (res.genero || "masculino");
-    
-    // --- AQUI É A MÁGICA: Puxa o ID do vídeo do Firebase usando a mesma variável 'video' que você já tem ---
-let video = null;
-if (dados.videoRefCategoria && dados.videoRefValor) {
-    // Passa a categoria ("dia"), o valor ("1") e o gênero ("masculino")
-    video = await buscarVideoID(dados.videoRefCategoria, dados.videoRefValor, generoAtual);
+// --- CORREÇÃO ROBUSTA ---
+// Tenta pegar o gênero de qualquer lugar possível antes de chamar a função
+let generoSeguro = "";
+
+if (typeof generoAtual !== 'undefined' && generoAtual) {
+    generoSeguro = generoAtual;
+} else if (res && res.genero) {
+    generoSeguro = res.genero;
+} else {
+    // Se nada funcionar, vamos ler o valor que está no seu campo de texto do HTML
+    const campoGênero = document.getElementById("generoTexto");
+    generoSeguro = campoGênero ? campoGênero.value : "masculino";
 }
 
-    // 2. Busca os dados da INTRODUÇÃO (NOVO: aceita Objeto com videoID ou String)
-// 3. Busca os dados da INTRODUÇÃO
-    const dadosIntro = textos.introducoes ? textos.introducoes[chave] : "";
-    const conteudoIntro = (typeof dadosIntro === 'object' && dadosIntro !== null) ? dadosIntro.conteudo : dadosIntro;
-    let videoIntro = await buscarVideoID("introducoes", chave, generoAtual);
+console.log("O gênero que estou usando para a busca é:", generoSeguro);
+
+// Agora sim, use o generoSeguro na chamada:
+let video = null;
+if (dados.videoRefCategoria && dados.videoRefValor) {
+    video = await buscarVideoID(dados.videoRefCategoria, dados.videoRefValor, generoSeguro);
+}
+
+let videoIntro = null;
+const chaveVideoIntro = (typeof dadosIntro === 'object' && dadosIntro !== null) ? dadosIntro.videoID : null;
+if (chaveVideoIntro) {
+    videoIntro = await buscarVideoID("introducoes", chaveVideoIntro, generoSeguro);
+}
 
     // 3. Monta o HTML com o separador e os players (da intro e do resultado)
     html += `
