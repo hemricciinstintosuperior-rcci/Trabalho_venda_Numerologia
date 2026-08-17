@@ -3567,22 +3567,19 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
        
 
 async function buscarVideoID(categoria, valor, genero) {
-    if (categoria === "equilibrio") return null;  
+    // Adicione esse log para ver o que está acontecendo:
+    console.log(`Buscando em: ${DB_URL}BibliotecaVideos/${categoria}/${genero}/${valor}.json`);
 
     try {
-        // O link agora monta exatamente a rota que você desenhou:
-        // BibliotecaVideos / [categoria] / [genero] / [valor]
         const url = `${DB_URL}BibliotecaVideos/${categoria}/${genero}/${valor}.json`;
         const resposta = await fetch(url);
         const idYouTube = await resposta.json();
         
-        if (idYouTube) {
-            return idYouTube; // Retorna o ID do YouTube certinho
-        }
+        console.log("Resposta do Firebase:", idYouTube); // Veja se o Firebase devolve algo
+        return idYouTube;
     } catch (error) {
-        console.error("Erro ao buscar vídeo no Firebase:", error);
+        console.error("Erro na busca:", error);
     }
-
     return null;
 }
 
