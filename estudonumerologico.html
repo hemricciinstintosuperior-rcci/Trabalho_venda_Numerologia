@@ -3566,20 +3566,34 @@ function gerarBlocoItem(titulo, resObjeto, chaveNoTexto) {
 
        
 
-async function buscarVideoID(categoria, valor, genero) {
-    // Adicione esse log para ver o que está acontecendo:
-    console.log(`Buscando em: ${DB_URL}BibliotecaVideos/${categoria}/${genero}/${valor}.json`);
+function buscarVideoID(categoria, valor, genero) {
+    if (categoria === "equilibrio") return null; 
 
-    try {
-        const url = `${DB_URL}BibliotecaVideos/${categoria}/${genero}/${valor}.json`;
-        const resposta = await fetch(url);
-        const idYouTube = await resposta.json();
-        
-        console.log("Resposta do Firebase:", idYouTube); // Veja se o Firebase devolve algo
-        return idYouTube;
-    } catch (error) {
-        console.error("Erro na busca:", error);
+    // A variável 'BibliotecaVideos' está global ou dentro de 'textos'? 
+    // Como você me mostrou, ela parece ser global no arquivo de textos.
+    // Vamos verificar ambos os locais:
+    
+    // 1. TENTA NA BIBLIOTECA GLOBAL
+    if (typeof BibliotecaVideos !== 'undefined' && BibliotecaVideos[categoria]) {
+        if (BibliotecaVideos[categoria][valor]) {
+            return BibliotecaVideos[categoria][valor];
+        }
     }
+
+    // 2. BACKUP: TENTA NO OBJETO 'textos' (caso esteja lá dentro)
+    if (typeof textos !== 'undefined' && textos.BibliotecaVideos && textos.BibliotecaVideos[categoria]) {
+        return textos.BibliotecaVideos[categoria][valor] || null;
+    }
+
+    // 3. BACKUP ANTIGO: Tenta buscar no formato antigo dos textos
+    if (typeof textos !== 'undefined' && textos[categoria] && textos[categoria][valor]) {
+        const item = textos[categoria][valor];
+        if (typeof item === 'object' && item.videoID) {
+            return item.videoID;
+        }
+    }
+
+    console.warn(`DEBUG: Nenhum vídeo encontrado para ${categoria}[${valor}]`);
     return null;
 }
 
@@ -3726,7 +3740,7 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
         
         
         
-async function gerarMapaCompleto(generoAtual) {
+function gerarMapaCompleto(generoAtual) {
     const nomeRaw = document.getElementById("nome").value.trim();
     const dataRaw = document.getElementById("data").value; // Agora vem como DD/MM/AAAA
 // IMPLEMENTAÇÃO APENAS:
@@ -5216,43 +5230,24 @@ html += `
 // 1. A lista deve ter exatamente as chaves que você colocou no 'res'
 const listaPremium = ["dia",  "essencia", "talento", "motivacao", "influencia", "comportamento", "Personalidade"];
 
-
-
-// Usamos 'for...of' em vez de 'forEach' para o 'await' funcionar perfeitamente
-for (const chave of listaPremium) {
+listaPremium.forEach(chave => {
     const tituloBonito = nomesExibicao[chave] || chave;
 
     // 1. Busca os dados do RESULTADO
     const dados = textos[chave] ? textos[chave][res[chave]] : null;
     const conteudo = (typeof dados === 'object' && dados !== null) ? dados.conteudo : dados;
+    
+    // --- DESEMBARALHA O VÍDEO DO RESULTADO (Se existir) ---
+    const videoEmbaralhado = (typeof dados === 'object' && dados !== null) ? dados.videoID : null;
+    const video = videoEmbaralhado ? atob(videoEmbaralhado) : null;
 
-// --- CORREÇÃO ROBUSTA ---
-// Tenta pegar o gênero de qualquer lugar possível antes de chamar a função
-let generoSeguro = "";
-
-if (typeof generoAtual !== 'undefined' && generoAtual) {
-    generoSeguro = generoAtual;
-} else if (res && res.genero) {
-    generoSeguro = res.genero;
-} else {
-    // Se nada funcionar, vamos ler o valor que está no seu campo de texto do HTML
-    const campoGênero = document.getElementById("generoTexto");
-    generoSeguro = campoGênero ? campoGênero.value : "masculino";
-}
-
-console.log("O gênero que estou usando para a busca é:", generoSeguro);
-
-// Agora sim, use o generoSeguro na chamada:
-let video = null;
-if (dados.videoRefCategoria && dados.videoRefValor) {
-    video = await buscarVideoID(dados.videoRefCategoria, dados.videoRefValor, generoSeguro);
-}
-
-let videoIntro = null;
-const chaveVideoIntro = (typeof dadosIntro === 'object' && dadosIntro !== null) ? dadosIntro.videoID : null;
-if (chaveVideoIntro) {
-    videoIntro = await buscarVideoID("introducoes", chaveVideoIntro, generoSeguro);
-}
+    // 2. Busca os dados da INTRODUÇÃO
+    const dadosIntro = textos.introducoes ? textos.introducoes[chave] : "";
+    const conteudoIntro = (typeof dadosIntro === 'object' && dadosIntro !== null) ? dadosIntro.conteudo : dadosIntro;
+    
+    // --- DESEMBARALHA O VÍDEO DA INTRODUÇÃO (Se existir) ---
+    const videoIntroEmbaralhado = (typeof dadosIntro === 'object' && dadosIntro !== null) ? dadosIntro.videoID : null;
+    const videoIntro = videoIntroEmbaralhado ? atob(videoIntroEmbaralhado) : null;
 
     // 3. Monta o HTML com o separador e os players (da intro e do resultado)
     html += `
@@ -5265,7 +5260,7 @@ if (chaveVideoIntro) {
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
         
         <div class="intro-texto">
-            ${aplicarFiltroTexto(chaveVideoIntro || "")}
+            ${aplicarFiltroTexto(conteudoIntro || "")}
             ${videoIntro ? gerarPlayerYouTube(videoIntro) : ""}
         </div>
         
@@ -5275,7 +5270,7 @@ if (chaveVideoIntro) {
         </div>
     </div>
     `;
-}
+});
 
 
 
@@ -5288,15 +5283,9 @@ const dadosDesejo = calcularDesejoOculto(nomeRaw);
 const primeiroNome = nomeRaw.split(' ')[0];
 
 // --- DESEJO OCULTO ---
-// --- DESEJO OCULTO (Adaptado para puxar do Firebase com await) ---
-let idVideoDesejo = null;
-if (dadosDesejo && dadosDesejo.numero) {
-    // Aqui usamos a mesma categoria "desejoOculto" e o número correspondente para buscar no Firebase
-    idVideoDesejo = await buscarVideoID("desejoOculto", dadosDesejo.numero);
-}
+const idVideoDesejo = buscarVideoID("desejoOculto", dadosDesejo.numero, generoAtual);
 
-// 2. Puxa o ID do vídeo de INTRODUÇÃO do Firebase (removendo o ID fixo do código)
-let idVideoIntroDesejo = await buscarVideoID("introducoes", "desejoOculto");
+const idVideoIntroDesejo = "z1nW3rmNeEI";
     // Crie esta linha logo ACIMA do código da ondinha:
  tituloBonito = "SEU DESEJO OCULTO"; 
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
