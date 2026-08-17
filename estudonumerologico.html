@@ -5225,6 +5225,10 @@ for (const chave of listaPremium) {
     // 1. Busca os dados do RESULTADO
     const dados = textos[chave] ? textos[chave][res[chave]] : null;
     const conteudo = (typeof dados === 'object' && dados !== null) ? dados.conteudo : dados;
+
+// Ele tenta usar o generoAtual; se estiver vazio, tenta puxar do mapa (res.genero), se não, força "masculino"
+const generoParaBusca = typeof generoAtual !== 'undefined' && generoAtual ? generoAtual : (res.genero || "masculino");
+    
     // --- AQUI É A MÁGICA: Puxa o ID do vídeo do Firebase usando a mesma variável 'video' que você já tem ---
 let video = null;
 if (dados.videoRefCategoria && dados.videoRefValor) {
