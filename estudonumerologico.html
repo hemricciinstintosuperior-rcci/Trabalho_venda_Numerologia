@@ -5285,7 +5285,10 @@ const primeiroNome = nomeRaw.split(' ')[0];
 // --- DESEJO OCULTO ---
 // (Se você estivesse usando o Firebase, seria buscarVideoID, mas como voltamos para o local, 
 // o ID do desejo oculto vem direto do seu objeto ou texto JS)
-const idVideoDesejoEmbaralhado = dadosDesejo.videoID; // ou de onde você puxa o vídeo do desejo
+// Em vez de olhar em dadosDesejo, nós buscamos dentro do objeto de textos que já possui o seu ID embaralhado:
+const objetoTextoDesejo = textos.desejoOculto ? textos.desejoOculto[dadosDesejo.numero] : null;
+
+const idVideoDesejoEmbaralhado = (typeof objetoTextoDesejo === 'object' && objetoTextoDesejo !== null) ? objetoTextoDesejo.videoID : null;
 const videoDesejoFinal = idVideoDesejoEmbaralhado ? atob(idVideoDesejoEmbaralhado) : null;
 
 // Para a introdução que já está com o código embaralhado aí em cima:
