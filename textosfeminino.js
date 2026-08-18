@@ -6235,7 +6235,8 @@ textosPlanos = {
 <p>Sua constância produtiva é alimentada pelo nível de interesse nas atividades realizadas. Organizar prioridades de forma clara ajuda você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a transformar esse dinamismo natural em produtividade contínua, evitando a dispersão energética. Intercalar obrigações com momentos de estímulo criativo é necessário para manter o seu corpo ativo e motivado. O movimento constante é a característica que evita em você a sensação de tédio físico.</p>
 
 <p>A sua versatilidade permite lidar com múltiplas demandas simultâneas, consolidando o sucesso através da conclusão dedicada de cada tarefa iniciada. Buscar atividades que unam o esforço físico com a satisfação mental é o melhor caminho para sua saúde, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu carisma facilita a abertura de caminhos, enquanto sua entrega prática solidifica sua reputação. Ao focar na qualidade da execução, sua trajetória profissional ganha um brilho especial e inspirador.</p>`,
-
+videoID: "F8bg1CTQ9HI"
+    },
       4: {
      conteudo:`<p>Há em sua essência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma capacidade sólida de organização e construção material baseada na disciplina e no planejamento. Sua energia física responde com excelência a rotinas estruturadas e objetivos mensuráveis. Sua produtividade é constante, transformando o trabalho dedicado em um hábito natural de vida. É a força da sua realização estável, que valoriza a segurança e a construção de um legado duradouro através do esforço honesto.</p>
 
