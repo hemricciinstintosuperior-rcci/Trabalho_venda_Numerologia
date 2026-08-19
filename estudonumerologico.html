@@ -3209,7 +3209,8 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, negativasOriginal) {
         .replace(/\${expOriginal}/g, expOriginal)
         .replace(/\${expCasado}/g, expCasado);
     
-    const idVideoCasamento = "F8bg1CTQ9HI"; // Substitua pelo ID real
+           const idVideoCasadoEmbaralhado = "bmFOdmhBYmhncFk"; 
+const idVideoCasadoFinal = idVideoCasadoEmbaralhado ? atob(idVideoCasadoEmbaralhado) : null;    
     // INÍCIO DO HTML
     let html = `
     <div class="page" style="page-break-before: always; padding: 20px;">
@@ -3239,7 +3240,7 @@ function gerarAbaNomeCasado(nomeCasado, expOriginal, negativasOriginal) {
         <div style="margin-top: 20px; text-align: center; color: #555; font-style: italic;">
             <p>Assista ao vídeo explicativo sobre como a mudança de nome afeta sua energia:</p>
         </div>
-    `, idVideoCasamento);
+    `, idVideoCasadoFinal);
 
     // CORREÇÃO AQUI: Adicionado o "html +=" que faltava para abrir a pirâmide
     html += `
@@ -5166,9 +5167,8 @@ html += '</div>';
 
 
 
-    const idVideoAssinaEmbaralhado = "bmFOdmhBYmhncFk"; 
-const idVideoAssinaFinal = idVideoAssinaEmbaralhado ? atob(idVideoAssinaEmbaralhado) : null; 
-html += renderizarBlocoComVideo('<div id="tela-assinatura" class="conteudo-aba">',idVideoAssinaFinal);
+
+html += '<div id="tela-assinatura" class="conteudo-aba">';
 
 
     
@@ -5177,7 +5177,12 @@ const campoAssinatura = document.getElementById("input_nova_assinatura");
 if (campoAssinatura && campoAssinatura.value.trim() !== "") {
     // Chamamos a função e já concatenamos direto no seu 'html'
     // Usamos 'exp' e 'dadosNegativas' que já estão calculados no seu mapa
-    html += gerarNovaAssinatura(campoAssinatura.value.trim(), exp, dadosNegativas);
+
+
+        const idVideoAssinaEmbaralhado = "bmFOdmhBYmhncFk"; 
+const idVideoAssinaFinal = idVideoAssinaEmbaralhado ? atob(idVideoAssinaEmbaralhado) : null; 
+    
+    html += renderizarBlocoComVideo(gerarNovaAssinatura(campoAssinatura.value.trim(), exp, dadosNegativas),idVideoAssinaFinal);
 }
 
 
@@ -5194,9 +5199,8 @@ const nomeCasadoInput = document.getElementById("nomeCasado").value.trim();
 if (nomeCasadoInput !== "") {
     // 1. 'exp' é a variável que você calculou lá no início para a Expressão Original
     // 2. 'DadosNegativas' é o objeto que você usou no código acima (DadosNegativas.detalhes)
-         const idVideoCasadoEmbaralhado = "bmFOdmhBYmhncFk"; 
-const idVideoCasadoFinal = idVideoCasadoEmbaralhado ? atob(idVideoCasadoEmbaralhado) : null;    
-    html += renderizarBlocoComVideo(gerarAbaNomeCasado(nomeCasadoInput, exp, dadosNegativas),idVideoAssinaFinal);
+
+    html += gerarAbaNomeCasado(nomeCasadoInput, exp, dadosNegativas);
 }
  html += '</div>';   
     
