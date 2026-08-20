@@ -6852,8 +6852,21 @@ html += `
     </div>
 `;
     
-// --- 1. PRIMEIRO: DETECTA TUDO ---
-const arcanosTopo = topo(piramideVida[0]);
+// --- FUNÇÃO AUXILIAR DE EMBARALHAMENTO (Algoritmo Fisher-Yates) ---
+function embaralharArray(array) {
+    let copia = [...array];
+    for (let i = copia.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copia[i], copia[j]] = [copia[j], copia[i]];
+    }
+    return copia;
+}
+
+// --- 1. PRIMEIRO: DETECTA TUDO (COM EMBARALHAMENTO DOS ARCANOS) ---
+// Pegamos a linha do topo original e aplicamos o embaralhamento
+const arcanosTopoOriginal = topo(piramideVida[0]);
+const arcanosTopo = embaralharArray(arcanosTopoOriginal); // <--- APLICA O EMBARALHAMENTO AQUI
+
 const listaEspeciais = detectarEspeciaisIndependentes(piramideVida);
 const listaFin = detectarFinanceirasIndependentes(piramideVida);    
 
@@ -6895,7 +6908,7 @@ let htmlPiramide = `
     <div class="container-piramide">
         <div class="piramide">`;
 
-    // --- NOVA PARTE: LINHA DO NOME NO TOPO ---
+    // --- LINHA DO NOME NO TOPO (Ajustada se desejar alinhar ao topo embaralhado) ---
 const letrasNomeTopo = nomeRaw.toUpperCase().replace(/\s+/g, '').split('');
 htmlPiramide += `<div class="linha linha-letras" style="margin-bottom: 5px;">`;
 letrasNomeTopo.forEach(letra => {
@@ -6903,12 +6916,9 @@ letrasNomeTopo.forEach(letra => {
 });
 htmlPiramide += `</div>`;
 
-// ... (continua o código que desenha as linhas da pirâmide)
-    
 piramideVida.forEach((linha, i) => {
     htmlPiramide += `<div class="linha">`;
     linha.forEach((n, j) => {
-        // Começamos com a classe base
         let classes = ["num"];
 
         // 1. Verifica se é NEGATIVA (Vermelho)
@@ -6917,40 +6927,32 @@ piramideVida.forEach((linha, i) => {
         } 
         
         // 2. Verifica se é ESPECIAL (Dourado)
-        // O JavaScript percorre a lista de especiais encontradas e vê se o número atual (i, j) faz parte de uma
         listaEspeciais.forEach(esp => {
-            // Ajuste fino da posição na pirâmide (coluna j + offset da linha)
             let colReal = j + Math.floor(i / 2);
             if (i === esp.linha && colReal >= esp.colunaInicio && colReal < esp.colunaInicio + 3) {
                 classes.push("especial");
             }
         });
 
-// --- DENTRO DO LOOP DA PIRÂMIDE (onde cria cada quadradinho) ---
+        // 3. REGRA FINANCEIRA "À PROVA DE FALHAS"
+        if (n === 9) {
+            let tem9LadoDir = (linha[j+1] === 9);
+            let tem9LadoEsq = (linha[j-1] === 9);
+            let tem9Baixo = (piramideVida[i+1] && piramideVida[i+1][j] === 9);
+            let tem9BaixoEsq = (piramideVida[i+1] && piramideVida[i+1][j-1] === 9);
+            let tem9Cima = (piramideVida[i-1] && piramideVida[i-1][j] === 9);
+            let tem9CimaDir = (piramideVida[i-1] && piramideVida[i-1][j+1] === 9);
 
-    // 3. NOVA REGRA FINANCEIRA "À PROVA DE FALHAS"
-    // Se o número atual for 9, ele checa se faz parte de um triângulo
-    if (n === 9) {
-        // Caso A: Ele é um dos 9 de cima
-        // Checa se tem um 9 ao lado e um 9 embaixo
-        let tem9LadoDir = (linha[j+1] === 9);
-        let tem9LadoEsq = (linha[j-1] === 9);
-        let tem9Baixo = (piramideVida[i+1] && piramideVida[i+1][j] === 9);
-        let tem9BaixoEsq = (piramideVida[i+1] && piramideVida[i+1][j-1] === 9);
-        let tem9Cima = (piramideVida[i-1] && piramideVida[i-1][j] === 9);
-        let tem9CimaDir = (piramideVida[i-1] && piramideVida[i-1][j+1] === 9);
-
-        if ((tem9LadoDir && tem9Baixo) || (tem9LadoEsq && tem9BaixoEsq) || (tem9Cima) || (tem9CimaDir)) {
-            classes.push("financeiro");
+            if ((tem9LadoDir && tem9Baixo) || (tem9LadoEsq && tem9BaixoEsq) || (tem9Cima) || (tem9CimaDir)) {
+                classes.push("financeiro");
+            }
         }
-    }
 
-        // 4. Verifica se é o REGENTE (Destaque Triângulo)
+        // 4. Verifica se é o REGENTE
         if (i === piramideVida.length - 1) {
             classes.push("regente-destaque");
         }
 
-        // Monta a div final com todas as classes detectadas
         htmlPiramide += `<div class="${classes.join(' ')}">${n}</div>`;
     });
     htmlPiramide += `</div>`;
@@ -6958,14 +6960,11 @@ piramideVida.forEach((linha, i) => {
 
 htmlPiramide += `</div>`;
 
-
 // --- 2. SEPARADOR E CONTEÚDO DO REGENTE ---
 tituloBonito = "O Regente da sua Matriz 🔱"; 
 
-// BUSCA DO VÍDEO DO REGENTE
 const idVideoRegente = buscarVideoID("RegenteVida", regenteVida, generoAtual);
-
-    const idVideoIntroRegente = "z1nW3rmNeEI";
+const idVideoIntroRegente = "z1nW3rmNeEI";
 
 htmlPiramide += `
 <div class="separador-luxo">
@@ -6982,24 +6981,21 @@ htmlPiramide += `
 <p>Quando suas escolhas estão alinhadas com essa frequência central, as situações tendem a fluir com mais naturalidade. Os desafios continuam existindo, mas passam a ser enfrentados com maior clareza e equilíbrio. No entanto, quando você se distancia dessa vibração essencial, pode surgir uma sensação de desgaste, como se estivesse nadando contra a própria corrente da sua natureza.</p>
 
 <p>Compreender o seu Regente é compreender o fundamento da sua identidade energética. Ele revela talentos naturais, tendências comportamentais e a forma como a sua presença influencia o ambiente ao redor, sendo a base sobre a qual todo o restante da análise da Pirâmide da Vida se apoia.</p>`}
-${idVideoIntroRegente ? gerarPlayerYouTube(idVideoIntroRegente) : ""}
 
+${idVideoIntroRegente ? gerarPlayerYouTube(idVideoIntroRegente) : ""}
 </div>
 
 <div class="bloco-regente evitar-corte" style="margin-top: 50px; padding-top: 20px; border-top: 1px inset #fff;">
-
 <div class="texto-res" style="font-size: 20px; color: #222;">
     ${aplicarFiltroTexto(textos.RegenteVida[regenteVida].conteudo)}
     ${gerarPlayerYouTube(textos.RegenteVida[regenteVida].videoID)}
 </div>
 </div>`;
 
+// --- BLOQUEIOS / VULNERABILIDADES ---
 if(dadosNegativas.detalhes.length > 0){
-
-
-const idVideoIntroBloqueios = "z1nW3rmNeEI";
+    const idVideoIntroBloqueios = "z1nW3rmNeEI";
     
-    // 1. TÍTULO E SEPARADOR
     tituloBonito = "Vulnerabilidades e Bloqueios  ⚠️ ";
     htmlPiramide += `
     <div class="separador-luxo">
@@ -7009,33 +7005,27 @@ const idVideoIntroBloqueios = "z1nW3rmNeEI";
     </div>
     
     <div class="intro-secao" style="margin: 30px 0; width: 100%; font-size: 21px; line-height: 1.6; color: #333; text-align: justify;">
-        ${textos.introducoes.vulnerabilidades || `
- <p style="margin-bottom: 20px;">As <b>Sequências de Bloqueios</b> identificam pontos de tensão latentes em sua estrutura vibracional, manifestando-se como tendências e desafios que o acompanham desde o nascimento até a plena maturidade. Elas representam os números iguais que aparecem de forma repetitiva em sua Matriz, como as sequências 111, 222, 333 e assim por diante, sinalizando áreas onde a sua energia pessoal encontra maior resistência ou padrões de repetição exaustivos. Estas sequências não devem ser interpretadas como punições ou destinos imutáveis, mas sim como indicadores precisos de comportamentos automáticos e limitações internas que precisam ser trabalhados e integrados com consciência ao longo da sua jornada evolutiva.</p>
+        ${textos.introducoes.vulnerabilidades || `As <b>Sequências de Bloqueios</b> identificam pontos de tensão latentes em sua estrutura vibracional, manifestando-se como tendências e desafios que o acompanham desde o nascimento até a plena maturidade. Elas representam os números iguais que aparecem de forma repetitiva em sua Matriz, como as sequências 111, 222, 333 e assim por diante, sinalizando áreas onde a sua energia pessoal encontra maior resistência ou padrões de repetição exaustivos. Estas sequências não devem ser interpretadas como punições ou destinos imutáveis, mas sim como indicadores precisos de comportamentos automáticos e limitações internas que precisam ser trabalhados e integrados com consciência ao longo da sua jornada evolutiva.</p>
 
     <p style="margin-bottom: 20px;">Muitas dessas sequências estão profundamente vinculadas a experiências fundamentais que demandam um aprendizado contínuo e um amadurecimento constante por parte do indivíduo. Elas sinalizam aspectos da sua natureza que ainda buscam plena expressão, funcionando como um mapa exato das lições que a vida solicita com maior insistência e rigor. Quando uma pessoa nasce com essas vibrações em sua matriz, ela carrega consigo ferramentas que, embora potentes, estão inicialmente "travadas" ou desequilibradas, gerando bloqueios que podem afetar desde a vida profissional até os relacionamentos mais íntimos e a saúde emocional, exigindo um esforço de autolapidação constante.</p>
 
     <p style="margin-bottom: 20px;">Ao reconhecer a existência dessas frequências em seu mapa, você desenvolve a lucidez necessária para transcender as reações instintivas e os ciclos de autossabotagem que esses números iguais tendem a provocar. Esse processo de autodomínio transforma obstáculos aparentemente intransponíveis em degraus estratégicos para uma evolução autêntica e deliberada, permitindo que você tome as rédeas da sua própria energia. Trabalhar essas sequências negativas é, na verdade, um ato de libertação, onde você identifica a raiz do problema e aplica a cura através do autoconhecimento, garantindo que o seu potencial original não seja sufocado por medos ou padrões herdados que não servem mais ao seu crescimento.</p>
 
-    <p style="margin-bottom: 20px;">Portanto, encare este estudo das sequências de bloqueios como um manual de instruções para lidar com suas partes mais complexas e desafiadoras. À medida que você domina essas vibrações, a resistência diminui e a sua vida passa a fluir com uma leveza que antes parecia inalcançável. A transmutação dessas energias é o que diferencia o ser que é refém do acaso daquele que se torna o mestre de sua própria vibração. Com paciência e disciplina, cada sequência negativa é gradualmente convertida em uma fonte de sabedoria prática, tornando sua jornada muito mais assertiva, próspera e livre das amarras que impedem a sua máxima performance humana e espiritual.</p>
-`}   ${idVideoIntroBloqueios ? gerarPlayerYouTube(idVideoIntroBloqueios) : ""}
+    <p style="margin-bottom: 20px;">Portanto, encare este estudo das sequências de bloqueios como um manual de instruções para lidar com suas partes mais complexas e desafiadoras. À medida que você domina essas vibrações, a resistência diminui e a sua vida passa a fluir com uma leveza que antes parecia inalcançável. A transmutação dessas energias é o que diferencia o ser que é refém do acaso daquele que se torna o mestre de sua própria vibração. Com paciência e disciplina, cada sequência negativa é gradualmente convertida em uma fonte de sabedoria prática, tornando sua jornada muito mais assertiva, próspera e livre das amarras que impedem a sua máxima performance humana e espiritual.</p>`}   
+        ${idVideoIntroBloqueios ? gerarPlayerYouTube(idVideoIntroBloqueios) : ""}
     </div>
-
     <h2 style="color:red; margin-top:30px; border-bottom: 2px #ffffff; padding-bottom:10px; text-align: left;"> </h2>
     `;
-    
-   
 
     dadosNegativas.detalhes.forEach(neg => {
         let idadeInicio = 0;
         let duracaoTotal = 0;
 
-        // 1. Soma as durações de todas as colunas ANTES da sequência começar
         for (let a = 0; a < neg.colunaInicio; a++) {
             let arcRef = arcanosTopo[a] || arcanosTopo[arcanosTopo.length - 1];
             idadeInicio += parseInt(arcRef.toString()[0]) || 1;
         }
 
-        // 2. Soma a duração das colunas que a sequência OCUPA na pirâmide
         for (let b = 0; b < neg.repeticoes; b++) {
             let colReal = neg.colunaInicio + b;
             let arcAtual = arcanosTopo[colReal] || arcanosTopo[arcanosTopo.length - 1];
@@ -7043,49 +7033,39 @@ const idVideoIntroBloqueios = "z1nW3rmNeEI";
         }
 
         const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
-console.log("DEBUG BLOQUEIO:", neg.numero, textos.SeqNegVida[neg.numero]);
-    // BUSCA DO VÍDEO
-    const idVideoNeg = buscarVideoID("SeqNegVida", neg.numero, generoAtual);
 
-    htmlPiramide += `
-    <div class="evitar-corte" style="margin-bottom: 35px; border-left:none; padding: 15px; text-align: center;">
-        <h2 style="color:red; font-size: 24px; margin-bottom: 10px;">Bloqueio n° ${neg.numero} ⚠️</h2>
-        <span style="color:red; font-weight: bold; font-size: 21px; display: block; margin-bottom: 5px;">
-            📅 Período de maior influência: de ${datas.ini} até ${datas.fim}
-        </span>
-        <span style="color:red; font-weight: bold; font-size: 21px; display: block; margin-bottom: 20px;">
-            Tempo: ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)
-        </span>
+        htmlPiramide += `
+        <div class="evitar-corte" style="margin-bottom: 35px; border-left:none; padding: 15px; text-align: center;">
+            <h2 style="color:red; font-size: 24px; margin-bottom: 10px;">Bloqueio n° ${neg.numero} ⚠️</h2>
+            <span style="color:red; font-weight: bold; font-size: 21px; display: block; margin-bottom: 5px;">
+                📅 Período de maior influência: de ${datas.ini} até ${datas.fim}
+            </span>
+            <span style="color:red; font-weight: bold; font-size: 21px; display: block; margin-bottom: 20px;">
+                Tempo: ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)
+            </span>
 
-<div class="texto-res" style="text-align: left; font-size: 18px; line-height: 1.7; color: #222;">
-    <p style="margin-top: 8px;">
-        ${aplicarFiltroTexto(textos.SeqNegVida[neg.numero].conteudo)}
-    </p>
-    ${gerarPlayerYouTube(textos.SeqNegVida[neg.numero].videoID)}
-</div>
-
-
-    </div>`;
-});
+            <div class="texto-res" style="text-align: left; font-size: 18px; line-height: 1.7; color: #222;">
+                <p style="margin-top: 8px;">
+                    ${aplicarFiltroTexto(textos.SeqNegVida[neg.numero].conteudo)}
+                </p>
+                ${gerarPlayerYouTube(textos.SeqNegVida[neg.numero].videoID)}
+            </div>
+        </div>`;
+    });
 }
 
-
-
-const idVideoIntroEspeciais = "z1nW3rmNeEI";
 // --- SEQUÊNCIAS ESPECIAIS ⭐ ---
+const idVideoIntroEspeciais = "z1nW3rmNeEI";
 if (listaEspeciais.length > 0) {
     htmlPiramide += `<div class="separador-luxo"><div class="caixa-interna"><h2>Sequências Especiais ⭐</h2></div></div>`;
     
-    // Texto de introdução para Especiais
     htmlPiramide += `<div class="intro-texto" style="margin-bottom: 20px;">
-    <p>As sequências especiais apresentadas a seguir são baseadas em análises e estudos desenvolvidos por outros numerólogos. É importante esclarecer que estes dados não fazem parte da minha metodologia de trabalho e não refletem minhas convicções como numerólogo; optei por incluí-las neste mapa apenas como um conteúdo complementar para sua curiosidade, respeitando diferentes perspectivas da área.</p>
+<p>As sequências especiais apresentadas a seguir são baseadas em análises e estudos desenvolvidos por outros numerólogos. É importante esclarecer que estes dados não fazem parte da minha metodologia de trabalho e não refletem minhas convicções como numerólogo; optei por incluí-las neste mapa apenas como um conteúdo complementar para sua curiosidade, respeitando diferentes perspectivas da área.</p>
     <p>Segundo a visão desses outros estudiosos, essas sequências representariam períodos dentro da Pirâmide da Vida em que determinadas energias numéricas se intensificariam, influenciando tendências e comportamentos. Para quem segue essa linha de estudo, esses momentos apontariam para campos de maior probabilidade onde certas experiências poderiam se manifestar.</p>
     <p>Cada número, nessa perspectiva, carregaria uma vibração própria, ativando cenários que dialogariam com aquela energia. A inclusão deste tópico visa oferecer a você uma visão mais ampla das teorias existentes na numerologia, embora elas não sejam utilizadas por mim em minhas análises.</p>
     <p>Dessa forma, estas sequências funcionam como marcadores de tempo conforme a interpretação de outros profissionais, permitindo que você tenha acesso a essa teoria, mesmo que ela não seja o foco do meu atendimento ou do meu sistema de análise.</p>
-${idVideoIntroEspeciais ? gerarPlayerYouTube(idVideoIntroEspeciais) : ""}
-
-
-</div>`;
+    ${idVideoIntroEspeciais ? gerarPlayerYouTube(idVideoIntroEspeciais) : ""}
+    </div>`;
     
     listaEspeciais.forEach(esp => {
         let idadeInicio = 0; let duracaoTotal = 0;
@@ -7098,34 +7078,32 @@ ${idVideoIntroEspeciais ? gerarPlayerYouTube(idVideoIntroEspeciais) : ""}
         const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
 
         htmlPiramide += `
-             <div class="evitar-corte" style="margin-bottom: 35px; text-align: center;">
+            <div class="evitar-corte" style="margin-bottom: 35px; text-align: center;">
                 <h2 style="color:#d97a1e; font-size: 22px;">Alinhamento Especial ${esp.numero}</h2>
                 <span style="color:#d97a1e; font-weight: bold; font-size: 20px;">📅 Período de maior influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
               
                 <div class="texto-res" style="text-align: justify; margin-top:15px;">
                     ${aplicarFiltroTexto(textos.SeqEspeciais[esp.numero])}
-                          </div>
-     
+                </div>
             </div>`;
     });
 }
 
-
-    
-const idVideoIntroFinanceiros  = "z1nW3rmNeEI";
 // --- FLUXOS FINANCEIROS 💰 ---
+const idVideoIntroFinanceiros  = "z1nW3rmNeEI";
 if (listaFin.length > 0) {
     htmlPiramide += `<div class="separador-luxo"><div class="caixa-interna"><h2>Fluxos Financeiros 💰</h2></div></div>`;
     
-    // Texto de introdução para Financeiro
-    htmlPiramide += `<div class="intro-texto" style="margin-bottom: 20px;">O potencial de fluxo financeiro indica janelas de oportunidade para a expansão material e a consolidação de recursos, baseadas no seu magnetismo de prosperidade do momento. 
+    htmlPiramide += `<div class="intro-texto" style="margin-bottom: 20px;">
+        O potencial de fluxo financeiro indica janelas de oportunidade para a expansão material e a consolidação de recursos, baseadas no seu magnetismo de prosperidade do momento. 
    <p>No contexto financeiro, esse período pode se manifestar como uma fase de recebimentos, retornos ou entradas de recursos que não dependem exclusivamente do esforço direto e imediato da pessoa, mas sim de circunstâncias já construídas ao longo do tempo. É como se houvesse uma “colheita” de situações passadas, que agora se concretizam em forma material.</p>
    <p>Nesse momento, a pessoa pode, por exemplo, ser desligada de uma empresa e receber corretamente todos os seus direitos trabalhistas — como rescisão, multa do FGTS, férias proporcionais e outros valores acumulados. Também pode ocorrer o recebimento de valores que estavam pendentes, como dívidas antigas sendo quitadas, restituições, reembolsos ou até ajustes financeiros inesperados a seu favor.</p>
    <p>Há ainda possibilidades relacionadas ao acaso ou à sorte, como ganhos em loterias, apostas esportivas, sorteios ou premiações diversas. Embora não sejam garantias, esse período tende a ampliar a probabilidade de ganhos vindos de fontes não convencionais ou não planejadas diretamente.</p><p>Outro cenário comum envolve heranças, partilhas ou divisão de bens familiares, onde a pessoa passa a ter acesso a valores ou patrimônios que antes não estavam sob sua posse. Isso também pode incluir doações, ajudas financeiras de terceiros ou apoio inesperado em momentos específicos.</p>
    <p>Além disso, pode haver ganhos relacionados a investimentos antigos que começam a dar retorno, venda de bens (como imóveis, veículos ou objetos de valor), ou até oportunidades de negócio que surgem trazendo lucro de forma mais rápida do que o habitual.</p>
    <p>Em alguns casos, esse movimento também pode se manifestar como economia indireta — por exemplo, deixar de ter um gasto significativo, resolver uma pendência que geraria prejuízo, ou encontrar soluções que aliviam a pressão financeira, o que, na prática, representa um ganho.</p><p>Portanto, esse tipo de vibração não se limita a um único formato de dinheiro direto, mas abrange qualquer forma de entrada, recuperação ou liberação financeira. O importante é observar que, nesse período, existe uma tendência de “retorno” — seja ele fruto de mérito passado, de circunstâncias externas ou de oportunidades que se apresentam de maneira inesperada.</p>
-   ${idVideoIntroFinanceiros ? gerarPlayerYouTube(idVideoIntroFinanceiros) : ""}
-   </div>`;
+   
+        ${idVideoIntroFinanceiros ? gerarPlayerYouTube(idVideoIntroFinanceiros) : ""}
+    </div>`;
     
     listaFin.forEach(fin => {
         let idadeInicio = 0; let duracaoTotal = 0;
@@ -7138,28 +7116,22 @@ if (listaFin.length > 0) {
         const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
 
         htmlPiramide += `
-             <div class="evitar-corte" style="margin-bottom: 35px;  text-align: center; margin-top: 100px;">
-             
+            <div class="evitar-corte" style="margin-bottom: 35px; text-align: center; margin-top: 100px;">
                 <h2 style="color:#28a745; font-size: 22px;">Potencial de Prosperidade 99/9</h2>
-
-                
-              
                 <span style="color:#28a745; font-weight: bold; font-size: 20px;">📅 Período de influência ${datas.ini} até ${datas.fim} <br> ${duracaoTotal} anos (dos ${idadeInicio} aos ${idadeInicio + duracaoTotal} anos de idade)</span><br><br>
                 
                 <div class="texto-res" style="text-align: justify; margin-top:15px;">
                     ${aplicarFiltroTexto(textos.SeqFinanceira[999])}
-                    </div>
-  
-        
+                </div>
             </div>`;
     });
 }
     
 htmlPiramide += `</div>`;
 
-    
 // --- INSERÇÃO DAS POTÊNCIAS COM LOOP DE 100 ANOS ---
-const potenciasTopo = topo(piramideVida[0]); // As potências originais do nome
+// Utiliza a lista embaralhada arcanosTopo diretamente
+const potenciasTopo = arcanosTopo; 
 const dataEntrada = document.getElementById("data").value;
 const anoNascPot = new Date(dataEntrada).getUTCFullYear();
 
@@ -7167,7 +7139,6 @@ let htmlPotenciasCalculadas = "";
 let idadeAcumulada = 0;
 let indiceLoop = 0;
 
-// O loop continua enquanto a idade acumulada não atingir 100 anos
 while (idadeAcumulada < 100) {
     const p = potenciasTopo[indiceLoop % potenciasTopo.length];
     const duracaoAnos = parseInt(p.toString()[0]) || 1; 
@@ -7179,8 +7150,6 @@ while (idadeAcumulada < 100) {
     const dataIniPot = new Date(dtNasci.getFullYear() + idadeInicio, dtNasci.getMonth(), dtNasci.getDate());
     const dataFimPot = new Date(dtNasci.getFullYear() + idadeFim, dtNasci.getMonth(), dtNasci.getDate());
 
-    // --- NOVA LÓGICA DE EXTRAÇÃO ---
-    // Verificamos se textos.Potencias[p] é um objeto (para pegar conteudo/video) ou texto simples
     const dadoPotencia = textos.Potencias[p];
     const textoParaExibir = (typeof dadoPotencia === 'object') ? dadoPotencia.conteudo : (dadoPotencia || "Vibração em análise.");
     const videoParaExibir = (typeof dadoPotencia === 'object') ? dadoPotencia.videoID : null;
@@ -7200,49 +7169,39 @@ while (idadeAcumulada < 100) {
                 📅 VIGÊNCIA: ${dataIniPot.toLocaleDateString('pt-BR')} até ${dataFimPot.toLocaleDateString('pt-BR')}
             </div>
 
-          
-                <div class="texto-res" style="${potenciaAtivaAgora ? 'color:#000; font-weight:500;' : 'color:#222;'}">
-                    ${aplicarFiltroTexto(textoParaExibir)}
-                    ${videoParaExibir ? gerarPlayerYouTube(videoParaExibir) : ""}
-                </div>     
- 
+            <div class="texto-res" style="${potenciaAtivaAgora ? 'color:#000; font-weight:500;' : 'color:#222;'}">
+                ${aplicarFiltroTexto(textoParaExibir)}
+                ${videoParaExibir ? gerarPlayerYouTube(videoParaExibir) : ""}
+            </div>     
         </div>`;
     
     idadeAcumulada = idadeFim;
     indiceLoop++;
 }
-// ----------------------------------------------
+
 // --- TRECHO DAS CAIXINHAS DOURADAS (VITRINE) ---
 let htmlCaixinhas = `<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 25px;border: 1px solid #ffffff;">`;
 potenciasTopo.forEach(p => {
     htmlCaixinhas += `<span style="background: #827108; color: #fff; padding: 6px 14px; border-radius: 1px; font-weight: bold; font-size: 18px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">${p}</span>`;
-    
 });
-
-            
 htmlCaixinhas += `</div>`;
-    // --- 2. SEPARADOR LUXO DAS POTÊNCIAS ---
 
-
-
-  const idVideoIntroPotencias  = "z1nW3rmNeEI";  
+// --- SEPARADOR LUXO DAS POTÊNCIAS ---
+const idVideoIntroPotencias  = "z1nW3rmNeEI";  
 tituloBonito = "Ciclos de Potências Numéricas ✡︎ ";
+
 htmlPiramide += `
 <div class="separador-luxo">
     <div class="caixa-interna">
         <h2>${tituloBonito}</h2>
     </div>
-</div>`,
-         
-htmlPiramide += `
-    <div class="secao-potencias" style=" width: 100%; background: #fff; color: #000; padding: 25px; border-radius: 8px; border: 1px solid #ffffff; margin-top: 25px;">  
-        <h2 style="color: #827108; text-align: center; font-size: 24px; text-transform: uppercase; margin-bottom: 20px; border-bottom: 2px solid #827108; padding-bottom: 10px;"> </h2>
+</div>
+<div class="secao-potencias" style=" width: 100%; background: #fff; color: #000; padding: 25px; border-radius: 8px; border: 1px solid #ffffff; margin-top: 25px;">  
+    <h2 style="color: #827108; text-align: center; font-size: 24px; text-transform: uppercase; margin-bottom: 20px; border-bottom: 2px solid #827108; padding-bottom: 10px;"> </h2>
 
-<div class="intro-secao" style="margin: 35px 0; width: 100%; font-size: 19px; line-height: 1.8; color: #1a1a1a; text-align: justify; background: #fdfbf7; padding: 30px; border-radius: 15px; border-left: 1px solid #d4af37; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-    
-    <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-variant: small-caps; letter-spacing: 2px;">🎼 A Sinfonia do Destino: O Poder das Potências Numéricas</h2>
-
-    <p style="margin-bottom: 20px;">Imagine que o seu nome de batismo não é apenas um conjunto de letras, mas uma <b>partitura musical sagrada</b> escrita no momento em que você chegou ao mundo. Na Numerologia Quântica, entendemos que cada letra do seu nome carrega uma frequência específica — uma <b>Potência</b> — que funciona como uma nota musical batida no silêncio do tempo. A sua vida não acontece ao acaso; ela segue um ritmo orquestrado por essas vibrações que emanam do topo da sua <b>Pirâmide da Vida</b>.</p>
+    <div class="intro-secao" style="margin: 35px 0; width: 100%; font-size: 19px; line-height: 1.8; color: #1a1a1a; text-align: justify; background: #fdfbf7; padding: 30px; border-radius: 15px; border-left: 1px solid #d4af37; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-variant: small-caps; letter-spacing: 2px;">🎼 A Sinfonia do Destino: O Poder das Potências Numéricas</h2>
+           <p style="margin-bottom: 20px;">Imagine que o seu nome de batismo não é apenas um conjunto de letras, mas uma <b>partitura musical sagrada</b> escrita no momento em que você chegou ao mundo. Na Numerologia Quântica, entendemos que cada letra do seu nome carrega uma frequência específica — uma <b>Potência</b> — que funciona como uma nota musical batida no silêncio do tempo. A sua vida não acontece ao acaso; ela segue um ritmo orquestrado por essas vibrações que emanam do topo da sua <b>Pirâmide da Vida</b>.</p>
 
     <p style="margin-bottom: 20px;">Essas Potências representam os ciclos de maturação do seu ser. Assim como uma música tem momentos de notas agudas e intensas, seguidos por pausas e melodias mais suaves, a sua jornada é dividida em períodos onde certas energias dominam o seu campo vibracional. Quando uma Potência está ativa, ela dita o "tom" das suas experiências: pode ser um tempo de expansão solar, de introspecção profunda ou de colheita material. Não são Arcanos estáticos, são forças dinâmicas que moldam a sua percepção e as suas escolhas.</p>
 
@@ -7252,20 +7211,15 @@ htmlPiramide += `
         "Assim como as notas determinam o ritmo da música, as letras de seu nome determinam o ritmo de sua vida." <br>
         — <b>Professor e Físico Reinaldo Martins Garcia</b>
     </p>
-    ${idVideoIntroPotencias ? gerarPlayerYouTube(idVideoIntroPotencias) : ""}
-        </div>
-          
-          ${htmlCaixinhas} 
-          
-        ${htmlPotenciasCalculadas}
-
-
-        
+        ${idVideoIntroPotencias ? gerarPlayerYouTube(idVideoIntroPotencias) : ""}
     </div>
+      
+    ${htmlCaixinhas} 
+    ${htmlPotenciasCalculadas}
+</div>
 `;
 
-
-// 4. FINALMENTE: JUNTA A PIRÂMIDE NO CORPO DO RELATÓRIO
+// --- FINALMENTE: JUNTA A PIRÂMIDE NO CORPO DO RELATÓRIO ---
 html += htmlPiramide;
  
 
