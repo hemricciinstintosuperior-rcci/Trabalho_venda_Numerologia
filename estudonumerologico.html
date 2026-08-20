@@ -1068,7 +1068,29 @@ const coresPlanos = { fisico: "#ff4d4d", mental: "#4da6ff", emocional: "#33cc66"
         
 let generoAtual = "masculino"; // Valor padrão
 
+// Função global blindada para desembaralhar Base64 sem quebrar com IDs normais do YouTube
+if (typeof window.desembaralharID === 'undefined') {
+    window.desembaralharID = function(idEmbaralhado) {
+        if (!idEmbaralhado || typeof idEmbaralhado !== 'string') return null;
+        
+        let str = idEmbaralhado.trim();
+        if (str === "") return null;
 
+        // Se já for um ID típico do YouTube de 11 caracteres (ex: "z1nW3rmNeEI"), retorna direto
+        if (str.length === 11 && !str.includes('=')) {
+            return str;
+        }
+
+        try {
+            // Tenta decodificar de Base64
+            let decodificado = atob(str);
+            return decodificado;
+        } catch (e) {
+            // Se falhar o atob (string não é Base64 válida), retorna a string original com segurança
+            return str;
+        }
+    };
+}
         
 function calcularValorLetra(letra) {
     const base = letra.normalize("NFD")[0].toUpperCase();
@@ -5762,17 +5784,7 @@ html += `
 `;
 
 
-// Função global de segurança para desembaralhar IDs Base64 sem duplicar declaração
-if (typeof window.desembaralharID === 'undefined') {
-    window.desembaralharID = function(idEmbaralhado) {
-        if (!idEmbaralhado) return null;
-        try {
-            return atob(idEmbaralhado);
-        } catch (e) {
-            return idEmbaralhado; // Retorna o ID original se já estiver desembaralhado
-        }
-    };
-}
+
 
 // ==========================================
 // 1. FRAQUEZAS E INIBIÇÕES (DEFICIÊNCIAS)
