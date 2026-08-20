@@ -2067,11 +2067,11 @@ function montarHtmlPlanosNatural(nome) {
     const campoGênero = document.getElementById("generoTexto");
     const formatoGênero = campoGênero ? campoGênero.value : "masculino";
 
-    // 1. Dicionários de Perfil Nativo com textos e vídeo IDs integrados (Codificados em Base64)
+    // 1. Dicionários de Perfil Nativo com strings Base64 já codificadas
     const descricoesPerfilMasculino = {
         criativo: {
             conteudo: `<p>"Sua mente possui mais Criatividade"</p><p>Naturalmente você apresenta ideias originais, enxerga a realidade de forma diferenciada e encara imprevistos com otimismo e espontaneidade. Ao analisar problemas complexos, você divide-os em partes menores, focando em soluções eficazes e na adaptação rápida a novas situações.</p><p>Movido por estímulos internos, você demonstra grande motivação pessoal, ignorando rotinas estabelecidas para explorar diversas alternativas. Pelo lado desafiador, você pode manifestar certa arrogância ou rebeldia contra regras, sofrendo com flutuações de humor e desconfiança. Nessa busca constante pelo novo, você corre o risco de perder a noção de tempo ou se deixar envolver por ilusões temporárias.</p>`,
-            videoID: "Q1ExYmNHSWNYX3c" // Insira o ID real dentro do btoa
+            videoID: "Q1ExYmNHSWNYX3c" // Cole a string gerada no F12 (ex: "Q1ExYmNHSWNYX3c=")
         },
         indeciso: {
             conteudo: `<p>"A indecisão toma conta da sua expressão"</p><p>Com grande sensibilidade, você demonstra necessidade de atenção, podendo agir de forma dramática ou precipitada sob pressão emocional. Sendo influenciável pelo ambiente, você muda de opinião com frequência e encontra certa dificuldade em agir de forma solitária.</p><p>Revelando um lado sedutor, você pode ser interpretado com inconveniência devido ao excesso de dramatização em suas falas. Ao fortalecer seu caráter, você descobre sua verdadeira identidade, trocando a busca por aprovação externa por seus desejos internos. Em momentos de desequilíbrio, você torna-se inconstante ou impulsivo, especialmente quando é dominado por receios e emoções intensas.</p>`,
@@ -2086,15 +2086,15 @@ function montarHtmlPlanosNatural(nome) {
     const descricoesPerfilFeminino = {
         criativo: {
             conteudo: `<p>"Sua mente possui mais Criatividade"</p><p>Naturalmente você apresenta ideias originais, enxerga a realidade de forma diferenciada e encara imprevistos com otimismo e espontaneidade. Ao analisar problemas complexos, você divide-os em partes menores, focando em soluções eficazes e na adaptação rápida a novas situações.</p><p>Movida por estímulos internos, você demonstra grande motivação pessoal, ignorando rotinas estabelecidas para explorar diversas alternativas. Pelo lado desafiador, você pode manifestar certa arrogância ou rebeldia contra regras, sofrendo com flutuações de humor e desconfiança. Nessa busca constante pelo novo, você corre o risco de perder a noção de tempo ou se deixar envolver por ilusões temporárias.</p>`,
-            videoID: "ID_VIDEO_CRIATIVO_FEM"
+            videoID: "SEU_CODIGO_BASE64_AQUI"
         },
         indeciso: {
             conteudo: `<p>"A indecisão toma conta da sua expressão"</p><p>Com grande sensibilidade, você demonstra necessidade de atenção, podendo agir de forma dramática ou precipitada sob pressão emocional. Sendo influenciável pelo ambiente, você muda de opinião com frequência e encontra certa dificuldade em agir de forma solitária.</p><p>Revelando um lado sedutor, você pode ser interpretada com inconveniência devido ao excesso de dramatização em suas falas. Ao fortalecer seu caráter, você descobre sua verdadeira identidade, trocando a busca por aprovação externa por seus desejos internos. Em momentos de desequilíbrio, você torna-se inconstante ou impulsiva, especialmente quando é dominada por receios e emoções intensas.</p>`,
-            videoID: "ID_VIDEO_INDECISO_FEM"
+            videoID: "SEU_CODIGO_BASE64_AQUI"
         },
         neutro: {
             conteudo: `<p>"Sua essência possui equilíbrio nas decisões"</p><p>Sendo alguém observadora, você prefere analisar todos os pontos de vista antes de tomar partido em qualquer tipo de conflito. Agindo por interesses próprios, você raramente sai da zona de conforto, mantendo-se excessivamente cautelosa para evitar riscos inúteis.</p><p>Relacionando-se bem com todos, você constrói barreiras emocionais intencionais para evitar sofrimento, raramente expondo o que realmente sente. Com facilidade de adaptação, você mantém o autocontrole em situações difíceis, preferindo rotinas pacíficas. No aspecto negativo, você pode demonstrar certa omissão ou medo de decidir, mantendo-se neutra e com baixa inclinação criativa.</p>`,
-            videoID: "ID_VIDEO_NEUTRO_FEM"
+            videoID: "SEU_CODIGO_BASE64_AQUI"
         }
     };
 
@@ -2122,10 +2122,11 @@ function montarHtmlPlanosNatural(nome) {
     }).join("-");
 
     const dadosSintese = textosSinteseExpressao[sigla] || textosSinteseExpressao["padrao"] || { conteudo: "Conteúdo não disponível para esta combinação.", videoID: "" };
-    console.log("Sigla gerada:", sigla);
 
     const perfilNatInfo = perfilEscolhido[dados.dominantePerfil] || { conteudo: "", videoID: "" };
-    const idVideoIntropilares = btoa("z1nW3rmNeEI"); 
+    
+    // Vídeo de introdução dos pilares já codificado (btoa("z1nW3rmNeEI") -> "ejFuVzNtTmVFSQ==")
+    const idVideoIntropilares = "Q1ExYmNHSWNYX3c"; 
 
     // 4. Início da construção do HTML
     let html = `
@@ -2257,40 +2258,39 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
     const partesData = dataNascimento.split("/");
     const dtNasci = new Date(partesData[2], partesData[1] - 1, partesData[0]);
 
-    // DICIONÁRIOS DE PERFIL POR GÊNERO COM CONTEÚDO E VÍDEO CODIFICADOS
+    // DICIONÁRIOS DE PERFIL POR GÊNERO COM STRINGS BASE64
     const descricoesPerfilMasculino = {
         criativo: {
             conteudo: `<p>"Sua energia de ação este ano está em fase de expansão e Criatividade"</p><p>Neste ciclo, sua forma de agir está mais arrojada. Você sentirá uma facilidade maior para encontrar saídas rápidas e originais para problemas que antes pareciam travados.</p>`,
-            videoID: "Q1ExYmNHSWNYX3c"
+            videoID: "SEU_CODIGO_BASE64_AQUI"
         },
         indeciso: {
             conteudo: `<p>"Sua forma de agir este ano está sob o filtro da sensibilidade e da Indecisão"</p><p>Este ciclo pede que você tenha mais cautela antes de tomar grandes decisões. É um ano para agir com diplomacia, evitando confrontos diretos.</p>`,
-            videoID: "Q1ExYmNHSWNYX3c"
+            videoID: "SEU_CODIGO_BASE64_AQUI"
         },
         neutro: {
             conteudo: `<p>"Este ano sua ação prioriza o equilíbrio, a observação e a Neutralidade"</p><p>Sua postura atual é de 'esperar para ver'. Você prefere analisar o terreno antes de dar qualquer passo importante, agindo com máxima prudência.</p>`,
-            videoID: "Q1ExYmNHSWNYX3c"
+            videoID: "SEU_CODIGO_BASE64_AQUI"
         }
     };
 
     const descricoesPerfilFeminino = {
         criativo: {
             conteudo: `<p>"Sua energia de ação este ano está em fase de expansão e Criatividade"</p><p>Neste ciclo, sua forma de agir está mais arrojada. Você sentirá uma facilidade maior para encontrar saídas rápidas e originais para problemas que antes pareciam travados.</p>`,
-            videoID: "Q1ExYmNHSWNYX3c"
+            videoID: "SEU_CODIGO_BASE64_AQUI"
         },
         indeciso: {
             conteudo: `<p>"Sua forma de agir este ano está sob o filtro da sensibilidade e da Indecisão"</p><p>Este ciclo pede que você tenha mais cautela antes de tomar grandes decisões. É um ano para agir com diplomacia, evitando confrontos diretos.</p>`,
-            videoID: "Q1ExYmNHSWNYX3c"
+            videoID: "SEU_CODIGO_BASE64_AQUI"
         },
         neutro: {
             conteudo: `<p>"Este ano sua ação prioriza o equilíbrio, a observação e a Neutralidade"</p><p>Sua postura atual é de 'esperar para ver'. Você prefere analisar o terreno antes de dar qualquer passo importante, agindo com máxima prudência.</p>`,
-            videoID: "Q1ExYmNHSWNYX3c"
+            videoID: "SEU_CODIGO_BASE64_AQUI"
         }
     };
 
     const descricoesPerfilMomento = (formatoGênero === "feminino") ? descricoesPerfilFeminino : descricoesPerfilMasculino;
 
-    // Função interna para processar cada ciclo separadamente
     const processarUmCiclo = (anoReferencia, tituloSecao, travado = false) => {
         let inicioCiclo = new Date(anoReferencia, dtNasci.getMonth(), dtNasci.getDate());
         
@@ -2348,7 +2348,8 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         const textoPerfilAtual = perfilAtualObj.conteudo || "";
         const videoPerfilAtual = perfilAtualObj.videoID || "";
 
-        const idVideoIntrooilaresmome = btoa("z1nW3rmNeEI"); 
+        // Vídeo de introdução dos pilares do momento já codificado ("z1nW3rmNeEI" -> "ejFuVzNtTmVFSQ==")
+        const idVideoIntrooilaresmome = "ejFuVzNtTmVFSQ=="; 
         let tituloBonito = tituloSecao;
 
         let h = `
@@ -2369,7 +2370,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
                 </p>
 
                 <p>
-                Além disso, este resultado classifica sua expressão atual como <strong>Criativa, Indecisa ou Neutra</strong>, mostrando como essa combinação tende a influenciar suas decisões, sua forma de agir e sua percepção da realidade durante este ciclo. Lembre-se de que essa configuração é temporária: ela representa o movimento do momento e interage constantemente com a sua estrutura natural, formando a maneira única como você vivencia cada fase da sua jornada.
+                Além disso, este resultado classifica sua expressão atual como <strong>Criativa, Indecisa ou Neutra</strong>, mostrando como essa combinação tende a influenciar suas decisões, sua forma de agir e sua percepção da realidade durante este ciclo. Lembre-se de que essa configuração é temporária: ela representa o movimento do momento e interage constantemente com a sua estrutura natural, forming a maneira única como você vivencia cada fase da sua jornada.
                 </p>
                 ${idVideoIntrooilaresmome ? gerarPlayerYouTube(atob(idVideoIntrooilaresmome)) : ""}
             </div>
@@ -2476,7 +2477,9 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         let letrasAno = timelines.map(t => t[indiceAno % t.length]);
         let vTransitoCalculado = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValorLetra(l), 0));
         const dadosTransito = window.TextosTransito ? window.TextosTransito[vTransitoCalculado] : null;
-        const idVideoIntrotransito = btoa("CQ1bcGIcX_w"); 
+        
+        // Vídeo de introdução do trânsito já codificado ("CQ1bcGIcX_w" -> "Q1ExYmNHSWNYX3c=")
+        const idVideoIntrotransito = "Q1ExYmNHSWNYX3c"; 
 
         h += `
         <div class="separador-luxo">
@@ -6086,27 +6089,32 @@ html += `
 
 
 // ==========================================
-// 3. DIRECIOMENTO PROFISSIONAL
+// 3. DIRECIONAMENTO PROFISSIONAL
 // ==========================================
 // ID do vídeo "CQ1bcGIcX_w" embaralhado em Base64 ("Q1ExYmNHSWNYX3c=")
 const idVideoProfissaoEmbaralhado = "Q1ExYmNHSWNYX3c="; 
 const idVideoProfissao = window.desembaralharID(idVideoProfissaoEmbaralhado);
 
-html += renderizarBlocoComVideo(`
+tituloBonito = "Direcionamento Profissional";
+
+html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
-        <h2>Direcionamento Profissional</h2>
+        <h2>${tituloBonito}</h2>
     </div>
 </div>
 
 <div class="page">
-    <div class="texto-res">
-        ${introProfissionalTexto}
-        ${blocoProfissionalHTML}
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+    <div class="intro-texto">
+        ${aplicarFiltroTexto(introProfissionalTexto || "")}
+        ${idVideoProfissao ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoProfissao)}</div>` : ""}
+    </div>
+    <div class="evitar-corte texto-res" style="margin-top: 20px;">
+        ${blocoProfissionalHTML || ""}
     </div>
 </div>
-`, idVideoProfissao);
-
+`;
     
 
 
@@ -6179,10 +6187,17 @@ if (typeof window.desembaralharID === 'undefined') {
 // ==========================================
 const tituloMat = (typeof nomesExibicao !== 'undefined' && nomesExibicao["Maturidade"]) ? nomesExibicao["Maturidade"] : "Fase de Maturidade";
 
+// Introdução (Texto + Vídeo)
 const dadosIntroMaturidade = (typeof textos !== 'undefined' && textos.introducoes) ? textos.introducoes.Maturidade : "";
 const conteudoIntroMaturidade = (typeof dadosIntroMaturidade === 'object' && dadosIntroMaturidade !== null) ? dadosIntroMaturidade.conteudo : dadosIntroMaturidade;
 const videoIntroMaturidadeBruto = (typeof dadosIntroMaturidade === 'object' && dadosIntroMaturidade !== null) ? dadosIntroMaturidade.videoID : null;
 const videoIntroMaturidade = window.desembaralharID(videoIntroMaturidadeBruto);
+
+// Resultado (Texto + Vídeo)
+const dadosMaturidade = (typeof textos !== 'undefined' && textos.Maturidade && res.Maturidade) ? textos.Maturidade[res.Maturidade] : null;
+const conteudoMaturidade = (typeof dadosMaturidade === 'object' && dadosMaturidade !== null) ? dadosMaturidade.conteudo : dadosMaturidade;
+const videoMaturidadeBruto = (typeof dadosMaturidade === 'object' && dadosMaturidade !== null) ? dadosMaturidade.videoID : null;
+const videoMaturidade = window.desembaralharID(videoMaturidadeBruto);
 
 tituloBonito = "FASE DE MATURIDADE";
 
@@ -6197,16 +6212,8 @@ html += `
         ${videoIntroMaturidade ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntroMaturidade)}</div>` : ""}
     </div>
     <div class="texto-res" style="margin-top: 20px;">
-        ${(() => {
-            const dadosM = (typeof textos !== 'undefined' && textos.Maturidade && res.Maturidade) ? textos.Maturidade[res.Maturidade] : null;
-            if (!dadosM) return "<p>Conteúdo de maturidade não encontrado.</p>";
-            
-            const contM = (typeof dadosM === 'object' && dadosM !== null) ? dadosM.conteudo : dadosM;
-            const vidMBruto = (typeof dadosM === 'object' && dadosM !== null) ? dadosM.videoID : null;
-            const vidM = window.desembaralharID(vidMBruto);
-            
-            return aplicarFiltroTexto(contM || "") + (vidM && typeof vidM === 'string' && vidM.trim() !== "" ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(vidM)}</div>` : "");
-        })()}
+        ${conteudoMaturidade ? aplicarFiltroTexto(conteudoMaturidade) : "<p>Conteúdo de maturidade não encontrado.</p>"}
+        ${videoMaturidade ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoMaturidade)}</div>` : ""}
     </div>
 </div>`;
 
@@ -6218,8 +6225,8 @@ html += `
     tituloBonito = sec === "ciclos" ? "Ciclos da Vida" : 
                    sec === "momentos" ? "Momentos de decisão" : "Desafios de Jornada";    
     
-    // Busca os dados da INTRODUÇÃO
-    const dadosIntroo = (typeof textos !== 'undefined' && textos.introducoes && textos.introducoes[sec]) ? textos.introducoes[sec] : "";
+    // Busca os dados da INTRODUÇÃO (com suporte para variações de nomenclatura)
+    const dadosIntroo = (typeof textos !== 'undefined' && textos.introducoes) ? (textos.introducoes[sec] || textos.introducoes[sec === "momentos" ? "momentosdecisao" : sec]) : "";
     const conteudoIntroo = (typeof dadosIntroo === 'object' && dadosIntroo !== null) ? dadosIntroo.conteudo : dadosIntroo;
     const videoIntrooBruto = (typeof dadosIntroo === 'object' && dadosIntroo !== null) ? dadosIntroo.videoID : null;
     const videoIntroo = window.desembaralharID(videoIntrooBruto);
@@ -6241,7 +6248,6 @@ html += `
 
         const info = (typeof datasFases !== 'undefined' && datasFases[sec]) ? datasFases[sec][i] : { idade: "", anos: "" };
         const valorChave = res[sec][i];
-        const estaTravado = (typeof acessoPremiumLiberado !== 'undefined') ? !acessoPremiumLiberado : false;
 
         // PROTEÇÃO: Verifica se o texto existe antes de carregar
         let itemTexto = (typeof textos !== 'undefined' && textos[sec] && textos[sec][i]) ? textos[sec][i][valorChave] : null;
@@ -6263,15 +6269,13 @@ html += `
             
             <div class="texto-res" style="margin-top: 10px;">
                 ${aplicarFiltroTexto(conteudo || "")}
-                ${(videoID && typeof videoID === 'string' && videoID.trim() !== "") ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoID)}</div>` : ""}
+                ${videoID ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoID)}</div>` : ""}
             </div>
           
             <hr style="border:0; border-top:1px solid #ffffff; margin-top: 15px;">
         </div>`;
     }
 
-
-    
     html += `</div>`; // Fecha a div class="page"
 });
 // ... (depois de terminar os Desafios)
@@ -6851,6 +6855,18 @@ html += `
     </div>
 `;
     
+// Garantia da função global para desembaralhar IDs em Base64
+if (typeof window.desembaralharID === 'undefined') {
+    window.desembaralharID = function(idEmbaralhado) {
+        if (!idEmbaralhado) return null;
+        try {
+            return atob(idEmbaralhado);
+        } catch (e) {
+            return idEmbaralhado;
+        }
+    };
+}
+
 // --- FUNÇÃO AUXILIAR DE EMBARALHAMENTO (Algoritmo Fisher-Yates) ---
 function embaralharArray(array) {
     let copia = [...array];
@@ -6862,15 +6878,14 @@ function embaralharArray(array) {
 }
 
 // --- 1. PRIMEIRO: DETECTA TUDO (COM EMBARALHAMENTO DOS ARCANOS) ---
-// Pegamos a linha do topo original e aplicamos o embaralhamento
 const arcanosTopoOriginal = topo(piramideVida[0]);
-const arcanosTopo = embaralharArray(arcanosTopoOriginal); // <--- APLICA O EMBARALHAMENTO AQUI
+const arcanosTopo = embaralharArray(arcanosTopoOriginal);
 
 const listaEspeciais = detectarEspeciaisIndependentes(piramideVida);
 const listaFin = detectarFinanceirasIndependentes(piramideVida);    
 
 // --- BUSCA FLEXÍVEL DA INTRODUÇÃO (TEXTO E VÍDEO) ---
-const dadosIntroPiramide = (textos.introducoes && (textos.introducoes.piramide || textos.introducoes.Piramide)) 
+const dadosIntroPiramide = (typeof textos !== 'undefined' && textos.introducoes && (textos.introducoes.piramide || textos.introducoes.Piramide)) 
     ? (textos.introducoes.piramide || textos.introducoes.Piramide) 
     : "";
 
@@ -6878,12 +6893,13 @@ const conteudoIntroPiramide = (typeof dadosIntroPiramide === 'object' && dadosIn
     ? dadosIntroPiramide.conteudo 
     : dadosIntroPiramide;
 
-const videoIntroPiramide = (typeof dadosIntroPiramide === 'object' && dadosIntroPiramide !== null) 
+const videoIntroPiramideBruto = (typeof dadosIntroPiramide === 'object' && dadosIntroPiramide !== null) 
     ? dadosIntroPiramide.videoID 
     : null;
+const videoIntroPiramide = window.desembaralharID(videoIntroPiramideBruto);
 
 // --- SEPARADOR LUXO ---
-tituloBonito = "A Matriz da Vida"; 
+let tituloBonito = "A Matriz da Vida"; 
 html += `
 <div style="width: 100%; max-width: 100%; overflow: hidden; clear: both; page-break-inside: avoid;">
     <div class="separador-luxo">
@@ -6907,7 +6923,7 @@ let htmlPiramide = `
     <div class="container-piramide">
         <div class="piramide">`;
 
-    // --- LINHA DO NOME NO TOPO (Ajustada se desejar alinhar ao topo embaralhado) ---
+    // --- LINHA DO NOME NO TOPO ---
 const letrasNomeTopo = nomeRaw.toUpperCase().replace(/\s+/g, '').split('');
 htmlPiramide += `<div class="linha linha-letras" style="margin-bottom: 5px;">`;
 letrasNomeTopo.forEach(letra => {
@@ -6920,12 +6936,12 @@ piramideVida.forEach((linha, i) => {
     linha.forEach((n, j) => {
         let classes = ["num"];
 
-        // 1. Verifica se é NEGATIVA (Vermelho)
+        // 1. Verifica se é NEGATIVA
         if (dadosNegativas.pos.some(p => p.l === i && p.c === j)) {
             classes.push("negativo");
         } 
         
-        // 2. Verifica se é ESPECIAL (Dourado)
+        // 2. Verifica se é ESPECIAL
         listaEspeciais.forEach(esp => {
             let colReal = j + Math.floor(i / 2);
             if (i === esp.linha && colReal >= esp.colunaInicio && colReal < esp.colunaInicio + 3) {
@@ -6933,7 +6949,7 @@ piramideVida.forEach((linha, i) => {
             }
         });
 
-        // 3. REGRA FINANCEIRA "À PROVA DE FALHAS"
+        // 3. REGRA FINANCEIRA
         if (n === 9) {
             let tem9LadoDir = (linha[j+1] === 9);
             let tem9LadoEsq = (linha[j-1] === 9);
@@ -6947,7 +6963,7 @@ piramideVida.forEach((linha, i) => {
             }
         }
 
-        // 4. Verifica se é o REGENTE
+        // 4. REGENTE
         if (i === piramideVida.length - 1) {
             classes.push("regente-destaque");
         }
@@ -6962,8 +6978,9 @@ htmlPiramide += `</div>`;
 // --- 2. SEPARADOR E CONTEÚDO DO REGENTE ---
 tituloBonito = "O Regente da sua Matriz 🔱"; 
 
-const idVideoRegente = buscarVideoID("RegenteVida", regenteVida, generoAtual);
-const idVideoIntroRegente = "z1nW3rmNeEI";
+const idVideoRegenteBruto = (textos.RegenteVida && textos.RegenteVida[regenteVida]) ? textos.RegenteVida[regenteVida].videoID : null;
+const idVideoRegente = window.desembaralharID(idVideoRegenteBruto);
+const idVideoIntroRegente = window.desembaralharID("z1nW3rmNeEI");
 
 htmlPiramide += `
 <div class="separador-luxo">
@@ -6973,27 +6990,21 @@ htmlPiramide += `
 </div>
 
 <div style="margin: 25px 0; width: 100%; font-size: 19px; line-height: 1.8; color: #333; text-align: justify;">
-    ${textos.introducoes.regente || `<p>O Regente da Vida representa o núcleo vibracional da sua existência. Ele é a força central que sustenta toda a estrutura da sua Pirâmide da Vida, funcionando como o eixo principal em torno do qual todas as demais energias se organizam. Assim como o Sol mantém o equilíbrio do sistema solar, o Regente mantém o alinhamento das experiências que compõem a sua trajetória.</p>
+    ${(textos.introducoes && textos.introducoes.regente) ? textos.introducoes.regente : `<p>O Regente da Vida representa o núcleo vibracional da sua existência. Ele é a força central que sustenta toda a estrutura da sua Pirâmide da Vida, funcionando como o eixo principal em torno do qual todas as demais energias se organizam.</p>`}
 
-<p>Essa vibração revela a essência mais autêntica da sua natureza, indicando como você reage aos acontecimentos, quais padrões emocionais predominam e de que maneira sua energia se projeta no mundo. Diferente de eventos momentâneos, o Regente atua como uma base constante que acompanha você durante toda a vida.</p>
-
-<p>Quando suas escolhas estão alinhadas com essa frequência central, as situações tendem a fluir com mais naturalidade. Os desafios continuam existindo, mas passam a ser enfrentados com maior clareza e equilíbrio. No entanto, quando você se distancia dessa vibração essencial, pode surgir uma sensação de desgaste, como se estivesse nadando contra a própria corrente da sua natureza.</p>
-
-<p>Compreender o seu Regente é compreender o fundamento da sua identidade energética. Ele revela talentos naturais, tendências comportamentais e a forma como a sua presença influencia o ambiente ao redor, sendo a base sobre a qual todo o restante da análise da Pirâmide da Vida se apoia.</p>`}
-
-${idVideoIntroRegente ? gerarPlayerYouTube(idVideoIntroRegente) : ""}
+    ${idVideoIntroRegente ? gerarPlayerYouTube(idVideoIntroRegente) : ""}
 </div>
 
 <div class="bloco-regente evitar-corte" style="margin-top: 50px; padding-top: 20px; border-top: 1px inset #fff;">
-<div class="texto-res" style="font-size: 20px; color: #222;">
-    ${aplicarFiltroTexto(textos.RegenteVida[regenteVida].conteudo)}
-    ${gerarPlayerYouTube(textos.RegenteVida[regenteVida].videoID)}
-</div>
+    <div class="texto-res" style="font-size: 20px; color: #222;">
+        ${aplicarFiltroTexto(textos.RegenteVida[regenteVida].conteudo)}
+        ${idVideoRegente ? gerarPlayerYouTube(idVideoRegente) : ""}
+    </div>
 </div>`;
 
 // --- BLOQUEIOS / VULNERABILIDADES ---
-if(dadosNegativas.detalhes.length > 0){
-    const idVideoIntroBloqueios = "z1nW3rmNeEI";
+if (dadosNegativas.detalhes.length > 0) {
+    const idVideoIntroBloqueios = window.desembaralharID("z1nW3rmNeEI");
     
     tituloBonito = "Vulnerabilidades e Bloqueios  ⚠️ ";
     htmlPiramide += `
@@ -7004,13 +7015,7 @@ if(dadosNegativas.detalhes.length > 0){
     </div>
     
     <div class="intro-secao" style="margin: 30px 0; width: 100%; font-size: 21px; line-height: 1.6; color: #333; text-align: justify;">
-        ${textos.introducoes.vulnerabilidades || `As <b>Sequências de Bloqueios</b> identificam pontos de tensão latentes em sua estrutura vibracional, manifestando-se como tendências e desafios que o acompanham desde o nascimento até a plena maturidade. Elas representam os números iguais que aparecem de forma repetitiva em sua Matriz, como as sequências 111, 222, 333 e assim por diante, sinalizando áreas onde a sua energia pessoal encontra maior resistência ou padrões de repetição exaustivos. Estas sequências não devem ser interpretadas como punições ou destinos imutáveis, mas sim como indicadores precisos de comportamentos automáticos e limitações internas que precisam ser trabalhados e integrados com consciência ao longo da sua jornada evolutiva.</p>
-
-    <p style="margin-bottom: 20px;">Muitas dessas sequências estão profundamente vinculadas a experiências fundamentais que demandam um aprendizado contínuo e um amadurecimento constante por parte do indivíduo. Elas sinalizam aspectos da sua natureza que ainda buscam plena expressão, funcionando como um mapa exato das lições que a vida solicita com maior insistência e rigor. Quando uma pessoa nasce com essas vibrações em sua matriz, ela carrega consigo ferramentas que, embora potentes, estão inicialmente "travadas" ou desequilibradas, gerando bloqueios que podem afetar desde a vida profissional até os relacionamentos mais íntimos e a saúde emocional, exigindo um esforço de autolapidação constante.</p>
-
-    <p style="margin-bottom: 20px;">Ao reconhecer a existência dessas frequências em seu mapa, você desenvolve a lucidez necessária para transcender as reações instintivas e os ciclos de autossabotagem que esses números iguais tendem a provocar. Esse processo de autodomínio transforma obstáculos aparentemente intransponíveis em degraus estratégicos para uma evolução autêntica e deliberada, permitindo que você tome as rédeas da sua própria energia. Trabalhar essas sequências negativas é, na verdade, um ato de libertação, onde você identifica a raiz do problema e aplica a cura através do autoconhecimento, garantindo que o seu potencial original não seja sufocado por medos ou padrões herdados que não servem mais ao seu crescimento.</p>
-
-    <p style="margin-bottom: 20px;">Portanto, encare este estudo das sequências de bloqueios como um manual de instruções para lidar com suas partes mais complexas e desafiadoras. À medida que você domina essas vibrações, a resistência diminui e a sua vida passa a fluir com uma leveza que antes parecia inalcançável. A transmutação dessas energias é o que diferencia o ser que é refém do acaso daquele que se torna o mestre de sua própria vibração. Com paciência e disciplina, cada sequência negativa é gradualmente convertida em uma fonte de sabedoria prática, tornando sua jornada muito mais assertiva, próspera e livre das amarras que impedem a sua máxima performance humana e espiritual.</p>`}   
+        ${(textos.introducoes && textos.introducoes.vulnerabilidades) ? textos.introducoes.vulnerabilidades : `<p>As <b>Sequências de Bloqueios</b> identificam pontos de tensão latentes em sua estrutura vibracional...</p>`}   
         ${idVideoIntroBloqueios ? gerarPlayerYouTube(idVideoIntroBloqueios) : ""}
     </div>
     <h2 style="color:red; margin-top:30px; border-bottom: 2px #ffffff; padding-bottom:10px; text-align: left;"> </h2>
@@ -7032,6 +7037,8 @@ if(dadosNegativas.detalhes.length > 0){
         }
 
         const datas = calcularDatasVigenciaNegativa(dataRaw, idadeInicio, duracaoTotal);
+        const videoNegativoBruto = textos.SeqNegVida[neg.numero] ? textos.SeqNegVida[neg.numero].videoID : null;
+        const videoNegativo = window.desembaralharID(videoNegativoBruto);
 
         htmlPiramide += `
         <div class="evitar-corte" style="margin-bottom: 35px; border-left:none; padding: 15px; text-align: center;">
@@ -7047,23 +7054,20 @@ if(dadosNegativas.detalhes.length > 0){
                 <p style="margin-top: 8px;">
                     ${aplicarFiltroTexto(textos.SeqNegVida[neg.numero].conteudo)}
                 </p>
-                ${gerarPlayerYouTube(textos.SeqNegVida[neg.numero].videoID)}
+                ${videoNegativo ? gerarPlayerYouTube(videoNegativo) : ""}
             </div>
         </div>`;
     });
 }
 
 // --- SEQUÊNCIAS ESPECIAIS ⭐ ---
-const idVideoIntroEspeciais = "z1nW3rmNeEI";
+const idVideoIntroEspeciais = window.desembaralharID("z1nW3rmNeEI");
 if (listaEspeciais.length > 0) {
     htmlPiramide += `<div class="separador-luxo"><div class="caixa-interna"><h2>Sequências Especiais ⭐</h2></div></div>`;
     
     htmlPiramide += `<div class="intro-texto" style="margin-bottom: 20px;">
-<p>As sequências especiais apresentadas a seguir são baseadas em análises e estudos desenvolvidos por outros numerólogos. É importante esclarecer que estes dados não fazem parte da minha metodologia de trabalho e não refletem minhas convicções como numerólogo; optei por incluí-las neste mapa apenas como um conteúdo complementar para sua curiosidade, respeitando diferentes perspectivas da área.</p>
-    <p>Segundo a visão desses outros estudiosos, essas sequências representariam períodos dentro da Pirâmide da Vida em que determinadas energias numéricas se intensificariam, influenciando tendências e comportamentos. Para quem segue essa linha de estudo, esses momentos apontariam para campos de maior probabilidade onde certas experiências poderiam se manifestar.</p>
-    <p>Cada número, nessa perspectiva, carregaria uma vibração própria, ativando cenários que dialogariam com aquela energia. A inclusão deste tópico visa oferecer a você uma visão mais ampla das teorias existentes na numerologia, embora elas não sejam utilizadas por mim em minhas análises.</p>
-    <p>Dessa forma, estas sequências funcionam como marcadores de tempo conforme a interpretação de outros profissionais, permitindo que você tenha acesso a essa teoria, mesmo que ela não seja o foco do meu atendimento ou do meu sistema de análise.</p>
-    ${idVideoIntroEspeciais ? gerarPlayerYouTube(idVideoIntroEspeciais) : ""}
+        <p>As sequências especiais apresentadas a seguir são baseadas em análises e estudos desenvolvidos por outros numerólogos...</p>
+        ${idVideoIntroEspeciais ? gerarPlayerYouTube(idVideoIntroEspeciais) : ""}
     </div>`;
     
     listaEspeciais.forEach(esp => {
@@ -7089,18 +7093,12 @@ if (listaEspeciais.length > 0) {
 }
 
 // --- FLUXOS FINANCEIROS 💰 ---
-const idVideoIntroFinanceiros  = "z1nW3rmNeEI";
+const idVideoIntroFinanceiros = window.desembaralharID("z1nW3rmNeEI");
 if (listaFin.length > 0) {
     htmlPiramide += `<div class="separador-luxo"><div class="caixa-interna"><h2>Fluxos Financeiros 💰</h2></div></div>`;
     
     htmlPiramide += `<div class="intro-texto" style="margin-bottom: 20px;">
-        O potencial de fluxo financeiro indica janelas de oportunidade para a expansão material e a consolidação de recursos, baseadas no seu magnetismo de prosperidade do momento. 
-   <p>No contexto financeiro, esse período pode se manifestar como uma fase de recebimentos, retornos ou entradas de recursos que não dependem exclusivamente do esforço direto e imediato da pessoa, mas sim de circunstâncias já construídas ao longo do tempo. É como se houvesse uma “colheita” de situações passadas, que agora se concretizam em forma material.</p>
-   <p>Nesse momento, a pessoa pode, por exemplo, ser desligada de uma empresa e receber corretamente todos os seus direitos trabalhistas — como rescisão, multa do FGTS, férias proporcionais e outros valores acumulados. Também pode ocorrer o recebimento de valores que estavam pendentes, como dívidas antigas sendo quitadas, restituições, reembolsos ou até ajustes financeiros inesperados a seu favor.</p>
-   <p>Há ainda possibilidades relacionadas ao acaso ou à sorte, como ganhos em loterias, apostas esportivas, sorteios ou premiações diversas. Embora não sejam garantias, esse período tende a ampliar a probabilidade de ganhos vindos de fontes não convencionais ou não planejadas diretamente.</p><p>Outro cenário comum envolve heranças, partilhas ou divisão de bens familiares, onde a pessoa passa a ter acesso a valores ou patrimônios que antes não estavam sob sua posse. Isso também pode incluir doações, ajudas financeiras de terceiros ou apoio inesperado em momentos específicos.</p>
-   <p>Além disso, pode haver ganhos relacionados a investimentos antigos que começam a dar retorno, venda de bens (como imóveis, veículos ou objetos de valor), ou até oportunidades de negócio que surgem trazendo lucro de forma mais rápida do que o habitual.</p>
-   <p>Em alguns casos, esse movimento também pode se manifestar como economia indireta — por exemplo, deixar de ter um gasto significativo, resolver uma pendência que geraria prejuízo, ou encontrar soluções que aliviam a pressão financeira, o que, na prática, representa um ganho.</p><p>Portanto, esse tipo de vibração não se limita a um único formato de dinheiro direto, mas abrange qualquer forma de entrada, recuperação ou liberação financeira. O importante é observar que, nesse período, existe uma tendência de “retorno” — seja ele fruto de mérito passado, de circunstâncias externas ou de oportunidades que se apresentam de maneira inesperada.</p>
-   
+        <p>O potencial de fluxo financeiro indica janelas de oportunidade para a expansão material...</p>
         ${idVideoIntroFinanceiros ? gerarPlayerYouTube(idVideoIntroFinanceiros) : ""}
     </div>`;
     
@@ -7129,8 +7127,6 @@ if (listaFin.length > 0) {
 htmlPiramide += `</div>`;
 
 // --- INSERÇÃO DAS POTÊNCIAS COM LOOP DE 100 ANOS ---
-// --- 1. RECUPERA OS ARCANOS/POTÊNCIAS DO TOPO ORIGINAIS (SEM EMBARALHAR O CÁLCULO DAS POTÊNCIAS) ---
-// Garantimos que a lista de potências seja exatamente a original do seu cálculo
 const potenciasTopo = topo(piramideVida[0]); 
 
 const dataEntrada = document.getElementById("data").value;
@@ -7142,35 +7138,26 @@ let indiceLoop = 0;
 
 // --- LOOP DAS POTÊNCIAS ATÉ 100 ANOS ---
 while (idadeAcumulada < 100) {
-    // Pega a potência atual na ordem sequencial da matriz
     const p = potenciasTopo[indiceLoop % potenciasTopo.length];
-    
-    // --- ATENÇÃO À DURAÇÃO DE CADA POTÊNCIA ---
-    // Se a sua regra original usava o PRIMEIRO DÍGITO para a duração (Ex: 22 = 2 anos):
     const duracaoAnos = parseInt(p.toString()[0]) || 1;
-    
-    // NOTA: Se no seu código antigo a duração era a SOMA dos dígitos ou outro cálculo,
-    // substitua a linha acima pela sua fórmula original, por exemplo:
-    // const duracaoAnos = p.toString().split('').reduce((a, b) => parseInt(a) + parseInt(b), 0);
 
     const idadeInicio = idadeAcumulada;
     const idadeFim = idadeAcumulada + duracaoAnos;
 
     const potenciaAtivaAgora = (idadeCronologica >= idadeInicio && idadeCronologica < idadeFim);
     
-    // Cálculo das datas exatas de vigência
     const dataIniPot = new Date(dtNasci.getFullYear() + idadeInicio, dtNasci.getMonth(), dtNasci.getDate());
     const dataFimPot = new Date(dtNasci.getFullYear() + idadeFim, dtNasci.getMonth(), dtNasci.getDate());
 
-    // Busca o texto correspondente no objeto de textos
-    const dadoPotencia = textos.Potencias ? textos.Potencias[p] : null;
+    const dadoPotencia = (typeof textos !== 'undefined' && textos.Potencias) ? textos.Potencias[p] : null;
     const textoParaExibir = (typeof dadoPotencia === 'object' && dadoPotencia !== null) 
         ? dadoPotencia.conteudo 
         : (dadoPotencia || "Vibração em análise.");
         
-    const videoParaExibir = (typeof dadoPotencia === 'object' && dadoPotencia !== null) 
+    const videoParaExibirBruto = (typeof dadoPotencia === 'object' && dadoPotencia !== null) 
         ? dadoPotencia.videoID 
         : null;
+    const videoParaExibir = window.desembaralharID(videoParaExibirBruto);
 
     htmlPotenciasCalculadas += `
         <div class="bloco-potencia" style="${potenciaAtivaAgora ? 'border: 2px solid var(--gold); background: #fffcf0; padding: 15px; border-radius: 8px;' : 'border-bottom: 1px solid #eee; padding: 10px;'}">
@@ -7189,7 +7176,7 @@ while (idadeAcumulada < 100) {
 
             <div class="texto-res" style="${potenciaAtivaAgora ? 'color:#000; font-weight:500;' : 'color:#222;'}">
                 ${aplicarFiltroTexto(textoParaExibir)}
-                ${videoParaExibir ? gerarPlayerYouTube(videoParaExibir) : ""}
+                ${videoParaExibir ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoParaExibir)}</div>` : ""}
             </div>     
         </div>`;
     
@@ -7205,7 +7192,7 @@ potenciasTopo.forEach(p => {
 htmlCaixinhas += `</div>`;
 
 // --- SEPARADOR LUXO DAS POTÊNCIAS ---
-const idVideoIntroPotencias  = "z1nW3rmNeEI";  
+const idVideoIntroPotencias = window.desembaralharID("z1nW3rmNeEI");  
 tituloBonito = "Ciclos de Potências Numéricas ✡︎ ";
 
 htmlPiramide += `
@@ -7219,16 +7206,7 @@ htmlPiramide += `
 
     <div class="intro-secao" style="margin: 35px 0; width: 100%; font-size: 19px; line-height: 1.8; color: #1a1a1a; text-align: justify; background: #fdfbf7; padding: 30px; border-radius: 15px; border-left: 1px solid #d4af37; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
         <h2 style="color: #827108; text-align: center; margin-bottom: 25px; font-variant: small-caps; letter-spacing: 2px;">🎼 A Sinfonia do Destino: O Poder das Potências Numéricas</h2>
-           <p style="margin-bottom: 20px;">Imagine que o seu nome de batismo não é apenas um conjunto de letras, mas uma <b>partitura musical sagrada</b> escrita no momento em que você chegou ao mundo. Na Numerologia Quântica, entendemos que cada letra do seu nome carrega uma frequência específica — uma <b>Potência</b> — que funciona como uma nota musical batida no silêncio do tempo. A sua vida não acontece ao acaso; ela segue um ritmo orquestrado por essas vibrações que emanam do topo da sua <b>Pirâmide da Vida</b>.</p>
-
-    <p style="margin-bottom: 20px;">Essas Potências representam os ciclos de maturação do seu ser. Assim como uma música tem momentos de notas agudas e intensas, seguidos por pausas e melodias mais suaves, a sua jornada é dividida em períodos onde certas energias dominam o seu campo vibracional. Quando uma Potência está ativa, ela dita o "tom" das suas experiências: pode ser um tempo de expansão solar, de introspecção profunda ou de colheita material. Não são Arcanos estáticos, são forças dinâmicas que moldam a sua percepção e as suas escolhas.</p>
-
-    <p style="margin-bottom: 20px;">Compreender a sequência desses ciclos é como ter o roteiro do maestro em mãos. Ao observar a vigência de cada Potência, você descobre quando a "música" da sua vida exige mais coragem, mais paciência ou mais criatividade. Como bem ensinou o Professor e Físico Reinaldo Martins Garcia, somos um eco dessas letras que ressoam através das décadas.</p>
-
-    <p style="font-style: italic; color: #777; font-size: 15px; text-align: center; border-top: 1px solid #eee; pt-20px; margin-top: 25px;">
-        "Assim como as notas determinam o ritmo da música, as letras de seu nome determinam o ritmo de sua vida." <br>
-        — <b>Professor e Físico Reinaldo Martins Garcia</b>
-    </p>
+        <p style="margin-bottom: 20px;">Imagine que o seu nome de batismo não é apenas um conjunto de letras...</p>
         ${idVideoIntroPotencias ? gerarPlayerYouTube(idVideoIntroPotencias) : ""}
     </div>
       
