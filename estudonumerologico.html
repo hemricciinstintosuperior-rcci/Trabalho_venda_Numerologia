@@ -5998,19 +5998,36 @@ html += `
 
 // ==========================================
 // BLOCO INDIVIDUAL: CAMINHO DE VIDA
-// --- IMPLEMENTAÇÃO DO VÍDEO NO CAMINHO DE VIDA ---
-const resCaminho = textos.CaminhodeVida[res.CaminhodeVida];
+// Garantia de função global para desembaralhar Base64
+if (typeof window.desembaralharID === 'undefined') {
+    window.desembaralharID = function(idEmbaralhado) {
+        if (!idEmbaralhado) return null;
+        try {
+            return atob(idEmbaralhado);
+        } catch (e) {
+            return idEmbaralhado; // Mantém o ID caso já esteja em texto puro
+        }
+    };
+}
 
-// Verifica se o resultado é um objeto (novo formato) ou apenas string (antigo)
-const textoCaminho = (typeof resCaminho === 'object') ? resCaminho.conteudo : resCaminho;
-const videoCaminho = (typeof resCaminho === 'object') ? resCaminho.videoID : null;
-    
-const dadosIntroCaminhodeVida = textos.introducoes ? textos.introducoes.CaminhodeVida : "";
+// ==========================================
+// 1. CAMINHO DE VIDA
+// ==========================================
+const resCaminho = (typeof textos !== 'undefined' && textos.CaminhodeVida) ? textos.CaminhodeVida[res.CaminhodeVida] : null;
+
+// Conteúdo e Vídeo do Resultado
+const textoCaminho = (typeof resCaminho === 'object' && resCaminho !== null) ? resCaminho.conteudo : resCaminho;
+const videoCaminhoBruto = (typeof resCaminho === 'object' && resCaminho !== null) ? resCaminho.videoID : null;
+const videoCaminho = window.desembaralharID(videoCaminhoBruto);
+
+// Introdução (Texto + Vídeo)
+const dadosIntroCaminhodeVida = (typeof textos !== 'undefined' && textos.introducoes) ? (textos.introducoes.CaminhodeVida || textos.introducoes.caminhodeVida) : "";
 const conteudoIntroCaminhodeVida = (typeof dadosIntroCaminhodeVida === 'object' && dadosIntroCaminhodeVida !== null) ? dadosIntroCaminhodeVida.conteudo : dadosIntroCaminhodeVida;
-const videoIntroCaminhodeVida = (typeof dadosIntroCaminhodeVida === 'object' && dadosIntroCaminhodeVida !== null) ? dadosIntroCaminhodeVida.videoID : null;
+const videoIntroCaminhodeVidaBruto = (typeof dadosIntroCaminhodeVida === 'object' && dadosIntroCaminhodeVida !== null) ? dadosIntroCaminhodeVida.videoID : null;
+const videoIntroCaminhodeVida = window.desembaralharID(videoIntroCaminhodeVidaBruto);
 
-    
 tituloBonito = "Caminho de Vida"; 
+
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -6019,33 +6036,36 @@ html += `
 </div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto">${aplicarFiltroTexto(conteudoIntroCaminhodeVida) || ""}  ${videoIntroCaminhodeVida ? gerarPlayerYouTube(videoIntroCaminhodeVida) : ""}</div>
-    <div class="evitar-corte texto-res">
-        ${aplicarFiltroTexto(textoCaminho)}
-        ${videoCaminho ? gerarPlayerYouTube(videoCaminho) : ""}
+    <div class="intro-texto">
+        ${aplicarFiltroTexto(conteudoIntroCaminhodeVida || "")}
+        ${videoIntroCaminhodeVida ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntroCaminhodeVida)}</div>` : ""}
+    </div>
+    <div class="evitar-corte texto-res" style="margin-top: 20px;">
+        ${textoCaminho ? aplicarFiltroTexto(textoCaminho) : "<p>Dados não encontrados.</p>"}
+        ${videoCaminho ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoCaminho)}</div>` : ""}
     </div>
 </div>
 `;
 
 
 // ==========================================
-// BLOCO INDIVIDUAL: PROPÓSITO
+// 2. PROPÓSITO
 // ==========================================
+const resPropósito = (typeof textos !== 'undefined' && textos.Propósito) ? textos.Propósito[res.Propósito] : null;
 
+// Conteúdo e Vídeo do Resultado
+const textoPropósito = (typeof resPropósito === 'object' && resPropósito !== null) ? resPropósito.conteudo : resPropósito;
+const videoPropósitoBruto = (typeof resPropósito === 'object' && resPropósito !== null) ? resPropósito.videoID : null;
+const videoPropósito = window.desembaralharID(videoPropósitoBruto);
 
-
-
-const resPropósito = textos.Propósito[res.Propósito];
-
-// Verifica se o resultado é um objeto (novo formato) ou apenas string (antigo)
-const textoPropósito = (typeof resPropósito === 'object') ? resPropósito.conteudo : resPropósito;
-const videoPropósito = (typeof resPropósito === 'object') ? resPropósito.videoID : null;
-
-const dadosIntroPropósito = textos.introducoes ? textos.introducoes.Propósito : "";
+// Introdução (Texto + Vídeo)
+const dadosIntroPropósito = (typeof textos !== 'undefined' && textos.introducoes) ? (textos.introducoes.Propósito || textos.introducoes.proposito) : "";
 const conteudoIntroPropósito = (typeof dadosIntroPropósito === 'object' && dadosIntroPropósito !== null) ? dadosIntroPropósito.conteudo : dadosIntroPropósito;
-const videoIntroPropósito = (typeof dadosIntroPropósito === 'object' && dadosIntroPropósito !== null) ? dadosIntroPropósito.videoID : null;
-    
+const videoIntroPropósitoBruto = (typeof dadosIntroPropósito === 'object' && dadosIntroPropósito !== null) ? dadosIntroPropósito.videoID : null;
+const videoIntroPropósito = window.desembaralharID(videoIntroPropósitoBruto);
+
 tituloBonito = "Propósito"; 
+
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -6054,14 +6074,25 @@ html += `
 </div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto">${aplicarFiltroTexto(conteudoIntroPropósito) || ""}  ${videoIntroPropósito ? gerarPlayerYouTube(videoIntroPropósito) : ""}</div>
-    <div class="evitar-corte texto-res">
-    ${aplicarFiltroTexto(textoPropósito)} 
-    ${videoPropósito ? gerarPlayerYouTube(videoPropósito) : ""}</div>
+    <div class="intro-texto">
+        ${aplicarFiltroTexto(conteudoIntroPropósito || "")}
+        ${videoIntroPropósito ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntroPropósito)}</div>` : ""}
+    </div>
+    <div class="evitar-corte texto-res" style="margin-top: 20px;">
+        ${textoPropósito ? aplicarFiltroTexto(textoPropósito) : "<p>Dados não encontrados.</p>"} 
+        ${videoPropósito ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoPropósito)}</div>` : ""}
+    </div>
 </div>
 `;
 
-const idVideoProfissao = "CQ1bcGIcX_w"; 
+
+// ==========================================
+// 3. DIRECIOMENTO PROFISSIONAL
+// ==========================================
+// ID do vídeo "CQ1bcGIcX_w" embaralhado em Base64 ("Q1ExYmNHSWNYX3c=")
+const idVideoProfissaoEmbaralhado = "Q1ExYmNHSWNYX3c="; 
+const idVideoProfissao = window.desembaralharID(idVideoProfissaoEmbaralhado);
+
 html += renderizarBlocoComVideo(`
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -6073,13 +6104,9 @@ html += renderizarBlocoComVideo(`
     <div class="texto-res">
         ${introProfissionalTexto}
         ${blocoProfissionalHTML}
-        
     </div>
 </div>
-`,idVideoProfissao); 
-
-
-
+`, idVideoProfissao);
 
     
 
