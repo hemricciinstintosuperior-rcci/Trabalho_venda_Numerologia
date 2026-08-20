@@ -3859,7 +3859,7 @@ Potencias: {
 <p>Quando vivida positivamente, esta potência manifesta uma grande humildade e paciência, permitindo que você extraia aprendizados valiosos através das dificuldades aparentes. É um período de maturação silenciosa da personalidade, onde o desapego de desejos imediatos prepara o terreno para uma conquista muito mais sólida, significativa e duradoura no seu futuro.</p>
 <p>Pelo lado negativo, há o perigo da vitimização, da estagnação e do sentimento de impotência diante dos fatos. Você pode se sentir preso em indecisões crônicas ou aceitar sofrimentos desnecessários por medo de avançar e mudar. A Potência 12 ensina que toda renúncia feita com consciência não é uma perda material, mas sim uma preparação espiritual essencial para um renascimento maior.</p>`,
 
- videoID: "z1nW3rmNeEI"
+ videoID: "Q1ExYmNHSWNYX3c"
     },
  
  13:{
@@ -4007,7 +4007,7 @@ videoID: "z1nW3rmNeEI"
 <p>No aspecto positivo, esta influência manifesta um profundo autoconhecimento e um amadurecimento que evita erros por impulsividade. Você utiliza este tempo para planejar com precisão, agindo com uma segurança que inspira respeito e autoridade. É uma fase de cura e fortalecimento interno, onde o descanso e a análise cuidadosa dos fatos garantem que seus próximos passos sejam certeiros, sólidos e extremamente produtivos no mundo.</p>
 <p>No entanto, o aspecto negativo alerta para o risco do isolamento por medo do enfrentamento social ou da procrastinação disfarçada de reflexão. A falta de iniciativa pode levar à perda de oportunidades valiosas por puro receio de errar. A Potência 31 ensina que o retiro deve ser uma ferramenta de poder e não um lugar de fuga; saber quando parar é tão importante quanto saber quando avançar para garantir o sucesso duradouro.</p>`,
  
- videoID: "Q1ExYmNHSWNYX3c="
+ videoID: "Q1ExYmNHSWNYX3c"
     },
  
  32:{
