@@ -2284,15 +2284,15 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
     const descricoesPerfilMasculino = {
         criativo: {
             conteudo: `<p>"Sua energia de ação este ano está em fase de expansão e Criatividade"</p><p>Neste ciclo, sua forma de agir está mais arrojada. Você sentirá uma facilidade maior para encontrar saídas rápidas e originais para problemas que antes pareciam travados.</p>`,
-            videoID: "SEU_CODIGO_BASE64_AQUI"
+            videoID: "bmFOdmhBYmhncFk"
         },
         indeciso: {
             conteudo: `<p>"Sua forma de agir este ano está sob o filtro da sensibilidade e da Indecisão"</p><p>Este ciclo pede que você tenha mais cautela antes de tomar grandes decisões. É um ano para agir com diplomacia, evitando confrontos diretos.</p>`,
-            videoID: "SEU_CODIGO_BASE64_AQUI"
+            videoID: "bmFOdmhBYmhncFk"
         },
         neutro: {
             conteudo: `<p>"Este ano sua ação prioriza o equilíbrio, a observação e a Neutralidade"</p><p>Sua postura atual é de 'esperar para ver'. Você prefere analisar o terreno antes de dar qualquer passo importante, agindo com máxima prudência.</p>`,
-            videoID: "SEU_CODIGO_BASE64_AQUI"
+            videoID: "bmFOdmhBYmhncFk"
         }
     };
 
@@ -2370,8 +2370,8 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         const textoPerfilAtual = perfilAtualObj.conteudo || "";
         const videoPerfilAtual = perfilAtualObj.videoID || "";
 
-        // Vídeo de introdução dos pilares do momento já codificado ("z1nW3rmNeEI" -> "ejFuVzNtTmVFSQ==")
-        const idVideoIntrooilaresmome = "ejFuVzNtTmVFSQ=="; 
+        // Vídeo de introdução dos pilares (Uso direto de ID limpo)
+        const idVideoIntrooilaresmome = "z1nW3rmNeEI"; 
         let tituloBonito = tituloSecao;
 
         let h = `
@@ -2394,7 +2394,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
                 <p>
                 Além disso, este resultado classifica sua expressão atual como <strong>Criativa, Indecisa ou Neutra</strong>, mostrando como essa combinação tende a influenciar suas decisões, sua forma de agir e sua percepção da realidade durante este ciclo. Lembre-se de que essa configuração é temporária: ela representa o movimento do momento e interage constantemente com a sua estrutura natural, forming a maneira única como você vivencia cada fase da sua jornada.
                 </p>
-                ${idVideoIntrooilaresmome ? gerarPlayerYouTube(atob(idVideoIntrooilaresmome)) : ""}
+                ${idVideoIntrooilaresmome ? gerarPlayerYouTube(window.desembaralharID(idVideoIntrooilaresmome)) : ""}
             </div>
 
             <div style="text-align: center; margin: 30px 0;">
@@ -2412,7 +2412,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
                         <div style="margin: 5px 0 0 0; font-size: 14px; color: #555;">${aplicarFiltroTexto(textoPerfilAtual)}</div>
                     </div>
                 </div>
-                ${(videoPerfilAtual && videoPerfilAtual.trim() !== "") ? `<div style="margin-top:15px;">${gerarPlayerYouTube(atob(videoPerfilAtual))}</div>` : ""}
+                ${(videoPerfilAtual && videoPerfilAtual.trim() !== "") ? `<div style="margin-top:15px;">${gerarPlayerYouTube(window.desembaralharID(videoPerfilAtual))}</div>` : ""}
             </div>
 
             <!-- 2. SÍNTESE DOS PILARES -->
@@ -2422,7 +2422,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
                 </div>
                 <div class="texto-res">${aplicarFiltroTexto(dadosSinteseMomento.conteudo)}</div>
                 
-                ${(dadosSinteseMomento.videoID && dadosSinteseMomento.videoID.trim() !== "") ? `<div style="margin-top:20px;">${gerarPlayerYouTube(atob(dadosSinteseMomento.videoID))}</div>` : ""}
+                ${(dadosSinteseMomento.videoID && dadosSinteseMomento.videoID.trim() !== "") ? `<div style="margin-top:20px;">${gerarPlayerYouTube(window.desembaralharID(dadosSinteseMomento.videoID))}</div>` : ""}
 
                 <div style="margin-top:25px; background:var(--dark); color:var(--gold); padding:20px; border-radius:8px; text-align:center;">
                     <strong style="text-transform: uppercase;"> Diretriz de Equilíbrio: </strong><br>
@@ -2487,7 +2487,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
                             ${aplicarFiltroTexto(conteudoTexto)}
                         </div>
 
-                        ${(videoID && videoID.trim() !== "") ? `<div style="margin-top:20px;">${gerarPlayerYouTube(atob(videoID))}</div>` : ""}
+                        ${(videoID && videoID.trim() !== "") ? `<div style="margin-top:20px;">${gerarPlayerYouTube(window.desembaralharID(videoID))}</div>` : ""}
                     </div>
                 `;
             }
@@ -2500,8 +2500,8 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
         let vTransitoCalculado = reduzirPuro(letrasAno.reduce((s, l) => s + calcularValorLetra(l), 0));
         const dadosTransito = window.TextosTransito ? window.TextosTransito[vTransitoCalculado] : null;
         
-        // Vídeo de introdução do trânsito já codificado ("CQ1bcGIcX_w" -> "Q1ExYmNHSWNYX3c=")
-        const idVideoIntrotransito = "Q1ExYmNHSWNYX3c"; 
+        // Vídeo de introdução do trânsito (Uso direto de ID limpo)
+        const idVideoIntrotransito = "CQ1bcGIcX_w"; 
 
         h += `
         <div class="separador-luxo">
@@ -2512,7 +2512,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
             <h2 class="titulo-topico" style="border-bottom: 2px solid #ffffff;">Ciclos de Trânsito</h2>
             <div class="intro-secao" style="margin-bottom: 20px; font-size: 18px; line-height: 1.6; color: #333;">
                 <p style="margin-bottom: 20px;">Os <b>Ciclos de Trânsito</b> representam a síntese das energias mais profundas que regem o seu momento atual, atuando como um barômetro da sua realidade imediata...</p>
-                ${idVideoIntrotransito ? gerarPlayerYouTube(atob(idVideoIntrotransito)) : ""}
+                ${idVideoIntrotransito ? gerarPlayerYouTube(window.desembaralharID(idVideoIntrotransito)) : ""}
             </div> 
 
             <div class="grupo-respostas-bloco pula-pagina">
@@ -2526,7 +2526,7 @@ function montarHtmlPlanosMomento(nomeCompleto, dataNascimento, res, faltantes, d
                         ${(dadosTransito && dadosTransito.conteudo) ? aplicarFiltroTexto(dadosTransito.conteudo) : "<p>Conteúdo não disponível.</p>"}
                     </div> 
                     
-                    ${(dadosTransito && dadosTransito.videoID && dadosTransito.videoID.trim() !== "") ? `<div style="margin-top:20px;">${gerarPlayerYouTube(atob(dadosTransito.videoID))}</div>` : ""}
+                    ${(dadosTransito && dadosTransito.videoID && dadosTransito.videoID.trim() !== "") ? `<div style="margin-top:20px;">${gerarPlayerYouTube(window.desembaralharID(dadosTransito.videoID))}</div>` : ""}
                 </div> 
             </div>
         </div>`;
