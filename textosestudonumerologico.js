@@ -262,7 +262,7 @@ Quanto mais você se conhece, mais percebe essa influência orientando seus obje
   
 Mesmo que não esteja consciente, você constrói esse caminho ao longo da vida através de suas escolhas e intenções. As características desse número já existem desde a infância, mas tornam-se mais claras com a maturidade.
   
-Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização pessoal.`,         videoID: "z1nW3rmNeEI"
+Ele mostra quais qualidades devem ser desenvolvidas para alcançar realização pessoal.`,         videoID: "Q1ExYmNHSWNYX3c"
     },
         
         inclinacoes: {
@@ -314,7 +314,7 @@ Portanto, encarar as deficiências é o primeiro passo para uma vida mais prazer
 Quando abraçamos o desafio de integrar essas novas ferramentas, paramos de lutar contra as mesmas dificuldades e começamos a construir uma base sólida para o sucesso. A jornada de maestria sobre as próprias fraquezas é o que diferencia o indivíduo comum daquele que manifesta plenamente sua essência. Cada passo dado em direção à correção dessas inibições reflete uma maior clareza mental e uma capacidade renovada de lidar com as pressões externas. 
 
 A verdadeira evolução ocorre quando deixamos de esconder nossas faltas e passamos a tratá-las como oportunidades de expansão de consciência. Ao dominar cada ferramenta que antes faltava, você se torna o arquiteto de uma realidade muito mais rica e sem as amarras do passado. Esse processo de lapidação pessoal é contínuo e garante que a sua expressão no mundo seja autêntica, forte e livre de bloqueios inconscientes. Alcançar esse equilíbrio é o que permite que a vida flua com leveza, transformando o que era deficiência em um diferencial de sabedoria.`,
- videoID: "z1nW3rmNeEI"
+ videoID: "Q1ExYmNHSWNYX3c"
     },
 
  
@@ -332,7 +332,7 @@ A verdadeira evolução ocorre quando deixamos de esconder nossas faltas e passa
 <p>Na visão da Numerologia Moderna, os aspectos cármicos atuam como alertas e motivadores. Eles indicam períodos onde efeitos inesperados podem surgir caso haja resistência em corrigir vícios de personalidade. A qualidade desse período — se será de expansão ou dificuldade — depende inteiramente da sua disposição em enfrentar e resolver essas questões pendentes.</p>
 
 <p>Para atingir o sucesso e a harmonia desejada, é indispensável alinhar seus valores e objetivos. Assumir o controle sobre a própria existência e comprometer-se verdadeiramente com o autodesenvolvimento é a única forma de transformar esses desafios em degraus para uma vida plena.</p>`,
- videoID: "z1nW3rmNeEI"
+ videoID: "Q1ExYmNHSWNYX3c"
     },
 
         
@@ -351,7 +351,7 @@ conforme orientadas pelo respectivo número de suas fraquezas e inibições.
     
 Note, porém, que isso não significa de forma alguma que o período será ruim, mas indica que você poderá enfrentar algumas dificuldades e adversidades muitas vezes desnecessárias e evitáveis causadas por essa deficiência em sua personalidade até que a mesma seja aperfeiçoada e dominada. 
     
-Perceba que quanto mais habilidades você tiver a sua disposição e quanto mais puder evitar suas fraquezas mais capaz você será de lidar com qualquer evento ou situação que se apresente em seu caminho e mais fácil será superá-las. `,         videoID: "z1nW3rmNeEI"
+Perceba que quanto mais habilidades você tiver a sua disposição e quanto mais puder evitar suas fraquezas mais capaz você será de lidar com qualquer evento ou situação que se apresente em seu caminho e mais fácil será superá-las. `,         videoID: "Q1ExYmNHSWNYX3c"
     },
  
         
@@ -373,7 +373,7 @@ Se o número do Momento Decisivo coincide com o número de Personalidade signifi
 Se o número do Momento Decisivo coincide com o número do Propósito de Vida poderá ser mais fácil durante o período perceber e aproveitar melhor as oportunidades que facilitarão a realização de seus sonhos e projetos pessoais.
   
 Se o número do Momento Decisivo coincide com o número de uma de suas Fraquezas e Inibições, você pode ter alguma dificuldade para lidar com questões relacionadas a essa necessidade específica até que aperfeiçoe suas habilidades ou supere alguma inibição.  `,
-         videoID: "z1nW3rmNeEI"
+         videoID: "Q1ExYmNHSWNYX3c"
     },
  
         
@@ -387,7 +387,7 @@ Se o número do Momento Decisivo coincide com o número de uma de suas Fraquezas
 <p>Enfrentar essas fases com clareza permite que você não se sinta sobrecarregado pelas dificuldades do momento, sabendo que elas são passageiras e funcionais. Eles funcionam como "portais de competência" que precisam ser atravessados para que a vida flua com a naturalidade desejada. Ao identificar em qual ciclo de desafio você se encontra atualmente, torna-se muito mais fácil direcionar sua energia para resolver as pendências emocionais ou práticas que aquela frequência específica está exigindo de você no agora.</p>
 
 <p>Portanto, os Desafios Temporários são convites para uma transformação rápida e focada, garantindo que você não estagne em sua evolução pessoal. Ao dominar as lições de cada período, você constrói uma base sólida de resiliência que servirá de apoio para enfrentar o desafio principal de forma muito mais íntegra. Esta dinâmica de tempo e aprendizado é o que traz movimento à vida, transformando cada ciclo de anos em uma oportunidade única de se tornar uma versão mais completa, preparada e consciente de si mesmo.</p>`,
-             videoID: "z1nW3rmNeEI"
+             videoID: "Q1ExYmNHSWNYX3c"
     },    
         // Nova chave para os Gráficos do Ano
     statusAnual: "O Status do Momento revela a configuração do seu plano de Expressão para o ano vigente. Diferente do seu Plano Natural, esta análise identifica quais áreas da sua vida estão recebendo carga extra de energia e quais exigem maior cautela estratégica no ciclo atual.",
