@@ -373,7 +373,7 @@ Se o número do Momento Decisivo coincide com o número de Personalidade signifi
 Se o número do Momento Decisivo coincide com o número do Propósito de Vida poderá ser mais fácil durante o período perceber e aproveitar melhor as oportunidades que facilitarão a realização de seus sonhos e projetos pessoais.
   
 Se o número do Momento Decisivo coincide com o número de uma de suas Fraquezas e Inibições, você pode ter alguma dificuldade para lidar com questões relacionadas a essa necessidade específica até que aperfeiçoe suas habilidades ou supere alguma inibição.  `,
-         videoID: "Q1ExYmNHSWNYX3c"
+         videoID: "bmFOdmhBYmhncFk"
     },
  
         
@@ -2570,7 +2570,7 @@ ciclos: {
      <p style="margin-bottom: 20px;">O seu primeiro ciclo de vida foi uma jornada vibrante e intensamente voltada para a autoexpressão, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Durante a juventude, você sentiu a necessidade de compartilhar ideias e talentos, sendo reconhecido(a) como uma personalidade carismática e dotada de uma imaginação fértil que transformava a realidade quotidiana.</p>
       <p style="margin-bottom: 20px;">Este período foi um solo fértil para descobertas intelectuais, onde você aprendeu a usar o magnetismo da fala para abrir caminhos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você vivenciou este ciclo como uma celebração, entendendo que o entusiasmo pode desarmar situações tensas. O aprendizado central foi perceber que sua luz pessoal tem o poder inerente de inspirar os outros.</p>
       <p style="margin-bottom: 20px;">Ao abraçar sua natureza expansiva, você descobriu que a comunicação é o fio condutor do sucesso, <strong>MASCULINO-FEMININO-NEUTRO</strong>. A estrada da juventude ensinou que a autenticidade é o seu maior trunfo social. Você concluiu este ciclo com uma mente repleta de ideias inovadoras, provando que a vida ganha sentido quando é expressa com cor, voz e alegria.</p>`,
-  videoID: "z1nW3rmNeEI"
+  videoID: "bmFOdmhBYmhncFk"
     },
       4: {
      conteudo:`<h3>1º Ciclo 4 - A Fundação de Bases Sólidas e Disciplina</h3><br>
