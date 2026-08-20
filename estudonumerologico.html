@@ -7130,8 +7130,10 @@ if (listaFin.length > 0) {
 htmlPiramide += `</div>`;
 
 // --- INSERÇÃO DAS POTÊNCIAS COM LOOP DE 100 ANOS ---
-// Utiliza a lista embaralhada arcanosTopo diretamente
-const potenciasTopo = arcanosTopo; 
+// --- 1. RECUPERA OS ARCANOS/POTÊNCIAS DO TOPO ORIGINAIS (SEM EMBARALHAR O CÁLCULO DAS POTÊNCIAS) ---
+// Garantimos que a lista de potências seja exatamente a original do seu cálculo
+const potenciasTopo = topo(piramideVida[0]); 
+
 const dataEntrada = document.getElementById("data").value;
 const anoNascPot = new Date(dataEntrada).getUTCFullYear();
 
@@ -7139,23 +7141,40 @@ let htmlPotenciasCalculadas = "";
 let idadeAcumulada = 0;
 let indiceLoop = 0;
 
+// --- LOOP DAS POTÊNCIAS ATÉ 100 ANOS ---
 while (idadeAcumulada < 100) {
+    // Pega a potência atual na ordem sequencial da matriz
     const p = potenciasTopo[indiceLoop % potenciasTopo.length];
-    const duracaoAnos = parseInt(p.toString()[0]) || 1; 
     
+    // --- ATENÇÃO À DURAÇÃO DE CADA POTÊNCIA ---
+    // Se a sua regra original usava o PRIMEIRO DÍGITO para a duração (Ex: 22 = 2 anos):
+    const duracaoAnos = parseInt(p.toString()[0]) || 1;
+    
+    // NOTA: Se no seu código antigo a duração era a SOMA dos dígitos ou outro cálculo,
+    // substitua a linha acima pela sua fórmula original, por exemplo:
+    // const duracaoAnos = p.toString().split('').reduce((a, b) => parseInt(a) + parseInt(b), 0);
+
     const idadeInicio = idadeAcumulada;
     const idadeFim = idadeAcumulada + duracaoAnos;
 
     const potenciaAtivaAgora = (idadeCronologica >= idadeInicio && idadeCronologica < idadeFim);
+    
+    // Cálculo das datas exatas de vigência
     const dataIniPot = new Date(dtNasci.getFullYear() + idadeInicio, dtNasci.getMonth(), dtNasci.getDate());
     const dataFimPot = new Date(dtNasci.getFullYear() + idadeFim, dtNasci.getMonth(), dtNasci.getDate());
 
-    const dadoPotencia = textos.Potencias[p];
-    const textoParaExibir = (typeof dadoPotencia === 'object') ? dadoPotencia.conteudo : (dadoPotencia || "Vibração em análise.");
-    const videoParaExibir = (typeof dadoPotencia === 'object') ? dadoPotencia.videoID : null;
+    // Busca o texto correspondente no objeto de textos
+    const dadoPotencia = textos.Potencias ? textos.Potencias[p] : null;
+    const textoParaExibir = (typeof dadoPotencia === 'object' && dadoPotencia !== null) 
+        ? dadoPotencia.conteudo 
+        : (dadoPotencia || "Vibração em análise.");
+        
+    const videoParaExibir = (typeof dadoPotencia === 'object' && dadoPotencia !== null) 
+        ? dadoPotencia.videoID 
+        : null;
 
     htmlPotenciasCalculadas += `
-        <div class="bloco-potencia" style="${potenciaAtivaAgora ? 'border: 2px solid var(--gold); background: #fffcf0; padding: 15px; border-radius: 8px;' : 'border-bottom: 1px solid #eee; padding: 10px; opacity: 1.3;'}">
+        <div class="bloco-potencia" style="${potenciaAtivaAgora ? 'border: 2px solid var(--gold); background: #fffcf0; padding: 15px; border-radius: 8px;' : 'border-bottom: 1px solid #eee; padding: 10px;'}">
             <div style="display: flex; justify-content: space-between; align-items: center;">
                 <h2 style="color: #827108; font-size: 24px; margin: 0;">Potência ${p} ✡︎</h2>
                 ${potenciaAtivaAgora ? '<span style="background:var(--gold); color:black; font-size:10px; padding:2px 14px; border-radius:10px; font-weight:bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">ATIVO NESTE CICLO</span>' : ''}
@@ -7179,8 +7198,8 @@ while (idadeAcumulada < 100) {
     indiceLoop++;
 }
 
-// --- TRECHO DAS CAIXINHAS DOURADAS (VITRINE) ---
-let htmlCaixinhas = `<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 25px;border: 1px solid #ffffff;">`;
+// --- CAIXINHAS DOURADAS (VITRINE) ---
+let htmlCaixinhas = `<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 25px; border: 1px solid #ffffff;">`;
 potenciasTopo.forEach(p => {
     htmlCaixinhas += `<span style="background: #827108; color: #fff; padding: 6px 14px; border-radius: 1px; font-weight: bold; font-size: 18px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">${p}</span>`;
 });
