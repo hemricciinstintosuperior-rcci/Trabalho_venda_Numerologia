@@ -6010,19 +6010,7 @@ html += `
     </div>
 `;
 
-// ==========================================
-// BLOCO INDIVIDUAL: CAMINHO DE VIDA
-// Garantia de função global para desembaralhar Base64
-if (typeof window.desembaralharID === 'undefined') {
-    window.desembaralharID = function(idEmbaralhado) {
-        if (!idEmbaralhado) return null;
-        try {
-            return atob(idEmbaralhado);
-        } catch (e) {
-            return idEmbaralhado; // Mantém o ID caso já esteja em texto puro
-        }
-    };
-}
+
 
 // ==========================================
 // 1. CAMINHO DE VIDA
@@ -6182,17 +6170,7 @@ html += `
     </div>
 `;
     
-// Garantia de função global para desembaralhar Base64
-if (typeof window.desembaralharID === 'undefined') {
-    window.desembaralharID = function(idEmbaralhado) {
-        if (!idEmbaralhado) return null;
-        try {
-            return atob(idEmbaralhado);
-        } catch (e) {
-            return idEmbaralhado; // Retorna o ID original se já estiver desembaralhado
-        }
-    };
-}
+
 
 // ==========================================
 // 1. FASE DE MATURIDADE
@@ -6867,18 +6845,6 @@ html += `
     </div>
 `;
     
-// Garantia da função global para desembaralhar IDs em Base64
-if (typeof window.desembaralharID === 'undefined') {
-    window.desembaralharID = function(idEmbaralhado) {
-        if (!idEmbaralhado) return null;
-        try {
-            return atob(idEmbaralhado);
-        } catch (e) {
-            return idEmbaralhado;
-        }
-    };
-}
-
 // --- FUNÇÃO AUXILIAR DE EMBARALHAMENTO (Algoritmo Fisher-Yates) ---
 function embaralharArray(array) {
     let copia = [...array];
@@ -6911,7 +6877,7 @@ const videoIntroPiramideBruto = (typeof dadosIntroPiramide === 'object' && dados
 const videoIntroPiramide = window.desembaralharID(videoIntroPiramideBruto);
 
 // --- SEPARADOR LUXO ---
- tituloBonito = "A Matriz da Vida"; 
+let tituloBonito = "A Matriz da Vida"; 
 html += `
 <div style="width: 100%; max-width: 100%; overflow: hidden; clear: both; page-break-inside: avoid;">
     <div class="separador-luxo">
@@ -6992,7 +6958,7 @@ tituloBonito = "O Regente da sua Matriz 🔱";
 
 const idVideoRegenteBruto = (textos.RegenteVida && textos.RegenteVida[regenteVida]) ? textos.RegenteVida[regenteVida].videoID : null;
 const idVideoRegente = window.desembaralharID(idVideoRegenteBruto);
-const idVideoIntroRegente = window.desembaralharID("z1nW3rmNeEI");
+const idVideoIntroRegente = "z1nW3rmNeEI";
 
 htmlPiramide += `
 <div class="separador-luxo">
@@ -7016,7 +6982,7 @@ htmlPiramide += `
 
 // --- BLOQUEIOS / VULNERABILIDADES ---
 if (dadosNegativas.detalhes.length > 0) {
-    const idVideoIntroBloqueios = window.desembaralharID("z1nW3rmNeEI");
+    const idVideoIntroBloqueios = "z1nW3rmNeEI";
     
     tituloBonito = "Vulnerabilidades e Bloqueios  ⚠️ ";
     htmlPiramide += `
@@ -7073,7 +7039,7 @@ if (dadosNegativas.detalhes.length > 0) {
 }
 
 // --- SEQUÊNCIAS ESPECIAIS ⭐ ---
-const idVideoIntroEspeciais = window.desembaralharID("z1nW3rmNeEI");
+const idVideoIntroEspeciais = "z1nW3rmNeEI";
 if (listaEspeciais.length > 0) {
     htmlPiramide += `<div class="separador-luxo"><div class="caixa-interna"><h2>Sequências Especiais ⭐</h2></div></div>`;
     
@@ -7105,7 +7071,7 @@ if (listaEspeciais.length > 0) {
 }
 
 // --- FLUXOS FINANCEIROS 💰 ---
-const idVideoIntroFinanceiros = window.desembaralharID("z1nW3rmNeEI");
+const idVideoIntroFinanceiros = "z1nW3rmNeEI";
 if (listaFin.length > 0) {
     htmlPiramide += `<div class="separador-luxo"><div class="caixa-interna"><h2>Fluxos Financeiros 💰</h2></div></div>`;
     
@@ -7204,7 +7170,7 @@ potenciasTopo.forEach(p => {
 htmlCaixinhas += `</div>`;
 
 // --- SEPARADOR LUXO DAS POTÊNCIAS ---
-const idVideoIntroPotencias = window.desembaralharID("z1nW3rmNeEI");  
+const idVideoIntroPotencias = "z1nW3rmNeEI";  
 tituloBonito = "Ciclos de Potências Numéricas ✡︎ ";
 
 htmlPiramide += `
