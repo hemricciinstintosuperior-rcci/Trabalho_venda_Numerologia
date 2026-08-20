@@ -4492,7 +4492,7 @@ talentosEspeciais: {
      conteudo:`<h3>Potencial de Firmeza e Desafio da Obstinação - 1</h3>
     <p>Você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, demonstra uma independência e uma ambição que estão muito acima da média comum. Seu potencial natural reside em uma determinação férrea e na capacidade invejável de manter a firmeza absoluta sob pressão, agindo com um brilhantismo singular em momentos de grandes crises ou desafios estratégicos onde outros recuariam.</p>
     <p>Entretanto, essa força monumental pode se tornar uma deficiência perigosa quando se transmuta em uma obstinação rígida e cega. O risco surge quando você se fecha excessivamente em seu ponto de vista, ignorando sugestões valiosas ao redor e gerando traços de possessividade ou autoritarismo que podem afastar aliados importantes. <strong>MASCULINO-FEMININO-NEUTRO</strong>, seu desafio é entender que a verdadeira liderança sabe a hora de avançar com força e a hora de ouvir com sabedoria, integrando a visão alheia para fortalecer o seu próprio império sem perder sua essência pioneira.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "Q1ExYmNHSWNYX3c="
     },
     2: {
      conteudo:`<h3>Potencial de Diplomacia e Desafio da Insegurança - 2</h3>
@@ -4559,7 +4559,7 @@ talentosEspeciais: {
         forte: {
      conteudo:`<h4>Campo de Atuação: Mental (Lógica e Estratégia)</h4>
                 <p>Sua habilidade opera no campo do raciocínio, onde a clareza de pensamento e a análise são suas principais ferramentas. Você lida com a vida de forma lógica, buscando compreender a estrutura dos problemas para encontrar soluções inteligentes, priorizando a organização das ideias antes de qualquer tomada de decisão.</p>`,
-          videoID: "F8bg1CTQ9HI"
+          videoID: "Q1ExYmNHSWNYX3c="
     },
     },
    
@@ -4587,7 +4587,7 @@ modosAcao: {
     criativo: {
      conteudo:`<h4>Modo de Expressão: Criativo (Inovação e Originalidade)</h4>
                <p>Sua forma de lidar com a vida é marcada pela inventividade e pela busca por soluções fora do comum. Você possui a habilidade de enxergar a realidade por ângulos que a maioria ignora, agindo com espontaneidade e otimismo para transformar imprevistos em oportunidades. Sua mente não se prende ao tradicionalismo, preferindo sempre criar caminhos novos e originais para resolver qualquer desafio cotidiano.</p>`,
-         videoID: "F8bg1CTQ9HI"
+         videoID: "Q1ExYmNHSWNYX3c="
     },
    
     oscilantes:{
