@@ -3582,7 +3582,7 @@ desafios: {
     <p>6. Tornar-se o(a) mestre(a) absoluto(a) das suas próprias emoções.</p>
     <p>7. Cultivar a tolerância e esmagar cada um de seus medos.</p>
     <p>8. Agir sempre como o fiel da balança, mantendo o equilíbrio e a justiça.</p>`,
-   videoID: " "
+   videoID: " Q1ExYmNHSWNYX3c"
     },
   1: {
      conteudo:`<h3>O Desafio da Independência e Soberania Pessoal - 1</h3><br>
@@ -3670,7 +3670,7 @@ desafios: {
     <p>Problemas nos pulmões, aparelho respiratório, olhos e sistema nervoso. Ansiedade e alterações repentinas de humor, tensão nervosa, apneia.</p>
     <p>Exaustão mental ou estafa; insônia, amnésia, paralisia facial, gagueira, acidentes graves por imprudência, vícios em geral (álcool e drogas), distúrbio nos órgãos reprodutores e problemas na tireoide.</p>
     
-    `,  videoID: "z1nW3rmNeEI"
+    `,  videoID: "Q1ExYmNHSWNYX3c"
     },
 
   6: {
@@ -4709,13 +4709,13 @@ deficits: {
      conteudo:`<h3>Ganância - Déficit de Comportamento 8</h3>
         <p>Este déficit indica que a raiva, a agressividade e a ganância descontrolada podem ter guiado suas decisões no passado, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desejo de possuir tudo sem nunca desfrutar de nada criou um ciclo de insatisfação crônica. Você pode ter usado seu poder para oprimir em vez de realizar, focando apenas no acúmulo material sem considerar o fator humano ou espiritual envolvido nas suas conquistas.</p>
         <p><strong>Influência:</strong> Você poderá passar por períodos de privação financeira ou limitações materiais severas que testarão sua força de vontade. <strong>MASCULINO-FEMININO-NEUTRO</strong>, a sensação de não conseguir se realizar profissionalmente pode ser frustrante. A lição de ouro é o equilíbrio e a moderação: aprenda a controlar seus impulsos e entenda que o dinheiro é uma energia de troca, não um fim em si mesmo. Quando você compreende que as pessoas confiam no que você é, e não no que você tem, o fluxo da abundância volta a correr em sua direção de forma limpa, justa e duradoura.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "Q1ExYmNHSWNYX3c"
     },
     9: {
      conteudo:`<h3>Vaidade - Déficit de Comportamento 9</h3>
         <p>Em algum momento, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a arrogância de se sentir superior aos demais levou você a ofender ou humilhar aqueles que considerava "inferiores". Esse idealismo distorcido e a dureza de coração podem ter gerado um comportamento vingativo contra quem ousasse desafiar sua vontade. Este déficit é uma convocação direta para a prática da humildade e do altruísmo universal.</p>
         <p><strong>Influência:</strong> Prepare-se para enfrentar perdas afetivas ou materiais que parecerão injustas, mas que servem para esvaziar seu ego e preencher sua alma com humanidade. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o sentimento de vazio interior só será curado quando você começar a compartilhar suas conquistas e a beneficiar genuinamente quem cruza seu caminho. Seja solidário(a), compreensivo(a) e aja com uma justiça que acolhe. Ao transformar a vaidade em serviço humanitário, você transmuta sua dívida em luz e se torna um canal de sabedoria e paz para o mundo inteiro.</p>`,
-       videoID: "tLrR4tsM4as"
+       videoID: "Q1ExYmNHSWNYX3c"
     }
 
     
@@ -4821,7 +4821,7 @@ subconsciente: {
      conteudo:`<h3>Arredio e Evasivo - Subconsciente 7</h3>
         <p>Sua reação instintiva diante do inesperado ou do choque emocional é o retraimento absoluto, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você tende a analisar as crises de forma fria, distante e calculista, reprimindo suas emoções sob uma camada de gelo e buscando se afastar fisicamente ou emocionalmente do problema para evitar qualquer envolvimento direto.</p>
         <p>Se for forçado(a) ao confronto sem ter para onde fugir, você pode utilizar a ironia mordaz e a manipulação intelectual como ferramentas de defesa. Existe uma tendência latente em você de buscar culpados externos em vez de soluções práticas e, em estados de isolamento profundo, buscar consolo em hábitos solitários e destrutivos. <strong>MASCULINO-FEMININO-NEUTRO</strong>, fechar-se para o mundo não resolve a crise; sua evolução pede que você aprenda a compartilhar sua vulnerabilidade para encontrar a saída.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "Q1ExYmNHSWNYX3c"
     },
     8: {
      conteudo:`<h3>Eficiente e Autoritário - Subconsciente 8</h3>
