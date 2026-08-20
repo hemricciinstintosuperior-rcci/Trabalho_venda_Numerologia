@@ -4007,7 +4007,7 @@ videoID: "z1nW3rmNeEI"
 <p>No aspecto positivo, esta influência manifesta um profundo autoconhecimento e um amadurecimento que evita erros por impulsividade. Você utiliza este tempo para planejar com precisão, agindo com uma segurança que inspira respeito e autoridade. É uma fase de cura e fortalecimento interno, onde o descanso e a análise cuidadosa dos fatos garantem que seus próximos passos sejam certeiros, sólidos e extremamente produtivos no mundo.</p>
 <p>No entanto, o aspecto negativo alerta para o risco do isolamento por medo do enfrentamento social ou da procrastinação disfarçada de reflexão. A falta de iniciativa pode levar à perda de oportunidades valiosas por puro receio de errar. A Potência 31 ensina que o retiro deve ser uma ferramenta de poder e não um lugar de fuga; saber quando parar é tão importante quanto saber quando avançar para garantir o sucesso duradouro.</p>`,
  
- videoID: "Q1ExYmNHSWNYX3c"
+ videoID: "Q1ExYmNHSWNYX3c="
     },
  
  32:{
