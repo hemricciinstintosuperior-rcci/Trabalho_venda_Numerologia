@@ -5672,11 +5672,33 @@ ${montarHtmlPlanosNatural(nomeRaw)}
   
 
 // --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
-const dadosIntrograficos = textos.introducoes ? textos.introducoes.graficos : "";
-const conteudoIntrograficos = (typeof dadosIntrograficos === 'object' && dadosIntrograficos !== null) ? dadosIntrograficos.conteudo : dadosIntrograficos;
-const videoIntrograficos = (typeof dadosIntrograficos === 'object' && dadosIntrograficos !== null) ? dadosIntrograficos.videoID : null;
+const dadosIntrograficos = (typeof textos !== 'undefined' && textos.introducoes) ? textos.introducoes.graficos : "";
+
+const conteudoIntrograficos = (typeof dadosIntrograficos === 'object' && dadosIntrograficos !== null) 
+    ? dadosIntrograficos.conteudo 
+    : dadosIntrograficos;
+
+// ID do vídeo capturado do textos.js (ou string direta)
+let videoIntrograficosBruto = (typeof dadosIntrograficos === 'object' && dadosIntrograficos !== null) 
+    ? dadosIntrograficos.videoID 
+    : null;
+
+// --- PROTEÇÃO COM EMBARALHAMENTO / DESEMBARALHAMENTO (atob) ---
+const desembaralharID = (idEmbaralhado) => {
+    if (!idEmbaralhado) return null;
+    try {
+        return atob(idEmbaralhado);
+    } catch (e) {
+        return idEmbaralhado; // Se já estiver em texto puro, mantém o original
+    }
+};
+
+// Desembaralha o ID do vídeo de introdução dos gráficos
+const videoIntrograficos = desembaralharID(videoIntrograficosBruto);
+// ----------------------------------------------------------------
 
 tituloBonito = "Seus Potenciais Naturais";  
+
 // --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
 html += `
 <div class="separador-luxo">
@@ -5685,15 +5707,19 @@ html += `
     </div>
 </div>
 `;
-    
+
 html += `
     <div class="page">
-        <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">Potenciais</h2>
-        <div class="intro-texto">${aplicarFiltroTexto(conteudoIntrograficos || "")}   ${videoIntrograficos ? gerarPlayerYouTube(videoIntrograficos) : ""}</div>
+        <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Potenciais</h2>
+        
+        <div class="intro-texto">
+            ${aplicarFiltroTexto(conteudoIntrograficos || "")}
+            ${videoIntrograficos ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntrograficos)}</div>` : ""}
+        </div>
+
         ${gerarTodosOsGraficos(res, res.deficiencias, nomeRaw, res.desafios[3], regenteVida, dadosNegativas.nums)}
     </div>
 `;
- 
  html += '</div>'; 
 
 
