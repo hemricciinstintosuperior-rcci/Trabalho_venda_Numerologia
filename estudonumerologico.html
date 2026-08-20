@@ -5760,13 +5760,28 @@ html += `
 `;
 
 
-// --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
-const dadosIntrofra = textos.introducoes ? textos.introducoes.deficiencias : "";
+// Função global de segurança para desembaralhar IDs Base64 sem duplicar declaração
+if (typeof window.desembaralharID === 'undefined') {
+    window.desembaralharID = function(idEmbaralhado) {
+        if (!idEmbaralhado) return null;
+        try {
+            return atob(idEmbaralhado);
+        } catch (e) {
+            return idEmbaralhado; // Retorna o ID original se já estiver desembaralhado
+        }
+    };
+}
+
+// ==========================================
+// 1. FRAQUEZAS E INIBIÇÕES (DEFICIÊNCIAS)
+// ==========================================
+const dadosIntrofra = (typeof textos !== 'undefined' && textos.introducoes) ? textos.introducoes.deficiencias : "";
 const conteudoIntrofra = (typeof dadosIntrofra === 'object' && dadosIntrofra !== null) ? dadosIntrofra.conteudo : dadosIntrofra;
-const videoIntrofra = (typeof dadosIntrofra === 'object' && dadosIntrofra !== null) ? dadosIntrofra.videoID : null;
-    
- tituloBonito = "fraquezas e inibições";   
-// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
+const videoIntrofraBruto = (typeof dadosIntrofra === 'object' && dadosIntrofra !== null) ? dadosIntrofra.videoID : null;
+const videoIntrofra = window.desembaralharID(videoIntrofraBruto);
+
+tituloBonito = "Fraquezas e Inibições";   
+
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -5775,68 +5790,79 @@ html += `
 </div>
 `;
 
-    
-// A. LIÇÕES CÁRMICAS
 html += `
     <div class="page">
-        <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Fraquezas e Inibições</h2>
-        <div class="intro-texto">${aplicarFiltroTexto(conteudoIntrofra || "")} ${videoIntrofra ? gerarPlayerYouTube(videoIntrofra) : ""}</div>
+        <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+        <div class="intro-texto">
+            ${aplicarFiltroTexto(conteudoIntrofra || "")} 
+            ${videoIntrofra ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntrofra)}</div>` : ""}
+        </div>
 `;
-if (res.deficiencias.length > 0) {
+
+if (res.deficiencias && res.deficiencias.length > 0) {
     html += `<div class="grupo-respostas-bloco pula-pagina">`;
     res.deficiencias.forEach(f => {
-        // Lógica de extração aqui:
-        const dados = textos.deficiencias[f];
+        const dados = (textos.deficiencias) ? textos.deficiencias[f] : null;
         const conteudo = (typeof dados === 'object' && dados !== null) ? dados.conteudo : dados;
-        const video = (typeof dados === 'object' && dados !== null) ? dados.videoID : null;
+        const videoBruto = (typeof dados === 'object' && dados !== null) ? dados.videoID : null;
+        const video = window.desembaralharID(videoBruto);
 
         html += `
         <div class="texto-res" style="margin-top: 20px;"> 
-            ${aplicarFiltroTexto(conteudo)}
-            ${video ? gerarPlayerYouTube(video) : ""}
+            ${aplicarFiltroTexto(conteudo || "")}
+            ${video ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(video)}</div>` : ""}
             <hr style="border:0; border-top:1px solid #ffffff">
         </div>`;
     });
     html += `</div>`;
-} else { html += `<p>Nenhuma deficiência encontrada.</p>`; }
+} else { 
+    html += `<p style="margin-top:20px;">Nenhuma deficiência encontrada.</p>`; 
+}
 html += `</div>`;
 
 
-// BLOCO INDIVIDUAL: SUBCONSCIENTE (subconsciente)
+// ==========================================
+// 2. SUBCONSCIENTE
 // ==========================================
 tituloBonito = "Subconsciente"; 
 const valSub = res.subconsciente;
-const dadosSub = textos.subconsciente ? textos.subconsciente[valSub] : null;
+const dadosSub = (typeof textos !== 'undefined' && textos.subconsciente) ? textos.subconsciente[valSub] : null;
 
 const conteudoSub = (typeof dadosSub === 'object' && dadosSub !== null) ? dadosSub.conteudo : dadosSub;
-const videoSub = (typeof dadosSub === 'object' && dadosSub !== null) ? dadosSub.videoID : null;
-// --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
+const videoSubBruto = (typeof dadosSub === 'object' && dadosSub !== null) ? dadosSub.videoID : null;
+const videoSub = window.desembaralharID(videoSubBruto);
 
-const dadosIntrosub = textos.introducoes ? textos.introducoes.subconsciente : "";
+const dadosIntrosub = (typeof textos !== 'undefined' && textos.introducoes) ? textos.introducoes.subconsciente : "";
 const conteudoIntrosub = (typeof dadosIntrosub === 'object' && dadosIntrosub !== null) ? dadosIntrosub.conteudo : dadosIntrosub;
-const videoIntrosub = (typeof dadosIntrosub === 'object' && dadosIntrosub !== null) ? dadosIntrosub.videoID : null;
-    
+const videoIntrosubBruto = (typeof dadosIntrosub === 'object' && dadosIntrosub !== null) ? dadosIntrosub.videoID : null;
+const videoIntrosub = window.desembaralharID(videoIntrosubBruto);
+
 html += `
 <div class="separador-luxo"><div class="caixa-interna"><h2>${tituloBonito}</h2></div></div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-    <div class="intro-texto">${aplicarFiltroTexto(conteudoIntrosub || "")}  ${videoIntrosub ? gerarPlayerYouTube(videoIntrosub) : ""}</div>
-    <div class="evitar-corte texto-res">
+    <div class="intro-texto">
+        ${aplicarFiltroTexto(conteudoIntrosub || "")}  
+        ${videoIntrosub ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntrosub)}</div>` : ""}
+    </div>
+    <div class="evitar-corte texto-res" style="margin-top: 20px;">
         ${conteudoSub ? aplicarFiltroTexto(conteudoSub) : "<p>Dados não localizados.</p>"}
-        ${videoSub ? gerarPlayerYouTube(videoSub) : ""}
+        ${videoSub ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoSub)}</div>` : ""}
     </div>
 </div>
 `;
-   
 
 
-// --- APLICAÇÃO DO PADRÃO PARA A INTRODUÇÃO (textos.js) ---
-
-const dadosIntrodeficits = textos.introducoes ? textos.introducoes.deficits : "";
+// ==========================================
+// 3. DÉFICITS DE COMPORTAMENTO
+// ==========================================
+const dadosIntrodeficits = (typeof textos !== 'undefined' && textos.introducoes) ? textos.introducoes.deficits : "";
 const conteudoIntrodeficits = (typeof dadosIntrodeficits === 'object' && dadosIntrodeficits !== null) ? dadosIntrodeficits.conteudo : dadosIntrodeficits;
-const videoIntrodeficits = (typeof dadosIntrodeficits === 'object' && dadosIntrodeficits !== null) ? dadosIntrodeficits.videoID : null;
-   tituloBonito = "Déficits de Comportamento";   
-// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
+const videoIntrodeficitsBruto = (typeof dadosIntrodeficits === 'object' && dadosIntrodeficits !== null) ? dadosIntrodeficits.videoID : null;
+const videoIntrodeficits = window.desembaralharID(videoIntrodeficitsBruto);
+
+tituloBonito = "Déficits de Comportamento";   
+
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -5844,46 +5870,59 @@ html += `
     </div>
 </div>
 `;
-// B. DÉFICITS DE COMPORTAMENTO
+
+// Dados do Déficit Recorrente Principal
+const dadosDeficitRec = (textos.deficits) ? textos.deficits[res.deficitRecorrente] : null;
+const conteudoDeficitRec = (typeof dadosDeficitRec === 'object' && dadosDeficitRec !== null) ? dadosDeficitRec.conteudo : dadosDeficitRec;
+const videoDeficitRecBruto = (typeof dadosDeficitRec === 'object' && dadosDeficitRec !== null) ? dadosDeficitRec.videoID : null;
+const videoDeficitRec = window.desembaralharID(videoDeficitRecBruto);
+
 html += `
     <div class="page">
-        <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Déficits de Comportamento</h2>
-        <div class="intro-texto">${aplicarFiltroTexto(conteudoIntrodeficits || "")}
-        ${videoIntrodeficits ? gerarPlayerYouTube(videoIntrodeficits) : ""}
+        <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
+        <div class="intro-texto">
+            ${aplicarFiltroTexto(conteudoIntrodeficits || "")}
+            ${videoIntrodeficits ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntrodeficits)}</div>` : ""}
         </div>
         
-        
         <div class="texto-res pula-pagina" style="margin-top: 20px;"> 
-            ${aplicarFiltroTexto((typeof textos.deficits[res.deficitRecorrente] === 'object') ? textos.deficits[res.deficitRecorrente].conteudo : textos.deficits[res.deficitRecorrente])}
-            ${(typeof textos.deficits[res.deficitRecorrente] === 'object' && textos.deficits[res.deficitRecorrente].videoID) ? gerarPlayerYouTube(textos.deficits[res.deficitRecorrente].videoID) : ""}
+            ${aplicarFiltroTexto(conteudoDeficitRec || "")}
+            ${videoDeficitRec ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoDeficitRec)}</div>` : ""}
         </div>
         <hr style="border:0; border-top:1px solid #ffffff">
 `;
-if (res.deficitsOcultos.length > 0) {
+
+if (res.deficitsOcultos && res.deficitsOcultos.length > 0) {
     res.deficitsOcultos.forEach(d => {
-        const dadosD = textos.deficits[d];
+        const dadosD = (textos.deficits) ? textos.deficits[d] : null;
         const cD = (typeof dadosD === 'object' && dadosD !== null) ? dadosD.conteudo : dadosD;
-        const vD = (typeof dadosD === 'object' && dadosD !== null) ? dadosD.videoID : null;
+        const vDBruto = (typeof dadosD === 'object' && dadosD !== null) ? dadosD.videoID : null;
+        const vD = window.desembaralharID(vDBruto);
 
         html += `<div class="texto-res" style="margin-top: 20px;"> 
-            ${aplicarFiltroTexto(cD)}
-            ${vD ? gerarPlayerYouTube(vD) : ""}
+            ${aplicarFiltroTexto(cD || "")}
+            ${vD ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(vD)}</div>` : ""}
             <hr style="border:0; border-top:1px solid #ffffff">
         </div>`;
     });
 }
 html += `</div>`;
 
-  // Primeiro, garantimos que temos os dados
-const dadosDesafio3 = textos.desafios[3][res.desafios[3]];      
 
+// ==========================================
+// 4. O DESAFIO PRINCIPAL (PILAR 03)
+// ==========================================
+const dadosDesafio3 = (textos.desafios && textos.desafios[3]) ? textos.desafios[3][res.desafios[3]] : null;
+const conteudoDesafio3 = (typeof dadosDesafio3 === 'object' && dadosDesafio3 !== null) ? dadosDesafio3.conteudo : dadosDesafio3;
+const videoDesafio3Bruto = (typeof dadosDesafio3 === 'object' && dadosDesafio3 !== null) ? dadosDesafio3.videoID : null;
+const videoDesafio3 = window.desembaralharID(videoDesafio3Bruto);
 
+// Vídeo fixo de introdução do desafio codificado em Base64 ("z1nW3rmNeEI" -> "ejFuVzNybU5lRUk=")
+const idVideoIntrodesafioEmbaralhado = "ejFuVzNybU5lRUk="; 
+const idVideoIntrodesafio = window.desembaralharID(idVideoIntrodesafioEmbaralhado);
 
-const idVideoIntrodesafio = "z1nW3rmNeEI";
-    
-// Crie esta linha logo ACIMA do código da ondinha:
- tituloBonito = "O seu DESAFIO PRINCIPAL"; 
-// --- SEPARADOR LUXO COM PROTEÇÃO ANTI-ERRO ---
+tituloBonito = "O seu DESAFIO PRINCIPAL"; 
+
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -5892,29 +5931,29 @@ html += `
 </div>
 `;
 
-    console.log("--- DEBUG DESAFIO 3 ---");
-console.log("Objeto encontrado:", textos.desafios[3][res.desafios[3]]);
-// --- INSERINDO O DESAFIO PRINCIPAL NO PILAR 03 ---
 html += `
     <div class="page">
-        <h2 class="titulo-topico"style="border-bottom: 2px solid var(--gold);">O Desafio Principal</h2>
-        <div class="intro-texto"><p>O Desafio Principal representa a vibração mestra que permeia toda a jornada de um indivíduo, desde o momento do nascimento até a plena maturidade. Diferente dos desafios temporários que marcam fases específicas da vida, esta é a lição central e definitiva que a alma busca integrar nesta existência. Ele atua como a sombra mais persistente em seu caminho, mas simultaneamente revela-se como a maior oportunidade de crescimento espiritual e autorrealização profunda.</p>
+        <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">O Desafio Principal</h2>
+        <div class="intro-texto">
+            <p>O Desafio Principal representa a vibração mestra que permeia toda a jornada de um indivíduo, desde o momento do nascimento até a plena maturidade. Diferente dos desafios temporários que marcam fases específicas da vida, esta é a lição central e definitiva que a alma busca integrar nesta existência. Ele atua como a sombra mais persistente em seu caminho, mas simultaneamente revela-se como a maior oportunidade de crescimento espiritual e autorrealização profunda.</p>
 
-<p>Superar este desafio exige uma vigilância constante e consciente sobre os padrões repetitivos de comportamento que tendem a limitar seu progresso. Ele funciona como um "norte" magnético para o desenvolvimento do seu caráter e da sua força interior. Ao enfrentar e transmutar as dificuldades impostas por essa frequência específica, você desbloqueia o fluxo de todos os outros talentos e potencialidades presentes em seu mapa numerológico.</p>
+            <p>Superar este desafio exige uma vigilância constante e consciente sobre os padrões repetitivos de comportamento que tendem a limitar seu progresso. Ele funciona como um "norte" magnético para o desenvolvimento do seu caráter e da sua força interior. Ao enfrentar e transmutar as dificuldades impostas por essa frequência específica, você desbloqueia o fluxo de todos os outros talentos e potencialidades presentes em seu mapa numerológico.</p>
 
-<p>É exatamente neste ponto de maior tensão que a resistência se transforma em maestria, permitindo que a vida seja conduzida com integridade, clareza e um propósito real. Este terceiro desafio, por ser o pilar principal, não se esgota com o tempo; ele demanda um compromisso vitalício com a evolução pessoal. Quando você aprende a navegar por essa energia, o que antes era um obstáculo intransponível passa a ser a base sólida de sua sabedoria.</p>
+            <p>É exatamente neste ponto de maior tensão que a resistência se transforma em maestria, permitindo que a vida seja conduzida com integridade, clareza e um propósito real. Este terceiro desafio, por ser o pilar principal, não se esgota com o tempo; ele demanda um compromisso vitalício com a evolução pessoal. Quando você aprende a navegar por essa energia, o que antes era um obstáculo intransponível passa a ser a base sólida de sua sabedoria.</p>
 
-<p>A jornada para vencer o Desafio Principal requer coragem para olhar para dentro e identificar as raízes de suas inibições mais profundas. Muitas vezes, ele se manifesta em situações recorrentes que testam sua paciência, ética ou capacidade de superação. No entanto, cada vitória sobre essa vibração fortalece sua essência e o aproxima da plenitude. Trata-se de uma lapidação contínua que refina sua expressão no mundo e traz um sentido maior às suas experiências diárias.</p>
+            <p>A jornada para vencer o Desafio Principal requer coragem para olhar para dentro e identificar as raízes de suas inibições mais profundas. Muitas vezes, ele se manifesta em situações recorrentes que testam sua paciência, ética ou capacidade de superação. No entanto, cada vitória sobre essa vibração fortalece sua essência e o aproxima da plenitude. Trata-se de uma lapidação contínua que refina sua expressão no mundo e traz um sentido maior às suas experiências diárias.</p>
 
-<p>Ao dominar esta lição central, você deixa de ser refém das circunstâncias para se tornar o arquiteto consciente do seu destino. A integração bem-sucedida desta energia é o que garante que sua caminhada seja leve e produtiva, transformando fraquezas em diferenciais de caráter. Este é o convite final da numerologia: converter o seu maior desafio na sua maior realização, vivendo em total harmonia com as leis que regem o seu universo pessoal.</p>
-   ${idVideoIntrodesafio ? gerarPlayerYouTube(idVideoIntrodesafio) : ""} </div>
+            <p>Ao dominar esta lição central, você deixa de ser refém das circunstancias para se tornar o arquiteto consciente do seu destino. A integração bem-sucedida desta energia é o que garante que sua caminhada seja leve e produtiva, transformando fraquezas em diferenciais de caráter. Este é o convite final da numerologia: converter o seu maior desafio na sua maior realização, vivendo em total harmonia com as leis que regem o seu universo pessoal.</p>
+            
+            ${idVideoIntrodesafio ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(idVideoIntrodesafio)}</div>` : ""} 
+        </div>
         
-        <div class="evitar-corte texto-res">
-            ${dadosDesafio3 ? aplicarFiltroTexto(dadosDesafio3.conteudo) : ""}
-            ${(dadosDesafio3 && dadosDesafio3.videoID) ? gerarPlayerYouTube(dadosDesafio3.videoID) : ""}
+        <div class="evitar-corte texto-res" style="margin-top: 20px;">
+            ${conteudoDesafio3 ? aplicarFiltroTexto(conteudoDesafio3) : "<p>Dados não localizados para o desafio.</p>"}
+            ${videoDesafio3 ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoDesafio3)}</div>` : ""}
         </div>
     </div>
-`; 
+`;
 
    html += '</div>';   
     html += '<div id="tela-parte4" class="conteudo-aba">';   
