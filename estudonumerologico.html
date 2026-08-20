@@ -6163,12 +6163,28 @@ html += `
     </div>
 `;
     
- const tituloMat = (typeof nomesExibicao !== 'undefined' && nomesExibicao["Maturidade"]) ? nomesExibicao["Maturidade"] : "Fase de Maturidade";
+// Garantia de função global para desembaralhar Base64
+if (typeof window.desembaralharID === 'undefined') {
+    window.desembaralharID = function(idEmbaralhado) {
+        if (!idEmbaralhado) return null;
+        try {
+            return atob(idEmbaralhado);
+        } catch (e) {
+            return idEmbaralhado; // Retorna o ID original se já estiver desembaralhado
+        }
+    };
+}
 
-const dadosIntroMaturidade = textos.introducoes ? textos.introducoes.Maturidade : "";
+// ==========================================
+// 1. FASE DE MATURIDADE
+// ==========================================
+const tituloMat = (typeof nomesExibicao !== 'undefined' && nomesExibicao["Maturidade"]) ? nomesExibicao["Maturidade"] : "Fase de Maturidade";
+
+const dadosIntroMaturidade = (typeof textos !== 'undefined' && textos.introducoes) ? textos.introducoes.Maturidade : "";
 const conteudoIntroMaturidade = (typeof dadosIntroMaturidade === 'object' && dadosIntroMaturidade !== null) ? dadosIntroMaturidade.conteudo : dadosIntroMaturidade;
-const videoIntroMaturidade = (typeof dadosIntroMaturidade === 'object' && dadosIntroMaturidade !== null) ? dadosIntroMaturidade.videoID : null;
-    
+const videoIntroMaturidadeBruto = (typeof dadosIntroMaturidade === 'object' && dadosIntroMaturidade !== null) ? dadosIntroMaturidade.videoID : null;
+const videoIntroMaturidade = window.desembaralharID(videoIntroMaturidadeBruto);
+
 tituloBonito = "FASE DE MATURIDADE";
 
 html += `
@@ -6177,86 +6193,85 @@ html += `
 </div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 1px solid var(--gold);">${tituloMat}</h2>
-    <div class="intro-texto">${aplicarFiltroTexto(conteudoIntroMaturidade || "")}  ${videoIntroMaturidade ? gerarPlayerYouTube(videoIntroMaturidade) : ""}</div>
-    <div class="texto-res">
+    <div class="intro-texto">
+        ${aplicarFiltroTexto(conteudoIntroMaturidade || "")}
+        ${videoIntroMaturidade ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntroMaturidade)}</div>` : ""}
+    </div>
+    <div class="texto-res" style="margin-top: 20px;">
         ${(() => {
-            const dadosM = (textos.Maturidade && res.Maturidade) ? textos.Maturidade[res.Maturidade] : null;
-            if (!dadosM) return "Conteúdo de maturidade não encontrado.";
+            const dadosM = (typeof textos !== 'undefined' && textos.Maturidade && res.Maturidade) ? textos.Maturidade[res.Maturidade] : null;
+            if (!dadosM) return "<p>Conteúdo de maturidade não encontrado.</p>";
             
             const contM = (typeof dadosM === 'object' && dadosM !== null) ? dadosM.conteudo : dadosM;
-            const vidM = (typeof dadosM === 'object' && dadosM !== null) ? dadosM.videoID : null;
+            const vidMBruto = (typeof dadosM === 'object' && dadosM !== null) ? dadosM.videoID : null;
+            const vidM = window.desembaralharID(vidMBruto);
             
-            return aplicarFiltroTexto(contM) + (vidM && typeof vidM === 'string' && vidM.trim() !== "" ? gerarPlayerYouTube(vidM) : "");
+            return aplicarFiltroTexto(contM || "") + (vidM && typeof vidM === 'string' && vidM.trim() !== "" ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(vidM)}</div>` : "");
         })()}
     </div>
 </div>`;
-    
-    
-    
-    
-    // 5. CICLOS, MOMENTOS E DESAFIOS
+
+
+// ==========================================
+// 2. CICLOS, MOMENTOS E DESAFIOS DE JORNADA
+// ==========================================
 ["ciclos", "momentos", "desafios"].forEach(sec => {
     tituloBonito = sec === "ciclos" ? "Ciclos da Vida" : 
                    sec === "momentos" ? "Momentos de decisão" : "Desafios de Jornada";    
-    // 2. Busca os dados da INTRODUÇÃO (NOVO: aceita Objeto com videoID ou String)
-   const dadosIntroo = (textos.introducoes && textos.introducoes[sec]) ? textos.introducoes[sec] : "";
-    const conteudoIntroo = (typeof dadosIntroo === 'object' && dadosIntroo !== null) ? dadosIntroo.conteudo : dadosIntroo;
-    const videoIntroo = (typeof dadosIntroo === 'object' && dadosIntroo !== null) ? dadosIntroo.videoID : null;
-
     
+    // Busca os dados da INTRODUÇÃO
+    const dadosIntroo = (typeof textos !== 'undefined' && textos.introducoes && textos.introducoes[sec]) ? textos.introducoes[sec] : "";
+    const conteudoIntroo = (typeof dadosIntroo === 'object' && dadosIntroo !== null) ? dadosIntroo.conteudo : dadosIntroo;
+    const videoIntrooBruto = (typeof dadosIntroo === 'object' && dadosIntroo !== null) ? dadosIntroo.videoID : null;
+    const videoIntroo = window.desembaralharID(videoIntrooBruto);
+
     html += `
     <div class="separador-luxo">
         <div class="caixa-interna"><h2>${tituloBonito}</h2></div>
     </div>
     <div class="page">
         <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${tituloBonito}</h2>
-        <div class="intro-texto">${aplicarFiltroTexto(conteudoIntroo || "")}
-            ${videoIntroo ? gerarPlayerYouTube(videoIntroo) : ""}   </div>`;
+        <div class="intro-texto">
+            ${aplicarFiltroTexto(conteudoIntroo || "")}
+            ${videoIntroo ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntroo)}</div>` : ""}
+        </div>`;
 
-// --- SUBSTITUA A PARTIR DAQUI ---
-for(let i in res[sec]) {
-    if (sec === "desafios" && i == 3) continue;
+    // Loop pelas fases de cada seção
+    for (let i in res[sec]) {
+        if (sec === "desafios" && i == 3) continue; // Pula o Desafio Principal que já é exibido em bloco próprio
 
-    const info = datasFases[sec][i];
-    const valorChave = res[sec][i];
-    const estaTravado = !acessoPremiumLiberado;
+        const info = (typeof datasFases !== 'undefined' && datasFases[sec]) ? datasFases[sec][i] : { idade: "", anos: "" };
+        const valorChave = res[sec][i];
+        const estaTravado = (typeof acessoPremiumLiberado !== 'undefined') ? !acessoPremiumLiberado : false;
 
-    // PROTEÇÃO: Verifica se o texto existe antes de tentar carregar
-    let itemTexto = (textos[sec] && textos[sec][i]) ? textos[sec][i][valorChave] : null;
-    
-    // Se não encontrar o texto, escreve um aviso no log e pula esse item para não travar
-    if (!itemTexto) {
-        console.warn(`Aviso: Conteúdo faltando em ${sec} | Fase: ${i} | Valor: ${valorChave}`);
-        continue;
-    }
+        // PROTEÇÃO: Verifica se o texto existe antes de carregar
+        let itemTexto = (typeof textos !== 'undefined' && textos[sec] && textos[sec][i]) ? textos[sec][i][valorChave] : null;
+        
+        if (!itemTexto) {
+            console.warn(`Aviso: Conteúdo faltando em ${sec} | Fase: ${i} | Valor: ${valorChave}`);
+            continue;
+        }
 
-    let conteudo = (typeof itemTexto === 'object' && itemTexto !== null) ? itemTexto.conteudo : itemTexto;
-    let videoID = (typeof itemTexto === 'object' && itemTexto !== null) ? itemTexto.videoID : null;
+        let conteudo = (typeof itemTexto === 'object' && itemTexto !== null) ? itemTexto.conteudo : itemTexto;
+        let videoIDBruto = (typeof itemTexto === 'object' && itemTexto !== null) ? itemTexto.videoID : null;
+        let videoID = window.desembaralharID(videoIDBruto);
 
-
-
-
-    
-
-    html += ` 
+        html += ` 
         <div class="evitar-corte" style="margin-bottom: 30px;">
             <span style="color: #d97a1e; font-weight: bold; font-size: 20px; text-transform: uppercase;">
                Idade ${info.idade} - Data ${info.anos}
             </span><br>
             
-         
-             
-              
-      
-                <div class="texto-res">
-                    ${aplicarFiltroTexto(conteudo)}
-                    ${(videoID && typeof videoID === 'string' && videoID.trim() !== "") ? gerarPlayerYouTube(videoID) : ""}
-                </div>
+            <div class="texto-res" style="margin-top: 10px;">
+                ${aplicarFiltroTexto(conteudo || "")}
+                ${(videoID && typeof videoID === 'string' && videoID.trim() !== "") ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoID)}</div>` : ""}
+            </div>
           
             <hr style="border:0; border-top:1px solid #ffffff; margin-top: 15px;">
         </div>`;
-}
-// --- ATÉ AQUI ---
+    }
+
+
     
     html += `</div>`; // Fecha a div class="page"
 });
