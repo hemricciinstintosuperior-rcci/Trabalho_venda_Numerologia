@@ -5678,24 +5678,20 @@ const conteudoIntrograficos = (typeof dadosIntrograficos === 'object' && dadosIn
     ? dadosIntrograficos.conteudo 
     : dadosIntrograficos;
 
-// ID do vídeo capturado do textos.js (ou string direta)
 let videoIntrograficosBruto = (typeof dadosIntrograficos === 'object' && dadosIntrograficos !== null) 
     ? dadosIntrograficos.videoID 
     : null;
 
-// --- PROTEÇÃO COM EMBARALHAMENTO / DESEMBARALHAMENTO (atob) ---
-const desembaralharID = (idEmbaralhado) => {
-    if (!idEmbaralhado) return null;
-    try {
-        return atob(idEmbaralhado);
-    } catch (e) {
-        return idEmbaralhado; // Se já estiver em texto puro, mantém o original
-    }
-};
+// Reutiliza a função global ou cria se ainda não existir
+if (typeof window.desembaralharID === 'undefined') {
+    window.desembaralharID = function(id) {
+        if (!id) return null;
+        try { return atob(id); } catch (e) { return id; }
+    };
+}
 
-// Desembaralha o ID do vídeo de introdução dos gráficos
-const videoIntrograficos = desembaralharID(videoIntrograficosBruto);
-// ----------------------------------------------------------------
+// Desembaralha o ID
+const videoIntrograficos = window.desembaralharID(videoIntrograficosBruto);
 
 tituloBonito = "Seus Potenciais Naturais";  
 
