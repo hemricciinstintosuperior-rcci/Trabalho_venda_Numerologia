@@ -6948,7 +6948,8 @@ medio: {
 <p>Respeitar esse "frio na barriga" diante de propostas financeiras evita que você sofra perdas materiais, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua percepção sutil é voltada para a organização e preservação do seu patrimônio, garantindo que a base material da sua vida não sofra abalos. O desafio é ouvir seu sinal de alerta antes de decisões definitivas. Sua prudência intuitiva é o que garante a longevidade dos seus projetos e a tranquilidade necessária para seu crescimento sustentável.</p>
 
 <p>Sua eficiência é potencializada quando você une seu rigor técnico à escuta desse radar de viabilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Não ignore suas dúvidas persistentes, mesmo que outros digam que está tudo bem. Ao investigar a fundo o que sua intuição sinalizou, você encontrará falhas que seriam prejudiciais ao progresso. O seu sucesso vem da construção de uma reputação sólida, consolidando uma trajetória onde seu patrimônio é protegido por uma sabedoria que sabe ler os sinais do mundo material.</p>`,
-
+   videoID: "F8bg1CTQ9HI"
+    },
     5: {
      conteudo:`<p><strong>Sua percepção intuitiva</strong> aparece diante de mudanças ou oportunidades de transformação na sua carreira, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Em períodos de movimento, você confia no seu instinto e nos pressentimentos de adaptação rápida que garantem seu êxito em terrenos desconhecidos. Seu radar detecta o momento exato de mudar de estratégia, embora essa voz interna possa ser abafada pela hesitação diante do novo.</p>
 
@@ -7657,7 +7658,7 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito predominar por 3 anos ou mais, isso pode indicar um período tumultuado onde será necessário lidar com muitas mudanças. Independentemente disso, qualquer que seja o evento ocorrido, será benéfico para sua evolução a longo prazo.</p>
 <p>2. Os efeitos de um Trânsito 1 junto a um Ano Pessoal 1 são potencializados e exigem escolhas cuidadosas. Prepare-se para agir com visão de futuro e não resultados imediatos, garantindo que cada passo consolide sua nova liderança.</p>
-`,  videoID: "F8bg1CTQ9HI"
+`,  videoID: "Q1ExYmNHSWNYX3c"
     },
 
  2:{
@@ -7698,7 +7699,7 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se este trânsito estiver predominante por 3 anos ou mais, a vida pode parecer uma batalha constante. Mas se houver aprendizado em tirar proveito das restrições, ao final do ciclo ocorrerá um triunfo pessoal e uma conquista profissional de grande prestígio.</p>
 <p>2. Junto com um Ano Pessoal 4, tudo pode parecer mais monótono e difícil. Aja com praticidade extrema e não se deixe abater pela rotina; a consistência que você aplicar agora será o diferencial que o levará ao topo no momento certo.</p>
-`,  videoID: "F8bg1CTQ9HI"
+`,  videoID: "Q1ExYmNHSWNYX3c"
     },
 
  5:{
@@ -7737,7 +7738,7 @@ window.TextosTransito = {
 <p><strong>Orientação:</strong></p>
 <p>1. Se o Trânsito 7 durar 3 anos ou mais, evite o isolamento excessivo ou o apego a detalhes sem benefício prático. Use esse tempo para se tornar um especialista em sua área, transformando o conhecimento em poder real.</p>
 <p>2. Junto com um Ano Pessoal 7, pode haver insatisfação ou retraimento. Não se feche para o mundo; use a meditação e o estudo para encontrar as respostas que procura, garantindo que essa fase de busca interior resulte em uma paz profunda e duradoura.</p>
-`,  videoID: "F8bg1CTQ9HI"
+`,  videoID: "Q1ExYmNHSWNYX3c"
     },
 
  8:{
