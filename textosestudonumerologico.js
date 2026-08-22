@@ -7631,7 +7631,7 @@ videoID: "naNvhAbhgpY"
     },  
        3:  {
     conteudo:`<p>Nesta fase, a sua inspiração original depende muito de estímulos externos e dados prontos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Lampejos espontâneos são raros agora, e pode surgir um bloqueio criativo justamente quando se busca uma solução nova. O ciclo pede que você faça um esforço consciente para resgatar seu brilho psíquico através do descanso hoje.</p>`,
-     videoID: "naNvhAbhgpY"
+     videoID: "Q1ExYmNHSWNYX3c"
 },
  
        4: {
