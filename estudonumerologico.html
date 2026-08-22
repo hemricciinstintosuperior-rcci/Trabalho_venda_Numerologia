@@ -593,6 +593,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
         /* PADRÃO PARA TODAS AS INTRODUÇÕES */
     .intro-texto, .intro-secao {
+        display: none !important; /* <--- ADICIONE ESTA LINHA (Esconde na tela) */
         font-size: 18px !important; /* Tamanho fixo para todas */
         line-height: 1 !important;
         color: #111 !important;
@@ -605,6 +606,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
     /* PADRÃO PARA TODOS OS RESULTADOS (CONTEÚDO BRUTO) */
     .texto-res {
+        display: none !important; /* <--- ADICIONE ESTA LINHA (Esconde na tela) */
         font-size: 18px !important; /* Um pouquinho maior que a intro para dar peso */
         line-height: 1 !important;
         color: #000 !important;
@@ -620,6 +622,15 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
         font-size: inherit !important; /* Herda o tamanho da classe pai */
         margin-bottom: 5px !important;
     }
+
+    @media print {
+    /* Exibe os textos de introdução e resultado no PDF */
+    .intro-texto, 
+    .intro-secao, 
+    .texto-res {
+        display: block !important;
+    }
+}
 
 .pula-pagina { 
     page-break-before: always !important; 
