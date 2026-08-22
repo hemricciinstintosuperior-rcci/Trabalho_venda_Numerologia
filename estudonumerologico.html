@@ -593,7 +593,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
         /* PADRÃO PARA TODAS AS INTRODUÇÕES */
     .intro-texto, .intro-secao {
-        display: none !important; /* <--- ADICIONE ESTA LINHA (Esconde na tela) */
+       
         font-size: 18px !important; /* Tamanho fixo para todas */
         line-height: 1 !important;
         color: #111 !important;
@@ -606,7 +606,7 @@ src="https://www.facebook.com/tr?id=1211246993846056&ev=PageView&noscript=1"
 
     /* PADRÃO PARA TODOS OS RESULTADOS (CONTEÚDO BRUTO) */
     .texto-res {
-        display: none !important; /* <--- ADICIONE ESTA LINHA (Esconde na tela) */
+       
         font-size: 18px !important; /* Um pouquinho maior que a intro para dar peso */
         line-height: 1 !important;
         color: #000 !important;
@@ -991,7 +991,38 @@ input[type="text"], select {
     /* Esconde o container travado por padrão, evita que ele apareça antes do tempo */
     #container-travado { display: none; }
 
+/* ===================================================
+   OCULTAR TEXTOS NA TELA E EXIBIR APENAS NO PDF
+   =================================================== */
 
+/* 1. Esconde os parágrafos de texto e quebras de linha na TELA */
+.intro-texto p,
+.intro-secao p,
+.texto-res p,
+.intro-texto br,
+.intro-secao br,
+.texto-res br {
+    display: none !important;
+}
+
+/* 2. Garante que os títulos (H1, H2, H3, H4) continuem VISÍVEIS na tela */
+.intro-texto h1, .intro-texto h2, .intro-texto h3, .intro-texto h4,
+.intro-secao h1, .intro-secao h2, .intro-secao h3, .intro-secao h4,
+.texto-res h1, .texto-res h2, .texto-res h3, .texto-res h4 {
+    display: block !important;
+}
+
+/* 3. Reexibe os parágrafos quando for IMPRIMIR/GERAR PDF */
+@media print {
+    .intro-texto p,
+    .intro-secao p,
+    .texto-res p,
+    .intro-texto br,
+    .intro-secao br,
+    .texto-res br {
+        display: block !important;
+    }
+}
     
     </style>
 
