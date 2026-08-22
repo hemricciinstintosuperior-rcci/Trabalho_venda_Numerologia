@@ -6908,7 +6908,8 @@ forte: {
 <p>Sua produtividade financeira atinge o ápice quando você ouve seu "instinto visceral" diante de grandes contratos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Estude o comportamento humano para dar nome ao que sua intuição já percebe na prática. O seu sucesso vem da coragem de assumir grandes responsabilidades guiada por esse seu radar de eficiência. Ao consolidar sua posição com essa sabedoria, você cria um legado de autoridade e progresso material invejável.</p>`,
    videoID: "F8bg1CTQ9HI"
     },
-  9: `<p><strong>Sua intuição</strong> é universal e captadora de grandes propósitos espirituais, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você percebe o fluxo de energia que une tudo e todos, guiado por um senso de missão que vai muito além do interesse pessoal. Sua intuição se manifesta como uma compreensão sábia da vida, permitindo que você oriente as pessoas em grandes transições com maestria. Você detecta as necessidades da alma coletiva antes que elas virem movimentos organizados.</p>
+  9: {
+     conteudo:`<p><strong>Sua intuição</strong> é universal e captadora de grandes propósitos espirituais, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você percebe o fluxo de energia que une tudo e todos, guiado por um senso de missão que vai muito além do interesse pessoal. Sua intuição se manifesta como uma compreensão sábia da vida, permitindo que você oriente as pessoas em grandes transições com maestria. Você detecta as necessidades da alma coletiva antes que elas virem movimentos organizados.</p>
 
 <p>Sua visão de longo alcance permite que você veja o impacto de pequenas ações no futuro distante, agindo sempre com base na ética e na compaixão, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O desafio é manter os pés no chão e cuidar dos detalhes práticos para que seu idealismo não se perca em abstrações. Sua generosidade intuitiva é um bálsamo para quem busca um sentido maior na vida. Você é um radar permanente de cura e evolução social.</p>
 
@@ -6948,6 +6949,7 @@ medio: {
 <p>Respeitar esse "frio na barriga" diante de propostas financeiras evita que você sofra perdas materiais, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua percepção sutil é voltada para a organização e preservação do seu patrimônio, garantindo que a base material da sua vida não sofra abalos. O desafio é ouvir seu sinal de alerta antes de decisões definitivas. Sua prudência intuitiva é o que garante a longevidade dos seus projetos e a tranquilidade necessária para seu crescimento sustentável.</p>
 
 <p>Sua eficiência é potencializada quando você une seu rigor técnico à escuta desse radar de viabilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Não ignore suas dúvidas persistentes, mesmo que outros digam que está tudo bem. Ao investigar a fundo o que sua intuição sinalizou, você encontrará falhas que seriam prejudiciais ao progresso. O seu sucesso vem da construção de uma reputação sólida, consolidando uma trajetória onde seu patrimônio é protegido por uma sabedoria que sabe ler os sinais do mundo material.</p>`,
+     
    videoID: "F8bg1CTQ9HI"
     },
     5: {
