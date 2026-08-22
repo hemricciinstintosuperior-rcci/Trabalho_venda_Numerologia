@@ -4673,7 +4673,7 @@ deficits: {
      conteudo:`<h3>Crueldade - Déficit de Comportamento 2</h3>
         <p>Em algum momento da sua existência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, houve um uso equivocado do poder pessoal, que pode ter se manifestado como vingança, crueldade ou abusos emocionais contra outros. Esta lição atual vem para ensinar que a compaixão não é fraqueza, mas a tecnologia mais avançada da alma para cooperar e unir. Ser compassivo(a) permitirá que você ocupe um lugar de honra no coração das pessoas, trazendo um senso de equilíbrio que talvez tenha faltado em seus ciclos anteriores.</p>
         <p><strong>Influência:</strong> Sob esta vibração, você poderá se sentir explorado(a) ou submetido(a) a situações onde seu valor não é reconhecido, gerando uma baixa autoestima e um medo paralisante da solidão. <strong>MASCULINO-FEMININO-NEUTRO</strong>, o pessimismo pode tentar nublar sua visão, tornando as decisões difíceis. Sua grande virada de chave reside em apoiar sua criatividade na ética mais rigorosa possível. Busque sempre o resultado onde todos ganham; ao se tornar um(a) agente da harmonia e do respeito mútuo, você dissolve as amarras desse déficit e resgata sua verdadeira dignidade.</p>`,
-  videoID: "F8bg1CTQ9HI"
+  videoID: "Q1ExYmNHSWNYX3c"
     },
     3: {
      conteudo:`<h3>Exibicionismo - Déficit de Comportamento 3</h3>
@@ -6299,7 +6299,7 @@ videoID: "z1nW3rmNeEI"
 
 <p>Nesta vibração, sua saúde física reflete seu estado de ânimo e satisfação com o propósito do trabalho. Praticar a serenidade permite que sua produção flua com constância. Sua visão global permite encontrar soluções inovadoras para desafios materiais. Ao encerrar cada ciclo com o sentimento de dever cumprido, sua vitalidade se renova para novos desafios em prol da coletividade, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>`,
        
-   videoID: "F8bg1CTQ9HI"
+   videoID: "Q1ExYmNHSWNYX3c"
     }  
     
     },
@@ -6462,7 +6462,7 @@ videoID: "z1nW3rmNeEI"
 
 <p>Para manter sua saúde intelectual em dia, recomenda-se o contato com diferentes culturas e projetos que visem o bem comum. Sua capacidade de síntese permite unir pessoas de diferentes opiniões em torno de um objetivo nobre, agindo você como uma liderança inspiradora e cheia de carisma, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Ao compartilhar sua visão de mundo com clareza, você se torna um farol de consciência. O sucesso vem da sua capacidade de transformar pensamento ético em ações que deixem o mundo um lugar mais justo e iluminado.</p>`,
    
-      videoID: "F8bg1CTQ9HI"
+      videoID: "Q1ExYmNHSWNYX3c"
     },
   
   },
@@ -6658,7 +6658,7 @@ videoID: "z1nW3rmNeEI"
 <p>Seu emocional atua como uma "âncora", oferecendo suporte incondicional aos entes queridos e mantendo a lucidez mesmo em situações de estresse, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua confiança é o pilar fundamental desta energia; ela é conquistada lentamente e, uma vez estabelecida, é guardada por você como um tesouro inestimável. O desafio é não permitir que sua busca por segurança se torne uma rotina rígida demais. A proteção que você oferece traz uma paz profunda para o seu lar e para todas as suas parcerias de longo prazo.</p>
 
 <p>Para manter sua vitalidade, é importante buscar momentos de descontração que relaxem sua necessidade de controle, <strong>MASCULINO-FEMININO-NEUTRO</strong>. O seu amor é sinônimo de construção e proteção, garantindo que ninguém ao seu redor se sinta desamparado. Ao permitir que a flexibilidade entre na sua rotina afetiva, a relação ganha novas cores sem perder a solidez já conquistada. O seu progresso nos vínculos ocorre através da sua fidelidade, consolidando uma trajetória de respeito absoluto e a reputação de ser alguém com quem se pode contar para a vida toda.</p>`,
-      videoID: "F8bg1CTQ9HI"
+      videoID: "Q1ExYmNHSWNYX3c"
     },
     5: {
      conteudo:`<p><strong>Suas emoções</strong> são intensas, elétricas e dotadas de uma necessidade de liberdade e renovação afetiva que foge totalmente aos padrões comuns, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Existe em você uma abertura total para o novo, com um desejo ardente de explorar diferentes formas de se conectar, fugindo de qualquer tipo de estagnação ou tédio. Mudanças de cenário, viagens e novas experiências funcionam como um estímulo poderoso para o seu crescimento, quebrando padrões antigos que não fazem mais sentido para quem você é.</p>
@@ -6968,7 +6968,7 @@ videoID: "z1nW3rmNeEI"
 <p>Respeitar esse "frio na barriga" diante de propostas financeiras evita que você sofra perdas materiais, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua percepção sutil é voltada para a organização e preservação do seu patrimônio, garantindo que a base material da sua vida não sofra abalos. O desafio é ouvir seu sinal de alerta antes de decisões definitivas. Sua prudência intuitiva é o que garante a longevidade dos seus projetos e a tranquilidade necessária para seu crescimento sustentável.</p>
 
 <p>Sua eficiência é potencializada quando você une seu rigor técnico à escuta desse radar de viabilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Não ignore suas dúvidas persistentes, mesmo que outros digam que está tudo bem. Ao investigar a fundo o que sua intuição sinalizou, você encontrará falhas que seriam prejudiciais ao progresso. O seu sucesso vem da construção de uma reputação sólida, consolidando uma trajetória onde seu patrimônio é protegido por uma sabedoria que sabe ler os sinais do mundo material.</p>`,
-      videoID: "F8bg1CTQ9HI"
+      videoID: "Q1ExYmNHSWNYX3c"
     },
     5: {
      conteudo:`<p><strong>Sua percepção intuitiva</strong> aparece diante de mudanças ou oportunidades de transformação na sua carreira, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Em períodos de movimento, você confia no seu instinto e nos pressentimentos de adaptação rápida que garantem seu êxito em terrenos desconhecidos. Seu radar detecta o momento exato de mudar de estratégia, embora essa voz interna possa ser abafada pela hesitação diante do novo.</p>
@@ -7860,7 +7860,7 @@ textosSinteseExpressao = {
 
 "MENTAL(F)-EMOCIONAL(F)-INTUITIVO(F)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
 "MENTAL(F)-EMOCIONAL(F)-FISICO(M)-INTUITIVO(M)": { conteudo: "", videoID: "m9WVZqdmrr4" },
-"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(M)-FISICO(M)": { conteudo: "", videoID: "z1nW3rmNeEI" },
+"MENTAL(F)-EMOCIONAL(F)-INTUITIVO(M)-FISICO(M)": { conteudo: "", videoID: "Q1ExYmNHSWNYX3c" },
 "MENTAL(F)-EMOCIONAL(F)-FISICO(M)-INTUITIVO(Fr)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
 "MENTAL(F)-INTUITIVO(F)-FISICO(M)-EMOCIONAL(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
 "MENTAL(F)-INTUITIVO(F)-EMOCIONAL(M)-FISICO(M)": { conteudo: "", videoID: "F8bg1CTQ9HI" },
