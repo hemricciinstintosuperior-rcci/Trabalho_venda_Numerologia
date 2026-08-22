@@ -7636,7 +7636,7 @@ videoID: "naNvhAbhgpY"
  
        4: {
      conteudo:`<p>Há um predomínio do controle e da busca por segurança material neste momento em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, deixando pouco espaço para a percepção inovadora agora. Mesmo que o seu instinto sinalize riscos, a tendência atual é seguir o plano rígido apenas por conformidade, ignorando os avisos sutis que o ciclo apresenta.</p>`,
- videoID: "naNvhAbhgpY"
+ videoID: "Q1ExYmNHSWNYX3c"
     },  
         5: {
      conteudo:`<p>Observa-se agora uma dificuldade em você perceber sinais de mudança antes que se manifestem fisicamente, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua adaptação tende a ser mais lenta neste ciclo, ocorrendo apenas após os fatos estarem consumados. O momento pede que você redobre a atenção às sincronicidades e aos detalhes do agora para não ser pego de surpresa.</p>`,
