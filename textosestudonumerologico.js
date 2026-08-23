@@ -9,7 +9,7 @@ BibliotecaVideos= {
         "6": "z1nW3rmNeEI",
         "7": "z1nW3rmNeEI",
         "8": "z1nW3rmNeEI",
-        "9": "z1nW3rmNeEI"
+        "9": "bmFOdmhBYmhncFk"
     },
  
     "coresFavoraveis": {
@@ -20,7 +20,7 @@ BibliotecaVideos= {
         "5": "z1nW3rmNeEI",
         "6": "z1nW3rmNeEI",
         "7": "z1nW3rmNeEI",
-        "8": "z1nW3rmNeEI",
+        "8": "bmFOdmhBYmhncFk",
         "9": "z1nW3rmNeEI"
     },
      
@@ -33,7 +33,7 @@ BibliotecaVideos= {
         "6": "z1nW3rmNeEI",
         "7": "z1nW3rmNeEI",
         "8": "z1nW3rmNeEI",
-        "9": "z1nW3rmNeEI"
+        "9": "bmFOdmhBYmhncFk"
     },
   };    
 
@@ -2435,7 +2435,7 @@ Relacionamento: {
 <p>Você encontra o seu <strong>oposto</strong> nos números <strong>6 e 7</strong>, onde sua independência pode colidir com o excesso de zelo ou o isolamento do outro.</p>
 <p>Sua convivência é <strong>passiva</strong> com os números <strong>2, 3 e 5</strong>, permitindo que as relações fluam sem grandes desgastes ou cobranças.</p> 
     `,
-  videoID: "z1nW3rmNeEI"
+  videoID: "bmFOdmhBYmhncFk"
     },
     2: {
      conteudo:`<h3>Relacionamento 2 - Harmonia e Sensibilidade na União</h3>
