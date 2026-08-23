@@ -6194,9 +6194,9 @@ html += '<div id="tela-parte6" class="conteudo-aba">';
     
 // 1. CAPTURA SEGURA DA DATA (Evita o erro de 'null')
 const campoDataElemento = document.getElementById('dataNascimento');
+
 // --- CÁLCULO DA DATA BLINDADO ---
 // 1. CAPTURA E CÁLCULO DAS VIGÊNCIAS (ATUAL E PRÓXIMA)
-// 1. CÁLCULO E LOGICA (Mantenha isso no topo)
 const anoBase = new Date().getFullYear();
 let vigenciaCiclo1 = "Data não disponível";
 let vigenciaCiclo2 = "Data não disponível";
@@ -6221,13 +6221,27 @@ if (proximoAnoPessoal > 9) proximoAnoPessoal = 1;
 
 const mesParaCronograma = res.mesNascimento; 
 const anoAtualParaCronograma = res.anoPessoal;
-const dadosAnoAtual = textos.anoPessoal[res.anoPessoal] || { conteudo: "Conteúdo não disponível", videoID: null };
-const dadosProximoAno = textos.anoPessoal[proximoAnoPessoal] || { conteudo: "Conteúdo não disponível", videoID: null };
+
+// Leitura segura dos dados do Ano Atual e Próximo Ano
+const dadosAnoAtual = textos.anoPessoal ? textos.anoPessoal[res.anoPessoal] : null;
+const dadosProximoAno = textos.anoPessoal ? textos.anoPessoal[proximoAnoPessoal] : null;
+
+// Conteúdo e Vídeos do Ano Atual (Tratamento de Desembaralhamento)
+const conteudoAnoAtual = dadosAnoAtual ? (dadosAnoAtual.conteudo || dadosAnoAtual) : "Conteúdo não disponível";
+const videoAnoAtualBruto = (typeof dadosAnoAtual === 'object' && dadosAnoAtual !== null) ? dadosAnoAtual.videoID : null;
+const videoAnoAtual = window.desembaralharID(videoAnoAtualBruto);
+
+// Conteúdo e Vídeos do Próximo Ano (Tratamento de Desembaralhamento)
+const conteudoProximoAno = dadosProximoAno ? (dadosProximoAno.conteudo || dadosProximoAno) : "Conteúdo não disponível";
+const videoProximoAnoBruto = (typeof dadosProximoAno === 'object' && dadosProximoAno !== null) ? dadosProximoAno.videoID : null;
+const videoProximoAno = window.desembaralharID(videoProximoAnoBruto);
+
+
 // =========================================================
 // BLOCO 1: ANO PESSOAL ATUAL + SEUS MESES
 // =========================================================
-    // 2. Busca os dados da INTRODUÇÃO (NOVO: aceita Objeto com videoID ou String)
-// 2. Busca os dados da INTRODUÇÃO ESPECÍFICA de Ano Pessoal (aceita Objeto com videoID ou String)
+
+// Busca os dados da INTRODUÇÃO ESPECÍFICA de Ano Pessoal
 const dadosIntroano = (textos.introducoes && (textos.introducoes.anoPessoal || textos.introducoes.ano)) 
     ? (textos.introducoes.anoPessoal || textos.introducoes.ano) 
     : "";
@@ -6236,10 +6250,12 @@ const conteudoIntroano = (typeof dadosIntroano === 'object' && dadosIntroano !==
     ? dadosIntroano.conteudo 
     : dadosIntroano;
 
-const videoIntroano = (typeof dadosIntroano === 'object' && dadosIntroano !== null) 
+const videoIntroanoBruto = (typeof dadosIntroano === 'object' && dadosIntroano !== null) 
     ? dadosIntroano.videoID 
     : null;
-// Título Ano Atual
+const videoIntroano = window.desembaralharID(videoIntroanoBruto);
+
+// Título Introdução Ano Pessoal
 tituloBonito = "Ano Pessoal";  
 html += `
 <div class="separador-luxo">
@@ -6250,13 +6266,13 @@ html += `
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${nomesExibicao.anoPessoal} - Ciclo Atual</h2>
    
-        <div class="intro-texto" style="margin-bottom: 1px; font-style:arial; color:#555;">
-           ${aplicarFiltroTexto(conteudoIntroano || "")}
+    <div class="intro-texto" style="margin-bottom: 1px; font-style:arial; color:#555;">
+        ${aplicarFiltroTexto(conteudoIntroano || "")}
         ${videoIntroano ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoIntroano)}</div>` : ""}
-        </div>`;
+    </div>
+</div>`;
 
-        // Título Ano Atual
-
+// Título e Conteúdo: Ciclo Atual
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -6265,20 +6281,21 @@ html += `
 </div>
 <div class="page">
     <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">${nomesExibicao.anoPessoal} - Ciclo Atual</h2>
-        <h3 class="vigencia-texto" style="color: #666; font-weight: bold; margin-bottom: 15px;">
-            Vigência: ${vigenciaCiclo1}
-        </h3>
+    <h3 class="vigencia-texto" style="color: #666; font-weight: bold; margin-bottom: 15px;">
+        Vigência: ${vigenciaCiclo1}
+    </h3>
     <div class="texto-res">
-        ${dadosAnoAtual ? aplicarFiltroTexto(dadosAnoAtual.conteudo) : ""}
-        ${(dadosAnoAtual && dadosAnoAtual.videoID) ? gerarPlayerYouTube(dadosAnoAtual.videoID) : ""}
+        ${conteudoAnoAtual ? aplicarFiltroTexto(conteudoAnoAtual) : ""}
+        ${videoAnoAtual ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoAnoAtual)}</div>` : ""}
     </div>
 </div>`;
 
-// Título Meses do Ano Atual
+// Planejamento Mensal - Ano Atual
 const cronogramaAtualHTML = gerarCronogramaMensal(anoAtualParaCronograma, mesParaCronograma);
     
 html += `
-<div class="page"><h3 style="text-align:center; margin-bottom:20px;">Planejamento Mensal: Ano Pessoal ${anoAtualParaCronograma}</h3>
+<div class="page">
+    <h3 style="text-align:center; margin-bottom:20px;">Planejamento Mensal: Ano Pessoal ${anoAtualParaCronograma}</h3>
     <div class="texto-res">
         <p style="text-align:center; margin-bottom:0px;">Este ciclo inicia no mês do seu aniversário e mostra as vibrações até o fechamento do seu ano pessoal atual.</p>
         ${cronogramaAtualHTML}
@@ -6290,7 +6307,6 @@ html += `
 // BLOCO 2: PRÓXIMO ANO PESSOAL + SEUS MESES
 // =========================================================
 
-
 html += `
 <div class="separador-luxo">
     <div class="caixa-interna">
@@ -6298,34 +6314,27 @@ html += `
     </div>
 </div>
 <div class="page">
-    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Ano Pessoal: ${nomesExibicao.anoPessoal} + Planejamento Mensal<br> Próximo Ciclo"</h2>
+    <h2 class="titulo-topico" style="border-bottom: 2px solid var(--gold);">Ano Pessoal: ${nomesExibicao.anoPessoal} + Planejamento Mensal<br> Próximo Ciclo</h2>
     <div class="resultado-bloco">
         <h3 class="vigencia-texto" style="color: #666; font-weight: bold; margin-bottom: 15px;">
             Vigência: ${vigenciaCiclo2}
         </h3>
         <div class="texto-res">
-            ${dadosProximoAno ? aplicarFiltroTexto(dadosProximoAno.conteudo) : ""}
-            ${(dadosProximoAno && dadosProximoAno.videoID) ? gerarPlayerYouTube(dadosProximoAno.videoID) : ""}
+            ${conteudoProximoAno ? aplicarFiltroTexto(conteudoProximoAno) : ""}
+            ${videoProximoAno ? `<div style="margin-top: 15px;">${gerarPlayerYouTube(videoProximoAno)}</div>` : ""}
         </div>
     </div>
 </div>`;
 
-// Título Meses do Próximo Ano
+// Planejamento Mensal - Próximo Ano
 const cronogramaProximoHTML = gerarCronogramaMensal(proximoAnoPessoal, mesParaCronograma);
 html += `
-
-       
- 
 <div class="page">
- 
-   
     <div class="texto-res"> 
-    <h3 style="text-align:center; margin-bottom:20px;">Planejamento Mensal: Ano Pessoal ${proximoAnoPessoal}</h3>
+        <h3 style="text-align:center; margin-bottom:20px;">Planejamento Mensal: Ano Pessoal ${proximoAnoPessoal}</h3>
         <p style="text-align:center; margin-bottom:0px;">Projeção para o ciclo seguinte, iniciando no seu próximo aniversário.</p>
-        
         ${cronogramaProximoHTML}
- 
-         </div>
+    </div>
 </div>`;
 html += `</div>`;    
 html += `</div>`;  
