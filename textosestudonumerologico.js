@@ -3752,13 +3752,13 @@ anoPessoal: {
      conteudo:`<h3>Ano Pessoal 4 - Estrutura, Trabalho e Fundamentos</h3>
     <p>Após a expansão e o brilho do ano anterior, a vida agora exige que você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, coloque os pés firmemente no chão e foque intensamente na organização e na disciplina prática. Este é o seu ano de construir a estrutura de concreto que sustentará todos os seus sonhos a longo prazo, exigindo atenção aos detalhes técnicos, às finanças e à saúde física com um rigor quase militar.</p>
     <p>Você sentirá o peso das responsabilidades aumentar, mas encare isso como um teste de resistência para provar sua capacidade de gestão. O sucesso para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, virá da constância e da honestidade de propósitos em cada pequena tarefa do cotidiano, por mais repetitiva que pareça. É o momento de regularizar documentos, reformar estruturas e solidificar sua reputação de pessoa confiável e trabalhadora. Não busque atalhos neste período, pois a vibração do 4 não tolera superficialidade; o que for construído com suor agora será inabalável por décadas. Ao concluir este período de esforço, você sentirá o orgulho profundo de ter erguido bases de aço para sua segurança e para o bem-estar da sua família.</p>`,
-  videoID: "z1nW3rmNeEI"
+  videoID: "bmFOdmhBYmhncFk"
     },
     5: {
      conteudo:`<h3>Ano Pessoal 5 - Transição, Versatilidade e Liberdade</h3>
     <p>Prepare-se para uma montanha-russa de mudanças rápidas e uma sede de liberdade que impulsionará você para horizontes completamente novos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Este é um período de transição intensa, onde sua versatilidade será a melhor ferramenta para lidar com o inesperado que surgirá a cada esquina. Você poderá sentir uma inquietação quase elétrica, levando-o(a) a querer mudar de casa, de emprego ou até de estilo de vida da noite para o dia.</p>
     <p>É o momento de viajar, aprender novas tecnologias e quebrar velhos dogmas que aprisionavam sua mente. O desafio central para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é não se perder na impulsividade ou em prazeres sensoriais que drenem sua energia sem construir nada. Aprenda a navegar na incerteza com inteligência estratégica, usando a curiosidade como o combustível para sua evolução pessoal e profissional. Este ano funciona como uma "limpeza de ventilação" na sua vida, jogando fora o que estagnou e trazendo ar fresco para seus pulmões. Ao final deste ciclo, você se sentirá uma pessoa muito mais desimpedida, moderna e pronta para abraçar as múltiplas e excitantes possibilidades do amanhã.</p>`,
-  videoID: " "
+  videoID: " bmFOdmhBYmhncFk"
     },
     6: {
      conteudo:`<h3>Ano Pessoal 6 - Harmonia Familiar e Responsabilidade Afetiva</h3>
