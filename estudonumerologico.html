@@ -1134,7 +1134,7 @@ if (typeof window.desembaralharID === 'undefined') {
     };
 }
         
-function calcularValorLetra(letra) {
+/*function calcularValorLetra(letra) {
     const base = letra.normalize("NFD")[0].toUpperCase();
     const valorBase = tabela[base] || 0;
     if (!valorBase) return 0;
@@ -1162,7 +1162,7 @@ function calcularValorLetra(letra) {
     return (valorBase + soma) * mult;
 }  
  
-function valorLetraMatriz(l){
+
     let n = l.normalize("NFD");
     let v = mapaMatriz[n[0].toUpperCase()] ?? 0;
     let s = 0;
@@ -1181,7 +1181,7 @@ function valorLetraMatriz(l){
     // 3. A CORREÇÃO: Reduzir antes de retornar
     // Isso garante que a base da pirâmide tenha apenas dígitos de 1 a 9
     return reduzir(bruto);
-}
+} */
 
 function tratarNomeParaCalculo(nome) {
     if (!nome) return "";
@@ -3361,7 +3361,7 @@ const idVideoCasadoFinal = idVideoCasadoEmbaralhado ? atob(idVideoCasadoEmbaralh
     return html;
 }
 
-function calcularValorCabalisticoCompleto(letra) {
+/*function calcularValorCabalisticoCompleto(letra) {
     if (!letra) return 0;
     const norm = letra.normalize("NFD");
     const base = norm[0].toUpperCase();
@@ -3388,7 +3388,7 @@ function calcularValorCabalisticoCompleto(letra) {
         return reduzir(s);
     }
     return reduzir(resultadoBruto);
-}
+}*/
 
 function obterChaveMestra(letraOriginal) {
     if (!letraOriginal) return "";
