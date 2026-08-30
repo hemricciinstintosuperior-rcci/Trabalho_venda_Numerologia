@@ -3031,31 +3031,23 @@ function calcularNumerosSocial(nome) {
         'Y': 1, 'Z': 7
     };
 
-    let totalMotivacao = 0; // Vogais
-    let totalInfluencia = 0; // Consoantes
-    
-    const vogais = "AEIOUYÁÉÍÓÚÂÊÎÔÛÃÕÀÈÌÒÙÄËÏÖÜ";
+    let totalMotivacao = 0;
+    let totalInfluencia = 0;
+
     const nomeLimpo = nome.trim().toUpperCase();
 
-    // Divide o nome em palavras para tratar cada letra e seus acentos
     for (let char of nomeLimpo) {
         if (char === " ") continue;
 
-        let valorLetra = 0;
-        let base = char.normalize("NFD")[0]; // Pega a letra sem acento
-        
+        // Remove acentos e mantém somente a letra-base
+        const base = char.normalize("NFD")[0];
+
         if (tabelaBase[base]) {
-            valorLetra = tabelaBase[base];
+            const valorLetra = tabelaBase[base];
 
-            // --- LÓGICA DE MODIFICADORES CABALÍSTICOS ---
-            if (/[ÁÉÍÓÚ]/.test(char)) valorLetra += 0;
-            if (/[ÃÕ]/.test(char)) valorLetra += 0;
-            if (/[ÂÊÎÔÛ]/.test(char)) valorLetra += 0;
-            if (char === "Ç") valorLetra += 0;
-          
-
-            // Separação para Motivação e Influência
-            if (vogais.includes(char)) {
+            // Vogais = Motivação
+            // Consoantes = Influência
+            if ("AEIOUY".includes(base)) {
                 totalMotivacao += valorLetra;
             } else {
                 totalInfluencia += valorLetra;
@@ -3063,10 +3055,11 @@ function calcularNumerosSocial(nome) {
         }
     }
 
-    // Função interna para redução cabalística (mantém 11 e 22 se você usar, ou reduz tudo)
     const reduzir = (num) => {
         while (num > 9 && num !== 11 && num !== 22) {
-            num = String(num).split('').reduce((a, b) => parseInt(a) + parseInt(b), 0);
+            num = String(num)
+                .split('')
+                .reduce((a, b) => parseInt(a) + parseInt(b), 0);
         }
         return num;
     };
@@ -3334,30 +3327,26 @@ const idVideoCasadoFinal = idVideoCasadoEmbaralhado ? atob(idVideoCasadoEmbaralh
 
 function calcularValorCabalisticoCompleto(letra) {
     if (!letra) return 0;
-    const norm = letra.normalize("NFD");
-    const base = norm[0].toUpperCase();
+
+    // Remove acentos/diacríticos e mantém a letra-base
+    const base = letra.normalize("NFD")[0].toUpperCase();
+
     const valorBase = tabela[base] || 0;
+
     if (!valorBase) return 0;
 
-    let soma = 0, mult = 1;
-    for (let i = 1; i < norm.length; i++) {
-        const c = norm[i];
-        if (c === "\u0301") soma += 0;          
-        else if (c === "\u0302") soma += 0;     
-        else if (c === "\u0303") soma += 0;     
-        else if (c === "\u0327") soma += 0;     
-        else if (c === "\u030a") soma += 0;     
-      
-    }
-    if (letra.includes("'")) soma += 2;
-
-    let resultadoBruto = (valorBase + soma) * mult;
+    const resultadoBruto = valorBase;
 
     function reduzir(n) {
         if (n <= 9 || n === 11 || n === 22) return n;
-        let s = n.toString().split('').reduce((acc, d) => acc + parseInt(d), 0);
+
+        const s = n.toString()
+            .split('')
+            .reduce((acc, d) => acc + parseInt(d), 0);
+
         return reduzir(s);
     }
+
     return reduzir(resultadoBruto);
 }
 
@@ -3680,35 +3669,36 @@ function renderizarBlocoComVideo(htmlConteudo, videoID = null) {
 function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
     if (!novaAssinatura) return "";
 
-    // 1. Usar a lógica robusta de cálculo cabalístico (igual a calcularNumerosSocial)
     const tabelaBase = {
         'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 8, 'G': 3, 'H': 5,
         'I': 1, 'J': 1, 'K': 2, 'L': 3, 'M': 4, 'N': 5, 'O': 7, 'P': 8,
         'Q': 1, 'R': 2, 'S': 3, 'T': 4, 'U': 6, 'V': 6, 'W': 6, 'X': 6,
         'Y': 1, 'Z': 7
     };
-    const vogais = "AEIOUYÁÉÍÓÚÂÊÎÔÛÃÕÀÈÌÒÙÄËÏÖÜ";
-    
-    let totalMotivacao = 0; // Soma das vogais cabalísticas
-    let totalInfluencia = 0; // Soma das consoantes cabalísticas
-    
+
+    let totalMotivacao = 0;
+    let totalInfluencia = 0;
+
     for (let char of novaAssinatura.trim().toUpperCase()) {
         if (char === " ") continue;
-        let base = char.normalize("NFD")[0];
-        if (tabelaBase[base]) {
-            let valorLetra = tabelaBase[base];
-            
-            // --- APLICAÇÃO DOS MODIFICADORES CABALÍSTICOS ---
-            if (/[ÁÉÍÓÚ]/.test(char)) valorLetra += 0;
-            if (/[ÃÕ]/.test(char)) valorLetra += 0;
-            if (/[ÂÊÎÔÛ]/.test(char)) valorLetra += 0;
-            if (char === "Ç") valorLetra += 0;
-           
 
-            if (vogais.includes(char)) totalMotivacao += valorLetra;
-            else totalInfluencia += valorLetra;
+        // Remove acentos e mantém somente a letra-base
+        const base = char.normalize("NFD")[0];
+
+        if (tabelaBase[base]) {
+            const valorLetra = tabelaBase[base];
+
+            // Vogais = Motivação
+            // Consoantes = Influência
+            if ("AEIOUY".includes(base)) {
+                totalMotivacao += valorLetra;
+            } else {
+                totalInfluencia += valorLetra;
+            }
         }
     }
+
+    // ... restante da sua função permanece igual ...
 
     // Função de redução (Mantendo Mestre 11/22)
     const reduzir = (num) => {
