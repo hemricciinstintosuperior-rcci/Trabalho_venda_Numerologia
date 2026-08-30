@@ -1077,7 +1077,7 @@ input[type="text"], select {
 
 
     <script>
-        const tabela = { A:1, J:1, I:1, Q:1, Y:1, B:2, K:2, R:2, C:3, G:3, L:3, S:3, D:4, M:4, T:4, E:5, H:5, N:5, U:6, V:6, W:6, X:6, Ç:6, O:7, Z:7, F:8, P:8 };
+        const tabela = { A:1, J:1, I:1, Q:1, Y:1, B:2, K:2, R:2, C:3, G:3, L:3, S:3, D:4, M:4, T:4, E:5, H:5, N:5, U:6, V:6, W:6, X:6, Ç:3, O:7, Z:7, F:8, P:8 };
         const vogais = ["A","E","I","O","U","Y"];
     // Títulos amigáveis para cada estrutura
     const titulosEstrutura = {
@@ -1089,7 +1089,7 @@ input[type="text"], select {
         "FFff": "Binário de Extremos",
         "FMff": "Pico de Transição Dinâmica"
     };
-const mapaMatriz = { A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6,X:6,Ç:6, O:7,Z:7, F:8,P:8 };
+const mapaMatriz = { A:1,I:1,Q:1,J:1,Y:1, B:2,K:2,R:2, C:3,G:3,L:3,S:3, D:4,M:4,T:4, E:5,H:5,N:5, U:6,V:6,W:6,X:6,Ç:3, O:7,Z:7, F:8,P:8 };
    
 // Tabelas para o Plano de Expressão
 const tabelaExpressao = {
@@ -1134,7 +1134,7 @@ if (typeof window.desembaralharID === 'undefined') {
     };
 }
         
-/*function calcularValorLetra(letra) {
+function calcularValorLetra(letra) {
     const base = letra.normalize("NFD")[0].toUpperCase();
     const valorBase = tabela[base] || 0;
     if (!valorBase) return 0;
@@ -1144,19 +1144,19 @@ if (typeof window.desembaralharID === 'undefined') {
     for (let i = 1; i < norm.length; i++) {
         const c = norm[i];
         
-        if (c === "\u0301") soma += 2;          // Agudo (´)
-        else if (c === "\u0302") soma += 7;     // Circunflexo (^)
-        else if (c === "\u0303") soma += 3;     // Til (~)
-        else if (c === "\u0327") soma += 3;     // Cedilha (¸)
-        else if (c === "\u030a") soma += 7;     // Círculo/Grau superior (°)
-        else if (c === "\u0300" || c === "\u0308") mult *= 2; // Grave/Trema
+        if (c === "\u0301") soma += 0;          // Agudo (´)
+        else if (c === "\u0302") soma += 0;     // Circunflexo (^)
+        else if (c === "\u0303") soma += 0;     // Til (~)
+        else if (c === "\u0327") soma += 0;     // Cedilha (¸)
+        else if (c === "\u030a") soma += 0;     // Círculo/Grau superior (°)
+        
     }
 
     // Verificação do Apóstrofo (')
     // Como o apóstrofo não é um diacrítico combinante na normalização NFD padrão,
     // verificamos se ele existe na string original.
     if (letra.includes("'")) {
-        soma += 2;
+        soma += 0;
     }
 
     return (valorBase + soma) * mult;
@@ -1168,20 +1168,19 @@ if (typeof window.desembaralharID === 'undefined') {
     let s = 0;
 
     // 1. Lógica de acentos (Soma)
-    if (n.includes("\u0301")) s = 2;          // Agudo
-    else if (n.includes("\u0302")) s = 7;     // Circunflexo
-    else if (n.includes("\u0303")) s = 3;     // Til
-    else if (n.includes("\u0327")) s = 3;     // Cedilha
-    else if (n.includes("\u030a")) s = 7;     // Grau (°)
-    else if (l.includes("'")) s = 2;          // Apóstrofo
+    if (n.includes("\u0301")) s = 0;          // Agudo
+    else if (n.includes("\u0302")) s = 0;     // Circunflexo
+    else if (n.includes("\u0303")) s = 0;     // Til
+    else if (n.includes("\u0327")) s = 0;     // Cedilha
+    else if (n.includes("\u030a")) s = 0;     // Grau (°)
+    else if (l.includes("'")) s = 0;          // Apóstrofo
 
-    // 2. Cálculo do valor bruto com multiplicadores (Grave ou Trema)
-    let bruto = (v + s) * (n.includes("\u0300") || n.includes("\u0308") ? 2 : 1);
+ 
 
     // 3. A CORREÇÃO: Reduzir antes de retornar
     // Isso garante que a base da pirâmide tenha apenas dígitos de 1 a 9
     return reduzir(bruto);
-} */
+} 
 
 function tratarNomeParaCalculo(nome) {
     if (!nome) return "";
@@ -3077,11 +3076,11 @@ function calcularNumerosSocial(nome) {
             valorLetra = tabelaBase[base];
 
             // --- LÓGICA DE MODIFICADORES CABALÍSTICOS ---
-            if (/[ÁÉÍÓÚ]/.test(char)) valorLetra += 2;
-            if (/[ÃÕ]/.test(char)) valorLetra += 3;
-            if (/[ÂÊÎÔÛ]/.test(char)) valorLetra += 7;
-            if (char === "Ç") valorLetra += 3;
-            if (/[ÀÈÌÒÙÄËÏÖÜ]/.test(char)) valorLetra *= 2; // Multiplicador (dobra)
+            if (/[ÁÉÍÓÚ]/.test(char)) valorLetra += 0;
+            if (/[ÃÕ]/.test(char)) valorLetra += 0;
+            if (/[ÂÊÎÔÛ]/.test(char)) valorLetra += 0;
+            if (char === "Ç") valorLetra += 0;
+          
 
             // Separação para Motivação e Influência
             if (vogais.includes(char)) {
@@ -3361,7 +3360,7 @@ const idVideoCasadoFinal = idVideoCasadoEmbaralhado ? atob(idVideoCasadoEmbaralh
     return html;
 }
 
-/*function calcularValorCabalisticoCompleto(letra) {
+function calcularValorCabalisticoCompleto(letra) {
     if (!letra) return 0;
     const norm = letra.normalize("NFD");
     const base = norm[0].toUpperCase();
@@ -3371,12 +3370,12 @@ const idVideoCasadoFinal = idVideoCasadoEmbaralhado ? atob(idVideoCasadoEmbaralh
     let soma = 0, mult = 1;
     for (let i = 1; i < norm.length; i++) {
         const c = norm[i];
-        if (c === "\u0301") soma += 2;          
-        else if (c === "\u0302") soma += 7;     
-        else if (c === "\u0303") soma += 3;     
-        else if (c === "\u0327") soma += 3;     
-        else if (c === "\u030a") soma += 7;     
-        else if (c === "\u0300" || c === "\u0308") mult *= 2; 
+        if (c === "\u0301") soma += 0;          
+        else if (c === "\u0302") soma += 0;     
+        else if (c === "\u0303") soma += 0;     
+        else if (c === "\u0327") soma += 0;     
+        else if (c === "\u030a") soma += 0;     
+      
     }
     if (letra.includes("'")) soma += 2;
 
@@ -3388,7 +3387,7 @@ const idVideoCasadoFinal = idVideoCasadoEmbaralhado ? atob(idVideoCasadoEmbaralh
         return reduzir(s);
     }
     return reduzir(resultadoBruto);
-}*/
+}
 
 function obterChaveMestra(letraOriginal) {
     if (!letraOriginal) return "";
@@ -3728,11 +3727,11 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
             let valorLetra = tabelaBase[base];
             
             // --- APLICAÇÃO DOS MODIFICADORES CABALÍSTICOS ---
-            if (/[ÁÉÍÓÚ]/.test(char)) valorLetra += 2;
-            if (/[ÃÕ]/.test(char)) valorLetra += 3;
-            if (/[ÂÊÎÔÛ]/.test(char)) valorLetra += 7;
-            if (char === "Ç") valorLetra += 3;
-            if (/[ÀÈÌÒÙÄËÏÖÜ]/.test(char)) valorLetra *= 2; 
+            if (/[ÁÉÍÓÚ]/.test(char)) valorLetra += 0;
+            if (/[ÃÕ]/.test(char)) valorLetra += 0;
+            if (/[ÂÊÎÔÛ]/.test(char)) valorLetra += 0;
+            if (char === "Ç") valorLetra += 0;
+           
 
             if (vogais.includes(char)) totalMotivacao += valorLetra;
             else totalInfluencia += valorLetra;
