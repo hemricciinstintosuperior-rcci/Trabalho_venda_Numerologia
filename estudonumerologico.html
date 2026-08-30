@@ -1135,52 +1135,24 @@ if (typeof window.desembaralharID === 'undefined') {
 }
         
 function calcularValorLetra(letra) {
+    // Remove acentos/diacríticos e mantém somente a letra-base
     const base = letra.normalize("NFD")[0].toUpperCase();
-    const valorBase = tabela[base] || 0;
-    if (!valorBase) return 0;
 
-    let soma = 0, mult = 1, norm = letra.normalize("NFD");
+    // Busca somente o valor da letra na tabela
+    return tabela[base] || 0;
+}
 
-    for (let i = 1; i < norm.length; i++) {
-        const c = norm[i];
-        
-        if (c === "\u0301") soma += 0;          // Agudo (´)
-        else if (c === "\u0302") soma += 0;     // Circunflexo (^)
-        else if (c === "\u0303") soma += 0;     // Til (~)
-        else if (c === "\u0327") soma += 0;     // Cedilha (¸)
-        else if (c === "\u030a") soma += 0;     // Círculo/Grau superior (°)
-        
-    }
 
-    // Verificação do Apóstrofo (')
-    // Como o apóstrofo não é um diacrítico combinante na normalização NFD padrão,
-    // verificamos se ele existe na string original.
-    if (letra.includes("'")) {
-        soma += 0;
-    }
+function valorLetraMatriz(l) {
+    // Remove acentos/diacríticos e mantém somente a letra-base
+    const base = l.normalize("NFD")[0].toUpperCase();
 
-    return (valorBase + soma) * mult;
-}  
- 
+    // Busca somente o valor da letra na matriz
+    const v = mapaMatriz[base] ?? 0;
 
-    let n = l.normalize("NFD");
-    let v = mapaMatriz[n[0].toUpperCase()] ?? 0;
-    let s = 0;
-
-    // 1. Lógica de acentos (Soma)
-    if (n.includes("\u0301")) s = 0;          // Agudo
-    else if (n.includes("\u0302")) s = 0;     // Circunflexo
-    else if (n.includes("\u0303")) s = 0;     // Til
-    else if (n.includes("\u0327")) s = 0;     // Cedilha
-    else if (n.includes("\u030a")) s = 0;     // Grau (°)
-    else if (l.includes("'")) s = 0;          // Apóstrofo
-
- 
-
-    // 3. A CORREÇÃO: Reduzir antes de retornar
-    // Isso garante que a base da pirâmide tenha apenas dígitos de 1 a 9
-    return reduzir(bruto);
-} 
+    // Retorna apenas o valor da letra
+    return reduzir(v);
+}        
 
 function tratarNomeParaCalculo(nome) {
     if (!nome) return "";
