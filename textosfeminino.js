@@ -1332,7 +1332,7 @@ dia: {
     <p>O otimismo é a sua marca registrada, e você tem o talento de elevar o espírito de qualquer amiga ou familiar que esteja por perto. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a vida precisa de expressão; sua mente criativa está sempre gerando conexões e descobrindo formas lindas de tornar o dia a dia mais vibrante, leve e interessante.</p>
     <p>Você possui uma alma jovem e cheia de vivacidade que detesta o tédio. Sua presença costuma ser o ponto alto de qualquer encontro social, pois você traz uma vibração de encanto e uma inteligência rápida que cativa as pessoas em apenas alguns minutos de conversa.</p>
     <p>O cuidado que você deve ter como mulher é com a dispersão de energia; por ser tão multifacetada e cheia de dons, você pode sentir dificuldade em concluir o que começa. Ao focar sua expressão em objetivos claros, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você ganha o poder de influenciar e inspirar muitas vidas por onde passar.</p>`,
- videoID: "NE12MlhDSDU4Z28"
+ videoID: "U1pka0VBWWE5alE"
     },
     4: {
      conteudo:` <h3>Disciplinada - Dia 4</h3>
@@ -1340,7 +1340,7 @@ dia: {
     <p>Sua abordagem da vida é prática, realista e muito madura. Você valoriza o trabalho bem feito e entende que a estabilidade verdadeira é construída tijolo por tijolo. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a segurança da sua família, o bem-estar dos seus e a tranquilidade material são prioridades que você defende com unhas e dentes.</p>
     <p>Você é aquela mulher em quem as pessoas confiam de olhos fechados, pois sua palavra tem valor de ouro e sua lealdade é inabalável. Existe um prazer íntimo em saber que cada esforço que você faz hoje está garantindo uma colheita segura, tranquila e próspera para o seu futuro.</p>
     <p>O desafio para você é não permitir que sua mente se torne rígida ou severa demais consigo mesma. Ao unir sua incrível persistência com um pouco mais de flexibilidade e doçura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você torna suas conquistas absolutamente grandiosas e ganha a admiração de todos que buscam refúgio em você.</p>`,
- videoID: "f84HAaPtC0g"
+ videoID: "NGg0LUVjRUJJX1U"
     },
     5: {
      conteudo:` <h3>Independente - Dia 5</h3>
