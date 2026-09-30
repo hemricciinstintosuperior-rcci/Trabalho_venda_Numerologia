@@ -1364,7 +1364,7 @@ dia: {
     <p>Sua natureza é mais reservada e você valoriza a solitude e o silêncio como ferramentas essenciais para recarregar suas energias femininas. Você possui um "radar" intuitivo natural para detectar falsidade ou segundas intenções, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e raramente aceita explicações superficiais sobre o que realmente importa para você.</p>
     <p>Você busca a perfeição e a excelência em tudo o que executa, tornando-se uma autoridade inquestionável no que faz. Existe uma elegância, uma postura discreta e uma sabedoria no seu comportamento que impõe respeito e desperta a curiosidade de quem deseja decifrar a sua mente brilhante.</p>
     <p>O desafio para você como mulher é não se isolar excessivamente em seu próprio mundo por medo de se ferir. Ao compartilhar a sua rica sabedoria e as suas descobertas com as pessoas que merecem, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma figura de orientação e um guia de grande profundidade.</p>`,
- videoID: " "
+ videoID: "Yjdrb1ZWaTA2YTQ"
     },
     8: {
      conteudo:` <h3>Original - Dia 8</h3>
