@@ -1356,7 +1356,7 @@ dia: {
     <p>Sua sensibilidade estética e artística é marcante; você tem o dom nato de tornar tudo mais belo, acolhedor e cheio de vida. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a realização pessoal está intimamente ligada à sua capacidade de estender a mão, acolher e resolver conflitos através da compreensão e de um carinho genuíno.</p>
     <p>Você possui uma natureza protetora rara, quase matriarcal. Existe um compromisso interno com a ética e com o bem-estar alheio que guia cada um dos seus passos, fazendo com que sua presença transmita uma paz imediata para quem atravessa momentos de dor ou dificuldade.</p>
     <p>O seu grande desafio como mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é não se sobrecarregar carregando os problemas do mundo nas costas. Ao aprender a cuidar de si mesma, dos seus desejos e da sua beleza com a mesma dedicação que oferece ao próximo, você atinge uma plenitude emocional que irradia luz para o mundo inteiro.</p>`,
- videoID: " "
+ videoID: "Y2tQb3gyNGZCYlU"
     },
     7: {
      conteudo:` <h3>Perfeccionista - Dia 7</h3>
