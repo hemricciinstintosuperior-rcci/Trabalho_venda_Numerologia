@@ -1420,7 +1420,7 @@ dia: {
     <p>Sua natureza é inquieta, livre e você se adapta com extrema facilidade a novos ambientes, viagens e situações imprevistas. Você detém o dom da persuasão e do charme, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e consegue transmitir conceitos com uma clareza impressionante, pois as pessoas confiam naturalmente na sua energia vibrante e na sua visão de mundo progressista.</p>
     <p>Você busca a liberdade e a independência acima de tudo, mas possui a inteligência para entender que a verdadeira autonomia vem da autodisciplina. Como mulher, você tem a habilidade latente de transformar contatos sociais em oportunidades valiosas de crescimento pessoal e profissional, sempre agindo com muito tato e simpatia, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O grande aprendizado para você é buscar o equilíbrio interno, evitando a impulsividade quando a rotina parecer entediante. Ao canalizar essa energia vibrante para objetivos claros, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma profissional de imenso destaque e uma mulher que vive experiências ricas, repletas de significado.</p>`,
- videoID: " "
+ videoID: "ZGdFUVo2dFV0akE "
     },
     15: {
      conteudo:` <h3>Sedutora - Dia 15</h3>
