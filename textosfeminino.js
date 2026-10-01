@@ -1380,7 +1380,7 @@ dia: {
     <p>Sua intuição é fortíssima e você carrega uma sabedoria ancestral que parece vir de muito tempo atrás. Como mulher, você é capaz de grandes gestos por causas nobres, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e possui um carisma universal que atrai pessoas de todas as origens, pois todos sentem que podem confiar na sua integridade e compaixão.</p>
     <p>Você vive em uma vibração de compreensão total e perdão. Sua mente não se prende a detalhes pequenos, fofocas ou mesquinharias; você enxerga o quadro geral e busca a evolução da consciência e o auxílio ao próximo como as metas principais da sua existência.</p>
     <p>O grande desafio para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é aprender a se desapegar do passado e das dores que já viveu. Ao focar sua imensa energia no serviço generoso e no momento presente, você atinge um estado de paz interior que é a verdadeira recompensa da sua linda história de vida.</p>`,
- videoID: " "
+ videoID: "amNvaUpDQ2pud0E "
     },
     10: {
      conteudo:` <h3>Ambiciosa - Dia 10</h3>
