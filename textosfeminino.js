@@ -1428,7 +1428,7 @@ dia: {
     <p>Sua sensibilidade artística e o seu gosto pelo que é belo são muito aguçados, e você possui o dom natural de atrair os recursos necessários para viver com conforto, abundância e harmonia. Você é uma presença extremamente carismática, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e as pessoas buscam sua companhia simplesmente por se sentirem seguras, aquecidas e ouvidas ao seu lado.</p>
     <p>Existe em você uma forte ligação com o cuidado com o lar e com os laços de afeto, mas sua mente é ampla o suficiente para entender e acompanhar as mudanças do mundo. Sua verdadeira força vem do amor, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e você tem a capacidade de curar ambientes tensos ou corações partidos apenas com sua presença tranquila e sabedoria emocional.</p>
     <p>O grande desafio para você é não se deixar levar pelo desejo de controlar excessivamente a vida alheia por excesso de zelo ou instinto de proteção. Ao usar seu magnetismo para elevar as pessoas e dar liberdade a elas, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge um nível de prosperidade que é fruto direto da nobreza do seu coração.</p>`,
- videoID: " "
+ videoID: "RHB3bkJmYUs1c0E "
     },
     16: {
      conteudo:` <h3>Extremista - Dia 16</h3>
