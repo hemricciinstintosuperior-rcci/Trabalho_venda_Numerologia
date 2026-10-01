@@ -1372,7 +1372,7 @@ dia: {
     <p>Sua determinação é impressionante e você encara os desafios da carreira com uma seriedade que impõe autoridade e respeito imediato, sem perder a elegância. Para você, o sucesso é o resultado direto do seu esforço disciplinado e da sua capacidade de manter o foco inabalável nos resultados práticos, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>Como mulher realizadora, você tem a habilidade única de transformar ideias abstratas em prosperidade e estruturas sólidas. Existe em você um desejo de abundância que vai além do ganho individual; você busca construir segurança, conforto e um legado firme para todos que estão sob sua proteção e cuidado.</p>
     <p>O seu aprendizado, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é entender que o poder e a influência são ferramentas sagradas para o bem. Quando você une sua ambição de vencer com a sua intuição, ética e generosidade, você constrói um império de sucesso que beneficia a sua vida e a de todos ao seu redor.</p>`,
- videoID: " "
+ videoID: " cjNIZVhMaE9SS00"
     },
     9: {
      conteudo:` <h3>Universalista - Dia 9</h3>
