@@ -1436,7 +1436,7 @@ dia: {
     <p>Você tem o talento sagrado de enxergar através das máscaras sociais e possui um discernimento infalível para detectar qualquer falsidade ou hipocrisia. Embora você possa parecer uma mulher mais reservada ou misteriosa à primeira vista, <strong>MASCULINO-FEMININO-NEUTRO</strong>, sua profundidade de pensamento é o que te torna excelente em estratégia, planejamento ou orientação em temas complexos.</p>
     <p>Sua caminhada é de constante aperfeiçoamento da alma. Você busca respostas para os grandes mistérios e não descansa enquanto não encontra a verdade por trás dos fatos. Essa busca interna faz com que você desenvolva uma resiliência única, sendo uma mulher capaz de se reconstruir com ainda mais beleza após qualquer desafio, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O desafio para você é acolher as mudanças bruscas da vida como chances de evoluir, sem se fechar em um isolamento defensivo ou amargo. Quando você entende que o desapego é o caminho para o verdadeiro poder espiritual, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma mulher inabalável e detentora de um conhecimento que ilumina a todos.</p>`,
- videoID: " "
+ videoID: "X1NLejNnQzV2cGs "
     },
     17: {
      conteudo:` <h3>Orgulhosa - Dia 17</h3>
