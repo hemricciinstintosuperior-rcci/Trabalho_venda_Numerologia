@@ -1412,7 +1412,7 @@ dia: {
     <p>Você é uma mulher que não teme o trabalho árduo e possui um talento natural para organizar estratégias, administrar o cotidiano e colocar ordem em situações caóticas. Sua vida é marcada por ciclos de renovação, <strong>MASCULINO-FEMININO-NEUTRO</strong>, onde você aprende a deixar com coragem o que é velho para trás para construir algo muito mais forte e duradouro no lugar.</p>
     <p>Sua força de vontade é inabalável e existe um senso de dever e proteção que guia cada passo seu. Você busca a eficiência prática, sendo a fundação sólida sobre a qual sua família e seus projetos ambiciosos podem se apoiar com total segurança, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua persistência impecável é a chave mestra do seu sucesso.</p>
     <p>O seu desafio como mulher é aprender a expressar seus sentimentos de forma mais aberta e fluida, evitando a rigidez mental ou o isolamento. Quando você aceita as mudanças da vida com naturalidade e doçura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma força realizadora imparável, capaz de alcançar o topo através da sua disciplina fora do comum.</p>`,
- videoID: " "
+ videoID: "d2RCd3g4Y29iUkU "
     },
     14: {
      conteudo:` <h3>Aventureira - Dia 14</h3>
