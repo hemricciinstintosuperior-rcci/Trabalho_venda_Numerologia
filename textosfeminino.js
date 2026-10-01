@@ -1388,7 +1388,7 @@ dia: {
     <p>Sua autoconfiança é o seu maior trunfo e sua armadura. Você possui uma coragem pioneira que te leva a explorar campos onde poucas mulheres se atreveriam a pisar. Você é uma realizadora por excelência, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e sua presença firme transmite uma vibração de independência, força e sucesso imediato.</p>
     <p>Você possui a força do número 1 potencializada, o que indica um destino de grande destaque individual. Sua mente é rápida para identificar oportunidades de crescimento e você não hesita em agir com coragem quando percebe que o caminho está livre para a sua ascensão pessoal.</p>
     <p>O cuidado que você deve ter como mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é com o excesso de impulsividade. Ao aprender a ouvir sua voz interior e planejar cada passo com sabedoria estratégica, você se torna uma força imparável, capaz de construir uma história de vida absolutamente brilhante e inspiradora.</p>`,
-    videoID: " "
+    videoID: " a1dvemV6d1ZZVDA"
     },
     11: {
      conteudo:` <h3>Idealista - Dia 11</h3>
