@@ -1404,7 +1404,7 @@ dia: {
     <p>Sua mente é fértil, artística e você tem a capacidade de analisar problemas sob diversos ângulos ao mesmo tempo, o que faz de você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, uma mulher cujo conselho é sempre muito requisitado por todos. Você valoriza as conexões sociais verdadeiras e possui um magnetismo que atrai pessoas interessadas na sua inteligência e no seu modo refinado de observar a vida.</p>
     <p>Existe em você um desejo profundo de ser útil, acolher e trazer harmonia para onde quer que vá. Sua natureza é diplomática e você sabe usar seu charme pessoal e sua simpatia para abrir portas que outras pessoas considerariam trancadas. Sua versatilidade é sua maior ferramenta de sucesso, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O cuidado que você deve ter como mulher é para não se sacrificar demais pelos desejos e caprichos dos outros, acabando por esquecer os seus próprios sonhos. Ao aprender a colocar limites saudáveis com amor, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você floresce como uma mulher multifacetada e profundamente admirada.</p>`,
- videoID: " "
+ videoID: "QzFnLW4xNnpRamc "
     },
     13: {
      conteudo:` <h3>Prática - Dia 13</h3>
