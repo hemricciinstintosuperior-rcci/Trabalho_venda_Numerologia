@@ -1396,7 +1396,7 @@ dia: {
     <p>Sua presença feminina é magnética, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e você tem o dom de iluminar a vida das pessoas com palavras doces e profundas que tocam a alma. No entanto, por ser uma vibração de alta voltagem, você pode sentir uma tensão interna constante ou uma autocobrança muito forte para realizar algo grandioso, o que exige que você aprenda a ter momentos de pausa, autocuidado e recolhimento.</p>
     <p>Você possui uma mente visionária que capta verdades antes de todos os outros. Existe um compromisso no seu espírito com a evolução e com a cura, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tornando sua trajetória uma referência de sabedoria para amigas, familiares e para quem busca orientação em tempos difíceis.</p>
     <p>O seu desafio é manter os pés no chão e confiar na sua imensa voz interior sem se deixar levar pela ansiedade. Quando você equilibra essa mente brilhante com a ação prática, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma liderança espiritual e humana capaz de transformar profundamente a realidade ao seu redor.</p>`,
- videoID: " "
+ videoID: " bzVKLWFtV0h6Smc"
     },
     12: {
      conteudo:` <h3>Comunicadora - Dia 12</h3>
