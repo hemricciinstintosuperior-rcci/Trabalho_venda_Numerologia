@@ -7298,7 +7298,6 @@ async function inicializarSeguranca() {
     try {
         const res = await fetch(`${DB_URL}vendas.json`);
         const todasVendas = await res.json();
-        // Dentro da inicializarSeguranca
 
         let dados = todasVendas[userEmail];
         let emailLimpo = userEmail; 
@@ -7309,53 +7308,46 @@ async function inicializarSeguranca() {
              return;
         }
 
-        // 1. CÁLCULO DA DATA (COM VARIÁVEL DECLARADA FORA DO IF)
+        // --- BLOCO DE RENOVAÇÃO / COMPRA NOVA QUE COLOCAMOS ---
+        const dataInicioFirebase = dados.data_inicio; 
+        const dataInicioSalvoBrowser = localStorage.getItem('mapa_data_inicio_token');
+
+        if (dataInicioSalvoBrowser && dataInicioSalvoBrowser !== dataInicioFirebase) {
+            console.log("Nova data de início detectada. Destravando campos.");
+            localStorage.removeItem('mapa_genero');
+            localStorage.removeItem('mapa_nome');
+            localStorage.removeItem('mapa_data');
+            localStorage.removeItem('mapa_data_inicio_token');
+        }
+        localStorage.setItem('mapa_data_inicio_token', dataInicioFirebase);
+        // -----------------------------------------------------
+
         let diffDiasTotal = 0;
-      
-let acessoPremiumLiberado = true; // ou defina de acordo com a lógica de liberação dos 30 dias
-// --- COLE ESTE BLOCO AQUI ---
-const dataInicioFirebase = dados.data_inicio; 
-const dataInicioSalvoBrowser = localStorage.getItem('mapa_data_inicio_token');
+        
+        // 2. Verifica se o prazo de 30 dias venceu
+        if (dados.data_inicio) {
+            const dataInicio = new Date(dados.data_inicio).getTime();
+            const agora = new Date().getTime();
+            diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
+            
+            setTimeout(() => {
+                verificarLiberacaoMenu(diffDiasTotal);
+            }, 500); 
 
-if (dataInicioSalvoBrowser && dataInicioSalvoBrowser !== dataInicioFirebase) {
-    console.log("Nova data de início detectada (Renovação/Compra nova). Destravando os campos para novo preenchimento.");
-    localStorage.removeItem('mapa_genero');
-    localStorage.removeItem('mapa_nome');
-    localStorage.removeItem('mapa_data');
-    localStorage.removeItem('mapa_data_inicio_token');
-}
-localStorage.setItem('mapa_data_inicio_token', dataInicioFirebase);
-// ----------------------------
+            const diasRestantes = 38 - diffDiasTotal;
+            window.diasRestantesGlobais = 38 - diffDiasTotal; 
+            
+            const aviso = document.getElementById("aviso-expiracao-total");
+            if (aviso) {
+                aviso.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
+            }
 
-// 2. Verifica se o prazo de 30 dias venceu
-if (dados.data_inicio) {
-    const dataInicio = new Date(dados.data_inicio).getTime();
-  
-// 2. Verifica se o prazo de 30 dias venceu
-if (dados.data_inicio) {
-    const dataInicio = new Date(dados.data_inicio).getTime();
-    const agora = new Date().getTime();
-    const diffDiasTotal = Math.floor((agora - dataInicio) / (1000 * 60 * 60 * 24));
-   setTimeout(() => {
-    verificarLiberacaoMenu(diffDiasTotal);
-}, 500); 
-    // --- O CÁLCULO QUE VOCÊ QUER MOSTRAR ---
-    const diasRestantes = 38 - diffDiasTotal;
-    window.diasRestantesGlobais = 38 - diffDiasTotal; // O "window." torna a variável visível para todo o site
-    // --- AQUI NÓS ATUALIZAMOS O AVISO NO HTML ---
-    const aviso = document.getElementById("aviso-expiracao-total");
-    if (aviso) {
-        aviso.innerHTML = `Seu acesso expira em ${diasRestantes} dias.`;
-    }
-    console.log("Dias restantes calculados e enviados para o HTML:", diasRestantes);
-    // ------------------------------------------
-
-    if (diffDiasTotal > 30) {
-        alert("Seu período de acesso de 30 dias expirou.");
-        window.location.href = "index.html";
-        return;
-    }
-}
+            if (diffDiasTotal > 30) {
+                alert("Seu período de acesso de 30 dias expirou.");
+                window.location.href = "index.html";
+                return;
+            }
+        }
 
         // 3. STATUS ATIVO
         if (dados.status === 'usado' || dados.status !== 'ativo') {
@@ -7363,14 +7355,6 @@ if (dados.data_inicio) {
             window.location.href = "index.html";
             return;
         }
-
-        // 4. TRAVA DE SESSÃO (COMENTADA PARA EVITAR ERRO 401)
-        /*
-        await fetch(`${DB_URL}vendas/${emailLimpo}.json`, {
-            method: 'PATCH',
-            body: JSON.stringify({ sessao_ativa: sessionID })
-        });
-        */
 
         // 5. CARREGAMENTO DO RELATÓRIO
         dadosGlobais = dados; 
