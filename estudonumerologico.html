@@ -3777,6 +3777,8 @@ function gerarNovaAssinatura(novaAssinatura, expOriginal, negativasOriginal) {
         
         
 function gerarMapaCompleto(generoAtual) {
+if (typeof salvarTravaPerfil === 'function' && !salvarTravaPerfil()) return;
+    
     const nomeRaw = document.getElementById("nome").value.trim();
     const dataRaw = document.getElementById("data").value; // Agora vem como DD/MM/AAAA
 // IMPLEMENTAÇÃO APENAS:
@@ -7578,6 +7580,61 @@ function verificarLiberacaoMenu(diasPassados) {
         childList: true,
         subtree: true
     });
+}
+</script>
+
+
+<script>
+// --- TRAVA DE PERFIL ÚNICO (LOCALSTORAGE) ---
+document.addEventListener("DOMContentLoaded", function() {
+    const salvoGenero = localStorage.getItem('mapa_genero');
+    const salvoNome = localStorage.getItem('mapa_nome');
+    const salvoData = localStorage.getItem('mapa_data');
+
+    if (salvoNome && salvoData) {
+        // Preenche os campos com os dados salvos da primeira vez
+        const inputGenero = document.getElementById('generoTexto');
+        const inputNome = document.getElementById('nome');
+        const inputData = document.getElementById('data');
+
+        if (inputGenero && salvoGenero) {
+            inputGenero.value = salvoGenero;
+            inputGenero.disabled = true; // Trava a seleção de gênero
+            inputGenero.style.backgroundColor = "#222"; // Visual de campo travado
+        }
+        if (inputNome) {
+            inputNome.value = salvoNome;
+            inputNome.disabled = true; // Trava o nome da certidão
+            inputNome.style.backgroundColor = "#222";
+        }
+        if (inputData) {
+            inputData.value = salvoData;
+            inputData.disabled = true; // Trava a data de nascimento
+            inputData.style.backgroundColor = "#222";
+        }
+
+        console.log("Perfil travado com sucesso para este usuário.");
+    }
+});
+
+// Função auxiliar para salvar os dados no primeiro clique (chame dentro da sua função de gerar mapa)
+function salvarTravaPerfil() {
+    const genero = document.getElementById('generoTexto').value;
+    const nome = document.getElementById('nome').value;
+    const data = document.getElementById('data').value;
+
+    if (!nome || !data) {
+        alert("Por favor, preencha o nome e a data de nascimento.");
+        return false;
+    }
+
+    // Se ainda não estiver salvo, salva agora
+    if (!localStorage.getItem('mapa_nome')) {
+        localStorage.setItem('mapa_genero', genero);
+        localStorage.setItem('mapa_nome', nome);
+        localStorage.setItem('mapa_data', data);
+    }
+    return true;
 }
 </script>
         
