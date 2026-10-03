@@ -7311,6 +7311,26 @@ async function inicializarSeguranca() {
 
         // 1. CÁLCULO DA DATA (COM VARIÁVEL DECLARADA FORA DO IF)
         let diffDiasTotal = 0;
+      
+
+// --- COLE ESTE BLOCO AQUI ---
+const dataInicioFirebase = dados.data_inicio; 
+const dataInicioSalvoBrowser = localStorage.getItem('mapa_data_inicio_token');
+
+if (dataInicioSalvoBrowser && dataInicioSalvoBrowser !== dataInicioFirebase) {
+    console.log("Nova data de início detectada (Renovação/Compra nova). Destravando os campos para novo preenchimento.");
+    localStorage.removeItem('mapa_genero');
+    localStorage.removeItem('mapa_nome');
+    localStorage.removeItem('mapa_data');
+    localStorage.removeItem('mapa_data_inicio_token');
+}
+localStorage.setItem('mapa_data_inicio_token', dataInicioFirebase);
+// ----------------------------
+
+// 2. Verifica se o prazo de 30 dias venceu
+if (dados.data_inicio) {
+    const dataInicio = new Date(dados.data_inicio).getTime();
+    ... 
 // 2. Verifica se o prazo de 30 dias venceu
 if (dados.data_inicio) {
     const dataInicio = new Date(dados.data_inicio).getTime();
@@ -7645,15 +7665,11 @@ function salvarTravaPerfil() {
         return false;
     }
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const currentUser = urlParams.get('user');
-
-    // Salva os dados e amarra ao usuário atual da URL
-    if (!localStorage.getItem('mapa_nome') || localStorage.getItem('mapa_usuario_ativo') !== currentUser) {
+    // Se ainda não estiver travado, salva os dados da pessoa
+    if (!localStorage.getItem('mapa_nome')) {
         localStorage.setItem('mapa_genero', genero);
         localStorage.setItem('mapa_nome', nome);
         localStorage.setItem('mapa_data', data);
-        localStorage.setItem('mapa_usuario_ativo', currentUser);
     }
     return true;
 }
