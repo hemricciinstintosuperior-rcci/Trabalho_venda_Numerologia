@@ -7585,8 +7585,25 @@ function verificarLiberacaoMenu(diasPassados) {
 
 
 <script>
-// --- TRAVA DE PERFIL ÚNICO (LOCALSTORAGE) ---
+// --- TRAVA DE PERFIL INTELIGENTE (COM SUPORTE A RENOVAÇÃO) ---
 document.addEventListener("DOMContentLoaded", function() {
+    // Pegamos o usuário atual da URL (ex: c_h_mantovanni_gmail_com7309242)
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentUser = urlParams.get('user');
+
+    // Verificamos se o usuário que está logado agora é o mesmo da última vez
+    const ultimoUsuarioSalvo = localStorage.getItem('mapa_usuario_ativo');
+
+    // Se o usuário mudou (ou seja, comprou um novo acesso com outro link/ID), 
+    // nós limpamos a trava antiga automaticamente para liberar o novo preenchimento!
+    if (ultimoUsuarioSalvo && ultimoUsuarioSalvo !== currentUser) {
+        console.log("Novo acesso detectado! Limpando dados do perfil anterior...");
+        localStorage.removeItem('mapa_genero');
+        localStorage.removeItem('mapa_nome');
+        localStorage.removeItem('mapa_data');
+        localStorage.removeItem('mapa_usuario_ativo');
+    }
+
     const salvoGenero = localStorage.getItem('mapa_genero');
     const salvoNome = localStorage.getItem('mapa_nome');
     const salvoData = localStorage.getItem('mapa_data');
@@ -7599,25 +7616,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (inputGenero && salvoGenero) {
             inputGenero.value = salvoGenero;
-            inputGenero.disabled = true; // Trava a seleção de gênero
-            inputGenero.style.backgroundColor = "#222"; // Visual de campo travado
+            inputGenero.disabled = true; 
+            inputGenero.style.backgroundColor = "#222"; 
         }
         if (inputNome) {
             inputNome.value = salvoNome;
-            inputNome.disabled = true; // Trava o nome da certidão
+            inputNome.disabled = true; 
             inputNome.style.backgroundColor = "#222";
         }
         if (inputData) {
             inputData.value = salvoData;
-            inputData.disabled = true; // Trava a data de nascimento
+            inputData.disabled = true; 
             inputData.style.backgroundColor = "#222";
         }
 
-        console.log("Perfil travado com sucesso para este usuário.");
+        console.log("Perfil travado para o usuário atual.");
     }
 });
 
-// Função auxiliar para salvar os dados no primeiro clique (chame dentro da sua função de gerar mapa)
+// Função de salvamento atualizada para registrar o usuário ativo
 function salvarTravaPerfil() {
     const genero = document.getElementById('generoTexto').value;
     const nome = document.getElementById('nome').value;
@@ -7628,11 +7645,15 @@ function salvarTravaPerfil() {
         return false;
     }
 
-    // Se ainda não estiver salvo, salva agora
-    if (!localStorage.getItem('mapa_nome')) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentUser = urlParams.get('user');
+
+    // Salva os dados e amarra ao usuário atual da URL
+    if (!localStorage.getItem('mapa_nome') || localStorage.getItem('mapa_usuario_ativo') !== currentUser) {
         localStorage.setItem('mapa_genero', genero);
         localStorage.setItem('mapa_nome', nome);
         localStorage.setItem('mapa_data', data);
+        localStorage.setItem('mapa_usuario_ativo', currentUser);
     }
     return true;
 }
