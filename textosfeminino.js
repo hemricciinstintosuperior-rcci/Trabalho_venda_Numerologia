@@ -1468,7 +1468,7 @@ dia: {
     <p>Sua verdadeira força reside na suavidade, no tato social e na paciência sábia para aguardar o momento certo de agir. Como mulher, você produz resultados excepcionais quando trabalha em parceria ou em equipe, <strong>MASCULINO-FEMININO-NEUTRO</strong>, revelando-se uma companheira leal, confiável e que valoriza a harmonia acima de qualquer disputa boba de ego.</p>
     <p>Sua intuição feminina é um guia constante e certeiro que te ajuda a tomar decisões equilibradas, justas e humanas. Você tem um senso artístico e estético apurado, apreciando a beleza e o aconchego como formas de manter sua paz interior. As pessoas buscam a sua companhia para encontrar conforto, colo e uma visão mais mansa e acolhedora da realidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O desafio para você como mulher é não se deixar levar pela insegurança ou pela timidez diante de personalidades mais agressivas ou rudes. Ao confiar no seu valor imenso como mediadora e fortalecer a sua própria voz, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna a peça essencial que mantém qualquer família ou estrutura unida e em perfeita paz.</p>`,
- videoID: " "
+ videoID: " THUwOFFfNzJ6MkE"
     },
     21: {
      conteudo:` <h3>Dispersa - Dia 21</h3>
