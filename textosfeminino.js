@@ -1484,7 +1484,7 @@ dia: {
     <p>Sua visão de mundo é ampla, generosa e eu sei que no fundo da sua alma você sente que nasceu para deixar um legado duradouro e positivo para a humanidade. Você tem um talento natural para organizar grandes sistemas, negócios ou movimentos de ajuda, <strong>MASCULINO-FEMININO-NEUTRO</strong>, agindo com uma responsabilidade e ética que inspiram confiança absoluta em todos.</p>
     <p>Como mulher, você possui uma força de trabalho inesgotável e uma mente brilhante capaz de coordenar detalhes complexos sem perder o alvo final de vista. Para você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, a realização material e o sucesso financeiro são meios para servir ao bem comum, proteger os seus e estruturar um futuro mais seguro para as próximas gerações.</p>
     <p>O grande aprendizado para você é aprender a lidar com a imensa pressão e cobrança que essa capacidade monumental de realização gera na sua vida pessoal. Ao manter o seu equilíbrio emocional e reservar um tempo para si mesma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma força inigualável, capaz de mudar o mundo ao seu redor para muito melhor.</p>`,
- videoID: " "
+ videoID: " Z2N0czN2WVQzekE"
     },
     23: {
      conteudo:` <h3>Versátil - Dia 23</h3>
