@@ -1460,7 +1460,7 @@ dia: {
     <p>Sua personalidade é vibrante, solar e você tem o talento de iniciar novos empreendimentos, negócios ou projetos com muito entusiasmo e coragem. Você nasceu para ser a protagonista absoluta da sua própria história, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e possui todas as ferramentas mentais para chegar ao topo por mérito próprio.</p>
     <p>Existe em você uma luz que atrai a atenção de todos de forma inevitável. Sua capacidade de resistência é enorme e você tem a coragem de ser quem realmente é, sem se importar com julgamentos alheios. Quando você decide focar em uma meta, você move montanhas, demonstrando uma autossuficiência que serve de inspiração para outras mulheres, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O seu aprendizado central é superar o orgulho rígido e entender que o verdadeiro poder feminino também cresce na união e na partilha. Quando você brilha sem apagar a luz alheia e compartilha suas vitórias com generosidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge a realização plena da sua alma.</p>`,
- videoID: " "
+ videoID: " bjE2VFUxZTMzR1E"
     },
     20: {
      conteudo:` <h3>Consciente - Dia 20</h3>
