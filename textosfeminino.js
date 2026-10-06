@@ -1452,7 +1452,7 @@ dia: {
     <p>Sua intuição é de uma potência absurda e você possui uma capacidade de superação impressionante, conseguindo transformar crises profundas em vitórias pessoais magníficas. Você entende como ninguém os processos de encerramento, o que permite a você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, finalizar ciclos com dignidade e iniciar novas etapas com coragem de cabeça erguida.</p>
     <p>Você é uma mulher de mente aberta para o mundo e não tolera injustiças ou preconceitos ao seu redor. Existe em você um magnetismo forte que atrai pessoas que buscam força, consolo e direção em momentos de caos. Sua presença exige respeito, pois você age com a autoridade de quem conhece as dores e a profundidade da vida, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O seu desafio como mulher é controlar as oscilações emocionais e evitar acumular mágoas ou ressentimentos no coração. Ao focar toda essa sua energia intensa na cura do ambiente ao seu redor e no auxílio ao próximo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você encontra uma paz profunda e o reconhecimento que vem do impacto real que você gera na sociedade.</p>`,
- videoID: " "
+ videoID: " ZjQ5MTNRVVJQUEU"
     },
     19: {
      conteudo:` <h3>Individualista - Dia 19</h3>
