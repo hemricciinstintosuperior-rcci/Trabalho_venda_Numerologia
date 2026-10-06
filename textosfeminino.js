@@ -1444,7 +1444,7 @@ dia: {
     <p>Sua mente é extremamente organizada e você possui uma visão de longo alcance para os negócios, para as finanças e para a estruturação da sua vida. Você impõe respeito em qualquer sala que entre pela sua competência inegável e pela forma justa como conduz seus projetos, agindo com uma autoridade natural que emana do seu conhecimento, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>Existe um magnetismo de estrela em você, atraindo oportunidades de crescimento material e reconhecimento que parecem surgir no momento exato. Como mulher de visão, você sabe planejar com precisão, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e sua ambição é perfeitamente equilibrada por um senso de responsabilidade que garante conquistas sólidas, respeitadas e duradouras.</p>
     <p>O aprendizado para você é manter a conexão com seu propósito interior e com a sua sensibilidade enquanto sobe os degraus do sucesso, evitando a frieza emocional ou o orgulho excessivo. Quando você usa sua influência para o bem comum e para apoiar outras mulheres, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você brilha como uma das forças mais vitoriosas da numerologia.</p>`,
- videoID: " "
+ videoID: " d2Z5SEl3UE9IV0U"
     },
     18: {
      conteudo:` <h3>Contestadora - Dia 18</h3>
