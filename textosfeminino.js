@@ -1476,7 +1476,7 @@ dia: {
     <p>Sua mente é artisticamente criativa, versátil e cheia de charme, <strong>MASCULINO-FEMININO-NEUTRO</strong>, permitindo que você se destaque com muita facilidade em tudo o que envolva o público, as artes, a escrita ou a fala. Você tem o dom de transformar palavras em pontes para o sucesso, possuindo a habilidade única de expressar seus desejos de forma encantadora.</p>
     <p>Você é alguém que busca a realização pessoal e o crescimento, mas sabe que a vida deve ser saboreada e desfrutada no processo. Existe um equilíbrio lindo em você entre a ambição de crescer e o prazer de viver bem. Sua presença, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é sinônimo de leveza, boas energias e de uma visão otimista que abre portas valiosas na sua caminhada.</p>
     <p>O seu desafio como mulher é evitar a dispersão dos seus inúmeros talentos por querer abraçar o mundo e fazer tudo ao mesmo tempo. Quando você foca sua preciosa energia em um objetivo central e mantém a persistência firme, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge uma colheita de reconhecimento, brilho e prosperidade que flui de forma totalmente natural.</p>`,
- videoID: " "
+ videoID: "UC1hMFFuaEtBa0U "
     },
     22: {
      conteudo:` <h3>Sonhadora - Dia 22</h3>
