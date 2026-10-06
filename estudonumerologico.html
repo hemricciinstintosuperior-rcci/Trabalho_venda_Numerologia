@@ -7540,6 +7540,7 @@ function abrirAba(idDaAba) {
 
 <script>
 function verificarLiberacaoMenu(diasPassados) {
+    
     const estaLiberado = diasPassados >= 7;
 
     // Criamos um vigia que vai olhar a página até o elemento aparecer
@@ -7597,9 +7598,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (salvoNome && salvoData) {
         // Preenche os campos com os dados salvos da primeira vez
-        const inputGenero = document.getElementById('generoTexto');
-        const inputNome = document.getElementById('nome');
-        const inputData = document.getElementById('data');
+       // const inputGenero = document.getElementById('generoTexto');
+       // const inputNome = document.getElementById('nome');
+        //const inputData = document.getElementById('data');
 
         if (inputGenero && salvoGenero) {
             inputGenero.value = salvoGenero;
@@ -7624,7 +7625,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Função de salvamento atualizada para registrar o usuário ativo
 function salvarTravaPerfil() {
     const genero = document.getElementById('generoTexto').value;
-    const nome = document.getElementById('nome').value;
+   const nome = document.getElementById('nome').value;
     const data = document.getElementById('data').value;
 
     if (!nome || !data) {
