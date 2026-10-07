@@ -1524,7 +1524,7 @@ dia: {
     <p>Sua visão de mundo é espiritualizada, ampla e você sente a necessidade vital de se envolver em causas ou projetos que tragam progresso real para a vida das pessoas. Você é uma mulher de carisma, inspiração e sensibilidade, <strong>MASCULINO-FEMININO-NEUTRO</strong>, cuja integridade e sabedoria atraem a admiração sincera de pessoas de todas as origens.</p>
     <p>Existe em você uma conexão profunda com o conhecimento universal e com a intuição. Você é capaz de grandes e nobres atos de desapego em nome de um ideal, possuindo uma visão superior que te ajuda a enxergar soluções amorosas onde outros veem apenas becos sem saída, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua jornada é marcada pelo serviço de elevar o mundo.</p>
     <p>O aprendizado para você como mulher é acolher a sua imensa sensibilidade sem deixar que os problemas e as dores do mundo te abatam ou suguem sua energia. Ao focar na sua capacidade de ensinar, acolher e auxiliar, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você encontra a realização plena da sua alma e deixa um rastro de luz por onde passa.</p>`,
- videoID: " "
+ videoID: "SDcxVDRqWlhTcUU "
     },
     28: {
      conteudo:` <h3>Obstinada - Dia 28</h3>
@@ -1532,7 +1532,7 @@ dia: {
     <p>Sua determinação inabalável é mesclada com uma intuição aguçada sobre o potencial e o talento das outras pessoas. Você é uma mulher de realização que nasceu para buscar o topo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, mas compreende perfeitamente que a união de forças e o respeito mútuo são o caminho mais seguro para o sucesso duradouro.</p>
     <p>Você possui a força do pioneirismo temperada com um excelente tato social e elegância feminina. Existe um magnetismo claro de vitória na sua trajetória, pois você sabe exatamente como motivar as pessoas a darem o melhor de si em prol de um objetivo comum, mantendo o comando com muita classe, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O desafio para você como mulher é não cair na teimosia rígida de querer que tudo seja feito exclusivamente do seu jeito. Ao usar o seu imenso poder para empoderar sua equipe, seus filhos ou sua família, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma liderança inesquecível e alcança uma prosperidade sólida e muito merecida.</p>`,
- videoID: " "
+ videoID: "bnJ2YnF3eExtU1k "
     },
     29: {
      conteudo:` <h3>Instintiva - Dia 29</h3>
@@ -1540,7 +1540,7 @@ dia: {
     <p>Sua vida é marcada por uma intensidade emocional profunda e você tem o dom lindo de inspirar e transformar a vida das pessoas através da sua fé, das suas palavras ou das suas ideias inovadoras. Você atrai situações intensas para a sua jornada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e seu caminho é aprender a navegar entre sua rica e sagrada vida interior e as exigências do mundo material.</p>
     <p>Existe em seu interior uma força monumental de transformação que talvez você mesma ainda esteja descobrindo a cada dia. Sua simples presença é capaz de alterar a vibração de um ambiente e sua palavra mansa tem o poder de despertar potencias adormecidos e curar corações partidos em quem te escuta, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O grande aprendizado para você como mulher é a busca constante pela sua estabilidade e proteção emocional, não absorvendo a energia alheia. Ao ancorar sua forte intuição feminina em ações concretas e manter a confiança na sua própria força divina, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você se torna uma figura de imenso impacto positivo na sociedade.</p>`,
- videoID: " "
+ videoID: " Ulo0dHFjODdzbkU"
     },
     30: {
      conteudo:` <h3>Teimosa - Dia 30</h3>
@@ -1548,7 +1548,7 @@ dia: {
     <p>Sua mente é artisticamente brilhante e você possui um charme e um magnetismo que fazem com que as pessoas queiram estar perto de você para absorver sua energia solar, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você tem o dom lindo de tornar leves as situações pesadas e de encontrar saídas criativas e cheias de imaginação onde os outros veem apenas becos sem saída.</p>
     <p>Você é uma figura social e cativante por excelência, que compreende que a felicidade e o entusiasmo são ingredientes essenciais para o sucesso real. Sua comunicação charmosa é sua maior ferramenta de realização pessoal, permitindo que você conquiste amigas, aliados e portas abertas através do seu carisma, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>O grande desafio para você como mulher é evitar a dispersão da sua preciosa energia em coisas ou conversas superficiais que não agregam valor à sua alma. Ao usar sua comunicação para elevar, motivar e trazer alegria para o próximo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você atinge uma realização imensa e se torna a figura central e amada em qualquer grupo.</p>`,
- videoID: " "
+ videoID: "YUpVWExlMUs4WFE "
     },
     31: {
      conteudo:` <h3>Tradicionalista - Dia 31</h3>
@@ -1556,7 +1556,7 @@ dia: {
     <p>Sua natureza é persistente, firme e você valoriza a honestidade e a lealdade acima de tudo, estando sempre com a mente aberta para ideias modernas que melhorem sua eficiência e qualidade de vida. Como mulher, você possui um talento natural para estruturar bases familiares e profissionais sólidas, acolhedoras e muito prósperas, <strong>MASCULINO-FEMININO-NEUTRO</strong>.</p>
     <p>Você sabe que o sucesso verdadeiro vem do mérito e do esforço diário, valorizando cada conquista da sua caminhada. Existe em seu interior uma força silenciosa e imponente que transmite total segurança a todos ao seu redor. Sua capacidade de planejar o amanhã é admirável, <strong>MASCULINO-FEMININO-NEUTRO</strong>, tornando você a mulher ideal para liderar grandes projetos com os pés no chão.</p>
     <p>O grande aprendizado para você é se permitir relaxar, soltar um pouco o controle e aproveitar os frutos do seu trabalho com mais leveza, prazer e diversão. Ao equilibrar sua disciplina impecável com momentos de autocuidado e lazer, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você constrói uma vida cheia de prestígio, estabilidade e profunda satisfação pessoal.</p>`,
- videoID: " "
+ videoID: "NHZWWWxVNXdLZVE "
     },
      
 },
