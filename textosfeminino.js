@@ -1492,7 +1492,7 @@ dia: {
     <p>Sua natureza é profundamente livre, independente e amante das novidades. Você se adapta a mudanças e reviravoltas na vida com uma agilidade que impressiona a todos, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Você brilha intensamente em ambientes dinâmicos onde pode usar sua criatividade para resolver problemas de forma inovadora, buscando sempre expandir seus horizontes.</p>
     <p>Existe em você um magnetismo fascinante que atrai viagens, novas amizades, conexões intelectuais e experiências diversificadas. Você detesta a estagnação e o tédio, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e sua mente está sempre um passo à frente, antecipando tendências. Sua versatilidade como mulher é, sem dúvida, sua maior aliada para o sucesso em múltiplas áreas.</p>
     <p>O cuidado que você deve ter é para não perder a paciência com quem possui um ritmo de pensamento ou de vida mais lento que o seu. Ao cultivar a persistência amorosa em projetos de longo prazo, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você transforma sua agilidade mental em uma carreira de sucesso sólido e conquistas memoráveis.</p>`,
- videoID: " "
+ videoID: "TlVLX3N3TmlGVlk "
     },
     24: {
      conteudo:` <h3>Prestativa - Dia 24</h3>
@@ -1500,7 +1500,7 @@ dia: {
     <p>Sua energia é totalmente voltada para a criação de equilíbrio, paz e aconchego. Como mulher, você se sente em plena realização quando pode zelar com amor pelo bem-estar e segurança de quem ama, <strong>MASCULINO-FEMININO-NEUTRO</strong>, agindo sempre com uma doçura acolhedora que esconde uma força interior imensa e uma determinação inabalável.</p>
     <p>Você valoriza a integridade, a verdade e a família acima de tudo na vida. Existe um compromisso profundo com a retidão nas suas responsabilidades, o que te torna a pessoa ideal para gerir vidas, lares ou projetos que exijam confiança total. Sua jornada, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é pautada pelo afeto sincero e pela construção de laços indestrutíveis.</p>
     <p>O grande desafio para você como mulher é aprender a dizer 'não' para não se anular ou se sobrecarregar tentando carregar as dores de todo mundo nas costas. Ao aprender a cuidar de você mesma com a mesma dedicação e amor que oferece aos outros, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você alcança a verdadeira estabilidade emocional.</p>`,
- videoID: " "
+ videoID: "TDdhaWFYOExxeDQ "
     },
     25: {
      conteudo:` <h3>Inconformada - Dia 25</h3>
@@ -1508,7 +1508,7 @@ dia: {
     <p>Sua natureza é mais reservada, elegante e você valoriza o conhecimento profundo como a base indispensável para cada decisão tomada na sua vida. Você tem o dom sagrado da observação silenciosa, <strong>MASCULINO-FEMININO-NEUTRO</strong>, e seu radar raramente se engana sobre o real caráter das pessoas, agindo com uma cautela que te protege de erros impulsivos.</p>
     <p>Existe em seu interior um desejo de perfeição e refinamento que te leva a ser uma especialista respeitada na sua área de atuação. Você prefere sempre a qualidade das relações à quantidade, e busca momentos de solitude para processar seus pensamentos. Sua sabedoria como mulher, <strong>MASCULINO-FEMININO-NEUTRO</strong>, é admirável, tornando sua opinião de um peso enorme.</p>
     <p>O grande aprendizado para você é confiar ainda mais na sua intuição feminina e na sabedoria do coração, sem se prender apenas à lógica fria dos fatos. Quando você une sua capacidade analítica com a sensibilidade da sua alma, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você conquista uma profunda paz interior e o respeito do mundo.</p>`,
- videoID: " "
+ videoID: "Qm5VZV85dm1VR3c "
     },
     26: {
      conteudo:` <h3>Controladora - Dia 26</h3>
@@ -1516,7 +1516,7 @@ dia: {
     <p>Sua grande capacidade de organização é brilhantemente aliada a um forte senso de justiça e equidade. Você sabe exatamente como atrair a prosperidade e gerir recursos com eficiência, sendo frequentemente o pilar econômico ou de sustentação para quem está ao seu redor, <strong>MASCULINO-FEMININO-NEUTRO</strong>. Sua autoridade é natural e respeitada porque nasce da sua competência real.</p>
     <p>Você compreende perfeitamente as leis do mundo material e sabe que o verdadeiro sucesso exige cooperação e liderança humanizada. Sua postura como mulher de comando é firme, porém profundamente justa. Existe em você, <strong>MASCULINO-FEMININO-NEUTRO</strong>, um talento raro para transformar crises e perdas em oportunidades de estabilidade.</p>
     <p>O seu grande desafio é equilibrar essa busca constante pelo sucesso material com as necessidades delicadas da sua vida emocional e familiar. Ao manter o foco no propósito elevado e no afeto, e não apenas nos números, <strong>MASCULINO-FEMININO-NEUTRO</strong>, você constrói uma trajetória de imenso prestígio e um legado de abundância duradouro.</p>`,
- videoID: " "
+ videoID: "ZG5lYW1rdWRfZVk "
     },
     27: {
      conteudo:` <h3>Política - Dia 27</h3>
